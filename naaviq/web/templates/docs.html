@@ -178,6 +178,19 @@
            gap when sections are collapsed. Remove only the spacer — the container keeps the full panel height, so
            popovers inside it (the code-language picker) still have room. */
         .request-section-content .flex.grow:empty { display: none !important; }
+        /* API client "include" checkboxes: a real checkbox look. Unchecked = visible empty box (was a near-invisible
+           check that read as a glitch); checked = teal box with a dark check; disabled (empty Key rows) = dimmed. */
+        .scalar-client input.peer[type="checkbox"] + div > div.rounded {
+          opacity: 1 !important; width: 16px !important; height: 16px !important; border-radius: 4px !important;
+          border: 1.5px solid rgba(255, 255, 255, 0.34) !important; background: transparent;
+        }
+        .scalar-client input.peer[type="checkbox"]:not(:checked) + div svg { opacity: 0 !important; }
+        .scalar-client input.peer[type="checkbox"]:checked + div { color: #04201c !important; }
+        .scalar-client input.peer[type="checkbox"]:checked + div > div.rounded { background: #5eead4 !important; border-color: #5eead4 !important; }
+        .scalar-client input.peer[type="checkbox"]:checked + div svg { position: relative; z-index: 1; }
+        .scalar-client input.peer[type="checkbox"]:not(:checked):not(:disabled):hover + div > div.rounded { border-color: rgba(255, 255, 255, 0.65) !important; }
+        .scalar-client input.peer[type="checkbox"]:checked:hover + div > div.rounded { background: #8af0e0 !important; border-color: #8af0e0 !important; }
+        .scalar-client input.peer[type="checkbox"]:disabled + div > div.rounded { opacity: 0.35 !important; }
         /* Response panel: indent header/cookie keys to sit under their section titles,
            matching the request panel (whose rows start after a checkbox column). */
         .response-section-content .scalar-data-table tr > td:first-child > span { padding-left: 40px !important; }
