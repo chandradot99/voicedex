@@ -33,6 +33,7 @@ class ProviderOut(BaseModel):
     model_count: int
     voice_count: int
     last_synced_at: datetime | None
+    retired_on: date | None
     deprecated_at: datetime | None
     updated_at: datetime | None
 
@@ -46,7 +47,8 @@ class ProviderOut(BaseModel):
             api_urls=p.api_urls, docs_urls=p.docs_urls,
             model_count=model_count, voice_count=voice_count,
             last_synced_at=_dt(p.last_synced),
-            deprecated_at=None if p.status == "active" else _dt(p.last_synced),
+            retired_on=p.retired_on,
+            deprecated_at=None if p.status == "active" else _dt(p.retired_on or p.last_synced),
             updated_at=_dt(p.last_synced),
         )
 

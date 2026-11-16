@@ -58,3 +58,14 @@ def test_seed_never_overwrites_existing_cache(tmp_path):
     fresh.write_text("[]")
     assert sync_script.seed_cache_from_data("acme", tmp_path / "data") == []
     assert fresh.read_text() == "[]"
+
+
+def test_retired_providers_are_skipped(capsys, monkeypatch):
+    import asyncio
+
+    from naaviq.sync.registry import REGISTRY
+    retired = [e.provider_id for e in REGISTRY if e.retired]
+    assert {"humeai", "lmnt", "resemble"} <= set(retired)
+    monkeypatch.setattr(sys, "argv", ["sync.py", *retired])
+    assert asyncio.run(sync_script.main()) == 0
+    assert "retired" in capsys.readouterr().out

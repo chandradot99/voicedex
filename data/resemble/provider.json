@@ -1,0 +1,8 @@
+{
+  "description": "Pivoted to deepfake detection: its TTS/voice models (incl. Chatterbox) are 'no longer offered as commercial paid products' and it stopped taking new TTS customers (2026-08-13 announcement); existing customers are still supported, with no published shutdown date.",
+  "id": "resemble",
+  "name": "Resemble AI",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://www.resemble.ai"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Shut down its Octave text-to-speech and EVI (Empathic Voice Interface) APIs on 2026-11-13 (announced 2026-10-02). The voices API now returns 'This API was retired on 2026-11-13'. Hume now focuses on voice-AI evaluation (VoiceEQ) and expression measurement.",
+  "id": "humeai",
+  "links": {
+    "status": "https://www.cartesia.ai/learn/top-hume-ai-alternatives"
+  },
+  "name": "Hume AI",
+  "retired_on": "2026-11-13",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://www.hume.ai"
+}

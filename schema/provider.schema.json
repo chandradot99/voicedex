@@ -189,6 +189,19 @@
       "title": "Regions",
       "type": "array"
     },
+    "retired_on": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Retired On"
+    },
     "source": {
       "anyOf": [
         {

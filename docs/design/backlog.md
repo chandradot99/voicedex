@@ -3,6 +3,7 @@
 Known gaps and follow-ups, newest first. Move items to commits as they're done.
 
 ## Data coverage
+- **Amazon Polly** — needs an AWS account + IAM user with `polly:DescribeVoices` (deferred 2026-11-16: AWS sign-up issues).
 - **Speechmatics TTS** (preview): 4 voices, no model id, $0.011/1k chars — add as tts once it has a stable model id.
 - **Rime STT and "Prism" STS** — syncer is TTS-only.
 - **Deepgram Flux** (conversational STT) and **Deepgram capabilities** — not in `/v1/models`; needs a docs pass (Deepgram → mixed).

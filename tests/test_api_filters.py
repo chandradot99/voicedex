@@ -185,3 +185,9 @@ async def test_catalog_export_and_etag(client):
 async def test_provider_counts(client):
     p = (await client.get(f"/v1/providers/{TEST_PROVIDER}")).json()
     assert p["model_count"] == 3 and p["voice_count"] == 3
+
+
+async def test_retired_provider_shape(client):
+    p = (await client.get("/v1/providers", params={"include_deprecated": "true"})).json()
+    gone = next(x for x in p if x["provider_id"] == DEPRECATED_PROVIDER)
+    assert gone["status"] == "deprecated" and "retired_on" in gone

@@ -24,6 +24,8 @@ class SyncerEntry:
     display_name: str
     type: Literal["stt", "tts", "both"]
     syncer_path: str   # "naaviq.sync.deepgram.DeepgramSyncer"
+    # Provider shut down its API / stopped selling: never synced; data/<id>/provider.json records why.
+    retired: bool = False
 
 
 REGISTRY: list[SyncerEntry] = [
@@ -35,11 +37,11 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("sarvam",            "Sarvam",            "both", "naaviq.sync.sarvam.SarvamSyncer"),
     SyncerEntry("azure",             "Azure Speech",      "both", "naaviq.sync.azure.AzureSyncer"),
     SyncerEntry("amazon-polly",      "Amazon Polly",      "tts",  "naaviq.sync.amazon_polly.AmazonPollySyncer"),
-    SyncerEntry("humeai",            "Hume AI",           "tts",  "naaviq.sync.humeai.HumeAISyncer"),
+    SyncerEntry("humeai",            "Hume AI",           "tts",  "naaviq.sync.humeai.HumeAISyncer", retired=True),
     SyncerEntry("inworld",           "Inworld AI",        "both", "naaviq.sync.inworld.InworldAISyncer"),
     SyncerEntry("murf",              "Murf AI",           "tts",  "naaviq.sync.murf.MurfAISyncer"),
     SyncerEntry("speechmatics",      "Speechmatics",      "stt",  "naaviq.sync.speechmatics.SpeechmaticsSyncer"),
-    SyncerEntry("lmnt",              "LMNT",              "tts",  "naaviq.sync.lmnt.LmntSyncer"),
+    SyncerEntry("lmnt",              "LMNT",              "tts",  "naaviq.sync.lmnt.LmntSyncer", retired=True),
     SyncerEntry("rime",              "Rime AI",           "tts",  "naaviq.sync.rime.RimeSyncer"),
     SyncerEntry("assemblyai",        "AssemblyAI",        "both", "naaviq.sync.assemblyai.AssemblyAISyncer"),
     SyncerEntry("revai",             "Rev AI",            "stt",  "naaviq.sync.revai.RevAISyncer"),
@@ -48,7 +50,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("ibm",               "IBM Watson",        "both", "naaviq.sync.ibm.IBMSyncer"),
     SyncerEntry("neuphonic",         "Neuphonic",         "tts",  "naaviq.sync.neuphonic.NeurophonicSyncer"),
     SyncerEntry("amazon-transcribe", "Amazon Transcribe", "stt",  "naaviq.sync.amazon_transcribe.AmazonTranscribeSyncer"),
-    SyncerEntry("resemble",          "Resemble AI",       "tts",  "naaviq.sync.resemble.ResembleSyncer"),
+    SyncerEntry("resemble",          "Resemble AI",       "tts",  "naaviq.sync.resemble.ResembleSyncer", retired=True),
     SyncerEntry("fishaudio",         "Fish Audio",        "both", "naaviq.sync.fishaudio.FishAudioSyncer"),
     SyncerEntry("unrealspeech",      "Unreal Speech",     "tts",  "naaviq.sync.unrealspeech.UnrealSpeechSyncer"),
     SyncerEntry("smallestai",        "Smallest AI",       "both", "naaviq.sync.smallestai.SmallestAISyncer"),

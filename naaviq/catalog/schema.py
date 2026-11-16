@@ -169,6 +169,9 @@ class Provider(_Record):
     docs_urls: list[str] = Field(default_factory=list)
     voices_source: Provenance | None = None
     last_synced: date | None = None
+    # Shut down / no longer sold to new customers. Set with status="deprecated"; the reason and the
+    # source go in `description` / `links.status`. Kept in the catalog so "is X still alive?" is answerable.
+    retired_on: date | None = None
 
     @field_validator("type")
     @classmethod

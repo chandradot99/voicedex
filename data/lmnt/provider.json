@@ -1,0 +1,8 @@
+{
+  "description": "Shut down in 2026 (exact date not published; notice appeared between 2026-08-03 and 2026-09-01). lmnt.com and docs.lmnt.com show only 'LMNT has shut down' and api.lmnt.com no longer accepts connections.",
+  "id": "lmnt",
+  "name": "LMNT",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://lmnt.com"
+}
