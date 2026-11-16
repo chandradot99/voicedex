@@ -1,0 +1,25 @@
+{
+  "api_urls": [
+    "https://client.camb.ai/apis/list-voices",
+    "https://client.camb.ai/apis/source-languages"
+  ],
+  "docs_urls": [
+    "https://docs.camb.ai/models",
+    "https://docs.camb.ai/language-support",
+    "https://docs.camb.ai/api-reference/endpoint/create-tts-stream",
+    "https://docs.camb.ai/api-reference/websockets/listen"
+  ],
+  "id": "cambai",
+  "last_synced": "2026-11-16",
+  "name": "CAMB.ai",
+  "source": "mixed",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://client.camb.ai/apis/list-voices",
+      "https://client.camb.ai/apis/source-languages"
+    ]
+  }
+}
