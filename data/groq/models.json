@@ -1,0 +1,117 @@
+[
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "whisper-large-v3",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "hugging_face_id": "openai/whisper-large-v3",
+      "model_card": "https://huggingface.co/openai/whisper-large-v3",
+      "upstream": "OpenAI"
+    },
+    "name": "Whisper",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.groq.com/openai/v1/models"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "whisper-large-v3-turbo",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "hugging_face_id": "openai/whisper-large-v3-turbo",
+      "upstream": "OpenAI"
+    },
+    "name": "Whisper Large V3 Turbo",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.groq.com/openai/v1/models"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "first_seen": "2026-11-16",
+    "id": "canopylabs/orpheus-arabic-saudi",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-SA"
+    ],
+    "max_text_chars": 4000,
+    "meta": {
+      "upstream": "Canopy Labs"
+    },
+    "name": "Canopy Labs Orpheus Arabic Saudi",
+    "pricing": {
+      "notes": "From Groq /models API (pricing.prompt)",
+      "price_usd": 4e-05,
+      "source_url": "https://api.groq.com/openai/v1/models",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.groq.com/openai/v1/models"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "first_seen": "2026-11-16",
+    "id": "canopylabs/orpheus-v1-english",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 4000,
+    "meta": {
+      "upstream": "Canopy Labs"
+    },
+    "name": "Canopy Labs Orpheus V1 English",
+    "pricing": {
+      "notes": "From Groq /models API (pricing.prompt)",
+      "price_usd": 2.2e-05,
+      "source_url": "https://api.groq.com/openai/v1/models",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.groq.com/openai/v1/models"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

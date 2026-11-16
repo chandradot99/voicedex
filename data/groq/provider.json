@@ -1,0 +1,22 @@
+{
+  "api_urls": [
+    "https://api.groq.com/openai/v1/models"
+  ],
+  "docs_urls": [
+    "https://console.groq.com/docs/text-to-speech/orpheus.md",
+    "https://console.groq.com/docs/speech-to-text.md",
+    "https://console.groq.com/docs/deprecations.md"
+  ],
+  "id": "groq",
+  "last_synced": "2026-11-16",
+  "name": "Groq",
+  "source": "mixed",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.groq.com/openai/v1/models"
+    ]
+  }
+}

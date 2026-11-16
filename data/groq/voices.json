@@ -1,0 +1,242 @@
+[
+  {
+    "accent": "saudi",
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-arabic-saudi"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "abdullah",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialect": "Saudi",
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": false
+    },
+    "name": "Abdullah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "saudi",
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-arabic-saudi"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aisha",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialect": "Saudi",
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": false
+    },
+    "name": "Aisha",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-v1-english"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "austin",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": true
+    },
+    "name": "Austin",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-v1-english"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "autumn",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": true
+    },
+    "name": "Autumn",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-v1-english"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "daniel",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": true
+    },
+    "name": "Daniel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-v1-english"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "diana",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": true
+    },
+    "name": "Diana",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "saudi",
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-arabic-saudi"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fahad",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialect": "Saudi",
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": false
+    },
+    "name": "Fahad",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-v1-english"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "hannah",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": true
+    },
+    "name": "Hannah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "saudi",
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-arabic-saudi"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "lulwa",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialect": "Saudi",
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": false
+    },
+    "name": "Lulwa",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "saudi",
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-arabic-saudi"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "noura",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialect": "Saudi",
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": false
+    },
+    "name": "Noura",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "saudi",
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-arabic-saudi"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "sultan",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialect": "Saudi",
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": false
+    },
+    "name": "Sultan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "canopylabs/orpheus-v1-english"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "troy",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_family": "Orpheus",
+      "upstream": "Canopy Labs",
+      "vocal_directions": true
+    },
+    "name": "Troy",
+    "updated_at": "2026-11-16"
+  }
+]
