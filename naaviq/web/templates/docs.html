@@ -147,17 +147,18 @@
         .scalar-reference-intro-clients { display: none !important; }
         /* Server card hidden too: one fixed server; the base URL is in the quickstart and every example. */
         .scalar-reference-intro-server { display: none !important; }
-        /* Sidebar: group headings are plain bold headings (no teal, no pill); the current page gets one marker —
-           subtle fill + teal bar — with readable text; hover is a quiet fill. */
-        .t-doc__sidebar a.peer\\/button, aside a.peer\\/button { border-radius: 8px !important; padding: 7px 10px !important; }
-        .group\\/group-button > a.peer\\/button { color: #f2f4f7 !important; font-weight: 600 !important; background: transparent !important; }
-        .group\\/group-button > a.peer\\/button:hover { background: #11141a !important; }
-        a.peer\\/button:not([aria-current="page"]):hover { background: #11141a !important; color: #f2f4f7 !important; }
-        a.peer\\/button[aria-current="page"] {
-          background: #171b23 !important; color: #f2f4f7 !important; font-weight: 500 !important;
-          box-shadow: inset 2px 0 0 #5eead4 !important;
-        }
-        a.peer\\/button .sidebar-heading-type, a.peer\\/button [class*="sidebar-heading-type"] { opacity: 0.7; }
+        /* Sidebar, in the site's own pattern (top nav / tabs): active = rounded fill + white text, hover = a
+           quieter fill, no accent bars. Scalar draws the nesting line inside each link, so the fill is a layer
+           behind the text that starts right of that line for nested items instead of painting over it. */
+        a.peer\\/button { position: relative; isolation: isolate; border-radius: 8px !important; padding: 7px 10px !important; background: transparent !important; box-shadow: none !important; }
+        a.peer\\/button::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 8px; background: transparent; }
+        a.peer\\/button:has(.scalar-sidebar-indent-border)::before { left: 24px; }
+        a.peer\\/button:hover::before { background: #11141a; }
+        a.peer\\/button[aria-current="page"]::before { background: #171b23; }
+        a.peer\\/button:hover, a.peer\\/button[aria-current="page"] { color: #f2f4f7 !important; }
+        a.peer\\/button[aria-current="page"] { font-weight: 500 !important; }
+        .group\\/group-button > a.peer\\/button { color: #f2f4f7 !important; font-weight: 600 !important; }
+        a.peer\\/button .sidebar-heading-type { opacity: 0.7; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
         .scalar-client h3,
         .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
