@@ -1,0 +1,8 @@
+{
+  "description": "Filed for Chapter 7 bankruptcy in May 2026. lovo.ai returns HTTP 402 DEPLOYMENT_DISABLED, the docs redirect to /inactive and the Genny API no longer responds.",
+  "id": "lovoai",
+  "name": "Lovo AI",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://lovo.ai"
+}

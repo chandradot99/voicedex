@@ -95,7 +95,7 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) â
 - **Retired providers** (shut down, or no longer sold to new customers): set `retired=True` on the registry entry
   (sync skips it) and hand-write `data/<id>/provider.json` with `status: "deprecated"`, `retired_on` (if a date is
   published) and the reason + evidence in `description`. Never delete them â€” "is X still alive?" is a question the
-  catalog answers. Currently: humeai (2026-11-13), lmnt, resemble.
+  catalog answers. Currently: humeai (2026-11-13), lmnt, lovoai, resemble.
 - **provider.json editorial fields** (`website`, `description`, `regions`, `compliance` [soc2|hipaa|gdpr|iso27001|pci_dss], `links`) are hand-curated; sync never overwrites them.
 
 ## Adding a provider

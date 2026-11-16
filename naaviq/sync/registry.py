@@ -54,7 +54,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("fishaudio",         "Fish Audio",        "both", "naaviq.sync.fishaudio.FishAudioSyncer"),
     SyncerEntry("unrealspeech",      "Unreal Speech",     "tts",  "naaviq.sync.unrealspeech.UnrealSpeechSyncer"),
     SyncerEntry("smallestai",        "Smallest AI",       "both", "naaviq.sync.smallestai.SmallestAISyncer"),
-    SyncerEntry("lovoai",            "Lovo AI",           "tts",  "naaviq.sync.lovoai.LovoAISyncer"),
+    SyncerEntry("lovoai",            "Lovo AI",           "tts",  "naaviq.sync.lovoai.LovoAISyncer", retired=True),
     SyncerEntry("mistral",           "Mistral AI",        "both", "naaviq.sync.mistral.MistralSyncer"),
     SyncerEntry("wellsaid",          "WellSaid Labs",     "tts",  "naaviq.sync.wellsaid.WellSaidSyncer"),
     SyncerEntry("cambai",            "CAMB.ai",           "both", "naaviq.sync.cambai.CambAISyncer"),
