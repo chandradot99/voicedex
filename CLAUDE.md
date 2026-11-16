@@ -90,7 +90,8 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) �
 - **Pricing currency**: `price_usd` for USD. Providers that publish only another currency use `currency` (ISO 4217) +
   `price` (variants: `price`), never converted — e.g. Gladia EUR, Sarvam INR. The UI shows them as published and
   sorts only USD prices. Prices for API-synced providers come from a docs pass: write
-  `.sync-cache/<id>_pricing.json` and run `scripts/apply_pricing.py <id> --write` (a later sync never erases them).
+  `.sync-cache/<id>_docs.json` and run `scripts/apply_docs.py <id> --write` (a later sync never erases them). The same
+  file can carry `capabilities` (+ `capability_notes`) for providers whose API doesn't expose feature support.
 - **capabilities** — controlled vocab, enforced on write (`naaviq/catalog/schema.py`). STT: word_timestamps, speaker_diarization, punctuation, profanity_filter, custom_vocabulary, language_detection, translation, sentiment, pii_redaction, summarization, topic_detection. TTS: emotion, voice_cloning, voice_design, ssml, phoneme_input, prosody_control, style_control, multi_speaker. Voice: emotion, multilingual_native. Anything else → `meta`. Extending the vocab = edit schema.py, AI parser prompt, regenerate schema.
 - **Audio fields** (models): `sample_rates_hz`, `audio_formats` (lowercase) — TTS=output, STT=input; `max_text_chars` (TTS), `max_audio_seconds` (STT). Unknown = empty/null. Never guess numbers.
 - **pricing**: `{unit, price_usd, free_quota?, variants?, as_of, source_url, notes?}`; unit ∈ character|minute|second|word|token|request|hour. Omit unless an explicit number is published.

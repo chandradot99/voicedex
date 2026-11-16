@@ -389,3 +389,8 @@ html { scroll-padding-bottom: 88px; }            /* keep focused rows clear of t
   table.compare th, table.compare td { padding: 9px 10px; }
   .compare-tools { gap: 10px 16px; }
 }
+.feature-notes { margin: 1rem 0 0; font-size: 0.9rem; }
+.feature-notes > div { display: grid; grid-template-columns: 11rem 1fr; gap: 12px; padding: 5px 0; border-bottom: 1px dashed var(--rule); }
+.feature-notes dt { color: var(--muted); }
+.feature-notes dd { margin: 0; }
+@media (max-width: 600px) { .feature-notes > div { grid-template-columns: 1fr; gap: 0; } }

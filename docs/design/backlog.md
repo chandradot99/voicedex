@@ -12,7 +12,6 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 - **Amazon Polly** — needs an AWS account + IAM user with `polly:DescribeVoices` (deferred 2026-11-16: AWS sign-up issues).
 - **Speechmatics TTS** (preview): 4 voices, no model id, $0.011/1k chars — add as tts once it has a stable model id.
 - **Rime STT and "Prism" STS** — syncer is TTS-only.
-- **Deepgram Flux** (conversational STT) and **Deepgram capabilities** — not in `/v1/models`; needs a docs pass (Deepgram → mixed).
 - **ElevenLabs community voice library** (thousands of shared voices) — only premade voices today; consider a separate `community` category.
 - **AssemblyAI** dashboard-only voice catalog ("thousands") — only the 34 documented starter voices.
 - **provider.json editorial fields** (website, description, regions, compliance, links) — empty for every provider; fill from a verified research pass.
@@ -39,6 +38,8 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
   Gradium (credits; in meta), IBM TTS ("as low as"), Azure MAI-Voice/HD Flash/Omni, Deepgram Nova-1/medical/whisper sizes,
   Google usm/experimental/Chirp-HD TTS, MiniMax speech-01, Rime mist/mistv2, StepFun realtime preview (free until
   2026-11-23, then stepaudio-3-realtime $0.125/session-min). Re-check with the pricing spec periodically.
+
+- **Deepgram Flux** (conversational STT) not yet in the catalog; Deepgram features came from docs via apply_docs (2026-11-16).
 
 ## Product
 - Homepage + catalog UI, project rename, npm/PyPI packages, changelog/RSS of data changes, benchmarks, Pro tier.

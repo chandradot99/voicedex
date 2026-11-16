@@ -1,6 +1,17 @@
 [
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "conversationalai",
     "languages": [
@@ -9,6 +20,32 @@
     ],
     "meta": {
       "architecture": "base",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base); suppression Base only",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2021-11-10.1"
@@ -33,6 +70,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "enhanced-automotive",
     "languages": [
@@ -41,6 +89,32 @@
     ],
     "meta": {
       "architecture": "polaris",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "1983-02-23.4285"
@@ -65,6 +139,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "enhanced-drivethru",
     "languages": [
@@ -73,6 +158,32 @@
     ],
     "meta": {
       "architecture": "polaris",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "1983-05-08.23433"
@@ -97,6 +208,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "enhanced-finance",
     "languages": [
@@ -105,6 +227,32 @@
     ],
     "meta": {
       "architecture": "polaris",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-07-27.30495"
@@ -129,6 +277,18 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "enhanced-general",
     "languages": [
@@ -156,6 +316,34 @@
     ],
     "meta": {
       "architecture": "polaris",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "language_detection": "detect_language: pre-recorded only; may fall back to next-highest model (Nova-3 > Nova-2 > Nova-1 > Enhanced > Base) if detected language unsupported",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/docs/language-detection"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2023-11-14.0"
@@ -180,6 +368,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "enhanced-meeting",
     "languages": [
@@ -189,6 +388,32 @@
     ],
     "meta": {
       "architecture": "polaris",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-06-27.0"
@@ -213,6 +438,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "enhanced-phonecall",
     "languages": [
@@ -221,6 +457,32 @@
     ],
     "meta": {
       "architecture": "polaris",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-05-12.1"
@@ -245,6 +507,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "finance",
     "languages": [
@@ -253,6 +526,32 @@
     ],
     "meta": {
       "architecture": "base",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base); suppression Base only",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2021-02-26.2"
@@ -277,6 +576,18 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "general",
     "languages": [
@@ -316,6 +627,34 @@
     ],
     "meta": {
       "architecture": "base",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base); suppression Base only",
+        "language_detection": "detect_language: pre-recorded only; may fall back to next-highest model (Nova-3 > Nova-2 > Nova-1 > Enhanced > Base) if detected language unsupported",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/docs/language-detection"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2024-01-26.8851"
@@ -340,6 +679,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "general-polaris",
     "languages": [
@@ -348,6 +698,32 @@
     ],
     "meta": {
       "architecture": "polaris",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-04-26.1"
@@ -365,6 +741,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "meeting",
     "languages": [
@@ -374,6 +761,32 @@
     ],
     "meta": {
       "architecture": "base",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base); suppression Base only",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-06-27.0"
@@ -398,6 +811,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-atc",
     "languages": [
@@ -410,6 +834,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2024-09-13.26200"
@@ -434,6 +884,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-automotive",
     "languages": [
@@ -446,6 +907,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-06.30267"
@@ -470,6 +957,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-conversationalai",
     "languages": [
@@ -482,6 +980,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-06.29268"
@@ -506,6 +1030,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-drivethru",
     "languages": [
@@ -518,6 +1053,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-07.32521"
@@ -542,6 +1103,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-ea",
     "languages": [
@@ -550,6 +1122,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2023-09-18.22988"
@@ -574,6 +1172,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-finance",
     "languages": [
@@ -586,6 +1195,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-04.22235"
@@ -610,6 +1245,18 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-general",
     "languages": [
@@ -687,6 +1334,34 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "language_detection": "detect_language: pre-recorded only; may fall back to next-highest model (Nova-3 > Nova-2 > Nova-1 > Enhanced > Base) if detected language unsupported",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/docs/language-detection"
+      ],
       "formatted_output": true,
       "multilingual": true,
       "version": "2025-03-31.17829"
@@ -711,6 +1386,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-medical",
     "languages": [
@@ -728,6 +1414,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-06-11.4692"
@@ -752,6 +1464,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-meeting",
     "languages": [
@@ -764,6 +1487,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-07.29982"
@@ -788,6 +1537,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-phonecall",
     "languages": [
@@ -800,6 +1560,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-07.8919"
@@ -824,6 +1610,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-video",
     "languages": [
@@ -836,6 +1633,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-06.2916"
@@ -860,6 +1683,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-2-voicemail",
     "languages": [
@@ -872,6 +1706,32 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2024-02-06.32189"
@@ -896,6 +1756,18 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-3-general",
     "is_default": true,
@@ -1088,6 +1960,34 @@
     ],
     "meta": {
       "architecture": "nova-3",
+      "capability_notes": {
+        "custom_vocabulary": "keyterm prompting (Nova-3; up to 500 tokens; mid-stream updates via Configure)",
+        "language_detection": "detect_language: pre-recorded only; may fall back to next-highest model (Nova-3 > Nova-2 > Nova-1 > Enhanced > Base) if detected language unsupported",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keyterm",
+        "https://developers.deepgram.com/docs/language-detection"
+      ],
       "formatted_output": false,
       "multilingual": true,
       "version": "2026-11-13.32878"
@@ -1149,6 +2049,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-3-medical",
     "languages": [
@@ -1174,6 +2085,32 @@
     ],
     "meta": {
       "architecture": "nova-3",
+      "capability_notes": {
+        "custom_vocabulary": "keyterm prompting (Nova-3; up to 500 tokens; mid-stream updates via Configure)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keyterm"
+      ],
       "formatted_output": false,
       "multilingual": true,
       "version": "2026-10-06.34541"
@@ -1191,6 +2128,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-3-pharma",
     "languages": [
@@ -1205,6 +2153,32 @@
     ],
     "meta": {
       "architecture": "nova-3",
+      "capability_notes": {
+        "custom_vocabulary": "keyterm prompting (Nova-3; up to 500 tokens; mid-stream updates via Configure)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keyterm"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2026-06-05.22845"
@@ -1222,6 +2196,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-drivethru",
     "languages": [
@@ -1230,6 +2215,32 @@
     ],
     "meta": {
       "architecture": "nova",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "1983-05-08.6551"
@@ -1247,6 +2258,18 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-general",
     "languages": [
@@ -1263,6 +2286,34 @@
     ],
     "meta": {
       "architecture": "nova-2",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "language_detection": "detect_language: pre-recorded only; may fall back to next-highest model (Nova-3 > Nova-2 > Nova-1 > Enhanced > Base) if detected language unsupported",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/docs/language-detection"
+      ],
       "formatted_output": true,
       "multilingual": false,
       "version": "2023-10-19.24950"
@@ -1280,6 +2331,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-medical",
     "languages": [
@@ -1288,6 +2350,32 @@
     ],
     "meta": {
       "architecture": "nova",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2023-07-13.2818"
@@ -1305,6 +2393,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-phonecall",
     "languages": [
@@ -1317,6 +2416,32 @@
     ],
     "meta": {
       "architecture": "nova",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2023-03-13.31000"
@@ -1334,6 +2459,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "nova-voicemail",
     "languages": [
@@ -1342,6 +2478,32 @@
     ],
     "meta": {
       "architecture": "nova",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base)",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "1983-05-07.12030"
@@ -1359,6 +2521,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "phonecall",
     "languages": [
@@ -1371,6 +2544,32 @@
     ],
     "meta": {
       "architecture": "base",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base); suppression Base only",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2024-01-26.33607"
@@ -1483,6 +2682,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "video",
     "languages": [
@@ -1491,6 +2701,32 @@
     ],
     "meta": {
       "architecture": "base",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base); suppression Base only",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2021-11-09.1"
@@ -1515,6 +2751,17 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "voicemail",
     "languages": [
@@ -1523,6 +2770,32 @@
     ],
     "meta": {
       "architecture": "base",
+      "capability_notes": {
+        "custom_vocabulary": "legacy keywords with intensifiers (Nova-2/Nova-1/Enhanced/Base); suppression Base only",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "profanity_filter": "specific languages only",
+        "punctuation": "punctuate / smart_format; all available languages",
+        "sentiment": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "speaker_diarization": "pre-recorded (diarizer v2) and streaming (v1 only)",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "every transcript returns per-word start/end times"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/docs/punctuation",
+        "https://developers.deepgram.com/docs/smart-format",
+        "https://developers.deepgram.com/docs/profanity-filter",
+        "https://developers.deepgram.com/docs/sentiment-analysis",
+        "https://developers.deepgram.com/docs/keywords"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2021-08-11.1"
@@ -1547,6 +2820,14 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "whisper-base",
     "languages": [
@@ -1666,6 +2947,25 @@
     ],
     "meta": {
       "architecture": "whisper",
+      "capability_notes": {
+        "language_detection": "detect_language=true; language_confidence not returned for Whisper",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "punctuation": "via smart_format (listed as supported for Whisper Cloud); Whisper Cloud is pre-recorded only",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "Whisper Cloud returns word timings (pre-recorded only)"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
+        "https://developers.deepgram.com/docs/diarization"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-09-21.8"
@@ -1683,6 +2983,14 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "whisper-large",
     "languages": [
@@ -1802,6 +3110,25 @@
     ],
     "meta": {
       "architecture": "whisper",
+      "capability_notes": {
+        "language_detection": "detect_language=true; language_confidence not returned for Whisper",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "punctuation": "via smart_format (listed as supported for Whisper Cloud); Whisper Cloud is pre-recorded only",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "Whisper Cloud returns word timings (pre-recorded only)"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
+        "https://developers.deepgram.com/docs/diarization"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-12-08.0"
@@ -1833,6 +3160,14 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "whisper-medium",
     "languages": [
@@ -1952,6 +3287,25 @@
     ],
     "meta": {
       "architecture": "whisper",
+      "capability_notes": {
+        "language_detection": "detect_language=true; language_confidence not returned for Whisper",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "punctuation": "via smart_format (listed as supported for Whisper Cloud); Whisper Cloud is pre-recorded only",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "Whisper Cloud returns word timings (pre-recorded only)"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
+        "https://developers.deepgram.com/docs/diarization"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-09-21.5"
@@ -1969,6 +3323,14 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "whisper-small",
     "languages": [
@@ -2088,6 +3450,25 @@
     ],
     "meta": {
       "architecture": "whisper",
+      "capability_notes": {
+        "language_detection": "detect_language=true; language_confidence not returned for Whisper",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "punctuation": "via smart_format (listed as supported for Whisper Cloud); Whisper Cloud is pre-recorded only",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "Whisper Cloud returns word timings (pre-recorded only)"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
+        "https://developers.deepgram.com/docs/diarization"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-09-21.3"
@@ -2105,6 +3486,14 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "summarization",
+      "topic_detection",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "whisper-tiny",
     "languages": [
@@ -2224,6 +3613,25 @@
     ],
     "meta": {
       "architecture": "whisper",
+      "capability_notes": {
+        "language_detection": "detect_language=true; language_confidence not returned for Whisper",
+        "pii_redaction": "redact=numbers/aggressive_numbers in all pre-recorded languages; entity redaction (pci/pii/phi) English only; Nova streaming number redaction limited to 12 languages",
+        "punctuation": "via smart_format (listed as supported for Whisper Cloud); Whisper Cloud is pre-recorded only",
+        "summarization": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "topic_detection": "Audio Intelligence: pre-recorded only (not streaming), English only",
+        "word_timestamps": "Whisper Cloud returns word timings (pre-recorded only)"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/stt-pre-recorded-feature-overview",
+        "https://developers.deepgram.com/docs/stt-streaming-feature-overview",
+        "https://developers.deepgram.com/docs/stt-intelligence-feature-overview",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/redaction",
+        "https://developers.deepgram.com/docs/summarization",
+        "https://developers.deepgram.com/docs/topic-detection",
+        "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
+        "https://developers.deepgram.com/docs/diarization"
+      ],
       "formatted_output": false,
       "multilingual": false,
       "version": "2022-09-21.1"
@@ -2274,6 +3682,10 @@
     "updated_at": "2026-11-16"
   },
   {
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control"
+    ],
     "first_seen": "2026-11-16",
     "id": "aura-2",
     "is_default": true,
@@ -2300,6 +3712,18 @@
       "nl",
       "nl-NL"
     ],
+    "meta": {
+      "capability_notes": {
+        "phoneme_input": "IPA pronunciation overrides; English and Spanish; GA on Aura-2",
+        "prosody_control": "speed 0.7-1.5 only (no pause control); English and Spanish"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/tts-voice-controls",
+        "https://developers.deepgram.com/docs/tts-expressivity",
+        "https://developers.deepgram.com/docs/tts-models-languages-overview",
+        "https://developers.deepgram.com/docs/tts-feature-overview"
+      ]
+    },
     "name": "Aura 2",
     "pricing": {
       "as_of": "2026-11-16",

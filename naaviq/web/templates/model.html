@@ -55,7 +55,11 @@
 
     <h2>Features</h2>
     {% if m.capabilities %}
+    {% set notes = m.meta.get('capability_notes') or {} %}
     <ul class="feature-list">{% for c in m.capabilities %}<li><a href="/models?type={{ m.type }}&capability={{ c }}">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</a></li>{% endfor %}</ul>
+    {% if notes %}
+    <dl class="feature-notes">{% for c in m.capabilities if notes.get(c) %}<div><dt>{{ FEATURE_LABELS.get(c, c) }}</dt><dd>{{ notes[c] }}</dd></div>{% endfor %}</dl>
+    {% endif %}
     {% else %}<p class="muted">No features listed in the provider's data. That doesn't mean they're missing.</p>{% endif %}
 
     {% if voice_count %}
