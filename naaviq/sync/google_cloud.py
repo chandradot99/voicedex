@@ -8,12 +8,16 @@ Source: mixed
 
 Auth: X-goog-api-key header (API key restricted to Text-to-Speech API).
 
-Google Cloud's "model" concept for TTS is the voice tier (Standard, Wavenet,
-Neural2, Studio, Chirp-HD, Chirp3-HD). Tiers are encoded in each voice name
-but not exposed as structured data — we AI-parse the docs page to get them
-with display names and metadata. For voices whose tier isn't in the parsed
-list (e.g., legacy Journey, Polyglot, Casual, News), we auto-inject the tier
-as a minimal SyncModel so no voice ends up orphaned in the admin diff.
+Two kinds of TTS "model":
+  - Voice tiers (Standard, Wavenet, Neural2, Studio, Chirp-HD, Chirp3-HD, …), encoded in
+    locale-prefixed voice names ("en-US-Chirp3-HD-Achernar"). Docs give tier details; any
+    tier seen in voice names but missing from the docs is injected as a minimal model so no
+    voice is orphaned.
+  - Gemini TTS models (gemini-*-tts), selected with a `model` parameter and used with the
+    bare-named voices ("Achernar", "Kore", …) the API also returns.
+
+STT (Speech-to-Text v2) has a Locations API with per-region model data, but it rejects API
+keys (OAuth / service account only), so STT models come from the docs for now.
 
 Voices fetch, TTS model parse, and STT model parse run concurrently.
 """
@@ -33,9 +37,16 @@ _VOICES_URL = "https://texttospeech.googleapis.com/v1/voices"
 
 _TTS_MODELS_DOCS_URLS = [
     "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+    "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+    "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+    "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+    "https://cloud.google.com/text-to-speech/pricing",
 ]
 _STT_MODELS_DOCS_URLS = [
     "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+    "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+    "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+    "https://cloud.google.com/speech-to-text/pricing",
 ]
 
 _GENDER_MAP = {
@@ -46,33 +57,18 @@ _GENDER_MAP = {
 }
 
 _TTS_MODELS_GUIDANCE = (
-    "Google Cloud TTS organizes voices into tiers (Standard, Wavenet, Neural2, Studio, "
-    "Chirp-HD, Chirp3-HD). Return EACH tier as a separate SyncModel. "
-    "CRITICAL: the model_id MUST match how the tier appears in voice names exactly — "
-    "use 'Wavenet' (not 'WaveNet' or 'wavenet'), 'Neural2' (not 'Neural 2'), "
-    "'Chirp-HD' and 'Chirp3-HD' (hyphenated, no spaces). Case-exact. "
-    "Mark the newest GA tier as is_default=true (currently 'Chirp3-HD'); only ONE model "
-    "may have is_default=true. "
-    "Set streaming=true for tiers documented as supporting real-time streaming, else false. "
-    "If the docs don't enumerate specific languages for a tier, use ['*']. "
-    "Populate `meta` with these keys: "
-    "  is_ga          — true for GA tiers, false for experimental/preview"
-    "  ssml_support   — true if the tier accepts SSML input, false otherwise"
-    "  tier_class     — 'standard' for Standard, 'premium' for WaveNet/Neural2/Studio/Chirp variants"
-    "  multispeaker   — true only for the Studio multispeaker variant"
+    "Return (1) every voice tier as a model whose model_id is the exact, case-sensitive tier "
+    "segment used in voice names (e.g. the part between locale and voice letter/persona), and "
+    "(2) every Gemini TTS model by its exact `model_name`. Exactly one is_default: the model "
+    "Google recommends for new applications. ssml capability where the docs say SSML is "
+    "supported; per-character (or per-token) pricing as published."
 )
 
 _STT_MODELS_GUIDANCE = (
-    "Google Cloud Speech-to-Text v2 exposes a small set of transcription models. Return ALL "
-    "models listed on the docs page using their exact model_id strings (e.g., 'chirp_3', "
-    "'chirp_2', 'telephony'). Mark the latest/recommended one as is_default=true (currently "
-    "'chirp_3'); only ONE model may have is_default=true. "
-    "Set streaming=true for models that support real-time streaming. "
-    "If the docs say the model is multilingual without enumerating languages, use ['*']. "
-    "Populate `meta` with capability flags mentioned in the docs: "
-    "  diarization          — true if the model supports speaker diarization"
-    "  auto_language_detect — true if the model can auto-detect the spoken language"
-    "  specialization       — 'telephony' for 8kHz phone audio models, null for general models"
+    "Return every Speech-to-Text v2 transcription model by its exact `model` string, including "
+    "deprecated ones that still work (with eol_date). Exactly one is_default: the recommended "
+    "model. Languages per model from the supported-languages table; regions from per-model "
+    "region availability; per-minute pricing."
 )
 
 
@@ -104,7 +100,8 @@ class GoogleCloudSyncer(ProviderSyncer):
             ),
         )
 
-        tts_voices = self._parse_voices(voices_data)
+        gemini_ids = [m.model_id for m in tts_models if m.model_id.startswith("gemini")]
+        tts_voices = self._parse_voices(voices_data, gemini_ids)
         tts_models = self._inject_orphan_tiers(tts_models, tts_voices)
 
         from_cache = any(n.get("source") == "cache" for n in [tts_notes, stt_notes])
@@ -146,31 +143,37 @@ class GoogleCloudSyncer(ProviderSyncer):
             resp.raise_for_status()
             return resp.json().get("voices", [])
 
-    def _parse_voices(self, items: list[dict]) -> list[SyncVoice]:
+    def _parse_voices(self, items: list[dict], gemini_model_ids: list[str]) -> list[SyncVoice]:
         voices: list[SyncVoice] = []
         for v in items:
             name = v.get("name")
             if not name:
                 continue
-            # Google's /v1/voices response includes 30 bare-character-name entries
-            # ("Achernar", "Puck", …) that are verified 1:1 duplicates of the
-            # canonical `en-US-Chirp3-HD-*` voices. Skip them — keeping both would
-            # double-list every en-US Chirp3-HD voice in the registry.
+            languages = normalize_languages(v.get("languageCodes") or [])
             tier = _extract_tier(name)
             if tier is None:
-                continue
-            languages = normalize_languages(v.get("languageCodes") or [])
+                # Bare persona names ("Kore", "Puck", …) are the Gemini TTS voices.
+                if not gemini_model_ids:
+                    continue
+                compatible, display, persona = list(gemini_model_ids), name, name
+            else:
+                compatible = [tier]
+                suffix = name.split("-")[-1]
+                persona = suffix if len(suffix) > 1 else None
+                display = suffix if persona else f"{tier} {suffix}"
             voices.append(SyncVoice(
                 voice_id=name,
-                display_name=name,  # Google doesn't publish a separate display name
+                display_name=display,
                 gender=_GENDER_MAP.get(v.get("ssmlGender") or ""),
                 category="premade",
                 languages=languages,
                 accent=accent_from_languages(languages),
-                compatible_models=[tier],
-                meta={
+                compatible_models=compatible,
+                meta={k: val for k, val in {
                     "sample_rate_hz": v.get("naturalSampleRateHertz"),
-                },
+                    "tier": tier,
+                    "persona": persona,
+                }.items() if val},
             ))
         return voices
 

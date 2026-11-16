@@ -1,0 +1,2855 @@
+[
+  {
+    "batch": true,
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "Original Universal Speech Model (USM) based multilingual model.",
+    "first_seen": "2026-11-16",
+    "id": "chirp",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "af-ZA",
+      "am-ET",
+      "ar-EG",
+      "as-IN",
+      "ast-ES",
+      "az-AZ",
+      "be-BY",
+      "bg-BG",
+      "bs-BA",
+      "ca-ES",
+      "ceb-PH",
+      "ckb-IQ",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
+      "cs-CZ",
+      "cy-GB",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
+      "hi-IN",
+      "hr-HR",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "is-IS",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kam-KE",
+      "kea-CV",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "ky-KG",
+      "lb-LU",
+      "ln-CD",
+      "lo-LA",
+      "lt-LT",
+      "luo-KE",
+      "lv-LV",
+      "mi-NZ",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "mt-MT",
+      "my-MM",
+      "ne-NP",
+      "nl-NL",
+      "no-NO",
+      "nso-ZA",
+      "ny-MW",
+      "oc-FR",
+      "pa-Guru-IN",
+      "pl-PL",
+      "ps-AF",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "sd-IN",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sn-ZW",
+      "so-SO",
+      "sq-AL",
+      "sr-RS",
+      "su-ID",
+      "sv-SE",
+      "sw",
+      "ta-IN",
+      "te-IN",
+      "tg-TJ",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ur-PK",
+      "uz-UZ",
+      "vi-VN",
+      "wo-SN",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zu-ZA"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "asia-southeast1",
+        "europe-west4",
+        "us-central1"
+      ],
+      "pricing_note": "Explicitly listed as a Standard model (Speech-to-Text V2 only)",
+      "streaming_support": "not documented per model in current docs (set false)"
+    },
+    "name": "Chirp",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu",
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Universal Speech Model (USM) generation offering multilingual transcription and speech translation for streaming and batch.",
+    "first_seen": "2026-11-16",
+    "id": "chirp_2",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "af-ZA",
+      "am-ET",
+      "ar-EG",
+      "as-IN",
+      "ast-ES",
+      "az-AZ",
+      "be-BY",
+      "bg-BG",
+      "bn-BD",
+      "bn-IN",
+      "bs-BA",
+      "ca-ES",
+      "ceb-PH",
+      "ckb-IQ",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
+      "cs-CZ",
+      "cy-GB",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-419",
+      "es-ES",
+      "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "ff-SN",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "ga-IE",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
+      "hi-IN",
+      "hr-HR",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "ig-NG",
+      "is-IS",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kam-KE",
+      "kea-CV",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "ky-KG",
+      "lb-LU",
+      "lg-UG",
+      "ln-CD",
+      "lo-LA",
+      "lt-LT",
+      "luo-KE",
+      "lv-LV",
+      "mi-NZ",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "mt-MT",
+      "my-MM",
+      "ne-NP",
+      "nl-NL",
+      "no-NO",
+      "nso-ZA",
+      "ny-MW",
+      "oc-FR",
+      "om-ET",
+      "or-IN",
+      "pa-Guru-IN",
+      "pl-PL",
+      "ps-AF",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "rup-BG",
+      "sd-IN",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sn-ZW",
+      "so-SO",
+      "sq-AL",
+      "sr-RS",
+      "su-ID",
+      "sv-SE",
+      "sw",
+      "sw-KE",
+      "ta-IN",
+      "te-IN",
+      "tg-TJ",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "umb-AO",
+      "ur-PK",
+      "uz-UZ",
+      "vi-VN",
+      "wo-SN",
+      "xh-ZA",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zu-ZA"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "denoiser": true,
+      "diarization": "not supported",
+      "language_agnostic": true,
+      "language_detection": "not supported (per Chirp 2 docs)",
+      "locations": [
+        "asia-southeast1",
+        "europe-west4",
+        "us-central1"
+      ],
+      "regional_launch_stage": "Private GA",
+      "streaming_languages": [
+        "cmn-Hans-CN",
+        "cmn-Hant-TW",
+        "yue-Hant-HK",
+        "en-AU",
+        "en-IN",
+        "en-GB",
+        "en-US",
+        "fr-CA",
+        "fr-FR",
+        "de-DE",
+        "it-IT",
+        "ja-JP",
+        "ko-KR",
+        "pt-BR",
+        "es-ES",
+        "es-US"
+      ]
+    },
+    "name": "Chirp 2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu",
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Latest-generation multilingual generative ASR model with improved accuracy and speed, speaker diarization and automatic language detection.",
+    "first_seen": "2026-11-16",
+    "id": "chirp_3",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "is_default": true,
+    "languages": [
+      "af-ZA",
+      "am-ET",
+      "ar-AE",
+      "ar-BH",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IL",
+      "ar-IQ",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-MR",
+      "ar-OM",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-SY",
+      "ar-TN",
+      "ar-XA",
+      "ar-YE",
+      "as-IN",
+      "ast-ES",
+      "az-AZ",
+      "bg-BG",
+      "bn-BD",
+      "bn-IN",
+      "ca-ES",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
+      "cs-CZ",
+      "cy-GB",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-PH",
+      "en-US",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
+      "hi-IN",
+      "hr-HR",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "is-IS",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "ky-KG",
+      "lb-LU",
+      "lo-LA",
+      "lt-LT",
+      "lv-LV",
+      "mi-NZ",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "mt-MT",
+      "my-MM",
+      "ne-NP",
+      "nl-NL",
+      "no-NO",
+      "nso-ZA",
+      "or-IN",
+      "pa-Guru-IN",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "sk-SK",
+      "sl-SI",
+      "sq-AL",
+      "sr-RS",
+      "sv-SE",
+      "sw",
+      "sw-KE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ur-PK",
+      "uz-UZ",
+      "vi-VN",
+      "wo-SN",
+      "xh-ZA",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zu-ZA"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "adaptation_max_phrases": 1000,
+      "api_version": "v2",
+      "custom_prompt": "Preview",
+      "denoiser": true,
+      "diarization": "BatchRecognize/Recognize only, 14 languages",
+      "endpointing_sensitivity": [
+        "STANDARD",
+        "SHORT",
+        "SUPERSHORT"
+      ],
+      "language_agnostic": "language_codes=['auto']",
+      "locations": [
+        "eu",
+        "us"
+      ],
+      "max_audio_notes": "BatchRecognize 1 min to 1 hour (up to 20 min with word-level timestamps)",
+      "preview_regions": [
+        "asia-south1",
+        "europe-west2",
+        "europe-west3",
+        "northamerica-northeast1"
+      ],
+      "word_level_timestamps": "not supported"
+    },
+    "name": "Chirp 3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "profanity_filter"
+    ],
+    "description": "Chirp model fine-tuned for phone-call audio typically recorded at 8 kHz.",
+    "first_seen": "2026-11-16",
+    "id": "chirp_telephony",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fr-CA",
+      "fr-FR",
+      "it-IT",
+      "pt-BR"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "asia-southeast1",
+        "europe-west4",
+        "us-central1"
+      ],
+      "specialization": "telephony",
+      "streaming_support": "not documented per model in current docs (set false)",
+      "typical_sample_rate_hz": 8000
+    },
+    "name": "Chirp Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu",
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "General model for long-form content such as media and spontaneous conversation.",
+    "first_seen": "2026-11-16",
+    "id": "long",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "ar-AE",
+      "ar-BH",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IL",
+      "ar-IQ",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-MR",
+      "ar-OM",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-TN",
+      "ar-YE",
+      "bg-BG",
+      "bn-BD",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fi-FI",
+      "fr-CA",
+      "fr-FR",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "mk-MK",
+      "ml-IN",
+      "mr-IN",
+      "nl-NL",
+      "no-NO",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "rw-RW",
+      "ss-Latn-ZA",
+      "st-ZA",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tn-Latn-ZA",
+      "tr-TR",
+      "ts-ZA",
+      "uk-UA",
+      "ve-ZA",
+      "vi-VN",
+      "xh-ZA"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "eu",
+        "global",
+        "us"
+      ],
+      "streaming_support": "not documented per model in current docs (set false)"
+    },
+    "name": "Long",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Model for conversations between a medical provider and a patient.",
+    "first_seen": "2026-11-16",
+    "id": "medical_conversation",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "eu",
+        "global",
+        "us"
+      ],
+      "streaming_support": "not documented per model in current docs (set false)"
+    },
+    "name": "Medical Conversation",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Medical models (medical_conversation, medical_dictation): US$0.078/min after 60 free minutes/month.",
+      "price_usd": 0.078,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Model for notes dictated by a medical professional.",
+    "first_seen": "2026-11-16",
+    "id": "medical_dictation",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "eu",
+        "global",
+        "us"
+      ],
+      "streaming_support": "not documented per model in current docs (set false)"
+    },
+    "name": "Medical Dictation",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Medical models (medical_conversation, medical_dictation): US$0.078/min after 60 free minutes/month.",
+      "price_usd": 0.078,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "General model for short utterances such as commands.",
+    "first_seen": "2026-11-16",
+    "id": "short",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "ar-AE",
+      "ar-BH",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IL",
+      "ar-IQ",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-MR",
+      "ar-OM",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-TN",
+      "ar-YE",
+      "bg-BG",
+      "bn-BD",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fi-FI",
+      "fr-CA",
+      "fr-FR",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "mk-MK",
+      "ml-IN",
+      "mr-IN",
+      "nl-NL",
+      "no-NO",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "rw-RW",
+      "ss-Latn-ZA",
+      "st-ZA",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tn-Latn-ZA",
+      "tr-TR",
+      "ts-ZA",
+      "uk-UA",
+      "ve-ZA",
+      "vi-VN",
+      "xh-ZA"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "eu",
+        "global",
+        "us"
+      ],
+      "streaming_support": "not documented per model in current docs (set false)"
+    },
+    "name": "Short",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "Model for audio originating from phone calls, typically recorded at 8 kHz; suited to customer service, teleconferencing and kiosks.",
+    "first_seen": "2026-11-16",
+    "id": "telephony",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-HK",
+      "en-IE",
+      "en-IN",
+      "en-NZ",
+      "en-PK",
+      "en-SG",
+      "en-US",
+      "es-AR",
+      "es-BO",
+      "es-CL",
+      "es-CO",
+      "es-CR",
+      "es-DO",
+      "es-EC",
+      "es-ES",
+      "es-GT",
+      "es-HN",
+      "es-MX",
+      "es-NI",
+      "es-PA",
+      "es-PE",
+      "es-PR",
+      "es-SV",
+      "es-US",
+      "es-UY",
+      "es-VE",
+      "fr-BE",
+      "fr-CA",
+      "fr-CH",
+      "fr-FR",
+      "hi-IN",
+      "it-CH",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "nl-BE",
+      "nl-NL",
+      "pt-BR",
+      "pt-PT"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "eu",
+        "global",
+        "us"
+      ],
+      "specialization": "telephony",
+      "streaming_support": "not documented per model in current docs (set false)",
+      "typical_sample_rate_hz": 8000
+    },
+    "name": "Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "Telephony model variant for short or single-word phone-call utterances.",
+    "first_seen": "2026-11-16",
+    "id": "telephony_short",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-HK",
+      "en-IE",
+      "en-IN",
+      "en-NZ",
+      "en-PK",
+      "en-SG",
+      "en-US",
+      "es-AR",
+      "es-BO",
+      "es-CL",
+      "es-CO",
+      "es-CR",
+      "es-DO",
+      "es-EC",
+      "es-ES",
+      "es-GT",
+      "es-HN",
+      "es-MX",
+      "es-NI",
+      "es-PA",
+      "es-PE",
+      "es-PR",
+      "es-SV",
+      "es-US",
+      "es-UY",
+      "es-VE",
+      "fr-BE",
+      "fr-CA",
+      "fr-CH",
+      "fr-FR",
+      "hi-IN",
+      "it-CH",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "nl-BE",
+      "nl-NL",
+      "pt-BR",
+      "pt-PT"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api_version": "v2",
+      "locations": [
+        "asia-south1",
+        "eu",
+        "global",
+        "us"
+      ],
+      "specialization": "telephony",
+      "streaming_support": "not documented per model in current docs (set false)",
+      "typical_sample_rate_hz": 8000
+    },
+    "name": "Telephony Short",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Speech-to-Text V2 'Standard' recognition rate (first 500k min/month), billed per second. The V2 pricing table has a single Standard category; per-model mapping is not itemized except chirp.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu",
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Casual-style voices announced in preview.",
+    "first_seen": "2026-11-16",
+    "id": "Casual",
+    "languages": [
+      "en-US"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "notes": "Release notes (2024-02-26): 'Casual voices are now in preview.' No tier documentation or pricing entry."
+    },
+    "name": "Casual",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "HD voice tier formerly branded Journey voices.",
+    "first_seen": "2026-11-16",
+    "id": "Chirp-HD",
+    "languages": [
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fr-CA",
+      "fr-FR",
+      "it-IT"
+    ],
+    "meta": {
+      "formerly": "Journey",
+      "notes": "Rebranded from Journey voices (2025-02-10). Current docs state streaming synthesis is only compatible with Chirp 3: HD voices. Pricing not listed on the pricing page.",
+      "tier_class": "premium"
+    },
+    "name": "Chirp HD",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Google's latest-generation generative voice tier (30 speakers) built for conversational agents, with real-time bidirectional streaming.",
+    "first_seen": "2026-11-16",
+    "id": "Chirp3-HD",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "ar-XA",
+      "bn-IN",
+      "bg-BG",
+      "yue-HK",
+      "hr-HR",
+      "cs-CZ",
+      "da-DK",
+      "nl-BE",
+      "nl-NL",
+      "en-AU",
+      "en-IN",
+      "en-GB",
+      "en-US",
+      "et-EE",
+      "fi-FI",
+      "fr-CA",
+      "fr-FR",
+      "de-DE",
+      "el-GR",
+      "gu-IN",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "kn-IN",
+      "ko-KR",
+      "lv-LV",
+      "lt-LT",
+      "ml-IN",
+      "zh-CN",
+      "mr-IN",
+      "nb-NO",
+      "pl-PL",
+      "pt-BR",
+      "pa-IN",
+      "ro-RO",
+      "ru-RU",
+      "sr-RS",
+      "sk-SK",
+      "sl-SI",
+      "es-ES",
+      "es-US",
+      "sw-KE",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ur-IN",
+      "vi-VN"
+    ],
+    "meta": {
+      "audio_encodings": {
+        "batch": [
+          "LINEAR16",
+          "ALAW",
+          "MULAW",
+          "MP3",
+          "OGG_OPUS",
+          "PCM"
+        ],
+        "default": "LINEAR16",
+        "streaming": [
+          "ALAW",
+          "MULAW",
+          "OGG_OPUS",
+          "PCM"
+        ]
+      },
+      "preview_languages": [
+        "pa-IN",
+        "yue-HK"
+      ],
+      "regional_endpoints": [
+        "global",
+        "us",
+        "eu",
+        "asia-southeast1",
+        "europe-west2",
+        "asia-northeast1"
+      ],
+      "ssml_support": "Preview; subset of tags (<speak>, <say-as>, <p>, <s>, <phoneme>, <sub>); synchronous requests only, not streaming",
+      "streaming_transport": "gRPC bidirectional StreamingSynthesize",
+      "tier_class": "premium",
+      "voice_cloning": "via Chirp 3: Instant custom voice (separate SKU)",
+      "voice_controls": "pace (speaking_rate 0.25-2.0), pause tags via markup input, custom pronunciations (IPA/X-SAMPA) — Preview"
+    },
+    "name": "Chirp 3: HD",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "US$30 per 1M characters after 1M free characters/month. Instant custom voice billed separately.",
+      "price_usd": 3e-05,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "instant_custom_voice",
+          "price_usd": 6e-05,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu",
+      "asia"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "General-purpose voice tier based on Custom Voice technology.",
+    "first_seen": "2026-11-16",
+    "id": "Neural2",
+    "languages": [
+      "da-DK",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "hi-IN",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "pt-BR",
+      "th-TH",
+      "vi-VN"
+    ],
+    "meta": {
+      "regional_endpoints": [
+        "global",
+        "us-central1"
+      ],
+      "tier_class": "premium"
+    },
+    "name": "Neural2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "US$16 per 1M characters after 1M free characters/month.",
+      "price_usd": 1.6e-05,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us"
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "News-reading voices listed as Premium voice type in the supported voices table.",
+    "first_seen": "2026-11-16",
+    "id": "News",
+    "languages": [
+      "en-AU",
+      "en-GB",
+      "en-US",
+      "es-US"
+    ],
+    "meta": {
+      "notes": "Listed in the supported-voices table and 2023 release notes; no tier-level documentation or pricing entry."
+    },
+    "name": "News",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Preview voice tier; supported only in multi-region endpoints.",
+    "first_seen": "2026-11-16",
+    "id": "Polyglot",
+    "languages": [
+      "de-DE",
+      "en-AU",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fr-FR"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "notes": "Release notes (2025-04-16): polyglot voices feature only supported in multi-regions."
+    },
+    "name": "Polyglot",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Polyglot (Preview) voices: US$16 per 1M characters after 1M free characters/month.",
+      "price_usd": 1.6e-05,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "Cost-efficient parametric voice tier.",
+    "first_seen": "2026-11-16",
+    "id": "Standard",
+    "languages": [
+      "af-ZA",
+      "ar-XA",
+      "bg-BG",
+      "bn-IN",
+      "ca-ES",
+      "zh-CN",
+      "zh-TW",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "et-EE",
+      "eu-ES",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "is-IS",
+      "it-IT",
+      "ja-JP",
+      "kn-IN",
+      "ko-KR",
+      "lt-LT",
+      "lv-LV",
+      "ml-IN",
+      "mr-IN",
+      "ms-MY",
+      "nb-NO",
+      "nl-BE",
+      "nl-NL",
+      "pa-IN",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "sk-SK",
+      "sr-RS",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ur-IN",
+      "vi-VN",
+      "yue-HK"
+    ],
+    "meta": {
+      "pricing_group": "legacy",
+      "tier_class": "standard"
+    },
+    "name": "Standard",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 4000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "US$4 per 1M characters after 4M free characters/month; listed under Legacy TTS models.",
+      "price_usd": 4e-06,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "multi_speaker",
+      "ssml"
+    ],
+    "description": "Voice tier designed for news reading, narration and broadcast content; also offers an experimental two-speaker multispeaker voice.",
+    "first_seen": "2026-11-16",
+    "id": "Studio",
+    "languages": [
+      "de-DE",
+      "en-GB",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fr-FR"
+    ],
+    "meta": {
+      "multispeaker": "Studio multispeaker (two-speaker dialogue) is Experimental; single-speaker Studio is GA",
+      "ssml_support": "Supported except <mark>, <emphasis>, <prosody pitch>, <lang>",
+      "tier_class": "premium"
+    },
+    "name": "Studio",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "US$160 per 1M characters after 1M free characters/month.",
+      "price_usd": 0.00016,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "General-purpose premium voice tier generated by DeepMind's WaveNet model.",
+    "first_seen": "2026-11-16",
+    "id": "Wavenet",
+    "languages": [
+      "ar-XA",
+      "bn-IN",
+      "zh-CN",
+      "zh-TW",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "gu-IN",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "kn-IN",
+      "ko-KR",
+      "ml-IN",
+      "mr-IN",
+      "ms-MY",
+      "nb-NO",
+      "nl-BE",
+      "nl-NL",
+      "pa-IN",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "sk-SK",
+      "sv-SE",
+      "ta-IN",
+      "tr-TR",
+      "uk-UA",
+      "ur-IN",
+      "vi-VN"
+    ],
+    "meta": {
+      "pricing_group": "legacy",
+      "tier_class": "premium"
+    },
+    "name": "WaveNet",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 4000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Pricing page lists US$4 per 1M characters after 4M free characters/month (same SKU 9D01-5995-B545 as Standard); listed under Legacy TTS models.",
+      "price_usd": 4e-06,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "style_control"
+    ],
+    "description": "Low-latency, prompt-controllable single-speaker Gemini TTS in Preview.",
+    "family": "gemini-tts",
+    "first_seen": "2026-11-16",
+    "id": "gemini-2.5-flash-lite-preview-tts",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "ar-EG",
+      "bn-BD",
+      "nl-NL",
+      "en-IN",
+      "en-US",
+      "fr-FR",
+      "de-DE",
+      "hi-IN",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "mr-IN",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "es-ES",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "vi-VN",
+      "af-ZA",
+      "sq-AL",
+      "am-ET",
+      "ar-001",
+      "hy-AM",
+      "az-AZ",
+      "eu-ES",
+      "be-BY",
+      "bg-BG",
+      "my-MM",
+      "ca-ES",
+      "ceb-PH",
+      "zh-CN",
+      "zh-TW",
+      "hr-HR",
+      "cs-CZ",
+      "da-DK",
+      "en-AU",
+      "en-GB",
+      "et-EE",
+      "fil-PH",
+      "fi-FI",
+      "fr-CA",
+      "gl-ES",
+      "ka-GE",
+      "el-GR",
+      "gu-IN",
+      "ht-HT",
+      "he-IL",
+      "hu-HU",
+      "is-IS",
+      "jv-JV",
+      "kn-IN",
+      "kok-IN",
+      "lo-LA",
+      "la-VA",
+      "lv-LV",
+      "lt-LT",
+      "lb-LU",
+      "mk-MK",
+      "mai-IN",
+      "mg-MG",
+      "ms-MY",
+      "ml-IN",
+      "mn-MN",
+      "ne-NP",
+      "nb-NO",
+      "nn-NO",
+      "or-IN",
+      "ps-AF",
+      "fa-IR",
+      "pt-PT",
+      "pa-IN",
+      "sr-RS",
+      "sd-IN",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "es-419",
+      "es-MX",
+      "sw-KE",
+      "sv-SE",
+      "ur-PK"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "also_available_via": "Vertex AI API",
+      "audio_encodings": {
+        "default_streaming": "PCM",
+        "default_unary": "LINEAR16",
+        "streaming": [
+          "PCM",
+          "ALAW",
+          "MULAW",
+          "OGG_OPUS"
+        ],
+        "unary": [
+          "LINEAR16",
+          "ALAW",
+          "MULAW",
+          "MP3",
+          "OGG_OPUS",
+          "PCM"
+        ]
+      },
+      "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
+      "max_output_audio_seconds": 655,
+      "preview_languages": [
+        "af-ZA",
+        "sq-AL",
+        "am-ET",
+        "ar-001",
+        "hy-AM",
+        "az-AZ",
+        "eu-ES",
+        "be-BY",
+        "bg-BG",
+        "my-MM",
+        "ca-ES",
+        "ceb-PH",
+        "cmn-CN",
+        "cmn-tw",
+        "hr-HR",
+        "cs-CZ",
+        "da-DK",
+        "en-AU",
+        "en-GB",
+        "et-EE",
+        "fil-PH",
+        "fi-FI",
+        "fr-CA",
+        "gl-ES",
+        "ka-GE",
+        "el-GR",
+        "gu-IN",
+        "ht-HT",
+        "he-IL",
+        "hu-HU",
+        "is-IS",
+        "jv-JV",
+        "kn-IN",
+        "kok-IN",
+        "lo-LA",
+        "la-VA",
+        "lv-LV",
+        "lt-LT",
+        "lb-LU",
+        "mk-MK",
+        "mai-IN",
+        "mg-MG",
+        "ms-MY",
+        "ml-IN",
+        "mn-MN",
+        "ne-NP",
+        "nb-NO",
+        "nn-NO",
+        "or-IN",
+        "ps-AF",
+        "fa-IR",
+        "pt-PT",
+        "pa-IN",
+        "sr-RS",
+        "sd-IN",
+        "si-LK",
+        "sk-SK",
+        "sl-SI",
+        "es-419",
+        "es-MX",
+        "sw-KE",
+        "sv-SE",
+        "ur-PK"
+      ],
+      "regional_endpoints": [
+        "global",
+        "us",
+        "eu",
+        "northamerica-northeast1"
+      ],
+      "speaker_support": "single",
+      "token_limits": {
+        "input": 8192,
+        "output": 16384
+      },
+      "voices": "30 Gemini-TTS speakers (Achernar ... Zubenelgenubi)"
+    },
+    "name": "Gemini 2.5 Flash Lite TTS (Preview)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Priced with Gemini 2.5 Flash TTS: US$0.50 per 1M text input tokens; US$10.00 per 1M audio output tokens (25 audio tokens per second). No free tier.",
+      "price_usd": 5e-07,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "text_input",
+          "price_usd": 5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "prosody_control",
+      "style_control"
+    ],
+    "description": "Low-latency, prompt-controllable single- and multi-speaker Gemini TTS for cost-efficient everyday applications.",
+    "family": "gemini-tts",
+    "first_seen": "2026-11-16",
+    "id": "gemini-2.5-flash-tts",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar-EG",
+      "bn-BD",
+      "nl-NL",
+      "en-IN",
+      "en-US",
+      "fr-FR",
+      "de-DE",
+      "hi-IN",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "mr-IN",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "es-ES",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "vi-VN",
+      "af-ZA",
+      "sq-AL",
+      "am-ET",
+      "ar-001",
+      "hy-AM",
+      "az-AZ",
+      "eu-ES",
+      "be-BY",
+      "bg-BG",
+      "my-MM",
+      "ca-ES",
+      "ceb-PH",
+      "zh-CN",
+      "zh-TW",
+      "hr-HR",
+      "cs-CZ",
+      "da-DK",
+      "en-AU",
+      "en-GB",
+      "et-EE",
+      "fil-PH",
+      "fi-FI",
+      "fr-CA",
+      "gl-ES",
+      "ka-GE",
+      "el-GR",
+      "gu-IN",
+      "ht-HT",
+      "he-IL",
+      "hu-HU",
+      "is-IS",
+      "jv-JV",
+      "kn-IN",
+      "kok-IN",
+      "lo-LA",
+      "la-VA",
+      "lv-LV",
+      "lt-LT",
+      "lb-LU",
+      "mk-MK",
+      "mai-IN",
+      "mg-MG",
+      "ms-MY",
+      "ml-IN",
+      "mn-MN",
+      "ne-NP",
+      "nb-NO",
+      "nn-NO",
+      "or-IN",
+      "ps-AF",
+      "fa-IR",
+      "pt-PT",
+      "pa-IN",
+      "sr-RS",
+      "sd-IN",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "es-419",
+      "es-MX",
+      "sw-KE",
+      "sv-SE",
+      "ur-PK"
+    ],
+    "meta": {
+      "also_available_via": "Vertex AI API",
+      "audio_encodings": {
+        "default_streaming": "PCM",
+        "default_unary": "LINEAR16",
+        "streaming": [
+          "PCM",
+          "ALAW",
+          "MULAW",
+          "OGG_OPUS"
+        ],
+        "unary": [
+          "LINEAR16",
+          "ALAW",
+          "MULAW",
+          "MP3",
+          "OGG_OPUS",
+          "PCM"
+        ]
+      },
+      "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
+      "max_output_audio_seconds": 655,
+      "preview_languages": [
+        "af-ZA",
+        "sq-AL",
+        "am-ET",
+        "ar-001",
+        "hy-AM",
+        "az-AZ",
+        "eu-ES",
+        "be-BY",
+        "bg-BG",
+        "my-MM",
+        "ca-ES",
+        "ceb-PH",
+        "cmn-CN",
+        "cmn-tw",
+        "hr-HR",
+        "cs-CZ",
+        "da-DK",
+        "en-AU",
+        "en-GB",
+        "et-EE",
+        "fil-PH",
+        "fi-FI",
+        "fr-CA",
+        "gl-ES",
+        "ka-GE",
+        "el-GR",
+        "gu-IN",
+        "ht-HT",
+        "he-IL",
+        "hu-HU",
+        "is-IS",
+        "jv-JV",
+        "kn-IN",
+        "kok-IN",
+        "lo-LA",
+        "la-VA",
+        "lv-LV",
+        "lt-LT",
+        "lb-LU",
+        "mk-MK",
+        "mai-IN",
+        "mg-MG",
+        "ms-MY",
+        "ml-IN",
+        "mn-MN",
+        "ne-NP",
+        "nb-NO",
+        "nn-NO",
+        "or-IN",
+        "ps-AF",
+        "fa-IR",
+        "pt-PT",
+        "pa-IN",
+        "sr-RS",
+        "sd-IN",
+        "si-LK",
+        "sk-SK",
+        "sl-SI",
+        "es-419",
+        "es-MX",
+        "sw-KE",
+        "sv-SE",
+        "ur-PK"
+      ],
+      "regional_endpoints": [
+        "global",
+        "us",
+        "eu",
+        "northamerica-northeast1"
+      ],
+      "speaker_support": "single, multi-speaker",
+      "token_limits": {
+        "input": 8192,
+        "output": 16384
+      },
+      "voices": "30 Gemini-TTS speakers (Achernar ... Zubenelgenubi)"
+    },
+    "name": "Gemini 2.5 Flash TTS",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "US$0.50 per 1M text input tokens; US$10.00 per 1M audio output tokens (25 audio tokens per second). No free tier.",
+      "price_usd": 5e-07,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "text_input",
+          "price_usd": 5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "prosody_control",
+      "style_control"
+    ],
+    "description": "High-control Gemini TTS for structured workflows such as podcasts, audiobooks and customer support.",
+    "family": "gemini-tts",
+    "first_seen": "2026-11-16",
+    "id": "gemini-2.5-pro-tts",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "languages": [
+      "ar-EG",
+      "bn-BD",
+      "nl-NL",
+      "en-IN",
+      "en-US",
+      "fr-FR",
+      "de-DE",
+      "hi-IN",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "mr-IN",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "es-ES",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "vi-VN",
+      "af-ZA",
+      "sq-AL",
+      "am-ET",
+      "ar-001",
+      "hy-AM",
+      "az-AZ",
+      "eu-ES",
+      "be-BY",
+      "bg-BG",
+      "my-MM",
+      "ca-ES",
+      "ceb-PH",
+      "zh-CN",
+      "zh-TW",
+      "hr-HR",
+      "cs-CZ",
+      "da-DK",
+      "en-AU",
+      "en-GB",
+      "et-EE",
+      "fil-PH",
+      "fi-FI",
+      "fr-CA",
+      "gl-ES",
+      "ka-GE",
+      "el-GR",
+      "gu-IN",
+      "ht-HT",
+      "he-IL",
+      "hu-HU",
+      "is-IS",
+      "jv-JV",
+      "kn-IN",
+      "kok-IN",
+      "lo-LA",
+      "la-VA",
+      "lv-LV",
+      "lt-LT",
+      "lb-LU",
+      "mk-MK",
+      "mai-IN",
+      "mg-MG",
+      "ms-MY",
+      "ml-IN",
+      "mn-MN",
+      "ne-NP",
+      "nb-NO",
+      "nn-NO",
+      "or-IN",
+      "ps-AF",
+      "fa-IR",
+      "pt-PT",
+      "pa-IN",
+      "sr-RS",
+      "sd-IN",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "es-419",
+      "es-MX",
+      "sw-KE",
+      "sv-SE",
+      "ur-PK"
+    ],
+    "meta": {
+      "also_available_via": "Vertex AI API",
+      "audio_encodings": {
+        "default_streaming": "PCM",
+        "default_unary": "LINEAR16",
+        "streaming": [
+          "PCM",
+          "ALAW",
+          "MULAW",
+          "OGG_OPUS"
+        ],
+        "unary": [
+          "LINEAR16",
+          "ALAW",
+          "MULAW",
+          "MP3",
+          "OGG_OPUS",
+          "PCM"
+        ]
+      },
+      "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
+      "max_output_audio_seconds": 655,
+      "preview_languages": [
+        "af-ZA",
+        "sq-AL",
+        "am-ET",
+        "ar-001",
+        "hy-AM",
+        "az-AZ",
+        "eu-ES",
+        "be-BY",
+        "bg-BG",
+        "my-MM",
+        "ca-ES",
+        "ceb-PH",
+        "cmn-CN",
+        "cmn-tw",
+        "hr-HR",
+        "cs-CZ",
+        "da-DK",
+        "en-AU",
+        "en-GB",
+        "et-EE",
+        "fil-PH",
+        "fi-FI",
+        "fr-CA",
+        "gl-ES",
+        "ka-GE",
+        "el-GR",
+        "gu-IN",
+        "ht-HT",
+        "he-IL",
+        "hu-HU",
+        "is-IS",
+        "jv-JV",
+        "kn-IN",
+        "kok-IN",
+        "lo-LA",
+        "la-VA",
+        "lv-LV",
+        "lt-LT",
+        "lb-LU",
+        "mk-MK",
+        "mai-IN",
+        "mg-MG",
+        "ms-MY",
+        "ml-IN",
+        "mn-MN",
+        "ne-NP",
+        "nb-NO",
+        "nn-NO",
+        "or-IN",
+        "ps-AF",
+        "fa-IR",
+        "pt-PT",
+        "pa-IN",
+        "sr-RS",
+        "sd-IN",
+        "si-LK",
+        "sk-SK",
+        "sl-SI",
+        "es-419",
+        "es-MX",
+        "sw-KE",
+        "sv-SE",
+        "ur-PK"
+      ],
+      "regional_endpoints": [
+        "global",
+        "us",
+        "eu"
+      ],
+      "speaker_support": "single, multi-speaker",
+      "token_limits": {
+        "input": 8192,
+        "output": 16384
+      },
+      "voices": "30 Gemini-TTS speakers (Achernar ... Zubenelgenubi)"
+    },
+    "name": "Gemini 2.5 Pro TTS",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "US$1.00 per 1M text input tokens; US$20.00 per 1M audio output tokens (25 audio tokens per second). No free tier.",
+      "price_usd": 1e-06,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "text_input",
+          "price_usd": 1e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global",
+      "us",
+      "eu"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "prosody_control",
+      "style_control"
+    ],
+    "description": "Preview Gemini 3.1 TTS model for low-latency, prompt-controllable single- and multi-speaker generation; supports inline audio tags such as [laughs].",
+    "family": "gemini-tts",
+    "first_seen": "2026-11-16",
+    "id": "gemini-3.1-flash-tts-preview",
+    "interfaces": [
+      "http",
+      "grpc"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "also_available_via": "Vertex AI API",
+      "audio_encodings": {
+        "default_streaming": "PCM",
+        "default_unary": "LINEAR16",
+        "streaming": [
+          "PCM",
+          "ALAW",
+          "MULAW",
+          "OGG_OPUS"
+        ],
+        "unary": [
+          "LINEAR16",
+          "ALAW",
+          "MULAW",
+          "MP3",
+          "OGG_OPUS",
+          "PCM"
+        ]
+      },
+      "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
+      "max_output_audio_seconds": 655,
+      "notes": "All voices for this model are in Preview. Docs model card does not link the language list.",
+      "regional_endpoints": [
+        "global"
+      ],
+      "speaker_support": "single, multi-speaker",
+      "token_limits": {
+        "input": 8192,
+        "output": 16384
+      },
+      "voices": "30 Gemini-TTS speakers (Achernar ... Zubenelgenubi)"
+    },
+    "name": "Gemini 3.1 Flash TTS (Preview)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "US$1.00 per 1M text input tokens; US$20.00 per 1M audio output tokens (25 audio tokens per second). No free tier.",
+      "price_usd": 1e-06,
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "text_input",
+          "price_usd": 1e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing"
+      ]
+    },
+    "regions": [
+      "global"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]
