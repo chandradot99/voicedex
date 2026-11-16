@@ -132,6 +132,9 @@
         /* Intro "Client Libraries" card keeps Scalar's own design; only the focus ring Scalar leaves on a
            clicked tab is removed (keyboard focus still shows one). */
         .client-libraries:focus:not(:focus-visible), .client-libraries.client-libraries__active:focus { outline: 0 !important; box-shadow: none !important; }
+        /* Intro "Client Libraries" card hidden: it duplicates the language picker on every code example, and
+           the name suggests SDKs we don't publish. Bring it back if official packages ship. */
+        .scalar-reference-intro-clients { display: none !important; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
         .scalar-client h3,
         .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
