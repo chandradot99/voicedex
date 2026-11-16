@@ -16,8 +16,11 @@ Two kinds of TTS "model":
   - Gemini TTS models (gemini-*-tts), selected with a `model` parameter and used with the
     bare-named voices ("Achernar", "Kore", …) the API also returns.
 
-STT (Speech-to-Text v2) has a Locations API with per-region model data, but it rejects API
-keys (OAuth / service account only), so STT models come from the docs for now.
+STT models: docs give descriptions, pricing, defaults and streaming flags; when Google
+Application Default Credentials are available (`gcloud auth application-default login` +
+GOOGLE_CLOUD_PROJECT), the Speech-to-Text v2 Locations API then supplies the authoritative
+per-model languages, regions and features, and adds callable models the docs table omits.
+The Locations API rejects API keys, hence ADC. Without ADC, STT is docs-only.
 
 Voices fetch, TTS model parse, and STT model parse run concurrently.
 """
@@ -34,6 +37,16 @@ from naaviq.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncModel, SyncResult
 from naaviq.sync.language import accent_from_languages, normalize_languages
 
 _VOICES_URL = "https://texttospeech.googleapis.com/v1/voices"
+_STT_LOCATIONS_URL = "https://speech.googleapis.com/v2/projects/{project}/locations"
+
+# Locations API feature → canonical capability. Everything else lands in meta.features.
+_STT_FEATURE_CAPS = {
+    "word_timestamps":         "word_timestamps",
+    "automatic_punctuation":   "punctuation",
+    "profanity_filter":        "profanity_filter",
+    "speech_adaptation_boost": "custom_vocabulary",
+    "speaker_diarization":     "speaker_diarization",
+}
 
 _TTS_MODELS_DOCS_URLS = [
     "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
@@ -82,8 +95,9 @@ class GoogleCloudSyncer(ProviderSyncer):
 
         ai_key = settings.anthropic_api_key or None
 
-        voices_data, (tts_models, tts_notes), (stt_models, stt_notes) = await asyncio.gather(
+        voices_data, stt_api, (tts_models, tts_notes), (stt_models, stt_notes) = await asyncio.gather(
             self._fetch_voices(),
+            self._fetch_stt_locations(),
             parse_models_from_docs(
                 seed_urls=_TTS_MODELS_DOCS_URLS,
                 provider_id=self.provider_id,
@@ -102,6 +116,8 @@ class GoogleCloudSyncer(ProviderSyncer):
 
         gemini_ids = [m.model_id for m in tts_models if m.model_id.startswith("gemini")]
         tts_voices = self._parse_voices(voices_data, gemini_ids)
+        if stt_api is not None:
+            stt_models = _enrich_stt_models(stt_models, stt_api)
         tts_models = self._inject_orphan_tiers(tts_models, tts_voices)
 
         from_cache = any(n.get("source") == "cache" for n in [tts_notes, stt_notes])
@@ -109,7 +125,8 @@ class GoogleCloudSyncer(ProviderSyncer):
             notes = (
                 f"Voices: {len(tts_voices)} from /v1/voices. "
                 f"TTS models: {len(tts_models)} (cache). "
-                f"STT models: {len(stt_models)} (cache)."
+                f"STT models: {len(stt_models)} (cache"
+                + (f" + Locations API, {len(stt_api)} models)." if stt_api else ", no ADC — docs only).")
             )
         else:
             total_in  = tts_notes["input_tokens"]  + stt_notes["input_tokens"]
@@ -126,7 +143,7 @@ class GoogleCloudSyncer(ProviderSyncer):
             tts_models=tts_models,
             tts_voices=tts_voices,
             source=self.source,
-            api_urls=[_VOICES_URL],
+            api_urls=[_VOICES_URL] + ([_STT_LOCATIONS_URL.format(project="{project}")] if stt_api else []),
             docs_urls=_TTS_MODELS_DOCS_URLS + _STT_MODELS_DOCS_URLS,
             notes=notes,
         )
@@ -142,6 +159,48 @@ class GoogleCloudSyncer(ProviderSyncer):
             )
             resp.raise_for_status()
             return resp.json().get("voices", [])
+
+    async def _fetch_stt_locations(self) -> dict[str, dict] | None:
+        """Per-model availability from the Speech-to-Text v2 Locations API, or None without ADC.
+
+        Returns {model_id: {"languages": set, "locations": set, "features": set, "preview": bool}}.
+        """
+        token, project = await asyncio.to_thread(_adc_token)
+        if not token or not project:
+            return None
+        headers = {"Authorization": f"Bearer {token}", "x-goog-user-project": project}
+        base = _STT_LOCATIONS_URL.format(project=project)
+        async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
+            location_ids: list[str] = []
+            page_token = None
+            for _ in range(20):
+                params = {"pageSize": 100, **({"pageToken": page_token} if page_token else {})}
+                resp = await client.get(base, headers=headers, params=params)
+                resp.raise_for_status()
+                body = resp.json()
+                location_ids += [loc["locationId"] for loc in body.get("locations", [])]
+                page_token = body.get("nextPageToken")
+                if not page_token:
+                    break
+            responses = await asyncio.gather(*[client.get(f"{base}/{loc}", headers=headers) for loc in location_ids])
+
+        models: dict[str, dict] = {}
+        for loc, resp in zip(location_ids, responses):
+            resp.raise_for_status()
+            by_lang = resp.json().get("metadata", {}).get("languages", {}).get("models", {})
+            for lang, entry in by_lang.items():
+                for model_id, feats in (entry.get("modelFeatures") or {}).items():
+                    m = models.setdefault(model_id, {"languages": set(), "locations": set(),
+                                                     "features": set(), "states": set()})
+                    m["languages"].add(lang)
+                    m["locations"].add(loc)
+                    for f in feats.get("modelFeature") or []:
+                        m["features"].add(f.get("feature"))
+                        if f.get("feature") == "recognizer":
+                            m["states"].add(f.get("releaseState"))
+        if not models:
+            raise RuntimeError("Speech-to-Text Locations API returned no models — refusing to continue")
+        return models
 
     def _parse_voices(self, items: list[dict], gemini_model_ids: list[str]) -> list[SyncVoice]:
         voices: list[SyncVoice] = []
@@ -209,6 +268,75 @@ class GoogleCloudSyncer(ProviderSyncer):
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
+def _adc_token() -> tuple[str | None, str | None]:
+    """Access token + project from Application Default Credentials; (None, None) if unavailable."""
+    import os
+    try:
+        import google.auth
+        import google.auth.transport.requests
+        from google.auth.exceptions import DefaultCredentialsError
+    except ImportError:
+        return None, None
+    try:
+        creds, adc_project = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+        creds.refresh(google.auth.transport.requests.Request())
+    except (DefaultCredentialsError, Exception):  # noqa: BLE001 — no/expired ADC → docs-only fallback
+        return None, None
+    return creds.token, os.getenv("GOOGLE_CLOUD_PROJECT") or adc_project
+
+
+def _location_region(loc: str) -> str | None:
+    """Map a Google location id to the canonical region vocab (asia = APAC)."""
+    if loc == "global":
+        return "global"
+    if loc == "us" or loc.startswith(("us-", "northamerica-")):
+        return "us"
+    if loc == "eu" or loc.startswith("europe-"):
+        return "eu"
+    if loc.startswith(("asia-", "australia-")):
+        return "asia"
+    return None
+
+
+def _enrich_stt_models(docs_models: list[SyncModel], api: dict[str, dict]) -> list[SyncModel]:
+    """API is authoritative for languages / regions / capabilities; docs keep everything else.
+    Callable models the docs omit are added from the API alone."""
+    by_id = {m.model_id: m for m in docs_models}
+    out: list[SyncModel] = []
+    for model_id in sorted(set(by_id) | set(api)):
+        info = api.get(model_id)
+        m = by_id.get(model_id)
+        if info is None:
+            out.append(m)  # documented but not in any location the project can see — keep docs data
+            continue
+        caps = sorted({_STT_FEATURE_CAPS[f] for f in info["features"] if f in _STT_FEATURE_CAPS})
+        regions = sorted({r for r in (_location_region(loc) for loc in info["locations"]) if r})
+        extra = sorted(f for f in info["features"] if f not in _STT_FEATURE_CAPS and f != "recognizer")
+        api_meta = {"locations": sorted(info["locations"]), "features": extra}
+        # "auto" is the Locations API's key for automatic language detection, not a locale.
+        if "auto" in info["languages"]:
+            caps = sorted(set(caps) | {"language_detection"})
+        languages = sorted(normalize_languages(sorted(info["languages"] - {"auto"})))
+        if m is None:
+            out.append(SyncModel(
+                model_id=model_id,
+                display_name=model_id.replace("_", " ").title(),
+                type="stt",
+                languages=languages,
+                lifecycle="beta" if info["states"] == {"PUBLIC_PREVIEW"} else "ga",
+                capabilities=caps,
+                regions=regions,
+                meta={**api_meta, "listed_in_docs": False},
+                source="api",
+            ))
+        else:
+            m.languages, m.regions = languages, regions
+            m.capabilities = sorted(set(caps) | {c for c in m.capabilities if c not in _STT_FEATURE_CAPS.values()})
+            m.meta = {**m.meta, **api_meta}
+            out.append(m)
+    return out
+
 
 def _extract_tier(voice_name: str) -> str | None:
     """

@@ -76,18 +76,24 @@ def check_provider(pdir: Path) -> list[str]:
     for fname, text in canon.items():
         f = pdir / fname
         if f.exists() and f.read_text() != text:
-            errs.append(f"{pdir.name}/{fname}: not in canonical form (re-run scripts/sync.py --write)")
+            errs.append(f"{pdir.name}/{fname}: not in canonical form (run scripts/validate.py --fix)")
     return errs
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--schema", action="store_true", help="Regenerate schema/*.schema.json")
+    ap.add_argument("--fix", action="store_true",
+                    help="Rewrite data files into canonical form (after schema normalization changes)")
     ap.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
     args = ap.parse_args()
 
     if args.schema:
         write_json_schemas()
+    if args.fix:
+        from naaviq.catalog.files import write_provider_dir
+        for pdir in sorted(p for p in args.data_dir.iterdir() if p.is_dir()):
+            write_provider_dir(pdir, read_provider_dir(pdir))
 
     errors: list[str] = []
     dirs = sorted(p for p in args.data_dir.iterdir() if p.is_dir()) if args.data_dir.exists() else []

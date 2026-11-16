@@ -224,6 +224,12 @@ class Model(_Record):
     def _caps(cls, v: list[str], info) -> list[str]:
         return _check_vocab(v, MODEL_CAPABILITIES, "model capability")
 
+    @field_validator("regions", "interfaces")
+    @classmethod
+    def _as_sorted_set(cls, v: list) -> list:
+        # Set semantics: canonical order keeps diffs free of ordering noise.
+        return sorted(set(v), key=str)
+
     @field_validator("audio_formats")
     @classmethod
     def _formats(cls, v: list[str]) -> list[str]:
@@ -262,6 +268,11 @@ class Voice(_Record):
     @classmethod
     def _langs(cls, v: list[str]) -> list[str]:
         return list(dict.fromkeys(normalize_languages(v)))
+
+    @field_validator("compatible_models")
+    @classmethod
+    def _models_sorted(cls, v: list[str]) -> list[str]:
+        return sorted(set(v))
 
     @field_validator("accent")
     @classmethod

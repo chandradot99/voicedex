@@ -76,8 +76,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "streaming": false,
     "type": "stt",
@@ -209,8 +209,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
@@ -240,8 +240,8 @@
     "first_seen": "2026-11-16",
     "id": "universal-3-6-pro",
     "interfaces": [
-      "websocket",
-      "http"
+      "http",
+      "websocket"
     ],
     "is_default": true,
     "languages": [
@@ -379,8 +379,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
@@ -476,8 +476,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "streaming": false,
     "type": "stt",
@@ -558,8 +558,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
@@ -640,8 +640,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
@@ -661,8 +661,8 @@
     "first_seen": "2026-11-16",
     "id": "assemblyai-tts-1",
     "interfaces": [
-      "websocket",
-      "http"
+      "http",
+      "websocket"
     ],
     "is_default": true,
     "languages": [
@@ -724,8 +724,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "sample_rates_hz": [
       8000,

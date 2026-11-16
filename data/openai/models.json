@@ -298,8 +298,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-live-1",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "is_default": true,
     "meta": {
@@ -358,8 +358,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 32000,
@@ -434,8 +434,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-1.5",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 32000,
@@ -509,8 +509,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-2",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 128000,
@@ -586,8 +586,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-2.1",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 128000,
@@ -662,8 +662,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-2.1-mini",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 128000,
@@ -746,8 +746,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-2025-08-28",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 32000,
@@ -825,8 +825,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-mini",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 32000,
@@ -903,8 +903,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-mini-2025-12-15",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 32000,
@@ -979,8 +979,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-translate",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "endpoints": [
@@ -1371,8 +1371,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-live-transcribe",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "languages": [
       "*"
@@ -1417,8 +1417,8 @@
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-whisper",
     "interfaces": [
-      "websocket",
-      "webrtc"
+      "webrtc",
+      "websocket"
     ],
     "meta": {
       "context_window": 16000,

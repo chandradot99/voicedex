@@ -16,9 +16,9 @@
     "first_seen": "2026-11-16",
     "id": "coda",
     "interfaces": [
+      "grpc",
       "http",
-      "websocket",
-      "grpc"
+      "websocket"
     ],
     "is_default": true,
     "languages": [

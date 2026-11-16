@@ -57,6 +57,7 @@ uv run python scripts/sync.py deepgram --write    # write data/deepgram/*.json, 
 uv run python scripts/sync.py --reuse-docs --write   # refresh API-sourced data only; reuse reviewed
                                                   # docs-extracted records from data/ (no docs pass)
 uv run python scripts/validate.py                 # always before committing
+uv run python scripts/validate.py --fix --schema  # after schema normalization changes: rewrite files canonically
 git diff data/deepgram                            # review, then commit
 ```
 
@@ -71,7 +72,10 @@ Merge rules (`naaviq/catalog/merge.py`):
 - **guard**: refuses if upstream returns nothing for a non-empty section, or would deprecate >25% of ≥4 active records. Investigate first; `--allow-shrink` overrides.
 - rejects duplicate ids, >1 default per type, unknown capability terms; drops wrong-modality capabilities
 
-Provider API keys go in `.env` (see `.env.example`). Naming convention for keys in provider dashboards: `voice-registry-sync`.
+Provider API keys go in `.env` (see `.env.example`). Google STT additionally uses Application Default
+Credentials (`gcloud auth application-default login` + `GOOGLE_CLOUD_PROJECT`) for the Speech-to-Text v2
+Locations API, which rejects API keys; without ADC the Google syncer falls back to docs-only STT (and the
+shrink guard will stop a write that would drop the API-only models). Naming convention for keys in provider dashboards: `voice-registry-sync`.
 
 ## Data conventions
 

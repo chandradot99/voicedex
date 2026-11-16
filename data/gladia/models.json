@@ -234,8 +234,8 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "eu",
+      "us"
     ],
     "sample_rates_hz": [
       8000,

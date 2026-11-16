@@ -2,14 +2,16 @@
   {
     "batch": true,
     "capabilities": [
-      "punctuation"
+      "language_detection",
+      "punctuation",
+      "word_timestamps"
     ],
     "description": "Original Universal Speech Model (USM) based multilingual model.",
     "first_seen": "2026-11-16",
     "id": "chirp",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "af-ZA",
@@ -24,8 +26,6 @@
       "ca-ES",
       "ceb-PH",
       "ckb-IQ",
-      "zh-Hans-CN",
-      "zh-Hant-TW",
       "cs-CZ",
       "cy-GB",
       "da-DK",
@@ -114,11 +114,14 @@
       "wo-SN",
       "yo-NG",
       "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
       "zu-ZA"
     ],
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [],
       "locations": [
         "asia-southeast1",
         "europe-west4",
@@ -173,9 +176,9 @@
       ]
     },
     "regions": [
-      "us",
+      "asia",
       "eu",
-      "asia"
+      "us"
     ],
     "streaming": false,
     "type": "stt",
@@ -185,6 +188,7 @@
     "batch": true,
     "capabilities": [
       "custom_vocabulary",
+      "language_detection",
       "profanity_filter",
       "punctuation",
       "translation",
@@ -194,8 +198,8 @@
     "first_seen": "2026-11-16",
     "id": "chirp_2",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "af-ZA",
@@ -212,8 +216,6 @@
       "ca-ES",
       "ceb-PH",
       "ckb-IQ",
-      "zh-Hans-CN",
-      "zh-Hant-TW",
       "cs-CZ",
       "cy-GB",
       "da-DK",
@@ -314,6 +316,8 @@
       "xh-ZA",
       "yo-NG",
       "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
       "zu-ZA"
     ],
     "max_audio_seconds": 28800,
@@ -321,9 +325,14 @@
       "api_version": "v2",
       "denoiser": true,
       "diarization": "not supported",
+      "features": [
+        "denoiser",
+        "word_level_confidence"
+      ],
       "language_agnostic": true,
       "language_detection": "not supported (per Chirp 2 docs)",
       "locations": [
+        "asia-northeast1",
         "asia-southeast1",
         "europe-west4",
         "us-central1"
@@ -394,9 +403,9 @@
       ]
     },
     "regions": [
-      "us",
+      "asia",
       "eu",
-      "asia"
+      "us"
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
@@ -408,14 +417,15 @@
       "language_detection",
       "profanity_filter",
       "punctuation",
-      "speaker_diarization"
+      "speaker_diarization",
+      "word_timestamps"
     ],
     "description": "Latest-generation multilingual generative ASR model with improved accuracy and speed, speaker diarization and automatic language detection.",
     "first_seen": "2026-11-16",
     "id": "chirp_3",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "is_default": true,
     "languages": [
@@ -447,8 +457,6 @@
       "bn-BD",
       "bn-IN",
       "ca-ES",
-      "zh-Hans-CN",
-      "zh-Hant-TW",
       "cs-CZ",
       "cy-GB",
       "da-DK",
@@ -459,6 +467,7 @@
       "en-IN",
       "en-PH",
       "en-US",
+      "es-419",
       "es-ES",
       "es-MX",
       "es-US",
@@ -530,6 +539,8 @@
       "xh-ZA",
       "yo-NG",
       "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
       "zu-ZA"
     ],
     "max_audio_seconds": 3600,
@@ -544,9 +555,18 @@
         "SHORT",
         "SUPERSHORT"
       ],
+      "features": [
+        "denoiser"
+      ],
       "language_agnostic": "language_codes=['auto']",
       "locations": [
+        "asia-northeast1",
+        "asia-south1",
+        "asia-southeast1",
         "eu",
+        "europe-west2",
+        "europe-west3",
+        "northamerica-northeast1",
         "us"
       ],
       "max_audio_notes": "BatchRecognize 1 min to 1 hour (up to 20 min with word-level timestamps)",
@@ -604,8 +624,9 @@
       ]
     },
     "regions": [
-      "us",
-      "eu"
+      "asia",
+      "eu",
+      "us"
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
@@ -613,14 +634,15 @@
   {
     "batch": true,
     "capabilities": [
-      "profanity_filter"
+      "profanity_filter",
+      "word_timestamps"
     ],
     "description": "Chirp model fine-tuned for phone-call audio typically recorded at 8 kHz.",
     "first_seen": "2026-11-16",
     "id": "chirp_telephony",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "de-DE",
@@ -637,6 +659,7 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [],
       "locations": [
         "asia-southeast1",
         "europe-west4",
@@ -692,29 +715,384 @@
       ]
     },
     "regions": [
-      "us",
+      "asia",
       "eu",
-      "asia"
+      "us"
     ],
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-16"
   },
   {
-    "batch": true,
     "capabilities": [
       "custom_vocabulary",
       "profanity_filter",
-      "punctuation"
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
     ],
-    "description": "General model for long-form content such as media and spontaneous conversation.",
     "first_seen": "2026-11-16",
-    "id": "long",
-    "interfaces": [
-      "http",
-      "grpc"
-    ],
+    "id": "command_and_search",
     "languages": [
+      "af-ZA",
+      "am-ET",
+      "ar-AE",
+      "ar-BH",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IL",
+      "ar-IQ",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-MR",
+      "ar-OM",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-SY",
+      "ar-TN",
+      "ar-YE",
+      "az-AZ",
+      "bg-BG",
+      "bn-BD",
+      "bn-IN",
+      "bs-BA",
+      "ca-ES",
+      "cs-CZ",
+      "da-DK",
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-GH",
+      "en-HK",
+      "en-IE",
+      "en-IN",
+      "en-KE",
+      "en-NG",
+      "en-NZ",
+      "en-PH",
+      "en-PK",
+      "en-SG",
+      "en-TZ",
+      "en-US",
+      "en-ZA",
+      "es-AR",
+      "es-BO",
+      "es-CL",
+      "es-CO",
+      "es-CR",
+      "es-DO",
+      "es-EC",
+      "es-ES",
+      "es-GT",
+      "es-HN",
+      "es-MX",
+      "es-NI",
+      "es-PA",
+      "es-PE",
+      "es-PR",
+      "es-PY",
+      "es-SV",
+      "es-US",
+      "es-UY",
+      "es-VE",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "fi-FI",
+      "fil-PH",
+      "fr-BE",
+      "fr-CA",
+      "fr-CH",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "hi-IN",
+      "hr-HR",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "is-IS",
+      "it-CH",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "lo-LA",
+      "lt-LT",
+      "lv-LV",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "my-MM",
+      "ne-NP",
+      "nl-BE",
+      "nl-NL",
+      "no-NO",
+      "pa-Guru-IN",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sq-AL",
+      "sr-RS",
+      "su-ID",
+      "sv-SE",
+      "sw-KE",
+      "sw-TZ",
+      "ta-IN",
+      "ta-LK",
+      "ta-MY",
+      "ta-SG",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ur-IN",
+      "ur-PK",
+      "uz-UZ",
+      "vi-VN",
+      "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hans-HK",
+      "zh-Hant-TW",
+      "zu-ZA"
+    ],
+    "meta": {
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
+      "listed_in_docs": false,
+      "locations": [
+        "global"
+      ]
+    },
+    "name": "Command And Search",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://texttospeech.googleapis.com/v1/voices",
+        "https://speech.googleapis.com/v2/projects/{project}/locations"
+      ]
+    },
+    "regions": [
+      "global"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "default",
+    "languages": [
+      "af-ZA",
+      "am-ET",
+      "ar-AE",
+      "ar-BH",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IL",
+      "ar-IQ",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-MR",
+      "ar-OM",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-SY",
+      "ar-TN",
+      "ar-YE",
+      "az-AZ",
+      "bg-BG",
+      "bn-BD",
+      "bn-IN",
+      "bs-BA",
+      "ca-ES",
+      "cs-CZ",
+      "da-DK",
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-GH",
+      "en-HK",
+      "en-IE",
+      "en-IN",
+      "en-KE",
+      "en-NG",
+      "en-NZ",
+      "en-PH",
+      "en-PK",
+      "en-SG",
+      "en-TZ",
+      "en-US",
+      "en-ZA",
+      "es-AR",
+      "es-BO",
+      "es-CL",
+      "es-CO",
+      "es-CR",
+      "es-DO",
+      "es-EC",
+      "es-ES",
+      "es-GT",
+      "es-HN",
+      "es-MX",
+      "es-NI",
+      "es-PA",
+      "es-PE",
+      "es-PR",
+      "es-PY",
+      "es-SV",
+      "es-US",
+      "es-UY",
+      "es-VE",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "fi-FI",
+      "fil-PH",
+      "fr-BE",
+      "fr-CA",
+      "fr-CH",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "hi-IN",
+      "hr-HR",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "is-IS",
+      "it-CH",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "lo-LA",
+      "lt-LT",
+      "lv-LV",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "my-MM",
+      "ne-NP",
+      "nl-BE",
+      "nl-NL",
+      "no-NO",
+      "pa-Guru-IN",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sq-AL",
+      "sr-RS",
+      "su-ID",
+      "sv-SE",
+      "sw-KE",
+      "sw-TZ",
+      "ta-IN",
+      "ta-LK",
+      "ta-MY",
+      "ta-SG",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ur-IN",
+      "ur-PK",
+      "uz-UZ",
+      "vi-VN",
+      "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hans-HK",
+      "zh-Hant-TW",
+      "zu-ZA"
+    ],
+    "meta": {
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
+      "listed_in_docs": false,
+      "locations": [
+        "global"
+      ]
+    },
+    "name": "Default",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://texttospeech.googleapis.com/v1/voices",
+        "https://speech.googleapis.com/v2/projects/{project}/locations"
+      ]
+    },
+    "regions": [
+      "global"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "experimental_rnnt",
+    "languages": [
+      "af-ZA",
+      "ak-GH",
+      "am-ET",
       "ar-AE",
       "ar-BH",
       "ar-DZ",
@@ -732,41 +1110,75 @@
       "ar-SA",
       "ar-TN",
       "ar-YE",
+      "az-AZ",
       "bg-BG",
       "bn-BD",
+      "ca-ES",
       "cs-CZ",
       "da-DK",
       "de-DE",
+      "el-GR",
       "en-AU",
       "en-GB",
       "en-IN",
+      "en-PH",
       "en-US",
       "es-ES",
       "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
       "fi-FI",
+      "fil-PH",
       "fr-CA",
       "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
       "hi-IN",
       "hu-HU",
+      "hy-AM",
       "id-ID",
+      "ig-NG",
+      "is-IS",
       "it-IT",
+      "iw-IL",
       "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kk-KZ",
       "km-KH",
       "kn-IN",
       "ko-KR",
+      "lo-LA",
+      "lt-LT",
+      "lv-LV",
       "mk-MK",
       "ml-IN",
+      "mn-MN",
       "mr-IN",
+      "ms-MY",
+      "my-MM",
+      "ne-NP",
       "nl-NL",
       "no-NO",
+      "nr-ZA",
+      "nso-ZA",
+      "pa-Guru-IN",
       "pl-PL",
       "pt-BR",
       "pt-PT",
       "ro-RO",
       "ru-RU",
       "rw-RW",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sq-AL",
+      "sr-RS",
       "ss-Latn-ZA",
       "st-ZA",
+      "su-ID",
       "sv-SE",
       "ta-IN",
       "te-IN",
@@ -775,17 +1187,341 @@
       "tr-TR",
       "ts-ZA",
       "uk-UA",
+      "ur-PK",
+      "uz-UZ",
       "ve-ZA",
       "vi-VN",
-      "xh-ZA"
+      "xh-ZA",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
+      "zu-ZA"
+    ],
+    "meta": {
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
+      "listed_in_docs": false,
+      "locations": [
+        "global"
+      ]
+    },
+    "name": "Experimental Rnnt",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://texttospeech.googleapis.com/v1/voices",
+        "https://speech.googleapis.com/v2/projects/{project}/locations"
+      ]
+    },
+    "regions": [
+      "global"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "experimental_rnnt_short",
+    "languages": [
+      "af-ZA",
+      "ak-GH",
+      "am-ET",
+      "ar-AE",
+      "ar-BH",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IL",
+      "ar-IQ",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-MR",
+      "ar-OM",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-TN",
+      "ar-YE",
+      "az-AZ",
+      "bg-BG",
+      "bn-BD",
+      "ca-ES",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-PH",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
+      "hi-IN",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "ig-NG",
+      "is-IS",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "lo-LA",
+      "lt-LT",
+      "lv-LV",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "my-MM",
+      "ne-NP",
+      "nl-NL",
+      "no-NO",
+      "nr-ZA",
+      "nso-ZA",
+      "pa-Guru-IN",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "rw-RW",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sq-AL",
+      "sr-RS",
+      "ss-Latn-ZA",
+      "st-ZA",
+      "su-ID",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tn-Latn-ZA",
+      "tr-TR",
+      "ts-ZA",
+      "uk-UA",
+      "ur-PK",
+      "uz-UZ",
+      "ve-ZA",
+      "vi-VN",
+      "xh-ZA",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
+      "zu-ZA"
+    ],
+    "meta": {
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
+      "listed_in_docs": false,
+      "locations": [
+        "global"
+      ]
+    },
+    "name": "Experimental Rnnt Short",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://texttospeech.googleapis.com/v1/voices",
+        "https://speech.googleapis.com/v2/projects/{project}/locations"
+      ]
+    },
+    "regions": [
+      "global"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "General model for long-form content such as media and spontaneous conversation.",
+    "first_seen": "2026-11-16",
+    "id": "long",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "languages": [
+      "af-ZA",
+      "ak-GH",
+      "am-ET",
+      "ar-AE",
+      "ar-BH",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IL",
+      "ar-IQ",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-MR",
+      "ar-OM",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-TN",
+      "ar-YE",
+      "az-AZ",
+      "bg-BG",
+      "bn-BD",
+      "ca-ES",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-IN",
+      "en-PH",
+      "en-US",
+      "es-CO",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
+      "hi-IN",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "ig-NG",
+      "is-IS",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "lo-LA",
+      "lt-LT",
+      "lv-LV",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "my-MM",
+      "ne-NP",
+      "nl-NL",
+      "no-NO",
+      "nr-ZA",
+      "nso-ZA",
+      "pa-Guru-IN",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "rw-RW",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sq-AL",
+      "sr-RS",
+      "ss-Latn-ZA",
+      "st-ZA",
+      "su-ID",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tn-Latn-ZA",
+      "tr-TR",
+      "ts-ZA",
+      "uk-UA",
+      "ur-PK",
+      "uz-UZ",
+      "ve-ZA",
+      "vi-VN",
+      "xh-ZA",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
+      "zu-ZA"
     ],
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
       "locations": [
+        "asia-northeast1",
+        "asia-south1",
+        "asia-southeast1",
+        "asia-southeast2",
+        "australia-southeast1",
         "eu",
+        "europe-west1",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
         "global",
-        "us"
+        "northamerica-northeast1",
+        "us",
+        "us-central1",
+        "us-east1",
+        "us-west1"
       ],
       "streaming_support": "not documented per model in current docs (set false)"
     },
@@ -835,9 +1571,10 @@
       ]
     },
     "regions": [
+      "asia",
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "streaming": false,
     "type": "stt",
@@ -847,14 +1584,15 @@
     "batch": true,
     "capabilities": [
       "punctuation",
-      "speaker_diarization"
+      "speaker_diarization",
+      "word_timestamps"
     ],
     "description": "Model for conversations between a medical provider and a patient.",
     "first_seen": "2026-11-16",
     "id": "medical_conversation",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "en-US"
@@ -862,6 +1600,9 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [
+        "word_level_confidence"
+      ],
       "locations": [
         "eu",
         "global",
@@ -898,9 +1639,9 @@
       ]
     },
     "regions": [
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "streaming": false,
     "type": "stt",
@@ -910,14 +1651,15 @@
     "batch": true,
     "capabilities": [
       "custom_vocabulary",
-      "punctuation"
+      "punctuation",
+      "word_timestamps"
     ],
     "description": "Model for notes dictated by a medical professional.",
     "first_seen": "2026-11-16",
     "id": "medical_dictation",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "en-US"
@@ -925,6 +1667,10 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
       "locations": [
         "eu",
         "global",
@@ -961,11 +1707,61 @@
       ]
     },
     "regions": [
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "phone_call",
+    "languages": [
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fr-CA",
+      "fr-FR",
+      "it-IT",
+      "ja-JP",
+      "pt-BR",
+      "ru-RU"
+    ],
+    "meta": {
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
+      "listed_in_docs": false,
+      "locations": [
+        "global"
+      ]
+    },
+    "name": "Phone Call",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://texttospeech.googleapis.com/v1/voices",
+        "https://speech.googleapis.com/v2/projects/{project}/locations"
+      ]
+    },
+    "regions": [
+      "global"
+    ],
     "type": "stt",
     "updated_at": "2026-11-16"
   },
@@ -974,16 +1770,20 @@
     "capabilities": [
       "custom_vocabulary",
       "profanity_filter",
-      "punctuation"
+      "punctuation",
+      "word_timestamps"
     ],
     "description": "General model for short utterances such as commands.",
     "first_seen": "2026-11-16",
     "id": "short",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
+      "af-ZA",
+      "ak-GH",
+      "am-ET",
       "ar-AE",
       "ar-BH",
       "ar-DZ",
@@ -1001,41 +1801,78 @@
       "ar-SA",
       "ar-TN",
       "ar-YE",
+      "az-AZ",
       "bg-BG",
       "bn-BD",
+      "ca-ES",
       "cs-CZ",
       "da-DK",
       "de-DE",
+      "el-GR",
       "en-AU",
+      "en-CA",
       "en-GB",
       "en-IN",
+      "en-PH",
       "en-US",
+      "es-CO",
       "es-ES",
+      "es-MX",
       "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
       "fi-FI",
+      "fil-PH",
       "fr-CA",
       "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
       "hi-IN",
       "hu-HU",
+      "hy-AM",
       "id-ID",
+      "ig-NG",
+      "is-IS",
       "it-IT",
+      "iw-IL",
       "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kk-KZ",
       "km-KH",
       "kn-IN",
       "ko-KR",
+      "lo-LA",
+      "lt-LT",
+      "lv-LV",
       "mk-MK",
       "ml-IN",
+      "mn-MN",
       "mr-IN",
+      "ms-MY",
+      "my-MM",
+      "ne-NP",
       "nl-NL",
       "no-NO",
+      "nr-ZA",
+      "nso-ZA",
+      "pa-Guru-IN",
       "pl-PL",
       "pt-BR",
       "pt-PT",
       "ro-RO",
       "ru-RU",
       "rw-RW",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sq-AL",
+      "sr-RS",
       "ss-Latn-ZA",
       "st-ZA",
+      "su-ID",
       "sv-SE",
       "ta-IN",
       "te-IN",
@@ -1044,17 +1881,42 @@
       "tr-TR",
       "ts-ZA",
       "uk-UA",
+      "ur-PK",
+      "uz-UZ",
       "ve-ZA",
       "vi-VN",
-      "xh-ZA"
+      "xh-ZA",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zh-Hant-TW",
+      "zu-ZA"
     ],
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
       "locations": [
+        "asia-northeast1",
+        "asia-south1",
+        "asia-southeast1",
+        "asia-southeast2",
+        "australia-southeast1",
         "eu",
+        "europe-west1",
+        "europe-west2",
+        "europe-west3",
+        "europe-west6",
         "global",
-        "us"
+        "northamerica-northeast1",
+        "us",
+        "us-central1",
+        "us-east1",
+        "us-west1"
       ],
       "streaming_support": "not documented per model in current docs (set false)"
     },
@@ -1104,9 +1966,10 @@
       ]
     },
     "regions": [
+      "asia",
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "streaming": false,
     "type": "stt",
@@ -1117,20 +1980,23 @@
     "capabilities": [
       "custom_vocabulary",
       "profanity_filter",
-      "punctuation"
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
     ],
     "description": "Model for audio originating from phone calls, typically recorded at 8 kHz; suited to customer service, teleconferencing and kiosks.",
     "first_seen": "2026-11-16",
     "id": "telephony",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "de-AT",
       "de-CH",
       "de-DE",
       "en-AU",
+      "en-CA",
       "en-GB",
       "en-HK",
       "en-IE",
@@ -1175,10 +2041,29 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
       "locations": [
+        "asia-northeast1",
+        "asia-south1",
+        "asia-southeast1",
+        "asia-southeast2",
+        "australia-southeast1",
         "eu",
+        "europe-west1",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
         "global",
-        "us"
+        "northamerica-northeast1",
+        "us",
+        "us-central1",
+        "us-east1",
+        "us-west1"
       ],
       "specialization": "telephony",
       "streaming_support": "not documented per model in current docs (set false)",
@@ -1230,9 +2115,10 @@
       ]
     },
     "regions": [
+      "asia",
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "streaming": false,
     "type": "stt",
@@ -1243,20 +2129,23 @@
     "capabilities": [
       "custom_vocabulary",
       "profanity_filter",
-      "punctuation"
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
     ],
     "description": "Telephony model variant for short or single-word phone-call utterances.",
     "first_seen": "2026-11-16",
     "id": "telephony_short",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "de-AT",
       "de-CH",
       "de-DE",
       "en-AU",
+      "en-CA",
       "en-GB",
       "en-HK",
       "en-IE",
@@ -1301,11 +2190,25 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "features": [
+        "spoken_emoji",
+        "spoken_punctuation",
+        "word_level_confidence"
+      ],
       "locations": [
+        "asia-northeast1",
         "asia-south1",
+        "asia-southeast1",
+        "asia-southeast2",
         "eu",
+        "europe-west1",
+        "europe-west3",
+        "europe-west6",
         "global",
-        "us"
+        "us",
+        "us-central1",
+        "us-east1",
+        "us-west1"
       ],
       "specialization": "telephony",
       "streaming_support": "not documented per model in current docs (set false)",
@@ -1357,12 +2260,177 @@
       ]
     },
     "regions": [
-      "global",
-      "us",
+      "asia",
       "eu",
-      "asia"
+      "global",
+      "us"
     ],
     "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "first_seen": "2026-11-16",
+    "id": "usm",
+    "languages": [
+      "af-ZA",
+      "am-ET",
+      "ar-EG",
+      "as-IN",
+      "ast-ES",
+      "az-AZ",
+      "be-BY",
+      "bg-BG",
+      "bs-BA",
+      "ca-ES",
+      "ceb-PH",
+      "ckb-IQ",
+      "cs-CZ",
+      "cy-GB",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-US",
+      "et-EE",
+      "eu-ES",
+      "fa-IR",
+      "fi-FI",
+      "fil-PH",
+      "fr-CA",
+      "fr-FR",
+      "gl-ES",
+      "gu-IN",
+      "ha-NG",
+      "hi-IN",
+      "hr-HR",
+      "hu-HU",
+      "hy-AM",
+      "id-ID",
+      "is-IS",
+      "it-IT",
+      "iw-IL",
+      "ja-JP",
+      "jv-ID",
+      "ka-GE",
+      "kam-KE",
+      "kea-CV",
+      "kk-KZ",
+      "km-KH",
+      "kn-IN",
+      "ko-KR",
+      "ky-KG",
+      "lb-LU",
+      "ln-CD",
+      "lo-LA",
+      "lt-LT",
+      "luo-KE",
+      "lv-LV",
+      "mi-NZ",
+      "mk-MK",
+      "ml-IN",
+      "mn-MN",
+      "mr-IN",
+      "ms-MY",
+      "mt-MT",
+      "my-MM",
+      "ne-NP",
+      "nl-NL",
+      "no-NO",
+      "nso-ZA",
+      "ny-MW",
+      "oc-FR",
+      "pa-Guru-IN",
+      "pl-PL",
+      "ps-AF",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "sd-IN",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "sn-ZW",
+      "so-SO",
+      "sq-AL",
+      "sr-RS",
+      "su-ID",
+      "sv-SE",
+      "sw",
+      "ta-IN",
+      "te-IN",
+      "tg-TJ",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ur-PK",
+      "uz-UZ",
+      "vi-VN",
+      "wo-SN",
+      "yo-NG",
+      "yue-Hant-HK",
+      "zh-Hans-CN",
+      "zu-ZA"
+    ],
+    "meta": {
+      "features": [],
+      "listed_in_docs": false,
+      "locations": [
+        "us-central1"
+      ]
+    },
+    "name": "Usm",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://texttospeech.googleapis.com/v1/voices",
+        "https://speech.googleapis.com/v2/projects/{project}/locations"
+      ]
+    },
+    "regions": [
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "video",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "features": [
+        "word_level_confidence"
+      ],
+      "listed_in_docs": false,
+      "locations": [
+        "global"
+      ]
+    },
+    "name": "Video",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://texttospeech.googleapis.com/v1/voices",
+        "https://speech.googleapis.com/v2/projects/{project}/locations"
+      ]
+    },
+    "regions": [
+      "global"
+    ],
     "type": "stt",
     "updated_at": "2026-11-16"
   },
@@ -1456,8 +2524,8 @@
     "first_seen": "2026-11-16",
     "id": "Chirp3-HD",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "ar-XA",
@@ -1586,10 +2654,10 @@
       ]
     },
     "regions": [
-      "global",
-      "us",
+      "asia",
       "eu",
-      "asia"
+      "global",
+      "us"
     ],
     "type": "tts",
     "updated_at": "2026-11-16"
@@ -2011,8 +3079,8 @@
     "first_seen": "2026-11-16",
     "id": "gemini-2.5-flash-lite-preview-tts",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "ar-EG",
@@ -2240,9 +3308,9 @@
       ]
     },
     "regions": [
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "type": "tts",
     "updated_at": "2026-11-16"
@@ -2266,8 +3334,8 @@
     "first_seen": "2026-11-16",
     "id": "gemini-2.5-flash-tts",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "is_default": true,
     "languages": [
@@ -2495,9 +3563,9 @@
       ]
     },
     "regions": [
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "type": "tts",
     "updated_at": "2026-11-16"
@@ -2521,8 +3589,8 @@
     "first_seen": "2026-11-16",
     "id": "gemini-2.5-pro-tts",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "languages": [
       "ar-EG",
@@ -2748,9 +3816,9 @@
       ]
     },
     "regions": [
+      "eu",
       "global",
-      "us",
-      "eu"
+      "us"
     ],
     "type": "tts",
     "updated_at": "2026-11-16"
@@ -2774,8 +3842,8 @@
     "first_seen": "2026-11-16",
     "id": "gemini-3.1-flash-tts-preview",
     "interfaces": [
-      "http",
-      "grpc"
+      "grpc",
+      "http"
     ],
     "lifecycle": "beta",
     "meta": {
