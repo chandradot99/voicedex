@@ -52,3 +52,26 @@ def test_normalize_languages_empty_list() -> None:
 ])
 def test_iso639_3_collapses_to_shortest_code(raw, expected):
     assert normalize_language(raw) == expected
+
+
+async def test_get_with_retry_honours_retry_after(monkeypatch):
+    import asyncio
+
+    import httpx
+
+    from naaviq.sync.base import get_with_retry
+
+    calls, slept = [], []
+    responses = [httpx.Response(429, headers={"Retry-After": "3"}), httpx.Response(503), httpx.Response(200)]
+
+    async def fake_sleep(s):
+        slept.append(s)
+
+    def handler(request):
+        calls.append(request.url)
+        return responses[len(calls) - 1]
+
+    monkeypatch.setattr(asyncio, "sleep", fake_sleep)
+    async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as c:
+        r = await get_with_retry(c, "https://x.test/")
+    assert r.status_code == 200 and len(calls) == 3 and slept == [3.0, 2.0]

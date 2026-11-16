@@ -1,0 +1,19 @@
+{
+  "api_urls": [
+    "https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list",
+    "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
+  ],
+  "id": "azure",
+  "last_synced": "2026-11-16",
+  "name": "Azure Speech",
+  "source": "api",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list",
+      "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
+    ]
+  }
+}

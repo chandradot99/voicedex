@@ -25,6 +25,27 @@ from typing import ClassVar, Literal
 # under 5s; 20s gives headroom for slow docs fetches in the AI parser path too.
 HTTP_TIMEOUT = 20.0
 
+_RETRY_STATUSES = {429, 500, 502, 503, 504}
+
+
+async def get_with_retry(client, url: str, *, attempts: int = 5, max_wait: float = 30.0, **kwargs):
+    """GET with retries on 429/5xx — honours Retry-After, else exponential backoff (1, 2, 4… s).
+
+    Free tiers (e.g. Azure F0) rate-limit paginated listings; a sync should slow down, not fail.
+    Returns the final response; callers still call raise_for_status().
+    """
+    import asyncio
+
+    resp = None
+    for attempt in range(attempts):
+        resp = await client.get(url, **kwargs)
+        if resp.status_code not in _RETRY_STATUSES or attempt == attempts - 1:
+            return resp
+        retry_after = resp.headers.get("retry-after", "")
+        wait = float(retry_after) if retry_after.replace(".", "", 1).isdigit() else 2.0 ** attempt
+        await asyncio.sleep(min(wait, max_wait))
+    return resp
+
 
 # ── Core data types ───────────────────────────────────────────────────────────
 
