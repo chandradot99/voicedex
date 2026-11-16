@@ -92,7 +92,21 @@
           --scalar-sidebar-search-background: #11141a;
           --scalar-sidebar-search-border-color: rgba(255, 255, 255, 0.12);
         }
-        .scalar-app, .scalar-api-reference, body { background: #07080b; }
+        .scalar-api-reference.references-layout { background: #07080b; }
+        /* API client ("Test Request"): a raised panel over a dimmed, blurred page.
+           !important: Scalar's own theme selectors are more specific than customCss. */
+        .scalar-container.scalar-client--open { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+        .scalar.scalar-app.z-overlay { background: transparent !important; }
+        .scalar-client.scalar-app-layout, .scalar-client.scalar-app-layout * {
+          --scalar-background-1: #11141a !important;
+          --scalar-background-2: #171b23 !important;
+          --scalar-background-3: #1f2430 !important;
+          --scalar-border-color: rgba(255, 255, 255, 0.12) !important;
+        }
+        .scalar-client.scalar-app-layout {
+          background: #11141a !important; border: 1px solid rgba(255, 255, 255, 0.18) !important; border-radius: 22px; overflow: hidden;
+          box-shadow: 0 40px 140px -20px rgba(0, 0, 0, 0.95), 0 0 80px -30px rgba(20, 184, 166, 0.35) !important;
+        }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
         .introduction-section h1, .section-header.tight { font-weight: 600; }
         .scalar-card, .scalar-codeblock-pre { border-radius: 14px !important; }
