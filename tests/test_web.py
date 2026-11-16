@@ -84,3 +84,16 @@ def test_free_price_label():
     from naaviq.web.views import price_label
     m = Model(id="f", name="f", type="tts", pricing={"unit": "character", "price_usd": 0})
     assert price_label(m) == "Free"
+
+
+async def test_openapi_examples_use_real_data(client):
+    from naaviq.main import app
+    app.openapi_schema = None                      # rebuild against the fixture catalog
+    spec = (await client.get("/openapi.json")).json()
+    ex = spec["paths"]["/v1/models"]["get"]["responses"]["200"]["content"]["application/json"]["example"]
+    assert ex["data"] and ex["data"][0]["provider_id"] == "zz-test-provider" and ex["data"][0]["model_id"] != "string"
+    params = {p["name"]: p.get("example") for p in spec["paths"]["/v1/providers/{provider_id}/models/{model_id}"]["get"]["parameters"]}
+    assert params["provider_id"] == "zz-test-provider" and params["model_id"]
+    err = spec["paths"]["/v1/models"]["get"]["responses"]["422"]["content"]["application/json"]["example"]
+    assert err["detail"][0]["loc"] == ["query", "limit"]
+    app.openapi_schema = None

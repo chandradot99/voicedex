@@ -85,6 +85,23 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+def _openapi_with_examples() -> dict:
+    """OpenAPI document with real-data examples from the loaded catalog (built once per process)."""
+    if app.openapi_schema:
+        return app.openapi_schema
+    from fastapi.openapi.utils import get_openapi
+
+    from naaviq.openapi_examples import inject_examples
+    spec = get_openapi(title=app.title, version=app.version, summary=app.summary, description=app.description,
+                       routes=app.routes, tags=app.openapi_tags)
+    catalog = getattr(app.state, "catalog", None)
+    if catalog is not None:
+        inject_examples(spec, catalog)
+        app.openapi_schema = spec        # cache only once the catalog is loaded
+    return spec
+
+
+app.openapi = _openapi_with_examples
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
