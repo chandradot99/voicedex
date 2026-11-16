@@ -1,0 +1,488 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Streaming-native Simba model for English, German, Spanish, French, Italian and Brazilian Portuguese; the API default when model is omitted.",
+    "first_seen": "2026-11-16",
+    "id": "simba-3.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "de-DE",
+      "es-ES",
+      "es-MX",
+      "fr-FR",
+      "it-IT",
+      "pt-BR"
+    ],
+    "max_text_chars": 20000,
+    "meta": {
+      "api_default": true,
+      "emotion_styles_applied": false,
+      "max_chars_by_endpoint": {
+        "/v1/audio/speech": 2000,
+        "/v1/audio/stream": 20000,
+        "/v1/audio/stream/with-timestamps": 20000
+      },
+      "output_formats": [
+        "pcm_8000",
+        "pcm_16000",
+        "pcm_22050",
+        "pcm_24000",
+        "pcm_44100",
+        "pcm_48000",
+        "ulaw_8000",
+        "mp3_22050_*",
+        "mp3_24000_*",
+        "ogg_24000",
+        "aac_24000",
+        "wav_24000",
+        "wav_48000"
+      ],
+      "wav_not_on_streaming": true
+    },
+    "name": "Simba 3.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Per 1M characters: $10 Starter / $8 Pro / $6 Scale.",
+      "price_usd": 1e-05,
+      "source_url": "https://speechify.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "starter plan",
+          "price_usd": 1e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "pro plan",
+          "price_usd": 8e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "scale plan",
+          "price_usd": 6e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechify.ai/build/guides/concepts/models",
+        "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
+        "https://speechify.ai/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Streaming-native English-only Simba model tuned for low latency (56 ms p50 server-side first byte).",
+    "first_seen": "2026-11-16",
+    "id": "simba-3.2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 20000,
+    "meta": {
+      "emotion_styles_applied": false,
+      "english_voices_only": true,
+      "max_chars_by_endpoint": {
+        "/v1/audio/speech": 2000,
+        "/v1/audio/stream": 20000,
+        "/v1/audio/stream/with-timestamps": 20000
+      },
+      "output_formats": [
+        "pcm_8000",
+        "pcm_16000",
+        "pcm_22050",
+        "pcm_24000",
+        "pcm_44100",
+        "pcm_48000",
+        "ulaw_8000",
+        "mp3_22050_*",
+        "mp3_24000_*",
+        "ogg_24000",
+        "aac_24000",
+        "wav_24000",
+        "wav_48000"
+      ],
+      "wav_not_on_streaming": true
+    },
+    "name": "Simba 3.2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Per 1M characters: $10 Starter / $8 Pro / $6 Scale.",
+      "price_usd": 1e-05,
+      "source_url": "https://speechify.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "starter plan",
+          "price_usd": 1e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "pro plan",
+          "price_usd": 8e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "scale plan",
+          "price_usd": 6e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechify.ai/build/guides/concepts/models",
+        "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
+        "https://speechify.ai/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Recommended streaming-native Simba model covering 48 languages under one id, with every catalog voice in each.",
+    "first_seen": "2026-11-16",
+    "id": "simba-3.5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "ar",
+      "be",
+      "bn",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "es",
+      "fa",
+      "fi",
+      "fr",
+      "gu",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ka",
+      "kk",
+      "ko",
+      "la",
+      "mr",
+      "ms",
+      "my",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sr",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "tl",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "zh"
+    ],
+    "max_text_chars": 20000,
+    "meta": {
+      "api_default": false,
+      "emotion_styles_applied": false,
+      "max_chars_by_endpoint": {
+        "/v1/audio/speech": 2000,
+        "/v1/audio/stream": 20000,
+        "/v1/audio/stream/with-timestamps": 20000
+      },
+      "output_formats": [
+        "pcm_8000",
+        "pcm_16000",
+        "pcm_22050",
+        "pcm_24000",
+        "pcm_44100",
+        "pcm_48000",
+        "ulaw_8000",
+        "mp3_22050_*",
+        "mp3_24000_*",
+        "ogg_24000",
+        "aac_24000",
+        "wav_24000",
+        "wav_48000"
+      ],
+      "pronunciations": "IPA or alias, all languages except English",
+      "recommended_since": "2026-10-18",
+      "wav_not_on_streaming": true
+    },
+    "name": "Simba 3.5",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "List price per 1M characters $15/$12/$10 (Starter/Pro/Scale); launch price $10/$8/$6 until 2026-11-21. Free plan: 500K chars/month (333K for Simba 3.5 after 21 Nov).",
+      "price_usd": 1.5e-05,
+      "source_url": "https://speechify.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "starter plan",
+          "price_usd": 1.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "pro plan",
+          "price_usd": 1.2e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "scale plan",
+          "price_usd": 1e-05,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechify.ai/build/guides/concepts/models",
+        "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
+        "https://speechify.ai/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Legacy Simba 1.6 English model with full SSML including emphasis and emotion styles; only selectable on API versions before 2026-09-21.",
+    "eol_date": "2026-11-21",
+    "first_seen": "2026-11-16",
+    "id": "simba-english",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "deprecation_notice": "Simba 1.6 model retired from API version 2026-09-21 (400 model_retired); workspaces pinned earlier keep it until 2026-11-21, after which the id is served by current models.",
+      "fine_tuned_cloning": "contact sales",
+      "generation": "Simba 1.6",
+      "replacement": "simba-3.5 (or simba-3.2 for English only)",
+      "retired_at_api_version": "2026-09-21"
+    },
+    "name": "Simba English (Simba 1.6)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechify.ai/build/guides/concepts/models",
+        "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
+        "https://speechify.ai/pricing"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Legacy Simba 1.6 multilingual model with in-sentence language mixing; only selectable on API versions before 2026-09-21.",
+    "eol_date": "2026-11-21",
+    "first_seen": "2026-11-16",
+    "id": "simba-multilingual",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "fr-FR",
+      "de-DE",
+      "es-MX",
+      "pt-BR",
+      "pt-PT",
+      "ar-AE",
+      "bn-IN",
+      "yue-CN",
+      "da-DK",
+      "nl-NL",
+      "et-EE",
+      "fi-FI",
+      "el-GR",
+      "gu-IN",
+      "he-IL",
+      "hi-IN",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "mr-IN",
+      "nb-NO",
+      "pl-PL",
+      "ru-RU",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "tr-TR",
+      "uk-UA",
+      "ur-IN",
+      "vi-VN"
+    ],
+    "meta": {
+      "beta_languages": [
+        "ar-AE",
+        "bn-IN",
+        "yue-CN",
+        "da-DK",
+        "nl-NL",
+        "et-EE",
+        "fi-FI",
+        "el-GR",
+        "gu-IN",
+        "he-IL",
+        "hi-IN",
+        "it-IT",
+        "ja-JP",
+        "ko-KR",
+        "mr-IN",
+        "nb-NO",
+        "pl-PL",
+        "ru-RU",
+        "sv-SE",
+        "ta-IN",
+        "te-IN",
+        "tr-TR",
+        "uk-UA",
+        "ur-IN",
+        "vi-VN"
+      ],
+      "deprecation_notice": "Simba 1.6 model retired from API version 2026-09-21 (400 model_retired); workspaces pinned earlier keep it until 2026-11-21, after which the id is served by current models. Served and billed as simba-3.5 from 2026-11-21.",
+      "fine_tuned_cloning": "contact sales",
+      "generation": "Simba 1.6",
+      "replacement": "simba-3.5",
+      "retired_at_api_version": "2026-09-21"
+    },
+    "name": "Simba Multilingual (Simba 1.6)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechify.ai/build/guides/concepts/models",
+        "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
+        "https://speechify.ai/pricing"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

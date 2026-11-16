@@ -38,28 +38,16 @@ _BASE_URL = "https://api.speechify.ai/v1"
 _VOICES_URL = f"{_BASE_URL}/voices"
 
 _DOCS_URLS = [
-    "https://docs.speechify.com/docs/text-to-speech-api-overview",
-    "https://docs.speechify.com/reference/create-speech",
-    "https://docs.speechify.com/docs/voices",
+    "https://docs.speechify.ai/build/guides/concepts/models",
+    "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
+    "https://speechify.ai/pricing",
 ]
 
-_TTS_MODEL_GUIDANCE = """
-Extract Speechify TTS models. There are 2 active models in the Simba family.
-Do NOT include deprecated models simba-base or simba-turbo.
-
-1. model_id="simba-english", display_name="Simba English", is_default=True, streaming=True
-   - Best quality model, English only.
-   - description="Speechify Simba English — highest quality English TTS."
-   - languages: ["en"]
-
-2. model_id="simba-multilingual", display_name="Simba Multilingual", is_default=False, streaming=True
-   - Experimental multilingual model, 50+ languages.
-   - description="Speechify Simba Multilingual — 50+ language experimental TTS."
-   - languages: ["*"]
-   - meta: {"status": "experimental"}
-
-Use exact model_id values as listed above.
-"""
+_TTS_MODEL_GUIDANCE = (
+    "Return every Simba TTS model id the API accepts. Legacy models with a published shutdown date "
+    "stay in with eol_date and meta.replacement; exclude retired ones. is_default=true for the model "
+    "the docs recommend for new code (record the API's fallback model in meta if different)."
+)
 
 _GENDER_MAP = {"male": "male", "female": "female", "notspecified": "neutral"}
 
@@ -122,18 +110,16 @@ class SpeechifySyncer(ProviderSyncer):
 
             gender = _GENDER_MAP.get((v.get("gender") or "").lower())
 
-            locale = v.get("locale")
-            if locale:
-                languages = normalize_languages([locale])
-            else:
-                languages = ["en"]
-
+            # Each entry: {"name": "simba-3.5", "languages": [{"locale": "te-IN", ...}]}.
+            # (Older API versions used "model" instead of "name".)
             voice_models = v.get("models") or []
-            compatible = [m["model"] for m in voice_models if m.get("model") in all_model_ids]
-            if not compatible:
-                compatible = []  # works with all models
-
-            preview_url = v.get("preview_audio") or None
+            model_names = [(m.get("name") or m.get("model")) for m in voice_models]
+            compatible = sorted({n for n in model_names if n in all_model_ids})
+            locales = [v.get("locale")] + [
+                lang.get("locale") for m in voice_models for lang in (m.get("languages") or [])
+                if isinstance(lang, dict)
+            ]
+            languages = list(dict.fromkeys(normalize_languages([loc for loc in locales if loc])))
 
             voices.append(SyncVoice(
                 voice_id=voice_id,
@@ -141,14 +127,14 @@ class SpeechifySyncer(ProviderSyncer):
                 gender=gender,
                 category="premade",
                 languages=languages,
-                age=None,
-                description=None,
-                preview_url=preview_url,
+                preview_url=v.get("preview_audio") or None,
+                tags=list(v.get("tags") or []),
                 compatible_models=compatible,
-                meta={
-                    "tags": v.get("tags") or [],
-                    "avatar_image": v.get("avatar_image") or None,
-                },
+                meta={k: val for k, val in {
+                    "avatar_image": v.get("avatar_image"),
+                    "staff_pick_rank": v.get("staff_pick_rank"),
+                    "unlisted_models": sorted({n for n in model_names if n and n not in all_model_ids}) or None,
+                }.items() if val},
             ))
         return voices
 

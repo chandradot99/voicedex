@@ -1,0 +1,22 @@
+{
+  "api_urls": [
+    "https://api.speechify.ai/v1/voices"
+  ],
+  "docs_urls": [
+    "https://docs.speechify.ai/build/guides/concepts/models",
+    "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
+    "https://speechify.ai/pricing"
+  ],
+  "id": "speechify",
+  "last_synced": "2026-11-16",
+  "name": "Speechify",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.speechify.ai/v1/voices"
+    ]
+  }
+}
