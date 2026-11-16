@@ -46,3 +46,5 @@ ignore = ["E501"]
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "session"
+# One event loop for all tests — the app's global asyncpg engine can't hop loops.
+asyncio_default_test_loop_scope = "session"

@@ -333,6 +333,8 @@ Three paths — all use the same sync scripts and produce identical DB state. Th
 
 Ask Claude Code to sync a provider. For `docs`/`mixed` providers Claude Code itself does the agentic fetch-and-parse step, writing structured output to `.sync-cache/` before running the script. The script reads the cache and skips the internal AI parser entirely. **No `ANTHROPIC_API_KEY` is needed** — the AI work is attributed to your Claude Code session, not billed against a key.
 
+The cache **always takes precedence**: if `.sync-cache/` has a file for the provider, the script uses it and never calls the Anthropic API, even if `ANTHROPIC_API_KEY` happens to be set. The key is only consulted on a cache miss.
+
 `.sync-cache/` is a single-run handshake, not a cross-run memo: after every `--apply`, the script deletes that provider's cache files. Next sync is forced to re-parse from docs, so we never silently reuse a stale extraction. Dry-runs preserve cache so you can review a diff and apply without re-parsing.
 
 ```bash
@@ -389,6 +391,8 @@ uv run uvicorn naaviq.main:app --reload
 | GET | `/v1/providers/{id}` | Get a single provider |
 | GET | `/v1/providers/{id}/models` | List models (filters: `?type=stt\|tts`, `?capabilities=a,b`) |
 | GET | `/v1/providers/{id}/voices` | List voices (filters: `?gender=`, `?capabilities=`, etc.) |
+| GET | `/v1/models` | List models across all providers (same filters as per-provider, plus `?provider=`) |
+| GET | `/v1/voices` | List voices across all providers (same filters as per-provider, plus `?provider=`) |
 | GET | `/health` | Health check |
 
 All list endpoints support **`?updated_since=<ISO-8601>`** for incremental polling — returns rows with `updated_at >= updated_since`. When this param is set, `include_deprecated` auto-flips to `true` so consumers see deprecation events (pass `include_deprecated=false` explicitly to override). Consumers poll by storing `max(row.updated_at)` from each batch and passing it back; `>=` can duplicate the boundary row, dedupe by `id` client-side.

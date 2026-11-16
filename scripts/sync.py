@@ -22,6 +22,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timezone
 
 from sqlalchemy import select
+from sqlalchemy.engine import make_url
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -35,6 +36,14 @@ _SYNC_ERROR_MAX_CHARS = 8000   # cap stored error text
 
 _MODEL_IDENTITY = {"model_id", "type"}
 _VOICE_IDENTITY = {"voice_id"}
+
+
+def _redact(url: str) -> str:
+    """Render a DB URL with the password masked, for safe console output."""
+    try:
+        return make_url(url).render_as_string(hide_password=True)
+    except Exception:
+        return "<unparseable DATABASE URL>"
 
 
 @dataclass
@@ -313,7 +322,7 @@ async def main() -> None:
         return
 
     mode = "APPLY" if args.apply else "DRY-RUN"
-    print(f"Dev DB : {settings.dev_database_url}")
+    print(f"Dev DB : {_redact(settings.dev_database_url)}")
     print(f"Mode   : {mode}")
     print(f"Syncing: {', '.join(provider_ids)}")
 

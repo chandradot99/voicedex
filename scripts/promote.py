@@ -26,11 +26,20 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 
 from sqlalchemy import select
+from sqlalchemy.engine import make_url
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 
 from naaviq.config import settings
 from naaviq.models import Model, Provider, Voice
+
+
+def _redact(url: str) -> str:
+    """Render a DB URL with the password masked, for safe console output."""
+    try:
+        return make_url(url).render_as_string(hide_password=True)
+    except Exception:
+        return "<unparseable DATABASE URL>"
 
 
 @dataclass
@@ -213,8 +222,8 @@ async def main() -> None:
         print("✗ DATABASE_URL (prod) is not set in .env")
         return
 
-    print(f"Dev DB : {settings.dev_database_url}")
-    print(f"Prod DB: {settings.database_url}")
+    print(f"Dev DB : {_redact(settings.dev_database_url)}")
+    print(f"Prod DB: {_redact(settings.database_url)}")
 
     dev_engine = create_async_engine(settings.dev_database_url)
     prod_engine = create_async_engine(settings.database_url)

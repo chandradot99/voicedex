@@ -267,13 +267,11 @@ async def parse_models_from_docs(
     """
     Extract models from documentation — cache-first, then Anthropic API.
 
-    Claude Code path (no ANTHROPIC_API_KEY):
-      Checks .sync-cache/{provider_id}_{model_type}_models.json first.
-      If found, returns cached models without any API call.
-      If not found, raises AIParserError with instructions for Claude Code.
-
-    Admin UI path (ANTHROPIC_API_KEY set):
-      Runs the agentic Claude loop directly — cache is ignored.
+    Always checks .sync-cache/{provider_id}_{model_type}_models.json first and
+    returns it if present (Claude Code path) — no API call, regardless of keys.
+    On cache miss: raises AIParserError with instructions for Claude Code when
+    no ANTHROPIC_API_KEY is available; otherwise runs the agentic Claude loop
+    (admin server path).
 
     Returns (models, notes) where notes contains provenance for SyncResult.notes.
     Syncers that pass the raw dict into SyncResult.notes must stringify it first —
@@ -282,12 +280,13 @@ async def parse_models_from_docs(
     if not seed_urls:
         raise AIParserError("seed_urls must contain at least one URL")
 
-    # Claude Code path: check cache before hitting the API
+    # Cache always wins — a Claude Code extraction in .sync-cache/ is never
+    # bypassed, even if ANTHROPIC_API_KEY happens to be set in the environment.
+    from naaviq.sync.cache import _models_path, read_models_cache
+    cached = read_models_cache(provider_id, model_type)
+    if cached is not None:
+        return cached, {"source": "cache", "path": str(_models_path(provider_id, model_type))}
     if not (api_key or os.getenv("ANTHROPIC_API_KEY")):
-        from naaviq.sync.cache import _models_path, read_models_cache
-        cached = read_models_cache(provider_id, model_type)
-        if cached is not None:
-            return cached, {"source": "cache", "path": str(_models_path(provider_id, model_type))}
         raise AIParserError(
             f"ANTHROPIC_API_KEY not set and no cache found for {provider_id} {model_type} models.\n"
             f"  Cache path: .sync-cache/{provider_id}_{model_type}_models.json\n"
@@ -348,23 +347,18 @@ async def parse_voices_from_docs(
     """
     Extract voices from documentation — cache-first, then Anthropic API.
 
-    Claude Code path (no ANTHROPIC_API_KEY):
-      Checks .sync-cache/{provider_id}_voices.json first.
-      If found, returns cached voices without any API call.
-      If not found, raises AIParserError with instructions for Claude Code.
-
-    Admin UI path (ANTHROPIC_API_KEY set):
-      Runs the agentic Claude loop directly — cache is ignored.
+    Always checks .sync-cache/{provider_id}_voices.json first (see
+    parse_models_from_docs for the full cache/API precedence).
     """
     if not seed_urls:
         raise AIParserError("seed_urls must contain at least one URL")
 
-    # Claude Code path: check cache before hitting the API
+    # Cache always wins — see parse_models_from_docs.
+    from naaviq.sync.cache import _voices_path, read_voices_cache
+    cached = read_voices_cache(provider_id)
+    if cached is not None:
+        return cached, {"source": "cache", "path": str(_voices_path(provider_id))}
     if not (api_key or os.getenv("ANTHROPIC_API_KEY")):
-        from naaviq.sync.cache import _voices_path, read_voices_cache
-        cached = read_voices_cache(provider_id)
-        if cached is not None:
-            return cached, {"source": "cache", "path": str(_voices_path(provider_id))}
         raise AIParserError(
             f"ANTHROPIC_API_KEY not set and no cache found for {provider_id} voices.\n"
             f"  Cache path: .sync-cache/{provider_id}_voices.json\n"

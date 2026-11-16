@@ -6,7 +6,7 @@ Source: mixed
   - TTS models : AI-parsed from https://docs.cartesia.ai/build-with-cartesia/tts-models/latest
   - STT models : AI-parsed from https://docs.cartesia.ai/build-with-cartesia/stt-models   (Ink family)
 
-The voice API returns one entry per voice. We filter to is_public=True voices
+The voice API returns one entry per voice. We filter to public voices (access="public")
 (community-cloned and private voices are skipped).
 
 The TTS models page lists family models (sonic-3, sonic-2, sonic-turbo, sonic),
@@ -40,7 +40,8 @@ _STT_MODELS_DOCS_URLS = [
     "https://docs.cartesia.ai/build-with-cartesia/stt-models",
 ]
 
-_CARTESIA_VERSION = "2025-04-16"  # TODO: verify current value at docs.cartesia.ai
+# Latest per docs.cartesia.ai/llms.txt (valid: 2026-08-14, 2026-03-01, 2024-11-13, 2024-06-10).
+_CARTESIA_VERSION = "2026-08-14"
 _PAGE_SIZE        = 100
 _MAX_PAGES        = 50
 
@@ -164,7 +165,7 @@ class CartesiaSyncer(ProviderSyncer):
 
                 items = data.get("data", [])
                 for item in items:
-                    if not item.get("is_public", False):
+                    if not _is_public(item):
                         continue
                     voices.append(_to_sync_voice(item))
 
@@ -183,9 +184,24 @@ class CartesiaSyncer(ProviderSyncer):
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
-def _to_sync_voice(item: dict) -> SyncVoice:
+def _is_public(item: dict) -> bool:
+    # 2026-08-14 replaced the boolean `is_public` with `access: "public" | "private"`.
+    if "access" in item:
+        return item.get("access") == "public"
+    return bool(item.get("is_public", False))
+
+
+def _voice_languages(item: dict) -> list[str]:
+    # `language` is deprecated in 2026-08-14 in favour of `accents[].locale` (BCP-47).
+    locales = [a.get("locale") for a in (item.get("accents") or []) if isinstance(a, dict) and a.get("locale")]
+    if locales:
+        return normalize_languages(locales)
     raw_lang = item.get("language") or ""
-    languages = normalize_languages([raw_lang]) if raw_lang else []
+    return normalize_languages([raw_lang]) if raw_lang else []
+
+
+def _to_sync_voice(item: dict) -> SyncVoice:
+    languages = _voice_languages(item)
 
     return SyncVoice(
         voice_id=item["id"],

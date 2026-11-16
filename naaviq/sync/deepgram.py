@@ -16,6 +16,11 @@ from naaviq.sync.language import normalize_languages
 
 _API_URL = "https://api.deepgram.com/v1/models"
 
+# Deepgram's API doesn't flag a default. Pick the first of these that the API
+# actually returns (so a removed model never becomes a phantom default).
+_STT_DEFAULT_PREFERENCE = ["nova-3-general", "nova-3", "nova-2-general"]
+_TTS_DEFAULT_PREFERENCE = ["aura-2", "aura"]
+
 _MASCULINE_TAGS = {"masculine"}
 _FEMININE_TAGS  = {"feminine"}
 
@@ -53,33 +58,33 @@ class DeepgramSyncer(ProviderSyncer):
         """Returns (stt_models, tts_models)."""
 
         # STT — Deepgram returns one entry per model per language, deduplicate by canonical_name
-        stt_by_canonical: dict[str, dict] = {}
-        stt_langs: dict[str, set[str]] = {}
-
+        # Each per-language entry carries its own streaming/batch flags, so a model
+        # supports a mode if ANY of its language entries does.
+        stt_entries: dict[str, list[dict]] = {}
         for m in data.get("stt", []):
             canonical = m.get("canonical_name") or m.get("name")
-            if not canonical:
+            if not canonical or not _is_real_model_id(canonical):
                 continue
-            if canonical not in stt_by_canonical:
-                stt_by_canonical[canonical] = m
-                stt_langs[canonical] = set()
-            for lang in normalize_languages(m.get("languages", [])):
-                stt_langs[canonical].add(lang)
+            stt_entries.setdefault(canonical, []).append(m)
 
+        stt_default = _pick_default(stt_entries.keys(), _STT_DEFAULT_PREFERENCE)
         stt_models: list[SyncModel] = []
-        for canonical, m in stt_by_canonical.items():
+        for canonical, entries in stt_entries.items():
+            first = entries[0]
+            langs = {lang for e in entries for lang in normalize_languages(e.get("languages", []))}
             stt_models.append(SyncModel(
                 model_id=canonical,
                 display_name=_display_name_from_id(canonical),
                 type="stt",
-                languages=sorted(stt_langs[canonical]),
-                streaming=m.get("streaming", True),
-                is_default=False,  # Deepgram API does not signal a default model
+                languages=sorted(langs),
+                streaming=any(e.get("streaming", False) for e in entries),
+                is_default=canonical == stt_default,
                 meta={
-                    "architecture":     m.get("architecture"),
-                    "version":          m.get("version"),
-                    "batch":            m.get("batch", False),
-                    "formatted_output": m.get("formatted_output", False),
+                    "architecture":     first.get("architecture"),
+                    "version":          max((e.get("version") or "" for e in entries), default="") or None,
+                    "batch":            any(e.get("batch", False) for e in entries),
+                    "formatted_output": any(e.get("formatted_output", False) for e in entries),
+                    "multilingual":     any(e.get("multilingual", False) for e in entries),
                 },
             ))
 
@@ -95,6 +100,7 @@ class DeepgramSyncer(ProviderSyncer):
             for lang in normalize_languages(m.get("languages", [])):
                 arch_langs[arch].add(lang)
 
+        tts_default = _pick_default(arch_langs.keys(), _TTS_DEFAULT_PREFERENCE)
         tts_models: list[SyncModel] = []
         for arch, langs in arch_langs.items():
             tts_models.append(SyncModel(
@@ -103,7 +109,7 @@ class DeepgramSyncer(ProviderSyncer):
                 type="tts",
                 languages=sorted(langs),
                 streaming=True,
-                is_default=False,  # Deepgram API does not signal a default model
+                is_default=arch == tts_default,
                 meta={},
             ))
 
@@ -154,6 +160,17 @@ def _display_name_from_id(model_id: str) -> str:
     "whisper-large"  → "Whisper Large"
     """
     return model_id.replace("-", " ").title()
+
+
+def _is_real_model_id(model_id: str) -> bool:
+    """Deepgram's /v1/models leaks internal placeholder entries such as
+    "general-dQw4w9WgXcQ". Real model IDs are lowercase slugs."""
+    return model_id == model_id.lower()
+
+
+def _pick_default(available, preference: list[str]) -> str | None:
+    ids = set(available)
+    return next((p for p in preference if p in ids), None)
 
 
 def _gender_from_tags(tags: set[str]) -> str | None:
