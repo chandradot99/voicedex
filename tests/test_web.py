@@ -68,3 +68,13 @@ def test_voice_chips():
     from naaviq.web.views import voice_chips
     v = Voice(id="x", name="x", use_cases=["use-case:e-learning", "age:young-adult", "narration"], tags=["calm"])
     assert voice_chips(v) == ["e learning", "narration", "calm"]
+
+
+async def test_api_reference(client):
+    r = await client.get("/docs")
+    assert r.status_code == 200 and "scalar-docs" in r.text and "@scalar/api-reference@" in r.text
+    spec = (await client.get("/openapi.json")).json()
+    assert [t["name"] for t in spec["tags"]][:2] == ["Models & voices", "Providers"]
+    ops = [op for path in spec["paths"].values() for op in path.values()]
+    assert all(op.get("summary") for op in ops) and all(len(op.get("tags", [])) == 1 for op in ops)
+    assert (await client.get("/redoc", follow_redirects=False)).status_code == 301

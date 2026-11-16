@@ -28,12 +28,60 @@ async def lifespan(app: FastAPI):
     yield
 
 
+API_DESCRIPTION = """
+An open, read-only catalog of voice AI: every speech-to-text, text-to-speech and speech-to-speech
+model and stock voice from the major providers, with languages, features, prices and shutdown dates.
+Data is read from each provider's API or documentation, reviewed, and versioned in git.
+
+## Quickstart
+
+No key, no sign-up. Every endpoint is a plain `GET`.
+
+```bash
+# Speech-to-text models that support Hindi and speaker diarization
+curl "https://<host>/v1/models?type=stt&language=hi&capabilities=speaker_diarization"
+
+# British female voices from one provider
+curl "https://<host>/v1/providers/elevenlabs/voices?gender=female&accent=british"
+
+# Everything, in one response
+curl "https://<host>/v1/catalog.json"
+```
+
+## Conventions
+
+- **Languages** are BCP-47 (`en-US`, `hi-IN`). `language=en` matches every English locale; `*` on a
+  record means "many languages, not enumerated" and always matches.
+- **Capabilities** use a fixed vocabulary, e.g. `word_timestamps`, `speaker_diarization`, `voice_cloning`.
+  Multiple values must all match.
+- **Prices** are list prices as published: `price_usd` per `unit`, plan tiers in `variants`, and
+  `currency` + `price` for providers that only publish in another currency (never converted).
+- **Lifecycle**: `alpha`, `beta`, `ga`, `deprecated`. A model with an announced shutdown date carries
+  `eol_date` and is listed until that day.
+- **IDs**: `id` is a stable UUID; `model_id` / `voice_id` is the exact string to send to the provider.
+
+## Caching and limits
+
+Every `/v1` response carries one catalog-wide `ETag`; send it back as `If-None-Match` to get
+`304 Not Modified`. Responses are cacheable for five minutes. Polling for changes? Use
+`updated_since` (it includes deprecations). Requests are rate limited per client IP.
+"""
+
+OPENAPI_TAGS = [
+    {"name": "Models & voices", "description": "Search models and voices across every provider."},
+    {"name": "Providers", "description": "Providers and their models and voices, one provider at a time."},
+    {"name": "Bulk export", "description": "The whole catalog in one response, for offline use or mirroring."},
+    {"name": "Meta", "description": "Service health."},
+]
+
 app = FastAPI(
-    title="Voice Provider Registry",
-    description="Open catalog of speech-to-text and text-to-speech providers, models and voices.",
+    title=f"{settings.site_name} API",
+    summary="Open catalog of speech-to-text, text-to-speech and speech-to-speech models and voices.",
+    description=API_DESCRIPTION,
     version="2.0.0",
-    docs_url="/docs",
-    redoc_url="/redoc",
+    openapi_tags=OPENAPI_TAGS,
+    docs_url=None,      # /docs is our themed reference (naaviq/web/routes.py)
+    redoc_url=None,
     lifespan=lifespan,
 )
 
@@ -79,7 +127,7 @@ async def not_found(request: Request, exc):
 app.mount("/static", StaticFiles(directory=str(web.Path(web.__file__).parent / "static")), name="static")
 
 
-@app.get("/health", tags=["meta"])
+@app.get("/health", tags=["Meta"], summary="Health check")
 async def health(request: Request):
     cat = request.app.state.catalog
     return {"status": "ok", "providers": len(cat.providers), "etag": cat.etag.strip('"')}

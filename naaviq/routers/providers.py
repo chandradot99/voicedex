@@ -16,7 +16,7 @@ from naaviq.routers._filters import (
 )
 from naaviq.schemas import ModelOut, PaginatedModels, PaginatedVoices, ProviderOut, VoiceOut
 
-router = APIRouter(prefix="/providers", tags=["providers"])
+router = APIRouter(prefix="/providers", tags=["Providers"])
 
 
 def _provider_out(catalog: Catalog, provider_id: str) -> ProviderOut:
@@ -34,7 +34,7 @@ def _require_active(catalog: Catalog, provider_id: str) -> None:
         raise HTTPException(404, f"Provider '{provider_id}' not found")
 
 
-@router.get("", response_model=list[ProviderOut])
+@router.get("", response_model=list[ProviderOut], summary="List providers", description="All active providers with model and voice counts. Retired providers (shut down or no longer selling) appear with `include_deprecated=true`, with `status: deprecated` and `retired_on`.")
 @limiter.limit(settings.rate_limit)
 async def list_providers(
     request: Request,
@@ -58,7 +58,7 @@ async def list_providers(
     return sorted(out, key=lambda p: (p.display_name.lower(), p.provider_id))
 
 
-@router.get("/{provider_id}", response_model=ProviderOut)
+@router.get("/{provider_id}", response_model=ProviderOut, summary="Get a provider")
 @limiter.limit(settings.rate_limit)
 async def get_provider(request: Request, provider_id: str, catalog: Catalog = Depends(get_catalog)):
     """Get a single active provider by ID."""
@@ -66,7 +66,7 @@ async def get_provider(request: Request, provider_id: str, catalog: Catalog = De
     return _provider_out(catalog, provider_id)
 
 
-@router.get("/{provider_id}/models", response_model=PaginatedModels)
+@router.get("/{provider_id}/models", response_model=PaginatedModels, summary="List a provider's models", description="One provider's models with the same filters as `/v1/models`.")
 @limiter.limit(settings.rate_limit)
 async def list_models(
     request: Request,
@@ -96,7 +96,7 @@ async def list_models(
                            data=[ModelOut.build(r.provider_id, r.model) for r in page])
 
 
-@router.get("/{provider_id}/models/{model_id}", response_model=ModelOut)
+@router.get("/{provider_id}/models/{model_id}", response_model=ModelOut, summary="Get a model", description="One model, including deprecated ones. Pass `type` when the same id exists for more than one model type.")
 @limiter.limit(settings.rate_limit)
 async def get_model(
     request: Request,
@@ -113,7 +113,7 @@ async def get_model(
     raise HTTPException(404, f"Model '{model_id}' not found for provider '{provider_id}'")
 
 
-@router.get("/{provider_id}/voices", response_model=PaginatedVoices)
+@router.get("/{provider_id}/voices", response_model=PaginatedVoices, summary="List a provider's voices", description="One provider's stock voices with the same filters as `/v1/voices`.")
 @limiter.limit(settings.rate_limit)
 async def list_voices(
     request: Request,
@@ -144,7 +144,7 @@ async def list_voices(
                            data=[VoiceOut.build(r.provider_id, r.voice) for r in page])
 
 
-@router.get("/{provider_id}/voices/{voice_id}", response_model=VoiceOut)
+@router.get("/{provider_id}/voices/{voice_id}", response_model=VoiceOut, summary="Get a voice")
 @limiter.limit(settings.rate_limit)
 async def get_voice(request: Request, provider_id: str, voice_id: str, catalog: Catalog = Depends(get_catalog)):
     """Get one voice (including deprecated ones)."""

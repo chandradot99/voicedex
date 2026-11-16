@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API reference | {{ site_name }}</title>
+  <meta name="description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices: languages, features, prices and shutdown dates.">
+  <meta name="theme-color" content="#07080b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230b6e69'/%3E%3Crect x='4' y='10' width='2.4' height='4' rx='1.2' fill='white'/%3E%3Crect x='8.2' y='7' width='2.4' height='10' rx='1.2' fill='white'/%3E%3Crect x='12.4' y='4.5' width='2.4' height='15' rx='1.2' fill='white'/%3E%3Crect x='16.6' y='8.5' width='2.4' height='7' rx='1.2' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/site.css">
+  <style>
+    body { min-height: 100vh; }
+    .docs-header { position: sticky; top: 0; z-index: 100; padding: 12px 12px 10px; background: var(--bg); }
+    #scalar-docs { --scalar-custom-header-height: 82px; }
+  </style>
+</head>
+<body class="docs-page">
+  <a class="skip" href="#scalar-docs">Skip to the reference</a>
+  <header class="site-header docs-header">
+    <div class="nav-pill">
+      <a class="brand" href="/" aria-label="{{ site_name }} home">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="9" width="3" height="6" rx="1.5"/><rect x="7" y="5" width="3" height="14" rx="1.5"/><rect x="12" y="2" width="3" height="20" rx="1.5"/><rect x="17" y="7" width="3" height="10" rx="1.5"/></svg>
+        <span>{{ site_name }}</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="/models">Models</a>
+        <a href="/voices">Voices</a>
+        <a href="/#providers">Providers</a>
+        <a href="/docs" aria-current="page">API</a>
+      </nav>
+      <a class="nav-cta" href="/v1/catalog.json">Download catalog</a>
+    </div>
+  </header>
+  <main id="scalar-docs"></main>
+  <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.76.4/dist/browser/standalone.js"></script>
+  <script>
+    // Fill the real host into the quickstart examples and server list.
+    fetch("/openapi.json").then((r) => r.text()).then((raw) => {
+    const spec = JSON.parse(raw.replaceAll("https://<host>", location.origin));
+    spec.servers = [{ url: location.origin, description: "This deployment" }];
+    Scalar.createApiReference("#scalar-docs", {
+      content: spec,
+      theme: "none",
+      darkMode: true,
+      forceDarkModeState: "dark",
+      hideDarkModeToggle: true,
+      hideClientButton: false,
+      showDeveloperTools: "never",
+      agent: { disabled: true },
+      hideDownloadButton: false,
+      documentDownloadType: "json",
+      operationTitleSource: "summary",
+      orderSchemaPropertiesBy: "preserve",
+      withDefaultFonts: false,
+      defaultOpenAllTags: true,
+      showSidebar: true,
+      metaData: { title: "API reference | {{ site_name }}" },
+      customCss: `
+        .dark-mode, .light-mode, :root {
+          --scalar-font: "Geist", ui-sans-serif, system-ui, sans-serif;
+          --scalar-font-code: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+          --scalar-background-1: #07080b;
+          --scalar-background-2: #11141a;
+          --scalar-background-3: #171b23;
+          --scalar-background-accent: rgba(94, 234, 212, 0.08);
+          --scalar-color-1: #f2f4f7;
+          --scalar-color-2: #c9ced8;
+          --scalar-color-3: #8b93a3;
+          --scalar-color-accent: #5eead4;
+          --scalar-border-color: rgba(255, 255, 255, 0.08);
+          --scalar-button-1: #f2f4f7;
+          --scalar-button-1-color: #07080b;
+          --scalar-button-1-hover: #ffffff;
+          --scalar-color-green: #a3e635;
+          --scalar-color-blue: #7fb4e0;
+          --scalar-color-orange: #fbbf24;
+          --scalar-color-red: #fb7c5c;
+          --scalar-color-purple: #b79bf0;
+          --scalar-radius: 10px;
+          --scalar-radius-lg: 14px;
+          --scalar-radius-xl: 22px;
+          --scalar-sidebar-background-1: #07080b;
+          --scalar-sidebar-item-hover-background: #11141a;
+          --scalar-sidebar-item-active-background: #171b23;
+          --scalar-sidebar-border-color: rgba(255, 255, 255, 0.08);
+          --scalar-sidebar-color-1: #f2f4f7;
+          --scalar-sidebar-color-2: #8b93a3;
+          --scalar-sidebar-color-active: #5eead4;
+          --scalar-sidebar-search-background: #11141a;
+          --scalar-sidebar-search-border-color: rgba(255, 255, 255, 0.12);
+        }
+        .scalar-app, .scalar-api-reference, body { background: #07080b; }
+        .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
+        .introduction-section h1, .section-header.tight { font-weight: 600; }
+        .scalar-card, .scalar-codeblock-pre { border-radius: 14px !important; }
+      `,
+    });
+    });
+  </script>
+</body>
+</html>

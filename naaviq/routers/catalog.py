@@ -18,10 +18,10 @@ from naaviq.routers._filters import (
 )
 from naaviq.schemas import ModelOut, PaginatedModels, PaginatedVoices, ProviderOut, VoiceOut
 
-router = APIRouter(tags=["catalog"])
+router = APIRouter()
 
 
-@router.get("/models", response_model=PaginatedModels)
+@router.get("/models", response_model=PaginatedModels, tags=["Models & voices"], summary="Search models across providers", description="Every speech-to-text, text-to-speech and speech-to-speech model in the catalog, filterable across providers. Deprecated models are hidden unless `include_deprecated=true` or `updated_since` is set.")
 @limiter.limit(settings.rate_limit)
 async def list_all_models(
     request: Request,
@@ -52,7 +52,7 @@ async def list_all_models(
                            data=[ModelOut.build(r.provider_id, r.model) for r in page])
 
 
-@router.get("/voices", response_model=PaginatedVoices)
+@router.get("/voices", response_model=PaginatedVoices, tags=["Models & voices"], summary="Search voices across providers", description="Stock text-to-speech voices from every provider. Filter by language, gender, accent or the model a voice works with. Private or cloned voices are never included.")
 @limiter.limit(settings.rate_limit)
 async def list_all_voices(
     request: Request,
@@ -84,7 +84,7 @@ async def list_all_voices(
                            data=[VoiceOut.build(r.provider_id, r.voice) for r in page])
 
 
-@router.get("/catalog.json")
+@router.get("/catalog.json", tags=["Bulk export"], summary="Download the whole catalog")
 @limiter.limit(settings.rate_limit)
 async def export_catalog(request: Request, catalog: Catalog = Depends(get_catalog)):
     """The entire catalog (every provider, model and voice, deprecated included) in one response.

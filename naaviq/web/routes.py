@@ -223,3 +223,15 @@ def _grouped(table: list) -> list[tuple[str, list]]:
     for row in table:
         out.setdefault(row.group, []).append(row)
     return list(out.items())
+
+
+@router.get("/docs", response_class=HTMLResponse)
+async def api_docs(request: Request):
+    """Themed API reference (Scalar) over the app's own OpenAPI schema."""
+    return templates.TemplateResponse(request, "docs.html", {})
+
+
+@router.get("/redoc")
+async def redoc_redirect():
+    from fastapi.responses import RedirectResponse
+    return RedirectResponse("/docs", status_code=301)
