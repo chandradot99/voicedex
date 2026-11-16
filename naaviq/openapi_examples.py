@@ -27,8 +27,14 @@ def _trim(obj: Any) -> Any:
     return obj
 
 
+def _live(catalog: Catalog, provider_id: str) -> bool:
+    pd = catalog.providers.get(provider_id)
+    return bool(pd) and pd.provider.status == "active"
+
+
 def _active_models(catalog: Catalog):
-    return [r for r in catalog.models if r.model.deprecated_at is None]
+    """What /v1/models returns by default: live providers, non-deprecated models."""
+    return [r for r in catalog.models if r.model.deprecated_at is None and _live(catalog, r.provider_id)]
 
 
 def _pick_models(catalog: Catalog, n: int = 2):
@@ -44,7 +50,7 @@ def _pick_models(catalog: Catalog, n: int = 2):
 
 
 def _pick_voices(catalog: Catalog, n: int = 2):
-    voices = [r for r in catalog.voices if r.voice.deprecated_at is None]
+    voices = [r for r in catalog.voices if r.voice.deprecated_at is None and _live(catalog, r.provider_id)]
     with_sample = [r for r in voices if r.voice.preview_url and r.provider_id == "elevenlabs"]
     rest = [r for r in voices if r not in with_sample]
     return (with_sample + rest)[:n]
