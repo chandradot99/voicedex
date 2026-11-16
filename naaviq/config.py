@@ -47,6 +47,12 @@ class Settings(BaseSettings):
     speechify_api_key: str = ""
     typecast_api_key: str = ""
     groq_api_key: str = ""
+    soniox_api_key: str = ""
+    xai_api_key: str = ""
+    gradium_api_key: str = ""
+    dashscope_api_key: str = ""        # Alibaba Cloud Model Studio — international (Singapore) key
+    dashscope_workspace_id: str = ""   # Model Studio workspace id (models-list endpoint host)
+    async_api_key: str = ""
     ibm_tts_url: str = "https://api.us-south.text-to-speech.watson.cloud.ibm.com"
     ibm_stt_url: str = "https://api.us-south.speech-to-text.watson.cloud.ibm.com"
 

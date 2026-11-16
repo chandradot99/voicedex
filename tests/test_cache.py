@@ -45,3 +45,20 @@ async def test_cache_miss_without_key_raises_with_instructions(monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
     with pytest.raises(AIParserError, match="no cache found"):
         await parse_models_from_docs(["https://x"], "acme", "stt")
+
+
+async def test_docs_only_syncer_reads_every_declared_section(_api_must_not_be_called):
+    from naaviq.sync.docs_only import DocsOnlySyncer
+
+    class Acme(DocsOnlySyncer):
+        provider_id = "acme"
+        stt_docs = ["https://x"]
+        sts_docs = ["https://x"]
+        voices_docs = ["https://x"]
+
+    write_models_cache("acme", "stt", [SyncModel("s1", "S1", "stt")])
+    write_models_cache("acme", "sts", [SyncModel("r1", "R1", "sts")])
+    write_voices_cache("acme", [SyncVoice("v1", "V1", compatible_models=["*"])])
+    r = await Acme().sync()
+    assert [m.model_id for m in r.stt_models] == ["s1"] and r.tts_models == []   # no tts_docs → not synced
+    assert [m.model_id for m in r.sts_models] == ["r1"] and [v.voice_id for v in r.tts_voices] == ["v1"]

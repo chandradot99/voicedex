@@ -1,0 +1,289 @@
+[
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "Multilingual speech recognition model supporting file upload and real-time WebSocket streaming.",
+    "first_seen": "2026-11-16",
+    "id": "async_asr_v1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "de",
+      "it",
+      "pt",
+      "ar",
+      "ru",
+      "ro",
+      "ja",
+      "he",
+      "hy",
+      "tr",
+      "hi",
+      "zh"
+    ],
+    "meta": {
+      "cold_start_note": "First streaming connection after idle may take 60-150s",
+      "endpoints": [
+        "POST /speech_to_text/",
+        "WSS /speech_to_text/stream"
+      ],
+      "language_hint_param": true,
+      "streaming_input": "PCM16, 16 kHz, mono"
+    },
+    "name": "Async ASR v1.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Per hour of processed audio (prepaid wallet).",
+      "price_usd": 0.5,
+      "source_url": "https://docs.async.com/billing-pricing-2243956m0.md",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.async.com/llms.txt",
+        "https://docs.async.com/models-2161359m0.md",
+        "https://docs.async.com/billing-pricing-2243956m0.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Legacy low-latency multilingual TTS model with the broadest language support (15 languages).",
+    "first_seen": "2026-11-16",
+    "id": "async_flash_v1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "de",
+      "it",
+      "pt",
+      "ar",
+      "ru",
+      "ro",
+      "ja",
+      "he",
+      "hy",
+      "tr",
+      "hi",
+      "zh"
+    ],
+    "meta": {
+      "break_tag": true,
+      "endpoints": [
+        "POST /text_to_speech",
+        "POST /text_to_speech/streaming",
+        "POST /text_to_speech/with_timestamps",
+        "WSS /text_to_speech/websocket/ws"
+      ],
+      "legacy": true,
+      "output_encodings": [
+        "mp3",
+        "wav",
+        "raw pcm_s16le",
+        "raw pcm_f32le"
+      ],
+      "sample_rate_range_hz": [
+        8000,
+        48000
+      ],
+      "speed_control_range": [
+        0.7,
+        2.0
+      ],
+      "stability_range": [
+        0,
+        100
+      ],
+      "text_normalization": false,
+      "tier": "Standard",
+      "voice_cloning_sample_seconds": 3,
+      "word_timestamps_endpoint": true
+    },
+    "name": "Async Flash v1.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Per hour of generated audio; Standard tier (prepaid wallet). Accounts include 10 free minutes.",
+      "price_usd": 0.5,
+      "source_url": "https://docs.async.com/billing-pricing-2243956m0.md",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.async.com/llms.txt",
+        "https://docs.async.com/models-2161359m0.md",
+        "https://docs.async.com/billing-pricing-2243956m0.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "voice_cloning"
+    ],
+    "description": "Latency-optimized streaming TTS model for voice agents, with built-in normalization of dates, currencies, numbers and abbreviations.",
+    "first_seen": "2026-11-16",
+    "id": "async_flash_v1.5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "it",
+      "pt"
+    ],
+    "meta": {
+      "break_tag": true,
+      "endpoints": [
+        "POST /text_to_speech",
+        "POST /text_to_speech/streaming",
+        "POST /text_to_speech/with_timestamps",
+        "WSS /text_to_speech/websocket/ws"
+      ],
+      "output_encodings": [
+        "mp3",
+        "wav",
+        "raw pcm_s16le",
+        "raw pcm_f32le"
+      ],
+      "sample_rate_range_hz": [
+        8000,
+        48000
+      ],
+      "text_normalization": true,
+      "tier": "Standard",
+      "voice_cloning_sample_seconds": 3,
+      "word_timestamps_endpoint": true
+    },
+    "name": "Async Flash v1.5",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Per hour of generated audio; Standard tier (prepaid wallet). Accounts include 10 free minutes.",
+      "price_usd": 0.5,
+      "source_url": "https://docs.async.com/billing-pricing-2243956m0.md",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.async.com/llms.txt",
+        "https://docs.async.com/models-2161359m0.md",
+        "https://docs.async.com/billing-pricing-2243956m0.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "voice_cloning"
+    ],
+    "description": "Highest-quality English TTS model for content production and audiobooks, with built-in text normalization.",
+    "first_seen": "2026-11-16",
+    "id": "async_pro_v1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "break_tag": true,
+      "endpoints": [
+        "POST /text_to_speech",
+        "POST /text_to_speech/streaming",
+        "POST /text_to_speech/with_timestamps",
+        "WSS /text_to_speech/websocket/ws"
+      ],
+      "output_encodings": [
+        "mp3",
+        "wav",
+        "raw pcm_s16le",
+        "raw pcm_f32le"
+      ],
+      "sample_rate_range_hz": [
+        8000,
+        48000
+      ],
+      "text_normalization": true,
+      "tier": "Pro",
+      "voice_cloning_sample_seconds": 3,
+      "word_timestamps_endpoint": true
+    },
+    "name": "Async Pro v1.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Per hour of generated audio; Pro tier (prepaid wallet). Accounts include 10 free minutes.",
+      "price_usd": 1.0,
+      "source_url": "https://docs.async.com/billing-pricing-2243956m0.md",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.async.com/llms.txt",
+        "https://docs.async.com/models-2161359m0.md",
+        "https://docs.async.com/billing-pricing-2243956m0.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

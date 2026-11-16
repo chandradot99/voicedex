@@ -1,0 +1,19 @@
+{
+  "docs_urls": [
+    "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+    "https://platform.stepfun.ai/docs/en/pricing/details"
+  ],
+  "id": "stepfun",
+  "last_synced": "2026-11-16",
+  "name": "StepFun",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+      "https://platform.stepfun.ai/docs/en/pricing/details"
+    ]
+  }
+}

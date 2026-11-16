@@ -1,0 +1,161 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "stepaudio-2.5-realtime",
+      "stepaudio-2.5-tts",
+      "stepaudio-3-realtime-preview",
+      "stepaudio-3-tts"
+    ],
+    "description": "Elegant, gentle female voice; sincere and reassuring.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "elegantgentle-female",
+    "name": "Elegant Gentle",
+    "preview_url": "https://static-openapi.stepfun.com/static/platform-docs/resource/1764232963968_2lpzrh.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "voice-over",
+      "education",
+      "emotional companionship"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "stepaudio-2.5-realtime",
+      "stepaudio-2.5-tts",
+      "stepaudio-3-realtime-preview",
+      "stepaudio-3-tts"
+    ],
+    "description": "Bright, lively English female voice.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "lively-girl",
+    "languages": [
+      "en"
+    ],
+    "name": "Lively Girl",
+    "preview_url": "https://static-openapi.stepfun.ai/static/platform-docs/resource/lively-girl_In.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "audiobook",
+      "video dubbing",
+      "voice assistant"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "stepaudio-2.5-realtime",
+      "stepaudio-2.5-tts",
+      "stepaudio-3-realtime-preview",
+      "stepaudio-3-tts"
+    ],
+    "description": "Light, breezy female voice; engaging and persuasive.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "livelybreezy-female",
+    "name": "Lively Breezy",
+    "preview_url": "https://static-openapi.stepfun.com/static/platform-docs/resource/1764227859773_6r0lga.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "emotional companionship",
+      "customer service",
+      "education",
+      "marketing"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "stepaudio-2.5-realtime",
+      "stepaudio-2.5-tts",
+      "stepaudio-3-realtime-preview",
+      "stepaudio-3-tts"
+    ],
+    "description": "Deep, magnetic English male voice.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "magnetic-voiced-male",
+    "languages": [
+      "en"
+    ],
+    "name": "Magnetic-voiced Male",
+    "preview_url": "https://static-openapi.stepfun.ai/static/platform-docs/resource/Magnetic-voiced-Male-1.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "audiobook",
+      "video dubbing"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "stepaudio-2.5-realtime",
+      "stepaudio-2.5-tts",
+      "stepaudio-3-realtime-preview",
+      "stepaudio-3-tts"
+    ],
+    "description": "Calm, gentle English male voice.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "soft-spoken-gentleman",
+    "languages": [
+      "en"
+    ],
+    "name": "Soft-spoken Gentleman",
+    "preview_url": "https://static-openapi.stepfun.ai/static/platform-docs/resource/Soft-spoken-Gentleman-1.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "emotional companionship",
+      "audiobook"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "stepaudio-2.5-realtime",
+      "stepaudio-2.5-tts",
+      "stepaudio-3-realtime-preview",
+      "stepaudio-3-tts"
+    ],
+    "description": "Warm, approachable young English male voice.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "vibrant-youth",
+    "languages": [
+      "en"
+    ],
+    "name": "Vibrant Youth",
+    "preview_url": "https://static-openapi.stepfun.ai/static/platform-docs/resource/vibrant-youth_Every.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "audiobook",
+      "video dubbing",
+      "voice assistant"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "stepaudio-2.5-realtime",
+      "stepaudio-2.5-tts",
+      "stepaudio-3-realtime-preview",
+      "stepaudio-3-tts"
+    ],
+    "description": "Confident male voice; sincere, warm and energetic.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "zixinnansheng",
+    "name": "Confident Male",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "audiobook",
+      "emotional companionship",
+      "education",
+      "marketing"
+    ]
+  }
+]

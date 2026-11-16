@@ -1,0 +1,991 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "spx",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Legacy Seed ASR 1.0 asynchronous audio-file transcription.",
+    "family": "seed-asr-1.0",
+    "first_seen": "2026-11-16",
+    "id": "volc.bigasr.auc",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "ja",
+      "pt",
+      "es",
+      "id",
+      "de",
+      "fr",
+      "ko",
+      "fil",
+      "ms",
+      "th",
+      "ar"
+    ],
+    "meta": {
+      "audio_codecs": [
+        "raw",
+        "opus"
+      ],
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv_1",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "extra_features": [
+        "itn",
+        "semantic_smoothing",
+        "emotion_detection",
+        "gender_detection",
+        "regex_replacement"
+      ],
+      "legacy": true,
+      "max_duration_note": "ASR 1.0 overview says files up to 4 hours; current audio-file API page says <5 hours / <512MB.",
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "request_model_name": "bigmodel",
+      "resource_id_header": "X-Api-Resource-Id"
+    },
+    "name": "Seed ASR 1.0 (Audio File)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Audio File ASR rate; billing page does not distinguish ASR 1.0 from 2.0.",
+      "price_usd": 0.12,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Legacy Seed ASR 1.0 streaming recognition over WebSocket.",
+    "family": "seed-asr-1.0",
+    "first_seen": "2026-11-16",
+    "id": "volc.bigasr.sauc.duration",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "ja",
+      "pt",
+      "es",
+      "id",
+      "de",
+      "fr",
+      "ko",
+      "fil",
+      "ms",
+      "th",
+      "ar"
+    ],
+    "meta": {
+      "audio_codecs": [
+        "raw",
+        "opus"
+      ],
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv_1",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrstreaming"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "extra_features": [
+        "itn",
+        "semantic_smoothing",
+        "emotion_detection",
+        "gender_detection",
+        "regex_replacement"
+      ],
+      "legacy": true,
+      "note": "Bidirectional streaming supports English and Chinese only on ASR 1.0; languages are the unidirectional list from the ASR 1.0 overview.",
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "request_model_name": "bigmodel",
+      "resource_id_header": "X-Api-Resource-Id"
+    },
+    "name": "Seed ASR 1.0 (Streaming)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Streaming ASR rate; billing page does not distinguish ASR 1.0 from 2.0.",
+      "price_usd": 0.15,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "spx",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Seed ASR 2.0 asynchronous audio-file transcription (submit task, then query result).",
+    "family": "seed-asr-2.0",
+    "first_seen": "2026-11-16",
+    "id": "volc.seedasr.auc",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US",
+      "zh-CN",
+      "yue-CN",
+      "ja-JP",
+      "id-ID",
+      "es-MX",
+      "pt-BR",
+      "de-DE",
+      "fr-FR",
+      "ko-KR",
+      "fil-PH",
+      "ms-MY",
+      "th-TH",
+      "ar-SA",
+      "it-IT",
+      "bn-BD",
+      "el-GR",
+      "nl-NL",
+      "ru-RU",
+      "tr-TR",
+      "vi-VN",
+      "pl-PL",
+      "ro-RO",
+      "uk-UA",
+      "az-AZ",
+      "bg-BG",
+      "cs-CZ",
+      "da-DK",
+      "fi-FI",
+      "hi-IN",
+      "hu-HU",
+      "kk-KZ",
+      "km-KH",
+      "my-MM",
+      "no-NO",
+      "pa-PK",
+      "sv-SE",
+      "sw-KE",
+      "ur-PK",
+      "sk-SK",
+      "sl-SI",
+      "hr-HR",
+      "sr-RS",
+      "lt-LT",
+      "lv-LV",
+      "et-EE",
+      "fa-IR",
+      "af-ZA",
+      "is-IS",
+      "sq-AL",
+      "ca-ES",
+      "ceb-PH",
+      "ga-IE",
+      "jv-ID",
+      "uz-UZ"
+    ],
+    "max_audio_seconds": 18000,
+    "meta": {
+      "audio_codecs": [
+        "raw",
+        "opus"
+      ],
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraucstandardusageguide"
+      ],
+      "dual_channel": true,
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/auc/bigmodel/submit",
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/auc/bigmodel/query"
+      ],
+      "extra_features": [
+        "itn",
+        "semantic_smoothing",
+        "emotion_detection",
+        "gender_detection",
+        "regex_replacement"
+      ],
+      "max_file_mb": 512,
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "request_model_name": "bigmodel",
+      "resource_id_header": "X-Api-Resource-Id"
+    },
+    "name": "Seed ASR 2.0 (Audio File)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Audio File ASR pay-as-you-go; pre-paid hour packages cheaper.",
+      "price_usd": 0.12,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Fast audio-file recognition: single synchronous HTTP request/response with no polling.",
+    "family": "seed-asr-2.0",
+    "first_seen": "2026-11-16",
+    "id": "volc.seedasr.auc_turbo",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US",
+      "zh-CN",
+      "yue-CN",
+      "ja-JP",
+      "id-ID",
+      "es-MX",
+      "pt-BR",
+      "de-DE",
+      "fr-FR",
+      "ko-KR",
+      "fil-PH",
+      "ms-MY",
+      "th-TH",
+      "ar-SA",
+      "it-IT",
+      "bn-BD",
+      "el-GR",
+      "nl-NL",
+      "ru-RU",
+      "tr-TR",
+      "vi-VN",
+      "pl-PL",
+      "ro-RO",
+      "uk-UA",
+      "az-AZ",
+      "bg-BG",
+      "cs-CZ",
+      "da-DK",
+      "fi-FI",
+      "hi-IN",
+      "hu-HU",
+      "kk-KZ",
+      "km-KH",
+      "my-MM",
+      "no-NO",
+      "pa-PK",
+      "sv-SE",
+      "sw-KE",
+      "ur-PK"
+    ],
+    "max_audio_seconds": 7200,
+    "meta": {
+      "audio_codecs": [
+        "raw",
+        "opus"
+      ],
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/auc/bigmodel/recognize/flash"
+      ],
+      "extra_features": [
+        "itn",
+        "semantic_smoothing",
+        "emotion_detection",
+        "gender_detection",
+        "regex_replacement"
+      ],
+      "input_formats_raw": [
+        "raw",
+        "wav",
+        "mp3",
+        "ogg"
+      ],
+      "max_file_mb": 100,
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "request_model_name": "bigmodel",
+      "resource_id_header": "X-Api-Resource-Id",
+      "visual_context": "1 image <=500KB (Seed ASR 2.0)"
+    },
+    "name": "Seed ASR 2.0 (Audio File Fast Mode)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Audio File ASR Fast Mode pay-as-you-go; pre-paid hour packages cheaper.",
+      "price_usd": 0.36,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Seed ASR 2.0 streaming speech recognition over WebSocket, with bidirectional and unidirectional (higher-accuracy, per-utterance) modes.",
+    "family": "seed-asr-2.0",
+    "first_seen": "2026-11-16",
+    "id": "volc.seedasr.sauc.duration",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en-US",
+      "zh-CN",
+      "yue-CN",
+      "ja-JP",
+      "id-ID",
+      "es-MX",
+      "pt-BR",
+      "de-DE",
+      "fr-FR",
+      "ko-KR",
+      "fil-PH",
+      "ms-MY",
+      "th-TH",
+      "ar-SA",
+      "it-IT",
+      "bn-BD",
+      "el-GR",
+      "nl-NL",
+      "ru-RU",
+      "tr-TR",
+      "vi-VN",
+      "pl-PL",
+      "ro-RO",
+      "uk-UA",
+      "az-AZ",
+      "bg-BG",
+      "cs-CZ",
+      "da-DK",
+      "fi-FI",
+      "hi-IN",
+      "hu-HU",
+      "kk-KZ",
+      "km-KH",
+      "my-MM",
+      "no-NO",
+      "pa-PK",
+      "sv-SE",
+      "sw-KE",
+      "ur-PK",
+      "sk-SK",
+      "sl-SI",
+      "hr-HR",
+      "sr-RS",
+      "lt-LT",
+      "lv-LV",
+      "et-EE",
+      "fa-IR",
+      "af-ZA",
+      "is-IS",
+      "sq-AL",
+      "ca-ES",
+      "ceb-PH",
+      "ga-IE",
+      "jv-ID",
+      "uz-UZ"
+    ],
+    "meta": {
+      "audio_codecs": [
+        "raw",
+        "opus"
+      ],
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbidirect",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "wss://voice.ap-southeast-1.bytepluses.com/api/v3/sauc/bigmodel_async",
+        "wss://voice.ap-southeast-1.bytepluses.com/api/v3/sauc/bigmodel_nostream"
+      ],
+      "extra_features": [
+        "itn",
+        "semantic_smoothing",
+        "emotion_detection",
+        "gender_detection",
+        "regex_replacement"
+      ],
+      "note": "Docs mark this resource 推荐 (recommended). Language list is from the unidirectional endpoint's language parameter; speaker diarization not supported in streaming.",
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "request_model_name": "bigmodel",
+      "resource_id_header": "X-Api-Resource-Id"
+    },
+    "name": "Seed ASR 2.0 (Streaming)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Streaming ASR pay-as-you-go; pre-paid hour packages cheaper; 10 concurrency included, extra $10/concurrency/month.",
+      "price_usd": 0.15,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Legacy voice-cloning resource; newly purchased speaker IDs only work with the new (2.0) cloning API.",
+    "family": "seed-icl",
+    "first_seen": "2026-11-16",
+    "id": "seed-icl-1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "meta": {
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplication-v1",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplication-v3-voice-upgrade"
+      ],
+      "encodings": [
+        "pcm",
+        "ogg_opus",
+        "mp3"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "wss://voice.ap-southeast-1.bytepluses.com/api/v3/tts/bidirection",
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/tts/unidirectional"
+      ],
+      "legacy": true,
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "resource_id_aliases": [
+        "volc.megatts.default"
+      ],
+      "resource_id_header": "X-Api-Resource-Id",
+      "ssml": "not supported (HTTP and bidirectional WebSocket)",
+      "voice_param": "req_params.speaker"
+    },
+    "name": "Seed Voice Replication 1.0",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Voice cloning from 5-15 seconds of audio, synthesizing with the cloned voice's tone, style and accent via the TTS endpoints.",
+    "family": "seed-icl",
+    "first_seen": "2026-11-16",
+    "id": "seed-icl-2.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "es",
+      "id",
+      "pt",
+      "ko",
+      "de",
+      "fr",
+      "th",
+      "vi",
+      "ru",
+      "fil",
+      "ms",
+      "ar",
+      "es-MX",
+      "pt-BR",
+      "it",
+      "pl",
+      "tr",
+      "sv"
+    ],
+    "meta": {
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplicationv2",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplication",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplication-v3-voice-training"
+      ],
+      "encodings": [
+        "pcm",
+        "ogg_opus",
+        "mp3"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "wss://voice.ap-southeast-1.bytepluses.com/api/v3/tts/bidirection",
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/tts/unidirectional"
+      ],
+      "prompt_audio": "WAV, mono, 14-30s recommended",
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "resource_id_header": "X-Api-Resource-Id",
+      "ssml": "not supported (HTTP and bidirectional WebSocket)",
+      "tone_fidelity": "HTTP/unidirectional only; same-language synthesis only",
+      "voice_param": "req_params.speaker",
+      "voice_replication_fee_usd": {
+        "per": "cloned voice",
+        "price_usd": 2,
+        "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplicationbilling"
+      }
+    },
+    "name": "Seed Voice Replication 2.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Pay-as-you-go $30 per 1M characters plus $2 per cloned voice (permanent); free trial 20,000 chars + 10 voices.",
+      "price_usd": 3e-05,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplicationbilling",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Legacy Seed TTS model with bidirectional streaming and a library of preset voices, some with emotion presets.",
+    "family": "seed-tts",
+    "first_seen": "2026-11-16",
+    "id": "seed-tts-1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "es"
+    ],
+    "meta": {
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv_1",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist"
+      ],
+      "encodings": [
+        "pcm",
+        "ogg_opus",
+        "mp3"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "wss://voice.ap-southeast-1.bytepluses.com/api/v3/tts/bidirection",
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/tts/unidirectional"
+      ],
+      "legacy": true,
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "resource_id_aliases": [
+        "volc.service_type.1000009"
+      ],
+      "resource_id_header": "X-Api-Resource-Id",
+      "ssml": "not supported (HTTP and bidirectional WebSocket)",
+      "voice_param": "req_params.speaker"
+    },
+    "name": "Seed TTS 1.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "TTS rate; billing page does not distinguish TTS 1.0 from 2.0.",
+      "price_usd": 3e-05,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "style_control"
+    ],
+    "description": "Conversational TTS that understands query and response context, with emotion tags and natural-language prompts for tone, emotion, rate and pitch.",
+    "family": "seed-tts",
+    "first_seen": "2026-11-16",
+    "id": "seed-tts-2.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "zh",
+      "ja",
+      "de",
+      "fr",
+      "es-ES",
+      "es-MX",
+      "id",
+      "pt-BR",
+      "it",
+      "ko",
+      "ar-EG",
+      "fil",
+      "ms",
+      "ru",
+      "th",
+      "vi"
+    ],
+    "meta": {
+      "context_texts": true,
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/unidirectional_tts_http"
+      ],
+      "encodings": [
+        "pcm",
+        "ogg_opus",
+        "mp3"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "wss://voice.ap-southeast-1.bytepluses.com/api/v3/tts/bidirection",
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/tts/unidirectional"
+      ],
+      "region_note": "Only documented endpoint is voice.ap-southeast-1.bytepluses.com.",
+      "resource_id_header": "X-Api-Resource-Id",
+      "sample_rate_note": "Unidirectional/non-streaming: 8k/16k/24k; bidirectional WebSocket: 8k/16k/24k/48k.",
+      "ssml": "not supported (HTTP and bidirectional WebSocket)",
+      "subtitles": "enable_subtitle (Chinese & English)",
+      "voice_param": "req_params.speaker"
+    },
+    "name": "Seed TTS 2.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Pay-as-you-go $30 per 1M characters; pre-paid packages from $2.80/100K chars; 10 concurrency included, extra $10/QPS/month.",
+      "price_usd": 3e-05,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

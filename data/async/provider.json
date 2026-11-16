@@ -1,0 +1,12 @@
+{
+  "docs_urls": [
+    "https://docs.async.com/llms.txt",
+    "https://docs.async.com/models-2161359m0.md",
+    "https://docs.async.com/billing-pricing-2243956m0.md"
+  ],
+  "id": "async",
+  "last_synced": "2026-11-16",
+  "name": "Async",
+  "source": "docs",
+  "type": "both"
+}

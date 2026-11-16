@@ -1,0 +1,410 @@
+[
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "End-to-end speech-to-speech model over a WebSocket Realtime API with paralinguistic understanding and server-side VAD turn-taking.",
+    "first_seen": "2026-11-16",
+    "id": "stepaudio-2.5-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "audio_encoding": "pcm16 mono 24 kHz",
+      "endpoint": "wss://api.stepfun.ai/v1/realtime?model=stepaudio-2.5-realtime",
+      "language_note": "Model spec lists English; Realtime endpoint supports Chinese and English only.",
+      "tool_calling": true
+    },
+    "name": "StepAudio 2.5 Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Price effective 2026-11-17 12:00 UTC+8 per StepFun pricing notice (recorded 2026-11-16). Input (cache miss) $1.50/1M tokens; cache hit $0.30/1M; output $10.00/1M tokens.",
+      "price_usd": 1.5e-06,
+      "source_url": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input tokens (cache hit)",
+          "price_usd": 3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output tokens",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Full-duplex realtime voice flagship with interruption handling, adaptive think-while-speaking reasoning and Voice Agent tool calling.",
+    "family": "stepaudio-3-realtime",
+    "first_seen": "2026-11-16",
+    "id": "stepaudio-3-realtime-preview",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "audio_encoding": "pcm16",
+      "deprecation_notice": "Free-trial preview name; will be retired when the trial ends and a formal paid version is added (no date published).",
+      "full_duplex": true,
+      "pricing_formal_version": {
+        "effective": "2026-11-17 12:00 UTC+8",
+        "model_id": "stepaudio-3-realtime",
+        "notes": "Billed by session duration (user + agent speaking time), per-second rounding up.",
+        "price_usd_per_session_minute": 0.125,
+        "source_url": "https://platform.stepfun.ai/docs/en/pricing/details"
+      },
+      "replacement": "stepaudio-3-realtime",
+      "tool_calling": true
+    },
+    "name": "StepAudio 3 Realtime (Preview)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "description": "4B-parameter Multi-Token-Prediction ASR model for fast one-shot transcription over HTTP + SSE.",
+    "first_seen": "2026-11-16",
+    "id": "stepaudio-2.5-asr",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "meta": {
+      "endpoint": "POST /v1/audio/asr/sse",
+      "itn": true,
+      "language_note": "Model page says Chinese and English; API language parameter also lists ja/ko/fr/es (preview).",
+      "preview_languages": [
+        "ja",
+        "ko",
+        "fr",
+        "es"
+      ]
+    },
+    "name": "StepAudio 2.5 ASR",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Price effective 2026-11-17 12:00 UTC+8 per StepFun pricing notice (recorded 2026-11-16). Billed per audio hour.",
+      "price_usd": 0.05,
+      "source_url": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "ogg",
+      "pcm"
+    ],
+    "capabilities": [
+      "word_timestamps"
+    ],
+    "description": "Real-time bidirectional WebSocket streaming variant of StepAudio 2.5 ASR with server-side VAD and per-word timing.",
+    "family": "stepaudio-2.5-asr",
+    "first_seen": "2026-11-16",
+    "id": "stepaudio-2.5-asr-stream",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "meta": {
+      "endpoint": "wss://api.stepfun.ai/v1/realtime/asr/stream",
+      "preview_languages": [
+        "ja",
+        "ko",
+        "fr",
+        "es"
+      ],
+      "server_vad": true
+    },
+    "name": "StepAudio 2.5 ASR Stream",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Price effective 2026-11-17 12:00 UTC+8 per StepFun pricing notice (recorded 2026-11-16). Billed per audio hour.",
+      "price_usd": 0.4,
+      "source_url": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "description": "StepFun's largest LLM-based ASR model, with context-aware recognition of names, domain terms, dialects, code-switching, whispers and singing.",
+    "first_seen": "2026-11-16",
+    "id": "stepaudio-3-asr-max",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "meta": {
+      "endpoint": "POST /v1/audio/asr/sse (HTTP + SSE incremental output)",
+      "itn": true,
+      "pcm_codec": "pcm_s16le",
+      "preview_languages": [
+        "ja",
+        "ko",
+        "fr",
+        "es"
+      ]
+    },
+    "name": "StepAudio 3 ASR Max",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Price effective 2026-11-17 12:00 UTC+8 per StepFun pricing notice (recorded 2026-11-16). Billed by input audio duration. Model page still shows the pre-change $0.24/hour.",
+      "price_usd": 0.6,
+      "source_url": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Contextual TTS with global and inline natural-language delivery control plus zero-shot voice cloning from ~3 s of audio.",
+    "first_seen": "2026-11-16",
+    "id": "stepaudio-2.5-tts",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "cloned_voice_languages": [
+        "zh",
+        "en"
+      ],
+      "inline_instructions": "text in () is treated as non-spoken instruction",
+      "instruction_max_chars": 200,
+      "preview_languages": [
+        "ja",
+        "ko",
+        "fr",
+        "es"
+      ],
+      "pronunciation_map": true,
+      "voice_clone_price_usd": 1.5,
+      "websocket_note": "Docs warn WebSocket streaming quality may be significantly lower than HTTP for this model."
+    },
+    "name": "StepAudio 2.5 TTS",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Price effective 2026-11-17 12:00 UTC+8 per StepFun pricing notice (recorded 2026-11-16). $85.00 per 1M characters: one Chinese char = 1, two English letters = 1, two punctuation marks = 1. Voice cloning $1.50 per voice.",
+      "price_usd": 8.5e-05,
+      "source_url": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "style_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Human-like expressive TTS with natural-language delivery control (laughter, hesitation, self-correction) and low-latency streaming.",
+    "first_seen": "2026-11-16",
+    "id": "stepaudio-3-tts",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "fr",
+      "es"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "cloned_voice_languages": [
+        "zh",
+        "en"
+      ],
+      "inline_instructions": "text in () is treated as non-spoken instruction",
+      "instruction_max_chars": 500,
+      "preview_languages": [
+        "ja",
+        "ko",
+        "fr",
+        "es"
+      ],
+      "pronunciation_map": true,
+      "streaming_formats": [
+        "mp3_stream",
+        "opus_stream",
+        "flac_stream"
+      ],
+      "voice_clone_price_usd": 1.5,
+      "voice_design_price_usd": 1.5
+    },
+    "name": "StepAudio 3 TTS",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Price effective 2026-11-17 12:00 UTC+8 per StepFun pricing notice (recorded 2026-11-16). $14.00 per 1M billable input characters: English letter = 1, Japanese char = 2.5, Chinese char = 3, other chars = 1. Voice cloning / voice design $1.50 per voice. Model page still shows the pre-change $0.36 / 10k chars.",
+      "price_usd": 1.4e-05,
+      "source_url": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

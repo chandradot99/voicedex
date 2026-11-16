@@ -1,0 +1,35 @@
+{
+  "docs_urls": [
+    "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+  ],
+  "id": "byteplus",
+  "last_synced": "2026-11-16",
+  "name": "BytePlus",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+    ]
+  }
+}

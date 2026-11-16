@@ -61,6 +61,14 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("speechify",         "Speechify",         "tts",  "naaviq.sync.speechify.SpeechifySyncer"),
     SyncerEntry("typecastai",        "Typecast AI",       "tts",  "naaviq.sync.typecastai.TypecastAISyncer"),
     SyncerEntry("groq",              "Groq",              "both", "naaviq.sync.groq.GroqSyncer"),
+    SyncerEntry("meta",              "Meta",              "stt",  "naaviq.sync.meta.MetaSyncer"),
+    SyncerEntry("async",             "Async",             "both", "naaviq.sync.asyncai.AsyncSyncer"),
+    SyncerEntry("stepfun",           "StepFun",           "both", "naaviq.sync.stepfun.StepFunSyncer"),
+    SyncerEntry("byteplus",          "BytePlus",          "both", "naaviq.sync.byteplus.BytePlusSyncer"),
+    # Retired, never synced — catalogued so "is X still alive?" has an answer.
+    SyncerEntry("playht",            "PlayHT",            "tts",  "naaviq.sync.retired.RetiredSyncer", retired=True),
+    SyncerEntry("coqui",             "Coqui",             "tts",  "naaviq.sync.retired.RetiredSyncer", retired=True),
+    SyncerEntry("supertone",         "Supertone",         "tts",  "naaviq.sync.retired.RetiredSyncer", retired=True),
 ]
 
 BY_ID: dict[str, SyncerEntry] = {e.provider_id: e for e in REGISTRY}

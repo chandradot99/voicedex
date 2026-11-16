@@ -1,0 +1,12 @@
+{
+  "docs_urls": [
+    "https://dev.meta.ai/docs/models",
+    "https://dev.meta.ai/docs/speech-to-text",
+    "https://dev.meta.ai/docs/pricing-rate-limits"
+  ],
+  "id": "meta",
+  "last_synced": "2026-11-16",
+  "name": "Meta",
+  "source": "docs",
+  "type": "stt"
+}
