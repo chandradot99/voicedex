@@ -1,0 +1,29 @@
+{
+  "description": "Grok Voice API (realtime speech-to-speech, speech-to-text, text-to-speech). xAI's docs now brand the company SpaceXSI (renamed SpaceXAI after SpaceX's July 2026 acquisition, then SpaceXSI); the API host api.x.ai, the console and the Grok model names are unchanged.",
+  "docs_urls": [
+    "https://docs.x.ai/llms.txt",
+    "https://docs.x.ai/developers/model-capabilities/audio/voice.md",
+    "https://docs.x.ai/developers/models",
+    "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text.md",
+    "https://docs.x.ai/developers/model-capabilities/audio/text-to-speech.md",
+    "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
+  ],
+  "id": "xai",
+  "last_synced": "2026-11-16",
+  "name": "xAI",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://docs.x.ai/llms.txt",
+      "https://docs.x.ai/developers/model-capabilities/audio/voice.md",
+      "https://docs.x.ai/developers/models",
+      "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text.md",
+      "https://docs.x.ai/developers/model-capabilities/audio/text-to-speech.md",
+      "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
+    ]
+  },
+  "website": "https://x.ai"
+}

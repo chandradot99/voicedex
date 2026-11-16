@@ -1,0 +1,469 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "voice_cloning"
+    ],
+    "description": "xAI's flagship realtime speech-to-speech voice-agent model over WebSocket, with server VAD turn-taking, tool use and automatic input language detection.",
+    "first_seen": "2026-11-16",
+    "id": "grok-voice-3.0",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "meta": {
+      "additional_languages_note": "also converses in languages beyond the listed 20 with varying accuracy",
+      "endpoint": "wss://api.x.ai/v1/realtime",
+      "ephemeral_tokens": true,
+      "exact_encodings": [
+        "audio/pcm (linear16 LE)",
+        "audio/pcmu (G.711 mu-law, 8 kHz)",
+        "audio/pcma (G.711 A-law, 8 kHz)",
+        "audio/opus (24 kHz)"
+      ],
+      "openai_realtime_compatible": true,
+      "pronunciation_replacements": true,
+      "reasoning_effort": [
+        "high",
+        "none"
+      ],
+      "serving_clusters_note": "docs.x.ai model metadata lists serving clusters us-east-1, eu-west-1, us-saltlake-2; the global endpoint api.x.ai may route between regions (processing location not guaranteed) and the US regional endpoint does not serve voice APIs",
+      "session_resumption": true,
+      "sip_telephony": true,
+      "speed_range": [
+        0.7,
+        1.5
+      ],
+      "tools": [
+        "file_search",
+        "web_search",
+        "x_search",
+        "mcp",
+        "function"
+      ]
+    },
+    "name": "Grok Voice 3.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$0.08/min ($4.80/hr) audio; plus $0.004 per text input",
+      "price_usd": 0.08,
+      "source_url": "https://docs.x.ai/developers/models",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.x.ai/llms.txt",
+        "https://docs.x.ai/developers/model-capabilities/audio/voice.md",
+        "https://docs.x.ai/developers/models",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/text-to-speech.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "grok-voice-3.0",
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "voice_cloning"
+    ],
+    "description": "Moving alias for the latest Grok realtime voice model; currently points to grok-voice-3.0.",
+    "family": "grok-voice-3.0",
+    "first_seen": "2026-11-16",
+    "id": "grok-voice-latest",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "meta": {
+      "additional_languages_note": "also converses in languages beyond the listed 20 with varying accuracy",
+      "endpoint": "wss://api.x.ai/v1/realtime",
+      "ephemeral_tokens": true,
+      "exact_encodings": [
+        "audio/pcm (linear16 LE)",
+        "audio/pcmu (G.711 mu-law, 8 kHz)",
+        "audio/pcma (G.711 A-law, 8 kHz)",
+        "audio/opus (24 kHz)"
+      ],
+      "openai_realtime_compatible": true,
+      "pronunciation_replacements": true,
+      "reasoning_effort": [
+        "high",
+        "none"
+      ],
+      "serving_clusters_note": "docs.x.ai model metadata lists serving clusters us-east-1, eu-west-1, us-saltlake-2; the global endpoint api.x.ai may route between regions (processing location not guaranteed) and the US regional endpoint does not serve voice APIs",
+      "session_resumption": true,
+      "sip_telephony": true,
+      "speed_range": [
+        0.7,
+        1.5
+      ],
+      "tools": [
+        "file_search",
+        "web_search",
+        "x_search",
+        "mcp",
+        "function"
+      ]
+    },
+    "name": "Grok Voice (latest)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$0.08/min ($4.80/hr) audio; plus $0.004 per text input",
+      "price_usd": 0.08,
+      "source_url": "https://docs.x.ai/developers/models",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.x.ai/llms.txt",
+        "https://docs.x.ai/developers/model-capabilities/audio/voice.md",
+        "https://docs.x.ai/developers/models",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/text-to-speech.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "avi",
+      "flac",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "xAI's speech-to-text model for file transcription (REST) and real-time streaming over WebSocket, with automatic language detection and mid-recording language switching.",
+    "first_seen": "2026-11-16",
+    "id": "grok-voice-transcribe-2.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "bs",
+      "bg",
+      "yue",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "fil",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "mk",
+      "ms",
+      "nb",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "es",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "es-MX",
+      "es-ES",
+      "pt-BR",
+      "pt-PT",
+      "ar-EG",
+      "ar-AE",
+      "ar-SA"
+    ],
+    "meta": {
+      "filler_words_toggle": true,
+      "inverse_text_normalization": true,
+      "itn_languages": [
+        "ar",
+        "zh",
+        "en",
+        "fr",
+        "de",
+        "ja",
+        "pt",
+        "ru",
+        "es",
+        "sv",
+        "vi"
+      ],
+      "keyterms_max": 100,
+      "max_channels": 8,
+      "max_file_size_mb": 500,
+      "multichannel": true,
+      "rest_endpoint": "POST https://api.x.ai/v1/stt",
+      "serving_clusters_note": "docs.x.ai model metadata lists serving clusters us-east-1, eu-west-1, us-saltlake-2; the global endpoint api.x.ai may route between regions (processing location not guaranteed) and the US regional endpoint does not serve voice APIs",
+      "smart_turn_endpointing": true,
+      "streaming_encodings": [
+        "pcm",
+        "mulaw",
+        "alaw",
+        "opus"
+      ],
+      "streaming_endpoint": "wss://api.x.ai/v1/stt",
+      "url_input": true
+    },
+    "name": "Grok Voice Transcribe 2.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$0.10/hr REST, $0.20/hr streaming",
+      "price_usd": 0.1,
+      "source_url": "https://docs.x.ai/developers/models",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "REST (file transcription)",
+          "price_usd": 0.1,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Streaming (WebSocket)",
+          "price_usd": 0.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.x.ai/llms.txt",
+        "https://docs.x.ai/developers/model-capabilities/audio/voice.md",
+        "https://docs.x.ai/developers/models",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/text-to-speech.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "xAI's text-to-speech service with expressive built-in voices, inline speech tags (laughter, pauses, whispering) and telephony-ready output formats, via unary HTTP or bidirectional WebSocket streaming.",
+    "first_seen": "2026-11-16",
+    "id": "grok-tts",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "max_text_chars": 60000,
+    "meta": {
+      "auto_language_detection": true,
+      "character_timestamps": true,
+      "default_voice": "eve",
+      "ipa_pronunciation": true,
+      "model_id_note": "POST /v1/tts and wss://api.x.ai/v1/tts take no model parameter; 'grok-tts' is the audio model name in docs.x.ai's embedded model metadata (version 1.0)",
+      "mp3_bit_rates": [
+        32000,
+        64000,
+        96000,
+        128000,
+        192000
+      ],
+      "no_model_parameter": true,
+      "pronunciation_replacements": true,
+      "rest_endpoint": "POST https://api.x.ai/v1/tts",
+      "serving_clusters_note": "docs.x.ai model metadata lists serving clusters us-east-1, eu-west-1, us-saltlake-2; the global endpoint api.x.ai may route between regions (processing location not guaranteed) and the US regional endpoint does not serve voice APIs",
+      "speech_tags": true,
+      "speed_range": [
+        0.7,
+        1.5
+      ],
+      "streaming_endpoint": "wss://api.x.ai/v1/tts",
+      "text_normalization": true,
+      "websocket_concurrent_sessions_per_team": 50,
+      "websocket_text_limit": "no total limit; 60,000 chars per text.delta"
+    },
+    "name": "Grok TTS",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$15.00 per 1M characters",
+      "price_usd": 1.5e-05,
+      "source_url": "https://docs.x.ai/developers/models",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.x.ai/llms.txt",
+        "https://docs.x.ai/developers/model-capabilities/audio/voice.md",
+        "https://docs.x.ai/developers/models",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/text-to-speech.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

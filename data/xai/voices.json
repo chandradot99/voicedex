@@ -1,0 +1,1137 @@
+[
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Elegant, refined, and effortlessly premium.",
+    "first_seen": "2026-11-16",
+    "id": "altair",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Altair",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_altair.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "advertising",
+      "narration"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm and friendly.",
+    "first_seen": "2026-11-16",
+    "id": "ara",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Ara",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_ara.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Confident, commanding, and reassuring.",
+    "first_seen": "2026-11-16",
+    "id": "atlas",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Atlas",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_atlas.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "sales",
+      "assistant"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Serene, steady, and radiant.",
+    "first_seen": "2026-11-16",
+    "id": "aurora",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Aurora",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_aurora.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "support",
+      "assistant"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Soft, empathetic, and soothing.",
+    "first_seen": "2026-11-16",
+    "id": "carina",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Carina",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_carina.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "wellness",
+      "support"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Charismatic, down-to-earth, and easygoing.",
+    "first_seen": "2026-11-16",
+    "id": "castor",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Castor",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_castor.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "sales",
+      "support"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Compassionate, confident, and reassuring.",
+    "first_seen": "2026-11-16",
+    "id": "celeste",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Celeste",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_celeste.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "support",
+      "assistant"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, curious, and easy to follow.",
+    "first_seen": "2026-11-16",
+    "id": "cosmo",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Cosmo",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_cosmo.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "education",
+      "podcast"
+    ]
+  },
+  {
+    "accent": "british",
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Energetic and upbeat.",
+    "first_seen": "2026-11-16",
+    "id": "eve",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "meta": {
+      "is_default_voice": true
+    },
+    "name": "Eve",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_eve.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Upbeat, energetic, and endlessly versatile.",
+    "first_seen": "2026-11-16",
+    "id": "helios",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Helios",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_helios.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "assistant",
+      "wellness"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bold, dynamic, and adrenaline-fueled.",
+    "first_seen": "2026-11-16",
+    "id": "helix",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Helix",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_helix.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "commentary",
+      "podcast"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Friendly, upbeat, and naturally charming.",
+    "first_seen": "2026-11-16",
+    "id": "iris",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Iris",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_iris.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "sales",
+      "support"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Inventive, forward-thinking, and charismatic.",
+    "first_seen": "2026-11-16",
+    "id": "kepler",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Kepler",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_kepler.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "advertising",
+      "podcast"
+    ]
+  },
+  {
+    "accent": "british",
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Authoritative and strong.",
+    "first_seen": "2026-11-16",
+    "id": "leo",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Leo",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_leo.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Calm, grounded, and luminous.",
+    "first_seen": "2026-11-16",
+    "id": "liora",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Liora",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_liora.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "wellness",
+      "assistant"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm, articulate, and engaging.",
+    "first_seen": "2026-11-16",
+    "id": "lumen",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Lumen",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_lumen.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "education",
+      "advertising"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Gentle, patient, and deeply nurturing.",
+    "first_seen": "2026-11-16",
+    "id": "luna",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Luna",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_luna.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "education",
+      "assistant"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Grounded, calm, and quietly wise.",
+    "first_seen": "2026-11-16",
+    "id": "lux",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Lux",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_lux.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "wellness",
+      "narration"
+    ]
+  },
+  {
+    "accent": "indian",
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm, thoughtful, and wise.",
+    "first_seen": "2026-11-16",
+    "id": "naksh",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Naksh",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_naksh.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "assistant",
+      "support"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Rich, cinematic, and resonant.",
+    "first_seen": "2026-11-16",
+    "id": "orion",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Orion",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_orion.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration",
+      "audiobooks"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Strong, confident, and trustworthy.",
+    "first_seen": "2026-11-16",
+    "id": "perseus",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Perseus",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_perseus.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "advertising",
+      "narration"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Confident and clear.",
+    "first_seen": "2026-11-16",
+    "id": "rex",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Rex",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_rex.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Precise, professional, and calmly confident.",
+    "first_seen": "2026-11-16",
+    "id": "rigel",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Rigel",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_rigel.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "assistant",
+      "support"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Smooth and balanced.",
+    "first_seen": "2026-11-16",
+    "id": "sal",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Sal",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_sal.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Quick-witted, clever, and playful.",
+    "first_seen": "2026-11-16",
+    "id": "sirius",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Sirius",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_sirius.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "commentary",
+      "characters"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Friendly, warm, and steadfast.",
+    "first_seen": "2026-11-16",
+    "id": "ursa",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Ursa",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_ursa.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "assistant",
+      "podcast"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Powerful, dramatic, and unmistakable.",
+    "first_seen": "2026-11-16",
+    "id": "zagan",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Zagan",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_zagan.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "characters",
+      "narration"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sharp, focused, and driven.",
+    "first_seen": "2026-11-16",
+    "id": "zenith",
+    "languages": [
+      "en",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE",
+      "bn",
+      "zh",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "es-MX",
+      "es-ES",
+      "tr",
+      "vi"
+    ],
+    "name": "Zenith",
+    "preview_url": "https://docs.x.ai/assets/audio/voice_zenith.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "sales",
+      "advertising"
+    ]
+  }
+]
