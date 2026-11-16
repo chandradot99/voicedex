@@ -33,6 +33,8 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 
 - **Async voices** — stock library only via `POST api.async.com/voices` (X-Api-Key; filter out `my_voice`). Needs ASYNC_API_KEY; models are docs-synced.
 
+- **Soniox pricing** — not in the API. soniox.com/pricing: STT real-time $0.12/h, async $0.10/h; TTS ~$0.70/h generated audio.
+
 ## Product
 - Homepage + catalog UI, project rename, npm/PyPI packages, changelog/RSS of data changes, benchmarks, Pro tier.
 - Deploy v2 (needs user sign-off: Railway config change, Neon can be retired).

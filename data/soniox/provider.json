@@ -1,0 +1,29 @@
+{
+  "api_urls": [
+    "https://api.soniox.com/v1/models",
+    "https://api.soniox.com/v1/tts-models",
+    "https://api.soniox.com/v1/shared-voices"
+  ],
+  "docs_urls": [
+    "https://docs.soniox.com/stt/models.mdx",
+    "https://docs.soniox.com/tts/models.mdx",
+    "https://docs.soniox.com/stt/concepts/speaker-diarization.mdx",
+    "https://docs.soniox.com/stt/concepts/language-identification.mdx",
+    "https://docs.soniox.com/stt/concepts/timestamps.mdx",
+    "https://docs.soniox.com/stt/concepts/context.mdx"
+  ],
+  "id": "soniox",
+  "last_synced": "2026-11-16",
+  "name": "Soniox",
+  "source": "mixed",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.soniox.com/v1/models",
+      "https://api.soniox.com/v1/tts-models",
+      "https://api.soniox.com/v1/shared-voices"
+    ]
+  }
+}
