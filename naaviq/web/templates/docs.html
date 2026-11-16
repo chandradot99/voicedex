@@ -41,6 +41,15 @@
     </div>
   </header>
   <main id="scalar-docs"></main>
+  <script>
+    // Focus rings for keyboard users only. Scalar moves focus programmatically after mouse clicks
+    // (tabs, dropdown triggers), which browsers treat as :focus-visible — so track the input modality.
+    (() => {
+      const root = document.documentElement;
+      addEventListener("pointerdown", () => root.classList.add("using-pointer"), true);
+      addEventListener("keydown", (e) => { if (e.key === "Tab") root.classList.remove("using-pointer"); }, true);
+    })();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.76.4/dist/browser/standalone.js"></script>
   <script>
     // Fill the real host into the quickstart examples and server list.
@@ -59,6 +68,7 @@
       hideDownloadButton: false,
       documentDownloadType: "json",
       operationTitleSource: "summary",
+      hideModels: true,         // OpenAPI schema list ("Models": ModelOut…) reads as speech models here
       orderSchemaPropertiesBy: "preserve",
       withDefaultFonts: false,
       defaultOpenAllTags: true,
@@ -131,12 +141,23 @@
         .z-context ul[role="listbox"] { border-color: rgba(255, 255, 255, 0.12) !important; }
         /* Intro "Client Libraries" card keeps Scalar's own design; only the focus ring Scalar leaves on a
            clicked tab is removed (keyboard focus still shows one). */
-        .client-libraries:focus:not(:focus-visible), .client-libraries.client-libraries__active:focus { outline: 0 !important; box-shadow: none !important; }
+        html.using-pointer #scalar-docs *:focus, html.using-pointer .scalar-app *:focus { outline: 0 !important; }
         /* Intro "Client Libraries" card hidden: it duplicates the language picker on every code example, and
            the name suggests SDKs we don't publish. Bring it back if official packages ship. */
         .scalar-reference-intro-clients { display: none !important; }
         /* Server card hidden too: one fixed server; the base URL is in the quickstart and every example. */
         .scalar-reference-intro-server { display: none !important; }
+        /* Sidebar: group headings are plain bold headings (no teal, no pill); the current page gets one marker —
+           subtle fill + teal bar — with readable text; hover is a quiet fill. */
+        .t-doc__sidebar a.peer\\/button, aside a.peer\\/button { border-radius: 8px !important; padding: 7px 10px !important; }
+        .group\\/group-button > a.peer\\/button { color: #f2f4f7 !important; font-weight: 600 !important; background: transparent !important; }
+        .group\\/group-button > a.peer\\/button:hover { background: #11141a !important; }
+        a.peer\\/button:not([aria-current="page"]):hover { background: #11141a !important; color: #f2f4f7 !important; }
+        a.peer\\/button[aria-current="page"] {
+          background: #171b23 !important; color: #f2f4f7 !important; font-weight: 500 !important;
+          box-shadow: inset 2px 0 0 #5eead4 !important;
+        }
+        a.peer\\/button .sidebar-heading-type, a.peer\\/button [class*="sidebar-heading-type"] { opacity: 0.7; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
         .scalar-client h3,
         .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
