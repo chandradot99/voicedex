@@ -147,6 +147,9 @@
         .scalar-reference-intro-clients { display: none !important; }
         /* Server card hidden too: one fixed server; the base URL is in the quickstart and every example. */
         .scalar-reference-intro-server { display: none !important; }
+        /* With both intro cards hidden the right column is empty: give the introduction the full width. */
+        .introduction-section .section-columns > .section-column:not(:first-child) { display: none !important; }
+        .introduction-section .section-columns > .section-column:first-child { flex: 1 1 100% !important; max-width: none !important; width: 100% !important; }
         /* Sidebar, in the site's own pattern (top nav / tabs): active = rounded fill + white text, hover = a
            quieter fill, no accent bars. Scalar draws the nesting line inside each link, so the fill is a layer
            behind the text that starts right of that line for nested items instead of painting over it. */
