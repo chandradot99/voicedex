@@ -1,0 +1,2430 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "0049e0f3-5506-4f29-9c44-344ed5a9c7c2",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Camille",
+    "tags": [
+      "French",
+      "Conversational"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "019a2af5-6d97-4be8-a459-f4f46fda1949",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Sakura (さくら)",
+    "tags": [
+      "Bright"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "04378987-5871-4dbf-bacc-a7a8715b6e35",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Rebecca",
+    "tags": [
+      "Casual",
+      "Conversational"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "0560e781-21b1-4ff3-9fbc-9e704684e2e3",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ji-ho (지호)",
+    "tags": [
+      "Korean"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "11c8b191-abb1-4ea4-aa46-897953624033",
+    "languages": [
+      "mt"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Joseph",
+    "tags": [
+      "Maltese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "175aaafc-1c7b-4e73-802a-22082ac18bb8",
+    "languages": [
+      "sk"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Zuzana",
+    "tags": [
+      "Slovak"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "17d48fcc-e563-4119-ba91-2cc97c212135",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Hikaru (ひかる)",
+    "tags": [
+      "Japanese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "19a250ba-4a07-4452-8b2b-176a9f6ba254",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Daan",
+    "tags": [
+      "Dutch"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "1bdfde2d-a26e-4237-b0b0-303824cb7e38",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Raj",
+    "tags": [
+      "Hindi"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "1f7ceedd-0541-43c9-a912-3a9386efddd0",
+    "languages": [
+      "hu"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Zsófia",
+    "tags": [
+      "Hungarian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "20c6df93-f48b-46cc-8bb6-210689e66df0",
+    "languages": [
+      "bg"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Elena",
+    "tags": [
+      "Bulgarian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "216d1c54-5108-4546-b354-eeeae133d88a",
+    "languages": [
+      "eu"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Nerea",
+    "tags": [
+      "Basque"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "2431efe8-0a6b-4b56-aee1-b0dc53450562",
+    "languages": [
+      "lt"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jonas",
+    "tags": [
+      "Lithuanian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "24a451b8-30b6-4bbe-9646-63e6900e10de",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jack",
+    "tags": [
+      "Australian Accent"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "259295ca-7619-4eac-9840-e4adefd7f21f",
+    "languages": [
+      "da"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Lars",
+    "tags": [
+      "Danish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "28790df0-1065-49b9-a58e-c25b66150c6b",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jo",
+    "tags": [
+      "Thirties",
+      "American"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "2963285d-3254-4d36-b4de-b487d1c8b0ed",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Budi",
+    "tags": [
+      "Indonesian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "2be7e54c-d04a-49ce-a480-7f720d7f6acd",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Nouf (نوف)",
+    "tags": [
+      "Arabic (Saudi)"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "2ccada25-5433-4f06-b146-7793d7f1b3d7",
+    "languages": [
+      "mk"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Stefan",
+    "tags": [
+      "Macedonian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "311e244d-a706-467d-b8d7-99c0e0e3799b",
+    "languages": [
+      "et"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Kadri",
+    "tags": [
+      "Estonian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "320ca2c3-eaf3-4dd0-b8ce-29bb38415083",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Siti",
+    "tags": [
+      "Indonesian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "35f05096-64e9-4cb3-a650-3c525ffa6b92",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Andrei",
+    "tags": [
+      "Romanian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "384971d0-590a-43c0-bb4a-ea0ed9fd96f4",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Turki (تركي)",
+    "tags": [
+      "Arabic (Saudi)"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "3a29c802-782b-4c24-86f6-6f8da665c08e",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ayşe",
+    "tags": [
+      "Turkish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "3c8d7261-b917-4085-90ad-e7de015b3030",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Alejandra",
+    "tags": [
+      "Venezuelan",
+      "Energetic"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "411fd7eb-ba3f-45d5-bd75-c888733d57e7",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Mikko",
+    "tags": [
+      "Finnish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "415d2556-6d2a-44ce-8465-6b91637808af",
+    "languages": [
+      "mt"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Marija",
+    "tags": [
+      "Maltese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "418d1979-a153-4ab3-a72d-2c2c73ac0b47",
+    "languages": [
+      "ca"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Montserrat",
+    "tags": [
+      "Catalan"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "425027d4-9ae0-4956-ab3e-9c6c6909b8ab",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Layla",
+    "tags": [
+      "Arabic"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "4586c0d9-562f-4a9f-a469-6f08568fd5fe",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Zofia",
+    "tags": [
+      "Polish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "4687dfb5-87a7-4ed7-8368-36fc31c4d2d8",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Aaliyah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "469fc9fc-a445-471a-a67a-e37f5390a89a",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Hiroto (大翔)",
+    "tags": [
+      "Japanese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "4abc265b-65ed-4e24-bce6-97467c25050a",
+    "languages": [
+      "lv"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Laura",
+    "tags": [
+      "Latvian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "4e7434bd-ff31-462c-bf4f-4137b4847192",
+    "languages": [
+      "el"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Eleni",
+    "tags": [
+      "Greek"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "4efae12f-1fb3-4eed-97de-29ee542ac630",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Mateo",
+    "tags": [
+      "Spanish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "4fee6a2e-a167-4696-af9f-886135c5f259",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Anastasia",
+    "tags": [
+      "Russian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "526c68bf-ea3e-4907-865b-c53bc801214a",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ali",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "55d07672-58c9-4c0a-9f7e-c4a6382d747d",
+    "languages": [
+      "fa"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Reza",
+    "tags": [
+      "Persian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "59f9cb97-c00f-44c5-ad52-f43b52ae8378",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Paul",
+    "tags": [
+      "American"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "5b1d4479-5b95-4a50-8029-a4bc023e1dfe",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jeanne",
+    "tags": [
+      "French",
+      "Narrator"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "5da455dc-b6a9-40bc-8d6c-9d329bec69b6",
+    "languages": [
+      "lt"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Rūta",
+    "tags": [
+      "Lithuanian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "5f581579-ce62-4634-9f04-2c0815dd2496",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Liam",
+    "tags": [
+      "Irish Accent"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "62c36330-e233-40ea-a310-647bce3bcddd",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Sophie",
+    "tags": [
+      "British"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "63fa2e00-b433-4e58-8721-dc1877db20b6",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Aino",
+    "tags": [
+      "Finnish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "65d37f86-f271-4b92-aeb2-5796415af82c",
+    "languages": [
+      "et"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Mart",
+    "tags": [
+      "Estonian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "6a43d5cb-e478-486c-9d29-60956a6aab75",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Faisal (فيصل)",
+    "tags": [
+      "Arabic (Saudi)"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "6c8ad62b-1356-42df-ac82-706590b7ff43",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Richard",
+    "tags": [
+      "American",
+      "Narrator"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "6cae89ed-817e-40de-9a2b-59cfe45d6cd2",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Giulia",
+    "tags": [
+      "Italian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "714a826a-2aaa-4c26-a34c-26b62d58d6a7",
+    "languages": [
+      "bg"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Georgi",
+    "tags": [
+      "Bulgarian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "7205f431-2448-403c-8e32-aaeb806d8a2b",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Antoine",
+    "tags": [
+      "French Accent"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "74034e7c-1e48-4306-83c0-fdd1005808a5",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "若曦 (Ruòxī)",
+    "tags": [
+      "Chinese",
+      "Woman"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "74c8ea3b-6a87-422a-826e-2b98a5979ea2",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Charlotte",
+    "tags": [
+      "Australian Accent"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "7597a3f4-a4b4-439a-93d5-aa0d4dcf016e",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Piotr",
+    "tags": [
+      "Polish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "79ffd956-872a-4b89-b25b-d99bb4335b82",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Liz",
+    "tags": [
+      "British"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "7b2486ca-a177-455a-ab9f-7440fc91c98c",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Aditya",
+    "tags": [
+      "Indian Accent"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "7cb0c315-25ea-4bbf-a3f4-2f4aeb9b46b2",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Emilio",
+    "tags": [
+      "Spanish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "7f674d6e-8f32-4e32-8e98-4df3e88610ef",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ishita",
+    "tags": [
+      "Indian Accent"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "80a778c8-2b53-48d0-b712-6534dc11800f",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Olena",
+    "tags": [
+      "Ukrainian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "83c83b46-cf26-4ab5-8165-b6dc37555506",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Klaus",
+    "tags": [
+      "German",
+      "Spokesperson"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "8488b90d-7b36-4da4-9ae1-4213263a539e",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Mei (めい)",
+    "tags": [
+      "Calm"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "850e9835-4bf2-46f8-9d93-ceaca48140f8",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Antoine",
+    "tags": [
+      "French",
+      "Natural"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "86ca6fa3-70aa-4272-a4d5-6bf27835e52d",
+    "languages": [
+      "lv"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jānis",
+    "tags": [
+      "Latvian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "88ed0d23-db7f-4da9-8c78-dec459b9f7fe",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Preta",
+    "tags": [
+      "Portuguese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "8a8d385c-21b6-4a61-8927-f14a0ee2856b",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Priya",
+    "tags": [
+      "Hindi"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "8b6ab83b-1a68-4cdf-96b9-c7c901fe38b0",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Dmitri",
+    "tags": [
+      "Russian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "8e9c4bc8-3979-48ab-8626-df53befc2090",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Holly",
+    "tags": [
+      "American",
+      "Midwestern"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "901c8446-9a54-424b-8884-aca11c8026f8",
+    "languages": [
+      "gl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Brais",
+    "tags": [
+      "Galician"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "9657a19a-c8cc-45ac-869f-6a187d9641a4",
+    "languages": [
+      "ar-Maghrebi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Yassine (ياسين)",
+    "tags": [
+      "Arabic (Maghrebi)"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "9b5af8fb-3720-425c-8bca-ce01a2b02b29",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Alois",
+    "tags": [
+      "Peruvian",
+      "Narrator"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "9b9f3bf8-2cbe-416e-baee-eb565065d600",
+    "languages": [
+      "cs"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jan",
+    "tags": [
+      "Czech"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "9bab5124-8306-4279-87a1-62cef90e042e",
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Malee",
+    "tags": [
+      "Thai"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "9ffd3ae4-d5e6-44fb-bb24-89fc75d849fc",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Andriy",
+    "tags": [
+      "Ukrainian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "a33e81a4-57b5-4e3d-8746-3a057ba3c23b",
+    "languages": [
+      "eu"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Iker",
+    "tags": [
+      "Basque"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "a81f7719-ed11-4fda-bcf5-ff9d01f5bb19",
+    "languages": [
+      "sl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Luka",
+    "tags": [
+      "Slovenian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "a973ded9-ff57-4a4d-a1ab-a442184ccfa5",
+    "languages": [
+      "el"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Nikos",
+    "tags": [
+      "Greek"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aa83218d-4618-4a24-a124-566adaed44a4",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Luis",
+    "tags": [
+      "Spanish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ac832c8c-3302-4198-a9ff-37dbead174a3",
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Somchai",
+    "tags": [
+      "Thai"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "b19687fd-c5c9-4bda-9d52-756c3b10c88e",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Miles",
+    "tags": [
+      "American",
+      "Fourties",
+      "Narrator"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "b63e48f1-9105-47e9-9471-758b7c99b700",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Omar",
+    "tags": [
+      "Arabic"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "b6e64fdb-66a7-470e-855f-1904ffd54c27",
+    "languages": [
+      "ar-Maghrebi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Mehdi (مهدي)",
+    "tags": [
+      "Arabic (Maghrebi)"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "b6ff7e00-4f0a-4b5a-a298-9479bcecb0ab",
+    "languages": [
+      "gl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Antía",
+    "tags": [
+      "Galician"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "b8ef4d1f-0c31-437a-a064-7d6693fc045a",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Minh",
+    "tags": [
+      "Vietnamese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "bab5210c-612a-413e-8de8-8491698eb869",
+    "languages": [
+      "mk"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Biljana",
+    "tags": [
+      "Macedonian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "bc11bdbb-1022-43b7-87cd-05231fe0fc0f",
+    "languages": [
+      "sr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Nikola",
+    "tags": [
+      "Serbian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "bc2bf604-9856-4163-85a2-160b3709f9e0",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Linh",
+    "tags": [
+      "Vietnamese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "bed55d4e-4f3e-486d-87bc-d4c62d3fd433",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "雨桐 (Yǔtóng)",
+    "tags": [
+      "Chinese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "bf60583a-7e30-414f-ba1b-3b9cca717c6a",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Erik",
+    "tags": [
+      "Swedish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "c69aa0a6-13e3-4f54-999d-3ec141854ceb",
+    "languages": [
+      "cs"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Tereza",
+    "tags": [
+      "Czech"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "c9878887-3005-4c90-a9bd-e5cb9e64a70e",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Florian",
+    "tags": [
+      "German"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "caba5581-7452-4523-8421-97793e90807a",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Dave",
+    "tags": [
+      "British",
+      "Radio"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "cc73e41e-8dba-49a1-bb08-58f6f374c596",
+    "languages": [
+      "sk"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jozef",
+    "tags": [
+      "Slovak"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "cdef14d1-13bc-49ae-a462-2f253e734059",
+    "languages": [
+      "fa"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Sara",
+    "tags": [
+      "Persian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "d0b89ddd-73d7-4747-bbdb-851c6e4906fc",
+    "languages": [
+      "sl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ana",
+    "tags": [
+      "Slovenian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "d2e9478f-e682-4cdd-81af-afdce115c4e7",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ingrid",
+    "tags": [
+      "Norwegian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "d37c8ddf-6fca-40d7-8c10-63eddb4f5784",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Cadu",
+    "tags": [
+      "Brazilian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "d3b2eb63-40db-4162-91a1-5632391088ed",
+    "languages": [
+      "sr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jelena",
+    "tags": [
+      "Serbian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "dcf18dc5-016e-4941-bb93-ae86a41aadb8",
+    "languages": [
+      "ca"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Jordi",
+    "tags": [
+      "Catalan"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "df5570bf-91a9-44ee-93f2-ea51bac84ece",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Federico",
+    "tags": [
+      "Argentinian",
+      "Host"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "df976bc5-1713-4599-854f-4fb69ca3d6cc",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Steven",
+    "tags": [
+      "British"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "dfe62b7e-5a0b-485b-a6b6-a32ac0606312",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Yu-na (유나)",
+    "tags": [
+      "Korean"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "e46dd6b6-6eee-4133-a717-1b551f3dc430",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Emilia",
+    "tags": [
+      "German"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "e4b4c0ad-9f3f-4f24-89e3-c335be47a9b2",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Manoel",
+    "tags": [
+      "Portuguese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "e564ba7e-aa8d-46a2-96a8-8dffedade48f",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Annie",
+    "tags": [
+      "Twenties",
+      "American",
+      "Relaxing"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "e6153279-75c2-41bf-aed9-af20b6b32fc9",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ivan",
+    "tags": [
+      "Croatian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "e7370313-117f-4f60-896f-c9f57f9111ea",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Ioana",
+    "tags": [
+      "Romanian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "e7d516a0-f678-4cb9-88f7-085b2d2a3c3c",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "子轩 (Zǐxuān)",
+    "tags": [
+      "Chinese"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ea418300-6e49-4770-b92a-6fd6473f49bd",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Seo-yeon (서연)",
+    "tags": [
+      "Korean"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "eb75be55-4f0d-4509-b1b5-d07775f285ae",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Mehmet",
+    "tags": [
+      "Turkish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ebe137da-451c-4ae6-93e5-a84f520153cb",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Emma",
+    "tags": [
+      "Dutch"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "edba55df-5590-4374-b2f2-988194fdd73e",
+    "languages": [
+      "da"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Freja",
+    "tags": [
+      "Danish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "eeb488b8-d532-4235-aa57-f070cfc44750",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Hannah",
+    "tags": [
+      "American"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "f11ad93b-b321-4f0a-9632-05073e1817ae",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Petra",
+    "tags": [
+      "Croatian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "f18bbe28-f1c5-46b3-a63f-93c3525c4e20",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Astrid",
+    "tags": [
+      "Swedish"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "f2185de7-e09b-46d7-9b20-8c82ef90524f",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Wyatt",
+    "tags": [
+      "American"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "f8698a9e-947a-43cd-a897-57edd4070a78",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Albert",
+    "tags": [
+      "British"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fa634f3b-4ccf-41ae-8162-202570cebef4",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Callum",
+    "tags": [
+      "Scottish Accent"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fb7aa1ef-3eb5-4a7a-8d1c-a3ddc843c04a",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Marco",
+    "tags": [
+      "Italian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "fc854436-2dac-4d21-aa69-ae17b54e98eb",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Emily",
+    "tags": [
+      "American",
+      "Conversational"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fd088d25-49b1-43eb-996c-52156346abd0",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Henrik",
+    "tags": [
+      "Norwegian"
+    ],
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "feb842c8-a338-426d-b865-79162abb22ec",
+    "languages": [
+      "hu"
+    ],
+    "meta": {
+      "voice_type": "Standard"
+    },
+    "name": "Gábor",
+    "tags": [
+      "Hungarian"
+    ],
+    "updated_at": "2026-11-16"
+  }
+]

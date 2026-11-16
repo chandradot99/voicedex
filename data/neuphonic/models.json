@@ -1,0 +1,114 @@
+[
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "voice_cloning"
+    ],
+    "description": "Neuphonic's cloud low-latency TTS model, streamed over SSE and WebSocket; it backs every voice.",
+    "first_seen": "2026-11-16",
+    "id": "neutts-max",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "ar-SA",
+      "eu",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lt",
+      "mk",
+      "mt",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi"
+    ],
+    "meta": {
+      "audio_encodings": [
+        "pcm_linear",
+        "pcm_mulaw"
+      ],
+      "declared_language_count": 44,
+      "implicit_model": true,
+      "implicit_model_note": "No `model` request parameter; the cloud API always runs NeuTTS-Max.",
+      "lang_codes_raw_unmapped": [
+        "ar_maghrebi"
+      ],
+      "phoneme_input_languages": [
+        "en",
+        "de",
+        "nl",
+        "fr",
+        "it",
+        "es",
+        "pt",
+        "ru",
+        "hi",
+        "ko"
+      ],
+      "speed_values": [
+        0.7,
+        1.0,
+        1.5
+      ],
+      "ssml_note": "Only SSML <break> for inline pauses",
+      "word_timestamps": true
+    },
+    "name": "NeuTTS-Max",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.neuphonic.com/llms.txt",
+        "https://docs.neuphonic.com/build-group/text-to-speech",
+        "https://docs.neuphonic.com/build-group/languages"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "api_urls": [
+    "https://api.neuphonic.com/voices"
+  ],
+  "docs_urls": [
+    "https://docs.neuphonic.com/llms.txt",
+    "https://docs.neuphonic.com/build-group/text-to-speech",
+    "https://docs.neuphonic.com/build-group/languages"
+  ],
+  "id": "neuphonic",
+  "last_synced": "2026-11-16",
+  "name": "Neuphonic",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.neuphonic.com/voices"
+    ]
+  }
+}

@@ -26,17 +26,18 @@ _BASE_URL = "https://api.neuphonic.com"
 _VOICES_PATH = "/voices"
 
 _DOCS_URLS = [
-    "https://docs.neuphonic.com",
+    "https://docs.neuphonic.com/llms.txt",
     "https://docs.neuphonic.com/build-group/text-to-speech",
+    "https://docs.neuphonic.com/build-group/languages",
 ]
+_MODEL_GUIDANCE = (
+    "Return the TTS model(s) the Neuphonic cloud API runs (exact model name as documented; the API "
+    "may have no model parameter — then return the single engine every voice uses, is_default=true). "
+    "Languages as BCP-47 from the languages page; invalid codes go in meta."
+)
 
-_MODEL_GUIDANCE = """
-Extract Neuphonic TTS models. There is 1 model.
-
-model_id="neuphonic", display_name="Neuphonic", is_default=True, streaming=True
-Extract the list of supported languages from the docs.
-description="Real-time TTS via WebSocket and SSE."
-"""
+_ACCENT_TAGS = {"american": "american", "british": "british", "indian": "indian", "australian": "australian",
+                "irish": "irish", "scottish": "scottish", "canadian": "canadian"}
 
 
 class NeurophonicSyncer(ProviderSyncer):
@@ -102,7 +103,9 @@ class NeurophonicSyncer(ProviderSyncer):
             elif "male" in tags_lower:
                 gender = "male"
 
-            style_tags = [t for t in tags if t.lower() not in ("male", "female")]
+            other_tags = [t for t in tags if t.lower() not in ("male", "female")]
+            accent = next((_ACCENT_TAGS[w] for t in other_tags
+                           for w in [t.lower().removesuffix(" accent")] if w in _ACCENT_TAGS), None)
 
             result.append(SyncVoice(
                 voice_id=voice_id,
@@ -110,8 +113,10 @@ class NeurophonicSyncer(ProviderSyncer):
                 gender=gender,
                 category="premade",
                 languages=normalize_languages([lang]) if lang else [],
-                description=", ".join(style_tags) if style_tags else None,
+                accent=accent,
+                tags=other_tags,
                 compatible_models=["*"],
+                meta={"voice_type": v["type"]} if v.get("type") else {},
             ))
         return result
 
