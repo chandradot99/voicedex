@@ -3,6 +3,10 @@
 Known gaps and follow-ups, newest first. Move items to commits as they're done.
 
 ## Data coverage
+- **Syncer fixes queued for when keys arrive** (docs already extracted into .sync-cache/):
+  smallestai voices endpoint `/lightning-v3.1/get_voices` retires 2026-11-30 → use `/lightning-v3.1-pro/get_voices`;
+  fishaudio top-200-by-popularity voice cap causes deprecation churn → fetch a stable set;
+  murf has a beta STT product (finch_*) the syncer doesn't request; speechify docs moved to docs.speechify.ai (old seeds redirect); typecast docs.typecast.ai is dead (use typecast.ai/docs); groq `_AUDIO_MODEL_META` still lists the shut-down PlayAI models; AI guidance in every remaining syncer hardcodes model ids — replace with generic guidance + current seed URLs (in each agent report, summarised in the cache-commit messages).
 - **Amazon Polly** — needs an AWS account + IAM user with `polly:DescribeVoices` (deferred 2026-11-16: AWS sign-up issues).
 - **Speechmatics TTS** (preview): 4 voices, no model id, $0.011/1k chars — add as tts once it has a stable model id.
 - **Rime STT and "Prism" STS** — syncer is TTS-only.
