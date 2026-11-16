@@ -7,7 +7,9 @@
 </section>
 
 <section class="wrap">
+  {% if f.model and f.provider %}<p class="filter-note">Showing voices that work with <code translate="no">{{ f.model }}</code>. <a href="/voices?provider={{ f.provider }}">Show all {{ f.provider }} voices</a></p>{% endif %}
   <form class="filters" method="get" action="/voices">
+    {% if f.model %}<input type="hidden" name="model" value="{{ f.model }}">{% endif %}
     <label>Provider
       <select name="provider">
         <option value="">Any</option>
@@ -27,7 +29,7 @@
       </select>
     </label>
     <label class="grow">Name, accent or style
-      <input type="search" name="q" value="{{ f.q }}" placeholder="e.g. british, narration, calm">
+      <input type="search" name="q" value="{{ f.q }}" placeholder="e.g. british, narration, calm…" autocomplete="off">
     </label>
     <label class="check"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}> Has a sample</label>
     <button type="submit">Apply filters</button>

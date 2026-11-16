@@ -140,7 +140,6 @@ button:hover { background: var(--accent); border-color: var(--accent); color: va
 
 /* Tables */
 .table-scroll { overflow-x: auto; }
-table.data .num, .eol-list time { font-variant-numeric: tabular-nums; }
 table.data { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
 table.data th, table.data td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
 table.data thead th { font-size: 0.85rem; color: var(--muted); font-weight: 500; border-bottom: 1.5px solid var(--ink); white-space: nowrap; }
@@ -279,7 +278,7 @@ td .badge { margin-left: 0; }
 .source { font-size: 0.92rem; }
 table.data.compact { font-size: 0.92rem; margin: 0.5rem 0 1rem; }
 table.data.compact td, table.data.compact th { padding: 7px 12px 7px 0; }
-.lang-list { list-style: none; padding: 0; margin: 0; columns: 3 14rem; column-gap: 32px; }
+.lang-list { list-style: none; padding: 0; margin: 0; columns: 3 9rem; column-gap: 32px; }
 .lang-list li { break-inside: avoid; padding: 3px 0; }
 .lang-list .muted { font-size: 0.85rem; }
 .feature-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -373,3 +372,20 @@ table.compare td, table.compare thead th { overflow-wrap: anywhere; }
 .cell-list li:last-child { border-bottom: 0; }
 td .more { font-size: 0.85rem; }
 .cmp-provider .tag { margin-left: 4px; font-size: 0.7rem; }
+
+/* Guidelines pass */
+h1, h2, h3 { text-wrap: balance; }
+.lede, .section-note, .note, .voice-desc { text-wrap: pretty; }
+a, button, input, select, summary, .play { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+[id] { scroll-margin-top: 16px; }
+html { scroll-padding-bottom: 88px; }            /* keep focused rows clear of the sticky compare tray */
+.tray { overscroll-behavior: contain; padding-bottom: env(safe-area-inset-bottom); }
+.tray-list li span { max-width: 18rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.voice-body, .title-row > *, .tray-row > * { min-width: 0; }
+/* No tabular-nums on mixed text: this font's tabular feature also widens punctuation ("$0 . 12"). */
+.filter-note { margin: 0 0 0.5rem; }
+@media (max-width: 700px) {
+  table.compare .col-label { width: 7.5rem; }
+  table.compare th, table.compare td { padding: 9px 10px; }
+  .compare-tools { gap: 10px 16px; }
+}

@@ -5,7 +5,7 @@
   <h1>Search</h1>
   <form class="search" action="/search" role="search">
     <label for="q" class="visually-hidden">Search providers, models and voices</label>
-    <input id="q" name="q" type="search" value="{{ q }}" placeholder="Search a provider, model or voice name" autocomplete="off">
+    <input id="q" name="q" type="search" value="{{ q }}" placeholder="Search a provider, model or voice name…" autocomplete="off" spellcheck="false">
     <button type="submit">Search</button>
   </form>
 </section>
@@ -28,7 +28,7 @@
     {% endif %}
     {% if models %}
     <h2>Models</h2>
-    <ul class="plain-list">{% for r in models %}<li><a href="{{ model_url(r) }}"><code>{{ r.model.id }}</code></a> <span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}</span></li>{% endfor %}</ul>
+    <ul class="plain-list">{% for r in models %}<li><a href="{{ model_url(r) }}"><code translate="no">{{ r.model.id }}</code></a> <span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}</span></li>{% endfor %}</ul>
     {% endif %}
     {% if voices %}
     <h2>Voices</h2>

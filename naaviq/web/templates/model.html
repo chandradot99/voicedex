@@ -5,7 +5,7 @@
 <section class="wrap page-head">
   <p class="crumbs"><a href="/providers/{{ p.id }}">{{ p.name }}</a> <span class="muted">/</span> <a href="/models?type={{ m.type }}&provider={{ p.id }}">{{ TYPE_LABELS[m.type] }}</a></p>
   <div class="title-row">
-    <h1 class="model-title"><code>{{ m.id }}</code></h1>
+    <h1 class="model-title"><code translate="no">{{ m.id }}</code></h1>
     <button type="button" class="btn-secondary compare-toggle" data-key="{{ model_key(r) }}" data-label="{{ p.name }} {{ m.id }}" aria-pressed="false">Add to compare</button>
   </div>
   <p class="model-subtitle">{{ m.name }}
@@ -16,7 +16,7 @@
   {% if m.eol_date %}
   <div class="callout callout-eol" role="note">
     <strong>{{ p.name }} will shut this model down on {{ m.eol_date.strftime('%B %-d, %Y') }}.</strong>
-    {% if replacement %}Move to <a href="{{ model_url(replacement) }}"><code>{{ replacement.model.id }}</code></a>.{% elif m.meta.get('replacement') %}Suggested replacement: <code>{{ m.meta['replacement'] }}</code>.{% endif %}
+    {% if replacement %}Move to <a href="{{ model_url(replacement) }}"><code translate="no">{{ replacement.model.id }}</code></a>.{% elif m.meta.get('replacement') %}Suggested replacement: <code translate="no">{{ m.meta['replacement'] }}</code>.{% endif %}
     {% set notice = m.meta.get('deprecation_notice') %}{% if notice %}<span class="muted">{% if notice is string and notice|length == 10 and notice[4] == '-' %}Announced {{ notice }}.{% else %}{{ notice }}{% endif %}</span>{% endif %}
   </div>
   {% endif %}
@@ -78,8 +78,8 @@
       {% if m.max_audio_seconds %}<div><dt>Max audio</dt><dd>{{ duration(m.max_audio_seconds) }} per request</dd></div>{% endif %}
       {% if m.regions %}<div><dt>Regions</dt><dd>{{ m.regions|join(", ")|upper }}</dd></div>{% endif %}
       {% if m.open_weights %}<div><dt>Open weights</dt><dd>{% if m.open_weights.url %}<a href="{{ m.open_weights.url }}" rel="noopener">{{ m.open_weights.license }}</a>{% else %}{{ m.open_weights.license }}{% endif %}</dd></div>{% endif %}
-      {% if m.family %}<div><dt>Family</dt><dd><code>{{ m.family }}</code></dd></div>{% endif %}
-      {% if m.meta.get('aliases') %}<div><dt>Also callable as</dt><dd>{% for a in m.meta['aliases'] %}<code>{{ a }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
+      {% if m.family %}<div><dt>Family</dt><dd><code translate="no">{{ m.family }}</code></dd></div>{% endif %}
+      {% if m.meta.get('aliases') %}<div><dt>Also callable as</dt><dd>{% for a in m.meta['aliases'] %}<code translate="no">{{ a }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
       {% if m.first_seen %}<div><dt>In catalog since</dt><dd>{{ m.first_seen.strftime('%b %-d, %Y') }}</dd></div>{% endif %}
     </dl>
     <h3>Where this data comes from</h3>
@@ -89,7 +89,7 @@
 
     {% if siblings %}
     <h3>Other {{ p.name }} {{ TYPE_LABELS[m.type]|lower }} models</h3>
-    <ul class="sibling-list">{% for s in siblings %}<li><a href="{{ model_url(s) }}"><code>{{ s.model.id }}</code></a>{% if s.model.eol_date %} <span class="muted">ending</span>{% elif s.model.is_default %} <span class="muted">default</span>{% endif %}</li>{% endfor %}</ul>
+    <ul class="sibling-list">{% for s in siblings %}<li><a href="{{ model_url(s) }}"><code translate="no">{{ s.model.id }}</code></a>{% if s.model.eol_date %} <span class="muted">ending</span>{% elif s.model.is_default %} <span class="muted">default</span>{% endif %}</li>{% endfor %}</ul>
     {% endif %}
   </aside>
 </section>

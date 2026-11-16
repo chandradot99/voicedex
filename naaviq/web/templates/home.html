@@ -5,7 +5,7 @@
   <p class="lede">{{ n_models }} speech-to-text, text-to-speech and speech-to-speech models and {{ "{:,}".format(n_voices) }} voices from {{ live|length }} providers. Compare languages, features and prices, and see which models are being shut down.</p>
   <form class="search" action="/search" role="search">
     <label for="q" class="visually-hidden">Search providers, models and voices</label>
-    <input id="q" name="q" type="search" placeholder="Search a provider, model or voice name" autocomplete="off">
+    <input id="q" name="q" type="search" placeholder="Search a provider, model or voice name…" autocomplete="off" spellcheck="false">
     <button type="submit">Search</button>
   </form>
   <p class="quick">Jump to <a href="/models?type=stt">speech-to-text</a>, <a href="/models?type=tts">text-to-speech</a>, <a href="/models?type=sts">realtime speech-to-speech</a> or <a href="/voices?preview=1">voices you can listen to</a>.</p>

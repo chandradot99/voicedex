@@ -39,7 +39,7 @@
         {% for r in group %}{% set m = r.model %}
         <tr id="{{ m.type }}-{{ m.id }}">
           <td class="pick"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ p.name }} {{ m.id }}" aria-label="Compare {{ m.id }}"></td>
-          <th scope="row"><a href="{{ model_url(r) }}"><code>{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
+          <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
           <td class="num">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
           <td>{{ price_label(m) or "–" }}</td>
           <td class="feat">{% for c in m.capabilities[:3] %}<span class="cap">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</span>{% endfor %}{% if m.capabilities|length > 3 %}<span class="muted">+{{ m.capabilities|length - 3 }}</span>{% endif %}</td>
@@ -66,7 +66,7 @@
   <h2 id="dep-title">Deprecated models</h2>
   <p class="section-note">No longer listed by {{ p.name }}. Kept here for reference.</p>
   <ul class="plain-list">
-    {% for r in deprecated %}<li><code>{{ r.model.id }}</code> <span class="muted">{{ TYPE_LABELS[r.model.type]|lower }}, removed from listings {{ r.model.deprecated_at }}</span></li>{% endfor %}
+    {% for r in deprecated %}<li><code translate="no">{{ r.model.id }}</code> <span class="muted">{{ TYPE_LABELS[r.model.type]|lower }}, removed from listings {{ r.model.deprecated_at }}</span></li>{% endfor %}
   </ul>
 </section>
 {% endif %}

@@ -12,7 +12,7 @@
     {% if language %}<input type="hidden" name="language" value="{{ language }}">{% endif %}
     {% if keys|length < max_compare %}
     <label class="grow">Add a model
-      <input name="m" list="model-options" placeholder="Type a provider or model, e.g. deepgram nova-3" autocomplete="off">
+      <input name="m" list="model-options" placeholder="Type a provider or model, e.g. deepgram nova-3…" autocomplete="off" spellcheck="false">
       <datalist id="model-options">
         {% for o in options %}<option value="{{ model_key(o) }}">{{ names[o.provider_id] }} {{ o.model.id }} ({{ TYPE_SHORT[o.model.type] }})</option>{% endfor %}
       </datalist>
@@ -45,7 +45,7 @@
       <noscript><button type="submit">Check</button></noscript>
     </form>
     <label class="check diff-toggle"><input type="checkbox" id="only-diff"> Only show differences</label>
-    <button type="button" class="btn-secondary" id="copy-link">Copy link</button>
+    <button type="button" class="btn-secondary" id="copy-link" aria-live="polite">Copy link</button>
   </div>
 
   <div class="table-scroll compare-scroll">
@@ -58,7 +58,7 @@
           {% set others = keys|reject("equalto", keys[loop.index0])|list %}
           <th scope="col" data-key="{{ model_key(r) }}" data-label="{{ names[r.provider_id] }} {{ r.model.id }}">
             <span class="cmp-provider">{{ names[r.provider_id] }} <span class="tag tag-{{ r.model.type }}">{{ TYPE_SHORT[r.model.type] }}</span></span>
-            <a class="cmp-model" href="{{ model_url(r) }}"><code>{{ r.model.id }}</code></a>
+            <a class="cmp-model" href="{{ model_url(r) }}"><code translate="no">{{ r.model.id }}</code></a>
             <a class="cmp-remove" href="/compare?{% for k in others %}m={{ k|urlencode }}&{% endfor %}{% if language %}language={{ language }}{% endif %}" aria-label="Remove {{ r.model.id }}">Remove</a>
           </th>
           {% endfor %}
@@ -84,7 +84,7 @@
       {% endfor %}
     </table>
   </div>
-  <p class="note">"–" means the provider's data doesn't list it, not that the model lacks it. Lowest price is only marked when every price uses the same unit.</p>
+  <p class="note">“–” means the provider's data doesn't list it, not that the model lacks it. Lowest price is only marked when every price uses the same unit.</p>
   {% endif %}
 </section>
 {% endblock %}

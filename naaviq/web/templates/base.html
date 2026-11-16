@@ -9,7 +9,8 @@
   <meta property="og:description" content="{{ self.description() }}">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <meta name="theme-color" content="#0b6e69">
+  <meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121820" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230b6e69'/%3E%3Crect x='4' y='10' width='2.4' height='4' rx='1.2' fill='white'/%3E%3Crect x='8.2' y='7' width='2.4' height='10' rx='1.2' fill='white'/%3E%3Crect x='12.4' y='4.5' width='2.4' height='15' rx='1.2' fill='white'/%3E%3Crect x='16.6' y='8.5' width='2.4' height='7' rx='1.2' fill='white'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,7 @@
   <main id="main">
     {% block content %}{% endblock %}
   </main>
-  <aside id="compare-tray" class="tray" hidden aria-label="Models selected for comparison">
+  <aside id="compare-tray" class="tray" hidden aria-label="Models selected for comparison" aria-live="polite">
     <div class="wrap tray-row">
       <ul class="tray-list"></ul>
       <div class="tray-actions">

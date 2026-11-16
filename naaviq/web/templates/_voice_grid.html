@@ -14,8 +14,8 @@
       {% if v.description %}<p class="voice-desc">{{ v.description|truncate(140) }}</p>{% endif %}
       {% set chips = voice_chips(v) %}
       {% if chips %}<p class="voice-tags">{% for t in chips %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
-      <p class="voice-id"><code>{{ v.id }}</code>{% if not v.preview_url %} <span class="muted">No sample published</span>{% endif %}</p>
-      <p class="voice-error" hidden>This sample couldn't be played. The provider may have moved it.</p>
+      <p class="voice-id"><code translate="no">{{ v.id }}</code>{% if not v.preview_url %} <span class="muted">No sample published</span>{% endif %}</p>
+      <p class="voice-error" role="status" hidden>This sample couldn't be played. The provider may have moved it.</p>
     </div>
   </li>
   {% endfor %}

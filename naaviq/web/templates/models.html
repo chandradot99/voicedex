@@ -39,7 +39,7 @@
       </select>
     </label>
     <label class="grow">Name contains
-      <input type="search" name="q" value="{{ f.q }}" placeholder="e.g. nova, sonic, flash">
+      <input type="search" name="q" value="{{ f.q }}" placeholder="e.g. nova, sonic, flash…" autocomplete="off" spellcheck="false">
     </label>
     <button type="submit">Apply filters</button>
   </form>
@@ -56,7 +56,7 @@
         {% for r in rows %}{% set m = r.model %}
         <tr>
           <td class="pick"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ names[r.provider_id] }} {{ m.id }}" aria-label="Compare {{ m.id }}"></td>
-          <th scope="row"><a href="{{ model_url(r) }}"><code>{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
+          <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
           <td>{{ names[r.provider_id] }}</td>
           <td><span class="tag tag-{{ m.type }}">{{ TYPE_SHORT[m.type] }}</span></td>
           <td class="num">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
