@@ -1,0 +1,8 @@
+{
+  "description": "Berlin-based TTS company (Coqui Studio + API, commercial XTTS licences). Studio disappeared from coqui.ai in mid-December 2023 and by early January 2024 the homepage read 'Coqui is shutting down' (Wayback 2024-01-05). No exact end date was published. The open-source TTS/XTTS code continues as the community fork idiap/coqui-ai-TTS (PyPI coqui-tts).",
+  "id": "coqui",
+  "name": "Coqui",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://coqui.ai"
+}

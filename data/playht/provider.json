@@ -1,0 +1,8 @@
+{
+  "description": "Text-to-speech and voice-agent API (PlayHT / PlayAI). Meta acquired the company in July 2025 (confirmed by a Meta spokesperson to Bloomberg) and the service was shut down: play.ht and play.ai showed 'We have shut down the service' by early January 2026 (Wayback snapshots 2026-01-06 / 2026-01-11; last snapshot without the notice 2025-12-31), and the domains no longer resolve. No exact end date was published.",
+  "id": "playht",
+  "name": "PlayHT",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://play.ht"
+}
