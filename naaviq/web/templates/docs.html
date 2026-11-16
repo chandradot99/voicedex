@@ -107,8 +107,11 @@
           if (b.textContent.trim() === "Clear" && isQueryClear(b)) {
             const t = [...b.childNodes].find((n) => n.nodeType === 3 && n.textContent.trim() === "Clear");
             if (t) t.textContent = "Reset"; else if (b.childElementCount === 0) b.textContent = "Reset";
-            b.title = "Reset query parameters to their defaults";
           }
+        });
+        // Scalar's own hover tooltip for the button still describes the old behaviour.
+        document.querySelectorAll(".scalar-tooltip").forEach((t) => {
+          if (t.textContent.trim() === "Clear optional parameters") t.textContent = "Reset to defaults";
         });
       }).observe(document.body, { childList: true, subtree: true });
     })();
@@ -230,10 +233,12 @@
         .introduction-section h1, .section-header.tight { font-weight: 600; }
         /* Floating layers (menus, listboxes, search dialog, tooltips) must read as raised above
            whatever they cover: lighter surface, visible edge, real shadow. */
-        .z-context > div, [role="tooltip"], .scalar-modal {
+        .z-context > div, [role="tooltip"]:not(.scalar-tooltip), .scalar-modal {
           background: #1c212b !important;
           box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16), 0 24px 60px -12px rgba(0, 0, 0, 0.9) !important;
         }
+        /* Scalar's hover tooltips are already a rounded pill; the wrapper stays invisible. */
+        .scalar-tooltip { background: transparent !important; box-shadow: none !important; }
         /* Search dialog (⌘K) and other modals: dim + blur the page; mark the keyboard selection. */
         .scalar-modal-layout { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
         .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #2a313e !important; box-shadow: inset 2px 0 0 #5eead4; }
