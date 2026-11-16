@@ -115,6 +115,9 @@
         }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
         .introduction-section h1, .section-header.tight { font-weight: 600; }
+        /* Response panel: indent header/cookie keys to sit under their section titles,
+           matching the request panel (whose rows start after a checkbox column). */
+        .response-section-content .scalar-data-table tr > td:first-child > span { padding-left: 40px !important; }
         .scalar-card, .scalar-codeblock-pre { border-radius: 14px !important; }
       `,
     });
