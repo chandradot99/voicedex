@@ -242,7 +242,9 @@
         /* Tooltips and the parameter-info popover: same 8px radius as the site's other small surfaces. */
         .scalar-tooltip::before { border-radius: 8px !important; }
         .z-context > div.rounded-xl { border-radius: 8px !important; }
-        .z-context > div.rounded-xl > div.rounded { border-radius: 6px !important; }
+        .z-context > div.rounded-xl:has(> div.text-xxs) { padding: 0 !important; }
+        .z-context > div.rounded-xl > div.text-xxs { border-radius: 8px !important; padding: 6px 10px !important; }
+        .z-context > div.rounded-xl > div.text-xxs .markdown { line-height: 1.45 !important; }
         /* Search dialog (⌘K) and other modals: dim + blur the page; mark the keyboard selection. */
         .scalar-modal-layout { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
         .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #2a313e !important; box-shadow: inset 2px 0 0 #5eead4; }
