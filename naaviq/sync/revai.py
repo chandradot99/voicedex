@@ -1,21 +1,8 @@
 """
 Rev AI sync script.
 
-Source: docs
-  - STT models: AI-parsed from docs — 3 active AI models
-  - TTS: not offered — tts_models=[], tts_voices=[]
-
-Rev AI is STT-only. Three active AI models:
-  machine  — Reverb ASR, default, streaming + batch, English (streaming) / 58+ langs (batch)
-  low_cost — Reverb Turbo, budget, streaming + batch, English (US)
-  fusion   — Whisper Fusion, better rare-word recognition
-
-Skipped:
-  machine_v2 — deprecated, silently routes to `machine`
-  human      — human transcription service, not an AI model
-
-Auth: Authorization: Bearer <token>, REVAI_API_KEY env var.
-Not needed for sync — models are parsed from public docs.
+Source: docs — STT models (transcribers) parsed from public docs; no API key needed.
+Rev AI is STT-only. Human transcription (`human`) is not an AI model and is excluded.
 """
 
 from __future__ import annotations
@@ -28,22 +15,17 @@ from naaviq.sync.base import ProviderSyncer, SyncResult
 
 _SEED_URLS = [
     "https://docs.rev.ai/api/asynchronous/transcribers/",
-    "https://docs.rev.ai/api/streaming/",
+    "https://docs.rev.ai/api/asynchronous/changelog.md",
+    "https://docs.rev.ai/api/streaming/transcribers.md",
+    "https://docs.rev.ai/api/features.md",
+    "https://docs.rev.ai/api/global-deployments.md",
+    "https://www.rev.ai/pricing",
 ]
 _MODEL_GUIDANCE = (
-    "Extract Rev AI STT models. Include only the 3 active AI models — skip 'machine_v2' "
-    "(deprecated) and 'human' (human transcription, not AI).\n"
-    "\n"
-    "Models to extract:\n"
-    "  - machine: 'Reverb ASR', is_default=True, streaming=True. "
-    "Supports 58+ languages for batch (use languages=['*']); "
-    "English-only for streaming — set languages=['en'] as the practical default.\n"
-    "  - low_cost: 'Reverb Turbo', is_default=False, streaming=True, languages=['en'].\n"
-    "  - fusion: 'Whisper Fusion', is_default=False, streaming=True. "
-    "Better recognition for rare words and proper nouns. "
-    "Check the docs for its language support; if unclear use languages=['en'].\n"
-    "\n"
-    "Use exact model_id values: 'machine', 'low_cost', 'fusion'."
+    "Return every active AI transcriber id (exact `transcriber` values). Exclude human "
+    "transcription and anything the changelog marks deprecated/sunset. is_default=true for the "
+    "transcriber used when none is specified. Languages: batch superset in `languages`, the "
+    "streaming subset in meta.streaming_languages."
 )
 
 

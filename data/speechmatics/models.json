@@ -1,0 +1,761 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Highest-accuracy Speechmatics model for single-language audio, available for batch and realtime.",
+    "first_seen": "2026-11-16",
+    "id": "enhanced",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "ba",
+      "eu",
+      "be",
+      "bn",
+      "bg",
+      "yue",
+      "ca",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "eo",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "ia",
+      "ga",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lt",
+      "ms",
+      "mt",
+      "zh",
+      "mr",
+      "mn",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "ug",
+      "vi",
+      "cy",
+      "tl"
+    ],
+    "meta": {
+      "audio_events": true,
+      "auto_chapters_batch": true,
+      "auto_language_batch_only": true,
+      "confidence_scores": true,
+      "entity_detection": true,
+      "language_packs": [
+        "ar_en",
+        "en_ms",
+        "cmn_en",
+        "cmn_en_ms_ta",
+        "es+domain=bilingual-en",
+        "en_ta",
+        "tl"
+      ],
+      "max_batch_upload_bytes": 1000000000,
+      "max_realtime_session_hours": 48,
+      "medical_domain": {
+        "languages": [
+          "ar_en",
+          "da",
+          "nl",
+          "en",
+          "fi",
+          "fr",
+          "de",
+          "no",
+          "es",
+          "sv"
+        ],
+        "param": "domain=medical"
+      },
+      "profanity_tagging": true,
+      "raw_encodings": [
+        "pcm_f32le",
+        "pcm_s16le",
+        "mulaw"
+      ],
+      "realtime_global_endpoint": true,
+      "regions_detail": [
+        "eu1",
+        "us1",
+        "au1"
+      ],
+      "replaces_operating_point": true,
+      "speaker_identification": true,
+      "speech_intelligence_batch_only": [
+        "summarization",
+        "topic_detection",
+        "sentiment",
+        "chapters"
+      ]
+    },
+    "name": "Enhanced",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "price_usd": 0.75,
+      "source_url": "https://www.speechmatics.com/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "batch (pre-recorded)",
+          "price_usd": 0.75,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime",
+          "price_usd": 0.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://docs.speechmatics.com/speech-to-text/languages",
+        "https://docs.speechmatics.com/speech-to-text/batch/input",
+        "https://docs.speechmatics.com/speech-to-text/realtime/input",
+        "https://www.speechmatics.com/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": false,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Voice-agent model behind the Agent STT API, returning speaker-attributed, turn-based punctuated segments.",
+    "first_seen": "2026-11-16",
+    "id": "linden-1",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "ba",
+      "eu",
+      "be",
+      "bn",
+      "bg",
+      "yue",
+      "ca",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "eo",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "ia",
+      "ga",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lt",
+      "ms",
+      "mt",
+      "zh",
+      "mr",
+      "mn",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "ug",
+      "vi",
+      "cy",
+      "tl"
+    ],
+    "meta": {
+      "api": "agent-stt",
+      "endpoint_path": "/v2/agent",
+      "regions_detail": [
+        "global",
+        "eu1",
+        "us1",
+        "au1"
+      ],
+      "saas_only": true,
+      "turn_detection": true
+    },
+    "name": "Linden 1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Realtime list rate (originally $0.40/hr); Agent STT only.",
+      "price_usd": 0.3,
+      "source_url": "https://www.speechmatics.com/pricing",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://docs.speechmatics.com/speech-to-text/languages",
+        "https://docs.speechmatics.com/speech-to-text/batch/input",
+        "https://docs.speechmatics.com/speech-to-text/realtime/input",
+        "https://www.speechmatics.com/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Multilingual code-switching model that auto-detects 55+ languages and labels each word's language, with a reduced feature set.",
+    "first_seen": "2026-11-16",
+    "id": "melia-1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "ba",
+      "eu",
+      "be",
+      "bn",
+      "bg",
+      "yue",
+      "ca",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "eo",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "ia",
+      "ga",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lt",
+      "ms",
+      "mt",
+      "zh",
+      "mr",
+      "mn",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "ug",
+      "vi",
+      "cy"
+    ],
+    "meta": {
+      "language_hints": true,
+      "language_param": "multi",
+      "max_batch_upload_bytes": 1000000000,
+      "max_realtime_session_hours": 48,
+      "per_word_language_labels": true,
+      "raw_encodings": [
+        "pcm_f32le",
+        "pcm_s16le",
+        "mulaw"
+      ],
+      "realtime_diarization": "channel only",
+      "realtime_global_endpoint": true,
+      "realtime_requires_force_end_of_utterance": true,
+      "regions_detail": [
+        "eu1",
+        "us1",
+        "au1"
+      ]
+    },
+    "name": "Melia 1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "price_usd": 0.24,
+      "source_url": "https://www.speechmatics.com/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "batch (pre-recorded)",
+          "price_usd": 0.24,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime",
+          "price_usd": 0.4,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://docs.speechmatics.com/speech-to-text/languages",
+        "https://docs.speechmatics.com/speech-to-text/batch/input",
+        "https://docs.speechmatics.com/speech-to-text/realtime/input",
+        "https://www.speechmatics.com/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Multilingual code-switching model tuned for healthcare audio such as ambient scribes and dictation.",
+    "first_seen": "2026-11-16",
+    "id": "oak-1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "ba",
+      "eu",
+      "be",
+      "bn",
+      "bg",
+      "yue",
+      "ca",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "eo",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "ia",
+      "ga",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lt",
+      "ms",
+      "mt",
+      "zh",
+      "mr",
+      "mn",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "ug",
+      "vi",
+      "cy"
+    ],
+    "meta": {
+      "domain": "medical",
+      "language_hints": true,
+      "language_param": "multi",
+      "max_batch_upload_bytes": 1000000000,
+      "max_realtime_session_hours": 48,
+      "medical_uplift_languages": [
+        "ar",
+        "da",
+        "nl",
+        "en",
+        "fi",
+        "fr",
+        "de",
+        "no",
+        "pl",
+        "es",
+        "sv"
+      ],
+      "per_word_language_labels": true,
+      "raw_encodings": [
+        "pcm_f32le",
+        "pcm_s16le",
+        "mulaw"
+      ],
+      "realtime_diarization": "channel only",
+      "realtime_global_endpoint": true,
+      "realtime_requires_force_end_of_utterance": true,
+      "regions_detail": [
+        "eu1",
+        "us1",
+        "au1"
+      ]
+    },
+    "name": "Oak 1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "price_usd": 0.3,
+      "source_url": "https://www.speechmatics.com/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "batch (pre-recorded)",
+          "price_usd": 0.3,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime",
+          "price_usd": 0.46,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://docs.speechmatics.com/speech-to-text/languages",
+        "https://docs.speechmatics.com/speech-to-text/batch/input",
+        "https://docs.speechmatics.com/speech-to-text/realtime/input",
+        "https://www.speechmatics.com/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Feature-identical to Enhanced but prioritizes throughput and speed; used when no model is set.",
+    "first_seen": "2026-11-16",
+    "id": "standard",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "ba",
+      "eu",
+      "be",
+      "bn",
+      "bg",
+      "yue",
+      "ca",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "eo",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "ia",
+      "ga",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lt",
+      "ms",
+      "mt",
+      "zh",
+      "mr",
+      "mn",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "ug",
+      "vi",
+      "cy",
+      "tl"
+    ],
+    "meta": {
+      "api_default": true,
+      "audio_events": true,
+      "auto_chapters_batch": true,
+      "auto_language_batch_only": true,
+      "confidence_scores": true,
+      "entity_detection": true,
+      "language_packs": [
+        "ar_en",
+        "en_ms",
+        "cmn_en",
+        "cmn_en_ms_ta",
+        "es+domain=bilingual-en",
+        "en_ta",
+        "tl"
+      ],
+      "max_batch_upload_bytes": 1000000000,
+      "max_realtime_session_hours": 48,
+      "profanity_tagging": true,
+      "raw_encodings": [
+        "pcm_f32le",
+        "pcm_s16le",
+        "mulaw"
+      ],
+      "realtime_global_endpoint": true,
+      "regions_detail": [
+        "eu1",
+        "us1",
+        "au1"
+      ],
+      "replaces_operating_point": true,
+      "speaker_identification": true,
+      "speech_intelligence_batch_only": [
+        "summarization",
+        "topic_detection",
+        "sentiment",
+        "chapters"
+      ]
+    },
+    "name": "Standard",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "price_usd": 0.45,
+      "source_url": "https://www.speechmatics.com/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "batch (pre-recorded)",
+          "price_usd": 0.45,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime",
+          "price_usd": 0.45,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://docs.speechmatics.com/speech-to-text/languages",
+        "https://docs.speechmatics.com/speech-to-text/batch/input",
+        "https://docs.speechmatics.com/speech-to-text/realtime/input",
+        "https://www.speechmatics.com/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  }
+]

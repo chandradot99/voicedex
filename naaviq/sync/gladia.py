@@ -23,19 +23,18 @@ from naaviq.sync.ai_parser import notes_to_str, parse_models_from_docs
 from naaviq.sync.base import ProviderSyncer, SyncResult
 
 _SEED_URLS = [
-    "https://docs.gladia.io/chapters/live-stt/quickstart.md",
+    "https://docs.gladia.io/chapters/introduction/models.md",
     "https://docs.gladia.io/chapters/language/supported-languages.md",
+    "https://docs.gladia.io/chapters/limits-and-specifications/supported-formats.md",
+    "https://docs.gladia.io/api-reference/v2/live/init.md",
+    "https://docs.gladia.io/api-reference/v2/pre-recorded/init.md",
 ]
 
 _MODEL_GUIDANCE = (
-    "Extract Gladia STT models. There is currently one model: solaria-1.\n"
-    "\n"
-    "  - solaria-1: 'Solaria-1', is_default=True, streaming=True (supports both batch "
-    "and live WebSocket streaming), languages=['*'] (130+ languages via ISO 639-1 codes, "
-    "with ISO 639-3 codes for languages that have no 639-1 code such as Hawaiian 'haw'). "
-    "Supports automatic language detection and code-switching.\n"
-    "\n"
-    "Use exact model_id: 'solaria-1'. Mark it is_default=True."
+    "Return EVERY documented Gladia STT model id (exact API strings). is_default=true for the "
+    "model the docs name as the default when the parameter is omitted. streaming=true only for "
+    "models usable over the live (websocket) API; meta.batch=true for models usable via the "
+    "pre-recorded API. Enumerate languages from the supported-languages table per model."
 )
 
 

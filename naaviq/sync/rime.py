@@ -23,11 +23,9 @@ Voice object shape:
     "flagship": true
   }
 
-TTS models (derived synthetically — no API endpoint):
-  arcana  : flagship, default, 9 languages (en/es/fr/de/ar/he/hi/ja/pt), streaming
-  mistv3  : ultra-low latency (<100ms TTFB), 4 languages (en/es/fr/de), streaming
-  mistv2  : high-volume production, 4 languages (en/es/fr/de), streaming
-  mist    : legacy, English-only, streaming
+TTS models: parsed from docs (no /models endpoint). Voices are kept only for models that the
+docs list as current, so voices of retired models (e.g. Arcana → Coda in 2026, legacy Mist) drop out
+and get deprecated by the merge rather than pointing at models that no longer exist.
 
 Auth: Bearer token for synthesis only — voice list endpoint is public.
 Config: RIME_API_KEY (not needed for sync, reserved for future synthesis use).
@@ -47,45 +45,16 @@ from naaviq.sync.language import normalize_languages
 _VOICES_URL = "https://users.rime.ai/data/voices/voice_details.json"
 
 _DOCS_URLS = [
-    "https://docs.rime.ai/api-reference/models",
-    "https://docs.rime.ai/api-reference/voices",
+    "https://docs.rime.ai/docs/models",
+    "https://docs.rime.ai/docs/voices",
+    "https://www.rime.ai/pricing",
 ]
 
-_MODEL_GUIDANCE = """
-Extract Rime AI TTS models. There are 4 models.
-
-1. model_id="arcana", display_name="Rime Arcana", is_default=True, streaming=True
-   - Flagship model. Multilingual (en, es, fr, de, ar, he, hi, ja, pt).
-   - description="Rime's flagship TTS model — ultra-realistic, expressive, multilingual."
-
-2. model_id="mistv3", display_name="Rime Mist v3", is_default=False, streaming=True
-   - Ultra-low latency (<100ms TTFB). Languages: en, es, fr, de.
-   - description="Ultra-low latency (<100ms TTFB) with deterministic pronunciation control."
-
-3. model_id="mistv2", display_name="Rime Mist v2", is_default=False, streaming=True
-   - High-volume production model. Languages: en, es, fr, de.
-   - description="High-volume production model with deterministic pronunciation."
-
-4. model_id="mist", display_name="Rime Mist", is_default=False, streaming=True
-   - Legacy model. English only.
-   - description="Legacy Mist model — English only."
-
-Use exact model_id values as listed above.
-"""
-
-# ISO 639-2 (3-letter) → BCP-47 (2-letter)
-_ISO3_TO_BCP47: dict[str, str] = {
-    "eng": "en",
-    "spa": "es",
-    "fra": "fr",
-    "ger": "de",
-    "ara": "ar",
-    "heb": "he",
-    "hin": "hi",
-    "jpn": "ja",
-    "por": "pt",
-    "tam": "ta",
-}
+_MODEL_GUIDANCE = (
+    "Return every current Rime TTS model id (exact `modelId` strings the API accepts). Exclude "
+    "models the docs call legacy/retiring/retired. is_default=true for the model the docs "
+    "recommend for new applications. Pricing is per minute of audio when stated that way."
+)
 
 # Gender normalization
 _GENDER_MAP: dict[str, str] = {
@@ -122,7 +91,7 @@ class RimeSyncer(ProviderSyncer):
                 guidance=_MODEL_GUIDANCE,
             ),
         )
-        tts_voices = self._parse_voices(voices_data)
+        tts_voices = self._parse_voices(voices_data, [m.model_id for m in tts_models])
 
         from_cache = isinstance(notes, dict) and notes.get("source") == "cache"
         sync_notes = (
@@ -149,7 +118,9 @@ class RimeSyncer(ProviderSyncer):
             resp.raise_for_status()
             return resp.json()
 
-    def _parse_voices(self, voices_data: list[dict]) -> list[SyncVoice]:
+    def _parse_voices(self, voices_data: list[dict], model_ids: list[str]) -> list[SyncVoice]:
+        """`model_ids` = current models from the docs, best first (default model first)."""
+        rank = {m: i for i, m in enumerate(model_ids)}
         # Group by speaker — some voices appear in multiple models with the same or
         # different language. Deduplicate into one record per speaker, collecting
         # all model IDs and unioning all languages.
@@ -160,9 +131,11 @@ class RimeSyncer(ProviderSyncer):
 
         voices: list[SyncVoice] = []
         for speaker, entries in by_speaker.items():
-            # Use the entry from the most capable model as the primary source of metadata
-            _MODEL_RANK = {"arcana": 0, "mistv3": 1, "mistv2": 2, "mist": 3}
-            primary = min(entries, key=lambda e: _MODEL_RANK.get(e.get("modelId", ""), 99))
+            entries = [e for e in entries if e.get("modelId") in rank]
+            if not entries:
+                continue  # only available on retired models
+            # Metadata from the entry of the best current model
+            primary = min(entries, key=lambda e: rank[e["modelId"]])
 
             gender = _GENDER_MAP.get((primary.get("gender") or "").lower())
             age = _parse_age(primary.get("age") or "")
@@ -173,16 +146,16 @@ class RimeSyncer(ProviderSyncer):
             all_langs: list[str] = []
             seen_langs: set[str] = set()
             for entry in entries:
-                bcp47 = _ISO3_TO_BCP47.get(entry.get("lang") or "")
-                if bcp47 and bcp47 not in seen_langs:
-                    seen_langs.add(bcp47)
-                    all_langs.append(bcp47)
-            languages = normalize_languages(all_langs)
+                lang = entry.get("lang") or ""
+                if lang and lang not in seen_langs:
+                    seen_langs.add(lang)
+                    all_langs.append(lang)
+            languages = list(dict.fromkeys(normalize_languages(all_langs)))  # ISO 639-2 → 639-1
 
             # Collect all model IDs in capability order
             model_ids = sorted(
                 {e["modelId"] for e in entries if e.get("modelId")},
-                key=lambda m: _MODEL_RANK.get(m, 99),
+                key=lambda m: rank[m],
             )
 
             voices.append(SyncVoice(

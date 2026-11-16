@@ -1,0 +1,116 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "mulaw",
+      "pcm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Unreal Speech's v8 TTS engine based on Kokoro-82M, offering low-latency streaming, long-form async synthesis and per-word timestamps.",
+    "first_seen": "2026-11-16",
+    "id": "kokoro",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en-US",
+      "en-GB",
+      "zh",
+      "hi",
+      "es",
+      "pt",
+      "ja",
+      "fr",
+      "it"
+    ],
+    "max_text_chars": 500000,
+    "meta": {
+      "api_base_url": "https://api.v8.unrealspeech.com",
+      "api_version": "v8",
+      "base_model": "Kokoro-82M",
+      "bitrates": [
+        "16k",
+        "32k",
+        "48k",
+        "64k",
+        "128k",
+        "192k",
+        "256k",
+        "320k"
+      ],
+      "codecs": [
+        "libmp3lame",
+        "pcm_mulaw",
+        "pcm_s16le"
+      ],
+      "endpoint_max_chars": {
+        "/speech": 3000,
+        "/stream": 1000,
+        "/synthesisTasks": 500000
+      },
+      "pcm_s16le_sample_rate_hz": 22050,
+      "pitch_range": [
+        0.5,
+        1.5
+      ],
+      "sentence_timestamps": true,
+      "speed_range": [
+        -1.0,
+        1.0
+      ],
+      "streaming_latency_ms": 300,
+      "voice_cloning": false,
+      "websocket_example_sample_rate_hz": 24000,
+      "word_timestamps": true
+    },
+    "name": "Kokoro",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Per-1M-character overage rates stated on the homepage FAQ: Basic $16, Plus $12, Pro $10, Enterprise $8. Subscription plans (unrealspeech.com/pricing): Free $0 / 250K chars; Starter $10/mo / 500K; Basic $49/mo ($4.99 first 6 months) / 3M; Plus $499/mo / 42M; Pro $1499/mo / 150M; Enterprise $4999/mo / 625M; Custom 1B+ by inquiry.",
+      "price_usd": 1.6e-05,
+      "source_url": "https://unrealspeech.com/",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Basic plan overage",
+          "price_usd": 1.6e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Plus plan overage",
+          "price_usd": 1.2e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Pro plan overage",
+          "price_usd": 1e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Enterprise plan overage",
+          "price_usd": 8e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.v8.unrealspeech.com/",
+        "https://unrealspeech.com/",
+        "https://unrealspeech.com/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      22050
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

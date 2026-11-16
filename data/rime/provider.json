@@ -1,0 +1,22 @@
+{
+  "api_urls": [
+    "https://users.rime.ai/data/voices/voice_details.json"
+  ],
+  "docs_urls": [
+    "https://docs.rime.ai/docs/models",
+    "https://docs.rime.ai/docs/voices",
+    "https://www.rime.ai/pricing"
+  ],
+  "id": "rime",
+  "last_synced": "2026-11-16",
+  "name": "Rime AI",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://users.rime.ai/data/voices/voice_details.json"
+    ]
+  }
+}

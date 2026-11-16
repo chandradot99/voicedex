@@ -8,7 +8,7 @@ Source: docs
 Three model tiers derived from the AWS supported languages page:
   amazon-transcribe         — batch async, 130+ languages (default)
   amazon-transcribe-stream  — real-time streaming, ~27 languages
-  amazon-transcribe-medical — batch, en-US only, healthcare vocabulary + PHI detection
+  amazon-transcribe-medical — batch + streaming, en-US only, healthcare vocabulary + PHI detection
 
 No API key needed for sync — models are parsed from public AWS documentation.
 
@@ -42,7 +42,7 @@ Extract Amazon Transcribe STT models. There are exactly 3 models to return.
    - Only include languages that have streaming support (marked in the "Streaming" or "Data input" column).
    - description="Real-time streaming STT via HTTP/2 and WebSocket."
 
-3. model_id="amazon-transcribe-medical", display_name="Amazon Transcribe Medical", is_default=False, streaming=False
+3. model_id="amazon-transcribe-medical", display_name="Amazon Transcribe Medical", is_default=False, streaming=True (both real-time and batch, see transcribe-medical.html)
    - Healthcare-specialized batch STT. Only supports en-US.
    - languages=["en-US"]
    - description="Batch STT optimized for healthcare. Medical vocabulary and PHI detection. en-US only."

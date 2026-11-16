@@ -1,0 +1,15 @@
+{
+  "docs_urls": [
+    "https://docs.rev.ai/api/asynchronous/transcribers/",
+    "https://docs.rev.ai/api/asynchronous/changelog.md",
+    "https://docs.rev.ai/api/streaming/transcribers.md",
+    "https://docs.rev.ai/api/features.md",
+    "https://docs.rev.ai/api/global-deployments.md",
+    "https://www.rev.ai/pricing"
+  ],
+  "id": "revai",
+  "last_synced": "2026-11-16",
+  "name": "Rev AI",
+  "source": "docs",
+  "type": "stt"
+}

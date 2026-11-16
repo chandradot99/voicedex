@@ -1,0 +1,185 @@
+[
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "summarization",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Rev AI's default Reverb ASR transcriber, available for asynchronous file transcription and real-time streaming.",
+    "first_seen": "2026-11-16",
+    "id": "machine",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "en-US",
+      "en-GB",
+      "af",
+      "ar",
+      "hy",
+      "az",
+      "be",
+      "bs",
+      "bg",
+      "ca",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "kk",
+      "ko",
+      "lv",
+      "lt",
+      "mk",
+      "ms",
+      "zh",
+      "mr",
+      "ne",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "tl",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "max_audio_seconds": 61200,
+    "meta": {
+      "async_languages_extra": [
+        "en/es (multilingual English/Spanish code-switch)"
+      ],
+      "diarization_types": [
+        "standard",
+        "premium"
+      ],
+      "english_only_options": "skip_punctuation, remove_disfluencies, filter_profanity, speaker_channels_count, custom_vocabulary_id not usable with non-English languages",
+      "eu_endpoint": "https://ec1.api.rev.ai/speechtotext/v1/",
+      "forced_alignment_languages": [
+        "en",
+        "en-US",
+        "en-GB",
+        "fr",
+        "it",
+        "de",
+        "es"
+      ],
+      "hipaa": true,
+      "language_auto": "language=auto with optional enable_multilingual for code-switch detection",
+      "max_audio_seconds_note": "Async: up to 17 hours for most languages; Telugu (te) limited to 6 hours. Streaming: max 3 hours per stream.",
+      "max_file_size_bytes_multipart": 2000000000,
+      "related_apis": [
+        "sentiment_analysis",
+        "topic_extraction",
+        "language_identification",
+        "forced_alignment"
+      ],
+      "speaker_channels_count_languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "streaming_concurrency_limit": 10,
+      "streaming_content_types": [
+        "audio/x-raw (S16LE)",
+        "audio/x-flac",
+        "audio/x-wav"
+      ],
+      "streaming_languages": [
+        "en",
+        "fr",
+        "de",
+        "it",
+        "ja",
+        "ko",
+        "cmn",
+        "pt",
+        "es"
+      ],
+      "streaming_max_seconds": 10800,
+      "streaming_protocols": [
+        "websocket",
+        "rtmp"
+      ],
+      "streaming_sample_rate_range_hz": [
+        8000,
+        48000
+      ],
+      "streaming_speaker_switch_detection": "enable_speaker_switch (transcriber=machine_v2 only)"
+    },
+    "name": "Reverb ASR",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 5.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Pay-as-you-go list price for Reverb Transcription (English) = $0.20/hour (~$0.00333/min); non-English $0.30/hour. Rounded up to the nearest second, 15 second minimum. Free credits equivalent to 5 hours of Reverb ASR. Streaming billed on max(stream duration, audio duration); streaming price not listed separately. Enterprise volume pricing available.",
+      "price_usd": 0.2,
+      "source_url": "https://www.rev.ai/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "foreign_language (Reverb Foreign Language Transcription)",
+          "price_usd": 0.3,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.rev.ai/api/asynchronous/transcribers/",
+        "https://docs.rev.ai/api/asynchronous/changelog.md",
+        "https://docs.rev.ai/api/streaming/transcribers.md",
+        "https://docs.rev.ai/api/features.md",
+        "https://docs.rev.ai/api/global-deployments.md",
+        "https://www.rev.ai/pricing"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  }
+]

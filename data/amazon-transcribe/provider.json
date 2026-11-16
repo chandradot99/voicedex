@@ -1,0 +1,11 @@
+{
+  "docs_urls": [
+    "https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html",
+    "https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html"
+  ],
+  "id": "amazon-transcribe",
+  "last_synced": "2026-11-16",
+  "name": "Amazon Transcribe",
+  "source": "docs",
+  "type": "stt"
+}

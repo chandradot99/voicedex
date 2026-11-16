@@ -1,0 +1,14 @@
+{
+  "docs_urls": [
+    "https://docs.gladia.io/chapters/introduction/models.md",
+    "https://docs.gladia.io/chapters/language/supported-languages.md",
+    "https://docs.gladia.io/chapters/limits-and-specifications/supported-formats.md",
+    "https://docs.gladia.io/api-reference/v2/live/init.md",
+    "https://docs.gladia.io/api-reference/v2/pre-recorded/init.md"
+  ],
+  "id": "gladia",
+  "last_synced": "2026-11-16",
+  "name": "Gladia",
+  "source": "docs",
+  "type": "stt"
+}

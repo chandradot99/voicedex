@@ -1,0 +1,1037 @@
+[
+  {
+    "accent": "british",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "British female with calm personality",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Amelia",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bf_isabella",
+      "language_label": "British"
+    },
+    "name": "Amelia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Hindi female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Ananya",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "kokoro_voice_id": "hf_alpha",
+      "language_label": "Hindi"
+    },
+    "name": "Ananya",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Hindi male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Arjun",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "kokoro_voice_id": "hm_omega",
+      "language_label": "Hindi"
+    },
+    "name": "Arjun",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Arthur",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bm_fable",
+      "language_label": "British"
+    },
+    "name": "Arthur",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged; in her 40s",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female with strong personality",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Autumn",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_alloy",
+      "language_label": "American"
+    },
+    "name": "Autumn",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Benjamin",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bm_daniel",
+      "language_label": "British"
+    },
+    "name": "Benjamin",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male with subtle personality",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Caleb",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_eric",
+      "language_label": "American"
+    },
+    "name": "Caleb",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Portuguese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Camila",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "kokoro_voice_id": "pf_dora",
+      "language_label": "Portuguese"
+    },
+    "name": "Camila",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "mature",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "British female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Charlotte",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bf_lily",
+      "language_label": "British"
+    },
+    "name": "Charlotte",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "British female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chloe",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bf_emma",
+      "language_label": "British"
+    },
+    "name": "Chloe",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male with confident personality",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Daniel",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_michael",
+      "language_label": "American"
+    },
+    "name": "Daniel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "mature",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Edward",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bm_george",
+      "language_label": "British"
+    },
+    "name": "Edward",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Eleanor",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bf_alice",
+      "language_label": "British"
+    },
+    "name": "Eleanor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female with exciting personality",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Emily",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_jessica",
+      "language_label": "American"
+    },
+    "name": "Emily",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged; early 30s",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male with vibrant personality",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Ethan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_liam",
+      "language_label": "American"
+    },
+    "name": "Ethan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Italian female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Giulia",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "kokoro_voice_id": "if_sara",
+      "language_label": "Italian"
+    },
+    "name": "Giulia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Japanese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Hana",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "kokoro_voice_id": "jf_gongitsune",
+      "language_label": "Japanese"
+    },
+    "name": "Hana",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged; in her early 30s",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female with reserved personality",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Hannah",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_bella",
+      "language_label": "American"
+    },
+    "name": "Hannah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Hao",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zm_yunxia",
+      "language_label": "Chinese"
+    },
+    "name": "Hao",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Japanese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Haruto",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "kokoro_voice_id": "jm_kumo",
+      "language_label": "Japanese"
+    },
+    "name": "Haruto",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mature; in her 50s",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female with calm personality; trying to stay young",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Ivy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_kore",
+      "language_label": "American"
+    },
+    "name": "Ivy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged; late 20s",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male with calm personality",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Jasper",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_echo",
+      "language_label": "American"
+    },
+    "name": "Jasper",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Spanish male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Javier",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "kokoro_voice_id": "em_santa",
+      "language_label": "Spanish"
+    },
+    "name": "Javier",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Jian",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zm_yunxi",
+      "language_label": "Chinese"
+    },
+    "name": "Jian",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Jing",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zf_xiaoyi",
+      "language_label": "Chinese"
+    },
+    "name": "Jing",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "matured",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female with whisper-like voice, looks casual",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Kaitlyn",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_nicole",
+      "language_label": "American"
+    },
+    "name": "Kaitlyn",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female, probably an educator; confident",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Lauren",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_sarah",
+      "language_label": "American"
+    },
+    "name": "Lauren",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Lian",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zf_xiaoni",
+      "language_label": "Chinese"
+    },
+    "name": "Lian",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Italian male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Luca",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "kokoro_voice_id": "im_nicola",
+      "language_label": "Italian"
+    },
+    "name": "Luca",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Spanish female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Lucía",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "kokoro_voice_id": "ef_dora",
+      "language_label": "Spanish"
+    },
+    "name": "Lucía",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged; mid 30s",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female, professional and confident",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Luna",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_nova",
+      "language_label": "American"
+    },
+    "name": "Luna",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Spanish male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Mateo",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "kokoro_voice_id": "em_alex",
+      "language_label": "Spanish"
+    },
+    "name": "Mateo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Mei",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zf_xiaobei",
+      "language_label": "Chinese"
+    },
+    "name": "Mei",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female who sounds professional",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Melody",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_aoede",
+      "language_label": "American"
+    },
+    "name": "Melody",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male with confident personality",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Noah",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_adam",
+      "language_label": "American"
+    },
+    "name": "Noah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Oliver",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "kokoro_voice_id": "bm_lewis",
+      "language_label": "British"
+    },
+    "name": "Oliver",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Hindi female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Priya",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "kokoro_voice_id": "hf_beta",
+      "language_label": "Hindi"
+    },
+    "name": "Priya",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Portuguese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Rafael",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "kokoro_voice_id": "pm_santa",
+      "language_label": "Portuguese"
+    },
+    "name": "Rafael",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Japanese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Rina",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "kokoro_voice_id": "jf_tebukuro",
+      "language_label": "Japanese"
+    },
+    "name": "Rina",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Hindi male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Rohan",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "kokoro_voice_id": "hm_psi",
+      "language_label": "Hindi"
+    },
+    "name": "Rohan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male with upbeat personality",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Ronan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_fenrir",
+      "language_label": "American"
+    },
+    "name": "Ronan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Rowan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_puck",
+      "language_label": "American"
+    },
+    "name": "Rowan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Japanese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Sakura",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "kokoro_voice_id": "jf_alpha",
+      "language_label": "Japanese"
+    },
+    "name": "Sakura",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Sheng",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zm_yunyang",
+      "language_label": "Chinese"
+    },
+    "name": "Sheng",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female with high level of composure",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Sierra",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_sky",
+      "language_label": "American"
+    },
+    "name": "Sierra",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Portuguese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Thiago",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "kokoro_voice_id": "pm_alex",
+      "language_label": "Portuguese"
+    },
+    "name": "Thiago",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Ting",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zf_xiaoxiao",
+      "language_label": "Chinese"
+    },
+    "name": "Ting",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Chinese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Wei",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "kokoro_voice_id": "zm_yunjian",
+      "language_label": "Chinese"
+    },
+    "name": "Wei",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American female, likely a voiceover artist",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Willow",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "af_river",
+      "language_label": "American"
+    },
+    "name": "Willow",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young Japanese female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Yuki",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "kokoro_voice_id": "jf_nezumi",
+      "language_label": "Japanese"
+    },
+    "name": "Yuki",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "mid-aged",
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "American male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Zane",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "kokoro_voice_id": "am_onyx",
+      "language_label": "American"
+    },
+    "name": "Zane",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "kokoro"
+    ],
+    "description": "young French female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Élodie",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "kokoro_voice_id": "ff_siwis",
+      "language_label": "French"
+    },
+    "name": "Élodie",
+    "updated_at": "2026-11-16"
+  }
+]

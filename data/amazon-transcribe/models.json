@@ -1,0 +1,565 @@
+[
+  {
+    "audio_formats": [
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Batch (S3 media file) speech-to-text across 100+ languages with diarization, custom vocabularies, language identification and PII redaction.",
+    "first_seen": "2026-11-16",
+    "id": "amazon-transcribe",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ab-GE",
+      "af-ZA",
+      "sq-AL",
+      "am-ET",
+      "ar-AE",
+      "ar-SA",
+      "hy-AM",
+      "ast-ES",
+      "az-AZ",
+      "ba-RU",
+      "eu-ES",
+      "be-BY",
+      "bn-IN",
+      "bs-BA",
+      "my-MM",
+      "bg-BG",
+      "ca-ES",
+      "ckb-IR",
+      "ckb-IQ",
+      "zh-HK",
+      "zh-CN",
+      "zh-TW",
+      "hr-HR",
+      "cs-CZ",
+      "da-DK",
+      "nl-NL",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-IE",
+      "en-NZ",
+      "en-AB",
+      "en-ZA",
+      "en-US",
+      "en-WL",
+      "et-EE",
+      "et-ET",
+      "fa-IR",
+      "fa-AF",
+      "fi-FI",
+      "fr-FR",
+      "fr-CA",
+      "gl-ES",
+      "ka-GE",
+      "de-DE",
+      "de-CH",
+      "el-GR",
+      "gu-IN",
+      "ht-HT",
+      "ha-NG",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "is-IS",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "jv-ID",
+      "kab-DZ",
+      "kn-IN",
+      "kk-KZ",
+      "km-KH",
+      "rw-RW",
+      "ko-KR",
+      "ky-KG",
+      "lv-LV",
+      "lt-LT",
+      "lg-IN",
+      "mk-MK",
+      "ms-MY",
+      "ml-IN",
+      "mt-MT",
+      "mr-IN",
+      "mhr-RU",
+      "mn-MN",
+      "ne-NP",
+      "no-NO",
+      "or-IN",
+      "ps-AF",
+      "pl-PL",
+      "pt-PT",
+      "pt-BR",
+      "pa-IN",
+      "ro-RO",
+      "ru-RU",
+      "sr-RS",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "so-SO",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "su-ID",
+      "sw-KE",
+      "sw-BI",
+      "sw-RW",
+      "sw-TZ",
+      "sw-UG",
+      "sv-SE",
+      "tl-PH",
+      "ta-IN",
+      "tt-RU",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "ug-CN",
+      "uz-UZ",
+      "vi-VN",
+      "cy-WL",
+      "wo-SN",
+      "zu-ZA"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "api": "StartTranscriptionJob",
+      "custom_language_model_languages": "en-AU, en-GB, en-US, de-DE, hi-IN, ja-JP, es-US (see supported-languages table)",
+      "features": [
+        "alternative_transcriptions",
+        "channel_identification",
+        "job_queueing",
+        "multi_language_identification",
+        "custom_language_models",
+        "vocabulary_filtering",
+        "toxicity_detection",
+        "subtitles",
+        "tagging"
+      ],
+      "max_channels": 2,
+      "max_file_size_gb": 2,
+      "min_audio_ms": 500,
+      "sample_rate_hz_range": "8000 (telephony) or 16000-48000"
+    },
+    "name": "Amazon Transcribe",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "US East (N. Virginia) rates; prices vary by region. Billed per second, no minimum; up to two channels per stream/file included. Free tier: 60 min/month for first 12 months.",
+      "price_usd": 0.006,
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "batch content/PII redaction add-on — T1 first 250K min/month (charged on top of base rate)",
+          "price_usd": 0.0024,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch content/PII redaction add-on — T2 next 750K min/month (charged on top of base rate)",
+          "price_usd": 0.0015,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch content/PII redaction add-on — T3 next 4M min/month (charged on top of base rate)",
+          "price_usd": 0.00102,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch content/PII redaction add-on — T4 over 5M min/month (charged on top of base rate)",
+          "price_usd": 0.00078,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch custom language model add-on — T1 first 250K min/month (charged on top of base rate)",
+          "price_usd": 0.006,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch custom language model add-on — T2 next 750K min/month (charged on top of base rate)",
+          "price_usd": 0.00378,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch custom language model add-on — T3 next 4M min/month (charged on top of base rate)",
+          "price_usd": 0.00258,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch custom language model add-on — T4 over 5M min/month (charged on top of base rate)",
+          "price_usd": 0.00198,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html",
+        "https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu",
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization"
+    ],
+    "description": "Healthcare-specialized US English speech-to-text (batch and streaming) for clinical dictation and conversations, with PHI identification.",
+    "first_seen": "2026-11-16",
+    "id": "amazon-transcribe-medical",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "api": "StartMedicalTranscriptionJob / StartMedicalStreamTranscription(Websocket)",
+      "features": [
+        "phi_identification",
+        "alternative_transcriptions",
+        "channel_identification",
+        "transcribing_digits"
+      ],
+      "max_file_size_gb": 2,
+      "min_sample_rate_hz": 16000,
+      "specialties": {
+        "cardiology, neurology, oncology, radiology, urology": "streaming only",
+        "primary_care (family medicine, internal medicine, ob-gyn, pediatrics)": "batch, streaming"
+      },
+      "streaming_regions_subset": "Streaming available in fewer regions than batch (e.g. not ap-south-1, ap-southeast-1, eu-west-3)"
+    },
+    "name": "Amazon Transcribe Medical",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "US East (N. Virginia); same rate for batch and streaming ($0.00125/sec). Free tier: 60 min/month for first 12 months.",
+      "price_usd": 0.075,
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "streaming",
+          "price_usd": 0.075,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html",
+        "https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu",
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "ogg",
+      "opus",
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Real-time streaming speech-to-text over HTTP/2 or WebSocket with diarization, custom vocabularies, language identification and PII redaction.",
+    "first_seen": "2026-11-16",
+    "id": "amazon-transcribe-streaming",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "af-ZA",
+      "sq-AL",
+      "am-ET",
+      "ar-AE",
+      "ar-SA",
+      "hy-AM",
+      "eu-ES",
+      "be-BY",
+      "bn-IN",
+      "bs-BA",
+      "my-MM",
+      "bg-BG",
+      "ca-ES",
+      "ckb-IR",
+      "ckb-IQ",
+      "zh-HK",
+      "zh-CN",
+      "zh-TW",
+      "hr-HR",
+      "cs-CZ",
+      "da-DK",
+      "nl-NL",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-IE",
+      "en-NZ",
+      "en-AB",
+      "en-ZA",
+      "en-US",
+      "en-WL",
+      "et-ET",
+      "fa-IR",
+      "fa-AF",
+      "fi-FI",
+      "fr-FR",
+      "fr-CA",
+      "gl-ES",
+      "ka-GE",
+      "de-DE",
+      "de-CH",
+      "el-GR",
+      "gu-IN",
+      "ht-HT",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "is-IS",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "jv-ID",
+      "kab-DZ",
+      "kn-IN",
+      "kk-KZ",
+      "km-KH",
+      "ko-KR",
+      "lv-LV",
+      "lt-LT",
+      "lg-IN",
+      "mk-MK",
+      "ms-MY",
+      "ml-IN",
+      "mr-IN",
+      "ne-NP",
+      "no-NO",
+      "or-IN",
+      "ps-AF",
+      "pl-PL",
+      "pt-PT",
+      "pt-BR",
+      "pa-IN",
+      "ro-RO",
+      "ru-RU",
+      "sr-RS",
+      "si-LK",
+      "sk-SK",
+      "sl-SI",
+      "so-SO",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "su-ID",
+      "sw-KE",
+      "sw-BI",
+      "sw-RW",
+      "sw-TZ",
+      "sw-UG",
+      "sv-SE",
+      "tl-PH",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "uz-UZ",
+      "vi-VN",
+      "cy-WL",
+      "zu-ZA"
+    ],
+    "meta": {
+      "api": "StartStreamTranscription / StartStreamTranscriptionWebSocket",
+      "features": [
+        "alternative_transcriptions",
+        "channel_identification",
+        "multi_language_identification",
+        "custom_language_models",
+        "vocabulary_filtering",
+        "pii_identification",
+        "partial_results"
+      ],
+      "max_channels": 2,
+      "ogg_codec": "opus",
+      "pcm_encoding": "pcm_s16le (signed 16-bit little-endian; WAV not supported)",
+      "recommended_chunk_ms": "50-200",
+      "sample_rate_hz_range": "8000 (telephony) or 16000-48000; sample rate required",
+      "streaming_region_restricted_languages": [
+        "sq-AL",
+        "am-ET",
+        "hy-AM",
+        "be-BY",
+        "bn-IN",
+        "bs-BA",
+        "my-MM",
+        "bg-BG",
+        "ckb-IR",
+        "ckb-IQ",
+        "et-ET",
+        "fa-AF",
+        "ka-GE",
+        "gu-IN",
+        "ht-HT",
+        "hu-HU",
+        "is-IS",
+        "jv-ID",
+        "kab-DZ",
+        "kn-IN",
+        "kk-KZ",
+        "km-KH",
+        "lt-LT",
+        "lg-IN",
+        "mk-MK",
+        "ml-IN",
+        "mr-IN",
+        "ne-NP",
+        "or-IN",
+        "ps-AF",
+        "pa-IN",
+        "si-LK",
+        "sl-SI",
+        "es-MX",
+        "su-ID",
+        "sw-KE",
+        "sw-BI",
+        "sw-RW",
+        "sw-TZ",
+        "sw-UG",
+        "ta-IN",
+        "te-IN",
+        "tr-TR",
+        "uz-UZ",
+        "cy-WL"
+      ],
+      "streaming_region_restriction_note": "Streaming for these languages is not available in af-south-1, ap-northeast-1, ap-southeast-5, ap-southeast-7, cn-northwest-1."
+    },
+    "name": "Amazon Transcribe Streaming",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "US East (N. Virginia) rates; prices vary by region. Billed per second, no minimum; up to two channels per stream/file included. Free tier: 60 min/month for first 12 months. Listed as $0.0001667/sec.",
+      "price_usd": 0.01,
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "streaming content/PII redaction add-on — T1 first 250K min/month (charged on top of base rate)",
+          "price_usd": 0.0024,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "streaming content/PII redaction add-on — T2 next 750K min/month (charged on top of base rate)",
+          "price_usd": 0.0015,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "streaming content/PII redaction add-on — T3 next 4M min/month (charged on top of base rate)",
+          "price_usd": 0.00102,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "streaming content/PII redaction add-on — T4 over 5M min/month (charged on top of base rate)",
+          "price_usd": 0.00078,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "streaming custom language model add-on — T1 first 250K min/month (charged on top of base rate)",
+          "price_usd": 0.006,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "streaming custom language model add-on — T2 next 750K min/month (charged on top of base rate)",
+          "price_usd": 0.00378,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "streaming custom language model add-on — T3 next 4M min/month (charged on top of base rate)",
+          "price_usd": 0.00258,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "streaming custom language model add-on — T4 over 5M min/month (charged on top of base rate)",
+          "price_usd": 0.00198,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html",
+        "https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu",
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  }
+]

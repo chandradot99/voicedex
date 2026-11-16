@@ -1,0 +1,14 @@
+{
+  "docs_urls": [
+    "https://docs.speechmatics.com/speech-to-text/models",
+    "https://docs.speechmatics.com/speech-to-text/languages",
+    "https://docs.speechmatics.com/speech-to-text/batch/input",
+    "https://docs.speechmatics.com/speech-to-text/realtime/input",
+    "https://www.speechmatics.com/pricing"
+  ],
+  "id": "speechmatics",
+  "last_synced": "2026-11-16",
+  "name": "Speechmatics",
+  "source": "docs",
+  "type": "stt"
+}

@@ -1,0 +1,361 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "ac3",
+      "alaw",
+      "eac3",
+      "flac",
+      "m4a",
+      "mp2",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Gladia's default generalist STT model with 100+ languages, code switching, and both pre-recorded and live transcription.",
+    "first_seen": "2026-11-16",
+    "id": "solaria-1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "sq",
+      "am",
+      "ar",
+      "hy",
+      "as",
+      "az",
+      "ba",
+      "eu",
+      "be",
+      "bn",
+      "bs",
+      "br",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fo",
+      "fi",
+      "fr",
+      "gl",
+      "ka",
+      "de",
+      "el",
+      "gu",
+      "ht",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "jv",
+      "kn",
+      "kk",
+      "km",
+      "ko",
+      "lo",
+      "la",
+      "lv",
+      "ln",
+      "lt",
+      "lb",
+      "mk",
+      "mg",
+      "ms",
+      "ml",
+      "mt",
+      "mi",
+      "mr",
+      "mn",
+      "my",
+      "ne",
+      "no",
+      "nn",
+      "oc",
+      "ps",
+      "fa",
+      "pl",
+      "pt",
+      "pa",
+      "ro",
+      "ru",
+      "sa",
+      "sr",
+      "sn",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "so",
+      "es",
+      "su",
+      "sw",
+      "sv",
+      "tl",
+      "tg",
+      "ta",
+      "tt",
+      "te",
+      "th",
+      "bo",
+      "tr",
+      "tk",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "cy",
+      "wo",
+      "yi",
+      "yo"
+    ],
+    "max_audio_seconds": 8100,
+    "meta": {
+      "code_switching": true,
+      "language_code_notes": "Gladia API uses 'jw' for Javanese (normalized here to 'jv') and 'haw' for Hawaiian. Wolof (wo) is not supported for auto-detection/code-switching.",
+      "live_bit_depths_pcm": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "live_encodings": [
+        "wav/pcm",
+        "wav/alaw",
+        "wav/ulaw"
+      ],
+      "live_max_channels": 8,
+      "live_max_session_seconds": 10800,
+      "live_only_unsupported": [
+        "speaker_diarization",
+        "pii_redaction",
+        "enhanced_punctuation",
+        "audio_to_llm"
+      ],
+      "live_regions": [
+        "us-west",
+        "eu-west"
+      ],
+      "max_file_size_mb": 1000,
+      "other_features": [
+        "named_entity_recognition",
+        "custom_spelling",
+        "subtitles",
+        "sentences",
+        "audio_to_llm",
+        "partial_transcripts",
+        "endpointing"
+      ],
+      "prerecorded_max_audio_seconds_enterprise": 15300,
+      "prerecorded_max_channels": 2,
+      "pricing_eur": {
+        "addons_per_hour": {
+          "named_entity_recognition": 0.07,
+          "pii_redaction": 0.07,
+          "sentiment_analysis": 0.02,
+          "summarization": 0.03,
+          "translation": 0.05
+        },
+        "as_of": "2026-11-16",
+        "async_per_hour": 0.27,
+        "async_volume_tiers_per_hour": [
+          {
+            "hours": "0-100",
+            "price": 0.27
+          },
+          {
+            "hours": "100-500",
+            "price": 0.26
+          },
+          {
+            "hours": "500-2000",
+            "price": 0.24
+          },
+          {
+            "hours": "2000-5000",
+            "price": 0.23
+          },
+          {
+            "hours": "5000-10000",
+            "price": 0.22
+          },
+          {
+            "hours": "10000+",
+            "price": 0.21
+          }
+        ],
+        "currency": "EUR",
+        "free_credits_eur": 50,
+        "notes": "Self-serve pay-as-you-go; prices published in EUR only (no USD), so the USD pricing field is left empty.",
+        "pii_redaction_realtime": "unavailable",
+        "realtime_per_hour": 0.68,
+        "source_url": "https://www.gladia.io/pricing",
+        "unit": "hour"
+      }
+    },
+    "name": "Solaria-1",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.gladia.io/chapters/introduction/models.md",
+        "https://docs.gladia.io/chapters/language/supported-languages.md",
+        "https://docs.gladia.io/chapters/limits-and-specifications/supported-formats.md",
+        "https://docs.gladia.io/api-reference/v2/live/init.md",
+        "https://docs.gladia.io/api-reference/v2/pre-recorded/init.md"
+      ]
+    },
+    "regions": [
+      "us",
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "ac3",
+      "eac3",
+      "flac",
+      "m4a",
+      "mp2",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Pre-recorded-only STT model optimized for accuracy on noisy, conversational European audio in English, French, German, Spanish and Italian.",
+    "first_seen": "2026-11-16",
+    "id": "solaria-3",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "fr",
+      "de",
+      "it",
+      "es"
+    ],
+    "max_audio_seconds": 8100,
+    "meta": {
+      "code_switching": false,
+      "language_detection_notes": "Detects among EN/FR/DE/ES/IT; once detected, language sticks for the rest of the file.",
+      "max_file_size_mb": 1000,
+      "other_features": [
+        "named_entity_recognition",
+        "custom_spelling",
+        "subtitles",
+        "sentences",
+        "audio_to_llm"
+      ],
+      "prerecorded_max_audio_seconds_enterprise": 15300,
+      "prerecorded_max_channels": 2,
+      "pricing_eur": {
+        "addons_per_hour": {
+          "named_entity_recognition": 0.07,
+          "pii_redaction": 0.07,
+          "sentiment_analysis": 0.02,
+          "summarization": 0.03,
+          "translation": 0.05
+        },
+        "as_of": "2026-11-16",
+        "async_per_hour": 0.16,
+        "async_volume_tiers_per_hour": [
+          {
+            "hours": "0-100",
+            "price": 0.16
+          },
+          {
+            "hours": "100-500",
+            "price": 0.15
+          },
+          {
+            "hours": "500-2000",
+            "price": 0.14
+          },
+          {
+            "hours": "2000-5000",
+            "price": 0.13
+          },
+          {
+            "hours": "5000-10000",
+            "price": 0.13
+          },
+          {
+            "hours": "10000+",
+            "price": 0.12
+          }
+        ],
+        "currency": "EUR",
+        "free_credits_eur": 50,
+        "notes": "Self-serve pay-as-you-go; prices published in EUR only (no USD), so the USD pricing field is left empty.",
+        "source_url": "https://www.gladia.io/pricing",
+        "unit": "hour"
+      }
+    },
+    "name": "Solaria-3",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.gladia.io/chapters/introduction/models.md",
+        "https://docs.gladia.io/chapters/language/supported-languages.md",
+        "https://docs.gladia.io/chapters/limits-and-specifications/supported-formats.md",
+        "https://docs.gladia.io/api-reference/v2/live/init.md",
+        "https://docs.gladia.io/api-reference/v2/pre-recorded/init.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  }
+]

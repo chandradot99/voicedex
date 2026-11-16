@@ -19,15 +19,18 @@ from naaviq.config import settings  # noqa: F401 — triggers load_dotenv() for 
 from naaviq.sync.ai_parser import notes_to_str, parse_models_from_docs
 from naaviq.sync.base import ProviderSyncer, SyncResult
 
-_STT_SEED_URLS = ["https://docs.speechmatics.com/"]
+_STT_SEED_URLS = [
+    "https://docs.speechmatics.com/speech-to-text/models",
+    "https://docs.speechmatics.com/speech-to-text/languages",
+    "https://docs.speechmatics.com/speech-to-text/batch/input",
+    "https://docs.speechmatics.com/speech-to-text/realtime/input",
+    "https://www.speechmatics.com/pricing",
+]
 _STT_MODEL_GUIDANCE = (
-    "Extract Speechmatics STT models. "
-    "There are three: 'enhanced' (maximum accuracy, is_default=True), "
-    "'default' (faster, slightly lower accuracy), and 'medical' (English-only, medical domain). "
-    "enhanced and default support 55+ languages — use ['*'] for their languages. "
-    "medical is English-only — use ['en']. "
-    "All support streaming (real-time WebSocket API). "
-    "Use exact model_id values: 'enhanced', 'default', 'medical'."
+    "Return EVERY Speechmatics STT model id accepted by the `model` parameter (the old "
+    "`operating_point` is deprecated). is_default=true for the model used when `model` is unset. "
+    "Domain variants selected by a separate parameter (e.g. domain=medical) are not separate models — "
+    "record them in meta. Enumerate languages per model; per-hour pricing with batch/realtime variants."
 )
 
 

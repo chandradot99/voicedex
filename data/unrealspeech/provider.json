@@ -1,0 +1,21 @@
+{
+  "docs_urls": [
+    "https://docs.v8.unrealspeech.com/",
+    "https://unrealspeech.com/",
+    "https://unrealspeech.com/pricing"
+  ],
+  "id": "unrealspeech",
+  "last_synced": "2026-11-16",
+  "name": "Unreal Speech",
+  "source": "docs",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://docs.v8.unrealspeech.com/",
+      "https://unrealspeech.com/",
+      "https://unrealspeech.com/pricing"
+    ]
+  }
+}

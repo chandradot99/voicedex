@@ -1,0 +1,189 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "phoneme_input"
+    ],
+    "description": "Rime's flagship TTS model, pairing an LLM backbone with a dedicated speech engine for the most natural conversational voices.",
+    "first_seen": "2026-11-16",
+    "id": "coda",
+    "interfaces": [
+      "http",
+      "websocket",
+      "grpc"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "ar",
+      "nl",
+      "fr",
+      "de",
+      "hi",
+      "it",
+      "ja",
+      "pt",
+      "es"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "audio_encodings": [
+        "audio/webm;codecs=opus",
+        "audio/ogg;codecs=opus",
+        "audio/mpeg",
+        "audio/wav",
+        "audio/L16",
+        "audio/PCMU"
+      ],
+      "custom_lexicon": "X-SAMPA, up to 500 entries; en/de/es/fr/it/pt",
+      "on_prem": true,
+      "release_date": "2026-05",
+      "replaces": [
+        "arcana",
+        "arcanav2",
+        "arcanav3"
+      ],
+      "sampling_rate_note": "samplingRate accepts any positive rate; default 24000, 8000 for telephony",
+      "speed_control": "timeScaleFactor 0.4-2.5",
+      "spell_function": true,
+      "ttfa_p50_ms": 30,
+      "ttfa_p95_ms": 60,
+      "voice_count": 313,
+      "word_timestamp_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pt"
+      ],
+      "word_timestamps": true
+    },
+    "name": "Rime Coda",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Flex (pay-as-you-go) rate; priced per minute of audio (~1K characters per minute). Free plan includes $50 of usage/month across models. Listed on pricing page as 'Coda v2'. Enterprise volume pricing custom.",
+      "price_usd": 0.05,
+      "source_url": "https://www.rime.ai/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Scale plan ($100/month, 20% off)",
+          "price_usd": 0.04,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.rime.ai/docs/models",
+        "https://docs.rime.ai/docs/voices",
+        "https://www.rime.ai/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "phoneme_input"
+    ],
+    "description": "Rime's lowest-latency TTS model, with custom pauses and inline English pronunciation control.",
+    "first_seen": "2026-11-16",
+    "id": "mistv3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "es-MX",
+      "fr",
+      "de"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "audio_encodings": [
+        "audio/webm;codecs=opus",
+        "audio/ogg;codecs=opus",
+        "audio/mpeg",
+        "audio/wav",
+        "audio/L16",
+        "audio/PCMU"
+      ],
+      "custom_pauses": true,
+      "default_when_model_id_omitted": true,
+      "inline_pronunciation": "Rime phonetic alphabet via phonemizeBetweenBrackets, English only",
+      "on_prem": true,
+      "release_date": "2026-03",
+      "replaces": [
+        "mist",
+        "mistv2"
+      ],
+      "sampling_rate_note": "samplingRate accepts any positive rate; default 24000, 8000 for telephony",
+      "speed_control": "timeScaleFactor 0.4-2.5, inlineSpeedAlpha / inlineTimeScaleFactors",
+      "spell_function": true,
+      "ttfa_p50_ms": 37,
+      "ttfa_p90_ms": 56,
+      "voice_count": 78,
+      "word_timestamp_languages": [
+        "en"
+      ],
+      "word_timestamps": true
+    },
+    "name": "Rime Mist v3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Flex (pay-as-you-go) rate; priced per minute of audio (~1K characters per minute). Free plan includes $50 of usage/month across models. Enterprise volume pricing custom.",
+      "price_usd": 0.03,
+      "source_url": "https://www.rime.ai/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Scale plan ($100/month, 20% off)",
+          "price_usd": 0.024,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.rime.ai/docs/models",
+        "https://docs.rime.ai/docs/voices",
+        "https://www.rime.ai/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]
