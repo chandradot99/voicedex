@@ -1,0 +1,25 @@
+{
+  "api_urls": [
+    "https://api.gradium.ai/api/voices/"
+  ],
+  "docs_urls": [
+    "https://docs.gradium.ai/guides/text-to-speech.md",
+    "https://docs.gradium.ai/guides/speech-to-text.md",
+    "https://docs.gradium.ai/guides/transcription-settings.md",
+    "https://docs.gradium.ai/guides/speech-to-speech-settings.md",
+    "https://docs.gradium.ai/guides/voice-settings.md",
+    "https://gradium.ai/pricing"
+  ],
+  "id": "gradium",
+  "last_synced": "2026-11-16",
+  "name": "Gradium",
+  "source": "mixed",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.gradium.ai/api/voices/"
+    ]
+  }
+}

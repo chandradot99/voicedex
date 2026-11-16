@@ -1,0 +1,232 @@
+[
+  {
+    "description": "Live speech translation: transcribes, translates into target_language and speaks it in a chosen voice.",
+    "first_seen": "2026-11-16",
+    "id": "s2s-translate",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "pt"
+    ],
+    "meta": {
+      "inner_models": {
+        "stt_model_name": "stt-translate",
+        "tts_model_name": "default"
+      },
+      "model_parameter": "model_name",
+      "pricing_credits": {
+        "as_of": "2026-11-16",
+        "credits": 30,
+        "free_credits": 45000,
+        "per": "second",
+        "plans_usd_per_month": {
+          "free": 0,
+          "l": 1480,
+          "m": 312,
+          "s": 39,
+          "xs": 12
+        },
+        "source_url": "https://gradium.ai/pricing"
+      },
+      "target_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "pt"
+      ]
+    },
+    "name": "Gradium Speech-to-Speech Translate",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.gradium.ai/guides/text-to-speech.md",
+        "https://docs.gradium.ai/guides/speech-to-text.md",
+        "https://docs.gradium.ai/guides/transcription-settings.md",
+        "https://docs.gradium.ai/guides/speech-to-speech-settings.md",
+        "https://docs.gradium.ai/guides/voice-settings.md",
+        "https://gradium.ai/pricing"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Low-latency streaming speech-to-text with semantic VAD and adaptive delay for voice agents.",
+    "first_seen": "2026-11-16",
+    "id": "default",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "pt"
+    ],
+    "meta": {
+      "language_any": "pass language='any' to auto-detect",
+      "model_parameter": "model_name",
+      "pricing_credits": {
+        "as_of": "2026-11-16",
+        "credits": 3,
+        "free_credits": 45000,
+        "per": "second",
+        "plans_usd_per_month": {
+          "free": 0,
+          "l": 1480,
+          "m": 312,
+          "s": 39,
+          "xs": 12
+        },
+        "source_url": "https://gradium.ai/pricing"
+      },
+      "semantic_vad": true
+    },
+    "name": "Gradium STT",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.gradium.ai/guides/text-to-speech.md",
+        "https://docs.gradium.ai/guides/speech-to-text.md",
+        "https://docs.gradium.ai/guides/transcription-settings.md",
+        "https://docs.gradium.ai/guides/speech-to-speech-settings.md",
+        "https://docs.gradium.ai/guides/voice-settings.md",
+        "https://gradium.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "translation"
+    ],
+    "description": "Speech-to-text that outputs the transcript translated into the requested language.",
+    "first_seen": "2026-11-16",
+    "id": "stt-translate",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "pt"
+    ],
+    "meta": {
+      "model_parameter": "model_name",
+      "pricing_credits": {
+        "as_of": "2026-11-16",
+        "credits": 3,
+        "free_credits": 45000,
+        "per": "second",
+        "plans_usd_per_month": {
+          "free": 0,
+          "l": 1480,
+          "m": 312,
+          "s": 39,
+          "xs": 12
+        },
+        "source_url": "https://gradium.ai/pricing"
+      },
+      "target_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "pt"
+      ]
+    },
+    "name": "Gradium STT Translate",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.gradium.ai/guides/text-to-speech.md",
+        "https://docs.gradium.ai/guides/speech-to-text.md",
+        "https://docs.gradium.ai/guides/transcription-settings.md",
+        "https://docs.gradium.ai/guides/speech-to-speech-settings.md",
+        "https://docs.gradium.ai/guides/voice-settings.md",
+        "https://gradium.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "prosody_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Low-latency streaming text-to-speech; 'default' routes to the current stable model.",
+    "first_seen": "2026-11-16",
+    "id": "default",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "pt"
+    ],
+    "meta": {
+      "aliases": [
+        "gradium-tts-beta"
+      ],
+      "aliases_note": "'gradium-tts-beta' routes to this model until the next TTS beta ships",
+      "model_parameter": "model_name",
+      "pricing_credits": {
+        "as_of": "2026-11-16",
+        "credits": 1,
+        "free_credits": 45000,
+        "per": "character",
+        "plans_usd_per_month": {
+          "free": 0,
+          "l": 1480,
+          "m": 312,
+          "s": 39,
+          "xs": 12
+        },
+        "source_url": "https://gradium.ai/pricing"
+      }
+    },
+    "name": "Gradium TTS",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.gradium.ai/guides/text-to-speech.md",
+        "https://docs.gradium.ai/guides/speech-to-text.md",
+        "https://docs.gradium.ai/guides/transcription-settings.md",
+        "https://docs.gradium.ai/guides/speech-to-speech-settings.md",
+        "https://docs.gradium.ai/guides/voice-settings.md",
+        "https://gradium.ai/pricing"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]
