@@ -38,24 +38,14 @@ _DOCS_URLS = [
     "https://docs.wellsaidlabs.com/docs/getting-started",
     "https://docs.wellsaidlabs.com/reference/model-selection-with-the-api",
     "https://docs.wellsaidlabs.com/reference/available-voice-avatars",
+    "https://docs.wellsaidlabs.com/reference/ttsstream.md",
 ]
 
-_TTS_MODEL_GUIDANCE = """
-Extract WellSaid Labs TTS models. There are 2 models.
-
-1. model_id="caruso", display_name="Caruso", is_default=True, streaming=True
-   - Newest flagship model. English only. 30% faster rendering.
-   - Supports AI Director features: pitch, pace, emotional intonation control.
-   - description="WellSaid Caruso — fastest, highest-quality English TTS with AI Director control."
-   - languages: ["en"]
-
-2. model_id="legacy", display_name="Legacy", is_default=False, streaming=True
-   - Broader language support: 15+ languages, 145 voices.
-   - description="WellSaid Legacy — 15+ languages, 145 voices."
-   - languages: ["en", "ar", "zh", "da", "nl", "fr", "de", "it", "ja", "ko", "fa", "pl", "pt", "es", "sv", "tr"]
-
-Use exact model_id values: "caruso" and "legacy".
-"""
+_TTS_MODEL_GUIDANCE = (
+    "Return every TTS model id the API's model selection accepts. is_default=true for the model the "
+    "docs call next-generation/recommended (record the API's fallback model in meta if different). "
+    "Languages per model from the voice avatar table; limits/formats from the streaming reference."
+)
 
 _GENDER_MAP = {"male": "male", "female": "female"}
 
@@ -136,8 +126,10 @@ class WellSaidSyncer(ProviderSyncer):
     # ── Private helpers ───────────────────────────────────────────────────────
 
     async def _fetch_voices(self) -> list[dict]:
+        # Avatar (voice) listing needs a paid-plan key; models come from public docs. Without a key we
+        # publish models only — the merge guard stops a later key-less run from wiping voices.
         if not settings.wellsaid_api_key:
-            raise ValueError("WELLSAID_API_KEY is not set in .env")
+            return []
 
         headers = {"X-API-KEY": settings.wellsaid_api_key}
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:

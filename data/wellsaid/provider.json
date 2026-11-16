@@ -1,0 +1,16 @@
+{
+  "api_urls": [
+    "https://api.wellsaidlabs.com/v1/tts/avatars"
+  ],
+  "docs_urls": [
+    "https://docs.wellsaidlabs.com/docs/getting-started",
+    "https://docs.wellsaidlabs.com/reference/model-selection-with-the-api",
+    "https://docs.wellsaidlabs.com/reference/available-voice-avatars",
+    "https://docs.wellsaidlabs.com/reference/ttsstream.md"
+  ],
+  "id": "wellsaid",
+  "last_synced": "2026-11-16",
+  "name": "WellSaid Labs",
+  "source": "mixed",
+  "type": "tts"
+}

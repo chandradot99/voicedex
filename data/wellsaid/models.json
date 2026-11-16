@@ -1,0 +1,142 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "WellSaid's next-generation English voice model with AI Director inline controls for pitch, tempo and loudness.",
+    "first_seen": "2026-11-16",
+    "id": "caruso",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "ai_director_tags": [
+        "pitch",
+        "tempo",
+        "loudness"
+      ],
+      "api_default": false,
+      "async_clips_endpoint": "/v1/tts/clips",
+      "encodings": [
+        "mp3",
+        "wav",
+        "s16le"
+      ],
+      "replacement_libraries": true,
+      "respellings": true,
+      "ssml_scope": "limited: <say-as> only, enabled via X-Enable-SSML header",
+      "voice_count_in_docs": 130,
+      "word_timing_endpoint": "/v1/tts/word-timing"
+    },
+    "name": "Caruso",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.wellsaidlabs.com/docs/getting-started",
+        "https://docs.wellsaidlabs.com/reference/model-selection-with-the-api",
+        "https://docs.wellsaidlabs.com/reference/available-voice-avatars",
+        "https://docs.wellsaidlabs.com/reference/ttsstream.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000,
+      96000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "The original WellSaid voice model and the API default when no model is specified, with the broadest voice and language catalog.",
+    "first_seen": "2026-11-16",
+    "id": "legacy",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "ar",
+      "zh",
+      "yue",
+      "cs",
+      "da",
+      "nl",
+      "fr",
+      "de",
+      "it",
+      "ja",
+      "ko",
+      "fa",
+      "pl",
+      "pt",
+      "es",
+      "sv",
+      "tr"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "api_default": true,
+      "chinese_variants": [
+        "Mandarin Simplified",
+        "Taiwanese Mandarin Traditional",
+        "Cantonese Simplified",
+        "Cantonese Traditional"
+      ],
+      "encodings": [
+        "mp3",
+        "wav",
+        "s16le"
+      ],
+      "partner_voices": "Some non-English voices are labeled Partner (third-party) on the Global Voices page.",
+      "replacement_libraries": true,
+      "respellings": true,
+      "ssml_scope": "limited: <say-as> only, enabled via X-Enable-SSML header"
+    },
+    "name": "Legacy",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.wellsaidlabs.com/docs/getting-started",
+        "https://docs.wellsaidlabs.com/reference/model-selection-with-the-api",
+        "https://docs.wellsaidlabs.com/reference/available-voice-avatars",
+        "https://docs.wellsaidlabs.com/reference/ttsstream.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000,
+      96000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]
