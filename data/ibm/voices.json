@@ -1,0 +1,752 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Birgit: Standard German (Standarddeutsch) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "de-DE_BirgitV3Voice",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Birgit",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Dieter: Standard German (Standarddeutsch) male voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "de-DE_DieterV3Voice",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Dieter",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Erika: Standard German (Standarddeutsch) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "de-DE_ErikaV3Voice",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Erika",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Heidi: Australian English female voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-AU_HeidiExpressive",
+    "languages": [
+      "en-AU"
+    ],
+    "name": "Heidi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Heidi: Australian English female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-AU_HeidiNatural",
+    "languages": [
+      "en-AU"
+    ],
+    "name": "Heidi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Jack: Australian English male voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU_JackExpressive",
+    "languages": [
+      "en-AU"
+    ],
+    "name": "Jack",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Jack: Australian English male voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU_JackNatural",
+    "languages": [
+      "en-AU"
+    ],
+    "name": "Jack",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Hannah: Canadian English female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-CA_HannahNatural",
+    "languages": [
+      "en-CA"
+    ],
+    "name": "Hannah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Charlotte: British English female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-GB_CharlotteV3Voice",
+    "languages": [
+      "en-GB"
+    ],
+    "name": "Charlotte",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Chloe: British English female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-GB_ChloeNatural",
+    "languages": [
+      "en-GB"
+    ],
+    "name": "Chloe",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "George: British male voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-GB_GeorgeExpressive",
+    "languages": [
+      "en-GB"
+    ],
+    "name": "George",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "George: British English male voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-GB_GeorgeNatural",
+    "languages": [
+      "en-GB"
+    ],
+    "name": "George",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "James: British English male voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-GB_JamesV3Voice",
+    "languages": [
+      "en-GB"
+    ],
+    "name": "James",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Kate: British English female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-GB_KateV3Voice",
+    "languages": [
+      "en-GB"
+    ],
+    "name": "Kate",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Allison: American English female voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_AllisonExpressive",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Allison",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Allison: American English female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_AllisonV3Voice",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Allison",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Ellie: American English female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_EllieNatural",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Ellie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Emily: American English female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_EmilyV3Voice",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Emily",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Emma: American English female voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_EmmaExpressive",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Emma",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Emma: American English female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_EmmaNatural",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Emma",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Ethan: American English male voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US_EthanNatural",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Ethan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Henry: American English male voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US_HenryV3Voice",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Henry",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Jackson: American English male voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US_JacksonNatural",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Jackson",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Kevin: American English male voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US_KevinV3Voice",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Kevin",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Lisa: American English female voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_LisaExpressive",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Lisa",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Lisa: American English female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_LisaV3Voice",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Lisa",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Michael: American English male voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US_MichaelExpressive",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Michael",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Michael: American English male voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US_MichaelV3Voice",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Michael",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Olivia: American English female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_OliviaV3Voice",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Olivia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Victoria: American English female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US_VictoriaNatural",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Victoria",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Enrique: Castilian Spanish (español castellano) male voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "es-ES_EnriqueV3Voice",
+    "languages": [
+      "es-ES"
+    ],
+    "name": "Enrique",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Laura: Castilian Spanish (español castellano) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-ES_LauraV3Voice",
+    "languages": [
+      "es-ES"
+    ],
+    "name": "Laura",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Alejandro: LATAM Spanish male voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "es-LA_AlejandroNatural",
+    "languages": [
+      "es-419"
+    ],
+    "name": "Alejandro",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Daniela: Latin American Spanish American (español latinoamericano) female voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-LA_DanielaExpressive",
+    "languages": [
+      "es-419"
+    ],
+    "name": "Daniela",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Daniela: LATAM Spanish female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-LA_DanielaNatural",
+    "languages": [
+      "es-419"
+    ],
+    "name": "Daniela",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Sofia: LATAM Spanish female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-LA_SofiaNatural",
+    "languages": [
+      "es-419"
+    ],
+    "name": "Sofia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Sofia: Latin American Spanish (español latinoamericano) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-LA_SofiaV3Voice",
+    "languages": [
+      "es-419"
+    ],
+    "name": "Sofia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Sofia: North American Spanish (español norteamericano) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-US_SofiaV3Voice",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Sofia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Louise: French Canadian female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "fr-CA_LouiseV3Voice",
+    "languages": [
+      "fr-CA"
+    ],
+    "name": "Louise",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Nicolas: French (français) male voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fr-FR_NicolasV3Voice",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Nicolas",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Renee: French (français) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "fr-FR_ReneeV3Voice",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Renee",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Francesca: Italian (italiano) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "it-IT_FrancescaV3Voice",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Francesca",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Emi: Japanese (日本語) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ja-JP_EmiV3Voice",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Emi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Jin: Korean female voice. Dnn technology. ",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ko-KR_JinV3Voice",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "Jin",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Merel: Dutch female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "nl-NL_MerelV3Voice",
+    "languages": [
+      "nl-NL"
+    ],
+    "name": "Merel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Camila: Brazilian Portuguese female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "pt-BR_CamilaNatural",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Camila",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Isabela: Brazilian Portuguese female voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "pt-BR_IsabelaNatural",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Isabela",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-neural"
+    ],
+    "description": "Isabela: Brazilian Portuguese (português brasileiro) female voice. Dnn technology.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "pt-BR_IsabelaV3Voice",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Isabela",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-expressive"
+    ],
+    "description": "Lucas: Brazilian Portuguese (português brasileiro) male voice. Dnn E2E technology with conversational and expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pt-BR_LucasExpressive",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Lucas",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ibm-natural"
+    ],
+    "description": "Lucas: Brazilian Portuguese male voice. StyleTTS2 technology with natural expressive capabilities.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pt-BR_LucasNatural",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Lucas",
+    "updated_at": "2026-11-16"
+  }
+]

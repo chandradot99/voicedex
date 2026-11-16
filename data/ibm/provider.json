@@ -1,0 +1,25 @@
+{
+  "api_urls": [
+    "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+    "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+  ],
+  "docs_urls": [
+    "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages",
+    "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-ng",
+    "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models",
+    "https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices"
+  ],
+  "id": "ibm",
+  "last_synced": "2026-11-16",
+  "name": "IBM Watson",
+  "source": "api",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+      "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+    ]
+  }
+}

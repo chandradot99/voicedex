@@ -23,6 +23,8 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 - **Per-locale voice accents** — Cartesia/ElevenLabs expose accent per locale (in `meta.locale_accents` for Cartesia).
 - **Plan-dependent pricing** — prices often differ per plan (Rime Scale, Cartesia Scale); `variants` covers it loosely.
 
+- **IBM pricing/audio limits** — api-only syncer records no pricing. Docs: STT Plus $0.02/min (<1M min/mo), $0.01 above, Lite 500 min/mo free (cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing); TTS "as low as" $0.02/1k chars, Lite 10k chars/mo. Add via a docs pass (make syncer `mixed`). Also TTS audio formats (alaw, basic, flac, l16, mp3, mulaw, ogg, wav, webm).
+
 ## Product
 - Homepage + catalog UI, project rename, npm/PyPI packages, changelog/RSS of data changes, benchmarks, Pro tier.
 - Deploy v2 (needs user sign-off: Railway config change, Neon can be retired).

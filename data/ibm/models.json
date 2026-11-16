@@ -1,0 +1,2056 @@
+[
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Modern Standard Arabic telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "ar-MS_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "ar-MS Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Czech telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "cs-CZ_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "cs-CZ Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large German Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "de-DE",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model"
+    },
+    "name": "de-DE Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "German multimedia model for broadband audio (16kHz or more)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "de-DE_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "de-DE Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "German telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "de-DE_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "de-DE Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Australian English model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "en-AU",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "en-AU Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Australian English multimedia model for broadband audio (16kHz or more)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "en-AU_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-AU Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Australian English telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "en-AU_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-AU Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large UK English model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "en-GB",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "en-GB Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "British English multimedia model for broadband audio (16kHz or more)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "en-GB_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-GB Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "British English telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "en-GB_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-GB Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Indian English model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "en-IN",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "en-IN Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Indian English telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "en-IN_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-IN Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large US English model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "en-US",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "en-US Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "US English multimedia model for broadband audio (16kHz or more)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "en-US_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-US Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "US English telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "en-US_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-US Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Global English Medical telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "en-WW_Medical_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "en-WW Medical Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Argentinian Spanish Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "es-AR",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-AR"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "es-AR Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Chilean Spanish Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "es-CL",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-CL"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "es-CL Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Colombian Spanish Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "es-CO",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-CO"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "es-CO Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Castilian Spanish Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "es-ES",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "es-ES Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Castilian Spanish multimedia model for broadband audio (16kHz)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "es-ES_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "es-ES Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Castilian Spanish telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "es-ES_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "es-ES Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Latin American Spanish telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "es-LA_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-419"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "es-LA Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Mexican Spanish Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "es-MX",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "es-MX Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Peruvian Spanish Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "es-PE",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "es-PE"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "es-PE Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Canadian French model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "fr-CA",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model"
+    },
+    "name": "fr-CA Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Canadian French multimedia model for broadband audio (16kHz)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "fr-CA_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "fr-CA Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Canadian French telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "fr-CA_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "fr-CA Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large French model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "fr-FR",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model"
+    },
+    "name": "fr-FR Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "French multimedia model for broadband audio (16kHz or more)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "fr-FR_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "fr-FR Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "French telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "fr-FR_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "fr-FR Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Indian Hindi (Devanagari) telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "hi-IN_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "hi-IN Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Italian Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "it-IT",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model"
+    },
+    "name": "it-IT Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Italian multimedia model for broadband audio (16kHz)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "it-IT_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "it-IT Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Italian telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "it-IT_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "it-IT Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Japanese model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "ja-JP",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "ja-JP Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Japanese multimedia model for broadband audio (16kHz or more)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "ja-JP_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "ja-JP Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Japanese telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "ja-JP_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "ja-JP Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Korean multimedia model for broadband audio (16kHz or more)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "ko-KR_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "ko-KR Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Korean telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "ko-KR_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "ko-KR Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Belgium Dutch (Flemish) telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "nl-BE_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "nl-BE Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Dutch Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "nl-NL",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model"
+    },
+    "name": "nl-NL Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Dutch multimedia model for broadband audio (16kHz)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "nl-NL_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "nl-NL Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Dutch telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "nl-NL_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "nl-NL Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Brazilian Portuguese Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "pt-BR",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "pt-BR Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Brazilian Portuguese multimedia model for broadband audio (16kHz)",
+    "family": "ibm-multimedia",
+    "first_seen": "2026-11-16",
+    "id": "pt-BR_Multimedia",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "pt-BR Multimedia",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Brazilian Portuguese telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "pt-BR_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "pt-BR Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large Portuguese Model",
+    "family": "ibm-large-speech",
+    "first_seen": "2026-11-16",
+    "id": "pt-PT",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "beta_features": [
+        "speaker_labels"
+      ],
+      "generation": "large_speech_model",
+      "low_latency": true
+    },
+    "name": "pt-PT Large Speech Model",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Swedish telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "sv-SE_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "sv-SE Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Mandarin Chinese telephony model for narrowband audio (8kHz)",
+    "family": "ibm-telephony",
+    "first_seen": "2026-11-16",
+    "id": "zh-CN_Telephony",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "generation": "next_generation",
+      "low_latency": true
+    },
+    "name": "zh-CN Telephony",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "phoneme_input",
+      "ssml",
+      "style_control"
+    ],
+    "description": "Conversational voices with speaking styles and emphasis (names ending in 'Expressive').",
+    "first_seen": "2026-11-16",
+    "id": "ibm-expressive",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-AU",
+      "en-GB",
+      "en-US",
+      "es-419",
+      "pt-BR"
+    ],
+    "meta": {
+      "catalog_grouping": true,
+      "note": "IBM selects the engine by voice name; there is no model parameter."
+    },
+    "name": "IBM Expressive neural voices",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "phoneme_input",
+      "ssml"
+    ],
+    "description": "IBM's most natural-sounding voice tier (voice names ending in 'Natural').",
+    "first_seen": "2026-11-16",
+    "id": "ibm-natural",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-US",
+      "es-419",
+      "pt-BR"
+    ],
+    "meta": {
+      "catalog_grouping": true,
+      "note": "IBM selects the engine by voice name; there is no model parameter."
+    },
+    "name": "IBM Natural voices",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "phoneme_input",
+      "ssml"
+    ],
+    "description": "Enhanced neural (V3) voices; the service default voice is en-US_MichaelV3Voice.",
+    "first_seen": "2026-11-16",
+    "id": "ibm-neural",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "de-DE",
+      "en-GB",
+      "en-US",
+      "es-419",
+      "es-ES",
+      "es-US",
+      "fr-CA",
+      "fr-FR",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "nl-NL",
+      "pt-BR"
+    ],
+    "meta": {
+      "catalog_grouping": true,
+      "note": "IBM selects the engine by voice name; there is no model parameter."
+    },
+    "name": "IBM Enhanced neural voices",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>/v1/voices",
+        "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]
