@@ -190,11 +190,12 @@ async def main() -> int:
 
     ids = args.providers or [e.provider_id for e in REGISTRY]
     print(f"Mode: {'WRITE' if args.write else 'DRY-RUN'}   Data: {args.data_dir}")
-    ok = 0
-    for pid in ids:
-        ok += await sync_one(pid, args.data_dir, args.write, args.allow_shrink, args.verbose, args.reuse_docs)
-    print(f"\n{'═' * 60}\n  {ok}/{len(ids)} providers synced")
-    return 0 if ok == len(ids) else 1
+    failed = [pid for pid in ids
+              if not await sync_one(pid, args.data_dir, args.write, args.allow_shrink, args.verbose, args.reuse_docs)]
+    print(f"\n{'═' * 60}\n  {len(ids) - len(failed)}/{len(ids)} providers synced")
+    if failed:
+        print(f"  ✗ FAILED: {', '.join(failed)} — see the errors above")
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

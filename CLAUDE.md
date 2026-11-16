@@ -74,8 +74,10 @@ Merge rules (`naaviq/catalog/merge.py`):
 
 Provider API keys go in `.env` (see `.env.example`). Google STT additionally uses Application Default
 Credentials (`gcloud auth application-default login` + `GOOGLE_CLOUD_PROJECT`) for the Speech-to-Text v2
-Locations API, which rejects API keys; without ADC the Google syncer falls back to docs-only STT (and the
-shrink guard will stop a write that would drop the API-only models). Naming convention for keys in provider dashboards: `voice-registry-sync`.
+Locations API, which rejects API keys. If `GOOGLE_CLOUD_PROJECT` is set and the login is missing/expired, the
+Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) — it never silently degrades. Fix:
+`gcloud auth application-default login`. With `GOOGLE_CLOUD_PROJECT` unset (contributors), STT is docs-only.
+`scripts/sync.py` ends with a `✗ FAILED: <providers>` line and exit code 1 whenever any provider failed. Naming convention for keys in provider dashboards: `voice-registry-sync`.
 
 ## Data conventions
 

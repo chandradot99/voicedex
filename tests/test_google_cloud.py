@@ -44,3 +44,24 @@ def test_enrich_api_authoritative_docs_kept():
     assert c3.meta["features"] == ["denoiser"]
     video = out["video"]
     assert (video.source, video.lifecycle, video.regions) == ("api", "beta", ["global"])
+
+
+def test_adc_not_opted_in_returns_none(monkeypatch):
+    from naaviq.sync import google_cloud
+    monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
+    assert google_cloud._adc_token() == (None, None)
+
+
+def test_adc_expired_raises_loudly(monkeypatch):
+    import google.auth
+    import pytest
+
+    from naaviq.sync import google_cloud
+
+    def boom(**_kw):
+        raise google.auth.exceptions.RefreshError("token expired")
+
+    monkeypatch.setenv("GOOGLE_CLOUD_PROJECT", "voice-providers")
+    monkeypatch.setattr(google.auth, "default", boom)
+    with pytest.raises(google_cloud.GoogleAuthExpired, match="gcloud auth application-default login"):
+        google_cloud._adc_token()

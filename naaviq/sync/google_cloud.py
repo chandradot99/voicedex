@@ -126,7 +126,8 @@ class GoogleCloudSyncer(ProviderSyncer):
                 f"Voices: {len(tts_voices)} from /v1/voices. "
                 f"TTS models: {len(tts_models)} (cache). "
                 f"STT models: {len(stt_models)} (cache"
-                + (f" + Locations API, {len(stt_api)} models)." if stt_api else ", no ADC — docs only).")
+                + (f" + Locations API, {len(stt_api)} models)." if stt_api
+                   else "; Locations API not used — set GOOGLE_CLOUD_PROJECT + gcloud ADC for per-region data).")
             )
         else:
             total_in  = tts_notes["input_tokens"]  + stt_notes["input_tokens"]
@@ -269,21 +270,41 @@ class GoogleCloudSyncer(ProviderSyncer):
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
+class GoogleAuthExpired(RuntimeError):
+    """GOOGLE_CLOUD_PROJECT is set (Locations API opted in) but ADC is missing/expired."""
+
+
+_ADC_FIX = (
+    "Google sign-in for the Speech-to-Text Locations API is missing or expired.\n"
+    "  Fix: gcloud auth application-default login\n"
+    "       gcloud auth application-default set-quota-project {project}\n"
+    "  (or unset GOOGLE_CLOUD_PROJECT to sync Google STT from docs only)"
+)
+
+
 def _adc_token() -> tuple[str | None, str | None]:
-    """Access token + project from Application Default Credentials; (None, None) if unavailable."""
+    """Access token + project from Application Default Credentials.
+
+    - GOOGLE_CLOUD_PROJECT unset → (None, None): Locations API not opted in, docs-only STT.
+    - GOOGLE_CLOUD_PROJECT set but credentials missing/expired/unrefreshable → GoogleAuthExpired,
+      so a lapsed login stops the sync loudly instead of silently degrading the data.
+    """
     import os
+
+    project = os.getenv("GOOGLE_CLOUD_PROJECT")
+    if not project:
+        return None, None
     try:
         import google.auth
         import google.auth.transport.requests
-        from google.auth.exceptions import DefaultCredentialsError
-    except ImportError:
-        return None, None
+    except ImportError as e:
+        raise GoogleAuthExpired("google-auth is not installed — run `uv sync --extra sync`") from e
     try:
-        creds, adc_project = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+        creds, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
         creds.refresh(google.auth.transport.requests.Request())
-    except (DefaultCredentialsError, Exception):  # noqa: BLE001 — no/expired ADC → docs-only fallback
-        return None, None
-    return creds.token, os.getenv("GOOGLE_CLOUD_PROJECT") or adc_project
+    except Exception as e:  # noqa: BLE001 — DefaultCredentialsError, RefreshError (expired / revoked)
+        raise GoogleAuthExpired(_ADC_FIX.format(project=project) + f"\n  Cause: {type(e).__name__}: {e}") from e
+    return creds.token, project
 
 
 def _location_region(loc: str) -> str | None:
