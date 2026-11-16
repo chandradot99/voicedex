@@ -109,9 +109,9 @@
             if (t) t.textContent = "Reset"; else if (b.childElementCount === 0) b.textContent = "Reset";
           }
         });
-        // Scalar's own hover tooltip for the button still describes the old behaviour.
+        // Scalar's own hover tooltip for the button describes the old behaviour; the button needs none.
         document.querySelectorAll(".scalar-tooltip").forEach((t) => {
-          if (t.textContent.trim() === "Clear optional parameters") t.textContent = "Reset to defaults";
+          if (t.textContent.trim() === "Clear optional parameters") t.style.display = "none";   // label says it all
         });
       }).observe(document.body, { childList: true, subtree: true });
     })();
@@ -239,6 +239,10 @@
         }
         /* Scalar's hover tooltips are already a rounded pill; the wrapper stays invisible. */
         .scalar-tooltip { background: transparent !important; box-shadow: none !important; }
+        /* Tooltips and the parameter-info popover: same 8px radius as the site's other small surfaces. */
+        .scalar-tooltip::before { border-radius: 8px !important; }
+        .z-context > div.rounded-xl { border-radius: 8px !important; }
+        .z-context > div.rounded-xl > div.rounded { border-radius: 6px !important; }
         /* Search dialog (⌘K) and other modals: dim + blur the page; mark the keyboard selection. */
         .scalar-modal-layout { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
         .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #2a313e !important; box-shadow: inset 2px 0 0 #5eead4; }
