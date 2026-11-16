@@ -609,6 +609,7 @@ def _to_sync_model(d: dict) -> SyncModel:
         regions=d.get("regions") or [],
         pricing=d.get("pricing") or {},
         meta=d.get("meta") or {},
+        source="docs",
     )
 
 

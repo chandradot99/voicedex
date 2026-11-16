@@ -1,123 +1,64 @@
-# Naaviq
+# Voice Provider Registry
 
-Open-source voice provider registry — STT/TTS models and voices.
+An open catalog of voice AI providers: speech-to-text, text-to-speech and speech-to-speech models,
+voices, languages, capabilities, pricing and regions. It is normalized across providers and you can
+query it as a REST API or download it as one JSON file. (A new project name and homepage are coming.)
 
-A public read-only REST API at [naaviq-voice-providers-production.up.railway.app](https://naaviq-voice-providers-production.up.railway.app) that serves up-to-date metadata about voice AI providers so applications can discover models, voices, supported languages, and capabilities without scraping each provider's docs.
+- **Data you can audit.** The whole catalog lives in [`data/`](data/) as plain JSON in git. Every
+  change is a reviewable diff, and every model records where its data came from and when.
+- **One schema for every provider.** Languages are BCP-47, capabilities and regions use a controlled
+  vocabulary, and voices are linked to the models they work with.
+  See [`schema/`](schema/) for the JSON Schema.
+- **No lock-in.** Use the API, the single [`/v1/catalog.json`](#api) export, or read `data/` directly.
 
-**32 providers covered:** Deepgram, Cartesia, ElevenLabs, OpenAI, Google Cloud, Sarvam, Azure Speech, Amazon Polly, Hume AI, Inworld AI, Murf AI, Speechmatics, LMNT, Rime AI, AssemblyAI, Rev AI, Gladia, MiniMax, IBM Watson, Neuphonic, Amazon Transcribe, Resemble AI, Fish Audio, Unreal Speech, Smallest AI, Lovo AI, Mistral AI, WellSaid Labs, CAMB.ai, Speechify, Typecast AI, Groq
+## API
 
-## What's in here
+| Path | |
+|---|---|
+| `GET /v1/providers` · `/v1/providers/{id}` | Providers, with model and voice counts |
+| `GET /v1/providers/{id}/models` · `/models/{model_id}` | Filters: `type`, `language`, `capabilities`, `lifecycle`, `region`, `search` |
+| `GET /v1/providers/{id}/voices` · `/voices/{voice_id}` | Filters: `gender`, `category`, `language`, `model`, `accent`, `capabilities`, `search` |
+| `GET /v1/models` · `/v1/voices` | The same filters across all providers, plus `provider` |
+| `GET /v1/catalog.json` | Everything in one response |
 
-- **`naaviq/`** — FastAPI app (public read API) + SQLAlchemy ORM
-- **`naaviq/sync/`** — provider sync scripts (one per provider). Community-contributable.
-- **`scripts/`** — `sync.py` (dev DB) and `promote.py` (dev → prod)
-- **`alembic/`** — DB migrations
-- **`tests/`** — basic API smoke tests
-
-## Sync architecture
-
-Each provider has a syncer that returns a `SyncResult(stt_models, tts_models, tts_voices, source, api_urls, docs_urls, …)`. Three source types:
-
-| Source | When | Examples |
-|---|---|---|
-| `api` | Provider exposes a REST models/voices endpoint | Deepgram, Azure, Amazon Polly, IBM |
-| `docs` | No API — parse docs with an AI model | OpenAI, Sarvam, Speechmatics, AssemblyAI, Rev AI, Gladia, Amazon Transcribe, Unreal Speech |
-| `mixed` | Some endpoints exist, some require parsing docs | Cartesia, ElevenLabs, Google Cloud, Hume AI, Inworld, Murf, Rime AI, LMNT, Fish Audio, Groq, CAMB.ai |
-
-For `docs` and `mixed` sources, `naaviq/sync/ai_parser.py` runs an agentic Claude loop to extract structured `SyncModel` objects from documentation pages. Each provider row stores `api_urls` and `docs_urls` so consumers can trace where the data came from.
-
-## Quick start
+Responses carry an `ETag` header, so you can poll cheaply with `If-None-Match`. List endpoints also
+support `updated_since`. Interactive docs are at `/docs`.
 
 ```bash
-docker compose up -d           # start Postgres
-cp .env.example .env
-uv sync
-uv run alembic upgrade head    # create tables
-uv run uvicorn naaviq.main:app --reload
+curl "$API/v1/voices?language=en-GB&gender=female&limit=5"
+curl "$API/v1/models?type=stt&capabilities=speaker_diarization&region=eu"
 ```
 
-## Syncing providers to the DB
+## How the data is kept fresh
 
-There are two ways to sync. Both use the same `naaviq/sync/*.py` scripts and produce identical DB state — they differ only in **who performs the AI extraction** for `docs`/`mixed` providers.
+Each provider has a syncer in [`naaviq/sync/`](naaviq/sync/). It calls the provider's API where one
+exists, and otherwise extracts the data from the provider's documentation. `scripts/sync.py` then
+merges the result into `data/`:
 
-### Path A — Claude Code (recommended for maintainers)
+- New records are added.
+- Records that disappeared upstream are marked deprecated, never deleted.
+- A guard refuses to write if a fetch looks partial.
 
-Ask Claude Code (in your terminal) to sync a provider. For `docs`/`mixed` providers, Claude Code fetches the docs, produces structured JSON, writes it to `.sync-cache/`, and then runs the sync script. The script reads the cache, skips the internal AI parser, and never calls the Anthropic API. **No `ANTHROPIC_API_KEY` needed.**
-
-```
-# In your Claude Code conversation:
-"sync cartesia to dev DB"
-```
-
-Claude Code then runs:
+The diff is reviewed as a pull request, and merging publishes it.
 
 ```bash
-uv run python scripts/sync.py cartesia --apply
+uv sync --extra dev --extra sync
+uv run python scripts/sync.py deepgram            # dry-run, prints a per-field diff
+uv run python scripts/sync.py deepgram --write    # updates data/deepgram/
+uv run python scripts/validate.py                 # schema and consistency checks (CI runs this too)
 ```
 
-### Path B — Script + `ANTHROPIC_API_KEY` (contributors / CI)
-
-If you don't have Claude Code, the script's built-in AI parser will call the Anthropic API on cache miss. Set `ANTHROPIC_API_KEY` in `.env` and run the script directly:
-
-```bash
-export ANTHROPIC_API_KEY=sk-...
-uv run python scripts/sync.py                    # dry-run all providers, shows diff
-uv run python scripts/sync.py cartesia deepgram  # dry-run two providers
-uv run python scripts/sync.py cartesia --apply   # fetch + apply to dev DB
-uv run python scripts/sync.py --apply            # apply all providers
-```
-
-`api`-source providers (deepgram, azure, amazon-polly, ibm) never need the key.
-All other providers are `docs` or `mixed` and do.
-
-### Promote dev → prod
-
-No AI involved — pure data copy.
-
-```bash
-uv run python scripts/promote.py           # dry-run
-uv run python scripts/promote.py --apply   # write to prod DB
-```
-
-Requires `DEV_DATABASE_URL` (source) and `DATABASE_URL` (prod target) in `.env`. See `CLAUDE.md` for the full sync workflow reference.
-
-## Running a single syncer locally (smoke test)
-
-```bash
-uv sync --extra sync           # installs anthropic SDK for AI-parser providers
-ELEVENLABS_API_KEY=... ANTHROPIC_API_KEY=... uv run python -m naaviq.sync.elevenlabs
-```
-
-Smoke tests only print the result — they never write to the DB.
-
-## Tests
+## Run locally
 
 ```bash
 uv sync --extra dev
+uv run uvicorn naaviq.main:app --reload
 uv run pytest
 ```
 
-CI runs lint (`ruff`), migrations (`alembic upgrade head`), and `pytest` against a Postgres service container on every push and PR. Deploys to Railway are gated on CI passing.
+## Contributing
 
-## Public API endpoints
-
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | `/v1/providers` | List all active providers |
-| GET | `/v1/providers/{id}` | Get a single provider (includes `api_urls`, `docs_urls`) |
-| GET | `/v1/providers/{id}/models` | List models (filter: `?type=stt\|tts`) |
-| GET | `/v1/providers/{id}/voices` | List voices (filter: `?gender=male\|female`) |
-| GET | `/health` | Health check |
-
-## Contributing a new provider
-
-1. Add `naaviq/sync/{provider_id}.py` — subclass `ProviderSyncer`, implement `sync()`
-2. Use `normalize_languages()` on every language list (BCP-47 with uppercase region)
-3. For doc-based providers, call `parse_models_from_docs(seed_urls=…, guidance=…)`
-4. Populate `api_urls` and `docs_urls` in the returned `SyncResult`
-5. Register with a `SyncerEntry(...)` line in `naaviq/sync/registry.py` (single source of truth — both the sync script and the admin API read from it)
-6. Open a PR — your team merges, then triggers sync from the admin UI
-
-See `CLAUDE.md` for the full adding-a-provider checklist.
+To add a provider or fix data, see [`CLAUDE.md`](CLAUDE.md#adding-a-provider) for the checklist and
+[`docs/design/v2-architecture.md`](docs/design/v2-architecture.md) for the design.
 
 License: Apache 2.0

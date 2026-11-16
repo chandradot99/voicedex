@@ -1,0 +1,3623 @@
+[
+  {
+    "accent": "french",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-agathe-fr",
+    "languages": [
+      "fr",
+      "fr-FR"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/451ea34939bfdb3477a9f81acd11466a3802cc75-400x400.png",
+      "uuid": "6fe3f8e3-14d3-456c-9534-766132310608",
+      "version": "2025-10-29.0"
+    },
+    "name": "Agathe",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/42d6da9286f2883874c7f7bd0e4462b5528bda56.wav",
+    "tags": [
+      "feminine",
+      "charismatic",
+      "cheerful",
+      "enthusiastic",
+      "friendly",
+      "natural"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Customer Service",
+      "Casual Chat"
+    ]
+  },
+  {
+    "accent": "peninsular",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-agustina-es",
+    "languages": [
+      "es",
+      "es-ES"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/2fd6b4d7fdf8cdd89dc3db856b388e7c623ff2b0-400x400.png",
+      "uuid": "6c6ff0ba-e33e-46c9-9388-da3324bf0b5f",
+      "version": "2025-10-07.2"
+    },
+    "name": "Agustina",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/c86256aa6178bea3825030d6b183dd97aff72250.wav",
+    "tags": [
+      "feminine",
+      "calm",
+      "clear",
+      "expressive",
+      "knowledgeable",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat"
+    ]
+  },
+  {
+    "accent": "peninsular",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-alvaro-es",
+    "languages": [
+      "es",
+      "es-ES"
+    ],
+    "meta": {
+      "color": "#a1f9d4",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/28ae67e3cd0f03df22de804efede3f4b1e065204-372x372.png",
+      "uuid": "3117e181-fc0b-44bc-8e78-490c2882892e",
+      "version": "2025-10-07.2"
+    },
+    "name": "Álvaro",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/fd081e898867bd462ced865a180d5283af3b0e1c.wav",
+    "tags": [
+      "masculine",
+      "calm",
+      "professional",
+      "clear",
+      "knowledgeable",
+      "approachable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview",
+      "customer service"
+    ]
+  },
+  {
+    "accent": "japanese",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-ama-ja",
+    "languages": [
+      "ja",
+      "ja-JP"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/bcf91a070dbfb16e77c23dbe74814cbb8981b393-400x400.png",
+      "uuid": "1855cc6a-f4e0-4184-988c-30b7c787f277",
+      "version": "2025-10-29.0"
+    },
+    "name": "Ama",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/fb06a8b6b7b958b77cafe291ff48df3c2b2b4b43.wav",
+    "tags": [
+      "feminine",
+      "casual",
+      "comfortable",
+      "confident",
+      "knowledgeable",
+      "natural"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "filipino",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-amalthea-en",
+    "languages": [
+      "en",
+      "en-PH"
+    ],
+    "meta": {
+      "color": "#a1d7fd",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d7d54f530c7bac91731633f690a9c9222db4505f-1024x1024.png",
+      "uuid": "cd7489bc-4a7a-4a70-a5d6-7d40607788a4",
+      "version": "2025-04-15.4"
+    },
+    "name": "Amalthea",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/e5f50690fb8e1e2bcdd367290b7d268c495db202.wav",
+    "tags": [
+      "feminine",
+      "engaging",
+      "natural",
+      "cheerful"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-andromeda-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#a1d7fd",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d58505d55890c75c026aae456499712aefab6738-230x230.png",
+      "uuid": "e65d4050-cbf1-4d9a-ab93-f6b399e37074",
+      "version": "2025-04-15.4"
+    },
+    "name": "Andromeda",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/d6a7514b3b1c3dc48ed5d1d4baaa2bb73c41c59e.wav",
+    "tags": [
+      "feminine",
+      "casual",
+      "expressive",
+      "comfortable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "argentine",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-antonia-es",
+    "languages": [
+      "es",
+      "es-AR"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/84ff3e66b9863059b988c07d6c72e71420e77255-400x400.png",
+      "uuid": "991085aa-d90d-4242-9873-ff1cb1e181c0",
+      "version": "2025-10-07.2"
+    },
+    "name": "Antonia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/e2f37450d392f5a8fc002d28a5ee1dbe728c392d.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "enthusiastic",
+      "friendly",
+      "natural",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Interview",
+      "Casual Chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-apollo-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#a1d7fd",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/f0ea146234f3ca389a5afd386ed2ad52283ba173-1024x1024.png",
+      "uuid": "3fdf6ff0-bc53-49bf-a444-2a36c4c83d14",
+      "version": "2025-04-15.4"
+    },
+    "name": "Apollo",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/2281ed81ae31472f9a5dbd0accdcb0dd828b273e.wav",
+    "tags": [
+      "masculine",
+      "confident",
+      "comfortable",
+      "casual"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "latin american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-aquila-es",
+    "languages": [
+      "es",
+      "es-419"
+    ],
+    "meta": {
+      "color": "#149afb",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/b255b01abb4909a5104dd520e289dcf25efe800b-372x372.png",
+      "uuid": "96e51c94-e559-441f-9fb6-128d0a58cd19",
+      "version": "2025-10-07.2"
+    },
+    "name": "Aquila",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/4abca777cfc3781e3c0e9dd5b928856a83b45809.wav",
+    "tags": [
+      "masculine",
+      "casual",
+      "comfortable",
+      "confident",
+      "expressive",
+      "enthusiastic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat",
+      "informative"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-arcas-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ee028c",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/bd0ca252f0d3bef4ebf7dc902f20460bbc5de8d4-200x200.png",
+      "uuid": "cc1b9a45-374c-4f59-b667-cbd292945d6f",
+      "version": "2025-04-15.4"
+    },
+    "name": "Arcas",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/ddcdfd19ffa637aa4c8762f003f9908670bc3861.wav",
+    "tags": [
+      "masculine",
+      "natural",
+      "smooth",
+      "clear",
+      "comfortable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-aries-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ee028c",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/7dc873e476c4027e4161b9fb7c6c0e7c1e737f7d-200x200.png",
+      "uuid": "a04e73d5-f375-4288-80a0-3d481d204ea2",
+      "version": "2025-04-15.4"
+    },
+    "name": "Aries",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/ba6f9c9e3359beb54cdcb153d9ddfb1f26184c6c.wav",
+    "tags": [
+      "masculine",
+      "warm",
+      "energetic",
+      "caring"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-asteria-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#7800ed",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/17c32bb6a8e61d3d139ab6218635aaaba2d2ec14-144x144.png",
+      "uuid": "151f870b-d6ac-4105-b173-b3ef86773633",
+      "version": "2025-04-15.4"
+    },
+    "name": "Asteria",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/4a2382e03800ba300b891be8f4b749b2f0935c4c.wav",
+    "tags": [
+      "feminine",
+      "clear",
+      "confident",
+      "knowledgeable",
+      "energetic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "advertising"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-athena-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#f04438",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/46d4fb3f1b5a25b3df02a83a0faa09e800d62ef7-1024x1024.png",
+      "uuid": "df036e78-d280-4a0f-9a3d-290478251417",
+      "version": "2025-04-15.4"
+    },
+    "name": "Athena",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/64fed899c97ab8e5ddcfef5bef9e8adaef04c1f7.wav",
+    "tags": [
+      "feminine",
+      "calm",
+      "smooth",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-atlas-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#7800ed",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/9420667cb7345309f042458335d3b65569d18cd2-1024x1024.png",
+      "uuid": "a695b422-2277-44e1-8cfb-baec1aca10c6",
+      "version": "2025-04-15.4"
+    },
+    "name": "Atlas",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/4bc77f049399b72b11971cee63efe17a0942e4e3.wav",
+    "tags": [
+      "masculine",
+      "enthusiastic",
+      "confident",
+      "approachable",
+      "friendly"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "advertising"
+    ]
+  },
+  {
+    "accent": "german",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-aurelia-de",
+    "languages": [
+      "de",
+      "de-DE"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/3ca4cfda7c1d06839e4f808a831dacf9ecf60d4b-400x400.png",
+      "uuid": "a2ee5042-e5c6-4826-bc99-6ff7cd992cbe",
+      "version": "2025-10-29.0"
+    },
+    "name": "Aurelia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/09043277d9547e906fcdd5820f161d84087048be.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "casual",
+      "comfortable",
+      "natural",
+      "sincere"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-aurora-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#949498",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/636dbfd851f1eb994a7b6b0ebf4b02d12f2c6bb6-1024x1024.png",
+      "uuid": "86a0b2c2-12e5-47da-8a51-5b18f7e28c40",
+      "version": "2025-04-15.4"
+    },
+    "name": "Aurora",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/813332a569d18bd1041fb26d1f503fe4b9042451.wav",
+    "tags": [
+      "feminine",
+      "cheerful",
+      "expressive",
+      "energetic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-beatrix-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/120274c1b371f0c29406a1920ac864b40625baaa-400x400.png",
+      "uuid": "46bd8362-e0f9-4df5-ad09-c241b56ab69d",
+      "version": "2025-10-29.0"
+    },
+    "name": "Beatrix",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/b275f5f995e91068d187bf9c907ab5fe86b0b253.wav",
+    "tags": [
+      "feminine",
+      "cheerful",
+      "enthusiastic",
+      "friendly",
+      "trustworthy",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Audiobook",
+      "Customer Service",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-callista-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#027a48",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/8226123033ee6d30221c430e019bc12365cde885-1024x1024.png",
+      "uuid": "6854d094-00f4-4d9c-b952-9859140eab96",
+      "version": "2025-04-15.4"
+    },
+    "name": "Callista",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/6708b97fc33706293499bd65d7d43e6404674a3c.wav",
+    "tags": [
+      "feminine",
+      "clear",
+      "energetic",
+      "professional",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "peninsular",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-carina-es",
+    "languages": [
+      "es",
+      "es-ES"
+    ],
+    "meta": {
+      "color": "#ffadd8",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/e211148b1f645487930bdbcee14ce3264f489e96-371x372.png",
+      "uuid": "b45359ad-7af8-4814-b3e5-87726d0e80f8",
+      "version": "2025-10-07.2"
+    },
+    "name": "Carina",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/5e5cf6f73619035eb6ece339bec3303777833384.wav",
+    "tags": [
+      "feminine",
+      "professional",
+      "raspy",
+      "energetic",
+      "breathy",
+      "confident"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "interview",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "colombian",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-celeste-es",
+    "languages": [
+      "es",
+      "es-CO"
+    ],
+    "meta": {
+      "color": "#fedf89",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/af32197d06e5df988b45650b813f775d1330858a-372x372.png",
+      "uuid": "0dada31c-f176-47be-9191-ed72762d38d2",
+      "version": "2025-10-07.2"
+    },
+    "name": "Celeste",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/54703d0b8cbd0e4de1210cba80d760d047477d6b.wav",
+    "tags": [
+      "feminine",
+      "clear",
+      "energetic",
+      "positive",
+      "friendly",
+      "enthusiastic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat",
+      "advertising",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-cesare-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/bd2f043f9a78211e69e21cb2a8d546af66b69ce1-400x400.png",
+      "uuid": "6c77cbcf-f12f-4a12-9820-0ff6938c9b18",
+      "version": "2025-10-29.0"
+    },
+    "name": "Cesare",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/a87f26f393377adf9cbf46311b8ed343c1412915.wav",
+    "tags": [
+      "masculine",
+      "clear",
+      "empathetic",
+      "knowledgeable",
+      "natural",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-cinzia-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/798b53e00201eb222ea84757a5f845cfdd757ec3-400x400.png",
+      "uuid": "9c8e7223-0819-435e-adfd-711873d0670b",
+      "version": "2025-10-29.0"
+    },
+    "name": "Cinzia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/d4f80f62ad7702bbd64bf4a267cbf3545c5f74d6.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "friendly",
+      "smooth",
+      "trustworthy",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Interview",
+      "Narration"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-cora-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ffadd8",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/fff93e95efe92f1ba15d7469912c0d95aff65248-1024x1024.png",
+      "uuid": "20325c62-4fa1-48be-afed-a122c4465065",
+      "version": "2025-04-15.4"
+    },
+    "name": "Cora",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/9d480fe946b8c4995db1fe60058432f122772f8e.wav",
+    "tags": [
+      "feminine",
+      "smooth",
+      "melodic",
+      "caring"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-cordelia-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ee028c",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/0b1b95f047db77007b5e710334bdbd94be01d022-1024x1024.png",
+      "uuid": "4dd702e2-7ff2-4b12-a580-0b6ed656297e",
+      "version": "2025-04-15.4"
+    },
+    "name": "Cordelia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/48debe704e6432fd88904f7e59651ec16311ec83.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "warm",
+      "polite"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-cornelia-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/00f8c99ccdb4cc0ceca99a2422249d5da8a648be-400x400.png",
+      "uuid": "cede84c0-385f-4b6d-a943-3e06a0a6d825",
+      "version": "2025-10-29.0"
+    },
+    "name": "Cornelia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/9e229626bbf18c2756733435ada304c3ed5814e7.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "friendly",
+      "polite",
+      "positive",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Customer Service",
+      "Casual Chat",
+      "Audiobook"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-daphne-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/a3ef0c0b516af460ac6d43137ea304a587957f6d-400x400.png",
+      "uuid": "e0d6fd50-2921-4b87-81f1-8813cf5597f9",
+      "version": "2025-10-29.0"
+    },
+    "name": "Daphne",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/ae4c742f01b3ecb8197c63670248a2fdffc34e25.wav",
+    "tags": [
+      "feminine",
+      "calm",
+      "clear",
+      "confident",
+      "professional",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Interview",
+      "Casual Chat",
+      "Audiobook"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-delia-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ffadd8",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/95e8430a436f984594ff819b9dc8b9ad804c41ed-201x200.png",
+      "uuid": "547904fe-7751-464c-839c-b79e5666436b",
+      "version": "2025-04-15.4"
+    },
+    "name": "Delia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/a8d8fe34f3896408ff1989f9cd37a6c4d63d1817.wav",
+    "tags": [
+      "feminine",
+      "casual",
+      "friendly",
+      "cheerful",
+      "breathy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-demetra-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/c3756559255463a43b88b0b34880677a1102aa0f-400x400.png",
+      "uuid": "e2aebdb0-36bb-41cd-bb10-29e3e15c678b",
+      "version": "2025-10-29.0"
+    },
+    "name": "Demetra",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/16fbd2713f28713873a7c023fcc6073157cd60a1.wav",
+    "tags": [
+      "feminine",
+      "calm",
+      "comfortable",
+      "patient"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Interview",
+      "Narration"
+    ]
+  },
+  {
+    "accent": "peninsular",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-diana-es",
+    "languages": [
+      "es",
+      "es-ES"
+    ],
+    "meta": {
+      "color": "#7800ed",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/7bb47b05ef73aa159c5354499366bcb1139fe2e3-372x373.png",
+      "uuid": "03b8904c-1dc1-4b15-b021-e5fa7af02a61",
+      "version": "2025-10-07.2"
+    },
+    "name": "Diana",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/0203de493eddb33e661f6d3b2eb4502f26ca8d41.wav",
+    "tags": [
+      "feminine",
+      "professional",
+      "confident",
+      "expressive",
+      "polite",
+      "knowledgeable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling",
+      "advertising"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-dionisio-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/0ea6d30325c1021e72146e609e88ccb29bd35d9a-400x400.png",
+      "uuid": "5dd23842-b81a-44d3-aa0d-6a1173c03188",
+      "version": "2025-10-29.0"
+    },
+    "name": "Dionisio",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/5a9af98a1384d8d9ac15e45f7f8663baa7f9f5f5.wav",
+    "tags": [
+      "masculine",
+      "confident",
+      "engaging",
+      "friendly",
+      "melodic",
+      "positive"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-draco-en",
+    "languages": [
+      "en",
+      "en-GB"
+    ],
+    "meta": {
+      "color": "#ee028c",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/8461ec4849b48fc570fa3e47e690326979b0e64c-1024x1024.png",
+      "uuid": "a650a612-07fd-4ce0-84d9-63ebe211d4d8",
+      "version": "2025-04-15.4"
+    },
+    "name": "Draco",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/02f3523c47f49521c37ce03b78d166aeaf703bde.wav",
+    "tags": [
+      "masculine",
+      "warm",
+      "approachable",
+      "trustworthy",
+      "baritone"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "japanese",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-ebisu-ja",
+    "languages": [
+      "ja",
+      "ja-JP"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/3212fdf452a49b076399a6b337950356933b350f-400x400.png",
+      "uuid": "f4eb0439-f785-4a00-b319-db0ce1766dfd",
+      "version": "2025-10-29.0"
+    },
+    "name": "Ebisu",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/c6e27e0a540443c7b466fd0bf911e46a522668da.wav",
+    "tags": [
+      "masculine",
+      "calm",
+      "deep",
+      "natural",
+      "patient",
+      "sincere"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "german",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-elara-de",
+    "languages": [
+      "de",
+      "de-DE"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/3d6c8fcebb3a3f57440f7b3282e757e71d5ac30a-400x400.png",
+      "uuid": "f0567c34-f689-4094-8e68-95ebc1f67807",
+      "version": "2025-10-29.0"
+    },
+    "name": "Elara",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/cd9034f61fd6abea6ddb8f78906f26ed7bcded29.wav",
+    "tags": [
+      "feminine",
+      "calm",
+      "clear",
+      "natural",
+      "patient",
+      "trustworthy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-electra-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#fec84b",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/402189d6ecb0dff90a838d60a9dbcd143210ffbf-1024x1024.png",
+      "uuid": "b6b86e8d-5fb3-440a-af76-bcb86a015482",
+      "version": "2025-04-15.4"
+    },
+    "name": "Electra",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/4ed83539b158003878f12c7b748258d89d3a87ef.wav",
+    "tags": [
+      "feminine",
+      "professional",
+      "engaging",
+      "knowledgeable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR",
+      "advertising",
+      "customer service"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-elio-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/e6be63107dc2a4517f1dce1bf907dacb8a194393-400x400.png",
+      "uuid": "deadb88c-67f2-48f5-9bd0-c0f1b583a633",
+      "version": "2025-10-29.0"
+    },
+    "name": "Elio",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/8b1d4932ce4668d0fd026c6208049304c4712706.wav",
+    "tags": [
+      "masculine",
+      "breathy",
+      "calm",
+      "professional",
+      "smooth",
+      "trustworthy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat"
+    ]
+  },
+  {
+    "accent": "mexican",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-estrella-es",
+    "languages": [
+      "es",
+      "es-MX"
+    ],
+    "meta": {
+      "color": "#13ef93",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/83cbb5ba605e742a4a2dc6d9c86978228f682823-371x372.png",
+      "uuid": "b2f11975-8588-48b3-8711-9614905faf1b",
+      "version": "2025-10-07.2"
+    },
+    "name": "Estrella",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/634f431ac18a6ff2604b9ba25e3e951059787e65.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "calm",
+      "comfortable",
+      "expressive",
+      "natural"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview",
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "german",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-fabian-de",
+    "languages": [
+      "de",
+      "de-DE"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/0aafa0c41db23ca997095c68679bfc0eb8178913-347x347.png",
+      "uuid": "8402a288-18b3-4bbc-b472-c2120640457c",
+      "version": "2025-10-29.0"
+    },
+    "name": "Fabian",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/4f916075d5e0a6e53ec0b882c6ee898c990fd55c.wav",
+    "tags": [
+      "masculine",
+      "confident",
+      "knowledgeable",
+      "natural",
+      "polite",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Commercial"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-flavio-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/aa74e8ff86ffe01409fe8a90afc70996ba9e7af7-400x400.png",
+      "uuid": "dca231cf-068d-4b79-8e3b-640f10c3dfa5",
+      "version": "2025-10-29.0"
+    },
+    "name": "Flavio",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/8f82fc2b558e5535fa777fa07c24ccbc12a7262d.wav",
+    "tags": [
+      "masculine",
+      "confident",
+      "deep",
+      "empathetic",
+      "professional",
+      "trustworthy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "japanese",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-fujin-ja",
+    "languages": [
+      "ja",
+      "ja-JP"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/5cfc3b0366f808d00be50099d3ce8c11ff6578bc-400x400.png",
+      "uuid": "e8c44da6-3ed1-420f-9a93-ce3bef82fb66",
+      "version": "2025-10-29.0"
+    },
+    "name": "Fujin",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/6b5070e24e16c1d0f052b6747932bdfbaec6fff0.wav",
+    "tags": [
+      "masculine",
+      "calm",
+      "confident",
+      "knowledgeable",
+      "professional",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "colombian",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-gloria-es",
+    "languages": [
+      "es",
+      "es-CO"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/84a2cc69791139f9d29170ebff8d76e388e10e59-400x400.png",
+      "uuid": "78298884-7303-4fae-a1c5-cb127c4dc086",
+      "version": "2025-10-07.2"
+    },
+    "name": "Gloria",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/c08c8df6cca7622212e00a1d582548d15338f1c5.wav",
+    "tags": [
+      "feminine",
+      "casual",
+      "clear",
+      "expressive",
+      "natural",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Casual Chat",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-harmonia-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ffe699",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/4de0cd3e99b7cd0f411c9a7d00518de7ebdfce55-201x201.png",
+      "uuid": "807ff6b2-3bca-4d35-81f5-6bae5304ba68",
+      "version": "2025-04-15.4"
+    },
+    "name": "Harmonia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/4bd9bb399e470022e56bed26d3d175574b9a6167.wav",
+    "tags": [
+      "feminine",
+      "empathetic",
+      "clear",
+      "calm",
+      "confident"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "french",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-hector-fr",
+    "languages": [
+      "fr",
+      "fr-FR"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/7bf001f18d16f4cf1f69d47e58312a7114eb82fc-400x400.png",
+      "uuid": "14f6df1e-de99-497c-92ea-43957cadf547",
+      "version": "2025-10-29.0"
+    },
+    "name": "Hector",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/35f6e07a2b75ddda5a25ea9c67be31596de96c5e.wav",
+    "tags": [
+      "masculine",
+      "confident",
+      "empathetic",
+      "expressive",
+      "friendly",
+      "patient"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-helena-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#7800ed",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/aa59623f5b4703bcc30bc7a9a01c9f054cca8de7-1024x1024.png",
+      "uuid": "4fa750e6-8ade-4394-849f-c104ced3741e",
+      "version": "2025-04-15.4"
+    },
+    "name": "Helena",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/de806ec0ef7c09d838d6eabe8b47886a39ba2f53.wav",
+    "tags": [
+      "feminine",
+      "caring",
+      "natural",
+      "positive",
+      "friendly",
+      "raspy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR",
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-hera-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#949498",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/6258aaeb06eba9c2162dd75dbd991fde26d0624e-200x200.png",
+      "uuid": "f3562f94-6d80-424a-896d-c83ceb5456c4",
+      "version": "2025-04-15.4"
+    },
+    "name": "Hera",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/d31b232c29658b73d3d2e776b2909b957cb460e4.wav",
+    "tags": [
+      "feminine",
+      "smooth",
+      "warm",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-hermes-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#c58dff",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/b34a7c0b0afa6025e80f28efb0cbe7a124e045e0-1024x1024.png",
+      "uuid": "3aa2c8d3-6f3b-48ee-80b0-3d6addbed1c0",
+      "version": "2025-04-15.4"
+    },
+    "name": "Hermes",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/45b252379088fa62c9de50fe57bd9b2aec5eb5ce.wav",
+    "tags": [
+      "masculine",
+      "expressive",
+      "engaging",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "informative"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-hestia-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d53ad263bf679db70338f4203b0427264c220667-400x400.png",
+      "uuid": "7e2db483-8840-4151-8e3f-0997a1846f09",
+      "version": "2025-10-29.0"
+    },
+    "name": "Hestia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/803b683e542e75e501d9311579eea9a284e95e9b.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "caring",
+      "expressive",
+      "friendly",
+      "knowledgeable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview",
+      "Audiobook"
+    ]
+  },
+  {
+    "accent": "australian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-hyperion-en",
+    "languages": [
+      "en",
+      "en-AU"
+    ],
+    "meta": {
+      "color": "#79affa",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/8d1415d9e4f78072348b9c404234dbb1efe2e7da-1024x1024.png",
+      "uuid": "10c196f5-8e0e-464c-a039-7e8bd9e1ab49",
+      "version": "2025-04-15.4"
+    },
+    "name": "Hyperion",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/997c4cabfe0f2bd6fe09fa3b8aaafe05bb815c38.wav",
+    "tags": [
+      "masculine",
+      "caring",
+      "warm",
+      "empathetic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-iris-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#949498",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/1b13e455fbd848a974089e900478a32e4fe503c2-1024x1024.png",
+      "uuid": "20cc841d-c4e8-4817-817f-4e8969862b72",
+      "version": "2025-04-15.4"
+    },
+    "name": "Iris",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/53f993f1f3ec020f5e1e0fd2c3faaa199beed152.wav",
+    "tags": [
+      "feminine",
+      "cheerful",
+      "positive",
+      "approachable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "japanese",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-izanami-ja",
+    "languages": [
+      "ja",
+      "ja-JP"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/53e1be365488fdba5a6a58138290971c31a9f3fd-400x400.png",
+      "uuid": "74f1f833-dc66-4176-b40a-ac851933ce36",
+      "version": "2025-10-29.0"
+    },
+    "name": "Izanami",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/c07845e2af88fb786d32470613271111cc718b13.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "clear",
+      "knowledgeable",
+      "polite",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-janus-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#075433",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/5798be9883a8addf45a0a8b5546d8ce5036e18bc-1024x1024.png",
+      "uuid": "2fb9d9da-e827-4a87-96ae-29b89660850b",
+      "version": "2025-04-15.4"
+    },
+    "name": "Janus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/e3dd69021b81be052384f5ce96c76fa1cab0c0b6.wav",
+    "tags": [
+      "feminine",
+      "southern",
+      "smooth",
+      "trustworthy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "latin american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-javier-es",
+    "languages": [
+      "es",
+      "es-MX"
+    ],
+    "meta": {
+      "color": "#c58dff",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/8ca4c17b71629d54612bbb773495ec16cc42f1cb-372x372.png",
+      "uuid": "aef1526d-48de-4d5f-b618-79f3ce40a471",
+      "version": "2025-10-07.2"
+    },
+    "name": "Javier",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/ee4cacc009ac834034146cb8b719ace32db2d2c1.wav",
+    "tags": [
+      "masculine",
+      "approachable",
+      "calm",
+      "comfortable",
+      "friendly",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling",
+      "casual chat",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "german",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-julius-de",
+    "languages": [
+      "de",
+      "de-DE"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/fd57dd4a43c6c5b7148a6e44658c370833032031-400x400.png",
+      "uuid": "58b553b3-2cd7-428d-89f5-444526da784b",
+      "version": "2025-10-29.0"
+    },
+    "name": "Julius",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/35ce546be29ac57017ca439bc13fbedc42f6102b.wav",
+    "tags": [
+      "masculine",
+      "casual",
+      "cheerful",
+      "engaging",
+      "expressive",
+      "friendly"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Casual Chat",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-juno-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#c58dff",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/9ecc9522397f5f6d3653c6cb7217f494c6cb29d0-1024x1024.png",
+      "uuid": "2b7c5e74-5a36-42a9-908f-b4f6e84aef46",
+      "version": "2025-04-15.4"
+    },
+    "name": "Juno",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/13edcfcc1339af95c4bf054f7e2dd3be17fde576.wav",
+    "tags": [
+      "feminine",
+      "natural",
+      "engaging",
+      "melodic",
+      "breathy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-jupiter-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#fec84b",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/27dbfa932f3178753c094b7859396ea0ec8658f6-1024x1024.png",
+      "uuid": "12866c23-478b-42be-a9e6-604a53aa4f78",
+      "version": "2025-04-15.4"
+    },
+    "name": "Jupiter",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/17e56b3681e258325818b13b1c0b67cd4dc26d58.wav",
+    "tags": [
+      "masculine",
+      "expressive",
+      "knowledgeable",
+      "baritone"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "informative"
+    ]
+  },
+  {
+    "accent": "german",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-kara-de",
+    "languages": [
+      "de",
+      "de-DE"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/db87571d53e1462e8ad0abf9405da5cbc16e9170-400x400.png",
+      "uuid": "5986de36-9030-42e5-bd35-c97b4fee6472",
+      "version": "2025-10-29.0"
+    },
+    "name": "Kara",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/dff08e7163309ce6365b521e97e6adc8c427adaf.wav",
+    "tags": [
+      "feminine",
+      "caring",
+      "empathetic",
+      "expressive",
+      "professional",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Audiobook",
+      "Casual Chat"
+    ]
+  },
+  {
+    "accent": "german",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-lara-de",
+    "languages": [
+      "de",
+      "de-DE"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/61925ce53e5e7878983d82432dfc0c58561301b1-400x400.png",
+      "uuid": "1b198c58-1dd0-4dc6-84a8-74bf76890cb5",
+      "version": "2025-10-29.0"
+    },
+    "name": "Lara",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/cd3189e240f33951543f3bd108e51df21e4596f0.wav",
+    "tags": [
+      "feminine",
+      "caring",
+      "cheerful",
+      "empathetic",
+      "expressive",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-lars-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/4d3efe72a13b1d2c7b73e2be9909f1fff819a965-400x400.png",
+      "uuid": "e54e0e0e-7a76-4721-a67d-1300982d9c1f",
+      "version": "2025-10-29.0"
+    },
+    "name": "Lars",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/7f840d733c545aeaf5e6862f1bb5631708e3f4be.wav",
+    "tags": [
+      "masculine",
+      "breathy",
+      "casual",
+      "comfortable",
+      "sincere",
+      "trustworthy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-leda-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/ab54f7b6f701f45e7c3c3bc7403db99d2572ca19-400x400.png",
+      "uuid": "87f1f5d1-29fa-4e90-bae4-1947b5fb1ef1",
+      "version": "2025-10-29.0"
+    },
+    "name": "Leda",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/c9113e5be102b110c5ca23b3d0ee598a209bdab3.wav",
+    "tags": [
+      "feminine",
+      "caring",
+      "comfortable",
+      "empathetic",
+      "friendly",
+      "sincere"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Interview",
+      "Narration"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-livia-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/1e3a6fe698f478ea7eff7f0eb0e6396a9cfcf061-400x400.png",
+      "uuid": "10337235-d8a1-4354-ad45-38f47814f906",
+      "version": "2025-10-29.0"
+    },
+    "name": "Livia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/0fa008b01cd6d9394d7c46e943b2e0670ce9348c.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "cheerful",
+      "clear",
+      "engaging",
+      "expressive"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Interview",
+      "Audiobook"
+    ]
+  },
+  {
+    "accent": "mexican",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-luciano-es",
+    "languages": [
+      "es",
+      "es-MX"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/8a72c03574392a955d1a9402cbbc3fb0bab3754a-400x400.png",
+      "uuid": "207d45b8-f4f2-404f-9171-857247035f23",
+      "version": "2025-10-07.2"
+    },
+    "name": "Luciano",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/cebad7b542dc4b74c37a0106e7bfe868edba6410.wav",
+    "tags": [
+      "masculine",
+      "charismatic",
+      "cheerful",
+      "energetic",
+      "expressive",
+      "friendly"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Interview",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-luna-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#949498",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d49e915ecdd34e10bab996a3f5b604084c63a79e-301x301.png",
+      "uuid": "ec89b76d-3ae8-4d27-85ae-a3d634931016",
+      "version": "2025-04-15.4"
+    },
+    "name": "Luna",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/9b284985e709ca2e5839e35f119da537ef0b1b31.wav",
+    "tags": [
+      "feminine",
+      "friendly",
+      "natural",
+      "engaging"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-maia-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/4a866727996546ce1dbb3e56d0b26eef6327271d-400x400.png",
+      "uuid": "22e7d878-6dd5-4242-b518-779c3816136f",
+      "version": "2025-10-29.0"
+    },
+    "name": "Maia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/425190f3a7e4f02ef24ac18c53568cef5fb65c25.wav",
+    "tags": [
+      "feminine",
+      "caring",
+      "energetic",
+      "expressive",
+      "professional",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-mars-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ffadd8",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/079a99e89c4b363c92ed1bcc22dd5ecc7268c47b-1024x1024.png",
+      "uuid": "51bdd91d-006e-491d-bac3-42e9b166b67a",
+      "version": "2025-04-15.4"
+    },
+    "name": "Mars",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/308470b81526c7271123f13e7a13ae055ce3d4ae.wav",
+    "tags": [
+      "masculine",
+      "smooth",
+      "patient",
+      "trustworthy",
+      "baritone"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "italian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-melia-it",
+    "languages": [
+      "it",
+      "it-IT"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/067481cc0e170e8b70f1b86fef666d8fed08b071-400x400.png",
+      "uuid": "f6c83f71-634f-4d68-834d-50dcd88f14cf",
+      "version": "2025-10-29.0"
+    },
+    "name": "Melia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/8a7a82eb459a768b5f4f5a76570cbc175272c52a.wav",
+    "tags": [
+      "feminine",
+      "clear",
+      "comfortable",
+      "engaging",
+      "friendly",
+      "natural"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-minerva-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#a1d7fd",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/ede98967145333411a910dfd6e44e1ab88ad5117-1024x1024.png",
+      "uuid": "4a6b998f-d6e6-4b7c-bc34-9c566c584469",
+      "version": "2025-04-15.4"
+    },
+    "name": "Minerva",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/ae741031efa09c570b7f45feef55615bcf5ddf75.wav",
+    "tags": [
+      "feminine",
+      "positive",
+      "friendly",
+      "natural"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-neptune-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#f04438",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/b185efaec9ab9a05414dfef4ef3ee3773157a233-1024x1024.png",
+      "uuid": "34cda5e7-1d78-44c6-848f-159619aa7224",
+      "version": "2025-04-15.4"
+    },
+    "name": "Neptune",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/66dfdf6b13be2c5d45878f70937c8dcdab698e96.wav",
+    "tags": [
+      "masculine",
+      "professional",
+      "patient",
+      "polite"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "peninsular",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-nestor-es",
+    "languages": [
+      "es",
+      "es-ES"
+    ],
+    "meta": {
+      "color": "#ffadd8",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/047a7e1daa57a626cf361bc6d12adb639aefb9a2-372x372.png",
+      "uuid": "bd02af86-1a78-4b9c-930f-dc56221925b2",
+      "version": "2025-10-07.2"
+    },
+    "name": "Néstor",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/a1fd5880d2827686f037212d45f1884b3a5941ed.wav",
+    "tags": [
+      "masculine",
+      "calm",
+      "professional",
+      "approachable",
+      "clear",
+      "confident"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-odysseus-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#f04438",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/f5cc778ec81b02cc7f503c8f24e1dfd0d5b8aa6d-200x200.png",
+      "uuid": "04b578ec-e6c0-42c1-96c1-f36dc8222836",
+      "version": "2025-04-15.4"
+    },
+    "name": "Odysseus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/5b1d6642271993dcd7948b899ac2f157072ab8c2.wav",
+    "tags": [
+      "calm",
+      "smooth",
+      "comfortable",
+      "professional",
+      "masculine"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "advertising"
+    ]
+  },
+  {
+    "accent": "mexican",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-olivia-es",
+    "languages": [
+      "es",
+      "es-MX"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/3223779374bb50df5ec56ed55afc2e9a48d62d26-400x400.png",
+      "uuid": "1077c42a-92d2-4661-9b58-be79db94017a",
+      "version": "2025-10-07.2"
+    },
+    "name": "Olivia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/18b02dbef439f00b084f17f449dd495757265cd7.wav",
+    "tags": [
+      "feminine",
+      "breathy",
+      "calm",
+      "casual",
+      "expressive",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Interview",
+      "Casual Chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-ophelia-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ffadd8",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/ee18fe82ef7b71835e5c3cbc15ee23fcd4287448-1024x1024.png",
+      "uuid": "f52a32b7-1391-452c-b786-09cc50458fd9",
+      "version": "2025-04-15.4"
+    },
+    "name": "Ophelia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/5ab5a5436fd3c668b8f88f964feb26f3f35f1731.wav",
+    "tags": [
+      "feminine",
+      "expressive",
+      "enthusiastic",
+      "cheerful"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-orion-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#a1d7fd",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d596f04ab1324eb65d431a505b20eacc53e539d0-200x200.png",
+      "uuid": "1e149a66-e561-4ed5-9253-d742916083aa",
+      "version": "2025-04-15.4"
+    },
+    "name": "Orion",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/9c98fdfb05214de2d5274908a7cd20aa080d508d.wav",
+    "tags": [
+      "masculine",
+      "approachable",
+      "comfortable",
+      "calm",
+      "polite"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "informative"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-orpheus-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#a1f9d4",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/cc3fccd6814806b153788b5b5791678cd311d1ee-200x200.png",
+      "uuid": "ef9e7f5f-5e8c-4051-99c2-0f690650fd13",
+      "version": "2025-04-15.4"
+    },
+    "name": "Orpheus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/92f91c24288e8a229229cf6876aaeb5dcd655f3c.wav",
+    "tags": [
+      "masculine",
+      "professional",
+      "clear",
+      "confident",
+      "trustworthy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-pandora-en",
+    "languages": [
+      "en",
+      "en-GB"
+    ],
+    "meta": {
+      "color": "#fedf89",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/75e174fc9a0655427f4cd3b49b58ce4bd20d13e1-1024x1024.png",
+      "uuid": "fa95fd3d-06dd-4893-a975-87f597883dae",
+      "version": "2025-04-15.4"
+    },
+    "name": "Pandora",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/0d2396968e2e73a7ff85e843fa4061f03c43e9a4.wav",
+    "tags": [
+      "feminine",
+      "smooth",
+      "calm",
+      "melodic",
+      "breathy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-phoebe-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ee028c",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/5a3b1e5ca4c74f87b4c4b3f786d84a7d91797386-1024x1024.png",
+      "uuid": "ce05c9e7-55fa-4ec8-aa12-3299c9bf3384",
+      "version": "2025-04-15.4"
+    },
+    "name": "Phoebe",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/61c34319bf73072046d927f5863eb117c5c293de.wav",
+    "tags": [
+      "feminine",
+      "energetic",
+      "warm",
+      "casual"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-pluto-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#027a48",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/abdf015e4335acebcd667ef6acceac0f464f1306-200x200.png",
+      "uuid": "961cb149-0a66-423d-b81e-cd64d46cc52e",
+      "version": "2025-04-15.4"
+    },
+    "name": "Pluto",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/52f59787406510cc21fc2af13e65917506b06616.wav",
+    "tags": [
+      "masculine",
+      "smooth",
+      "calm",
+      "empathetic",
+      "baritone"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview",
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-rhea-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/26f28b18f434930794e41ec623524699515b3059-400x400.png",
+      "uuid": "18bbb52b-f936-4be5-b972-ca0c145c2d3a",
+      "version": "2025-10-29.0"
+    },
+    "name": "Rhea",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/6d25e09867ffa467e0118e0b9385c6f380f4be01.wav",
+    "tags": [
+      "feminine",
+      "caring",
+      "knowledgeable",
+      "positive",
+      "smooth",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-roman-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/e29353e1d191d3a17df5112e1ee9cd20cf51df66-400x400.png",
+      "uuid": "3bb697a4-e0c2-4da1-b118-350c16df5f69",
+      "version": "2025-10-29.0"
+    },
+    "name": "Roman",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/0ea0699111f05942b47371a842b4b6fc87684291.wav",
+    "tags": [
+      "masculine",
+      "calm",
+      "casual",
+      "deep",
+      "natural",
+      "patient"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat",
+      "Customer Service",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "dutch",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-sander-nl",
+    "languages": [
+      "nl",
+      "nl-NL"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/0cfe6e2d00b08622107cabd5fd76415786672276-400x400.png",
+      "uuid": "26cf8de4-2cb0-4602-b790-89112449983b",
+      "version": "2025-10-29.0"
+    },
+    "name": "Sander",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/027463bc4deb929e777f3276b7b19d186621fc7d.wav",
+    "tags": [
+      "masculine",
+      "calm",
+      "clear",
+      "deep",
+      "professional",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Interview",
+      "Commercial",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-saturn-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#fec84b",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/af7255f710ffa4983a3121c131f1e7eb0b116c55-1024x1024.png",
+      "uuid": "9e94b3e7-560a-48a7-a19b-d4c64af99553",
+      "version": "2025-04-15.4"
+    },
+    "name": "Saturn",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/22afa7dbf220c2c782fdedb250eebf1f7ceb013c.wav",
+    "tags": [
+      "masculine",
+      "knowledgeable",
+      "confident",
+      "baritone"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "latin american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-selena-es",
+    "languages": [
+      "es",
+      "es-419"
+    ],
+    "meta": {
+      "color": "#ee028c",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/ae0b9cc79617221b4c6678b513405e9c479c84c3-373x373.png",
+      "uuid": "a72db4dc-c2ad-4e95-a98b-4d81f9db7961",
+      "version": "2025-10-07.2"
+    },
+    "name": "Selena",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/b1f9edf4e7aef877c180945d379712bdd260ea19.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "calm",
+      "casual",
+      "friendly",
+      "positive"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "informative"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-selene-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#f04438",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/494e64aff59485254fa76ccd8b46675668d22d4b-1024x1024.png",
+      "uuid": "af2622e3-2ade-4751-a377-5c873b2863e6",
+      "version": "2025-04-15.4"
+    },
+    "name": "Selene",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/cebe72725a11e7c576de3f851b53d71616371f2a.wav",
+    "tags": [
+      "feminine",
+      "expressive",
+      "engaging",
+      "energetic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "informative"
+    ]
+  },
+  {
+    "accent": "peninsular",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-silvia-es",
+    "languages": [
+      "es",
+      "es-ES"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/3ce0ecf594c289e6b356d983589a6de12262a548-400x400.png",
+      "uuid": "0d157931-1b18-40b0-a587-8c216c437a60",
+      "version": "2025-10-07.2"
+    },
+    "name": "Silvia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/44dc99e4f494a4d1b62ae606f8833081881974e6.wav",
+    "tags": [
+      "feminine",
+      "charismatic",
+      "clear",
+      "expressive",
+      "natural",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Interview",
+      "Casual Chat",
+      "Customer Service"
+    ]
+  },
+  {
+    "accent": "mexican",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-sirio-es",
+    "languages": [
+      "es",
+      "es-MX"
+    ],
+    "meta": {
+      "color": "#a1d7fd",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/50bc801d0af208275c3f67bcad56ef9f571fcf1f-372x372.png",
+      "uuid": "d0fcb546-de26-4df1-8c71-d24320884d27",
+      "version": "2025-10-07.2"
+    },
+    "name": "Sirio",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/4987b6351f7f8bb6711f6e7b9f453b730ee09254.wav",
+    "tags": [
+      "masculine",
+      "breathy",
+      "confident",
+      "energetic",
+      "professional",
+      "raspy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat",
+      "interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-thalia-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#ffe699",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d4880116146588ab7b9f2c5923cb308a93c3eca9-1024x1024.png",
+      "uuid": "245b8e7b-d1ae-4de5-92bc-570f6fec666b",
+      "version": "2025-04-15.4"
+    },
+    "name": "Thalia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/e8725b8d3ec0a0bd924c13c84aaeb3acaa0adaac.wav",
+    "tags": [
+      "feminine",
+      "clear",
+      "confident",
+      "energetic",
+      "enthusiastic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat",
+      "customer service",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "australian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-theia-en",
+    "languages": [
+      "en",
+      "en-AU"
+    ],
+    "meta": {
+      "color": "#fec84b",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/b6187bc49c01092830490966ecdc7bde260de642-1024x1024.png",
+      "uuid": "a9040dbd-c7ca-4692-beba-fd016090a857",
+      "version": "2025-04-15.4"
+    },
+    "name": "Theia",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/662085e396fa53bb888e492ec5453dde9bb22674.wav",
+    "tags": [
+      "feminine",
+      "expressive",
+      "polite",
+      "sincere"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "informative"
+    ]
+  },
+  {
+    "accent": "japanese",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-uzume-ja",
+    "languages": [
+      "ja",
+      "ja-JP"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/3f27556c6082c3b0a11e154a739f8fbee4a6c9c2-400x400.png",
+      "uuid": "8b22805b-997b-475a-9d68-283b3d6cddf0",
+      "version": "2025-10-29.0"
+    },
+    "name": "Uzume",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/103f891fa0d06bbd4a0a7d49d70a36b39ce4c9ec.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "clear",
+      "polite",
+      "professional",
+      "trustworthy"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Interview",
+      "IVR",
+      "Commercial"
+    ]
+  },
+  {
+    "accent": "latin american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-valentina-es",
+    "languages": [
+      "es",
+      "es-419"
+    ],
+    "meta": {
+      "color": "#c58dff",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/f083687f93934459b0b3252403070f9cce67001f-372x372.png",
+      "uuid": "1cb7924a-c56b-4265-b533-f041f0d388aa",
+      "version": "2025-05-23.1"
+    },
+    "name": "valentina",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/0f756aabc2bea303f44404e5389fe557498aa59e.wav",
+    "tags": [
+      "feminine",
+      "approachable",
+      "friendly",
+      "casual",
+      "natural",
+      "cheerful"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "mexican",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-valerio-es",
+    "languages": [
+      "es",
+      "es-MX"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/541dcb11c88ac21364cb5faaee324c81ad28e434-400x400.png",
+      "uuid": "8a1f3d15-7176-41d6-8255-9878656d55cd",
+      "version": "2025-10-07.2"
+    },
+    "name": "Valerio",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/3a026a40abe8b1b103052c9dd0b96e60d4e6c006.wav",
+    "tags": [
+      "masculine",
+      "deep",
+      "knowledgeable",
+      "natural",
+      "polite",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Casual Chat",
+      "Customer Service",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-vesta-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#149afb",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/b8b613efccfc11954a8abeb4cdf712c0d1c82429-1024x1024.png",
+      "uuid": "3f69587e-162c-41e7-8c69-bfbf86c79d19",
+      "version": "2025-04-15.4"
+    },
+    "name": "Vesta",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/8595c997fb3aa8bdd4b0de085f7f5f68422dc1be.wav",
+    "tags": [
+      "feminine",
+      "natural",
+      "expressive",
+      "patient",
+      "empathetic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "interview",
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "german",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-2-viktoria-de",
+    "languages": [
+      "de",
+      "de-DE"
+    ],
+    "meta": {
+      "color": "#24a3e3",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/58279447a79fd9d2aab3cc48d90dd67e31d5c54b-400x400.png",
+      "uuid": "01d126e4-f548-4bbb-99f3-05451ef68cc8",
+      "version": "2025-10-29.0"
+    },
+    "name": "Viktoria",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/880254f7db6af9fa9b03b72f2c6f74fa45885199.wav",
+    "tags": [
+      "feminine",
+      "charismatic",
+      "cheerful",
+      "enthusiastic",
+      "friendly",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer Service",
+      "Audiobook",
+      "Interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura-2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-2-zeus-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#c58dff",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/ff2ec9fd577de53944b6a7b1ed7bd276513926c5-1024x1024.png",
+      "uuid": "f4340eda-5024-44ec-9251-fb5269dba47b",
+      "version": "2025-04-15.4"
+    },
+    "name": "Zeus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/b744984f936b70c1af8998911e1c166a843b4711.wav",
+    "tags": [
+      "masculine",
+      "deep",
+      "trustworthy",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "irish",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-angus-en",
+    "languages": [
+      "en",
+      "en-IE"
+    ],
+    "meta": {
+      "color": "#ba80f5",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/f57abb749b177d33761f80ae9fba5ac54345f72a-144x144.png",
+      "uuid": "b50880e3-4e2e-4e53-ba27-ea0472bf2cf4",
+      "version": "2024-11-19.0"
+    },
+    "name": "Angus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/f45d7dd5526a1661929f39943dbf3771e2203855.wav",
+    "tags": [
+      "masculine",
+      "casual",
+      "friendly",
+      "patient"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual conversation",
+      "interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-arcas-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#dd0070",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/bd0ca252f0d3bef4ebf7dc902f20460bbc5de8d4-200x200.png",
+      "uuid": "d386c7c6-ca43-42bc-b219-349fa6ef93fe",
+      "version": "2024-11-19.0"
+    },
+    "name": "Arcas",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/af08e65fa6b208c3dbdeb23fc0e9c3424ae835f6.mp3",
+    "tags": [
+      "masculine",
+      "natural",
+      "smooth",
+      "clear"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview",
+      "storytelling"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-asteria-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#7800ed",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/17c32bb6a8e61d3d139ab6218635aaaba2d2ec14-144x144.png",
+      "uuid": "ecb76e9d-f2db-4127-8060-79b05590d22f",
+      "version": "2024-11-19.0"
+    },
+    "name": "Asteria",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/fcd00b53e0482cdd7cde043c94c84adccab223a3.wav",
+    "tags": [
+      "feminine",
+      "clear",
+      "confident",
+      "knowledgeable"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-athena-en",
+    "languages": [
+      "en",
+      "en-GB"
+    ],
+    "meta": {
+      "color": "#ffe699",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/46d4fb3f1b5a25b3df02a83a0faa09e800d62ef7-1024x1024.png",
+      "uuid": "d6aca339-d0e3-4328-bb46-2535a3b3efc2",
+      "version": "2024-11-19.0"
+    },
+    "name": "Athena",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/94246ae78f333423442edf8c4c93566e836a12f1.wav",
+    "tags": [
+      "feminine",
+      "smooth",
+      "calm",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "informative"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-helios-en",
+    "languages": [
+      "en",
+      "en-GB"
+    ],
+    "meta": {
+      "color": "#f185be",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/82ae45e14c7f6ab776de643f4da5779fff93252c-144x144.png",
+      "uuid": "cf0cef61-cc9a-40b3-ab7e-313798957798",
+      "version": "2024-11-19.0"
+    },
+    "name": "Helios",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/9b0c74e03153b7b9efce7b1ae9694d4842c1e647.wav",
+    "tags": [
+      "masculine",
+      "postive",
+      "comfortable",
+      "polite"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-hera-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#f185be",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/6258aaeb06eba9c2162dd75dbd991fde26d0624e-200x200.png",
+      "uuid": "ae7e7ca9-b193-4fea-ac0b-f1c79517a5f7",
+      "version": "2024-11-19.0"
+    },
+    "name": "Hera",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/e9d3fe1b11e8ffbbd56ae0a56d324652f24f4327.wav",
+    "tags": [
+      "feminine",
+      "deep",
+      "smooth",
+      "warm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-luna-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#949498",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d49e915ecdd34e10bab996a3f5b604084c63a79e-301x301.png",
+      "uuid": "2ec8db75-8e94-4ef2-a722-823c14465a33",
+      "version": "2024-11-19.0"
+    },
+    "name": "Luna",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/17d9a3faa3c6097605140779a04be53d1522686c.wav",
+    "tags": [
+      "feminine",
+      "friendly",
+      "natural",
+      "engaging"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "casual conversation"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-orion-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#83c4fb",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/d596f04ab1324eb65d431a505b20eacc53e539d0-200x200.png",
+      "uuid": "cf0519a2-72b5-4847-9645-8d910cbbbee1",
+      "version": "2024-11-19.0"
+    },
+    "name": "Orion",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/40d8449a09bafebf02901c05aa198b42a3f7b498.mp3",
+    "tags": [
+      "masculine",
+      "approachable",
+      "comfortable",
+      "calm"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-orpheus-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#a1f9d4",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/cc3fccd6814806b153788b5b5791678cd311d1ee-200x200.png",
+      "uuid": "c236648a-94cd-4621-bb18-e938d97fe605",
+      "version": "2024-11-19.0"
+    },
+    "name": "Orpheus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/ad2c792bcbdb2cc600345547c9afecf9b0cfaad8.wav",
+    "tags": [
+      "masculine",
+      "clear",
+      "trustworthy",
+      "professional"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-perseus-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#00cf56",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/9eaf67a38d4bb335c14ef7293b4189f0d4aee51a-144x144.jpg",
+      "uuid": "e2e5cac7-1e3e-4c6c-8703-d1ba0eddb781",
+      "version": "2024-11-19.0"
+    },
+    "name": "Perseus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/a0575d49b32988c95068f44ef76eb873a754e622.wav",
+    "tags": [
+      "masculine",
+      "expressive",
+      "melodic",
+      "charismatic"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer service",
+      "advertising"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aura-stella-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#00cf56",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/708d358fbab2e16c6c7b81edb024d2e7071ad349-144x144.png",
+      "uuid": "0c0a6dc2-1659-486b-a328-7666b8b7ab05",
+      "version": "2024-11-19.0"
+    },
+    "name": "Stella",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/66f5f09b4447c2e1502004976fbe2582b7319d70.wav",
+    "tags": [
+      "feminine",
+      "raspy",
+      "engaging",
+      "cheerful"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "interview"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "aura"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aura-zeus-en",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "color": "#949498",
+      "image": "https://cdn.sanity.io/images/0dsbfl6j/production/ff2ec9fd577de53944b6a7b1ed7bd276513926c5-1024x1024.png",
+      "uuid": "c7d16546-b83c-40d2-8cd0-a308f352ea50",
+      "version": "2024-11-19.0"
+    },
+    "name": "Zeus",
+    "preview_url": "https://cdn.sanity.io/files/0dsbfl6j/production/28f2b55e04a419bcc2d0237ee655913d8509be62.wav",
+    "tags": [
+      "masculine",
+      "deep",
+      "trustworthy",
+      "smooth"
+    ],
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "IVR"
+    ]
+  }
+]

@@ -2,11 +2,7 @@
 
 from __future__ import annotations
 
-import pytest
-
 from tests.conftest import DEPRECATED_PROVIDER, TEST_PROVIDER
-
-pytestmark = pytest.mark.usefixtures("seeded")
 
 MODELS = f"/v1/providers/{TEST_PROVIDER}/models"
 VOICES = f"/v1/providers/{TEST_PROVIDER}/voices"
@@ -73,14 +69,14 @@ async def test_models_region_matches_global_wildcard_but_not_unknown(client):
     assert (await client.get(MODELS, params={"region": "mars"})).status_code == 400
 
 
-async def test_models_updated_since_auto_includes_deprecated(client, seeded):
-    since = seeded["seeded_at"].isoformat()
+async def test_models_updated_since_auto_includes_deprecated(client):
+    since = "2026-10-01T00:00:00Z"
     ids = _ids(await client.get(MODELS, params={"updated_since": since}), "model_id")
-    assert "tts-old" in ids
+    assert ids == {"tts-old"}  # only it changed after `since`, and deprecated rows auto-included
     ids = _ids(await client.get(MODELS, params={"updated_since": since, "include_deprecated": "false"}), "model_id")
-    assert "tts-old" not in ids
-    ids = _ids(await client.get(MODELS, params={"updated_since": "2999-01-01T00:00:00Z"}), "model_id")
     assert ids == set()
+    ids = _ids(await client.get(MODELS, params={"updated_since": "2019-01-01"}), "model_id")
+    assert ids == {"stt-global", "stt-eu", "tts-main", "tts-old"}
 
 
 async def test_models_pagination(client):
@@ -136,3 +132,56 @@ async def test_catalog_voices_provider_filter(client):
     assert _ids(r, "voice_id") == {"v-any", "v-hi"}
     r = await client.get("/v1/voices", params={"provider": DEPRECATED_PROVIDER})
     assert _ids(r, "voice_id") == set()
+
+
+# ── v2 additions ─────────────────────────────────────────────────────────────
+
+async def test_models_language_base_matching(client):
+    # "de" matches de-DE; "*" models always match
+    assert _ids(await client.get(MODELS, params={"language": "de"}), "model_id") == {"stt-eu", "stt-global"}
+    assert _ids(await client.get(MODELS, params={"language": "en"}), "model_id") == {"stt-global", "tts-main"}
+
+
+async def test_voices_language_base_matching(client):
+    assert _ids(await client.get(VOICES, params={"language": "hi"}), "voice_id") == {"v-any", "v-hi"}
+
+
+async def test_voice_search_matches_tags(client):
+    assert _ids(await client.get(VOICES, params={"search": "warm"}), "voice_id") == {"v-hi"}
+
+
+async def test_invalid_enum_params_400(client):
+    assert (await client.get(MODELS, params={"type": "video"})).status_code == 400
+    assert (await client.get(VOICES, params={"gender": "robot"})).status_code == 400
+
+
+async def test_get_single_model_and_voice(client):
+    r = await client.get(f"{MODELS}/tts-main")
+    assert r.status_code == 200 and r.json()["pricing"]["unit"] == "character"
+    assert (await client.get(f"{MODELS}/tts-old")).json()["lifecycle"] == "deprecated"
+    assert (await client.get(f"{MODELS}/nope")).status_code == 404
+    assert (await client.get(f"{VOICES}/v-hi")).json()["accent"] == "indian"
+    assert (await client.get(f"{VOICES}/nope")).status_code == 404
+
+
+async def test_ids_are_stable_uuids(client):
+    a = (await client.get(f"{MODELS}/tts-main")).json()["id"]
+    b = (await client.get(MODELS, params={"type": "tts"})).json()["data"][0]["id"]
+    assert a == b and len(a) == 36
+
+
+async def test_catalog_export_and_etag(client):
+    r = await client.get("/v1/catalog.json")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["schema_version"] == 2
+    ids = {p["provider_id"] for p in body["providers"]}
+    assert {TEST_PROVIDER, DEPRECATED_PROVIDER} <= ids
+    etag = r.headers["etag"]
+    assert (await client.get("/v1/catalog.json", headers={"If-None-Match": etag})).status_code == 304
+    assert (await client.get(MODELS, headers={"If-None-Match": etag})).status_code == 304
+
+
+async def test_provider_counts(client):
+    p = (await client.get(f"/v1/providers/{TEST_PROVIDER}")).json()
+    assert p["model_count"] == 3 and p["voice_count"] == 3

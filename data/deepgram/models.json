@@ -1,0 +1,2067 @@
+[
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "conversationalai",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2021-11-10.1"
+    },
+    "name": "Conversationalai",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "enhanced-automotive",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "polaris",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "1983-02-23.4285"
+    },
+    "name": "Enhanced Automotive",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "enhanced-drivethru",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "polaris",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "1983-05-08.23433"
+    },
+    "name": "Enhanced Drivethru",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "enhanced-finance",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "polaris",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-07-27.30495"
+    },
+    "name": "Enhanced Finance",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "enhanced-general",
+    "languages": [
+      "da",
+      "de",
+      "en",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "fr",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "sv",
+      "ta",
+      "taq"
+    ],
+    "meta": {
+      "architecture": "polaris",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2023-11-14.0"
+    },
+    "name": "Enhanced General",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "enhanced-meeting",
+    "languages": [
+      "en",
+      "en-IN",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "polaris",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-06-27.0"
+    },
+    "name": "Enhanced Meeting",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "enhanced-phonecall",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "polaris",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-05-12.1"
+    },
+    "name": "Enhanced Phonecall",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "finance",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2021-02-26.2"
+    },
+    "name": "Finance",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "general",
+    "languages": [
+      "da",
+      "de",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "fr",
+      "fr-CA",
+      "hi",
+      "hi-Latn",
+      "id",
+      "id-ID",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ru",
+      "sv",
+      "tr",
+      "uk",
+      "zh",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2024-01-26.8851"
+    },
+    "name": "General",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "general-polaris",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "polaris",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-04-26.1"
+    },
+    "name": "General Polaris",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "meeting",
+    "languages": [
+      "en",
+      "en-IN",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-06-27.0"
+    },
+    "name": "Meeting",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-atc",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2024-09-13.26200"
+    },
+    "name": "Nova 2 Atc",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-automotive",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-06.30267"
+    },
+    "name": "Nova 2 Automotive",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-conversationalai",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-06.29268"
+    },
+    "name": "Nova 2 Conversationalai",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-drivethru",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-07.32521"
+    },
+    "name": "Nova 2 Drivethru",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-ea",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2023-09-18.22988"
+    },
+    "name": "Nova 2 Ea",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-finance",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-04.22235"
+    },
+    "name": "Nova 2 Finance",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-general",
+    "languages": [
+      "bg",
+      "ca",
+      "cs",
+      "da",
+      "da-DK",
+      "de",
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "el",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-AR",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "et",
+      "fi",
+      "fr",
+      "fr-BE",
+      "fr-CA",
+      "fr-CH",
+      "fr-FR",
+      "hi",
+      "hi-Latn",
+      "hu",
+      "id",
+      "it",
+      "it-IT",
+      "ja",
+      "ja-JP",
+      "ko",
+      "ko-KR",
+      "lt",
+      "lv",
+      "ms",
+      "ms-MY",
+      "nl",
+      "nl-BE",
+      "nl-NL",
+      "no",
+      "no-NO",
+      "pl",
+      "pl-PL",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "ru-RU",
+      "sk",
+      "sv",
+      "sv-SE",
+      "th",
+      "th-TH",
+      "tr",
+      "tr-TR",
+      "uk",
+      "vi",
+      "zh",
+      "zh-CN",
+      "zh-HK",
+      "zh-Hans",
+      "zh-Hant",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": true,
+      "version": "2025-03-31.17829"
+    },
+    "name": "Nova 2 General",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-medical",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-IE",
+      "en-IN",
+      "en-MY",
+      "en-NZ",
+      "en-PH",
+      "en-US",
+      "en-ZA"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-06-11.4692"
+    },
+    "name": "Nova 2 Medical",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-meeting",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-07.29982"
+    },
+    "name": "Nova 2 Meeting",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-phonecall",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-07.8919"
+    },
+    "name": "Nova 2 Phonecall",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-video",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-06.2916"
+    },
+    "name": "Nova 2 Video",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-2-voicemail",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2024-02-06.32189"
+    },
+    "name": "Nova 2 Voicemail",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-3-general",
+    "is_default": true,
+    "languages": [
+      "ab",
+      "ady",
+      "af",
+      "af-ZA",
+      "ak",
+      "am",
+      "ar",
+      "ar-AE",
+      "ar-DZ",
+      "ar-EG",
+      "ar-IQ",
+      "ar-IR",
+      "ar-JO",
+      "ar-KW",
+      "ar-LB",
+      "ar-MA",
+      "ar-PS",
+      "ar-QA",
+      "ar-SA",
+      "ar-SD",
+      "ar-SY",
+      "ar-TD",
+      "ar-TN",
+      "as",
+      "as-IN",
+      "az",
+      "be",
+      "be-BY",
+      "bg",
+      "bg-BG",
+      "bn",
+      "bn-IN",
+      "brx",
+      "bs",
+      "bs-BA",
+      "ca",
+      "ckb",
+      "cs",
+      "cs-CZ",
+      "cy",
+      "da",
+      "da-DK",
+      "dav",
+      "de",
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "dv",
+      "el",
+      "en",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-AR",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "et",
+      "et-EE",
+      "eu",
+      "fa",
+      "fi",
+      "fr",
+      "fr-BE",
+      "fr-CA",
+      "fr-CH",
+      "fr-FR",
+      "gl",
+      "gu",
+      "gu-IN",
+      "ha",
+      "he",
+      "hi",
+      "hr",
+      "hr-HR",
+      "hu",
+      "hu-HU",
+      "hy",
+      "hy-AM",
+      "id",
+      "id-ID",
+      "is",
+      "is-IS",
+      "it",
+      "it-IT",
+      "ja",
+      "ja-JP",
+      "ka",
+      "ka-GE",
+      "kab",
+      "kbd",
+      "kk",
+      "kk-KZ",
+      "kln",
+      "kmr",
+      "kn",
+      "kn-IN",
+      "ko",
+      "ko-KR",
+      "kok",
+      "ks",
+      "ky",
+      "lg",
+      "lt",
+      "lt-LT",
+      "luo",
+      "lv",
+      "lv-LV",
+      "mhr",
+      "mk",
+      "mk-MK",
+      "ml",
+      "mn",
+      "mr",
+      "mr-IN",
+      "ms",
+      "ms-MY",
+      "ms-SG",
+      "nb",
+      "ne",
+      "nl",
+      "nl-BE",
+      "nl-NL",
+      "no",
+      "no-NO",
+      "pa",
+      "pa-IN",
+      "pl",
+      "pl-PL",
+      "ps",
+      "ps-AF",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "ru-Latn",
+      "ru-RU",
+      "rw",
+      "sd",
+      "si",
+      "sk",
+      "sk-SK",
+      "sl",
+      "sl-SI",
+      "sl-SL",
+      "sq",
+      "sr",
+      "sr-RS",
+      "sv",
+      "sv-SE",
+      "sw",
+      "ta",
+      "ta-IN",
+      "te",
+      "te-IN",
+      "th",
+      "th-TH",
+      "tl",
+      "tn",
+      "tr",
+      "tr-TR",
+      "ug",
+      "uk",
+      "ur",
+      "ur-PK",
+      "uz",
+      "uz-UZ",
+      "ve",
+      "vi",
+      "vi-VN",
+      "xh",
+      "yo",
+      "zh",
+      "zh-CN",
+      "zh-HK",
+      "zh-Hans",
+      "zh-Hant",
+      "zh-TW",
+      "zu"
+    ],
+    "meta": {
+      "architecture": "nova-3",
+      "formatted_output": false,
+      "multilingual": true,
+      "version": "2026-11-13.32878"
+    },
+    "name": "Nova 3 General",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-3-medical",
+    "languages": [
+      "de",
+      "de-AT",
+      "de-DE",
+      "en",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-IE",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "fr",
+      "hi",
+      "it",
+      "ja",
+      "nl",
+      "pt",
+      "ru"
+    ],
+    "meta": {
+      "architecture": "nova-3",
+      "formatted_output": false,
+      "multilingual": true,
+      "version": "2026-10-06.34541"
+    },
+    "name": "Nova 3 Medical",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-3-pharma",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-IE",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova-3",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2026-06-05.22845"
+    },
+    "name": "Nova 3 Pharma",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-drivethru",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "1983-05-08.6551"
+    },
+    "name": "Nova Drivethru",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-general",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "hi-Latn"
+    ],
+    "meta": {
+      "architecture": "nova-2",
+      "formatted_output": true,
+      "multilingual": false,
+      "version": "2023-10-19.24950"
+    },
+    "name": "Nova General",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-medical",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2023-07-13.2818"
+    },
+    "name": "Nova Medical",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-phonecall",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2023-03-13.31000"
+    },
+    "name": "Nova Phonecall",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "nova-voicemail",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "nova",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "1983-05-07.12030"
+    },
+    "name": "Nova Voicemail",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "phonecall",
+    "languages": [
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2024-01-26.33607"
+    },
+    "name": "Phonecall",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "phoneme",
+    "languages": [
+      "bg",
+      "ca",
+      "cs",
+      "da",
+      "da-DK",
+      "de",
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "el",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-AR",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "et",
+      "fi",
+      "fr",
+      "fr-BE",
+      "fr-CA",
+      "fr-CH",
+      "fr-FR",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lt",
+      "lv",
+      "ms",
+      "ms-MY",
+      "ms-SG",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ro-MD",
+      "ru",
+      "sk",
+      "sv",
+      "sv-SE",
+      "ta",
+      "taq",
+      "th",
+      "th-TH",
+      "tr",
+      "uk",
+      "vi",
+      "zh",
+      "zh-CN",
+      "zh-HK",
+      "zh-Hans",
+      "zh-Hant",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2024-09-04.16540"
+    },
+    "name": "Phoneme",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "video",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2021-11-09.1"
+    },
+    "name": "Video",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "voicemail",
+    "languages": [
+      "en",
+      "en-US"
+    ],
+    "meta": {
+      "architecture": "base",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2021-08-11.1"
+    },
+    "name": "Voicemail",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "whisper-base",
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "as",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bo",
+      "br",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fo",
+      "fr",
+      "fr-CA",
+      "gl",
+      "gu",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hi-Latn",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "id-ID",
+      "is",
+      "it",
+      "ja",
+      "jw",
+      "ka",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "la",
+      "lb",
+      "ln",
+      "lo",
+      "lt",
+      "lv",
+      "mg",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "my",
+      "ne",
+      "nl",
+      "nn",
+      "no",
+      "oc",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "sa",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "su",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "th",
+      "tk",
+      "tl",
+      "tr",
+      "tt",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "yi",
+      "yo",
+      "zh",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "whisper",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-09-21.8"
+    },
+    "name": "Whisper Base",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "whisper-large",
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "as",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bo",
+      "br",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fo",
+      "fr",
+      "fr-CA",
+      "gl",
+      "gu",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hi-Latn",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "id-ID",
+      "is",
+      "it",
+      "ja",
+      "jw",
+      "ka",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "la",
+      "lb",
+      "ln",
+      "lo",
+      "lt",
+      "lv",
+      "mg",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "my",
+      "ne",
+      "nl",
+      "nn",
+      "no",
+      "oc",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "sa",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "su",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "th",
+      "tk",
+      "tl",
+      "tr",
+      "tt",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "yi",
+      "yo",
+      "zh",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "whisper",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-12-08.0"
+    },
+    "name": "Whisper Large",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "whisper-medium",
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "as",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bo",
+      "br",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fo",
+      "fr",
+      "fr-CA",
+      "gl",
+      "gu",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hi-Latn",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "id-ID",
+      "is",
+      "it",
+      "ja",
+      "jw",
+      "ka",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "la",
+      "lb",
+      "ln",
+      "lo",
+      "lt",
+      "lv",
+      "mg",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "my",
+      "ne",
+      "nl",
+      "nn",
+      "no",
+      "oc",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "sa",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "su",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "th",
+      "tk",
+      "tl",
+      "tr",
+      "tt",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "yi",
+      "yo",
+      "zh",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "whisper",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-09-21.5"
+    },
+    "name": "Whisper Medium",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "whisper-small",
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "as",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bo",
+      "br",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fo",
+      "fr",
+      "fr-CA",
+      "gl",
+      "gu",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hi-Latn",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "id-ID",
+      "is",
+      "it",
+      "ja",
+      "jw",
+      "ka",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "la",
+      "lb",
+      "ln",
+      "lo",
+      "lt",
+      "lv",
+      "mg",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "my",
+      "ne",
+      "nl",
+      "nn",
+      "no",
+      "oc",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "sa",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "su",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "th",
+      "tk",
+      "tl",
+      "tr",
+      "tt",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "yi",
+      "yo",
+      "zh",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "whisper",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-09-21.3"
+    },
+    "name": "Whisper Small",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "first_seen": "2026-11-16",
+    "id": "whisper-tiny",
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "as",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bo",
+      "br",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-NZ",
+      "en-US",
+      "es",
+      "es-419",
+      "es-Latam",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fo",
+      "fr",
+      "fr-CA",
+      "gl",
+      "gu",
+      "ha",
+      "haw",
+      "he",
+      "hi",
+      "hi-Latn",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "id-ID",
+      "is",
+      "it",
+      "ja",
+      "jw",
+      "ka",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "la",
+      "lb",
+      "ln",
+      "lo",
+      "lt",
+      "lv",
+      "mg",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "my",
+      "ne",
+      "nl",
+      "nn",
+      "no",
+      "oc",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "sa",
+      "sd",
+      "si",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "su",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "th",
+      "tk",
+      "tl",
+      "tr",
+      "tt",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "yi",
+      "yo",
+      "zh",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "meta": {
+      "architecture": "whisper",
+      "formatted_output": false,
+      "multilingual": false,
+      "version": "2022-09-21.1"
+    },
+    "name": "Whisper Tiny",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "first_seen": "2026-11-16",
+    "id": "aura",
+    "languages": [
+      "en",
+      "en-GB",
+      "en-IE",
+      "en-US"
+    ],
+    "name": "Aura",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "first_seen": "2026-11-16",
+    "id": "aura-2",
+    "is_default": true,
+    "languages": [
+      "de",
+      "de-DE",
+      "en",
+      "en-AU",
+      "en-GB",
+      "en-PH",
+      "en-US",
+      "es",
+      "es-419",
+      "es-AR",
+      "es-CO",
+      "es-ES",
+      "es-MX",
+      "fr",
+      "fr-FR",
+      "it",
+      "it-IT",
+      "ja",
+      "ja-JP",
+      "nl",
+      "nl-NL"
+    ],
+    "name": "Aura 2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.deepgram.com/v1/models"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

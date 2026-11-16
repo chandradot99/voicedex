@@ -1,0 +1,254 @@
+{
+  "$defs": {
+    "Compliance": {
+      "enum": [
+        "soc2",
+        "hipaa",
+        "gdpr",
+        "iso27001",
+        "pci_dss"
+      ],
+      "title": "Compliance",
+      "type": "string"
+    },
+    "ModelType": {
+      "enum": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "title": "ModelType",
+      "type": "string"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "as_of": {
+          "format": "date",
+          "title": "As Of",
+          "type": "string"
+        },
+        "method": {
+          "$ref": "#/$defs/ProvenanceMethod"
+        },
+        "urls": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Urls",
+          "type": "array"
+        }
+      },
+      "required": [
+        "method",
+        "as_of"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "ProvenanceMethod": {
+      "enum": [
+        "api",
+        "docs",
+        "manual"
+      ],
+      "title": "ProvenanceMethod",
+      "type": "string"
+    },
+    "ProviderLinks": {
+      "additionalProperties": false,
+      "properties": {
+        "api_reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Api Reference"
+        },
+        "docs": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Docs"
+        },
+        "pricing": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pricing"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        }
+      },
+      "title": "ProviderLinks",
+      "type": "object"
+    },
+    "Region": {
+      "enum": [
+        "us",
+        "eu",
+        "asia",
+        "global"
+      ],
+      "title": "Region",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "api_urls": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Api Urls",
+      "type": "array"
+    },
+    "compliance": {
+      "items": {
+        "$ref": "#/$defs/Compliance"
+      },
+      "title": "Compliance",
+      "type": "array"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    },
+    "docs_urls": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Docs Urls",
+      "type": "array"
+    },
+    "id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "last_synced": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Last Synced"
+    },
+    "links": {
+      "$ref": "#/$defs/ProviderLinks"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "regions": {
+      "items": {
+        "$ref": "#/$defs/Region"
+      },
+      "title": "Regions",
+      "type": "array"
+    },
+    "source": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ProvenanceMethod"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source"
+    },
+    "status": {
+      "default": "active",
+      "title": "Status",
+      "type": "string"
+    },
+    "type": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ModelType"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "Type"
+    },
+    "voices_source": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Provenance"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "website": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Website"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "type"
+  ],
+  "title": "Provider",
+  "type": "object"
+}

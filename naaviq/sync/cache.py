@@ -95,6 +95,9 @@ def _model_from_dict(d: dict) -> SyncModel:
         regions=d.get("regions") or [],
         pricing=d.get("pricing") or {},
         meta=d.get("meta") or {},
+        interfaces=d.get("interfaces") or [],
+        open_weights=d.get("open_weights"),
+        source=d.get("source") or "docs",
     )
 
 

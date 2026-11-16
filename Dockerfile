@@ -10,8 +10,8 @@ COPY pyproject.toml uv.lock ./
 
 # Application code
 COPY naaviq/ naaviq/
-COPY alembic/ alembic/
-COPY alembic.ini ./
+# The catalog itself — deploying a commit publishes that commit's data
+COPY data/ data/
 
 # Non-root user, owns /app before uv sync so the .venv is writable at runtime
 RUN useradd -m appuser && chown -R appuser:appuser /app

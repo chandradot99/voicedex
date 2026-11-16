@@ -1,0 +1,492 @@
+{
+  "$defs": {
+    "FreeQuota": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "minimum": 0,
+          "title": "Amount",
+          "type": "number"
+        },
+        "period": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Period"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "unit"
+      ],
+      "title": "FreeQuota",
+      "type": "object"
+    },
+    "Interface": {
+      "enum": [
+        "http",
+        "websocket",
+        "grpc",
+        "webrtc"
+      ],
+      "title": "Interface",
+      "type": "string"
+    },
+    "Lifecycle": {
+      "enum": [
+        "alpha",
+        "beta",
+        "ga",
+        "deprecated"
+      ],
+      "title": "Lifecycle",
+      "type": "string"
+    },
+    "ModelType": {
+      "enum": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "title": "ModelType",
+      "type": "string"
+    },
+    "OpenWeights": {
+      "additionalProperties": false,
+      "properties": {
+        "license": {
+          "title": "License",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "license"
+      ],
+      "title": "OpenWeights",
+      "type": "object"
+    },
+    "PriceVariant": {
+      "additionalProperties": false,
+      "properties": {
+        "applies_to": {
+          "title": "Applies To",
+          "type": "string"
+        },
+        "price_usd": {
+          "minimum": 0,
+          "title": "Price Usd",
+          "type": "number"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "applies_to",
+        "unit",
+        "price_usd"
+      ],
+      "title": "PriceVariant",
+      "type": "object"
+    },
+    "Pricing": {
+      "additionalProperties": false,
+      "properties": {
+        "as_of": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "As Of"
+        },
+        "free_quota": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FreeQuota"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "price_usd": {
+          "minimum": 0,
+          "title": "Price Usd",
+          "type": "number"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "variants": {
+          "items": {
+            "$ref": "#/$defs/PriceVariant"
+          },
+          "title": "Variants",
+          "type": "array"
+        }
+      },
+      "required": [
+        "unit",
+        "price_usd"
+      ],
+      "title": "Pricing",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "as_of": {
+          "format": "date",
+          "title": "As Of",
+          "type": "string"
+        },
+        "method": {
+          "$ref": "#/$defs/ProvenanceMethod"
+        },
+        "urls": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Urls",
+          "type": "array"
+        }
+      },
+      "required": [
+        "method",
+        "as_of"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "ProvenanceMethod": {
+      "enum": [
+        "api",
+        "docs",
+        "manual"
+      ],
+      "title": "ProvenanceMethod",
+      "type": "string"
+    },
+    "Region": {
+      "enum": [
+        "us",
+        "eu",
+        "asia",
+        "global"
+      ],
+      "title": "Region",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "alias_of": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Alias Of"
+    },
+    "audio_formats": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Audio Formats",
+      "type": "array"
+    },
+    "batch": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Batch"
+    },
+    "capabilities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Capabilities",
+      "type": "array"
+    },
+    "deprecated_at": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Deprecated At"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    },
+    "eol_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Eol Date"
+    },
+    "family": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Family"
+    },
+    "first_seen": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "First Seen"
+    },
+    "id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "interfaces": {
+      "items": {
+        "$ref": "#/$defs/Interface"
+      },
+      "title": "Interfaces",
+      "type": "array"
+    },
+    "is_default": {
+      "default": false,
+      "title": "Is Default",
+      "type": "boolean"
+    },
+    "languages": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Languages",
+      "type": "array"
+    },
+    "lifecycle": {
+      "$ref": "#/$defs/Lifecycle",
+      "default": "ga"
+    },
+    "max_audio_seconds": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Max Audio Seconds"
+    },
+    "max_text_chars": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Max Text Chars"
+    },
+    "meta": {
+      "additionalProperties": true,
+      "title": "Meta",
+      "type": "object"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "open_weights": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/OpenWeights"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "pricing": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Pricing"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "provenance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Provenance"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "regions": {
+      "items": {
+        "$ref": "#/$defs/Region"
+      },
+      "title": "Regions",
+      "type": "array"
+    },
+    "sample_rates_hz": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Sample Rates Hz",
+      "type": "array"
+    },
+    "snapshot_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Snapshot Date"
+    },
+    "streaming": {
+      "default": true,
+      "title": "Streaming",
+      "type": "boolean"
+    },
+    "type": {
+      "$ref": "#/$defs/ModelType"
+    },
+    "updated_at": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Updated At"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name"
+  ],
+  "title": "Model",
+  "type": "object"
+}

@@ -40,7 +40,7 @@ class SyncModel:
     """
     model_id: str                                  # "nova-3", "sonic-3", "saaras:v3"
     display_name: str
-    type: Literal["stt", "tts"]
+    type: Literal["stt", "tts", "sts"]
     languages: list[str] = field(default_factory=list)  # normalized BCP-47: ["*"] or ["en-US", "hi-IN"]
     streaming: bool = True
     is_default: bool = False
@@ -85,6 +85,14 @@ class SyncModel:
     #   }
     pricing: dict = field(default_factory=dict)
     meta: dict = field(default_factory=dict)
+    # ── v2 additions (all optional; see docs/design/v2-architecture.md) ──
+    # Transport interfaces: "http" | "websocket" | "grpc" | "webrtc". [] = unknown.
+    interfaces: list[str] = field(default_factory=list)
+    # {"license": "Apache-2.0", "url": "https://huggingface.co/..."} for open-weight models, else None.
+    open_weights: dict | None = None
+    # Where this record came from: "api" | "docs" | "manual". None = infer from SyncResult.source.
+    # The AI parser and .sync-cache loader set "docs" automatically.
+    source: Literal["api", "docs", "manual"] | None = None
 
 
 @dataclass
@@ -143,6 +151,7 @@ class SyncResult:
     tts_models: list[SyncModel]
     tts_voices: list[SyncVoice]
     source: Literal["api", "docs", "mixed"]
+    sts_models: list[SyncModel] = field(default_factory=list)   # speech-to-speech / realtime
     api_urls: list[str] = field(default_factory=list)   # REST endpoints called during sync
     docs_urls: list[str] = field(default_factory=list)  # documentation pages parsed during sync
     fetched_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))

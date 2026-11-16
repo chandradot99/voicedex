@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from dotenv import load_dotenv
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -7,8 +9,7 @@ load_dotenv()
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(extra="ignore")
 
-    database_url: str                      # prod DB — served by the public API (Railway standard)
-    dev_database_url: str = ""             # dev DB — target of scripts/sync.py; source of scripts/promote.py
+    data_dir: str = ""                     # catalog directory; empty = <repo>/data
     rate_limit: str = "100/minute"
 
     # Provider API keys — used by sync scripts
@@ -51,6 +52,11 @@ class Settings(BaseSettings):
 
     # AI parser key — used by sync scripts that parse docs (e.g., Cartesia models)
     anthropic_api_key: str = ""
+
+    @property
+    def data_path(self) -> Path:
+        from naaviq.catalog.files import DEFAULT_DATA_DIR
+        return Path(self.data_dir) if self.data_dir else DEFAULT_DATA_DIR
 
 
 settings = Settings()

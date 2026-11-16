@@ -1,72 +1,64 @@
-"""Shared fixtures. Tests run against the DB in DATABASE_URL (migrated by CI)."""
+"""Shared fixtures: a small, known catalog written to a temp data dir and served by the app."""
 
 from __future__ import annotations
 
-from datetime import datetime, timedelta, timezone
+from datetime import date
 
 import pytest
 from httpx import ASGITransport, AsyncClient
-from sqlalchemy import delete
 
-from naaviq.db import AsyncSessionLocal
+from naaviq.catalog.files import ProviderData, write_provider_dir
+from naaviq.catalog.schema import Model, Provider, Voice
+from naaviq.catalog.store import Catalog
 from naaviq.main import app
-from naaviq.models import Model, Provider, SyncRun, Voice
 
 TEST_PROVIDER = "zz-test-provider"
 DEPRECATED_PROVIDER = "zz-test-deprecated"
-_TEST_IDS = [TEST_PROVIDER, DEPRECATED_PROVIDER]
 
-OLD = datetime(2020, 1, 1, tzinfo=timezone.utc)
-
-
-@pytest.fixture
-async def client():
-    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as c:
-        yield c
+OLD = date(2020, 1, 1)
+NEW = date(2026, 11, 1)
 
 
-async def _purge() -> None:
-    async with AsyncSessionLocal() as s:
-        for table in (SyncRun, Voice, Model):
-            await s.execute(delete(table).where(table.provider_id.in_(_TEST_IDS)))
-        await s.execute(delete(Provider).where(Provider.provider_id.in_(_TEST_IDS)))
-        await s.commit()
+def build_fixture_catalog(root) -> None:
+    write_provider_dir(root / TEST_PROVIDER, ProviderData(
+        Provider(id=TEST_PROVIDER, name="ZZ Test", type="both", last_synced=NEW),
+        models=[
+            Model(id="stt-global", name="STT Global", type="stt", languages=["*"], is_default=True,
+                  capabilities=["word_timestamps", "speaker_diarization"], regions=["global"], updated_at=OLD),
+            Model(id="stt-eu", name="STT EU", type="stt", languages=["de-DE"], lifecycle="beta",
+                  capabilities=["word_timestamps"], regions=["eu"], updated_at=OLD),
+            Model(id="tts-main", name="TTS Main", type="tts", languages=["en-US"], is_default=True,
+                  capabilities=["emotion", "ssml"], updated_at=OLD,
+                  pricing={"unit": "character", "price_usd": 0.00003}),
+            Model(id="tts-old", name="TTS Old", type="tts", lifecycle="deprecated",
+                  deprecated_at=NEW, updated_at=NEW),
+        ],
+        voices=[
+            Voice(id="v-any", name="Anywhere Voice", gender="female", category="premade", languages=["*"],
+                  compatible_models=["*"], accent="British", capabilities=["emotion"], updated_at=OLD),
+            Voice(id="v-hi", name="Hindi Voice", gender="male", category="premade", languages=["hi-IN"],
+                  compatible_models=["tts-main"], accent="indian", tags=["warm"], updated_at=OLD),
+            Voice(id="v-unmapped", name="Unmapped Voice", updated_at=OLD),
+            Voice(id="v-gone", name="Gone Voice", languages=["en-US"], compatible_models=["*"],
+                  deprecated_at=NEW, updated_at=NEW),
+        ],
+    ))
+    write_provider_dir(root / DEPRECATED_PROVIDER, ProviderData(
+        Provider(id=DEPRECATED_PROVIDER, name="ZZ Gone", type="tts", status="deprecated"),
+        models=[Model(id="ghost", name="Ghost", type="tts")],
+        voices=[Voice(id="ghost-v", name="Ghost Voice", compatible_models=["*"])],
+    ))
 
 
 @pytest.fixture(scope="session")
-async def seeded():
-    """Seed a small, known dataset under test-only provider IDs; removed afterwards."""
-    await _purge()
-    now = datetime.now(timezone.utc)
-    async with AsyncSessionLocal() as s:
-        s.add_all([
-            Provider(provider_id=TEST_PROVIDER, display_name="ZZ Test", type="both"),
-            Provider(provider_id=DEPRECATED_PROVIDER, display_name="ZZ Gone", type="tts", deprecated_at=now),
-        ])
-        await s.flush()
-        s.add_all([
-            Model(provider_id=TEST_PROVIDER, model_id="stt-global", display_name="STT Global", type="stt",
-                  languages=["*"], is_default=True, capabilities=["word_timestamps", "speaker_diarization"],
-                  regions=["global"]),
-            Model(provider_id=TEST_PROVIDER, model_id="stt-eu", display_name="STT EU", type="stt",
-                  languages=["de-DE"], lifecycle="beta", capabilities=["word_timestamps"], regions=["eu"]),
-            Model(provider_id=TEST_PROVIDER, model_id="tts-main", display_name="TTS Main", type="tts",
-                  languages=["en-US"], is_default=True, capabilities=["emotion", "ssml"], regions=[]),
-            Model(provider_id=TEST_PROVIDER, model_id="tts-old", display_name="TTS Old", type="tts",
-                  lifecycle="deprecated", deprecated_at=now),
-            Model(provider_id=DEPRECATED_PROVIDER, model_id="ghost", display_name="Ghost", type="tts"),
-            Voice(provider_id=TEST_PROVIDER, voice_id="v-any", display_name="Anywhere Voice", gender="female",
-                  category="premade", languages=["*"], compatible_models=["*"], accent="british",
-                  capabilities=["emotion"]),
-            Voice(provider_id=TEST_PROVIDER, voice_id="v-hi", display_name="Hindi Voice", gender="male",
-                  category="premade", languages=["hi-IN"], compatible_models=["tts-main"], accent="indian"),
-            Voice(provider_id=TEST_PROVIDER, voice_id="v-unmapped", display_name="Unmapped Voice",
-                  languages=[], compatible_models=[]),
-            Voice(provider_id=TEST_PROVIDER, voice_id="v-gone", display_name="Gone Voice",
-                  languages=["en-US"], compatible_models=["*"], deprecated_at=now),
-            Voice(provider_id=DEPRECATED_PROVIDER, voice_id="ghost-v", display_name="Ghost Voice",
-                  compatible_models=["*"]),
-        ])
-        await s.commit()
-    yield {"seeded_at": now - timedelta(seconds=5)}
-    await _purge()
+def fixture_catalog(tmp_path_factory) -> Catalog:
+    root = tmp_path_factory.mktemp("data")
+    build_fixture_catalog(root)
+    return Catalog.load(root)
+
+
+@pytest.fixture
+async def client(fixture_catalog):
+    app.state.catalog = fixture_catalog
+    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as c:
+        yield c
