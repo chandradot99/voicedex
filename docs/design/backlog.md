@@ -16,7 +16,13 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 - **ElevenLabs community voice library** (thousands of shared voices) — only premade voices today; consider a separate `community` category.
 - **AssemblyAI** dashboard-only voice catalog ("thousands") — only the 34 documented starter voices.
 - **provider.json editorial fields** (website, description, regions, compliance, links) — empty for every provider; fill from a verified research pass.
-- **Missing providers** — Soniox, Google Gemini TTS/Live, NVIDIA Riva/Parakeet, Kyutai, xAI, Qwen, Microsoft MAI-Voice, open-weight models (Kokoro, Orpheus, Chatterbox…) and their hosts. Needs a verified research pass.
+- **Missing providers** (researched 2026-11-16; Pipecat/LiveKit integration lists + vendor docs):
+  - ADD, API-syncable: **Soniox** (`GET /v1/models`; stt-*-v5 EOL 2026-12-15, v4→v5 aliases), **xAI** (STT/TTS/realtime; `GET /v1/tts/voices`; models docs), **Gradium** (Kyutai spin-off; `GET /api/voices/`), **Alibaba Model Studio intl** (`GET /api/v1/models` filters ASR/TTS/realtime, returns prices + retirement dates).
+  - ADD, docs-based: **Meta Muse Voice Transcribe** (STT), **Async** (TTS + ASR), **StepFun** (TTS/ASR/realtime, USD prices), **BytePlus Seed Speech** (JS-rendered docs).
+  - MAYBE: Zoom Scribe, Ultravox (now Inworld; sts only), Respeecher, Bland TTS, Deepdub, Boson Higgs, Gnani (if self-serve), AmiVoice (JPY), Naver CLOVA, Tencent, iFLYTEK, Reverie, NVIDIA (open-weights/self-host).
+  - Retired-provider records worth adding: PlayHT (Meta, 2025-12-31), Coqui (2024), Supertone (liquidated 2026-07).
+  - Gaps in existing providers: Azure MAI-Transcribe, Gemini Live / Azure Voice Live / Amazon Nova Sonic (sts).
+  - Model hosts (Together, fal, DeepInfra): not first-class providers — later a "hosted by" dimension on open-weight models.
 
 ## Schema
 - **Pricing currency** — `pricing` is USD-only; Gladia (EUR) and Sarvam (INR) prices sit in `meta.pricing_<ccy>`. Add `currency` (ISO 4217) with `price` + keep `price_usd` for USD rows.
