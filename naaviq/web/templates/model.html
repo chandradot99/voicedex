@@ -47,10 +47,20 @@
     {% elif lang_groups %}
     <p class="muted">{{ lang_groups|length }} language{{ 's' if lang_groups|length != 1 }}{% if m.languages|length > lang_groups|length %}, {{ m.languages|length }} including regional variants{% endif %}.</p>
     <ul class="lang-list">
-      {% for name, variants in lang_groups %}
+      {% for name, variants in lang_groups[:24] %}
       <li>{{ name }}{% if variants %} <span class="muted">{{ variants|join(", ") }}</span>{% endif %}</li>
       {% endfor %}
     </ul>
+    {% if lang_groups|length > 24 %}
+    <details class="lang-more">
+      <summary>Show all {{ lang_groups|length }} languages</summary>
+      <ul class="lang-list">
+        {% for name, variants in lang_groups[24:] %}
+        <li>{{ name }}{% if variants %} <span class="muted">{{ variants|join(", ") }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
     {% else %}<p class="muted">Not published.</p>{% endif %}
 
     <h2>Features</h2>

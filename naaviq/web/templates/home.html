@@ -68,9 +68,9 @@
   <section aria-labelledby="eol-title">
     <h2 id="eol-title">Scheduled shutdowns</h2>
     {% if upcoming_eol %}
-    <p class="section-note">Models still callable today, with a published end-of-life date.</p>
+    <p class="section-note">The next {{ [upcoming_eol|length, 8]|min }} of {{ upcoming_eol|length }} models that are still callable today but have a published end-of-life date.</p>
     <ul class="eol-list">
-      {% for r in upcoming_eol %}
+      {% for r in upcoming_eol[:8] %}
       <li>
         <time datetime="{{ r.model.eol_date }}">{{ r.model.eol_date.strftime('%b %-d, %Y') }}</time>
         <a href="{{ model_url(r) }}">{{ r.model.name }}</a>
@@ -78,6 +78,7 @@
       </li>
       {% endfor %}
     </ul>
+    {% if upcoming_eol|length > 8 %}<p class="more-link"><a href="/models?status=ending">See all {{ upcoming_eol|length }} scheduled shutdowns</a></p>{% endif %}
     {% else %}<p class="section-note">No announced shutdowns.</p>{% endif %}
   </section>
   {% if recent %}

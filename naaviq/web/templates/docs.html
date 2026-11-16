@@ -76,7 +76,7 @@
           --scalar-color-2: #c9ced8;
           --scalar-color-3: #8b93a3;
           --scalar-color-accent: #5eead4;
-          --scalar-border-color: rgba(255, 255, 255, 0.08);
+          --scalar-border-color: rgba(255, 255, 255, 0.11);
           --scalar-button-1: #f2f4f7;
           --scalar-button-1-color: #07080b;
           --scalar-button-1-hover: #ffffff;
@@ -115,6 +115,20 @@
         }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
         .introduction-section h1, .section-header.tight { font-weight: 600; }
+        /* Floating layers (menus, listboxes, search dialog, tooltips) must read as raised above
+           whatever they cover: lighter surface, visible edge, real shadow. */
+        .z-context > div, [role="tooltip"], .scalar-modal {
+          background: #1c212b !important;
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16), 0 24px 60px -12px rgba(0, 0, 0, 0.9) !important;
+        }
+        /* Search dialog (⌘K) and other modals: dim + blur the page; mark the keyboard selection. */
+        .scalar-modal-layout { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+        .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #2a313e !important; box-shadow: inset 2px 0 0 #5eead4; }
+        .z-context [role="option"]:hover, .z-context [role="option"][data-headlessui-state~="active"],
+        .z-context [role="menuitem"]:hover { background: #2a313e !important; }
+        .z-context [role="option"] .shadow-border, .z-context [role="menuitem"] .shadow-border { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.32) !important; }
+        .z-context [role="option"][aria-selected="true"] .shadow-border { box-shadow: inset 0 0 0 1px #5eead4 !important; color: #5eead4 !important; }
+        .z-context ul[role="listbox"] { border-color: rgba(255, 255, 255, 0.12) !important; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
         .scalar-client h3,
         .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }

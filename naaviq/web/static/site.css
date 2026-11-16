@@ -447,3 +447,22 @@ td .more { font-size: 0.84rem; }
 .pager a { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--ink); text-decoration: none; }
 .pager a:hover { background: var(--surface-2); }
 .lang-hit { font-size: 1.05rem; }
+
+/* Review fixes */
+.more-link { margin: 14px 0 0; font-size: 0.92rem; }
+.more-link a { color: var(--accent); }
+.pick-hit { display: grid; place-items: center; width: 36px; height: 36px; margin: -8px -6px -8px -10px; cursor: pointer; border-radius: 8px; }
+.pick-hit:hover { background: var(--surface-2); }
+.copy-id .i-check { display: none; stroke: currentColor; fill: none; stroke-width: 2.2; }
+.copy-id[data-copied="1"] .i-copy { display: none; }
+.copy-id[data-copied="1"] .i-check { display: block; }
+@media (min-width: 960px) { .detail-side { max-height: calc(100vh - 110px); overflow-y: auto; overscroll-behavior: contain; } }
+table.data tbody th a:hover { text-decoration: underline; }
+.show-sm { display: none !important; }
+@media (max-width: 700px) {
+  .hide-sm { display: none !important; }
+  .show-sm { display: block !important; }
+}
+.lang-more { margin-top: 10px; }
+.lang-more summary { cursor: pointer; color: var(--accent); font-size: 0.92rem; width: fit-content; }
+.lang-more[open] summary { margin-bottom: 8px; }

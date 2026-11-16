@@ -53,6 +53,9 @@ def normalized_price(model: Model) -> tuple[float, str] | None:
 
 
 def price_label(model: Model) -> str | None:
+    p = model.pricing
+    if p and (p.price_usd if p.price_usd is not None else p.price) == 0:
+        return "Free"
     n = normalized_price(model)
     if n:
         value, unit = n
@@ -286,6 +289,8 @@ def compare_table(rows: list[ModelRow], names: dict[str, str], check_language: s
 
 def _variant_label(model: Model, v) -> str:
     amount = v.price_usd if v.price_usd is not None else v.price
+    if amount == 0:
+        return "Free"
     cur = model.pricing.currency if model.pricing else "USD"
     sym = _SYMBOL.get(cur, cur + " ")
     if v.unit in ("character", "byte", "token"):

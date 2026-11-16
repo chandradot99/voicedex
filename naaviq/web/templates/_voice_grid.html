@@ -28,7 +28,7 @@
     <div class="voice-tags">{% for t in voice_chips(v, 3) %}<span>{{ t }}</span>{% endfor %}</div>
     <div class="voice-id">
       <code translate="no" title="{{ v.id }}">{{ v.id }}</code>
-      <button type="button" class="copy-id" data-copy="{{ v.id }}" aria-label="Copy voice id {{ v.id }}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></button>
+      <button type="button" class="copy-id" data-copy="{{ v.id }}" aria-label="Copy voice id {{ v.id }}"><svg viewBox="0 0 24 24" aria-hidden="true" class="i-copy"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-check"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
     </div>
   </li>
   {% endfor %}

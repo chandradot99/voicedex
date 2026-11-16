@@ -134,7 +134,18 @@
 document.addEventListener("click", async (e) => {
   const b = e.target.closest(".copy-id");
   if (!b) return;
-  try { await navigator.clipboard.writeText(b.dataset.copy); b.dataset.copied = "1"; }
-  catch { b.dataset.copied = "0"; }
-  setTimeout(() => delete b.dataset.copied, 1400);
+  const label = b.getAttribute("aria-label");
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.dataset.copied = "1"; b.setAttribute("aria-label", "Copied"); }
+  catch { b.dataset.copied = "0"; b.setAttribute("aria-label", "Copy failed. Select the id and copy it manually."); }
+  setTimeout(() => { delete b.dataset.copied; b.setAttribute("aria-label", label); }, 1400);
+});
+
+// ── Filters apply as soon as a dropdown or checkbox changes (text fields still use Enter / Apply).
+document.addEventListener("change", (e) => {
+  const el = e.target;
+  const form = el.closest("form.filters");
+  if (form && (el.tagName === "SELECT" || el.type === "checkbox") && !el.classList.contains("compare-pick")) {
+    form.querySelector('[name="page"]')?.remove();
+    form.requestSubmit();
+  }
 });

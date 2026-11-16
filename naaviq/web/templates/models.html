@@ -32,9 +32,16 @@
         {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }}</option>{% endfor %}
       </select>
     </label>
+    <label>Status
+      <select name="status">
+        <option value="">Any</option>
+        <option value="ending" {% if f.status == "ending" %}selected{% endif %}>Shutting down</option>
+        <option value="beta" {% if f.status == "beta" %}selected{% endif %}>Beta / preview</option>
+      </select>
+    </label>
     <label>Sort
       <select name="sort">
-        <option value="">Provider</option>
+        <option value="">{{ "Soonest shutdown" if f.status == "ending" else "Provider" }}</option>
         <option value="price" {% if f.sort == "price" %}selected{% endif %}>Lowest price</option>
       </select>
     </label>
@@ -50,16 +57,16 @@
   <div class="table-scroll">
     <table class="data models-table">
       <thead>
-        <tr><th scope="col" class="pick"><span class="visually-hidden">Compare</span></th><th scope="col">Model</th><th scope="col">Provider</th><th scope="col">Type</th><th scope="col" class="num">Languages</th><th scope="col">Price</th><th scope="col">Status</th></tr>
+        <tr><th scope="col" class="pick"><span class="visually-hidden">Compare</span></th><th scope="col">Model</th><th scope="col" class="hide-sm">Provider</th><th scope="col" class="hide-sm">Type</th><th scope="col" class="num hide-sm">Languages</th><th scope="col">Price</th><th scope="col">Status</th></tr>
       </thead>
       <tbody>
         {% for r in rows %}{% set m = r.model %}
         <tr>
-          <td class="pick"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ names[r.provider_id] }} {{ m.id }}" aria-label="Compare {{ m.id }}"></td>
-          <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
-          <td>{{ names[r.provider_id] }}</td>
-          <td><span class="tag tag-{{ m.type }}">{{ TYPE_SHORT[m.type] }}</span></td>
-          <td class="num">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
+          <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
+          <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}</span></th>
+          <td class="hide-sm">{{ names[r.provider_id] }}</td>
+          <td class="hide-sm"><span class="tag tag-{{ m.type }}">{{ TYPE_SHORT[m.type] }}</span></td>
+          <td class="num hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
           <td>{{ price_label(m) or "–" }}</td>
           <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%b %-d, %Y') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge">Default</span>{% endif %}</td>
         </tr>

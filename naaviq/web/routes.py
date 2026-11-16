@@ -94,7 +94,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
 
 @router.get("/models", response_class=HTMLResponse)
 async def models_page(request: Request, catalog: Catalog = Depends(get_catalog)):
-    f = {k: _q(request, k) for k in ("type", "language", "capability", "provider", "q", "sort")}
+    f = {k: _q(request, k) for k in ("type", "language", "capability", "provider", "q", "sort", "status")}
     rows = views.active_models(catalog)
     if f["type"] in views.TYPE_LABELS:
         rows = [r for r in rows if r.model.type == f["type"]]
@@ -108,7 +108,13 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         needle = f["q"].lower()
         rows = [r for r in rows if needle in r.model.id.lower() or needle in r.model.name.lower()
                 or needle in (r.model.description or "").lower() or needle in r.provider_id]
-    if f["sort"] == "price":
+    if f["status"] == "ending":
+        rows = [r for r in rows if r.model.eol_date]
+    if f["status"] == "beta":
+        rows = [r for r in rows if str(getattr(r.model.lifecycle, "value", r.model.lifecycle)) in ("alpha", "beta")]
+    if f["status"] == "ending" and f["sort"] != "price":
+        rows.sort(key=lambda r: (r.model.eol_date, r.provider_id, r.model.id))
+    elif f["sort"] == "price":
         rows.sort(key=lambda r: (views.normalized_price(r.model) or (math.inf,))[0])
     else:
         rows.sort(key=lambda r: (r.provider_id, r.model.type, not r.model.is_default, r.model.id))

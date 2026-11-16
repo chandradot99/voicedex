@@ -78,3 +78,9 @@ async def test_api_reference(client):
     ops = [op for path in spec["paths"].values() for op in path.values()]
     assert all(op.get("summary") for op in ops) and all(len(op.get("tags", [])) == 1 for op in ops)
     assert (await client.get("/redoc", follow_redirects=False)).status_code == 301
+
+
+def test_free_price_label():
+    from naaviq.web.views import price_label
+    m = Model(id="f", name="f", type="tts", pricing={"unit": "character", "price_usd": 0})
+    assert price_label(m) == "Free"
