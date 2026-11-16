@@ -9,7 +9,9 @@
     btn.setAttribute("aria-pressed", state === "idle" ? "false" : "true");
     const name = btn.getAttribute("aria-label").replace(/^(Play|Stop) sample of /, "");
     btn.setAttribute("aria-label", `${state === "idle" ? "Play" : "Stop"} sample of ${name}`);
-    if (state === "idle") btn.style.setProperty("--progress", 0);
+    const row = btn.closest(".voice");
+    row?.classList.toggle("is-playing", state !== "idle");
+    if (state === "idle") { btn.style.setProperty("--progress", 0); row?.style.setProperty("--row-progress", 0); }
   };
   const stop = () => {
     if (!current) return;
@@ -32,7 +34,10 @@
   audio.addEventListener("ended", stop);
   audio.addEventListener("error", fail);
   audio.addEventListener("timeupdate", () => {
-    if (current && audio.duration) current.style.setProperty("--progress", audio.currentTime / audio.duration);
+    if (!current || !audio.duration) return;
+    const p = audio.currentTime / audio.duration;
+    current.style.setProperty("--progress", p);
+    current.closest(".voice")?.style.setProperty("--row-progress", p);
   });
 
   document.addEventListener("click", (e) => {
@@ -124,3 +129,12 @@
     setTimeout(() => (copy.textContent = "Copy link"), 2000);
   });
 })();
+
+// ── Copy voice ids.
+document.addEventListener("click", async (e) => {
+  const b = e.target.closest(".copy-id");
+  if (!b) return;
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.dataset.copied = "1"; }
+  catch { b.dataset.copied = "0"; }
+  setTimeout(() => delete b.dataset.copied, 1400);
+});

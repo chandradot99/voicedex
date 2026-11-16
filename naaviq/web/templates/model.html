@@ -88,6 +88,8 @@
     </dl>
     <h3>Where this data comes from</h3>
     <p class="source-note">{% if m.provenance %}{{ {"api": "Read from " ~ p.name ~ "'s API", "docs": "Extracted from " ~ p.name ~ "'s documentation and reviewed", "manual": "Entered by hand"}.get(m.provenance.method, "") }}, {{ m.provenance.as_of.strftime('%b %-d, %Y') }}.{% endif %}</p>
+    {% if m.meta.get('docs_sources') %}<p class="source-note">Features added from {{ p.name }}'s documentation.</p>{% endif %}
+    {% if m.pricing and m.pricing.source_url and m.provenance and m.provenance.method == "api" %}<p class="source-note">Price from {{ p.name }}'s pricing page.</p>{% endif %}
     {% if m.provenance and m.provenance.urls %}<ul class="source-links">{% for u in m.provenance.urls[:4] %}<li><a href="{{ u if u.startswith('http') else '#' }}" rel="noopener">{{ u.split('//')[-1].split('?')[0][:48] }}</a></li>{% endfor %}</ul>{% endif %}
     <p><a href="/v1/providers/{{ p.id }}/models/{{ m.id|urlencode }}">This model as JSON</a></p>
 
