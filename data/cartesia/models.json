@@ -1,0 +1,1069 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "language_detection"
+    ],
+    "description": "Cartesia's fastest, most accurate streaming STT, with built-in turn detection for voice agents.",
+    "first_seen": "2026-11-16",
+    "id": "ink-2",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "fr",
+      "hi",
+      "ja",
+      "es"
+    ],
+    "meta": {
+      "input": {
+        "encodings": [
+          "pcm_s16le",
+          "pcm_s32le",
+          "pcm_f16le",
+          "pcm_f32le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "sample_rate_range_hz": [
+          8000,
+          48000
+        ]
+      },
+      "turn_detection": true
+    },
+    "name": "Ink 2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Scale plan rate; billed as 3 credits per second of audio",
+      "price_usd": 0.39,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "language_detection"
+    ],
+    "description": "Preview STT model that receives upcoming Ink changes.",
+    "first_seen": "2026-11-16",
+    "id": "ink-preview",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "fr",
+      "hi",
+      "ja",
+      "es"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "input": {
+        "encodings": [
+          "pcm_s16le",
+          "pcm_s32le",
+          "pcm_f16le",
+          "pcm_f32le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "sample_rate_range_hz": [
+          8000,
+          48000
+        ]
+      }
+    },
+    "name": "Ink Preview",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "mulaw",
+      "oga",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "word_timestamps"
+    ],
+    "description": "Lower-cost Ink STT model, more accurate and lower latency than baseline Whisper.",
+    "first_seen": "2026-11-16",
+    "id": "ink-whisper",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "de",
+      "es",
+      "ru",
+      "ko",
+      "fr",
+      "ja",
+      "pt",
+      "tr",
+      "pl",
+      "ca",
+      "nl",
+      "ar",
+      "sv",
+      "it",
+      "id",
+      "hi",
+      "fi",
+      "vi",
+      "he",
+      "uk",
+      "el",
+      "ms",
+      "cs",
+      "ro",
+      "da",
+      "hu",
+      "ta",
+      "no",
+      "th",
+      "ur",
+      "hr",
+      "bg",
+      "lt",
+      "la",
+      "mi",
+      "ml",
+      "cy",
+      "sk",
+      "te",
+      "fa",
+      "lv",
+      "bn",
+      "sr",
+      "az",
+      "sl",
+      "kn",
+      "et",
+      "mk",
+      "br",
+      "eu",
+      "is",
+      "hy",
+      "ne",
+      "mn",
+      "bs",
+      "kk",
+      "sq",
+      "sw",
+      "gl",
+      "mr",
+      "pa",
+      "si",
+      "km",
+      "sn",
+      "yo",
+      "so",
+      "af",
+      "oc",
+      "ka",
+      "be",
+      "tg",
+      "sd",
+      "gu",
+      "am",
+      "yi",
+      "lo",
+      "uz",
+      "fo",
+      "ht",
+      "ps",
+      "tk",
+      "nn",
+      "mt",
+      "sa",
+      "lb",
+      "my",
+      "bo",
+      "tl",
+      "mg",
+      "as",
+      "tt",
+      "haw",
+      "ln",
+      "ha",
+      "ba",
+      "jw",
+      "su",
+      "yue"
+    ],
+    "name": "Ink Whisper",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "mulaw",
+      "oga",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "word_timestamps"
+    ],
+    "description": "Frozen dated snapshot of Ink Whisper.",
+    "family": "ink-whisper",
+    "first_seen": "2026-11-16",
+    "id": "ink-whisper-2025-06-04",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "de",
+      "es",
+      "ru",
+      "ko",
+      "fr",
+      "ja",
+      "pt",
+      "tr",
+      "pl",
+      "ca",
+      "nl",
+      "ar",
+      "sv",
+      "it",
+      "id",
+      "hi",
+      "fi",
+      "vi",
+      "he",
+      "uk",
+      "el",
+      "ms",
+      "cs",
+      "ro",
+      "da",
+      "hu",
+      "ta",
+      "no",
+      "th",
+      "ur",
+      "hr",
+      "bg",
+      "lt",
+      "la",
+      "mi",
+      "ml",
+      "cy",
+      "sk",
+      "te",
+      "fa",
+      "lv",
+      "bn",
+      "sr",
+      "az",
+      "sl",
+      "kn",
+      "et",
+      "mk",
+      "br",
+      "eu",
+      "is",
+      "hy",
+      "ne",
+      "mn",
+      "bs",
+      "kk",
+      "sq",
+      "sw",
+      "gl",
+      "mr",
+      "pa",
+      "si",
+      "km",
+      "sn",
+      "yo",
+      "so",
+      "af",
+      "oc",
+      "ka",
+      "be",
+      "tg",
+      "sd",
+      "gu",
+      "am",
+      "yi",
+      "lo",
+      "uz",
+      "fo",
+      "ht",
+      "ps",
+      "tk",
+      "nn",
+      "mt",
+      "sa",
+      "lb",
+      "my",
+      "bo",
+      "tl",
+      "mg",
+      "as",
+      "tt",
+      "haw",
+      "ln",
+      "ha",
+      "ba",
+      "jw",
+      "su",
+      "yue"
+    ],
+    "name": "Ink Whisper (2025-06-04)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "snapshot_date": "2025-06-04",
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Earlier Sonic 3 generation, still served; newer Sonic versions are recommended.",
+    "first_seen": "2026-11-16",
+    "id": "sonic-3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "pt",
+      "zh",
+      "hi",
+      "ko",
+      "it",
+      "nl",
+      "pl",
+      "ru",
+      "sv",
+      "tr",
+      "tl",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "hu",
+      "no",
+      "vi",
+      "bn",
+      "th",
+      "he",
+      "ka",
+      "id",
+      "te",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa"
+    ],
+    "meta": {
+      "output": {
+        "containers": [
+          "wav",
+          "mp3",
+          "raw"
+        ],
+        "encodings": [
+          "pcm_f32le",
+          "pcm_s16le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "note": "SSE and WebSocket return raw only"
+      }
+    },
+    "name": "Sonic 3",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Frozen dated snapshot of Sonic 3.",
+    "family": "sonic-3",
+    "first_seen": "2026-11-16",
+    "id": "sonic-3-2026-01-12",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "pt",
+      "zh",
+      "hi",
+      "ko",
+      "it",
+      "nl",
+      "pl",
+      "ru",
+      "sv",
+      "tr",
+      "tl",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "hu",
+      "no",
+      "vi",
+      "bn",
+      "th",
+      "he",
+      "ka",
+      "id",
+      "te",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa"
+    ],
+    "meta": {
+      "output": {
+        "containers": [
+          "wav",
+          "mp3",
+          "raw"
+        ],
+        "encodings": [
+          "pcm_f32le",
+          "pcm_s16le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "note": "SSE and WebSocket return raw only"
+      }
+    },
+    "name": "Sonic 3 (2026-01-12)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "snapshot_date": "2026-01-12",
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Earlier Sonic generation, still served; Sonic 3.6 is recommended.",
+    "first_seen": "2026-11-16",
+    "id": "sonic-3.5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "pt",
+      "zh",
+      "hi",
+      "ko",
+      "it",
+      "nl",
+      "pl",
+      "ru",
+      "sv",
+      "tr",
+      "tl",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "hu",
+      "no",
+      "vi",
+      "bn",
+      "th",
+      "he",
+      "ka",
+      "id",
+      "te",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa"
+    ],
+    "meta": {
+      "output": {
+        "containers": [
+          "wav",
+          "mp3",
+          "raw"
+        ],
+        "encodings": [
+          "pcm_f32le",
+          "pcm_s16le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "note": "SSE and WebSocket return raw only"
+      }
+    },
+    "name": "Sonic 3.5",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Frozen dated snapshot of Sonic 3.5.",
+    "family": "sonic-3.5",
+    "first_seen": "2026-11-16",
+    "id": "sonic-3.5-2026-05-04",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "pt",
+      "zh",
+      "hi",
+      "ko",
+      "it",
+      "nl",
+      "pl",
+      "ru",
+      "sv",
+      "tr",
+      "tl",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "hu",
+      "no",
+      "vi",
+      "bn",
+      "th",
+      "he",
+      "ka",
+      "id",
+      "te",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa"
+    ],
+    "meta": {
+      "output": {
+        "containers": [
+          "wav",
+          "mp3",
+          "raw"
+        ],
+        "encodings": [
+          "pcm_f32le",
+          "pcm_s16le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "note": "SSE and WebSocket return raw only"
+      }
+    },
+    "name": "Sonic 3.5 (2026-05-04)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "snapshot_date": "2026-05-04",
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Cartesia's flagship TTS model: the fastest and most natural Sonic, covering 44 languages. Tracks the latest stable 3.6 snapshot.",
+    "first_seen": "2026-11-16",
+    "id": "sonic-3.6",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "pt",
+      "zh",
+      "hi",
+      "ko",
+      "it",
+      "nl",
+      "pl",
+      "ru",
+      "sv",
+      "tr",
+      "tl",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "hu",
+      "no",
+      "vi",
+      "bn",
+      "th",
+      "he",
+      "ka",
+      "id",
+      "te",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa",
+      "or",
+      "ur"
+    ],
+    "meta": {
+      "output": {
+        "containers": [
+          "wav",
+          "mp3",
+          "raw"
+        ],
+        "encodings": [
+          "pcm_f32le",
+          "pcm_s16le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "note": "SSE and WebSocket return raw only"
+      }
+    },
+    "name": "Sonic 3.6",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Frozen dated snapshot of Sonic 3.6.",
+    "family": "sonic-3.6",
+    "first_seen": "2026-11-16",
+    "id": "sonic-3.6-2026-08-27",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "pt",
+      "zh",
+      "hi",
+      "ko",
+      "it",
+      "nl",
+      "pl",
+      "ru",
+      "sv",
+      "tr",
+      "tl",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "hu",
+      "no",
+      "vi",
+      "bn",
+      "th",
+      "he",
+      "ka",
+      "id",
+      "te",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa",
+      "or",
+      "ur"
+    ],
+    "meta": {
+      "output": {
+        "containers": [
+          "wav",
+          "mp3",
+          "raw"
+        ],
+        "encodings": [
+          "pcm_f32le",
+          "pcm_s16le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "note": "SSE and WebSocket return raw only"
+      }
+    },
+    "name": "Sonic 3.6 (2026-08-27)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "snapshot_date": "2026-08-27",
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "description": "Receives upcoming Sonic changes without notice; for testing, not production.",
+    "first_seen": "2026-11-16",
+    "id": "sonic-preview",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "output": {
+        "containers": [
+          "wav",
+          "mp3",
+          "raw"
+        ],
+        "encodings": [
+          "pcm_f32le",
+          "pcm_s16le",
+          "pcm_mulaw",
+          "pcm_alaw"
+        ],
+        "note": "SSE and WebSocket return raw only"
+      },
+      "production_recommended": false
+    },
+    "name": "Sonic Preview",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

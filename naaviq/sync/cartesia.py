@@ -52,28 +52,26 @@ _GENDER_MAP = {
 }
 
 _META_GUIDANCE = (
-    "Set eol_date='YYYY-MM-DD' (top-level field, not in meta) if the docs mention an end-of-life date. "
-    "For every model, populate `meta` with these keys: "
-    "  parent_model_id        — the family root id (e.g., 'sonic-3', 'ink-whisper'), or null if this IS the root"
-    "  is_snapshot            — true for dated snapshots, else false"
-    "  snapshot_date          — 'YYYY-MM-DD' for dated snapshots, else null"
-    "  production_recommended — false for '-latest' aliases (Cartesia warns against these in prod), else true"
+    "Set eol_date='YYYY-MM-DD' (top-level field) if the docs mention an end-of-life date. "
+    "For every model, populate `meta` with: "
+    "parent_model_id — the family root id this model belongs to, or null if it IS a family root; "
+    "snapshot_date — 'YYYY-MM-DD' for dated snapshots, else null; "
+    "alias_of — for moving aliases (e.g. ids ending in '-latest'), the id they currently point to, else null; "
+    "production_recommended — false if the docs warn against using it in production, else true. "
+    "Set interfaces from the documented transports (http, websocket). "
 )
 
 _TTS_MODELS_GUIDANCE = (
-    "Cartesia publishes TTS family models (sonic-3, sonic-2, sonic-turbo, sonic), "
-    "dated snapshots (e.g., sonic-3-2026-01-12), and '-latest' aliases. "
-    "Return ALL of them as separate models — each is a real callable model ID. "
-    "Mark the newest family root as is_default=true (currently sonic-3); only "
-    "ONE model total should have is_default=true. "
+    "Return EVERY callable TTS model id on these pages as a separate model: family roots, dated "
+    "snapshots and aliases. Mark exactly one model is_default=true: the newest production-ready "
+    "family root. "
     + _META_GUIDANCE
 )
 
 _STT_MODELS_GUIDANCE = (
-    "Cartesia's STT product is the Ink family. Return ALL listed STT models — "
-    "family roots, dated snapshots, and '-latest' aliases. Mark the newest "
-    "production-ready family root as is_default=true; only ONE model total "
-    "should have is_default=true. "
+    "Return EVERY callable STT model id on these pages as a separate model: family roots, dated "
+    "snapshots and aliases. Mark exactly one model is_default=true: the newest production-ready "
+    "family root. "
     + _META_GUIDANCE
 )
 
@@ -165,7 +163,7 @@ class CartesiaSyncer(ProviderSyncer):
 
                 items = data.get("data", [])
                 for item in items:
-                    if not _is_public(item):
+                    if not _is_public(item) or item.get("status", "active") != "active":
                         continue
                     voices.append(_to_sync_voice(item))
 
@@ -191,18 +189,33 @@ def _is_public(item: dict) -> bool:
     return bool(item.get("is_public", False))
 
 
+def _accents(item: dict) -> list[dict]:
+    return [a for a in (item.get("accents") or []) if isinstance(a, dict) and a.get("locale")]
+
+
 def _voice_languages(item: dict) -> list[str]:
     # `language` is deprecated in 2026-08-14 in favour of `accents[].locale` (BCP-47).
-    locales = [a.get("locale") for a in (item.get("accents") or []) if isinstance(a, dict) and a.get("locale")]
-    if locales:
-        return normalize_languages(locales)
+    # Native locales first, so languages[0] is the voice's primary language.
+    accents = sorted(_accents(item), key=lambda a: not a.get("is_native"))
+    if accents:
+        return list(dict.fromkeys(normalize_languages([a["locale"] for a in accents])))
     raw_lang = item.get("language") or ""
     return normalize_languages([raw_lang]) if raw_lang else []
 
 
 def _to_sync_voice(item: dict) -> SyncVoice:
     languages = _voice_languages(item)
+    accents = _accents(item)
+    native = [a for a in accents if a.get("is_native")]
+    primary = normalize_languages([native[0]["locale"]]) if native else languages[:1]
 
+    meta: dict = {
+        "tagline":        item.get("tagline"),
+        "is_pro":         item.get("is_pro"),
+        # Per-locale accent labels as Cartesia names them (e.g. {"en-US": "general-american"}).
+        "locale_accents": {normalize_languages([a["locale"]])[0]: a.get("accent") for a in accents} or None,
+        "native_locales": normalize_languages([a["locale"] for a in native]) or None,
+    }
     return SyncVoice(
         voice_id=item["id"],
         display_name=item.get("name") or item["id"],
@@ -211,9 +224,10 @@ def _to_sync_voice(item: dict) -> SyncVoice:
         languages=languages,
         description=item.get("description"),
         preview_url=item.get("preview_file_url"),
-        accent=accent_from_languages(languages),
+        accent=accent_from_languages(primary),
         compatible_models=["*"],
-        meta={},
+        capabilities=["multilingual_native"] if len(native) > 1 else [],
+        meta={k: v for k, v in meta.items() if v is not None},
     )
 
 
