@@ -4,14 +4,16 @@ Sarvam sync script.
 Source: docs
   - STT models : AI-parsed from docs.sarvam.ai (Saaras + Saarika families)
   - TTS models : AI-parsed from docs.sarvam.ai (Bulbul family)
-  - TTS voices : AI-parsed from docs.sarvam.ai (speakers listed under TTS API reference)
+    + Instant Voice Cloning (beta) — a separate /voices/clone API with no model
+      parameter; catalogued as TTS model "instant-voice-cloning"
+  - TTS voices : AI-parsed from docs.sarvam.ai (speaker enum in the TTS API reference)
 
-Indian AI provider specializing in Indian languages. First provider where
-models, voices, AND deprecation status all come from documentation — no API
-exposes this metadata.
+Indian AI provider specializing in Indian languages. Models, voices and deprecation
+status all come from documentation: the only list API (GET /v2/models) covers Token
+Factory LLMs, not speech, and GET /voices lists the caller's *private* cloned voices
+(never published). Checked 2026-11-16.
 
-SARVAM_API_KEY is reserved for future use — all sync data currently comes from
-public documentation. Only ANTHROPIC_API_KEY is needed for the AI parser.
+Extraction is done by Claude Code into .sync-cache/ (see CLAUDE.md); SARVAM_API_KEY is unused.
 
 STT models, TTS models, and TTS voices parse concurrently via asyncio.gather.
 """
@@ -35,6 +37,8 @@ _STT_DOCS = [
 
 _TTS_DOCS = [
     "https://docs.sarvam.ai/api-reference/text-to-speech/convert",
+    "https://docs.sarvam.ai/api/api-guides-tutorials/voice-cloning/overview",
+    "https://docs.sarvam.ai/api-reference/voice-cloning/clone",
     "https://docs.sarvam.ai/api/getting-started/models",
     "https://docs.sarvam.ai/api/getting-started/pricing",
     _LLMS,
@@ -56,7 +60,10 @@ _STT_GUIDANCE = (
     "Return every Sarvam speech-to-text model (Saaras / Saarika families). streaming=true only for "
     "models usable over the WebSocket API; meta.batch for the batch/REST APIs. " + _COMMON
 )
-_TTS_GUIDANCE = "Return every Sarvam text-to-speech model (Bulbul family). " + _COMMON
+_TTS_GUIDANCE = (
+    "Return every Sarvam text-to-speech model (Bulbul family), plus Instant Voice Cloning as model_id "
+    "'instant-voice-cloning' (separate endpoint, no model parameter; capability voice_cloning). " + _COMMON
+)
 _VOICES_GUIDANCE = (
     "Return every speaker the TTS API accepts (exact speaker string). compatible_models = the model "
     "ids each speaker works with. Gender only when the docs state it (never infer from names). "

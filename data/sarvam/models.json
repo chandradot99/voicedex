@@ -598,5 +598,80 @@
     ],
     "type": "tts",
     "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Clone a voice from a short reference clip and synthesize speech in it; cross-lingual (the clip's language need not match the output).",
+    "first_seen": "2026-11-16",
+    "id": "instant-voice-cloning",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "as-IN",
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "or-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "cross_lingual": true,
+      "default_sample_rate_hz": 24000,
+      "docs": "https://docs.sarvam.ai/api/api-guides-tutorials/voice-cloning/overview",
+      "endpoints": [
+        "POST /voices/create",
+        "POST /voices/clone",
+        "POST /voices/clone/stream",
+        "GET /voices/clone/ws"
+      ],
+      "model_parameter": "none — a separate endpoint; the catalog id is a grouping, not an API value",
+      "pricing_inr": {
+        "as_of": "2026-11-16",
+        "currency": "INR",
+        "excludes": "GST",
+        "plans": {
+          "growth": 2.0,
+          "pay_as_you_go": 2.0,
+          "pro": 2.0
+        },
+        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+        "unit": "1000 characters"
+      },
+      "watermark": "Sarvam STFT watermark; POST /voices/watermark/detect"
+    },
+    "name": "Instant Voice Cloning",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+        "https://docs.sarvam.ai/api/getting-started/models",
+        "https://docs.sarvam.ai/api/getting-started/pricing",
+        "https://docs.sarvam.ai/api/llms.txt",
+        "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
   }
 ]
