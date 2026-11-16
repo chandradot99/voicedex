@@ -1,0 +1,509 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Real-time and batch multilingual STT across Indic, European and East Asian languages with diarization, redaction and word timestamps.",
+    "first_seen": "2026-11-16",
+    "id": "pulse",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "hi",
+      "de",
+      "es",
+      "ru",
+      "it",
+      "fr",
+      "nl",
+      "pt",
+      "zh",
+      "yue",
+      "ja",
+      "ko",
+      "gu",
+      "mr",
+      "or",
+      "bn",
+      "ta",
+      "te",
+      "kn",
+      "ml"
+    ],
+    "meta": {
+      "aggregators": {
+        "batch": [
+          "multi-eu",
+          "multi-asian",
+          "multi-indic"
+        ],
+        "streaming": [
+          "north_indic",
+          "multi-asian",
+          "multi-south-indic",
+          "indic"
+        ]
+      },
+      "batch_languages": [
+        "en",
+        "hi",
+        "de",
+        "es",
+        "ru",
+        "it",
+        "fr",
+        "nl",
+        "pt",
+        "zh",
+        "ja",
+        "ko"
+      ],
+      "code_switching": true,
+      "concurrency_standard_plan": "Streaming 100 concurrent; batch 25 RPM",
+      "india_region_only_languages": [
+        "ta",
+        "te",
+        "kn",
+        "ml",
+        "hi-dev"
+      ],
+      "pci_redaction": true,
+      "recommended_sample_rate_hz": 16000,
+      "sentence_timestamps": true,
+      "streaming_beta_languages": [
+        "de",
+        "es",
+        "ru",
+        "it",
+        "fr",
+        "nl",
+        "pt",
+        "ta",
+        "te",
+        "kn",
+        "ml"
+      ],
+      "streaming_languages": [
+        "en",
+        "hi",
+        "hi-dev",
+        "de",
+        "es",
+        "ru",
+        "it",
+        "fr",
+        "nl",
+        "pt",
+        "zh",
+        "yue",
+        "ja",
+        "ko",
+        "gu",
+        "mr",
+        "or",
+        "bn",
+        "ta",
+        "te",
+        "kn",
+        "ml"
+      ],
+      "ttft_ms": 150,
+      "us_region_only_languages": [
+        "zh",
+        "yue",
+        "ja",
+        "ko"
+      ]
+    },
+    "name": "Pulse",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ]
+    },
+    "regions": [
+      "asia",
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "English-only streaming STT with built-in end-of-turn detection plus per-utterance emotion and gender estimates.",
+    "first_seen": "2026-11-16",
+    "id": "pulse-2",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "concurrency_standard_plan": "100 concurrent",
+      "emotion_detection": [
+        "neutral",
+        "happy",
+        "angry",
+        "sad",
+        "fear",
+        "disgust"
+      ],
+      "encodings": [
+        "linear16",
+        "linear32",
+        "alaw",
+        "mulaw",
+        "opus",
+        "ogg_opus"
+      ],
+      "end_of_turn_detection": true,
+      "gender_detection": true,
+      "pci_redaction": true,
+      "recommended_sample_rate_hz": 16000,
+      "sentence_timestamps": true
+    },
+    "name": "Pulse 2.0",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "word_timestamps"
+    ],
+    "description": "English-only batch STT tuned for accuracy (5.42% average WER on the Open ASR Leaderboard) at 250-300x real time.",
+    "first_seen": "2026-11-16",
+    "id": "pulse-pro",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "concurrency_standard_plan": "25 RPM",
+      "open_asr_avg_wer_pct": 5.42,
+      "recommended_sample_rate_hz": 16000,
+      "version": "v4.1"
+    },
+    "name": "Pulse Pro",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Real-time 44.1 kHz TTS with 217 voices across 12 trained languages and instant voice cloning from 5-15 seconds of audio.",
+    "eol_date": "2026-11-30",
+    "first_seen": "2026-11-16",
+    "id": "lightning_v3.1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "hi",
+      "ta",
+      "es",
+      "kn",
+      "mr",
+      "te",
+      "or",
+      "pa",
+      "ml",
+      "gu",
+      "bn",
+      "fr",
+      "de",
+      "it",
+      "nl",
+      "sv",
+      "pt",
+      "pl",
+      "ru"
+    ],
+    "meta": {
+      "current_api_default": true,
+      "deprecation_notice": "Retiring 2026-11-30 18:30 UTC: requests with model lightning_v3.1 (or no model) will be served by lightning_v3.1_pro; legacy /waves/v1/lightning-v3.1/ routes (incl. get_voices) retire and clones made on lightning-v3.1 stop working.",
+      "language_auto_routing": true,
+      "max_chunk_chars": 250,
+      "native_sample_rate_hz": 44100,
+      "optimal_chunk_chars": 140,
+      "pronunciation_dictionaries": true,
+      "replacement": "lightning_v3.1_pro",
+      "routed_languages": [
+        "fr",
+        "de",
+        "it",
+        "nl",
+        "sv",
+        "pt",
+        "pl",
+        "ru"
+      ],
+      "trained_voice_languages": [
+        "en",
+        "hi",
+        "ta",
+        "es",
+        "kn",
+        "mr",
+        "te",
+        "or",
+        "pa",
+        "ml",
+        "gu",
+        "bn"
+      ],
+      "transports": [
+        "http",
+        "sse",
+        "websocket"
+      ],
+      "ttfb_ms": 200,
+      "voice_count": 217
+    },
+    "name": "Lightning v3.1",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ]
+    },
+    "regions": [
+      "asia",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "description": "Premium 44.1 kHz TTS on dedicated capacity with curated Indian, British and American voices, Hindi code-switching and 31 languages.",
+    "first_seen": "2026-11-16",
+    "id": "lightning_v3.1_pro",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "hi",
+      "mr",
+      "ta",
+      "ml",
+      "te",
+      "kn",
+      "pa",
+      "bn",
+      "or",
+      "gu",
+      "ar",
+      "zh",
+      "id",
+      "ja",
+      "ko",
+      "ms",
+      "tr",
+      "vi",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "nl",
+      "sv",
+      "pt",
+      "ru",
+      "el",
+      "fi",
+      "no",
+      "pl"
+    ],
+    "meta": {
+      "becomes_api_default_on": "2026-11-30",
+      "checkpoint_note": "On 2026-11-28 the lightning_v3.1_pro_10_26 checkpoint becomes stable lightning_v3.1_pro for en/es/hi; other languages unchanged.",
+      "language_auto_routing": true,
+      "max_chunk_chars": 250,
+      "native_sample_rate_hz": 44100,
+      "optimal_chunk_chars": 140,
+      "pronunciation_dictionaries": true,
+      "server_regions": [
+        "ap-south-1",
+        "us-west-2"
+      ],
+      "transports": [
+        "http",
+        "sse",
+        "websocket"
+      ],
+      "ttfb_ms": 200,
+      "word_timestamps": true
+    },
+    "name": "Lightning v3.1 Pro",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ]
+    },
+    "regions": [
+      "asia",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "description": "Preview checkpoint of Lightning v3.1 Pro for English, Spanish and Hindi, promoted to stable lightning_v3.1_pro on 2026-11-28.",
+    "eol_date": "2026-12-28",
+    "family": "lightning_v3.1_pro",
+    "first_seen": "2026-11-16",
+    "id": "lightning_v3.1_pro_10_26",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "hi"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "deprecation_notice": "Preview until 2026-11-28; the dated ID remains available until 2026-12-28 after promotion to stable lightning_v3.1_pro.",
+      "max_chunk_chars": 250,
+      "replacement": "lightning_v3.1_pro",
+      "transports": [
+        "http",
+        "sse",
+        "websocket"
+      ]
+    },
+    "name": "Lightning v3.1 Pro (10/26 preview)",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ]
+    },
+    "regions": [
+      "asia",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

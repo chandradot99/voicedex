@@ -31,71 +31,28 @@ import httpx
 
 from naaviq.config import settings
 from naaviq.sync.ai_parser import parse_models_from_docs
-from naaviq.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncResult, SyncVoice
-from naaviq.sync.language import normalize_languages
+from naaviq.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncResult, SyncVoice, get_with_retry
+from naaviq.sync.language import language_from_name
 
 _BASE_URL = "https://api.smallest.ai/waves/v1"
-_VOICES_URL = f"{_BASE_URL}/lightning-v3.1/get_voices"
+# Voices are listed per model: /{model-slug}/get_voices, slug = model id with "_" → "-".
+_VOICES_URL = _BASE_URL + "/{slug}/get_voices"
 
 _DOCS_URLS = [
-    "https://waves-docs.smallest.ai/v4.0.0/content/getting-started/models",
-    "https://waves-docs.smallest.ai/v4.0.0/content/text-to-speech/quickstart",
-    "https://waves-docs.smallest.ai/v4.0.0/content/speech-to-text/pre-recorded/quickstart",
+    "https://docs.smallest.ai/model-cards/compare",
+    "https://docs.smallest.ai/api-reference/deprecations/models",
 ]
 
-_TTS_MODEL_GUIDANCE = """
-Extract Smallest AI TTS models. There are 2 models.
-
-1. model_id="lightning-v3.1", display_name="Lightning v3.1", is_default=True, streaming=True
-   - Current flagship TTS model. Sub-100ms TTFA. 15 languages.
-   - Languages: English, Spanish, French, Italian, Dutch, Swedish, Portuguese, German, Hindi, Tamil, Kannada, Telugu, Malayalam, Marathi, Gujarati.
-   - description="Smallest AI Lightning v3.1 — sub-100ms TTFA, 15 languages, broadcast-quality 44.1kHz audio."
-   - languages: ["en", "es", "fr", "it", "nl", "sv", "pt", "de", "hi", "ta", "kn", "te", "ml", "mr", "gu"]
-
-2. model_id="lightning-v2", display_name="Lightning v2", is_default=False, streaming=True
-   - Previous generation TTS model. Still supported.
-   - description="Smallest AI Lightning v2 — previous generation TTS model."
-   - languages: ["en", "hi", "es", "ta"]
-
-Use exact model_id values: "lightning-v3.1" and "lightning-v2".
-"""
-
-_STT_MODEL_GUIDANCE = """
-Extract Smallest AI STT models. There is 1 model.
-
-1. model_id="pulse", display_name="Pulse", is_default=True, streaming=True
-   - Batch and real-time STT. Sub-70ms TTFT. 36 languages with auto-detection.
-   - Features: word timestamps, speaker diarization, emotion detection, profanity filtering.
-   - description="Smallest AI Pulse — real-time STT, 36 languages, sub-70ms latency, diarization."
-   - languages: ["*"]
-
-Use exact model_id: "pulse".
-"""
+_TTS_MODEL_GUIDANCE = (
+    "Return every Lightning TTS model id the API accepts (exact ids). Keep deprecated models with a "
+    "published shutdown date (eol_date); exclude those deprecated with no date. is_default=true for "
+    "the model the docs call current."
+)
+_STT_MODEL_GUIDANCE = (
+    "Return every Pulse STT model id the API accepts. is_default=true for the model the docs call current."
+)
 
 _GENDER_MAP = {"male": "male", "female": "female", "neutral": "neutral"}
-
-_LANG_NAME_TO_BCP47: dict[str, str] = {
-    "english":    "en",
-    "hindi":      "hi",
-    "spanish":    "es",
-    "french":     "fr",
-    "german":     "de",
-    "portuguese": "pt",
-    "italian":    "it",
-    "dutch":      "nl",
-    "swedish":    "sv",
-    "tamil":      "ta",
-    "telugu":     "te",
-    "kannada":    "kn",
-    "malayalam":  "ml",
-    "marathi":    "mr",
-    "gujarati":   "gu",
-    "arabic":     "ar",
-    "chinese":    "zh",
-    "japanese":   "ja",
-    "korean":     "ko",
-    "russian":    "ru",
-}
 
 
 class SmallestAISyncer(ProviderSyncer):
@@ -103,22 +60,15 @@ class SmallestAISyncer(ProviderSyncer):
     source = "mixed"
 
     async def sync(self) -> SyncResult:
-        voices_data, (tts_models, tts_notes), (stt_models, stt_notes) = await asyncio.gather(
-            self._fetch_voices(),
-            parse_models_from_docs(
-                seed_urls=_DOCS_URLS,
-                provider_id=self.provider_id,
-                model_type="tts",
-                guidance=_TTS_MODEL_GUIDANCE,
-            ),
-            parse_models_from_docs(
-                seed_urls=_DOCS_URLS,
-                provider_id=self.provider_id,
-                model_type="stt",
-                guidance=_STT_MODEL_GUIDANCE,
-            ),
+        (tts_models, tts_notes), (stt_models, stt_notes) = await asyncio.gather(
+            parse_models_from_docs(seed_urls=_DOCS_URLS, provider_id=self.provider_id,
+                                   model_type="tts", guidance=_TTS_MODEL_GUIDANCE),
+            parse_models_from_docs(seed_urls=_DOCS_URLS, provider_id=self.provider_id,
+                                   model_type="stt", guidance=_STT_MODEL_GUIDANCE),
         )
-        tts_voices = self._parse_voices(voices_data)
+        # Voices are per-model endpoints, so the model list decides which endpoints to query.
+        voices_data = await self._fetch_voices_by_model([_slug(m.model_id) for m in tts_models])
+        tts_voices = self._parse_voices(voices_data, [m.model_id for m in tts_models])
 
         from_cache = (
             isinstance(tts_notes, dict) and tts_notes.get("source") == "cache"
@@ -137,48 +87,64 @@ class SmallestAISyncer(ProviderSyncer):
             tts_models=tts_models,
             tts_voices=tts_voices,
             source=self.source,
-            api_urls=[_VOICES_URL],
+            api_urls=[_VOICES_URL.format(slug="{model}")],
             docs_urls=_DOCS_URLS,
             notes=sync_notes,
         )
 
     # ── Private helpers ───────────────────────────────────────────────────────
 
-    async def _fetch_voices(self) -> list[dict]:
+    async def _fetch_voices_by_model(self, slugs: list[str]) -> dict[str, list[dict]]:
+        """{endpoint slug: voices} for each TTS model; models without a voices endpoint are skipped."""
         if not settings.smallest_api_key:
             raise ValueError("SMALLEST_API_KEY is not set in .env")
-
         headers = {"Authorization": f"Bearer {settings.smallest_api_key}"}
+        out: dict[str, list[dict]] = {}
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
-            resp = await client.get(_VOICES_URL, headers=headers)
-            resp.raise_for_status()
-            return resp.json().get("voices") or []
+            for slug in slugs:
+                resp = await get_with_retry(client, _VOICES_URL.format(slug=slug), headers=headers)
+                if resp.status_code == 404:
+                    continue  # model without its own voices endpoint (e.g. dated snapshots)
+                resp.raise_for_status()
+                out[slug] = resp.json().get("voices") or []
+        if not out:
+            raise RuntimeError("Smallest AI returned no voices from any model endpoint")
+        return out
 
-    def _parse_voices(self, voices_data: list[dict]) -> list[SyncVoice]:
-        voices: list[SyncVoice] = []
-        for v in voices_data:
-            voice_id = v.get("voiceId")
-            if not voice_id:
+    def _parse_voices(self, by_slug: dict[str, list[dict]], model_ids: list[str]) -> list[SyncVoice]:
+        slug_to_model = {_slug(m): m for m in model_ids}
+        entries: dict[str, list[tuple[str, dict]]] = {}
+        for slug, items in by_slug.items():
+            model = slug_to_model.get(slug)
+            if model is None:
                 continue
+            for v in items:
+                if v.get("voiceId"):
+                    entries.setdefault(v["voiceId"], []).append((model, v))
 
+        voices: list[SyncVoice] = []
+        for voice_id, pairs in entries.items():
+            v = pairs[0][1]  # metadata from the first (= preferred, docs order) model
             tags = v.get("tags") or {}
-            raw_langs = tags.get("language") or []
-            mapped = [_LANG_NAME_TO_BCP47.get(lang.lower(), lang) for lang in raw_langs]
-            languages = normalize_languages(mapped) if mapped else ["en"]
-            gender = _GENDER_MAP.get((tags.get("gender") or "").lower())
-            accent = tags.get("accent") or None
-
+            names = list(tags.get("recommendedLanguages") or []) + list(tags.get("language") or [])
+            languages = list(dict.fromkeys(c for c in (language_from_name(n) for n in names) if c))
             voices.append(SyncVoice(
                 voice_id=voice_id,
                 display_name=v.get("displayName") or voice_id,
-                gender=gender,
+                gender=_GENDER_MAP.get((tags.get("gender") or "").lower()),
                 category="premade",
                 languages=languages,
-                accent=accent,
-                compatible_models=["*"],  # all voices work with all Lightning models
-                meta={},
+                accent=(tags.get("accent") or None),
+                age=(tags.get("age") or None),
+                use_cases=list(tags.get("usecases") or []),
+                compatible_models=sorted({m for m, _ in pairs}),
+                meta={k: val for k, val in {"emotions": tags.get("emotions") or None}.items() if val},
             ))
         return voices
+
+
+def _slug(model_id: str) -> str:
+    return model_id.replace("_", "-")
 
 
 # ── Local runner ──────────────────────────────────────────────────────────────

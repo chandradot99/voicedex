@@ -108,3 +108,29 @@ def accent_from_languages(languages: list[str]) -> str | None:
         if len(parts) >= 2 and parts[1].upper() in ACCENT_MAP:
             return ACCENT_MAP[parts[1].upper()]
     return None
+
+
+# English language names (as providers label them) → BCP-47. Lowercase keys.
+LANGUAGE_NAMES: dict[str, str] = {
+    "afrikaans": "af", "albanian": "sq", "amharic": "am", "arabic": "ar", "armenian": "hy",
+    "assamese": "as", "azerbaijani": "az", "basque": "eu", "belarusian": "be", "bengali": "bn",
+    "bangla": "bn", "bosnian": "bs", "bulgarian": "bg", "burmese": "my", "cantonese": "yue",
+    "catalan": "ca", "chinese": "zh", "mandarin": "zh", "chinese (mandarin)": "zh", "croatian": "hr",
+    "czech": "cs", "danish": "da", "dutch": "nl", "english": "en", "estonian": "et", "filipino": "fil",
+    "finnish": "fi", "french": "fr", "galician": "gl", "georgian": "ka", "german": "de", "greek": "el",
+    "gujarati": "gu", "hausa": "ha", "hebrew": "he", "hindi": "hi", "hungarian": "hu", "icelandic": "is",
+    "indonesian": "id", "irish": "ga", "italian": "it", "japanese": "ja", "javanese": "jv",
+    "kannada": "kn", "kazakh": "kk", "khmer": "km", "korean": "ko", "lao": "lo", "latvian": "lv",
+    "lithuanian": "lt", "macedonian": "mk", "malay": "ms", "malayalam": "ml", "maltese": "mt",
+    "marathi": "mr", "mongolian": "mn", "nepali": "ne", "norwegian": "no", "odia": "or", "oriya": "or",
+    "pashto": "ps", "persian": "fa", "farsi": "fa", "polish": "pl", "portuguese": "pt", "punjabi": "pa",
+    "romanian": "ro", "russian": "ru", "serbian": "sr", "sinhala": "si", "slovak": "sk",
+    "slovenian": "sl", "somali": "so", "spanish": "es", "swahili": "sw", "swedish": "sv",
+    "tagalog": "tl", "tamil": "ta", "telugu": "te", "thai": "th", "turkish": "tr", "ukrainian": "uk",
+    "urdu": "ur", "uzbek": "uz", "vietnamese": "vi", "welsh": "cy", "yoruba": "yo", "zulu": "zu",
+}
+
+
+def language_from_name(name: str) -> str | None:
+    """'Norwegian' → 'no'; unknown names → None (never guess)."""
+    return LANGUAGE_NAMES.get(name.strip().lower()) if name else None
