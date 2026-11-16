@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}{% if rows %}Compare {% for r in rows %}{{ r.model.id }}{% if not loop.last %} vs {% endif %}{% endfor %}{% else %}Compare speech models{% endif %} | {{ site_name }}{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <h1>Compare</h1>
+  <p class="lede">Put up to {{ max_compare }} models side by side. Add them here, or tick models anywhere on the site.</p>
+</section>
+
+<section class="wrap">
+  <form class="filters compare-add" method="get" action="/compare">
+    {% for k in keys %}<input type="hidden" name="m" value="{{ k }}">{% endfor %}
+    {% if language %}<input type="hidden" name="language" value="{{ language }}">{% endif %}
+    {% if keys|length < max_compare %}
+    <label class="grow">Add a model
+      <input name="m" list="model-options" placeholder="Type a provider or model, e.g. deepgram nova-3" autocomplete="off">
+      <datalist id="model-options">
+        {% for o in options %}<option value="{{ model_key(o) }}">{{ names[o.provider_id] }} {{ o.model.id }} ({{ TYPE_SHORT[o.model.type] }})</option>{% endfor %}
+      </datalist>
+    </label>
+    <button type="submit">Add</button>
+    {% else %}<p class="muted">That's the maximum of {{ max_compare }}. Remove one to add another.</p>{% endif %}
+  </form>
+
+  {% if missing %}<p class="notice-soft">Not found and skipped: {{ missing|join(", ") }}.</p>{% endif %}
+
+  {% if not rows %}
+  <div class="empty">
+    <p>Nothing to compare yet. Pick models above, or start from a common question:</p>
+    <ul class="plain-list">
+      <li><a href="/compare?m=deepgram/stt/nova-3-general&m=assemblyai/stt/universal-3-5-pro&m=soniox/stt/stt-rt-v6&m=openai/stt/gpt-4o-transcribe">Streaming speech-to-text for voice agents</a></li>
+      <li><a href="/compare?m=elevenlabs/tts/eleven_flash_v2_5&m=cartesia/tts/sonic-3&m=openai/tts/gpt-4o-mini-tts&m=inworld/tts/inworld-tts-2-flash">Low-latency text-to-speech</a></li>
+      <li><a href="/compare?m=sarvam/stt/saaras:v4&m=google-cloud/stt/chirp_3&m=deepgram/stt/nova-3-general&language=hi">Hindi speech-to-text</a></li>
+    </ul>
+  </div>
+  {% else %}
+  <div class="compare-tools">
+    <form method="get" action="/compare" class="lang-check">
+      {% for k in keys %}<input type="hidden" name="m" value="{{ k }}">{% endfor %}
+      <label>Check a language
+        <select name="language" onchange="this.form.submit()">
+          <option value="">Choose…</option>
+          {% for code, name in languages %}<option value="{{ code }}" {% if language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
+        </select>
+      </label>
+      <noscript><button type="submit">Check</button></noscript>
+    </form>
+    <label class="check diff-toggle"><input type="checkbox" id="only-diff"> Only show differences</label>
+    <button type="button" class="btn-secondary" id="copy-link">Copy link</button>
+  </div>
+
+  <div class="table-scroll compare-scroll">
+    <table class="data compare">
+      <colgroup><col class="col-label">{% for r in rows %}<col>{% endfor %}</colgroup>
+      <thead>
+        <tr>
+          <th scope="col" class="corner"><span class="visually-hidden">Attribute</span></th>
+          {% for r in rows %}
+          {% set others = keys|reject("equalto", keys[loop.index0])|list %}
+          <th scope="col" data-key="{{ model_key(r) }}" data-label="{{ names[r.provider_id] }} {{ r.model.id }}">
+            <span class="cmp-provider">{{ names[r.provider_id] }} <span class="tag tag-{{ r.model.type }}">{{ TYPE_SHORT[r.model.type] }}</span></span>
+            <a class="cmp-model" href="{{ model_url(r) }}"><code>{{ r.model.id }}</code></a>
+            <a class="cmp-remove" href="/compare?{% for k in others %}m={{ k|urlencode }}&{% endfor %}{% if language %}language={{ language }}{% endif %}" aria-label="Remove {{ r.model.id }}">Remove</a>
+          </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      {% for group, items in table %}
+      <tbody>
+        <tr class="group-row"><th scope="rowgroup" colspan="{{ rows|length + 1 }}">{{ group }}</th></tr>
+        {% for row in items %}
+        <tr {% if row.same %}data-same{% endif %}>
+          <th scope="row">{{ row.label }}</th>
+          {% for c in row.cells %}
+          <td class="{% if c == 'Yes' %}yes{% elif c in ('–', 'No', 'Not published') %}no{% endif %}{% if row.best == loop.index0 %} best{% endif %}">
+            {% if c == "Yes" %}<span aria-hidden="true">✓</span><span class="visually-hidden">Yes</span>
+            {% elif c is not string %}<ul class="cell-list">{% for x in c[:5] %}<li>{{ x }}</li>{% endfor %}</ul>{% if c|length > 5 %}<a class="more" href="{{ model_url(rows[loop.index0]) }}">{{ c|length - 5 }} more</a>{% endif %}
+            {% else %}{{ c }}{% endif %}
+            {% if row.best == loop.index0 %}<span class="badge badge-best">Lowest</span>{% endif %}
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+      {% endfor %}
+    </table>
+  </div>
+  <p class="note">"–" means the provider's data doesn't list it, not that the model lacks it. Lowest price is only marked when every price uses the same unit.</p>
+  {% endif %}
+</section>
+{% endblock %}

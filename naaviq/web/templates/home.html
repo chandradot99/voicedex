@@ -11,10 +11,15 @@
   <p class="quick">Jump to <a href="/models?type=stt">speech-to-text</a>, <a href="/models?type=tts">text-to-speech</a>, <a href="/models?type=sts">realtime speech-to-speech</a> or <a href="/voices?preview=1">voices you can listen to</a>.</p>
 </section>
 
-<section class="coverage" aria-labelledby="coverage-title">
+<section class="coverage" id="coverage" aria-labelledby="coverage-title">
   <div class="wrap">
     <div class="section-head">
       <h2 id="coverage-title">Language coverage</h2>
+      <nav class="seg" aria-label="Model type">
+        {% for k, label in [("", "All models"), ("stt", "Speech-to-text"), ("tts", "Text-to-speech"), ("sts", "Speech-to-speech")] %}
+        <a href="/?map={{ k }}#coverage" {% if map_type == k %}aria-current="true"{% endif %}>{{ label }}</a>
+        {% endfor %}
+      </nav>
       <p>Each row is a provider, each column one of the {{ coverage.languages|length }} most-supported languages. Brighter cells mean more models for that language. Select a cell to see those models.</p>
     </div>
   </div>
@@ -24,7 +29,7 @@
         <tr>
           <th scope="col" class="map-corner">Provider</th>
           {% for lang in coverage.languages %}
-          <th scope="col" class="map-lang"><span title="{{ language_name(lang) }}">{{ language_name(lang) }}</span></th>
+          <th scope="col" class="map-lang"><a href="/models?language={{ lang }}{% if map_type %}&type={{ map_type }}{% endif %}" title="Models for {{ language_name(lang) }}">{{ language_name(lang) }}</a></th>
           {% endfor %}
         </tr>
       </thead>
@@ -34,8 +39,8 @@
           <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
           {% for c in counts %}
           {% set lang = coverage.languages[loop.index0] %}
-          <td class="h{{ heat_level(c, coverage.max_count) }}">
-            {% if c %}<a href="/models?provider={{ s.id }}&language={{ lang }}" aria-label="{{ s.name }}, {{ language_name(lang) }}: {{ c }} model{{ 's' if c != 1 }}"></a>{% endif %}
+          <td class="h{{ heat_level(c, coverage.max_count) }}"{% if c %} title="{{ s.name }}: {{ c }} {{ language_name(lang) }} model{{ 's' if c != 1 }}"{% endif %}>
+            {% if c %}<a href="/models?provider={{ s.id }}&language={{ lang }}{% if map_type %}&type={{ map_type }}{% endif %}" aria-label="{{ s.name }}, {{ language_name(lang) }}: {{ c }} model{{ 's' if c != 1 }}"></a>{% endif %}
           </td>
           {% endfor %}
         </tr>
@@ -57,7 +62,7 @@
       {% for r in upcoming_eol %}
       <li>
         <time datetime="{{ r.model.eol_date }}">{{ r.model.eol_date.strftime('%b %-d, %Y') }}</time>
-        <a href="/providers/{{ r.provider_id }}#{{ r.model.type }}-{{ r.model.id }}">{{ r.model.name }}</a>
+        <a href="{{ model_url(r) }}">{{ r.model.name }}</a>
         <span class="muted">{{ names[r.provider_id] }}{% if r.model.meta.get('replacement') %}, replaced by {{ r.model.meta['replacement'] }}{% endif %}</span>
       </li>
       {% endfor %}
@@ -71,7 +76,7 @@
     <ul class="recent-list">
       {% for r in recent %}
       <li>
-        <a href="/providers/{{ r.provider_id }}#{{ r.model.type }}-{{ r.model.id }}">{{ r.model.name }}</a>
+        <a href="{{ model_url(r) }}">{{ r.model.name }}</a>
         <span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}, {{ 'added' if r.model.first_seen == r.model.updated_at else 'updated' }} {{ r.model.updated_at.strftime('%b %-d') }}</span>
       </li>
       {% endfor %}

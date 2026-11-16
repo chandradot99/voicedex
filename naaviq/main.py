@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 import structlog
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import Response
+from fastapi.responses import JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
@@ -67,6 +67,15 @@ async def etag_cache(request: Request, call_next):
 app.include_router(providers.router, prefix="/v1")
 app.include_router(catalog.router, prefix="/v1")
 app.include_router(web.router)
+
+
+@app.exception_handler(404)
+async def not_found(request: Request, exc):
+    """HTML 404 for site pages; JSON for the API."""
+    detail = getattr(exc, "detail", "Not Found")
+    if request.url.path.startswith(("/v1", "/static", "/docs", "/redoc", "/openapi")):
+        return JSONResponse({"detail": detail}, status_code=404)
+    return web.templates.TemplateResponse(request, "404.html", {"detail": detail}, status_code=404)
 app.mount("/static", StaticFiles(directory=str(web.Path(web.__file__).parent / "static")), name="static")
 
 

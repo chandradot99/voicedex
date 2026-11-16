@@ -3,7 +3,7 @@
 {% block content %}
 <section class="wrap page-head">
   <h1>Models</h1>
-  <p class="lede">Filter by what you need, then sort by price. Prices are normalized: text-to-speech per million characters, speech-to-text and speech-to-speech per hour of audio.</p>
+  <p class="lede">Filter by what you need, sort by price, and tick models to compare them side by side. Prices are normalized: text-to-speech per million characters, speech-to-text and speech-to-speech per hour of audio.</p>
 </section>
 
 <section class="wrap">
@@ -50,15 +50,16 @@
   <div class="table-scroll">
     <table class="data models-table">
       <thead>
-        <tr><th scope="col">Model</th><th scope="col">Provider</th><th scope="col">Type</th><th scope="col" class="num">Languages</th><th scope="col">Price</th><th scope="col">Status</th></tr>
+        <tr><th scope="col" class="pick"><span class="visually-hidden">Compare</span></th><th scope="col">Model</th><th scope="col">Provider</th><th scope="col">Type</th><th scope="col" class="num">Languages</th><th scope="col">Price</th><th scope="col">Status</th></tr>
       </thead>
       <tbody>
         {% for r in rows %}{% set m = r.model %}
         <tr>
-          <th scope="row"><a href="/providers/{{ r.provider_id }}#{{ m.type }}-{{ m.id }}"><code>{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
+          <td class="pick"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ names[r.provider_id] }} {{ m.id }}" aria-label="Compare {{ m.id }}"></td>
+          <th scope="row"><a href="{{ model_url(r) }}"><code>{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
           <td>{{ names[r.provider_id] }}</td>
           <td><span class="tag tag-{{ m.type }}">{{ TYPE_SHORT[m.type] }}</span></td>
-          <td class="num">{% if "*" in m.languages %}Many{% else %}{{ m.languages|length or "–" }}{% endif %}</td>
+          <td class="num">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
           <td>{{ price_label(m) or "–" }}</td>
           <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%b %-d, %Y') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge">Default</span>{% endif %}</td>
         </tr>

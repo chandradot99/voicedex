@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}{{ m.name }} ({{ p.name }}): languages, price, features | {{ site_name }}{% endblock %}
+{% block description %}{{ p.name }} {{ m.id }}: {{ TYPE_LABELS[m.type]|lower }} model. {% if price_label(m) %}{{ price_label(m) }}. {% endif %}{{ m.languages|length }} languages{% if m.capabilities %}, {{ m.capabilities|length }} listed features{% endif %}.{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <p class="crumbs"><a href="/providers/{{ p.id }}">{{ p.name }}</a> <span class="muted">/</span> <a href="/models?type={{ m.type }}&provider={{ p.id }}">{{ TYPE_LABELS[m.type] }}</a></p>
+  <div class="title-row">
+    <h1 class="model-title"><code>{{ m.id }}</code></h1>
+    <button type="button" class="btn-secondary compare-toggle" data-key="{{ model_key(r) }}" data-label="{{ p.name }} {{ m.id }}" aria-pressed="false">Add to compare</button>
+  </div>
+  <p class="model-subtitle">{{ m.name }}
+    {% if m.is_default %}<span class="badge">Provider default</span>{% endif %}
+    {% if m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% endif %}
+    {% if m.alias_of %}<span class="badge badge-quiet">Alias of {{ m.alias_of }}</span>{% endif %}
+  </p>
+  {% if m.eol_date %}
+  <div class="callout callout-eol" role="note">
+    <strong>{{ p.name }} will shut this model down on {{ m.eol_date.strftime('%B %-d, %Y') }}.</strong>
+    {% if replacement %}Move to <a href="{{ model_url(replacement) }}"><code>{{ replacement.model.id }}</code></a>.{% elif m.meta.get('replacement') %}Suggested replacement: <code>{{ m.meta['replacement'] }}</code>.{% endif %}
+    {% set notice = m.meta.get('deprecation_notice') %}{% if notice %}<span class="muted">{% if notice is string and notice|length == 10 and notice[4] == '-' %}Announced {{ notice }}.{% else %}{{ notice }}{% endif %}</span>{% endif %}
+  </div>
+  {% endif %}
+  {% if m.description %}<p class="lede">{{ m.description }}</p>{% endif %}
+</section>
+
+<section class="wrap detail-grid">
+  <div class="detail-main">
+    <h2 class="first">Price</h2>
+    {% if m.pricing %}{% set pr = m.pricing %}
+    <p class="price-big">{{ price_label(m) }}</p>
+    {% if pr.free_quota %}<p>Free tier: {{ "{:,g}".format(pr.free_quota.amount) }} {{ pr.free_quota.unit }}s{% if pr.free_quota.period and pr.free_quota.period != "once" %} per {{ pr.free_quota.period }}{% elif pr.free_quota.period == "once" %} on sign-up{% endif %}.</p>{% endif %}
+    {% if pr.variants %}
+    <table class="data compact">
+      <thead><tr><th scope="col">Plan or mode</th><th scope="col">Price</th></tr></thead>
+      <tbody>{% for v in pr.variants %}<tr><td>{{ v.applies_to }}</td><td>{{ variant_label(m, v) }}</td></tr>{% endfor %}</tbody>
+    </table>
+    {% endif %}
+    {% if pr.notes %}<p class="note">{{ pr.notes }}</p>{% endif %}
+    <p class="source">{% if pr.source_url %}<a href="{{ pr.source_url }}" rel="noopener">Pricing source</a>{% endif %}{% if pr.as_of %} <span class="muted">checked {{ pr.as_of.strftime('%b %-d, %Y') }}</span>{% endif %}</p>
+    {% else %}
+    <p class="muted">{{ p.name }} doesn't publish a per-unit price for this model.</p>
+    {% endif %}
+
+    <h2>Languages</h2>
+    {% if "*" in m.languages %}
+    <p>Many languages. {{ p.name }} doesn't list them individually.</p>
+    {% elif lang_groups %}
+    <p class="muted">{{ lang_groups|length }} language{{ 's' if lang_groups|length != 1 }}{% if m.languages|length > lang_groups|length %}, {{ m.languages|length }} including regional variants{% endif %}.</p>
+    <ul class="lang-list">
+      {% for name, variants in lang_groups %}
+      <li>{{ name }}{% if variants %} <span class="muted">{{ variants|join(", ") }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="muted">Not published.</p>{% endif %}
+
+    <h2>Features</h2>
+    {% if m.capabilities %}
+    <ul class="feature-list">{% for c in m.capabilities %}<li><a href="/models?type={{ m.type }}&capability={{ c }}">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</a></li>{% endfor %}</ul>
+    {% else %}<p class="muted">No features listed in the provider's data. That doesn't mean they're missing.</p>{% endif %}
+
+    {% if voice_count %}
+    <h2>Voices</h2>
+    <p class="section-note">{{ "{:,}".format(voice_count) }} voice{{ 's' if voice_count != 1 }} work with this model. <a href="/voices?provider={{ p.id }}&model={{ m.id|urlencode }}">Browse them</a>.</p>
+    {% with rows=voice_sample, names={} %}{% include "_voice_grid.html" %}{% endwith %}
+    {% endif %}
+  </div>
+
+  <aside class="detail-side" aria-label="Specifications">
+    <h2 class="first">Specifications</h2>
+    <dl class="spec">
+      <div><dt>Type</dt><dd>{{ TYPE_LABELS[m.type] }}</dd></div>
+      <div><dt>Streaming</dt><dd>{{ "Yes" if m.streaming else "No" }}</dd></div>
+      {% if m.batch is not none %}<div><dt>Batch / file</dt><dd>{{ "Yes" if m.batch else "No" }}</dd></div>{% endif %}
+      {% if m.interfaces %}<div><dt>Connect via</dt><dd>{% for i in m.interfaces %}{{ INTERFACE_LABELS.get(i, i) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
+      {% if m.sample_rates_hz %}<div><dt>Sample rates</dt><dd>{% for s in m.sample_rates_hz %}{{ "{:g}".format(s / 1000) }} kHz{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
+      {% if m.audio_formats %}<div><dt>Audio formats</dt><dd>{{ m.audio_formats|join(", ") }}</dd></div>{% endif %}
+      {% if m.max_text_chars %}<div><dt>Max text</dt><dd>{{ "{:,}".format(m.max_text_chars) }} characters per request</dd></div>{% endif %}
+      {% if m.max_audio_seconds %}<div><dt>Max audio</dt><dd>{{ duration(m.max_audio_seconds) }} per request</dd></div>{% endif %}
+      {% if m.regions %}<div><dt>Regions</dt><dd>{{ m.regions|join(", ")|upper }}</dd></div>{% endif %}
+      {% if m.open_weights %}<div><dt>Open weights</dt><dd>{% if m.open_weights.url %}<a href="{{ m.open_weights.url }}" rel="noopener">{{ m.open_weights.license }}</a>{% else %}{{ m.open_weights.license }}{% endif %}</dd></div>{% endif %}
+      {% if m.family %}<div><dt>Family</dt><dd><code>{{ m.family }}</code></dd></div>{% endif %}
+      {% if m.meta.get('aliases') %}<div><dt>Also callable as</dt><dd>{% for a in m.meta['aliases'] %}<code>{{ a }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
+      {% if m.first_seen %}<div><dt>In catalog since</dt><dd>{{ m.first_seen.strftime('%b %-d, %Y') }}</dd></div>{% endif %}
+    </dl>
+    <h3>Where this data comes from</h3>
+    <p class="source-note">{% if m.provenance %}{{ {"api": "Read from " ~ p.name ~ "'s API", "docs": "Extracted from " ~ p.name ~ "'s documentation and reviewed", "manual": "Entered by hand"}.get(m.provenance.method, "") }}, {{ m.provenance.as_of.strftime('%b %-d, %Y') }}.{% endif %}</p>
+    {% if m.provenance and m.provenance.urls %}<ul class="source-links">{% for u in m.provenance.urls[:4] %}<li><a href="{{ u if u.startswith('http') else '#' }}" rel="noopener">{{ u.split('//')[-1].split('?')[0][:48] }}</a></li>{% endfor %}</ul>{% endif %}
+    <p><a href="/v1/providers/{{ p.id }}/models/{{ m.id|urlencode }}">This model as JSON</a></p>
+
+    {% if siblings %}
+    <h3>Other {{ p.name }} {{ TYPE_LABELS[m.type]|lower }} models</h3>
+    <ul class="sibling-list">{% for s in siblings %}<li><a href="{{ model_url(s) }}"><code>{{ s.model.id }}</code></a>{% if s.model.eol_date %} <span class="muted">ending</span>{% elif s.model.is_default %} <span class="muted">default</span>{% endif %}</li>{% endfor %}</ul>
+    {% endif %}
+  </aside>
+</section>
+{% endblock %}

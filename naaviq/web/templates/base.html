@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ site_name }}{% endblock %}</title>
   <meta name="description" content="{% block description %}Open catalog of speech-to-text, text-to-speech and speech-to-speech models and voices: languages, features, prices and status for every major provider.{% endblock %}">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.description() }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0b6e69">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230b6e69'/%3E%3Crect x='4' y='10' width='2.4' height='4' rx='1.2' fill='white'/%3E%3Crect x='8.2' y='7' width='2.4' height='10' rx='1.2' fill='white'/%3E%3Crect x='12.4' y='4.5' width='2.4' height='15' rx='1.2' fill='white'/%3E%3Crect x='16.6' y='8.5' width='2.4' height='7' rx='1.2' fill='white'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -23,7 +29,8 @@
         {% set path = request.url.path %}
         <a href="/models" {% if path.startswith('/models') %}aria-current="page"{% endif %}>Models</a>
         <a href="/voices" {% if path.startswith('/voices') %}aria-current="page"{% endif %}>Voices</a>
-        <a href="/#providers" >Providers</a>
+        <a href="/#providers">Providers</a>
+        <a href="/compare" {% if path.startswith('/compare') %}aria-current="page"{% endif %}>Compare <span id="compare-count" class="nav-count" aria-label="models selected"></span></a>
         <a href="/docs">API</a>
       </nav>
     </div>
@@ -31,6 +38,15 @@
   <main id="main">
     {% block content %}{% endblock %}
   </main>
+  <aside id="compare-tray" class="tray" hidden aria-label="Models selected for comparison">
+    <div class="wrap tray-row">
+      <ul class="tray-list"></ul>
+      <div class="tray-actions">
+        <button type="button" class="btn-link tray-clear">Clear</button>
+        <a class="btn tray-go" href="/compare">Compare</a>
+      </div>
+    </div>
+  </aside>
   <footer class="site-footer">
     <div class="wrap footer-row">
       <p>Data is pulled from each provider's API and documentation, reviewed, and versioned in git. Every page here is also available as JSON.</p>

@@ -142,10 +142,9 @@ class CartesiaSyncer(ProviderSyncer):
 
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
             for _ in range(_MAX_PAGES):
-                params: dict = {
-                    "limit": _PAGE_SIZE,
-                    "expand[]": "preview_file_url",
-                }
+                # preview_file_url is not requested: those file links need a Cartesia API key, so they're
+                # useless as public sample links (401 for every visitor).
+                params: dict = {"limit": _PAGE_SIZE}
                 if starting_after:
                     params["starting_after"] = starting_after
 
@@ -223,7 +222,6 @@ def _to_sync_voice(item: dict) -> SyncVoice:
         category="premade",
         languages=languages,
         description=item.get("description"),
-        preview_url=item.get("preview_file_url"),
         accent=accent_from_languages(primary),
         compatible_models=["*"],
         capabilities=["multilingual_native"] if len(native) > 1 else [],

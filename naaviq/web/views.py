@@ -127,9 +127,11 @@ class CoverageMap:
     max_count: int
 
 
-def coverage_map(catalog: Catalog, n_languages: int = 32) -> CoverageMap:
+def coverage_map(catalog: Catalog, n_languages: int = 32, model_type: str = "") -> CoverageMap:
     counts: dict[str, Counter] = defaultdict(Counter)
     for r in active_models(catalog):
+        if model_type and r.model.type != model_type:
+            continue
         for base in {base_language(lang) for lang in r.model.languages if lang != "*"}:
             counts[r.provider_id][base] += 1
     breadth = Counter(lang for c in counts.values() for lang in c)
@@ -157,3 +159,188 @@ def heat_level(count: int, max_count: int) -> int:
 def language_options(catalog: Catalog) -> list[tuple[str, str]]:
     seen = Counter(base_language(lang) for r in active_models(catalog) for lang in r.model.languages if lang != "*")
     return sorted(((code, language_name(code)) for code in seen), key=lambda x: x[1])
+
+
+# ── Model keys, lookup, voices per model ─────────────────────────────────────
+
+def model_key(row: ModelRow) -> str:
+    """Stable URL key: provider/type/model_id (model ids may contain ':' or '/')."""
+    return f"{row.provider_id}/{row.model.type}/{row.model.id}"
+
+
+def model_url(row: ModelRow) -> str:
+    return f"/models/{model_key(row)}"
+
+
+def find_model(catalog: Catalog, key: str) -> ModelRow | None:
+    parts = key.split("/", 2)
+    if len(parts) != 3:
+        return None
+    pid, mtype, mid = parts
+    return next((r for r in catalog.models if r.provider_id == pid and r.model.type == mtype
+                 and r.model.id == mid), None)
+
+
+def voices_for_model(catalog: Catalog, row: ModelRow) -> list[VoiceRow]:
+    if row.model.type == "stt":
+        return []
+    return [v for v in active_voices(catalog, row.provider_id)
+            if "*" in v.voice.compatible_models or row.model.id in v.voice.compatible_models]
+
+
+# ── Comparison table ─────────────────────────────────────────────────────────
+
+FEATURE_LABELS = {
+    "word_timestamps": "Word timestamps", "speaker_diarization": "Speaker diarization",
+    "punctuation": "Punctuation", "profanity_filter": "Profanity filter",
+    "custom_vocabulary": "Custom vocabulary", "language_detection": "Language detection",
+    "translation": "Translation", "sentiment": "Sentiment", "pii_redaction": "PII redaction",
+    "summarization": "Summarization", "topic_detection": "Topic detection",
+    "emotion": "Emotion control", "voice_cloning": "Voice cloning", "voice_design": "Voice design",
+    "ssml": "SSML", "phoneme_input": "Phoneme input", "prosody_control": "Speed / prosody control",
+    "style_control": "Style control", "multi_speaker": "Multi-speaker",
+}
+INTERFACE_LABELS = {"http": "HTTP", "websocket": "WebSocket", "grpc": "gRPC", "webrtc": "WebRTC"}
+
+
+@dataclass
+class CompareRow:
+    label: str
+    cells: list            # str, or list[str] rendered one per line
+    group: str
+    same: bool = False
+    best: int | None = None      # index of the highlighted cell
+
+
+def _v(x) -> str:
+    """Enum or plain string → its value (records may hold either)."""
+    return str(getattr(x, "value", x))
+
+
+def _fmt_list(items: list, empty: str = "–") -> str:
+    return ", ".join(str(i) for i in items) if items else empty
+
+
+def compare_table(rows: list[ModelRow], names: dict[str, str], check_language: str = "") -> list[CompareRow]:
+    out: list[CompareRow] = []
+
+    def add(group: str, label: str, cells: list[str], best: int | None = None) -> None:
+        flat = [tuple(c) if isinstance(c, list) else c for c in cells]
+        out.append(CompareRow(label, cells, group, same=len(set(flat)) <= 1 and len(cells) > 1, best=best))
+
+    ms = [r.model for r in rows]
+    add("Overview", "Type", [TYPE_LABELS[m.type] for m in ms])
+    add("Overview", "Status", [
+        (f"Shuts down {m.eol_date:%b %-d, %Y}" if m.eol_date else
+         _v(m.lifecycle).capitalize() if _v(m.lifecycle) in ("alpha", "beta") else "Generally available")
+        + (", provider default" if m.is_default else "") for m in ms])
+
+    prices = [normalized_price(m) for m in ms]
+    comparable = [(p[0], i) for i, p in enumerate(prices) if p]
+    units = {p[1] for p in prices if p}
+    best = min(comparable)[1] if len(comparable) > 1 and len(units) == 1 else None
+    add("Price", "Price", [price_label(m) or "Not published" for m in ms], best=best)
+    add("Price", "Other plans and modes", [
+        [f"{v.applies_to}: {_variant_label(m, v)}" for v in m.pricing.variants] if m.pricing and m.pricing.variants
+        else "–" for m in ms])
+    add("Price", "Free tier", [
+        (f"{m.pricing.free_quota.amount:,g} {m.pricing.free_quota.unit}s"
+         + (f" per {m.pricing.free_quota.period}" if m.pricing.free_quota.period not in (None, "once") else ""))
+        if m.pricing and m.pricing.free_quota else "–" for m in ms])
+
+    add("Languages", "Languages", [
+        "Many (unlisted)" if "*" in m.languages else (str(lang_count(m)) if m.languages else "Not published")
+        for m in ms])
+    if check_language:
+        from naaviq.catalog.store import language_matches
+        add("Languages", f"Supports {language_name(check_language)}",
+            ["Not published" if not m.languages else "Yes" if language_matches(check_language, m.languages) else "No"
+             for m in ms])
+
+    caps = sorted({c for m in ms for c in m.capabilities}, key=lambda c: FEATURE_LABELS.get(c, c))
+    for c in caps:
+        add("Features", FEATURE_LABELS.get(c, c.replace("_", " ").capitalize()),
+            ["Yes" if c in m.capabilities else "–" for m in ms])
+
+    add("Technical", "Streaming", ["Yes" if m.streaming else "No" for m in ms])
+    add("Technical", "Batch / file", ["Yes" if m.batch else "–" if m.batch is None else "No" for m in ms])
+    add("Technical", "Connect via", [_fmt_list([INTERFACE_LABELS.get(i, i) for i in m.interfaces]) for m in ms])
+    add("Technical", "Sample rates", [_fmt_list([f"{r / 1000:g} kHz" for r in m.sample_rates_hz]) for m in ms])
+    add("Technical", "Audio formats", [_fmt_list(m.audio_formats) for m in ms])
+    if any(m.max_text_chars for m in ms):
+        add("Technical", "Max text per request", [f"{m.max_text_chars:,} chars" if m.max_text_chars else "–" for m in ms])
+    if any(m.max_audio_seconds for m in ms):
+        add("Technical", "Max audio per request",
+            [_duration(m.max_audio_seconds) if m.max_audio_seconds else "–" for m in ms])
+    if any(m.regions for m in ms):
+        add("Technical", "Regions", [_fmt_list([_v(x).upper() if len(_v(x)) == 2 else _v(x).capitalize()
+                                                for x in m.regions]) for m in ms])
+    if any(m.open_weights for m in ms):
+        add("Technical", "Open weights", [m.open_weights.license if m.open_weights else "No" for m in ms])
+    add("Data", "Source", [
+        {"api": "Provider API", "docs": "Documentation", "manual": "Manual"}.get(
+            _v(m.provenance.method) if m.provenance else "", "–") for m in ms])
+    add("Data", "Checked", [f"{m.provenance.as_of:%b %-d, %Y}" if m.provenance else "–" for m in ms])
+    return out
+
+
+def _variant_label(model: Model, v) -> str:
+    amount = v.price_usd if v.price_usd is not None else v.price
+    cur = model.pricing.currency if model.pricing else "USD"
+    sym = _SYMBOL.get(cur, cur + " ")
+    if v.unit in ("character", "byte", "token"):
+        plural = {"character": "chars", "byte": "bytes", "token": "tokens"}[v.unit]
+        return f"{sym}{amount * 1_000_000:,.2f} per 1M {plural}"
+    if model.type in ("stt", "sts") and v.unit in _PER_HOUR and cur == "USD":
+        return f"{sym}{amount * _PER_HOUR[v.unit]:,.2f} per hour"
+    return f"{sym}{amount:g} per {v.unit}"
+
+
+def variant_label(model: Model, v) -> str:
+    return _variant_label(model, v)
+
+
+def _duration(seconds: int) -> str:
+    if seconds >= 3600:
+        return f"{seconds / 3600:g} h"
+    if seconds >= 60:
+        return f"{seconds / 60:g} min"
+    return f"{seconds} s"
+
+
+def duration(seconds: int) -> str:
+    return _duration(seconds)
+
+
+def language_groups(languages: list[str]) -> list[tuple[str, list[str]]]:
+    """[(language name, [regional variants…])] sorted by name; '*' handled by callers."""
+    groups: dict[str, list[str]] = defaultdict(list)
+    for code in languages:
+        if code == "*":
+            continue
+        base = base_language(code)
+        if code != base:
+            groups[base].append(code)
+        else:
+            groups.setdefault(base, [])
+    return sorted(((language_name(b), sorted(v)) for b, v in groups.items()), key=lambda x: x[0])
+
+
+def lang_count(model: Model) -> int:
+    """Distinct base languages (en-US + en-GB count once)."""
+    return len({base_language(x) for x in model.languages if x != "*"})
+
+
+def voice_chips(voice, limit: int = 4) -> list[str]:
+    """Readable use-case/style chips: drop 'category:' prefixes and facts already shown (age, gender)."""
+    out: list[str] = []
+    for raw in list(voice.use_cases) + list(voice.tags):
+        cat, _, val = raw.partition(":") if ":" in raw else ("", "", raw)
+        if cat.lower() in ("age", "gender", "accent", "language"):
+            continue
+        label = val.replace("_", " ").replace("-", " ").strip()
+        if label and label.lower() not in (x.lower() for x in out):
+            out.append(label)
+        if len(out) >= limit:
+            break
+    return out

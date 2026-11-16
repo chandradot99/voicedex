@@ -1,17 +1,21 @@
 <ul class="voice-grid">
   {% for r in rows %}{% set v = r.voice %}
-  <li class="voice">
+  <li class="voice{% if not v.preview_url %} no-sample{% endif %}">
     {% if v.preview_url %}
-    <button class="play" type="button" data-src="{{ v.preview_url }}" aria-label="Play sample of {{ v.name }}">
+    <button class="play" type="button" data-src="{{ v.preview_url }}" aria-pressed="false" aria-label="Play sample of {{ v.name }}">
       <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5.5v13l11-6.5z"/></svg>
       <svg viewBox="0 0 24 24" aria-hidden="true" class="i-stop"><rect x="7" y="7" width="10" height="10" rx="1.5"/></svg>
+      <svg viewBox="0 0 40 40" aria-hidden="true" class="ring"><circle cx="20" cy="20" r="18.25"/></svg>
     </button>
-    {% else %}<span class="play play-none" aria-hidden="true"></span>{% endif %}
+    {% endif %}
     <div class="voice-body">
-      <p class="voice-name">{{ v.name }}{% if names %} <span class="muted">{{ names.get(r.provider_id, r.provider_id) }}</span>{% endif %}</p>
-      <p class="voice-meta">{% set bits = [] %}{% if v.gender %}{% set _ = bits.append(v.gender|capitalize) %}{% endif %}{% if v.accent %}{% set _ = bits.append(v.accent.replace('_', ' ')|capitalize) %}{% endif %}{% if v.languages and "*" not in v.languages %}{% set _ = bits.append(language_name(v.languages[0]) ~ (' and ' ~ (v.languages|length - 1) ~ ' more' if v.languages|length > 1 else '')) %}{% elif "*" in v.languages %}{% set _ = bits.append('Multilingual') %}{% endif %}{{ bits|join(', ') }}</p>
+      <p class="voice-name">{{ v.name }}{% if names %} <a class="muted" href="/providers/{{ r.provider_id }}">{{ names.get(r.provider_id, r.provider_id) }}</a>{% endif %}</p>
+      <p class="voice-meta">{% set bits = [] %}{% if v.gender %}{% set _ = bits.append(v.gender|capitalize) %}{% endif %}{% if v.age %}{% set _ = bits.append(v.age|replace('_', ' ')|capitalize) %}{% endif %}{% if v.accent %}{% set _ = bits.append(v.accent.replace('_', ' ')|capitalize) %}{% endif %}{% if v.languages and "*" not in v.languages %}{% set _ = bits.append(language_name(v.languages[0]) ~ (' and ' ~ (v.languages|length - 1) ~ ' more' if v.languages|length > 1 else '')) %}{% elif "*" in v.languages %}{% set _ = bits.append('Multilingual') %}{% endif %}{{ bits|join(', ') }}</p>
       {% if v.description %}<p class="voice-desc">{{ v.description|truncate(140) }}</p>{% endif %}
-      <p class="voice-id"><code>{{ v.id }}</code></p>
+      {% set chips = voice_chips(v) %}
+      {% if chips %}<p class="voice-tags">{% for t in chips %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+      <p class="voice-id"><code>{{ v.id }}</code>{% if not v.preview_url %} <span class="muted">No sample published</span>{% endif %}</p>
+      <p class="voice-error" hidden>This sample couldn't be played. The provider may have moved it.</p>
     </div>
   </li>
   {% endfor %}

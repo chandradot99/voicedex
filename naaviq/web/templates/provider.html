@@ -29,31 +29,25 @@
 {% set group = models|selectattr("model.type", "equalto", t)|list %}
 {% if group %}
 <section class="wrap model-group" aria-labelledby="g-{{ t }}">
-  <h2 id="g-{{ t }}">{{ TYPE_LABELS[t] }}</h2>
-  <div class="model-list">
-    {% for r in group %}{% set m = r.model %}
-    <article class="model" id="{{ m.type }}-{{ m.id }}">
-      <header>
-        <h3><code>{{ m.id }}</code></h3>
-        <p class="model-name">{{ m.name }}
-          {% if m.is_default %}<span class="badge">Default</span>{% endif %}
-          {% if m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% endif %}
-          {% if m.alias_of %}<span class="badge badge-quiet">Alias of {{ m.alias_of }}</span>{% endif %}
-          {% if m.eol_date %}<span class="badge badge-eol">Shuts down {{ m.eol_date.strftime('%b %-d, %Y') }}</span>{% endif %}
-        </p>
-      </header>
-      {% if m.description %}<p>{{ m.description }}</p>{% endif %}
-      <dl class="model-facts">
-        <div><dt>Languages</dt><dd>
-          {% if "*" in m.languages %}Many (not listed by the provider){% elif m.languages|length > 8 %}{{ m.languages|length }} languages <details><summary>Show</summary><p class="langs">{% for l in m.languages %}{{ language_name(l) }}{% if not loop.last %}, {% endif %}{% endfor %}</p></details>{% elif m.languages %}{% for l in m.languages %}{{ language_name(l) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}Not published{% endif %}
-        </dd></div>
-        {% set price = price_label(m) %}
-        <div><dt>Price</dt><dd>{% if price %}{{ price }}{% if m.pricing.source_url %} <a class="src" href="{{ m.pricing.source_url }}" rel="noopener">source</a>{% endif %}{% else %}Not published{% endif %}</dd></div>
-        {% if m.capabilities %}<div><dt>Features</dt><dd>{% for c in m.capabilities %}<span class="cap">{{ c.replace('_', ' ') }}</span>{% endfor %}</dd></div>{% endif %}
-        {% if m.interfaces %}<div><dt>Connect via</dt><dd>{% set iface = {"http": "HTTP", "websocket": "WebSocket", "grpc": "gRPC", "webrtc": "WebRTC"} %}{% for i in m.interfaces %}{{ iface.get(i, i) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
-      </dl>
-    </article>
-    {% endfor %}
+  <h2 id="g-{{ t }}">{{ TYPE_LABELS[t] }} <span class="count">{{ group|length }}</span></h2>
+  <div class="table-scroll">
+    <table class="data models-table">
+      <thead>
+        <tr><th scope="col" class="pick"><span class="visually-hidden">Compare</span></th><th scope="col">Model</th><th scope="col" class="num">Languages</th><th scope="col">Price</th><th scope="col">Features</th><th scope="col">Status</th></tr>
+      </thead>
+      <tbody>
+        {% for r in group %}{% set m = r.model %}
+        <tr id="{{ m.type }}-{{ m.id }}">
+          <td class="pick"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ p.name }} {{ m.id }}" aria-label="Compare {{ m.id }}"></td>
+          <th scope="row"><a href="{{ model_url(r) }}"><code>{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
+          <td class="num">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
+          <td>{{ price_label(m) or "–" }}</td>
+          <td class="feat">{% for c in m.capabilities[:3] %}<span class="cap">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</span>{% endfor %}{% if m.capabilities|length > 3 %}<span class="muted">+{{ m.capabilities|length - 3 }}</span>{% endif %}</td>
+          <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%b %-d, %Y') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge">Default</span>{% endif %}{% if m.alias_of %} <span class="badge badge-quiet">Alias</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 </section>
 {% endif %}
