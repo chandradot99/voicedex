@@ -36,9 +36,13 @@ def base_language(code: str) -> str:
 _PER_HOUR = {"hour": 1, "minute": 60, "second": 3600}
 
 
+_SYMBOL = {"USD": "$", "EUR": "€", "INR": "₹", "GBP": "£", "JPY": "¥", "CNY": "¥"}
+
+
 def normalized_price(model: Model) -> tuple[float, str] | None:
+    """USD only — non-USD prices are shown as published but never converted or sorted against USD."""
     p: Pricing | None = model.pricing
-    if not p:
+    if not p or p.price_usd is None:
         return None
     unit = p.unit.lower()
     if model.type == "tts" and unit == "character":
@@ -53,8 +57,11 @@ def price_label(model: Model) -> str | None:
     if n:
         value, unit = n
         return f"${value:,.2f} {unit}" if value >= 0.01 else f"${value:.4f} {unit}"
-    if model.pricing:
-        return f"${model.pricing.price_usd:g} per {model.pricing.unit}"
+    p = model.pricing
+    if p:
+        amount = p.price_usd if p.price_usd is not None else p.price
+        sym = _SYMBOL.get(p.currency, p.currency + " ")
+        return f"{sym}{amount:g} per {p.unit}"
     return None
 
 

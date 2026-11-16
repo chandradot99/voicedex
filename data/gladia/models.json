@@ -175,53 +175,49 @@
         "endpointing"
       ],
       "prerecorded_max_audio_seconds_enterprise": 15300,
-      "prerecorded_max_channels": 2,
-      "pricing_eur": {
-        "addons_per_hour": {
-          "named_entity_recognition": 0.07,
-          "pii_redaction": 0.07,
-          "sentiment_analysis": 0.02,
-          "summarization": 0.03,
-          "translation": 0.05
-        },
-        "as_of": "2026-11-16",
-        "async_per_hour": 0.27,
-        "async_volume_tiers_per_hour": [
-          {
-            "hours": "0-100",
-            "price": 0.27
-          },
-          {
-            "hours": "100-500",
-            "price": 0.26
-          },
-          {
-            "hours": "500-2000",
-            "price": 0.24
-          },
-          {
-            "hours": "2000-5000",
-            "price": 0.23
-          },
-          {
-            "hours": "5000-10000",
-            "price": 0.22
-          },
-          {
-            "hours": "10000+",
-            "price": 0.21
-          }
-        ],
-        "currency": "EUR",
-        "free_credits_eur": 50,
-        "notes": "Self-serve pay-as-you-go; prices published in EUR only (no USD), so the USD pricing field is left empty.",
-        "pii_redaction_realtime": "unavailable",
-        "realtime_per_hour": 0.68,
-        "source_url": "https://www.gladia.io/pricing",
-        "unit": "hour"
-      }
+      "prerecorded_max_channels": 2
     },
     "name": "Solaria-1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "EUR",
+      "notes": "Pay-as-you-go async rate (published in EUR only, not converted); volume tiers in variants; €50 free credit; add-ons (translation, PII redaction…) billed extra per hour.",
+      "price": 0.27,
+      "source_url": "https://www.gladia.io/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "async, 0-100 h/month",
+          "price": 0.27,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 100-500 h/month",
+          "price": 0.26,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 500-2000 h/month",
+          "price": 0.24,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 2000-5000 h/month",
+          "price": 0.23,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 5000-10000 h/month",
+          "price": 0.22,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 10000+ h/month",
+          "price": 0.21,
+          "unit": "hour"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -298,51 +294,49 @@
         "audio_to_llm"
       ],
       "prerecorded_max_audio_seconds_enterprise": 15300,
-      "prerecorded_max_channels": 2,
-      "pricing_eur": {
-        "addons_per_hour": {
-          "named_entity_recognition": 0.07,
-          "pii_redaction": 0.07,
-          "sentiment_analysis": 0.02,
-          "summarization": 0.03,
-          "translation": 0.05
-        },
-        "as_of": "2026-11-16",
-        "async_per_hour": 0.16,
-        "async_volume_tiers_per_hour": [
-          {
-            "hours": "0-100",
-            "price": 0.16
-          },
-          {
-            "hours": "100-500",
-            "price": 0.15
-          },
-          {
-            "hours": "500-2000",
-            "price": 0.14
-          },
-          {
-            "hours": "2000-5000",
-            "price": 0.13
-          },
-          {
-            "hours": "5000-10000",
-            "price": 0.13
-          },
-          {
-            "hours": "10000+",
-            "price": 0.12
-          }
-        ],
-        "currency": "EUR",
-        "free_credits_eur": 50,
-        "notes": "Self-serve pay-as-you-go; prices published in EUR only (no USD), so the USD pricing field is left empty.",
-        "source_url": "https://www.gladia.io/pricing",
-        "unit": "hour"
-      }
+      "prerecorded_max_channels": 2
     },
     "name": "Solaria-3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "EUR",
+      "notes": "Pay-as-you-go async rate (published in EUR only, not converted); volume tiers in variants; €50 free credit; add-ons (translation, PII redaction…) billed extra per hour.",
+      "price": 0.16,
+      "source_url": "https://www.gladia.io/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "async, 0-100 h/month",
+          "price": 0.16,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 100-500 h/month",
+          "price": 0.15,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 500-2000 h/month",
+          "price": 0.14,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 2000-5000 h/month",
+          "price": 0.13,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 5000-10000 h/month",
+          "price": 0.13,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async, 10000+ h/month",
+          "price": 0.12,
+          "unit": "hour"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",

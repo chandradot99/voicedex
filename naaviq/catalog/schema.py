@@ -11,7 +11,7 @@ from datetime import date
 from enum import StrEnum
 from typing import Annotated
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from naaviq.sync.language import normalize_languages
 
@@ -118,7 +118,8 @@ class OpenWeights(_Record):
 class PriceVariant(_Record):
     applies_to: str
     unit: str
-    price_usd: float = Field(ge=0)
+    price_usd: float | None = Field(default=None, ge=0)   # USD rows
+    price: float | None = Field(default=None, ge=0)       # non-USD rows (parent Pricing.currency)
 
 
 class FreeQuota(_Record):
@@ -128,13 +129,30 @@ class FreeQuota(_Record):
 
 
 class Pricing(_Record):
+    """List price as published. USD → `price_usd`. Other currencies → `price` + `currency` (ISO 4217),
+    never converted (FX would be a guess); `price_usd` stays null for them."""
     unit: str
-    price_usd: float = Field(ge=0)
+    price_usd: float | None = Field(default=None, ge=0)
+    price: float | None = Field(default=None, ge=0)
+    currency: str = "USD"
     free_quota: FreeQuota | None = None
     variants: list[PriceVariant] = Field(default_factory=list)
     as_of: date | None = None
     source_url: str | None = None
     notes: str | None = None
+
+    @model_validator(mode="after")
+    def _currency(self) -> Pricing:
+        self.currency = self.currency.upper()
+        if self.currency == "USD":
+            if self.price_usd is None:
+                self.price_usd = self.price
+            self.price = None
+            if self.price_usd is None:
+                raise ValueError("USD pricing needs price_usd")
+        elif self.price is None or self.price_usd is not None:
+            raise ValueError(f"{self.currency} pricing needs `price` (and no price_usd)")
+        return self
 
     @field_validator("unit")
     @classmethod

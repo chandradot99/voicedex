@@ -94,10 +94,31 @@
           "title": "Applies To",
           "type": "string"
         },
+        "price": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price"
+        },
         "price_usd": {
-          "minimum": 0,
-          "title": "Price Usd",
-          "type": "number"
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Usd"
         },
         "unit": {
           "title": "Unit",
@@ -106,14 +127,14 @@
       },
       "required": [
         "applies_to",
-        "unit",
-        "price_usd"
+        "unit"
       ],
       "title": "PriceVariant",
       "type": "object"
     },
     "Pricing": {
       "additionalProperties": false,
+      "description": "List price as published. USD → `price_usd`. Other currencies → `price` + `currency` (ISO 4217),\nnever converted (FX would be a guess); `price_usd` stays null for them.",
       "properties": {
         "as_of": {
           "anyOf": [
@@ -127,6 +148,11 @@
           ],
           "default": null,
           "title": "As Of"
+        },
+        "currency": {
+          "default": "USD",
+          "title": "Currency",
+          "type": "string"
         },
         "free_quota": {
           "anyOf": [
@@ -151,10 +177,31 @@
           "default": null,
           "title": "Notes"
         },
+        "price": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price"
+        },
         "price_usd": {
-          "minimum": 0,
-          "title": "Price Usd",
-          "type": "number"
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Usd"
         },
         "source_url": {
           "anyOf": [
@@ -181,8 +228,7 @@
         }
       },
       "required": [
-        "unit",
-        "price_usd"
+        "unit"
       ],
       "title": "Pricing",
       "type": "object"

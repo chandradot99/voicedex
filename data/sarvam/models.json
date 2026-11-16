@@ -75,30 +75,36 @@
         "codemix"
       ],
       "pcm_input_sample_rate_hz": 16000,
-      "pricing_inr": {
-        "applies_to": "Speech to Text (real-time, streaming, batch)",
-        "as_of": "2026-11-16",
-        "billing": "per second",
-        "currency": "INR",
-        "diarization_batch_plans": {
-          "growth": 0.5,
-          "pay_as_you_go": 0.59,
-          "pro": 0.54
-        },
-        "excludes": "GST",
-        "plans": {
-          "growth": 0.41,
-          "pay_as_you_go": 0.49,
-          "pro": 0.45
-        },
-        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
-        "unit": "minute"
-      },
       "streaming_input": "legacy WS: wav/raw PCM only",
       "telephony_8khz_optimized": true,
       "timestamps": "chunk-level only; word-level timestamps not supported"
     },
     "name": "Saaras v3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "INR",
+      "notes": "Pay-as-you-go rate in INR (published in INR only, not converted), excl. GST. Billed per second.",
+      "price": 0.49,
+      "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "growth plan",
+          "price": 0.41,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "pro plan",
+          "price": 0.45,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch with diarization, pay as you go",
+          "price": 0.59,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -176,28 +182,34 @@
         "codemix"
       ],
       "output_modes_note": "mode applies to the final transcript only; partials are plain transcription",
-      "pricing_inr": {
-        "applies_to": "Speech to Text (real-time, streaming, batch)",
-        "as_of": "2026-11-16",
-        "billing": "per second",
-        "currency": "INR",
-        "diarization_batch_plans": {
-          "growth": 0.5,
-          "pay_as_you_go": 0.59,
-          "pro": 0.54
-        },
-        "excludes": "GST",
-        "plans": {
-          "growth": 0.41,
-          "pay_as_you_go": 0.49,
-          "pro": 0.45
-        },
-        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
-        "unit": "minute"
-      },
       "timestamps": "optional segment-level (return_timestamps)"
     },
     "name": "Saaras v3 Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "INR",
+      "notes": "Pay-as-you-go rate in INR (published in INR only, not converted), excl. GST. Billed per second.",
+      "price": 0.49,
+      "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "growth plan",
+          "price": 0.41,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "pro plan",
+          "price": 0.45,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch with diarization, pay as you go",
+          "price": 0.59,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -297,30 +309,36 @@
         "codemix"
       ],
       "pcm_input_sample_rate_hz": 16000,
-      "pricing_inr": {
-        "applies_to": "Speech to Text (real-time, streaming, batch)",
-        "as_of": "2026-11-16",
-        "billing": "per second",
-        "currency": "INR",
-        "diarization_batch_plans": {
-          "growth": 0.5,
-          "pay_as_you_go": 0.59,
-          "pro": 0.54
-        },
-        "excludes": "GST",
-        "plans": {
-          "growth": 0.41,
-          "pay_as_you_go": 0.49,
-          "pro": 0.45
-        },
-        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
-        "unit": "minute"
-      },
       "streaming_input": "Realtime WS: linear16/linear32/mulaw/alaw at 8000 or 16000 Hz; legacy WS: wav/raw PCM only",
       "telephony_8khz_optimized": true,
       "timestamps": "chunk-level only; word-level timestamps not supported"
     },
     "name": "Saaras v4",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "INR",
+      "notes": "Pay-as-you-go rate in INR (published in INR only, not converted), excl. GST. Billed per second.",
+      "price": 0.49,
+      "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "growth plan",
+          "price": 0.41,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "pro plan",
+          "price": 0.45,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "batch with diarization, pay as you go",
+          "price": 0.59,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -448,19 +466,6 @@
         2.0
       ],
       "pitch_control": false,
-      "pricing_inr": {
-        "applies_to": "REST, HTTP streaming and WebSocket",
-        "as_of": "2026-11-16",
-        "currency": "INR",
-        "excludes": "GST",
-        "plans": {
-          "growth": 2.7,
-          "pay_as_you_go": 3.0,
-          "pro": 2.85
-        },
-        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
-        "unit": "1000 characters"
-      },
       "pronunciation_dictionary": true,
       "ssml": false,
       "streaming_sample_rates_hz": [
@@ -472,6 +477,26 @@
       "temperature_control": true
     },
     "name": "Bulbul v3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "INR",
+      "notes": "Pay-as-you-go rate in INR (published in INR only, not converted), excl. GST.",
+      "price": 0.003,
+      "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "growth plan",
+          "price": 0.0027,
+          "unit": "character"
+        },
+        {
+          "applies_to": "pro plan",
+          "price": 0.00285,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -552,19 +577,6 @@
         2.0
       ],
       "pitch_loudness_note": "API reference says pitch/loudness are bulbul:v2-only; the v4 Flash best-practices guide lists pitch (-0.5..0.5) and loudness (0.1..2.5)",
-      "pricing_inr": {
-        "applies_to": "REST, HTTP streaming and WebSocket",
-        "as_of": "2026-11-16",
-        "currency": "INR",
-        "excludes": "GST",
-        "plans": {
-          "growth": 0.85,
-          "pay_as_you_go": 1.0,
-          "pro": 0.925
-        },
-        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
-        "unit": "1000 characters"
-      },
       "pronunciation_dictionary": true,
       "ssml": false,
       "streaming_sample_rates_hz": [
@@ -576,6 +588,26 @@
       "temperature_control": true
     },
     "name": "Bulbul v4 Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "INR",
+      "notes": "Pay-as-you-go rate in INR (published in INR only, not converted), excl. GST.",
+      "price": 0.001,
+      "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "growth plan",
+          "price": 0.00085,
+          "unit": "character"
+        },
+        {
+          "applies_to": "pro plan",
+          "price": 0.000925,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -636,21 +668,29 @@
         "GET /voices/clone/ws"
       ],
       "model_parameter": "none — a separate endpoint; the catalog id is a grouping, not an API value",
-      "pricing_inr": {
-        "as_of": "2026-11-16",
-        "currency": "INR",
-        "excludes": "GST",
-        "plans": {
-          "growth": 2.0,
-          "pay_as_you_go": 2.0,
-          "pro": 2.0
-        },
-        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
-        "unit": "1000 characters"
-      },
       "watermark": "Sarvam STFT watermark; POST /voices/watermark/detect"
     },
     "name": "Instant Voice Cloning",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "currency": "INR",
+      "notes": "Pay-as-you-go rate in INR (published in INR only, not converted), excl. GST.",
+      "price": 0.002,
+      "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "growth plan",
+          "price": 0.002,
+          "unit": "character"
+        },
+        {
+          "applies_to": "pro plan",
+          "price": 0.002,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
