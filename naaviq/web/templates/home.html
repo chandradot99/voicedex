@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero wrap">
+  <h1>Every speech model and voice, side by side.</h1>
+  <p class="lede">{{ n_models }} speech-to-text, text-to-speech and speech-to-speech models and {{ "{:,}".format(n_voices) }} voices from {{ live|length }} providers. Compare languages, features and prices, and see which models are being shut down.</p>
+  <form class="search" action="/search" role="search">
+    <label for="q" class="visually-hidden">Search providers, models and voices</label>
+    <input id="q" name="q" type="search" placeholder="Search a provider, model or voice name" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <p class="quick">Jump to <a href="/models?type=stt">speech-to-text</a>, <a href="/models?type=tts">text-to-speech</a>, <a href="/models?type=sts">realtime speech-to-speech</a> or <a href="/voices?preview=1">voices you can listen to</a>.</p>
+</section>
+
+<section class="coverage" aria-labelledby="coverage-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="coverage-title">Language coverage</h2>
+      <p>Each row is a provider, each column one of the {{ coverage.languages|length }} most-supported languages. Brighter cells mean more models for that language. Select a cell to see those models.</p>
+    </div>
+  </div>
+  <div class="map-scroll" tabindex="0" aria-label="Language coverage map, scrollable">
+    <table class="map">
+      <thead>
+        <tr>
+          <th scope="col" class="map-corner">Provider</th>
+          {% for lang in coverage.languages %}
+          <th scope="col" class="map-lang"><span title="{{ language_name(lang) }}">{{ language_name(lang) }}</span></th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for s, counts in coverage.rows %}
+        <tr>
+          <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
+          {% for c in counts %}
+          {% set lang = coverage.languages[loop.index0] %}
+          <td class="h{{ heat_level(c, coverage.max_count) }}">
+            {% if c %}<a href="/models?provider={{ s.id }}&language={{ lang }}" aria-label="{{ s.name }}, {{ language_name(lang) }}: {{ c }} model{{ 's' if c != 1 }}"></a>{% endif %}
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="wrap">
+    <p class="legend" aria-hidden="true"><span>Fewer models</span><i class="h1"></i><i class="h2"></i><i class="h3"></i><i class="h4"></i><i class="h5"></i><span>More</span></p>
+  </div>
+</section>
+
+<div class="wrap columns{% if not recent %} single{% endif %}">
+  <section aria-labelledby="eol-title">
+    <h2 id="eol-title">Scheduled shutdowns</h2>
+    {% if upcoming_eol %}
+    <p class="section-note">Models still callable today, with a published end-of-life date.</p>
+    <ul class="eol-list">
+      {% for r in upcoming_eol %}
+      <li>
+        <time datetime="{{ r.model.eol_date }}">{{ r.model.eol_date.strftime('%b %-d, %Y') }}</time>
+        <a href="/providers/{{ r.provider_id }}#{{ r.model.type }}-{{ r.model.id }}">{{ r.model.name }}</a>
+        <span class="muted">{{ names[r.provider_id] }}{% if r.model.meta.get('replacement') %}, replaced by {{ r.model.meta['replacement'] }}{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="section-note">No announced shutdowns.</p>{% endif %}
+  </section>
+  {% if recent %}
+  <section aria-labelledby="recent-title">
+    <h2 id="recent-title">Recently changed</h2>
+    <p class="section-note">New or updated models from the latest syncs.</p>
+    <ul class="recent-list">
+      {% for r in recent %}
+      <li>
+        <a href="/providers/{{ r.provider_id }}#{{ r.model.type }}-{{ r.model.id }}">{{ r.model.name }}</a>
+        <span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}, {{ 'added' if r.model.first_seen == r.model.updated_at else 'updated' }} {{ r.model.updated_at.strftime('%b %-d') }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>
+
+<section id="providers" class="wrap" aria-labelledby="providers-title">
+  <h2 id="providers-title">Providers</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <thead>
+        <tr><th scope="col">Provider</th><th scope="col">Offers</th><th scope="col" class="num">Models</th><th scope="col" class="num">Voices</th><th scope="col" class="num">Languages</th><th scope="col">Last synced</th></tr>
+      </thead>
+      <tbody>
+        {% for s in live %}
+        <tr>
+          <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
+          <td>{% for t in s.types %}<span class="tag tag-{{ t }}">{{ TYPE_SHORT[t] }}</span>{% endfor %}</td>
+          <td class="num">{{ s.models }}</td>
+          <td class="num">{{ "{:,}".format(s.voices) if s.voices else "–" }}</td>
+          <td class="num">{{ s.languages or "–" }}{% if s.multilingual %}<span class="plus" title="Some models support many unlisted languages">+</span>{% endif %}</td>
+          <td>{{ s.last_synced or "–" }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="retired-title">No longer available</h3>
+  <ul class="retired-list">
+    {% for s in retired %}
+    <li><a href="/providers/{{ s.id }}">{{ s.name }}</a> <span class="muted">{{ 'shut down ' ~ s.retired_on if s.retired_on else 'shut down' }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

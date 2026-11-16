@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Search{% if q %}: {{ q }}{% endif %} | {{ site_name }}{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <h1>Search</h1>
+  <form class="search" action="/search" role="search">
+    <label for="q" class="visually-hidden">Search providers, models and voices</label>
+    <input id="q" name="q" type="search" value="{{ q }}" placeholder="Search a provider, model or voice name" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+</section>
+
+<section class="wrap">
+  {% if not q %}
+  <p class="empty">Type a provider (Deepgram), a model (nova-3, sonic) or a voice name (Rachel).</p>
+  {% elif not (providers or models or voices or lang_hits) %}
+  <p class="empty">Nothing matches "{{ q }}". Search matches provider, model and voice names. To filter by language or feature, use the <a href="/models">model filters</a>.</p>
+  {% else %}
+    {% for code, name in lang_hits %}
+    <p class="lang-hit">{{ name }}: <a href="/models?language={{ code }}">models that support it</a>, <a href="/voices?language={{ code }}">voices that speak it</a>.</p>
+    {% endfor %}
+    {% if providers %}
+    <h2>Providers</h2>
+    <ul class="plain-list">{% for s in providers %}<li><a href="/providers/{{ s.id }}">{{ s.name }}</a> <span class="muted">{{ s.models }} models{% if s.voices %}, {{ "{:,}".format(s.voices) }} voices{% endif %}</span></li>{% endfor %}</ul>
+    {% endif %}
+    {% if models %}
+    <h2>Models</h2>
+    <ul class="plain-list">{% for r in models %}<li><a href="/providers/{{ r.provider_id }}#{{ r.model.type }}-{{ r.model.id }}"><code>{{ r.model.id }}</code></a> <span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}</span></li>{% endfor %}</ul>
+    {% endif %}
+    {% if voices %}
+    <h2>Voices</h2>
+    {% with rows=voices %}{% include "_voice_grid.html" %}{% endwith %}
+    {% if voices|length == 40 %}<p class="section-note"><a href="/voices?q={{ q|urlencode }}">See all matching voices</a></p>{% endif %}
+    {% endif %}
+  {% endif %}
+</section>
+{% endblock %}

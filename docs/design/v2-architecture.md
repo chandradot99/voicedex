@@ -86,3 +86,15 @@ history API, changelog/RSS feed, npm/PyPI packages, Pro tier.
 ## Removed
 
 Postgres, SQLAlchemy models, Alembic, `scripts/promote.py`, dev DB, `sync_runs` (git log replaces it).
+
+## D8. Web catalog UI: server-rendered from the same in-memory catalog (2026-11-16)
+
+The homepage and catalog pages (`/`, `/providers/{id}`, `/models`, `/voices`, `/search`) are Jinja2
+templates rendered by the API process (`naaviq/web/`), not a separate SPA.
+
+- **Why:** `/v1/catalog.json` is ~8 MB, too heavy to ship to browsers for client-side filtering; server
+  rendering keeps pages fast, indexable by search engines (per-provider pages are the long-tail entry
+  point), and deployed atomically with the data they show — no second build or host.
+- Filters are plain GET forms (shareable URLs) using the API's matching semantics.
+- No JS framework; one small script for voice-sample playback.
+- Site name is `SITE_NAME` (config) until the product is named.

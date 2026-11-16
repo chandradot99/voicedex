@@ -1422,12 +1422,14 @@
     "description": "A middle-aged man with a deep, magnetic, slightly raspy voice",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "de_male_sven_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "de_male_sven_uranus_bigtts",
     "languages": [
       "de"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "German",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "European & Middle Eastern Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -1552,12 +1554,14 @@
     "description": "A calm, gentle young female voice with a steady, understated storytelling tone",
     "first_seen": "2026-11-16",
     "gender": "female",
-    "id": "en_female_brittney_pimintel_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_female_brittney_pimintel_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -2013,12 +2017,14 @@
     "description": "A crisp, lively American young female voice—full of enthusiasm and outstanding expressiveness",
     "first_seen": "2026-11-16",
     "gender": "female",
-    "id": "en_female_myra_cmb_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_female_myra_cmb_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -2159,12 +2165,14 @@
     "description": "A conversational female voice—bright and vivid, warm and approachable",
     "first_seen": "2026-11-16",
     "gender": "female",
-    "id": "en_female_natasha_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_female_natasha_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -2699,12 +2707,14 @@
     "description": "A steady, self-assured male professional with poise and composure",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "en_male_bill_jones_corey_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_male_bill_jones_corey_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -2979,12 +2989,14 @@
     "description": "An energetic, flamboyant uncle with a Southern American accent",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "en_male_cowboy_john_b_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_male_cowboy_john_b_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -3491,12 +3503,14 @@
     "description": "A businesslike young man with a deep, magnetic voice and a dignified, steady tone",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "en_male_josh_coery_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_male_josh_coery_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -3647,12 +3661,14 @@
     "description": "A steady, mellow mid-range male voice with a calm, professional narration style",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "en_male_michael_kevin_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_male_michael_kevin_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -3804,12 +3820,14 @@
     "description": "A deep, magnetic young American male voice with a calm, confident tone",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "en_male_ryan_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_male_ryan_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -3977,12 +3995,14 @@
     "description": "A mature, dignified uncle with American pronunciation and a steady, powerful professional narration style",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "en_male_valentino_corey_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "en_male_valentino_corey_uranus_bigtts",
     "languages": [
       "en-US"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "American English",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "English Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4129,12 +4149,14 @@
     "description": "A steady, magnetic middle-aged Mexican male voice with composed, measured delivery",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "es_male_angel_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "es_male_angel_uranus_bigtts",
     "languages": [
       "es"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Spanish",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "European & Middle Eastern Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4179,12 +4201,14 @@
     "description": "A rich, deep middle-aged Mexican male voice with a calm, commanding tone",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "es_male_francisc_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "es_male_francisc_uranus_bigtts",
     "languages": [
       "es"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Spanish",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "European & Middle Eastern Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4329,12 +4353,14 @@
     "description": "A sophisticated, crisp, and articulate male voice",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "fr_male_usseau_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "fr_male_usseau_uranus_bigtts",
     "languages": [
       "fr"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "French",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "European & Middle Eastern Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4529,12 +4555,14 @@
     "description": "An intelligent, gentle young Indonesian female voice with a fresh, natural tone",
     "first_seen": "2026-11-16",
     "gender": "female",
-    "id": "id_female_prisma_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "id_female_prisma_uranus_bigtts",
     "languages": [
       "id"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Indonesian",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Asian Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4754,12 +4782,14 @@
     "description": "A deep, mellow middle-aged Italian male voice with assured, unhurried delivery",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "it_male_enzo2_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "it_male_enzo2_uranus_bigtts",
     "languages": [
       "it"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Italian",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "European & Middle Eastern Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4779,12 +4809,14 @@
     "description": "An authentic, charismatic, and warm Italian male voice",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "it_male_enzo_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "it_male_enzo_uranus_bigtts",
     "languages": [
       "it"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Italian",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "European & Middle Eastern Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4804,12 +4836,14 @@
     "description": "A mature, magnetic middle-aged Italian male voice with a composed, refined manner",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "it_male_luca_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "it_male_luca_uranus_bigtts",
     "languages": [
       "it"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Italian",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "European & Middle Eastern Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -4954,12 +4988,14 @@
     "description": "A vibrant, hearty young woman with an outgoing personality and outwardly full emotion.",
     "first_seen": "2026-11-16",
     "gender": "female",
-    "id": "ja_female_minimi_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "ja_female_minimi_uranus_bigtts",
     "languages": [
       "ja"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Japanese",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Asian Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -5029,12 +5065,14 @@
     "description": "A clear, polished young Japanese male voice with a warm, composed tone",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "ja_male_yusuke_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "ja_male_yusuke_uranus_bigtts",
     "languages": [
       "ja"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Japanese",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Asian Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -5129,12 +5167,14 @@
     "description": "A steady, refined middle-aged uncle with a highly persuasive tone.",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "ko_male_shane_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "ko_male_shane_uranus_bigtts",
     "languages": [
       "ko"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Korean",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Asian Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -5669,12 +5709,14 @@
     "description": "An enthusiastic, sharp-witted cheerful young man, skilled at building a suspenseful atmosphere.",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "mx_male_felipe_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "mx_male_felipe_uranus_bigtts",
     "languages": [
       "es-MX"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Mexican Spanish",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Latin American Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -5744,12 +5786,14 @@
     "description": "A deep, resonant middle-aged Mexican male voice with a warm, composed manner",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "mx_male_migu_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "mx_male_migu_uranus_bigtts",
     "languages": [
       "es-MX"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Mexican Spanish",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Latin American Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -6044,12 +6088,14 @@
     "description": "A clear, warm young Brazilian male voice with an enthusiastic, energetic delivery",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "pt_male_eduardo-s_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "pt_male_eduardo-s_uranus_bigtts",
     "languages": [
       "pt-BR"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Brazilian Portuguese",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Latin American Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -6069,12 +6115,14 @@
     "description": "A charismatic, warm, and expressive male voice",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "pt_male_martins_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "pt_male_martins_uranus_bigtts",
     "languages": [
       "pt-BR"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Brazilian Portuguese",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Latin American Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -6419,12 +6467,14 @@
     "description": "A bright, sweet young Thai female voice with a lively, upbeat delivery",
     "first_seen": "2026-11-16",
     "gender": "female",
-    "id": "th_female_cake_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "th_female_cake_uranus_bigtts",
     "languages": [
       "th"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Thai",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Asian Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -6494,12 +6544,14 @@
     "description": "A clear, polished young Thai male voice with an enthusiastic, energetic delivery",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "th_male_paran_uranus_bigtts (TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API)",
+    "id": "th_male_paran_uranus_bigtts",
     "languages": [
       "th"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Thai",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Asian Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"
@@ -6594,12 +6646,14 @@
     "description": "A cheerful, outgoing young Filipino male voice with friendly, natural delivery",
     "first_seen": "2026-11-16",
     "gender": "male",
-    "id": "tl_male_jonathan-palad_uranus_bigtts （Note：TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API）",
+    "id": "tl_male_jonathan-palad_uranus_bigtts",
     "languages": [
       "fil"
     ],
     "meta": {
+      "bidirectional_streaming": false,
       "language_label": "Filipino",
+      "note": "TTS Unidirectional Streaming Only — Not Supported for Bidirectional Streaming API",
       "section": "Asian Voices",
       "speaker_param": "req_params.speaker",
       "tts_version": "2.0"

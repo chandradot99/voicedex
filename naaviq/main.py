@@ -6,6 +6,7 @@ import structlog
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
+from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
@@ -13,6 +14,7 @@ from naaviq.catalog.store import Catalog
 from naaviq.config import settings
 from naaviq.limiter import limiter
 from naaviq.routers import catalog, providers
+from naaviq.web import routes as web
 
 log = structlog.get_logger()
 
@@ -64,6 +66,8 @@ async def etag_cache(request: Request, call_next):
 
 app.include_router(providers.router, prefix="/v1")
 app.include_router(catalog.router, prefix="/v1")
+app.include_router(web.router)
+app.mount("/static", StaticFiles(directory=str(web.Path(web.__file__).parent / "static")), name="static")
 
 
 @app.get("/health", tags=["meta"])

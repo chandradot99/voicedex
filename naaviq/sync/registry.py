@@ -64,6 +64,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("soniox",            "Soniox",            "both", "naaviq.sync.soniox.SonioxSyncer"),
     SyncerEntry("xai",               "xAI",               "both", "naaviq.sync.xai.XAISyncer"),
     SyncerEntry("gradium",           "Gradium",           "both", "naaviq.sync.gradium.GradiumSyncer"),
+    SyncerEntry("alibaba",           "Alibaba Cloud Model Studio", "both", "naaviq.sync.alibaba.AlibabaSyncer"),
     SyncerEntry("meta",              "Meta",              "stt",  "naaviq.sync.meta.MetaSyncer"),
     SyncerEntry("async",             "Async",             "both", "naaviq.sync.asyncai.AsyncSyncer"),
     SyncerEntry("stepfun",           "StepFun",           "both", "naaviq.sync.stepfun.StepFunSyncer"),

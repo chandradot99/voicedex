@@ -11,6 +11,7 @@ class Settings(BaseSettings):
 
     data_dir: str = ""                     # catalog directory; empty = <repo>/data
     rate_limit: str = "100/minute"
+    site_name: str = "Voice Registry"      # working title until the product is named
 
     # Provider API keys — used by sync scripts
     deepgram_api_key: str = ""
