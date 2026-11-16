@@ -118,6 +118,13 @@
         /* Response panel: indent header/cookie keys to sit under their section titles,
            matching the request panel (whose rows start after a checkbox column). */
         .response-section-content .scalar-data-table tr > td:first-child > span { padding-left: 40px !important; }
+        /* Body: content-type bar and code start under the "Body" title too. */
+        .response-section-content-body .box-content.border-y { padding-left: 34px !important; }
+        .response-section-content-body .scalar-code-block { padding-left: 24px !important; }
+        /* Large bodies use a plain, virtualised view: notice bar + absolutely positioned text. */
+        .response-body-virtual .font-code.rounded-t { padding-left: 34px !important; }
+        .response-body-virtual .scalar-virtual-text { padding-left: 0 !important; }
+        .response-body-virtual .scalar-virtual-text-content { left: 34px !important; }
         .scalar-card, .scalar-codeblock-pre { border-radius: 14px !important; }
       `,
     });
