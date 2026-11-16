@@ -1,0 +1,24 @@
+{
+  "api_urls": [
+    "https://api.fish.audio/model"
+  ],
+  "docs_urls": [
+    "https://docs.fish.audio/llms.txt",
+    "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+    "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+    "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+    "https://docs.fish.audio/features/speech-to-text"
+  ],
+  "id": "fishaudio",
+  "last_synced": "2026-11-16",
+  "name": "Fish Audio",
+  "source": "mixed",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.fish.audio/model"
+    ]
+  }
+}

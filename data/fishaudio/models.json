@@ -1,0 +1,497 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Deprecated general transcription model for short recordings; served when the model header is missing.",
+    "eol_date": "2026-12-31",
+    "first_seen": "2026-11-16",
+    "id": "transcribe-1",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "deprecation_notice": "transcribe-1 is deprecated and will be retired on December 31, 2026. After that date, the requests it serves are served by transcribe-1-pro.",
+      "max_upload_mib": 50,
+      "replacement": "transcribe-1-pro"
+    },
+    "name": "Transcribe 1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Per audio hour, billed per second rounded up",
+      "price_usd": 0.36,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Recommended file transcription model for clips up to 60-minute recordings, with speaker turns and emotion/vocal-event cues.",
+    "first_seen": "2026-11-16",
+    "id": "transcribe-1-pro",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "max_audio_seconds": 3600,
+    "meta": {
+      "audio_event_tags": true,
+      "endpoint": "POST /v1/asr (header model: transcribe-1-pro)",
+      "input_formats_raw": [
+        "wav",
+        "mp3",
+        "aac",
+        "m4a",
+        "mp4",
+        "flac",
+        "ogg-opus",
+        "ogg-vorbis",
+        "webm",
+        "matroska",
+        "mov"
+      ]
+    },
+    "name": "Transcribe 1 Pro",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Per audio hour, billed per second rounded up",
+      "price_usd": 0.36,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Realtime turn-by-turn transcription over WebSocket with turn detection for voice agents.",
+    "first_seen": "2026-11-16",
+    "id": "transcribe-stream-1",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "mk",
+      "ms",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tl",
+      "th",
+      "tr",
+      "vi"
+    ],
+    "lifecycle": "beta",
+    "max_audio_seconds": 3600,
+    "meta": {
+      "audio_encodings": [
+        "pcm_s16le"
+      ],
+      "endpoint": "wss://api.fish.audio/v1/asr/realtime",
+      "label": "Preview",
+      "max_turn_seconds": 60,
+      "turn_detection": true
+    },
+    "name": "Transcribe Stream 1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Realtime ASR, per session hour, billed per second",
+      "price_usd": 0.36,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      12000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "phoneme_input",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Latest directable TTS model for content creation, taking plain-language performance directions, sounds, pauses and phoneme tags.",
+    "first_seen": "2026-11-16",
+    "id": "drama-3",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "language_tags_experimental": true,
+      "pricing_raw": {
+        "as_of": "2026-11-16",
+        "notes": "Launch promo $10.00 / M UTF-8 bytes through 2026-11-30",
+        "price_usd_per_million_utf8_bytes": 50.0,
+        "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "unit": "utf8_byte_million"
+      },
+      "streaming_note": "Docs only show POST /v1/tts with model header drama-3; WebSocket support not stated."
+    },
+    "name": "Drama 3",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "voice_cloning"
+    ],
+    "description": "Deprecated previous-generation TTS model with (parenthesis) emotion markers in 13 languages.",
+    "eol_date": "2026-12-31",
+    "first_seen": "2026-11-16",
+    "id": "s1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "ja",
+      "de",
+      "fr",
+      "es",
+      "ko",
+      "ar",
+      "ru",
+      "nl",
+      "it",
+      "pl",
+      "pt"
+    ],
+    "meta": {
+      "deprecation_notice": "S1 is deprecated and will be retired on December 31, 2026. After that date, requests that specify s1 are served by s2.1-pro.",
+      "pricing_raw": {
+        "as_of": "2026-11-16",
+        "price_usd_per_million_utf8_bytes": 15.0,
+        "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "unit": "utf8_byte_million"
+      },
+      "replacement": "s2.1-pro"
+    },
+    "name": "Fish Audio S1",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "voice_cloning"
+    ],
+    "description": "Previous-generation open-source S2 TTS model with natural-language [bracket] control and multi-speaker dialogue in 80+ languages.",
+    "first_seen": "2026-11-16",
+    "id": "s2-pro",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "declared_language_count": "80+",
+      "open_source": true,
+      "pricing_raw": {
+        "as_of": "2026-11-16",
+        "price_usd_per_million_utf8_bytes": 15.0,
+        "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "unit": "utf8_byte_million"
+      },
+      "ttfa_ms": 100
+    },
+    "name": "Fish Audio S2-Pro",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "voice_cloning"
+    ],
+    "description": "Recommended production TTS model, an improved S2-Pro with natural-language [bracket] control across 83 languages.",
+    "family": "s2-pro",
+    "first_seen": "2026-11-16",
+    "id": "s2.1-pro",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "declared_language_count": 83,
+      "pricing_raw": {
+        "as_of": "2026-11-16",
+        "price_usd_per_million_utf8_bytes": 15.0,
+        "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "unit": "utf8_byte_million"
+      },
+      "ttfa_dpa_guarantees": true
+    },
+    "name": "Fish Audio S2.1-Pro",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "voice_cloning"
+    ],
+    "description": "The same model as S2.1-Pro offered free for development and testing under fair-use limits, without TTFA or DPA guarantees.",
+    "first_seen": "2026-11-16",
+    "id": "s2.1-pro-free",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "declared_language_count": 83,
+      "pricing_raw": {
+        "as_of": "2026-11-16",
+        "notes": "Free under fair-use limits",
+        "price_usd_per_million_utf8_bytes": 0.0,
+        "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "unit": "utf8_byte_million"
+      },
+      "same_model_as": "s2.1-pro",
+      "ttfa_dpa_guarantees": false
+    },
+    "name": "Fish Audio S2.1-Pro Free",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.fish.audio/llms.txt",
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+        "https://docs.fish.audio/features/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

@@ -24,7 +24,11 @@ Voice object shape (abbreviated):
   }
 
 Pagination: page_size + page_number query params.
-Voices are fetched sorted by task_count (most used first), capped at _MAX_VOICES.
+Only Fish Audio's own "Fish Official" voices are published (author filter, all pages). The public
+library is mostly user-uploaded community clones — including unlicensed impersonations of real people
+and characters — and a popularity-capped slice of it churns on every sync, so it is deliberately
+excluded. Usage counters (like/task counts) are not stored: they change daily and carry no catalog
+meaning.
 
 Auth: Authorization: Bearer API_KEY
 Config: FISH_AUDIO_API_KEY
@@ -38,50 +42,34 @@ import httpx
 
 from naaviq.config import settings
 from naaviq.sync.ai_parser import parse_models_from_docs
-from naaviq.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncResult, SyncVoice
+from naaviq.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncResult, SyncVoice, get_with_retry
 from naaviq.sync.language import normalize_languages
 
 _BASE_URL = "https://api.fish.audio"
 _MODELS_URL = f"{_BASE_URL}/model"
 
 _DOCS_URLS = [
+    "https://docs.fish.audio/llms.txt",
     "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
-    "https://docs.fish.audio/api-reference/endpoint/openapi-v1/text-to-speech",
-    "https://docs.fish.audio/api-reference/endpoint/openapi-v1/speech-to-text",
+    "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+    "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+    "https://docs.fish.audio/features/speech-to-text",
 ]
 
-_TTS_MODEL_GUIDANCE = """
-Extract Fish Audio TTS models. There are 2 models.
+_TTS_MODEL_GUIDANCE = (
+    "Return every TTS model id the API accepts (the `model` header/param). Keep deprecated models "
+    "with a published shutdown date (eol_date); exclude retired ones. is_default=true for the model "
+    "the docs recommend for production."
+)
+_STT_MODEL_GUIDANCE = (
+    "Return every speech-to-text model id the API accepts (batch and realtime). Preview models are "
+    "beta. is_default=true for the recommended model."
+)
 
-1. model_id="s2-pro", display_name="Fish Audio S2 Pro", is_default=True, streaming=True
-   - Flagship dual-autoregressive model. 80+ languages with automatic detection.
-   - Tier 1 (highest quality): Japanese, English, Chinese.
-   - Supports expression control via [bracket] syntax and multi-speaker dialogue.
-   - description="Fish Audio's flagship TTS model — 80+ languages, ~100ms TTFA, expressive control."
-   - languages: ["*"]
-
-2. model_id="s1", display_name="Fish Audio S1", is_default=False, streaming=True
-   - Previous generation. 13 languages.
-   - description="Fish Audio S1 — 13 languages, streaming."
-   - languages: ["en", "zh", "ja", "de", "fr", "es", "ko", "ar", "ru", "nl", "it", "pl", "pt"]
-
-Use exact model_id values: "s2-pro" and "s1".
-"""
-
-_STT_MODEL_GUIDANCE = """
-Extract Fish Audio STT models. There is 1 model (currently in beta).
-
-1. model_id="fishaudio-asr", display_name="Fish Audio ASR", is_default=True, streaming=True
-   - Beta ASR endpoint (POST /v1/asr).
-   - Multilingual with automatic code-switching.
-   - description="Fish Audio ASR (beta) — multilingual recognition with automatic code-switching."
-   - languages: ["en", "zh", "ja", "ko"]
-
-Use exact model_id value: "fishaudio-asr".
-"""
-
-_VOICE_PAGE_SIZE = 20
-_MAX_VOICES = 200  # cap at top 200 most-used public TTS voices
+_OFFICIAL_AUTHOR_ID = "d8b0991f96b44e489422ca2ddf0bd31d"   # "Fish Official"
+_OFFICIAL_AUTHOR_NAME = "Fish Official"
+_VOICE_PAGE_SIZE = 100
+_MAX_PAGES = 50
 
 
 class FishAudioSyncer(ProviderSyncer):
@@ -135,80 +123,65 @@ class FishAudioSyncer(ProviderSyncer):
             raise ValueError("FISH_AUDIO_API_KEY is not set in .env")
 
         headers = {"Authorization": f"Bearer {settings.fish_audio_api_key}"}
-        all_voices: list[dict] = []
-        page = 1
-
+        voices: list[dict] = []
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
-            while len(all_voices) < _MAX_VOICES:
-                resp = await client.get(
-                    _MODELS_URL,
-                    headers=headers,
-                    params={
-                        "type": "tts",
-                        "visibility": "public",
-                        "sort_by": "task_count",
-                        "page_size": _VOICE_PAGE_SIZE,
-                        "page_number": page,
-                    },
-                )
+            for page in range(1, _MAX_PAGES + 1):
+                resp = await get_with_retry(client, _MODELS_URL, headers=headers, params={
+                    "type": "tts", "author_id": _OFFICIAL_AUTHOR_ID,
+                    "page_size": _VOICE_PAGE_SIZE, "page_number": page,
+                })
                 resp.raise_for_status()
                 data = resp.json()
                 items = data.get("items") or []
-                if not items:
-                    break
-                all_voices.extend(items)
-                if len(all_voices) >= data.get("total", 0) or len(items) < _VOICE_PAGE_SIZE:
-                    break
-                page += 1
-
-        return all_voices[:_MAX_VOICES]
+                voices.extend(items)
+                if not items or len(voices) >= data.get("total", 0):
+                    return voices
+        raise RuntimeError(f"Fish Audio voice pagination exceeded {_MAX_PAGES} pages")
 
     def _parse_voices(self, voices_data: list[dict]) -> list[SyncVoice]:
         voices: list[SyncVoice] = []
         for v in voices_data:
             voice_id = v.get("_id")
-            if not voice_id:
+            if not voice_id or v.get("state") != "trained" or v.get("dmca_taken_down"):
                 continue
-
-            if v.get("state") != "trained":
+            # Defense in depth: never publish a community voice even if the filter misbehaves.
+            if (v.get("author") or {}).get("nickname") != _OFFICIAL_AUTHOR_NAME:
                 continue
 
             tags = [t.lower() for t in (v.get("tags") or [])]
-            gender = None
-            if "female" in tags:
-                gender = "female"
-            elif "male" in tags:
-                gender = "male"
-
-            raw_langs = v.get("languages") or []
-            languages = normalize_languages(raw_langs) if raw_langs else ["*"]
-
+            gender = "female" if "female" in tags else "male" if "male" in tags else None
             preview_url = None
             samples = v.get("samples") or []
             if samples and isinstance(samples[0], dict):
                 preview_url = samples[0].get("url") or samples[0].get("audio")
-
-            use_cases = [t for t in tags if t not in {"male", "female", "neutral"}]
 
             voices.append(SyncVoice(
                 voice_id=voice_id,
                 display_name=v.get("title") or voice_id,
                 gender=gender,
                 category="premade",
-                languages=languages,
-                description=(v.get("description") or None),
+                languages=normalize_languages(v.get("languages") or []),
+                description=v.get("description") or None,
                 preview_url=preview_url,
-                use_cases=use_cases,
+                tags=[t for t in tags if _is_public_tag(t)],
                 compatible_models=["*"],  # all voices work with all Fish Audio TTS models
-                meta={
-                    "like_count": v.get("like_count"),
-                    "task_count": v.get("task_count"),
+                meta={k: val for k, val in {
                     "train_mode": v.get("train_mode"),
-                    "author": (v.get("author") or {}).get("nickname"),
                     "cover_image": v.get("cover_image"),
-                },
+                }.items() if val},
             ))
         return voices
+
+
+_INTERNAL_TAGS = {"voice-factory"}
+
+
+def _is_public_tag(tag: str) -> bool:
+    """Drop gender (own field), locale codes ("te-in"), and Fish's internal batch labels
+    ("cale_oct_26", "prompt_test_oct_26", "voice-factory")."""
+    import re
+    return not (tag in {"male", "female"} or tag in _INTERNAL_TAGS or "_" in tag or any(c.isdigit() for c in tag)
+                or re.fullmatch(r"[a-z]{2,3}-[a-z]{2}", tag))
 
 
 # ── Local runner ──────────────────────────────────────────────────────────────
