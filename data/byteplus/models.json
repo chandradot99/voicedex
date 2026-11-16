@@ -664,6 +664,18 @@
       "voice_param": "req_params.speaker"
     },
     "name": "Seed Voice Replication 1.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Voice Replication pay-as-you-go $30 per 1M characters plus $2 per cloned voice (permanent); free trial 20,000 chars + 10 voices; pre-paid packages from $2.80/100K chars. Billing page does not distinguish Voice Replication 1.0 from 2.0.",
+      "price_usd": 3e-05,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/voicereplicationbilling",
+      "unit": "character"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",

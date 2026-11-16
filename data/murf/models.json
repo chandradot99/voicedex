@@ -69,6 +69,18 @@
       "streaming_decommissioned": true
     },
     "name": "Murf Gen2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 100000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Pay-as-you-go: 'Gen 2 model: $0.03/1000 characters'. Free trial 100,000 characters (help.murf.ai/murf-api-plans-and-limits). Help pages disagree on minimum credit purchase ($10 vs $2). Volume discounts via Custom plan.",
+      "price_usd": 3e-05,
+      "source_url": "https://help.murf.ai/murf-api-pay-as-you-go",
+      "unit": "character"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",

@@ -138,6 +138,20 @@
       ]
     },
     "name": "Pulse",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Pay as you go: Pulse (Pre-Recorded) '~$0.003/minute', Pulse (Realtime) '~$0.004/minute' (shown with ~). Enterprise: custom. $10 free credits to start.",
+      "price_usd": 0.003,
+      "source_url": "https://smallest.ai/pricing/models",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "streaming",
+          "price_usd": 0.004,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -244,6 +258,13 @@
       "version": "v4.1"
     },
     "name": "Pulse Pro",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Pay as you go: Pulse Pro (Pre-Recorded) '~$0.0035/minute' in the plan comparison table; the mobile table on the same page shows '~$0.004/minute'. Enterprise: custom.",
+      "price_usd": 0.0035,
+      "source_url": "https://smallest.ai/pricing/models",
+      "unit": "minute"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -339,6 +360,13 @@
       "voice_count": 217
     },
     "name": "Lightning v3.1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Pay as you go: '~$0.175/10K characters' (shown with ~). Enterprise: custom. $10 free credits to start.",
+      "price_usd": 1.75e-05,
+      "source_url": "https://smallest.ai/pricing/models",
+      "unit": "character"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -430,6 +458,13 @@
       "word_timestamps": true
     },
     "name": "Lightning v3.1 Pro",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Pay as you go: '~$0.195/10K characters' (shown with ~). Enterprise: custom. $10 free credits to start.",
+      "price_usd": 1.95e-05,
+      "source_url": "https://smallest.ai/pricing/models",
+      "unit": "character"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",

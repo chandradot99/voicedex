@@ -29,13 +29,16 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 - **Per-locale voice accents** — Cartesia/ElevenLabs expose accent per locale (in `meta.locale_accents` for Cartesia).
 - **Plan-dependent pricing** — prices often differ per plan (Rime Scale, Cartesia Scale); `variants` covers it loosely.
 
-- **IBM pricing/audio limits** — api-only syncer records no pricing. Docs: STT Plus $0.02/min (<1M min/mo), $0.01 above, Lite 500 min/mo free (cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing); TTS "as low as" $0.02/1k chars, Lite 10k chars/mo. Add via a docs pass (make syncer `mixed`). Also TTS audio formats (alaw, basic, flac, l16, mp3, mulaw, ogg, wav, webm).
 
 - **Async voices** — stock library only via `POST api.async.com/voices` (X-Api-Key; filter out `my_voice`). Needs ASYNC_API_KEY; models are docs-synced.
 
-- **Soniox pricing** — not in the API. soniox.com/pricing: STT real-time $0.12/h, async $0.10/h; TTS ~$0.70/h generated audio.
 
 - **Alibaba Jan 19, 2027 retirement batch** — notice id=2217 (alibabacloud.com/notice/detail?id=2217) is JS-rendered and wasn't readable headless; check whether any synced speech models are in it and set `eol_date`.
+
+- **Unpriced models (56, 2026-11-16)** — no published per-unit price: CAMB, WellSaid (plan-only), Neuphonic (contact sales),
+  Gradium (credits; in meta), IBM TTS ("as low as"), Azure MAI-Voice/HD Flash/Omni, Deepgram Nova-1/medical/whisper sizes,
+  Google usm/experimental/Chirp-HD TTS, MiniMax speech-01, Rime mist/mistv2, StepFun realtime preview (free until
+  2026-11-23, then stepaudio-3-realtime $0.125/session-min). Re-check with the pricing spec periodically.
 
 ## Product
 - Homepage + catalog UI, project rename, npm/PyPI packages, changelog/RSS of data changes, benchmarks, Pro tier.
