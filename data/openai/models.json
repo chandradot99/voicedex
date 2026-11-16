@@ -1,0 +1,2186 @@
+[
+  {
+    "alias_of": "gpt-audio-2025-08-28",
+    "description": "Audio-in, audio-out model served through Chat Completions.",
+    "eol_date": "2027-01-20",
+    "first_seen": "2026-11-16",
+    "id": "gpt-audio",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/chat/completions"
+      ],
+      "max_output_tokens": 16384,
+      "replacement": "gpt-audio-1.5"
+    },
+    "name": "GPT-Audio",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 2.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Audio-in, audio-out model served through the Chat Completions API.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-audio-1.5",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "endpoints": [
+        "v1/chat/completions"
+      ],
+      "function_calling": true,
+      "max_output_tokens": 16384
+    },
+    "name": "GPT-Audio-1.5",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input. Prices per 1M tokens converted to per-token; cached input not listed",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 2.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Dated snapshot of GPT-Audio.",
+    "eol_date": "2027-01-20",
+    "family": "gpt-audio",
+    "first_seen": "2026-11-16",
+    "id": "gpt-audio-2025-08-28",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/chat/completions"
+      ],
+      "max_output_tokens": 16384,
+      "replacement": "gpt-audio-1.5"
+    },
+    "name": "GPT-Audio (2025-08-28)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 2.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "snapshot_date": "2025-08-28",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "gpt-audio-mini-2025-12-15",
+    "description": "Cost-efficient version of GPT-Audio for Chat Completions.",
+    "eol_date": "2027-01-20",
+    "first_seen": "2026-11-16",
+    "id": "gpt-audio-mini",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/chat/completions"
+      ],
+      "max_output_tokens": 16384,
+      "replacement": "gpt-audio-1.5"
+    },
+    "name": "GPT-Audio mini",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 1e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 6e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.4e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Dated snapshot of GPT-Audio mini.",
+    "eol_date": "2027-01-20",
+    "family": "gpt-audio-mini",
+    "first_seen": "2026-11-16",
+    "id": "gpt-audio-mini-2025-12-15",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/chat/completions"
+      ],
+      "max_output_tokens": 16384,
+      "replacement": "gpt-audio-1.5"
+    },
+    "name": "GPT-Audio mini (2025-12-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 1e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 6e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.4e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "snapshot_date": "2025-12-15",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "description": "OpenAI's premier model for natural, expressive voice conversations with smooth interruption handling.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-live-1",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "is_default": true,
+    "meta": {
+      "audio_format_detail": [
+        "audio/pcm@24000",
+        "audio/pcm@16000",
+        "audio/pcmu@8000",
+        "audio/pcma@8000"
+      ],
+      "custom_voices": true,
+      "default_voice": "marin",
+      "endpoints": [
+        "v1/live/sessions"
+      ],
+      "full_duplex": true,
+      "function_calling": true,
+      "knowledge_cutoff": "2025-07-31",
+      "sip": true
+    },
+    "name": "GPT-Live 1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Voice sessions billed per second",
+      "price_usd": 0.05,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-live-1",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "gpt-realtime-2025-08-28",
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Realtime model with text and audio inputs and outputs.",
+    "eol_date": "2027-01-20",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 32000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "max_output_tokens": 4096,
+      "max_session_minutes": 60,
+      "replacement": "gpt-realtime-2.1"
+    },
+    "name": "GPT-Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 4e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1.6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 4e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Non-reasoning audio-in, audio-out voice model for voice agents and customer support.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-1.5",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 32000,
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "image_input": true,
+      "max_output_tokens": 4096,
+      "max_session_minutes": 60
+    },
+    "name": "GPT-Realtime-1.5",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input. Audio tokens; prices per 1M tokens converted to per-token",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-1.5",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 4.0000000000000003e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1.6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 4.0000000000000003e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Realtime reasoning voice model with tool use and configurable reasoning effort.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-2",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "image_input": true,
+      "knowledge_cutoff": "2024-09-30",
+      "max_output_tokens": 32000,
+      "max_session_minutes": 60,
+      "reasoning": true
+    },
+    "name": "GPT-Realtime-2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input. Audio tokens; prices per 1M tokens converted to per-token",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-2",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 4.0000000000000003e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 4.0000000000000003e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Realtime reasoning voice model with tool use; updates GPT-Realtime-2 with better alphanumeric recognition, noise handling and interruptions.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-2.1",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "image_input": true,
+      "max_output_tokens": 32000,
+      "max_session_minutes": 60,
+      "reasoning": true
+    },
+    "name": "GPT-Realtime-2.1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input. Audio tokens; prices per 1M tokens converted to per-token",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 4.0000000000000003e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 4.0000000000000003e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Distilled reasoning model for faster, lower-cost realtime voice interactions.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-2.1-mini",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "image_input": true,
+      "max_output_tokens": 32000,
+      "max_session_minutes": 60,
+      "reasoning": true,
+      "replacement_for": [
+        "tts-1",
+        "tts-1-hd",
+        "gpt-4o-mini-tts",
+        "gpt-realtime-mini"
+      ]
+    },
+    "name": "GPT-Realtime-2.1 mini",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input. Audio tokens; prices per 1M tokens converted to per-token",
+      "price_usd": 1e-05,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 6e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 6e-08,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Dated snapshot of GPT-Realtime.",
+    "eol_date": "2027-01-20",
+    "family": "gpt-realtime",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-2025-08-28",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 32000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "max_output_tokens": 4096,
+      "max_session_minutes": 60,
+      "replacement": "gpt-realtime-2.1"
+    },
+    "name": "GPT-Realtime (2025-08-28)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 3.2e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 4e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1.6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 4e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "snapshot_date": "2025-08-28",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "gpt-realtime-mini-2025-12-15",
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Cost-efficient version of GPT-Realtime.",
+    "eol_date": "2027-01-20",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-mini",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 32000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "max_output_tokens": 4096,
+      "max_session_minutes": 60,
+      "replacement": "gpt-realtime-2.1-mini"
+    },
+    "name": "GPT-Realtime mini",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 1e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 6e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 6e-08,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Dated snapshot of GPT-Realtime mini.",
+    "eol_date": "2027-01-20",
+    "family": "gpt-realtime-mini",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-mini-2025-12-15",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 32000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/realtime"
+      ],
+      "function_calling": true,
+      "max_output_tokens": 4096,
+      "max_session_minutes": 60,
+      "replacement": "gpt-realtime-2.1-mini"
+    },
+    "name": "GPT-Realtime mini (2025-12-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = audio input; per-1M-token prices converted to per-token.",
+      "price_usd": 1e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_cached_input",
+          "price_usd": 3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 6e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 6e-08,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "snapshot_date": "2025-12-15",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Streaming speech-to-speech translation model for live multilingual audio.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-translate",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "endpoints": [
+        "v1/realtime/translations"
+      ],
+      "one_target_language_per_session": true,
+      "speech_translation": true
+    },
+    "name": "GPT-Realtime-Translate",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Priced by audio duration",
+      "price_usd": 0.034,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-translate",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "gpt-4o-mini-transcribe-2025-12-15",
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "description": "Speech-to-text model powered by GPT-4o mini.",
+    "eol_date": "2027-02-26",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-mini-transcribe",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 16000,
+      "deprecation_notice": "2026-08-26",
+      "endpoints": [
+        "v1/audio/transcriptions"
+      ],
+      "file_streaming": true,
+      "max_file_mb": 25,
+      "max_output_tokens": 2000,
+      "prompt_param": true,
+      "replacement": "gpt-live-transcribe or gpt-transcribe"
+    },
+    "name": "GPT-4o Mini Transcribe",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Estimated cost per minute as published; token prices are per-1M converted to per-token",
+      "price_usd": 0.003,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "audio_input",
+          "price_usd": 1.25e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 5e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "description": "Dated snapshot of GPT-4o Mini Transcribe.",
+    "eol_date": "2027-01-20",
+    "family": "gpt-4o-mini-transcribe",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-mini-transcribe-2025-03-20",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 16000,
+      "deprecation_notice": "2026-07-20",
+      "endpoints": [
+        "v1/audio/transcriptions"
+      ],
+      "file_streaming": true,
+      "max_file_mb": 25,
+      "max_output_tokens": 2000,
+      "prompt_param": true,
+      "replacement": "gpt-4o-mini-transcribe-2025-12-15"
+    },
+    "name": "GPT-4o Mini Transcribe (2025-03-20)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Estimated cost per minute as published; token prices are per-1M converted to per-token",
+      "price_usd": 0.003,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "audio_input",
+          "price_usd": 1.25e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 5e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "snapshot_date": "2025-03-20",
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "description": "Dated snapshot of GPT-4o Mini Transcribe.",
+    "eol_date": "2027-02-26",
+    "family": "gpt-4o-mini-transcribe",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-mini-transcribe-2025-12-15",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 16000,
+      "deprecation_notice": "2026-08-26",
+      "endpoints": [
+        "v1/audio/transcriptions"
+      ],
+      "file_streaming": true,
+      "max_file_mb": 25,
+      "max_output_tokens": 2000,
+      "prompt_param": true,
+      "replacement": "gpt-live-transcribe or gpt-transcribe"
+    },
+    "name": "GPT-4o Mini Transcribe (2025-12-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Estimated cost per minute as published; token prices are per-1M converted to per-token",
+      "price_usd": 0.003,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "audio_input",
+          "price_usd": 1.25e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 5e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "snapshot_date": "2025-12-15",
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "description": "Speech-to-text model powered by GPT-4o.",
+    "eol_date": "2027-02-26",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-transcribe",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "context_window": 16000,
+      "deprecation_notice": "2026-08-26",
+      "endpoints": [
+        "v1/audio/transcriptions"
+      ],
+      "file_streaming": true,
+      "max_file_mb": 25,
+      "max_output_tokens": 2000,
+      "prompt_param": true,
+      "replacement": "gpt-live-transcribe or gpt-transcribe"
+    },
+    "name": "GPT-4o Transcribe",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Estimated cost per minute as published; token prices are per-1M converted to per-token",
+      "price_usd": 0.006,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "audio_input",
+          "price_usd": 2.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Transcription model that identifies who is speaking when.",
+    "eol_date": "2027-02-26",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-transcribe-diarize",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "chunking_required_over_seconds": 30,
+      "context_window": 16000,
+      "deprecation_notice": "2026-08-26",
+      "endpoints": [
+        "v1/audio/transcriptions"
+      ],
+      "file_streaming": true,
+      "max_file_mb": 25,
+      "max_output_tokens": 2000,
+      "prompt_param": false,
+      "replacement": "gpt-live-transcribe or gpt-transcribe",
+      "response_format": "diarized_json"
+    },
+    "name": "GPT-4o Transcribe Diarize",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Estimated cost per minute as published; token prices are per-1M converted to per-token",
+      "price_usd": 0.006,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "audio_input",
+          "price_usd": 2.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Low-latency speech-to-text model for realtime transcription of live audio.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-live-transcribe",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "endpoints": [
+        "v1/realtime/transcription_sessions"
+      ],
+      "no_speaker_labels": true,
+      "no_vad": true,
+      "no_word_timestamps": true,
+      "recommended_for": "realtime transcription"
+    },
+    "name": "GPT-Live-Transcribe",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Realtime audio duration",
+      "price_usd": 0.017,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-live-transcribe",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Streaming speech-to-text model for realtime transcription of live audio.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-realtime-whisper",
+    "interfaces": [
+      "websocket",
+      "webrtc"
+    ],
+    "meta": {
+      "context_window": 16000,
+      "endpoints": [
+        "v1/realtime/transcription_sessions"
+      ],
+      "max_output_tokens": 2000
+    },
+    "name": "GPT-Realtime-Whisper",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Priced by audio duration",
+      "price_usd": 0.017,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-realtime-whisper",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection"
+    ],
+    "description": "High-accuracy speech-to-text model for file uploads and Realtime input transcription.",
+    "first_seen": "2026-11-16",
+    "id": "gpt-transcribe",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "endpoints": [
+        "v1/audio/transcriptions",
+        "v1/realtime/transcription_sessions"
+      ],
+      "file_streaming": true,
+      "keywords_param": true,
+      "max_file_mb": 25,
+      "prompt_param": true,
+      "recommended_for": "recorded speech in its original language",
+      "returns_detected_languages": true
+    },
+    "name": "GPT-Transcribe",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.0045,
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-transcribe",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "General-purpose speech recognition model supporting 98 languages.",
+    "eol_date": "2027-02-26",
+    "first_seen": "2026-11-16",
+    "id": "whisper-1",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "deprecation_notice": "2026-08-26",
+      "endpoints": [
+        "v1/audio/transcriptions"
+      ],
+      "language_count": 98,
+      "max_file_mb": 25,
+      "prompt_max_tokens": 224,
+      "replacement": "gpt-live-transcribe or gpt-transcribe",
+      "segment_timestamps": true,
+      "translation_endpoint": "v1/audio/translations"
+    },
+    "name": "Whisper",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Estimated cost per minute as published",
+      "price_usd": 0.006,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "gpt-4o-mini-tts-2025-12-15",
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "style_control"
+    ],
+    "description": "Instruction-steerable text-to-speech model powered by GPT-4o mini.",
+    "eol_date": "2027-01-06",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-mini-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "ar",
+      "hy",
+      "az",
+      "be",
+      "bs",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "kk",
+      "ko",
+      "lv",
+      "lt",
+      "mk",
+      "ms",
+      "mr",
+      "mi",
+      "ne",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "tl",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "meta": {
+      "deprecation_notice": "2026-10-01",
+      "endpoints": [
+        "v1/audio/speech"
+      ],
+      "instruction_controls": [
+        "accent",
+        "emotional range",
+        "intonation",
+        "impressions",
+        "speed",
+        "tone",
+        "whispering"
+      ],
+      "instructions_support": true,
+      "replacement": "gpt-realtime-2.1-mini"
+    },
+    "name": "GPT-4o mini TTS",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = text input; per-1M-token prices converted to per-token. Audio output $12 / 1M tokens.",
+      "price_usd": 6e-07,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "style_control"
+    ],
+    "description": "Dated snapshot of GPT-4o mini TTS.",
+    "eol_date": "2027-01-06",
+    "family": "gpt-4o-mini-tts",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-mini-tts-2025-03-20",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "hy",
+      "az",
+      "be",
+      "bs",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "kk",
+      "ko",
+      "lv",
+      "lt",
+      "mk",
+      "ms",
+      "mr",
+      "mi",
+      "ne",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "tl",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "meta": {
+      "deprecation_notice": "2026-10-01",
+      "endpoints": [
+        "v1/audio/speech"
+      ],
+      "instruction_controls": [
+        "accent",
+        "emotional range",
+        "intonation",
+        "impressions",
+        "speed",
+        "tone",
+        "whispering"
+      ],
+      "instructions_support": true,
+      "replacement": "gpt-realtime-2.1-mini"
+    },
+    "name": "GPT-4o mini TTS (2025-03-20)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = text input; per-1M-token prices converted to per-token. Audio output $12 / 1M tokens.",
+      "price_usd": 6e-07,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "snapshot_date": "2025-03-20",
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "style_control"
+    ],
+    "description": "Dated snapshot of GPT-4o mini TTS.",
+    "eol_date": "2027-01-06",
+    "family": "gpt-4o-mini-tts",
+    "first_seen": "2026-11-16",
+    "id": "gpt-4o-mini-tts-2025-12-15",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "hy",
+      "az",
+      "be",
+      "bs",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "kk",
+      "ko",
+      "lv",
+      "lt",
+      "mk",
+      "ms",
+      "mr",
+      "mi",
+      "ne",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "tl",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "meta": {
+      "deprecation_notice": "2026-10-01",
+      "endpoints": [
+        "v1/audio/speech"
+      ],
+      "instruction_controls": [
+        "accent",
+        "emotional range",
+        "intonation",
+        "impressions",
+        "speed",
+        "tone",
+        "whispering"
+      ],
+      "instructions_support": true,
+      "replacement": "gpt-realtime-2.1-mini"
+    },
+    "name": "GPT-4o mini TTS (2025-12-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Base price = text input; per-1M-token prices converted to per-token. Audio output $12 / 1M tokens.",
+      "price_usd": 6e-07,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "snapshot_date": "2025-12-15",
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Text-to-speech model optimized for speed and lower latency.",
+    "eol_date": "2027-01-06",
+    "first_seen": "2026-11-16",
+    "id": "tts-1",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "hy",
+      "az",
+      "be",
+      "bs",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "kk",
+      "ko",
+      "lv",
+      "lt",
+      "mk",
+      "ms",
+      "mr",
+      "mi",
+      "ne",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "tl",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "meta": {
+      "deprecation_notice": "2026-10-01",
+      "endpoints": [
+        "v1/audio/speech"
+      ],
+      "replacement": "gpt-realtime-2.1-mini",
+      "tradeoff": "speed"
+    },
+    "name": "TTS-1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$15 / 1M characters",
+      "price_usd": 1.5e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Text-to-speech model optimized for quality.",
+    "eol_date": "2027-01-06",
+    "first_seen": "2026-11-16",
+    "id": "tts-1-hd",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "hy",
+      "az",
+      "be",
+      "bs",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "kk",
+      "ko",
+      "lv",
+      "lt",
+      "mk",
+      "ms",
+      "mr",
+      "mi",
+      "ne",
+      "no",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sw",
+      "sv",
+      "tl",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "meta": {
+      "deprecation_notice": "2026-10-01",
+      "endpoints": [
+        "v1/audio/speech"
+      ],
+      "replacement": "gpt-realtime-2.1-mini",
+      "tradeoff": "quality"
+    },
+    "name": "TTS-1 HD",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$30 / 1M characters",
+      "price_usd": 3e-05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

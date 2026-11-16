@@ -24,70 +24,43 @@ import sys
 from naaviq.sync.ai_parser import AIParserError, parse_models_from_docs, parse_voices_from_docs
 from naaviq.sync.base import ProviderSyncer, SyncResult
 
+_LLMS = "https://docs.sarvam.ai/api/llms.txt"  # index of current .md pages
+
 _STT_DOCS = [
-    "https://docs.sarvam.ai/api-reference-docs/speech-to-text/transcribe",
-    "https://docs.sarvam.ai/api-reference-docs/api-guides-tutorials/speech-to-text/overview",
-    "https://docs.sarvam.ai/api-reference-docs/getting-started/models",
+    "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+    "https://docs.sarvam.ai/api/getting-started/models",
+    "https://docs.sarvam.ai/api/getting-started/pricing",
+    _LLMS,
 ]
 
 _TTS_DOCS = [
-    "https://docs.sarvam.ai/api-reference-docs/text-to-speech/convert",
-    "https://docs.sarvam.ai/api-reference-docs/getting-started/models",
+    "https://docs.sarvam.ai/api-reference/text-to-speech/convert",
+    "https://docs.sarvam.ai/api/getting-started/models",
+    "https://docs.sarvam.ai/api/getting-started/pricing",
+    _LLMS,
 ]
 
 _VOICES_DOCS = [
-    "https://docs.sarvam.ai/api-reference-docs/text-to-speech/convert",
+    "https://docs.sarvam.ai/api-reference/text-to-speech/convert",
+    _LLMS,  # → text-to-speech/voices.md
 ]
 
+_COMMON = (
+    "Use exact model_id strings. Exactly one is_default per type: the model the docs call "
+    "latest/recommended (record the API's fallback model in meta if different). Exclude models the "
+    "docs call deprecated with no date; set eol_date only when a date is published (never guess). "
+    "Languages are BCP-47 with region (hi-IN, ta-IN, …). Pricing is INR: put it in "
+    "meta.pricing_inr with the source URL unless an explicit USD price is published."
+)
 _STT_GUIDANCE = (
-    "Sarvam's STT product has two model families: Saaras and Saarika. "
-    "Return ALL listed models using their exact model_id strings (e.g., 'saaras:v3', "
-    "'saarika:v2.5'). Mark the recommended/latest one as is_default=true; only ONE "
-    "model total should have is_default=true. "
-    "Languages MUST be BCP-47 with uppercase region (hi-IN, ta-IN, en-IN, bn-IN, etc.). "
-    "Set streaming=true — Sarvam offers WebSocket streaming for STT. "
-    "If the models page says a model is 'phased out' or 'legacy', set "
-    "eol_date to today's date if no specific date is given. "
-    "Populate `meta` with capability flags the docs mention: "
-    "  diarization         — true if supported (note if batch-only)"
-    "  auto_language_detect — true if the model can auto-detect languages"
-    "  code_mixing          — true if the model handles mixed-language speech"
-    "  output_modes         — list of modes like ['transcribe','translate','verbatim','translit','codemix']"
-    "  max_audio_duration   — e.g., '30s' for REST, '1h' for batch, if documented"
+    "Return every Sarvam speech-to-text model (Saaras / Saarika families). streaming=true only for "
+    "models usable over the WebSocket API; meta.batch for the batch/REST APIs. " + _COMMON
 )
-
-_TTS_GUIDANCE = (
-    "Sarvam's TTS product is the Bulbul family. Return ALL listed models using their "
-    "exact model_id strings (e.g., 'bulbul:v3', 'bulbul:v2'). Mark the latest/recommended "
-    "one as is_default=true; only ONE model total should have is_default=true. "
-    "Languages MUST be BCP-47 with uppercase region (hi-IN, ta-IN, en-IN, etc.). "
-    "Set streaming=true — Sarvam offers HTTP + WebSocket streaming for TTS. "
-    "If the models page says a model is 'phased out' or 'legacy' or not listed at all, "
-    "set eol_date to today's date if no specific date is given. "
-    "Populate `meta` with: "
-    "  max_characters       — character limit per request if documented"
-    "  temperature_control  — true if the model supports temperature"
-    "  pitch_control        — true if the model supports pitch adjustment"
-    "  loudness_control     — true if the model supports loudness adjustment"
-    "  num_speakers         — number of available speakers/voices"
-)
-
+_TTS_GUIDANCE = "Return every Sarvam text-to-speech model (Bulbul family). " + _COMMON
 _VOICES_GUIDANCE = (
-    "Return EVERY speaker/voice listed under the TTS speaker parameter. "
-    "voice_id = the exact lowercase speaker name string used in the API (e.g., 'shubh', "
-    "'anushka', 'aditya'). display_name = title-cased voice_id (e.g., 'Shubh'). "
-    "If the docs specify gender for a speaker, set it ('male'/'female'). Otherwise leave "
-    "gender=null — do NOT guess from the name. "
-    "category='premade' for all speakers. "
-    "The docs list supported languages at the model level, not per-speaker — but ALL speakers "
-    "for a given model support ALL of that model's languages. Copy the model's full language "
-    "list onto EVERY voice in BCP-47 format (hi-IN, ta-IN, bn-IN, en-IN, etc.). "
-    "Do NOT return an empty languages list — every voice must have languages populated. "
-    "For compatible_models: set it to the list of model IDs the speaker works with "
-    "(e.g., ['bulbul:v3'] or ['bulbul:v2'] or ['bulbul:v3','bulbul:v2'] if both). "
-    "Do NOT leave compatible_models empty unless the voice works with ALL models. "
-    "In meta, note: "
-    "  is_default_speaker — true only for the default speaker of each model"
+    "Return every speaker the TTS API accepts (exact speaker string). compatible_models = the model "
+    "ids each speaker works with. Gender only when the docs state it (never infer from names). "
+    "languages = the locales the speaker's model(s) support."
 )
 
 

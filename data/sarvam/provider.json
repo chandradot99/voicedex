@@ -1,0 +1,25 @@
+{
+  "docs_urls": [
+    "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+    "https://docs.sarvam.ai/api/getting-started/models",
+    "https://docs.sarvam.ai/api/getting-started/pricing",
+    "https://docs.sarvam.ai/api/llms.txt",
+    "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+  ],
+  "id": "sarvam",
+  "last_synced": "2026-11-16",
+  "name": "Sarvam",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+      "https://docs.sarvam.ai/api/getting-started/models",
+      "https://docs.sarvam.ai/api/getting-started/pricing",
+      "https://docs.sarvam.ai/api/llms.txt",
+      "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+    ]
+  }
+}

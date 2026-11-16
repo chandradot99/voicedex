@@ -1,0 +1,698 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20",
+      "tts-1",
+      "tts-1-hd"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "alloy",
+    "name": "Alloy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20",
+      "tts-1",
+      "tts-1-hd"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "ash",
+    "name": "Ash",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "ballad",
+    "name": "Ballad",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "filipino",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "beacon",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Masculine",
+      "regional_influence": "Filipino",
+      "voice_source": "generated"
+    },
+    "name": "Beacon",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "brazilian",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "bossa",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese",
+      "presentation": "Feminine",
+      "regional_influence": "Brazilian",
+      "voice_source": "natural"
+    },
+    "name": "Bossa",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "brise",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_name": "French",
+      "presentation": "Feminine",
+      "voice_source": "natural"
+    },
+    "name": "Brise",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "cedar",
+    "meta": {
+      "recommended": true
+    },
+    "name": "Cedar",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "southern us",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "cinder",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Masculine",
+      "regional_influence": "Southern U.S.",
+      "voice_source": "generated"
+    },
+    "name": "Cinder",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20",
+      "tts-1",
+      "tts-1-hd"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "coral",
+    "name": "Coral",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "southern us",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "delta",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Feminine",
+      "regional_influence": "Southern U.S.",
+      "voice_source": "generated"
+    },
+    "name": "Delta",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20",
+      "tts-1",
+      "tts-1-hd"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "echo",
+    "name": "Echo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "tts-1",
+      "tts-1-hd",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "fable",
+    "meta": {
+      "tts_only": true
+    },
+    "name": "Fable",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "flitz",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_name": "German",
+      "presentation": "Masculine",
+      "voice_source": "natural"
+    },
+    "name": "Flitz",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "gleam",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Feminine",
+      "regional_influence": "North American",
+      "voice_source": "natural"
+    },
+    "name": "Gleam",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "harema",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_name": "Japanese",
+      "presentation": "Feminine",
+      "voice_source": "natural"
+    },
+    "name": "Harema",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "juni",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_name": "German",
+      "presentation": "Feminine",
+      "voice_source": "natural"
+    },
+    "name": "Juni",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1",
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "marin",
+    "meta": {
+      "default_for": [
+        "gpt-live-1"
+      ],
+      "recommended": true
+    },
+    "name": "Marin",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "meridian",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Masculine",
+      "regional_influence": "North American",
+      "voice_source": "natural"
+    },
+    "name": "Meridian",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "nira",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_name": "Hindi",
+      "presentation": "Feminine",
+      "voice_source": "natural"
+    },
+    "name": "Nira",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "noeul",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_name": "Korean",
+      "presentation": "Feminine",
+      "voice_source": "natural"
+    },
+    "name": "Noeul",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "tts-1",
+      "tts-1-hd",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "nova",
+    "meta": {
+      "tts_only": true
+    },
+    "name": "Nova",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "nuri",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_name": "German",
+      "presentation": "Feminine",
+      "voice_source": "natural"
+    },
+    "name": "Nuri",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "tts-1",
+      "tts-1-hd",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "onyx",
+    "meta": {
+      "tts_only": true
+    },
+    "name": "Onyx",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "quartz",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Feminine",
+      "regional_influence": "Australian",
+      "voice_source": "generated"
+    },
+    "name": "Quartz",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ripple",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Masculine",
+      "regional_influence": "Australian",
+      "voice_source": "natural"
+    },
+    "name": "Ripple",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20",
+      "tts-1",
+      "tts-1-hd"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "sage",
+    "name": "Sage",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "shida",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_name": "Japanese",
+      "presentation": "Masculine",
+      "voice_source": "natural"
+    },
+    "name": "Shida",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20",
+      "tts-1",
+      "tts-1-hd"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "shimmer",
+    "name": "Shimmer",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "sillage",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_name": "French",
+      "presentation": "Masculine",
+      "voice_source": "natural"
+    },
+    "name": "Sillage",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "stone",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Masculine",
+      "regional_influence": "Irish",
+      "voice_source": "natural"
+    },
+    "name": "Stone",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "brazilian",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "tempo",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese",
+      "presentation": "Masculine",
+      "regional_influence": "Brazilian",
+      "voice_source": "natural"
+    },
+    "name": "Tempo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "gpt-realtime-2.1",
+      "gpt-realtime-2.1-mini",
+      "gpt-realtime-2",
+      "gpt-realtime-1.5",
+      "gpt-realtime",
+      "gpt-realtime-2025-08-28",
+      "gpt-realtime-mini",
+      "gpt-realtime-mini-2025-12-15",
+      "gpt-4o-mini-tts",
+      "gpt-4o-mini-tts-2025-12-15",
+      "gpt-4o-mini-tts-2025-03-20"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "verse",
+    "name": "Verse",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "vesper",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Masculine",
+      "regional_influence": "British",
+      "voice_source": "natural"
+    },
+    "name": "Vesper",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "gpt-live-1"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "willow",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_name": "English",
+      "presentation": "Feminine",
+      "regional_influence": "Irish",
+      "voice_source": "natural"
+    },
+    "name": "Willow",
+    "updated_at": "2026-11-16"
+  }
+]

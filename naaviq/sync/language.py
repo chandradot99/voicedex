@@ -36,6 +36,9 @@ ISO639_3_TO_1: dict[str, str] = {
     "sqi": "sq", "alb": "sq", "srp": "sr", "swa": "sw", "swe": "sv", "tam": "ta", "tel": "te",
     "tgl": "tl", "tha": "th", "tur": "tr", "ukr": "uk", "urd": "ur", "uzb": "uz", "vie": "vi",
     "xho": "xh", "yor": "yo", "zho": "zh", "chi": "zh", "zul": "zu",
+    # Non-standard codes seen in provider docs
+    "od": "or",   # Odia (Sarvam) — ISO 639-1 is "or"
+    "jw": "jv",   # Javanese (Whisper-derived lists) — ISO 639-1 is "jv"
 }
 
 

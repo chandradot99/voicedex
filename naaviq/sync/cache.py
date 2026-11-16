@@ -28,7 +28,7 @@ _CACHE_DIR = Path(".sync-cache")
 
 # ── Read ────────────────────────────────────────────────────���─────────────────
 
-def read_models_cache(provider_id: str, model_type: Literal["stt", "tts"]) -> list[SyncModel] | None:
+def read_models_cache(provider_id: str, model_type: Literal["stt", "tts", "sts"]) -> list[SyncModel] | None:
     path = _models_path(provider_id, model_type)
     if not path.exists():
         return None
@@ -48,7 +48,7 @@ def read_voices_cache(provider_id: str) -> list[SyncVoice] | None:
 
 # ── Write ─────────────────────────────────────────────────────────────────────
 
-def write_models_cache(provider_id: str, model_type: Literal["stt", "tts"], models: list[SyncModel]) -> Path:
+def write_models_cache(provider_id: str, model_type: Literal["stt", "tts", "sts"], models: list[SyncModel]) -> Path:
     _CACHE_DIR.mkdir(exist_ok=True)
     path = _models_path(provider_id, model_type)
     with open(path, "w") as f:

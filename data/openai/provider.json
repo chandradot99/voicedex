@@ -1,0 +1,27 @@
+{
+  "docs_urls": [
+    "https://developers.openai.com/api/docs/models/all",
+    "https://developers.openai.com/api/docs/deprecations",
+    "https://developers.openai.com/api/docs/guides/speech-to-text",
+    "https://developers.openai.com/api/docs/guides/realtime-conversations",
+    "https://developers.openai.com/api/docs/guides/text-to-speech",
+    "https://developers.openai.com/api/docs/guides/live-conversations"
+  ],
+  "id": "openai",
+  "last_synced": "2026-11-16",
+  "name": "OpenAI",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://developers.openai.com/api/docs/models/all",
+      "https://developers.openai.com/api/docs/deprecations",
+      "https://developers.openai.com/api/docs/guides/speech-to-text",
+      "https://developers.openai.com/api/docs/guides/realtime-conversations",
+      "https://developers.openai.com/api/docs/guides/text-to-speech",
+      "https://developers.openai.com/api/docs/guides/live-conversations"
+    ]
+  }
+}

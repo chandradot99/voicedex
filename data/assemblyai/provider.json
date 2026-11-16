@@ -1,0 +1,33 @@
+{
+  "docs_urls": [
+    "https://www.assemblyai.com/docs/getting-started/models",
+    "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
+    "https://www.assemblyai.com/docs/streaming/select-the-speech-model",
+    "https://www.assemblyai.com/docs/pre-recorded-audio/supported-languages",
+    "https://www.assemblyai.com/pricing",
+    "https://www.assemblyai.com/docs/tts/voices",
+    "https://www.assemblyai.com/docs/tts/connect-parameters",
+    "https://www.assemblyai.com/docs/tts/api-reference/http-api/overview",
+    "https://www.assemblyai.com/docs/tts/limits"
+  ],
+  "id": "assemblyai",
+  "last_synced": "2026-11-16",
+  "name": "AssemblyAI",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://www.assemblyai.com/docs/getting-started/models",
+      "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
+      "https://www.assemblyai.com/docs/streaming/select-the-speech-model",
+      "https://www.assemblyai.com/docs/pre-recorded-audio/supported-languages",
+      "https://www.assemblyai.com/pricing",
+      "https://www.assemblyai.com/docs/tts/voices",
+      "https://www.assemblyai.com/docs/tts/connect-parameters",
+      "https://www.assemblyai.com/docs/tts/api-reference/http-api/overview",
+      "https://www.assemblyai.com/docs/tts/limits"
+    ]
+  }
+}

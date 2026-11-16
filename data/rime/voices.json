@@ -1,5 +1,31 @@
 [
   {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "abbie",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "California",
+      "flagship": false
+    },
+    "name": "Abbie",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
     "age": "adult",
     "category": "premade",
     "compatible_models": [
@@ -129,7 +155,8 @@
   {
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -167,6 +194,58 @@
     },
     "name": "Alfhild",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "allison",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Allison",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ally",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Latinx",
+      "dialect": "Latina/Latino",
+      "flagship": false
+    },
+    "name": "Ally",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
   },
   {
     "accent": "american",
@@ -215,7 +294,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -233,6 +313,32 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "alona",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Latinx",
+      "dialect": "Latina/Latino",
+      "flagship": false
+    },
+    "name": "Alona",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
     ]
   },
   {
@@ -262,7 +368,9 @@
     "category": "premade",
     "compatible_models": [
       "coda",
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -304,7 +412,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -368,10 +477,38 @@
   },
   {
     "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "amber",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Amber",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "coda"
+      "coda",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -436,6 +573,32 @@
   },
   {
     "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "antoine",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "Southern",
+      "flagship": false
+    },
+    "name": "Antoine",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
@@ -483,6 +646,32 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "armon",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Armon",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
       "coda"
     ],
     "first_seen": "2026-11-16",
@@ -506,7 +695,8 @@
     "category": "premade",
     "compatible_models": [
       "coda",
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -833,7 +1023,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -895,6 +1087,28 @@
       "flagship": false
     },
     "name": "Belle",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "benjamin",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "",
+      "flagship": false
+    },
+    "name": "Benjamin",
     "updated_at": "2026-11-16"
   },
   {
@@ -990,7 +1204,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -1015,7 +1231,9 @@
     "category": "premade",
     "compatible_models": [
       "coda",
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -1103,7 +1321,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "neutral",
@@ -1128,7 +1348,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -1146,6 +1368,32 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "brenda",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Brenda",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration"
     ]
   },
   {
@@ -1193,6 +1441,32 @@
   },
   {
     "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "brittany",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Brittany",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
@@ -1218,7 +1492,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -1282,6 +1558,32 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "british",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "carol",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Carol",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration"
+    ]
+  },
+  {
     "age": "adult",
     "category": "premade",
     "compatible_models": [
@@ -1329,7 +1631,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -1692,6 +1996,32 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "colin",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Colin",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
     "age": "elder",
     "category": "premade",
     "compatible_models": [
@@ -1735,10 +2065,38 @@
   },
   {
     "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "courtney",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Courtney",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -1760,10 +2118,37 @@
   },
   {
     "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "cove_extra",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Cove Extra",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer support"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -1874,7 +2259,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -1898,7 +2285,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -1943,7 +2331,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -2056,6 +2445,32 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "elena",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Elena",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
       "coda"
     ],
     "first_seen": "2026-11-16",
@@ -2072,6 +2487,32 @@
     },
     "name": "Eliphas",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "elliot",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Elliot",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "accent": "american",
@@ -2100,7 +2541,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -2232,7 +2675,8 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "coda"
+      "coda",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -2248,6 +2692,32 @@
     },
     "name": "Eucalyptus",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "eva",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Eva",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
   },
   {
     "accent": "american",
@@ -2385,7 +2855,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -2518,7 +2990,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -2607,7 +3081,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -2671,6 +3147,28 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "frank",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "",
+      "flagship": false
+    },
+    "name": "Frank",
+    "updated_at": "2026-11-16"
+  },
+  {
     "age": "adult",
     "category": "premade",
     "compatible_models": [
@@ -2717,7 +3215,8 @@
     "category": "premade",
     "compatible_models": [
       "coda",
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -2778,6 +3277,28 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "gabriela",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "",
+      "flagship": false
+    },
+    "name": "Gabriela",
+    "updated_at": "2026-11-16"
+  },
+  {
     "age": "adult",
     "category": "premade",
     "compatible_models": [
@@ -2797,6 +3318,58 @@
     },
     "name": "Gaman",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "geoff",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Geoff",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "gerald",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "Black",
+      "dialect": "Black British",
+      "flagship": false
+    },
+    "name": "Gerald",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
   },
   {
     "accent": "american",
@@ -2825,7 +3398,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -2894,7 +3469,9 @@
     "age": "elder",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -2983,7 +3560,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -3008,7 +3587,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -3026,6 +3607,58 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "gypsum",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Gypsum",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "hank",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Southern",
+      "flagship": false
+    },
+    "name": "Hank",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
     ]
   },
   {
@@ -3097,7 +3730,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -3115,6 +3750,32 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "helen",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Helen",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
     ]
   },
   {
@@ -3181,6 +3842,32 @@
     },
     "name": "Henrique",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "hera",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "California",
+      "flagship": false
+    },
+    "name": "Hera",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
   },
   {
     "accent": "american",
@@ -3317,7 +4004,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -3342,7 +4031,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -3366,7 +4057,8 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -3455,6 +4147,32 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "jen",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Jen",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
       "coda"
     ],
     "first_seen": "2026-11-16",
@@ -3496,17 +4214,44 @@
   },
   {
     "accent": "american",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "joe",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "New York",
+      "flagship": false
+    },
+    "name": "Joe",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
     "id": "jose",
     "languages": [
-      "en",
-      "es"
+      "es",
+      "en"
     ],
     "meta": {
       "country": "US",
@@ -3516,6 +4261,32 @@
     },
     "name": "Jose",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "joy",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Asian American",
+      "dialect": "Asian American",
+      "flagship": false
+    },
+    "name": "Joy",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
   },
   {
     "accent": "american",
@@ -3540,10 +4311,37 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "juan",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Latinx",
+      "dialect": "Latina/Latino",
+      "flagship": false
+    },
+    "name": "Juan",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -3569,7 +4367,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -3615,7 +4415,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -3640,7 +4441,8 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -3681,6 +4483,110 @@
     },
     "name": "Katherine",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "kendra",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "California",
+      "flagship": false
+    },
+    "name": "Kendra",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "kendrick",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Kendrick",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "kenneth",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Kenneth",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "kevin",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Kevin",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
   },
   {
     "age": "adult",
@@ -3751,7 +4657,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -3769,6 +4676,32 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "kris",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "New York",
+      "flagship": false
+    },
+    "name": "Kris",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
     ]
   },
   {
@@ -3797,7 +4730,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4011,6 +4946,32 @@
   },
   {
     "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "linda",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Asian American",
+      "dialect": "Asian American",
+      "flagship": false
+    },
+    "name": "Linda",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "elder",
     "category": "premade",
     "compatible_models": [
@@ -4079,7 +5040,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -4125,7 +5088,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4150,7 +5115,8 @@
     "category": "premade",
     "compatible_models": [
       "coda",
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4329,7 +5295,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "coda"
+      "coda",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4392,10 +5360,37 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "british",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "marge",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Marge",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4419,7 +5414,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4484,10 +5480,63 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "coda"
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "marina",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Southern",
+      "flagship": false
+    },
+    "name": "Marina",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "marissa",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Marissa",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "coda",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -4509,7 +5558,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -4527,6 +5578,32 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "marta",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Southern",
+      "flagship": false
+    },
+    "name": "Marta",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
     ]
   },
   {
@@ -4555,7 +5632,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -4600,7 +5678,8 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -4616,6 +5695,32 @@
     },
     "name": "Maximilian",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "maya",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "Black",
+      "dialect": "Black British",
+      "flagship": false
+    },
+    "name": "Maya",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "age": "adult",
@@ -4729,7 +5834,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4744,6 +5851,31 @@
       "flagship": false
     },
     "name": "Mesa",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "customer support"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "mesa_extra",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Californian",
+      "flagship": true
+    },
+    "name": "Mesa Extra",
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
@@ -4840,7 +5972,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4908,7 +6042,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -5143,6 +6279,32 @@
   },
   {
     "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "nicholas",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Californian",
+      "flagship": false
+    },
+    "name": "Nicholas",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "elder",
     "category": "premade",
     "compatible_models": [
@@ -5288,6 +6450,32 @@
     },
     "name": "Nozomi",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "nyles",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Nyles",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "age": "adult",
@@ -5488,7 +6676,8 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -5600,7 +6789,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -5625,7 +6816,9 @@
     "age": "elder",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -5672,7 +6865,9 @@
     "category": "premade",
     "compatible_models": [
       "coda",
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -5688,6 +6883,32 @@
     },
     "name": "Petal",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "phil",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Phil",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "accent": "american",
@@ -6019,7 +7240,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -6044,7 +7267,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -6084,6 +7309,32 @@
     },
     "name": "Rainy",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "reba",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Reba",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "age": "adult",
@@ -6149,6 +7400,58 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "british",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "rex",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Rex",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "rick",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Rick",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
@@ -6168,6 +7471,32 @@
     },
     "name": "Rio",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ritu",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Indian",
+      "dialect": "Indian",
+      "flagship": false
+    },
+    "name": "Ritu",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "age": "adult",
@@ -6195,7 +7524,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -6213,6 +7544,58 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "rob",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Rob",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "rodney",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Rodney",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
     ]
   },
   {
@@ -6236,6 +7619,32 @@
     },
     "name": "Rodriguez Carla",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "rohan",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Indian",
+      "dialect": "Indian",
+      "flagship": false
+    },
+    "name": "Rohan",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "age": "adult",
@@ -6346,6 +7755,32 @@
   },
   {
     "accent": "american",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "rosco",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Rosco",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
@@ -6414,7 +7849,8 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -6544,6 +7980,32 @@
   },
   {
     "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "samantha",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Southern",
+      "flagship": false
+    },
+    "name": "Samantha",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "elder",
     "category": "premade",
     "compatible_models": [
@@ -6563,6 +8025,32 @@
     },
     "name": "Sandoval",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "sandy",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Southern",
+      "flagship": false
+    },
+    "name": "Sandy",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "accent": "american",
@@ -6629,6 +8117,32 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "selena",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Latinx",
+      "dialect": "Latina/Latino",
+      "flagship": false
+    },
+    "name": "Selena",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
@@ -6693,10 +8207,63 @@
     "updated_at": "2026-11-16"
   },
   {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "seth",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Seth",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "sharon",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "Black",
+      "dialect": "Black British",
+      "flagship": false
+    },
+    "name": "Sharon",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -6767,7 +8334,8 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -6961,7 +8529,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -7005,6 +8575,32 @@
   },
   {
     "accent": "american",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "stan",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Californian",
+      "flagship": false
+    },
+    "name": "Stan",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
     "age": "adult",
     "category": "premade",
     "compatible_models": [
@@ -7030,7 +8626,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -7055,7 +8653,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -7080,7 +8680,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -7105,7 +8707,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -7152,7 +8756,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -7242,7 +8848,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -7260,6 +8868,57 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "tamra",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "AUS",
+      "demographic": "White",
+      "dialect": "Australian",
+      "flagship": false
+    },
+    "name": "Tamra",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "narration"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "tanya",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Black",
+      "dialect": "African American",
+      "flagship": false
+    },
+    "name": "Tanya",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
     ]
   },
   {
@@ -7375,7 +9034,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -7393,6 +9054,32 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "elder",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "tibur",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "UK",
+      "demographic": "White",
+      "dialect": "British",
+      "flagship": false
+    },
+    "name": "Tibur",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
     ]
   },
   {
@@ -7416,6 +9103,32 @@
     },
     "name": "Tim",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "tj",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "White",
+      "flagship": false
+    },
+    "name": "Tj",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "accent": "american",
@@ -7530,7 +9243,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -7548,6 +9263,32 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "customer support"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "tyler",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Californian",
+      "flagship": false
+    },
+    "name": "Tyler",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
     ]
   },
   {
@@ -7815,7 +9556,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "neutral",
@@ -7855,6 +9598,32 @@
     },
     "name": "Violette",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "viv",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Southern",
+      "flagship": false
+    },
+    "name": "Viv",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
   },
   {
     "accent": "american",
@@ -7949,7 +9718,9 @@
     "age": "young_adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -7996,7 +9767,9 @@
     "category": "premade",
     "compatible_models": [
       "coda",
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -8021,7 +9794,9 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -8125,6 +9900,32 @@
     },
     "name": "Xavier",
     "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young_adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "yadira",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "Latinx",
+      "dialect": "Latina/Latino",
+      "flagship": false
+    },
+    "name": "Yadira",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "conversational"
+    ]
   },
   {
     "age": "young_adult",
@@ -8344,7 +10145,35 @@
     "age": "adult",
     "category": "premade",
     "compatible_models": [
-      "mistv3"
+      "mistv2",
+      "mist"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "zest",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "country": "US",
+      "demographic": "White",
+      "dialect": "Standard",
+      "flagship": false
+    },
+    "name": "Zest",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "general"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "mistv3",
+      "mistv2",
+      "mist"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",

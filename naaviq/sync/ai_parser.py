@@ -260,7 +260,7 @@ def notes_to_str(notes: dict | None) -> str | None:
 async def parse_models_from_docs(
     seed_urls: list[str],
     provider_id: str,
-    model_type: Literal["stt", "tts"],
+    model_type: Literal["stt", "tts", "sts"],
     guidance: str = "",
     api_key: str | None = None,
 ) -> tuple[list[SyncModel], dict]:

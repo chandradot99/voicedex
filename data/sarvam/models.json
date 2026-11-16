@@ -1,0 +1,602 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "speaker_diarization",
+      "translation"
+    ],
+    "description": "Previous-generation Saaras speech recognition model for 22 Indian languages plus Indian English, with the same five output modes as v4.",
+    "first_seen": "2026-11-16",
+    "id": "saaras:v3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi-IN",
+      "bn-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "or-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN",
+      "en-IN",
+      "gu-IN",
+      "as-IN",
+      "ur-IN",
+      "ne-IN",
+      "kok-IN",
+      "ks-IN",
+      "sd-IN",
+      "sa-IN",
+      "sat-IN",
+      "mni-IN",
+      "brx-IN",
+      "mai-IN",
+      "doi-IN"
+    ],
+    "max_audio_seconds": 30,
+    "meta": {
+      "auto_language_detect": true,
+      "code_mixing": true,
+      "diarization": "batch only",
+      "endpoints": [
+        "POST /speech-to-text",
+        "POST /speech-to-text/job/v1",
+        "GET /speech-to-text/ws (legacy)"
+      ],
+      "max_audio_duration": {
+        "batch": "2h per file (up to 20 files per job)",
+        "rest": "30s"
+      },
+      "output_modes": [
+        "transcribe",
+        "translate",
+        "verbatim",
+        "translit",
+        "codemix"
+      ],
+      "pcm_input_sample_rate_hz": 16000,
+      "pricing_inr": {
+        "applies_to": "Speech to Text (real-time, streaming, batch)",
+        "as_of": "2026-11-16",
+        "billing": "per second",
+        "currency": "INR",
+        "diarization_batch_plans": {
+          "growth": 0.5,
+          "pay_as_you_go": 0.59,
+          "pro": 0.54
+        },
+        "excludes": "GST",
+        "plans": {
+          "growth": 0.41,
+          "pay_as_you_go": 0.49,
+          "pro": 0.45
+        },
+        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+        "unit": "minute"
+      },
+      "streaming_input": "legacy WS: wav/raw PCM only",
+      "telephony_8khz_optimized": true,
+      "timestamps": "chunk-level only; word-level timestamps not supported"
+    },
+    "name": "Saaras v3",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+        "https://docs.sarvam.ai/api/getting-started/models",
+        "https://docs.sarvam.ai/api/getting-started/pricing",
+        "https://docs.sarvam.ai/api/llms.txt",
+        "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "language_detection",
+      "translation"
+    ],
+    "description": "WebSocket-only Saaras variant for voice agents and live transcription, with true partial transcripts, millisecond VAD tuning and mid-call reconfiguration.",
+    "first_seen": "2026-11-16",
+    "id": "saaras:v3-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "hi-IN",
+      "bn-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "or-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN",
+      "en-IN",
+      "gu-IN",
+      "as-IN",
+      "ur-IN",
+      "ne-IN",
+      "kok-IN",
+      "ks-IN",
+      "sd-IN",
+      "sa-IN",
+      "sat-IN",
+      "mni-IN",
+      "brx-IN",
+      "mai-IN",
+      "doi-IN"
+    ],
+    "meta": {
+      "auto_language_detect": true,
+      "channels": "mono",
+      "default_on_endpoint": true,
+      "diarization": false,
+      "endpoint": "GET /speech-to-text-realtime/ws",
+      "input_encodings": [
+        "linear16",
+        "linear32",
+        "mulaw",
+        "alaw"
+      ],
+      "language_code_note": "Odia is or-IN on this endpoint (od-IN elsewhere); 'auto' for detection",
+      "output_modes": [
+        "transcribe",
+        "translate",
+        "verbatim",
+        "translit",
+        "codemix"
+      ],
+      "output_modes_note": "mode applies to the final transcript only; partials are plain transcription",
+      "pricing_inr": {
+        "applies_to": "Speech to Text (real-time, streaming, batch)",
+        "as_of": "2026-11-16",
+        "billing": "per second",
+        "currency": "INR",
+        "diarization_batch_plans": {
+          "growth": 0.5,
+          "pay_as_you_go": 0.59,
+          "pro": 0.54
+        },
+        "excludes": "GST",
+        "plans": {
+          "growth": 0.41,
+          "pay_as_you_go": 0.49,
+          "pro": 0.45
+        },
+        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+        "unit": "minute"
+      },
+      "timestamps": "optional segment-level (return_timestamps)"
+    },
+    "name": "Saaras v3 Realtime",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+        "https://docs.sarvam.ai/api/getting-started/models",
+        "https://docs.sarvam.ai/api/getting-started/pricing",
+        "https://docs.sarvam.ai/api/llms.txt",
+        "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "translation"
+    ],
+    "description": "Sarvam's latest speech recognition model for 22 Indian languages plus Indian and Global English, with transcribe, translate, verbatim, transliterate and code-mix output modes.",
+    "first_seen": "2026-11-16",
+    "id": "saaras:v4",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "hi-IN",
+      "bn-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "or-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN",
+      "en-IN",
+      "gu-IN",
+      "as-IN",
+      "ur-IN",
+      "ne-IN",
+      "kok-IN",
+      "ks-IN",
+      "sd-IN",
+      "sa-IN",
+      "sat-IN",
+      "mni-IN",
+      "brx-IN",
+      "mai-IN",
+      "doi-IN"
+    ],
+    "max_audio_seconds": 30,
+    "meta": {
+      "auto_language_detect": true,
+      "code_mixing": true,
+      "diarization": "batch only",
+      "endpoints": [
+        "POST /speech-to-text",
+        "POST /speech-to-text/job/v1",
+        "GET /speech-to-text-realtime/ws",
+        "GET /speech-to-text/ws (legacy)"
+      ],
+      "global_english": true,
+      "keyterms": "up to 50 terms, REST/Batch/Realtime only (not legacy WebSocket)",
+      "max_audio_duration": {
+        "batch": "2h per file (up to 20 files per job)",
+        "rest": "30s"
+      },
+      "output_modes": [
+        "transcribe",
+        "translate",
+        "verbatim",
+        "translit",
+        "codemix"
+      ],
+      "pcm_input_sample_rate_hz": 16000,
+      "pricing_inr": {
+        "applies_to": "Speech to Text (real-time, streaming, batch)",
+        "as_of": "2026-11-16",
+        "billing": "per second",
+        "currency": "INR",
+        "diarization_batch_plans": {
+          "growth": 0.5,
+          "pay_as_you_go": 0.59,
+          "pro": 0.54
+        },
+        "excludes": "GST",
+        "plans": {
+          "growth": 0.41,
+          "pay_as_you_go": 0.49,
+          "pro": 0.45
+        },
+        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+        "unit": "minute"
+      },
+      "streaming_input": "Realtime WS: linear16/linear32/mulaw/alaw at 8000 or 16000 Hz; legacy WS: wav/raw PCM only",
+      "telephony_8khz_optimized": true,
+      "timestamps": "chunk-level only; word-level timestamps not supported"
+    },
+    "name": "Saaras v4",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+        "https://docs.sarvam.ai/api/getting-started/models",
+        "https://docs.sarvam.ai/api/getting-started/pricing",
+        "https://docs.sarvam.ai/api/llms.txt",
+        "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Legacy Bulbul TTS model with pitch, pace and loudness controls and seven speakers.",
+    "first_seen": "2026-11-16",
+    "id": "bulbul:v2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "hi-IN",
+      "bn-IN",
+      "ta-IN",
+      "te-IN",
+      "gu-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "or-IN",
+      "en-IN"
+    ],
+    "max_text_chars": 1500,
+    "meta": {
+      "default_speaker": "anushka",
+      "enable_preprocessing": true,
+      "legacy": true,
+      "loudness_control": true,
+      "loudness_range": [
+        0.1,
+        3.0
+      ],
+      "max_characters": 1500,
+      "num_speakers": 7,
+      "pace_range": [
+        0.3,
+        3.0
+      ],
+      "pitch_control": true,
+      "pitch_range": [
+        -1.0,
+        1.0
+      ],
+      "pricing_note": "not listed on the pricing page",
+      "temperature_control": false
+    },
+    "name": "Bulbul v2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+        "https://docs.sarvam.ai/api/getting-started/models",
+        "https://docs.sarvam.ai/api/getting-started/pricing",
+        "https://docs.sarvam.ai/api/llms.txt",
+        "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Stable Bulbul TTS model (API default when model is omitted) with 37 named speakers across 10 Indian languages and English.",
+    "first_seen": "2026-11-16",
+    "id": "bulbul:v3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi-IN",
+      "bn-IN",
+      "ta-IN",
+      "te-IN",
+      "gu-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "or-IN",
+      "en-IN"
+    ],
+    "max_text_chars": 2500,
+    "meta": {
+      "api_default_model": true,
+      "default_sample_rate_hz": 22050,
+      "default_speaker": "shubh",
+      "loudness_control": false,
+      "max_characters": 2500,
+      "max_characters_http_stream": 3500,
+      "num_speakers": 37,
+      "pace_range": [
+        0.5,
+        2.0
+      ],
+      "pitch_control": false,
+      "pricing_inr": {
+        "applies_to": "REST, HTTP streaming and WebSocket",
+        "as_of": "2026-11-16",
+        "currency": "INR",
+        "excludes": "GST",
+        "plans": {
+          "growth": 2.7,
+          "pay_as_you_go": 3.0,
+          "pro": 2.85
+        },
+        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+        "unit": "1000 characters"
+      },
+      "pronunciation_dictionary": true,
+      "ssml": false,
+      "streaming_sample_rates_hz": [
+        8000,
+        16000,
+        22050,
+        24000
+      ],
+      "temperature_control": true
+    },
+    "name": "Bulbul v3",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+        "https://docs.sarvam.ai/api/getting-started/models",
+        "https://docs.sarvam.ai/api/getting-started/pricing",
+        "https://docs.sarvam.ai/api/llms.txt",
+        "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Sarvam's latest Indian-language TTS model with a 222-voice persona catalog and the same request/response contract as Bulbul v3.",
+    "first_seen": "2026-11-16",
+    "id": "bulbul:v4-flash",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "hi-IN",
+      "en-IN",
+      "bn-IN",
+      "gu-IN",
+      "kn-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "max_text_chars": 2500,
+    "meta": {
+      "accepted_language_codes": [
+        "hi-IN",
+        "bn-IN",
+        "ta-IN",
+        "te-IN",
+        "gu-IN",
+        "kn-IN",
+        "ml-IN",
+        "mr-IN",
+        "pa-IN",
+        "od-IN",
+        "en-IN"
+      ],
+      "code_mixing": true,
+      "default_sample_rate_hz": 22050,
+      "default_speaker": "shubh_enhi_ads",
+      "languages_note": "ml-IN and od-IN are accepted language_code values but no v4 Flash personas exist for them yet",
+      "max_characters": 2500,
+      "max_characters_http_stream": 3500,
+      "num_speakers": 222,
+      "pace_range": [
+        0.5,
+        2.0
+      ],
+      "pitch_loudness_note": "API reference says pitch/loudness are bulbul:v2-only; the v4 Flash best-practices guide lists pitch (-0.5..0.5) and loudness (0.1..2.5)",
+      "pricing_inr": {
+        "applies_to": "REST, HTTP streaming and WebSocket",
+        "as_of": "2026-11-16",
+        "currency": "INR",
+        "excludes": "GST",
+        "plans": {
+          "growth": 0.85,
+          "pay_as_you_go": 1.0,
+          "pro": 0.925
+        },
+        "source_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+        "unit": "1000 characters"
+      },
+      "pronunciation_dictionary": true,
+      "ssml": false,
+      "streaming_sample_rates_hz": [
+        8000,
+        16000,
+        22050,
+        24000
+      ],
+      "temperature_control": true
+    },
+    "name": "Bulbul v4 Flash",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
+        "https://docs.sarvam.ai/api/getting-started/models",
+        "https://docs.sarvam.ai/api/getting-started/pricing",
+        "https://docs.sarvam.ai/api/llms.txt",
+        "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

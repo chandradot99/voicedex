@@ -99,6 +99,65 @@
     "updated_at": "2026-11-16"
   },
   {
+    "description": "Legacy Mist v1 TTS model, superseded by Mist v3.",
+    "eol_date": "2026-12-03",
+    "first_seen": "2026-11-16",
+    "id": "mist",
+    "meta": {
+      "deprecation_notice": "Legacy model; retires December 3, 2026. After that date Mist v3 serves HTTP requests naming this model (voice kept if Mist v3 has it, else a comparable voice); WebSocket clients (/ws2) must switch before then.",
+      "legacy_features": [
+        "JSON envelope with base64 audioContent",
+        "/ws2 WebSocket"
+      ],
+      "replacement": "mistv3"
+    },
+    "name": "Rime Mist",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.rime.ai/docs/models",
+        "https://docs.rime.ai/docs/voices",
+        "https://www.rime.ai/pricing"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Legacy Mist-family TTS model, superseded by Mist v3.",
+    "eol_date": "2026-12-03",
+    "first_seen": "2026-11-16",
+    "id": "mistv2",
+    "languages": [
+      "en",
+      "fr",
+      "de",
+      "es"
+    ],
+    "meta": {
+      "deprecation_notice": "Legacy model; retires December 3, 2026. After that date Mist v3 serves HTTP requests naming this model (voice kept if Mist v3 has it, else a comparable voice); WebSocket clients (/ws2) must switch before then.",
+      "legacy_features": [
+        "JSON envelope with base64 audioContent",
+        "server-sent events (Accept: text/event-stream)",
+        "/ws2 WebSocket"
+      ],
+      "replacement": "mistv3"
+    },
+    "name": "Rime Mist v2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.rime.ai/docs/models",
+        "https://docs.rime.ai/docs/voices",
+        "https://www.rime.ai/pricing"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
     "audio_formats": [
       "mp3",
       "mulaw",

@@ -41,7 +41,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("speechmatics",      "Speechmatics",      "stt",  "naaviq.sync.speechmatics.SpeechmaticsSyncer"),
     SyncerEntry("lmnt",              "LMNT",              "tts",  "naaviq.sync.lmnt.LmntSyncer"),
     SyncerEntry("rime",              "Rime AI",           "tts",  "naaviq.sync.rime.RimeSyncer"),
-    SyncerEntry("assemblyai",        "AssemblyAI",        "stt",  "naaviq.sync.assemblyai.AssemblyAISyncer"),
+    SyncerEntry("assemblyai",        "AssemblyAI",        "both", "naaviq.sync.assemblyai.AssemblyAISyncer"),
     SyncerEntry("revai",             "Rev AI",            "stt",  "naaviq.sync.revai.RevAISyncer"),
     SyncerEntry("gladia",            "Gladia",            "stt",  "naaviq.sync.gladia.GladiaSyncer"),
     SyncerEntry("minimax",           "MiniMax",           "tts",  "naaviq.sync.minimax.MinimaxSyncer"),

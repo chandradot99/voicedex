@@ -1,0 +1,713 @@
+[
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "Young woman speaking American English with a fairly high-pitched voice",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-aaliyah",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Aaliyah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "An older man speaking English with a breathy voice",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-abdiel",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recorded_language": "en",
+      "speaks_all_model_languages": true
+    },
+    "name": "Abdiel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman with a high-pitched voice speaking American English",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-annabelle",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Annabelle",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "mexican",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A deep, low-pitched voice of a middle-aged man speaking Mexican Spanish",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-antonioluis",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "default_for_language": "spanish",
+      "recorded_language": "es-MX",
+      "speaks_all_model_languages": true
+    },
+    "name": "Antonio Luis",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman speaking American English at a fast pace",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-april",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "April",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged woman with an even, steady intonation speaks American English",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-audrey",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Audrey",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young man speaking Portuguese with a balanced, natural, easy-to-listen-to voice",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-benicio",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "recorded_language": "pt",
+      "speaks_all_model_languages": true
+    },
+    "name": "Benício",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "An older man speaking British English with an energetic delivery",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-buford",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Buford",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged woman with a soft-spoken delivery in British English",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-carrie",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Carrie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "An older man with a high-pitched, fast-paced, energetic delivery in British English",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-cloyd",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Cloyd",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "mexican",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman speaking Mexican Spanish with an even, steady intonation",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-constanza",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "recorded_language": "es-MX",
+      "speaks_all_model_languages": true
+    },
+    "name": "Constanza",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man with a high-pitched, soft-spoken voice and expressive intonation",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-donatien",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "default_for_language": "french",
+      "recorded_language": "fr",
+      "speaks_all_model_languages": true
+    },
+    "name": "Donatien",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "An older man's voice with a raspy, textured, nasal, and breathy quality",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-dorsey",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recorded_language": "en",
+      "speaks_all_model_languages": true
+    },
+    "name": "Dorsey",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man speaking fast-paced American English with a high-pitched voice",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-ernest",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Ernest",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man speaking American English at a fairly fast pace",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-ewald",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Ewald",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman speaking Italian with a clear, bright tone and an energetic delivery",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-giada",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "default_for_language": "italian",
+      "recorded_language": "it",
+      "speaks_all_model_languages": true
+    },
+    "name": "Giada",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "An older man speaking English at a fairly slow pace",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-gunnar",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recorded_language": "en",
+      "speaks_all_model_languages": true
+    },
+    "name": "Gunnar",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man speaking German with expressive intonation and a soft-spoken delivery",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-gunther",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "recorded_language": "de",
+      "speaks_all_model_languages": true
+    },
+    "name": "Günther",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman speaking American English at a fairly fast pace",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-hailey",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Hailey",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man speaking German with a fairly even tone",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-jorg",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "recorded_language": "de",
+      "speaks_all_model_languages": true
+    },
+    "name": "Jörg",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman speaking American English at a fast pace",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-kyla",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "default_for_language": "english",
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Kyla",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged woman with energetic delivery and a nasal, expressive intonation in British English",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-lilla",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Lilla",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman with a deep, low-pitched voice speaking German",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-magdalena",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "default_for_language": "german",
+      "recorded_language": "de",
+      "speaks_all_model_languages": true
+    },
+    "name": "Magdalena",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "mexican",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A soft-spoken middle-aged woman speaking Mexican Spanish",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-malvina",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "recorded_language": "es-MX",
+      "speaks_all_model_languages": true
+    },
+    "name": "Malvina",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged woman speaking British English with a fairly even tone",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-nancy",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Nancy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "brazilian",
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "An older man speaking Brazilian Portuguese with a deep, low-pitched, raspy voice",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-nelson",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "default_for_language": "portuguese",
+      "recorded_language": "pt-BR",
+      "speaks_all_model_languages": true
+    },
+    "name": "Nelson",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "mexican",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man speaking Mexican Spanish at a fairly fast pace",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-oriol",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "recorded_language": "es-MX",
+      "speaks_all_model_languages": true
+    },
+    "name": "Oriol",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "An older man with energetic delivery and expressive intonation, speaking British English in a breathy manner",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-percival",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Percival",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man with a soft-spoken delivery in American English",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-peter",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Peter",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young woman speaking American English with an even, steady intonation",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-sara",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Sara",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged man speaking Australian English with a fairly even tone",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-steven",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "recorded_language": "en-AU",
+      "speaks_all_model_languages": true
+    },
+    "name": "Steven",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young man with a deep, low-pitched voice speaking American English",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-titus",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recorded_language": "en-US",
+      "speaks_all_model_languages": true
+    },
+    "name": "Titus",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "scottish",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A young man with a soft-spoken, deep, low-pitched voice and expressive intonation in Scottish English",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "aai-troy",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Troy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "assemblyai-tts-1"
+    ],
+    "description": "A middle-aged woman with expressive intonation speaks British English",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "aai-yasmin",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recorded_language": "en-GB",
+      "speaks_all_model_languages": true
+    },
+    "name": "Yasmin",
+    "updated_at": "2026-11-16"
+  }
+]

@@ -23,9 +23,9 @@ Voice object shape:
     "flagship": true
   }
 
-TTS models: parsed from docs (no /models endpoint). Voices are kept only for models that the
-docs list as current, so voices of retired models (e.g. Arcana → Coda in 2026, legacy Mist) drop out
-and get deprecated by the merge rather than pointing at models that no longer exist.
+TTS models: parsed from docs (no /models endpoint). Voices are kept only for models the docs list
+as callable, so voices of retired models (e.g. Arcana → Coda in 2026) drop out and get deprecated
+by the merge rather than pointing at models that no longer exist.
 
 Auth: Bearer token for synthesis only — voice list endpoint is public.
 Config: RIME_API_KEY (not needed for sync, reserved for future synthesis use).
@@ -51,9 +51,10 @@ _DOCS_URLS = [
 ]
 
 _MODEL_GUIDANCE = (
-    "Return every current Rime TTS model id (exact `modelId` strings the API accepts). Exclude "
-    "models the docs call legacy/retiring/retired. is_default=true for the model the docs "
-    "recommend for new applications. Pricing is per minute of audio when stated that way."
+    "Return every callable Rime TTS model id (exact `modelId` strings the API accepts). Models "
+    "with an announced retirement date stay in, with eol_date and meta.replacement; exclude models "
+    "already retired. is_default=true for the model the docs recommend for new applications. "
+    "Pricing is per minute of audio when stated that way."
 )
 
 # Gender normalization
