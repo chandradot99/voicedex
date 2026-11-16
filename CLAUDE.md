@@ -54,6 +54,8 @@ scripts/validate.py  — validate data/ + cross-record rules + canonical formatt
 ```bash
 uv run python scripts/sync.py deepgram            # dry-run: fetch, merge, print per-field diff
 uv run python scripts/sync.py deepgram --write    # write data/deepgram/*.json, clear its .sync-cache
+uv run python scripts/sync.py --reuse-docs --write   # refresh API-sourced data only; reuse reviewed
+                                                  # docs-extracted records from data/ (no docs pass)
 uv run python scripts/validate.py                 # always before committing
 git diff data/deepgram                            # review, then commit
 ```

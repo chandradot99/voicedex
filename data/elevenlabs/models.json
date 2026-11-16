@@ -1,0 +1,1103 @@
+[
+  {
+    "capabilities": [
+      "style_control"
+    ],
+    "description": "Our state-of-the-art speech to speech model suitable for scenarios where you need maximum control over the content and prosody of your generations.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_english_sts_v2",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "can_be_finetuned": false,
+      "can_use_speaker_boost": true,
+      "character_cost_multiplier": 1.0,
+      "concurrency_group": "standard_eleven_english_sts_v2",
+      "max_characters_free_user": 5000,
+      "mode": "voice_conversion",
+      "serves_pro_voices": false
+    },
+    "name": "Eleven English v2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "style_control"
+    ],
+    "description": "Our cutting-edge, multilingual speech-to-speech model is designed for situations that demand unparalleled control over both the content and the prosody of the generated speech across various languages.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_multilingual_sts_v2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "ja",
+      "zh",
+      "de",
+      "hi",
+      "fr",
+      "ko",
+      "pt",
+      "it",
+      "es",
+      "ru",
+      "id",
+      "nl",
+      "tr",
+      "fil",
+      "pl",
+      "sv",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": true,
+      "character_cost_multiplier": 1.0,
+      "concurrency_group": "standard_eleven_multilingual_sts_v2",
+      "max_characters_free_user": 10000,
+      "mode": "voice_conversion",
+      "serves_pro_voices": false
+    },
+    "name": "Eleven Multilingual v2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "3gpp",
+      "aac",
+      "aiff",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Previous-generation batch model for recorded audio, succeeded by Scribe v3.",
+    "first_seen": "2026-11-16",
+    "id": "scribe_v2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_audio_seconds": 54000,
+    "meta": {
+      "audio_event_tagging": true
+    },
+    "name": "Scribe v2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Batch",
+      "price_usd": 0.2,
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://elevenlabs.io/docs/capabilities/speech-to-text"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "3gpp",
+      "aac",
+      "aiff",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Scribe v2 fine-tuned for medical and clinical audio.",
+    "family": "scribe_v2",
+    "first_seen": "2026-11-16",
+    "id": "scribe_v2_medical",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_audio_seconds": 54000,
+    "meta": {
+      "audio_event_tagging": true,
+      "domain": "medical"
+    },
+    "name": "Scribe v2 Medical",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Batch",
+      "price_usd": 0.2,
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://elevenlabs.io/docs/capabilities/speech-to-text"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "word_timestamps"
+    ],
+    "description": "Previous-generation real-time model, succeeded by Scribe v3 Live.",
+    "first_seen": "2026-11-16",
+    "id": "scribe_v2_realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "name": "Scribe v2 Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Realtime",
+      "price_usd": 0.22,
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://elevenlabs.io/docs/capabilities/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "3gpp",
+      "aac",
+      "aiff",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Most accurate ElevenLabs model for recorded audio (90+ languages); successor to Scribe v2.",
+    "first_seen": "2026-11-16",
+    "id": "scribe_v3",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "max_audio_seconds": 54000,
+    "meta": {
+      "audio_event_tagging": true,
+      "max_file_size_gb": 5,
+      "max_speakers": 32
+    },
+    "name": "Scribe v3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Batch; keyterm prompting +$0.05/hr",
+      "price_usd": 0.2,
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://elevenlabs.io/docs/capabilities/speech-to-text"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Most accurate ElevenLabs real-time model, with turn prediction; successor to Scribe v2 Realtime.",
+    "first_seen": "2026-11-16",
+    "id": "scribe_v3_live",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "input_encodings": [
+        "pcm_8000",
+        "pcm_16000",
+        "pcm_22050",
+        "pcm_24000",
+        "pcm_44100",
+        "pcm_48000",
+        "ulaw_8000"
+      ]
+    },
+    "name": "Scribe v3 Live",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Realtime; keyterm prompting +$0.08/hr",
+      "price_usd": 0.22,
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://elevenlabs.io/docs/capabilities/speech-to-text"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our ultra low latency model in english. Ideal for conversational use cases.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_flash_v2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 30000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": false,
+      "character_cost_multiplier": 0.5,
+      "concurrency_group": "turbo",
+      "max_characters_free_user": 30000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven Flash v2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our ultra low latency model in 32 languages. Ideal for conversational use cases.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_flash_v2_5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "ja",
+      "zh",
+      "de",
+      "hi",
+      "fr",
+      "ko",
+      "pt",
+      "it",
+      "es",
+      "ru",
+      "id",
+      "nl",
+      "tr",
+      "fil",
+      "pl",
+      "sv",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "hu",
+      "no",
+      "vi"
+    ],
+    "max_text_chars": 40000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": false,
+      "character_cost_multiplier": 0.5,
+      "concurrency_group": "turbo",
+      "max_characters_free_user": 40000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven Flash v2.5",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "style_control"
+    ],
+    "description": "Our most life-like, emotionally rich mode in 29 languages. Best for voice overs, audiobooks, post-production, or any other content creation needs.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_multilingual_v2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "ja",
+      "zh",
+      "de",
+      "hi",
+      "fr",
+      "ko",
+      "pt",
+      "it",
+      "es",
+      "id",
+      "nl",
+      "tr",
+      "fil",
+      "pl",
+      "sv",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "ru"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": true,
+      "character_cost_multiplier": 1.0,
+      "concurrency_group": "standard",
+      "max_characters_free_user": 10000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven Multilingual v2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our English-only, low latency model. Best for developer use cases where speed matters and you only need English. Performance is on par with Turbo v2.5.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_turbo_v2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 30000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": false,
+      "character_cost_multiplier": 0.5,
+      "concurrency_group": "turbo",
+      "max_characters_free_user": 30000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven Turbo v2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our high quality, low latency model in 32 languages. Best for developer use cases where speed matters and you need non-English languages.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_turbo_v2_5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "ja",
+      "zh",
+      "de",
+      "hi",
+      "fr",
+      "ko",
+      "pt",
+      "it",
+      "es",
+      "ru",
+      "id",
+      "nl",
+      "tr",
+      "fil",
+      "pl",
+      "sv",
+      "bg",
+      "ro",
+      "ar",
+      "cs",
+      "el",
+      "fi",
+      "hr",
+      "ms",
+      "sk",
+      "da",
+      "ta",
+      "uk",
+      "vi",
+      "no",
+      "hu"
+    ],
+    "max_text_chars": 40000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": false,
+      "character_cost_multiplier": 0.5,
+      "concurrency_group": "turbo",
+      "max_characters_free_user": 40000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven Turbo v2.5",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our highly expressive model. Supports 70+ languages. Requires more prompt engineering than our previous models.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_v3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "hy",
+      "as",
+      "az",
+      "be",
+      "bn",
+      "bs",
+      "bg",
+      "ca",
+      "ceb",
+      "ny",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fil",
+      "fi",
+      "fr",
+      "gl",
+      "ka",
+      "de",
+      "el",
+      "gu",
+      "ha",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "ga",
+      "it",
+      "ja",
+      "jv",
+      "kn",
+      "kk",
+      "ky",
+      "ko",
+      "lv",
+      "ln",
+      "lt",
+      "lb",
+      "mk",
+      "ms",
+      "ml",
+      "zh",
+      "mr",
+      "ne",
+      "no",
+      "ps",
+      "fa",
+      "pl",
+      "pt",
+      "pa",
+      "ro",
+      "ru",
+      "sr",
+      "sd",
+      "sk",
+      "sl",
+      "so",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "can_be_finetuned": false,
+      "can_use_speaker_boost": false,
+      "character_cost_multiplier": 1.0,
+      "concurrency_group": "standard",
+      "max_characters_free_user": 5000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven v3",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our highly expressive model, optimized for natural dialogue in conversational agents. Supports 70+ languages. Requires more prompt engineering than our previous models.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_v3_conversational",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "hy",
+      "as",
+      "az",
+      "be",
+      "bn",
+      "bs",
+      "bg",
+      "ca",
+      "ceb",
+      "ny",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fil",
+      "fi",
+      "fr",
+      "gl",
+      "ka",
+      "de",
+      "el",
+      "gu",
+      "ha",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "ga",
+      "it",
+      "ja",
+      "jv",
+      "kn",
+      "kk",
+      "ky",
+      "ko",
+      "lv",
+      "ln",
+      "lt",
+      "lb",
+      "mk",
+      "ms",
+      "ml",
+      "zh",
+      "mr",
+      "ne",
+      "no",
+      "ps",
+      "fa",
+      "pl",
+      "pt",
+      "pa",
+      "ro",
+      "ru",
+      "sr",
+      "sd",
+      "sk",
+      "sl",
+      "so",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "cy"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "can_be_finetuned": false,
+      "can_use_speaker_boost": true,
+      "character_cost_multiplier": 0.5,
+      "concurrency_group": "standard_eleven_v3",
+      "max_characters_free_user": 5000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven v3 Conversational",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our fastest and most emotive model. Supports 90+ languages.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_v4",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "hy",
+      "as",
+      "ast",
+      "az",
+      "be",
+      "bn",
+      "bs",
+      "bg",
+      "my",
+      "yue",
+      "ca",
+      "ceb",
+      "ny",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fil",
+      "fi",
+      "fr",
+      "ff",
+      "gl",
+      "ka",
+      "de",
+      "el",
+      "gu",
+      "ha",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "ga",
+      "it",
+      "ja",
+      "jv",
+      "kam",
+      "kn",
+      "kk",
+      "ky",
+      "ko",
+      "lo",
+      "lv",
+      "ln",
+      "lt",
+      "lg",
+      "lb",
+      "mk",
+      "ms",
+      "ml",
+      "mt",
+      "zh",
+      "mi",
+      "mr",
+      "mn",
+      "ne",
+      "no",
+      "oc",
+      "or",
+      "ps",
+      "fa",
+      "pl",
+      "pt",
+      "pa",
+      "ro",
+      "ru",
+      "sr",
+      "sn",
+      "sd",
+      "sk",
+      "sl",
+      "so",
+      "ckb",
+      "es",
+      "sw",
+      "sv",
+      "tg",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "cy",
+      "wo",
+      "yo",
+      "zu"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": false,
+      "character_cost_multiplier": 1.0,
+      "concurrency_group": "standard_eleven_v4",
+      "max_characters_free_user": 10000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven v4",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Our fastest and most emotive model, optimized for low latency. Supports 90+ languages.",
+    "first_seen": "2026-11-16",
+    "id": "eleven_v4_turbo",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "am",
+      "ar",
+      "hy",
+      "as",
+      "ast",
+      "az",
+      "be",
+      "bn",
+      "bs",
+      "bg",
+      "my",
+      "yue",
+      "ca",
+      "ceb",
+      "ny",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fil",
+      "fi",
+      "fr",
+      "ff",
+      "gl",
+      "ka",
+      "de",
+      "el",
+      "gu",
+      "ha",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "ga",
+      "it",
+      "ja",
+      "jv",
+      "kam",
+      "kn",
+      "kk",
+      "ky",
+      "ko",
+      "lo",
+      "lv",
+      "ln",
+      "lt",
+      "lg",
+      "lb",
+      "mk",
+      "ms",
+      "ml",
+      "mt",
+      "zh",
+      "mi",
+      "mr",
+      "mn",
+      "ne",
+      "no",
+      "oc",
+      "or",
+      "ps",
+      "fa",
+      "pl",
+      "pt",
+      "pa",
+      "ro",
+      "ru",
+      "sr",
+      "sn",
+      "sd",
+      "sk",
+      "sl",
+      "so",
+      "ckb",
+      "es",
+      "sw",
+      "sv",
+      "tg",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "uz",
+      "vi",
+      "cy",
+      "wo",
+      "yo",
+      "zu"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "can_be_finetuned": true,
+      "can_use_speaker_boost": false,
+      "character_cost_multiplier": 0.5,
+      "concurrency_group": "standard_eleven_v4",
+      "max_characters_free_user": 10000,
+      "serves_pro_voices": false
+    },
+    "name": "Eleven v4 Turbo",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "api",
+      "urls": [
+        "https://api.elevenlabs.io/v1/models",
+        "https://api.elevenlabs.io/v2/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

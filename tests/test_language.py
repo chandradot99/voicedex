@@ -44,3 +44,11 @@ def test_normalize_languages_preserves_order_and_count() -> None:
 
 def test_normalize_languages_empty_list() -> None:
     assert normalize_languages([]) == []
+
+
+@pytest.mark.parametrize("raw, expected", [
+    ("cmn-CN", "zh-CN"), ("eng", "en"), ("zho", "zh"), ("deu-DE", "de-DE"),
+    ("yue-HK", "yue-HK"), ("fil-PH", "fil-PH"), ("es-419", "es-419"), (" en-us ", "en-US"),
+])
+def test_iso639_3_collapses_to_shortest_code(raw, expected):
+    assert normalize_language(raw) == expected

@@ -5,6 +5,8 @@ Sync providers into the git-backed catalog (data/<provider>/*.json).
     uv run python scripts/sync.py deepgram --write      # write data/deepgram/*.json
     uv run python scripts/sync.py --write               # all providers
     uv run python scripts/sync.py fishaudio --write --allow-shrink   # override the shrink guard
+    uv run python scripts/sync.py --reuse-docs --write              # refresh API data for all providers;
+                                                                    # docs-extracted records reused from data/
 
 After --write, review with `git diff data/` and commit. The commit/PR is the review step;
 deploying it publishes the data. See docs/design/v2-architecture.md.
@@ -59,15 +61,78 @@ def print_report(report: MergeReport, verbose: bool) -> None:
             print(f"    … {len(items) - limit} more (use -v to list all)")
 
 
+def _model_to_cache(m) -> dict:
+    """Inverse of merge.model_from_sync, in the .sync-cache SyncModel JSON shape."""
+    d = m.model_dump(mode="json", exclude_none=True)
+    meta = dict(d.pop("meta", {}))
+    for src, dst in (("family", "parent_model_id"), ("snapshot_date", "snapshot_date"),
+                     ("alias_of", "alias_of"), ("batch", "batch")):
+        if src in d:
+            meta[dst] = d.pop(src)
+    for k in ("first_seen", "updated_at", "deprecated_at", "provenance"):
+        d.pop(k, None)
+    d["model_id"] = d.pop("id")
+    d["display_name"] = d.pop("name")
+    d["meta"] = meta
+    d["source"] = "docs"
+    return d
+
+
+def seed_cache_from_data(provider_id: str, data_dir: Path) -> list[str]:
+    """--reuse-docs: re-use the already-reviewed docs-extracted records in data/ instead of
+    re-reading the docs, so an API-side refresh (e.g. new voices) doesn't force a docs pass.
+    Never overwrites a cache file that already exists (a fresh extraction always wins)."""
+    pdir = data_dir / provider_id
+    if not (pdir / "provider.json").exists():
+        return []
+    pd = read_provider_dir(pdir)
+    seeded = []
+    for t in ("stt", "tts", "sts"):
+        recs = [m for m in pd.models if m.type == t and m.deprecated_at is None
+                and m.provenance is not None and m.provenance.method == "docs"]
+        path = _models_path(provider_id, t)
+        if recs and not path.exists():
+            path.parent.mkdir(exist_ok=True)
+            path.write_text(json.dumps([_model_to_cache(m) for m in recs], indent=2))
+            seeded.append(f"{t} models ({len(recs)})")
+    vs = pd.provider.voices_source
+    if vs is not None and vs.method == "docs" and not _voices_path(provider_id).exists():
+        voices = [v for v in pd.voices if v.deprecated_at is None]
+        rows = []
+        for v in voices:
+            d = v.model_dump(mode="json", exclude_none=True)
+            for k in ("first_seen", "updated_at", "deprecated_at"):
+                d.pop(k, None)
+            d["voice_id"] = d.pop("id")
+            d["display_name"] = d.pop("name")
+            rows.append(d)
+        _voices_path(provider_id).parent.mkdir(exist_ok=True)
+        _voices_path(provider_id).write_text(json.dumps(rows, indent=2))
+        seeded.append(f"voices ({len(rows)})")
+    return seeded
+
+
 def clear_cache(provider_id: str) -> None:
     for p in (_models_path(provider_id, "stt"), _models_path(provider_id, "tts"),
               _models_path(provider_id, "sts"), _voices_path(provider_id)):
         p.unlink(missing_ok=True)
 
 
-async def sync_one(provider_id: str, data_dir: Path, write: bool, allow_shrink: bool, verbose: bool) -> bool:
+async def sync_one(provider_id: str, data_dir: Path, write: bool, allow_shrink: bool, verbose: bool,
+                   reuse_docs: bool = False) -> bool:
     print(f"\n{'─' * 60}\n  {provider_id}\n{'─' * 60}")
     entry = BY_ID[provider_id]
+    seeded = seed_cache_from_data(provider_id, data_dir) if reuse_docs else []
+    if seeded:
+        print(f"  Reusing reviewed docs data from data/: {', '.join(seeded)}")
+    try:
+        return await _sync_one(provider_id, entry, data_dir, write, allow_shrink, verbose)
+    finally:
+        if seeded:
+            clear_cache(provider_id)  # seeded copies must never masquerade as a fresh extraction
+
+
+async def _sync_one(provider_id: str, entry, data_dir: Path, write: bool, allow_shrink: bool, verbose: bool) -> bool:
     print("  Fetching…", end="", flush=True)
     try:
         result = await load_syncer(provider_id).sync()
@@ -113,6 +178,8 @@ async def main() -> int:
     ap.add_argument("--write", action="store_true", help="Write data files (default: dry-run)")
     ap.add_argument("--allow-shrink", action="store_true", help="Bypass the mass-deprecation guard")
     ap.add_argument("-v", "--verbose", action="store_true", help="List every change")
+    ap.add_argument("--reuse-docs", action="store_true",
+                    help="Refresh API data only; reuse docs-extracted records already in data/")
     ap.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
     args = ap.parse_args()
 
@@ -125,7 +192,7 @@ async def main() -> int:
     print(f"Mode: {'WRITE' if args.write else 'DRY-RUN'}   Data: {args.data_dir}")
     ok = 0
     for pid in ids:
-        ok += await sync_one(pid, args.data_dir, args.write, args.allow_shrink, args.verbose)
+        ok += await sync_one(pid, args.data_dir, args.write, args.allow_shrink, args.verbose, args.reuse_docs)
     print(f"\n{'═' * 60}\n  {ok}/{len(ids)} providers synced")
     return 0 if ok == len(ids) else 1
 

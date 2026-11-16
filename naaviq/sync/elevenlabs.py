@@ -41,14 +41,11 @@ _GENDER_MAP = {
 }
 
 _STT_MODELS_GUIDANCE = (
-    "ElevenLabs' STT product is the Scribe family. Return ALL listed Scribe "
-    "models with their actual model_id strings (e.g., 'scribe_v1', "
-    "'scribe_v1_experimental'). Mark the production-recommended one as "
-    "is_default=true; only ONE model total should have is_default=true. "
-    "Scribe is multilingual (~99 languages); if the docs don't enumerate them, "
-    "use ['*'] for languages. Set streaming=true if the docs mention realtime/"
-    "streaming support, else false. Populate `meta` with capability flags the "
-    "docs mention: diarization, word_timestamps, experimental, etc."
+    "Return EVERY callable speech-to-text model id documented (exact API strings). Mark exactly one "
+    "is_default=true: the recommended production model. If the docs give a language count without "
+    "listing them, use ['*']. streaming=true only for models usable over the realtime/websocket API; "
+    "set meta.batch for models usable via the file-upload endpoint. Use canonical capability flags "
+    "(word_timestamps, speaker_diarization, language_detection, …) rather than meta for documented features."
 )
 
 
@@ -74,7 +71,7 @@ class ElevenLabsSyncer(ProviderSyncer):
             ),
         )
 
-        api_stt_models, tts_models = self._parse_models(models_data)
+        api_stt_models, tts_models, sts_models = self._parse_models(models_data)
         tts_voices = self._parse_voices(voices_data)
 
         # If /v1/models ever starts returning STT entries, merge them in
@@ -102,6 +99,7 @@ class ElevenLabsSyncer(ProviderSyncer):
             stt_models=stt_models,
             tts_models=tts_models,
             tts_voices=tts_voices,
+            sts_models=sts_models,
             source=self.source,
             api_urls=[_MODELS_URL, _VOICES_URL],
             docs_urls=_STT_MODELS_DOCS_URLS,
@@ -150,48 +148,55 @@ class ElevenLabsSyncer(ProviderSyncer):
     def _auth_headers(self) -> dict[str, str]:
         return {"xi-api-key": settings.elevenlabs_api_key}
 
-    def _parse_models(self, data: list[dict]) -> tuple[list[SyncModel], list[SyncModel]]:
+    def _parse_models(self, data: list[dict]) -> tuple[list[SyncModel], list[SyncModel], list[SyncModel]]:
+        """Returns (stt, tts, sts). /v1/models lists models newest/recommended first, so the
+        default TTS model is the first GA text-to-speech entry — no hardcoded preference."""
         stt_models: list[SyncModel] = []
         tts_models: list[SyncModel] = []
+        sts_models: list[SyncModel] = []
 
         for m in data:
             languages = normalize_languages([
-                lang["language_id"]
-                for lang in (m.get("languages") or [])
-                if lang.get("language_id")
+                lang["language_id"] for lang in (m.get("languages") or []) if lang.get("language_id")
             ])
+            alpha = bool(m.get("requires_alpha_access"))
+            rates = m.get("model_rates") or {}
             meta = {
-                "max_characters":    m.get("maximum_text_length_per_request"),
-                "can_be_finetuned":  m.get("can_be_finetuned", False),
-                "requires_alpha":    m.get("requires_alpha_access", False),
-                "concurrency_group": m.get("concurrency_group"),
-                "token_cost_factor": m.get("token_cost_factor"),
+                "can_be_finetuned":     m.get("can_be_finetuned"),
+                "can_use_speaker_boost": m.get("can_use_speaker_boost"),
+                "serves_pro_voices":    m.get("serves_pro_voices"),
+                "concurrency_group":    m.get("concurrency_group"),
+                "character_cost_multiplier": rates.get("character_cost_multiplier"),
+                "max_characters_free_user": m.get("max_characters_request_free_user"),
             }
+            common = dict(
+                model_id=m["model_id"],
+                display_name=m.get("name") or m["model_id"],
+                languages=languages,
+                streaming=True,
+                lifecycle="alpha" if alpha else "ga",
+                description=m.get("description"),
+                max_text_chars=m.get("maximum_text_length_per_request"),
+                capabilities=["style_control"] if m.get("can_use_style") else [],
+                interfaces=["http", "websocket"],
+                meta={k: v for k, v in meta.items() if v is not None},
+            )
 
             if m.get("can_do_text_to_speech"):
-                tts_models.append(SyncModel(
-                    model_id=m["model_id"],
-                    display_name=m.get("name") or m["model_id"],
-                    type="tts",
-                    languages=languages,
-                    streaming=True,
-                    is_default=False,  # ElevenLabs API doesn't signal a default
-                    description=m.get("description"),
-                    meta=meta,
-                ))
+                tts_models.append(SyncModel(type="tts", **common))
+            if m.get("can_do_voice_conversion"):
+                sts_models.append(SyncModel(type="sts", **{
+                    **common, "interfaces": ["http"],
+                    "meta": {**common["meta"], "mode": "voice_conversion"},
+                }))
             if m.get("can_do_speech_to_text"):
-                stt_models.append(SyncModel(
-                    model_id=m["model_id"],
-                    display_name=m.get("name") or m["model_id"],
-                    type="stt",
-                    languages=languages,
-                    streaming=False,  # Scribe is batch-only at launch; revisit if API signals streaming
-                    is_default=False,
-                    description=m.get("description"),
-                    meta=meta,
-                ))
+                stt_models.append(SyncModel(type="stt", **{**common, "max_text_chars": None}))
 
-        return stt_models, tts_models
+        for models in (tts_models, sts_models):
+            default = next((x for x in models if x.lifecycle == "ga"), None)
+            if default:
+                default.is_default = True
+        return stt_models, tts_models, sts_models
 
     def _parse_voices(self, items: list[dict]) -> list[SyncVoice]:
         voices: list[SyncVoice] = []
@@ -201,32 +206,39 @@ class ElevenLabsSyncer(ProviderSyncer):
                 continue
 
             labels = v.get("labels") or {}
+            verified = v.get("verified_languages") or []
+            # Prefer full locales ("en-US") over bare languages; primary label language first.
+            locales = [e.get("locale") or e.get("language") for e in verified if e.get("locale") or e.get("language")]
+            primary = labels.get("language")
+            languages = list(dict.fromkeys(normalize_languages(([primary] if primary else []) + locales)))
+            # A bare "en" adds nothing once "en-US" is present.
+            languages = [lang for lang in languages if "-" in lang or not any(x.startswith(lang + "-") for x in languages)]
 
-            verified = [
-                lang.get("language")
-                for lang in (v.get("verified_languages") or [])
-                if lang.get("language")
-            ]
-
+            raw_name = v.get("name") or v["voice_id"]
+            name, _, tagline = raw_name.partition(" - ")
             descriptive = labels.get("descriptive") or labels.get("description") or ""
-            tags = [t.strip() for t in descriptive.split(",") if t.strip()] if descriptive else []
+            tags = [t.strip() for t in descriptive.split(",") if t.strip()]
 
             voices.append(SyncVoice(
                 voice_id=v["voice_id"],
-                display_name=v.get("name") or v["voice_id"],
+                display_name=name.strip() or raw_name,
                 gender=_GENDER_MAP.get((labels.get("gender") or "").lower()),
                 category="premade",
-                languages=list(dict.fromkeys(normalize_languages(verified))),
+                languages=languages,
                 description=v.get("description"),
                 preview_url=v.get("preview_url"),
                 accent=labels.get("accent"),
-                age=labels.get("age"),
-                use_cases=[labels["use_case"]] if labels.get("use_case") else [],
+                age=(labels.get("age") or "").replace("_", " ") or None,
+                use_cases=[labels["use_case"].replace("_", " ")] if labels.get("use_case") else [],
                 tags=tags,
-                compatible_models=list(v.get("high_quality_base_model_ids") or []),
-                meta={
-                    "labels": labels,
-                },
+                # Premade voices work with every ElevenLabs TTS model; the API's
+                # "high quality" list is a quality hint (and includes retired ids).
+                compatible_models=["*"],
+                meta={k: val for k, val in {
+                    "tagline": tagline.strip() or None,
+                    "high_quality_models": v.get("high_quality_base_model_ids") or None,
+                    "available_for_tiers": v.get("available_for_tiers") or None,
+                }.items() if val},
             ))
         return voices
 
