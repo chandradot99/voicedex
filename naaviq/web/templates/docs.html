@@ -49,6 +49,108 @@
       addEventListener("pointerdown", () => root.classList.add("using-pointer"), true);
       addEventListener("keydown", (e) => { if (e.key === "Tab") root.classList.remove("using-pointer"); }, true);
     })();
+
+    // API client: Scalar's "Clear" deletes every query-parameter row (documented ones included). Make it a
+    // "Reset": parameters with a documented default get it back (and stay enabled); the rest are emptied and
+    // disabled; rows are kept. Defaults are read from the OpenAPI document.
+    (() => {
+      const isQueryClear = (btn) => btn && btn.textContent.trim().match(/^(Clear|Reset)$/) &&
+        /^Query Parameters/.test(btn.closest(".group\\/collapse")?.textContent.trim() || "");
+      // Which operation is open: the title in the request panel's own header (the client's sidebar lists every
+      // operation, so searching the whole panel would pick the wrong one).
+      const defaultsFor = (queryBtn) => {
+        const spec = window.__apiSpec; if (!spec) return {};
+        const ops = Object.values(spec.paths).map((p) => p.get).filter(Boolean);
+        const summaries = new Set(ops.map((o) => o.summary));
+        const panel = queryBtn.closest(".request-section-content")?.closest("section");
+        const heading = panel && [...panel.querySelectorAll("*")].find((e) => e.childElementCount === 0 &&
+          summaries.has(e.textContent.trim()) && !e.closest(".request-section-content"));
+        const op = heading && ops.find((o) => o.summary === heading.textContent.trim());
+        if (!op) return {};
+        return Object.fromEntries((op.parameters || []).filter((x) => x.in === "query")
+          .map((x) => [x.name, x.schema && x.schema.default !== undefined ? String(x.schema.default) : null]));
+      };
+      const setText = (editor, text) => {
+        // Select the editor's text explicitly (selectAll depends on focus timing) and replace it via insertText,
+        // which goes through the editor's input handling so Scalar's state updates; "" clears it.
+        editor.focus();
+        const range = document.createRange(); range.selectNodeContents(editor);
+        const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+        document.execCommand("insertText", false, text);
+        editor.blur();
+      };
+      document.addEventListener("click", (e) => {
+        const btn = e.target.closest(".scalar-client button");
+        if (!isQueryClear(btn)) return;
+        e.preventDefault(); e.stopPropagation();
+        const defaults = defaultsFor(btn);
+        const sectionOf = () => [...document.querySelectorAll(".scalar-client .group\\/collapse")]
+          .find((el) => /^Query Parameters/.test(el.textContent.trim()));
+        const rowOf = (name) => [...(sectionOf()?.querySelectorAll("tr") || [])]
+          .find((tr) => tr.querySelectorAll("td")[1]?.textContent.trim() === name);
+        const tick = () => new Promise((r) => setTimeout(r, 30));
+        // Run after the click completes, one row at a time, re-finding rows (Scalar re-renders as values change).
+        setTimeout(async () => {
+          for (const [name, def] of Object.entries(defaults)) {
+            let tr = rowOf(name); if (!tr) continue;
+            const editor = tr.querySelectorAll("td")[2]?.querySelector("[contenteditable]");
+            if (editor && (editor.textContent || "") !== (def || "")) { setText(editor, def || ""); await tick(); }
+            tr = rowOf(name);
+            const cb = tr?.querySelector('input[type="checkbox"]');
+            if (cb && cb.checked !== Boolean(def)) { cb.click(); await tick(); }
+          }
+        }, 0);
+      }, true);
+      // Label the button for what it now does.
+      new MutationObserver(() => {
+        document.querySelectorAll(".scalar-client button").forEach((b) => {
+          if (b.textContent.trim() === "Clear" && isQueryClear(b)) {
+            const t = [...b.childNodes].find((n) => n.nodeType === 3 && n.textContent.trim() === "Clear");
+            if (t) t.textContent = "Reset"; else if (b.childElementCount === 0) b.textContent = "Reset";
+            b.title = "Reset query parameters to their defaults";
+          }
+        });
+      }).observe(document.body, { childList: true, subtree: true });
+    })();
+
+    // Parameter info ("ⓘ") popovers open on hover, not click (mouse only; touch keeps tap-to-open).
+    // Scalar renders them as click-toggled popovers, so hover drives the same toggle; a short grace period
+    // lets the pointer move from the icon onto the popover.
+    (() => {
+      const SEL = 'button[aria-label="More Information"]';
+      let openBtn = null, closeTimer = null;
+      const isOpen = (b) => b.getAttribute("aria-expanded") === "true";
+      const close = () => { if (openBtn && isOpen(openBtn)) openBtn.click(); openBtn = null; };
+      const cancelClose = () => { clearTimeout(closeTimer); closeTimer = null; };
+      const scheduleClose = () => { cancelClose(); closeTimer = setTimeout(close, 180); };
+
+      document.addEventListener("pointerover", (e) => {
+        if (e.pointerType !== "mouse") return;
+        const btn = e.target.closest(SEL);
+        if (btn) {
+          cancelClose();
+          if (openBtn && openBtn !== btn) close();
+          document.documentElement.classList.add("using-pointer");   // opening focuses the icon; no keyboard ring
+          if (!isOpen(btn)) { btn.click(); }
+          openBtn = btn;
+          return;
+        }
+        if (openBtn && e.target.closest(".z-context")) cancelClose();      // pointer is on the popover
+      });
+      document.addEventListener("pointerout", (e) => {
+        if (e.pointerType !== "mouse" || !openBtn) return;
+        const to = e.relatedTarget;
+        if (to && (to.closest(SEL) === openBtn || to.closest(".z-context"))) return;
+        if (e.target.closest(SEL) || e.target.closest(".z-context")) scheduleClose();
+      });
+      // A real mouse click on an icon that hover already opened shouldn't toggle it shut.
+      document.addEventListener("click", (e) => {
+        const btn = e.target.closest(SEL);
+        if (btn && e.isTrusted && e.pointerType === "mouse" && btn === openBtn && isOpen(btn)) {
+          e.preventDefault(); e.stopPropagation();
+        }
+      }, true);
+    })();
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.76.4/dist/browser/standalone.js"></script>
   <script>
@@ -56,6 +158,7 @@
     fetch("/openapi.json").then((r) => r.text()).then((raw) => {
     const spec = JSON.parse(raw.replaceAll("https://<host>", location.origin));
     spec.servers = [{ url: location.origin, description: "This deployment" }];
+    window.__apiSpec = spec;   // used by the API client "Reset" (parameter defaults)
     Scalar.createApiReference("#scalar-docs", {
       content: spec,
       theme: "none",
