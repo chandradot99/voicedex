@@ -1,0 +1,17 @@
+{
+  "api_urls": [
+    "https://api.mistral.ai/v1/audio/voices"
+  ],
+  "docs_urls": [
+    "https://docs.mistral.ai/models.md",
+    "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+    "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+    "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+    "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+  ],
+  "id": "mistral",
+  "last_synced": "2026-11-16",
+  "name": "Mistral AI",
+  "source": "mixed",
+  "type": "both"
+}

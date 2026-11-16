@@ -1,0 +1,566 @@
+[
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Voxtral 2 batch transcription model with diarization, context biasing and word timestamps in 13 languages.",
+    "eol_date": "2027-04-30",
+    "first_seen": "2026-11-16",
+    "id": "voxtral-mini-2602",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "hi",
+      "es",
+      "ar",
+      "fr",
+      "pt",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "it",
+      "nl"
+    ],
+    "max_audio_seconds": 10800,
+    "meta": {
+      "aliases": [
+        "voxtral-mini-latest"
+      ],
+      "deprecation_notice": "Deprecated 2026-10-31; retirement 2027-04-30. Replace with Voxtral Mini Transcribe 3.",
+      "release_date": "2026-02-04",
+      "replacement": "voxtral-mini-transcribe-3-0"
+    },
+    "name": "Voxtral Mini Transcribe 2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.003,
+      "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization"
+    ],
+    "description": "Efficient Voxtral 3 file-transcription model with diarization and context biasing across 53 languages.",
+    "first_seen": "2026-11-16",
+    "id": "voxtral-mini-transcribe-3-0",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "bn",
+      "bg",
+      "my",
+      "ca",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "tl",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "gu",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "km",
+      "ko",
+      "lv",
+      "lt",
+      "lb",
+      "mk",
+      "ms",
+      "ml",
+      "mt",
+      "mr",
+      "no",
+      "or",
+      "fa",
+      "pl",
+      "pt",
+      "pa",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "aliases": [
+        "voxtral-mini-transcribe-3",
+        "voxtral-mini-transcribe-latest"
+      ],
+      "context_window_tokens": 65536,
+      "release_date": "2026-10-20",
+      "status": "Public Preview",
+      "streamed_text_response": true,
+      "timestamps": "segment only (word timestamps return 400)"
+    },
+    "name": "Voxtral Mini Transcribe 3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.0035,
+      "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Voxtral 2 open-weight 4B realtime streaming transcription model in 13 languages.",
+    "eol_date": "2027-04-30",
+    "first_seen": "2026-11-16",
+    "id": "voxtral-mini-transcribe-realtime-2602",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "hi",
+      "es",
+      "ar",
+      "fr",
+      "pt",
+      "ru",
+      "de",
+      "ja",
+      "ko",
+      "it",
+      "nl"
+    ],
+    "meta": {
+      "aliases": [
+        "voxtral-mini-realtime-latest"
+      ],
+      "deprecation_notice": "Deprecated 2026-10-31; retirement 2027-04-30. Replace with Voxtral Mini Transcribe Realtime 3.",
+      "encoding": "pcm_s16le",
+      "parameters": "4B",
+      "release_date": "2026-02-04",
+      "replacement": "voxtral-mini-transcribe-realtime-3-0"
+    },
+    "name": "Voxtral Mini Transcribe Realtime (26.02)",
+    "open_weights": {
+      "license": "Apache 2.0",
+      "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602"
+    },
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.006,
+      "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-26-02",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization"
+    ],
+    "description": "Voxtral 3 realtime WebSocket transcription with configurable 80-2,400 ms latency, end-of-turn detection, context biasing and diarization.",
+    "first_seen": "2026-11-16",
+    "id": "voxtral-mini-transcribe-realtime-3-0",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "aliases": [
+        "voxtral-mini-transcribe-realtime-3",
+        "voxtral-mini-transcribe-realtime-latest"
+      ],
+      "default_sample_rate_hz": 16000,
+      "diarization_and_turn_detection_exclusive": true,
+      "encoding": "pcm_s16le mono",
+      "language_count": "45 languages and dialects",
+      "release_date": "2026-10-20",
+      "speaker_references": "up to 8 clips, 3-15 s each",
+      "status": "Public Preview",
+      "target_streaming_delay_ms": "80-1200 or 2400",
+      "turn_detection": true
+    },
+    "name": "Voxtral Mini Transcribe Realtime 3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.008,
+      "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization"
+    ],
+    "description": "Mistral's flagship Voxtral 3 file-transcription and diarization model for the most accurate transcripts across 53 languages.",
+    "first_seen": "2026-11-16",
+    "id": "voxtral-small-transcribe-3-0",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "bn",
+      "bg",
+      "my",
+      "ca",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "tl",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "gu",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "km",
+      "ko",
+      "lv",
+      "lt",
+      "lb",
+      "mk",
+      "ms",
+      "ml",
+      "mt",
+      "mr",
+      "no",
+      "or",
+      "fa",
+      "pl",
+      "pt",
+      "pa",
+      "ro",
+      "ru",
+      "sr",
+      "sk",
+      "sl",
+      "es",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "aliases": [
+        "voxtral-small-transcribe-3",
+        "voxtral-small-transcribe-latest"
+      ],
+      "also_supports": [
+        "translation",
+        "speech Q&A",
+        "summarization",
+        "function calling"
+      ],
+      "context_window_tokens": 65536,
+      "release_date": "2026-10-20",
+      "replaces": "voxtral-small-2507",
+      "status": "Public Preview",
+      "timestamps": "segment only (word timestamps return 400)"
+    },
+    "name": "Voxtral Small Transcribe 3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.004,
+      "source_url": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "First-generation Voxtral 4B text-to-speech model with zero-shot voice cloning in 9 languages.",
+    "eol_date": "2027-04-30",
+    "first_seen": "2026-11-16",
+    "id": "voxtral-mini-tts-2603",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "pt",
+      "it",
+      "nl",
+      "de",
+      "hi",
+      "ar"
+    ],
+    "meta": {
+      "aliases": [
+        "voxtral-mini-tts-latest"
+      ],
+      "deprecation_notice": "Deprecated 2026-10-31; retirement 2027-04-30. Replace with Voxtral TTS 3.",
+      "parameters": "4B",
+      "release_date": "2026-03-23",
+      "replacement": "voxtral-mini-tts-3-0",
+      "ttfa_ms": 90
+    },
+    "name": "Voxtral TTS (26.03)",
+    "open_weights": {
+      "license": "CC BY-NC 4.0",
+      "url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603"
+    },
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$16 per 1M input characters",
+      "price_usd": 1.6e-05,
+      "source_url": "https://docs.mistral.ai/models/voxtral-tts-26-03",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Mistral's Voxtral 3 text-to-speech model with zero-shot and professional voice cloning, 35+ languages, inline emotion and pace tags, and ~90 ms time-to-first-audio.",
+    "first_seen": "2026-11-16",
+    "id": "voxtral-mini-tts-3-0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "bg",
+      "ca",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en-GB",
+      "en-US",
+      "fil",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "is",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lb",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "es",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "alias_note": "voxtral-mini-tts-latest will point to Voxtral 3 within a month of GA (currently still listed on voxtral-mini-tts-2603).",
+      "aliases": [
+        "voxtral-mini-tts-3",
+        "voxtral-mini-tts-latest"
+      ],
+      "contextual_tts": true,
+      "dialects": "50+",
+      "emotion_tags": 34,
+      "endpoints": {
+        "offline": "/v1/audio/speech",
+        "realtime": "/v1/audio/speech/realtime"
+      },
+      "expressiveness_param": true,
+      "pace_tags": [
+        "slow",
+        "fast"
+      ],
+      "phoneme_hints": "closed list of 77 phonemes",
+      "preset_voice_languages": 22,
+      "release_date": "2026-10-20",
+      "status": "Public Preview",
+      "style_instructions": "not available at launch",
+      "ttfa_ms": 90
+    },
+    "name": "Voxtral TTS 3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$13 per 1M input characters",
+      "price_usd": 1.3e-05,
+      "source_url": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+        "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

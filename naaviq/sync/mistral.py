@@ -38,42 +38,23 @@ _BASE_URL = "https://api.mistral.ai/v1"
 _VOICES_URL = f"{_BASE_URL}/audio/voices"
 
 _DOCS_URLS = [
-    "https://docs.mistral.ai/models/voxtral-tts-26-03",
-    "https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02",
-    "https://docs.mistral.ai/api/endpoint/audio/speech",
-    "https://docs.mistral.ai/api/endpoint/audio/transcriptions",
+    "https://docs.mistral.ai/models.md",
+    "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
+    "https://docs.mistral.ai/studio/audio/specs-and-limits/languages.md",
+    "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
+    "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md",
 ]
 
-_TTS_MODEL_GUIDANCE = """
-Extract Mistral Voxtral TTS models. There is 1 model.
-
-1. model_id="voxtral-mini-tts-2603", display_name="Voxtral Mini TTS", is_default=True, streaming=True
-   - Launched March 2026. 4B parameter model. ~90ms TTFA.
-   - 9 languages: English, French, German, Spanish, Dutch, Portuguese, Italian, Hindi, Arabic.
-   - Voice cloning from 3 seconds of reference audio.
-   - description="Mistral Voxtral Mini TTS — 9 languages, ~90ms TTFA, voice cloning from 3s of audio."
-   - languages: ["en", "fr", "de", "es", "nl", "pt", "it", "hi", "ar"]
-
-Use exact model_id: "voxtral-mini-tts-2603".
-"""
-
-_STT_MODEL_GUIDANCE = """
-Extract Mistral Voxtral STT models. There are 2 models.
-
-1. model_id="voxtral-mini-latest", display_name="Voxtral Mini Transcribe", is_default=True, streaming=False
-   - Batch transcription. Alias for Voxtral Mini Transcribe V2. ~4% WER.
-   - 13 languages: English, Chinese, Hindi, Spanish, Arabic, French, Portuguese, Russian, German, Japanese, Korean, Italian, Dutch.
-   - description="Mistral Voxtral batch transcription — 13 languages, ~4% WER."
-   - languages: ["en", "zh", "hi", "es", "ar", "fr", "pt", "ru", "de", "ja", "ko", "it", "nl"]
-
-2. model_id="voxtral-mini-transcribe-realtime-2602", display_name="Voxtral Mini Realtime", is_default=False, streaming=True
-   - Real-time streaming transcription. Sub-200ms latency.
-   - Same 13 languages as batch model.
-   - description="Mistral Voxtral real-time streaming STT — 13 languages, sub-200ms latency."
-   - languages: ["en", "zh", "hi", "es", "ar", "fr", "pt", "ru", "de", "ja", "ko", "it", "nl"]
-
-Use exact model_id values as listed above.
-"""
+_COMMON_GUIDANCE = (
+    "Use canonical dated model ids (not '-latest' aliases; record aliases in meta). Keep deprecated "
+    "models with a published retirement date (eol_date + meta.replacement); exclude retired ones. "
+    "Public Preview models are beta. is_default=true for the model the docs say to start with."
+)
+_TTS_MODEL_GUIDANCE = "Return every Voxtral text-to-speech model. " + _COMMON_GUIDANCE
+_STT_MODEL_GUIDANCE = (
+    "Return every Voxtral transcription model (batch and realtime; streaming=true only for realtime). "
+    + _COMMON_GUIDANCE
+)
 
 _GENDER_MAP = {"male": "male", "female": "female"}
 
@@ -135,8 +116,11 @@ class MistralSyncer(ProviderSyncer):
     # ── Private helpers ───────────────────────────────────────────────────────
 
     async def _fetch_voices(self) -> list[dict]:
+        # The voices listing needs a (paid-plan) key; models come from public docs. Without a key we
+        # publish models only — and once voices exist, the merge guard refuses an empty voice list,
+        # so a missing key can never wipe them.
         if not settings.mistral_api_key:
-            raise ValueError("MISTRAL_API_KEY is not set in .env")
+            return []
 
         headers = {"Authorization": f"Bearer {settings.mistral_api_key}"}
         all_voices: list[dict] = []
