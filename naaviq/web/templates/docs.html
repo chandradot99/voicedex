@@ -174,9 +174,10 @@
         .scalar-client h3,
         .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
         .scalar-client .request-response-header { font-size: 15px !important; font-weight: 600 !important; }
-        /* Request panel: the sections container stretched to fill the panel, pinning "Code Snippet" to the bottom
-           with an empty gap when sections are collapsed. Size it to its content so Code Snippet follows directly. */
-        .request-section-content { flex: 0 1 auto !important; min-height: 0 !important; }   /* still scrolls when taller than the panel */
+        /* Request panel: Scalar puts an empty growing spacer before "Code Snippet", pinning it to the bottom with a
+           gap when sections are collapsed. Remove only the spacer — the container keeps the full panel height, so
+           popovers inside it (the code-language picker) still have room. */
+        .request-section-content .flex.grow:empty { display: none !important; }
         /* Response panel: indent header/cookie keys to sit under their section titles,
            matching the request panel (whose rows start after a checkbox column). */
         .response-section-content .scalar-data-table tr > td:first-child > span { padding-left: 40px !important; }
