@@ -1,0 +1,6882 @@
+[
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "bn-IN-abhik",
+    "languages": [
+      "bn-IN",
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "bn-IN": "Bangla (India)",
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Abhik",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "bn-IN-anwesha",
+    "languages": [
+      "bn-IN",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Anwesha",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "bn-IN-arnab",
+    "languages": [
+      "bn-IN",
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "bn-IN": "Bangla (India)",
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Arnab",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "bn-IN-ishani",
+    "languages": [
+      "bn-IN",
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "bn-IN": "Bangla (India)",
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Ishani",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "de-DE-björn",
+    "languages": [
+      "de-DE",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "Germany",
+      "locale_details": {
+        "de-DE": "German (Germany)",
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Björn",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "de-DE-erna",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_label": "Germany",
+      "locale_details": {
+        "de-DE": "German (Germany)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Erna",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "de-DE-josephine",
+    "languages": [
+      "de-DE",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Germany",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Josephine",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "de-DE-lara",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_label": "Germany",
+      "locale_details": {
+        "de-DE": "German (Germany)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Lara",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "de-DE-lia",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_label": "Germany",
+      "locale_details": {
+        "de-DE": "German (Germany)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Lia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "de-DE-matthias",
+    "languages": [
+      "de-DE",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "Germany",
+      "locale_details": {
+        "de-DE": "German (Germany)",
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Matthias",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "de-DE-ralf",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_label": "Germany",
+      "locale_details": {
+        "de-DE": "German (Germany)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Ralf",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "el-GR-stavros",
+    "languages": [
+      "el-GR",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Greece",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Narration"
+      ]
+    },
+    "name": "Stavros",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU-ashton",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "en-AU": "English (Australia)"
+      },
+      "styles": [
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Ashton",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-AU-evelyn",
+    "languages": [
+      "en-AU",
+      "es-ES",
+      "hi-IN",
+      "es-MX",
+      "de-DE",
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "de-DE": "German (Germany)",
+        "en-AU": "English (Australia)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "hi-IN": "Hindi (India)",
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Evelyn",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU-harper",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "en-AU": "English (Australia)"
+      },
+      "styles": [
+        "Casual",
+        "Conversational"
+      ]
+    },
+    "name": "Harper",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-AU-ivy",
+    "languages": [
+      "en-AU",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Ivy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU-jimm",
+    "languages": [
+      "en-AU",
+      "de-DE",
+      "fr-FR",
+      "hi-IN",
+      "en-US",
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "de-DE": "German (Germany)",
+        "en-AU": "English (Australia)",
+        "en-US": "English (US & Canada)",
+        "fr-FR": "French (France)",
+        "hi-IN": "Hindi (India)",
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Jimm",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-AU-joyce",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "en-AU": "English (Australia)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Joyce",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-AU-kylie",
+    "languages": [
+      "en-AU",
+      "hi-IN",
+      "fr-FR",
+      "es-MX",
+      "es-ES",
+      "it-IT",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "fr-CA",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Kylie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU-leyton",
+    "languages": [
+      "en-AU",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Inspirational",
+        "Narration",
+        "Newscast",
+        "Promo",
+        "Sad",
+        "Terrified"
+      ]
+    },
+    "name": "Leyton",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU-mitch",
+    "languages": [
+      "en-AU",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Casual",
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Mitch",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-AU-shane",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "en-AU": "English (Australia)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Shane",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-AU-sophia",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "accent_label": "Australia",
+      "locale_details": {
+        "en-AU": "English (Australia)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Sophia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-IN-aarav",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Aarav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-IN-alia",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Documentary",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Alia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-IN-arohi",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Arohi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-IN-eashwar",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Eashwar",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-IN-isha",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Isha",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-IN-priya",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Priya",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-IN-rohan",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Rohan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "scottish",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-SCOTT-emily",
+    "languages": [
+      "en-GB",
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Scotland",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Emily",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "scottish",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-SCOTT-rory",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_label": "Scotland",
+      "locale_details": {
+        "en-GB": "English (Scotland)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Rory",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-aiden",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)"
+      },
+      "styles": [
+        "Character",
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Aiden",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-UK-amber",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)"
+      },
+      "styles": [
+        "Conversational",
+        "Documentary"
+      ]
+    },
+    "name": "Amber",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-finley",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)"
+      },
+      "styles": [
+        "Angry",
+        "Conversational",
+        "Narration",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Finley",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-freddie",
+    "languages": [
+      "en-GB",
+      "en-US",
+      "id-ID",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (Scotland)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Freddie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-gabriel",
+    "languages": [
+      "en-GB",
+      "en-US",
+      "es-MX",
+      "fr-FR"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)",
+        "en-US": "English (US & Canada)",
+        "es-MX": "Spanish (Mexico)",
+        "fr-FR": "French (France)"
+      },
+      "styles": [
+        "Conversational",
+        "Documentary",
+        "Evil",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Gabriel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-harrison",
+    "languages": [
+      "en-GB",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)",
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Harrison",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-UK-hazel",
+    "languages": [
+      "en-GB",
+      "en-US",
+      "id-ID",
+      "ro-RO",
+      "fr-FR",
+      "es-ES",
+      "hi-IN",
+      "tr-TR",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "sv-SE",
+      "mr-IN",
+      "tl-PH",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (Scotland)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Hazel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-UK-heidi",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Heidi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-hugo",
+    "languages": [
+      "en-GB",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)",
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Hugo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-jaxon",
+    "languages": [
+      "en-GB",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)",
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Jaxon",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-UK-juliet",
+    "languages": [
+      "en-GB",
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (Scotland)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Juliet",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-UK-katie",
+    "languages": [
+      "en-GB",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)",
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Katie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-mason",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Mason",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-UK-pearl",
+    "languages": [
+      "en-GB",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)",
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Pearl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-peter",
+    "languages": [
+      "en-GB",
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (Scotland)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Peter",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-reggie",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "en-GB": "English (UK)"
+      },
+      "styles": [
+        "Promo"
+      ]
+    },
+    "name": "Reggie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-UK-ruby",
+    "languages": [
+      "en-GB",
+      "th-TH",
+      "gu-IN",
+      "id-ID",
+      "vi-VN",
+      "kn-IN",
+      "fr-CA",
+      "hr-HR",
+      "en-US",
+      "es-ES",
+      "te-IN",
+      "hi-IN",
+      "el-GR",
+      "es-MX",
+      "tr-TR",
+      "de-DE",
+      "fr-FR",
+      "mr-IN",
+      "fi-FI",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "en-AU",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "ml-IN",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "tl-PH"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (Scotland)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Narration",
+        "Newscast",
+        "Promo",
+        "Sad",
+        "Whispering"
+      ]
+    },
+    "name": "Ruby",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-UK-theo",
+    "languages": [
+      "en-GB",
+      "tr-TR",
+      "sk-SK",
+      "tl-PH",
+      "ml-IN",
+      "es-MX",
+      "cs-CZ",
+      "fi-FI",
+      "fr-FR",
+      "bg-BG",
+      "sv-SE",
+      "pa-IN",
+      "el-GR",
+      "ro-RO",
+      "ms-MY",
+      "en-US",
+      "nl-BE",
+      "it-IT",
+      "de-DE"
+    ],
+    "meta": {
+      "accent_label": "UK",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-GB": "English (UK)",
+        "en-US": "English (US & Canada)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-FR": "French (France)",
+        "it-IT": "Italian (Italy)",
+        "ml-IN": "Malayalam (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "pa-IN": "Punjabi (India)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Character",
+        "Conversational",
+        "Narration",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Theo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-abigail",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Abigail",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-alicia",
+    "languages": [
+      "en-US",
+      "hi-IN",
+      "es-ES",
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "hi-IN": "Hindi (India)",
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational"
+      ]
+    },
+    "name": "Alicia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-alina",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Alina",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-amara",
+    "languages": [
+      "en-US",
+      "fr-FR",
+      "es-ES",
+      "it-IT",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-MX",
+      "fr-CA",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Amara",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-angela",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Promo"
+      ]
+    },
+    "name": "Angela",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-ariana",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Ariana",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-caleb",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Caleb",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-carter",
+    "languages": [
+      "en-US",
+      "hi-IN",
+      "fr-FR",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Documentary",
+        "Narration"
+      ]
+    },
+    "name": "Carter",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-charles",
+    "languages": [
+      "en-US",
+      "hi-IN",
+      "it-IT",
+      "el-GR",
+      "ro-RO",
+      "id-ID",
+      "es-MX"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "el-GR": "Greek (Greece)",
+        "en-US": "English (US & Canada)",
+        "es-MX": "Spanish (Mexico)",
+        "hi-IN": "Hindi (India)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ro-RO": "Romanian (Romania)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Inspirational",
+        "Narration",
+        "NewsCast",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Charles",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-charlotte",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Narration"
+      ]
+    },
+    "name": "Charlotte",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-claire",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Luxury",
+        "Narration"
+      ]
+    },
+    "name": "Claire",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-cooper",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Angry",
+        "Conversational",
+        "Inspirational",
+        "Newscast",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Cooper",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-daisy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "NewsCast",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Daisy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-daniel",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Inspirational",
+        "Sad",
+        "Storytelling"
+      ]
+    },
+    "name": "Daniel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-delilah",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Delilah",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-denzel",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Denzel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-dylan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Documentary",
+        "Inspirational",
+        "Newscast"
+      ]
+    },
+    "name": "Dylan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-edmund",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Inspirational",
+        "NewsCast",
+        "Promo",
+        "Sad",
+        "Sports Commentary"
+      ]
+    },
+    "name": "Edmund",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-evander",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Friendly",
+        "Narration"
+      ]
+    },
+    "name": "Evander",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-imani",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Imani",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-iris",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Friendly",
+        "Narration"
+      ]
+    },
+    "name": "Iris",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-jayden",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Friendly",
+        "Narration"
+      ]
+    },
+    "name": "Jayden",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-josie",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Josie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-julia",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Narration",
+        "Newscast",
+        "Promo",
+        "Sad",
+        "Storytelling",
+        "Witch"
+      ]
+    },
+    "name": "Julia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-june",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Promo"
+      ]
+    },
+    "name": "June",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-ken",
+    "languages": [
+      "en-US",
+      "el-GR",
+      "fr-FR",
+      "tr-TR",
+      "hr-HR",
+      "es-ES",
+      "de-DE",
+      "es-MX",
+      "fi-FI",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Audiobook",
+        "Calm",
+        "Clown",
+        "Conversational",
+        "Furious",
+        "Narration",
+        "Newscast",
+        "Promo",
+        "Sad",
+        "Sobbing",
+        "Storytelling",
+        "Wizard"
+      ]
+    },
+    "name": "Ken",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-lucas",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Promo"
+      ]
+    },
+    "name": "Lucas",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-marcus",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Marcus",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-maverick",
+    "languages": [
+      "en-US",
+      "de-DE",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Maverick",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-michelle",
+    "languages": [
+      "en-US",
+      "hi-IN",
+      "es-MX",
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "es-MX": "Spanish (Mexico)",
+        "hi-IN": "Hindi (India)",
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Michelle",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-miles",
+    "languages": [
+      "en-US",
+      "fr-FR",
+      "es-ES",
+      "de-DE",
+      "it-IT",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-MX",
+      "fr-CA",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Customer Support Agent",
+        "Inspirational",
+        "Narration",
+        "Newscast",
+        "Pirate",
+        "Promo",
+        "Sad",
+        "Sports Commentary",
+        "Terrified"
+      ]
+    },
+    "name": "Miles",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-molly",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Molly",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-naomi",
+    "languages": [
+      "en-US",
+      "hi-IN"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "hi-IN": "Hindi (India)"
+      },
+      "styles": [
+        "Conversational",
+        "Inspirational"
+      ]
+    },
+    "name": "Naomi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-natalie",
+    "languages": [
+      "en-US",
+      "fr-FR",
+      "es-ES",
+      "it-IT",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-MX",
+      "fr-CA",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Conversational",
+        "Furious",
+        "Inspirational",
+        "Meditative",
+        "Narration",
+        "Newscast Casual",
+        "Newscast Formal",
+        "Promo",
+        "Sad",
+        "Sorrowful",
+        "Terrified"
+      ]
+    },
+    "name": "Natalie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-paul",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Audiobook",
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Paul",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-phoebe",
+    "languages": [
+      "en-US",
+      "es-ES",
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Phoebe",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-riley",
+    "languages": [
+      "en-US",
+      "ro-RO",
+      "bg-BG"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "en-US": "English (US & Canada)",
+        "ro-RO": "Romanian (Romania)"
+      },
+      "styles": [
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Riley",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "neutral",
+    "id": "en-US-river",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "River",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-ronnie",
+    "languages": [
+      "en-US",
+      "en-IN",
+      "bg-BG",
+      "tr-TR",
+      "id-ID"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "id-ID": "Indonesian (Indonesia)",
+        "tr-TR": "Turkish (Turkey)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "NewsCast",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Ronnie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-ryan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Angry",
+        "Conversational",
+        "Narration",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Ryan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "en-US-samantha",
+    "languages": [
+      "en-US",
+      "es-ES",
+      "hi-IN",
+      "it-IT",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-MX",
+      "fr-CA",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Conversational",
+        "Luxury",
+        "Newscast",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Samantha",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-terrell",
+    "languages": [
+      "en-US",
+      "es-MX",
+      "es-ES",
+      "de-DE"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "de-DE": "German (Germany)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Inspirational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Terrell",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-wayne",
+    "languages": [
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Inspirational",
+        "Narration",
+        "NewsCast",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Wayne",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "en-US-zion",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "US & Canada",
+      "locale_details": {
+        "en-US": "English (US & Canada)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Zion",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-ES-carla",
+    "languages": [
+      "es-ES",
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "Spain",
+      "locale_details": {
+        "en-IN": "English (India)",
+        "es-ES": "Spanish (Spain)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Carla",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-ES-carmen",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "accent_label": "Spain",
+      "locale_details": {
+        "es-ES": "Spanish (Spain)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Carmen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-ES-elvira",
+    "languages": [
+      "es-ES",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "Spain",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration",
+        "Promo"
+      ]
+    },
+    "name": "Elvira",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "es-ES-enrique",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "accent_label": "Spain",
+      "locale_details": {
+        "es-ES": "Spanish (Spain)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Enrique",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "es-ES-javier",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "accent_label": "Spain",
+      "locale_details": {
+        "es-ES": "Spanish (Spain)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Javier",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "es-MX-alejandro",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "accent_label": "Mexico",
+      "locale_details": {
+        "es-MX": "Spanish (Mexico)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Alejandro",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "es-MX-carlos",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "accent_label": "Mexico",
+      "locale_details": {
+        "es-MX": "Spanish (Mexico)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Carlos",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-MX-luisa",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "accent_label": "Mexico",
+      "locale_details": {
+        "es-MX": "Spanish (Mexico)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Luisa",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "es-MX-valeria",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "accent_label": "Mexico",
+      "locale_details": {
+        "es-MX": "Spanish (Mexico)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Valeria",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "canadian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fr-CA-alexis",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "accent_label": "Canada",
+      "locale_details": {
+        "fr-CA": "French (Canada)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Alexis",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "canadian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fr-CA-clément",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "accent_label": "Canada",
+      "locale_details": {
+        "fr-CA": "French (Canada)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Clément",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "fr-FR-adélie",
+    "languages": [
+      "fr-FR",
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "France",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Narration",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Adélie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fr-FR-axel",
+    "languages": [
+      "fr-FR",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "France",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "fr-FR": "French (France)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Axel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fr-FR-guillaume",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "accent_label": "France",
+      "locale_details": {
+        "fr-FR": "French (France)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Guillaume",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "fr-FR-justine",
+    "languages": [
+      "fr-FR",
+      "de-DE",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "France",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Angry",
+        "Calm",
+        "Conversational",
+        "Narration",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Justine",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fr-FR-louis",
+    "languages": [
+      "fr-FR",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "France",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Louis",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "fr-FR-louise",
+    "languages": [
+      "fr-FR",
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "France",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Louise",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "fr-FR-maxime",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "accent_label": "France",
+      "locale_details": {
+        "fr-FR": "French (France)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Maxime",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "hi-IN-amit",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "hi-IN": "Hindi (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Amit",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "hi-IN-ayushi",
+    "languages": [
+      "hi-IN",
+      "hi-Latn"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "hi-IN": "Hindi (India)",
+        "hi-LATN": "Hinglish (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Ayushi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "hi-IN-kabir",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "hi-IN": "Hindi (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Kabir",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "hi-IN-rahul",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "hi-IN": "Hindi (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Rahul",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "hi-IN-shaan",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "hi-IN": "Hindi (India)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Shaan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "hi-IN-shweta",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "hi-IN": "Hindi (India)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Shweta",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "hr-HR-marija",
+    "languages": [
+      "hr-HR",
+      "fi-FI",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Croatia",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Narration"
+      ]
+    },
+    "name": "Marija",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "it-IT-angelo",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "Italy",
+      "locale_details": {
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Angelo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "it-IT-giorgio",
+    "languages": [
+      "it-IT",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "Italy",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Giorgio",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "it-IT-giulia",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "Italy",
+      "locale_details": {
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Giulia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "it-IT-greta",
+    "languages": [
+      "it-IT",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "Italy",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Greta",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "it-IT-lorenzo",
+    "languages": [
+      "it-IT",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Italy",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Lorenzo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "it-IT-vera",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "Italy",
+      "locale_details": {
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Vera",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "it-IT-vincenzo",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_label": "Italy",
+      "locale_details": {
+        "it-IT": "Italian (Italy)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Vincenzo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ja-JP-denki",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "accent_label": "Japan",
+      "locale_details": {
+        "ja-JP": "Japanese (Japan)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Denki",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ja-JP-kenji",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "accent_label": "Japan",
+      "locale_details": {
+        "ja-JP": "Japanese (Japan)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Kenji",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ja-JP-kimi",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "accent_label": "Japan",
+      "locale_details": {
+        "ja-JP": "Japanese (Japan)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Kimi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ko-KR-gyeong",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "accent_label": "Korea",
+      "locale_details": {
+        "ko-KR": "Korean (South Korea)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Gyeong",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ko-KR-hwan",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "accent_label": "Korea",
+      "locale_details": {
+        "ko-KR": "Korean (South Korea)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Hwan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ko-KR-jangmi",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "accent_label": "Korea",
+      "locale_details": {
+        "ko-KR": "Korean (South Korea)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Jangmi",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ko-KR-jong-su",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "accent_label": "Korea",
+      "locale_details": {
+        "ko-KR": "Korean (South Korea)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Jong-su",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ko-KR-minseo",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "accent_label": "Korea",
+      "locale_details": {
+        "ko-KR": "Korean (South Korea)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Minseo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ko-KR-sanghoon",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "accent_label": "Korea",
+      "locale_details": {
+        "ko-KR": "Korean (South Korea)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "SangHoon",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ko-KR-seok",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "accent_label": "Korea",
+      "locale_details": {
+        "ko-KR": "Korean (South Korea)"
+      },
+      "styles": [
+        "Audiobook"
+      ]
+    },
+    "name": "Seok",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "nl-NL-dirk",
+    "languages": [
+      "nl-NL",
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Netherlands",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Dirk",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "nl-NL-famke",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "accent_label": "Netherlands",
+      "locale_details": {
+        "nl-NL": "Dutch (Netherlands)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Famke",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "nl-NL-merel",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "accent_label": "Netherlands",
+      "locale_details": {
+        "nl-NL": "Dutch (Netherlands)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Merel",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pl-PL-blazej",
+    "languages": [
+      "pl-PL",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "Poland",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "pl-PL": "Polish (Poland)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Blazej",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pl-PL-jacek",
+    "languages": [
+      "pl-PL",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Poland",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Jacek",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "pl-PL-kasia",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "accent_label": "Poland",
+      "locale_details": {
+        "pl-PL": "Polish (Poland)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Kasia",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pt-BR-benício",
+    "languages": [
+      "pt-BR",
+      "en-US"
+    ],
+    "meta": {
+      "accent_label": "Brazil",
+      "locale_details": {
+        "en-US": "English (US & Canada)",
+        "pt-BR": "Portuguese (Brazil)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Benício",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "pt-BR-eloa",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "accent_label": "Brazil",
+      "locale_details": {
+        "pt-BR": "Portuguese (Brazil)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Eloa",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pt-BR-gustavo",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "accent_label": "Brazil",
+      "locale_details": {
+        "pt-BR": "Portuguese (Brazil)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Gustavo",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pt-BR-heitor",
+    "languages": [
+      "pt-BR",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Brazil",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Heitor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "pt-BR-isadora",
+    "languages": [
+      "pt-BR",
+      "en-US",
+      "fi-FI",
+      "hr-HR",
+      "gu-IN",
+      "ms-MY",
+      "en-IN",
+      "ta-IN",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "Brazil",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Isadora",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pt-BR-silvio",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "accent_label": "Brazil",
+      "locale_details": {
+        "pt-BR": "Portuguese (Brazil)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Silvio",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "pt-BR-yago",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "accent_label": "Brazil",
+      "locale_details": {
+        "pt-BR": "Portuguese (Brazil)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Yago",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "sk-SK-nina",
+    "languages": [
+      "sk-SK"
+    ],
+    "meta": {
+      "accent_label": "Slovakia",
+      "locale_details": {
+        "sk-SK": "Slovak (Slovakia)"
+      },
+      "styles": [
+        "Narration"
+      ]
+    },
+    "name": "Nina",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "sk-SK-tibor",
+    "languages": [
+      "sk-SK"
+    ],
+    "meta": {
+      "accent_label": "Slovakia",
+      "locale_details": {
+        "sk-SK": "Slovak (Slovakia)"
+      },
+      "styles": [
+        "Narration"
+      ]
+    },
+    "name": "Tibor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ta-IN-abirami",
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "ta-IN": "Tamil (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Abirami",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "ta-IN-iniya",
+    "languages": [
+      "ta-IN",
+      "en-IN",
+      "fi-FI",
+      "hr-HR",
+      "en-US",
+      "gu-IN",
+      "ms-MY",
+      "nl-BE",
+      "zh-CN",
+      "el-GR",
+      "te-IN",
+      "bn-IN",
+      "nl-NL",
+      "pa-IN",
+      "hi-IN",
+      "en-AU",
+      "kn-IN",
+      "bg-BG",
+      "cs-CZ",
+      "ja-JP",
+      "de-DE",
+      "ml-IN",
+      "en-GB",
+      "pt-BR",
+      "ko-KR",
+      "sk-SK",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "it-IT",
+      "pl-PL",
+      "ro-RO",
+      "sv-SE",
+      "id-ID",
+      "mr-IN",
+      "tl-PH",
+      "tr-TR",
+      "fr-FR",
+      "vi-VN",
+      "th-TH"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "bg-BG": "Bulgarian (Bulgaria)",
+        "bn-IN": "Bangla (India)",
+        "cs-CZ": "Czech (Czech Republic)",
+        "de-DE": "German (Germany)",
+        "el-GR": "Greek (Greece)",
+        "en-AU": "English (Australia)",
+        "en-GB": "English (UK)",
+        "en-IN": "English (India)",
+        "en-US": "English (US & Canada)",
+        "es-ES": "Spanish (Spain)",
+        "es-MX": "Spanish (Mexico)",
+        "fi-FI": "Finnish (Finland)",
+        "fr-CA": "French (Canada)",
+        "fr-FR": "French (France)",
+        "gu-IN": "Gujarati (India)",
+        "hi-IN": "Hindi (India)",
+        "hr-HR": "Croatian (Croatia)",
+        "id-ID": "Indonesian (Indonesia)",
+        "it-IT": "Italian (Italy)",
+        "ja-JP": "Japanese (Japan)",
+        "kn-IN": "Kannada (India)",
+        "ko-KR": "Korean (South Korea)",
+        "ml-IN": "Malayalam (India)",
+        "mr-IN": "Marathi (India)",
+        "ms-MY": "Malay (Malaysia)",
+        "nl-BE": "Dutch (Belgium)",
+        "nl-NL": "Dutch (Netherlands)",
+        "pa-IN": "Punjabi (India)",
+        "pl-PL": "Polish (Poland)",
+        "pt-BR": "Portuguese (Brazil)",
+        "ro-RO": "Romanian (Romania)",
+        "sk-SK": "Slovak (Slovakia)",
+        "sv-SE": "Swedish (Sweden)",
+        "ta-IN": "Tamil (India)",
+        "te-IN": "Telugu (India)",
+        "th-TH": "Thai (Thailand)",
+        "tl-PH": "Tagalog (Philippines)",
+        "tr-TR": "Turkish (Turkey)",
+        "vi-VN": "Vietnamese (Vietnam)",
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Iniya",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ta-IN-sarvesh",
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "ta-IN": "Tamil (India)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Sarvesh",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "ta-IN-suresh",
+    "languages": [
+      "ta-IN",
+      "en-IN"
+    ],
+    "meta": {
+      "accent_label": "India",
+      "locale_details": {
+        "en-IN": "English (India)",
+        "ta-IN": "Tamil (India)"
+      },
+      "styles": [
+        "Conversational",
+        "Narration"
+      ]
+    },
+    "name": "Suresh",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "tl-PH-eraño",
+    "languages": [
+      "tl-PH"
+    ],
+    "meta": {
+      "accent_label": "Philippines",
+      "locale_details": {
+        "tl-PH": "Tagalog (Philippines)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Eraño",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "zh-CN-baolin",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_label": "China",
+      "locale_details": {
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Baolin",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "zh-CN-jiao",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_label": "China",
+      "locale_details": {
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Jiao",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "zh-CN-tao",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_label": "China",
+      "locale_details": {
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Tao",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "zh-CN-wei",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_label": "China",
+      "locale_details": {
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo",
+        "Sad"
+      ]
+    },
+    "name": "Wei",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "zh-CN-yuxan",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_label": "China",
+      "locale_details": {
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Conversational"
+      ]
+    },
+    "name": "Yuxan",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "zh-CN-zhang",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_label": "China",
+      "locale_details": {
+        "zh-CN": "Mandarin (China)"
+      },
+      "styles": [
+        "Calm",
+        "Conversational",
+        "Promo"
+      ]
+    },
+    "name": "Zhang",
+    "updated_at": "2026-11-16"
+  }
+]

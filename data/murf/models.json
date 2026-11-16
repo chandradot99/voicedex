@@ -1,0 +1,217 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "style_control"
+    ],
+    "description": "Murf's studio-quality voiceover model with expressive voice styles and duration control, available via the non-streaming Synthesize API.",
+    "first_seen": "2026-11-16",
+    "id": "GEN2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "bg-BG",
+      "bn-IN",
+      "cs-CZ",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "fr-FR",
+      "gu-IN",
+      "hi-IN",
+      "hr-HR",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "kn-IN",
+      "ko-KR",
+      "ml-IN",
+      "mr-IN",
+      "ms-MY",
+      "nl-NL",
+      "pa-IN",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "sk-SK",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "zh-CN"
+    ],
+    "meta": {
+      "audio_duration_control": true,
+      "deprecation_notice": "The Gen2 model has been decommissioned for streaming; remains available via Synthesize (Gen 2).",
+      "endpoint": "/v1/speech/generate",
+      "locale_codes_raw_note": "en-UK/en-SCOTT mapped to en-GB",
+      "request_field": "modelVersion",
+      "streaming_decommissioned": true
+    },
+    "name": "Murf Gen2",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://murf.ai/api/docs/llms.txt",
+        "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
+        "https://murf.ai/api/docs/text-to-speech-models/gen-2.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      24000,
+      44100,
+      48000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Murf's low-latency (~100ms time-to-first-audio) TTS model for real-time conversational AI, with multi-native code-switching voices.",
+    "first_seen": "2026-11-16",
+    "id": "falcon-2.1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "as-IN",
+      "bg-BG",
+      "bn-IN",
+      "cs-CZ",
+      "de-DE",
+      "el-GR",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-MX",
+      "fr-CA",
+      "fr-FR",
+      "gu-IN",
+      "hi-IN",
+      "hi-Latn",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "kn-IN",
+      "ko-KR",
+      "ml-IN",
+      "mr-IN",
+      "ms-MY",
+      "nl-BE",
+      "nl-NL",
+      "or-IN",
+      "pa-IN",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "sk-SK",
+      "sv-SE",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tl-PH",
+      "tr-TR",
+      "vi-VN",
+      "zh-CN"
+    ],
+    "meta": {
+      "accepted_aliases": [
+        "falcon-2",
+        "falcon2",
+        "FALCON"
+      ],
+      "aws_marketplace": true,
+      "data_residency_regions": [
+        "us-east",
+        "us-west",
+        "in",
+        "ca",
+        "kr",
+        "me",
+        "jp",
+        "au",
+        "eu-central",
+        "uk",
+        "sa-east"
+      ],
+      "locale_codes_raw_note": "en-UK/en-SCOTT mapped to en-GB, ar-XA to ar, hi-LATN (Hinglish) to hi-Latn",
+      "pronunciation_dictionary": true,
+      "request_field": "model",
+      "ttfa_ms": 100,
+      "volume_offset": true
+    },
+    "name": "Murf Falcon 2.1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "\"Falcon 2.1 costs 1 cent per 1000 characters.\"",
+      "price_usd": 1e-05,
+      "source_url": "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://murf.ai/api/docs/llms.txt",
+        "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
+        "https://murf.ai/api/docs/text-to-speech-models/gen-2.md"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "global",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

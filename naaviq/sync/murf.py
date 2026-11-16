@@ -20,6 +20,7 @@ Auth: api-key header, MURF_API_KEY env var.
 from __future__ import annotations
 
 import asyncio
+import re
 
 import httpx
 
@@ -31,25 +32,20 @@ from naaviq.sync.language import ACCENT_MAP, normalize_languages
 _VOICES_URL = "https://api.murf.ai/v1/speech/voices"
 
 _DOCS_URLS = [
-    "https://murf.ai/api/docs",
-    "https://murf.ai/resources/text-to-speech-models/",
+    "https://murf.ai/api/docs/llms.txt",
+    "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
+    "https://murf.ai/api/docs/text-to-speech-models/gen-2.md",
 ]
 
-_MODEL_GUIDANCE = """
-Extract Murf AI TTS models. There are 2 models.
+_MODEL_GUIDANCE = (
+    "Return every TTS model id the API accepts (exact strings, case-sensitive). is_default=true for "
+    "the model the docs recommend; note in meta which endpoints (streaming / non-streaming) accept "
+    "each model. Languages per model from its model page. Per-character pricing when published."
+)
 
-1. model_id="falcon", display_name="Murf Falcon", is_default=True, streaming=True
-   - Murf's latest flagship model. 55ms latency, 130ms TTFA.
-   - Extract supported languages from docs (40+ languages).
-   - description="Murf's flagship TTS model. Ultra-low latency (55ms), 40+ languages."
-
-2. model_id="gen2", display_name="Murf Gen2", is_default=False, streaming=True
-   - Previous generation. Supports styles and custom duration.
-   - Extract supported languages from docs.
-   - description="Murf Gen2 TTS. Supports voice styles and custom duration control."
-
-Use exact model_id values as listed above.
-"""
+# Murf-specific locale codes that aren't BCP-47.
+_MURF_LOCALES = {"en-UK": "en-GB", "en-SCOTT": "en-GB"}
+_MURF_ACCENTS = {"en-UK": "british", "en-SCOTT": "scottish"}
 
 _GENDER_MAP: dict[str, str] = {
     "male":      "male",
@@ -73,17 +69,7 @@ class MurfAISyncer(ProviderSyncer):
             ),
         )
         tts_voices = self._parse_voices(voices_data)
-
-        # Patch model languages from live voice API data (more accurate than docs)
-        all_langs = sorted({
-            lang
-            for v in voices_data
-            for loc in ([v.get("locale")] + list((v.get("supportedLocales") or {}).keys()))
-            if loc
-            for lang in normalize_languages([loc])
-        })
-        for m in tts_models:
-            m.languages = all_langs
+        all_langs = {lang for v in tts_voices for lang in v.languages}
 
         from_cache = isinstance(notes, dict) and notes.get("source") == "cache"
         sync_notes = (
@@ -127,35 +113,29 @@ class MurfAISyncer(ProviderSyncer):
             voice_id = v.get("voiceId")
             if not voice_id:
                 continue
-
-            gender = _parse_gender(v.get("gender"))
             locale = v.get("locale") or ""
-            supported_locales = v.get("supportedLocales") or {}
-
-            all_locales = [locale] if locale else []
-            all_locales.extend(supported_locales.keys())
-            languages = sorted(set(normalize_languages([loc for loc in all_locales if loc])))
-
-            accent = _accent_from_locale(locale)
-
-            meta: dict = {}
-            if v.get("description"):
-                meta["description"] = v["description"]
-            if supported_locales:
-                meta["supported_locales"] = supported_locales
+            supported = v.get("supportedLocales") or {}
+            raw_locales = [loc for loc in [locale, *supported.keys()] if loc]
+            languages = list(dict.fromkeys(normalize_languages([_MURF_LOCALES.get(x, x) for x in raw_locales])))
+            styles = sorted({st for loc in supported.values() for st in (loc.get("availableStyles") or [])}
+                            | set(v.get("availableStyles") or []))
 
             voices.append(SyncVoice(
                 voice_id=voice_id,
-                display_name=v.get("displayName") or voice_id,
-                gender=gender,
+                display_name=re.sub(r"\s*\((?:M|F|NB)\)\s*$", "", v.get("displayName") or "") or voice_id,
+                gender=_parse_gender(v.get("gender")),
                 category="premade",
                 languages=languages,
-                accent=accent,
+                accent=_accent_from_locale(locale),
+                age=(v.get("description") or "").replace("-", " ").lower() or None,  # Murf puts age here
                 compatible_models=["*"],
-                meta=meta,
+                meta={k: val for k, val in {
+                    "styles": styles or None,
+                    "accent_label": v.get("accent"),
+                    "locale_details": {_MURF_LOCALES.get(k, k): loc.get("detail") for k, loc in supported.items()} or None,
+                }.items() if val},
             ))
         return voices
-
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -173,6 +153,8 @@ _MURF_REGION_TO_ACCENT: dict[str, str] = {
 
 
 def _accent_from_locale(locale: str) -> str | None:
+    if locale in _MURF_ACCENTS:
+        return _MURF_ACCENTS[locale]
     parts = locale.split("-")
     if len(parts) >= 2:
         region = parts[1]

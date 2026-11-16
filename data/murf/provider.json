@@ -1,0 +1,22 @@
+{
+  "api_urls": [
+    "https://api.murf.ai/v1/speech/voices"
+  ],
+  "docs_urls": [
+    "https://murf.ai/api/docs/llms.txt",
+    "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
+    "https://murf.ai/api/docs/text-to-speech-models/gen-2.md"
+  ],
+  "id": "murf",
+  "last_synced": "2026-11-16",
+  "name": "Murf AI",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.murf.ai/v1/speech/voices"
+    ]
+  }
+}
