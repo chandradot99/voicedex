@@ -129,6 +129,15 @@
         .z-context [role="option"] .shadow-border, .z-context [role="menuitem"] .shadow-border { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.32) !important; }
         .z-context [role="option"][aria-selected="true"] .shadow-border { box-shadow: inset 0 0 0 1px #5eead4 !important; color: #5eead4 !important; }
         .z-context ul[role="listbox"] { border-color: rgba(255, 255, 255, 0.12) !important; }
+        /* Intro "Client Libraries" card: selected language = filled tab with a teal underline (not a box);
+           the line under the tabs names the exact client the examples use, so say so. */
+        .client-libraries.client-libraries__active {
+          border: 0 !important; outline: 0 !important; background: #171b23 !important;
+          box-shadow: inset 0 -2px 0 #5eead4 !important; border-radius: 8px 8px 0 0 !important; color: #f2f4f7 !important;
+        }
+        .client-libraries:focus-visible { outline: 2px solid #5eead4 !important; outline-offset: -2px !important; }
+        .selected-client { color: #c9ced8 !important; font-family: var(--scalar-font) !important; font-size: 0.85rem !important; }
+        .selected-client::before { content: "Code examples use: "; color: #8b93a3; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
         .scalar-client h3,
         .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
