@@ -92,6 +92,10 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) �
 - **pricing**: `{unit, price_usd, free_quota?, variants?, as_of, source_url, notes?}`; unit ∈ character|minute|second|word|token|request|hour. Omit unless an explicit number is published.
 - **v2 model fields**: `family` (root id), `alias_of` (for `-latest` aliases), `snapshot_date`, `interfaces` (http|websocket|grpc|webrtc), `batch`, `open_weights {license,url}`, `provenance {method: api|docs|manual, urls, as_of}`. Syncers can pass `family`/`snapshot_date`/`alias_of`/`batch` via `meta` keys (`parent_model_id`, `snapshot_date`, `alias_of`, `batch`) — merge promotes them to fields.
 - **Model types**: `stt`, `tts`, `sts` (speech-to-speech/realtime; `SyncResult.sts_models`). Provider `type` is derived from active models on every sync.
+- **Retired providers** (shut down, or no longer sold to new customers): set `retired=True` on the registry entry
+  (sync skips it) and hand-write `data/<id>/provider.json` with `status: "deprecated"`, `retired_on` (if a date is
+  published) and the reason + evidence in `description`. Never delete them — "is X still alive?" is a question the
+  catalog answers. Currently: humeai (2026-11-13), lmnt, resemble.
 - **provider.json editorial fields** (`website`, `description`, `regions`, `compliance` [soc2|hipaa|gdpr|iso27001|pci_dss], `links`) are hand-curated; sync never overwrites them.
 
 ## Adding a provider
