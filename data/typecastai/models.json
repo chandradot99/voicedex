@@ -1,0 +1,360 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Older stable SSFM production model with four emotion presets and 27 languages.",
+    "first_seen": "2026-11-16",
+    "id": "ssfm-v21",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "bg",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fi",
+      "fr",
+      "hr",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sv",
+      "ta",
+      "tl",
+      "uk",
+      "zh"
+    ],
+    "max_text_chars": 2000,
+    "meta": {
+      "emotion_presets": [
+        "normal",
+        "happy",
+        "sad",
+        "angry"
+      ],
+      "language_param": "ISO 639-3, auto-detected if omitted",
+      "output_detail": "wav 16-bit mono 44.1 kHz (non-streaming) / 32 kHz (streaming); mp3 320 kbps 44.1 kHz",
+      "smart_emotion": false,
+      "ssml": false
+    },
+    "name": "SSFM v2.1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 15000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "1 credit per character; same API plan pricing for all SSFM models. Free plan audio is non-commercial with attribution.",
+      "price_usd": 7.5e-05,
+      "source_url": "https://typecast.ai/pricing/api/",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "lite plan ($15/mo, 200k credits included)",
+          "price_usd": 7.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "lite plan overage (pay-as-you-go)",
+          "price_usd": 9e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "plus plan ($280/mo, 4M credits included)",
+          "price_usd": 7e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "plus plan overage (pay-as-you-go)",
+          "price_usd": 8e-05,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://typecast.ai/docs/llms.txt",
+        "https://typecast.ai/docs/api-reference/text-to-speech/text-to-speech",
+        "https://typecast.ai/docs/changelog",
+        "https://typecast.ai/pricing/api/"
+      ]
+    },
+    "sample_rates_hz": [
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "SSFM 3.0 with improved prosody, Smart Emotion context inference and seven emotion presets across 37 languages.",
+    "first_seen": "2026-11-16",
+    "id": "ssfm-v30",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "bg",
+      "bn",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fi",
+      "fr",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "nan",
+      "nl",
+      "no",
+      "pa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sv",
+      "ta",
+      "th",
+      "tl",
+      "tr",
+      "uk",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "max_text_chars": 2000,
+    "meta": {
+      "emotion_presets": [
+        "normal",
+        "happy",
+        "sad",
+        "angry",
+        "whisper",
+        "toneup",
+        "tonedown"
+      ],
+      "language_param": "ISO 639-3, auto-detected if omitted",
+      "output_detail": "wav 16-bit mono 44.1 kHz (non-streaming) / 32 kHz (streaming); mp3 320 kbps 44.1 kHz",
+      "smart_emotion": true,
+      "ssml": false
+    },
+    "name": "SSFM v3.0",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 15000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "1 credit per character; same API plan pricing for all SSFM models. Free plan audio is non-commercial with attribution.",
+      "price_usd": 7.5e-05,
+      "source_url": "https://typecast.ai/pricing/api/",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "lite plan ($15/mo, 200k credits included)",
+          "price_usd": 7.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "lite plan overage (pay-as-you-go)",
+          "price_usd": 9e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "plus plan ($280/mo, 4M credits included)",
+          "price_usd": 7e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "plus plan overage (pay-as-you-go)",
+          "price_usd": 8e-05,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://typecast.ai/docs/llms.txt",
+        "https://typecast.ai/docs/api-reference/text-to-speech/text-to-speech",
+        "https://typecast.ai/docs/changelog",
+        "https://typecast.ai/pricing/api/"
+      ]
+    },
+    "sample_rates_hz": [
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Latest SSFM model (Oct 2026) with improved generation stability and text fidelity, same features and 37 languages as v3.0.",
+    "first_seen": "2026-11-16",
+    "id": "ssfm-v31",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "bg",
+      "bn",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fi",
+      "fr",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "nan",
+      "nl",
+      "no",
+      "pa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sv",
+      "ta",
+      "th",
+      "tl",
+      "tr",
+      "uk",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "max_text_chars": 2000,
+    "meta": {
+      "emotion_presets": [
+        "normal",
+        "happy",
+        "sad",
+        "angry",
+        "whisper",
+        "toneup",
+        "tonedown"
+      ],
+      "language_param": "ISO 639-3, auto-detected if omitted",
+      "output_detail": "wav 16-bit mono 44.1 kHz (non-streaming) / 32 kHz (streaming); mp3 320 kbps 44.1 kHz",
+      "recommended": true,
+      "released": "2026-10-28",
+      "smart_emotion": true,
+      "ssml": false
+    },
+    "name": "SSFM v3.1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 15000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "1 credit per character; same API plan pricing for all SSFM models. Free plan audio is non-commercial with attribution.",
+      "price_usd": 7.5e-05,
+      "source_url": "https://typecast.ai/pricing/api/",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "lite plan ($15/mo, 200k credits included)",
+          "price_usd": 7.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "lite plan overage (pay-as-you-go)",
+          "price_usd": 9e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "plus plan ($280/mo, 4M credits included)",
+          "price_usd": 7e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "plus plan overage (pay-as-you-go)",
+          "price_usd": 8e-05,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://typecast.ai/docs/llms.txt",
+        "https://typecast.ai/docs/api-reference/text-to-speech/text-to-speech",
+        "https://typecast.ai/docs/changelog",
+        "https://typecast.ai/pricing/api/"
+      ]
+    },
+    "sample_rates_hz": [
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

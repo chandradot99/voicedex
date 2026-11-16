@@ -1,0 +1,23 @@
+{
+  "api_urls": [
+    "https://api.typecast.ai/v2/voices"
+  ],
+  "docs_urls": [
+    "https://typecast.ai/docs/llms.txt",
+    "https://typecast.ai/docs/api-reference/text-to-speech/text-to-speech",
+    "https://typecast.ai/docs/changelog",
+    "https://typecast.ai/pricing/api/"
+  ],
+  "id": "typecastai",
+  "last_synced": "2026-11-16",
+  "name": "Typecast AI",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.typecast.ai/v2/voices"
+    ]
+  }
+}

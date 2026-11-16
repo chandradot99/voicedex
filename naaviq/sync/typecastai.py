@@ -35,69 +35,19 @@ _BASE_URL = "https://api.typecast.ai"
 _VOICES_URL = f"{_BASE_URL}/v2/voices"
 
 _DOCS_URLS = [
-    "https://docs.typecast.ai/",
+    "https://typecast.ai/docs/llms.txt",
     "https://typecast.ai/docs/api-reference/text-to-speech/text-to-speech",
-    "https://typecast.ai/docs/quickstart",
+    "https://typecast.ai/docs/changelog",
+    "https://typecast.ai/pricing/api/",
 ]
 
-_TTS_MODEL_GUIDANCE = """
-Extract Typecast AI TTS models. There are 2 models in the SSFM family.
+_TTS_MODEL_GUIDANCE = (
+    "Return every SSFM model id the API accepts. is_default=true for the model the docs recommend. "
+    "Languages per model as BCP-47; emotion capability where emotion presets are documented."
+)
 
-1. model_id="ssfm-v30", display_name="SSFM v3.0", is_default=True, streaming=False
-   - Latest model (January 2026). Enhanced prosody, pacing, emotional expression.
-   - Supports 37 languages.
-   - description="Typecast SSFM v3.0 — enhanced prosody and emotional expression, 37 languages."
-   - languages: ["*"]
-
-2. model_id="ssfm-v21", display_name="SSFM v2.1", is_default=False, streaming=False
-   - Stable production model, works with 680+ voice characters.
-   - description="Typecast SSFM v2.1 — stable production model, 680+ voices."
-   - languages: ["*"]
-
-Use exact model_id values: "ssfm-v30" and "ssfm-v21".
-"""
-
-# ISO 639-3 → BCP-47
-_ISO3_TO_BCP47: dict[str, str] = {
-    "eng": "en",
-    "kor": "ko",
-    "spa": "es",
-    "jpn": "ja",
-    "zho": "zh",
-    "cmn": "zh",
-    "fra": "fr",
-    "deu": "de",
-    "ger": "de",
-    "por": "pt",
-    "hin": "hi",
-    "ara": "ar",
-    "vie": "vi",
-    "tha": "th",
-    "ind": "id",
-    "msa": "ms",
-    "tur": "tr",
-    "pol": "pl",
-    "rus": "ru",
-    "ita": "it",
-    "nld": "nl",
-    "swe": "sv",
-    "nor": "no",
-    "dan": "da",
-    "fin": "fi",
-    "ces": "cs",
-    "slk": "sk",
-    "hun": "hu",
-    "ron": "ro",
-    "ukr": "uk",
-    "bul": "bg",
-    "hrv": "hr",
-    "ell": "el",
-    "heb": "he",
-    "tam": "ta",
-    "tel": "te",
-    "ben": "bn",
-    "cat": "ca",
-}
+# Stock voices are "original"; anything else (e.g. a user's custom/cloned voice) is never published.
+_PUBLIC_VOICE_TYPES = {"original"}
 
 _GENDER_MAP = {"male": "male", "female": "female"}
 
@@ -149,42 +99,31 @@ class TypecastAISyncer(ProviderSyncer):
             return data if isinstance(data, list) else (data.get("voices") or data.get("data") or [])
 
     def _parse_voices(self, voices_data: list[dict], tts_models: list) -> list[SyncVoice]:
-        all_model_ids = {m.model_id for m in tts_models}
+        model_langs = {m.model_id: m.languages for m in tts_models}
         voices: list[SyncVoice] = []
 
         for v in voices_data:
             voice_id = v.get("voice_id")
-            if not voice_id:
+            if not voice_id or v.get("voice_type", "original") not in _PUBLIC_VOICE_TYPES:
                 continue
 
-            gender = _GENDER_MAP.get((v.get("gender") or "").lower())
-
-            languages = ["*"]  # API does not return per-voice language; all voices are multilingual
-
-            raw_models = v.get("models") or []
-            model_ids = [
-                m.get("version", m) if isinstance(m, dict) else m
-                for m in raw_models
-            ]
-            compatible = [m for m in model_ids if m in all_model_ids]
+            raw_models = [m for m in (v.get("models") or []) if isinstance(m, dict) and m.get("version")]
+            compatible = sorted(m["version"] for m in raw_models if m["version"] in model_langs)
+            emotions = {m["version"]: m.get("emotions") or [] for m in raw_models if m["version"] in model_langs}
+            # No per-voice language in the API; SSFM voices speak their models' languages.
+            languages = sorted({lang for mid in compatible for lang in model_langs[mid]})
 
             voices.append(SyncVoice(
                 voice_id=voice_id,
                 display_name=v.get("voice_name") or voice_id,
-                gender=gender,
+                gender=_GENDER_MAP.get((v.get("gender") or "").lower()),
                 category="premade",
                 languages=languages,
-                age=v.get("age") or None,
-                description=None,
-                preview_url=None,
+                age=(v.get("age") or "").replace("_", " ") or None,
+                use_cases=list(v.get("use_cases") or []),
                 compatible_models=compatible,
-                meta={
-                    "use_cases": v.get("use_cases") or [],
-                    "emotions": {
-                        m.get("version"): m.get("emotions", [])
-                        for m in raw_models if isinstance(m, dict) and m.get("version")
-                    },
-                },
+                capabilities=["emotion"] if any(emotions.values()) else [],
+                meta={"emotions": emotions} if any(emotions.values()) else {},
             ))
         return voices
 
