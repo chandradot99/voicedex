@@ -10,7 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/site.css">
+  <!-- Site CSS goes into a low-priority cascade layer here: Scalar's styles live in layers declared
+       later, so they win inside the reference (our button/heading rules must not leak into it), while
+       the site header below still gets its look. -->
+  <style>
+    @layer site;
+    @import url("/static/site.css") layer(site);
+  </style>
   <style>
     body { min-height: 100vh; }
     .docs-header { position: sticky; top: 0; z-index: 100; padding: 12px 12px 10px; background: var(--bg); }
@@ -47,7 +53,7 @@
       darkMode: true,
       forceDarkModeState: "dark",
       hideDarkModeToggle: true,
-      hideClientButton: false,
+      hideClientButton: true,        // the sidebar "Open API Client" opens client.scalar.com (external); in-page "Test Request" stays
       showDeveloperTools: "never",
       agent: { disabled: true },
       hideDownloadButton: false,
