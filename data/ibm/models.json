@@ -22,6 +22,25 @@
       "low_latency": true
     },
     "name": "ar-MS Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -59,6 +78,25 @@
       "low_latency": true
     },
     "name": "cs-CZ Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -98,6 +136,25 @@
       "generation": "large_speech_model"
     },
     "name": "de-DE Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -135,6 +192,25 @@
       "low_latency": true
     },
     "name": "de-DE Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -172,6 +248,25 @@
       "low_latency": true
     },
     "name": "de-DE Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -212,6 +307,25 @@
       "low_latency": true
     },
     "name": "en-AU Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -249,6 +363,25 @@
       "low_latency": true
     },
     "name": "en-AU Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -286,6 +419,25 @@
       "low_latency": true
     },
     "name": "en-AU Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -326,6 +478,25 @@
       "low_latency": true
     },
     "name": "en-GB Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -363,6 +534,25 @@
       "low_latency": true
     },
     "name": "en-GB Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -400,6 +590,25 @@
       "low_latency": true
     },
     "name": "en-GB Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -440,6 +649,25 @@
       "low_latency": true
     },
     "name": "en-IN Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -477,6 +705,25 @@
       "low_latency": true
     },
     "name": "en-IN Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -517,6 +764,25 @@
       "low_latency": true
     },
     "name": "en-US Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -555,6 +821,25 @@
       "low_latency": true
     },
     "name": "en-US Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -592,6 +877,25 @@
       "low_latency": true
     },
     "name": "en-US Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -630,6 +934,25 @@
       "low_latency": true
     },
     "name": "en-WW Medical Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -670,6 +993,25 @@
       "low_latency": true
     },
     "name": "es-AR Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -710,6 +1052,25 @@
       "low_latency": true
     },
     "name": "es-CL Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -750,6 +1111,25 @@
       "low_latency": true
     },
     "name": "es-CO Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -790,6 +1170,25 @@
       "low_latency": true
     },
     "name": "es-ES Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -827,6 +1226,25 @@
       "low_latency": true
     },
     "name": "es-ES Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -864,6 +1282,25 @@
       "low_latency": true
     },
     "name": "es-ES Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -901,6 +1338,25 @@
       "low_latency": true
     },
     "name": "es-LA Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -941,6 +1397,25 @@
       "low_latency": true
     },
     "name": "es-MX Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -981,6 +1456,25 @@
       "low_latency": true
     },
     "name": "es-PE Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1020,6 +1514,25 @@
       "generation": "large_speech_model"
     },
     "name": "fr-CA Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1057,6 +1570,25 @@
       "low_latency": true
     },
     "name": "fr-CA Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1094,6 +1626,25 @@
       "low_latency": true
     },
     "name": "fr-CA Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1133,6 +1684,25 @@
       "generation": "large_speech_model"
     },
     "name": "fr-FR Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1170,6 +1740,25 @@
       "low_latency": true
     },
     "name": "fr-FR Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1207,6 +1796,25 @@
       "low_latency": true
     },
     "name": "fr-FR Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1244,6 +1852,25 @@
       "low_latency": true
     },
     "name": "hi-IN Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1283,6 +1910,25 @@
       "generation": "large_speech_model"
     },
     "name": "it-IT Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1320,6 +1966,25 @@
       "low_latency": true
     },
     "name": "it-IT Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1357,6 +2022,25 @@
       "low_latency": true
     },
     "name": "it-IT Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1397,6 +2081,25 @@
       "low_latency": true
     },
     "name": "ja-JP Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1434,6 +2137,25 @@
       "low_latency": true
     },
     "name": "ja-JP Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1471,6 +2193,25 @@
       "low_latency": true
     },
     "name": "ja-JP Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1508,6 +2249,25 @@
       "low_latency": true
     },
     "name": "ko-KR Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1545,6 +2305,25 @@
       "low_latency": true
     },
     "name": "ko-KR Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1582,6 +2361,25 @@
       "low_latency": true
     },
     "name": "nl-BE Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1621,6 +2419,25 @@
       "generation": "large_speech_model"
     },
     "name": "nl-NL Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1658,6 +2475,25 @@
       "low_latency": true
     },
     "name": "nl-NL Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1695,6 +2531,25 @@
       "low_latency": true
     },
     "name": "nl-NL Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1735,6 +2590,25 @@
       "low_latency": true
     },
     "name": "pt-BR Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1772,6 +2646,25 @@
       "low_latency": true
     },
     "name": "pt-BR Multimedia",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1809,6 +2702,25 @@
       "low_latency": true
     },
     "name": "pt-BR Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1849,6 +2761,25 @@
       "low_latency": true
     },
     "name": "pt-PT Large Speech Model",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1886,6 +2817,25 @@
       "low_latency": true
     },
     "name": "sv-SE Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1923,6 +2873,25 @@
       "low_latency": true
     },
     "name": "zh-CN Telephony",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Plus plan: $0.02/min for 1-999,999 minutes in a month; $0.01/min for the whole month at >= 1M minutes. Billed on audio duration (silence included), rounded to the minute monthly. Applies to all available models. Lite: 500 free min/month (instance deleted after 30 days inactivity). Premium: price on request, first 150,000 min/month free.",
+      "price_usd": 0.02,
+      "source_url": "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-faq-pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Plus plan, months with >= 1,000,000 minutes (whole month's usage)",
+          "price_usd": 0.01,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",

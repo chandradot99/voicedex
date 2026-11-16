@@ -61,6 +61,9 @@ def price_label(model: Model) -> str | None:
     if p:
         amount = p.price_usd if p.price_usd is not None else p.price
         sym = _SYMBOL.get(p.currency, p.currency + " ")
+        if p.unit in ("character", "byte", "token"):
+            plural = {"character": "chars", "byte": "bytes", "token": "tokens"}[p.unit]
+            return f"{sym}{amount * 1_000_000:,.2f} per 1M {plural}"
         return f"{sym}{amount:g} per {p.unit}"
     return None
 

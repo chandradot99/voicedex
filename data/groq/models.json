@@ -16,6 +16,13 @@
       "upstream": "OpenAI"
     },
     "name": "Whisper",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Cost per hour of audio; minimum billed length 10 seconds per request.",
+      "price_usd": 0.111,
+      "source_url": "https://console.groq.com/docs/speech-to-text",
+      "unit": "hour"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -42,6 +49,13 @@
       "upstream": "OpenAI"
     },
     "name": "Whisper Large V3 Turbo",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Cost per hour of audio; minimum billed length 10 seconds per request.",
+      "price_usd": 0.04,
+      "source_url": "https://console.groq.com/docs/speech-to-text",
+      "unit": "hour"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",

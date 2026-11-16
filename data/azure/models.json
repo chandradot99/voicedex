@@ -168,6 +168,20 @@
       "mode": "batch"
     },
     "name": "Azure Speech-to-Text (batch)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Standard (S0) pay-as-you-go batch transcription. F0 free tier does not support batch. Figures from Microsoft's official Azure Retail Prices API (prices.azure.com, region eastus, retail USD), which backs the pricing page (the page renders prices client-side). Prices vary by region; 'actual pricing may vary depending on agreement'.",
+      "price_usd": 0.18,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "Custom Speech model, batch",
+          "price_usd": 0.225,
+          "unit": "hour"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -350,6 +364,45 @@
       "mode": "realtime"
     },
     "name": "Azure Speech-to-Text (real-time)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 5.0,
+        "period": "month",
+        "unit": "hour"
+      },
+      "notes": "Standard (S0) pay-as-you-go real-time transcription. Free (F0): 5 audio hours/month (shared Standard/Custom). Figures from Microsoft's official Azure Retail Prices API (prices.azure.com, region eastus, retail USD), which backs the pricing page (the page renders prices client-side). Prices vary by region; 'actual pricing may vary depending on agreement'.",
+      "price_usd": 1.0,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "Custom Speech model, real-time",
+          "price_usd": 1.2,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Commitment tier 2,000 h/month ($1,600/month), overage",
+          "price_usd": 0.8,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Commitment tier 10,000 h/month ($6,500/month), overage",
+          "price_usd": 0.65,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Commitment tier 50,000 h/month ($25,000/month), overage",
+          "price_usd": 0.5,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Commitment tier 100,000 h/month ($40,000/month), overage",
+          "price_usd": 0.4,
+          "unit": "hour"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -558,6 +611,13 @@
       ]
     },
     "name": "Azure Dragon HD Latest Neural",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Standard (S0) Neural HD TTS: $22 per 1M characters (meter 'Neural HD Text to Speech'). Figures from Microsoft's official Azure Retail Prices API (prices.azure.com, region eastus, retail USD), which backs the pricing page (the page renders prices client-side). Prices vary by region; 'actual pricing may vary depending on agreement'.",
+      "price_usd": 2.2e-05,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/",
+      "unit": "character"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1224,6 +1284,40 @@
       ]
     },
     "name": "Azure Multilingual Neural",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Standard (S0) Neural TTS: $15 per 1M characters. Free (F0): 0.5M neural characters/month. Figures from Microsoft's official Azure Retail Prices API (prices.azure.com, region eastus, retail USD), which backs the pricing page (the page renders prices client-side). Prices vary by region; 'actual pricing may vary depending on agreement'.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Commitment tier 80M chars/month ($960/month), overage",
+          "price_usd": 1.2e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 400M chars/month ($3,900/month), overage",
+          "price_usd": 9.75e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 2,000M chars/month ($15,000/month), overage",
+          "price_usd": 7.5e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 4,000M chars/month ($24,000/month), overage",
+          "price_usd": 6e-06,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1430,6 +1524,40 @@
       ]
     },
     "name": "Azure Neural",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Standard (S0) Neural TTS: $15 per 1M characters. Free (F0): 0.5M neural characters/month. Figures from Microsoft's official Azure Retail Prices API (prices.azure.com, region eastus, retail USD), which backs the pricing page (the page renders prices client-side). Prices vary by region; 'actual pricing may vary depending on agreement'.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Commitment tier 80M chars/month ($960/month), overage",
+          "price_usd": 1.2e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 400M chars/month ($3,900/month), overage",
+          "price_usd": 9.75e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 2,000M chars/month ($15,000/month), overage",
+          "price_usd": 7.5e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 4,000M chars/month ($24,000/month), overage",
+          "price_usd": 6e-06,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1565,6 +1693,40 @@
       ]
     },
     "name": "Azure Turbo Multilingual Neural",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Standard (S0) Neural TTS: $15 per 1M characters. Free (F0): 0.5M neural characters/month. Figures from Microsoft's official Azure Retail Prices API (prices.azure.com, region eastus, retail USD), which backs the pricing page (the page renders prices client-side). Prices vary by region; 'actual pricing may vary depending on agreement'.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Commitment tier 80M chars/month ($960/month), overage",
+          "price_usd": 1.2e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 400M chars/month ($3,900/month), overage",
+          "price_usd": 9.75e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 2,000M chars/month ($15,000/month), overage",
+          "price_usd": 7.5e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Commitment tier 4,000M chars/month ($24,000/month), overage",
+          "price_usd": 6e-06,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",

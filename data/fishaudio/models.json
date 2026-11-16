@@ -234,6 +234,20 @@
       "streaming_note": "Docs only show POST /v1/tts with model header drama-3; WebSocket support not stated."
     },
     "name": "Drama 3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Billed per 1M UTF-8 bytes of input text ($50 per 1M bytes); bytes = characters only for ASCII text.",
+      "price_usd": 5e-05,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "byte",
+      "variants": [
+        {
+          "applies_to": "promotional rate through 2026-11-30",
+          "price_usd": 1e-05,
+          "unit": "byte"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -302,6 +316,13 @@
       "replacement": "s2.1-pro"
     },
     "name": "Fish Audio S1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Billed per 1M UTF-8 bytes of input text ($15 per 1M bytes); bytes = characters only for ASCII text.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "byte"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -358,6 +379,13 @@
       "ttfa_ms": 100
     },
     "name": "Fish Audio S2-Pro",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Billed per 1M UTF-8 bytes of input text ($15 per 1M bytes); bytes = characters only for ASCII text.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "byte"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -415,6 +443,13 @@
       "ttfa_dpa_guarantees": true
     },
     "name": "Fish Audio S2.1-Pro",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Billed per 1M UTF-8 bytes of input text ($15 per 1M bytes); bytes = characters only for ASCII text.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "byte"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -472,6 +507,13 @@
       "ttfa_dpa_guarantees": false
     },
     "name": "Fish Audio S2.1-Pro Free",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Listed at $0.00 per 1M UTF-8 bytes. Limits not stated on the pricing page.",
+      "price_usd": 0.0,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "unit": "character"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",

@@ -243,6 +243,13 @@
       "yue"
     ],
     "name": "Ink Whisper",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Scale plan rate ('1 credit per second (or $0.13/hr on our Scale plan)'); docs.cartesia.ai/pricing: 1 credit/s on streaming endpoints, 1 credit per 2 s on batch /stt. No other plan rate published.",
+      "price_usd": 0.13,
+      "source_url": "https://www.cartesia.ai/blog/introducing-ink-speech-to-text",
+      "unit": "hour"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -386,6 +393,13 @@
       "yue"
     ],
     "name": "Ink Whisper (2025-06-04)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Scale plan rate ('1 credit per second (or $0.13/hr on our Scale plan)'); docs.cartesia.ai/pricing: 1 credit/s on streaming endpoints, 1 credit per 2 s on batch /stt. No other plan rate published.",
+      "price_usd": 0.13,
+      "source_url": "https://www.cartesia.ai/blog/introducing-ink-speech-to-text",
+      "unit": "hour"
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -479,6 +493,25 @@
       }
     },
     "name": "Sonic 3",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Credit-based plans (Free $0, Pro $5, Startup $49, Scale $299/mo). Sonic TTS = 1 credit per character (docs: 'approximately'); overage rate per tier: Pro $65, Startup $45, Scale $38 per 1M credits. price_usd = Pro overage rate. Enterprise custom.",
+      "price_usd": 6.5e-05,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Startup plan overage",
+          "price_usd": 4.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Scale plan overage",
+          "price_usd": 3.8e-05,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -580,6 +613,25 @@
       }
     },
     "name": "Sonic 3 (2026-01-12)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Credit-based plans (Free $0, Pro $5, Startup $49, Scale $299/mo). Sonic TTS = 1 credit per character (docs: 'approximately'); overage rate per tier: Pro $65, Startup $45, Scale $38 per 1M credits. price_usd = Pro overage rate. Enterprise custom.",
+      "price_usd": 6.5e-05,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Startup plan overage",
+          "price_usd": 4.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Scale plan overage",
+          "price_usd": 3.8e-05,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -681,6 +733,25 @@
       }
     },
     "name": "Sonic 3.5",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Credit-based plans (Free $0, Pro $5, Startup $49, Scale $299/mo). Sonic TTS = 1 credit per character (docs: 'approximately'); overage rate per tier: Pro $65, Startup $45, Scale $38 per 1M credits. price_usd = Pro overage rate. Enterprise custom.",
+      "price_usd": 6.5e-05,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Startup plan overage",
+          "price_usd": 4.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Scale plan overage",
+          "price_usd": 3.8e-05,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -782,6 +853,25 @@
       }
     },
     "name": "Sonic 3.5 (2026-05-04)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Credit-based plans (Free $0, Pro $5, Startup $49, Scale $299/mo). Sonic TTS = 1 credit per character (docs: 'approximately'); overage rate per tier: Pro $65, Startup $45, Scale $38 per 1M credits. price_usd = Pro overage rate. Enterprise custom.",
+      "price_usd": 6.5e-05,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Startup plan overage",
+          "price_usd": 4.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Scale plan overage",
+          "price_usd": 3.8e-05,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -887,6 +977,25 @@
       }
     },
     "name": "Sonic 3.6",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Credit-based plans (Free $0, Pro $5, Startup $49, Scale $299/mo). Sonic TTS = 1 credit per character (docs: 'approximately'); overage rate per tier: Pro $65, Startup $45, Scale $38 per 1M credits. price_usd = Pro overage rate. Enterprise custom.",
+      "price_usd": 6.5e-05,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Startup plan overage",
+          "price_usd": 4.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Scale plan overage",
+          "price_usd": 3.8e-05,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -991,6 +1100,25 @@
       }
     },
     "name": "Sonic 3.6 (2026-08-27)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Credit-based plans (Free $0, Pro $5, Startup $49, Scale $299/mo). Sonic TTS = 1 credit per character (docs: 'approximately'); overage rate per tier: Pro $65, Startup $45, Scale $38 per 1M credits. price_usd = Pro overage rate. Enterprise custom.",
+      "price_usd": 6.5e-05,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Startup plan overage",
+          "price_usd": 4.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Scale plan overage",
+          "price_usd": 3.8e-05,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",
@@ -1046,6 +1174,25 @@
       "production_recommended": false
     },
     "name": "Sonic Preview",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Credit-based plans (Free $0, Pro $5, Startup $49, Scale $299/mo). Sonic TTS = 1 credit per character (docs: 'approximately'); overage rate per tier: Pro $65, Startup $45, Scale $38 per 1M credits. price_usd = Pro overage rate. Enterprise custom.",
+      "price_usd": 6.5e-05,
+      "source_url": "https://cartesia.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Startup plan overage",
+          "price_usd": 4.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Scale plan overage",
+          "price_usd": 3.8e-05,
+          "unit": "character"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "docs",

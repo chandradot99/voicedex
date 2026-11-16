@@ -887,6 +887,40 @@
       ]
     },
     "name": "Command And Search",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Explicitly listed as a 'Standard' model. Speech-to-Text V2 Standard rate (first 500k min/month). V1 API: 60 free min/month then $0.016/min with data logging, $0.024/min without.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "v1_api_without_data_logging",
+          "price_usd": 0.024,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1065,6 +1099,40 @@
       ]
     },
     "name": "Default",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Explicitly listed as a 'Standard' model. Speech-to-Text V2 Standard rate (first 500k min/month). V1 API: 60 free min/month then $0.016/min with data logging, $0.024/min without.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "v1_api_without_data_logging",
+          "price_usd": 0.024,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -1751,6 +1819,40 @@
       ]
     },
     "name": "Phone Call",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Explicitly listed as a 'Standard' model. Speech-to-Text V2 Standard rate (first 500k min/month). V1 API: 60 free min/month then $0.016/min with data logging, $0.024/min without.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "v1_api_without_data_logging",
+          "price_usd": 0.024,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",
@@ -2420,6 +2522,40 @@
       ]
     },
     "name": "Video",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Explicitly listed as a 'Standard' model. Speech-to-Text V2 Standard rate (first 500k min/month). V1 API: 60 free min/month then $0.016/min with data logging, $0.024/min without.",
+      "price_usd": 0.016,
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "500k-1M minutes/month",
+          "price_usd": 0.01,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "1M-2M minutes/month",
+          "price_usd": 0.008,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "2M+ minutes/month",
+          "price_usd": 0.004,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "dynamic_batch",
+          "price_usd": 0.003,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "v1_api_without_data_logging",
+          "price_usd": 0.024,
+          "unit": "minute"
+        }
+      ]
+    },
     "provenance": {
       "as_of": "2026-11-16",
       "method": "api",

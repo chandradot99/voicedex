@@ -85,7 +85,7 @@ TTS_CAPABILITIES = frozenset({
 MODEL_CAPABILITIES = STT_CAPABILITIES | TTS_CAPABILITIES
 VOICE_CAPABILITIES = frozenset({"emotion", "multilingual_native"})
 
-PRICING_UNITS = frozenset({"character", "minute", "second", "word", "token", "request", "hour"})
+PRICING_UNITS = frozenset({"character", "byte", "minute", "second", "word", "token", "request", "hour"})
 
 
 def _check_vocab(values: list[str], allowed: frozenset[str], what: str) -> list[str]:
