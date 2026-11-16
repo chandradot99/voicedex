@@ -1,0 +1,761 @@
+[
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Older-generation HD TTS model still accepted by the T2A API.",
+    "first_seen": "2026-11-16",
+    "id": "speech-01-hd",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "legacy",
+      "listed_in_models_overview": false,
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 01 HD",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Older-generation low-latency TTS model still accepted by the T2A API.",
+    "first_seen": "2026-11-16",
+    "id": "speech-01-turbo",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "legacy",
+      "listed_in_models_overview": false,
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 01 Turbo",
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Legacy high-quality TTS model with strong voice replication, 24 languages.",
+    "first_seen": "2026-11-16",
+    "id": "speech-02-hd",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "legacy",
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 02 HD",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$100 per 1M characters, pay-as-you-go (legacy)",
+      "price_usd": 0.0001,
+      "source_url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Legacy low-latency TTS model, 24 languages.",
+    "first_seen": "2026-11-16",
+    "id": "speech-02-turbo",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "legacy",
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 02 Turbo",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$60 per 1M characters, pay-as-you-go (legacy)",
+      "price_usd": 6e-05,
+      "source_url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Legacy high-quality TTS model covering 40 languages.",
+    "first_seen": "2026-11-16",
+    "id": "speech-2.6-hd",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi",
+      "bg",
+      "da",
+      "he",
+      "ms",
+      "fa",
+      "sk",
+      "sv",
+      "hr",
+      "fil",
+      "hu",
+      "no",
+      "sl",
+      "ca",
+      "nn",
+      "ta",
+      "af"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "legacy",
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 2.6 HD",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$100 per 1M characters, pay-as-you-go (legacy)",
+      "price_usd": 0.0001,
+      "source_url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Legacy low-latency TTS model covering 40 languages.",
+    "first_seen": "2026-11-16",
+    "id": "speech-2.6-turbo",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi",
+      "bg",
+      "da",
+      "he",
+      "ms",
+      "fa",
+      "sk",
+      "sv",
+      "hr",
+      "fil",
+      "hu",
+      "no",
+      "sl",
+      "ca",
+      "nn",
+      "ta",
+      "af"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "legacy",
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 2.6 Turbo",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$60 per 1M characters, pay-as-you-go (legacy)",
+      "price_usd": 6e-05,
+      "source_url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Flagship high-fidelity TTS with sound/interjection tags, 40 languages.",
+    "first_seen": "2026-11-16",
+    "id": "speech-2.8-hd",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi",
+      "bg",
+      "da",
+      "he",
+      "ms",
+      "fa",
+      "sk",
+      "sv",
+      "hr",
+      "fil",
+      "hu",
+      "no",
+      "sl",
+      "ca",
+      "nn",
+      "ta",
+      "af"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "current",
+      "interjection_tags": true,
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 2.8 HD",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$100 per 1M characters, pay-as-you-go",
+      "price_usd": 0.0001,
+      "source_url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input"
+    ],
+    "description": "Lower-latency variant of Speech 2.8 with sound/interjection tags, 40 languages.",
+    "first_seen": "2026-11-16",
+    "id": "speech-2.8-turbo",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "en",
+      "ar",
+      "ru",
+      "es",
+      "fr",
+      "pt",
+      "de",
+      "tr",
+      "nl",
+      "uk",
+      "vi",
+      "id",
+      "ja",
+      "it",
+      "ko",
+      "th",
+      "pl",
+      "ro",
+      "el",
+      "cs",
+      "fi",
+      "hi",
+      "bg",
+      "da",
+      "he",
+      "ms",
+      "fa",
+      "sk",
+      "sv",
+      "hr",
+      "fil",
+      "hu",
+      "no",
+      "sl",
+      "ca",
+      "nn",
+      "ta",
+      "af"
+    ],
+    "max_text_chars": 9999,
+    "meta": {
+      "audio_encodings": [
+        "mp3",
+        "pcm",
+        "flac",
+        "wav",
+        "pcmu_raw",
+        "pcmu_wav",
+        "opus"
+      ],
+      "generation": "current",
+      "interjection_tags": true,
+      "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
+    },
+    "name": "Speech 2.8 Turbo",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "$60 per 1M characters, pay-as-you-go",
+      "price_usd": 6e-05,
+      "source_url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://platform.minimax.io/docs/guides/models-intro",
+        "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+        "https://platform.minimax.io/docs/guides/pricing-paygo"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

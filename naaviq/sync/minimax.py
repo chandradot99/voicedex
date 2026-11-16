@@ -33,26 +33,18 @@ _VOICES_URL = "https://api.minimax.io/v1/get_voice"
 _DOCS_URLS = [
     "https://platform.minimax.io/docs/guides/models-intro",
     "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+    "https://platform.minimax.io/docs/guides/pricing-paygo",
 ]
 
-_MODEL_GUIDANCE = """
-Extract MiniMax TTS models. There are 8 models ordered newest to oldest.
-speech-2.8-hd is the flagship default.
+_MODEL_GUIDANCE = (
+    "Return every speech (TTS) model id accepted by the T2A `model` parameter, including legacy ones "
+    "that still work. is_default=true for the newest flagship HD model. Languages per model family "
+    "from the `language_boost` list / docs; emotion capability where the docs list emotion control."
+)
 
-Models (newest → oldest):
-  speech-2.8-hd    "Speech 2.8 HD"    is_default=True  — 40+ languages, 7 emotions, streaming+async
-  speech-2.8-turbo "Speech 2.8 Turbo" is_default=False — 40+ languages, 7 emotions, streaming+async
-  speech-2.6-hd    "Speech 2.6 HD"    is_default=False — 40+ languages, 7 emotions, streaming+async
-  speech-2.6-turbo "Speech 2.6 Turbo" is_default=False — 40+ languages, 7 emotions, streaming+async
-  speech-02-hd     "Speech 02 HD"     is_default=False — 24 languages, 7 emotions, streaming+async
-  speech-02-turbo  "Speech 02 Turbo"  is_default=False — 24 languages, 7 emotions, streaming+async
-  speech-01-hd     "Speech 01 HD"     is_default=False — 24 languages, 7 emotions, streaming+async
-  speech-01-turbo  "Speech 01 Turbo"  is_default=False — 24 languages, 7 emotions, streaming+async
-
-For speech-2.x models extract the full language list from the docs language_boost parameter.
-For speech-0x models use the smaller language list (zh, en, ar, ru, es, fr, pt, de, tr, nl, uk, vi, id, ja, it, ko, th, pl, ro, el, cs, fi, hi).
-All models have streaming=True.
-"""
+# Accent phrases in MiniMax's own voice descriptions ("…with a British accent…") → canonical labels.
+_ACCENT_WORDS = {"american": "american", "british": "british", "australian": "australian",
+                 "indian": "indian", "irish": "irish", "scottish": "scottish", "canadian": "canadian"}
 
 # Voice name prefix → BCP-47 language code
 _LANG_PREFIX_MAP: dict[str, str] = {
@@ -157,8 +149,10 @@ class MinimaxSyncer(ProviderSyncer):
                 gender=gender,
                 category="premade",
                 languages=languages,
-                description=", ".join(descriptions) if descriptions else None,
+                accent=_accent_from_descriptions(descriptions),
+                description=" ".join(descriptions) if descriptions else None,
                 compatible_models=["*"],
+                meta={"created": item["created_time"]} if item.get("created_time") else {},
             ))
         return voices
 
@@ -179,6 +173,14 @@ def _gender_from_name(voice_id: str) -> str | None:
         return "female"
     if words & _MALE_WORDS:
         return "male"
+    return None
+
+
+def _accent_from_descriptions(descriptions: list[str]) -> str | None:
+    import re
+    for m in re.finditer(r"([A-Za-z]+) accent", " ".join(descriptions)):
+        if (label := _ACCENT_WORDS.get(m.group(1).lower())):
+            return label
     return None
 
 

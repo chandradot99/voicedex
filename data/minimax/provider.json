@@ -1,0 +1,22 @@
+{
+  "api_urls": [
+    "https://api.minimax.io/v1/get_voice"
+  ],
+  "docs_urls": [
+    "https://platform.minimax.io/docs/guides/models-intro",
+    "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
+    "https://platform.minimax.io/docs/guides/pricing-paygo"
+  ],
+  "id": "minimax",
+  "last_synced": "2026-11-16",
+  "name": "MiniMax",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "api",
+    "urls": [
+      "https://api.minimax.io/v1/get_voice"
+    ]
+  }
+}

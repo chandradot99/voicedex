@@ -1,0 +1,5975 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm adult female Arabic voice, ideal for audiobooks and serene narration.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Arabic_CalmWoman",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A natural and friendly adult male Arabic voice.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Arabic_FriendlyGuy",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Friendly Guy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An arrogant adult female voice in Standard Mandarin, projecting confidence and superiority.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Arrogant_Miss",
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Arrogant Miss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A soothing and cute young adult female voice in Cantonese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Cantonese_CuteGirl",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cute Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and gentle adult female voice in Cantonese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Cantonese_GentleLady",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A friendly and kind adult female voice in Cantonese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Cantonese_KindWoman",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A soulful and playful adult male voice in Cantonese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Cantonese_PlayfulMan",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Playful Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A neutral and professional adult female host in Cantonese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Cantonese_ProfessionalHost（F)",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Professional Female Host",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A neutral and professional adult male host in Cantonese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Cantonese_ProfessionalHost（M)",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Professional Male Host",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A bashful and shy female youth voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_BashfulGirl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bashful Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm and crisp young adult female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Crisp_Girl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Crisp Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An adorable and cute female spirit voice, youthful and sweet, in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Cute_Spirit",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cute Spirit",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An explorative and curious adult female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_ExplorativeGirl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Explorative Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and cozy adult female senior voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Gentle_Senior",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Senior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle adult male youth voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Gentle_Youth",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Youth",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A magnetic and charismatic adult male gentleman in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Gentleman",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentleman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A polite middle-aged female flight attendant with a Southern Chinese accent, clear and courteous.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_HK_Flight_Attendant",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "HK Flight Attendant",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A refreshing and humorous senior male voice with a Northern Chinese accent, full of character.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Humorous_Elder",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Humorous Elder",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An intellectual adult female voice in Standard Mandarin, clear and knowledgeable.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_IntellectualGirl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Intellectual Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and kind-hearted middle-aged \"antie\" voice in Standard Mandarin, warm and caring.",
+    "first_seen": "2026-11-16",
+    "id": "Chinese (Mandarin)_Kind-hearted_Antie",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind-hearted Antie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A kind and gentle senior female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Kind-hearted_Elder",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind-hearted Elder",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A relaxed and laid-back adult female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Laid_BackGirl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Laid-back Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mellow and lyrical adult male voice in Standard Mandarin, smooth and expressive.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Lyrical_Voice",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Lyrical Voice",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A magnetic middle-aged male announcer voice in Standard Mandarin, clear and authoritative.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Male_Announcer",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Male Announcer",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charming and mature adult female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Mature_Woman",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Mature Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A professional, broadcaster-like middle-aged female news anchor in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_News_Anchor",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "News Anchor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A committed and pure-hearted young adult male voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Pure-hearted_Boy",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Pure-hearted Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A poetic adult male radio host in Standard Mandarin, with a smooth and engaging delivery.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Radio_Host",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Radio Host",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steady and reliable middle-aged male executive voice in Standard Mandarin, conveying trustworthiness.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Reliable_Executive",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Executive",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sincere and encouraging adult male voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Sincere_Adult",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sincere Adult",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A welcoming and soft adult female voice with a Southern Chinese accent.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Soft_Girl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Soft Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An earnest adult male voice with a Southern Chinese accent.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Southern_Young_Man",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Southern Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A thoughtful and straightforward young adult male voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Straightforward_Boy",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Straightforward Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An uninhibited and stubborn adult male friend's voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Stubborn_Friend",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Stubborn Friend",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A tender and sweet adult female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Sweet_Lady",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sweet Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An unrestrained and free-spirited adult male voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Chinese (Mandarin)_Unrestrained_Young_Man",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Unrestrained Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A kind and warm-hearted middle-aged auntie voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "id": "Chinese (Mandarin)_Warm-HeartedAunt",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Warm-hearted Aunt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm and crisp adult female \"bestie\" voice in Standard Mandarin, friendly and clear.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Warm_Bestie",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Warm Bestie",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A soft and warm young adult female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Warm_Girl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Warm Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm-hearted and caring adult female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Warm_HeartedGirl",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Warm-hearted Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A lyrical and wise middle-aged female voice in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chinese (Mandarin)_Wise_Women",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Women",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A serious and bossy adult male leader's voice in Dutch.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Dutch_bossy_leader",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bossy leader",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm and kind-hearted young adult female voice in Dutch.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Dutch_kindhearted_girl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind-hearted girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sincere middle-aged female narrator with a British accent, perfect for trustworthy and heartfelt storytelling.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_AnimeCharacter",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Female Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An assertive yet guarded young adult queen with a general American accent, projecting authority while remaining cautious.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_AssertiveQueen",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Assertive Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A friendly, bright adult male voice with a distinct Australian accent, conveying a cheerful and approachable tone.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Aussie_Bloke",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Aussie Bloke",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A bossy adult male leader with a general American accent, speaking unconcernedly with an air of command.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_BossyLeader",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bossy Leader",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and soothing adult female voice with a general American accent, excellent for audiobooks and meditation guides.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_CalmWoman",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A captivating senior male storyteller with a cold, detached tone and a general American accent.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_CaptivatingStoryteller",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Captivating Storyteller",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A breezy young adult male comedian with a British accent, delivering lines with a light and humorous touch.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Comedian",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Comedian",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A confident and firm young adult female voice with a general American accent, assertive and clear.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_ConfidentWoman",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Confident Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A tough, middle-aged male voice with a general American accent, perfect for debates and assertive arguments.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Debator",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Male Debater",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A decent and respectable adult male voice with a British accent, sounding polite and well-mannered.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_DecentYoungMan",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Decent Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A deep-voiced and wise adult male gentleman with a classic British accent, sounding experienced and thoughtful.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Deep-VoicedGentleman",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Deep-voiced Gentleman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A diligent and sincere adult male voice with an Indian accent, conveying honesty and hard work.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Diligent_Man",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Diligent Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A friendly and natural-sounding adult male voice with a general American accent, like an approachable guy-next-door.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_FriendlyPerson",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Friendly Guy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and resonant adult male voice with a general American accent, warm and reassuring.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Gentle-voiced_man",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle-voiced Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A graceful and elegant middle-aged female voice with a classic British accent, exuding sophistication.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_Graceful_Lady",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Graceful Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "The imposing voice of an adult queen with a powerful British accent, commanding respect and authority.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_ImposingManner",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Imposing Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A jovial and mature middle-aged male voice with a general American accent, cheerful and good-natured.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Jovialman",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Jovial Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A kind-hearted and calm young adult female with a general American accent, speaking with gentle warmth.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_Kind-heartedGirl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind-Hearted Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A lovely and sweet female youth voice with a British accent, full of charm and innocence.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_LovelyGirl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Lovely Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An adult male with a deep, commanding voice and a general American accent, projecting authority and strength.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_ManWithDeepVoice",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Man With Deep Voice",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature, middle-aged female voice with a general American accent, conveying authority and a commanding presence.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_MatureBoss",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bossy Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature, gentle middle-aged male voice with a British accent, suitable for a caring and supportive partner role.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_MaturePartner",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Mature Partner",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and passionate young adult male warrior voice with a general American accent, ready for battle.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_PassionateWarrior",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Passionate Warrior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A patient adult male voice with a British accent, speaking in a calm and understanding manner.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_PatientMan",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Patient Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A playful female youth voice with a general American accent, ideal for cartoons and children's entertainment.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_PlayfulGirl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Playful Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A reserved and cold adult male voice with a general American accent, conveying distance and introspection.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_ReservedYoungMan",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reserved Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A frustrated young adult male voice with a British accent, perfect for a teen character expressing annoyance.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_SadTeen",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Teen Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sentimental and elegant middle-aged female voice with a British accent, perfect for nostalgic or emotional readings.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_SentimentalLady",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sentimental Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A serene and friendly young adult female voice with a general American accent, calm and welcoming.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_SereneWoman",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Serene Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An adorable, soft-spoken female youth voice with a general American accent, gentle and sweet.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_Soft-spokenGirl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Soft-Spoken Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A young adult male voice with a general American accent, projecting an air of arrogant reliability.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Steadymentor",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An unsure, stressed middle-aged female voice with a general American accent, conveying anxiety and uncertainty.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_StressedLady",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Stressed Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature-sounding and strong-willed young adult male with a British accent, showing determination beyond his years.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Strong-WilledBoy",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Strong-Willed Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A trustworthy and resonant adult male voice with a general American accent, conveying sincerity and reliability.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_Trustworth_Man",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Trustworthy Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An upbeat and bright adult female voice with a general American accent, perfect for energetic and positive messaging.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_Upbeat_Woman",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Upbeat Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A young adult female voice with a British accent, effectively conveying sadness and distress.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_UpsetGirl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Upset Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A whimsical yet wary young adult female voice with a general American accent, combining playfulness with caution.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_WhimsicalGirl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Whimsical Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_Whispering_girl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Whispering girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A wise, conversational young adult scholar with a British accent, making complex topics accessible and engaging.",
+    "first_seen": "2026-11-16",
+    "id": "English_WiseScholar",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Scholar",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A wise and genial middle-aged female voice with a British accent, offering kind and insightful words.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_Wiselady",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A captivating adult female voice with a general American accent, ideal for news reporting and documentary narration.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_captivating_female1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Captivating Female",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A compelling adult female voice with a British accent, suitable for broadcast and formal announcements. Clear and authoritative.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_compelling_lady1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Compelling Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An expressive adult male voice with a British accent, perfect for engaging audiobook narration.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_expressive_narrator",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Expressive Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A magnetic and persuasive adult male voice with a general American accent, ideal for advertisements and promotions.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "English_magnetic_voiced_man",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Magnetic-voiced Male",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A radiant and lively young adult female voice with a general American accent, full of energy and brightness.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "English_radiant_girl",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Radiant Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A casual and relaxed middle-aged male voice in French.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "French_CasualMan",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Casual Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A professional adult female anchor voice in French, authoritative and clear.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "French_FemaleAnchor",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Female Anchor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A patient adult female presenter in French, calm and clear.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "French_Female_News Anchor",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Patient Female Presenter",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A classic adult male narrator voice in French, ideal for storytelling.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "French_MaleNarrator",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Male Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A level-headed and composed adult male voice in French.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "French_Male_Speech_New",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Level-Headed Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cinematic young adult female lead voice in French, perfect for film.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "French_MovieLeadFemale",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Movie Lead Female",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sincere and friendly middle-aged male voice in German.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "German_FriendlyMan",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Friendly Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A lively and spirited adult male voice in German, full of energy.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "German_PlayfulMan",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Playful Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An animated and sweet adult female voice in German.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "German_SweetLady",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sweet Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle adult lady's voice in Greek.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Greek_female_1_sample1",
+    "languages": [
+      "el"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cheerful young adult \"girl next door\" voice in Greek.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Greek_female_2_sample3",
+    "languages": [
+      "el"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Girl Next Door",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, authoritative, and bossy adult male leader's voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Indonesian_BossyLeader",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bossy Leader",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A serene and calm young adult female voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Indonesian_CalmWoman",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A compassionate and caring young adult male voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Indonesian_CaringMan",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Caring Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An alluring and charming adult female voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Indonesian_CharmingGirl",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Charming Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An assertive and confident young adult female voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Indonesian_ConfidentWoman",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Confident Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and resolute young adult male voice in Indonesian, conveying determination.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Indonesian_DeterminedBoy",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Determined Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A soft-spoken and gentle young adult female voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Indonesian_GentleGirl",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cold and reserved young adult male voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Indonesian_ReservedYoungMan",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reserved Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cute and sweet young adult female voice in Indonesian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Indonesian_SweetGirl",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sweet Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and brave middle-aged female heroine's voice in Italian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Italian_BraveHeroine",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Brave Heroine",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and diligent adult female leader's voice in Italian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Italian_DiligentLeader",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Diligent Leader",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A classic middle-aged male narrator voice in Italian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Italian_Narrator",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A ruthless adult female wandering sorcerer's voice in Italian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Italian_WanderingSorcerer",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wandering Sorcerer",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and charming adult female voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Japanese_CalmLady",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A distant and cold adult queen's voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "id": "Japanese_ColdQueen",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cold Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A firm and decisive adult princess's voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "id": "Japanese_DecisivePrincess",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Decisive Princess",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steady and dependable adult female voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Japanese_DependableWoman",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Dependable Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and dominant middle-aged male voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_DominantMan",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Dominant Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A playful and generous middle-aged male izakaya owner's voice in Standard Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_GenerousIzakayaOwner",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Generous Izakaya Owner",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charming and gentle adult male butler's voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_GentleButler",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Butler",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sweet and graceful adult maiden's voice in Standard Japanese.",
+    "first_seen": "2026-11-16",
+    "id": "Japanese_GracefulMaiden",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Graceful Maiden",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An inviting and innocent adult male voice in Standard Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_InnocentBoy",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Innocent Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and intellectual young adult male voice in Japanese, sounding older than his age.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_IntellectualSenior",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Intellectual Senior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charming and kind adult female voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Japanese_KindLady",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A youthful and loyal adult male knight's voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_LoyalKnight",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Loyal Knight",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cheerful and optimistic adult male youth's voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_OptimisticYouth",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Optimistic Youth",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A serious and reliable adult male commander's voice in Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_SeriousCommander",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Serious Commander",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An inviting and sporty adult male student's voice in Standard Japanese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Japanese_SportyStudent",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sporty Student",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cool and composed adult female voice, suitable for an \"airheaded\" character in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_AirheadedGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Airheaded Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A robust and athletic female youth's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_AthleticGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Athletic Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic young adult male athletic student's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_AthleticStudent",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Athletic Student",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A playful and adventurous adult female brave adventurer's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_BraveAdventurer",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Brave Adventurer",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A resolute young adult brave female warrior's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_BraveFemaleWarrior",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Brave Female Warrior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A powerful young adult brave male youth's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_BraveYouth",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Brave Youth",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A composed and calm middle-aged gentleman's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_CalmGentleman",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Gentleman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A resilient and determined young adult female voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_CalmLady",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A lively and vibrant young adult caring woman's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_CaringWoman",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Caring Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A playful and mischievous middle-aged \"charming elder sister\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_CharmingElderSister",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Charming Elder Sister",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A seductive middle-aged \"charming sister\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_CharmingSister",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Charming Sister",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sharp and intense middle-aged male voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_CheerfulBoyfriend",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cheerful Boyfriend",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and spirited adult male \"cheerful cool junior\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_CheerfulCoolJunior",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cheerful Cool Junior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and lively adult female \"cheerful little sister\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_CheerfulLittleSister",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cheerful Little Sister",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A polite and reserved young adult female \"childhood friend\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_ChildhoodFriendGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Childhood Friend Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A playful and mischievous young adult cocky guy's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_CockyGuy",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cocky Guy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An aloof and cold adult female voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_ColdGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cold Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cold and composed adult male voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_ColdYoungMan",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Cold Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A deep and commanding middle-aged confident boss's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_ConfidentBoss",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Confident Boss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and mature young adult male \"considerate senior\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_ConsiderateSenior",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Considerate Senior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sweet yet resolute young adult decisive queen's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_DecisiveQueen",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Decisive Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and authoritative dominant adult male voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_DominantMan",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Dominant Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A graceful and refined adult princess voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_ElegantPrincess",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Elegant Princess",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A desirable and charming young adult \"enchanting sister\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_EnchantingSister",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Enchanting Sister",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A passionate and lively young adult male teen's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_EnthusiasticTeen",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Enthusiastic Teen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charismatic and alluring middle-aged \"friendly big sister\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_FriendlyBigSister",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Friendly Big Sister",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A regal and refined middle-aged male \"gentle boss\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_GentleBoss",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Boss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A strong-willed yet gentle young adult female voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_GentleWoman",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cold and distant young adult haughty lady's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_HaughtyLady",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Haughty Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A naive and pure young adult male \"innocent boy\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_InnocentBoy",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Innocent Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A combative middle-aged intellectual male voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_IntellectualMan",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Intellectual Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A magnetic and intellectual young adult male voice with a senior quality in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_IntellectualSenior",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Intellectual Senior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A youthful and daring adult male \"lonely warrior\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_LonelyWarrior",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Lonely Warrior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A refined and elegant mature middle-aged lady's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_MatureLady",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Mature Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and lively female youth voice for a mysterious character in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_MysteriousGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Mysterious Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cheerful and optimistic young adult male youth's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_OptimisticYouth",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Optimistic Youth",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A seductive young adult male \"playboy charmer\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_PlayboyCharmer",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Playboy Charmer",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A powerful and authoritative middle-aged possessive man's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_PossessiveMan",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Possessive Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An adorable and quirky female youth voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_QuirkyGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Quirky Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A powerful and authoritative middle-aged \"reliable sister\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_ReliableSister",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Sister",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and considerate young adult reliable male youth's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_ReliableYouth",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Youth",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Sassy female youth voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_SassyGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sassy Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A timid and introverted young adult female voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_ShyGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Shy Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An alluring and soothing middle-aged female voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_SoothingLady",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Soothing Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A stern middle-aged male boss's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_StrictBoss",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Strict Boss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A soothing and gentle middle-aged female voice in Standard Korean, sweet and calming.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_SweetGirl",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sweet Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and contemplative young adult thoughtful woman's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "id": "Korean_ThoughtfulWoman",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Thoughtful Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sweet and ethereal young adult female \"wise elf\" voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Korean_WiseElf",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Elf",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sagacious and wise middle-aged male teacher's voice in Standard Korean.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Korean_WiseTeacher",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Teacher",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm adult female voice in Polish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Polish_female_1_sample1",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A neutral and casual adult female voice in Polish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Polish_female_2_sample3",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Casual Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature adult male narrator's voice in Polish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Polish_male_1_sample4",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Male Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An adult male broadcast anchor's voice in Polish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Polish_male_2_sample3",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Male Anchor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A serious young adult male voice in Portuguese, conveying anger.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_AngryMan",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Angry Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An animated middle-aged female voice in Portuguese, suitable for anime characters.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_AnimeCharacter",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Anime Character",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steady adult male voice in the style of Arnold in Standard Portuguese, strong and firm.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Arnold",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Arnold",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A firm and assertive young adult queen's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_AssertiveQueen",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Assertive Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An alluring and attractive adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_AttractiveGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Attractive Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and formal adult male bossy leader's voice in Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_BossyLeader",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bossy Leader",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A composed and calm middle-aged male leader's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_CalmLeader",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Leader",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A captivating middle-aged male narrator's voice in Portuguese, ideal for storytelling.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_CaptivatingStoryteller",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Captivating Storyteller",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A dreamy middle-aged female caring girlfriend's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_CaringGirlfriend",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Caring Girlfriend",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_CharmingLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Charming Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A bewitching and charming adult queen's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_CharmingQueen",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Charming Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An attractive and charming middle-aged male Santa voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_CharmingSanta",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Charming Santa",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A conversational and chatty young adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_ChattyGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Chatty Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A humorous young adult male comedian's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Comedian",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Comedian",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A persuasive and compelling young adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_CompellingGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Compelling Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear and firm young adult confident woman's voice in Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_ConfidentWoman",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Confident Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A youthful and conscientious young adult female instructor's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_Conscientiousinstructor",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Conscientious Instructor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A tough middle-aged male debater's voice in Standard Portuguese, strong and assertive.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Debator",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Debator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A deep-voiced adult gentleman in Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_Deep-VoicedGentleman",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Deep-voiced Gentleman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A middle-aged female manager's voice with attitude and determination in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_DeterminedManager",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Determined Manager",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A quirky middle-aged male dramatist's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Dramatist",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Dramatist",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A dramatic and elegant young adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_ElegantGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Elegant Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cheerful and energetic young adult male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_EnergeticBoy",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Energetic Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An approachable and fascinating young adult male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_FascinatingBoy",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Fascinating Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and fragile young adult male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_FragileBoy",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Fragile Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An agitated and frank middle-aged lady's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_FrankLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Frank Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and friendly young adult female neighbor's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_FriendlyNeighbor",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Friendly Neighbor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An intense and fussy middle-aged female hostess's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_Fussyhostess",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Fussy hostess",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mild and gentle adult male teacher's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_GentleTeacher",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Teacher",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sensual adult male ghost's voice in Standard Portuguese, mysterious and alluring.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Ghost",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Ghost",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A serious middle-aged male godfather voice in Standard Portuguese, conveying authority.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Godfather",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Godfather",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A playful and gorgeous adult female voice in Standard Portuguese, exuding confidence.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_GorgeousLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gorgeous Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sinister adult male Grim Reaper's voice in Standard Portuguese, dark and ominous.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_GrimReaper",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Grim Reaper",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cunning adult male Grinch-like voice in Standard Portuguese, mischievous and sly.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Grinch",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Grinch",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A wacky and humorous middle-aged male elder's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_HumorousElder",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Humorous Elder",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A commanding and inspiring young adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_InspiringLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Inspiring Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A jovial and laughing middle-aged male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Jovialman",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Jovial Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and kind-hearted young adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_Kind-heartedGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind-hearted Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charismatic and lovely adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_LovelyLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Lovely Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature middle-aged male partner's voice in Standard Portuguese, dependable and warm.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_MaturePartner",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Mature Partner",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A middle-aged female narrator's voice in Standard Portuguese, perfect for storytelling.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_Narrator",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An inviting and naughty young adult female schoolgirl's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_NaughtySchoolgirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Naughty Schoolgirl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and passionate young adult male warrior's voice in Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_PassionateWarrior",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Passionate Warrior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cutesy and playful female youth voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_PlayfulGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Playful Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An animated and playful young adult female spirit's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_PlayfulSpirit",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Playful Spirit",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A pompous young adult female cartoon-style voice in Standard Portuguese, full of personality.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_Pompouslady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Pompous lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A youthful and bold young adult male powerful soldier's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_PowerfulSoldier",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Powerful Soldier",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A strong and powerful middle-aged male veteran's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_PowerfulVeteran",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Powerful Veteran",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A thoughtful and rational adult male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_RationalMan",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Rational Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steady and reliable adult male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_ReliableMan",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cold and calm reserved young adult male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_ReservedYoungMan",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reserved Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An emotional middle-aged male romantic husband's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_RomanticHusband",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Romantic Husband",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A naive young adult female voice in the style of Rudolph in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_Rudolph",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Rudolph",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A frustrated and sad male teen's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_SadTeen",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sad Teen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A joyful middle-aged male Santa Claus voice in Standard Portuguese, full of holiday cheer.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_SantaClaus",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Santa Claus",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charismatic and sensible middle-aged male manager's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_SensibleManager",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sensible Manager",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An elegant and sentimental young adult female voice in Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_SentimentalLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sentimental Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A reflective and serene middle-aged male elder's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_SereneElder",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Serene Elder",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and serene young adult female voice in Standard Portuguese, peaceful and composed.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_SereneWoman",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Serene Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An intelligent young female girl's voice in Standard Portuguese, sharp and clear.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_SmartYoungGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Smart Young Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An arrogant yet steady young adult male mentor's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Steadymentor",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Steady Mentor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An unsure and stressed middle-aged lady's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_StressedLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Stressed Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A robotic and strict young adult female boss's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_StrictBoss",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Strict Boss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and strong-willed young adult male voice in Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_Strong-WilledBoy",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Strong-willed Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An adorable and sweet young adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_SweetGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sweet Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An animated middle-aged male theatrical actor's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_TheatricalActor",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Theatrical Actor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A worried and thoughtful middle-aged lady's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_ThoughtfulLady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Thoughtful Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and thoughtful young adult male voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_ThoughtfulMan",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Thoughtful Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and tough middle-aged female boss's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_ToughBoss",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Tough Boss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sad young adult female voice in Portuguese, conveying upset emotions.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_UpsetGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Upset Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A lovely and whimsical young adult female voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Portuguese_WhimsicalGirl",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Whimsical Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A conversational young adult male wise scholar's voice in Standard Portuguese.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Portuguese_WiseScholar",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Scholar",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A smooth and wise middle-aged lady's voice in Portuguese.",
+    "first_seen": "2026-11-16",
+    "id": "Portuguese_Wiselady",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An electronic, robotic adult male voice, suitable for sci-fi or futuristic content in Standard Mandarin.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Robot_Armor",
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Robot Armor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cheerful and optimistic adult female youth's voice in Romanian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Romanian_female_1_sample4",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Optimistic Youth",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle adult female voice in Romanian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Romanian_female_2_sample1",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Gentle Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A neutral and reliable adult male voice in Romanian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Romanian_male_1_sample2",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic adult male youth's voice in Romanian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Romanian_male_2_sample1",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Energetic Youth",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A demanding and ambitious adult woman's voice in Standard Russian.",
+    "first_seen": "2026-11-16",
+    "id": "Russian_AmbitiousWoman",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Ambitious Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A deep-voiced and attractive adult guy's voice in Standard Russian.",
+    "first_seen": "2026-11-16",
+    "id": "Russian_AttractiveGuy",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Attractive Guy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charming adult male \"bad-tempered boy\" voice in Standard Russian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Russian_Bad-temperedBoy",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bad-tempered Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An arrogant and bright adult queen's voice in Standard Russian.",
+    "first_seen": "2026-11-16",
+    "id": "Russian_BrightHeroine",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bright Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic adult female \"crazy girl\" voice in Standard Russian, wild and unpredictable.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Russian_CrazyQueen",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Crazy Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An aggressive female youth's voice for a handsome childhood friend character in Standard Russian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Russian_HandsomeChildhoodFriend",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Handsome Childhood Friend",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A compassionate adult female \"pessimistic girl\" voice in Standard Russian.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Russian_PessimisticGirl",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Pessimistic Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steady and reliable middle-aged man's voice in Standard Russian.",
+    "first_seen": "2026-11-16",
+    "id": "Russian_ReliableMan",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An intense young adult male voice in Standard Spanish, conveying anger.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_AngryMan",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Angry Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An animated middle-aged female voice in Standard Spanish, suitable for anime characters.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_AnimeCharacter",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Anime Character",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steady adult male voice in the style of Arnold in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Arnold",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Arnold",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A firm and assertive young adult queen's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "id": "Spanish_AssertiveQueen",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Assertive Queen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A businesslike and bossy adult male leader's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_BossyLeader",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Bossy Leader",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A captivating middle-aged male narrator's voice in Standard Spanish, perfect for storytelling.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_CaptivatingStoryteller",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Captivating Storyteller",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A dreamy adult female caring girlfriend's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_CaringGirlfriend",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Caring Girlfriend",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A conversational and chatty young adult female voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_ChattyGirl",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Chatty Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A humorous young adult male comedian's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Comedian",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Comedian",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A persuasive and compelling young adult female voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_CompellingGirl",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Compelling Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear and firm young adult confident woman's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "id": "Spanish_ConfidentWoman",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Confident Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A tough middle-aged male debater's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Debator",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Debator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charismatic, deep-toned middle-aged male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Deep-tonedMan",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Deep-toned Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A businesslike and determined middle-aged female manager's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_DeterminedManager",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Determined Manager",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A cheerful and energetic young adult male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_EnergeticBoy",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Energetic Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An agitated and frank adult lady's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "id": "Spanish_FrankLady",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Frank Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An intense and fussy middle-aged female hostess's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_Fussyhostess",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Fussy hostess",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A raspy adult male ghost's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Ghost",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Ghost",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An eccentric and humorous senior male elder's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_HumorousElder",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Humorous Elder",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A versatile young adult female voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_Intonategirl",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Intonate Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gravelly and jovial senior male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Jovialman",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Jovial Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A bright and kind-hearted young adult female voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_Kind-heartedGirl",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind-hearted Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm and mature middle-aged male partner's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_MaturePartner",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Mature Partner",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A middle-aged female narrator's voice in Standard Spanish, ideal for storytelling.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_Narrator",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and passionate young adult male warrior's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_PassionateWarrior",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Passionate Warrior",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A youthful and bold young adult male powerful soldier's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_PowerfulSoldier",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Powerful Soldier",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A strong and powerful middle-aged male veteran's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_PowerfulVeteran",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Powerful Veteran",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A thoughtful and rational adult male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_RationalMan",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Rational Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steady and reliable adult male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_ReliableMan",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reliable Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A tranquil and reserved young adult male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_ReservedYoungMan",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Reserved Young Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An emotional middle-aged male romantic husband's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_RomanticHusband",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Romantic Husband",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A naive young adult male voice in the style of Rudolph in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Rudolph",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Rudolph",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A joyful senior male Santa Claus voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_SantaClaus",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Santa Claus",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A charismatic and sensible adult male manager's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_SensibleManager",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sensible Manager",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A reflective and serene senior male elder's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_SereneElder",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Serene Elder",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A soothing and serene young adult female voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_SereneWoman",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Serene Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A heartfelt and sincere male teen's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_SincereTeen",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sincere Teen",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A refined and sophisticated adult lady's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "id": "Spanish_SophisticatedLady",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Sophisticated Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An arrogant yet steady young adult male mentor's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Steadymentor",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Steady Mentor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A commanding and strict young adult female boss's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_StrictBoss",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Strict Boss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and strong-willed adult male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_Strong-WilledBoy",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Strong-willed Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A worried and thoughtful adult lady's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "id": "Spanish_ThoughtfulLady",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Thoughtful Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sober and thoughtful young adult male voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_ThoughtfulMan",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Thoughtful Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mature and tough middle-aged female boss's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_ToughBoss",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Tough Boss",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A witty and whimsical young adult female voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Spanish_WhimsicalGirl",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Whimsical Girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A conversational young adult male wise scholar's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Spanish_WiseScholar",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Scholar",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A neutral and wise middle-aged lady's voice in Standard Spanish.",
+    "first_seen": "2026-11-16",
+    "id": "Spanish_Wiselady",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A neutral and confident adult female voice in Thai.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Thai_female_1_sample1",
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Confident Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic adult female voice in Thai.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Thai_female_2_sample2",
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Energetic Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A magnetic and serene adult male voice in Thai.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Thai_male_1_sample8",
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Serene Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A lively and friendly adult male voice in Thai.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Thai_male_2_sample2",
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Friendly Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm adult female Turkish voice, ideal for audiobooks.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Turkish_CalmWoman",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A resonant and trustworthy adult male Turkish voice.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Turkish_Trustworthyman",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Trustworthy man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm adult female Ukrainian voice, ideal for audiobooks.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Ukrainian_CalmWoman",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Calm Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A conversational young adult male wise scholar's voice in Ukrainian.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Ukrainian_WiseScholar",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Wise Scholar",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm and kind-hearted young adult female voice in Vietnamese.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Vietnamese_kindhearted_girl",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Kind-hearted girl",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A graceful and elegant adult lady's voice in Czech.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "czech_female_2_v2",
+    "languages": [
+      "cs"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Elegant Lady",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A steadfast adult female broadcast narrator's voice in Czech.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "czech_female_5_v7",
+    "languages": [
+      "cs"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Steadfast Narrator",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A serious and assured young adult male presenter's voice in Czech.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "czech_male_1_v1",
+    "languages": [
+      "cs"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Assured Presenter",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A determined and assertive adult female voice in Finnish.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "finnish_female_4_v1",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Assetive Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A deep and friendly young adult male voice in Finnish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "finnish_male_1_v2",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Friendly Boy",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and upbeat young adult female voice in Finnish.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "finnish_male_3_v1",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Upbeat Man",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An intellectual and thoughtful adult male mentor's voice in Greek.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "greek_male_1a_v1",
+    "languages": [
+      "el"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Thoughtful Mentor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm adult female news anchor's voice in Hindi.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "hindi_female_1_v2",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "News Anchor",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gentle and tranquil adult female voice in Hindi.",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "hindi_female_2_v1",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Tranquil Woman",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A magnetic and trustworthy adult male advisor's voice in Hindi.",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "hindi_male_1_v2",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "created": "2025-01-01"
+    },
+    "name": "Trustworthy Advisor",
+    "updated_at": "2026-11-16"
+  }
+]
