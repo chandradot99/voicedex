@@ -1,0 +1,512 @@
+[
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "AssemblyAI Universal-3 Pro realtime model routed through the Inworld STT WebSocket API.",
+    "first_seen": "2026-11-16",
+    "id": "assemblyai/u3-rt-pro",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "language_count_note": "6 languages",
+      "realtime_api": true,
+      "third_party_provider": "assemblyai",
+      "voice_profile": true
+    },
+    "name": "AssemblyAI Universal-3 Pro Streaming (via Inworld)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.45,
+      "source_url": "https://docs.inworld.ai/stt/third-party",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "AssemblyAI streaming model routed through the Inworld STT WebSocket API.",
+    "first_seen": "2026-11-16",
+    "id": "assemblyai/universal-3-5-pro",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "language_count_note": "18 languages",
+      "realtime_api": true,
+      "third_party_provider": "assemblyai",
+      "voice_profile": true
+    },
+    "name": "AssemblyAI Universal-3.5 Pro (via Inworld)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.21,
+      "source_url": "https://docs.inworld.ai/stt/third-party",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "OpenAI Whisper Large v3 served by Groq through the Inworld STT API (sync only).",
+    "first_seen": "2026-11-16",
+    "id": "groq/whisper-large-v3",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "language_count_note": "100+",
+      "third_party_provider": "groq",
+      "voice_profile": true
+    },
+    "name": "Whisper Large v3 (via Groq)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "10-second minimum per request",
+      "price_usd": 0.111,
+      "source_url": "https://docs.inworld.ai/stt/third-party",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Inworld's own STT model for live voice agents, returning voice-profile signals (age, gender, emotion, accent) with the transcript.",
+    "first_seen": "2026-11-16",
+    "id": "inworld/inworld-stt-1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "yue",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "fil",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "mk",
+      "ms",
+      "fa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "th",
+      "tr",
+      "vi"
+    ],
+    "meta": {
+      "async_max_upload_mb": 512,
+      "recommended_sample_rate_hz": 16000,
+      "speaker_diarization": "experimental",
+      "sync_encodings": [
+        "LINEAR16",
+        "MP3",
+        "OGG_OPUS",
+        "FLAC",
+        "AUTO_DETECT",
+        "MP4",
+        "WEBM",
+        "MXF"
+      ],
+      "sync_max_upload_mb": 16,
+      "turn_detection": true,
+      "voice_profile": true,
+      "websocket_encodings": [
+        "LINEAR16"
+      ]
+    },
+    "name": "Inworld STT 1",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "On-Demand rate; 400 free minutes on On-Demand",
+      "price_usd": 0.15,
+      "source_url": "https://inworld.ai/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "Creator/Builder/Developer/Growth plans",
+          "price_usd": 0.1,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Soniox realtime v4 model routed through the Inworld STT WebSocket API.",
+    "first_seen": "2026-11-16",
+    "id": "soniox/stt-rt-v4",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "language_count_note": "60+ languages",
+      "realtime_api": true,
+      "third_party_provider": "soniox",
+      "voice_profile": true
+    },
+    "name": "Soniox stt-rt-v4 (via Inworld)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.12,
+      "source_url": "https://docs.inworld.ai/stt/third-party",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Soniox realtime v5 model routed through the Inworld STT WebSocket API.",
+    "first_seen": "2026-11-16",
+    "id": "soniox/stt-rt-v5",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "language_count_note": "60+ languages",
+      "realtime_api": false,
+      "third_party_provider": "soniox",
+      "voice_profile": true
+    },
+    "name": "Soniox stt-rt-v5 (via Inworld)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "price_usd": 0.12,
+      "source_url": "https://docs.inworld.ai/stt/third-party",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Inworld's flagship TTS model with natural-language steering and the strongest multilingual support.",
+    "first_seen": "2026-11-16",
+    "id": "inworld-tts-2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "max_text_chars": 2000,
+    "meta": {
+      "async_max_text_chars": 100000,
+      "delivery_modes": [
+        "STABLE",
+        "BALANCED",
+        "CREATIVE"
+      ],
+      "language_count_note": "200+ languages and locales (623 codes, tiered)",
+      "professional_voice_cloning": "beta",
+      "sample_rate_range_hz": [
+        8000,
+        48000
+      ],
+      "ssml_break_tags": true,
+      "steering": true,
+      "timestamps": true,
+      "ttfb_p90_ms": 100,
+      "visemes": true
+    },
+    "name": "Realtime TTS-2",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "On-Demand rate; monthly plans discounted (see variants); Batch API is 20% cheaper per character",
+      "price_usd": 2.5e-05,
+      "source_url": "https://inworld.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Creator plan",
+          "price_usd": 2e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Builder plan",
+          "price_usd": 1.75e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Developer plan",
+          "price_usd": 1.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Growth plan",
+          "price_usd": 1.25e-05,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "voice_cloning"
+    ],
+    "description": "Inworld's fastest and most cost-efficient TTS model for latency-critical, high-volume workloads.",
+    "first_seen": "2026-11-16",
+    "id": "inworld-tts-2-flash",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_text_chars": 2000,
+    "meta": {
+      "async_max_text_chars": 100000,
+      "language_count_note": "200+ languages and locales",
+      "sample_rate_range_hz": [
+        8000,
+        48000
+      ],
+      "ssml_break_tags": true,
+      "steering": false,
+      "timestamps": true,
+      "ttfb_p90_ms": 20
+    },
+    "name": "Realtime TTS-2 Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "On-Demand rate; monthly plans discounted (see variants); Batch API is 20% cheaper per character",
+      "price_usd": 1.5e-05,
+      "source_url": "https://inworld.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Creator plan",
+          "price_usd": 1e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Builder plan",
+          "price_usd": 9e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Developer plan",
+          "price_usd": 8e-06,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Growth plan",
+          "price_usd": 7e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

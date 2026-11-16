@@ -43,22 +43,26 @@ from naaviq.sync.language import normalize_languages
 
 _VOICES_URL = "https://api.inworld.ai/voices/v1/voices"
 
-_TTS_DOCS_SEED_URLS = ["https://docs.inworld.ai/tts/tts"]
+_TTS_DOCS_SEED_URLS = [
+    "https://docs.inworld.ai/tts/tts-models.md",
+    "https://inworld.ai/pricing",
+    "https://docs.inworld.ai/llms.txt",
+]
 _TTS_MODEL_GUIDANCE = (
-    "Extract Inworld AI TTS models. "
-    "Current models: tts-1.5-max (recommended, <250ms P90), tts-1.5-mini (lowest latency, <130ms P90), "
-    "tts-1-max (legacy), tts-1 (legacy). "
-    "Mark tts-1.5-max as is_default=True. All support streaming. "
-    "15 languages: en, es, fr, ko, nl, zh, de, it, ja, pl, pt, ru, hi, ar, he. "
-    "Use exact model_id values: 'tts-1.5-max', 'tts-1.5-mini', 'tts-1-max', 'tts-1'."
+    "Return every TTS model id the API accepts. Exclude models already shut down; keep deprecated "
+    "models that still work only if a shutdown date is published (eol_date). is_default=true for the "
+    "model the docs recommend for production."
 )
 
-_STT_DOCS_SEED_URLS = ["https://docs.inworld.ai/stt/overview"]
+_STT_DOCS_SEED_URLS = [
+    "https://docs.inworld.ai/stt/overview.md",
+    "https://docs.inworld.ai/stt/third-party.md",
+    "https://docs.inworld.ai/stt/languages.md",
+]
 _STT_MODEL_GUIDANCE = (
-    "Extract Inworld AI STT models. "
-    "Include inworld-stt-1 (English-only, voice profiling with emotion/accent/age/pitch detection) "
-    "and groq-whisper-large-v3 (99+ languages via Groq). "
-    "Mark inworld-stt-1 as is_default=True. Both support streaming."
+    "Return every STT model id the API accepts, including third-party models Inworld routes to "
+    "(exact provider-prefixed ids; record the upstream provider in meta.upstream). is_default=true "
+    "for the model Inworld's own endpoints run by default."
 )
 
 # Inworld accent labels → our accent format
@@ -141,37 +145,30 @@ class InworldAISyncer(ProviderSyncer):
         voices: list[SyncVoice] = []
         for v in voices_data:
             if v.get("source") not in ("SYSTEM", None):
-                # Skip user-cloned voices if any appear
-                pass
+                continue  # user-cloned / workspace voices are private — never publish them
 
             voice_id = v.get("voiceId") or v.get("name")
             if not voice_id:
                 continue
 
-            gender = _parse_gender(v.get("gender"))
-            age = _parse_age(v.get("ageGroup"))
-            accent = _parse_accent_from_tags(v.get("tags") or [])
-
-            lang_code = v.get("langCode", "")
-            languages = normalize_languages([_normalize_lang_code(lang_code)]) if lang_code else ["*"]
-
-            meta: dict = {}
-            if v.get("tags"):
-                meta["tags"] = v["tags"]
-            if v.get("categories"):
-                meta["categories"] = v["categories"]
+            # `languageCode` is already BCP-47 ("hi-IN"); `langCode` is the legacy "HI_IN" form.
+            primary = v.get("languageCode") or _normalize_lang_code(v.get("langCode") or "")
+            extra = [loc.get("languageCode") for loc in (v.get("localizations") or [])
+                     if isinstance(loc, dict) and loc.get("languageCode")]
+            languages = list(dict.fromkeys(normalize_languages([x for x in [primary, *extra] if x])))
 
             voices.append(SyncVoice(
                 voice_id=voice_id,
                 display_name=v.get("displayName") or v.get("name") or voice_id,
-                gender=gender,
+                gender=_parse_gender(v.get("gender")),
                 category="premade",
                 languages=languages,
-                accent=accent,
-                age=age,
+                accent=_parse_accent_from_tags(v.get("tags") or []),
+                age=_parse_age(v.get("ageGroup")),
                 description=v.get("description"),
+                use_cases=list(v.get("categories") or []),
+                tags=list(v.get("tags") or []),
                 compatible_models=["*"],
-                meta=meta,
             ))
         return voices
 
