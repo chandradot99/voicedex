@@ -159,6 +159,12 @@
         a.peer\\/button[aria-current="page"] { font-weight: 500 !important; }
         .group\\/group-button > a.peer\\/button { color: #f2f4f7 !important; font-weight: 600 !important; }
         a.peer\\/button .sidebar-heading-type { opacity: 0.7; }
+        /* Scalar overlays a brighter, offset segment on the nesting line beside the current item; the fill already
+           marks it, so drop the segment and keep one continuous line. */
+        .bg-sidebar-indent-border-active { display: none !important; }
+        /* The line is drawn per item and the pieces overlap by a few px; a translucent colour doubles at each overlap
+           (visible joints), so use the equivalent opaque colour. */
+        .scalar-sidebar-indent-border { background: #1f2229 !important; width: 1px !important; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
         .scalar-client h3,
         .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
