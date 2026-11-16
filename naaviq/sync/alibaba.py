@@ -11,15 +11,15 @@ China-mainland-only models (e.g. CosyVoice in Beijing) are excluded.
 from naaviq.sync.docs_only import DocsOnlySyncer
 
 _B = "https://www.alibabacloud.com/help/en/model-studio/"
-_COMMON = [_B + "models", _B + "model-pricing"]
+_COMMON = [_B + "models", _B + "model-pricing", _B + "model-depreciation.md"]
 
 
 class AlibabaSyncer(DocsOnlySyncer):
     provider_id = "alibaba"
-    stt_docs = _COMMON + [_B + "qwen-asr-api-reference"]
-    tts_docs = _COMMON + [_B + "qwen-tts"]
-    sts_docs = _COMMON + [_B + "realtime"]
-    voices_docs = [_B + "qwen-tts-voice-list", _B + "qwen-tts"]
+    stt_docs = _COMMON + [_B + "asr-model", _B + "qwen-asr-api-reference"]
+    tts_docs = _COMMON + [_B + "tts-model", _B + "non-realtime-tts-user-guide"]
+    sts_docs = _COMMON + [_B + "s2s-model", _B + "realtime", _B + "qwen-audio-realtime-user-guides"]
+    voices_docs = [_B + "qwen-audio-tts-voice-list", _B + "qwen-tts-voice-list", _B + "cosyvoice-voice-list"]
     _INTL = (" Only models available in the international deployment (not China-mainland-only). Include dated "
              "snapshots only if the docs list them as callable ids; moving names (e.g. without a date) that the "
              "docs say point to a snapshot get meta.alias_of. Retirement dates → eol_date only when published "

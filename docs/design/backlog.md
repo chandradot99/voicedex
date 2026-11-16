@@ -35,6 +35,8 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 
 - **Soniox pricing** — not in the API. soniox.com/pricing: STT real-time $0.12/h, async $0.10/h; TTS ~$0.70/h generated audio.
 
+- **Alibaba Jan 19, 2027 retirement batch** — notice id=2217 (alibabacloud.com/notice/detail?id=2217) is JS-rendered and wasn't readable headless; check whether any synced speech models are in it and set `eol_date`.
+
 ## Product
 - Homepage + catalog UI, project rename, npm/PyPI packages, changelog/RSS of data changes, benchmarks, Pro tier.
 - Deploy v2 (needs user sign-off: Railway config change, Neon can be retired).

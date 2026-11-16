@@ -1,0 +1,4572 @@
+[
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search (cost-optimized tier).",
+    "family": "qwen-audio-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.0-realtime-flash",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "zh",
+      "yue",
+      "wuu"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Mandarin",
+        "Cantonese",
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Shanghainese",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "default_voice": "longanqian",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_audio": "pcm 16 kHz 16-bit mono",
+      "output_audio": "pcm 24 kHz 16-bit mono",
+      "voice_cloning": "Beijing region only",
+      "web_search": true
+    },
+    "name": "Qwen-Audio 3.0 Realtime Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International), USD per token (listed per million tokens); audio tokens = seconds x 12.5; with text+audio output only audio is billed.",
+      "price_usd": 2.3e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text",
+          "price_usd": 2.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 9.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 7e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 1.87e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search.",
+    "family": "qwen-audio-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.0-realtime-plus",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "zh",
+      "yue",
+      "wuu"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Mandarin",
+        "Cantonese",
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Shanghainese",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "default_voice": "longanqian",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_audio": "pcm 16 kHz 16-bit mono",
+      "output_audio": "pcm 24 kHz 16-bit mono",
+      "voice_cloning": "Beijing region only",
+      "web_search": true
+    },
+    "name": "Qwen-Audio 3.0 Realtime Plus",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International), USD per token (listed per million tokens); audio tokens = seconds x 12.5; with text+audio output only audio is billed.",
+      "price_usd": 8e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text",
+          "price_usd": 8e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 6.4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 6.4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 2.4e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search (cost-optimized tier).",
+    "family": "qwen-audio-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-realtime-flash",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "zh",
+      "th",
+      "vi",
+      "ar",
+      "yue",
+      "wuu"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Mandarin",
+        "Cantonese",
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Shanghainese",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "default_voice": "longanqian_v3.1",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_audio": "pcm 16 kHz 16-bit mono",
+      "output_audio": "pcm 24 kHz 16-bit mono",
+      "voice_cloning": "Beijing region only",
+      "web_search": true
+    },
+    "name": "Qwen-Audio 3.1 Realtime Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International), USD per token (listed per million tokens); audio tokens = seconds x 12.5; with text+audio output only audio is billed. Free quota valid 90 days.",
+      "price_usd": 2.3e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text",
+          "price_usd": 2.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 9.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 7e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 1.87e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search.",
+    "family": "qwen-audio-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-realtime-plus",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "zh",
+      "th",
+      "vi",
+      "ar",
+      "yue",
+      "wuu"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Mandarin",
+        "Cantonese",
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Shanghainese",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "default_voice": "longanqian_v3.1",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_audio": "pcm 16 kHz 16-bit mono",
+      "output_audio": "pcm 24 kHz 16-bit mono",
+      "voice_cloning": "Beijing region only",
+      "web_search": true
+    },
+    "name": "Qwen-Audio 3.1 Realtime Plus",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International), USD per token (listed per million tokens); audio tokens = seconds x 12.5; with text+audio output only audio is billed. Free quota valid 90 days.",
+      "price_usd": 8e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text",
+          "price_usd": 8e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 6.4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 6.4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 2.4e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Previous-generation Qwen3-Omni real-time model snapshot over WebSocket.",
+    "family": "qwen3-omni-flash-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen3-omni-flash-realtime-2025-09-15",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th"
+    ],
+    "meta": {
+      "audio_tokens": "12.5 tokens/s input and output",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin",
+        "Nanjing",
+        "Shaanxi"
+      ],
+      "default_voice": "Cherry",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ]
+    },
+    "name": "Qwen3-Omni Flash Realtime (2025-09-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens).",
+      "price_usd": 5.2e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text",
+          "price_usd": 5.2e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 4.57e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: image",
+          "price_usd": 9.4e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text (text-only input)",
+          "price_usd": 1.99e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text (multimodal input)",
+          "price_usd": 3.67e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text + audio (audio only billed)",
+          "price_usd": 1.813e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "snapshot_date": "2025-09-15",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "qwen3.5-livetranslate-flash-realtime-2026-05-19",
+    "description": "Real-time speech (and video-assisted) translation model that outputs translated text and speech, with real-time voice cloning of the speaker.",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.5-livetranslate-flash-realtime",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "wuu",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa",
+      "el",
+      "af",
+      "ast",
+      "be",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "ceb",
+      "et",
+      "gl",
+      "gu",
+      "hr",
+      "hu",
+      "jv",
+      "kk",
+      "kn",
+      "ky",
+      "lv",
+      "mk",
+      "ml",
+      "mr",
+      "pa",
+      "ro",
+      "sk",
+      "sl",
+      "sw",
+      "tg",
+      "az",
+      "uk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "language_count": "60 (29 with audio+text output, 31 text-only)",
+      "speech_output_languages": [
+        "en",
+        "zh",
+        "wuu",
+        "fr",
+        "de",
+        "ru",
+        "it",
+        "es",
+        "pt",
+        "ja",
+        "ko",
+        "th",
+        "id",
+        "vi",
+        "ar",
+        "hi",
+        "tr",
+        "fi",
+        "pl",
+        "nl",
+        "cs",
+        "ur",
+        "tl",
+        "sv",
+        "da",
+        "he",
+        "is",
+        "ms",
+        "no",
+        "fa"
+      ],
+      "task": "speech translation",
+      "translation_hotwords": true
+    },
+    "name": "Qwen3.5-LiveTranslate Flash Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens).",
+      "price_usd": 7.5e-06,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: audio",
+          "price_usd": 7.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: image",
+          "price_usd": 5.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 3e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Real-time speech (and video-assisted) translation model that outputs translated text and speech, with real-time voice cloning of the speaker.",
+    "family": "qwen3.5-livetranslate-flash-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.5-livetranslate-flash-realtime-2026-05-19",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "wuu",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa",
+      "el",
+      "af",
+      "ast",
+      "be",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "ceb",
+      "et",
+      "gl",
+      "gu",
+      "hr",
+      "hu",
+      "jv",
+      "kk",
+      "kn",
+      "ky",
+      "lv",
+      "mk",
+      "ml",
+      "mr",
+      "pa",
+      "ro",
+      "sk",
+      "sl",
+      "sw",
+      "tg",
+      "az",
+      "uk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "language_count": "60 (29 with audio+text output, 31 text-only)",
+      "speech_output_languages": [
+        "en",
+        "zh",
+        "wuu",
+        "fr",
+        "de",
+        "ru",
+        "it",
+        "es",
+        "pt",
+        "ja",
+        "ko",
+        "th",
+        "id",
+        "vi",
+        "ar",
+        "hi",
+        "tr",
+        "fi",
+        "pl",
+        "nl",
+        "cs",
+        "ur",
+        "tl",
+        "sv",
+        "da",
+        "he",
+        "is",
+        "ms",
+        "no",
+        "fa"
+      ],
+      "task": "speech translation",
+      "translation_hotwords": true
+    },
+    "name": "Qwen3.5-LiveTranslate Flash Realtime (2026-05-19)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens).",
+      "price_usd": 7.5e-06,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: audio",
+          "price_usd": 7.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: image",
+          "price_usd": 5.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 3e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "snapshot_date": "2026-05-19",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "qwen3.5-omni-flash-realtime-2026-03-15",
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "Qwen3.5-Omni Flash real-time multimodal voice conversation model (stable name).",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.5-omni-flash-realtime",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "nan",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin",
+        "Nanjing",
+        "Shaanxi"
+      ],
+      "context_retention": "80 audio turns / 480 s audio",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_languages": "113 languages and dialects",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text",
+        "audio"
+      ],
+      "web_search": true
+    },
+    "name": "Qwen3.5-Omni Flash Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens).",
+      "price_usd": 5.5e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text/image",
+          "price_usd": 5.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text (multimodal input)",
+          "price_usd": 3.3e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text + audio (audio only billed)",
+          "price_usd": 1.77e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "Dated snapshot of Qwen3.5-Omni Flash Realtime.",
+    "family": "qwen3.5-omni-flash-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.5-omni-flash-realtime-2026-03-15",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "nan",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin",
+        "Nanjing",
+        "Shaanxi"
+      ],
+      "context_retention": "80 audio turns / 480 s audio",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_languages": "113 languages and dialects",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text",
+        "audio"
+      ],
+      "web_search": true
+    },
+    "name": "Qwen3.5-Omni Flash Realtime (2026-03-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens).",
+      "price_usd": 5.5e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text/image",
+          "price_usd": 5.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text (multimodal input)",
+          "price_usd": 3.3e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text + audio (audio only billed)",
+          "price_usd": 1.77e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "snapshot_date": "2026-03-15",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "alias_of": "qwen3.5-omni-plus-realtime-2026-03-15",
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "Qwen3.5-Omni Plus real-time multimodal voice conversation model (stable name).",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.5-omni-plus-realtime",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "nan",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin",
+        "Nanjing",
+        "Shaanxi"
+      ],
+      "context_retention": "100 audio turns / 600 s audio",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_languages": "113 languages and dialects",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text",
+        "audio"
+      ],
+      "web_search": true
+    },
+    "name": "Qwen3.5-Omni Plus Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens). Free quota valid 90 days.",
+      "price_usd": 2.1e-06,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text/image",
+          "price_usd": 2.1e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 1.65e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text (multimodal input)",
+          "price_usd": 1.24e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text + audio (audio only billed)",
+          "price_usd": 6.2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "Dated snapshot of Qwen3.5-Omni Plus Realtime.",
+    "family": "qwen3.5-omni-plus-realtime",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.5-omni-plus-realtime-2026-03-15",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "nan",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin",
+        "Nanjing",
+        "Shaanxi"
+      ],
+      "context_retention": "100 audio turns / 600 s audio",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "function_calling": true,
+      "input_languages": "113 languages and dialects",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text",
+        "audio"
+      ],
+      "web_search": true
+    },
+    "name": "Qwen3.5-Omni Plus Realtime (2026-03-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens).",
+      "price_usd": 2.1e-06,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text/image",
+          "price_usd": 2.1e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 1.65e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text (multimodal input)",
+          "price_usd": 1.24e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text + audio (audio only billed)",
+          "price_usd": 6.2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "snapshot_date": "2026-03-15",
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Real-time speech (and video-assisted) translation model that outputs translated text and speech, with real-time voice cloning of the speaker.",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.8-livetranslate-flash-realtime",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "wuu",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa",
+      "el",
+      "af",
+      "ast",
+      "be",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "ceb",
+      "et",
+      "gl",
+      "gu",
+      "hr",
+      "hu",
+      "jv",
+      "kk",
+      "kn",
+      "ky",
+      "lv",
+      "mk",
+      "ml",
+      "mr",
+      "pa",
+      "ro",
+      "sk",
+      "sl",
+      "sw",
+      "tg",
+      "az",
+      "uk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "language_count": "60 (29 with audio+text output, 31 text-only)",
+      "speech_output_languages": [
+        "en",
+        "zh",
+        "wuu",
+        "fr",
+        "de",
+        "ru",
+        "it",
+        "es",
+        "pt",
+        "ja",
+        "ko",
+        "th",
+        "id",
+        "vi",
+        "ar",
+        "hi",
+        "tr",
+        "fi",
+        "pl",
+        "nl",
+        "cs",
+        "ur",
+        "tl",
+        "sv",
+        "da",
+        "he",
+        "is",
+        "ms",
+        "no",
+        "fa"
+      ],
+      "task": "speech translation",
+      "translation_hotwords": true
+    },
+    "name": "Qwen3.8-LiveTranslate Flash Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens). Free quota valid 90 days.",
+      "price_usd": 7.5e-06,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: audio",
+          "price_usd": 7.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: image",
+          "price_usd": 5.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 3e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Full-duplex real-time omni model that takes text, image, streaming audio and video and returns text and speech, with tools, MCP and web search.",
+    "first_seen": "2026-11-16",
+    "id": "qwen3.8-omni-flash-realtime",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "zh",
+      "yue",
+      "nan",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko",
+      "th",
+      "id",
+      "vi",
+      "ar",
+      "hi",
+      "tr",
+      "fi",
+      "pl",
+      "nl",
+      "cs",
+      "ur",
+      "tl",
+      "sv",
+      "da",
+      "he",
+      "is",
+      "ms",
+      "no",
+      "fa"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "chinese_dialects": [
+        "Sichuan",
+        "Beijing",
+        "Tianjin",
+        "Nanjing",
+        "Shaanxi"
+      ],
+      "default_voice": "Tina",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-api-overview",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash-realtime"
+      ],
+      "function_calling": true,
+      "input_audio": "pcm s16le 16 kHz (1, 2 or 4 channels)",
+      "input_languages": "113 languages and dialects",
+      "max_input_tokens": 196608,
+      "max_session_minutes": 120,
+      "mcp": true,
+      "output_audio": "pcm 24 kHz (session example)",
+      "speech_output_languages": "36 languages and dialects (same as Qwen3.5-Omni-Realtime)",
+      "web_search": true
+    },
+    "name": "Qwen3.8-Omni Flash Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore, USD per token (listed per million tokens); speech output bills both audio and its text. Free quota valid 90 days.",
+      "price_usd": 2.3e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input: text/image/video",
+          "price_usd": 2.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "input: audio",
+          "price_usd": 9.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: text",
+          "price_usd": 7e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output: audio",
+          "price_usd": 1.87e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Fun-ASR asynchronous file transcription for recordings up to 12 hours with speaker diarization.",
+    "first_seen": "2026-11-16",
+    "id": "fun-asr",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "max_audio_seconds": 43200,
+    "meta": {
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "input": "publicly accessible file URL",
+      "max_file_size": "2 GB",
+      "sample_rate": "any",
+      "sensitive_word_filter": true
+    },
+    "name": "Fun-ASR",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 36000.0,
+        "period": "once",
+        "unit": "second"
+      },
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free. Free quota valid 90 days.",
+      "price_usd": 3.5e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "Fun-ASR-Flash synchronous recognition of recordings up to 5 minutes with optional SSE streaming output.",
+    "family": "fun-asr-flash",
+    "first_seen": "2026-11-16",
+    "id": "fun-asr-flash-2026-06-15",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "max_audio_seconds": 300,
+    "meta": {
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "max_file_size": "2 GB",
+      "sample_rate": "any",
+      "sse_output": true
+    },
+    "name": "Fun-ASR Flash (2026-06-15)",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 36000.0,
+        "period": "once",
+        "unit": "second"
+      },
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free. Free quota valid 90 days.",
+      "price_usd": 3.5e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "snapshot_date": "2026-06-15",
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "mp3",
+      "opus",
+      "pcm",
+      "speex",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "Fun-ASR real-time streaming speech recognition.",
+    "first_seen": "2026-11-16",
+    "id": "fun-asr-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "sample_rate": "any",
+      "sensitive_word_filter": true
+    },
+    "name": "Fun-ASR Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 36000.0,
+        "period": "once",
+        "unit": "second"
+      },
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free. Free quota valid 90 days.",
+      "price_usd": 9e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Previous-generation synchronous recognition of short recordings up to 5 minutes.",
+    "family": "qwen-audio-asr",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.0-asr-flash",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "max_audio_seconds": 300,
+    "meta": {
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "max_file_size": "2 GB",
+      "sample_rate": "any"
+    },
+    "name": "Qwen-Audio 3.0 ASR Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free.",
+      "price_usd": 3.5e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Previous-generation asynchronous long-file transcription (up to 12 hours).",
+    "family": "qwen-audio-asr-filetrans",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.0-asr-flash-filetrans",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "max_audio_seconds": 43200,
+    "meta": {
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "input": "publicly accessible file URL",
+      "max_file_size": "2 GB",
+      "sample_rate": "any",
+      "sensitive_word_filter": true
+    },
+    "name": "Qwen-Audio 3.0 ASR Flash Filetrans",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free.",
+      "price_usd": 3.5e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "mp3",
+      "opus",
+      "pcm",
+      "speex",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Previous-generation real-time streaming speech recognition model.",
+    "family": "qwen-audio-asr-streaming",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.0-asr-flash-streaming",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "sample_rate": "any",
+      "sensitive_word_filter": true
+    },
+    "name": "Qwen-Audio 3.0 ASR Flash Streaming",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free.",
+      "price_usd": 9e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Synchronous recognition of short recordings (up to 5 minutes) with optional SSE streaming output, text polishing and speaker diarization.",
+    "family": "qwen-audio-asr",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-asr-flash",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk",
+      "tr",
+      "fa",
+      "mr",
+      "ml",
+      "ne",
+      "ky",
+      "az",
+      "ka",
+      "hy",
+      "sl",
+      "sq",
+      "et",
+      "lv",
+      "lt",
+      "ca",
+      "eu",
+      "gl",
+      "or",
+      "dv",
+      "as",
+      "ku",
+      "tig",
+      "fy",
+      "ba",
+      "be",
+      "tt",
+      "ia",
+      "mhr",
+      "tok"
+    ],
+    "max_audio_seconds": 300,
+    "meta": {
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "input": "URL or Base64 data URI, one file per request",
+      "keep_dialect": true,
+      "max_file_size": "2 GB",
+      "sample_rate": "any",
+      "sse_output": true,
+      "super_hotwords": true,
+      "text_polishing": true
+    },
+    "name": "Qwen-Audio 3.1 ASR Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens). Free quota valid 90 days.",
+      "price_usd": 1.5e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input",
+          "price_usd": 1.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output",
+          "price_usd": 4.7e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Asynchronous transcription of long audio/video files up to 12 hours with speaker diarization and sentence/word timestamps.",
+    "family": "qwen-audio-asr-filetrans",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-asr-flash-filetrans",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "max_audio_seconds": 43200,
+    "meta": {
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "input": "publicly accessible file URL",
+      "keep_dialect": true,
+      "max_file_size": "2 GB",
+      "sample_rate": "any",
+      "sensitive_word_filter": true,
+      "super_hotwords": true
+    },
+    "name": "Qwen-Audio 3.1 ASR Flash Filetrans",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens). Free quota valid 90 days.",
+      "price_usd": 1.5e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input",
+          "price_usd": 1.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output",
+          "price_usd": 4.7e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "mp3",
+      "opus",
+      "pcm",
+      "speex",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Real-time recognition optimized for short spoken input such as dictation and voice messages, returning final sentence results by default.",
+    "family": "qwen-audio-asr-message",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-asr-flash-message",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "keep_dialect": true,
+      "super_hotwords": true,
+      "text_polishing": "disfluency_removal_enabled"
+    },
+    "name": "Qwen-Audio 3.1 ASR Flash Message",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens). Free quota valid 90 days.",
+      "price_usd": 9.3e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input",
+          "price_usd": 9.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output",
+          "price_usd": 7e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "mp3",
+      "opus",
+      "pcm",
+      "speex",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "End-to-end real-time speech recognition with intermediate and final results for live captions, meetings and continuous transcription.",
+    "family": "qwen-audio-asr-streaming",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-asr-flash-streaming",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "nan",
+      "hak",
+      "gan",
+      "hsn",
+      "cjy",
+      "en",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "id",
+      "ms",
+      "fil",
+      "hi",
+      "ar",
+      "fr",
+      "de",
+      "es",
+      "pt",
+      "ru",
+      "it",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "no",
+      "el",
+      "pl",
+      "cs",
+      "hu",
+      "ro",
+      "bg",
+      "hr",
+      "sk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_accents": "Central Plains, Southwestern, Ji-Lu, Jianghuai, Lan-Yin, Jiao-Liao, Northeastern, Beijing, Hong Kong/Taiwan regional Chinese accents",
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "keep_dialect": true,
+      "max_audio": "unlimited (streaming)",
+      "sample_rate": "any",
+      "sensitive_word_filter": true,
+      "super_hotwords": true
+    },
+    "name": "Qwen-Audio 3.1 ASR Flash Streaming",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens). Free quota valid 90 days.",
+      "price_usd": 9.3e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input",
+          "price_usd": 9.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output",
+          "price_usd": 7e-07,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "mkv",
+      "mp3",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "capabilities": [
+      "language_detection"
+    ],
+    "description": "Qwen3-ASR synchronous recognition of recordings up to 5 minutes via OpenAI-compatible or DashScope APIs, with optional streaming output.",
+    "first_seen": "2026-11-16",
+    "id": "qwen3-asr-flash",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "nan",
+      "wuu",
+      "yue",
+      "en",
+      "ja",
+      "de",
+      "ko",
+      "ru",
+      "fr",
+      "pt",
+      "ar",
+      "it",
+      "es",
+      "hi",
+      "id",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "cs",
+      "da",
+      "fil",
+      "fi",
+      "is",
+      "ms",
+      "no",
+      "pl",
+      "sv"
+    ],
+    "max_audio_seconds": 300,
+    "meta": {
+      "chinese_dialects": [
+        "Sichuanese"
+      ],
+      "context_biasing": true,
+      "deployment_regions": [
+        "Singapore",
+        "US (Virginia)"
+      ],
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference"
+      ],
+      "max_file_size": "10 MB",
+      "sample_rate_note": "16 kHz for PCM; other formats any rate, resampled",
+      "sse_output": true,
+      "us_region_note": "US region does not support the OpenAI-compatible mode"
+    },
+    "name": "Qwen3-ASR Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 36000.0,
+        "period": "once",
+        "unit": "second"
+      },
+      "notes": "Singapore (International) and US (Virginia) both $0.000035/second; output free. 36,000-second free quota (Singapore only, valid 90 days).",
+      "price_usd": 3.5e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia",
+      "us"
+    ],
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "amr",
+      "avi",
+      "flac",
+      "flv",
+      "m4a",
+      "mkv",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Qwen3-ASR asynchronous transcription of files up to 12 hours (DashScope async API only).",
+    "first_seen": "2026-11-16",
+    "id": "qwen3-asr-flash-filetrans",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "nan",
+      "wuu",
+      "yue",
+      "en",
+      "ja",
+      "de",
+      "ko",
+      "ru",
+      "fr",
+      "pt",
+      "ar",
+      "it",
+      "es",
+      "hi",
+      "id",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "cs",
+      "da",
+      "fil",
+      "fi",
+      "is",
+      "ms",
+      "no",
+      "pl",
+      "sv"
+    ],
+    "max_audio_seconds": 43200,
+    "meta": {
+      "chinese_dialects": [
+        "Sichuanese"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference"
+      ],
+      "max_file_size": "2 GB",
+      "sample_rate_note": "16 kHz for PCM; other formats any rate, resampled"
+    },
+    "name": "Qwen3-ASR Flash Filetrans",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 36000.0,
+        "period": "once",
+        "unit": "second"
+      },
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free. Free quota valid 90 days.",
+      "price_usd": 3.5e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "language_detection"
+    ],
+    "description": "Qwen3-ASR real-time recognition over WebSocket with Base64 audio in JSON events and server VAD or client-committed turns.",
+    "first_seen": "2026-11-16",
+    "id": "qwen3-asr-flash-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "nan",
+      "wuu",
+      "yue",
+      "en",
+      "ja",
+      "de",
+      "ko",
+      "ru",
+      "fr",
+      "pt",
+      "ar",
+      "it",
+      "es",
+      "hi",
+      "id",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "cs",
+      "da",
+      "fil",
+      "fi",
+      "is",
+      "ms",
+      "no",
+      "pl",
+      "sv"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Sichuanese"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/improve-asr-accuracy",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-realtime-api"
+      ],
+      "timestamps": "not returned"
+    },
+    "name": "Qwen3-ASR Flash Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 36000.0,
+        "period": "once",
+        "unit": "second"
+      },
+      "notes": "Singapore (International deployment scope); billed by input audio duration, output free. Free quota valid 90 days.",
+      "price_usd": 9e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "CosyVoice v3 low-latency speech synthesis with system voices, dialect voices and voice cloning (WebSocket streaming).",
+    "family": "cosyvoice-v3",
+    "first_seen": "2026-11-16",
+    "id": "cosyvoice-v3-flash",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "nan",
+      "wuu",
+      "en",
+      "fr",
+      "de",
+      "ja",
+      "ko",
+      "ru",
+      "pt",
+      "th",
+      "id",
+      "vi"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Henan",
+        "Hubei",
+        "Jiangxi",
+        "Ningxia",
+        "Shanxi",
+        "Shaanxi",
+        "Shandong",
+        "Sichuan",
+        "Tianjin",
+        "Yunnan"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-http-api",
+        "https://www.alibabacloud.com/help/en/model-studio/voice-cloning-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/ssml-latex-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-websocket-api",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ],
+      "http_api": "CosyVoice non-real-time HTTP listed for Beijing only",
+      "language_scope": "languages/dialects for cloned voices; system voices vary",
+      "latex_reading": "Chinese only",
+      "max_text_chars_per_message": 20000,
+      "max_text_chars_per_task": 200000,
+      "voice_design": "Beijing region only",
+      "word_timestamps": "voice-dependent"
+    },
+    "name": "CosyVoice v3 Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 10000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Singapore (International deployment scope); listed as $0.13 per 10,000 characters; each Chinese character counts as 2. Free quota valid 90 days.",
+      "price_usd": 1.3e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "CosyVoice v3 high-quality speech synthesis (WebSocket streaming).",
+    "family": "cosyvoice-v3",
+    "first_seen": "2026-11-16",
+    "id": "cosyvoice-v3-plus",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "nan",
+      "wuu",
+      "en",
+      "fr",
+      "de",
+      "ja",
+      "ko",
+      "ru"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Henan",
+        "Hubei",
+        "Jiangxi",
+        "Ningxia",
+        "Shanxi",
+        "Shaanxi",
+        "Shandong",
+        "Sichuan",
+        "Tianjin",
+        "Yunnan"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-http-api",
+        "https://www.alibabacloud.com/help/en/model-studio/voice-cloning-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/ssml-latex-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-websocket-api",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ],
+      "http_api": "CosyVoice non-real-time HTTP listed for Beijing only",
+      "language_scope": "languages/dialects for cloned voices; system voices vary",
+      "latex_reading": "Chinese only",
+      "max_text_chars_per_message": 20000,
+      "max_text_chars_per_task": 200000,
+      "voice_design": "Beijing region only",
+      "word_timestamps": "voice-dependent"
+    },
+    "name": "CosyVoice v3 Plus",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 10000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Singapore (International deployment scope); listed as $0.26 per 10,000 characters; each Chinese character counts as 2. Free quota valid 90 days.",
+      "price_usd": 2.6e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Previous-generation Qwen-Audio low-latency speech synthesis model.",
+    "family": "qwen-audio-tts",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.0-tts-flash",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "en",
+      "ja",
+      "ko",
+      "ru",
+      "fr",
+      "de",
+      "pt",
+      "th",
+      "id",
+      "vi",
+      "es",
+      "it",
+      "ms",
+      "fil",
+      "ar"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "base_voices": "500+ base voices named qwen-audio-3.0-tts-flash-{suffix} (Excel list)",
+      "chinese_dialects": [
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-http-api",
+        "https://www.alibabacloud.com/help/en/model-studio/voice-cloning-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/ssml-latex-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "emotion_tags": "inline control and nonverbal tags such as [excited], [laughing]",
+      "language_scope": "languages/dialects supported for cloned voices; system-voice languages vary by voice",
+      "max_text_chars_per_websocket_message": 20000,
+      "max_text_chars_per_websocket_task": 200000,
+      "opus_bitrate_kbps": "6-510",
+      "voice_design": "Beijing region only"
+    },
+    "name": "Qwen-Audio 3.0 TTS Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope); listed as $0.15 per 10,000 characters; each Chinese character counts as 2.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      12000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Previous-generation Qwen-Audio high-quality speech synthesis model.",
+    "family": "qwen-audio-tts",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.0-tts-plus",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "en",
+      "ja",
+      "ko",
+      "ru",
+      "fr",
+      "de",
+      "pt",
+      "th",
+      "id",
+      "vi",
+      "es",
+      "it",
+      "ms",
+      "fil",
+      "ar"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "base_voices": "500+ base voices named qwen-audio-3.0-tts-plus-{suffix} (Excel list)",
+      "chinese_dialects": [
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-http-api",
+        "https://www.alibabacloud.com/help/en/model-studio/voice-cloning-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/ssml-latex-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "emotion_tags": "inline control and nonverbal tags such as [excited], [laughing]",
+      "language_scope": "languages/dialects supported for cloned voices; system-voice languages vary by voice",
+      "max_text_chars_per_websocket_message": 20000,
+      "max_text_chars_per_websocket_task": 200000,
+      "opus_bitrate_kbps": "6-510",
+      "voice_design": "Beijing region only"
+    },
+    "name": "Qwen-Audio 3.0 TTS Plus",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope); listed as $0.2 per 10,000 characters; each Chinese character counts as 2.",
+      "price_usd": 2e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      12000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Low-latency speech synthesis for voice assistants and real-time conversations, with system voices, voice cloning, natural-language instructions and emotion tags.",
+    "family": "qwen-audio-tts",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-tts-flash",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "en",
+      "ja",
+      "ko",
+      "ru",
+      "fr",
+      "de",
+      "pt",
+      "th",
+      "id",
+      "vi",
+      "es",
+      "it",
+      "ms",
+      "fil",
+      "ar",
+      "bg",
+      "nl",
+      "hu",
+      "ro",
+      "da",
+      "hr",
+      "el",
+      "cs",
+      "no",
+      "sv",
+      "hi",
+      "sk",
+      "fi",
+      "ur",
+      "sr",
+      "es-MX",
+      "lt",
+      "lv",
+      "tr",
+      "fa",
+      "he",
+      "mn",
+      "sl",
+      "az",
+      "pl",
+      "ca",
+      "km",
+      "pt-BR",
+      "lo",
+      "ka",
+      "af",
+      "ne",
+      "be",
+      "ml",
+      "lb",
+      "sq",
+      "ta",
+      "si",
+      "te",
+      "et",
+      "ceb",
+      "bs",
+      "my",
+      "hy",
+      "la",
+      "is",
+      "mt",
+      "sw",
+      "kk",
+      "crs",
+      "uk"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-http-api",
+        "https://www.alibabacloud.com/help/en/model-studio/voice-cloning-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/ssml-latex-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "emotion_tags": "inline control and nonverbal tags such as [excited], [laughing]",
+      "language_scope": "languages/dialects supported for cloned voices; system-voice languages vary by voice",
+      "max_text_chars_per_websocket_message": 20000,
+      "max_text_chars_per_websocket_task": 200000,
+      "opus_bitrate_kbps": "6-510",
+      "voice_design": "Beijing region only"
+    },
+    "name": "Qwen-Audio 3.1 TTS Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Singapore (International deployment scope), USD per token (listed per million tokens). Free quota valid 90 days.",
+      "price_usd": 2.3e-07,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input",
+          "price_usd": 2.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output",
+          "price_usd": 1.87e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      12000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "High-quality expressive speech synthesis for audiobooks, dubbing and content production, with system and cloned voices and expressive controls.",
+    "family": "qwen-audio-tts",
+    "first_seen": "2026-11-16",
+    "id": "qwen-audio-3.1-tts-plus",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "yue",
+      "wuu",
+      "en",
+      "ja",
+      "ko",
+      "ru",
+      "fr",
+      "de",
+      "pt",
+      "th",
+      "id",
+      "vi",
+      "es",
+      "it",
+      "ms",
+      "fil",
+      "ar"
+    ],
+    "meta": {
+      "also_via": "AOQ (AI over QUIC)",
+      "chinese_dialects": [
+        "Chongqing",
+        "Northeastern",
+        "Gansu",
+        "Guizhou",
+        "Zhejiang",
+        "Hebei",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Jiangxi",
+        "Ningbo",
+        "Ningxia",
+        "Qingdao",
+        "Shaanxi",
+        "Shanxi",
+        "Shandong",
+        "Sichuan",
+        "Yunnan"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-http-api",
+        "https://www.alibabacloud.com/help/en/model-studio/voice-cloning-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/ssml-latex-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "emotion_tags": "inline control and nonverbal tags such as [excited], [laughing]",
+      "language_scope": "languages/dialects supported for cloned voices; system-voice languages vary by voice",
+      "max_text_chars_per_websocket_message": 20000,
+      "max_text_chars_per_websocket_task": 200000,
+      "opus_bitrate_kbps": "6-510",
+      "voice_design": "Beijing region only"
+    },
+    "name": "Qwen-Audio 3.1 TTS Plus",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 10000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Singapore (International deployment scope); listed as $0.3 per 10,000 characters; each Chinese character counts as 2. Free quota valid 90 days.",
+      "price_usd": 3e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      12000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "description": "Qwen3-TTS non-real-time HTTP speech synthesis with multilingual and Chinese dialect system voices.",
+    "family": "qwen3-tts",
+    "first_seen": "2026-11-16",
+    "id": "qwen3-tts-flash",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "wuu",
+      "nan",
+      "yue",
+      "en",
+      "de",
+      "it",
+      "pt",
+      "es",
+      "ja",
+      "ko",
+      "fr",
+      "ru"
+    ],
+    "max_text_chars": 600,
+    "meta": {
+      "chinese_dialects": [
+        "Beijing",
+        "Sichuan",
+        "Nanjing",
+        "Shaanxi",
+        "Tianjin"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-api",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "sse_output": true,
+      "voice_cloning": "not supported",
+      "voice_design": "not supported"
+    },
+    "name": "Qwen3-TTS Flash",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "free_quota": {
+        "amount": 10000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Singapore (International deployment scope); listed as $0.1 per 10,000 characters; each Chinese character counts as 2. Free quota valid 90 days.",
+      "price_usd": 1e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm"
+    ],
+    "description": "Qwen3-TTS real-time WebSocket speech synthesis with incremental text input.",
+    "family": "qwen3-tts",
+    "first_seen": "2026-11-16",
+    "id": "qwen3-tts-flash-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "wuu",
+      "nan",
+      "yue",
+      "en",
+      "de",
+      "it",
+      "pt",
+      "es",
+      "ja",
+      "ko",
+      "fr",
+      "ru"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Beijing",
+        "Sichuan",
+        "Nanjing",
+        "Shaanxi",
+        "Tianjin"
+      ],
+      "deployment_regions": [
+        "Singapore"
+      ],
+      "deployment_scope": "International",
+      "docs_urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-realtime-client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+      ],
+      "free_quota_note": "10,000 characters (2025, after Nov 13 UTC+8)",
+      "voice_cloning": "not supported",
+      "voice_design": "not supported"
+    },
+    "name": "Qwen3-TTS Flash Realtime",
+    "pricing": {
+      "as_of": "2026-11-16",
+      "notes": "Singapore (International deployment scope); listed as $0.13 per 10,000 characters; each Chinese character counts as 2.",
+      "price_usd": 1.3e-05,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-16",
+      "method": "docs",
+      "urls": [
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+        "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+        "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+        "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+        "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-16"
+  }
+]

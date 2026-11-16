@@ -1,0 +1,41 @@
+{
+  "docs_urls": [
+    "https://www.alibabacloud.com/help/en/model-studio/models",
+    "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+    "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+    "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+    "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+    "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+    "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+    "https://www.alibabacloud.com/help/en/model-studio/realtime",
+    "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+    "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+    "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+    "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+  ],
+  "id": "alibaba",
+  "last_synced": "2026-11-16",
+  "name": "Alibaba Cloud Model Studio",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-16",
+    "method": "docs",
+    "urls": [
+      "https://www.alibabacloud.com/help/en/model-studio/models",
+      "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "https://www.alibabacloud.com/help/en/model-studio/model-depreciation.md",
+      "https://www.alibabacloud.com/help/en/model-studio/asr-model",
+      "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+      "https://www.alibabacloud.com/help/en/model-studio/tts-model",
+      "https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+      "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+      "https://www.alibabacloud.com/help/en/model-studio/realtime",
+      "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+      "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-tts-voice-list",
+      "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
+      "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
+    ]
+  }
+}

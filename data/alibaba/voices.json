@@ -1,0 +1,4047 @@
+[
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Abby_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Abby",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c1d.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "An American English young man skilled in cooking",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Aiden",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Aiden",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20251120/tqvufz/Aiden.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Cold like the Russian spirit, yet warm like wool coat lining",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Alek",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Alek",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/mdptyb/Alek.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A magnetic, natural, and steady male voice",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Andre",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Andre",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/mxluqz/Andre.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Andy_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Andy",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c15.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Annie_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Annie",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c1c.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A simple, earthy voice steeped in time and tobacco smoke—slowly unfolding village stories and curiosities",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Arthur",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Arthur",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/vhwuah/Arthur.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Ava_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Ava",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c13.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A playful young woman with a bubbly, mischievous tone",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Bella",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Bella",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/xwducm/Bella.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A powerful, clear voice that brings characters to life—so stirring it makes your blood boil. With heroic grandeur and perfect diction, this voice captures the full spectrum of human expression.",
+    "first_seen": "2026-11-16",
+    "id": "Bellona",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Bellona",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/gkyljp/Bellona.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Beth_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Beth",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c12.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Betty_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Betty",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c11.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A passionate Spanish man",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Bodega",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Bodega",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/qmynug/Bodega.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Brian_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Brian",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c14.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A little girl overflowing with \"cuteness\"",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Bunny",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Bunny",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/sdqbyv/Bunny.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Cally_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Cally",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c10.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A two-dimensional virtual girlfriend",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Chelsie",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Chelsie",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20250804/vwbycc/chelsie.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A sunny, positive, friendly, and natural young woman",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Cherry",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Cherry",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20250804/beuyzk/cherry.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Cindy_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Cindy",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c17.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "David_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "David",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c2b.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A laid-back Italian man",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Dolce",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Dolce",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/fjtmez/Dolce.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Donna_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Donna",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c16.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A young man raised in Beijing’s hutongs",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Dylan",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Beijing"
+      ]
+    },
+    "name": "Beijing - Dylan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/eqwgod/Dylan.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A calm and wise elder—weathered like a pine tree, yet clear-minded as a mirror",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Eldric Sage",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Eldric Sage",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/quzkmc/Eldric+Sage.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Maintains academic rigor while using storytelling techniques to turn complex knowledge into digestible learning modules",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Elias",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Elias",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/dbtznt/Elias.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A romantic French big brother",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Emilien",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Emilien",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/nyzlrq/Emilien.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Emily_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Emily",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c19.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A Sichuanese man from Chengdu who stands out in everyday life",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Eric",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Sichuan"
+      ]
+    },
+    "name": "Sichuan - Eric",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/dpdqsd/Eric.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Eric_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Eric",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c1f.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Standard Mandarin with a slight northern accent. Sunny, warm, energetic, and vibrant",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Ethan",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Ethan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20250804/zdypqw/ethan.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A fast-paced, energetic Shanghai auntie",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Jada",
+    "languages": [
+      "wuu",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Shanghai - Jada",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/krzxbl/Jada.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A premium, cinematic-quality American English female voice",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Jennifer",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Jennifer",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20251120/mpnadj/Jennifer.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A soothing audio spa for your ears",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Kai",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Kai",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/zqidnp/Kai.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A mature-woman voice with rich, memorable rhythm",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Katerina",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Katerina",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20251120/kccink/Katerina.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A sweet Hong Kong girl best friend",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Kiki",
+    "languages": [
+      "yue",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Cantonese - Kiki",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/lkqqwx/Kiki.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Rational at heart, rebellious in detail—a German youth who wears suits and listens to post-punk",
+    "first_seen": "2026-11-16",
+    "id": "Lenn",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Lenn",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/mpidta/Lenn.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A patient yoga teacher",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Li",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Nanjing"
+      ]
+    },
+    "name": "Nanjing - Li",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/ebrusj/Li.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Luca_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Luca",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c1e.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Luna_v3.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Luna",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm-cn/common/audios/6a4b3c2d1e0f9c18.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A blend of intellect and gentleness",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Maia",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Maia",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/louejy/Maia.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Broad face, few words, sincere heart, deep voice—the authentic Shaanxi flavor",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Marcus",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Shaanxi"
+      ]
+    },
+    "name": "Shaanxi - Marcus",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/fqgput/Marcus.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Gentle as spring water, obedient as fresh snow",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Mia",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Mia",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/wismdb/Mia.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A clever, quick-witted young adult—childlike innocence remains, yet wisdom shines through",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Mochi",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Mochi",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/aoggtw/Mochi.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Playful and mischievous, cheering you up",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Momo",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Momo",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/zmzlta/Momo.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A bold and handsome man named Yuebai",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Moon",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Moon",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/tdyybu/Moon.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A flat baseline intonation with precise, clear pronunciation—the most professional news anchor",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Neil",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Neil",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/purdbv/Neil.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A soft, clingy voice like sweet rice cakes—those drawn-out calls of “Big Brother” are so sweet they melt your bones",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Nini",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Nini",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/ouveeu/Nini.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A designer who cannot pronounce retroflex sounds",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Nofish",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Nofish",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/kvyjon/Nofish.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A clever, spirited childhood friend",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Ono Anna",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Ono Anna",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/edztwz/Ono+Anna.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Tianjin-style crosstalk, professional foil",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Peter",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Tianjin"
+      ]
+    },
+    "name": "Tianjin - Peter",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/bqpney/Peter.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A playful, mischievous boy full of childlike wonder—is this your memory of Shin-chan?",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Pip",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Pip",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/snxufz/Pip.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Football poet Radio Gol! Today I’ll commentate on football using my name",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Radio Gol",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Radio Gol",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/hzpoql/Radio+Gol.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A humorous, witty A Qiang providing live chat",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Rocky",
+    "languages": [
+      "yue",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Cantonese - Rocky",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/rtzdyl/Rocky.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A humorous, straightforward, lively Taiwanese guy",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Roy",
+    "languages": [
+      "nan",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Southern Min - Roy",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/wrooid/Roy.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Full of rhythm, bursting with dramatic flair, balancing authenticity and tension",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Ryan",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Ryan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20251120/golfay/Ryan.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A gentle, soothing voice to help you fall asleep faster. Good night, sweet dreams",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Seren",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Seren",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/vatyzh/Seren.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A gentle young woman",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Serena",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Serena",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20250804/jaryjr/serena.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A warm, cheerful, emotionally expressive Korean unnie",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Sohee",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Sohee",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/pbzhwx/Sohee.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A cheerful, outgoing Latin American woman",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Sonrisa",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Sonrisa",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/hijeuk/Sonrisa.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Normally a cloyingly sweet, dazed teenage-girl voice—but when shouting “I represent the moon to defeat you!”, she instantly radiates unwavering love and justice",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Stella",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Stella",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/nopgxn/Stella.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A Sichuan girl sweet enough to melt your heart",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Sunny",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Sichuan"
+      ]
+    },
+    "name": "Sichuan - Sunny",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/edprmh/Sunny.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "A uniquely raspy, smoky voice—just one line evokes armies and heroic tales",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "Vincent",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Vincent",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/kwhrrg/Vincent.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen3-tts-flash",
+      "qwen3-tts-flash-realtime"
+    ],
+    "description": "Confident, cute, and slightly feisty",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "Vivian",
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "de",
+      "ru",
+      "it",
+      "es",
+      "pt",
+      "ja",
+      "ko"
+    ],
+    "name": "Vivian",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/ntpqcm/Vivian.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "30",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Natural and friendly",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanfengyue",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Feng Yue",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/kltmzz/03_longanfengyue.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Social companionship (premium Chinese voice)"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash",
+      "qwen-audio-3.1-tts-plus"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanfengyue_v3.1",
+    "languages": [
+      "zh",
+      "wuu",
+      "yue",
+      "ja",
+      "ko",
+      "fr",
+      "de",
+      "pt",
+      "it",
+      "vi",
+      "id"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Northeastern",
+        "Chongqing",
+        "Shaanxi",
+        "Yunnan",
+        "Ningbo",
+        "Gansu"
+      ],
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Fengyue_v3.1",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash",
+      "cosyvoice-v3-plus"
+    ],
+    "description": "Energetic and cheerful female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanhuan",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anhuan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/ytqqve/longanhuan.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash",
+      "qwen-audio-3.1-tts-plus"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanhuan_v3.1",
+    "languages": [
+      "zh",
+      "wuu",
+      "yue",
+      "ja",
+      "ko",
+      "fr",
+      "de",
+      "pt",
+      "it",
+      "vi",
+      "id"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Northeastern",
+        "Chongqing",
+        "Shaanxi",
+        "Yunnan",
+        "Ningbo",
+        "Gansu"
+      ],
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Huan_v3.1",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanhuan_v3.6",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Huan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/zkeglb/09_longanhuan.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Fresh and crisp male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longanlang_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anlang",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/icqser/longanlang_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-35",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Crisp and composed female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanli_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anli",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/xbnttu/longanli_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-realtime-flash",
+      "qwen-audio-3.0-realtime-plus",
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Cute and sweet",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanlingxi",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Ling Xi",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/nawogi/05_longanlingxi.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-realtime-flash",
+      "qwen-audio-3.0-realtime-plus",
+      "qwen-audio-3.0-tts-plus"
+    ],
+    "description": "Warm and empathetic",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanlingxin",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Ling Xin",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/fadenx/01_longanlingxin.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Social companionship (flagship voice)"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash",
+      "qwen-audio-3.1-tts-plus"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanlingxin_v3.1",
+    "languages": [
+      "zh",
+      "wuu",
+      "yue",
+      "ja",
+      "ko",
+      "fr",
+      "de",
+      "pt",
+      "it",
+      "vi",
+      "id"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Northeastern",
+        "Chongqing",
+        "Shaanxi",
+        "Yunnan",
+        "Ningbo",
+        "Gansu"
+      ],
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Lingxin_v3.1",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-realtime-flash",
+      "qwen-audio-3.0-realtime-plus",
+      "qwen-audio-3.0-tts-plus"
+    ],
+    "description": "Bright and cheerful",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longanlufeng",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Lu Feng",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/elkvlj/02_longanlufeng.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "18-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Innocent young girl",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanmin_v3",
+    "languages": [
+      "nan",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anmin",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/yebors/longanmin_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-realtime-flash",
+      "qwen-audio-3.0-realtime-plus"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "longanqian",
+    "meta": {
+      "note": "default voice of Qwen-Audio 3.0 realtime"
+    },
+    "name": "longanqian",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus"
+    ],
+    "first_seen": "2026-11-16",
+    "id": "longanqian_v3.1",
+    "meta": {
+      "note": "default voice of Qwen-Audio 3.1 realtime"
+    },
+    "name": "longanqian_v3.1",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Approachable and lively female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanqin_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anqin",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/urfowe/longanqin_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-35",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Elegant and intellectual female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanwen_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anwen",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/rdkhro/longanwen_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "22",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-realtime-flash",
+      "qwen-audio-3.0-realtime-plus",
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Friendly and lively",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanxiaoxin",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Xiao Xin",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/utekvx/07_longanxiaoxin.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "30-40",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Classic female livestreamer",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanxuan_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anxuan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/eddmja/longanxuan_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-35",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Elegant and classy female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanya_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anya",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/kgfoit/longanya_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash",
+      "cosyvoice-v3-plus"
+    ],
+    "description": "Sunny young man",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longanyang",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anyang",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/nprqtg/longanyang.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Social companionship (Benchmark voice)"
+    ]
+  },
+  {
+    "age": "30",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Proud and regal",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longanyuanfei",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long An Yuan Fei",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/stpzsr/04_longanyuanfei.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-35",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Energetic Cantonese male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longanyue_v3",
+    "languages": [
+      "yue",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anyue",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/jdislj/longanyue_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "30-35",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Homey and warm-hearted male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longanyun_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anyun",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/rxjsdp/longanyun_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-35",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Wise and mature young male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longanzhi_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Anzhi",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/lziamx/longanzhi_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "40",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Sichuan-accented middle-aged male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longchuanshu_v3.6",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Chuan Shu",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/tjfewt/12_longchuanshu.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "15-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Delicate and talented female voice",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longdaiyu_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Daiyu",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/fdtply/longdaiyu_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Classic Monkey King",
+    "first_seen": "2026-11-16",
+    "id": "longhouge_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Houge",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/othdny/longhouge_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Energetic and sweet female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longhua_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Hua",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/vzvrwx/longhua_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "6-10",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Innocent and lively girl",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longhuhu_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Huhu",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/ernvpv/longhuhu_v3.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Child's voice (Benchmark voice)"
+    ]
+  },
+  {
+    "age": "8",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Mischievous young boy",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longhuohuo_v3.6",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Huo Huo",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/dgukuk/11_longhuohuo.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Character / gaming voice (premium Chinese voice)"
+    ]
+  },
+  {
+    "age": "10",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Sunny and mischievous boy",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longjielidou_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Jielidou",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/rvojrw/longjielidou_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "5",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Innocent young boy",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longjielidou_v3.6",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Jie Li Dou",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/ndnubo/08_longjielidou.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Child companion / smart toy (premium child voice)"
+    ]
+  },
+  {
+    "age": "20-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Dorky and cute robot",
+    "first_seen": "2026-11-16",
+    "id": "longjiqi_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Jiqi",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/zduiuh/longjiqi_v3.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Short video voice-over"
+    ]
+  },
+  {
+    "age": "60+",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "World-weary old man",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longlaobo_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Laobo",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/ywqosk/longlaobo_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "60+",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Worldly and calm auntie",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longlaoyi_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Laoyi",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/qtkzyl/longlaoyi_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "6-15",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Sunny boy's voice",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longniuniu_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Niuniu",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/bxxxgf/longniuniu_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "5",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Soft and adorable",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longpaopao_v3.6",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Pao Pao",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/cuybxy/13_longpaopao.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-35",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Authentic Northern Shaanxi male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longshange_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Shaanxi dialect"
+      ],
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Shange",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/kqkbxb/longshange_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "6-15",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Dramatic child's voice",
+    "first_seen": "2026-11-16",
+    "id": "longshanshan_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Shanshan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/bnpawk/longshanshan_v3.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Consumer electronics - Children's audiobooks"
+    ]
+  },
+  {
+    "age": "20-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Delicate and soft-spoken female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longwan_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Wan",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/dzyrht/longwan_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Delicate and soft-spoken female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longwanjun_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Wanjun",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/fobiyi/longwanjun_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Free-spirited and energetic male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longyichen_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Yichen",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/ajirmw/longyichen_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Elegant and intellectual female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longyingmu_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Yingmu",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/gyxkxi/longyingmu_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "25-30",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Gentle and composed female",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longyingtao_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Yingtao",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/wzqppn/longyingtao_v3.mp3",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Sweet-voiced saleswoman",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "longyingxiao_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Yingxiao",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/njfhhg/longyingxiao_v3.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Telesales"
+    ]
+  },
+  {
+    "age": "20-25",
+    "category": "premade",
+    "compatible_models": [
+      "cosyvoice-v3-flash"
+    ],
+    "description": "Young and inexperienced male",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "longyingxun_v3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Long Yingxun",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260603/pksxik/longyingxun_v3.mp3",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Customer service"
+    ]
+  },
+  {
+    "age": "28",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Intelligent-sounding American accent",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "loongeva_v3.6",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": false,
+      "supports_timestamps": false
+    },
+    "name": "loongeva",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/qbiizm/02_loongeva.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "28",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Calm and friendly American accent",
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "loongjohn",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": false,
+      "supports_timestamps": false
+    },
+    "name": "loongjohn",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/llojgb/03_loongjohn_1.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "age": "20",
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.0-tts-flash"
+    ],
+    "description": "Warm British accent",
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "loongmary",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "supports_instruction": false,
+      "supports_ssml": false,
+      "supports_timestamps": false
+    },
+    "name": "loongmary",
+    "preview_url": "https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/en-US/20260706/fuyfko/01_loongmary.wav",
+    "updated_at": "2026-11-16",
+    "use_cases": [
+      "Social companionship / voice assistant (premium English voice)"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-aava_fi",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "local_name": "Aava",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Aava",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9338.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-alba_ca",
+    "languages": [
+      "ca"
+    ],
+    "meta": {
+      "local_name": "Alba",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Alba",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f934b.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-arai_kk",
+    "languages": [
+      "kk"
+    ],
+    "meta": {
+      "local_name": "Арай",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Arai",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f935c.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-aruna_si",
+    "languages": [
+      "si"
+    ],
+    "meta": {
+      "local_name": "අරුණ",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Aruna",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9347.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-aurora_pt_br",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "local_name": "Aurora",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Aurora",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9349.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-ausra_lt",
+    "languages": [
+      "lt"
+    ],
+    "meta": {
+      "local_name": "Aušra",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Ausra",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f933c.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-ava_fa",
+    "languages": [
+      "fa"
+    ],
+    "meta": {
+      "local_name": "آوا",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Ava",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9331.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-avgi_el",
+    "languages": [
+      "el"
+    ],
+    "meta": {
+      "local_name": "Αυγή",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Avgi",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9326.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-ayalguu_mn",
+    "languages": [
+      "mn"
+    ],
+    "meta": {
+      "local_name": "Аялгуу",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Ayalguu",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9337.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-birk_da",
+    "languages": [
+      "da"
+    ],
+    "meta": {
+      "local_name": "Birk",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Birk",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9320.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-birta_is",
+    "languages": [
+      "is"
+    ],
+    "meta": {
+      "local_name": "Birta",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Birta",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f935f.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-bituon_ceb",
+    "languages": [
+      "ceb"
+    ],
+    "meta": {
+      "local_name": "Bituon",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Bituon",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9344.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-brisa_es_mx",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "local_name": "Brisa",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Brisa",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f933d.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-dao_lo",
+    "languages": [
+      "lo"
+    ],
+    "meta": {
+      "local_name": "ດາວ",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Dao",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9348.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-deniz_tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "local_name": "Deniz",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Deniz",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9332.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-drita_sq",
+    "languages": [
+      "sq"
+    ],
+    "meta": {
+      "local_name": "Drita",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Drita",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9341.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-glimma_sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "local_name": "Glimma",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Glimma",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f933b.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-hajnal_hu",
+    "languages": [
+      "hu"
+    ],
+    "meta": {
+      "local_name": "Hajnal",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Hajnal",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9322.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-ishiq_az",
+    "languages": [
+      "az"
+    ],
+    "meta": {
+      "local_name": "İşıq",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Ishiq",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9335.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-iskra_sk",
+    "languages": [
+      "sk"
+    ],
+    "meta": {
+      "local_name": "Iskra",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Iskra",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9339.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-jasna_sr",
+    "languages": [
+      "sr"
+    ],
+    "meta": {
+      "local_name": "Јасна",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Jasna",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f933e.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-jitrenka_cs",
+    "languages": [
+      "cs"
+    ],
+    "meta": {
+      "local_name": "Jitřenka",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Jitrenka",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9325.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-kiran_ne",
+    "languages": [
+      "ne"
+    ],
+    "meta": {
+      "local_name": "किरण",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Kiran",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f934d.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-layaung_my",
+    "languages": [
+      "my"
+    ],
+    "meta": {
+      "local_name": "လရောင်",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "LaYaung",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f935a.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-lente_af",
+    "languages": [
+      "af"
+    ],
+    "meta": {
+      "local_name": "Lente",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Lente",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f934e.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-linde_nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "local_name": "Linde",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Linde",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9323.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-lipa_hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "local_name": "Lipa",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Lipa",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9327.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-lumen_la",
+    "languages": [
+      "la"
+    ],
+    "meta": {
+      "local_name": "Lumen",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Lumen",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9358.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-luys_hy",
+    "languages": [
+      "hy"
+    ],
+    "meta": {
+      "local_name": "Լույս",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Luys",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9359.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-nila_ta",
+    "languages": [
+      "ta"
+    ],
+    "meta": {
+      "local_name": "நிலா",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Nila",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9340.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-nilaav_ml",
+    "languages": [
+      "ml"
+    ],
+    "meta": {
+      "local_name": "നിലാവ്",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Nilaav",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9343.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-nuru_sw",
+    "languages": [
+      "sw"
+    ],
+    "meta": {
+      "local_name": "Nuru",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Nuru",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f935d.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-or_he",
+    "languages": [
+      "he"
+    ],
+    "meta": {
+      "local_name": "אור",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Or",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9330.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-rasa_lv",
+    "languages": [
+      "lv"
+    ],
+    "meta": {
+      "local_name": "Rasa",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Rasa",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9333.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-romduol_km",
+    "languages": [
+      "km"
+    ],
+    "meta": {
+      "local_name": "រំដួល",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Romduol",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f934a.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-sade_et",
+    "languages": [
+      "et"
+    ],
+    "meta": {
+      "local_name": "Säde",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Sade",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9345.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-sahar_ur",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "local_name": "سحر",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Sahar",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f933f.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-senin_ro",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "local_name": "Senin",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Senin",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9321.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-solglimt_nn",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "local_name": "Solglimt",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Solglimt",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9324.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-staer_lb",
+    "languages": [
+      "lb"
+    ],
+    "meta": {
+      "local_name": "Stär",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Staer",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9342.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-svar_hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "local_name": "स्वर",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Svar",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f933a.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-tsiskari_ka",
+    "languages": [
+      "ka"
+    ],
+    "meta": {
+      "local_name": "ცისკარი",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Tsiskari",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f934f.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-vedrina_bs",
+    "languages": [
+      "bs"
+    ],
+    "meta": {
+      "local_name": "Vedrina",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Vedrina",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f935b.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-vennela_te",
+    "languages": [
+      "te"
+    ],
+    "meta": {
+      "local_name": "వెన్నెల",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Vennela",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9346.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-zarja_sl",
+    "languages": [
+      "sl"
+    ],
+    "meta": {
+      "local_name": "Zarja",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Zarja",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9336.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-zerniq_mt",
+    "languages": [
+      "mt"
+    ],
+    "meta": {
+      "local_name": "Żerniq",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Zerniq",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f935e.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-zetwal_crs",
+    "languages": [
+      "crs"
+    ],
+    "meta": {
+      "local_name": "Zetwal",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Zetwal",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9353.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-zora_bg",
+    "languages": [
+      "bg"
+    ],
+    "meta": {
+      "local_name": "Зора",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Zora",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f932c.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-zoria_uk",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "local_name": "Зоря",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Zoria",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9352.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "female",
+    "id": "qwen-audio-3.1-tts-flash-zorka_be",
+    "languages": [
+      "be"
+    ],
+    "meta": {
+      "local_name": "Зорка",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Zorka",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f934c.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "qwen-audio-3.1-tts-flash-zorza_pl",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "local_name": "Zorza",
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Zorza",
+    "preview_url": "https://g-adoc.alcasset.com/media/maas_docs/sfm/common/audios/6a4b3c2d1e0f9334.wav",
+    "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "qwen-audio-3.1-realtime-flash",
+      "qwen-audio-3.1-realtime-plus",
+      "qwen-audio-3.1-tts-flash",
+      "qwen-audio-3.1-tts-plus"
+    ],
+    "first_seen": "2026-11-16",
+    "gender": "male",
+    "id": "xunanchuan_v3.1",
+    "languages": [
+      "zh",
+      "wuu",
+      "yue",
+      "ja",
+      "ko",
+      "fr",
+      "de",
+      "pt",
+      "it",
+      "vi",
+      "id"
+    ],
+    "meta": {
+      "chinese_dialects": [
+        "Northeastern",
+        "Chongqing",
+        "Shaanxi",
+        "Yunnan",
+        "Ningbo",
+        "Gansu"
+      ],
+      "supports_instruction": true,
+      "supports_ssml": true,
+      "supports_timestamps": true
+    },
+    "name": "Xu Nanchuan",
+    "updated_at": "2026-11-16"
+  }
+]
