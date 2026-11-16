@@ -153,6 +153,8 @@
         a.peer\\/button { position: relative; isolation: isolate; border-radius: 8px !important; padding: 7px 10px !important; background: transparent !important; box-shadow: none !important; }
         a.peer\\/button::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 8px; background: transparent; }
         a.peer\\/button:has(.scalar-sidebar-indent-border)::before { left: 24px; }
+        /* Nested items: 10px between the fill's left edge and the text, same inset as group headings. */
+        a.peer\\/button:has(.scalar-sidebar-indent-border) .group\\/button-label { padding-left: 4px; }
         a.peer\\/button:hover::before { background: #11141a; }
         a.peer\\/button[aria-current="page"]::before { background: #171b23; }
         a.peer\\/button:hover, a.peer\\/button[aria-current="page"] { color: #f2f4f7 !important; }
