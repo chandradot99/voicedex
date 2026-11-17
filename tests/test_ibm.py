@@ -1,6 +1,6 @@
 """IBM Watson: discontinued previous-gen STT dropped; LSMs kept; voices grouped into tiers."""
 
-from naaviq.sync.ibm import IBMSyncer
+from voicedex.sync.ibm import IBMSyncer
 
 STT = [
     {"name": "en-US", "rate": 16000, "language": "en-US", "description": "Large US English model",

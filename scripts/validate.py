@@ -19,10 +19,10 @@ sys.path.insert(0, str(ROOT))
 
 from pydantic import ValidationError  # noqa: E402
 
-from naaviq.catalog.files import DEFAULT_DATA_DIR, _dump, _record_json, read_provider_dir, sort_models, sort_voices  # noqa: E402
-from naaviq.catalog.merge import derive_provider_type  # noqa: E402
-from naaviq.catalog.schema import Model, Provider, Voice  # noqa: E402
-from naaviq.sync.registry import BY_ID  # noqa: E402
+from voicedex.catalog.files import DEFAULT_DATA_DIR, _dump, _record_json, read_provider_dir, sort_models, sort_voices  # noqa: E402
+from voicedex.catalog.merge import derive_provider_type  # noqa: E402
+from voicedex.catalog.schema import Model, Provider, Voice  # noqa: E402
+from voicedex.sync.registry import BY_ID  # noqa: E402
 
 SCHEMA_DIR = ROOT / "schema"
 
@@ -41,7 +41,7 @@ def check_provider(pdir: Path) -> list[str]:
         return [f"{pdir.name}: {e}"]
 
     if pd.provider.id not in BY_ID:
-        errs.append(f"{pdir.name}: not registered in naaviq/sync/registry.py")
+        errs.append(f"{pdir.name}: not registered in voicedex/sync/registry.py")
 
     for kind, recs, key in (("model", pd.models, lambda r: (r.type, r.id)), ("voice", pd.voices, lambda r: r.id)):
         seen = set()
@@ -91,7 +91,7 @@ def main() -> int:
     if args.schema:
         write_json_schemas()
     if args.fix:
-        from naaviq.catalog.files import write_provider_dir
+        from voicedex.catalog.files import write_provider_dir
         for pdir in sorted(p for p in args.data_dir.iterdir() if p.is_dir()):
             write_provider_dir(pdir, read_provider_dir(pdir))
 

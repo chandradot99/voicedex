@@ -1,6 +1,6 @@
 """Cartesia /voices mapping under Cartesia-Version 2026-08-14 (access + accents[] fields)."""
 
-from naaviq.sync.cartesia import _is_public, _to_sync_voice
+from voicedex.sync.cartesia import _is_public, _to_sync_voice
 
 ITEM = {
     "id": "v1", "name": "Daniel", "gender": "masculine", "description": "Clear assistant voice",

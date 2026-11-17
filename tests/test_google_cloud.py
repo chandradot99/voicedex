@@ -1,7 +1,7 @@
 """Google Cloud: voice tier/persona mapping and STT Locations API enrichment."""
 
-from naaviq.sync.base import SyncModel
-from naaviq.sync.google_cloud import GoogleCloudSyncer, _enrich_stt_models, _location_region
+from voicedex.sync.base import SyncModel
+from voicedex.sync.google_cloud import GoogleCloudSyncer, _enrich_stt_models, _location_region
 
 
 def test_voice_tiers_and_gemini_personas():
@@ -47,7 +47,7 @@ def test_enrich_api_authoritative_docs_kept():
 
 
 def test_adc_not_opted_in_returns_none(monkeypatch):
-    from naaviq.sync import google_cloud
+    from voicedex.sync import google_cloud
     monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
     assert google_cloud._adc_token() == (None, None)
 
@@ -56,7 +56,7 @@ def test_adc_expired_raises_loudly(monkeypatch):
     import google.auth
     import pytest
 
-    from naaviq.sync import google_cloud
+    from voicedex.sync import google_cloud
 
     def boom(**_kw):
         raise google.auth.exceptions.RefreshError("token expired")

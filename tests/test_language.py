@@ -2,7 +2,7 @@
 
 import pytest
 
-from naaviq.sync.language import normalize_language, normalize_languages
+from voicedex.sync.language import normalize_language, normalize_languages
 
 
 @pytest.mark.parametrize(
@@ -59,7 +59,7 @@ async def test_get_with_retry_honours_retry_after(monkeypatch):
 
     import httpx
 
-    from naaviq.sync.base import get_with_retry
+    from voicedex.sync.base import get_with_retry
 
     calls, slept = [], []
     responses = [httpx.Response(429, headers={"Retry-After": "3"}), httpx.Response(503), httpx.Response(200)]

@@ -29,8 +29,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from naaviq.catalog.files import read_provider_dir, write_provider_dir  # noqa: E402
-from naaviq.catalog.schema import MODEL_CAPABILITIES, TTS_CAPABILITIES, Pricing  # noqa: E402
+from voicedex.catalog.files import read_provider_dir, write_provider_dir  # noqa: E402
+from voicedex.catalog.schema import MODEL_CAPABILITIES, TTS_CAPABILITIES, Pricing  # noqa: E402
 
 CACHE = ROOT / ".sync-cache"
 

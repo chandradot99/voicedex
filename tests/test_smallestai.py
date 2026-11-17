@@ -1,7 +1,7 @@
 """Smallest AI: voices per model endpoint → real compatible_models; language names via shared map."""
 
-from naaviq.sync.language import language_from_name
-from naaviq.sync.smallestai import SmallestAISyncer, _slug
+from voicedex.sync.language import language_from_name
+from voicedex.sync.smallestai import SmallestAISyncer, _slug
 
 
 def test_slug():

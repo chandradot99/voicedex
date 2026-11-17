@@ -1,6 +1,6 @@
 """MiniMax voice mapping: language from voice_id prefix, accent + gender from MiniMax's descriptions."""
 
-from naaviq.sync.minimax import MinimaxSyncer
+from voicedex.sync.minimax import MinimaxSyncer
 
 
 def test_voice_mapping():

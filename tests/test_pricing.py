@@ -8,8 +8,8 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from naaviq.catalog.files import ProviderData, read_provider_dir, write_provider_dir
-from naaviq.catalog.schema import Model, Pricing, Provider
+from voicedex.catalog.files import ProviderData, read_provider_dir, write_provider_dir
+from voicedex.catalog.schema import Model, Pricing, Provider
 
 
 def test_currency_rules():

@@ -1,6 +1,6 @@
 """Deepgram /v1/models parsing — per-language entries, junk IDs, defaults."""
 
-from naaviq.sync.deepgram import DeepgramSyncer
+from voicedex.sync.deepgram import DeepgramSyncer
 
 
 def _stt(canonical, lang, streaming, batch, arch="nova-3"):

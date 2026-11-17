@@ -1,7 +1,7 @@
 """Speechify voice mapping: per-model `name` field and per-model locales."""
 
-from naaviq.sync.base import SyncModel
-from naaviq.sync.speechify import SpeechifySyncer
+from voicedex.sync.base import SyncModel
+from voicedex.sync.speechify import SpeechifySyncer
 
 MODELS = [SyncModel("simba-3.5", "Simba 3.5", "tts"), SyncModel("simba-3.0", "Simba 3.0", "tts")]
 

@@ -1,6 +1,6 @@
 """Azure: voice-name → model family, family models, STT base-model modes."""
 
-from naaviq.sync.azure import _stt_models, _to_voice, _tts_models, voice_family
+from voicedex.sync.azure import _stt_models, _to_voice, _tts_models, voice_family
 
 VOICES = [
     {"ShortName": "en-US-AvaNeural", "DisplayName": "Ava", "Gender": "Female", "Locale": "en-US",

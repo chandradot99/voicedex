@@ -1,4 +1,4 @@
-# Railway configuration for naaviq-voice-providers (public registry API)
+# Railway configuration for voicedex (public registry API)
 # https://docs.railway.com/reference/config-as-code
 #
 # No database: the API serves data/ from the image. No required env vars.

@@ -1,6 +1,6 @@
 """Soniox: aliases folded into targets; docs removal dates → eol_date; shared voices only."""
 
-from naaviq.sync.soniox import parse_removals, parse_stt_models, parse_tts_models, parse_voices
+from voicedex.sync.soniox import parse_removals, parse_stt_models, parse_tts_models, parse_voices
 
 LANGS = [{"code": "en", "name": "English"}, {"code": "hi", "name": "Hindi"}]
 STT = [

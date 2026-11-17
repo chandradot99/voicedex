@@ -1,6 +1,6 @@
 """Neuphonic voice mapping: gender + accent from tags, underscore language codes."""
 
-from naaviq.sync.neuphonic import NeurophonicSyncer
+from voicedex.sync.neuphonic import NeurophonicSyncer
 
 
 def test_voice_mapping():

@@ -1,6 +1,6 @@
 """Murf voice mapping: non-BCP-47 locales, gender suffix in names, age in `description`."""
 
-from naaviq.sync.murf import MurfAISyncer
+from voicedex.sync.murf import MurfAISyncer
 
 
 def test_voice_mapping():

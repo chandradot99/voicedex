@@ -1,31 +1,32 @@
-# naaviq-voice-providers
+# Voicedex
 
 Open catalog of voice AI providers — STT/TTS/speech-to-speech models, voices, languages, capabilities,
-pricing, regions. **Data lives in git (`data/`), served by a read-only FastAPI app.** Will be renamed
-(name TBD) and get a homepage/catalog UI.
+pricing, regions. **Data lives in git (`data/`), served by a read-only FastAPI app** with a server-rendered
+catalog UI. Domain: `voicedex.dev`. Python package: `voicedex` (formerly `naaviq`; public UUIDv5 ids are
+unaffected — the namespace in `voicedex/catalog/store.py` is a fixed constant and must never change).
 
 Architecture decisions: `docs/design/v2-architecture.md` (D1–D7). Read it before structural changes.
 
 ## How it works
 
 ```
-provider APIs / docs ──▶ naaviq/sync/<provider>.py ──▶ SyncResult
+provider APIs / docs ──▶ voicedex/sync/<provider>.py ──▶ SyncResult
                                                          │  scripts/sync.py: validate → merge → guard → diff
                                                          ▼
                                     data/<provider>/{provider,models,voices}.json   (git = database)
                                                          │  commit / PR = review step; deploy = publish
                                                          ▼
-                                    naaviq/main.py loads data/ into memory → /v1 REST API + /v1/catalog.json
+                                    voicedex/main.py loads data/ into memory → /v1 REST API + /v1/catalog.json
 ```
 
-- **No database.** The API loads `data/` at startup (`naaviq/catalog/store.py`). Deploying a commit publishes its data.
+- **No database.** The API loads `data/` at startup (`voicedex/catalog/store.py`). Deploying a commit publishes its data.
 - **History/audit/rollback = git.** Price history: `git log -p data/*/models.json`.
 - Railway deploys the Dockerfile (copies `data/`). CI: ruff → `scripts/validate.py` → pytest. Railway "Wait for CI" gates deploys from `main`.
 
 ## Layout
 
 ```
-naaviq/
+voicedex/
   main.py            — app, catalog loading, ETag/Cache-Control middleware
   config.py          — provider API keys, DATA_DIR, rate limit
   limiter.py         — slowapi; keys on right-most X-Forwarded-For (proxy-appended)
@@ -66,7 +67,7 @@ git diff data/deepgram                            # review, then commit
 `.sync-cache/{provider}_{stt|tts|sts}_models.json` / `{provider}_voices.json` (JSON matching SyncModel/SyncVoice
 fields), then runs sync. Cache always takes precedence over the API path; it's deleted after `--write`.
 
-Merge rules (`naaviq/catalog/merge.py`):
+Merge rules (`voicedex/catalog/merge.py`):
 - new → `first_seen`/`updated_at` = today; unchanged → untouched (no date churn); changed → `updated_at` = today
 - incoming `None`/`[]` = unknown → existing value is kept (a docs page omitting pricing never erases it)
 - missing upstream → kept and marked deprecated (`lifecycle=deprecated` + `deprecated_at`, `is_default=false`); reappears → revived
@@ -78,7 +79,7 @@ Credentials (`gcloud auth application-default login` + `GOOGLE_CLOUD_PROJECT`) f
 Locations API, which rejects API keys. If `GOOGLE_CLOUD_PROJECT` is set and the login is missing/expired, the
 Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) — it never silently degrades. Fix:
 `gcloud auth application-default login`. With `GOOGLE_CLOUD_PROJECT` unset (contributors), STT is docs-only.
-`scripts/sync.py` ends with a `✗ FAILED: <providers>` line and exit code 1 whenever any provider failed. Naming convention for keys in provider dashboards: `voice-registry-sync`.
+`scripts/sync.py` ends with a `✗ FAILED: <providers>` line and exit code 1 whenever any provider failed. Naming convention for keys in provider dashboards: `voicedex-sync` (keys created before the rename are named `voice-registry-sync`; no need to recreate them).
 
 ## Data conventions
 
@@ -92,7 +93,7 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) �
   sorts only USD prices. Prices for API-synced providers come from a docs pass: write
   `.sync-cache/<id>_docs.json` and run `scripts/apply_docs.py <id> --write` (a later sync never erases them). The same
   file can carry `capabilities` (+ `capability_notes`) for providers whose API doesn't expose feature support.
-- **capabilities** — controlled vocab, enforced on write (`naaviq/catalog/schema.py`). STT: word_timestamps, speaker_diarization, punctuation, profanity_filter, custom_vocabulary, language_detection, translation, sentiment, pii_redaction, summarization, topic_detection. TTS: emotion, voice_cloning, voice_design, ssml, phoneme_input, prosody_control, style_control, multi_speaker. Voice: emotion, multilingual_native. Anything else → `meta`. Extending the vocab = edit schema.py, AI parser prompt, regenerate schema.
+- **capabilities** — controlled vocab, enforced on write (`voicedex/catalog/schema.py`). STT: word_timestamps, speaker_diarization, punctuation, profanity_filter, custom_vocabulary, language_detection, translation, sentiment, pii_redaction, summarization, topic_detection. TTS: emotion, voice_cloning, voice_design, ssml, phoneme_input, prosody_control, style_control, multi_speaker. Voice: emotion, multilingual_native. Anything else → `meta`. Extending the vocab = edit schema.py, AI parser prompt, regenerate schema.
 - **Audio fields** (models): `sample_rates_hz`, `audio_formats` (lowercase) — TTS=output, STT=input; `max_text_chars` (TTS), `max_audio_seconds` (STT). Unknown = empty/null. Never guess numbers.
 - **pricing**: `{unit, price_usd, free_quota?, variants?, as_of, source_url, notes?}`; unit ∈ character|minute|second|word|token|request|hour. Omit unless an explicit number is published.
 - **v2 model fields**: `family` (root id), `alias_of` (for `-latest` aliases), `snapshot_date`, `interfaces` (http|websocket|grpc|webrtc), `batch`, `open_weights {license,url}`, `provenance {method: api|docs|manual, urls, as_of}`. Syncers can pass `family`/`snapshot_date`/`alias_of`/`batch` via `meta` keys (`parent_model_id`, `snapshot_date`, `alias_of`, `batch`) — merge promotes them to fields.
@@ -105,16 +106,16 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) �
 
 ## Adding a provider
 
-1. `naaviq/sync/{id}.py`: subclass `ProviderSyncer`, set `provider_id`, `source` (`api|docs|mixed`), implement `sync()` → `SyncResult` (empty lists for unsupported types; set `api_urls`/`docs_urls`).
+1. `voicedex/sync/{id}.py`: subclass `ProviderSyncer`, set `provider_id`, `source` (`api|docs|mixed`), implement `sync()` → `SyncResult` (empty lists for unsupported types; set `api_urls`/`docs_urls`).
 2. Use provider APIs where they exist; otherwise `parse_models_from_docs` / `parse_voices_from_docs` (cache-backed). **Never hardcode models/voices/languages**, and don't enumerate model ids inside AI guidance strings either — new upstream models must flow in automatically.
-3. Register once in `naaviq/sync/registry.py`; add any key to `config.py` + `.env.example`.
+3. Register once in `voicedex/sync/registry.py`; add any key to `config.py` + `.env.example`.
 4. Sync with `--write`, fill editorial fields in `data/{id}/provider.json`, run `scripts/validate.py`, add a parsing test with a recorded payload (see `tests/test_deepgram.py`).
 
 ## Local dev
 
 ```bash
 uv sync --extra dev --extra sync
-uv run uvicorn naaviq.main:app --reload --reload-include "data/**/*.json" --port 8001   # 8000 is taken locally
+uv run uvicorn voicedex.main:app --reload --reload-include "data/**/*.json" --port 8001   # 8000 is taken locally
 uv run pytest
 uvx ruff check .
 ```

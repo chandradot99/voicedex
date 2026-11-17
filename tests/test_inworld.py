@@ -1,6 +1,6 @@
 """Inworld voice mapping: private voices never published; BCP-47 languageCode preferred."""
 
-from naaviq.sync.inworld import InworldAISyncer
+from voicedex.sync.inworld import InworldAISyncer
 
 
 def test_voice_mapping_and_private_voices_skipped():

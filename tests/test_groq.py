@@ -1,6 +1,6 @@
 """Groq: audio models classified from the /models API (no hardcoded table)."""
 
-from naaviq.sync.groq import parse_models
+from voicedex.sync.groq import parse_models
 
 API = [
     {"id": "whisper-large-v3", "name": "Whisper", "owned_by": "OpenAI", "active": True,

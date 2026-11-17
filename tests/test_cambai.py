@@ -1,6 +1,6 @@
 """CAMB.ai: only library-owned voices are published; integer languages mapped to locales."""
 
-from naaviq.sync.cambai import CambAISyncer
+from voicedex.sync.cambai import CambAISyncer
 
 LANGS = {1: "en-US", 31: "de-DE"}
 

@@ -37,7 +37,7 @@ Deploying a commit *is* publishing that version of the data. If a future Pro fea
 
 ### D3. The schema is defined once, in Pydantic, and exported as JSON Schema.
 
-`naaviq/catalog/schema.py` is the contract. `schema/*.schema.json` is generated from it and checked in
+`voicedex/catalog/schema.py` is the contract. `schema/*.schema.json` is generated from it and checked in
 for non-Python consumers. Controlled vocabularies (capabilities, regions, lifecycle, interfaces,
 compliance) are enums — invalid values fail validation on **write** and in CI, not just at query time.
 
@@ -90,7 +90,7 @@ Postgres, SQLAlchemy models, Alembic, `scripts/promote.py`, dev DB, `sync_runs` 
 ## D8. Web catalog UI: server-rendered from the same in-memory catalog (2026-11-16)
 
 The homepage and catalog pages (`/`, `/providers/{id}`, `/models`, `/voices`, `/search`) are Jinja2
-templates rendered by the API process (`naaviq/web/`), not a separate SPA.
+templates rendered by the API process (`voicedex/web/`), not a separate SPA.
 
 - **Why:** `/v1/catalog.json` is ~8 MB, too heavy to ship to browsers for client-side filtering; server
   rendering keeps pages fast, indexable by search engines (per-provider pages are the long-tail entry

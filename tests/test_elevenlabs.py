@@ -1,6 +1,6 @@
 """ElevenLabs /v1/models + /v2/voices mapping."""
 
-from naaviq.sync.elevenlabs import ElevenLabsSyncer
+from voicedex.sync.elevenlabs import ElevenLabsSyncer
 
 MODELS = [
     {"model_id": "eleven_v4", "name": "Eleven v4", "can_do_text_to_speech": True, "can_use_style": False,

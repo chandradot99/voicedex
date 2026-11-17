@@ -6,10 +6,10 @@ import pytest
 
 pytest.importorskip("anthropic")
 
-from naaviq.sync import ai_parser  # noqa: E402
-from naaviq.sync.ai_parser import AIParserError, parse_models_from_docs, parse_voices_from_docs  # noqa: E402
-from naaviq.sync.base import SyncModel, SyncVoice  # noqa: E402
-from naaviq.sync.cache import write_models_cache, write_voices_cache  # noqa: E402
+from voicedex.sync import ai_parser  # noqa: E402
+from voicedex.sync.ai_parser import AIParserError, parse_models_from_docs, parse_voices_from_docs  # noqa: E402
+from voicedex.sync.base import SyncModel, SyncVoice  # noqa: E402
+from voicedex.sync.cache import write_models_cache, write_voices_cache  # noqa: E402
 
 
 @pytest.fixture(autouse=True)
@@ -48,7 +48,7 @@ async def test_cache_miss_without_key_raises_with_instructions(monkeypatch):
 
 
 async def test_docs_only_syncer_reads_every_declared_section(_api_must_not_be_called):
-    from naaviq.sync.docs_only import DocsOnlySyncer
+    from voicedex.sync.docs_only import DocsOnlySyncer
 
     class Acme(DocsOnlySyncer):
         provider_id = "acme"

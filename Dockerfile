@@ -9,7 +9,7 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 # Application code
-COPY naaviq/ naaviq/
+COPY voicedex/ voicedex/
 # The catalog itself — deploying a commit publishes that commit's data
 COPY data/ data/
 
@@ -23,4 +23,4 @@ RUN uv sync --frozen --no-dev
 EXPOSE 8000
 
 # Shell form so $PORT expands at runtime (Railway injects PORT)
-CMD ["sh", "-c", "exec uv run uvicorn naaviq.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1"]
+CMD ["sh", "-c", "exec uv run uvicorn voicedex.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1"]

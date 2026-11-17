@@ -1,7 +1,7 @@
 """Typecast: stock voices only; languages from compatible models; emotion presets → capability."""
 
-from naaviq.sync.base import SyncModel
-from naaviq.sync.typecastai import TypecastAISyncer
+from voicedex.sync.base import SyncModel
+from voicedex.sync.typecastai import TypecastAISyncer
 
 MODELS = [SyncModel("ssfm-v31", "SSFM v3.1", "tts", languages=["en", "ko"]),
           SyncModel("ssfm-v21", "SSFM v2.1", "tts", languages=["en"])]

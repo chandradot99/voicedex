@@ -9,10 +9,10 @@ from pathlib import Path
 
 import pytest
 
-from naaviq.catalog.files import read_provider_dir, write_provider_dir
-from naaviq.catalog.merge import merge
-from naaviq.sync.base import SyncModel, SyncResult
-from naaviq.sync.cache import read_models_cache
+from voicedex.catalog.files import read_provider_dir, write_provider_dir
+from voicedex.catalog.merge import merge
+from voicedex.sync.base import SyncModel, SyncResult
+from voicedex.sync.cache import read_models_cache
 
 _spec = importlib.util.spec_from_file_location("sync_script", Path(__file__).resolve().parents[1] / "scripts" / "sync.py")
 sync_script = importlib.util.module_from_spec(_spec)
@@ -63,7 +63,7 @@ def test_seed_never_overwrites_existing_cache(tmp_path):
 def test_retired_providers_are_skipped(capsys, monkeypatch):
     import asyncio
 
-    from naaviq.sync.registry import REGISTRY
+    from voicedex.sync.registry import REGISTRY
     retired = [e.provider_id for e in REGISTRY if e.retired]
     assert {"humeai", "lmnt", "resemble"} <= set(retired)
     monkeypatch.setattr(sys, "argv", ["sync.py", *retired])

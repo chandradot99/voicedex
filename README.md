@@ -1,8 +1,8 @@
-# Voice Provider Registry
+# Voicedex
 
 An open catalog of voice AI providers: speech-to-text, text-to-speech and speech-to-speech models,
 voices, languages, capabilities, pricing and regions. It is normalized across providers and you can
-query it as a REST API or download it as one JSON file. (A new project name and homepage are coming.)
+query it as a REST API or download it as one JSON file.
 
 - **Data you can audit.** The whole catalog lives in [`data/`](data/) as plain JSON in git. Every
   change is a reviewable diff, and every model records where its data came from and when.
@@ -31,7 +31,7 @@ curl "$API/v1/models?type=stt&capabilities=speaker_diarization&region=eu"
 
 ## How the data is kept fresh
 
-Each provider has a syncer in [`naaviq/sync/`](naaviq/sync/). It calls the provider's API where one
+Each provider has a syncer in [`voicedex/sync/`](voicedex/sync/). It calls the provider's API where one
 exists, and otherwise extracts the data from the provider's documentation. `scripts/sync.py` then
 merges the result into `data/`:
 
@@ -52,7 +52,7 @@ uv run python scripts/validate.py                 # schema and consistency check
 
 ```bash
 uv sync --extra dev
-uv run uvicorn naaviq.main:app --reload
+uv run uvicorn voicedex.main:app --reload
 uv run pytest
 ```
 

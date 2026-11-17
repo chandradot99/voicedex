@@ -7,10 +7,10 @@ from datetime import date
 import pytest
 from httpx import ASGITransport, AsyncClient
 
-from naaviq.catalog.files import ProviderData, write_provider_dir
-from naaviq.catalog.schema import Model, Provider, Voice
-from naaviq.catalog.store import Catalog
-from naaviq.main import app
+from voicedex.catalog.files import ProviderData, write_provider_dir
+from voicedex.catalog.schema import Model, Provider, Voice
+from voicedex.catalog.store import Catalog
+from voicedex.main import app
 
 TEST_PROVIDER = "zz-test-provider"
 DEPRECATED_PROVIDER = "zz-test-deprecated"

@@ -1,6 +1,6 @@
 """Gradium: only catalog voices are published; private-use dialect subtags become accent/meta."""
 
-from naaviq.sync.gradium import parse_voices
+from voicedex.sync.gradium import parse_voices
 
 
 def test_catalog_only_and_dialects():

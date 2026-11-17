@@ -1,7 +1,7 @@
 """HTML catalog pages render from the in-memory catalog and respect filters."""
 
-from naaviq.catalog.schema import Model
-from naaviq.web.views import heat_level, language_name, normalized_price
+from voicedex.catalog.schema import Model
+from voicedex.web.views import heat_level, language_name, normalized_price
 
 
 async def test_pages_render(client):
@@ -64,8 +64,8 @@ async def test_voice_model_filter(client):
 
 
 def test_voice_chips():
-    from naaviq.catalog.schema import Voice
-    from naaviq.web.views import voice_chips
+    from voicedex.catalog.schema import Voice
+    from voicedex.web.views import voice_chips
     v = Voice(id="x", name="x", use_cases=["use-case:e-learning", "age:young-adult", "narration"], tags=["calm"])
     assert voice_chips(v) == ["e learning", "narration", "calm"]
 
@@ -81,13 +81,13 @@ async def test_api_reference(client):
 
 
 def test_free_price_label():
-    from naaviq.web.views import price_label
+    from voicedex.web.views import price_label
     m = Model(id="f", name="f", type="tts", pricing={"unit": "character", "price_usd": 0})
     assert price_label(m) == "Free"
 
 
 async def test_openapi_examples_use_real_data(client):
-    from naaviq.main import app
+    from voicedex.main import app
     app.openapi_schema = None                      # rebuild against the fixture catalog
     spec = (await client.get("/openapi.json")).json()
     ex = spec["paths"]["/v1/models"]["get"]["responses"]["200"]["content"]["application/json"]["example"]

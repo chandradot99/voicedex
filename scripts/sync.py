@@ -23,10 +23,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from naaviq.catalog.files import DEFAULT_DATA_DIR, read_provider_dir, write_provider_dir  # noqa: E402
-from naaviq.catalog.merge import GuardError, MergeReport, merge  # noqa: E402
-from naaviq.sync.cache import _models_path, _voices_path  # noqa: E402
-from naaviq.sync.registry import BY_ID, REGISTRY, load_syncer  # noqa: E402
+from voicedex.catalog.files import DEFAULT_DATA_DIR, read_provider_dir, write_provider_dir  # noqa: E402
+from voicedex.catalog.merge import GuardError, MergeReport, merge  # noqa: E402
+from voicedex.sync.cache import _models_path, _voices_path  # noqa: E402
+from voicedex.sync.registry import BY_ID, REGISTRY, load_syncer  # noqa: E402
 
 _MAX_LISTED = 15
 

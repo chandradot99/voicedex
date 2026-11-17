@@ -6,9 +6,9 @@ from datetime import date
 
 import pytest
 
-from naaviq.catalog.files import ProviderData, read_provider_dir, write_provider_dir
-from naaviq.catalog.merge import GuardError, merge
-from naaviq.sync.base import SyncModel, SyncResult, SyncVoice
+from voicedex.catalog.files import ProviderData, read_provider_dir, write_provider_dir
+from voicedex.catalog.merge import GuardError, merge
+from voicedex.sync.base import SyncModel, SyncResult, SyncVoice
 
 D1, D2, D3 = date(2026, 1, 1), date(2026, 2, 1), date(2026, 3, 1)
 

@@ -1,6 +1,6 @@
 """Fish Audio: only official voices are published; volatile counters never stored."""
 
-from naaviq.sync.fishaudio import FishAudioSyncer
+from voicedex.sync.fishaudio import FishAudioSyncer
 
 OFFICIAL = {"nickname": "Fish Official"}
 
