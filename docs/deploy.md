@@ -8,7 +8,7 @@ there are no service-account keys anywhere.
 ## One-time setup
 
 ```bash
-PROJECT=voicedex-prod            # your GCP project id
+PROJECT=voicedex-prod            # GCP project id (billing linked, ₹100 budget alert)
 REPO=chandradot99/voicedex       # GitHub owner/repo (update after renaming the repo)
 REGION=us-central1
 gcloud config set project $PROJECT
@@ -16,10 +16,11 @@ gcloud services enable run.googleapis.com artifactregistry.googleapis.com iamcre
 
 # Image registry; keep only the newest images (stays within the free 0.5 GB)
 gcloud artifacts repositories create voicedex --repository-format=docker --location=$REGION
-gcloud artifacts repositories set-cleanup-policies voicedex --location=$REGION --policy=- <<'JSON'
+cat > cleanup.json <<'JSON'
 [{"name":"keep-recent","action":{"type":"Keep"},"mostRecentVersions":{"keepCount":3}},
- {"name":"delete-rest","action":{"type":"Delete"},"condition":{"olderThan":"0s"}}]
+ {"name":"delete-older","action":{"type":"Delete"},"condition":{"tagState":"any","olderThan":"1d"}}]
 JSON
+gcloud artifacts repositories set-cleanup-policies voicedex --location=$REGION --policy=cleanup.json --no-dry-run
 
 # Deployer identity, usable only by GitHub Actions runs of this repo
 gcloud iam service-accounts create github-deployer
@@ -45,7 +46,9 @@ gh variable set GCP_DEPLOY_SA --body $SA
 ## Domain (Cloudflare)
 
 1. `gcloud beta run domain-mappings create --service voicedex --domain voicedex.dev --region $REGION`
-   and add the DNS records it prints in Cloudflare (proxied).
+   and add the DNS records it prints in Cloudflare as **DNS only** (grey cloud) until Google has
+   issued the certificate (`gcloud beta run domain-mappings describe ...` shows it ready), then switch
+   them to Proxied.
 2. Cloudflare → SSL/TLS → **Full (strict)**.
 3. Cloudflare → Caching → Cache Rules: hostname `voicedex.dev` → *Eligible for cache*, edge TTL
    *use origin Cache-Control* (the app sends `public, max-age=300`). This serves most visits while
