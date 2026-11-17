@@ -5,6 +5,7 @@ from contextlib import asynccontextmanager
 import structlog
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
@@ -116,17 +117,25 @@ app.add_middleware(
 
 @app.middleware("http")
 async def etag_cache(request: Request, call_next):
-    """The catalog only changes on deploy, so one ETag covers every /v1 response."""
-    if request.method != "GET" or not request.url.path.startswith("/v1"):
+    """The catalog only changes on deploy, so one ETag covers every /v1 response, and every page can be
+    cached for a few minutes (by browsers and by a CDN in front, which serves visits while the origin
+    is scaled to zero)."""
+    if request.method != "GET":
         return await call_next(request)
+    is_api = request.url.path.startswith("/v1")
     etag = request.app.state.catalog.etag
-    if request.headers.get("if-none-match") == etag:
+    if is_api and request.headers.get("if-none-match") == etag:
         return Response(status_code=304, headers={"ETag": etag})
     response = await call_next(request)
-    if response.status_code == 200:
-        response.headers["ETag"] = etag
-        response.headers["Cache-Control"] = "public, max-age=300"
+    if response.status_code == 200 and request.url.path != "/health":
+        if is_api:
+            response.headers["ETag"] = etag
+        response.headers.setdefault("Cache-Control", "public, max-age=300")
     return response
+
+
+# Outermost: compress responses (catalog.json is ~8 MB of JSON; gzip cuts transfer time and egress).
+app.add_middleware(GZipMiddleware, minimum_size=1024)
 
 
 app.include_router(providers.router, prefix="/v1")

@@ -127,3 +127,11 @@ def test_rate_limit_key_cloudflare(monkeypatch):
     assert client_ip(req) == "172.64.0.9"                # default: never trust a client-settable header
     monkeypatch.setattr(settings, "trust_cf_connecting_ip", True)
     assert client_ip(req) == "203.0.113.7"
+
+
+async def test_gzip_and_page_caching(client):
+    r = await client.get("/v1/catalog.json", headers={"Accept-Encoding": "gzip"})
+    assert r.headers["content-encoding"] == "gzip" and "ETag" in r.headers
+    page = await client.get("/models")
+    assert page.headers["cache-control"] == "public, max-age=300" and "etag" not in page.headers
+    assert "cache-control" not in (await client.get("/health")).headers
