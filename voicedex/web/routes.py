@@ -4,10 +4,11 @@ from __future__ import annotations
 
 import math
 from collections import Counter
+from html import escape
 from pathlib import Path
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, PlainTextResponse, Response
 from fastapi.templating import Jinja2Templates
 
 from voicedex.catalog.schema import MODEL_CAPABILITIES
@@ -19,6 +20,7 @@ from voicedex.web import views
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 templates.env.globals.update(
     site_name=settings.site_name,
+    site_url=settings.site_url.rstrip("/"),
     language_name=views.language_name,
     price_label=views.price_label,
     model_url=views.model_url,
@@ -235,6 +237,27 @@ def _grouped(table: list) -> list[tuple[str, list]]:
 async def api_docs(request: Request):
     """Themed API reference (Scalar) over the app's own OpenAPI schema."""
     return templates.TemplateResponse(request, "docs.html", {})
+
+
+@router.get("/robots.txt", response_class=PlainTextResponse)
+async def robots():
+    site = settings.site_url.rstrip("/")
+    return ("User-agent: *\n"
+            "Disallow: /search\n"            # result pages for arbitrary queries
+            "Disallow: /compare\n"           # unbounded combinations of models
+            "Disallow: /v1/\n"               # the JSON API
+            f"\nSitemap: {site}/sitemap.xml\n")
+
+
+@router.get("/sitemap.xml")
+async def sitemap(catalog: Catalog = Depends(get_catalog)):
+    site = settings.site_url.rstrip("/")
+    paths = ["/", "/models", "/voices", "/docs"]
+    paths += [f"/providers/{pid}" for pid in sorted(catalog.providers)]
+    paths += sorted(views.model_url(r) for r in views.active_models(catalog))
+    body = "".join(f"<url><loc>{escape(site + p)}</loc></url>" for p in paths)
+    xml = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>'
+    return Response(xml, media_type="application/xml")
 
 
 @router.get("/redoc")

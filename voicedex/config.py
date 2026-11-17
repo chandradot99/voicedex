@@ -12,6 +12,10 @@ class Settings(BaseSettings):
     data_dir: str = ""                     # catalog directory; empty = <repo>/data
     rate_limit: str = "100/minute"
     site_name: str = "Voicedex"
+    site_url: str = "https://voicedex.dev"  # canonical origin for links, sitemap, share previews
+    # Behind Cloudflare's proxy, the right-most X-Forwarded-For entry is a Cloudflare edge, not the
+    # visitor. Set TRUST_CF_CONNECTING_IP=true only when all traffic comes through Cloudflare.
+    trust_cf_connecting_ip: bool = False
 
     # Provider API keys — used by sync scripts
     deepgram_api_key: str = ""

@@ -61,4 +61,4 @@ uv run pytest
 To add a provider or fix data, see [`CLAUDE.md`](CLAUDE.md#adding-a-provider) for the checklist and
 [`docs/design/v2-architecture.md`](docs/design/v2-architecture.md) for the design.
 
-License: Apache 2.0
+License: [Apache 2.0](LICENSE)

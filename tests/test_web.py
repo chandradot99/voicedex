@@ -97,3 +97,33 @@ async def test_openapi_examples_use_real_data(client):
     err = spec["paths"]["/v1/models"]["get"]["responses"]["422"]["content"]["application/json"]["example"]
     assert err["detail"][0]["loc"] == ["query", "limit"]
     app.openapi_schema = None
+
+
+async def test_robots_and_sitemap(client):
+    robots = (await client.get("/robots.txt")).text
+    assert "Disallow: /search" in robots and "Sitemap: https://voicedex.dev/sitemap.xml" in robots
+    r = await client.get("/sitemap.xml")
+    assert r.status_code == 200 and r.headers["content-type"].startswith("application/xml")
+    assert "<loc>https://voicedex.dev/providers/zz-test-provider</loc>" in r.text
+    assert "/models/zz-test-provider/stt/stt-eu" in r.text
+    assert "tts-old" not in r.text                                    # deprecated models are left out
+
+
+async def test_canonical_and_share_tags(client):
+    html = (await client.get("/models?type=stt")).text
+    assert '<link rel="canonical" href="https://voicedex.dev/models">' in html     # filters dropped
+    assert 'og:image" content="https://voicedex.dev/static/og.png"' in html
+    assert (await client.get("/static/og.png")).status_code == 200
+
+
+def test_rate_limit_key_cloudflare(monkeypatch):
+    from starlette.requests import Request
+
+    from voicedex.config import settings
+    from voicedex.limiter import client_ip
+
+    req = Request({"type": "http", "headers": [(b"x-forwarded-for", b"1.1.1.1, 172.64.0.9"),
+                                               (b"cf-connecting-ip", b"203.0.113.7")], "client": ("10.0.0.1", 1)})
+    assert client_ip(req) == "172.64.0.9"                # default: never trust a client-settable header
+    monkeypatch.setattr(settings, "trust_cf_connecting_ip", True)
+    assert client_ip(req) == "203.0.113.7"
