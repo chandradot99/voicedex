@@ -186,7 +186,8 @@ def search_models(
     include_unlisted_languages: bool = False,
     shutting_down: bool | None = None,
     eol_before: str | None = None,
-    sort: Literal["price", "name", "eol_date"] = "price",
+    sort: Literal["price", "name", "eol_date"] | None = None,
+    collapse_snapshots: bool = True,
     limit: int = 20,
     offset: int = 0,
 ) -> dict[str, Any]:
@@ -196,9 +197,12 @@ def search_models(
     include_unlisted_languages=true also adds models that claim "many languages" without listing them. capability: one feature term, e.g. "speaker_diarization",
     "voice_cloning", "word_timestamps", "ssml". max_price_usd: upper bound on the normalized price (TTS per 1M
     characters, STT/STS per hour); models without a comparable USD price are excluded when it is set.
-    sort="price" puts the cheapest first, models with an announced shutdown after the rest, unpriced last.
-    Shutdowns: shutting_down=true returns only models with an announced end date; eol_before="YYYY-MM-DD" only
-    those ending before it (e.g. "which models shut down in the next 90 days?"); sort="eol_date" orders by it.
+    sort: default "price" (cheapest first, announced shutdowns after the rest, unpriced last), or "eol_date"
+    (soonest end first) whenever shutting_down or eol_before is set. Shutdowns: shutting_down=true returns only
+    models with an announced end date; eol_before="YYYY-MM-DD" only those ending before it (e.g. "which models
+    shut down in the next 90 days?"). collapse_snapshots (default true) shows one row per model family (the
+    moving alias, e.g. gpt-realtime) and lists its dated snapshots (gpt-realtime-2025-08-28) in "snapshots";
+    pass false to get every snapshot as its own row.
     """
     cat = _cat()
     if capability and capability not in MODEL_CAPABILITIES:
@@ -235,6 +239,11 @@ def search_models(
         return n[0] if n else float("inf")
     if max_price_usd is not None:
         rows = [r for r in rows if price(r) <= max_price_usd]
+    if sort is None:
+        sort = "eol_date" if (shutting_down or eol_before) else "price"
+    snapshots: dict[int, list[str]] = {}
+    if collapse_snapshots:
+        rows, snapshots = _collapse_snapshots(rows)
     if sort == "price":
         rows.sort(key=lambda r: (r.model.eol_date is not None, price(r), r.provider_id, r.model.id))
     elif sort == "eol_date":
@@ -242,7 +251,31 @@ def search_models(
     else:
         rows.sort(key=lambda r: (r.model.name.lower(), r.provider_id))
     chunk, meta = _page(rows, limit, offset)
-    return {**meta, "results": [_model_summary(cat, r) for r in chunk]}
+    results = []
+    for r in chunk:
+        row = _model_summary(cat, r)
+        if snapshots.get(id(r)):
+            row["snapshots"] = snapshots[id(r)]
+        results.append(row)
+    return {**meta, "sort": sort, "results": results}
+
+
+def _collapse_snapshots(rows: list) -> tuple[list, dict[int, list[str]]]:
+    """One row per (provider, type, family): the moving alias or undated id represents its dated snapshots.
+    Returns the kept rows and {id(kept row): [snapshot keys]}."""
+    groups: dict[tuple, list] = {}
+    for r in rows:
+        fam = r.model.family or r.model.id                 # an alias's id is its snapshots' family
+        groups.setdefault((r.provider_id, str(r.model.type), fam), []).append(r)
+    kept, snaps = [], {}
+    for members in groups.values():
+        members.sort(key=lambda r: (r.model.alias_of is None and r.model.snapshot_date is not None,
+                                    -(r.model.snapshot_date.toordinal() if r.model.snapshot_date else 0)))
+        head, rest = members[0], members[1:]
+        kept.append(head)
+        if rest:
+            snaps[id(head)] = [views.model_key(r) for r in rest]
+    return kept, snaps
 
 
 def _compact_record(m) -> dict[str, Any]:
@@ -336,8 +369,11 @@ def estimate_cost(
                 norm, rate = sv
             else:
                 rate = "headline (no separate streaming price published)"
-        line = {"key": views.model_key(r), "name": m.name, "type": str(m.type), "price": views.price_label(m),
+        used = f"${norm[0]:,.2f} {norm[1]}" if norm and norm[0] >= 0.01 else views.price_label(m)
+        line = {"key": views.model_key(r), "name": m.name, "type": str(m.type), "price": used,
                 "rate_used": rate, **({"matched_as": info} if info else {})}
+        if rate.startswith("streaming"):
+            line["headline_price"] = views.price_label(m)        # the (usually pre-recorded) list price
         if m.type == "tts":
             share = max(0.0, min(float(tts_share), 1.0))
             chars = characters if characters is not None else int(audio_minutes * share * tts_chars_per_minute)
@@ -394,7 +430,10 @@ def find_alternatives(model: str, limit: int = 10) -> dict[str, Any]:
     m = r.model
     langs = {views.base_language(x) for x in m.languages if x != "*"}
     caps, norm = set(m.capabilities), views.normalized_price(m)
-    successor = m.meta.get("replacement") if isinstance(m.meta, dict) else None
+    meta = m.meta if isinstance(m.meta, dict) else {}
+    successor = meta.get("replacement")
+    named = _named_replacements(successor, meta.get("deprecation_notice"))
+    recommended = _recommended(named, meta.get("deprecation_notice"))
     cands = []
     for c in views.active_models(cat):
         cm = c.model
@@ -404,21 +443,44 @@ def find_alternatives(model: str, limit: int = 10) -> dict[str, Any]:
         covered = len(langs & cl) if langs else None
         cn = views.normalized_price(cm)
         gap = abs(math.log(cn[0] / norm[0])) if cn and norm and cn[0] > 0 and norm[0] > 0 else math.inf
-        announced = bool(successor) and c.provider_id == r.provider_id and successor.split()[0] in cm.id
-        cands.append((announced, covered, len(caps & set(cm.capabilities)), gap, c))
+        rank = named.index(cm.id) if c.provider_id == r.provider_id and cm.id in named else None
+        cands.append((rank, covered, len(caps & set(cm.capabilities)), gap, c))
     featured = set(views.COMPARE_PROVIDERS)                 # widely used providers win ties, as on /alternatives
-    cands.sort(key=lambda x: (not x[0], -(x[1] or 0), -x[2], x[4].provider_id not in featured, x[3], x[4].model.id))
+    cands.sort(key=lambda x: (x[0] is None, x[0] or 0, -(x[1] or 0), -x[2], x[4].provider_id not in featured,
+                              x[3], x[4].model.id))
     chunk = cands[:_limit(limit)]
     return {
         "model": _model_summary(cat, r),
         **({"matched_as": info} if info else {}),
         "announced_replacement": successor,
+        "provider_recommends": recommended,
         "alternatives": [{**_model_summary(cat, c),
-                          "announced_replacement": a,
+                          "announced_replacement": a is not None,
+                          **({"recommended_by_provider": True} if recommended and c.model.id == recommended else {}),
                           "languages_covered": f"{cov}/{len(langs)}" if cov is not None else None,
                           "shared_features": f"{sh}/{len(caps)}" if caps else None}
                          for a, cov, sh, _gap, c in chunk],
     }
+
+
+def _named_replacements(replacement: str | None, notice: str | None) -> list[str]:
+    """Model ids named in the provider's replacement text ("a or b (or c for English only)"), with the one the
+    deprecation notice says the provider *recommends* first."""
+    if not replacement:
+        return []
+    ids = []
+    for part in re.split(r"\bor\b|,|;", replacement):        # "a or b (or c for English only)" -> a, b, c
+        words = re.sub(r"[()]", " ", part).split()
+        token = next((w for w in words if re.fullmatch(r"[A-Za-z][\w.:/-]*", w) and re.search(r"[\d_-]", w)), None)
+        if token and token not in ids:
+            ids.append(token)
+    rec = _recommended(ids, notice)
+    return ([rec] + [i for i in ids if i != rec]) if rec else ids
+
+
+def _recommended(ids: list[str], notice: str | None) -> str | None:
+    found = re.search(r"recommend\w*\s+([\w.:/-]+)", notice or "", re.IGNORECASE)
+    return found.group(1).rstrip(".") if found and found.group(1).rstrip(".") in ids else None
 
 
 @server.tool(annotations=READ_ONLY)
