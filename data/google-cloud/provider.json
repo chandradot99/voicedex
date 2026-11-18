@@ -12,15 +12,19 @@
     "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
     "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
     "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
-    "https://cloud.google.com/speech-to-text/pricing"
+    "https://cloud.google.com/speech-to-text/pricing",
+    "https://ai.google.dev/gemini-api/docs/live",
+    "https://ai.google.dev/gemini-api/docs/models",
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
   ],
   "id": "google-cloud",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-18",
   "name": "Google Cloud",
   "source": "mixed",
   "type": "both",
   "voices_source": {
-    "as_of": "2026-11-16",
+    "as_of": "2026-11-18",
     "method": "api",
     "urls": [
       "https://texttospeech.googleapis.com/v1/voices",

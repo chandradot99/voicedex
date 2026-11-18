@@ -1,5 +1,425 @@
 [
   {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Gemini 2.5 Flash Live API preview model with native audio reasoning for bidirectional voice and video agents.",
+    "eol_date": "2027-03-31",
+    "first_seen": "2026-11-18",
+    "id": "gemini-2.5-flash-native-audio-preview-12-2025",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "deprecation_notice": "Gemini API deprecations page: shutdown March 31, 2027 (earliest possible retirement date)",
+      "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
+      "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
+      "platforms": [
+        "gemini_api"
+      ],
+      "release_date_gemini_api": "2025-12-12",
+      "replacement": "gemini-3.8-live"
+    },
+    "name": "Gemini 2.5 Flash Native Audio Preview (12-2025)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini Developer API paid tier, per 1M tokens: audio/video in $3.00, audio out $12.00, text in $0.50, text out $2.00. Base = audio input.",
+      "price_usd": 3e-06,
+      "source_url": "https://aistudio.google.com/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "snapshot_date": "2025-12-12",
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Earlier audio-to-audio Live API preview model; Google now recommends gemini-3.8-live.",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.1-flash-live-preview",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "deprecation_notice": "Listed as legacy; no shutdown date announced",
+      "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
+      "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
+      "platforms": [
+        "gemini_api"
+      ],
+      "release_date_gemini_api": "2026-03-11",
+      "replacement": "gemini-3.8-live"
+    },
+    "name": "Gemini 3.1 Flash Live Preview",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini Developer API paid tier, per 1M tokens: audio in $3.00 (~$0.005/min), audio out $12.00 (~$0.018/min), text in $0.75, text out $4.50 (incl. thinking), image/video in $1.00. Base = audio input. Shares a pricing section with Gemini 3.8 Live.",
+      "price_usd": 3e-06,
+      "source_url": "https://aistudio.google.com/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 7.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "image_video_input",
+          "price_usd": 1e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Real-time speech-to-speech translation model on the Live API covering 70+ languages.",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.5-live-translate-preview",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
+      "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
+      "platforms": [
+        "gemini_api"
+      ],
+      "release_date_gemini_api": "June 2026",
+      "task": "speech_translation"
+    },
+    "name": "Gemini 3.5 Live Translate Preview",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini Developer API paid tier, per 1M tokens: audio in $3.50 (~$0.0053/min), audio out $21.00 (~$0.0315/min), estimated at 25 tokens/sec.",
+      "price_usd": 3.5e-06,
+      "source_url": "https://aistudio.google.com/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 2.1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Google's recommended Live API native-audio model for low-latency voice agents (text, image and audio in; text and audio out), on the Gemini API and Vertex AI.",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.8-live",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "features": [
+        "function_calling",
+        "thinking",
+        "proactive_audio",
+        "google_search_grounding",
+        "live_avatar (Vertex)"
+      ],
+      "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
+      "input_token_limit": 131072,
+      "languages_note": "Live API: 70 supported languages (Gemini API docs)",
+      "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
+      "output_token_limit": 65536,
+      "platforms": [
+        "gemini_api",
+        "vertex_ai"
+      ],
+      "release_date_gemini_api": "2026-09-15",
+      "release_date_vertex": "2026-09-24",
+      "vertex_retirement": "September 25, 2027 or later"
+    },
+    "name": "Gemini 3.8 Live",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini Developer API paid tier, per 1M tokens: audio in $3.00 (~$0.005/min), audio out $12.00 (~$0.018/min), text in $0.75, text out $4.50 (incl. thinking), image/video in $1.00. Base = audio input.",
+      "price_usd": 3e-06,
+      "source_url": "https://aistudio.google.com/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 7.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "image_video_input",
+          "price_usd": 1e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "High-reasoning variant of Gemini 3.8 Live with configurable thinking budgets for multi-step reasoning in live audio sessions.",
+    "family": "gemini-3.8-live",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.8-live-extended-thinking",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
+      "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
+      "platforms": [
+        "gemini_api"
+      ],
+      "release_date_gemini_api": "2026-09-15"
+    },
+    "name": "Gemini 3.8 Live Extended Thinking",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini Developer API paid tier, per 1M tokens: audio in $3.00 (~$0.005/min), audio out $12.00 (~$0.018/min), text in $0.75, text out $4.50 (incl. thinking), image/video in $1.00. Base = audio input.",
+      "price_usd": 3e-06,
+      "source_url": "https://aistudio.google.com/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 7.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "image_video_input",
+          "price_usd": 1e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Vertex AI GA Live API native-audio model (24 languages, 30 HD voices) with emotion-aware tone; retiring in favour of gemini-3.8-live.",
+    "eol_date": "2026-12-13",
+    "first_seen": "2026-11-18",
+    "id": "gemini-live-2.5-flash-native-audio",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "deprecation_notice": "Vertex AI model versions: released 2025-12-12, retirement 2026-12-13",
+      "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
+      "languages_note": "24 languages, 30 HD voices",
+      "max_output_tokens": 64000,
+      "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
+      "platforms": [
+        "vertex_ai"
+      ],
+      "pricing_note": "Vertex AI price not captured (official pricing table did not render)",
+      "replacement": "gemini-3.8-live"
+    },
+    "name": "Gemini Live 2.5 Flash Native Audio (Vertex AI)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
     "batch": true,
     "capabilities": [
       "language_detection",
@@ -1436,6 +1856,340 @@
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Gemini speech-to-text model on the Gemini API (unary requests) with automatic language detection incl. code-mixing, diarization (up to 8 speakers), word timestamps and custom vocabulary.",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.5-transcribe",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af-ZA",
+      "ja-JP",
+      "am-ET",
+      "jv-ID",
+      "ar-EG",
+      "kea-CV",
+      "hy-AM",
+      "kn-IN",
+      "as-IN",
+      "kk-KZ",
+      "az-AZ",
+      "ko-KR",
+      "be-BY",
+      "ky-KG",
+      "bn-BD",
+      "lv-LV",
+      "bn-IN",
+      "ln-CD",
+      "bs-BA",
+      "lt-LT",
+      "bg-BG",
+      "mk-MK",
+      "rup-BG",
+      "ms-MY",
+      "my-MM",
+      "ml-IN",
+      "yue-Hant-HK",
+      "mt-MT",
+      "ca-ES",
+      "zh-Hans-CN",
+      "ceb",
+      "mr-IN",
+      "km-KH",
+      "mn-MN",
+      "hr-HR",
+      "ne-NP",
+      "cs-CZ",
+      "nb-NO",
+      "da-DK",
+      "or-IN",
+      "nl-NL",
+      "pl-PL",
+      "en-GB",
+      "pt-BR",
+      "en-IN",
+      "pt-PT",
+      "en-US",
+      "pa-IN",
+      "et-EE",
+      "pa-Guru-IN",
+      "fa-IR",
+      "ro-RO",
+      "fil-PH",
+      "ru-RU",
+      "fi-FI",
+      "sr-RS",
+      "fr-FR",
+      "sd-Arab-IN",
+      "gl-ES",
+      "sk-SK",
+      "ka-GE",
+      "sl-SI",
+      "de-DE",
+      "es-419",
+      "el-GR",
+      "es-US",
+      "gu-IN",
+      "sw-KE",
+      "ha-NG",
+      "sv-SE",
+      "he-IL",
+      "tg-TJ",
+      "hi-IN",
+      "te-IN",
+      "hu-HU",
+      "th-TH",
+      "is-IS",
+      "tr-TR",
+      "uk-UA",
+      "id-ID",
+      "uz-UZ",
+      "it-IT",
+      "vi-VN"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "api": "Gemini Developer API",
+      "batch_api": false,
+      "custom_vocabulary_max_terms": 1000,
+      "custom_vocabulary_note": "incompatible with diarization and timestamps",
+      "docs": "https://aistudio.google.com/docs/models/gemini-3.5-transcribe",
+      "languages_note": "Page says it detects 85+ languages; table lists the codes recorded here.",
+      "live_variant": "gemini-3.5-transcribe-live",
+      "max_audio_note": "1 hour per request; 30 minutes with diarization or word timestamps"
+    },
+    "name": "Gemini 3.5 Transcribe",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini Developer API paid tier: audio input $2.00 per 1M tokens (~$0.003/min), text output $12.00 per 1M tokens (~$0.002/min).",
+      "price_usd": 2e-06,
+      "source_url": "https://aistudio.google.com/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "text_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection"
+    ],
+    "description": "Live API (WebSocket) streaming variant of Gemini 3.5 Transcribe with automatic language detection and custom vocabulary; 10-minute sessions.",
+    "family": "gemini-3.5-transcribe",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.5-transcribe-live",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "af-ZA",
+      "ja-JP",
+      "am-ET",
+      "jv-ID",
+      "ar-EG",
+      "kea-CV",
+      "hy-AM",
+      "kn-IN",
+      "as-IN",
+      "kk-KZ",
+      "az-AZ",
+      "ko-KR",
+      "be-BY",
+      "ky-KG",
+      "bn-BD",
+      "lv-LV",
+      "bn-IN",
+      "ln-CD",
+      "bs-BA",
+      "lt-LT",
+      "bg-BG",
+      "mk-MK",
+      "rup-BG",
+      "ms-MY",
+      "my-MM",
+      "ml-IN",
+      "yue-Hant-HK",
+      "mt-MT",
+      "ca-ES",
+      "zh-Hans-CN",
+      "ceb",
+      "mr-IN",
+      "km-KH",
+      "mn-MN",
+      "hr-HR",
+      "ne-NP",
+      "cs-CZ",
+      "nb-NO",
+      "da-DK",
+      "or-IN",
+      "nl-NL",
+      "pl-PL",
+      "en-GB",
+      "pt-BR",
+      "en-IN",
+      "pt-PT",
+      "en-US",
+      "pa-IN",
+      "et-EE",
+      "pa-Guru-IN",
+      "fa-IR",
+      "ro-RO",
+      "fil-PH",
+      "ru-RU",
+      "fi-FI",
+      "sr-RS",
+      "fr-FR",
+      "sd-Arab-IN",
+      "gl-ES",
+      "sk-SK",
+      "ka-GE",
+      "sl-SI",
+      "de-DE",
+      "es-419",
+      "el-GR",
+      "es-US",
+      "gu-IN",
+      "sw-KE",
+      "ha-NG",
+      "sv-SE",
+      "he-IL",
+      "tg-TJ",
+      "hi-IN",
+      "te-IN",
+      "hu-HU",
+      "th-TH",
+      "is-IS",
+      "tr-TR",
+      "uk-UA",
+      "id-ID",
+      "uz-UZ",
+      "it-IT",
+      "vi-VN"
+    ],
+    "meta": {
+      "api": "Gemini Developer API (Live API)",
+      "docs": "https://aistudio.google.com/docs/models/gemini-3.5-transcribe",
+      "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
+      "session_limit_minutes": 10
+    },
+    "name": "Gemini 3.5 Transcribe Live",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini Developer API paid tier: audio input $3.50 per 1M tokens (~$0.005/min), text output $21.00 per 1M tokens (~$0.004/min).",
+      "price_usd": 3.5e-06,
+      "source_url": "https://aistudio.google.com/docs/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.1e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "language_detection"
+    ],
+    "description": "Vertex AI Live API speech-to-text model returning interim and final transcripts with automatic language detection.",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.5-transcribe-live-preview",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "api": "Vertex AI Live API",
+      "docs": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+    },
+    "name": "Gemini 3.5 Transcribe Live (Vertex AI preview)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
   },
   {
     "batch": true,
