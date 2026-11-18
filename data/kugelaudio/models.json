@@ -1,0 +1,430 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Live voice-agent model over one WebSocket that hears callers, answers in a natural voice and can delegate to your backend; compatible with the OpenAI Python SDK.",
+    "first_seen": "2026-11-18",
+    "id": "fluid-1",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "de",
+      "en",
+      "fr",
+      "es",
+      "it",
+      "pt",
+      "nl",
+      "pl"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "alias": "gpt-live-1",
+      "audio": "PCM16 at 16 or 24 kHz, or G.711 (audio/pcmu, audio/pcma) at 8 kHz",
+      "beta_recording": "calls recorded during the beta for debugging (not training), deleted after 90 days",
+      "billing": "metered per second of session (silence included); delegated model tokens billed extra; no rate on kugelaudio.com/pricing as of 2026-11-18",
+      "endpoint": "/v1/live/sessions",
+      "max_session_seconds": 3600,
+      "public_since": "2026-11-11"
+    },
+    "name": "Kugel Fluid 1",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kugelaudio.com/models.md",
+        "https://docs.kugelaudio.com/features/speech-to-text.md",
+        "https://docs.kugelaudio.com/api-reference/tts/audio-formats.md",
+        "https://docs.kugelaudio.com/features/text-processing.md",
+        "https://kugelaudio.com/pricing",
+        "https://docs.kugelaudio.com/speech-to-speech/overview.md",
+        "https://docs.kugelaudio.com/speech-to-speech/limits.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection"
+    ],
+    "description": "Speech-to-text for nine European languages with language detection among listed languages, word alternatives and KugelTurn end-of-turn detection.",
+    "first_seen": "2026-11-18",
+    "id": "kugel-ear-1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "de",
+      "en",
+      "fr",
+      "it",
+      "es",
+      "pt",
+      "nl",
+      "pl",
+      "ro"
+    ],
+    "max_audio_seconds": 300,
+    "meta": {
+      "access_note": "Speech to text must be enabled for the organization (else 403).",
+      "auto_language": "'auto'/omitted detects only German or English",
+      "end_of_turn": "KugelTurn",
+      "endpoints": {
+        "batch": "POST /v1/audio/transcriptions",
+        "streaming": "WebSocket /v1/audio/transcriptions/stream"
+      },
+      "no_diarization": true,
+      "no_word_timestamps": true,
+      "stream_input": "mono 16-bit PCM",
+      "upload_sample_rate_range_hz": [
+        8000,
+        48000
+      ],
+      "word_alternatives": true
+    },
+    "name": "Kugel Ear 1",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kugelaudio.com/models.md",
+        "https://docs.kugelaudio.com/features/speech-to-text.md",
+        "https://docs.kugelaudio.com/api-reference/tts/audio-formats.md",
+        "https://docs.kugelaudio.com/features/text-processing.md",
+        "https://kugelaudio.com/pricing",
+        "https://docs.kugelaudio.com/speech-to-speech/overview.md",
+        "https://docs.kugelaudio.com/speech-to-speech/limits.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "alias_of": "kugel-3.5",
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Legacy model id that now runs on kugel-3.5 and is billed at the Turbo rate.",
+    "first_seen": "2026-11-18",
+    "id": "kugel-2-turbo",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "nl",
+      "en",
+      "pl",
+      "fr",
+      "sv",
+      "es",
+      "da",
+      "it",
+      "no",
+      "pt",
+      "fi",
+      "cs",
+      "hu",
+      "ro",
+      "el",
+      "uk",
+      "bg",
+      "tr",
+      "vi",
+      "ar",
+      "hi",
+      "zh",
+      "ja",
+      "ko",
+      "sk",
+      "sl",
+      "hr",
+      "sr",
+      "ru",
+      "he",
+      "fa",
+      "ur",
+      "bn",
+      "ta",
+      "yue",
+      "th",
+      "id",
+      "ms"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "legacy": true,
+      "note": "Not returned by GET /v1/models; docs recommend kugel-3.5 or kugel-3 for new integrations."
+    },
+    "name": "Kugel 2 Turbo (legacy id)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "EUR",
+      "notes": "Listed as 'Text to Speech Turbo': €0.035 per minute of generated audio excl. VAT (€0.04165 incl. 19% VAT), billed by the second; ≈ €42.42 per 1M characters.",
+      "price": 0.035,
+      "source_url": "https://kugelaudio.com/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kugelaudio.com/models.md",
+        "https://docs.kugelaudio.com/features/speech-to-text.md",
+        "https://docs.kugelaudio.com/api-reference/tts/audio-formats.md",
+        "https://docs.kugelaudio.com/features/text-processing.md",
+        "https://kugelaudio.com/pricing",
+        "https://docs.kugelaudio.com/speech-to-speech/overview.md",
+        "https://docs.kugelaudio.com/speech-to-speech/limits.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Previous default multilingual TTS model: one model for 39 languages with zero-shot voice cloning and streaming.",
+    "first_seen": "2026-11-18",
+    "id": "kugel-3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "nl",
+      "en",
+      "pl",
+      "fr",
+      "sv",
+      "es",
+      "da",
+      "it",
+      "no",
+      "pt",
+      "fi",
+      "cs",
+      "hu",
+      "ro",
+      "el",
+      "uk",
+      "bg",
+      "tr",
+      "vi",
+      "ar",
+      "hi",
+      "zh",
+      "ja",
+      "ko",
+      "sk",
+      "sl",
+      "hr",
+      "sr",
+      "ru",
+      "he",
+      "fa",
+      "ur",
+      "bn",
+      "ta",
+      "yue",
+      "th",
+      "id",
+      "ms"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "break_tags": true,
+      "native_sample_rate_hz": 24000,
+      "text_normalization": true,
+      "word_timestamps": true
+    },
+    "name": "Kugel 3",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "EUR",
+      "notes": "€0.07 per minute of generated audio excl. VAT (€0.0833 incl. 19% VAT), billed by the second; ≈ €84.85 per 1M characters at ~825 chars/min. €5 free credit for new accounts.",
+      "price": 0.07,
+      "source_url": "https://kugelaudio.com/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kugelaudio.com/models.md",
+        "https://docs.kugelaudio.com/features/speech-to-text.md",
+        "https://docs.kugelaudio.com/api-reference/tts/audio-formats.md",
+        "https://docs.kugelaudio.com/features/text-processing.md",
+        "https://kugelaudio.com/pricing",
+        "https://docs.kugelaudio.com/speech-to-speech/overview.md",
+        "https://docs.kugelaudio.com/speech-to-speech/limits.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "KugelAudio's newest multilingual TTS model, built on Kugel 3 with better handling of short replies, timed pauses and spelled-out codes.",
+    "first_seen": "2026-11-18",
+    "id": "kugel-3.5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "de",
+      "nl",
+      "en",
+      "pl",
+      "fr",
+      "sv",
+      "es",
+      "da",
+      "it",
+      "no",
+      "pt",
+      "fi",
+      "cs",
+      "hu",
+      "ro",
+      "el",
+      "uk",
+      "bg",
+      "tr",
+      "vi",
+      "ar",
+      "hi",
+      "zh",
+      "ja",
+      "ko",
+      "sk",
+      "sl",
+      "hr",
+      "sr",
+      "ru",
+      "he",
+      "fa",
+      "ur",
+      "bn",
+      "ta",
+      "yue",
+      "th",
+      "id",
+      "ms"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "break_tags": true,
+      "default_since": "2026-10-13",
+      "legacy_aliases": [
+        "kugel-2.5",
+        "kugel-2-turbo",
+        "kugel-2",
+        "kugel-1",
+        "kugel-1-turbo"
+      ],
+      "native_sample_rate_hz": 24000,
+      "pricing_note": "kugel-3.5 has no separate line on kugelaudio.com/pricing (2026-11-18); legacy ids are billed at the rate of the id sent.",
+      "text_normalization": true,
+      "word_timestamps": true
+    },
+    "name": "Kugel 3.5",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kugelaudio.com/models.md",
+        "https://docs.kugelaudio.com/features/speech-to-text.md",
+        "https://docs.kugelaudio.com/api-reference/tts/audio-formats.md",
+        "https://docs.kugelaudio.com/features/text-processing.md",
+        "https://kugelaudio.com/pricing",
+        "https://docs.kugelaudio.com/speech-to-speech/overview.md",
+        "https://docs.kugelaudio.com/speech-to-speech/limits.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
