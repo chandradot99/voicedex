@@ -1,0 +1,758 @@
+[
+  {
+    "description": "12B end-to-end full-duplex speech-to-speech model for conversational agents, with persona control via text role prompts.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/nemotron-voicechat",
+    "languages": [
+      "en"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/nemotron-voicechat",
+      "input_audio": "16 kHz WAV",
+      "lifecycle_note": "Model card: 'ready for early access evaluation purposes only'",
+      "model_license": "NVIDIA Software and Model Evaluation License",
+      "model_version": "v1.0",
+      "output_audio": "22.05 kHz WAV"
+    },
+    "name": "Nemotron 3 VoiceChat",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "sample_rates_hz": [
+      22050
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "translation"
+    ],
+    "description": "Offline multilingual speech recognition and speech-to-text translation between English and other languages.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/canary-1b-asr",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/canary-1b-asr",
+      "languages_note": "Languages not enumerated in the NIM support matrix",
+      "model_license": "NVIDIA Community Model License",
+      "model_version": "Canary-1B-Flash 2.0",
+      "nim_container": "canary-1b"
+    },
+    "name": "Canary 1B Multilingual",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "language_detection",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Low-latency streaming ASR; the Nemotron 3.5 profile covers 40 locales with automatic language detection.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/nemotron-asr-streaming",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "ar",
+      "bg-BG",
+      "zh-CN",
+      "hr-HR",
+      "cs-CZ",
+      "da-DK",
+      "nl-NL",
+      "en-GB",
+      "en-US",
+      "et-EE",
+      "fi-FI",
+      "fr-CA",
+      "fr-FR",
+      "de-DE",
+      "el-GR",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "lv-LV",
+      "lt-LT",
+      "mt-MT",
+      "nb-NO",
+      "nn-NO",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "sk-SK",
+      "sl-SI",
+      "es-ES",
+      "es-US",
+      "sv-SE",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "vi-VN"
+    ],
+    "meta": {
+      "diarization": "Sortformer, up to eight speakers (NIM)",
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/nemotron-asr-streaming",
+      "language_code_note": "The API uses the code ar-AR for Arabic; stored as bare 'ar'.",
+      "language_detection": "language_code=auto",
+      "nemotron_3_open_weights": "https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b (NVIDIA Open Model License)",
+      "nim_container": "nemotron-asr-streaming",
+      "profiles": "Nemotron 3 ASR (English, released 2026-03-12) and Nemotron 3.5 ASR (40 locales, June 2026)",
+      "punctuation_default": "off",
+      "streaming_only": true
+    },
+    "name": "Nemotron ASR Streaming",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "OpenMDW-1.1",
+      "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Offline 30B-A4B speech-augmented language model with prompt control, translation to/from English, speaker tags, word timestamps and subtitles.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/nemotron-transcribe",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "hy",
+      "bn",
+      "bg",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fil",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "lt",
+      "mt",
+      "nn",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "es",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "availability": "Self-hosted Speech NIM only; not listed as a build.nvidia.com endpoint",
+      "context_tokens": 65536,
+      "input_encodings": "WAV, FLAC, Ogg Opus",
+      "multi_turn_mode": true,
+      "nim_container": "nemotron-transcribe",
+      "subtitles": true,
+      "translation_languages": "31 languages into and out of English"
+    },
+    "name": "Nemotron 3.5 Transcribe",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "OpenMDW-1.1",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Multilingual streaming and offline ASR with automatic language detection.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-1_1b-rnnt-multilingual-asr",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "ar",
+      "bn-IN",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "en-GB",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fr-CA",
+      "fr-FR",
+      "he-IL",
+      "hi-IN",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "nb-NO",
+      "nl-NL",
+      "nn-NO",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ru-RU",
+      "sv-SE",
+      "ta-IN",
+      "th-TH",
+      "tr-TR"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-1_1b-rnnt-multilingual-asr",
+      "language_code_note": "The API uses the code ar-AR for Arabic; stored as bare 'ar'.",
+      "language_note": "build.nvidia.com lists 25 locales; the NIM matrix adds bn-IN and ta-IN in the indic profile",
+      "model_license": "NVIDIA Community Model License",
+      "model_version": "Parakeet-RNNT-XXL-1.1b_universal_spe8.5k_1.0",
+      "nim_container": "parakeet-1-1b-rnnt-multilingual"
+    },
+    "name": "Parakeet 1.1B RNNT Multilingual",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "English ASR for streaming and offline use with word timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-ctc-0_6b-asr",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-asr",
+      "model_license": "AI Foundation Models Community License",
+      "model_version": "Parakeet-0.6b-ctc-en-us-asr-set-6.0",
+      "nim_container": "parakeet-0-6b-ctc-en-us"
+    },
+    "name": "Parakeet CTC 0.6B English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Spanish-English code-switching ASR with punctuation and word timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-ctc-0_6b-es",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "es-US",
+      "en-US"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-es",
+      "model_license": "NVIDIA AI Foundation Models Community License",
+      "model_version": "Parakeet-CTC-XL-unified-0.6b_spe1024_es-en-US_3.0",
+      "nim_container": "parakeet-ctc-0.6b-es"
+    },
+    "name": "Parakeet CTC 0.6B Spanish-English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Vietnamese-English code-switching ASR with punctuation and word timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-ctc-0_6b-vi",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "vi-VN",
+      "en"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-vi",
+      "model_license": "NVIDIA Community Model License",
+      "nim_container": "parakeet-ctc-0.6b-vi"
+    },
+    "name": "Parakeet CTC 0.6B Vietnamese-English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Mandarin-English code-switching ASR with punctuation.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-ctc-0_6b-zh-cn",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "zh-CN",
+      "en-US"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-zh-cn",
+      "model_license": "NVIDIA Community Model License",
+      "model_version": "Parakeet-CTC-XL-unified-0.6b_spe7k_zh-CN_3.0",
+      "nim_container": "parakeet-ctc-0.6b-zh-cn"
+    },
+    "name": "Parakeet CTC 0.6B Mandarin-English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Taiwanese Mandarin (Traditional Chinese) ASR with English code-switching.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-ctc-0_6b-zh-tw",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "zh-TW",
+      "en"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-zh-tw",
+      "model_license": "NVIDIA Community Model License",
+      "model_version": "Parakeet-CTC-XL-0.6b_zh-TW_1.0",
+      "nim_container": "parakeet-ctc-0.6b-zh-tw",
+      "punctuation": "not output by the model"
+    },
+    "name": "Parakeet CTC 0.6B Taiwanese Mandarin-English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "English ASR for streaming and offline use with word timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-ctc-1_1b-asr",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-ctc-1_1b-asr",
+      "model_license": "NVIDIA Community Model License",
+      "model_version": "Parakeet-1.1b-ctc-en-us-asr-set-6.0",
+      "nim_container": "parakeet-1-1b-ctc-en-us",
+      "punctuation_default": "off"
+    },
+    "name": "Parakeet CTC 1.1B English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Offline multilingual ASR across 25 European languages with automatic language detection, punctuation and word timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-tdt-0_6b",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "bg",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hu",
+      "it",
+      "lv",
+      "lt",
+      "mt",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "sl",
+      "es",
+      "sv",
+      "ru",
+      "uk"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b",
+      "long_audio": "up to 24 min with full attention (A100 80GB), up to 3 h with local attention (model card)",
+      "model_version": "parakeet-tdt-0.6b-v3",
+      "nim_container": "parakeet-0.6b-tdt"
+    },
+    "name": "Parakeet TDT 0.6B v3",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "CC-BY-4.0",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Offline English ASR with punctuation, capitalization and word-level timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/parakeet-tdt-0_6b-v2",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2",
+      "nim_container": "parakeet-0.6b-tdt"
+    },
+    "name": "Parakeet TDT 0.6B v2",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "CC-BY-4.0",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "capabilities": [
+      "emotion"
+    ],
+    "description": "Expressive multilingual TTS with built-in voices per language and emotion-styled voice variants.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/magpie-tts-multilingual",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "en-US",
+      "es-US",
+      "fr-FR",
+      "de-DE",
+      "zh-CN",
+      "vi-VN",
+      "it-IT",
+      "hi-IN",
+      "ja-JP",
+      "ko-KR",
+      "ar",
+      "pt-BR"
+    ],
+    "meta": {
+      "emotion_control": "emotion variants are selected via voice-name suffixes",
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/magpie-tts-multilingual",
+      "language_code_note": "Arabic (Modern Standard) uses the API code ar-XA; stored as bare 'ar'.",
+      "max_audio_per_request": "30 s of speech in standard mode; long-form mode uses a sliding window",
+      "model_license": "NVIDIA Open Model License Agreement",
+      "model_version": "RivaTTS_MagpieTTS_Multilingual v4.0",
+      "nim_container": "magpie-tts-multilingual"
+    },
+    "name": "Magpie TTS Multilingual",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "sample_rates_hz": [
+      22050
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Zero-shot TTS that clones a voice from a 3-10 second audio prompt.",
+    "first_seen": "2026-11-18",
+    "id": "nvidia/magpie-tts-zeroshot",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "en-US",
+      "es-US",
+      "fr-FR",
+      "de-DE",
+      "zh-CN",
+      "vi-VN",
+      "it-IT",
+      "hi-IN",
+      "ja-JP",
+      "ko-KR",
+      "ar",
+      "pt-BR"
+    ],
+    "meta": {
+      "access_restricted": true,
+      "hosted_endpoint": "https://build.nvidia.com/nvidia/magpie-tts-zeroshot",
+      "language_code_note": "Arabic uses the API code ar-XA; stored as bare 'ar'.",
+      "max_output_seconds": 20,
+      "model_license": "AI Foundation Models Community License Agreement",
+      "nim_container": "magpie-tts-zeroshot",
+      "voice_prompt_seconds": "3-10"
+    },
+    "name": "Magpie TTS Zeroshot",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://build.nvidia.com/explore/speech.md",
+        "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+        "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+      ]
+    },
+    "sample_rates_hz": [
+      22050
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

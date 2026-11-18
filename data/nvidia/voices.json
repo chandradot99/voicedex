@@ -1,0 +1,1517 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.AR-XA.Jason",
+    "languages": [
+      "ar"
+    ],
+    "name": "Jason (AR-XA)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.AR-XA.Ray",
+    "languages": [
+      "ar"
+    ],
+    "name": "Ray (AR-XA)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.AR-XA.Sofia",
+    "languages": [
+      "ar"
+    ],
+    "name": "Sofia (AR-XA)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Aria",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Aria (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Diego",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Diego (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Isabela",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Isabela (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Jason",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Jason (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Leo",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Leo (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Louise",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Louise (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Mia",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Mia (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Pascal",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Pascal (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Ray",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Ray (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.DE-DE.Sofia",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Sofia (DE-DE)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Aria",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.EN-US.Aria.Angry",
+        "Magpie-Multilingual.EN-US.Aria.Calm",
+        "Magpie-Multilingual.EN-US.Aria.Neutral",
+        "Magpie-Multilingual.EN-US.Aria.Sad"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Neutral",
+        "Sad"
+      ]
+    },
+    "name": "Aria (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Diego",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Diego (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Isabela",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Isabela (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Jason",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.EN-US.Jason.Angry",
+        "Magpie-Multilingual.EN-US.Jason.Calm",
+        "Magpie-Multilingual.EN-US.Jason.Happy",
+        "Magpie-Multilingual.EN-US.Jason.Neutral"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Happy",
+        "Neutral"
+      ]
+    },
+    "name": "Jason (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Leo",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.EN-US.Leo.Angry",
+        "Magpie-Multilingual.EN-US.Leo.Calm",
+        "Magpie-Multilingual.EN-US.Leo.Neutral",
+        "Magpie-Multilingual.EN-US.Leo.Sad"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Neutral",
+        "Sad"
+      ]
+    },
+    "name": "Leo (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Louise",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Louise (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Mia",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.EN-US.Mia.Angry",
+        "Magpie-Multilingual.EN-US.Mia.Calm",
+        "Magpie-Multilingual.EN-US.Mia.Neutral",
+        "Magpie-Multilingual.EN-US.Mia.Sad"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Neutral",
+        "Sad"
+      ]
+    },
+    "name": "Mia (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Pascal",
+    "languages": [
+      "en-US"
+    ],
+    "name": "Pascal (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Ray",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.EN-US.Ray.Angry",
+        "Magpie-Multilingual.EN-US.Ray.Calm",
+        "Magpie-Multilingual.EN-US.Ray.Fearful",
+        "Magpie-Multilingual.EN-US.Ray.Neutral"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Fearful",
+        "Neutral"
+      ]
+    },
+    "name": "Ray (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.EN-US.Sofia",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.EN-US.Sofia.Angry",
+        "Magpie-Multilingual.EN-US.Sofia.Calm",
+        "Magpie-Multilingual.EN-US.Sofia.Fearful",
+        "Magpie-Multilingual.EN-US.Sofia.Neutral"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Fearful",
+        "Neutral"
+      ]
+    },
+    "name": "Sofia (EN-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Aria",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Aria (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Diego",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.ES-US.Diego.Angry",
+        "Magpie-Multilingual.ES-US.Diego.Calm",
+        "Magpie-Multilingual.ES-US.Diego.Happy",
+        "Magpie-Multilingual.ES-US.Diego.Neutral",
+        "Magpie-Multilingual.ES-US.Diego.PleasantSurprised"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Happy",
+        "Neutral",
+        "PleasantSurprised"
+      ]
+    },
+    "name": "Diego (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Isabela",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.ES-US.Isabela.Angry",
+        "Magpie-Multilingual.ES-US.Isabela.Calm",
+        "Magpie-Multilingual.ES-US.Isabela.Happy",
+        "Magpie-Multilingual.ES-US.Isabela.Neutral",
+        "Magpie-Multilingual.ES-US.Isabela.Sad"
+      ],
+      "emotions": [
+        "Angry",
+        "Calm",
+        "Happy",
+        "Neutral",
+        "Sad"
+      ]
+    },
+    "name": "Isabela (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Jason",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Jason (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Leo",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Leo (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Louise",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Louise (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Mia",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Mia (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Pascal",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Pascal (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Ray",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Ray (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ES-US.Sofia",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Sofia (ES-US)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Aria",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Aria (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Diego",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Diego (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Isabela",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Isabela (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Jason",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Jason (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Leo",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Leo (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Louise",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Louise (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Mia",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Mia (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Pascal",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.FR-FR.Pascal.Calm",
+        "Magpie-Multilingual.FR-FR.Pascal.Happy",
+        "Magpie-Multilingual.FR-FR.Pascal.Neutral",
+        "Magpie-Multilingual.FR-FR.Pascal.Sad"
+      ],
+      "emotions": [
+        "Calm",
+        "Happy",
+        "Neutral",
+        "Sad"
+      ]
+    },
+    "name": "Pascal (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Ray",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Ray (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.FR-FR.Sofia",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Sofia (FR-FR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Aria",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Aria (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Diego",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Diego (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.HouZhen",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "HouZhen (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Isabela",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Isabela (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Jason",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Jason (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Leo",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Leo (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Long",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Long (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Louise",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Louise (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Pascal",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Pascal (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Siwei",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Siwei (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.HI-IN.Sofia",
+    "languages": [
+      "hi-IN"
+    ],
+    "name": "Sofia (HI-IN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Diego",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Diego (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Isabela",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Isabela (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Jason",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Jason (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Leo",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Leo (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Louise",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Louise (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Mia",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Mia (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Pascal",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Pascal (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Ray",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Ray (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.IT-IT.Sofia",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Sofia (IT-IT)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.HouZhen",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "HouZhen (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.Isabela",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Isabela (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.Jason",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Jason (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.Long",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Long (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.Louise",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Louise (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.Pascal",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Pascal (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.Ray",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Ray (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.JA-JP.Siwei",
+    "languages": [
+      "ja-JP"
+    ],
+    "name": "Siwei (JA-JP)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.KO-KR.Aria",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "Aria (KO-KR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.KO-KR.Diego",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "Diego (KO-KR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.KO-KR.HouZhen",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "HouZhen (KO-KR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.KO-KR.Louise",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "Louise (KO-KR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.KO-KR.Pascal",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "Pascal (KO-KR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.KO-KR.Phung",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "Phung (KO-KR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.KO-KR.Ray",
+    "languages": [
+      "ko-KR"
+    ],
+    "name": "Ray (KO-KR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.PT-BR.Diego",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Diego (PT-BR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.PT-BR.Isabela",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Isabela (PT-BR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.PT-BR.Louise",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Louise (PT-BR)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Isabela",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Isabela (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Jason",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Jason (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Long",
+    "languages": [
+      "vi-VN"
+    ],
+    "meta": {
+      "emotion_voice_ids": [
+        "Magpie-Multilingual.VI-VN.Long.Calm",
+        "Magpie-Multilingual.VI-VN.Long.Neutral",
+        "Magpie-Multilingual.VI-VN.Long.Sad"
+      ],
+      "emotions": [
+        "Calm",
+        "Neutral",
+        "Sad"
+      ]
+    },
+    "name": "Long (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Louise",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Louise (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Mia",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Mia (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Pascal",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Pascal (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Phung",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Phung (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Ray",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Ray (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Siwei",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Siwei (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.VI-VN.Sofia",
+    "languages": [
+      "vi-VN"
+    ],
+    "name": "Sofia (VI-VN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.Diego",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "Diego (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.HouZhen",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "HouZhen (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.Isabela",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "Isabela (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.Jason",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "Jason (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.Long",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "Long (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.Louise",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "Louise (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.Pascal",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "Pascal (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-multilingual"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "Magpie-Multilingual.ZH-CN.Siwei",
+    "languages": [
+      "zh-CN"
+    ],
+    "name": "Siwei (ZH-CN)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-zeroshot"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Magpie-ZeroShot-Multilingual.Female",
+    "languages": [
+      "en-US",
+      "es-US",
+      "fr-FR",
+      "de-DE",
+      "zh-CN",
+      "vi-VN",
+      "it-IT",
+      "hi-IN",
+      "ja-JP",
+      "ko-KR",
+      "ar",
+      "pt-BR"
+    ],
+    "meta": {
+      "note": "Default female speaker of Magpie TTS Zeroshot"
+    },
+    "name": "Zeroshot Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "nvidia/magpie-tts-zeroshot"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Magpie-ZeroShot-Multilingual.Male",
+    "languages": [
+      "en-US",
+      "es-US",
+      "fr-FR",
+      "de-DE",
+      "zh-CN",
+      "vi-VN",
+      "it-IT",
+      "hi-IN",
+      "ja-JP",
+      "ko-KR",
+      "ar",
+      "pt-BR"
+    ],
+    "meta": {
+      "note": "Default male speaker of Magpie TTS Zeroshot"
+    },
+    "name": "Zeroshot Male",
+    "updated_at": "2026-11-18"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "access": "self_serve",
+  "description": "NVIDIA (Santa Clara, California; founded 1993) publishes speech models under its Riva and Nemotron Speech lines: Parakeet, Canary and Nemotron ASR/Transcribe for speech recognition, Magpie for TTS and Nemotron VoiceChat for full-duplex speech-to-speech. Hosted trial endpoints are available with a free API key on build.nvidia.com; production deployment is via self-hosted Speech NIM containers governed by NVIDIA's software licence (NVIDIA AI Enterprise). Many of the models are also released as open weights on Hugging Face.",
+  "docs_urls": [
+    "https://build.nvidia.com/explore/speech.md",
+    "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+    "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+    "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+  ],
+  "headquarters": "US",
+  "id": "nvidia",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.api.nvidia.com/",
+    "docs": "https://docs.nvidia.com/nim/speech/latest/",
+    "status": "https://status.ngc.nvidia.com/"
+  },
+  "name": "NVIDIA",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://build.nvidia.com/explore/speech.md",
+      "https://docs.nvidia.com/nim/speech/latest/asr/index.html",
+      "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/asr.html",
+      "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
+    ]
+  },
+  "website": "https://www.nvidia.com/en-us/ai-data-science/products/riva/"
+}
