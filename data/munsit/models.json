@@ -1,0 +1,231 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "sentiment",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Arabic speech recognition optimized across dialects and accents; the default model.",
+    "first_seen": "2026-11-18",
+    "id": "munsit",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "batch_formats": "mp3, wav, m4a, flac, ogg, opus, webm, aac, amr, wma, mp2, m4r",
+      "dialect_parameter": false,
+      "diarization_max_speakers": 8,
+      "max_duration_note": "Files under 60 minutes; live streaming unbounded",
+      "recognition_sample_rate_hz": 16000,
+      "regional_endpoints": {
+        "global": "https://api.munsit.com/api/v1",
+        "uae": "https://ae.api.munsit.com/api/v1"
+      },
+      "speaker_gender": true,
+      "streaming_encodings": "linear16, mulaw, alaw at 8000 or 16000 Hz (WSS /api/v1/listen)"
+    },
+    "name": "Munsit",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Wallet credits: 100 credits per minute of audio (20,000 credits = $1), same rate for munsit and munsit-en-ar; +10 credits/min each for diarize, return_gender, return_sentiment on POST /audio/transcribe ($0.33-$0.39 per hour); live streaming billed at the base rate per channel. Price list version 2026-11. Note: munsit.com/pricing plan allowances (e.g. 200k credits ~ 200 transcription minutes) imply a higher per-minute credit rate than the API docs.",
+      "price_usd": 0.3,
+      "source_url": "https://docs.munsit.com/speech-to-text/transcribe",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "one paid option (diarize, gender or sentiment)",
+          "price_usd": 0.33,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "two paid options",
+          "price_usd": 0.36,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "all three paid options",
+          "price_usd": 0.39,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.munsit.com/speech-to-text/get-started.md",
+        "https://docs.munsit.com/speech-to-text/transcribe.md",
+        "https://docs.munsit.com/speech-to-text/streaming.md",
+        "https://docs.munsit.com/text-to-speech/models.md",
+        "https://docs.munsit.com/text-to-speech/synthesize.md",
+        "https://docs.munsit.com/reference/websocket.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "sentiment",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Mixed Arabic-English speech recognition with code-switching support.",
+    "first_seen": "2026-11-18",
+    "id": "munsit-en-ar",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "hotwords_note": "Batch: up to 20 hotword words; live streaming does not apply hotwords",
+      "language_parameter": "auto (default), ar, en",
+      "max_duration_note": "Files under 60 minutes; live streaming unbounded",
+      "regional_endpoints": {
+        "global": "https://api.munsit.com/api/v1",
+        "uae": "https://ae.api.munsit.com/api/v1"
+      },
+      "streaming_encodings": "linear16, mulaw, alaw at 8000 or 16000 Hz (WSS /api/v1/listen)"
+    },
+    "name": "Munsit En-Ar",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Wallet credits: 100 credits per minute of audio (20,000 credits = $1), same rate for munsit and munsit-en-ar; +10 credits/min each for diarize, return_gender, return_sentiment on POST /audio/transcribe ($0.33-$0.39 per hour); live streaming billed at the base rate per channel. Price list version 2026-11. Note: munsit.com/pricing plan allowances (e.g. 200k credits ~ 200 transcription minutes) imply a higher per-minute credit rate than the API docs.",
+      "price_usd": 0.3,
+      "source_url": "https://docs.munsit.com/speech-to-text/transcribe",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "one paid option (diarize, gender or sentiment)",
+          "price_usd": 0.33,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "two paid options",
+          "price_usd": 0.36,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "all three paid options",
+          "price_usd": 0.39,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.munsit.com/speech-to-text/get-started.md",
+        "https://docs.munsit.com/speech-to-text/transcribe.md",
+        "https://docs.munsit.com/speech-to-text/streaming.md",
+        "https://docs.munsit.com/text-to-speech/models.md",
+        "https://docs.munsit.com/text-to-speech/synthesize.md",
+        "https://docs.munsit.com/reference/websocket.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "voice_cloning"
+    ],
+    "description": "Arabic voice synthesis model covering multiple Arabic dialects, with streaming output.",
+    "first_seen": "2026-11-18",
+    "id": "faseeh-v1-preview",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "lifecycle": "beta",
+    "max_text_chars": 10000,
+    "meta": {
+      "break_tags": "<break time=\"...\"/> up to 3 s per tag, 20 tags per request",
+      "dialect_hint": "auto, emirati, fusha",
+      "emotion_tags": "excited, happy, calm, serious, sad, fearful, angry ([neutral] resets)",
+      "lifecycle_note": "Model id carries a -preview suffix",
+      "pricing_credits": "Billed per character at the model's credit cost per character (rate not published in the docs); munsit.com/pricing plan allowances equate 200k credits to ~100K speech characters (~2 credits/char). 20,000 credits = $1 per the STT docs.",
+      "sample_rate_range_hz": "8000-48000 (default 24000; 48000 native)",
+      "speed_range": "0.7-1.2",
+      "stability": "0.0-1.0 (required)",
+      "voices_list_endpoint": "GET /api/v1/voices (requires API key)",
+      "word_timestamps": "character-level timings via POST /text-to-speech/{model_id}/with-timestamps"
+    },
+    "name": "Faseeh",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.munsit.com/speech-to-text/get-started.md",
+        "https://docs.munsit.com/speech-to-text/transcribe.md",
+        "https://docs.munsit.com/speech-to-text/streaming.md",
+        "https://docs.munsit.com/text-to-speech/models.md",
+        "https://docs.munsit.com/text-to-speech/synthesize.md",
+        "https://docs.munsit.com/reference/websocket.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

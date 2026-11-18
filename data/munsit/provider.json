@@ -1,0 +1,29 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "Munsit is the Arabic voice API of CNTXT AI, based in Abu Dhabi, UAE. It sells Arabic speech-to-text (batch and live streaming, including an Arabic-English code-switching model) and Faseeh text-to-speech, covering 25+ Arabic dialects and Modern Standard Arabic,  with a UAE data-residency endpoint and self-hosted deployment.",
+  "docs_urls": [
+    "https://docs.munsit.com/speech-to-text/get-started.md",
+    "https://docs.munsit.com/speech-to-text/transcribe.md",
+    "https://docs.munsit.com/speech-to-text/streaming.md",
+    "https://docs.munsit.com/text-to-speech/models.md",
+    "https://docs.munsit.com/text-to-speech/synthesize.md",
+    "https://docs.munsit.com/reference/websocket.md"
+  ],
+  "headquarters": "AE",
+  "id": "munsit",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.munsit.com/reference/endpoints",
+    "docs": "https://docs.munsit.com",
+    "pricing": "https://munsit.com/pricing",
+    "status": "https://docs.munsit.com/status"
+  },
+  "name": "Munsit",
+  "source": "docs",
+  "type": "both",
+  "website": "https://munsit.com"
+}
