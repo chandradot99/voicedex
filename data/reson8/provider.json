@@ -1,0 +1,28 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "iso27001",
+    "gdpr"
+  ],
+  "description": "Reson8 (Resonate Labs B.V.) is a Netherlands-based speech-to-text provider that runs its own GPU infrastructure in the Netherlands with zero audio retention. It sells prerecorded, realtime and turn-detection transcription APIs (Rumble-2, Rumble-2-Flash, Resonant-1) with custom vocabulary, focused on European languages and domain terminology; Rumble-2-Flash is also published as open weights.",
+  "docs_urls": [
+    "https://docs.reson8.dev/llms-full.txt",
+    "https://www.reson8.dev/pricing"
+  ],
+  "headquarters": "NL",
+  "id": "reson8",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.reson8.dev/api/speech-to-text/prerecorded/",
+    "docs": "https://docs.reson8.dev/",
+    "pricing": "https://www.reson8.dev/pricing",
+    "status": "https://status.reson8.dev"
+  },
+  "name": "Reson8",
+  "regions": [
+    "eu"
+  ],
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.reson8.dev"
+}

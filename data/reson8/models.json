@@ -1,0 +1,350 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Reson8's original European-language model and the API default when no model is passed; supports patterns.",
+    "first_seen": "2026-11-18",
+    "id": "resonant-1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "fy",
+      "it",
+      "nl",
+      "pl",
+      "pt",
+      "sv"
+    ],
+    "meta": {
+      "api_default": true,
+      "endpoints": [
+        "prerecorded",
+        "realtime",
+        "turns"
+      ],
+      "filler_mode": true,
+      "patterns": true,
+      "pricing_note": "not listed on current pricing page"
+    },
+    "name": "Resonant-1",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.reson8.dev/llms-full.txt",
+        "https://www.reson8.dev/pricing"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Reson8's most accurate speech-to-text model, available on the Prerecorded, Realtime and Turns endpoints.",
+    "first_seen": "2026-11-18",
+    "id": "rumble-2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "ar",
+      "az",
+      "be",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "ceb",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fil",
+      "fr",
+      "fy",
+      "gl",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "jv",
+      "ko",
+      "lt",
+      "lv",
+      "mk",
+      "mr",
+      "ms",
+      "mt",
+      "nb",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sq",
+      "sr",
+      "sv",
+      "ta",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "diarization_max_speakers": 8,
+      "endpoints": [
+        "prerecorded",
+        "realtime",
+        "turns"
+      ],
+      "filler_mode": true,
+      "launched": "2026-11-10",
+      "max_custom_terms": 50000,
+      "max_phrases_per_request": 250,
+      "number_formatting": true,
+      "processing": "own GPUs in the Netherlands, zero audio retention",
+      "raw_encodings": [
+        "pcm_s16le",
+        "mulaw",
+        "alaw"
+      ],
+      "turn_detection": "turns endpoint (end-of-turn + barge-in)"
+    },
+    "name": "Rumble-2",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "EUR",
+      "notes": "Prerecorded rate on Launch plan (EUR 20/mo, credits); Scale plan (EUR 100/mo) 12.5% lower. Excl. VAT, billed per second. Free Build plan credits (~12 h prerecorded or ~8 h realtime).",
+      "price": 0.16,
+      "source_url": "https://www.reson8.dev/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "prerecorded, Launch plan",
+          "price": 0.16,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime / turns, Launch plan",
+          "price": 0.24,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prerecorded, Scale plan",
+          "price": 0.14,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime / turns, Scale plan",
+          "price": 0.21,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "diarization add-on, Launch plan",
+          "price": 0.024,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "diarization add-on, Scale plan",
+          "price": 0.021,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.reson8.dev/llms-full.txt",
+        "https://www.reson8.dev/pricing"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "description": "Reson8's fastest, smallest (0.5B) model for plain transcripts on the Prerecorded endpoint; also released as open weights.",
+    "first_seen": "2026-11-18",
+    "id": "rumble-2-flash",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "bn",
+      "bs",
+      "ca",
+      "ceb",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "eu",
+      "fa",
+      "fi",
+      "fil",
+      "fr",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "ko",
+      "lt",
+      "lv",
+      "mk",
+      "ms",
+      "mt",
+      "nb",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sq",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "endpoints": [
+        "prerecorded"
+      ],
+      "hf_architecture": "qwen3_asr",
+      "launched": "2026-11-03",
+      "parameters_b": 0.5,
+      "unsupported_params": [
+        "diarize",
+        "include_timestamps",
+        "include_words",
+        "phrases",
+        "custom_model_id",
+        "patterns",
+        "filler_mode",
+        "number_format"
+      ]
+    },
+    "name": "Rumble-2-Flash",
+    "open_weights": {
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/Reson8/Rumble-2-Flash"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "EUR",
+      "notes": "Launch plan rate; Scale plan EUR 0.01/h. Available outside SLA. Excl. VAT, billed per second.",
+      "price": 0.0114,
+      "source_url": "https://www.reson8.dev/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "prerecorded, Launch plan",
+          "price": 0.0114,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prerecorded, Scale plan",
+          "price": 0.01,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.reson8.dev/llms-full.txt",
+        "https://www.reson8.dev/pricing"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
