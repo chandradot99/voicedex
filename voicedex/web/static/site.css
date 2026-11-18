@@ -764,3 +764,31 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .landing-links a:hover, .lang-grid a:hover { color: var(--signal); }
 .landing-links a[aria-current="page"] { color: var(--signal); }
 .page-head .section-note a { color: var(--ink-2); }
+
+/* Provider vs provider (/compare/<a>-vs-<b>) */
+.vs-section { padding-top: 32px; }
+.vs-section .section-title { margin-bottom: 12px; }
+.vs-table th[scope="row"] { width: 28%; color: var(--ink-2); font: 400 12px/1.5 var(--mono); }
+.vs-table td { width: 36%; }
+.vs-table .sub { display: block; color: var(--muted); font-size: 12px; }
+.vs-table .yes { color: var(--signal); }
+.vs-models { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 32px; margin-top: 20px; }
+.vs-models-title { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.vs-model-list { list-style: none; margin: 0; padding: 0; }
+.vs-model-list li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 13px; }
+.vs-model-list a { text-decoration: none; min-width: 0; overflow-wrap: anywhere; }
+.compare-with { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding: 12px 0 4px; font-size: 14px; }
+.compare-with .ds-label { margin: 0 4px 0 0; }
+.compare-with a { color: var(--ink-2); text-decoration: none; }
+.compare-with a:hover { color: var(--signal); }
+
+/* Changes (/changes) */
+.changes { padding-bottom: 48px; }
+.change-day { padding-top: 28px; }
+.change-providers { font-size: 14px; color: var(--ink-2); line-height: 1.7; margin-bottom: 8px; }
+.change-providers a { color: var(--ink-2); }
+.changes-table .change-kind { width: 200px; font: 400 12px/1.5 var(--mono); color: var(--ink-2); white-space: nowrap; }
+.changes-table .change-kind.urgent { color: var(--end); }
+.changes-table .sub { display: block; color: var(--muted); font-size: 12px; }
+.changes-table .change-detail { text-align: right; color: var(--ink-2); }
+@media (max-width: 640px) { .changes-table .change-kind { width: auto; white-space: normal; } }

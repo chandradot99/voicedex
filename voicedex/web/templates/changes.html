@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Speech AI changelog: new models, price changes and shutdowns | {{ site_name }}{% endblock %}
+{% block description %}Every change to the speech AI catalog as it happens: models added, prices changed, shutdowns announced and models deprecated across {{ names|length }} providers. Also as an Atom feed.{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <h1>Changes</h1>
+  <p class="lede">What changed in the catalog, newest first: price changes, shutdown announcements, deprecations and models added. Each entry comes from a reviewed commit, so you can trace it in the <a href="https://github.com/chandradot99/voicedex/commits/main/data">git history</a>.</p>
+  <p class="page-links"><a href="/changes.xml">Atom feed</a><a href="/models?status=ending">All scheduled shutdowns</a></p>
+</section>
+
+<section class="wrap changes">
+  {% if not days %}
+  <p class="muted">No changes recorded yet.</p>
+  {% endif %}
+  {% for day, d in days.items() %}
+  <section class="change-day" aria-labelledby="d-{{ day }}">
+    <h2 id="d-{{ day }}" class="ds-label"><span class="mono">{{ day }}</span></h2>
+    {% if d.providers %}
+    <p class="change-providers"><b>{{ d.providers|length }} provider{{ 's' if d.providers|length != 1 }} added:</b>
+      {% for c in d.providers|sort(attribute="provider_id") %}<a href="/providers/{{ c.provider_id }}">{{ names.get(c.provider_id, c.provider_id) }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+    {% endif %}
+    {% if d.events %}
+    <div class="table-scroll">
+      <table class="data changes-table">
+        <tbody>
+          {% for c in d.events %}
+          <tr>
+            <td class="change-kind{% if c.kind in ('shutdown_announced', 'model_removed', 'model_deprecated', 'provider_retired') %} urgent{% endif %}">{{ kinds.get(c.kind, c.kind) }}</td>
+            <th scope="row">{% if c.model_id %}{% if c.model_key in live %}<a href="/models/{{ c.model_key }}"><code translate="no">{{ c.model_id }}</code></a>{% else %}<code translate="no">{{ c.model_id }}</code>{% endif %}<span class="sub">{{ names.get(c.provider_id, c.provider_id) }} · {{ TYPE_SHORT.get(c.model_type, c.model_type) }}</span>{% else %}<a href="/providers/{{ c.provider_id }}">{{ names.get(c.provider_id, c.provider_id) }}</a>{% endif %}</th>
+            <td class="mono change-detail">{% if c.before and c.after %}{{ c.before }} → {{ c.after }}{% elif c.after %}{{ c.after }}{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+  </section>
+  {% endfor %}
+</section>
+{% endblock %}

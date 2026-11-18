@@ -26,6 +26,12 @@
   </p>
 </section>
 
+{% if compare_with %}
+<section class="wrap">
+  <p class="compare-with"><span class="ds-label">Compare {{ p.name }} with</span>{% for slug, n in compare_with %}<a href="/compare/{{ slug }}">{{ n }}</a>{% endfor %}</p>
+</section>
+{% endif %}
+
 {% for t in ["stt", "tts", "sts"] %}
 {% set group = models|selectattr("model.type", "equalto", t)|list %}
 {% set gone = deprecated|selectattr("model.type", "equalto", t)|list %}

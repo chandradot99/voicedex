@@ -18,6 +18,7 @@ from voicedex.catalog.store import Catalog, language_matches
 from voicedex.config import settings
 from voicedex.routers._filters import get_catalog
 from voicedex.web import views
+from voicedex.web.changes import KIND_LABELS, load_changes
 
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 
@@ -176,6 +177,8 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
         "p": pd.provider, "summary": summary, "models": models,
         "voice_count": len(voices), "voice_sample": voices[:12],
         "deprecated": [r for r in catalog.models if r.provider_id == provider_id and r.model.deprecated_at],
+        "compare_with": [(views.provider_pair_slug(provider_id, other), catalog.providers[other].provider.name)
+                         for other in views.compare_partners(catalog, provider_id)],
         "positions": views.price_positions(views.price_spectrum(catalog)),
         "jsonld": [_breadcrumb_ld([("Home", "/"), (pd.provider.name, f"/providers/{provider_id}")])],
     })
@@ -431,6 +434,88 @@ def _grouped(table: list) -> list[tuple[str, list]]:
     return list(out.items())
 
 
+@router.get("/compare/{pair}", response_class=HTMLResponse)
+async def provider_vs_page(request: Request, pair: str, catalog: Catalog = Depends(get_catalog)):
+    x, sep, y = pair.partition("-vs-")
+    if not sep or (x, y) not in set(views.provider_pairs(catalog)) | {(b, a) for a, b in views.provider_pairs(catalog)}:
+        raise HTTPException(404, "Comparison not found")
+    canonical = views.provider_pair_slug(x, y)
+    if pair != canonical:
+        from fastapi.responses import RedirectResponse
+        return RedirectResponse(f"/compare/{canonical}", status_code=301)
+    a, b = sorted((x, y))
+    cmp = views.provider_comparison(catalog, a, b)
+    names = {pid: catalog.providers[pid].provider.name for pid in (a, b)}
+    crumbs = [("Home", "/"), (names[a], f"/providers/{a}"), (f"{names[a]} vs {names[b]}", f"/compare/{canonical}")]
+    model_compare = {t: "/compare?" + "&".join(f"m={quote(views.model_key(cmp.sides[t][pid].models[0]), safe='/')}"
+                                               for pid in (a, b)) for t in cmp.types}
+    return templates.TemplateResponse(request, "provider_vs.html", {
+        "cmp": cmp, "pa": catalog.providers[a].provider, "pb": catalog.providers[b].provider, "names": names,
+        "model_compare": model_compare, "crumbs": crumbs, "jsonld": [_breadcrumb_ld(crumbs)],
+        "other_a": [(views.provider_pair_slug(a, o), catalog.providers[o].provider.name)
+                    for o in views.compare_partners(catalog, a) if o != b][:12],
+        "other_b": [(views.provider_pair_slug(b, o), catalog.providers[o].provider.name)
+                    for o in views.compare_partners(catalog, b) if o != a][:12],
+    })
+
+
+CHANGES_PER_PAGE = 300
+_CHANGE_PRIORITY = {"model_removed": 0, "shutdown_announced": 1, "provider_retired": 2, "model_deprecated": 3,
+                    "price_changed": 4, "price_published": 5, "now_ga": 6, "model_added": 8}
+
+
+@router.get("/changes", response_class=HTMLResponse)
+async def changes_page(request: Request, catalog: Catalog = Depends(get_catalog)):
+    feed = list(load_changes(settings.data_path))[:CHANGES_PER_PAGE]
+    days: dict[str, dict] = {}
+    for c in feed:
+        d = days.setdefault(c.date, {"providers": [], "events": []})
+        (d["providers"] if c.kind == "provider_added" else d["events"]).append(c)
+    for d in days.values():                    # what a reader acts on first; additions last
+        d["events"].sort(key=lambda c: _CHANGE_PRIORITY.get(c.kind, 9))
+    return templates.TemplateResponse(request, "changes.html", {
+        "days": days, "total": len(feed), "kinds": KIND_LABELS,
+        "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
+        "live": {views.model_key(r) for r in catalog.models},
+    })
+
+
+@router.get("/changes.xml")
+async def changes_atom(catalog: Catalog = Depends(get_catalog)):
+    """Atom feed: one entry per change, except new providers, which are one entry per day."""
+    site = settings.site_url.rstrip("/")
+    names = {pid: pd.provider.name for pid, pd in catalog.providers.items()}
+    entries: list[tuple[str, str, str, str, str]] = []          # id, date, title, link, summary
+    added: dict[str, list[str]] = {}
+    for c in load_changes(settings.data_path):
+        name = names.get(c.provider_id, c.provider_id)
+        if c.kind == "provider_added":
+            added.setdefault(c.date, []).append(name)
+            continue
+        what = f"{name} {c.model_name}" if c.model_id else name
+        detail = f"{c.before} → {c.after}" if c.before and c.after else (c.after or "")
+        title = f"{KIND_LABELS.get(c.kind, c.kind)}: {what}" + (f" ({detail})" if detail else "")
+        link = f"{site}/models/{c.model_key}" if c.model_id else f"{site}/providers/{c.provider_id}"
+        entries.append((f"{c.commit}/{c.kind}/{c.model_key or c.provider_id}", c.date, title, link, title))
+    for day, provs in added.items():
+        entries.append((f"providers/{day}", day, f"{len(provs)} provider{'s' if len(provs) != 1 else ''} added",
+                        f"{site}/changes", "Added: " + ", ".join(sorted(provs))))
+    entries.sort(key=lambda e: e[1], reverse=True)
+    entries = entries[:100]
+    updated = (entries[0][1] if entries else date.today().isoformat()) + "T00:00:00Z"
+    body = "".join(
+        f"<entry><id>tag:voicedex.dev,2026:change/{escape(i)}</id><title>{escape(t)}</title>"
+        f'<link href="{escape(link)}"/><updated>{d}T00:00:00Z</updated><summary>{escape(sm)}</summary></entry>'
+        for i, d, t, link, sm in entries)
+    xml = ('<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom">'
+           f"<title>{escape(settings.site_name)}: catalog changes</title>"
+           f'<subtitle>New speech models, price changes, shutdown announcements and deprecations.</subtitle>'
+           f'<link href="{site}/changes.xml" rel="self"/><link href="{site}/changes"/>'
+           f"<id>{site}/changes</id><updated>{updated}</updated>"
+           f"<author><name>{escape(settings.site_name)}</name></author>{body}</feed>")
+    return Response(xml, media_type="application/atom+xml")
+
+
 @router.get("/docs", response_class=HTMLResponse)
 async def api_docs(request: Request):
     """Themed API reference (Scalar) over the app's own OpenAPI schema."""
@@ -442,6 +527,7 @@ async def robots():
     site = settings.site_url.rstrip("/")
     return ("User-agent: *\n"
             "Disallow: /search\n"            # result pages for arbitrary queries
+            "Allow: /compare/\n"             # provider-vs-provider pages (curated, finite)
             "Disallow: /compare\n"           # unbounded combinations of models
             "Disallow: /v1/\n"               # the JSON API
             f"\nSitemap: {site}/sitemap.xml\n")
@@ -459,6 +545,11 @@ async def sitemap(catalog: Catalog = Depends(get_catalog)):
         pd = catalog.providers[pid]
         changed = views.last_modified(views.active_models(catalog, pid) + views.active_voices(catalog, pid))
         entries.append((f"/providers/{pid}", max(filter(None, (changed, pd.provider.last_synced)), default=None)))
+    for x, y in views.provider_pairs(catalog):
+        changed = views.last_modified(views.active_models(catalog, x) + views.active_models(catalog, y))
+        entries.append((f"/compare/{views.provider_pair_slug(x, y)}", changed))
+    feed = load_changes(settings.data_path)
+    entries.append(("/changes", date.fromisoformat(feed[0].date) if feed else None))
     for path, page in sorted(views.landing_pages(catalog).items()):
         entries.append((path, views.last_modified(views.landing_rows(catalog, page))))
     entries += sorted((views.model_url(r), r.model.updated_at or r.model.first_seen) for r in models)

@@ -6,3 +6,6 @@ __pycache__/
 .ruff_cache/
 .sync-cache/
 .claude/settings.local.json
+
+# generated in CI from git history (scripts/build_changes.py)
+data/.changes.json

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}{{ cmp.title }} | {{ site_name }}{% endblock %}
+{% block description %}{{ cmp.description }}{% endblock %}
+{% block content %}
+{% set ids = [cmp.a, cmp.b] %}
+<section class="wrap page-head">
+  <p class="crumbs"><a href="/providers/{{ cmp.a }}">{{ pa.name }}</a><span aria-hidden="true">/</span><a href="/providers/{{ cmp.b }}">{{ pb.name }}</a></p>
+  <h1>{{ pa.name }} vs {{ pb.name }}</h1>
+  {% for line in cmp.intro %}<p class="lede">{{ line }}</p>{% endfor %}
+  <p class="section-note">Everything below comes from each provider's own API, documentation and pricing pages. Prices are normalized ({% if "tts" in cmp.types %}text-to-speech per 1M characters{% endif %}{% if "tts" in cmp.types and cmp.types|length > 1 %}; {% endif %}{% if "stt" in cmp.types or "sts" in cmp.types %}speech-to-text and speech-to-speech per hour{% endif %}). "Not listed" means the provider doesn't document it, not that it's missing.</p>
+</section>
+
+<section class="wrap vs-section" aria-labelledby="vs-at-a-glance">
+  <h2 id="vs-at-a-glance" class="section-title">At a glance</h2>
+  <div class="table-scroll">
+    <table class="data vs-table">
+      <thead><tr><th scope="col"></th>{% for pid in ids %}<th scope="col"><a href="/providers/{{ pid }}">{{ names[pid] }}</a></th>{% endfor %}</tr></thead>
+      <tbody>
+        <tr><th scope="row">Offers</th>{% for p in [pa, pb] %}<td>{% for t in ["stt", "tts", "sts"] if t in cmp.types or t in cmp.only[p.id] %}{% if not loop.first %} · {% endif %}{{ TYPE_SHORT[t] }}{% endfor %}</td>{% endfor %}</tr>
+        <tr><th scope="row">Stock voices</th>{% for pid in ids %}<td class="mono">{% if cmp.voices[pid] %}<a href="/voices?provider={{ pid }}">{{ "{:,}".format(cmp.voices[pid]) }}</a>{% else %}–{% endif %}</td>{% endfor %}</tr>
+        <tr><th scope="row">Based in</th>{% for p in [pa, pb] %}<td>{{ country_name(p.headquarters) or "–" }}</td>{% endfor %}</tr>
+        <tr><th scope="row">Access</th>{% for p in [pa, pb] %}<td>{{ ACCESS_LABELS.get(p.access, p.access) if p.access else "–" }}</td>{% endfor %}</tr>
+        <tr><th scope="row">Compliance</th>{% for p in [pa, pb] %}<td class="mono">{{ (p.compliance|map("string")|map("upper")|join(" · ")) if p.compliance else "Not listed" }}</td>{% endfor %}</tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+{% for t in cmp.types %}
+{% set sa, sb = cmp.sides[t][cmp.a], cmp.sides[t][cmp.b] %}
+<section class="wrap vs-section" aria-labelledby="vs-{{ t }}">
+  <h2 id="vs-{{ t }}" class="section-title">{{ TYPE_LABELS[t] }}</h2>
+  <div class="table-scroll">
+    <table class="data vs-table">
+      <thead><tr><th scope="col"></th>{% for pid in ids %}<th scope="col">{{ names[pid] }}</th>{% endfor %}</tr></thead>
+      <tbody>
+        <tr><th scope="row">Models</th>{% for s in [sa, sb] %}<td class="mono">{{ s.models|length }}</td>{% endfor %}</tr>
+        <tr><th scope="row">Cheapest</th>{% for s in [sa, sb] %}<td>{% if s.cheapest %}<span class="mono">{{ price_label(s.cheapest.model) }}</span><span class="sub"><a href="{{ model_url(s.cheapest) }}">{{ s.cheapest.model.name }}</a></span>{% else %}No comparable USD price{% endif %}</td>{% endfor %}</tr>
+        <tr><th scope="row">Price range</th>{% for s in [sa, sb] %}<td class="mono">{% if s.price_range and s.priced > 1 %}{{ s.price_range[0] }} – {{ s.price_range[1] }}{% elif s.price_range %}{{ s.price_range[0] }}{% else %}–{% endif %}<span class="sub">{{ s.priced }} of {{ s.models|length }} priced</span></td>{% endfor %}</tr>
+        <tr><th scope="row">Languages</th>{% for s in [sa, sb] %}<td class="mono">{% if s.languages %}{{ s.languages }}{% if s.many_languages %} + "many"{% endif %}{% elif s.many_languages %}Many (not listed){% else %}Not listed{% endif %}</td>{% endfor %}</tr>
+        <tr><th scope="row">Streaming</th>{% for s in [sa, sb] %}<td class="mono">{{ s.streaming }} of {{ s.models|length }} models</td>{% endfor %}</tr>
+        <tr><th scope="row">Open weights</th>{% for s in [sa, sb] %}<td class="mono">{{ s.open_weights or "None" }}</td>{% endfor %}</tr>
+        <tr><th scope="row">Shutdowns announced</th>{% for s in [sa, sb] %}<td class="mono">{% if s.ending %}<span class="urgent">{{ s.ending }}</span>{% else %}None{% endif %}</td>{% endfor %}</tr>
+        {% for c in feature_vocab(t) %}
+        <tr class="vs-feature"><th scope="row">{{ FEATURE_LABELS.get(c, c) }}</th>{% for s in [sa, sb] %}<td>{% if c in s.features %}<span class="yes">Listed</span>{% else %}<span class="muted">Not listed</span>{% endif %}</td>{% endfor %}</tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="vs-models">
+    {% for pid in ids %}{% set s = cmp.sides[t][pid] %}
+    <div>
+      <h3 class="vs-models-title">{{ names[pid] }} {{ TYPE_SHORT[t] }} models</h3>
+      <ul class="vs-model-list">
+        {% for r in s.models[:10] %}<li><a href="{{ model_url(r) }}"><code translate="no">{{ r.model.id }}</code></a><span class="mono">{{ price_label(r.model) or "–" }}</span></li>{% endfor %}
+      </ul>
+      {% if s.models|length > 10 %}<p class="more-link"><a href="/providers/{{ pid }}#g-{{ t }}">All {{ s.models|length }}</a></p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  <p class="more-link"><a href="{{ model_compare[t] }}">Compare their default {{ TYPE_LABELS[t]|lower }} models in detail</a></p>
+</section>
+{% endfor %}
+
+{% for pid in ids if cmp.only[pid] %}
+<section class="wrap vs-section"><p class="section-note">Only {{ names[pid] }} offers {% for t in cmp.only[pid] %}{{ TYPE_LABELS[t]|lower }}{% if not loop.last %} and {% endif %}{% endfor %} models: <a href="/providers/{{ pid }}">see them on its page</a>.</p></section>
+{% endfor %}
+
+<section class="wrap landing-more">
+  {% if other_a %}<h2 class="section-title">Compare {{ names[cmp.a] }} with</h2>
+  <ul class="landing-links">{% for slug, n in other_a %}<li><a href="/compare/{{ slug }}">{{ n }}</a></li>{% endfor %}</ul>{% endif %}
+  {% if other_b %}<h2 class="section-title">Compare {{ names[cmp.b] }} with</h2>
+  <ul class="landing-links">{% for slug, n in other_b %}<li><a href="/compare/{{ slug }}">{{ n }}</a></li>{% endfor %}</ul>{% endif %}
+</section>
+{% endblock %}

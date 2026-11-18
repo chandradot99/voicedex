@@ -45,6 +45,9 @@ voicedex/
                        data (views.landing_pages): /{speech-to-text|text-to-speech|speech-to-speech}[/<language>|/<feature>
                        |/open-source], only when ≥ MIN_LANDING_MODELS match. Also JSON-LD (Dataset, BreadcrumbList),
                        sitemap <lastmod>, /llms.txt, and a 301 for trailing slashes (main.py).
+                       /compare/<a>-vs-<b>: provider pairs from views.COMPARE_PROVIDERS (editorial list) that share a
+                       model type; alphabetical slug, reverse order 301s. /changes + /changes.xml (Atom): web/changes.py
+                       replays git history of data/ (CI bakes data/.changes.json; local dev reads git).
   routers/           — providers.py (/v1/providers/...), catalog.py (/v1/models, /v1/voices, /v1/catalog.json), _filters.py
   sync/
     base.py          — SyncModel / SyncVoice / SyncResult dataclasses + ProviderSyncer
@@ -90,6 +93,9 @@ uv run python scripts/validate.py                 # always before committing
 uv run python scripts/validate.py --fix --schema  # after schema normalization changes: rewrite files canonically
 git diff data/deepgram                            # review, then commit
 ```
+
+Commit messages feed the public changelog (/changes): a commit that **corrects our own data** (not an upstream
+change) must include `[skip changes]` in its subject, or it shows up as e.g. "Price changed".
 
 **Never use `ANTHROPIC_API_KEY`.** For `docs`/`mixed` providers, Claude Code reads the docs itself and writes
 `.sync-cache/{provider}_{stt|tts|sts}_models.json` / `{provider}_voices.json` (JSON matching SyncModel/SyncVoice

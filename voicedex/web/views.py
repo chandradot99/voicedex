@@ -718,3 +718,111 @@ def last_modified(rows) -> date | None:
     """Most recent change among model or voice rows (for sitemap <lastmod> and Dataset dateModified)."""
     dates = [d for r in rows for rec in [getattr(r, "model", None) or r.voice] for d in (rec.updated_at, rec.first_seen) if d]
     return max(dates) if dates else None
+
+
+# ── Provider vs provider pages (/compare/<a>-vs-<b>) ─────────────────────────
+# Editorial, not catalog data: the providers people actually weigh against each other when choosing a vendor.
+# Pages are generated only for pairs that both still sell at least one model of a shared type, so retired or
+# irrelevant pairs never appear. Order here doesn't matter (URLs are alphabetical).
+COMPARE_PROVIDERS = (
+    "elevenlabs", "cartesia", "deepgram", "assemblyai", "openai", "google-cloud", "azure", "amazon-polly",
+    "amazon-transcribe", "speechmatics", "revai", "gladia", "soniox", "rime", "inworld", "murf", "speechify",
+    "fishaudio", "sarvam", "wellsaid", "groq", "minimax",
+)
+
+
+def provider_pair_slug(a: str, b: str) -> str:
+    x, y = sorted((a, b))
+    return f"{x}-vs-{y}"
+
+
+def _live_types(catalog: Catalog, pid: str) -> set[str]:
+    return {r.model.type for r in active_models(catalog, pid)}
+
+
+def provider_pairs(catalog: Catalog) -> list[tuple[str, str]]:
+    """Every (a, b) with a < b, both active, sharing at least one model type."""
+    ids = sorted(p for p in COMPARE_PROVIDERS if p in catalog.providers
+                 and catalog.providers[p].provider.status == "active" and _live_types(catalog, p))
+    types = {p: _live_types(catalog, p) for p in ids}
+    return [(a, b) for i, a in enumerate(ids) for b in ids[i + 1:] if types[a] & types[b]]
+
+
+def compare_partners(catalog: Catalog, pid: str) -> list[str]:
+    return [b if a == pid else a for a, b in provider_pairs(catalog) if pid in (a, b)]
+
+
+@dataclass
+class TypeSide:
+    """One provider's offer for one model type."""
+    models: list[ModelRow]
+    cheapest: ModelRow | None
+    price_range: tuple[str, str] | None     # labels of the cheapest and dearest comparable USD price
+    priced: int
+    languages: int                          # distinct base languages listed (0 = only "many")
+    many_languages: bool
+    features: set[str]
+    open_weights: int
+    streaming: int
+    ending: int
+
+
+def type_side(rows: list[ModelRow]) -> TypeSide:
+    priced = sorted((r for r in rows if (normalized_price(r.model) or (0,))[0] > 0),
+                    key=lambda r: normalized_price(r.model)[0])
+    langs = {base_language(lang) for r in rows for lang in r.model.languages if lang != "*"}
+    return TypeSide(
+        models=sorted(rows, key=lambda r: (not r.model.is_default, r.model.eol_date is not None,
+                                           (normalized_price(r.model) or (math.inf,))[0], r.model.id)),
+        cheapest=priced[0] if priced else None,
+        price_range=(price_label(priced[0].model), price_label(priced[-1].model)) if priced else None,
+        priced=len(priced),
+        languages=len(langs),
+        many_languages=any("*" in r.model.languages for r in rows),
+        features={c for r in rows for c in r.model.capabilities},
+        open_weights=sum(r.model.open_weights is not None for r in rows),
+        streaming=sum(any(str(i) in ("websocket", "webrtc") for i in r.model.interfaces) for r in rows),
+        ending=sum(r.model.eol_date is not None for r in rows),
+    )
+
+
+@dataclass
+class ProviderComparison:
+    a: str
+    b: str
+    types: list[str]                                   # shared types, stt/tts/sts order
+    sides: dict[str, dict[str, TypeSide]]              # type -> provider id -> side
+    only: dict[str, list[str]]                         # provider id -> types only it offers
+    voices: dict[str, int]
+    title: str
+    description: str
+    intro: list[str]
+
+
+def provider_comparison(catalog: Catalog, a: str, b: str) -> ProviderComparison:
+    pa, pb = catalog.providers[a].provider, catalog.providers[b].provider
+    ta, tb = _live_types(catalog, a), _live_types(catalog, b)
+    shared = [t for t in TYPE_SLUGS if t in ta and t in tb]
+    sides = {t: {pid: type_side([r for r in active_models(catalog, pid) if r.model.type == t]) for pid in (a, b)}
+             for t in shared}
+    voices = {pid: len(active_voices(catalog, pid)) for pid in (a, b)}
+    kinds = " and ".join(TYPE_LABELS[t].lower() for t in shared)
+    short = "/".join(TYPE_SHORT[t] for t in shared)
+    title = f"{pa.name} vs {pb.name}: {short} models, pricing and languages compared"
+    intro = []
+    for t in shared:
+        parts = []
+        for pid, p in ((a, pa), (b, pb)):
+            s = sides[t][pid]
+            n = len(s.models)
+            bit = f"{p.name} lists {n} {TYPE_LABELS[t].lower()} model{'s' if n != 1 else ''}"
+            if s.cheapest:
+                bit += f" from {price_label(s.cheapest.model)}"
+            parts.append(bit)
+        intro.append("; ".join(parts) + ".")
+    desc = (f"{pa.name} vs {pb.name} compared side by side: {kinds} models, prices, languages, features, "
+            f"streaming and shutdown dates, from each provider's own docs and pricing pages.")
+    return ProviderComparison(
+        a=a, b=b, types=shared, sides=sides,
+        only={a: [t for t in TYPE_SLUGS if t in ta and t not in tb], b: [t for t in TYPE_SLUGS if t in tb and t not in ta]},
+        voices=voices, title=title, description=desc, intro=intro)
