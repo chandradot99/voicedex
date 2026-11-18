@@ -164,7 +164,17 @@
         const paint = () => { const on = row.classList.contains("vd-resp-full");
           btn.innerHTML = (on ? ICON_CLOSE : ICON_OPEN) + (on ? "Collapse" : "Expand");
           btn.setAttribute("aria-pressed", String(on)); btn.title = on ? "Show the request again" : "Show the response across the whole window"; };
-        btn.addEventListener("click", () => { row.classList.toggle("vd-resp-full"); paint(); });
+        // Expanded: only the JSON plus Collapse / Download — the Body label and the "massive body" notice hide too.
+        btn.addEventListener("click", () => {
+          const on = row.classList.toggle("vd-resp-full");
+          const bar = dl.parentElement.parentElement;
+          bar.classList.toggle("vd-bar-end", on);
+          bar.firstElementChild?.classList.toggle("vd-hide", on);
+          panel.querySelectorAll("*").forEach((e) => {
+            if (!e.children.length && /response body is massive/i.test(e.textContent)) (e.closest("div") || e).classList.toggle("vd-hide", on);
+          });
+          paint();
+        });
         paint();
         dl.before(btn);
       });
@@ -405,6 +415,11 @@
         /* …and inside the response, only the Body remains (cookies/headers rows hidden), filling the modal. */
         .vd-resp-full .response-section-content > :not(:has(.vd-full)) { display: none !important; }
         .vd-resp-full .response-section-content > :has(.vd-full) { flex: 1 1 auto; min-height: 0; }
+        .vd-resp-full .request-response-header { display: none !important; }   /* status row */
+        .scalar-app-layout:has(.vd-resp-full) [class*="min-h-header"],
+        .scalar-app-layout:has(.vd-resp-full) .scalar-sidebar-toggle { display: none !important; }   /* URL / Send bar, sidebar toggle */
+        .vd-hide { display: none !important; }
+        .vd-bar-end { justify-content: flex-end !important; }
         .vd-full {
           height: 24px; padding: 0 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
           font: 500 11px/1 "Geist Mono", ui-monospace, monospace; color: var(--ink-2);
