@@ -1,0 +1,20 @@
+{
+  "access": "regional",
+  "description": "Unisound (云知声智能科技股份有限公司) is a Chinese speech and AI company based in Beijing. Its MaaS platform sells pay-as-you-go APIs for its U2 models, including U2-ASR speech recognition (15 languages plus Chinese dialects), U2-TTS speech synthesis, voice cloning and voice design, priced in CNY, alongside text, medical and OCR models. Sign-up requires real-name verification.",
+  "docs_urls": [
+    "https://maas.unisound.com/docs/api/overview",
+    "https://maas.unisound.com/docs/price/overview"
+  ],
+  "headquarters": "CN",
+  "id": "unisound",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://maas.unisound.com/docs/api/overview",
+    "docs": "https://maas.unisound.com/docs/guide/overview",
+    "pricing": "https://maas.unisound.com/docs/price/overview"
+  },
+  "name": "Unisound (云知声)",
+  "source": "docs",
+  "type": "both",
+  "website": "https://www.unisound.com"
+}

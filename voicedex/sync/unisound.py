@@ -10,13 +10,15 @@ from voicedex.sync.docs_only import DocsOnlySyncer
 class UnisoundSyncer(DocsOnlySyncer):
     provider_id = "unisound"
     stt_docs = [
-        "https://ai.unisound.com",
+        "https://maas.unisound.com/docs/api/overview",
+        "https://maas.unisound.com/docs/price/overview",
     ]
     stt_guidance = (
         "One record per recognition product. Prices only if published (CNY)."
     )
     tts_docs = [
-        "https://ai.unisound.com",
+        "https://maas.unisound.com/docs/api/overview",
+        "https://maas.unisound.com/docs/price/overview",
     ]
     tts_guidance = (
         "One record per synthesis product/tier. Prices only if published (CNY)."

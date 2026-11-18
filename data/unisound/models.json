@@ -1,0 +1,257 @@
+[
+  {
+    "audio_formats": [
+      "amr",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Unisound's speech recognition model for 15 languages and many Chinese dialects, served as one-shot, realtime streaming and asynchronous long-audio transcription.",
+    "first_seen": "2026-11-18",
+    "id": "u2-asr",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN",
+      "en-US",
+      "ar-SA",
+      "de-DE",
+      "es-MX",
+      "fr-FR",
+      "id-ID",
+      "ja-JP",
+      "ko-KR",
+      "pt-BR",
+      "ru-RU",
+      "tr-TR",
+      "vi-VN",
+      "th-TH",
+      "it-IT"
+    ],
+    "max_audio_seconds": 18000,
+    "meta": {
+      "dialects": "Chinese dialects across 7 major groups (Cantonese, Wu, Min, Hakka, Xiang, Jin, Hui, Southwestern Mandarin)",
+      "endpoints": {
+        "async file": "https://maas-api.unisound.com/v1/audio/asr/tasks",
+        "one-shot": "wss://maas-api.unisound.com/v2/ws/asr/oneshot?model=u2-asr",
+        "realtime": "wss://maas-api.unisound.com/v2/audio/asr/realtime?model=u2-asr"
+      },
+      "hotwords": "up to 500 entries plus 500-char context prompt",
+      "limits": "one-shot ≤75 s (Chinese/English), ≤30 s other languages; file ≤5 h / 1 GB",
+      "raw_formats_streaming": [
+        "pcm",
+        "opus",
+        "adpcm",
+        "speex",
+        "amr"
+      ],
+      "voiceprint_speaker_ids": 10
+    },
+    "name": "U2-ASR",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "U2-ASR input ¥1 per hour of audio, pay-as-you-go.",
+      "price": 1.0,
+      "source_url": "https://maas.unisound.com/docs/price/overview",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://maas.unisound.com/docs/api/overview",
+        "https://maas.unisound.com/docs/price/overview"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control"
+    ],
+    "description": "Unisound's speech synthesis model with streaming (sub-90 ms first packet) and async long-text modes, 12 languages plus Cantonese and Sichuanese, and pronunciation tags.",
+    "first_seen": "2026-11-18",
+    "id": "u2-tts",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "th",
+      "vi",
+      "id",
+      "ms",
+      "my",
+      "lo",
+      "km",
+      "tl"
+    ],
+    "max_text_chars": 500,
+    "meta": {
+      "emotions": [
+        "happy",
+        "angry",
+        "depressed",
+        "whisper",
+        "loudly",
+        "neutral"
+      ],
+      "endpoints": {
+        "async": "https://maas-api.unisound.com/docs/api/speech/t2a-async",
+        "streaming": "wss://maas-api.unisound.com/v1/ws/tts?model=u2-tts"
+      },
+      "feature_support_note": "emotion, dialect (yueyu, sichuan) and speed/pitch controls vary by voice; emotion only on cn_male_chenyu",
+      "pronunciation_tags": [
+        "value",
+        "code",
+        "tel",
+        "py",
+        "pname",
+        "word",
+        "phrase",
+        "letter",
+        "mute",
+        "sub"
+      ]
+    },
+    "name": "U2-TTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "¥2 per 10,000 characters of input text.",
+      "price": 0.0002,
+      "source_url": "https://maas.unisound.com/docs/price/overview",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://maas.unisound.com/docs/api/overview",
+        "https://maas.unisound.com/docs/price/overview"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      32000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Fast voice cloning from a 5 second to 2 minute mono WAV sample, with optional style reference audio; cloned voices are then used for synthesis.",
+    "first_seen": "2026-11-18",
+    "id": "u2-tts-clone",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "endpoint": "https://maas-api.unisound.com/v1/audio/voices/clone",
+      "sample": "mono WAV, 5 s-2 min (5-15 s recommended)"
+    },
+    "name": "U2-TTS-Clone",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "Synthesis ¥2 per 10,000 characters; ¥10 per cloned voice, charged when the voice is first used, not at creation.",
+      "price": 0.0002,
+      "source_url": "https://maas.unisound.com/docs/price/overview",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "cloned voice fee (charged on first synthesis use)",
+          "price": 10.0,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://maas.unisound.com/docs/api/overview",
+        "https://maas.unisound.com/docs/price/overview"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "voice_design"
+    ],
+    "description": "Creates a new voice from a text description and returns a trial clip; the voice id is then usable for synthesis.",
+    "first_seen": "2026-11-18",
+    "id": "u2-tts-design",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "endpoint": "https://maas-api.unisound.com/v1/audio/voices/design",
+      "model_id_note": "the design request body takes no model parameter; U2-TTS-Design is the catalog/pricing name"
+    },
+    "name": "U2-TTS-Design",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "Synthesis ¥2 per 10,000 characters; ¥10 per designed voice, charged when the voice is first used.",
+      "price": 0.0002,
+      "source_url": "https://maas.unisound.com/docs/price/overview",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "designed voice fee (charged on first synthesis use)",
+          "price": 10.0,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://maas.unisound.com/docs/api/overview",
+        "https://maas.unisound.com/docs/price/overview"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
