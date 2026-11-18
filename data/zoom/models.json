@@ -1,0 +1,332 @@
+[
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "mp4",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Whisper recognition hosted in Scribe, covering 36 languages with continuous language detection.",
+    "first_seen": "2026-11-18",
+    "id": "whisper",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US",
+      "ar-SA",
+      "ar-AE",
+      "zh-CN",
+      "fr-FR",
+      "de-DE",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "pt-BR",
+      "pt-PT",
+      "es-ES",
+      "bn-IN",
+      "zh-HK",
+      "ca-ES",
+      "cs-CZ",
+      "da-DK",
+      "nl-NL",
+      "et-EE",
+      "fi-FI",
+      "el-GR",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "ms-MY",
+      "fa-IR",
+      "pl-PL",
+      "ro-RO",
+      "ru-RU",
+      "sv-SE",
+      "tl-PH",
+      "ta-IN",
+      "te-IN",
+      "th-TH",
+      "tr-TR",
+      "uk-UA",
+      "vi-VN"
+    ],
+    "max_audio_seconds": 7200,
+    "meta": {
+      "channel_separation": true,
+      "input_formats_note": "Fast/Batch: WAV, M4A, MP3, MP4, WebM (>= 8 kHz, 16 kHz+ recommended). Live: PCM16 16 kHz mono or bare Opus packets.",
+      "limits": "Fast/Batch: 2 h per file, 300 MB via URL (2 MB as data URL in Fast). Live: 120-minute sessions.",
+      "modes": [
+        "fast",
+        "batch",
+        "live"
+      ],
+      "note": "OpenAI Whisper served by Zoom; not a Zoom-trained model.",
+      "pricing_note": "Zoom's price list is by Standard/Pro tier and doesn't name this model.",
+      "profanity_filter": "when supported by the selected model"
+    },
+    "name": "Whisper (Zoom-hosted)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.zoom.us/docs/ai-services/scribe.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/speech-configuration.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/fast-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/batch-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/live-mode.md",
+        "https://www.zoom.com/en/products/ai-services/scribe-api/"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "mp4",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Zoom's standard English recognition model for Scribe Fast, Batch and Live modes.",
+    "first_seen": "2026-11-18",
+    "id": "zoom-scribe-en",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "max_audio_seconds": 7200,
+    "meta": {
+      "channel_separation": true,
+      "default_note": "Model is selected automatically when omitted; language defaults to en-US and automatic selection picks a standard (non-Pro) model.",
+      "input_formats_note": "Fast/Batch: WAV, M4A, MP3, MP4, WebM (>= 8 kHz, 16 kHz+ recommended). Live: PCM16 16 kHz mono or bare Opus packets.",
+      "limits": "Fast/Batch: 2 h per file, 300 MB via URL (2 MB as data URL in Fast). Live: 120-minute sessions.",
+      "modes": [
+        "fast",
+        "batch",
+        "live"
+      ],
+      "profanity_filter": "when supported by the selected model",
+      "text_polishing": "en-US"
+    },
+    "name": "Zoom Scribe English",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Scribe API standard rate: Batch $0.15/h (base), Fast $0.20/h, Live $0.25/h. Add-ons per hour: language detection $0.048, diarization $0.048 (Batch/Fast), Text Polishing $0.102. Prepaid credits; usage measured on audio duration in minutes.",
+      "price_usd": 0.15,
+      "source_url": "https://www.zoom.com/en/products/ai-services/scribe-api/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "fast",
+          "price_usd": 0.2,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "live",
+          "price_usd": 0.25,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.zoom.us/docs/ai-services/scribe.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/speech-configuration.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/fast-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/batch-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/live-mode.md",
+        "https://www.zoom.com/en/products/ai-services/scribe-api/"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "mp4",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Premium English recognition model for higher accuracy; must be selected explicitly.",
+    "first_seen": "2026-11-18",
+    "id": "zoom-scribe-en-pro",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_audio_seconds": 7200,
+    "meta": {
+      "channel_separation": true,
+      "input_formats_note": "Fast/Batch: WAV, M4A, MP3, MP4, WebM (>= 8 kHz, 16 kHz+ recommended). Live: PCM16 16 kHz mono or bare Opus packets.",
+      "limits": "Fast/Batch: 2 h per file, 300 MB via URL (2 MB as data URL in Fast). Live: 120-minute sessions.",
+      "modes": [
+        "fast",
+        "batch",
+        "live"
+      ],
+      "profanity_filter": "when supported by the selected model",
+      "requires": "premium-model access",
+      "text_polishing": "en-US"
+    },
+    "name": "Scribe API Pro High-Accuracy (English)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Scribe API Pro rate: Batch $0.30/h (base), Fast $0.35/h, Live $0.40/h. Requires premium-model access. Add-ons per hour: language detection $0.048, diarization $0.048 (Batch/Fast), Text Polishing $0.102. Prepaid credits; usage measured on audio duration in minutes.",
+      "price_usd": 0.3,
+      "source_url": "https://www.zoom.com/en/products/ai-services/scribe-api/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "fast",
+          "price_usd": 0.35,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "live",
+          "price_usd": 0.4,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.zoom.us/docs/ai-services/scribe.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/speech-configuration.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/fast-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/batch-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/live-mode.md",
+        "https://www.zoom.com/en/products/ai-services/scribe-api/"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "mp4",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Zoom multilingual recognition model covering ten languages with continuous language detection.",
+    "first_seen": "2026-11-18",
+    "id": "zoom-scribe-multilingual",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US",
+      "ar-SA",
+      "ar-AE",
+      "zh-CN",
+      "fr-FR",
+      "de-DE",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "pt-BR",
+      "pt-PT",
+      "es-ES"
+    ],
+    "max_audio_seconds": 7200,
+    "meta": {
+      "channel_separation": true,
+      "input_formats_note": "Fast/Batch: WAV, M4A, MP3, MP4, WebM (>= 8 kHz, 16 kHz+ recommended). Live: PCM16 16 kHz mono or bare Opus packets.",
+      "limits": "Fast/Batch: 2 h per file, 300 MB via URL (2 MB as data URL in Fast). Live: 120-minute sessions.",
+      "modes": [
+        "fast",
+        "batch",
+        "live"
+      ],
+      "profanity_filter": "when supported by the selected model"
+    },
+    "name": "Zoom Scribe Multilingual",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Scribe API standard rate: Batch $0.15/h (base), Fast $0.20/h, Live $0.25/h. Add-ons per hour: language detection $0.048, diarization $0.048 (Batch/Fast), Text Polishing $0.102. Prepaid credits; usage measured on audio duration in minutes.",
+      "price_usd": 0.15,
+      "source_url": "https://www.zoom.com/en/products/ai-services/scribe-api/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "fast",
+          "price_usd": 0.2,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "live",
+          "price_usd": 0.25,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.zoom.us/docs/ai-services/scribe.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/speech-configuration.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/fast-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/batch-mode.md",
+        "https://developers.zoom.us/docs/ai-services/scribe/live-mode.md",
+        "https://www.zoom.com/en/products/ai-services/scribe-api/"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]

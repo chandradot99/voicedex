@@ -1,0 +1,24 @@
+{
+  "access": "self_serve",
+  "description": "Zoom Communications, Inc. offers AI Services, a suite of developer APIs on its Zoom Build platform. The Scribe API transcribes audio and video in Fast (synchronous), Batch and Live (WebSocket) modes with Zoom's English, English Pro and multilingual models plus hosted Whisper; AI Services also include TTS, translation and summarization APIs.",
+  "docs_urls": [
+    "https://developers.zoom.us/docs/ai-services/scribe.md",
+    "https://developers.zoom.us/docs/ai-services/scribe/speech-configuration.md",
+    "https://developers.zoom.us/docs/ai-services/scribe/fast-mode.md",
+    "https://developers.zoom.us/docs/ai-services/scribe/batch-mode.md",
+    "https://developers.zoom.us/docs/ai-services/scribe/live-mode.md",
+    "https://www.zoom.com/en/products/ai-services/scribe-api/"
+  ],
+  "headquarters": "US",
+  "id": "zoom",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://developers.zoom.us/docs/api/ai-services/",
+    "docs": "https://developers.zoom.us/docs/ai-services/scribe/",
+    "pricing": "https://www.zoom.com/en/products/ai-services/scribe-api/"
+  },
+  "name": "Zoom AI Services",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.zoom.com/en/products/ai-services/scribe-api/"
+}
