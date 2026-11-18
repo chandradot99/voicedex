@@ -141,3 +141,43 @@ def test_resolver_version_order():
                   [ModelRow("acme", Model(id=i, name=i, type="tts")) for i in ids], [])
     r, info = m.resolve_model(cat, "acme flash")
     assert r.model.id == "flash_v2_5" and info["other_candidates"][-1] == "acme/tts/flash_v2"
+
+
+def test_review_round3_helpers():
+    # every named replacement is found; the one the notice says the provider recommends comes first
+    named = m._named_replacements("gemini-3.8-flash-tts or gemini-3.8-flash-lite-tts",
+                                  "Google recommends gemini-3.8-flash-lite-tts as the replacement.")
+    assert named == ["gemini-3.8-flash-lite-tts", "gemini-3.8-flash-tts"]
+    assert m._named_replacements("simba-3.5 (or simba-3.2 for English only)", None) == ["simba-3.5", "simba-3.2"]
+    assert m._named_replacements(None, None) == []
+
+
+async def test_review_round3_tools(tmp_path, client):
+    from datetime import date, timedelta
+
+    from tests.conftest import build_fixture_catalog
+    from voicedex.catalog.files import ProviderData, write_provider_dir
+    from voicedex.catalog.schema import Model, Provider
+    from voicedex.catalog.store import Catalog
+    from voicedex.main import app
+    build_fixture_catalog(tmp_path)
+    d = lambda n: (date.today() + timedelta(days=n)).isoformat()   # noqa: E731
+    price = {"unit": "character", "price_usd": 0.00001}
+    write_provider_dir(tmp_path / "zz-snap", ProviderData(Provider(id="zz-snap", name="ZZ Snap", type="tts"), models=[
+        Model(id="voice", name="Voice", type="tts", alias_of="voice-2026-01-01", eol_date=d(60), pricing=price),
+        Model(id="voice-2026-01-01", name="Voice 2026-01-01", type="tts", family="voice", snapshot_date="2026-01-01",
+              eol_date=d(60), pricing=price),
+        Model(id="cheap-late", name="Cheap Late", type="tts", eol_date=d(80), pricing={"unit": "character", "price_usd": 1e-6}),
+        Model(id="old", name="Old", type="tts", eol_date=d(3), pricing=price,
+              meta={"replacement": "new-a or new-b", "deprecation_notice": "We recommend new-b."}),
+        Model(id="new-a", name="New A", type="tts", pricing=price),
+        Model(id="new-b", name="New B", type="tts", pricing=price)], voices=[]))
+    app.state.catalog = Catalog.load(tmp_path)
+    ending = m.search_models(shutting_down=True)
+    assert ending["sort"] == "eol_date" and [x["id"] for x in ending["results"]] == ["old", "voice", "cheap-late"]
+    assert ending["results"][1]["snapshots"] == ["zz-snap/tts/voice-2026-01-01"]          # alias represents it
+    assert m.search_models(shutting_down=True, collapse_snapshots=False)["total"] == 4
+    alt = m.find_alternatives("zz-snap/tts/old")
+    assert alt["provider_recommends"] == "new-b"
+    assert [a["id"] for a in alt["alternatives"][:2]] == ["new-b", "new-a"]
+    assert alt["alternatives"][0]["recommended_by_provider"] and alt["alternatives"][1]["announced_replacement"]
