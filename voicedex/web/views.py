@@ -664,29 +664,30 @@ class LandingCopy:
 def landing_copy(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> LandingCopy:
     """Titles and an intro written from the data, so every page says something specific and true."""
     kind_label = TYPE_LABELS[page.type].lower()                       # "text-to-speech"
+    abbr = f" ({TYPE_SHORT[page.type]})"                               # people search "TTS API" too
     n, n_prov = len(rows), len({r.provider_id for r in rows})
     noun = f"model{'s' if n != 1 else ''}"
     if page.kind == "language":
         subject = f"{page.label} {kind_label}"
         h1 = f"{page.label} {kind_label} models"
-        title = f"{page.label} {kind_label} APIs: {n} models compared by price"
+        title = f"{page.label} {kind_label}{abbr} APIs: {n} models compared by price"
         lead = f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} list {page.label} support."
     elif page.kind == "feature":
         feat = _lower_label(page.label)
         subject = f"{kind_label} with {feat}"
         h1 = f"{TYPE_LABELS[page.type]} models with {feat}"
-        title = f"{TYPE_LABELS[page.type]} APIs with {feat}: {n} models compared"
+        title = f"{TYPE_LABELS[page.type]}{abbr} APIs with {feat}: {n} models compared"
         lead = f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} list {feat} as a feature."
     elif page.kind == "open":
         subject = f"open-weights {kind_label}"
         h1 = f"Open-source {kind_label} models"
-        title = f"Open-source {kind_label} models: {n} open-weights models compared"
+        title = f"Open-source {kind_label}{abbr} models: {n} open-weights models compared"
         lead = (f"{n} {kind_label} {noun} from {n_prov} publisher{'s' if n_prov != 1 else ''} publish their weights, "
                 "so you can run them yourself. Licences differ, so check commercial use on each model.")
     else:
         subject = kind_label
-        h1 = f"{TYPE_LABELS[page.type]} APIs and models compared"
-        title = f"{TYPE_LABELS[page.type]} APIs compared: {n} models, prices and languages"
+        h1 = f"{TYPE_LABELS[page.type]}{abbr} APIs and models compared"
+        title = f"{TYPE_LABELS[page.type]}{abbr} APIs compared: {n} models, prices and languages"
         lead = f"{n} {kind_label} {noun} from {n_prov} providers, with languages, features, prices and shutdown dates."
     intro = [lead]
     priced = [(normalized_price(r.model), r) for r in rows if normalized_price(r.model)]
@@ -707,7 +708,7 @@ def landing_copy(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> Landi
         extras.append(f"{n_eol} {'have' if n_eol != 1 else 'has'} an announced shutdown date")
     if extras:
         intro.append(("Of these, " + ", ".join(extras[:-1]) + (" and " if len(extras) > 1 else "") + extras[-1] + "."))
-    description = f"Compare {n} {subject} {noun}: prices, languages, features and status."
+    description = f"Compare {n} {subject}{abbr} {noun}: prices, languages, features and status."
     if paid:
         description += f" Cheapest paid: {cheapest.model.name} ({name}), {price_label(cheapest.model)}."
     return LandingCopy(title=title, h1=h1, description=description, intro=intro)

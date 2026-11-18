@@ -279,6 +279,27 @@ for _slug in views.SLUG_TYPES:
     router.add_api_route(f"/{_slug}/{{slug}}", _landing_page(_slug), methods=["GET"], response_class=HTMLResponse)
 
 
+# Short aliases people type and share (/tts, /stt/hindi, /s2s): a permanent redirect to the one canonical URL,
+# never a second copy of the page, so links to either count for the same page.
+SHORT_TYPE_ALIASES = {"tts": "text-to-speech", "stt": "speech-to-text", "sts": "speech-to-speech",
+                      "s2s": "speech-to-speech", "asr": "speech-to-text"}
+
+
+def _short_alias(target: str):
+    async def redirect(request: Request, slug: str = ""):
+        from fastapi.responses import RedirectResponse
+        url = f"/{target}" + (f"/{quote(slug)}" if slug else "")
+        if request.url.query:
+            url += "?" + request.url.query
+        return RedirectResponse(url, status_code=301)
+    return redirect
+
+
+for _alias, _target in SHORT_TYPE_ALIASES.items():
+    router.add_api_route(f"/{_alias}", _short_alias(_target), methods=["GET"])
+    router.add_api_route(f"/{_alias}/{{slug}}", _short_alias(_target), methods=["GET"])
+
+
 def _breadcrumb_ld(crumbs: list[tuple[str, str]]) -> dict:
     site = settings.site_url.rstrip("/")
     return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
