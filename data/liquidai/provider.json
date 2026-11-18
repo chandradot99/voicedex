@@ -1,0 +1,22 @@
+{
+  "access": "self_serve",
+  "description": "Foundation-model company spun out of MIT CSAIL, based in Cambridge, Massachusetts (US). Builds LFM (Liquid Foundation Models) for on-device and hosted use, including end-to-end audio models (LFM3-Audio, LFM3-Omni) that do ASR, TTS, speech translation and spoken chat in one model; sold per token via the OpenAI-compatible Liquid API and released as open weights under the revenue-capped LFM Open License.",
+  "docs_urls": [
+    "https://docs.liquid.ai/lfm/key-concepts/audio-capabilities",
+    "https://docs.liquid.ai/api/guides/audio",
+    "https://www.liquid.ai/pricing?view=api",
+    "https://huggingface.co/LiquidAI"
+  ],
+  "headquarters": "US",
+  "id": "liquidai",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.liquid.ai/api/overview",
+    "docs": "https://docs.liquid.ai/api/guides/audio",
+    "pricing": "https://www.liquid.ai/pricing?view=api"
+  },
+  "name": "Liquid AI",
+  "source": "docs",
+  "type": "sts",
+  "website": "https://www.liquid.ai"
+}

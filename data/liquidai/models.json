@@ -1,0 +1,239 @@
+[
+  {
+    "description": "Japanese end-to-end speech-to-speech model (1.5B) built on LFM2.5-Audio, with interleaved generation for real-time conversation and sequential generation for ASR/TTS; open weights only.",
+    "family": "LiquidAI/LFM2.5-Audio-1.5B",
+    "first_seen": "2026-11-18",
+    "id": "LiquidAI/LFM2.5-Audio-1.5B-JP",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "context_window": 32768,
+      "hosted_api": false,
+      "huggingface_repo": "LiquidAI/LFM2.5-Audio-1.5B-JP",
+      "license_terms": "Free for commercial use only by entities with annual revenue under US$10M (LFM Open License v1.0, s.5); larger entities need a commercial licence; non-profits free for non-commercial/research use.",
+      "released": "2026-05-26"
+    },
+    "name": "LFM2.5-Audio-1.5B-JP",
+    "open_weights": {
+      "license": "lfm1.0",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-JP"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.liquid.ai/lfm/key-concepts/audio-capabilities",
+        "https://docs.liquid.ai/api/guides/audio",
+        "https://www.liquid.ai/pricing?view=api",
+        "https://huggingface.co/LiquidAI"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "2B end-to-end audio model taking text or audio in and answering in text, speech or both: voice chat, ASR, TTS and speech translation in 18 languages.",
+    "first_seen": "2026-11-18",
+    "id": "lfm3-audio-2b",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "da",
+      "de",
+      "el",
+      "en-GB",
+      "en-US",
+      "fi",
+      "fr",
+      "he",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "pl",
+      "pt",
+      "es",
+      "sv",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "endpoint": "POST https://api.liquid.ai/openai/v1/chat/completions (OpenAI-compatible, modalities text+audio)",
+      "huggingface_repo": "LiquidAI/LFM3-Audio-2B",
+      "input_audio_formats": [
+        "wav"
+      ],
+      "input_sample_rate_hz": 16000,
+      "license_terms": "Free for commercial use only by entities with annual revenue under US$10M (LFM Open License v1.0, s.5); larger entities need a commercial licence; non-profits free for non-commercial/research use.",
+      "max_request_bytes": 16777216,
+      "output_audio_formats": [
+        "pcm16 (24 kHz mono)",
+        "wav"
+      ],
+      "released": "2026-09-08",
+      "tasks": [
+        "asr",
+        "tts",
+        "speech_translation",
+        "voice_chat",
+        "audio_understanding",
+        "tool_calling"
+      ],
+      "voice_chat_languages": "English only",
+      "voices": "female or male per speech language, chosen in the system prompt"
+    },
+    "name": "LFM3-Audio-2B",
+    "open_weights": {
+      "license": "lfm1.0",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Base price = audio input ($2.00/MTok); per-1M-token prices converted to per-token. Liquid Console; $2 free credit for new organizations.",
+      "price_usd": 2e-06,
+      "source_url": "https://www.liquid.ai/pricing?view=api",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 1e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.liquid.ai/lfm/key-concepts/audio-capabilities",
+        "https://docs.liquid.ai/api/guides/audio",
+        "https://www.liquid.ai/pricing?view=api",
+        "https://huggingface.co/LiquidAI"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "2.2B omni model that understands text, images, video and audio and answers in text and speech; video input is not yet accepted by the hosted API.",
+    "first_seen": "2026-11-18",
+    "id": "lfm3-omni-2b",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "da",
+      "de",
+      "el",
+      "en-GB",
+      "en-US",
+      "fi",
+      "fr",
+      "he",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "pl",
+      "pt",
+      "es",
+      "sv",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "context_window": 128000,
+      "endpoint": "POST https://api.liquid.ai/openai/v1/chat/completions (OpenAI-compatible, modalities text+audio)",
+      "huggingface_repo": "LiquidAI/LFM3-Omni-2B",
+      "image_input_price_usd_per_token": 1e-07,
+      "input_audio_formats": [
+        "wav"
+      ],
+      "input_sample_rate_hz": 16000,
+      "license_terms": "Free for commercial use only by entities with annual revenue under US$10M (LFM Open License v1.0, s.5); larger entities need a commercial licence; non-profits free for non-commercial/research use.",
+      "max_request_bytes": 16777216,
+      "output_audio_formats": [
+        "pcm16 (24 kHz mono)",
+        "wav"
+      ],
+      "tasks": [
+        "asr",
+        "tts",
+        "speech_translation",
+        "voice_chat",
+        "image_understanding"
+      ]
+    },
+    "name": "LFM3-Omni-2B",
+    "open_weights": {
+      "license": "lfm1.0",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Base price = audio input ($2.00/MTok); per-1M-token prices converted to per-token. Liquid Console; $2 free credit for new organizations.",
+      "price_usd": 2e-06,
+      "source_url": "https://www.liquid.ai/pricing?view=api",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "audio_output",
+          "price_usd": 1e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 1e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.liquid.ai/lfm/key-concepts/audio-capabilities",
+        "https://docs.liquid.ai/api/guides/audio",
+        "https://www.liquid.ai/pricing?view=api",
+        "https://huggingface.co/LiquidAI"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  }
+]
