@@ -208,10 +208,13 @@
         dl.classList.add("vd-icon-link");
         dl.setAttribute("aria-label", "Download response"); dl.title = "Download response";
       });
-      const scan = () => { document.querySelectorAll("#scalar-docs .scalar-card.response-card").forEach((c) => { decorate(c); sync(c); }); decorateClient(); };
+      const scan = () => { document.querySelectorAll("#scalar-docs .scalar-card.response-card").forEach((c) => { decorate(c); sync(c); }); decorateClient();
+        // Status line: coral for 4xx/5xx (the site's error colour), so a failed request stands out.
+        document.querySelectorAll(".scalar-client .animate-response-children a").forEach((a) =>
+          a.classList.toggle("vd-err", /^\s*[45]\d\d/.test(a.textContent))); };
       let queued = false;
       new MutationObserver(() => { if (!queued) { queued = true; setTimeout(() => { queued = false; scan(); }, 60); } })
-        .observe(document.body, { childList: true, subtree: true });     // the reference replaces its mount node
+        .observe(document.body, { childList: true, subtree: true, characterData: true });   // mount node replaced; status text updates in place
     })();
 
     // Parameter info ("ⓘ") popovers open on hover, not click (mouse only; touch keeps tap-to-open).
@@ -409,6 +412,7 @@
         .scalar-client .animate-response-children { font: 400 12px var(--mono, "Geist Mono"), ui-monospace, monospace !important; color: var(--ink-2) !important; gap: 12px !important; }
         .scalar-client .animate-response-children a { text-decoration: none !important; color: var(--ink) !important; font-weight: 500; }
         .scalar-client .animate-response-children a .rounded-full { display: none !important; }
+        .scalar-client .animate-response-children a.vd-err { color: var(--end) !important; }
         /* Header counts ("Response Headers 7"): plain muted mono number, like the site's counts — not a round pill. */
         .scalar-client span.rounded-full.border.h-5.w-5 { border: 0 !important; background: none !important; width: auto !important;
           font: 400 11px "Geist Mono", ui-monospace, monospace !important; color: var(--muted) !important; }
