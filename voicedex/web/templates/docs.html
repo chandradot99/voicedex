@@ -151,7 +151,24 @@
         if (!btn || !box) return;
         btn.hidden = !card.classList.contains("vd-expanded") && box.scrollHeight <= box.clientHeight + 4;
       };
-      const scan = () => document.querySelectorAll("#scalar-docs .scalar-card.response-card").forEach((c) => { decorate(c); sync(c); });
+      // API client: "Expand" next to the response Body's Download link widens the response to the whole window.
+      const ICON_OPEN = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 1.5h3v3M4.5 10.5h-3v-3M10.5 1.5 7 5M1.5 10.5 5 7"/></svg>';
+      const ICON_CLOSE = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M10.5 5h-3v-3M1.5 7h3v3M7.5 5 11 1M4.5 7 1 11"/></svg>';
+      const decorateClient = () => document.querySelectorAll(".scalar-client a").forEach((dl) => {
+        if (!/Download/.test(dl.textContent) || dl.parentElement.querySelector(".vd-full")) return;
+        let panel = dl; while (panel && !(panel.tagName === "SECTION" && panel.parentElement?.children.length === 2)) panel = panel.parentElement;
+        if (!panel) return;
+        const row = panel.parentElement;
+        const btn = document.createElement("button");
+        btn.type = "button"; btn.className = "vd-full";
+        const paint = () => { const on = row.classList.contains("vd-resp-full");
+          btn.innerHTML = (on ? ICON_CLOSE : ICON_OPEN) + (on ? "Collapse" : "Expand");
+          btn.setAttribute("aria-pressed", String(on)); btn.title = on ? "Show the request again" : "Show the response across the whole window"; };
+        btn.addEventListener("click", () => { row.classList.toggle("vd-resp-full"); paint(); });
+        paint();
+        dl.before(btn);
+      });
+      const scan = () => { document.querySelectorAll("#scalar-docs .scalar-card.response-card").forEach((c) => { decorate(c); sync(c); }); decorateClient(); };
       let queued = false;
       new MutationObserver(() => { if (!queued) { queued = true; setTimeout(() => { queued = false; scan(); }, 60); } })
         .observe(document.body, { childList: true, subtree: true });     // the reference replaces its mount node
@@ -383,6 +400,15 @@
         }
         .vd-expand:hover { color: var(--ink); border-color: var(--ink-2); }
         .vd-expand[hidden] { display: none; }
+        /* API client: response body can take the whole window (request side hidden). */
+        .vd-resp-full > section:first-child { display: none !important; }
+        .vd-full {
+          height: 24px; padding: 0 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
+          font: 500 11px/1 "Geist Mono", ui-monospace, monospace; color: var(--ink-2);
+          background: transparent; border: 1px solid var(--control); border-radius: 2px;
+        }
+        .vd-full:hover { color: var(--ink); border-color: var(--ink-2); }
+        .vd-full svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 1.5; }
         /* Datasheet shapes: no pills (version badge, content-type chip, schema toggle). */
         .badge.rounded-2xl, .selected-content-type, .scalar-card-checkbox-input, .scalar-card-checkbox-checkmark { border-radius: 2px !important; }
       `,
