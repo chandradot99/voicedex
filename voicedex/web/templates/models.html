@@ -17,7 +17,7 @@
         </select>
       </label>
       <label class="field">Language
-        <select name="language">
+        <select name="language" data-searchable>
           <option value="">Any</option>
           {% for code, name in languages %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
         </select>

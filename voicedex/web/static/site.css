@@ -305,6 +305,25 @@ input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 /* Dropdowns keep focus after a mouse pick; only highlight them for keyboard users. Text fields stay lit while typing. */
 .field select:focus { outline: none; }
 .field select:focus-visible, .field input:focus { border-color: var(--signal); }
+/* Styled native dropdowns where the browser supports it (Chrome/Edge 135+), mouse/trackpad only:
+   touch devices keep the OS picker, other browsers keep their native menu. */
+@media (pointer: fine) {
+  @supports (appearance: base-select) {
+    .field select, .field select::picker(select) { appearance: base-select; }
+    .field select { background-image: none; padding-right: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 150px; }
+    .field select::picker-icon { color: var(--muted); font-size: 10px; transition: transform .15s; }
+    .field select:open::picker-icon { transform: rotate(180deg); }
+    .field select::picker(select) {
+      margin-top: 4px; padding: 4px; min-width: anchor-size(width); max-height: min(360px, 60vh);
+      background: var(--panel-2); color: var(--ink); border: 1px solid var(--control); border-radius: var(--r);
+      box-shadow: 0 16px 40px -12px rgba(0, 0, 0, .8);
+    }
+    .field select option { padding: 7px 10px; border-radius: var(--r); font: 400 13px var(--sans); color: var(--ink-2); gap: 8px; }
+    .field select option:hover, .field select option:focus-visible { background: var(--rule); color: var(--ink); outline: none; }
+    .field select option:checked { color: var(--ink); }
+    .field select option::checkmark { color: var(--signal); }
+  }
+}
 .field-check { display: flex; align-items: center; gap: 8px; height: 32px; font-size: 13px; color: var(--ink-2); cursor: pointer; }
 .result-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 14px 0; font-size: 13px; }
 .result-count { font: 500 13px/1 var(--mono); }
@@ -315,6 +334,30 @@ input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 .token:hover { border-color: var(--end); color: var(--ink); }
 .token:hover span[aria-hidden] { color: var(--end); }
 .result-bar .btn-link { margin-left: auto; }
+/* Searchable picker (progressive enhancement of a long <select>) */
+.combo { position: relative; }
+.field select[hidden] { display: none !important; }
+.combo-input {
+  height: 32px; width: 190px; padding: 0 28px 0 10px; border: 1px solid var(--control); border-radius: var(--r);
+  background: var(--panel); color: var(--ink); font: 400 13px var(--sans); letter-spacing: 0; text-transform: none; outline: 0;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 15px) 14px, calc(100% - 11px) 14px; background-size: 4px 4px; background-repeat: no-repeat;
+}
+.combo-input::placeholder { color: var(--ink); }
+.combo-input:hover { border-color: var(--ink-2); }
+.combo-input:focus { border-color: var(--signal); }
+.combo-input[aria-expanded="true"]::placeholder { color: var(--muted); }
+.combo-list {
+  position: absolute; z-index: 30; top: calc(100% + 4px); left: 0; width: max(100%, 240px); max-height: min(340px, 60vh); overflow-y: auto;
+  margin: 0; padding: 4px; list-style: none; background: var(--panel-2); border: 1px solid var(--control); border-radius: var(--r);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, .8); text-transform: none; letter-spacing: 0;
+}
+.combo-list li { display: block; padding: 7px 10px; border-radius: var(--r); cursor: pointer; font: 400 13px var(--sans); color: var(--ink-2); }
+.combo-list li[aria-selected="true"] { background: var(--rule); color: var(--ink); }
+.combo-list li.current { color: var(--ink); }
+.combo-list li.current::after { content: "✓"; color: var(--signal); float: right; margin-left: 12px; }
+.combo-list li mark { background: none; color: var(--signal); }
+.combo-list li.combo-empty { color: var(--muted); cursor: default; }
 .empty { padding: 40px 0; color: var(--ink-2); }
 .empty .mono { color: var(--muted); display: block; margin-bottom: 10px; }
 .empty ul { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; }

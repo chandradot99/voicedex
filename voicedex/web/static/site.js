@@ -345,3 +345,89 @@ addEventListener("pageswap", (e) => {
   const link = $$(`a[href="${CSS.escape(path)}"]`).find((a) => a.querySelector("code") && a.getBoundingClientRect().height);
   if (link) link.querySelector("code").style.viewTransitionName = "model-title";
 });
+
+// ── Searchable picker: long <select data-searchable> (languages) gets a type-to-filter combobox.
+// The real <select> stays in the form (hidden) and still drives submission; phones keep the native picker.
+(() => {
+  if (!matchMedia("(pointer: fine)").matches) return;
+  let uid = 0;
+  $$("select[data-searchable]").forEach((select) => {
+    const options = [...select.options].map((o) => ({ value: o.value, text: o.text }));
+    const anyText = options.find((o) => o.value === "")?.text || "Any";
+    const id = `combo-${++uid}`;
+    const wrap = document.createElement("span");
+    wrap.className = "combo";
+    wrap.innerHTML = `<input type="text" class="combo-input" role="combobox" aria-expanded="false" aria-controls="${id}" aria-autocomplete="list" autocomplete="off" spellcheck="false"><ul class="combo-list" id="${id}" role="listbox" hidden></ul>`;
+    select.before(wrap);
+    select.hidden = true;
+    const input = $("input", wrap), list = $("ul", wrap);
+    const currentText = () => (select.value ? select.options[select.selectedIndex].text : "");
+    input.placeholder = select.value ? currentText() : anyText;
+    input.value = currentText();
+    let shown = [], active = 0;
+
+    const render = () => {
+      const q = input.value.trim().toLowerCase();
+      const filtering = q && q !== currentText().toLowerCase();
+      shown = filtering
+        ? options.filter((o) => o.value && o.text.toLowerCase().includes(q))
+            .sort((a, b) => b.text.toLowerCase().startsWith(q) - a.text.toLowerCase().startsWith(q))
+        : options;
+      active = Math.max(0, shown.findIndex((o) => o.value === select.value));
+      if (filtering) active = 0;
+      list.innerHTML = shown.length
+        ? shown.map((o, i) => {
+            const label = filtering ? esc(o.text).replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "i"), "<mark>$1</mark>") : esc(o.text);
+            return `<li role="option" id="${id}-${i}" data-i="${i}" aria-selected="${i === active}" class="${o.value === select.value ? "current" : ""}">${label}</li>`;
+          }).join("")
+        : `<li class="combo-empty">No language matches “${esc(input.value.trim())}”</li>`;
+      input.setAttribute("aria-activedescendant", shown.length ? `${id}-${active}` : "");
+      list.querySelector('[aria-selected="true"]')?.scrollIntoView({ block: "nearest" });
+    };
+    const open = () => { if (!list.hidden) return; list.hidden = false; input.setAttribute("aria-expanded", "true"); render(); };
+    const close = (restore = true) => {
+      list.hidden = true;
+      input.setAttribute("aria-expanded", "false");
+      if (restore) input.value = currentText();
+    };
+    const pick = (o) => {
+      close(false);
+      input.value = o.value ? o.text : "";
+      input.placeholder = o.value ? o.text : anyText;
+      if (select.value === o.value) return;
+      select.value = o.value;
+      select.dispatchEvent(new Event("change", { bubbles: true }));   // filters auto-submit on change
+    };
+    const move = (d) => {
+      if (!shown.length) return;
+      active = (active + d + shown.length) % shown.length;
+      $$("li[role=option]", list).forEach((li, i) => li.setAttribute("aria-selected", String(i === active)));
+      input.setAttribute("aria-activedescendant", `${id}-${active}`);
+      list.children[active]?.scrollIntoView({ block: "nearest" });
+    };
+
+    input.addEventListener("focus", () => { input.select(); open(); });
+    input.addEventListener("click", open);
+    input.addEventListener("input", () => { open(); render(); });
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") { e.preventDefault(); list.hidden ? open() : move(1); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); move(-1); }
+      else if (e.key === "Enter") { e.preventDefault(); if (!list.hidden && shown[active]) pick(shown[active]); }
+      else if (e.key === "Escape") { if (!list.hidden) { e.preventDefault(); e.stopPropagation(); close(); } }
+      else if (e.key === "Tab") close();
+    });
+    list.addEventListener("mousedown", (e) => e.preventDefault());       // keep focus in the input
+    list.addEventListener("click", (e) => { const li = e.target.closest("li[data-i]"); if (li) pick(shown[+li.dataset.i]); });
+    list.addEventListener("pointermove", (e) => {
+      const li = e.target.closest("li[data-i]");
+      if (li && +li.dataset.i !== active) { active = +li.dataset.i; move(0); }
+    });
+    input.addEventListener("blur", () => close());
+  });
+})();
+
+// ── Clean filter URLs: drop empty fields on submit (?type=stt&language=hi, not …&provider=&status=).
+document.addEventListener("formdata", (e) => {
+  if (!e.target.matches("form.filters, form[data-autosubmit]")) return;
+  for (const [k, v] of [...e.formData]) if (v === "") e.formData.delete(k);
+});

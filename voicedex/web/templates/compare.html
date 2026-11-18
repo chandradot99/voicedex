@@ -37,7 +37,7 @@
     <form method="get" action="/compare" class="lang-check" data-autosubmit>
       {% for k in keys %}<input type="hidden" name="m" value="{{ k }}">{% endfor %}
       <label class="field">Check a language
-        <select name="language">
+        <select name="language" data-searchable>
           <option value="">Choose…</option>
           {% for code, name in languages %}<option value="{{ code }}" {% if language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
         </select>
