@@ -1,0 +1,25 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "hipaa",
+    "pci_dss"
+  ],
+  "description": "Voicegain is a speech-recognition company founded in 2020 with its address in Southlake (Dallas area), Texas. It sells cloud and on-premises (Edge) speech-to-text: its own Omega (batch) and Kappa (real-time) acoustic models plus hosted Whisper, along with MRCP ASR for IVRs, speech analytics and a voice-agent platform.",
+  "docs_urls": [
+    "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+    "https://www.voicegain.ai/developers",
+    "https://www.voicegain.ai/pricing"
+  ],
+  "headquarters": "US",
+  "id": "voicegain",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://support.voicegain.ai/hc/en-us/categories/360001288691-Speech-to-Text-API",
+    "pricing": "https://www.voicegain.ai/pricing"
+  },
+  "name": "Voicegain",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.voicegain.ai"
+}

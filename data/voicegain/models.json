@@ -1,0 +1,412 @@
+[
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": false,
+    "description": "Voicegain's default real-time model: best real-time accuracy, sub-100 ms end-of-utterance, for live voice agents and telephony.",
+    "first_seen": "2026-11-18",
+    "id": "VoiceGain-kappa",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "es"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelRealTime",
+      "current_version": "Kappa-v7 (June 2025, 75M parameters)",
+      "default_for": "real-time",
+      "model_card": "https://github.com/voicegain/platform/blob/master/VG-Kappa-v7-ModelCard.md",
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Kappa",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Voicegain's default offline (batch) model, best suited to general transcription; highest accuracy for post-call processing.",
+    "first_seen": "2026-11-18",
+    "id": "VoiceGain-omega",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "meta": {
+      "api_parameter": "acousticModelNonRealTime",
+      "default_for": "offline / semi-real-time",
+      "language_count": 6,
+      "language_note": "Voicegain says Omega supports 6 languages but does not enumerate them per model; platform languages listed: English, Spanish, German, Portuguese, Korean, Hindi.",
+      "max_diarization_speakers": 12,
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Omega",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Offline model trained on call-center calls.",
+    "first_seen": "2026-11-18",
+    "id": "VoiceGain-omega-x",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelNonRealTime",
+      "max_diarization_speakers": 12,
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Omega-X",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": false,
+    "description": "Real-time model with lower latency and somewhat lower accuracy than Kappa.",
+    "first_seen": "2026-11-18",
+    "id": "VoiceGain-rho",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelRealTime",
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Rho",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": false,
+    "description": "English (US) real-time model with the lowest latency and lower accuracy than Rho.",
+    "first_seen": "2026-11-18",
+    "id": "VoiceGain-rho-en-us",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelRealTime",
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Rho (en-US)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Hosted Whisper base model, offline async transcription only.",
+    "family": "whisper",
+    "first_seen": "2026-11-18",
+    "id": "whisper:base",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelNonRealTime",
+      "async_only": true,
+      "max_diarization_speakers": 20,
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Voicegain-Whisper base",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Hosted Whisper large-v3-turbo, the largest and most accurate Whisper option, offline async transcription only.",
+    "family": "whisper",
+    "first_seen": "2026-11-18",
+    "id": "whisper:large-v3-turbo",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelNonRealTime",
+      "async_only": true,
+      "max_diarization_speakers": 20,
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Voicegain-Whisper large-v3-turbo",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Hosted Whisper medium model, offline async transcription only; 'whisper' is a shortcut for it.",
+    "family": "whisper",
+    "first_seen": "2026-11-18",
+    "id": "whisper:medium",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelNonRealTime",
+      "async_only": true,
+      "max_diarization_speakers": 20,
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model",
+      "shortcut": "whisper"
+    },
+    "name": "Voicegain-Whisper medium",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "Hosted Whisper small model, offline async transcription only.",
+    "family": "whisper",
+    "first_seen": "2026-11-18",
+    "id": "whisper:small",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api_parameter": "acousticModelNonRealTime",
+      "async_only": true,
+      "max_diarization_speakers": 20,
+      "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
+    },
+    "name": "Voicegain-Whisper small",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Cloud STT list price $0.00020 per second of audio (batch and streaming), 6-second minimum per request; volume/term commitments lower the rate. $50 free credit on signup.",
+      "price_usd": 0.0002,
+      "source_url": "https://www.voicegain.ai/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py",
+        "https://www.voicegain.ai/developers",
+        "https://www.voicegain.ai/pricing"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
