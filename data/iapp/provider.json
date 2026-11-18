@@ -1,0 +1,39 @@
+{
+  "access": "self_serve",
+  "description": "iApp Technology Co., Ltd. is a Thai AI company founded in 2013 and based in Thailand. It sells Thai-first APIs priced in IC credits, including Chinda ASR speech-to-text (Thai, plus English and Chinese tiers), the OpenThai ASR Realtime streaming recogniser (open weights on Hugging Face) and Chinda TTS Thai-English text-to-speech with voice cloning.",
+  "docs_urls": [
+    "https://iapp.co.th/llms.txt",
+    "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+    "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+    "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+    "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+    "https://iapp.co.th/en/pricing",
+    "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+  ],
+  "headquarters": "TH",
+  "id": "iapp",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+    "docs": "https://iapp.co.th/en/docs/intro",
+    "pricing": "https://iapp.co.th/en/pricing",
+    "status": "https://status.iapp.co.th"
+  },
+  "name": "iApp Technology",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://iapp.co.th/llms.txt",
+      "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+      "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+      "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+      "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+      "https://iapp.co.th/en/pricing",
+      "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+    ]
+  },
+  "website": "https://iapp.co.th"
+}

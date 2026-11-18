@@ -1,0 +1,53 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A man's voice for announcements and voice assistants.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kaidang",
+    "languages": [
+      "th",
+      "en"
+    ],
+    "name": "Kaidang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A woman's voice, bright and friendly, for service and welcomes.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "kaimook",
+    "languages": [
+      "th",
+      "en"
+    ],
+    "name": "Kaimook",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A man's voice, for any use; the default voice.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kaitom",
+    "languages": [
+      "th",
+      "en"
+    ],
+    "meta": {
+      "default": true
+    },
+    "name": "Kaitom",
+    "updated_at": "2026-11-18"
+  }
+]

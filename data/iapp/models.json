@@ -1,0 +1,443 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "iApp's English file transcription tier with segment timestamps and speaker labels, for recordings up to 10 hours.",
+    "first_seen": "2026-11-18",
+    "id": "base-en",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_audio_seconds": 36000,
+    "meta": {
+      "accepted_formats_raw": "MP3, WAV, M4A, AAC, AIF, CDA, FLAC, MID, OGG, WebM or WMA",
+      "benchmark": "98.07% words correct (LibriSpeech test-clean, Base)",
+      "docs": "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+      "endpoint": "POST https://api.iapp.co.th/v3/store/speech/speech-to-text/base/en",
+      "ic_rate": "Prices are in IC (iApp Credits): 1 IC = THB 1.25 for 100-19,999 IC, falling to THB 0.89 from 500,000 IC; prices before 7% VAT.",
+      "legacy_path": "/asr/v3/en",
+      "model_id_note": "No model parameter; the id is the endpoint tier and language.",
+      "price_ic": "1 IC per 60 seconds of audio"
+    },
+    "name": "English Speech-to-Text Base",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://iapp.co.th/llms.txt",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+        "https://iapp.co.th/en/pricing",
+        "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "iApp's Chinese file transcription tier with segment timestamps and speaker labels, for recordings up to 10 hours.",
+    "first_seen": "2026-11-18",
+    "id": "base-zh",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh"
+    ],
+    "max_audio_seconds": 36000,
+    "meta": {
+      "accepted_formats_raw": "MP3, WAV, M4A, AAC, AIF, CDA, FLAC, MID, OGG, WebM or WMA",
+      "benchmark": "97.13% characters correct (AISHELL-1, Base)",
+      "docs": "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+      "endpoint": "POST https://api.iapp.co.th/v3/store/speech/speech-to-text/base/zh",
+      "ic_rate": "Prices are in IC (iApp Credits): 1 IC = THB 1.25 for 100-19,999 IC, falling to THB 0.89 from 500,000 IC; prices before 7% VAT.",
+      "legacy_path": "/asr/v3/zh",
+      "model_id_note": "No model parameter; the id is the endpoint tier and language.",
+      "price_ic": "1 IC per 60 seconds of audio"
+    },
+    "name": "Chinese Speech-to-Text Base",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://iapp.co.th/llms.txt",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+        "https://iapp.co.th/en/pricing",
+        "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization"
+    ],
+    "description": "iApp's recommended file transcription model for Thai (also English and Chinese), with speaker labels, segment timestamps and a names-and-terms vocabulary list.",
+    "first_seen": "2026-11-18",
+    "id": "chinda-asr-pro-v2",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "th",
+      "en",
+      "zh"
+    ],
+    "max_audio_seconds": 28800,
+    "meta": {
+      "benchmark_cer_common_voice_17_th": "2.06% (97.94% characters correct, 3,539 unseen clips)",
+      "docs": "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+      "endpoint": "POST https://api.iapp.co.th/v3/store/speech/speech-to-text/pro-v2",
+      "ic_rate": "Prices are in IC (iApp Credits): 1 IC = THB 1.25 for 100-19,999 IC, falling to THB 0.89 from 500,000 IC; prices before 7% VAT.",
+      "language_codes": [
+        "th",
+        "en",
+        "zh",
+        "en-US",
+        "zh-CN",
+        "zh-TW",
+        "zh-HK",
+        "zh-Hant"
+      ],
+      "max_speakers": 8,
+      "max_upload_mb": 250,
+      "model_id_note": "No model parameter; responses report a release such as chinda-asr-pro-v2.2. Since 15 Nov 2026 the Thai /base, /pro and legacy /asr/v3 paths are also answered by Pro v2.",
+      "monthly_plans_note": "Available from 1 December 2026; before 7% VAT; overage at the pay-as-you-go IC rate.",
+      "monthly_plans_thb": [
+        {
+          "hours": 18,
+          "plan": "Transcribe S",
+          "thb_per_month": 199
+        },
+        {
+          "hours": 70,
+          "plan": "Transcribe M",
+          "thb_per_month": 690
+        },
+        {
+          "hours": 320,
+          "plan": "Transcribe L",
+          "thb_per_month": 2990
+        }
+      ],
+      "price_ic": "Free until 30 November 2026; from 1 December 2026 0.003 IC per second of audio (10.8 IC per hour), billed per second.",
+      "rate_limit": "5 requests/s, 60/min, 3,000/h per API key"
+    },
+    "name": "Chinda ASR Pro v2",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://iapp.co.th/llms.txt",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+        "https://iapp.co.th/en/pricing",
+        "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Live Thai speech-to-text over a WebSocket, returning partial text about every 0.7 s and finished sentences a median 0.66 s after a pause.",
+    "first_seen": "2026-11-18",
+    "id": "chinda-asr-realtime-v1",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "th"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "docs": "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+      "encoding": "pcm_s16le mono 16 kHz",
+      "endpoint": "WSS wss://api.iapp.co.th/v3/store/speech/speech-to-text/realtime-v2",
+      "latency_ms_options": [
+        80,
+        320,
+        560,
+        1120
+      ],
+      "legacy_endpoints": "wss .../speech-to-text/realtime, /asrx and /v1/audio/stt/rt run on this model since 9 Nov 2026 (Thai only).",
+      "model_id_note": "The id is the model name returned in final messages (chinda-asr-realtime-v1).",
+      "open_model": "OpenThai 2.0 ASR Streaming (also an ONNX export: https://huggingface.co/iapp/OpenThai2.0-ASR-Streaming-ONNX)",
+      "price_ic": "Free during the launch."
+    },
+    "name": "OpenThai ASR Realtime",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "OpenMDW-1.1",
+      "url": "https://huggingface.co/iapp/OpenThai2.0-ASR-Streaming"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://iapp.co.th/llms.txt",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+        "https://iapp.co.th/en/pricing",
+        "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "iApp's English transcription tier that adds a correction step for uncommon names and vocabulary, for recordings up to 1 hour.",
+    "first_seen": "2026-11-18",
+    "id": "pro-en",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "accepted_formats_raw": "MP3, WAV, M4A, AAC, AIF, CDA, FLAC, MID, OGG, WebM or WMA",
+      "docs": "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+      "endpoint": "POST https://api.iapp.co.th/v3/store/speech/speech-to-text/pro/en",
+      "ic_rate": "Prices are in IC (iApp Credits): 1 IC = THB 1.25 for 100-19,999 IC, falling to THB 0.89 from 500,000 IC; prices before 7% VAT.",
+      "legacy_path": "/asr/v3/en/pro",
+      "model_id_note": "No model parameter; the id is the endpoint tier and language.",
+      "price_ic": "2 IC per 60 seconds of audio"
+    },
+    "name": "English Speech-to-Text Pro",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://iapp.co.th/llms.txt",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+        "https://iapp.co.th/en/pricing",
+        "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization"
+    ],
+    "description": "iApp's Chinese transcription tier that adds a correction step for uncommon names and vocabulary, for recordings up to 1 hour.",
+    "first_seen": "2026-11-18",
+    "id": "pro-zh",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "accepted_formats_raw": "MP3, WAV, M4A, AAC, AIF, CDA, FLAC, MID, OGG, WebM or WMA",
+      "docs": "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+      "endpoint": "POST https://api.iapp.co.th/v3/store/speech/speech-to-text/pro/zh",
+      "ic_rate": "Prices are in IC (iApp Credits): 1 IC = THB 1.25 for 100-19,999 IC, falling to THB 0.89 from 500,000 IC; prices before 7% VAT.",
+      "legacy_path": "/asr/v3/zh/pro",
+      "model_id_note": "No model parameter; the id is the endpoint tier and language.",
+      "price_ic": "2 IC per 60 seconds of audio"
+    },
+    "name": "Chinese Speech-to-Text Pro",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://iapp.co.th/llms.txt",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+        "https://iapp.co.th/en/pricing",
+        "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "iApp's Thai and Thai-English text-to-speech with three ready voices, eight speaking styles and voice cloning from a 10-20 second clip.",
+    "first_seen": "2026-11-18",
+    "id": "chinda-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "th",
+      "en"
+    ],
+    "lifecycle": "alpha",
+    "max_text_chars": 1200,
+    "meta": {
+      "clone_clip": "10-20 s of clean single-speaker WAV/MP3, up to 20 MB, consent=true required",
+      "clone_endpoint": "POST https://api.iapp.co.th/v3/store/audio/tts/clone",
+      "cloning_languages": "Thai only",
+      "deprecated_endpoints": "V1/V2 (/v3/store/speech/text-to-speech/kaitom, /kaitom/v1, /cee) still answer but are unmaintained; no shutdown date.",
+      "docs": "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3",
+      "endpoint": "POST https://api.iapp.co.th/v3/store/audio/tts",
+      "ic_rate": "Prices are in IC (iApp Credits): 1 IC = THB 1.25 for 100-19,999 IC, falling to THB 0.89 from 500,000 IC; prices before 7% VAT.",
+      "lifecycle_note": "The docs label the service Alpha: 'may be intermittently unavailable'.",
+      "max_text_chars_clone": 1000,
+      "model_id_note": "No model parameter; the V3 endpoints run on Chinda TTS (version v3.0).",
+      "monthly_plans_note": "Before 7% VAT; overage at the pay-as-you-go IC rate.",
+      "monthly_plans_thb": [
+        {
+          "characters": 2500000,
+          "plan": "Voice S",
+          "thb_per_month": 500
+        },
+        {
+          "characters": 7500000,
+          "plan": "Voice M",
+          "thb_per_month": 1000
+        },
+        {
+          "characters": 25000000,
+          "plan": "Voice L",
+          "thb_per_month": 2500
+        }
+      ],
+      "price_ic": "0.2 IC per 1,000 characters, billed per 100 characters rounded up (0.02 IC per 100 characters); cloning same price.",
+      "rate_limit": "100 requests/s per API key",
+      "styles": [
+        "neutral",
+        "friendly",
+        "cheerful",
+        "calm",
+        "serious",
+        "sad",
+        "excited",
+        "empathetic"
+      ],
+      "voice_library": "Ten reference clips by age and sex (child to grandparent) at iapp.co.th/audio/chindatts/library/, used through /clone."
+    },
+    "name": "Chinda TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://iapp.co.th/llms.txt",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/thai",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/english",
+        "https://iapp.co.th/en/docs/speech/speech-to-text/chinese",
+        "https://iapp.co.th/en/pricing",
+        "https://iapp.co.th/en/docs/speech/text-to-speech/text-to-speech-v3"
+      ]
+    },
+    "sample_rates_hz": [
+      48000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
