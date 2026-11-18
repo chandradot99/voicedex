@@ -22,3 +22,10 @@ class KrutrimSyncer(DocsOnlySyncer):
     tts_guidance = (
         "Same rules as STT."
     )
+    sts_docs = [
+        "https://docs.cloud.olakrutrim.com/api-references/bhashik-speech-api",
+    ]
+    sts_guidance = (
+        "Speech-to-speech translation endpoints only (audio in, translated audio out), Krutrim-built. Languages = "
+        "supported source/target languages. Prices in INR only from a Krutrim page."
+    )

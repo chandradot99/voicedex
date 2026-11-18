@@ -1,5 +1,50 @@
 [
   {
+    "description": "Krutrim's Bhashik speech-to-speech translation: upload a short English audio file and receive synthesized speech in the target Indic language as a download link.",
+    "first_seen": "2026-11-18",
+    "id": "bhashik-sts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "gu-IN",
+      "bn-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "api_language_codes": "tgt_lang_code: eng, guj, ben, hin, kan, mal, mar, tam, tel",
+      "endpoint": "POST https://cloud.olakrutrim.com/api/v1/languagelabs/sts_trans/upload",
+      "input_audio_formats": [
+        "mp3",
+        "wav"
+      ],
+      "input_speaker": [
+        "female",
+        "male"
+      ],
+      "output": "data.audio_file download URL of translated synthesized audio",
+      "source_languages": "eng only (src_lang_code)"
+    },
+    "name": "Bhashik Speech-to-Speech Translation",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.olakrutrim.com/api-references/bhashik-speech-api"
+      ]
+    },
+    "streaming": false,
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
     "audio_formats": [
       "mp3",
       "wav"

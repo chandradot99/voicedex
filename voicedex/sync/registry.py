@@ -137,11 +137,11 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry('aivis'            , 'Aivis Cloud API', 'tts', "voicedex.sync.aivis.AivisSyncer"),
     SyncerEntry('reson8'           , 'Reson8', 'stt', "voicedex.sync.reson8.Reson8Syncer"),
     SyncerEntry('krutrim'          , 'Krutrim', 'both', "voicedex.sync.krutrim.KrutrimSyncer"),
-    SyncerEntry('humelo'           , 'Humelo', 'both', "voicedex.sync.humelo.HumeloSyncer"),
+    SyncerEntry('humelo'           , 'Humelo', 'tts', "voicedex.sync.humelo.HumeloSyncer"),
     SyncerEntry('aqua'             , 'Aqua Voice (Avalon)', 'stt', "voicedex.sync.aqua.AquaSyncer"),
     SyncerEntry('unisound'         , 'Unisound (云知声)', 'both', "voicedex.sync.unisound.UnisoundSyncer"),
     SyncerEntry('chimege'          , 'Chimege', 'both', "voicedex.sync.chimege.ChimegeSyncer"),
-    SyncerEntry('vbee'             , 'Vbee', 'both', "voicedex.sync.vbee.VbeeSyncer"),
+    SyncerEntry('vbee'             , 'Vbee', 'tts', "voicedex.sync.vbee.VbeeSyncer"),
     SyncerEntry('aitalk'           , 'AITalk (AI Inc.)', 'tts', "voicedex.sync.aitalk.AITalkSyncer"),
     SyncerEntry('breezeblue'       , 'BreezeBlue', 'tts', "voicedex.sync.breezeblue.BreezeBlueSyncer"),
     # ── Open-weights publishers (Hugging Face Hub API; voicedex/sync/open_weights.py) ──
