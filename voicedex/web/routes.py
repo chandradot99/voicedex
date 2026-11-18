@@ -137,9 +137,19 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
     })
 
 
+# Profiles that are the same entity as voicedex.dev (schema.org sameAs). Only the project's own profiles belong
+# here, not personal ones: add an X/LinkedIn/Bluesky page once Voicedex has one.
+SAME_AS = ["https://github.com/chandradot99/voicedex"]
+
+
 def _home_ld(catalog: Catalog, n_models: int, n_voices: int, n_providers: int) -> list[dict]:
     site = settings.site_url.rstrip("/")
-    org = {"@type": "Organization", "name": settings.site_name, "url": site}
+    org_id = f"{site}/#organization"
+    org = {"@context": "https://schema.org", "@type": "Organization", "@id": org_id, "name": settings.site_name,
+           "url": site + "/", "logo": {"@type": "ImageObject", "url": f"{site}/static/logo.png",
+                                       "width": 512, "height": 512},
+           "description": "Open catalog of speech AI models, voices and prices.", "sameAs": SAME_AS}
+    ref = {"@id": org_id}
     modified = views.last_modified(views.active_models(catalog))
     dataset = {
         "@context": "https://schema.org", "@type": "Dataset",
@@ -152,15 +162,16 @@ def _home_ld(catalog: Catalog, n_models: int, n_voices: int, n_providers: int) -
         "keywords": ["speech-to-text", "text-to-speech", "speech-to-speech", "voice AI", "TTS", "STT", "ASR",
                      "pricing", "voices", "languages"],
         "license": "https://www.apache.org/licenses/LICENSE-2.0",
-        "isAccessibleForFree": True, "creator": org, "publisher": org,
+        "isAccessibleForFree": True, "creator": ref, "publisher": ref,
         "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
                           "contentUrl": site + "/v1/catalog.json"}],
     }
     if modified:
         dataset["dateModified"] = modified.isoformat()
-    website = {"@context": "https://schema.org", "@type": "WebSite", "name": settings.site_name, "url": site + "/",
+    website = {"@context": "https://schema.org", "@type": "WebSite", "@id": f"{site}/#website",
+               "name": settings.site_name, "url": site + "/", "publisher": ref,
                "description": "Open catalog of speech AI models and voices: languages, features, prices and status."}
-    return [website, dataset]
+    return [org, website, dataset]
 
 
 @router.get("/providers/{provider_id}", response_class=HTMLResponse)
