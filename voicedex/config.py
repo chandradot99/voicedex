@@ -69,8 +69,6 @@ class Settings(BaseSettings):
     tilde_api_key: str = ""
     bhashini_user_id: str = ""
     bhashini_ulca_api_key: str = ""
-    volcengine_access_key: str = ""
-    volcengine_secret_key: str = ""
     ibm_tts_url: str = "https://api.us-south.text-to-speech.watson.cloud.ibm.com"
     ibm_stt_url: str = "https://api.us-south.speech-to-text.watson.cloud.ibm.com"
 

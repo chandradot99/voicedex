@@ -5,7 +5,8 @@ Source: docs (docs.volcengine.com, library 6561 / doubao-voice). Pages render cl
 plain-markdown twin at docs.volcengine.com/docs/zh/doubao-voice/<slug>.md (index: .../doubao-voice/llms.txt),
 which is what the seeds point at. Model ids are the `X-Api-Resource-Id` header values for ASR/TTS and the
 `model` version string for the realtime speech-to-speech API. A voice-list OpenAPI (ListSpeakers) exists but
-needs Volcengine AK/SK credentials we don't have — docs-only until a key is added. Prices are CNY.
+needs Volcengine AK/SK credentials, which require a CN real-name account — docs-only by decision (models,
+prices and the voice list all come from the docs). Prices are CNY.
 """
 
 from voicedex.sync.docs_only import DocsOnlySyncer
