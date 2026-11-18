@@ -17,6 +17,25 @@
       <input id="jump-q" name="q" type="search" placeholder="Search" autocomplete="off" spellcheck="false">
       <kbd aria-hidden="true">⌘K</kbd>
     </form>
+    <button type="button" class="theme-toggle" aria-label="Switch to light theme" title="Switch theme">
+      <svg viewBox="0 0 16 16" aria-hidden="true" class="i-sun"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1 1M11.6 11.6l1 1M3.4 12.6l1-1M11.6 4.4l1-1"/></svg>
+      <svg viewBox="0 0 16 16" aria-hidden="true" class="i-moon"><path d="M13.5 9.6A5.5 5.5 0 0 1 6.4 2.5a5.5 5.5 0 1 0 7.1 7.1z"/></svg>
+    </button>
+    <script>
+      (function () {
+        var b = document.currentScript.previousElementSibling, root = document.documentElement;
+        var cur = function () { return root.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"); };
+        var sync = function () { var t = cur(); b.dataset.current = t; b.setAttribute("aria-label", "Switch to " + (t === "dark" ? "light" : "dark") + " theme"); };
+        b.addEventListener("click", function () {
+          var next = cur() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("theme", next); } catch (e) {}
+          sync();
+          document.dispatchEvent(new CustomEvent("themechange", { detail: next }));
+        });
+        sync();
+      })();
+    </script>
     <a class="nav-compare" href="/compare" {% if path.startswith('/compare') %}aria-current="page"{% endif %}>Compare<span id="compare-count" class="nav-count" aria-label="models selected"></span></a>
   </div>
 </header>
