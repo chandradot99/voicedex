@@ -1,0 +1,624 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "word_timestamps"
+    ],
+    "description": "WebSocket streaming transcription of continuous audio with automatic sentence segmentation, for live captions, conference and court records.",
+    "first_seen": "2026-11-18",
+    "id": "aitranson",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "concurrency": 50,
+      "endpoint": "wss://lasr.duiopen.com/live/ws2",
+      "extras": "spoken-text smoothing, inverse text normalization, optional emotion/age/gender output",
+      "lang_param": {
+        "cn": "Mandarin (default)",
+        "en": "English"
+      },
+      "name_zh": "实时长语音转写",
+      "raw_formats": [
+        "wav",
+        "ogg(speex)",
+        "ogg_opus",
+        "mp3"
+      ],
+      "res": "aitranson"
+    },
+    "name": "Realtime Long-Form Transcription",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 24.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Prepaid packs only (valid 365 days): 200 h ¥1,100 (¥5.50/h) down to 100,000 h ¥320,000 (¥3.20/h). Billed per second of effective speech. Free trial 24 h valid 30 days.",
+      "price": 5.5,
+      "source_url": "https://cloud.aispeech.com/price",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 2,000 h",
+          "price": 5.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 20,000 h",
+          "price": 3.6,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 100,000 h",
+          "price": 3.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Asynchronous transcription of recordings up to 5 hours / 500 MB, with speaker diarization, word timestamps, hotwords and Mandarin dialect-mix models.",
+    "first_seen": "2026-11-18",
+    "id": "lasr-file",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "max_audio_seconds": 18000,
+    "meta": {
+      "concurrency": 5,
+      "endpoint": "https://lasr.duiopen.com/lasr-file-api/v2/",
+      "lang_param": {
+        "cantonese-mix": "Mandarin + Cantonese",
+        "ce": "Chinese-English mix",
+        "cn": "Mandarin",
+        "en": "English",
+        "sichuantone-mix": "Mandarin + Sichuanese"
+      },
+      "max_hotwords": 1500,
+      "max_speakers": 8,
+      "name_zh": "录音文件长语音转写",
+      "turnaround": "usually within 12 h; results kept 7 days"
+    },
+    "name": "Audio File Long-Form Transcription",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 24.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Prepaid packs only (valid 365 days): 200 h ¥800 (¥4.00/h) down to 100,000 h ¥220,000 (¥2.20/h). Free trial 24 h valid 30 days.",
+      "price": 4.0,
+      "source_url": "https://cloud.aispeech.com/price",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 2,000 h",
+          "price": 3.6,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 20,000 h",
+          "price": 3.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 100,000 h",
+          "price": 2.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "HTTP recognition of a complete clip up to 60 seconds / 5 MB, returned in the same response.",
+    "first_seen": "2026-11-18",
+    "id": "lasr-sentence",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "concurrency": 20,
+      "endpoint": "https://lasr.duiopen.com/lasr-sentence-api/v2/sentence",
+      "lang_param": {
+        "cantonese-mix": "Mandarin + Cantonese",
+        "ce": "Chinese-English mix",
+        "cn": "Mandarin (default)",
+        "en": "English",
+        "sichuantone-mix": "Mandarin + Sichuanese"
+      },
+      "name_zh": "一句话识别"
+    },
+    "name": "Sentence Recognition (one-shot)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 50000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Prepaid packs only (valid 365 days): 100k calls ¥400 (¥4.00 per 1,000) down to 50M calls ¥100,000 (¥2.00 per 1,000). Free trial 50,000 calls valid 90 days.",
+      "price": 0.004,
+      "source_url": "https://cloud.aispeech.com/price",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 1M calls",
+          "price": 0.0035,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 5M calls",
+          "price": 0.003,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 20M calls",
+          "price": 0.0025,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 50M calls",
+          "price": 0.002,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "amr",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "WebSocket recognition of utterances up to 60 seconds with results streamed while speaking, for voice search and commands.",
+    "first_seen": "2026-11-18",
+    "id": "realtime-short",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "concurrency": 20,
+      "languages_note": "Mandarin, English, Chinese-English mix and dialects",
+      "name_zh": "实时短语音识别",
+      "pricing_note": "not on the public price page"
+    },
+    "name": "Realtime Short Speech Recognition",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Premium-tier voices for the online short-text synthesis API.",
+    "first_seen": "2026-11-18",
+    "id": "premium",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN"
+    ],
+    "max_text_chars": 500,
+    "meta": {
+      "dialects": "Cantonese, Sichuanese and Suzhou dialect on specific voices (language parameter)",
+      "emotion_param": "speakingStyle (voice-dependent)",
+      "endpoint": "https://tts.duiopen.com/runtime/v2/synthesize",
+      "name_zh": "精品音色",
+      "raw_formats": [
+        "mp3",
+        "wav",
+        "pcm",
+        "wav.alaw",
+        "opus"
+      ],
+      "tier_selected_by": "voiceId"
+    },
+    "name": "Online TTS, Premium voices",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 1000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "在线短语音合成 (精品音色) prepaid packs (valid 365 days), billed per request. Free trial 1,000 calls valid 30 days.",
+      "price": 0.0024,
+      "source_url": "https://cloud.aispeech.com/price",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 10M calls",
+          "price": 0.0023,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 100M calls",
+          "price": 0.0022,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 200M calls",
+          "price": 0.0021,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Standard-tier voices for the online short-text synthesis API.",
+    "first_seen": "2026-11-18",
+    "id": "standard",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "max_text_chars": 500,
+    "meta": {
+      "dialects": "Cantonese, Sichuanese and Suzhou dialect on specific voices (language parameter)",
+      "emotion_param": "speakingStyle (voice-dependent)",
+      "endpoint": "https://tts.duiopen.com/runtime/v2/synthesize",
+      "name_zh": "标准音色",
+      "raw_formats": [
+        "mp3",
+        "wav",
+        "pcm",
+        "wav.alaw",
+        "opus"
+      ],
+      "tier_selected_by": "voiceId"
+    },
+    "name": "Online TTS, Standard voices",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 1000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "在线短语音合成 (标准音色) prepaid packs (valid 365 days), billed per request. Free trial 1,000 calls valid 30 days.",
+      "price": 0.0013,
+      "source_url": "https://cloud.aispeech.com/price",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 10M calls",
+          "price": 0.0012,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 100M calls",
+          "price": 0.0011,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 200M calls",
+          "price": 0.001,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Synthesis with a voice cloned on the platform, through a separate aggregation endpoint.",
+    "first_seen": "2026-11-18",
+    "id": "voice-clone",
+    "interfaces": [
+      "http"
+    ],
+    "max_text_chars": 500,
+    "meta": {
+      "endpoint": "https://tts.duiopen.com/runtime/aggregation/synthesize",
+      "name_zh": "声音复刻合成",
+      "pricing_note": "no public price"
+    },
+    "name": "Voice Clone Synthesis",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Top 'Zhenpin' (臻品) tier voices for the online short-text synthesis API; some support speaking-style intensity.",
+    "first_seen": "2026-11-18",
+    "id": "zhenpin",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "max_text_chars": 500,
+    "meta": {
+      "dialects": "Cantonese, Sichuanese and Suzhou dialect on specific voices (language parameter)",
+      "emotion_param": "speakingStyle (voice-dependent)",
+      "endpoint": "https://tts.duiopen.com/runtime/v2/synthesize",
+      "name_zh": "臻品音色",
+      "pricing_note": "tier listed in the pricing doc with a free quota, but no public pack price",
+      "raw_formats": [
+        "mp3",
+        "wav",
+        "pcm",
+        "wav.alaw",
+        "opus"
+      ],
+      "tier_selected_by": "voiceId"
+    },
+    "name": "Online TTS, Zhenpin voices",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.aispeech.com/price",
+        "https://cloud.aispeech.com/docs/lasr_rt_2",
+        "https://cloud.aispeech.com/docs/lasr_native_2",
+        "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+        "https://cloud.aispeech.com/docs/ct_tts_intro1",
+        "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

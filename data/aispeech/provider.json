@@ -1,0 +1,24 @@
+{
+  "access": "regional",
+  "description": "AISpeech (思必驰) is a conversational-AI company headquartered in Suzhou, China. Its DUI open platform sells cloud speech recognition (realtime and file long-form transcription, one-shot sentence recognition), online TTS voice tiers and voice-clone synthesis as prepaid CNY packs, alongside on-device speech SDKs. Developer accounts require real-name verification.",
+  "docs_urls": [
+    "https://cloud.aispeech.com/price",
+    "https://cloud.aispeech.com/docs/lasr_rt_2",
+    "https://cloud.aispeech.com/docs/lasr_native_2",
+    "https://cloud.aispeech.com/docs/ct_asr_sentence2",
+    "https://cloud.aispeech.com/docs/ct_tts_intro1",
+    "https://cloud.aispeech.com/docs/ct_voiceClone_TTS"
+  ],
+  "headquarters": "CN",
+  "id": "aispeech",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://cloud.aispeech.com/docs/lasr_rt_2",
+    "docs": "https://cloud.aispeech.com/docs",
+    "pricing": "https://cloud.aispeech.com/price"
+  },
+  "name": "AISpeech (思必驰)",
+  "source": "docs",
+  "type": "both",
+  "website": "https://cloud.aispeech.com"
+}
