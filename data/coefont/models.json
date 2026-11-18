@@ -1,0 +1,50 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control"
+    ],
+    "description": "CoeFont API text-to-speech: synthesizes text with any accessible CoeFont voice, selected by its uuid.",
+    "first_seen": "2026-11-18",
+    "id": "coefont-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ja",
+      "en",
+      "zh"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "api": "POST https://api.coefont.cloud/v2/text2speech",
+      "api_version": "2.0.3",
+      "auth": "HMAC-SHA256 signed access key",
+      "language_note": "English CoeFonts read English; Chinese CoeFonts read Chinese only",
+      "output_delivery": "302 redirect to audio file URL (expires in 7 days)",
+      "params": "speed (0.1–10), pitch (±3000 cents), volume, kuten/toten pause lengths",
+      "phoneme_input": "yomi (reading) + accent string, Japanese voices only",
+      "plan": "API access requires the Plus plan (¥55,000/month tax incl., promotional price); no per-character API price published",
+      "trial_rate_limit": "100 requests or 5,000 characters per minute",
+      "user_dictionary": true,
+      "voice_list_api": "GET /v2/coefonts/pro (needs key)"
+    },
+    "name": "CoeFont TTS (API v2)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.coefont.cloud/en/",
+        "https://coefont.cloud/llms.txt"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
