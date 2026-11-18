@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Speech AI provider alternatives: TTS and STT APIs compared | {{ site_name }}{% endblock %}
+{% block description %}Alternatives to ElevenLabs, Deepgram, OpenAI, Google, Azure and other speech AI providers, and replacements for services that shut down, compared by price and features.{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <h1>Alternatives</h1>
+  <p class="lede">Looking to switch providers, or replace one that shut down? Each page lists who else offers the same kinds of models, ranked by shared features and price.</p>
+</section>
+<section class="wrap landing-more">
+  <h2 class="section-title">Popular providers</h2>
+  <ul class="landing-links">{% for pid, p in live %}<li><a href="/alternatives/{{ pid }}">{{ p.name }} alternatives</a></li>{% endfor %}</ul>
+  {% if retired %}<h2 class="section-title">Shut down or no longer sold</h2>
+  <ul class="landing-links">{% for pid, p in retired %}<li><a href="/alternatives/{{ pid }}">{{ p.name }} alternatives</a></li>{% endfor %}</ul>{% endif %}
+</section>
+{% endblock %}
