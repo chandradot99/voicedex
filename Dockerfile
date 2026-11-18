@@ -22,5 +22,5 @@ RUN uv sync --frozen --no-dev
 
 EXPOSE 8000
 
-# Shell form so $PORT expands at runtime (Railway injects PORT)
+# Shell form so $PORT expands at runtime (Cloud Run injects PORT)
 CMD ["sh", "-c", "exec uv run uvicorn voicedex.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1"]

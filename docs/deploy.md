@@ -55,6 +55,21 @@ gh variable set GCP_DEPLOY_SA --body $SA
    Cloud Run is scaled to zero.
 4. `gh variable set TRUST_CF_CONNECTING_IP --body true` and redeploy (rate-limit key = visitor IP).
 
+## Keep-warm ping
+
+Scale-to-zero means the first request after an idle spell waits for a cold start. A Cloud Scheduler job
+pings the Cloud Run URL directly (not voicedex.dev, which Cloudflare may answer from cache) every 5 minutes.
+Requests are billed only while being served, so this costs ~nothing (3 Scheduler jobs per billing account are
+free). Best effort: Cloud Run may still recycle an idle instance. For a guarantee, deploy with
+`--min-instances 1` instead (billed for the idle instance around the clock).
+
+```bash
+gcloud services enable cloudscheduler.googleapis.com
+URL=$(gcloud run services describe voicedex --region $REGION --format 'value(status.url)')
+gcloud scheduler jobs create http voicedex-keepwarm --location $REGION --schedule "*/5 * * * *" \
+  --uri "$URL/health" --http-method GET --attempt-deadline 30s
+```
+
 ## Cost guardrails
 
 Free tier covers this app's traffic. Keep a budget alert ($1) on the billing account; `--max-instances 2`

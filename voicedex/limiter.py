@@ -6,7 +6,7 @@ from voicedex.config import settings
 
 
 def client_ip(request: Request) -> str:
-    """Rate-limit key. Behind Railway's proxy the socket peer is the proxy itself. Use the
+    """Rate-limit key. Behind Cloud Run's front end the socket peer is the proxy itself. Use the
     RIGHT-most X-Forwarded-For entry — the one our proxy appended. Left-most entries are
     client-supplied and could be forged to dodge the limit.
 

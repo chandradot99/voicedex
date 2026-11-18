@@ -21,7 +21,7 @@ provider APIs / docs ──▶ voicedex/sync/<provider>.py ──▶ SyncResult
 
 - **No database.** The API loads `data/` at startup (`voicedex/catalog/store.py`). Deploying a commit publishes its data.
 - **History/audit/rollback = git.** Price history: `git log -p data/*/models.json`.
-- Railway deploys the Dockerfile (copies `data/`). Behind Cloudflare set `TRUST_CF_CONNECTING_IP=true` (rate-limit key); `SITE_URL` drives canonical/sitemap/share URLs. CI: ruff → `scripts/validate.py` → pytest. Railway "Wait for CI" gates deploys from `main`.
+- Hosting: Google Cloud Run (`voicedex-prod`, us-central1) behind Cloudflare, serving the Dockerfile image (copies `data/`). CI (`.github/workflows/ci.yml`): ruff → `scripts/validate.py` → pytest, then on `main` the `deploy` job builds, pushes and deploys (keyless WIF; setup in `docs/deploy.md`). Scale-to-zero; Cloud Scheduler job `voicedex-keepwarm` pings `/health` every 5 min to avoid most cold starts. `TRUST_CF_CONNECTING_IP=true` (rate-limit key); `SITE_URL` drives canonical/sitemap/share URLs.
 
 ## Layout
 
