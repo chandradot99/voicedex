@@ -16,11 +16,27 @@ A provider gets an entry if it **owns its speech models** (STT, TTS or STS) and 
 | Self-serve | Sign up, get a key, pay per unit or by credit | Normal entry |
 | Enterprise | Public API docs, sales-led access or pricing | Entry with `access: enterprise`; models without pricing are fine |
 | Regional registration | Needs a local ID, entity or phone (CN real-name, RU entity, India Bhashini integrator) | Entry with `access: regional`; usually docs-synced |
-| Open weights | Weights on HF/GitHub with an exact licence, **plus** one of: ≥250k downloads or ≥1k likes on a current repo, top-10 on Open ASR Leaderboard or a TTS Arena, or served per-unit by ≥2 hosts | Org entry whose models carry `open_weights`; re-check quarterly |
+| Open weights | Weights on HF/GitHub with an exact licence from an identifiable publisher, **plus** one of: ≥250k downloads in HF's 30-day window on one repo, ≥1M all-time downloads, ≥1k likes, GitHub ≥10k stars with a push in the last 12 months, top-10 on Open ASR Leaderboard or a TTS Arena, or served per-unit by ≥2 hosts | Org entry whose models carry `open_weights`; re-check quarterly |
 | Retired | Shut down, or stopped selling to new customers | `status: deprecated` record, never deleted |
 
 **Excluded:** consumer apps with no API; orchestrators and resellers (Vapi, Retell, Twilio, Vonage, AudioStack,
 Uberduck, CoRover, contact-centre suites); inference hosts as providers (they get a separate "hosted by" dimension, §6).
+
+**Edge-case rules (decided 2026-11-18, gap pass):**
+- *Downloads window:* HF's `downloads` field is a rolling 30-day count; the all-time floor (≥1M) admits durable
+  workhorses (MeloTTS, Parler-TTS). The per-repo bar inside the HF syncer stays lower (20k/30d or 200 likes) — the
+  org bar decides *whether* an org is listed, the repo bar *which* of its repos.
+- *Diarization-only* publishers (pyannote) are excluded until the schema has a speech-analysis model type;
+  `speaker_diarization` is an STT capability, not a model.
+- *Distillations/fine-tunes:* a distillation from the original lab is a separate model with `family` pointing at
+  the parent; third-party fine-tunes only when they fill a language no native vendor covers.
+- *Multimodal LLMs:* admitted only when the model card leads with speech in/out (LFM-Audio yes, Gemma no).
+- *Revenue-capped licences* (Liquid `lfm1.0`): `commercial_use = null` with the cap in `meta.license_terms`.
+- *CPaaS-owned models* (Telnyx Ultra): admitted only once the vendor documents the model as its own; its resold
+  engines stay excluded.
+- *Anonymous accounts* with anomalous download/like ratios (VieNeu-TTS, sanoTTS) don't qualify on downloads.
+- *"Unreachable" is a tooling failure, not a vendor status:* retry with `curl -A "Mozilla/5.0"` before
+  watchlisting (Baidu was mis-filed this way).
 
 ## 2. Schema and pipeline prerequisites (do first, small)
 
