@@ -1,0 +1,1364 @@
+[
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Arabic engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_ar",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "engine_model_type": "16k_ar",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Arabic",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "English engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_en",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "engine_model_type": "16k_en",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "English",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Indonesian engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_id",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "engine_model_type": "16k_id",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Indonesian",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Japanese engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_ja",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_model_type": "16k_ja",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Japanese",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Korean engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_ko",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "engine_model_type": "16k_ko",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Korean",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Malay engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_ms",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ms"
+    ],
+    "meta": {
+      "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "engine_model_type": "16k_ms",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Malay",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation"
+    ],
+    "description": "Large-model engine for 15 languages with automatic per-sentence/paragraph language detection.",
+    "first_seen": "2026-11-18",
+    "id": "16k_multi_lang",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "ja",
+      "ko",
+      "ar",
+      "fil",
+      "fr",
+      "hi",
+      "id",
+      "ms",
+      "pt",
+      "es",
+      "th",
+      "tr",
+      "vi",
+      "de"
+    ],
+    "meta": {
+      "engine_model_type": "16k_multi_lang",
+      "large_model": true,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Multilingual large model",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Large model version. Real-time $2.0/hour for 0-299 hours/day; tiers $1.7, $1.5, $1.3, $1.1 at 300/1000/3000/5000+ hours/day. Recording-file large model $1.8/hour for 0-299 hours/day; tiers $1.6, $1.4, $1.1, $0.8. Pay-as-you-go, international site.",
+      "price_usd": 2.0,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Thai engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_th",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "engine_model_type": "16k_th",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Thai",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Cantonese engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_yue",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "engine_model_type": "16k_yue",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Cantonese",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "General Mandarin Chinese engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_zh",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "engine_model_type": "16k_zh",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Chinese (Mandarin)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Recording-file engine that recognises Mandarin, English and Cantonese together.",
+    "first_seen": "2026-11-18",
+    "id": "16k_zh-PY",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "yue"
+    ],
+    "meta": {
+      "engine_model_type": "16k_zh-PY",
+      "large_model": false,
+      "note": "Listed for CreateRecTask only."
+    },
+    "name": "Chinese-English-Cantonese",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.0,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Traditional Chinese engine for 16 kHz audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_zh-TW",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "engine_model_type": "16k_zh-TW",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Traditional Chinese",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Large-model engine for mixed Mandarin, English and 31 Chinese dialects (incl. Cantonese, Shanghainese, Sichuanese, Minnan, Hakka).",
+    "first_seen": "2026-11-18",
+    "id": "16k_zh_en",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "yue"
+    ],
+    "meta": {
+      "engine_model_type": "16k_zh_en",
+      "large_model": true,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Chinese-English large model",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Large model version. Real-time $2.0/hour for 0-299 hours/day; tiers $1.7, $1.5, $1.3, $1.1 at 300/1000/3000/5000+ hours/day. Recording-file large model $1.8/hour for 0-299 hours/day; tiers $1.6, $1.4, $1.1, $0.8. Pay-as-you-go, international site.",
+      "price_usd": 2.0,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Large-model engine for Mandarin, Chinese dialects and English, more robust on noisy or low-volume audio.",
+    "first_seen": "2026-11-18",
+    "id": "16k_zh_large",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "engine_model_type": "16k_zh_large",
+      "large_model": true,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Chinese large model",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Large model version. Real-time $2.0/hour for 0-299 hours/day; tiers $1.7, $1.5, $1.3, $1.1 at 300/1000/3000/5000+ hours/day. Recording-file large model $1.8/hour for 0-299 hours/day; tiers $1.6, $1.4, $1.1, $0.8. Pay-as-you-go, international site.",
+      "price_usd": 2.0,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "English engine for 8 kHz telephone-call audio.",
+    "first_seen": "2026-11-18",
+    "id": "8k_en",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "engine_model_type": "8k_en",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "English (telephony, 8 kHz)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "amr",
+      "flac",
+      "flv",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Mandarin Chinese engine for 8 kHz telephone-call audio.",
+    "first_seen": "2026-11-18",
+    "id": "8k_zh",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "engine_model_type": "8k_zh",
+      "large_model": false,
+      "raw_formats_realtime": [
+        "pcm",
+        "wav",
+        "opus",
+        "speex",
+        "silk",
+        "mp3",
+        "m4a",
+        "aac"
+      ]
+    },
+    "name": "Chinese (telephony, 8 kHz)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-time recognition $1.4/hour for 0-299 hours/day; volume tiers $1.2 (300-999), $1.0 (1000-2999), $0.86 (3000-4999), $0.7 (>=5000 hours/day). Recording-file recognition $1.0/hour for 0-119,999 hours/month, then $0.95 and $0.9. Pay-as-you-go, international site.",
+      "price_usd": 1.4,
+      "source_url": "https://www.tencentcloud.com/document/product/1118/43352",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "recording file recognition (CreateRecTask)",
+          "price_usd": 1.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion"
+    ],
+    "description": "Premium-tier TTS voices with higher fidelity and more natural sound than Standard (VoiceType ids from 101000).",
+    "first_seen": "2026-11-18",
+    "id": "premium",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "yue"
+    ],
+    "max_text_chars": 150,
+    "meta": {
+      "api": "TextToVoice (tts.intl.tencentcloudapi.com)",
+      "emotion_note": "EmotionCategory applies only to multi-emotion voices; the docs do not say which.",
+      "max_text": "150 Chinese characters or 500 English letters per request",
+      "tier_selected_by": "VoiceType"
+    },
+    "name": "Premium voices",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.185 per 10,000 characters (international site, pay-as-you-go).",
+      "price_usd": 1.85e-05,
+      "source_url": "https://www.tencentcloud.com/document/product/1154/47874",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion"
+    ],
+    "description": "Standard-tier TTS voices (VoiceType ids below 101000).",
+    "first_seen": "2026-11-18",
+    "id": "standard",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "max_text_chars": 150,
+    "meta": {
+      "api": "TextToVoice (tts.intl.tencentcloudapi.com)",
+      "emotion_note": "EmotionCategory applies only to multi-emotion voices; the docs do not say which.",
+      "max_text": "150 Chinese characters or 500 English letters per request",
+      "tier_selected_by": "VoiceType"
+    },
+    "name": "Standard voices",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.125 per 10,000 characters (international site, pay-as-you-go).",
+      "price_usd": 1.25e-05,
+      "source_url": "https://www.tencentcloud.com/document/product/1154/47874",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.tencentcloud.com/document/api/1118/53937",
+        "https://www.tencentcloud.com/document/api/1118/66925",
+        "https://www.tencentcloud.com/document/product/1118/43352",
+        "https://www.tencentcloud.com/document/api/1154/48916",
+        "https://www.tencentcloud.com/document/product/1154/47874"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

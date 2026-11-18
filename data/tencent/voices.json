@@ -1,0 +1,944 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1001",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhiyu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1002",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhiling",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1003",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhimei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1004",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhiyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1005",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhili",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "100510000",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhixiaoyao",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1008",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhiqi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1009",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhiyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1010",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhihua",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "Emotional female voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "101001",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhiyu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101002",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhiling",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101003",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhimei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "General male voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "101004",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhiyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101005",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhili",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101006",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhiyan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101008",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhiqi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101009",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhiyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101010",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhihua",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "News female voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "101011",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhiyan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101012",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhidan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "News male voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "101013",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhihui",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101014",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhining",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "Boy's voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "101015",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhimeng",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "Girl's voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "101016",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhitian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101017",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhirong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101018",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhijing",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "Cantonese female voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "101019",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhitong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101020",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhigang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "News male voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "101021",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhirui",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101022",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhihong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101023",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhixuan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101024",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhihao",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101025",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhiwei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "General female voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "101026",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhixi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "General female voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "101027",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhimei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101028",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhijie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101029",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhikai",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "General male voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "101030",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhike",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101031",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhikui",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101032",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhifang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101033",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhibei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101034",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhilian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101035",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhiyi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "sichuan",
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101040",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "dialect": "Sichuan dialect",
+      "tier": "Premium"
+    },
+    "name": "zhichuan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "English male voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "101050",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "WeJack",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101051",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "WeRose",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101052",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhiwei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101053",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Premium"
+    },
+    "name": "zhifang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "General male voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "101054",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhiyou",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "description": "General female voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "101055",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "gender_source": "cloud.tencent.com/document/product/1073/92668",
+      "tier": "Premium"
+    },
+    "name": "zhiyou",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "northeastern",
+    "category": "premade",
+    "compatible_models": [
+      "premium"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "101056",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "dialect": "Northeastern Mandarin",
+      "tier": "Premium"
+    },
+    "name": "zhilin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1017",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhirong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1018",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhijing",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1050",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "WeJack",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "1051",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "WeRose",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "standard"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "10510000",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "tier": "Standard"
+    },
+    "name": "zhixiaoyao",
+    "updated_at": "2026-11-18"
+  }
+]

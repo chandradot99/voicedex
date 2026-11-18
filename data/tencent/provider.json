@@ -1,0 +1,34 @@
+{
+  "access": "self_serve",
+  "description": "Tencent Cloud is the cloud computing arm of Tencent Holdings, headquartered in Shenzhen, China. It sells Automatic Speech Recognition (real-time, recording-file and large-model engines for Chinese, English and other Asian and global languages) and Text to Speech APIs. The international site prices in USD; the mainland site (cloud.tencent.com) has a larger CNY-priced catalog.",
+  "docs_urls": [
+    "https://www.tencentcloud.com/document/api/1118/53937",
+    "https://www.tencentcloud.com/document/api/1118/66925",
+    "https://www.tencentcloud.com/document/product/1118/43352",
+    "https://www.tencentcloud.com/document/api/1154/48916",
+    "https://www.tencentcloud.com/document/product/1154/47874"
+  ],
+  "headquarters": "CN",
+  "id": "tencent",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://www.tencentcloud.com/document/api/1118/53937",
+    "docs": "https://www.tencentcloud.com/document/product/1118",
+    "pricing": "https://www.tencentcloud.com/document/product/1118/43352"
+  },
+  "name": "Tencent Cloud",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://www.tencentcloud.com/document/api/1118/53937",
+      "https://www.tencentcloud.com/document/api/1118/66925",
+      "https://www.tencentcloud.com/document/product/1118/43352",
+      "https://www.tencentcloud.com/document/api/1154/48916",
+      "https://www.tencentcloud.com/document/product/1154/47874"
+    ]
+  },
+  "website": "https://www.tencentcloud.com"
+}
