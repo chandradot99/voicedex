@@ -153,12 +153,19 @@ Retired orgs with live weights: coqui (XTTS-v2, CPML), resemble (Chatterbox), hu
 
 ## 5. Watchlist (re-check next quarter; not enough evidence yet)
 
-Baidu AI Cloud (site unreachable), Krutrim (no public prices), Viettel AI, Vbee, Zalo AI, Prosa.ai (ID), Lahajati (docs 404),
-Ramsa (AED), Kotoba (JA↔EN STS; only via fal today), Aivis Cloud (JP), Narakeet (are the voices its own?), Argmax WhisperKit,
-Fireworks streaming ASR, Soniqo, Sanas, Krisp translation, T-Bank VoiceKit, Muxlisa (UZ), AyaSpeech (GH), NKENNEAi
-(Swahili), Devnagri, ConvoZen, GigaTech (BD), DeepBrain AI, Speechtext.ai, Lingvanex, NeuralSpace.
-**Coverage holes with no viable vendor found:** Philippines, Nepal (Reverie covers ne), Indonesia (Prosa only),
-Persian (Iran is sanctioned; no API), LatAm independents, Mongolia (not searched).
+Viettel AI, Zalo AI, Prosa.ai (ID), Lahajati (docs 404), Ramsa (AED), Narakeet (are the voices its own?), Argmax
+WhisperKit, Fireworks streaming ASR, Soniqo, Sanas, Krisp translation, T-Bank VoiceKit, Muxlisa (UZ), AyaSpeech (GH),
+NKENNEAi (Swahili), Devnagri, ConvoZen, GigaTech (BD), DeepBrain AI, Speechtext.ai, Lingvanex, NeuralSpace.
+Added 2026-11-18: Kakao Kanana-o (closed beta ended 2026-05-27; no key path), SoundHound/Houndify (docs and pricing
+behind login), HUMAIN (SA; Arabic ASR/TTS, no developer docs), Hasab AI (ET; apps only), Wispr (Canto, no API), AppTek
+and Cerence (enterprise, no public docs), MTS AI Audiogram (quote only), ETRI (KR govt ASR API), Klang (SE), Yoob
+(unidentified AA-listed STT), Telnyx Ultra (only if documented as in-house), pyannote (diarization; needs a model type),
+Moonshot Kimi-Audio (below the bar), 2Noise ChatTTS (repos untagged — HF syncer can't see them), Typhoon (SCB 10X,
+Thai; below the bar), ivrit.ai (Hebrew; Whisper fine-tunes, below the bar), Mesolitica (Malay; no licence tags),
+ISSAI (Kazakh), Edge0 Audio8 / higurashi-ai Haru-4B (trending near-misses).
+Left the watchlist: Baidu, Krutrim, Vbee, Aivis (added); Kotoba (being acquired by ElevenLabs, announced 2026-11-17).
+**Coverage holes with no viable vendor found:** Nepal (Reverie covers ne), Indonesia (Prosa only), Persian (Iran is
+sanctioned; no API), Burmese, Khmer, Sinhala, LatAm independents. Filled 2026-11: Philippines (Proto), Mongolia (Chimege).
 
 ## 6. Later: "hosted by" dimension
 
@@ -193,3 +200,18 @@ Intella (no public docs), aiOla (Jargonic API waitlist-only; console domain gone
 Upgrade candidates (public keyless list endpoints found during extraction): Bland `GET api.bland.ai/v2/models`,
 Zyphra `GET api.zyphracloud.com/api/v1/models` (with prices), Sestek `GET <region>/v1/speech/dictation/models`.
 Key-gated voice lists that would add voices: CoeFont, KugelAudio, Munsit, Zyphra, Respeecher, Bhashini pipelines.
+
+## Status — 2026-11-18, gap pass (branch `providers/gaps-2026-11`)
+
+Five research passes (US/EU/cloud, East Asia, emerging regions, HF open weights, 2025–26 news) against the catalog.
+Added (docs): DeepL Voice, Baidu, Liquid AI, AISpeech, Oracle OCI Speech, Proto, Aivis (+77 voices from its keyless
+search API), Reson8, Krutrim, Humelo, Aqua Voice, Unisound, Chimege, Vbee, AITalk, BreezeBlue. Open-weights orgs:
+OpenMOSS, KittenML, Nari Labs, MyShell, IndexTTS, RVC-Boss, Suno, Parler-TTS, Maya Research; weights attached to
+retired Sber (GigaAM) and Supertone (Supertonic). Fixes: Google Gemini 3.8 TTS (+ 3.1 preview eol 2026-12-18),
+ElevenLabs Eleven Realtime STS, Resemble description. Catalog: 117 live + 13 retired providers, 775 active models,
+15,380 voices.
+
+Follow-ups: KittenML (Stellon Labs) and Maya Research sell hosted APIs — upgrade from HF-only to mixed syncers;
+Vbee and Humelo document STT APIs not yet extracted; Krutrim's speech-to-speech translation endpoint (sts);
+DeepL "translated speech" output (sts) when out of beta; Oracle Whisper Large V3 Turbo once its enum is documented;
+Amazon Polly still needs an AWS key.
