@@ -1,0 +1,24 @@
+{
+  "access": "self_serve",
+  "description": "Intron (Intron Health, Inc.), founded by Tobi Olatunji with teams in Lagos, Abuja, Accra and Nairobi, builds the Sahara speech recognition and text-to-speech models for African accents and languages. Its Voice API offers file and streaming transcription in 60+ languages (with code-switched recognition for 12 African languages mixed with English), clinical and call-centre post-processing, and TTS in 13 African languages and African-accented English. Usage is billed against a credit balance on the voice.intron.io platform.",
+  "docs_urls": [
+    "https://docs.voice.intron.io/docs/stt/supported-languages",
+    "https://docs.voice.intron.io/docs/stt/file-upload-sync",
+    "https://docs.voice.intron.io/docs/stt/file-upload",
+    "https://docs.voice.intron.io/docs/stt/streaming",
+    "https://docs.voice.intron.io/docs/tts/supported-languages-and-accents",
+    "https://docs.voice.intron.io/docs/tts/tts-generate",
+    "https://docs.voice.intron.io/docs/tts/tts-queue",
+    "https://docs.voice.intron.io/docs/tts/tts-streaming"
+  ],
+  "id": "intron",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.voice.intron.io/docs/stt/file-upload-sync",
+    "docs": "https://docs.voice.intron.io/docs/index/introduction"
+  },
+  "name": "Intron Health",
+  "source": "docs",
+  "type": "both",
+  "website": "https://www.intron.io"
+}

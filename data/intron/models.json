@@ -1,0 +1,201 @@
+[
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization",
+      "summarization"
+    ],
+    "description": "Intron's speech recognition engine tuned for African-accented speech, with code-switched recognition for 12 African languages mixed with English.",
+    "first_seen": "2026-11-18",
+    "id": "sahara",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "ak",
+      "am",
+      "ar",
+      "bem",
+      "bg",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fi",
+      "fr",
+      "ff",
+      "fuc",
+      "fuf",
+      "fub",
+      "fuv",
+      "fuq",
+      "fue",
+      "ffm",
+      "gaa",
+      "ha",
+      "hr",
+      "hu",
+      "ig",
+      "it",
+      "lt",
+      "lv",
+      "lg",
+      "mt",
+      "nl",
+      "nso",
+      "nyn",
+      "om",
+      "pcm",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "rw",
+      "sk",
+      "sl",
+      "sn",
+      "st",
+      "sv",
+      "sw",
+      "tn",
+      "tw",
+      "uk",
+      "wo",
+      "xh",
+      "yo",
+      "zu",
+      "luo",
+      "kr",
+      "ki",
+      "nup",
+      "ti"
+    ],
+    "meta": {
+      "code_switched_languages": [
+        "af",
+        "ak",
+        "am",
+        "ha",
+        "ig",
+        "lg",
+        "pcm",
+        "rw",
+        "sw",
+        "wo",
+        "yo",
+        "zu"
+      ],
+      "code_switched_note": "These codes are recognised mixed with English (rw: Kinyarwanda-English-French).",
+      "endpoints": {
+        "async": "POST https://infer.voice.intron.io/file/v1/upload",
+        "streaming": "wss://infer.voice.intron.io/stt/v1/stream",
+        "sync": "POST https://infer.voice.intron.io/file/v1/upload/sync"
+      },
+      "model_id_note": "The API has no model parameter; the language is chosen with use_language_asr_input. intron.io presents the current release as Sahara v2.5.",
+      "post_processing": "use_category (general, telehealth, procedure, call_center, legal, meeting_notes) with get_summary and clinical extractions (SOAP note, ICD codes, entities, treatment plan); use_template_id custom prompts; get_answer question answering; LLM corrections on by default (use_disable_llm_corrections)",
+      "rate_limits": "sync 30 req/min, async 60 req/min, streaming 3 concurrent connections",
+      "streaming_input": "base64 PCM16 little-endian chunks, sample_rate default 16000, max session 300 s",
+      "sync_max_audio_seconds": 120
+    },
+    "name": "Sahara",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.voice.intron.io/docs/stt/supported-languages",
+        "https://docs.voice.intron.io/docs/stt/file-upload-sync",
+        "https://docs.voice.intron.io/docs/stt/file-upload",
+        "https://docs.voice.intron.io/docs/stt/streaming",
+        "https://docs.voice.intron.io/docs/tts/supported-languages-and-accents",
+        "https://docs.voice.intron.io/docs/tts/tts-generate",
+        "https://docs.voice.intron.io/docs/tts/tts-queue",
+        "https://docs.voice.intron.io/docs/tts/tts-streaming"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "description": "Intron's text-to-speech for African languages and African-accented English, selected by language, accent and gender rather than voice id.",
+    "first_seen": "2026-11-18",
+    "id": "sahara-tts",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "am",
+      "en",
+      "ha",
+      "ig",
+      "rw",
+      "lg",
+      "om",
+      "pcm",
+      "sn",
+      "sw",
+      "wo",
+      "yo"
+    ],
+    "max_text_chars": 4096,
+    "meta": {
+      "accent_note": "Each non-English language has one accent of the same name; every accent offers male and female voices.",
+      "endpoints": {
+        "queue": "POST https://infer.voice.intron.io/tts/v1/enqueue",
+        "streaming": "wss://infer.voice.intron.io/tts/v1/stream",
+        "sync": "POST https://infer.voice.intron.io/tts/v1/generate"
+      },
+      "english_accents": [
+        "afrikaans",
+        "hausa",
+        "igbo",
+        "luganda",
+        "sepedi",
+        "swahili",
+        "setswana",
+        "xhosa",
+        "yoruba",
+        "zulu"
+      ],
+      "max_text_note": "Sync and queue endpoints document 4096 characters, though their error examples quote 100 and 1200; streaming takes text chunks of 10-100 characters.",
+      "model_id_note": "The API has no model parameter or voice id; a voice is chosen by voice_language, voice_accent and voice_gender (male/female)."
+    },
+    "name": "Sahara TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.voice.intron.io/docs/stt/supported-languages",
+        "https://docs.voice.intron.io/docs/stt/file-upload-sync",
+        "https://docs.voice.intron.io/docs/stt/file-upload",
+        "https://docs.voice.intron.io/docs/stt/streaming",
+        "https://docs.voice.intron.io/docs/tts/supported-languages-and-accents",
+        "https://docs.voice.intron.io/docs/tts/tts-generate",
+        "https://docs.voice.intron.io/docs/tts/tts-queue",
+        "https://docs.voice.intron.io/docs/tts/tts-streaming"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
