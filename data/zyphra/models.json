@@ -1,0 +1,182 @@
+[
+  {
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Real-time MoE TTS (0.9B active / 8B total parameters) with zero-shot voice cloning and an expressive mode.",
+    "first_seen": "2026-11-18",
+    "id": "zyphra/ZONOS2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "ja",
+      "ko",
+      "ru",
+      "it",
+      "pt",
+      "fr",
+      "es",
+      "vi",
+      "de",
+      "he",
+      "nl",
+      "sv",
+      "hi",
+      "ta",
+      "te",
+      "th",
+      "no",
+      "bn",
+      "tl",
+      "ar",
+      "da",
+      "id",
+      "pl",
+      "uk",
+      "ro",
+      "fi",
+      "hu",
+      "lt",
+      "et",
+      "sk",
+      "hr",
+      "lv"
+    ],
+    "meta": {
+      "endpoint": "POST https://api.zyphracloud.com/api/v1/audio/speech (OpenAI-compatible)",
+      "language_tiers": {
+        "tier1_production_ready": "English, Mandarin Chinese, Japanese",
+        "tier2_everyday_use": "Korean, Russian, Italian, Portuguese, French, Spanish, Vietnamese, German, Hebrew, Dutch",
+        "tier3_review_outputs": "Swedish, Hindi, Tamil, Telugu, Thai, Norwegian, Bengali, Tagalog, Arabic, Danish, Indonesian, Polish, Ukrainian, Romanian, Finnish, Hungarian, Lithuanian, Estonian, Slovak, Croatian, Latvian"
+      },
+      "max_generation": "up to one minute of audio per generation (launch post)",
+      "rate_limits": "free: 1 concurrent request, 50 requests/day; paid: 5 concurrent, no daily cap",
+      "release_date": "2026-06-12"
+    },
+    "name": "ZONOS2",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/Zyphra/ZONOS2"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$20 per 1M UTF-8 bytes of input text",
+      "price_usd": 2e-05,
+      "source_url": "https://api.zyphracloud.com/api/v1/models",
+      "unit": "byte"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.zyphracloud.com/api/v1/models",
+        "https://www.zyphra.com/models",
+        "https://www.zyphra.com/our-work/zonos3-mini",
+        "https://www.zyphra.com/our-work/zonos2"
+      ]
+    },
+    "sample_rates_hz": [
+      44100
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Compact sparse-MoE TTS (100M active / ~886M total parameters) with zero-shot voice cloning, voice design and word-level control of emotion and pace.",
+    "first_seen": "2026-11-18",
+    "id": "zyphra/ZONOS3-Mini",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "de",
+      "it",
+      "pt",
+      "nl",
+      "el",
+      "sv",
+      "da",
+      "no",
+      "fi",
+      "pl",
+      "cs",
+      "sk",
+      "hu",
+      "ro",
+      "bg",
+      "ru",
+      "uk",
+      "tr",
+      "ar",
+      "he",
+      "ka",
+      "zh",
+      "ja",
+      "ko",
+      "vi",
+      "id",
+      "ms",
+      "th",
+      "tl",
+      "hi",
+      "bn",
+      "ta",
+      "te",
+      "mr",
+      "gu",
+      "kn",
+      "ml",
+      "pa",
+      "or",
+      "ur"
+    ],
+    "meta": {
+      "clone_modes": "codes (raw clone, reference audio up to 60 s) or embedding (up to 120 s)",
+      "endpoint": "POST https://api.zyphracloud.com/api/v1/audio/speech (OpenAI-compatible)",
+      "max_reference_audio_seconds": {
+        "embedding_clone": 120,
+        "raw_clone": 60
+      },
+      "release_date": "2026-11-09"
+    },
+    "name": "ZONOS3-Mini",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$10 per 1M UTF-8 bytes of input text (Zyphra: 1M UTF-8 bytes is about 180,000 English words or ~12 hours of speech)",
+      "price_usd": 1e-05,
+      "source_url": "https://api.zyphracloud.com/api/v1/models",
+      "unit": "byte"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.zyphracloud.com/api/v1/models",
+        "https://www.zyphra.com/models",
+        "https://www.zyphra.com/our-work/zonos3-mini",
+        "https://www.zyphra.com/our-work/zonos2"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
