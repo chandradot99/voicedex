@@ -261,6 +261,14 @@ if (matchMedia("(max-width: 760px)").matches) {
     ssml: "SSML", phoneme_input: "Phoneme input", prosody_control: "Speed / prosody control", style_control: "Style control",
     multi_speaker: "Multi-speaker",
   };
+  // Shown before anything is typed: every section is reachable from here (the phone header shows only Models/Voices).
+  const PAGES = [
+    { kind: "Go to", main: "Models", sub: "Filter, sort by price, compare", url: "/models" },
+    { kind: "Go to", main: "Voices", sub: "Browse and play samples", url: "/voices" },
+    { kind: "Go to", main: "Providers", sub: "Every provider, including retired ones", url: "/#providers" },
+    { kind: "Go to", main: "Compare", sub: "Models side by side", url: "/compare" },
+    { kind: "Go to", main: "API docs", sub: "Free REST API, no key", url: "/docs" },
+  ];
   let index = null, loading = null, shown = [], sel = 0;
 
   const load = () => loading ??= Promise.all([
@@ -288,10 +296,11 @@ if (matchMedia("(max-width: 760px)").matches) {
   const search = () => {
     const q = input.value.trim().toLowerCase();
     const terms = q.split(/\s+/).filter(Boolean);
+    if (!index && !terms.length) { shown = PAGES; sel = 0; draw(); return; }
     if (!index) { list.innerHTML = `<li class="pl-empty">Loading…</li>`; return; }
     shown = terms.length
       ? index.map((it) => [score(it, q, terms), it]).filter(([s]) => s >= 0).sort((a, b) => b[0] - a[0]).slice(0, 40).map(([, it]) => it)
-      : index.filter((it) => it.kind === "Provider" && it.sub !== "No longer available");
+      : [...PAGES, ...index.filter((it) => it.kind === "Provider" && it.sub !== "No longer available")];
     if (terms.length) shown.push({ kind: "Search", main: `Everything matching “${input.value.trim()}”`, sub: "voices included", url: `/search?q=${encodeURIComponent(input.value.trim())}` });
     sel = 0;
     status.textContent = terms.length ? `${shown.length - 1} results` : "";
