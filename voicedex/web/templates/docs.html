@@ -24,6 +24,16 @@
   <!-- Site CSS goes into a low-priority cascade layer here: Scalar's styles live in layers declared
        later, so they win inside the reference (our button/heading rules must not leak into it), while
        the site header below still gets its look. -->
+  <!-- No white flash: the reference's base stylesheet paints a white page until it mounts; these unlayered
+       rules keep our theme background from the first frame. Start fetching the spec right away, in
+       parallel with the reference script. -->
+  <style>
+    html, body { background: #111113 !important; color: #ededea; }
+    html[data-theme="light"], html[data-theme="light"] body { background: #f7f7f5 !important; color: #18181b; }
+    .docs-loading { padding: 96px 32px; text-align: center; font: 400 13px/1 "Geist Mono", ui-monospace, monospace; color: #8a8a84; }
+  </style>
+  <link rel="preload" href="/openapi.json" as="fetch" crossorigin="anonymous">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <style>
     @layer site;
     @import url("/static/site.css?v={{ asset_v() }}") layer(site);
@@ -39,7 +49,7 @@
 <body class="docs-page">
   <a class="skip" href="#scalar-docs">Skip to the reference</a>
   {% include "_header.html" %}
-  <main id="scalar-docs"></main>
+  <main id="scalar-docs"><p class="docs-loading" role="status">Loading API reference…</p></main>
   <script>
     // Focus rings for keyboard users only. Scalar moves focus programmatically after mouse clicks
     // (tabs, dropdown triggers), which browsers treat as :focus-visible — so track the input modality.
