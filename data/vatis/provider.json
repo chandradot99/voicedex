@@ -1,0 +1,27 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "gdpr",
+    "iso27001"
+  ],
+  "description": "Vatis Tech (VATIS TECH S.R.L.) is a Romanian speech-recognition company, originally focused on Romanian-language transcription. It sells a transcription web app and the Vatis Streams API for pre-recorded and real-time speech-to-text in many languages, with an audio-intelligence add-on (summaries, sentiment, custom prompts).",
+  "docs_urls": [
+    "https://vatis.tech/pricing",
+    "https://docs.vatis.tech/speech-to-text/pre-recorded/pre-recorded-transcription.md",
+    "https://docs.vatis.tech/speech-to-text/pre-recorded/transcription-languages.md",
+    "https://docs.vatis.tech/speech-to-text/real-time/real-time-transcription.md",
+    "https://docs.vatis.tech/speech-to-text/real-time/transcription-languages.md"
+  ],
+  "headquarters": "RO",
+  "id": "vatis",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.vatis.tech/api-reference/introduction",
+    "docs": "https://docs.vatis.tech/",
+    "pricing": "https://vatis.tech/pricing"
+  },
+  "name": "Vatis Tech",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://vatis.tech"
+}
