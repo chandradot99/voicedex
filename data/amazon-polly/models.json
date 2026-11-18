@@ -1,0 +1,385 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "Polly's largest engine: a billion-parameter transformer producing the most human-like, conversational voices.",
+    "first_seen": "2026-11-18",
+    "id": "polly-generative",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IE",
+      "en-IN",
+      "en-NZ",
+      "en-SG",
+      "en-US",
+      "en-ZA",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "fi-FI",
+      "fr-BE",
+      "fr-CA",
+      "fr-FR",
+      "hi-IN",
+      "it-IT",
+      "ko-KR",
+      "nl-BE",
+      "nl-NL",
+      "pl-PL",
+      "pt-BR"
+    ],
+    "max_text_chars": 3000,
+    "meta": {
+      "aws_regions": "us-east-1, us-west-2, eu-central-1, eu-west-2, eu-central-2, ap-northeast-1, ap-northeast-2, ap-southeast-1, ap-southeast-2, ca-central-1, us-gov-west-1",
+      "bidirectional_streaming": "StartSpeechSynthesisStream (selected regions)",
+      "engine": "generative",
+      "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
+      "source_urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html"
+      ],
+      "speech_marks": false,
+      "ssml_notes": "<phoneme>, <prosody> and <mark> only partially available; no newscaster style."
+    },
+    "name": "Polly Generative",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 100000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "$30 per 1M characters (speech or Speech Marks requests), standard AWS regions; AWS GovCloud (US) is priced higher. SSML tags are not billed. Free tier: 100K characters/month for the first 12 months.",
+      "price_usd": 3e-05,
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/available-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/voice-engines-polly.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/long-form-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/standard-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html",
+        "https://aws.amazon.com/polly/pricing/"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "phoneme_input",
+      "ssml"
+    ],
+    "description": "Expressive engine built for long content such as articles, training material and narration.",
+    "first_seen": "2026-11-18",
+    "id": "polly-long-form",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US",
+      "es-ES"
+    ],
+    "max_text_chars": 3000,
+    "meta": {
+      "aws_regions": "us-east-1 only",
+      "engine": "long-form",
+      "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
+      "source_urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/long-form-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html"
+      ],
+      "speech_marks": true,
+      "ssml_notes": "<prosody> partially available."
+    },
+    "name": "Polly Long-Form",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "$100 per 1M characters (speech or Speech Marks requests), standard AWS regions; AWS GovCloud (US) is priced higher. SSML tags are not billed. Free tier: 500K characters/month for the first 12 months.",
+      "price_usd": 0.0001,
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/available-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/voice-engines-polly.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/long-form-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/standard-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html",
+        "https://aws.amazon.com/polly/pricing/"
+      ]
+    },
+    "regions": [
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "phoneme_input",
+      "ssml",
+      "style_control"
+    ],
+    "description": "Neural TTS engine (sequence-to-sequence model plus neural vocoder) with the widest language coverage.",
+    "first_seen": "2026-11-18",
+    "id": "polly-neural",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-AE",
+      "ca-ES",
+      "cs-CZ",
+      "da-DK",
+      "de-AT",
+      "de-CH",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IE",
+      "en-IN",
+      "en-NZ",
+      "en-SG",
+      "en-US",
+      "en-ZA",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "fi-FI",
+      "fr-BE",
+      "fr-CA",
+      "fr-FR",
+      "hi-IN",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "nb-NO",
+      "nl-BE",
+      "nl-NL",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "sv-SE",
+      "tr-TR",
+      "yue-CN",
+      "zh-CN"
+    ],
+    "max_text_chars": 3000,
+    "meta": {
+      "engine": "neural",
+      "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
+      "source_urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html"
+      ],
+      "speech_marks": true,
+      "ssml_notes": "<prosody> and <say-as> partially available.",
+      "style_notes": "Newscaster speaking style on select voices (Amy, Joanna, Lupe, Matthew)."
+    },
+    "name": "Polly Neural",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "$16 per 1M characters (speech or Speech Marks requests), standard AWS regions; AWS GovCloud (US) is priced higher. SSML tags are not billed. Free tier: 1M characters/month for the first 12 months.",
+      "price_usd": 1.6e-05,
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/available-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/voice-engines-polly.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/long-form-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/standard-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html",
+        "https://aws.amazon.com/polly/pricing/"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "Concatenative-synthesis engine; the lowest-cost Polly voices, available in the most AWS regions.",
+    "first_seen": "2026-11-18",
+    "id": "polly-standard",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "cy-GB",
+      "da-DK",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-MX",
+      "es-US",
+      "fr-CA",
+      "fr-FR",
+      "hi-IN",
+      "is-IS",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "nb-NO",
+      "nl-NL",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "sv-SE",
+      "tr-TR",
+      "zh-CN"
+    ],
+    "max_text_chars": 3000,
+    "meta": {
+      "engine": "standard",
+      "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
+      "source_urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/standard-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html"
+      ],
+      "speech_marks": true
+    },
+    "name": "Polly Standard",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 5000000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "$4 per 1M characters (speech or Speech Marks requests), standard AWS regions; AWS GovCloud (US) is priced higher. SSML tags are not billed. Free tier: 5M characters/month.",
+      "price_usd": 4e-06,
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/polly/latest/dg/available-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/voice-engines-polly.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/long-form-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/standard-voices.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
+        "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html",
+        "https://aws.amazon.com/polly/pricing/"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

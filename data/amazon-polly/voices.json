@@ -1,0 +1,2560 @@
+[
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Aditi",
+    "languages": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "meta": {
+      "language_name": "English (Indian)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Aditi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Adriano",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "language_name": "Italian",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Adriano",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-long-form"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alba",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "language_name": "Spanish (Spain)",
+      "supported_engines": [
+        "long-form"
+      ]
+    },
+    "name": "Alba",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ambre",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "language_name": "French",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Ambre",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Amy",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "language_name": "English (British)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Amy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andres",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "language_name": "Spanish (Mexican)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Andrés",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "new_zealander",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Aria",
+    "languages": [
+      "en-NZ"
+    ],
+    "meta": {
+      "language_name": "English (New Zealand)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Aria",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arjun",
+    "languages": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "meta": {
+      "language_name": "English (Indian)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Arjun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Arlet",
+    "languages": [
+      "ca-ES"
+    ],
+    "meta": {
+      "language_name": "Catalan",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Arlet",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arthur",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "language_name": "English (British)",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Arthur",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Astrid",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "language_name": "Swedish",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Astrid",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south_african",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ayanda",
+    "languages": [
+      "en-ZA"
+    ],
+    "meta": {
+      "language_name": "English (South African)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Ayanda",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Beatrice",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "language_name": "Italian",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Beatrice",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Bianca",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "language_name": "Italian",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Bianca",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Brian",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "language_name": "English (British)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Brian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Burcu",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "language_name": "Turkish",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Burcu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Camila",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese (Brazilian)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Camila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carla",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "language_name": "Italian",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Carla",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Carlos",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "language_name": "Spanish (US)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Carlos",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carmen",
+    "languages": [
+      "ro-RO"
+    ],
+    "meta": {
+      "language_name": "Romanian",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Carmen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carolina",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese (Brazilian)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Carolina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Celine",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "language_name": "French",
+      "supported_engines": [
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Céline",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "canadian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chantal",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "language_name": "French (Canadian)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Chantal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Conchita",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "language_name": "Spanish (Spain)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Conchita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Cristiano",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_name": "Portuguese (European)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Cristiano",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Curtis",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "language_name": "English (Australian)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Curtis",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Daniel",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "language_name": "German",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Daniel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-long-form",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Danielle",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "long-form",
+        "generative"
+      ]
+    },
+    "name": "Danielle",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Dora",
+    "languages": [
+      "is-IS"
+    ],
+    "meta": {
+      "language_name": "Icelandic",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Dóra",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Elin",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "language_name": "Swedish",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Elin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Emma",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "language_name": "English (British)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Emma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Enrique",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "language_name": "Spanish (Spain)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Enrique",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ewa",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "language_name": "Polish",
+      "supported_engines": [
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Ewa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Filiz",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "language_name": "Turkish",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Filiz",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Florian",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "language_name": "French",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Florian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "canadian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gabrielle",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "language_name": "French (Canadian)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Gabrielle",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "welsh",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Geraint",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "language_name": "English (Welsh)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Geraint",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Giorgio",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "language_name": "Italian",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Giorgio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-long-form",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gregory",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "long-form"
+      ]
+    },
+    "name": "Gregory",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gwyneth",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "language_name": "Welsh",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Gwyneth",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hala",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "language_name": "Arabic (Gulf)",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Hala",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hannah",
+    "languages": [
+      "de-AT"
+    ],
+    "meta": {
+      "language_name": "German (Austrian)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Hannah",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hans",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "language_name": "German",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Hans",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hiujin",
+    "languages": [
+      "yue-CN"
+    ],
+    "meta": {
+      "language_name": "Chinese (Cantonese)",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Hiujin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hyunduk",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "language_name": "Korean",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Hyunduk",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ida",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "language_name": "Norwegian",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Ida",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ines",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_name": "Portuguese (European)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Inês",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Isabelle",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "language_name": "French (Belgian)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Isabelle",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ivy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Ivy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jacek",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "language_name": "Polish",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Jacek",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jan",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "language_name": "Polish",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Jan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jasmine",
+    "languages": [
+      "en-SG"
+    ],
+    "meta": {
+      "language_name": "English (Singaporean)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Jasmine",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jihye",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "language_name": "Korean",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Jihye",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jitka",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "language_name": "Czech",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Jitka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Joanna",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Joanna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Joey",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Joey",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Justin",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Justin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kajal",
+    "languages": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "meta": {
+      "language_name": "English (Indian)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Kajal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Karl",
+    "languages": [
+      "is-IS"
+    ],
+    "meta": {
+      "language_name": "Icelandic",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Karl",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kazuha",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "language_name": "Japanese",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Kazuha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kendra",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Kendra",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kenneth",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Kenneth",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kevin",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Kevin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kiara",
+    "languages": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "meta": {
+      "language_name": "English (Indian)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Kiara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kimberly",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Kimberly",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Laura",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "language_name": "Dutch",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Laura",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lea",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "language_name": "French",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Léa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Lennart",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "language_name": "German",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Lennart",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Leo",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese (Brazilian)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Leo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "canadian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Liam",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "language_name": "French (Canadian)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Liam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lisa",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "language_name": "Dutch (Belgian)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Lisa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Liv",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "language_name": "Norwegian",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Liv",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Lorenzo",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "language_name": "Italian",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Lorenzo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lotte",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "language_name": "Dutch",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Lotte",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lucia",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "language_name": "Spanish (Spain)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Lucia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lupe",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "language_name": "Spanish (US)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Lupe",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mads",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "language_name": "Danish",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Mads",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Maja",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "language_name": "Polish",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Maja",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Marlene",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "language_name": "German",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Marlene",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mathieu",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "language_name": "French",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Mathieu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Matthew",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Matthew",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Maxim",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "language_name": "Russian",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Maxim",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mia",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "language_name": "Spanish (Mexican)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Mia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Miguel",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "language_name": "Spanish (US)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Miguel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mizuki",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "language_name": "Japanese",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Mizuki",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Naja",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "language_name": "Danish",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Naja",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nate",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Nate",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Niamh",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "language_name": "English (Ireland)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Niamh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nicole",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "language_name": "English (Australian)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Nicole",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ola",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "language_name": "Polish",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Ola",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Olivia",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "language_name": "English (Australian)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Olivia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-long-form"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Patrick",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "long-form"
+      ]
+    },
+    "name": "Patrick",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Pedro",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "language_name": "Spanish (US)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Pedro",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Penelope",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "language_name": "Spanish (US)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Penélope",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-long-form"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Raul",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "language_name": "Spanish (Spain)",
+      "supported_engines": [
+        "long-form"
+      ]
+    },
+    "name": "Raúl",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Raveena",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "language_name": "English (Indian)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Raveena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Remi",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "language_name": "French",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Rémi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ricardo",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese (Brazilian)",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Ricardo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ruben",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "language_name": "Dutch",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Ruben",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Russell",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "language_name": "English (Australian)",
+      "supported_engines": [
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Russell",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-long-form",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ruth",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "long-form",
+        "generative"
+      ]
+    },
+    "name": "Ruth",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sabrina",
+    "languages": [
+      "de-CH"
+    ],
+    "meta": {
+      "language_name": "German (Swiss)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Sabrina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Salli",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Salli",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Seoyeon",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "language_name": "Korean",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Seoyeon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sergio",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "language_name": "Spanish (Spain)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Sergio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sofie",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "language_name": "Danish",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Sofie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Stephen",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Stephen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Suvi",
+    "languages": [
+      "fi-FI"
+    ],
+    "meta": {
+      "language_name": "Finnish",
+      "supported_engines": [
+        "neural",
+        "generative"
+      ]
+    },
+    "name": "Suvi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Takumi",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "language_name": "Japanese",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Takumi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tatyana",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "language_name": "Russian",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Tatyana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Thiago",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese (Brazilian)",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Thiago",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tiffany",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "language_name": "English (US)",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Tiffany",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tina",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "language_name": "German",
+      "supported_engines": [
+        "generative"
+      ]
+    },
+    "name": "Tina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tomoko",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "language_name": "Japanese",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Tomoko",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-generative",
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Vicki",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "language_name": "German",
+      "supported_engines": [
+        "neural",
+        "standard",
+        "generative"
+      ]
+    },
+    "name": "Vicki",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Vitoria",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_name": "Portuguese (Brazilian)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Vitória",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Zayd",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "language_name": "Arabic (Gulf)",
+      "supported_engines": [
+        "neural"
+      ]
+    },
+    "name": "Zayd",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Zeina",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "language_name": "Arabic",
+      "supported_engines": [
+        "standard"
+      ]
+    },
+    "name": "Zeina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "polly-neural",
+      "polly-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Zhiyu",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "language_name": "Chinese (Mandarin)",
+      "supported_engines": [
+        "neural",
+        "standard"
+      ]
+    },
+    "name": "Zhiyu",
+    "updated_at": "2026-11-18"
+  }
+]

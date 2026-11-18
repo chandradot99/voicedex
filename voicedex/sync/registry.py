@@ -43,7 +43,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("google-cloud",      "Google Cloud",      "both", "voicedex.sync.google_cloud.GoogleCloudSyncer"),
     SyncerEntry("sarvam",            "Sarvam",            "both", "voicedex.sync.sarvam.SarvamSyncer"),
     SyncerEntry("azure",             "Azure Speech",      "both", "voicedex.sync.azure.AzureSyncer"),
-    SyncerEntry("amazon-polly",      "Amazon Polly",      "tts",  "voicedex.sync.amazon_polly.AmazonPollySyncer"),
+    SyncerEntry("amazon-polly",      "Amazon Polly",      "tts",  "voicedex.sync.amazon_polly.AmazonPollyDocsSyncer"),  # API path: AmazonPollySyncer
     SyncerEntry("humeai",            "Hume AI",           "tts",  "voicedex.sync.humeai.HumeAISyncer", retired=True, open_weights_path="voicedex.sync.open_weights.HumeOpenSyncer"),
     SyncerEntry("inworld",           "Inworld AI",        "both", "voicedex.sync.inworld.InworldAISyncer"),
     SyncerEntry("murf",              "Murf AI",           "tts",  "voicedex.sync.murf.MurfAISyncer"),
