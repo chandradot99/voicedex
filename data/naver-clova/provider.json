@@ -1,0 +1,53 @@
+{
+  "access": "self_serve",
+  "description": "NAVER Cloud Corp. is the cloud arm of NAVER, headquartered in Seongnam, South Korea. On NAVER Cloud Platform it sells CLOVA Speech (long-file, short and gRPC streaming recognition on its NEST engine) and CLOVA Speech Recognition (CSR) speech-to-text, plus CLOVA Voice text-to-speech. Focus is Korean, with English, Japanese and Chinese (and Spanish/Taiwanese TTS voices); prices are in KRW.",
+  "docs_urls": [
+    "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+    "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-longsentence",
+    "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-shortsentence",
+    "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-grpc",
+    "https://api.ncloud-docs.com/docs/en/ai-naver-clovaspeechrecognition-stt",
+    "https://guide.ncloud-docs.com/docs/en/clovaspeech-spec",
+    "https://www.ncloud.com/product/aiService/clovaSpeech",
+    "https://www.ncloud.com/product/aiService/csr",
+    "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice",
+    "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+    "https://guide.ncloud-docs.com/docs/en/clovavoice-spec",
+    "https://www.ncloud.com/product/aiService/clovaVoice"
+  ],
+  "headquarters": "KR",
+  "id": "naver-clova",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+    "docs": "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+    "pricing": "https://www.ncloud.com/product/aiService/clovaSpeech"
+  },
+  "name": "Naver CLOVA",
+  "regions": [
+    "asia",
+    "us",
+    "eu"
+  ],
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+      "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-longsentence",
+      "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-shortsentence",
+      "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-grpc",
+      "https://api.ncloud-docs.com/docs/en/ai-naver-clovaspeechrecognition-stt",
+      "https://guide.ncloud-docs.com/docs/en/clovaspeech-spec",
+      "https://www.ncloud.com/product/aiService/clovaSpeech",
+      "https://www.ncloud.com/product/aiService/csr",
+      "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice",
+      "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+      "https://guide.ncloud-docs.com/docs/en/clovavoice-spec",
+      "https://www.ncloud.com/product/aiService/clovaVoice"
+    ]
+  },
+  "website": "https://www.ncloud.com"
+}

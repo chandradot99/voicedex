@@ -1,0 +1,1875 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "carmen",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish"
+    },
+    "name": "Carmen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "chiahua",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "language_label": "Taiwanese"
+    },
+    "name": "Chiahua",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "clara",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_label": "English"
+    },
+    "name": "Clara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "danna",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_label": "English"
+    },
+    "name": "Anna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dara-danna",
+    "languages": [
+      "ko",
+      "en-US"
+    ],
+    "meta": {
+      "language_label": "Korean + English (U.S.)"
+    },
+    "name": "Ara & Anna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dara_ang",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Ara (angry)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "dayumu",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Ayumu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ddaiki",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Daiki",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "deriko",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Eriko",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "dhajime",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Hajime",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "djoey",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_label": "English"
+    },
+    "name": "Joey",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dmio",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Mio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dnaomi",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Naomi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dnaomi_formal",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Naomi (news)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dnaomi_joyful",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Naomi (happy)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "driko",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Riko",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dsayuri",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Sayuri",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "dsinu-matt",
+    "languages": [
+      "ko",
+      "en-US"
+    ],
+    "meta": {
+      "language_label": "Korean + English (U.S.)"
+    },
+    "name": "Sinu & Matt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dtomoko",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Tomoko",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jinho",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jinho",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jose",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish"
+    },
+    "name": "Jose",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kuanlin",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "language_label": "Taiwanese"
+    },
+    "name": "Kuanlin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "liangliang",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "language_label": "Chinese"
+    },
+    "name": "Liangliang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "matt",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_label": "English"
+    },
+    "name": "Matt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "meimei",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "language_label": "Chinese"
+    },
+    "name": "Meimei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "mijin",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Mijin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "napple",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Neulbom",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nara",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Ara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nara_call",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Ara (agent)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nbora",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Bora",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ndaeseong",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Daeseong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ndain",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Dain",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ndonghyun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Donghyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nes_c_hyeri",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Hyeri",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nes_c_kihyo",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Kihyo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nes_c_mikyung",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Mikyung",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nes_c_sohyun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Sohyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "neunseo",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Eunseo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "neunwoo",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Eunwoo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "neunyoung",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Eunyoung",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ngaram",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Garam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ngoeun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Goeun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ngyeongjun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Gyeongjun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nhajun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Hajun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nheera",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Heera",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nian",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Ian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nihyun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Ihyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njaewook",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jaewook",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "njangj",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Dream",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njihun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jihun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njihwan",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jihwan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njinho",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jinho",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "njiwon",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jiwon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "njiyun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jiyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njonghyeok",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jonghyeok",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njonghyun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jonghyun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njooahn",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Jooahn",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "njoonyoung",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Joonyoung",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nkitae",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Kitae",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nkyunglee",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Kyunglee",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nkyungtae",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Kyungtae",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nkyuwon",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Kyuwon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nmammon",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Demon Mammon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nmeow",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Meow",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nmijin",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Mijin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nminjeong",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Minjeong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nminsang",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Minsang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nminseo",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Minseo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nminyoung",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Minyoung",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nmovie",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Movie Choi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nnaomi",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Naomi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "noyj",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Bomdal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nraewon",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Raewon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nreview",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Review Park",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nsabina",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Witch Sabina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nsangdo",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Sangdo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nsayuri",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Sayuri",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nseonghoon",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Seonghoon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nseungpyo",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Seungpyo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nshasha",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Shasha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nsinu",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Sinu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nsiyoon",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Siyoon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nsujin",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Sujin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nsunhee",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Sunhee",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nsunkyung",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Sunkyung",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ntaejin",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Taejin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ntiffany",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Kiseo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ntomoko",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Tomoko",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nwontak",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Wontak",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nwoof",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Woof",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nwoosik",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Woosik",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nyeji",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Yeji",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nyejin",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Yejin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nyounghwa",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Movie Jeong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nyoungil",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Youngil",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nyoungmi",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Youngmi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nyujin",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Yujin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nyuna",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean"
+    },
+    "name": "Yuna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "shinji",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese"
+    },
+    "name": "Shinji",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vara",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Ara (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vdaeseong",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Daeseong (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vdain",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Dain (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vdonghyun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Donghyun (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vgoeun",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Goeun (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vhyeri",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Hyeri (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vian",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Ian (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vmikyung",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Mikyung (Pro)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vyuna",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "language_label": "Korean",
+      "pro_voice": true
+    },
+    "name": "Yuna (Pro)",
+    "updated_at": "2026-11-18"
+  }
+]

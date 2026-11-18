@@ -1,0 +1,352 @@
+[
+  {
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Transcribes long audio/video files (local upload, Object Storage or external URL) with NAVER's NEST end-to-end recognizer.",
+    "first_seen": "2026-11-18",
+    "id": "clova-speech-long",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko-KR",
+      "en-US",
+      "ja",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "max_audio_seconds": 21600,
+    "meta": {
+      "api": "POST {invoke URL}/recognizer/upload | /recognizer/url | /recognizer/object-storage",
+      "engine": "NEST",
+      "event_detection": true,
+      "forbidden_words": true,
+      "keyword_boosting_languages": "Korean and English only",
+      "korean_english_mixed": true,
+      "language_codes": "ko-KR, en-US, enko (Korean/English simultaneous), ja, zh-cn, zh-tw",
+      "max_duration": "2 hours (sync) / 6 hours (async)",
+      "max_file_size": "2 GB",
+      "noise_filtering": true,
+      "output_formats": [
+        "json",
+        "srt",
+        "smi"
+      ]
+    },
+    "name": "CLOVA Speech — long-sentence recognition",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Basic plan: ₩5 per 15 seconds (₩20/min), usage rounded up to 15-second units; speaker recognition and event detection +₩2 per 15 seconds each. Free plan: 20 minutes/month (one free-plan domain per account). VAT excluded.",
+      "price": 20.0,
+      "source_url": "https://www.ncloud.com/product/aiService/clovaSpeech",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "speaker recognition (diarization) add-on",
+          "price": 8.0,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "event detection add-on",
+          "price": 8.0,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-longsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-shortsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-grpc",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovaspeechrecognition-stt",
+        "https://guide.ncloud-docs.com/docs/en/clovaspeech-spec",
+        "https://www.ncloud.com/product/aiService/clovaSpeech",
+        "https://www.ncloud.com/product/aiService/csr",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+        "https://guide.ncloud-docs.com/docs/en/clovavoice-spec",
+        "https://www.ncloud.com/product/aiService/clovaVoice"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "wav"
+    ],
+    "description": "Synchronous recognition of audio clips up to 60 seconds, with optional English pronunciation assessment.",
+    "first_seen": "2026-11-18",
+    "id": "clova-speech-short",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "zh-CN"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "api": "POST https://clovaspeech-gw.ncloud.com/recog/v1/stt?lang=Kor|Eng|Jpn|Chn",
+      "max_file_size": "10 MB",
+      "pronunciation_assessment": "English only per API reference (pricing page says Korean and English)"
+    },
+    "name": "CLOVA Speech — short-sentence recognition",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "notes": "Basic plan: ₩4 per 15 seconds (₩16/min), rounded up to 15-second units; pronunciation assessment +₩2 per 15 seconds. VAT excluded.",
+      "price": 16.0,
+      "source_url": "https://www.ncloud.com/product/aiService/clovaSpeech",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "pronunciation assessment add-on",
+          "price": 8.0,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-longsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-shortsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-grpc",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovaspeechrecognition-stt",
+        "https://guide.ncloud-docs.com/docs/en/clovaspeech-spec",
+        "https://www.ncloud.com/product/aiService/clovaSpeech",
+        "https://www.ncloud.com/product/aiService/csr",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+        "https://guide.ncloud-docs.com/docs/en/clovavoice-spec",
+        "https://www.ncloud.com/product/aiService/clovaVoice"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "translation"
+    ],
+    "description": "Real-time recognition of 16 kHz mono 16-bit PCM over gRPC, with keyword boosting, banned-word filtering and optional live translation.",
+    "first_seen": "2026-11-18",
+    "id": "clova-speech-streaming",
+    "interfaces": [
+      "grpc"
+    ],
+    "languages": [
+      "ko",
+      "en",
+      "ja"
+    ],
+    "meta": {
+      "endpoint": "clovaspeech-gw.ncloud.com:50051 (gRPC, nest.proto)",
+      "forbidden_words": true,
+      "semantic_epd": true,
+      "translation": "via Papago; targets per Papago supported languages"
+    },
+    "name": "CLOVA Speech — real-time streaming recognition",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "notes": "Basic plan: ₩5 per 15 seconds (₩20/min), rounded up to 15-second units. Not available on the Free plan. VAT excluded.",
+      "price": 20.0,
+      "source_url": "https://www.ncloud.com/product/aiService/clovaSpeech",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-longsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-shortsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-grpc",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovaspeechrecognition-stt",
+        "https://guide.ncloud-docs.com/docs/en/clovaspeech-spec",
+        "https://www.ncloud.com/product/aiService/clovaSpeech",
+        "https://www.ncloud.com/product/aiService/csr",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+        "https://guide.ncloud-docs.com/docs/en/clovavoice-spec",
+        "https://www.ncloud.com/product/aiService/clovaVoice"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "ac3",
+      "flac",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "description": "Short-utterance recognition (up to 60 seconds per call) optimized for command-style speech, via REST API or mobile SDK.",
+    "first_seen": "2026-11-18",
+    "id": "csr",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "zh-CN"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "api": "POST https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang=Kor|Eng|Jpn|Chn",
+      "mobile_sdk": true
+    },
+    "name": "CLOVA Speech Recognition (CSR)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "notes": "₩4 per 15 seconds (₩16/min), measured from request to end and rounded up to 15-second units; same rate for REST API and mobile SDK. VAT excluded.",
+      "price": 16.0,
+      "source_url": "https://www.ncloud.com/product/aiService/csr",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-longsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-shortsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-grpc",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovaspeechrecognition-stt",
+        "https://guide.ncloud-docs.com/docs/en/clovaspeech-spec",
+        "https://www.ncloud.com/product/aiService/clovaSpeech",
+        "https://www.ncloud.com/product/aiService/csr",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+        "https://guide.ncloud-docs.com/docs/en/clovavoice-spec",
+        "https://www.ncloud.com/product/aiService/clovaVoice"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "CLOVA Voice TTS (Premium) API; Pro voices use NAVER's NeuVis neural voice synthesis engine.",
+    "first_seen": "2026-11-18",
+    "id": "clova-voice-premium",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "zh-CN",
+      "zh-TW",
+      "es"
+    ],
+    "max_text_chars": 2000,
+    "meta": {
+      "api": "POST https://naveropenapi.apigw.ntruss.com/tts-premium/v1/tts",
+      "max_text": "2,000 characters for Korean, Japanese, Chinese, Taiwanese; 3,000 for English and Spanish",
+      "params": "volume, speed, pitch, alpha (tone), end-pitch, emotion, emotion-strength",
+      "sample_rate_note": "sampling-rate applies to wav only (default 24000); mijin supports 16000 only",
+      "service_regions": "Korea, U.S., Singapore, Japan, Germany"
+    },
+    "name": "CLOVA Voice (Premium)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "notes": "Premium plan: ₩90,000/month base fee per application, includes 1,000,000 characters/month; beyond that ₩100 per 1,000 characters (rounded up to 1,000). VAT excluded.",
+      "price": 0.1,
+      "source_url": "https://www.ncloud.com/product/aiService/clovaVoice",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-longsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-shortsentence",
+        "https://api.ncloud-docs.com/docs/en/ai-application-service-clovaspeech-grpc",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovaspeechrecognition-stt",
+        "https://guide.ncloud-docs.com/docs/en/clovaspeech-spec",
+        "https://www.ncloud.com/product/aiService/clovaSpeech",
+        "https://www.ncloud.com/product/aiService/csr",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice",
+        "https://api.ncloud-docs.com/docs/en/ai-naver-clovavoice-ttspremium",
+        "https://guide.ncloud-docs.com/docs/en/clovavoice-spec",
+        "https://www.ncloud.com/product/aiService/clovaVoice"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
