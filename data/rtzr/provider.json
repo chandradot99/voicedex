@@ -1,0 +1,23 @@
+{
+  "access": "self_serve",
+  "description": "ReturnZero (리턴제로) is a speech-AI company based in Seoul, South Korea, founded in 2018 and also known for the VITO call-transcription app and Callabo meeting notes. Its RTZR STT OpenAPI offers batch and streaming speech-to-text with in-house Sommers models for Korean and Japanese and a Korean fine-tuned Whisper model for other languages; prices are in KRW.",
+  "docs_urls": [
+    "https://developers.rtzr.ai/docs/en/stt-file/",
+    "https://developers.rtzr.ai/docs/en/stt-file/model/",
+    "https://developers.rtzr.ai/docs/en/stt-file/language/",
+    "https://developers.rtzr.ai/docs/en/stt-streaming/",
+    "https://developers.rtzr.ai/docs/en/pricing/"
+  ],
+  "headquarters": "KR",
+  "id": "rtzr",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://developers.rtzr.ai/docs/en/stt-file/",
+    "docs": "https://developers.rtzr.ai/docs/en/",
+    "pricing": "https://developers.rtzr.ai/docs/en/pricing/"
+  },
+  "name": "ReturnZero (RTZR)",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.rtzr.ai"
+}

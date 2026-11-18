@@ -1,0 +1,337 @@
+[
+  {
+    "audio_formats": [
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "ReturnZero's in-house ASR model for Korean and Japanese batch transcription, with fast latency.",
+    "first_seen": "2026-11-18",
+    "id": "sommers",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ko",
+      "ja"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "api": "POST https://openapi.vito.ai/v1/transcribe (model_name=sommers)",
+      "disfluency_filter": true,
+      "domains": [
+        "GENERAL",
+        "CALL"
+      ],
+      "itn": true,
+      "keyword_boosting": "Korean only, Hangul keywords",
+      "max_file_size": "2 GB",
+      "paragraph_splitter": true,
+      "pii_filter": "requires an Enterprise license",
+      "streaming_variants": "streaming uses sommers_ko / sommers_ja"
+    },
+    "name": "Sommers",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 600.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "Graduated monthly tiers, same rates for Batch and Streaming STT; ₩1,000/h for the first 1,000 h. Minimum 10 s per file/session. 600 free minutes on signup. VAT excluded.",
+      "price": 1000.0,
+      "source_url": "https://developers.rtzr.ai/docs/en/pricing/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "monthly usage 1,000–10,000 h (T2)",
+          "price": 500.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage 10,000–25,000 h (T3, enabled on request)",
+          "price": 400.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage >25,000 h (T4, enabled on request)",
+          "price": 300.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.rtzr.ai/docs/en/stt-file/",
+        "https://developers.rtzr.ai/docs/en/stt-file/model/",
+        "https://developers.rtzr.ai/docs/en/stt-file/language/",
+        "https://developers.rtzr.ai/docs/en/stt-streaming/",
+        "https://developers.rtzr.ai/docs/en/pricing/"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "amr",
+      "flac",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "Japanese Sommers model for real-time streaming STT.",
+    "family": "sommers",
+    "first_seen": "2026-11-18",
+    "id": "sommers_ja",
+    "interfaces": [
+      "grpc",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "domains": [
+        "CALL",
+        "MEETING"
+      ],
+      "opus": "gRPC only",
+      "sample_rate_range_hz": "8000-48000"
+    },
+    "name": "Sommers (Japanese, streaming)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 600.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "Graduated monthly tiers, same rates for Batch and Streaming STT; ₩1,000/h for the first 1,000 h. Minimum 10 s per file/session. 600 free minutes on signup. VAT excluded.",
+      "price": 1000.0,
+      "source_url": "https://developers.rtzr.ai/docs/en/pricing/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "monthly usage 1,000–10,000 h (T2)",
+          "price": 500.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage 10,000–25,000 h (T3, enabled on request)",
+          "price": 400.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage >25,000 h (T4, enabled on request)",
+          "price": 300.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.rtzr.ai/docs/en/stt-file/",
+        "https://developers.rtzr.ai/docs/en/stt-file/model/",
+        "https://developers.rtzr.ai/docs/en/stt-file/language/",
+        "https://developers.rtzr.ai/docs/en/stt-streaming/",
+        "https://developers.rtzr.ai/docs/en/pricing/"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "amr",
+      "flac",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "Korean Sommers model for real-time streaming STT; the streaming API's default model.",
+    "family": "sommers",
+    "first_seen": "2026-11-18",
+    "id": "sommers_ko",
+    "interfaces": [
+      "grpc",
+      "websocket"
+    ],
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "domains": [
+        "CALL",
+        "MEETING"
+      ],
+      "finalize_command": true,
+      "opus": "gRPC only",
+      "sample_rate_range_hz": "8000-48000"
+    },
+    "name": "Sommers (Korean, streaming)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 600.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "Graduated monthly tiers, same rates for Batch and Streaming STT; ₩1,000/h for the first 1,000 h. Minimum 10 s per file/session. 600 free minutes on signup. VAT excluded.",
+      "price": 1000.0,
+      "source_url": "https://developers.rtzr.ai/docs/en/pricing/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "monthly usage 1,000–10,000 h (T2)",
+          "price": 500.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage 10,000–25,000 h (T3, enabled on request)",
+          "price": 400.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage >25,000 h (T4, enabled on request)",
+          "price": 300.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.rtzr.ai/docs/en/stt-file/",
+        "https://developers.rtzr.ai/docs/en/stt-file/model/",
+        "https://developers.rtzr.ai/docs/en/stt-file/language/",
+        "https://developers.rtzr.ai/docs/en/stt-streaming/",
+        "https://developers.rtzr.ai/docs/en/pricing/"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Whisper fine-tuned by ReturnZero for stronger Korean recognition while keeping Whisper's multilingual support and language detection.",
+    "first_seen": "2026-11-18",
+    "id": "whisper",
+    "interfaces": [
+      "grpc",
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "keyword_boosting": "only with language=ko",
+      "language_count": 100,
+      "language_modes": "ISO 639-1 code, 'detect' (single-language detection) or 'multi' (code-switching)",
+      "language_required": true,
+      "punctuation": "streaming use_punctuation option",
+      "streaming_sample_rate_range_hz": "8000-48000"
+    },
+    "name": "Whisper (Korean fine-tuned)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 600.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "Graduated monthly tiers, same rates for Batch and Streaming STT; ₩1,000/h for the first 1,000 h. Minimum 10 s per file/session. 600 free minutes on signup. VAT excluded.",
+      "price": 1000.0,
+      "source_url": "https://developers.rtzr.ai/docs/en/pricing/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "monthly usage 1,000–10,000 h (T2)",
+          "price": 500.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage 10,000–25,000 h (T3, enabled on request)",
+          "price": 400.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "monthly usage >25,000 h (T4, enabled on request)",
+          "price": 300.0,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.rtzr.ai/docs/en/stt-file/",
+        "https://developers.rtzr.ai/docs/en/stt-file/model/",
+        "https://developers.rtzr.ai/docs/en/stt-file/language/",
+        "https://developers.rtzr.ai/docs/en/stt-streaming/",
+        "https://developers.rtzr.ai/docs/en/pricing/"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
