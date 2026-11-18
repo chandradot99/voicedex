@@ -1,0 +1,19 @@
+{
+  "access": "enterprise",
+  "description": "Chimege Systems LLC is an Ulaanbaatar, Mongolia company building Mongolian-language speech technology. It sells a Mongolian speech-to-text and text-to-speech REST API alongside end-user products (Chimege Writer, Reader, Duudan, Protocol, Sub, Keyboard) and the IVA virtual-agent platform. API tokens are issued after a service agreement; prices are published in MNT.",
+  "docs_urls": [
+    "https://docs.api.chimege.com/v1.2/en/"
+  ],
+  "headquarters": "MN",
+  "id": "chimege",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.api.chimege.com/v1.2/en/",
+    "docs": "https://docs.api.chimege.com/v1.2/en/",
+    "pricing": "https://docs.api.chimege.com/v1.2/en/"
+  },
+  "name": "Chimege",
+  "source": "docs",
+  "type": "both",
+  "website": "https://chimege.com"
+}

@@ -1,0 +1,166 @@
+[
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "description": "Asynchronous Mongolian transcription for hours-long audio: submit a file, then poll for the transcript by UUID.",
+    "first_seen": "2026-11-18",
+    "id": "stt-long",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "mn-MN"
+    ],
+    "meta": {
+      "endpoint": "POST https://api.chimege.com/v1.2/stt-long; GET /stt-long-transcript"
+    },
+    "name": "Chimege Long Speech to Text",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.api.chimege.com/v1.2/en/"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "description": "High-quality variant of the asynchronous long-audio Mongolian transcription endpoint.",
+    "first_seen": "2026-11-18",
+    "id": "stt-long-hq",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "mn-MN"
+    ],
+    "meta": {
+      "endpoint": "POST https://api.chimege.com/v1.2/stt-long-hq; GET /stt-long-hq-transcript"
+    },
+    "name": "Chimege Long Speech to Text (High quality)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.api.chimege.com/v1.2/en/"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "Synchronous Mongolian speech recognition for short audio, returning Cyrillic text with optional automatic punctuation.",
+    "first_seen": "2026-11-18",
+    "id": "transcribe",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "mn-MN"
+    ],
+    "meta": {
+      "endpoint": "POST https://api.chimege.com/v1.2/transcribe",
+      "max_file_mb": 3,
+      "min_duration_s": 0.5
+    },
+    "name": "Chimege Speech to Text",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "MNT",
+      "notes": "Published as 'Speech to text | Limit 15 sec | 15₮'.",
+      "price": 15.0,
+      "source_url": "https://docs.api.chimege.com/v1.2/en/",
+      "unit": "request"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.api.chimege.com/v1.2/en/"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Mongolian (Cyrillic) text-to-speech with 6 female and 5 male voices and adjustable speed and pitch, returning WAV.",
+    "first_seen": "2026-11-18",
+    "id": "synthesize",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "mn-MN"
+    ],
+    "max_text_chars": 300,
+    "meta": {
+      "default_voice": "FEMALE3v2",
+      "endpoint": "POST https://api.chimege.com/v1.2/synthesize",
+      "helper": "POST /normalize-text expands numbers/abbreviations",
+      "max_text_note": "max 300 characters of normalized text",
+      "pitch_range": "0.2-6",
+      "speed_range": "0.2-4",
+      "voice_ids": [
+        "FEMALE1",
+        "FEMALE1v2",
+        "FEMALE2v2",
+        "FEMALE3v2",
+        "FEMALE4v2",
+        "FEMALE5v2",
+        "MALE1",
+        "MALE1v2",
+        "MALE2v2",
+        "MALE3v2",
+        "MALE4v2"
+      ]
+    },
+    "name": "Chimege Text to Speech",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "MNT",
+      "notes": "Published as 'Text to speech | Limit 200 character | 8₮'.",
+      "price": 8.0,
+      "source_url": "https://docs.api.chimege.com/v1.2/en/",
+      "unit": "request"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.api.chimege.com/v1.2/en/"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
