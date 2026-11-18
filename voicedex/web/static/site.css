@@ -512,8 +512,9 @@ input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 .play[aria-pressed="true"] { background: var(--signal-fill); border-color: var(--signal-fill); color: var(--signal-ink); }
 .play[aria-pressed="true"] .i-play { display: none; }
 .play[aria-pressed="true"] .i-stop { display: block; }
-.play[data-state="loading"] { animation: pulse 1s ease-in-out infinite; }
-@keyframes pulse { 50% { opacity: .55; } }
+.play .loader { display: none; grid-area: 1 / 1; }
+.play[data-state="loading"] .loader { display: inline-flex; }
+.play[data-state="loading"] .i-play, .play[data-state="loading"] .i-stop { display: none !important; }
 .play:disabled { opacity: .35; cursor: not-allowed; }
 .no-play { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; border: 1px dashed var(--rule); }
 .no-play svg { width: 12px; height: 2px; }
@@ -648,6 +649,16 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
 .site-footer a { color: var(--ink-2); }
 
+/* ── Loader: the logo's four bars, moving like a level meter ── */
+.loader { display: inline-flex; align-items: flex-end; gap: 2px; height: 20px; vertical-align: middle; }
+.loader i { width: 3px; border-radius: 1px; background: var(--signal-fill); transform-origin: 50% 100%; }
+.loader i:nth-child(1) { height: 40%; } .loader i:nth-child(2) { height: 70%; }
+.loader i:nth-child(3) { height: 100%; } .loader i:nth-child(4) { height: 55%; }
+.loader-sm { height: 12px; gap: 1.5px; } .loader-sm i { width: 2px; }
+.loader-xs { height: 10px; gap: 1.5px; } .loader-xs i { width: 2px; background: currentColor; }
+.loading-block .loader { height: 28px; gap: 3px; } .loading-block .loader i { width: 4px; }
+.loading-block { display: grid; justify-items: center; gap: 14px; padding: 96px 16px; font: 400 13px/1 var(--mono); color: var(--muted); }
+
 /* ── Motion (progressive, opt-in) ── */
 @media (prefers-reduced-motion: no-preference) {
   .spectrum.rise .col { animation: col-rise .42s var(--ease) both; animation-delay: calc(var(--i) * 6ms + 80ms); transform-origin: 50% 100%; }
@@ -655,6 +666,9 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
   .palette[open] .pal-box { animation: pal-in .14s ease-out; }
   @keyframes pal-in { from { opacity: 0; transform: translateY(4px); } }
   .now-playing:not([hidden]), .tray:not([hidden]) { animation: dock-in .16s ease-out; }
+  .loader i { animation: meter .9s ease-in-out infinite; }
+  .loader i:nth-child(2) { animation-delay: -.3s; } .loader i:nth-child(3) { animation-delay: -.6s; } .loader i:nth-child(4) { animation-delay: -.15s; }
+  @keyframes meter { 0%, 100% { transform: scaleY(.35); } 50% { transform: scaleY(1); } }
   @keyframes dock-in { from { opacity: 0; transform: translateY(6px); } }
   @view-transition { navigation: auto; }
   ::view-transition-group(*) { animation-duration: .18s; animation-timing-function: var(--ease); }

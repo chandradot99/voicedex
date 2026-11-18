@@ -297,7 +297,7 @@ if (matchMedia("(max-width: 760px)").matches) {
     const q = input.value.trim().toLowerCase();
     const terms = q.split(/\s+/).filter(Boolean);
     if (!index && !terms.length) { shown = PAGES; sel = 0; draw(); return; }
-    if (!index) { list.innerHTML = `<li class="pl-empty">Loading…</li>`; return; }
+    if (!index) { list.innerHTML = `<li class="pl-empty"><span class="loader loader-sm" aria-hidden="true"><i></i><i></i><i></i><i></i></span> Loading the catalog…</li>`; return; }
     shown = terms.length
       ? index.map((it) => [score(it, q, terms), it]).filter(([s]) => s >= 0).sort((a, b) => b[0] - a[0]).slice(0, 40).map(([, it]) => it)
       : [...PAGES, ...index.filter((it) => it.kind === "Provider" && it.sub !== "No longer available")];

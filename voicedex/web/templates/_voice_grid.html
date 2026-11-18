@@ -8,6 +8,7 @@
       <button class="play" type="button" data-src="{{ v.preview_url }}" aria-pressed="false" aria-label="Play sample of {{ v.name }}">
         <svg viewBox="0 0 16 16" aria-hidden="true" class="i-play"><path d="M5 3v10l8-5z"/></svg>
         <svg viewBox="0 0 16 16" aria-hidden="true" class="i-stop"><rect x="4" y="4" width="8" height="8"/></svg>
+        <span class="loader loader-xs" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
       </button>
       {% else %}
       <span class="no-play" title="No sample published"><svg viewBox="0 0 12 2" aria-hidden="true"><rect width="12" height="2"/></svg><span class="visually-hidden">No sample published</span></span>
