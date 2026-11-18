@@ -792,3 +792,8 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .changes-table .sub { display: block; color: var(--muted); font-size: 12px; }
 .changes-table .change-detail { text-align: right; color: var(--ink-2); }
 @media (max-width: 640px) { .changes-table .change-kind { width: auto; white-space: normal; } }
+
+/* Alternatives (/alternatives/<provider>) */
+.alt-table th[scope="row"] .sub { display: block; margin-top: 2px; font-size: 12px; }
+.alt-table th[scope="row"] .sub a { color: var(--muted); text-decoration: none; }
+.alt-table td a { color: var(--ink-2); font-size: 13px; }

@@ -190,6 +190,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
         "deprecated": [r for r in catalog.models if r.provider_id == provider_id and r.model.deprecated_at],
         "compare_with": [(views.provider_pair_slug(provider_id, other), catalog.providers[other].provider.name)
                          for other in views.compare_partners(catalog, provider_id)],
+        "has_alternatives": provider_id in views.alternatives_subjects(catalog),
         "positions": views.price_positions(views.price_spectrum(catalog)),
         "jsonld": [_breadcrumb_ld([("Home", "/"), (pd.provider.name, f"/providers/{provider_id}")])],
     })
@@ -470,6 +471,29 @@ async def provider_vs_page(request: Request, pair: str, catalog: Catalog = Depen
     })
 
 
+@router.get("/alternatives", response_class=HTMLResponse)
+async def alternatives_index(request: Request, catalog: Catalog = Depends(get_catalog)):
+    subjects = views.alternatives_subjects(catalog)
+    rows = [(pid, catalog.providers[pid].provider) for pid in subjects]
+    return templates.TemplateResponse(request, "alternatives_index.html", {
+        "live": [(pid, p) for pid, p in rows if p.status == "active"],
+        "retired": [(pid, p) for pid, p in rows if p.status != "active"],
+    })
+
+
+@router.get("/alternatives/{provider_id}", response_class=HTMLResponse)
+async def alternatives_page(request: Request, provider_id: str, catalog: Catalog = Depends(get_catalog)):
+    if provider_id not in views.alternatives_subjects(catalog):
+        raise HTTPException(404, "Page not found")
+    page = views.alternatives_page(catalog, provider_id)
+    p = catalog.providers[provider_id].provider
+    crumbs = [("Home", "/"), ("Alternatives", "/alternatives"), (f"{p.name} alternatives", f"/alternatives/{provider_id}")]
+    return templates.TemplateResponse(request, "alternatives.html", {
+        "page": page, "p": p, "crumbs": crumbs, "jsonld": [_breadcrumb_ld(crumbs)],
+        "hubs": {t: views.find_landing(catalog, t) for t in page.types},
+    })
+
+
 CHANGES_PER_PAGE = 300
 _CHANGE_PRIORITY = {"model_removed": 0, "shutdown_announced": 1, "provider_retired": 2, "model_deprecated": 3,
                     "price_changed": 4, "price_published": 5, "now_ga": 6, "model_added": 8}
@@ -563,6 +587,10 @@ async def sitemap(catalog: Catalog = Depends(get_catalog)):
         entries.append((f"/compare/{views.provider_pair_slug(x, y)}", changed))
     feed = load_changes(settings.data_path)
     entries.append(("/changes", date.fromisoformat(feed[0].date) if feed else None))
+    entries.append(("/alternatives", None))
+    for pid in views.alternatives_subjects(catalog):
+        entries.append((f"/alternatives/{pid}", views.last_modified(
+            [r for r in views.active_models(catalog) if r.model.type in views._provider_types(catalog, pid)])))
     for path, page in sorted(views.landing_pages(catalog).items()):
         entries.append((path, views.last_modified(views.landing_rows(catalog, page))))
     entries += sorted((views.model_url(r), r.model.updated_at or r.model.first_seen) for r in models)

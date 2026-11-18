@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ site_name }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <p class="crumbs"><a href="/alternatives">Alternatives</a><span aria-hidden="true">/</span><a href="/providers/{{ p.id }}">{{ p.name }}</a></p>
+  <h1>{{ p.name }} alternatives</h1>
+  {% if page.retired %}<p class="end-rule"><span class="mono">{{ page.retired_on or "Retired" }}</span>{{ p.name }} is no longer available{% if page.retired_on %} since {{ page.retired_on }}{% endif %}.</p>{% endif %}
+  {% for line in page.intro %}<p class="lede">{{ line }}</p>{% endfor %}
+  <p class="section-note">Widely used providers first, then by how many of {{ p.name }}'s listed features each also lists, then by cheapest published USD price (text-to-speech per 1M characters, speech-to-text and speech-to-speech per hour). "Not listed" means a provider doesn't document it, not that it's missing.</p>
+</section>
+
+{% for t in page.types %}
+{% set own = page.subject_sides[t] %}{% set feats = page.subject_features[t] %}
+<section class="wrap vs-section" aria-labelledby="alt-{{ t }}">
+  <h2 id="alt-{{ t }}" class="section-title">{{ TYPE_LABELS[t] }} alternatives</h2>
+  {% if own %}<p class="section-note">{{ p.name }}: {{ own.models|length }} model{{ 's' if own.models|length != 1 }}{% if own.cheapest %}, from <span class="mono">{{ price_label(own.cheapest.model) }}</span>{% endif %}{% if feats %}, lists {{ feats|length }} feature{{ 's' if feats|length != 1 }}{% endif %}.</p>{% endif %}
+  <div class="table-scroll">
+    <table class="data alt-table">
+      <thead><tr>
+        <th scope="col">Provider</th>
+        <th scope="col" class="num">Cheapest</th>
+        <th scope="col" class="num hide-sm">Models</th>
+        <th scope="col" class="num hide-sm">Languages</th>
+        {% if feats %}<th scope="col" class="num">Shared features</th>{% endif %}
+        <th scope="col" class="num hide-sm">Streaming</th>
+        <th scope="col" class="hide-sm"></th>
+      </tr></thead>
+      <tbody>
+        {% for a in page.alternatives[t] %}{% set s = a.side %}
+        <tr>
+          <th scope="row"><a href="/providers/{{ a.provider_id }}">{{ a.name }}</a>{% if s.cheapest %}<span class="sub"><a href="{{ model_url(s.cheapest) }}"><code translate="no">{{ s.cheapest.model.id }}</code></a></span>{% endif %}</th>
+          <td class="num mono">{{ price_label(s.cheapest.model) if s.cheapest else "–" }}</td>
+          <td class="num mono hide-sm">{{ s.models|length }}</td>
+          <td class="num mono hide-sm">{% if s.languages %}{{ s.languages }}{% elif s.many_languages %}Many{% else %}–{% endif %}</td>
+          {% if feats %}<td class="num mono">{{ a.shared_features }}/{{ feats|length }}</td>{% endif %}
+          <td class="num mono hide-sm">{{ s.streaming }}/{{ s.models|length }}</td>
+          <td class="hide-sm">{% if a.vs_slug %}<a href="/compare/{{ a.vs_slug }}">vs {{ p.name }}</a>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% if page.totals[t] > page.alternatives[t]|length and hubs[t] %}<p class="more-link"><a href="{{ hubs[t].url }}">All {{ page.totals[t] }} {{ TYPE_LABELS[t]|lower }} providers</a></p>{% endif %}
+</section>
+{% endfor %}
+{% endblock %}

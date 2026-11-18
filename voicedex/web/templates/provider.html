@@ -26,9 +26,10 @@
   </p>
 </section>
 
-{% if compare_with %}
+{% if compare_with or has_alternatives %}
 <section class="wrap">
-  <p class="compare-with"><span class="ds-label">Compare {{ p.name }} with</span>{% for slug, n in compare_with %}<a href="/compare/{{ slug }}">{{ n }}</a>{% endfor %}</p>
+  {% if has_alternatives %}<p class="compare-with"><a href="/alternatives/{{ p.id }}"><b>{{ p.name }} alternatives</b>: who else offers {{ "this" if p.status != "active" else "the same" }}, by price and features</a></p>{% endif %}
+  {% if compare_with %}<p class="compare-with"><span class="ds-label">Compare {{ p.name }} with</span>{% for slug, n in compare_with %}<a href="/compare/{{ slug }}">{{ n }}</a>{% endfor %}</p>{% endif %}
 </section>
 {% endif %}
 

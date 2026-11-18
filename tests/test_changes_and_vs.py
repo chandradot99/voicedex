@@ -119,3 +119,27 @@ async def test_provider_vs_page(tmp_path, monkeypatch, client):
     assert "/compare/zz-rival-vs-zz-test-provider" in sm
     robots = (await client.get("/robots.txt")).text
     assert robots.index("Allow: /compare/") < robots.index("Disallow: /compare")
+
+
+async def test_alternatives_pages(tmp_path, monkeypatch, client):
+    build_fixture_catalog(tmp_path)
+    write_provider_dir(tmp_path / "zz-rival", ProviderData(
+        Provider(id="zz-rival", name="ZZ Rival", type="tts"),
+        models=[Model(id="rival-tts", name="Rival TTS", type="tts", languages=["en-US"], capabilities=["ssml"],
+                      pricing={"unit": "character", "price_usd": 0.00001})], voices=[]))
+    app.state.catalog = Catalog.load(tmp_path)
+    monkeypatch.setattr(views, "COMPARE_PROVIDERS", (TEST_PROVIDER, "zz-rival"))
+    assert views.alternatives_subjects(app.state.catalog) == ["zz-rival", "zz-test-deprecated", TEST_PROVIDER]
+    html = (await client.get(f"/alternatives/{TEST_PROVIDER}")).text
+    assert "<h1>ZZ Test alternatives</h1>" in html
+    table = html.split('id="alt-tts"', 1)[1]
+    assert 'href="/providers/zz-rival"' in table and "1/2" in table          # shares ssml of {emotion, ssml}
+    assert "1 list a lower starting price" in html                            # $10 < $30
+    assert 'href="/compare/zz-rival-vs-zz-test-provider"' in table
+    retired = (await client.get("/alternatives/zz-test-deprecated")).text     # shut down: still gets a page
+    assert "ZZ Gone is no longer available" in retired and 'href="/providers/zz-rival"' in retired
+    assert (await client.get("/alternatives/nope")).status_code == 404
+    index = (await client.get("/alternatives")).text
+    assert 'href="/alternatives/zz-test-deprecated"' in index and "Shut down or no longer sold" in index
+    assert 'href="/alternatives/zz-rival"' in (await client.get("/providers/zz-rival")).text
+    assert "/alternatives/zz-rival</loc>" in (await client.get("/sitemap.xml")).text

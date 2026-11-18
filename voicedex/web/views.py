@@ -826,3 +826,111 @@ def provider_comparison(catalog: Catalog, a: str, b: str) -> ProviderComparison:
         a=a, b=b, types=shared, sides=sides,
         only={a: [t for t in TYPE_SLUGS if t in ta and t not in tb], b: [t for t in TYPE_SLUGS if t in tb and t not in ta]},
         voices=voices, title=title, description=desc, intro=intro)
+
+
+# ── "Alternatives to X" pages (/alternatives/<provider>) ─────────────────────
+# Subjects: the featured providers people compare (COMPARE_PROVIDERS) plus every retired provider, since
+# "<retired provider> alternative" is what people search for once a service shuts down. Alternatives: every
+# active provider selling a model of the same type: widely used providers (COMPARE_PROVIDERS) first, then by how
+# many of the subject's listed features they also list, then by cheapest comparable price.
+ALTERNATIVES_SHOWN = 15
+
+
+def _provider_types(catalog: Catalog, pid: str) -> list[str]:
+    live = _live_types(catalog, pid)
+    if live:
+        return [t for t in TYPE_SLUGS if t in live]
+    declared = str(catalog.providers[pid].provider.type or "")
+    wanted = {"stt", "tts"} if declared == "both" else {declared}
+    wanted |= {r.model.type for r in catalog.models if r.provider_id == pid}       # retired: whatever it sold
+    return [t for t in TYPE_SLUGS if t in wanted]
+
+
+def alternatives_subjects(catalog: Catalog) -> list[str]:
+    featured = [p for p in COMPARE_PROVIDERS if p in catalog.providers
+                and catalog.providers[p].provider.status == "active" and _live_types(catalog, p)]
+    retired = [p for p, pd in catalog.providers.items() if pd.provider.status != "active" and _provider_types(catalog, p)]
+    return sorted(set(featured) | set(retired))
+
+
+@dataclass
+class Alternative:
+    provider_id: str
+    name: str
+    side: TypeSide
+    shared_features: int
+    vs_slug: str | None          # /compare/<slug> when that pair page exists
+
+
+@dataclass
+class AlternativesPage:
+    subject: str
+    retired: bool
+    retired_on: str | None
+    types: list[str]
+    subject_sides: dict[str, TypeSide | None]          # None for a retired provider with no models left
+    subject_features: dict[str, set[str]]
+    alternatives: dict[str, list[Alternative]]          # type -> ranked, truncated
+    totals: dict[str, int]                              # type -> all active providers selling it
+    cheaper: dict[str, int]                             # type -> how many list a lower starting price
+    title: str
+    description: str
+    intro: list[str]
+
+
+def alternatives_page(catalog: Catalog, pid: str) -> AlternativesPage:
+    p = catalog.providers[pid].provider
+    retired = p.status != "active"
+    types = _provider_types(catalog, pid)
+    pairs = {frozenset(x) for x in provider_pairs(catalog)}
+    sides: dict[str, TypeSide | None] = {}
+    feats: dict[str, set[str]] = {}
+    alts: dict[str, list[Alternative]] = {}
+    totals: dict[str, int] = {}
+    cheaper: dict[str, int] = {}
+    for t in types:
+        own_active = [r for r in active_models(catalog, pid) if r.model.type == t]
+        own_any = own_active or [r for r in catalog.models if r.provider_id == pid and r.model.type == t]
+        sides[t] = type_side(own_active) if own_active else None
+        feats[t] = {c for r in own_any for c in r.model.capabilities}
+        floor = (normalized_price(sides[t].cheapest.model)[0] if sides[t] and sides[t].cheapest else None)
+        cands: list[Alternative] = []
+        for other, pd in catalog.providers.items():
+            if other == pid or pd.provider.status != "active":
+                continue
+            rows = [r for r in active_models(catalog, other) if r.model.type == t]
+            if not rows:
+                continue
+            side = type_side(rows)
+            cands.append(Alternative(other, pd.provider.name, side, len(feats[t] & side.features),
+                                     provider_pair_slug(pid, other) if frozenset((pid, other)) in pairs else None))
+        price = lambda a: normalized_price(a.side.cheapest.model)[0] if a.side.cheapest else math.inf  # noqa: E731
+        featured = set(COMPARE_PROVIDERS)
+        # widely used providers first (what people expect on these pages), then shared features, then price
+        overlap = len(feats[t]) >= 3            # with only one or two listed features, overlap is noise
+        cands.sort(key=lambda a: (a.provider_id not in featured, -a.shared_features if overlap else 0,
+                                  price(a), a.name.lower()))
+        totals[t] = len(cands)
+        cheaper[t] = sum(1 for a in cands if floor is not None and price(a) < floor)
+        alts[t] = cands[:ALTERNATIVES_SHOWN]
+    labels = [TYPE_LABELS[t].lower() for t in types]
+    kinds = labels[0] if len(labels) == 1 else ", ".join(labels[:-1]) + " and " + labels[-1]
+    n_alt = len({a.provider_id for t in types for a in alts[t]})
+    shorts = [TYPE_SHORT[t] for t in types]
+    short = shorts[0] if len(shorts) == 1 else ", ".join(shorts[:-1]) + " and " + shorts[-1]
+    title = f"{p.name} alternatives: {short} APIs compared by price and features"
+    intro: list[str] = []
+    if retired:
+        intro.append(f"Looking for a {p.name} replacement? These providers offer the same kinds of models today.")
+    for t in types:
+        s = sides[t]
+        lead = (f"{p.name} lists {len(s.models)} {TYPE_LABELS[t].lower()} model{'s' if len(s.models) != 1 else ''}"
+                + (f" from {price_label(s.cheapest.model)}" if s.cheapest else "") + ". ") if s else ""
+        intro.append(lead + f"{totals[t]} other providers offer {TYPE_LABELS[t].lower()} models"
+                     + (f"; {cheaper[t]} list a lower starting price." if s and s.cheapest else "."))
+    desc = (f"The best {p.name} alternatives for {kinds}: {n_alt} providers compared by price, languages, "
+            "features and streaming, from each provider's own docs and pricing pages.")
+    return AlternativesPage(subject=pid, retired=retired,
+                            retired_on=p.retired_on.isoformat() if p.retired_on else None, types=types,
+                            subject_sides=sides, subject_features=feats, alternatives=alts, totals=totals,
+                            cheaper=cheaper, title=title, description=desc, intro=intro)
