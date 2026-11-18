@@ -1,0 +1,257 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_de_female",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_de_female.pv"
+    },
+    "name": "German Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "orca_params_de_male",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_de_male.pv"
+    },
+    "name": "German Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_en_female",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_en_female.pv"
+    },
+    "name": "English Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "orca_params_en_male",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_en_male.pv"
+    },
+    "name": "English Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_es_female",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_es_female.pv"
+    },
+    "name": "Spanish Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "orca_params_es_male",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_es_male.pv"
+    },
+    "name": "Spanish Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_fr_female",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_fr_female.pv"
+    },
+    "name": "French Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "orca_params_fr_male",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_fr_male.pv"
+    },
+    "name": "French Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_it_female",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_it_female.pv"
+    },
+    "name": "Italian Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "orca_params_it_male",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_it_male.pv"
+    },
+    "name": "Italian Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_ja_female",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_ja_female.pv"
+    },
+    "name": "Japanese Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "orca_params_ja_male",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_ja_male.pv"
+    },
+    "name": "Japanese Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_ko_female",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_ko_female.pv"
+    },
+    "name": "Korean Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orca_params_pt_female",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_pt_female.pv"
+    },
+    "name": "Portuguese Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "orca_params_pt_male",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "model_file": "lib/common/orca_params_pt_male.pv"
+    },
+    "name": "Portuguese Male",
+    "updated_at": "2026-11-18"
+  }
+]

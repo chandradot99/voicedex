@@ -1,0 +1,37 @@
+{
+  "access": "enterprise",
+  "description": "Picovoice is a Vancouver, Canada company building on-device voice AI. It sells SDK-licensed engines that run locally rather than as a hosted API, including Leopard (batch speech-to-text), Cheetah (streaming speech-to-text) and Orca (streaming text-to-speech), alongside wake-word, speech-intent and speaker-diarization engines.",
+  "docs_urls": [
+    "https://picovoice.ai/docs/leopard/",
+    "https://picovoice.ai/docs/cheetah/",
+    "https://github.com/Picovoice/leopard",
+    "https://github.com/Picovoice/cheetah",
+    "https://picovoice.ai/docs/orca/",
+    "https://github.com/Picovoice/orca",
+    "https://github.com/Picovoice/orca/tree/main/lib/common"
+  ],
+  "headquarters": "CA",
+  "id": "picovoice",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://picovoice.ai/docs/",
+    "pricing": "https://picovoice.ai/pricing/"
+  },
+  "name": "Picovoice",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://picovoice.ai/docs/leopard/",
+      "https://picovoice.ai/docs/cheetah/",
+      "https://github.com/Picovoice/leopard",
+      "https://github.com/Picovoice/cheetah",
+      "https://picovoice.ai/docs/orca/",
+      "https://github.com/Picovoice/orca",
+      "https://github.com/Picovoice/orca/tree/main/lib/common"
+    ]
+  },
+  "website": "https://picovoice.ai"
+}
