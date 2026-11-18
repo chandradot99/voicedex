@@ -1,0 +1,21 @@
+{
+  "access": "regional",
+  "description": "SK Telecom is a Seoul-based South Korean mobile operator whose speech-synthesis team builds the A.X TTS models used in its A. (A-dot), NUGU and AI call-centre services. Through the SK open API developer portal it sells Korean-only A.X TTS models (general, news and dialect voices) on a pay-as-you-go plan priced in KRW; sign-up uses an SK T ID or a Korean business registration.",
+  "docs_urls": [
+    "https://openapi.sk.com/products/detail?svcSeq=67",
+    "https://ax-tts-skopenapi.readme.io/reference/tts-model-list-1",
+    "https://openapi.sk.com/products/calc?svcSeq=67"
+  ],
+  "headquarters": "KR",
+  "id": "skt",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://ax-tts-skopenapi.readme.io/reference/getting-started-with-ax-tts-api",
+    "docs": "https://openapi.sk.com/products/detail?svcSeq=67",
+    "pricing": "https://openapi.sk.com/products/calc?svcSeq=67"
+  },
+  "name": "SK Telecom (A.X)",
+  "source": "docs",
+  "type": "tts",
+  "website": "https://openapi.sk.com"
+}

@@ -1,0 +1,253 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Earlier general-purpose Korean TTS model with 32 voices (adult, child and character).",
+    "first_seen": "2026-11-18",
+    "id": "axtts-2-1",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko-KR"
+    ],
+    "max_text_chars": 299,
+    "meta": {
+      "auth": "appKey header (SK open API portal app key)",
+      "endpoints": {
+        "tts": "POST https://apis.openapi.sk.com/axtts/tts",
+        "tts_with_timestamp": "POST https://apis.openapi.sk.com/axtts/segmentation",
+        "voices": "GET https://apis.openapi.sk.com/axtts/voice?model="
+      },
+      "max_text_note": "input text must be under 300 characters",
+      "speed_range": "0.5-2.0",
+      "use": "general",
+      "voice_count": 32,
+      "word_timestamps_endpoint": true
+    },
+    "name": "A.X TTS 2.1",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 5000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Basic postpaid plan: first 5,000 characters per month free, then 0.06 KRW per character, VAT included; flat-rate/volume plans on inquiry.",
+      "price": 0.06,
+      "source_url": "https://openapi.sk.com/products/calc?svcSeq=67",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://openapi.sk.com/products/detail?svcSeq=67",
+        "https://ax-tts-skopenapi.readme.io/reference/tts-model-list-1",
+        "https://openapi.sk.com/products/calc?svcSeq=67"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Korean TTS model with six regional-dialect voices.",
+    "family": "axtts-2-1",
+    "first_seen": "2026-11-18",
+    "id": "axtts-2-1-dialect",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko-KR"
+    ],
+    "max_text_chars": 299,
+    "meta": {
+      "auth": "appKey header (SK open API portal app key)",
+      "endpoints": {
+        "tts": "POST https://apis.openapi.sk.com/axtts/tts",
+        "tts_with_timestamp": "POST https://apis.openapi.sk.com/axtts/segmentation",
+        "voices": "GET https://apis.openapi.sk.com/axtts/voice?model="
+      },
+      "max_text_note": "input text must be under 300 characters",
+      "speed_range": "0.5-2.0",
+      "use": "Korean dialects",
+      "voice_count": 6,
+      "word_timestamps_endpoint": true
+    },
+    "name": "A.X TTS 2.1 Dialect",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 5000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Basic postpaid plan: first 5,000 characters per month free, then 0.06 KRW per character, VAT included; flat-rate/volume plans on inquiry.",
+      "price": 0.06,
+      "source_url": "https://openapi.sk.com/products/calc?svcSeq=67",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://openapi.sk.com/products/detail?svcSeq=67",
+        "https://ax-tts-skopenapi.readme.io/reference/tts-model-list-1",
+        "https://openapi.sk.com/products/calc?svcSeq=67"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "SK Telecom's latest general-purpose Korean TTS model with 23 voices (adult and character), also used for voice chat.",
+    "first_seen": "2026-11-18",
+    "id": "axtts-2-6",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ko-KR"
+    ],
+    "max_text_chars": 299,
+    "meta": {
+      "auth": "appKey header (SK open API portal app key)",
+      "endpoints": {
+        "tts": "POST https://apis.openapi.sk.com/axtts/tts",
+        "tts_with_timestamp": "POST https://apis.openapi.sk.com/axtts/segmentation",
+        "voices": "GET https://apis.openapi.sk.com/axtts/voice?model="
+      },
+      "max_text_note": "input text must be under 300 characters",
+      "speed_range": "0.5-2.0",
+      "use": "latest model, general, voicechat",
+      "voice_count": 23,
+      "word_timestamps_endpoint": true
+    },
+    "name": "A.X TTS 2.6",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 5000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Basic postpaid plan: first 5,000 characters per month free, then 0.06 KRW per character, VAT included; flat-rate/volume plans on inquiry.",
+      "price": 0.06,
+      "source_url": "https://openapi.sk.com/products/calc?svcSeq=67",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://openapi.sk.com/products/detail?svcSeq=67",
+        "https://ax-tts-skopenapi.readme.io/reference/tts-model-list-1",
+        "https://openapi.sk.com/products/calc?svcSeq=67"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Korean TTS model with six news-reporter voices for AI news reading.",
+    "family": "axtts-2-6",
+    "first_seen": "2026-11-18",
+    "id": "axtts-2-6-ainews",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko-KR"
+    ],
+    "max_text_chars": 299,
+    "meta": {
+      "auth": "appKey header (SK open API portal app key)",
+      "endpoints": {
+        "tts": "POST https://apis.openapi.sk.com/axtts/tts",
+        "tts_with_timestamp": "POST https://apis.openapi.sk.com/axtts/segmentation",
+        "voices": "GET https://apis.openapi.sk.com/axtts/voice?model="
+      },
+      "max_text_note": "input text must be under 300 characters",
+      "speed_range": "0.5-2.0",
+      "use": "ai news",
+      "voice_count": 6,
+      "word_timestamps_endpoint": true
+    },
+    "name": "A.X TTS 2.6 AI News",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "free_quota": {
+        "amount": 5000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "Basic postpaid plan: first 5,000 characters per month free, then 0.06 KRW per character, VAT included; flat-rate/volume plans on inquiry.",
+      "price": 0.06,
+      "source_url": "https://openapi.sk.com/products/calc?svcSeq=67",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://openapi.sk.com/products/detail?svcSeq=67",
+        "https://ax-tts-skopenapi.readme.io/reference/tts-model-list-1",
+        "https://openapi.sk.com/products/calc?svcSeq=67"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
