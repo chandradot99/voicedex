@@ -31,7 +31,7 @@
   <div class="section-row">
     <div>
       <h2 id="coverage-title" class="section-title">Language coverage</h2>
-      <p class="section-note">Rows are providers, columns the {{ coverage.languages|length }} most-supported languages. Brighter cells mean more models. Select a cell to list them.</p>
+      <p class="section-note">Rows are providers, columns the <span id="coverage-cols">{{ coverage.languages|length }}</span> most-supported languages, and Total counts every language a provider covers. Brighter cells mean more models. Select a cell to list them.</p>
     </div>
     <nav class="seg" aria-label="Model type">
       {% for k, label in [("", "All"), ("stt", "STT"), ("tts", "TTS"), ("sts", "Realtime")] %}
@@ -47,6 +47,7 @@
           {% for lang in coverage.languages %}
           <th scope="col" class="map-lang"><a href="/models?language={{ lang }}{% if map_type %}&type={{ map_type }}{% endif %}" title="Models for {{ language_name(lang) }}"><span>{{ language_name(lang) }}</span></a></th>
           {% endfor %}
+          <th scope="col" class="map-total">Total</th>
         </tr>
       </thead>
       <tbody>
@@ -59,6 +60,7 @@
             {% if c %}<a href="/models?provider={{ s.id }}&language={{ lang }}{% if map_type %}&type={{ map_type }}{% endif %}" aria-label="{{ s.name }}, {{ language_name(lang) }}: {{ c }} model{{ 's' if c != 1 }}"></a>{% endif %}
           </td>
           {% endfor %}
+          <td class="map-total"><a href="/providers/{{ s.id }}" title="{{ s.name }}: {{ coverage.totals.get(s.id, 0) }} languages in total">{{ coverage.totals.get(s.id, 0) }}</a></td>
         </tr>
         {% endfor %}
       </tbody>

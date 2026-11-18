@@ -257,6 +257,10 @@ button, input, select { font: inherit; color: inherit; }
 .h3 { background: rgb(var(--heat) / .52); }
 .h4 { background: rgb(var(--heat) / .62); }
 .h5 { background: rgb(var(--heat) / .88); }
+.map th.map-total { vertical-align: bottom; padding: 0 0 6px 8px; font: 400 11px/1 var(--mono); color: var(--muted); text-align: right; }
+.map td.map-total { width: auto; padding-left: 8px; text-align: right; background: none; font: 500 12px var(--mono); }
+.map td.map-total a { position: static; color: var(--ink-2); text-decoration: none; }
+.map td.map-total a:hover { color: var(--signal); outline: none; }
 .legend { margin-top: 12px; display: flex; align-items: center; gap: 4px; font: 400 11px/1 var(--mono); color: var(--muted); }
 .legend span:first-child { margin-right: 6px; } .legend span:last-child { margin-left: 6px; }
 .legend i { width: 14px; height: 14px; border-radius: 1px; }

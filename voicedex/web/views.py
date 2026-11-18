@@ -129,9 +129,10 @@ class CoverageMap:
     languages: list[str]                 # base codes, most-covered first
     rows: list[tuple[ProviderSummary, list[int]]]  # model count per language
     max_count: int
+    totals: dict[str, int] = None        # provider id → distinct languages overall (not just the columns shown)
 
 
-def coverage_map(catalog: Catalog, n_languages: int = 32, model_type: str = "") -> CoverageMap:
+def coverage_map(catalog: Catalog, n_languages: int = 48, model_type: str = "") -> CoverageMap:
     counts: dict[str, Counter] = defaultdict(Counter)
     for r in active_models(catalog):
         if model_type and r.model.type != model_type:
@@ -143,7 +144,8 @@ def coverage_map(catalog: Catalog, n_languages: int = 32, model_type: str = "") 
     summaries = [s for s in provider_summaries(catalog) if s.status == "active" and s.models]
     rows = [(s, [counts[s.id][lang] for lang in langs]) for s in summaries]
     rows.sort(key=lambda r: (-sum(1 for x in r[1] if x), r[0].name.lower()))
-    return CoverageMap(langs, rows, max((x for _, cs in rows for x in cs), default=1))
+    return CoverageMap(langs, rows, max((x for _, cs in rows for x in cs), default=1),
+                       {pid: len(c) for pid, c in counts.items()})
 
 
 def heat_level(count: int, max_count: int) -> int:

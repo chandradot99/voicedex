@@ -441,3 +441,25 @@ document.addEventListener("formdata", (e) => {
   if (!e.target.matches("form.filters, form[data-autosubmit]")) return;
   for (const [k, v] of [...e.formData]) if (v === "") e.formData.delete(k);
 });
+
+// ── Coverage map: show as many language columns as fit (no sideways scroll on desktop; phones still scroll).
+(() => {
+  const wrap = $(".map-scroll"), table = wrap && $("table.map", wrap);
+  if (!table) return;
+  const style = document.createElement("style");
+  document.head.append(style);
+  const fit = () => {
+    style.textContent = "";
+    if (innerWidth <= 760) return;                       // phones: scroll the full map
+    const first = $("tbody th", table)?.getBoundingClientRect().width || 0;
+    const total = $("td.map-total", table)?.getBoundingClientRect().width || 0;
+    const cell = 20;                                     // 18px cell + 2px spacing
+    const cols = $$("thead th.map-lang", table).length;
+    const fitCols = Math.max(12, Math.min(cols, Math.floor((wrap.clientWidth - first - total - 12) / cell)));
+    if (fitCols < cols) style.textContent = `.map tr > :nth-child(n+${fitCols + 2}):not(.map-total) { display: none; }`;
+    const note = $("#coverage-cols");
+    if (note) note.textContent = String(fitCols);
+  };
+  fit();
+  addEventListener("resize", fit);
+})();
