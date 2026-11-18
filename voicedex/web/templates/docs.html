@@ -42,13 +42,15 @@
     .docs-page .site-header { z-index: 100; }
     .docs-page { display: block; }
     .docs-page .jump kbd { display: none; }   /* here ⌘K opens the reference's own search */
+    #scalar-docs:not(:empty) + .docs-loading { display: none; }   /* placeholder only until the reference mounts */
     #scalar-docs { --scalar-custom-header-height: 57px; }
   </style>
 </head>
 <body class="docs-page">
   <a class="skip" href="#scalar-docs">Skip to the reference</a>
   {% include "_header.html" %}
-  <main id="scalar-docs"><div class="loading-block" role="status"><span class="loader" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Loading API reference…</div></main>
+  <main id="scalar-docs"></main>
+  <div class="loading-block docs-loading" role="status"><span class="loader" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Loading API reference…</div>
   <script>
     // Focus rings for keyboard users only. Scalar moves focus programmatically after mouse clicks
     // (tabs, dropdown triggers), which browsers treat as :focus-visible — so track the input modality.
