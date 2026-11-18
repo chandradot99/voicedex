@@ -65,6 +65,7 @@ class Settings(BaseSettings):
     munsit_api_key: str = ""
     zyphra_api_key: str = ""
     respeecher_api_key: str = ""
+    respeecher_marketplace_api_key: str = ""   # separate key: marketplace.respeecher.com/account
     tilde_api_key: str = ""
     bhashini_user_id: str = ""
     bhashini_ulca_api_key: str = ""
