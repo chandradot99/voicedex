@@ -1,0 +1,21 @@
+{
+  "access": "self_serve",
+  "description": "DeepL SE is a Cologne, Germany-based language AI company known for machine translation. Its API Pro includes the Voice API, a real-time WebSocket service that transcribes speech and translates it into up to five languages, optionally with translated speech; transcription for some languages is provided by external service partners.",
+  "docs_urls": [
+    "https://developers.deepl.com/docs/api-reference/voice",
+    "https://developers.deepl.com/docs/voice/supported-voice-languages.md",
+    "https://www.deepl.com/en/pro?tab=api"
+  ],
+  "headquarters": "DE",
+  "id": "deepl",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://developers.deepl.com/api-reference/voice/request-session",
+    "docs": "https://developers.deepl.com/docs/voice/overview",
+    "pricing": "https://www.deepl.com/en/pro?tab=api"
+  },
+  "name": "DeepL Voice API",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.deepl.com"
+}
