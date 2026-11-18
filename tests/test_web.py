@@ -134,4 +134,4 @@ async def test_gzip_and_page_caching(client):
     assert r.headers["content-encoding"] == "gzip" and "ETag" in r.headers
     page = await client.get("/models")
     assert page.headers["cache-control"] == "public, max-age=300" and "etag" not in page.headers
-    assert "cache-control" not in (await client.get("/health")).headers
+    assert (await client.get("/health")).headers["cache-control"] == "no-store"

@@ -154,6 +154,7 @@ app.mount("/static", StaticFiles(directory=str(web.Path(web.__file__).parent / "
 
 
 @app.get("/health", tags=["Meta"], summary="Health check")
-async def health(request: Request):
+async def health(request: Request, response: Response):
     cat = request.app.state.catalog
+    response.headers["Cache-Control"] = "no-store"     # never served from a CDN cache
     return {"status": "ok", "providers": len(cat.providers), "etag": cat.etag.strip('"')}
