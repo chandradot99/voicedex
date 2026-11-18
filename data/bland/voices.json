@@ -1,0 +1,85 @@
+[
+  {
+    "accent": "american",
+    "age": "mature",
+    "category": "premade",
+    "description": "Mature male, General American.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1d4dc605-071b-4eee-81b3-099b2894d0d1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_note": "Docs don't state which model this voice resolves to.",
+      "openai_aliases": [
+        "ballad",
+        "blue",
+        "echo",
+        "onyx",
+        "sage",
+        "verse"
+      ]
+    },
+    "name": "Matthew",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "mature",
+    "category": "premade",
+    "compatible_models": [
+      "btts-3"
+    ],
+    "description": "Mature female, General American, nasal and deadpan, moderate pace; suits support lines and IVR prompts.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "29158307-9893-4149-8a75-bc9ce313d64e",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_evidence": "Docs example response for this voice returns x-model: btts-3.",
+      "openai_aliases": [
+        "amber",
+        "august",
+        "lily",
+        "nova",
+        "shimmer"
+      ]
+    },
+    "name": "Karen",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "customer support",
+      "ivr"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "btts-3"
+    ],
+    "description": "Light and playful, moderate pace; suits podcasts and advertisements.",
+    "first_seen": "2026-11-18",
+    "id": "2f29fdbb-c55e-4add-9c7c-93437ebf379d",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "model_evidence": "OpenAI-compatible docs example uses model btts-3 with voice coral (River); model must match voice.",
+      "openai_aliases": [
+        "alloy",
+        "ash",
+        "coral",
+        "fable"
+      ]
+    },
+    "name": "River",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "podcasts",
+      "advertisements"
+    ]
+  }
+]

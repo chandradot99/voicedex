@@ -1,0 +1,43 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "hipaa",
+    "gdpr",
+    "iso27001",
+    "pci_dss"
+  ],
+  "description": "Bland is a US voice AI company that builds its own speech recognition, LLM and speech synthesis stack for phone agents. Bland Speech is its standalone text-to-speech API (BTTS models) with HTTP, WebSocket and OpenAI-compatible endpoints, instant voice cloning, and per-character billing.",
+  "docs_urls": [
+    "https://docs.bland.ai/tts/welcome.md",
+    "https://docs.bland.ai/api-v2/get/tts-models.md",
+    "https://docs.bland.ai/api-v1/get/models.md",
+    "https://docs.bland.ai/api-v2/post/tts.md",
+    "https://docs.bland.ai/api-v2/post/audio-speech.md",
+    "https://docs.bland.ai/tts/voices.md"
+  ],
+  "headquarters": "US",
+  "id": "bland",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.bland.ai/api-v2/post/tts",
+    "docs": "https://docs.bland.ai/tts/welcome",
+    "pricing": "https://docs.bland.ai/api-v2/post/tts"
+  },
+  "name": "Bland",
+  "source": "docs",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.bland.ai/tts/welcome.md",
+      "https://docs.bland.ai/api-v2/get/tts-models.md",
+      "https://docs.bland.ai/api-v1/get/models.md",
+      "https://docs.bland.ai/api-v2/post/tts.md",
+      "https://docs.bland.ai/api-v2/post/audio-speech.md",
+      "https://docs.bland.ai/tts/voices.md"
+    ]
+  },
+  "website": "https://www.bland.ai"
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Previous-generation Bland Speech TTS with multilingual output and instant single-sample cloning.",
+    "first_seen": "2026-11-18",
+    "id": "btts-2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "pl",
+      "pt",
+      "ru",
+      "tr",
+      "zh",
+      "ar",
+      "id",
+      "sv"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "containers": [
+        "raw",
+        "wav"
+      ],
+      "controls": {
+        "expressiveness": [
+          0,
+          1
+        ],
+        "stability": [
+          0,
+          1
+        ]
+      },
+      "encodings_raw": [
+        "pcm_s16le",
+        "mulaw"
+      ],
+      "max_text_chars_openai_compatible": 4096,
+      "model_selection": "The voice determines the model; returned in the x-model header.",
+      "note": "Still synthesizes; expressiveness/stability controls are not tuned for it.",
+      "openai_compatible_formats": [
+        "mp3",
+        "opus",
+        "aac",
+        "flac",
+        "wav",
+        "pcm"
+      ],
+      "v1_model_id": "BTTS_V2"
+    },
+    "name": "Bland Speech V2 (btts-2)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.015 per 1K characters on every plan — a limited-time launch offer, discounted from the standard $0.04 per 1K characters. Minimum charge $0.001 per request; some public-library voices add a per-character creator fee.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://docs.bland.ai/api-v2/post/tts",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.bland.ai/tts/welcome.md",
+        "https://docs.bland.ai/api-v2/get/tts-models.md",
+        "https://docs.bland.ai/api-v1/get/models.md",
+        "https://docs.bland.ai/api-v2/post/tts.md",
+        "https://docs.bland.ai/api-v2/post/audio-speech.md",
+        "https://docs.bland.ai/tts/voices.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Current-generation Bland Speech TTS, recommended for new voices and integrations; renders natively at 48 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "btts-3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "containers": [
+        "raw",
+        "wav"
+      ],
+      "controls": {
+        "expressiveness": [
+          0,
+          1
+        ],
+        "speed": [
+          0.6,
+          1.2
+        ],
+        "stability": [
+          0,
+          1
+        ]
+      },
+      "encodings_raw": [
+        "pcm_s16le",
+        "mulaw"
+      ],
+      "languages_note": "GET /v1/models lists ['en'] for BTTS_V3; the Choosing a Voice guide says both engines cover 17+ languages.",
+      "max_text_chars_openai_compatible": 4096,
+      "model_selection": "The voice determines the model; returned in the x-model header.",
+      "native_sample_rate_hz": 48000,
+      "openai_compatible_formats": [
+        "mp3",
+        "opus",
+        "aac",
+        "flac",
+        "wav",
+        "pcm"
+      ],
+      "v1_model_id": "BTTS_V3"
+    },
+    "name": "Bland Speech V3 (btts-3)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.015 per 1K characters on every plan — a limited-time launch offer, discounted from the standard $0.04 per 1K characters. Minimum charge $0.001 per request; some public-library voices add a per-character creator fee.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://docs.bland.ai/api-v2/post/tts",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.bland.ai/tts/welcome.md",
+        "https://docs.bland.ai/api-v2/get/tts-models.md",
+        "https://docs.bland.ai/api-v1/get/models.md",
+        "https://docs.bland.ai/api-v2/post/tts.md",
+        "https://docs.bland.ai/api-v2/post/audio-speech.md",
+        "https://docs.bland.ai/tts/voices.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
