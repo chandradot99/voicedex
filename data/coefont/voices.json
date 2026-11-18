@@ -1,1 +1,857 @@
-[]
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "08428dee-65b6-490e-a3a3-60dfcdda889d",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "にっし～☆",
+    "tags": [
+      "ナレーション",
+      "ニュース"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "0f7b53df-3c24-46a5-84d1-cbea39a956c0",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "unnamed",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "10d298ee-ebbf-4838-a6c5-d608f2e3c338",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "汎用式概念χ-soft-v2[最高精度] ¦CV:ろさちゃん  Losa-chan -soft",
+    "tags": [
+      "ささやき",
+      "キャラクター風"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "150e5a43-d156-4c5d-ba99-f266eb52d53d",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "普通の女性の声",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "18ca2f7b-97ca-486d-8f47-858965833642",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "50代一般女性",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "皆のお母さん",
+    "tags": [
+      "朗読",
+      "オーディオブック",
+      "平常",
+      "おばさん"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2157796c-fe48-4688-b7cc-7ea554edf77d",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "とり藻々",
+    "tags": [
+      "ナレーション",
+      "平常",
+      "キャラクター風",
+      "会話・対話",
+      "おにいさん・おねえさん",
+      "高い"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "23c76cf0-bee0-47fa-b735-9b7bdba9f26a",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "碧海紘斗_OhmiHiroto",
+    "tags": [
+      "ナレーション",
+      "学生",
+      "高い",
+      "平常",
+      "アナウンス風"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "33e0a2ff-5050-434c-9506-defe97e52f15",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "声優 朝比奈みくる役（涼宮ハルヒ）など",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "後藤邑子",
+    "tags": [
+      "声優"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "3d499385-d331-4cbb-93c0-2057e60eddcf",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "MC・ナレーター",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "今井瑶子(高精度。MC ナレーター 落ち着いたトーンです)",
+    "tags": [
+      "ナレーション",
+      "ニュース",
+      "アナウンス風",
+      "おにいさん・おねえさん",
+      "低い",
+      "平常",
+      "落ち着いた"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "3f84b7b1-30fb-4677-a704-fd136515303e",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "CV: 森川智之",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "Canel（CV: 森川智之）",
+    "tags": [
+      "おにいさん",
+      "声優"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "516b0f32-8b5f-48c5-b60e-38d508e2b06b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "癒し系の男性ボイスです",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "田中和彦",
+    "tags": [
+      "アナウンス風",
+      "会話・対話",
+      "ニュース",
+      "おにいさん・おねえさん",
+      "落ち着いた",
+      "平常"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "5cc0dc91-0c6a-4c50-b7d8-f3117cfe44ef",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "武田 祐子",
+    "tags": [
+      "ナレーション",
+      "ニュース"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "5cf07e7c-5b1c-4360-a8de-7c928580d4b5",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "ナレーター・声優",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "minamo",
+    "tags": [
+      "ナレーション",
+      "朗読",
+      "読み上げ",
+      "ナレーター",
+      "おにいさん・おねえさん"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "5cfa1f33-bca8-4489-bcbe-701045993162",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "イラストレーター",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "UNF/UserNotFound",
+    "tags": [
+      "ナレーション",
+      "朗読",
+      "ニュース",
+      "読み上げ"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "694cb06e-73bd-43c4-94d4-f775ad3dbb26",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "最高精度,プロ",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "パイナップル秀夫お姉さん",
+    "tags": [
+      "ナレーション",
+      "朗読",
+      "アナウンス風",
+      "おねえさん",
+      "VTuber"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "7632cba3-4aca-4cee-9d15-ad1ac31f670c",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "Vtuber",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "バーチャル悪霊",
+    "tags": [
+      "ナレーション",
+      "アナウンス風",
+      "学生",
+      "低い",
+      "平常",
+      "会話・対話",
+      "落ち着いた"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "76763239-af14-4c0d-9435-956f096f77dc",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "柔らかい発音で丁寧に読み上げる女声",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "音暖ののん Ver2.0（最高精度）",
+    "tags": [
+      "ナレーション",
+      "平常",
+      "学生",
+      "キャラクター風",
+      "アナウンス風",
+      "ハスキー",
+      "低い",
+      "落ち着いた"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "76e2ba06-b23a-4bbe-8148-e30ede9001b9",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "あさのゆき",
+    "tags": [
+      "ナレーション",
+      "平常",
+      "おにいさん・おねえさん",
+      "アナウンス風",
+      "広告・宣伝",
+      "高い",
+      "イケボ",
+      "落ち着いた"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "81dbd387-6ad6-4b22-93f9-4e2a0091b2fe",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "無所属",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "おにもち",
+    "tags": [
+      "ナレーション",
+      "読み上げ",
+      "子供",
+      "学生"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "82c4fcf5-d0ee-4fe9-9b0d-89a65d04f290",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "高橋 俊輔",
+    "tags": [
+      "ニュース",
+      "平常"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "87ca5e91-368f-4a24-aad7-731d2df2fc73",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "最高精度,プロ",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "パイナップル秀夫(元気！)",
+    "tags": [
+      "子供",
+      "学生",
+      "朗読",
+      "オーディオブック",
+      "キャラクター風"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "931a8568-039a-4cef-add7-bee71629c00e",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "小菅 将太",
+    "tags": [
+      "ナレーション"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "94cf7792-7c0c-4be4-88e7-c30d26ab6616",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "RoBaKu",
+    "tags": [
+      "平常",
+      "おにいさん・おねえさん",
+      "会話・対話",
+      "ソーシャルメディア",
+      "ナレーション"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "9b826785-bea5-4740-b4cd-e9a286264705",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "胡麻ちゃん",
+    "tags": [
+      "ナレーション",
+      "キャラクター風",
+      "落ち着いた",
+      "学生"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "b6895198-c66e-46d4-b4e6-b5234681f2ed",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "女性アナウンサー",
+      "engine_version": 2,
+      "official": false,
+      "plan": "high"
+    },
+    "name": "林 梨沙",
+    "tags": [
+      "ナレーター",
+      "オーディオブック",
+      "ナレーション"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "be5c5295-aba2-4055-a9da-8926da7fb5a0",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "株式会社Adroaig代表・ナレーター",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "【PRO】落ち着きナレーション♯畑耕平",
+    "tags": [
+      "ニュース",
+      "読み上げ",
+      "オーディオブック",
+      "ナレーター"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "c25ed97f-78f7-4e8f-b2fa-f8e29633588b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "音声合成キャラクター",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "聲華 琴音【紡】",
+    "tags": [
+      "平常",
+      "音声合成キャラクター",
+      "立ち絵有",
+      "キャラクター付き"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "c8720caf-2d2d-4130-8831-92f61f9e25e8",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": " ",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "KTNR",
+    "tags": [
+      "読み上げ",
+      "平常",
+      "おにいさん"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "c88367bc-5954-426b-a1ba-a683202803c8",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "落ち着いた女性の声です",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "志水 智（Tomo Shimizu）",
+    "tags": [
+      "ナレーション",
+      "朗読",
+      "平常"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "cf5fdfb8-85ea-41e1-915b-257936791f17",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "一般女子大生の声です",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "ちくわぶえ",
+    "tags": [
+      "読み上げ"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "d36f8bb1-8bd8-4e90-964a-9dbd3e374093",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "AIVtuber",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "須戸ゼロ",
+    "tags": [
+      "読み上げ",
+      "平常",
+      "キャラクター風",
+      "VTuber"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "e26382ba-2ae2-4cf7-8c1b-420ab4b845d8",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "音声合成キャラクター",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "黄琴海月【うるとら】",
+    "tags": [
+      "キャラクター風",
+      "高い",
+      "平常",
+      "エネルギッシュ・活発",
+      "学生"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "f91a9d29-c8b4-443f-ba07-82e7e36bd20b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "プロナレーター",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "秋月つむぎ（落ち着いたナレーション）",
+    "tags": [
+      "ナレーション",
+      "朗読",
+      "ささやき",
+      "ナレーター"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "fb64a764-91d5-4510-bddd-70df3d62709a",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "caption": "合成音声キャラクター",
+      "engine_version": 2,
+      "official": false,
+      "plan": "ultra"
+    },
+    "name": "【PRO】花撫シア-最高精度-しっかり読み上げ",
+    "tags": [
+      "ナレーション",
+      "おにいさん・おねえさん",
+      "落ち着いた"
+    ],
+    "updated_at": "2026-11-18"
+  }
+]

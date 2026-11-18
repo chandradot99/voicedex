@@ -1,5 +1,8 @@
 {
   "access": "self_serve",
+  "api_urls": [
+    "https://backend.coefont.cloud/coefonts/pro"
+  ],
   "description": "CoeFont is a Japanese AI voice platform offering text-to-speech with a library of 10,000+ AI voices, a real-time voice changer and the CoeFont Interpreter app. Its REST API synthesizes speech from any accessible CoeFont voice in Japanese, English or Chinese and is available on the Plus plan; prices are in JPY.",
   "docs_urls": [
     "https://docs.coefont.cloud/en/",
@@ -14,7 +17,14 @@
     "pricing": "https://coefont.cloud/selectPlan"
   },
   "name": "CoeFont",
-  "source": "docs",
+  "source": "mixed",
   "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://backend.coefont.cloud/coefonts/pro"
+    ]
+  },
   "website": "https://coefont.cloud"
 }
