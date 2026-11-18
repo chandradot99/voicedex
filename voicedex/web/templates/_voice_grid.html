@@ -12,7 +12,8 @@
         <span class="loader loader-xs" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
       </button>
       {% else %}
-      <span class="no-play" title="No sample published"><svg viewBox="0 0 12 2" aria-hidden="true"><rect width="12" height="2"/></svg><span class="visually-hidden">No sample published</span></span>
+      {% set no_sample = "The provider's sample link is broken" if v.meta.get("preview_unavailable") else "No sample published" %}
+      <span class="no-play" title="{{ no_sample }}"><svg viewBox="0 0 12 2" aria-hidden="true"><rect width="12" height="2"/></svg><span class="visually-hidden">{{ no_sample }}</span></span>
       {% endif %}
     </div>
     <div class="voice-main">

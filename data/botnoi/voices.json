@@ -352,6 +352,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "11",
@@ -359,7 +360,6 @@
       "thai_name": "วนิลา"
     },
     "name": "Vanilla",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/vanilla/sound_vanilla.wav",
     "tags": [
       "cute",
       "storytelling",
@@ -1247,6 +1247,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "154",
@@ -1254,7 +1255,6 @@
       "thai_name": "ทิฟฟานี่"
     },
     "name": "Tiffani",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tiffani/sound_tiffani.wav",
     "tags": [
       "trustworthy",
       "storytelling",
@@ -1293,6 +1293,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "16",
@@ -1300,7 +1301,6 @@
       "thai_name": "ครูดีดี๊"
     },
     "name": "Kru D Dee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/kru d dee/sound_kru d dee.wav",
     "tags": [
       "trustworthy",
       "storytelling",
@@ -1327,6 +1327,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "160",
@@ -1334,7 +1335,6 @@
       "thai_name": "ริณณ์"
     },
     "name": "Lynn",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lynn/sound_lynn.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -1361,6 +1361,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "162",
@@ -1368,7 +1369,6 @@
       "thai_name": "ดาวนภา"
     },
     "name": "Daonapha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/daonapha/sound_daonapha.wav",
     "tags": [
       "calm",
       "storytelling",
@@ -1413,6 +1413,7 @@
         "pt-br",
         "ru"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "163",
@@ -1420,7 +1421,6 @@
       "thai_name": "อาลี"
     },
     "name": "Ari",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ari/sound_ari.wav",
     "tags": [
       "gentle and tender",
       "storytelling",
@@ -1459,6 +1459,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "17",
@@ -1466,7 +1467,6 @@
       "thai_name": "เจ้าเนิร์ด"
     },
     "name": "Jao Nerd",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/jao nerd/sound_jao nerd.wav",
     "tags": [
       "serious",
       "storytelling",
@@ -1551,6 +1551,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "19",
@@ -1558,7 +1559,6 @@
       "thai_name": "อาวอร์ม"
     },
     "name": "Uncle Warm",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/uncle warm/sound_uncle warm.wav",
     "tags": [
       "warm",
       "storytelling",
@@ -1603,6 +1603,7 @@
         "pt-br",
         "ru"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FR",
       "speaker_id": "198",
@@ -1610,7 +1611,6 @@
       "thai_name": "fr_4"
     },
     "name": "fr_4",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fr_4/sound_fr_4.wav",
     "tags": [
       "soothing",
       "anime"
@@ -1790,6 +1790,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "214",
@@ -1797,7 +1798,6 @@
       "thai_name": "เดวี"
     },
     "name": "Dewi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_annevalerina/sound_id_annevalerina.wav",
     "tags": [
       "mellow",
       "local"
@@ -1823,6 +1823,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "215",
@@ -1830,7 +1831,6 @@
       "thai_name": "แม่ค้าซารี"
     },
     "name": "sari Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_keyzaaluna/sound_id_keyzaaluna.wav",
     "tags": [
       "clear",
       "storytelling"
@@ -1856,6 +1856,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "216",
@@ -1863,7 +1864,6 @@
       "thai_name": "ครูริซกี"
     },
     "name": "Rizky Teacher",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_raka/sound_id_raka.wav",
     "tags": [
       "clear",
       "calm",
@@ -1890,6 +1890,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "217",
@@ -1897,7 +1898,6 @@
       "thai_name": "แอนดิ"
     },
     "name": "Andi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_wangga/sound_id_wangga.wav",
     "tags": [
       "exciting",
       "narrating"
@@ -1923,6 +1923,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "218",
@@ -1930,7 +1931,6 @@
       "thai_name": "แม่ค้าอินทาน"
     },
     "name": "Intan Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_annisa_mery/sound_id_annisa_mery.wav",
     "tags": [
       "trustworthy",
       "clear",
@@ -1957,6 +1957,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "220",
@@ -1964,7 +1965,6 @@
       "thai_name": "อายู"
     },
     "name": "Ayu",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nazira/sound_id_nazira.wav",
     "tags": [
       "serious",
       "storytelling"
@@ -1990,6 +1990,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "221",
@@ -1997,7 +1998,6 @@
       "thai_name": "ครูรินา "
     },
     "name": "Rina Teacher",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_amelia/sound_id_amelia.wav",
     "tags": [
       "trustworthy",
       "serious",
@@ -2024,6 +2024,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "222",
@@ -2031,7 +2032,6 @@
       "thai_name": "แม่ค้าลินา"
     },
     "name": "Lina Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_refanita/sound_id_refanita.wav",
     "tags": [
       "calm",
       "storytelling"
@@ -2057,6 +2057,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "223",
@@ -2064,7 +2065,6 @@
       "thai_name": "นีนา"
     },
     "name": "Nina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_haniffa/sound_id_haniffa.wav",
     "tags": [
       "gentle and tender",
       "storytelling"
@@ -2090,6 +2090,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "224",
@@ -2097,7 +2098,6 @@
       "thai_name": "มาญา"
     },
     "name": "Maya",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_rifana/sound_id_rifana.wav",
     "tags": [
       "mellow",
       "storytelling"
@@ -2123,6 +2123,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "225",
@@ -2130,7 +2131,6 @@
       "thai_name": "อันนิสา"
     },
     "name": "Annisa",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nadia/sound_id_nadia.wav",
     "tags": [
       "mellow",
       "storytelling"
@@ -2158,6 +2158,7 @@
         "id",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "226",
@@ -2165,7 +2166,6 @@
       "thai_name": "พ่อค้าบิณฑ์"
     },
     "name": "Bint Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/kittiphan/sound_kittiphan.wav",
     "tags": [
       "trustworthy",
       "storytelling",
@@ -2196,6 +2196,7 @@
         "sg",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "247",
@@ -2203,7 +2204,6 @@
       "thai_name": "fil_G0005"
     },
     "name": "fil_G0005",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_g0005/sound_fil_g0005.wav",
     "tags": [
       "mellow",
       "storytelling"
@@ -2233,6 +2233,7 @@
         "sg",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "253",
@@ -2240,7 +2241,6 @@
       "thai_name": "fil_G3001"
     },
     "name": "fil_G3001",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_g3001/sound_fil_g3001.wav",
     "tags": [
       "calm",
       "narrating"
@@ -2264,6 +2264,7 @@
       "botnoi_languages": [
         "sg"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "SG",
       "speaker_id": "257",
@@ -2271,7 +2272,6 @@
       "thai_name": "ซาร่า"
     },
     "name": "Sara",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sg_imda_nsc_007_en_sara/sound_sg_imda_nsc_007_en_sara.wav",
     "tags": [
       "storytelling"
     ],
@@ -2294,6 +2294,7 @@
       "botnoi_languages": [
         "sg"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "SG",
       "speaker_id": "258",
@@ -2301,7 +2302,6 @@
       "thai_name": "แอชลี่"
     },
     "name": "Ashley",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sg_imda_nsc_009_en_ashley/sound_sg_imda_nsc_009_en_ashley.wav",
     "tags": [
       "storytelling"
     ],
@@ -2324,6 +2324,7 @@
       "botnoi_languages": [
         "sg"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "SG",
       "speaker_id": "259",
@@ -2331,7 +2332,6 @@
       "thai_name": "sg_imda_nsc_010_en_Guy"
     },
     "name": "sg_imda_nsc_010_en_Guy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sg_imda_nsc_010_en_guy/sound_sg_imda_nsc_010_en_guy.wav",
     "tags": [
       "storytelling"
     ],
@@ -2400,6 +2400,7 @@
       "botnoi_languages": [
         "sg"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "SG",
       "speaker_id": "260",
@@ -2407,7 +2408,6 @@
       "thai_name": "sg_imda_nsc_011_en_Jacob"
     },
     "name": "sg_imda_nsc_011_en_Jacob",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sg_imda_nsc_011_en_jacob/sound_sg_imda_nsc_011_en_jacob.wav",
     "tags": [
       "storytelling"
     ],
@@ -2430,6 +2430,7 @@
       "botnoi_languages": [
         "ar"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "AR",
       "speaker_id": "262",
@@ -2437,7 +2438,6 @@
       "thai_name": "แม่ค้าซารา"
     },
     "name": "Sara Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ar_james_en_ashley/sound_ar_james_en_ashley.wav",
     "tags": [
       "trustworthy",
       "gentle and tender",
@@ -2494,6 +2494,7 @@
       "botnoi_languages": [
         "ar"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "AR",
       "speaker_id": "264",
@@ -2501,7 +2502,6 @@
       "thai_name": "อาเหม็ด"
     },
     "name": "Ahmed Gamer",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ar_newar_en_guy/sound_ar_newar_en_guy.wav",
     "tags": [
       "exciting",
       "clear",
@@ -2572,6 +2572,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "27",
@@ -2579,7 +2580,6 @@
       "thai_name": "น้าเกรซ"
     },
     "name": "Aunty Grace",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/aunty grace/sound_aunty grace.wav",
     "tags": [
       "warm",
       "storytelling",
@@ -2668,6 +2668,7 @@
       "botnoi_languages": [
         "es"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ES",
       "speaker_id": "273",
@@ -2675,7 +2676,6 @@
       "thai_name": "เปดรี"
     },
     "name": "Pedri",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/es_karen_savage_en_jacob/sound_es_karen_savage_en_jacob.wav",
     "tags": [
       "exciting",
       "narrating"
@@ -2699,6 +2699,7 @@
       "botnoi_languages": [
         "es"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ES",
       "speaker_id": "274",
@@ -2706,7 +2707,6 @@
       "thai_name": "ครูบิอันกา"
     },
     "name": "Bianca Teacher",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/es_karen_savage_en_sara/sound_es_karen_savage_en_sara.wav",
     "tags": [
       "trustworthy",
       "gentle and tender",
@@ -2731,6 +2731,7 @@
       "botnoi_languages": [
         "fr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FR",
       "speaker_id": "275",
@@ -2738,7 +2739,6 @@
       "thai_name": "แม่ค้าเอลิเซ"
     },
     "name": "Elise Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fr_giovanni_en_sara/sound_fr_giovanni_en_sara.wav",
     "tags": [
       "clear",
       "news reading",
@@ -2763,6 +2763,7 @@
       "botnoi_languages": [
         "ko"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "KO",
       "speaker_id": "278",
@@ -2770,7 +2771,6 @@
       "thai_name": "ปาร์ค"
     },
     "name": "Park Gamer",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ko_kss2_en_alex/sound_ko_kss2_en_alex.wav",
     "tags": [
       "exciting",
       "anime"
@@ -2794,6 +2794,7 @@
       "botnoi_languages": [
         "de"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "DE",
       "speaker_id": "279",
@@ -2801,7 +2802,6 @@
       "thai_name": "ซิลเวีย"
     },
     "name": "Silvia",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/de_clyde_en_bella1/sound_de_clyde_en_bella1.wav",
     "tags": [
       "clear",
       "serious",
@@ -2840,6 +2840,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "28",
@@ -2847,7 +2848,6 @@
       "thai_name": "อาจารย์หลิน"
     },
     "name": "Ajarn Lin",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ajarn lin/sound_ajarn lin.wav",
     "tags": [
       "warm",
       "narrating",
@@ -2872,6 +2872,7 @@
       "botnoi_languages": [
         "de"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "DE",
       "speaker_id": "280",
@@ -2879,7 +2880,6 @@
       "thai_name": "ครูเอฟา"
     },
     "name": "Eva Teacher",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/de_dorothy_en_vanessa1/sound_de_dorothy_en_vanessa1.wav",
     "tags": [
       "trustworthy",
       "clear",
@@ -2904,6 +2904,7 @@
       "botnoi_languages": [
         "de"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "DE",
       "speaker_id": "281",
@@ -2911,7 +2912,6 @@
       "thai_name": "โธมัส"
     },
     "name": "Thomas",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/de_harry_en_guy/sound_de_harry_en_guy.wav",
     "tags": [
       "trustworthy",
       "exciting",
@@ -2937,6 +2937,7 @@
       "botnoi_languages": [
         "de"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "DE",
       "speaker_id": "282",
@@ -2944,7 +2945,6 @@
       "thai_name": "สเตฟาน"
     },
     "name": "Stephan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/de_mimi_en_alex/sound_de_mimi_en_alex.wav",
     "tags": [
       "calm",
       "soothing",
@@ -2969,6 +2969,7 @@
       "botnoi_languages": [
         "nl"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "NL",
       "speaker_id": "288",
@@ -2976,7 +2977,6 @@
       "thai_name": "โยฮัน"
     },
     "name": "Johan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/nl_mijlen_en_arnold/sound_nl_mijlen_en_arnold.wav",
     "tags": [
       "exciting",
       "narrating"
@@ -3046,6 +3046,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "292",
@@ -3053,7 +3054,6 @@
       "thai_name": "ส้มแป้น (ตรัง)"
     },
     "name": "sompan (Trang)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_aonkaew/sound_south_aonkaew.wav",
     "tags": [
       "southtern accent",
       "storytelling",
@@ -3078,6 +3078,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "293",
@@ -3085,7 +3086,6 @@
       "thai_name": "ตะวัน (พัทลุง)"
     },
     "name": "Tawan (Phatthalung)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_dodo/sound_south_dodo.wav",
     "tags": [
       "southtern accent",
       "narrating",
@@ -3110,6 +3110,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "294",
@@ -3117,7 +3118,6 @@
       "thai_name": "ฝน (ตรัง)"
     },
     "name": "Fon (Trang)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_jah/sound_south_jah.wav",
     "tags": [
       "southtern accent",
       "documentary",
@@ -3142,6 +3142,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "295",
@@ -3149,7 +3150,6 @@
       "thai_name": "ครูปิ่น (พัทลุง)"
     },
     "name": "Pin Teacher (Phatthalung)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_jan/sound_south_jan.wav",
     "tags": [
       "southtern accent",
       "teaching",
@@ -3174,6 +3174,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "296",
@@ -3181,7 +3182,6 @@
       "thai_name": "แม่ค้าดาว (พัทลุง)"
     },
     "name": "Dao Seller (Phatthalung)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_jane/sound_south_jane.wav",
     "tags": [
       "southtern accent",
       "local"
@@ -3205,6 +3205,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "297",
@@ -3212,7 +3213,6 @@
       "thai_name": "วินซง (พัทลุง)"
     },
     "name": "Winsong (Phatthalung)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_max/sound_south_max.wav",
     "tags": [
       "southtern accent",
       "narrating",
@@ -3237,6 +3237,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "298",
@@ -3244,7 +3245,6 @@
       "thai_name": "ครูนุกนิก (สงขลา)"
     },
     "name": "Nuknik Teacher (Songkhla)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_may/sound_south_may.wav",
     "tags": [
       "southtern accent",
       "teaching",
@@ -3269,6 +3269,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "299",
@@ -3276,7 +3277,6 @@
       "thai_name": "ครูหอมจันทน์ (ตรัง)"
     },
     "name": "Homjun Teacher (Trang)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_nungning/sound_south_nungning.wav",
     "tags": [
       "southtern accent",
       "teaching",
@@ -3393,6 +3393,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "300",
@@ -3400,7 +3401,6 @@
       "thai_name": "แม่ค้าพิงค์กี้ (ตรัง)"
     },
     "name": "Pinky Seller (Trang)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_pin/sound_south_pin.wav",
     "tags": [
       "southtern accent",
       "local"
@@ -3424,6 +3424,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "301",
@@ -3431,7 +3432,6 @@
       "thai_name": "เรนนี่ (สงขลา)"
     },
     "name": "Rainy (Songkhla)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_pingping/sound_south_pingping.wav",
     "tags": [
       "southtern accent",
       "narrating",
@@ -3456,6 +3456,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "302",
@@ -3463,7 +3464,6 @@
       "thai_name": "พลอย (สงขลา)"
     },
     "name": "Ploy (Songkhla)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_pinky/sound_south_pinky.wav",
     "tags": [
       "southtern accent",
       "storytelling",
@@ -3488,6 +3488,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "303",
@@ -3495,7 +3496,6 @@
       "thai_name": "เติ้ล (ภูเก็ต)"
     },
     "name": "Tle (Phuket)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_praew/sound_south_praew.wav",
     "tags": [
       "southtern accent",
       "documentary",
@@ -3520,6 +3520,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "304",
@@ -3527,7 +3528,6 @@
       "thai_name": "นัทธ์ (สงขลา)"
     },
     "name": "Nuth (Songkhla)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_san/sound_south_san.wav",
     "tags": [
       "southtern accent",
       "local"
@@ -3551,6 +3551,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "305",
@@ -3558,7 +3559,6 @@
       "thai_name": "นกคูด (สงขลา)"
     },
     "name": "Nokkud (Songkhla)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_sany/sound_south_sany.wav",
     "tags": [
       "southtern accent",
       "narrating",
@@ -3583,6 +3583,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "306",
@@ -3590,7 +3591,6 @@
       "thai_name": "นุ้ย (สงขลา)"
     },
     "name": "Nui (Songkhla)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_shi/sound_south_shi.wav",
     "tags": [
       "southtern accent",
       "storytelling",
@@ -3615,6 +3615,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "307",
@@ -3622,7 +3623,6 @@
       "thai_name": "แม่ค้าแป้ง (นครศรีธรรมราช)"
     },
     "name": "Pang Seller (Nakhon Si Thammarat)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/south_sun/sound_south_sun.wav",
     "tags": [
       "southtern accent",
       "local"
@@ -3646,6 +3646,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "309",
@@ -3653,7 +3654,6 @@
       "thai_name": "ครูสายใจ (เชียงราย)"
     },
     "name": "Saijai Teacher (Chiang Rai)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_aom/sound_north_aom.wav",
     "tags": [
       "northern accent",
       "teaching",
@@ -3724,6 +3724,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "310",
@@ -3731,7 +3732,6 @@
       "thai_name": "อาจารย์กาญจน์ (แพร่)"
     },
     "name": "Professor Kan (Phrae)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_aun/sound_north_aun.wav",
     "tags": [
       "northern accent",
       "teaching",
@@ -3756,6 +3756,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "311",
@@ -3763,7 +3764,6 @@
       "thai_name": "เบส (เชียงใหม่)"
     },
     "name": "Best (Chiang Mai)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_bb/sound_north_bb.wav",
     "tags": [
       "northern accent",
       "news reading",
@@ -3788,6 +3788,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "312",
@@ -3795,7 +3796,6 @@
       "thai_name": "ครูบี (เชียงใหม่)"
     },
     "name": "krubee (Chiang Mai)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_bee/sound_north_bee.wav",
     "tags": [
       "northern accent",
       "local"
@@ -3819,6 +3819,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "313",
@@ -3826,7 +3827,6 @@
       "thai_name": "อาจารย์แข (ลำปาง)"
     },
     "name": "Professor Kae (Lampang)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_beer/sound_north_beer.wav",
     "tags": [
       "northern accent",
       "teaching",
@@ -3851,6 +3851,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "314",
@@ -3858,7 +3859,6 @@
       "thai_name": "โบนิต้า (แพร่)"
     },
     "name": "Bonita (Phrae)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_chompoo_1/sound_north_chompoo_1.wav",
     "tags": [
       "northern accent",
       "narrating",
@@ -3883,6 +3883,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "315",
@@ -3890,7 +3891,6 @@
       "thai_name": "คุณละไม (เชียงใหม่)"
     },
     "name": "KhunLamai (Chiang Mai)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_chompoo_2/sound_north_chompoo_2.wav",
     "tags": [
       "northern accent",
       "local"
@@ -3914,6 +3914,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "316",
@@ -3921,7 +3922,6 @@
       "thai_name": "สุ (เชียงใหม่)"
     },
     "name": "Su (Chiang Mai)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_do/sound_north_do.wav",
     "tags": [
       "northern accent",
       "news reading",
@@ -3946,6 +3946,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "317",
@@ -3953,7 +3954,6 @@
       "thai_name": "แม่ค้ามันแกว (พะเยา)"
     },
     "name": "Munkaew Seller (Phayao)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_gift/sound_north_gift.wav",
     "tags": [
       "northern accent",
       "local"
@@ -3977,6 +3977,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "318",
@@ -3984,7 +3985,6 @@
       "thai_name": "แม่ค้าออมมี่ (เชียงใหม่)"
     },
     "name": "Aommy Seller (Chiang Mai)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_hi/sound_north_hi.wav",
     "tags": [
       "northern accent",
       "local"
@@ -4008,6 +4008,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "319",
@@ -4015,7 +4016,6 @@
       "thai_name": "ข้าวจ้าว (เชียงใหม่)"
     },
     "name": "Khaojao (Chiang Mai)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_jah/sound_north_jah.wav",
     "tags": [
       "northern accent",
       "documentary",
@@ -4054,6 +4054,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "32",
@@ -4061,7 +4062,6 @@
       "thai_name": "เนโอ"
     },
     "name": "Neo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/neo/sound_neo.wav",
     "tags": [
       "gentle",
       "storytelling",
@@ -4086,6 +4086,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "320",
@@ -4093,7 +4094,6 @@
       "thai_name": "ครูหมอก (เหนือ)"
     },
     "name": "Mok Teacher (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_mekk/sound_north_mekk.wav",
     "tags": [
       "trustworthy",
       "northern accent",
@@ -4119,6 +4119,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "321",
@@ -4126,7 +4127,6 @@
       "thai_name": "อิ๋ม (เหนือ)"
     },
     "name": "Imm (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_momay/sound_north_momay.wav",
     "tags": [
       "gentle and tender",
       "northern accent",
@@ -4152,6 +4152,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "322",
@@ -4159,7 +4160,6 @@
       "thai_name": "แม่ค้าต๊ะโอ๋ (เหนือ)"
     },
     "name": "Ta-oh Teacher (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_muk/sound_north_muk.wav",
     "tags": [
       "confident",
       "northern accent",
@@ -4184,6 +4184,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "323",
@@ -4191,7 +4192,6 @@
       "thai_name": "ขวัญใจ (เหนือ)"
     },
     "name": "Kwanjai (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_new/sound_north_new.wav",
     "tags": [
       "northern accent",
       "local"
@@ -4215,6 +4215,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "324",
@@ -4222,7 +4223,6 @@
       "thai_name": "กุหลาบเวียงพาน (เหนือ)"
     },
     "name": "Wiangphan (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_pleng/sound_north_pleng.wav",
     "tags": [
       "northern accent",
       "local"
@@ -4246,6 +4246,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "325",
@@ -4253,7 +4254,6 @@
       "thai_name": "คุณพัฒ (เหนือ)"
     },
     "name": "KhunPut (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_putcharee/sound_north_putcharee.wav",
     "tags": [
       "confident",
       "northern accent",
@@ -4279,6 +4279,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "326",
@@ -4286,7 +4287,6 @@
       "thai_name": "มาย (เหนือ)"
     },
     "name": "Mine (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_ruz/sound_north_ruz.wav",
     "tags": [
       "serious",
       "northern accent",
@@ -4312,6 +4312,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "327",
@@ -4319,7 +4320,6 @@
       "thai_name": "บุญปั๋น (เหนือ)"
     },
     "name": "Boonpun (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_tongkham/sound_north_tongkham.wav",
     "tags": [
       "confident",
       "northern accent",
@@ -4345,6 +4345,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "328",
@@ -4352,7 +4353,6 @@
       "thai_name": "แม่ค้าพีช (เหนือ)"
     },
     "name": "Peach Seller (North)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/north_wan/sound_north_wan.wav",
     "tags": [
       "confident",
       "northern accent",
@@ -4377,6 +4377,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "329",
@@ -4384,7 +4385,6 @@
       "thai_name": "ศรีพรรณ (อีสาน)"
     },
     "name": "Sripun (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_aum/sound_isan_aum.wav",
     "tags": [
       "northeastern accent",
       "mellow",
@@ -4424,6 +4424,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "33",
@@ -4431,7 +4432,6 @@
       "thai_name": "สาลี"
     },
     "name": "Sali",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sali/sound_sali.wav",
     "tags": [
       "gentle",
       "storytelling",
@@ -4456,6 +4456,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "331",
@@ -4463,7 +4464,6 @@
       "thai_name": "ฮาร์เลย์ (อีสาน)"
     },
     "name": "Harley (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_benz/sound_isan_benz.wav",
     "tags": [
       "clear",
       "northeastern accent",
@@ -4489,6 +4489,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "332",
@@ -4496,7 +4497,6 @@
       "thai_name": "ครูต้นหน (อีสาน)"
     },
     "name": "Tonhon Teacher (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_chompoo/sound_isan_chompoo.wav",
     "tags": [
       "trustworthy",
       "northeastern accent",
@@ -4522,6 +4522,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "333",
@@ -4529,7 +4530,6 @@
       "thai_name": "อิหล่า (อีสาน)"
     },
     "name": "Iliah (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_fah/sound_isan_fah.wav",
     "tags": [
       "clear",
       "northeastern accent",
@@ -4555,6 +4555,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "334",
@@ -4562,7 +4563,6 @@
       "thai_name": "อาจารย์ศร (อีสาน)"
     },
     "name": "Sorn Professor (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_gus/sound_isan_gus.wav",
     "tags": [
       "trustworthy",
       "northeastern accent",
@@ -4588,6 +4588,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "335",
@@ -4595,7 +4596,6 @@
       "thai_name": "กายไก่ (อีสาน)"
     },
     "name": "GuyKai (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_guy/sound_isan_guy.wav",
     "tags": [
       "exciting",
       "northeastern accent",
@@ -4620,6 +4620,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "336",
@@ -4627,7 +4628,6 @@
       "thai_name": "จูน (อีสาน)"
     },
     "name": "June (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_jib/sound_isan_jib.wav",
     "tags": [
       "northeastern accent",
       "mellow",
@@ -4653,6 +4653,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "337",
@@ -4660,7 +4661,6 @@
       "thai_name": "สินสร้อย (อีสาน)"
     },
     "name": "SinSroi (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_job/sound_isan_job.wav",
     "tags": [
       "sweet",
       "northeastern accent",
@@ -4685,6 +4685,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "338",
@@ -4692,7 +4693,6 @@
       "thai_name": "ปองพล (อีสาน)"
     },
     "name": "Pongpon (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_kob/sound_isan_kob.wav",
     "tags": [
       "confident",
       "northeastern accent",
@@ -4718,6 +4718,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "339",
@@ -4725,7 +4726,6 @@
       "thai_name": "อิเกิ้ง (อีสาน)"
     },
     "name": "I-Kueng (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_miww/sound_isan_miww.wav",
     "tags": [
       "confident",
       "northeastern accent",
@@ -4797,6 +4797,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "340",
@@ -4804,7 +4805,6 @@
       "thai_name": "โซอี้ (อีสาน)"
     },
     "name": "Zoe (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_nene/sound_isan_nene.wav",
     "tags": [
       "calm",
       "northeastern accent",
@@ -4830,6 +4830,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "341",
@@ -4837,7 +4838,6 @@
       "thai_name": "สำลี (อีสาน)"
     },
     "name": "Sumlee (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_net/sound_isan_net.wav",
     "tags": [
       "serious",
       "northeastern accent",
@@ -4862,6 +4862,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "342",
@@ -4869,7 +4870,6 @@
       "thai_name": "ครูจริงใจ (อีสาน)"
     },
     "name": "Jingjai Teacher (NorthEast)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_ploy/sound_isan_ploy.wav",
     "tags": [
       "calm",
       "northeastern accent",
@@ -4895,6 +4895,7 @@
       "botnoi_languages": [
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TH",
       "speaker_id": "343",
@@ -4902,7 +4903,6 @@
       "thai_name": "ต้นเซ (ขอนแก่น)"
     },
     "name": "Tonsay (Khon Kaen)",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/isan_tonsay/sound_isan_tonsay.wav",
     "tags": [
       "storytelling",
       "local"
@@ -4926,6 +4926,7 @@
       "botnoi_languages": [
         "ru"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "RU",
       "speaker_id": "345",
@@ -4933,7 +4934,6 @@
       "thai_name": "อเล็กซ์ "
     },
     "name": "Alex",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ru_ruslan_en_adam/sound_ru_ruslan_en_adam.wav",
     "tags": [
       "confident",
       "news reading"
@@ -4957,6 +4957,7 @@
       "botnoi_languages": [
         "ru"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "RU",
       "speaker_id": "346",
@@ -4964,7 +4965,6 @@
       "thai_name": "นาสตยา"
     },
     "name": "Nastya",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ru_ruslan_en_bella1/sound_ru_ruslan_en_bella1.wav",
     "tags": [
       "clear",
       "documentary"
@@ -4988,6 +4988,7 @@
       "botnoi_languages": [
         "ru"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "RU",
       "speaker_id": "347",
@@ -4995,7 +4996,6 @@
       "thai_name": "แม่ค้าซาชา"
     },
     "name": "Sasha Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ru_ruslan_en_gigi/sound_ru_ruslan_en_gigi.wav",
     "tags": [
       "clear",
       "storytelling"
@@ -5019,6 +5019,7 @@
       "botnoi_languages": [
         "ru"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "RU",
       "speaker_id": "348",
@@ -5026,7 +5027,6 @@
       "thai_name": "อาจารย์นิกิตา"
     },
     "name": "Nikita Professor",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ru_ruslan_en_michael/sound_ru_ruslan_en_michael.wav",
     "tags": [
       "serious",
       "teaching"
@@ -5050,6 +5050,7 @@
       "botnoi_languages": [
         "ko"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "KO",
       "speaker_id": "349",
@@ -5057,7 +5058,6 @@
       "thai_name": "พ่อค้ามินจุน"
     },
     "name": "Min-jun Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ko_kss2_en_alex/sound_ko_kss2_en_alex.wav",
     "tags": [
       "trustworthy",
       "storytelling"
@@ -5081,6 +5081,7 @@
       "botnoi_languages": [
         "ko"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "KO",
       "speaker_id": "350",
@@ -5088,7 +5089,6 @@
       "thai_name": "จีอา"
     },
     "name": "Ji-a",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ko_kss2_th_ngam/sound_ko_kss2_th_ngam.wav",
     "tags": [
       "sweet",
       "documentary"
@@ -5112,6 +5112,7 @@
       "botnoi_languages": [
         "ko"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "KO",
       "speaker_id": "351",
@@ -5119,7 +5120,6 @@
       "thai_name": "อาจารย์ซูอา"
     },
     "name": "Su-a Professor",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ko_kss2_th_tao/sound_ko_kss2_th_tao.wav",
     "tags": [
       "serious",
       "teaching"
@@ -5143,6 +5143,7 @@
       "botnoi_languages": [
         "pt-br"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "PT-BR",
       "speaker_id": "352",
@@ -5150,7 +5151,6 @@
       "thai_name": "มาเรีย"
     },
     "name": "Maria",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/pt-br_en_elli/sound_pt-br_en_elli.wav",
     "tags": [
       "confident",
       "storytelling"
@@ -5174,6 +5174,7 @@
       "botnoi_languages": [
         "pt-br"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "PT-BR",
       "speaker_id": "353",
@@ -5181,7 +5182,6 @@
       "thai_name": "อานา"
     },
     "name": "Ana",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/pt-br_en_matilda/sound_pt-br_en_matilda.wav",
     "tags": [
       "confident",
       "news reading"
@@ -5205,6 +5205,7 @@
       "botnoi_languages": [
         "pt-br"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "PT-BR",
       "speaker_id": "354",
@@ -5212,7 +5213,6 @@
       "thai_name": "ฮูโก้ "
     },
     "name": "Hugo Gamer",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/pt-br_en_ryan/sound_pt-br_en_ryan.wav",
     "tags": [
       "playful",
       "storytelling"
@@ -5236,6 +5236,7 @@
       "botnoi_languages": [
         "pt-br"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "PT-BR",
       "speaker_id": "355",
@@ -5243,7 +5244,6 @@
       "thai_name": "ลูคัส"
     },
     "name": "Lucas",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/pt-br_th_nadech/sound_pt-br_th_nadech.wav",
     "tags": [
       "playful",
       "storytelling"
@@ -5267,6 +5267,7 @@
       "botnoi_languages": [
         "ms"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "MS",
       "speaker_id": "356",
@@ -5274,7 +5275,6 @@
       "thai_name": "อิซาน"
     },
     "name": "Izan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ms_osman_en_alex/sound_ms_osman_en_alex.wav",
     "tags": [
       "confident",
       "storytelling"
@@ -5298,6 +5298,7 @@
       "botnoi_languages": [
         "ms"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "MS",
       "speaker_id": "357",
@@ -5305,7 +5306,6 @@
       "thai_name": "อิรา"
     },
     "name": "Ira",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ms_osman_en_freya/sound_ms_osman_en_freya.wav",
     "tags": [
       "exciting",
       "storytelling"
@@ -5329,6 +5329,7 @@
       "botnoi_languages": [
         "ms"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "MS",
       "speaker_id": "358",
@@ -5336,7 +5337,6 @@
       "thai_name": "แม่ค้าดียา"
     },
     "name": "Dhia Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ms_osman_en_gigi/sound_ms_osman_en_gigi.wav",
     "tags": [
       "playful",
       "storytelling"
@@ -5360,6 +5360,7 @@
       "botnoi_languages": [
         "ms"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "MS",
       "speaker_id": "359",
@@ -5367,7 +5368,6 @@
       "thai_name": "ฟาอิซ"
     },
     "name": "Faiz",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ms_osman_th_jay/sound_ms_osman_th_jay.wav",
     "tags": [
       "serious",
       "documentary"
@@ -5423,6 +5423,7 @@
       "botnoi_languages": [
         "hi"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "HI",
       "speaker_id": "364",
@@ -5430,7 +5431,6 @@
       "thai_name": "ราม"
     },
     "name": "Ram",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/hi_ram/sound_hi_ram.wav",
     "tags": [
       "mellow",
       "storytelling"
@@ -5485,6 +5485,7 @@
       "botnoi_languages": [
         "fil"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "366",
@@ -5492,7 +5493,6 @@
       "thai_name": "แอนเดรีย"
     },
     "name": "Andrea",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_andrea/sound_fil_andrea.wav",
     "tags": [
       "mellow",
       "narrating"
@@ -5516,6 +5516,7 @@
       "botnoi_languages": [
         "fil"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "367",
@@ -5523,7 +5524,6 @@
       "thai_name": "อาจารย์อีซา"
     },
     "name": "Isa Professor",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_isa/sound_fil_isa.wav",
     "tags": [
       "trustworthy",
       "teaching"
@@ -5547,6 +5547,7 @@
       "botnoi_languages": [
         "fil"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "368",
@@ -5554,7 +5555,6 @@
       "thai_name": "แม่ค้าคริสติน"
     },
     "name": "Kristine Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_kristine/sound_fil_kristine.wav",
     "tags": [
       "playful",
       "storytelling"
@@ -5578,6 +5578,7 @@
       "botnoi_languages": [
         "fil"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "369",
@@ -5585,7 +5586,6 @@
       "thai_name": "คริสติน่า"
     },
     "name": "Christina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_christina/sound_fil_christina.wav",
     "tags": [
       "clear",
       "news reading"
@@ -5655,6 +5655,7 @@
       "botnoi_languages": [
         "fil"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "370",
@@ -5662,7 +5663,6 @@
       "thai_name": "มาเรีย"
     },
     "name": "Maria",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_maria/sound_fil_maria.wav",
     "tags": [
       "cute",
       "storytelling"
@@ -5686,6 +5686,7 @@
       "botnoi_languages": [
         "fil"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "371",
@@ -5693,7 +5694,6 @@
       "thai_name": "อายานี"
     },
     "name": "Ayani",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_ayani/sound_fil_ayani.wav",
     "tags": [
       "confident",
       "storytelling"
@@ -5717,6 +5717,7 @@
       "botnoi_languages": [
         "fil"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "FIL",
       "speaker_id": "372",
@@ -5724,7 +5725,6 @@
       "thai_name": "โซเฟีย"
     },
     "name": "Sofia",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_sofia/sound_fil_sofia.wav",
     "tags": [
       "trustworthy",
       "documentary"
@@ -5748,6 +5748,7 @@
       "botnoi_languages": [
         "it"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "IT",
       "speaker_id": "373",
@@ -5755,7 +5756,6 @@
       "thai_name": "คริสเทียน่า"
     },
     "name": "Cristiana",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/cristiana/sound_cristiana.wav",
     "tags": [
       "clear",
       "news reading"
@@ -5779,6 +5779,7 @@
       "botnoi_languages": [
         "it"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "IT",
       "speaker_id": "374",
@@ -5786,7 +5787,6 @@
       "thai_name": "ลีโอเน่"
     },
     "name": "Leone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/leone/sound_leone.wav",
     "tags": [
       "trustworthy",
       "documentary"
@@ -5810,6 +5810,7 @@
       "botnoi_languages": [
         "it"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "IT",
       "speaker_id": "375",
@@ -5817,7 +5818,6 @@
       "thai_name": "อัลเฟโอ"
     },
     "name": "Alfeo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/alfeo/sound_alfeo.wav",
     "tags": [
       "serious",
       "anime"
@@ -5841,6 +5841,7 @@
       "botnoi_languages": [
         "it"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "IT",
       "speaker_id": "376",
@@ -5848,7 +5849,6 @@
       "thai_name": "อาจารย์โรซาลี"
     },
     "name": "Rosalia Professor",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/rosalia/sound_rosalia.wav",
     "tags": [
       "clear",
       "teaching"
@@ -5872,6 +5872,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "377",
@@ -5879,7 +5880,6 @@
       "thai_name": "ลอเรน"
     },
     "name": "Lauren",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_lauren/sound_en_lauren.wav",
     "tags": [
       "clear",
       "news reading"
@@ -5903,6 +5903,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "378",
@@ -5910,7 +5911,6 @@
       "thai_name": "เบลซ"
     },
     "name": "Blaze",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_blaze/sound_en_blaze.wav",
     "tags": [
       "confident",
       "anime"
@@ -5934,6 +5934,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "379",
@@ -5941,7 +5942,6 @@
       "thai_name": "ครูเคลวิน"
     },
     "name": "Kelvin Teacher",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_kelvin/sound_en_kelvin.wav",
     "tags": [
       "serious",
       "teaching"
@@ -5979,6 +5979,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "38",
@@ -5986,7 +5987,6 @@
       "thai_name": "เท็ดดี้"
     },
     "name": "Teddy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/teddy/sound_teddy.wav",
     "tags": [
       "gentle",
       "storytelling",
@@ -6011,6 +6011,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "380",
@@ -6018,7 +6019,6 @@
       "thai_name": "แคสซิดี้"
     },
     "name": "Kassidy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_kassidy/sound_en_kassidy.wav",
     "tags": [
       "confident",
       "storytelling"
@@ -6042,6 +6042,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "381",
@@ -6049,7 +6050,6 @@
       "thai_name": "เนีย"
     },
     "name": "Nia",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_nia/sound_en_nia.wav",
     "tags": [
       "gentle and tender",
       "storytelling"
@@ -6073,6 +6073,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "382",
@@ -6080,7 +6081,6 @@
       "thai_name": "คาเมรอน"
     },
     "name": "Camron",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_camron/sound_en_camron.wav",
     "tags": [
       "trustworthy",
       "documentary"
@@ -6104,6 +6104,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "383",
@@ -6111,7 +6112,6 @@
       "thai_name": "สไปค์"
     },
     "name": "Spike",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_spike/sound_en_spike.wav",
     "tags": [
       "exciting",
       "documentary",
@@ -6136,6 +6136,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "384",
@@ -6143,7 +6144,6 @@
       "thai_name": "อลัน"
     },
     "name": "Allan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_allan/sound_en_allan.wav",
     "tags": [
       "soothing",
       "storytelling"
@@ -6167,6 +6167,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "385",
@@ -6174,7 +6175,6 @@
       "thai_name": "แม่ค้าเดนนี่"
     },
     "name": "Danni Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_danni/sound_en_danni.wav",
     "tags": [
       "clear",
       "storytelling"
@@ -6198,6 +6198,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "386",
@@ -6205,7 +6206,6 @@
       "thai_name": "แดนนี่ "
     },
     "name": "Danny Gamer",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_danny/sound_en_danny.wav",
     "tags": [
       "exciting",
       "news reading"
@@ -6229,6 +6229,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "387",
@@ -6236,7 +6237,6 @@
       "thai_name": "คลาร์ก"
     },
     "name": "Clark",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_clark/sound_en_clark.wav",
     "tags": [
       "trustworthy",
       "news reading"
@@ -6260,6 +6260,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "388",
@@ -6267,7 +6268,6 @@
       "thai_name": "โฟลซี่"
     },
     "name": "Flossie",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_flossie/sound_en_flossie.wav",
     "tags": [
       "exciting",
       "anime"
@@ -6291,6 +6291,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "389",
@@ -6298,7 +6299,6 @@
       "thai_name": "อาจารย์วาดี้"
     },
     "name": "Wade Professor",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_wade/sound_en_wade.wav",
     "tags": [
       "soothing",
       "teaching"
@@ -6336,6 +6336,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "39",
@@ -6343,7 +6344,6 @@
       "thai_name": "ตี๋"
     },
     "name": "tee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tee/sound_tee.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -6368,6 +6368,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "390",
@@ -6375,7 +6376,6 @@
       "thai_name": "อาจารย์ไดน่า"
     },
     "name": "Dina Professor",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_dina/sound_en_dina.wav",
     "tags": [
       "clear",
       "teaching"
@@ -6399,6 +6399,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "391",
@@ -6406,7 +6407,6 @@
       "thai_name": "บอนนี่"
     },
     "name": "Bonnie",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_bonnie/sound_en_bonnie.wav",
     "tags": [
       "cute",
       "storytelling"
@@ -6430,6 +6430,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "392",
@@ -6437,7 +6438,6 @@
       "thai_name": "จอแดน"
     },
     "name": "Jordan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_jordan/sound_en_jordan.wav",
     "tags": [
       "clear",
       "storytelling"
@@ -6461,6 +6461,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "393",
@@ -6468,7 +6469,6 @@
       "thai_name": "อเลเซีย"
     },
     "name": "Alesia",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_alesia/sound_en_alesia.wav",
     "tags": [
       "confident",
       "news reading"
@@ -6492,6 +6492,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "394",
@@ -6499,7 +6500,6 @@
       "thai_name": "ลาร์รี่"
     },
     "name": "Larry",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_larry/sound_en_larry.wav",
     "tags": [
       "soothing",
       "storytelling"
@@ -6523,6 +6523,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "395",
@@ -6530,7 +6531,6 @@
       "thai_name": "เจน"
     },
     "name": "Jen",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_jen/sound_en_jen.wav",
     "tags": [
       "playful",
       "anime"
@@ -6554,6 +6554,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "396",
@@ -6561,7 +6562,6 @@
       "thai_name": "เชลลีย์"
     },
     "name": "Shelley",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_ellie/sound_en_ellie.wav",
     "tags": [
       "trustworthy",
       "documentary"
@@ -6585,6 +6585,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "397",
@@ -6592,7 +6593,6 @@
       "thai_name": "เฮนดริก"
     },
     "name": "Hendrix",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_hendrix/sound_en_hendrix.wav",
     "tags": [
       "mellow",
       "narrating"
@@ -6616,6 +6616,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "398",
@@ -6623,7 +6624,6 @@
       "thai_name": "แม่ค้าแมรี่"
     },
     "name": "Mary Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_mary/sound_en_mary.wav",
     "tags": [
       "exciting",
       "storytelling"
@@ -6647,6 +6647,7 @@
       "botnoi_languages": [
         "en"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "EN",
       "speaker_id": "399",
@@ -6654,7 +6655,6 @@
       "thai_name": "เซรีน่า"
     },
     "name": "Serina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/en_serina/sound_en_serina.wav",
     "tags": [
       "playful",
       "anime"
@@ -6692,6 +6692,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "4",
@@ -6699,7 +6700,6 @@
       "thai_name": "แม็กซ์"
     },
     "name": "Max",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/max/sound_max.wav",
     "tags": [
       "trustworthy",
       "storytelling",
@@ -6768,6 +6768,7 @@
       "botnoi_languages": [
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ZH",
       "speaker_id": "400",
@@ -6775,7 +6776,6 @@
       "thai_name": "เวน"
     },
     "name": "Wen",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_wen/sound_zh_wen.wav",
     "tags": [
       "mellow",
       "documentary"
@@ -6799,6 +6799,7 @@
       "botnoi_languages": [
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ZH",
       "speaker_id": "401",
@@ -6806,7 +6807,6 @@
       "thai_name": "ครูเต๋า"
     },
     "name": "Tao Teacher",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_tao/sound_zh_tao.wav",
     "tags": [
       "serious",
       "teaching"
@@ -6830,6 +6830,7 @@
       "botnoi_languages": [
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ZH",
       "speaker_id": "402",
@@ -6837,7 +6838,6 @@
       "thai_name": "หลิง"
     },
     "name": "Ling",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_ling/sound_zh_ling.wav",
     "tags": [
       "cute",
       "storytelling"
@@ -6861,6 +6861,7 @@
       "botnoi_languages": [
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ZH",
       "speaker_id": "403",
@@ -6868,7 +6869,6 @@
       "thai_name": "ไคล์"
     },
     "name": "Kai",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_kai/sound_zh_kai.wav",
     "tags": [
       "clear",
       "news reading",
@@ -6893,6 +6893,7 @@
       "botnoi_languages": [
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ZH",
       "speaker_id": "404",
@@ -6900,7 +6901,6 @@
       "thai_name": "ครูเจีย"
     },
     "name": "Jia Teacher",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_jia/sound_zh_jia.wav",
     "tags": [
       "cute",
       "teaching"
@@ -7017,6 +7017,7 @@
       "botnoi_languages": [
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ZH",
       "speaker_id": "408",
@@ -7024,7 +7025,6 @@
       "thai_name": "ซู"
     },
     "name": "Shu",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_shu/sound_zh_shu.wav",
     "tags": [
       "serious",
       "news reading"
@@ -7048,6 +7048,7 @@
       "botnoi_languages": [
         "ja"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "JA",
       "speaker_id": "409",
@@ -7055,7 +7056,6 @@
       "thai_name": "ยูตะ"
     },
     "name": "Yuuta",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_yuuta/sound_ja_yuuta.wav",
     "tags": [
       "exciting",
       "news reading",
@@ -7124,6 +7124,7 @@
       "botnoi_languages": [
         "ja"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "JA",
       "speaker_id": "410",
@@ -7131,7 +7132,6 @@
       "thai_name": "สึซุเมะ"
     },
     "name": "Suzume",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_suzume/sound_ja_suzume.wav",
     "tags": [
       "clear",
       "documentary"
@@ -7155,6 +7155,7 @@
       "botnoi_languages": [
         "ja"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "JA",
       "speaker_id": "411",
@@ -7162,7 +7163,6 @@
       "thai_name": "มาซารุ"
     },
     "name": "Masaru",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_masaru/sound_ja_masaru.wav",
     "tags": [
       "confident",
       "news reading"
@@ -7186,6 +7186,7 @@
       "botnoi_languages": [
         "ja"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "JA",
       "speaker_id": "412",
@@ -7193,7 +7194,6 @@
       "thai_name": " ไคโตะ"
     },
     "name": "Kaito",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_kaito/sound_ja_kaito.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -7220,6 +7220,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "413",
@@ -7227,7 +7228,6 @@
       "thai_name": "อนัน"
     },
     "name": "Anan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_anan/sound_lo_anan.wav",
     "tags": [
       "confident",
       "local"
@@ -7253,6 +7253,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "414",
@@ -7260,7 +7261,6 @@
       "thai_name": "แอนนี่"
     },
     "name": "Anny",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_anny/sound_lo_anny.wav",
     "tags": [
       "mellow",
       "storytelling",
@@ -7287,6 +7287,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "415",
@@ -7294,7 +7295,6 @@
       "thai_name": "ออน"
     },
     "name": "Aon",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_aon/sound_lo_aon.wav",
     "tags": [
       "mellow",
       "storytelling",
@@ -7322,6 +7322,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "416",
@@ -7329,7 +7330,6 @@
       "thai_name": "ออย"
     },
     "name": "Aoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_aoy/sound_lo_aoy.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -7357,6 +7357,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "417",
@@ -7364,7 +7365,6 @@
       "thai_name": "อาทิตย์"
     },
     "name": "Athit",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_athit/sound_lo_athit.wav",
     "tags": [
       "trustworthy",
       "news reading",
@@ -7391,6 +7391,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "418",
@@ -7398,7 +7399,6 @@
       "thai_name": "อาจารย์โบ"
     },
     "name": "Teacher Bo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_bo/sound_lo_bo.wav",
     "tags": [
       "trustworthy",
       "narrating",
@@ -7425,6 +7425,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "419",
@@ -7432,7 +7433,6 @@
       "thai_name": "บัวบาน"
     },
     "name": "Bouaban",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_bouaban/sound_lo_bouaban.wav",
     "tags": [
       "mellow",
       "news reading",
@@ -7471,6 +7471,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "42",
@@ -7478,7 +7479,6 @@
       "thai_name": "เหมียว"
     },
     "name": "meow",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/meow/sound_meow.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -7505,6 +7505,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "420",
@@ -7512,7 +7513,6 @@
       "thai_name": "จินดา"
     },
     "name": "Chinda",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_chinda/sound_lo_chinda.wav",
     "tags": [
       "clear",
       "news reading",
@@ -7539,6 +7539,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "421",
@@ -7546,7 +7547,6 @@
       "thai_name": "แดมมี่"
     },
     "name": "Damdy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_damdy/sound_lo_damdy.wav",
     "tags": [
       "cute",
       "news reading",
@@ -7573,6 +7573,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "422",
@@ -7580,7 +7581,6 @@
       "thai_name": "ดอกไม้"
     },
     "name": "Dokmai",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_dokmai/sound_lo_dokmai.wav",
     "tags": [
       "cute",
       "storytelling",
@@ -7607,6 +7607,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "423",
@@ -7614,7 +7615,6 @@
       "thai_name": "กัมพา"
     },
     "name": "Gampha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_gampha/sound_lo_gampha.wav",
     "tags": [
       "clear",
       "news reading",
@@ -7641,6 +7641,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "424",
@@ -7648,7 +7649,6 @@
       "thai_name": "แฮปปี้ไนท์"
     },
     "name": "Happynight",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_happynight/sound_lo_happynight.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -7675,6 +7675,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "425",
@@ -7682,7 +7683,6 @@
       "thai_name": "หอม"
     },
     "name": "Hom",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_hom/sound_lo_hom.wav",
     "tags": [
       "calm",
       "storytelling",
@@ -7709,6 +7709,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "426",
@@ -7716,7 +7717,6 @@
       "thai_name": "อินแปง"
     },
     "name": "Inpaeng",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_inpaeng/sound_lo_inpaeng.wav",
     "tags": [
       "calm",
       "storytelling",
@@ -7743,6 +7743,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "427",
@@ -7750,7 +7751,6 @@
       "thai_name": "จู"
     },
     "name": "Ju",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_ju/sound_lo_ju.wav",
     "tags": [
       "cute",
       "storytelling",
@@ -7777,6 +7777,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "428",
@@ -7784,7 +7785,6 @@
       "thai_name": "ไกสอน"
     },
     "name": "Kaysone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_kaysone/sound_lo_kaysone.wav",
     "tags": [
       "confident",
       "clear",
@@ -7811,6 +7811,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "429",
@@ -7818,7 +7819,6 @@
       "thai_name": "คำอ่อน"
     },
     "name": "Khamhou",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_khamhou/sound_lo_khamhou.wav",
     "tags": [
       "clear",
       "news reading",
@@ -7845,6 +7845,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "430",
@@ -7852,7 +7853,6 @@
       "thai_name": "คำเค"
     },
     "name": "Khamkeo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_khamkeo/sound_lo_khamkeo.wav",
     "tags": [
       "cute",
       "anime",
@@ -7879,6 +7879,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "431",
@@ -7886,7 +7887,6 @@
       "thai_name": "คำร่า "
     },
     "name": "Khamlar Gamer",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_khamlar/sound_lo_khamlar.wav",
     "tags": [
       "exciting",
       "documentary"
@@ -7912,6 +7912,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "432",
@@ -7919,7 +7920,6 @@
       "thai_name": "คิโนย"
     },
     "name": "Kinoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_kinoy/sound_lo_kinoy.wav",
     "tags": [
       "exciting",
       "soothing"
@@ -7945,6 +7945,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "433",
@@ -7952,7 +7953,6 @@
       "thai_name": "ก้อง"
     },
     "name": "Koung",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_koung/sound_lo_koung.wav",
     "tags": [
       "cute",
       "storytelling",
@@ -7979,6 +7979,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "434",
@@ -7986,7 +7987,6 @@
       "thai_name": "ลาร์ซอย"
     },
     "name": "Larsoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_larsoy/sound_lo_larsoy.wav",
     "tags": [
       "cute",
       "confident",
@@ -8013,6 +8013,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "435",
@@ -8020,7 +8021,6 @@
       "thai_name": "มณี"
     },
     "name": "Manee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_manee/sound_lo_manee.wav",
     "tags": [
       "calm",
       "narrating",
@@ -8047,6 +8047,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "436",
@@ -8054,7 +8055,6 @@
       "thai_name": "ครูเหมา"
     },
     "name": "Teacher Mao",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_mao/sound_lo_mao.wav",
     "tags": [
       "clear",
       "teaching",
@@ -8081,6 +8081,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "437",
@@ -8088,7 +8089,6 @@
       "thai_name": "มัณฑนา"
     },
     "name": "Matthana",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_matthana/sound_lo_matthana.wav",
     "tags": [
       "cute",
       "sweet",
@@ -8115,6 +8115,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "438",
@@ -8122,7 +8123,6 @@
       "thai_name": "แม่ค้าเมย์"
     },
     "name": "May Seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_may/sound_lo_may.wav",
     "tags": [
       "clear",
       "local"
@@ -8148,6 +8148,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "439",
@@ -8155,7 +8156,6 @@
       "thai_name": "อาจารย์มิน"
     },
     "name": "Teacher Min",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_min/sound_lo_min.wav",
     "tags": [
       "trustworthy",
       "teaching",
@@ -8182,6 +8182,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "440",
@@ -8189,7 +8190,6 @@
       "thai_name": "นารี"
     },
     "name": "Nalee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nalee/sound_lo_nalee.wav",
     "tags": [
       "sweet",
       "documentary",
@@ -8216,6 +8216,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "441",
@@ -8223,7 +8224,6 @@
       "thai_name": "นาลิกา"
     },
     "name": "Nalika",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nalika/sound_lo_nalika.wav",
     "tags": [
       "calm",
       "narrating",
@@ -8250,6 +8250,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "442",
@@ -8257,7 +8258,6 @@
       "thai_name": "ครูน้ำหวาน"
     },
     "name": "Teacher Namwan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_namwan/sound_lo_namwan.wav",
     "tags": [
       "cute",
       "sweet",
@@ -8284,6 +8284,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "443",
@@ -8291,7 +8292,6 @@
       "thai_name": "น้อง"
     },
     "name": "Nong",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nong/sound_lo_nong.wav",
     "tags": [
       "sweet",
       "calm",
@@ -8318,6 +8318,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "444",
@@ -8325,7 +8326,6 @@
       "thai_name": "นุ่น"
     },
     "name": "Nun",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nun/sound_lo_nun.wav",
     "tags": [
       "cute",
       "confident",
@@ -8352,6 +8352,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "445",
@@ -8359,7 +8360,6 @@
       "thai_name": "อาจารย์นัท"
     },
     "name": "Teacher Nut",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nut/sound_lo_nut.wav",
     "tags": [
       "trustworthy",
       "teaching",
@@ -8386,6 +8386,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "446",
@@ -8393,7 +8394,6 @@
       "thai_name": "ภนา "
     },
     "name": "Phana Gamer",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_phana/sound_lo_phana.wav",
     "tags": [
       "exciting",
       "anime"
@@ -8419,6 +8419,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "447",
@@ -8426,7 +8427,6 @@
       "thai_name": "อาจารย์พิม"
     },
     "name": "Teacher Phim",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_phim/sound_lo_phim.wav",
     "tags": [
       "confident",
       "news reading",
@@ -8453,6 +8453,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "448",
@@ -8460,7 +8461,6 @@
       "thai_name": "โฟน"
     },
     "name": "Phone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_phone/sound_lo_phone.wav",
     "tags": [
       "cute",
       "calm",
@@ -8487,6 +8487,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "449",
@@ -8494,7 +8495,6 @@
       "thai_name": "ปิว "
     },
     "name": "Piw Gamer",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_piw/sound_lo_piw.wav",
     "tags": [
       "exciting",
       "anime"
@@ -8532,6 +8532,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "45",
@@ -8539,7 +8540,6 @@
       "thai_name": "ทัช"
     },
     "name": "Touch",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/touch/sound_touch.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -8566,6 +8566,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "450",
@@ -8573,7 +8574,6 @@
       "thai_name": "พงศ์"
     },
     "name": "Pong",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_pong/sound_lo_pong.wav",
     "tags": [
       "confident",
       "clear",
@@ -8600,6 +8600,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "451",
@@ -8607,7 +8608,6 @@
       "thai_name": "สาคอน"
     },
     "name": "Sakone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_sakone/sound_lo_sakone.wav",
     "tags": [
       "calm",
       "local"
@@ -8633,6 +8633,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "452",
@@ -8640,7 +8641,6 @@
       "thai_name": "เศรษฐา"
     },
     "name": "Setha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_setha/sound_lo_setha.wav",
     "tags": [
       "mellow",
       "narrating",
@@ -8667,6 +8667,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "453",
@@ -8674,7 +8675,6 @@
       "thai_name": "สินชัย"
     },
     "name": "Sinxay",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_sinxay/sound_lo_sinxay.wav",
     "tags": [
       "clear",
       "narrating"
@@ -8700,6 +8700,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "454",
@@ -8707,7 +8708,6 @@
       "thai_name": "ส้มโอ"
     },
     "name": "Som-o",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_som-o/sound_lo_som-o.wav",
     "tags": [
       "cute",
       "sweet",
@@ -8734,6 +8734,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "455",
@@ -8741,7 +8742,6 @@
       "thai_name": "สมปอง"
     },
     "name": "Sompong",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_sompong/sound_lo_sompong.wav",
     "tags": [
       "cute",
       "anime",
@@ -8768,6 +8768,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "456",
@@ -8775,7 +8776,6 @@
       "thai_name": "แม่ค้าสมศรี"
     },
     "name": "Somsy seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_somsy/sound_lo_somsy.wav",
     "tags": [
       "confident",
       "clear"
@@ -8801,6 +8801,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "457",
@@ -8808,7 +8809,6 @@
       "thai_name": "อาจารย์ธิดา"
     },
     "name": "Teacher Thida",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_thida/sound_lo_thida.wav",
     "tags": [
       "calm",
       "documentary",
@@ -8835,6 +8835,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "LO",
       "speaker_id": "458",
@@ -8842,7 +8843,6 @@
       "thai_name": "ทิว"
     },
     "name": "Thiw",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_thiw/sound_lo_thiw.wav",
     "tags": [
       "calm",
       "local"
@@ -8868,6 +8868,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "459",
@@ -8875,7 +8876,6 @@
       "thai_name": "ตุ๊กตา"
     },
     "name": "Toukta",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_toukta/sound_lo_toukta.wav",
     "tags": [
       "calm",
       "narrating",
@@ -8914,6 +8914,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "46",
@@ -8921,7 +8922,6 @@
       "thai_name": "เบน"
     },
     "name": "Ben",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ben/sound_ben.wav",
     "tags": [
       "soothing",
       "news reading"
@@ -8947,6 +8947,7 @@
         "en",
         "lo"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "LO",
       "speaker_id": "460",
@@ -8954,7 +8955,6 @@
       "thai_name": " โย"
     },
     "name": "Yoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_yoy/sound_lo_yoy.wav",
     "tags": [
       "calm",
       "soothing",
@@ -9684,6 +9684,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1,
       "primary_language": "TH",
       "speaker_id": "48",
@@ -9691,7 +9692,6 @@
       "thai_name": "ท็อป"
     },
     "name": "Top",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/top/sound_top.wav",
     "tags": [
       "deep",
       "storytelling",
@@ -11900,6 +11900,7 @@
       "botnoi_languages": [
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "ZH",
       "speaker_id": "62",
@@ -11907,7 +11908,6 @@
       "thai_name": "ชิง"
     },
     "name": "Qing",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/qing/sound_qing.wav",
     "tags": [
       "calm",
       "storytelling",
@@ -12254,6 +12254,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "7",
@@ -12261,7 +12262,6 @@
       "thai_name": "อลิสา"
     },
     "name": "Alisa",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/alisa/sound_alisa.wav",
     "tags": [
       "cute",
       "storytelling",
@@ -12822,6 +12822,7 @@
         "vi",
         "zh"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "MY",
       "speaker_id": "83",
@@ -12829,7 +12830,6 @@
       "thai_name": "กาว่า"
     },
     "name": "Gawa",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/gawa/sound_gawa.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -13396,7 +13396,7 @@
       "thai_name": "นาเดียร์ V2"
     },
     "name": "Nadia V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/nadia v2/sound_helen_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/nadia%20v2/sound_helen_v2.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -13430,7 +13430,7 @@
       "thai_name": "เนโอ V2"
     },
     "name": "Neo V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/neo v2/sound_naototok_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/neo%20v2/sound_naototok_v2.wav",
     "tags": [
       "gentle",
       "storytelling",
@@ -13770,7 +13770,7 @@
       "thai_name": "โบ V2"
     },
     "name": "Bow V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/bow v2/sound_meena_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/bow%20v2/sound_meena_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -14270,7 +14270,7 @@
       "thai_name": "หญิงไอโกะ V2"
     },
     "name": "YingAiko V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/yingaiko v2/sound_ying_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/yingaiko%20v2/sound_ying_v2.wav",
     "tags": [
       "sweet",
       "storytelling",
@@ -14304,7 +14304,7 @@
       "thai_name": "น้าเกรซ V2"
     },
     "name": "Aunty Grace V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/aunty grace v2/sound_ple_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/aunty%20grace%20v2/sound_ple_v2.wav",
     "tags": [
       "warm",
       "storytelling",
@@ -14610,7 +14610,7 @@
       "thai_name": "นิค V2"
     },
     "name": "Nick V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/nick v2/sound_nid_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/nick%20v2/sound_nid_v2.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -14673,7 +14673,7 @@
       "thai_name": "ไซเรน V2"
     },
     "name": "Siren V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/siren v2/sound_pla_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/siren%20v2/sound_pla_v2.wav",
     "tags": [
       "exciting",
       "storytelling",
@@ -14736,7 +14736,7 @@
       "thai_name": "อลิสา V2"
     },
     "name": "Alisa V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/alisa v2/sound_ati_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/alisa%20v2/sound_ati_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -14765,7 +14765,7 @@
       "thai_name": "แบมบู V2"
     },
     "name": "Bamboo V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/bamboo v2/sound_boo_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/bamboo%20v2/sound_boo_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -14794,7 +14794,7 @@
       "thai_name": "โอโตะ V2"
     },
     "name": "Oto V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/oto v2/sound_bung_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/oto%20v2/sound_bung_v2.wav",
     "tags": [
       "sweet",
       "storytelling",
@@ -14828,7 +14828,7 @@
       "thai_name": "ครูดีดี๊ V2"
     },
     "name": "Kru D Dee V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/kru d dee v2/sound_care_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/kru%20d%20dee%20v2/sound_care_v2.wav",
     "tags": [
       "trustworthy",
       "storytelling",
@@ -14862,7 +14862,7 @@
       "thai_name": "ฮิโระ V2"
     },
     "name": "Hiro V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/hiro v2/sound_fern_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/hiro%20v2/sound_fern_v2.wav",
     "tags": [
       "cute",
       "storytelling",
@@ -14896,7 +14896,7 @@
       "thai_name": "เบน V2"
     },
     "name": "Ben V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ben v2/sound_flower_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ben%20v2/sound_flower_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -14925,7 +14925,7 @@
       "thai_name": "สาลี V2"
     },
     "name": "Sali V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sali v2/sound_gift_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sali%20v2/sound_gift_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -14954,7 +14954,7 @@
       "thai_name": "นายเบรด V2"
     },
     "name": "Mr.Bread V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/mr.bread v2/sound_johny_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/mr.bread%20v2/sound_johny_v2.wav",
     "tags": [
       "playful",
       "storytelling",
@@ -14988,7 +14988,7 @@
       "thai_name": "วนิลา V2"
     },
     "name": "Vanilla V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/vanilla v2/sound_kook_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/vanilla%20v2/sound_kook_v2.wav",
     "tags": [
       "cute",
       "documentary",
@@ -15022,7 +15022,7 @@
       "thai_name": "ไอลีน V2"
     },
     "name": "Ileen V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ileen v2/sound_leen_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ileen%20v2/sound_leen_v2.wav",
     "tags": [
       "cute",
       "narrating",
@@ -15056,7 +15056,7 @@
       "thai_name": "เหมียว V2"
     },
     "name": "meow V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/meow v2/sound_milk_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/meow%20v2/sound_milk_v2.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -15090,7 +15090,7 @@
       "thai_name": "เจ้าเนิร์ด V2"
     },
     "name": "Jao Nerd V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/jao nerd v2/sound_ming_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/jao%20nerd%20v2/sound_ming_v2.wav",
     "tags": [
       "serious",
       "storytelling",
@@ -15124,7 +15124,7 @@
       "thai_name": "เนโอ V2"
     },
     "name": "Neo V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/neo v2/sound_naototok_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/neo%20v2/sound_naototok_v2.wav",
     "tags": [
       "gentle",
       "storytelling",
@@ -15158,7 +15158,7 @@
       "thai_name": "เท็ดดี้ V2"
     },
     "name": "Teddy V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/teddy v2/sound_natthapong_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/teddy%20v2/sound_natthapong_v2.wav",
     "tags": [
       "gentle",
       "storytelling",
@@ -15192,7 +15192,7 @@
       "thai_name": "คุณงาม V2"
     },
     "name": "Ngam V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ngam v2/sound_ngam_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ngam%20v2/sound_ngam_v2.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -15226,7 +15226,7 @@
       "thai_name": "ท็อป V2"
     },
     "name": "Top V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/top v2/sound_perce_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/top%20v2/sound_perce_v2.wav",
     "tags": [
       "soothing",
       "storytelling",
@@ -15260,7 +15260,7 @@
       "thai_name": "มานี V2"
     },
     "name": "Mani V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/mani v2/sound_ploy_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/mani%20v2/sound_ploy_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -15289,7 +15289,7 @@
       "thai_name": "อนันดา V2"
     },
     "name": "Ananda V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ananda v2/sound_radar_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ananda%20v2/sound_radar_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -15318,7 +15318,7 @@
       "thai_name": "น้องโนว์ V2"
     },
     "name": "Know V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/know v2/sound_ro_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/know%20v2/sound_ro_v2.wav",
     "tags": [
       "gentle",
       "storytelling",
@@ -15352,7 +15352,7 @@
       "thai_name": "ฟอมมี่ V2"
     },
     "name": "Fommy V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fommy v2/sound_rungthida_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fommy%20v2/sound_rungthida_v2.wav",
     "tags": [
       "confident",
       "documentary",
@@ -15386,7 +15386,7 @@
       "thai_name": "คำแก้ว (อีสาน) V2"
     },
     "name": "Kaew (Northeast) V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/kaew (northeast) v2/sound_somsamai_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/kaew%20(northeast)%20v2/sound_somsamai_v2.wav",
     "tags": [
       "northeastern accent",
       "storytelling",
@@ -15420,7 +15420,7 @@
       "thai_name": "อาวอร์ม V2"
     },
     "name": "Uncle Warm V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/uncle warm v2/sound_tanong_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/uncle%20warm%20v2/sound_tanong_v2.wav",
     "tags": [
       "warm",
       "storytelling",
@@ -15454,7 +15454,7 @@
       "thai_name": "ตี๋ V2"
     },
     "name": "tee V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tee v2/sound_terapat_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tee%20v2/sound_terapat_v2.wav",
     "tags": [
       "confident",
       "storytelling",
@@ -15488,7 +15488,7 @@
       "thai_name": "โตโต้ V2"
     },
     "name": "Toto V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/toto v2/sound_to_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/toto%20v2/sound_to_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -15578,7 +15578,7 @@
       "thai_name": "ลาร่า รีด V2"
     },
     "name": "Lara Reed V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lara reed v2/sound_en_michi_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lara%20reed%20v2/sound_en_michi_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -15607,7 +15607,7 @@
       "thai_name": "แอนดี้ V2"
     },
     "name": "Andy V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/andy v2/sound_en_amith_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/andy%20v2/sound_en_amith_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -15636,7 +15636,7 @@
       "thai_name": "เลโอ V2"
     },
     "name": "Leo V2",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/leo v2/sound_max_v2.wav",
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/leo%20v2/sound_max_v2.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -15760,11 +15760,11 @@
     "id": "v4-1062",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "qing",
       "speaker_id": "1062"
     },
     "name": "Qing",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/qing/sound_qing.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16060,11 +16060,11 @@
     "id": "v4-1083",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "gawa",
       "speaker_id": "1083"
     },
     "name": "Gawa",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/gawa/sound_gawa.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16313,11 +16313,11 @@
     "id": "v4-1163",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ari",
       "speaker_id": "1163"
     },
     "name": "Ari",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ari/sound_ari.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16360,11 +16360,11 @@
     "id": "v4-1214",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "dewi",
       "speaker_id": "1214"
     },
     "name": "Dewi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_annevalerina/sound_id_annevalerina.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16406,11 +16406,11 @@
     "id": "v4-1217",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "andi",
       "speaker_id": "1217"
     },
     "name": "Andi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_wangga/sound_id_wangga.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16482,11 +16482,11 @@
     "id": "v4-1223",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "nina",
       "speaker_id": "1223"
     },
     "name": "Nina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_haniffa/sound_id_haniffa.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16498,11 +16498,11 @@
     "id": "v4-1224",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "maya",
       "speaker_id": "1224"
     },
     "name": "Maya",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_rifana/sound_id_rifana.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16514,11 +16514,11 @@
     "id": "v4-1225",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "annisa",
       "speaker_id": "1225"
     },
     "name": "Annisa",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nadia/sound_id_nadia.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16530,11 +16530,11 @@
     "id": "v4-1257",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "sara",
       "speaker_id": "1257"
     },
     "name": "Sara",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sg_imda_nsc_007_en_sara/sound_sg_imda_nsc_007_en_sara.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16546,11 +16546,11 @@
     "id": "v4-1258",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ashley",
       "speaker_id": "1258"
     },
     "name": "Ashley",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sg_imda_nsc_009_en_ashley/sound_sg_imda_nsc_009_en_ashley.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16683,11 +16683,11 @@
     "id": "v4-1273",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "pedri",
       "speaker_id": "1273"
     },
     "name": "Pedri",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/es_karen_savage_en_jacob/sound_es_karen_savage_en_jacob.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16744,11 +16744,11 @@
     "id": "v4-1279",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "silvia",
       "speaker_id": "1279"
     },
     "name": "Silvia",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/de_clyde_en_bella1/sound_de_clyde_en_bella1.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16775,11 +16775,11 @@
     "id": "v4-1281",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "thomas",
       "speaker_id": "1281"
     },
     "name": "Thomas",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/de_harry_en_guy/sound_de_harry_en_guy.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16791,11 +16791,11 @@
     "id": "v4-1282",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "stephan",
       "speaker_id": "1282"
     },
     "name": "Stephan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/de_mimi_en_alex/sound_de_mimi_en_alex.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16807,11 +16807,11 @@
     "id": "v4-1288",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "johan",
       "speaker_id": "1288"
     },
     "name": "Johan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/nl_mijlen_en_arnold/sound_nl_mijlen_en_arnold.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16839,11 +16839,11 @@
     "id": "v4-1345",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "alex",
       "speaker_id": "1345"
     },
     "name": "Alex",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ru_ruslan_en_adam/sound_ru_ruslan_en_adam.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16855,11 +16855,11 @@
     "id": "v4-1346",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "nastya",
       "speaker_id": "1346"
     },
     "name": "Nastya",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ru_ruslan_en_bella1/sound_ru_ruslan_en_bella1.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16916,11 +16916,11 @@
     "id": "v4-1350",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ji-a",
       "speaker_id": "1350"
     },
     "name": "Ji A",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ko_kss2_th_ngam/sound_ko_kss2_th_ngam.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16947,11 +16947,11 @@
     "id": "v4-1352",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "maria",
       "speaker_id": "1352"
     },
     "name": "Maria",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/pt-br_en_elli/sound_pt-br_en_elli.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16963,11 +16963,11 @@
     "id": "v4-1353",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ana",
       "speaker_id": "1353"
     },
     "name": "Ana",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/pt-br_en_matilda/sound_pt-br_en_matilda.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -16994,11 +16994,11 @@
     "id": "v4-1355",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "lucas",
       "speaker_id": "1355"
     },
     "name": "Lucas",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/pt-br_th_nadech/sound_pt-br_th_nadech.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17010,11 +17010,11 @@
     "id": "v4-1356",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "izan",
       "speaker_id": "1356"
     },
     "name": "Izan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ms_osman_en_alex/sound_ms_osman_en_alex.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17026,11 +17026,11 @@
     "id": "v4-1357",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ira",
       "speaker_id": "1357"
     },
     "name": "Ira",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ms_osman_en_freya/sound_ms_osman_en_freya.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17057,11 +17057,11 @@
     "id": "v4-1359",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "faiz",
       "speaker_id": "1359"
     },
     "name": "Faiz",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ms_osman_th_jay/sound_ms_osman_th_jay.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17089,11 +17089,11 @@
     "id": "v4-1364",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ram",
       "speaker_id": "1364"
     },
     "name": "Ram",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/hi_ram/sound_hi_ram.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17121,11 +17121,11 @@
     "id": "v4-1366",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "andrea",
       "speaker_id": "1366"
     },
     "name": "Andrea",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_andrea/sound_fil_andrea.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17167,11 +17167,11 @@
     "id": "v4-1369",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "christina",
       "speaker_id": "1369"
     },
     "name": "Christina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_christina/sound_fil_christina.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17198,11 +17198,11 @@
     "id": "v4-1371",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ayani",
       "speaker_id": "1371"
     },
     "name": "Ayani",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_ayani/sound_fil_ayani.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17214,11 +17214,11 @@
     "id": "v4-1372",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "sofia",
       "speaker_id": "1372"
     },
     "name": "Sofia",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/fil_sofia/sound_fil_sofia.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17230,11 +17230,11 @@
     "id": "v4-1373",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "cristiana",
       "speaker_id": "1373"
     },
     "name": "Cristiana",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/cristiana/sound_cristiana.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17246,11 +17246,11 @@
     "id": "v4-1374",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "leone",
       "speaker_id": "1374"
     },
     "name": "Leone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/leone/sound_leone.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17262,11 +17262,11 @@
     "id": "v4-1375",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "alfeo",
       "speaker_id": "1375"
     },
     "name": "Alfeo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/alfeo/sound_alfeo.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17309,11 +17309,11 @@
     "id": "v4-1400",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "wen",
       "speaker_id": "1400"
     },
     "name": "Wen",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_wen/sound_zh_wen.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17340,11 +17340,11 @@
     "id": "v4-1402",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ling",
       "speaker_id": "1402"
     },
     "name": "Ling",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_ling/sound_zh_ling.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17356,11 +17356,11 @@
     "id": "v4-1403",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "kai",
       "speaker_id": "1403"
     },
     "name": "Kai",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_kai/sound_zh_kai.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17434,11 +17434,11 @@
     "id": "v4-1408",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "shu",
       "speaker_id": "1408"
     },
     "name": "Shu",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_shu/sound_zh_shu.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17450,11 +17450,11 @@
     "id": "v4-1409",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "yuuta",
       "speaker_id": "1409"
     },
     "name": "Yuuta",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_yuuta/sound_ja_yuuta.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17466,11 +17466,11 @@
     "id": "v4-1410",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "suzume",
       "speaker_id": "1410"
     },
     "name": "Suzume",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_suzume/sound_ja_suzume.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17482,11 +17482,11 @@
     "id": "v4-1411",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "masaru",
       "speaker_id": "1411"
     },
     "name": "Masaru",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_masaru/sound_ja_masaru.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17498,11 +17498,11 @@
     "id": "v4-1412",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "kaito",
       "speaker_id": "1412"
     },
     "name": "Kaito",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ja_kaito/sound_ja_kaito.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17514,11 +17514,11 @@
     "id": "v4-1413",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "anan",
       "speaker_id": "1413"
     },
     "name": "Anan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_anan/sound_lo_anan.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17530,11 +17530,11 @@
     "id": "v4-1414",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "anny",
       "speaker_id": "1414"
     },
     "name": "Anny",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_anny/sound_lo_anny.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17546,11 +17546,11 @@
     "id": "v4-1415",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "aon",
       "speaker_id": "1415"
     },
     "name": "Aon",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_aon/sound_lo_aon.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17562,11 +17562,11 @@
     "id": "v4-1416",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "aoy",
       "speaker_id": "1416"
     },
     "name": "Aoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_aoy/sound_lo_aoy.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17578,11 +17578,11 @@
     "id": "v4-1417",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "athit",
       "speaker_id": "1417"
     },
     "name": "Athit",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_athit/sound_lo_athit.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17609,11 +17609,11 @@
     "id": "v4-1419",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "bouaban",
       "speaker_id": "1419"
     },
     "name": "Bouaban",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_bouaban/sound_lo_bouaban.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17625,11 +17625,11 @@
     "id": "v4-1420",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "chinda",
       "speaker_id": "1420"
     },
     "name": "Chinda",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_chinda/sound_lo_chinda.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17641,11 +17641,11 @@
     "id": "v4-1421",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "damdy",
       "speaker_id": "1421"
     },
     "name": "Damdy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_damdy/sound_lo_damdy.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17657,11 +17657,11 @@
     "id": "v4-1422",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "dokmai",
       "speaker_id": "1422"
     },
     "name": "Dokmai",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_dokmai/sound_lo_dokmai.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17673,11 +17673,11 @@
     "id": "v4-1423",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "gampha",
       "speaker_id": "1423"
     },
     "name": "Gampha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_gampha/sound_lo_gampha.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17689,11 +17689,11 @@
     "id": "v4-1424",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "happynight",
       "speaker_id": "1424"
     },
     "name": "Happynight",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_happynight/sound_lo_happynight.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17705,11 +17705,11 @@
     "id": "v4-1425",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "hom",
       "speaker_id": "1425"
     },
     "name": "Hom",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_hom/sound_lo_hom.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17721,11 +17721,11 @@
     "id": "v4-1426",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "inpaeng",
       "speaker_id": "1426"
     },
     "name": "Inpaeng",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_inpaeng/sound_lo_inpaeng.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17737,11 +17737,11 @@
     "id": "v4-1427",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ju",
       "speaker_id": "1427"
     },
     "name": "Ju",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_ju/sound_lo_ju.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17753,11 +17753,11 @@
     "id": "v4-1428",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "kaysone",
       "speaker_id": "1428"
     },
     "name": "Kaysone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_kaysone/sound_lo_kaysone.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17769,11 +17769,11 @@
     "id": "v4-1429",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "khamhou",
       "speaker_id": "1429"
     },
     "name": "Khamhou",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_khamhou/sound_lo_khamhou.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17785,11 +17785,11 @@
     "id": "v4-1430",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "khamkeo",
       "speaker_id": "1430"
     },
     "name": "Khamkeo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_khamkeo/sound_lo_khamkeo.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17816,11 +17816,11 @@
     "id": "v4-1432",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "kinoy",
       "speaker_id": "1432"
     },
     "name": "Kinoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_kinoy/sound_lo_kinoy.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17832,11 +17832,11 @@
     "id": "v4-1433",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "koung",
       "speaker_id": "1433"
     },
     "name": "Koung",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_koung/sound_lo_koung.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17848,11 +17848,11 @@
     "id": "v4-1434",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "larsoy",
       "speaker_id": "1434"
     },
     "name": "Larsoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_larsoy/sound_lo_larsoy.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17864,11 +17864,11 @@
     "id": "v4-1435",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "manee",
       "speaker_id": "1435"
     },
     "name": "Manee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_manee/sound_lo_manee.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17895,11 +17895,11 @@
     "id": "v4-1437",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "matthana",
       "speaker_id": "1437"
     },
     "name": "Matthana",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_matthana/sound_lo_matthana.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17941,11 +17941,11 @@
     "id": "v4-1440",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "nalee",
       "speaker_id": "1440"
     },
     "name": "Nalee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nalee/sound_lo_nalee.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17957,11 +17957,11 @@
     "id": "v4-1441",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "nalika",
       "speaker_id": "1441"
     },
     "name": "Nalika",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nalika/sound_lo_nalika.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -17988,11 +17988,11 @@
     "id": "v4-1443",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "nong",
       "speaker_id": "1443"
     },
     "name": "Nong",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nong/sound_lo_nong.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18004,11 +18004,11 @@
     "id": "v4-1444",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "nun",
       "speaker_id": "1444"
     },
     "name": "Nun",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_nun/sound_lo_nun.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18065,11 +18065,11 @@
     "id": "v4-1448",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "phone",
       "speaker_id": "1448"
     },
     "name": "Phone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_phone/sound_lo_phone.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18096,11 +18096,11 @@
     "id": "v4-1450",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "pong",
       "speaker_id": "1450"
     },
     "name": "Pong",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_pong/sound_lo_pong.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18112,11 +18112,11 @@
     "id": "v4-1451",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "sakone",
       "speaker_id": "1451"
     },
     "name": "Sakone",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_sakone/sound_lo_sakone.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18128,11 +18128,11 @@
     "id": "v4-1452",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "setha",
       "speaker_id": "1452"
     },
     "name": "Setha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_setha/sound_lo_setha.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18144,11 +18144,11 @@
     "id": "v4-1453",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "sinxay",
       "speaker_id": "1453"
     },
     "name": "Sinxay",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_sinxay/sound_lo_sinxay.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18160,11 +18160,11 @@
     "id": "v4-1454",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "som-o",
       "speaker_id": "1454"
     },
     "name": "Som O",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_som-o/sound_lo_som-o.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18176,11 +18176,11 @@
     "id": "v4-1455",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "sompong",
       "speaker_id": "1455"
     },
     "name": "Sompong",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_sompong/sound_lo_sompong.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18222,11 +18222,11 @@
     "id": "v4-1458",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "thiw",
       "speaker_id": "1458"
     },
     "name": "Thiw",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_thiw/sound_lo_thiw.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18238,11 +18238,11 @@
     "id": "v4-1459",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "toukta",
       "speaker_id": "1459"
     },
     "name": "Toukta",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_toukta/sound_lo_toukta.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18254,11 +18254,11 @@
     "id": "v4-1460",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "yoy",
       "speaker_id": "1460"
     },
     "name": "Yoy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/lo_yoy/sound_lo_yoy.wav",
     "updated_at": "2026-11-18"
   },
   {
@@ -18506,11 +18506,11 @@
     "id": "v4-1476",
     "meta": {
       "api_version": "v4",
+      "preview_unavailable": "http 403",
       "slug": "ayu",
       "speaker_id": "1476"
     },
     "name": "Ayu",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nazira/sound_id_nazira.wav",
     "updated_at": "2026-11-18"
   },
   {
