@@ -183,14 +183,22 @@ document.addEventListener("click", async (e) => {
   setTimeout(() => { delete b.dataset.copied; b.setAttribute("aria-label", label); }, 1400);
 });
 
-// ── Filters apply as soon as a dropdown or checkbox changes (text fields still use Enter / Apply).
+// ── Filters apply on their own: dropdowns and checkboxes on change, the text search on Enter or when it loses
+// focus after an edit. The Apply button is then only the form's default (Enter) button, so it is hidden;
+// without JavaScript it stays visible and is how filters apply.
 document.addEventListener("change", (e) => {
   const el = e.target;
   const form = el.closest("form.filters, form[data-autosubmit]");
-  if (form && (el.tagName === "SELECT" || el.type === "checkbox") && !el.classList.contains("compare-pick")) {
+  if (form && (el.tagName === "SELECT" || el.type === "checkbox" || el.type === "search") && el.name
+      && !el.classList.contains("compare-pick")) {
     form.querySelector('[name="page"]')?.remove();
     form.requestSubmit();
   }
+});
+$$("form.filters [data-apply]").forEach((b) => {
+  b.classList.add("visually-hidden");
+  b.tabIndex = -1;
+  b.setAttribute("aria-hidden", "true");
 });
 // On phones the filter bar starts collapsed (active filters still show as removable tokens below it).
 if (matchMedia("(max-width: 760px)").matches) {
