@@ -1,0 +1,20 @@
+{
+  "access": "regional",
+  "description": "Bhashini is the Government of India's National Language Translation Mission, run by the Digital India Bhashini Division (DIBD) of the Ministry of Electronics and IT (MeitY), New Delhi. Through its ULCA/Dhruva pipeline APIs it hosts speech recognition, text-to-speech, translation and related models built by AI4Bharat, IIT Madras, IISc, IIIT Hyderabad, Bodhan.AI and other institutes, covering India's 22 scheduled languages plus several dialects. API access needs ULCA integrator registration and its documentation limits free usage to proofs of concept; production or commercial use requires contacting the Bhashini team for paid plans.",
+  "docs_urls": [
+    "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+    "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+    "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+  ],
+  "headquarters": "IN",
+  "id": "bhashini",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call",
+    "docs": "https://dibd-bhashini.gitbook.io/bhashini-apis"
+  },
+  "name": "Bhashini",
+  "source": "docs",
+  "type": "both",
+  "website": "https://bhashini.gov.in"
+}

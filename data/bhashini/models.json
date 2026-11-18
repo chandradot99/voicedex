@@ -1,0 +1,989 @@
+[
+  {
+    "description": "AI4Bharat speech recognition service hosted on Bhashini covering 1 language.",
+    "first_seen": "2026-11-18",
+    "id": "ai4bharat/conformer-hi-gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "AI4Bharat",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "ai4bharat/conformer-hi-gpu--t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "AI4Bharat Conformer Hindi",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "AI4Bharat speech recognition service hosted on Bhashini covering 4 languages.",
+    "first_seen": "2026-11-18",
+    "id": "ai4bharat/conformer-multilingual-dravidian-gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "kn",
+      "ml",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "AI4Bharat",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "ai4bharat/conformer-multilingual-dravidian-gpu--t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "AI4Bharat Conformer Dravidian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "AI4Bharat speech recognition service hosted on Bhashini covering 8 languages.",
+    "first_seen": "2026-11-18",
+    "id": "ai4bharat/conformer-multilingual-indo_aryan-gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "hi",
+      "bn",
+      "mr",
+      "ur",
+      "or",
+      "pa",
+      "gu",
+      "sa"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "AI4Bharat",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "ai4bharat/conformer-multilingual-indo_aryan-gpu--t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "AI4Bharat Conformer Indo-Aryan",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "AI4Bharat speech recognition service hosted on Bhashini covering 1 language.",
+    "first_seen": "2026-11-18",
+    "id": "ai4bharat/whisper-medium-en--gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "AI4Bharat",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "ai4bharat/whisper-medium-en--gpu--t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "AI4Bharat Whisper Medium English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "AI4Bharat speech recognition service hosted on Bhashini covering 22 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/ai4bharat/conformer-multilingual-asr",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "AI4Bharat",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/ai4bharat/conformer-multilingual-asr",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "AI4Bharat Conformer Multilingual",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Bodhan.AI speech recognition service hosted on Bhashini covering 25 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/bodhan/asr-transcribe-core",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "kok",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur",
+      "bho",
+      "bhb"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "Bodhan.AI",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/bodhan/asr-transcribe-core",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "Bodhan.AI Transcribe Core",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Bodhan.AI speech recognition service hosted on Bhashini covering 27 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/bodhan/asr-transcribe-flex",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "kok",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur",
+      "bho",
+      "hne",
+      "bgc",
+      "bhb"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "Bodhan.AI",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/bodhan/asr-transcribe-flex",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "Bodhan.AI Transcribe Flex",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IISc speech recognition service hosted on Bhashini covering 1 language.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/iisc/asr-bho-t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "bho"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "IISc",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/iisc/asr-bho-t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "IISc ASR Bhojpuri",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IISc speech recognition service hosted on Bhashini covering 1 language.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/iisc/asr-mai-t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "mai"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "IISc",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/iisc/asr-mai-t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "IISc ASR Maithili",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IIT Madras speech recognition service hosted on Bhashini covering 4 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/iitm/asr-dravidian--gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "te",
+      "kn",
+      "ml",
+      "ta"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "IIT Madras",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/iitm/asr-dravidian--gpu--t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "IIT Madras ASR Dravidian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IIT Madras speech recognition service hosted on Bhashini covering 6 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/iitm/asr-indoaryan--gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "gu",
+      "or",
+      "hi",
+      "mr",
+      "pa",
+      "bn"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "IIT Madras",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/iitm/asr-indoaryan--gpu--t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "IIT Madras ASR Indo-Aryan",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IIT Madras speech recognition service hosted on Bhashini covering 2 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/iitm/asr-misc--gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "bho",
+      "ur"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "input_audio": "base64 audioContent; wav/flac preferred, mp3 accepted; samplingRate >= 8000",
+      "model_provider": "IIT Madras",
+      "postprocessors_documented": [
+        "itn",
+        "punctuation",
+        "hotword_list"
+      ],
+      "preprocessors_documented": [
+        "vad",
+        "denoiser"
+      ],
+      "service_id": "bhashini/iitm/asr-misc--gpu--t4",
+      "source_table": "ASR",
+      "task_type": "asr",
+      "websocket_note": "A generic WebSocket ASR API (wss://dhruva-api.bhashini.gov.in) takes an ASR serviceId; per-service streaming support is not documented."
+    },
+    "name": "IIT Madras ASR Misc",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IISc (SYSPIN) text-to-speech service hosted on Bhashini covering 11 languages.",
+    "first_seen": "2026-11-18",
+    "id": "Bhashini/IISC/TTS",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "kn",
+      "te",
+      "en",
+      "hi",
+      "mr",
+      "bn",
+      "gu",
+      "mai",
+      "bho",
+      "hne",
+      "mag"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "gender_options": [
+        "male",
+        "female"
+      ],
+      "model_provider": "IISc (SYSPIN)",
+      "output": "base64 audioContent",
+      "service_id": "Bhashini/IISC/TTS",
+      "source_table": "TTS",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "IISc SYSPIN TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IIT Madras text-to-speech service hosted on Bhashini covering 24 languages.",
+    "first_seen": "2026-11-18",
+    "id": "Bhashini/IITM/TTS",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "raj",
+      "sa",
+      "ta",
+      "te",
+      "ur",
+      "sat-Deva",
+      "sd-Deva",
+      "ks-Deva"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "gender_options": [
+        "male",
+        "female"
+      ],
+      "model_provider": "IIT Madras",
+      "output": "base64 audioContent",
+      "service_id": "Bhashini/IITM/TTS",
+      "source_table": "TTS",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "IIT Madras TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "AI4Bharat text-to-speech service hosted on Bhashini covering 4 languages.",
+    "first_seen": "2026-11-18",
+    "id": "ai4bharat/indic-tts-coqui-dravidian-gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ml",
+      "kn",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "gender_options": [
+        "male",
+        "female"
+      ],
+      "model_provider": "AI4Bharat",
+      "output": "base64 audioContent",
+      "service_id": "ai4bharat/indic-tts-coqui-dravidian-gpu--t4",
+      "source_table": "TTS",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "AI4Bharat Indic-TTS Dravidian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "AI4Bharat text-to-speech service hosted on Bhashini covering 8 languages.",
+    "first_seen": "2026-11-18",
+    "id": "ai4bharat/indic-tts-coqui-indo_aryan-gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "hi",
+      "mr",
+      "as",
+      "bn",
+      "gu",
+      "or",
+      "raj",
+      "pa"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "gender_options": [
+        "male",
+        "female"
+      ],
+      "model_provider": "AI4Bharat",
+      "output": "base64 audioContent",
+      "service_id": "ai4bharat/indic-tts-coqui-indo_aryan-gpu--t4",
+      "source_table": "TTS",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "AI4Bharat Indic-TTS Indo-Aryan",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "AI4Bharat text-to-speech service hosted on Bhashini covering 3 languages.",
+    "first_seen": "2026-11-18",
+    "id": "ai4bharat/indic-tts-coqui-misc-gpu--t4",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "mni",
+      "brx"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "gender_options": [
+        "male",
+        "female"
+      ],
+      "model_provider": "AI4Bharat",
+      "output": "base64 audioContent",
+      "service_id": "ai4bharat/indic-tts-coqui-misc-gpu--t4",
+      "source_table": "TTS",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "AI4Bharat Indic-TTS Misc",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "AI4Bharat voice-cloning text-to-speech service hosted on Bhashini covering 11 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/ai4b/indicf5-tts",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "as",
+      "bn",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "pa",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "model_provider": "AI4Bharat",
+      "output": "base64 audioContent",
+      "service_id": "bhashini/ai4b/indicf5-tts",
+      "source_table": "Voice Cloning",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "AI4Bharat IndicF5 (voice cloning)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Bodhan.AI text-to-speech service hosted on Bhashini covering 19 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/bodhan/indic-tts",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en",
+      "gom",
+      "gu",
+      "sa",
+      "te",
+      "mr",
+      "hi",
+      "or",
+      "mni",
+      "ml",
+      "as",
+      "doi",
+      "sat",
+      "ta",
+      "sd",
+      "bn",
+      "ks",
+      "kn",
+      "ne"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "gender_options": [
+        "male",
+        "female"
+      ],
+      "model_provider": "Bodhan.AI",
+      "output": "base64 audioContent",
+      "service_id": "bhashini/bodhan/indic-tts",
+      "source_table": "TTS",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "Bodhan.AI Indic TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "IISc text-to-speech service hosted on Bhashini covering 2 languages.",
+    "first_seen": "2026-11-18",
+    "id": "bhashini/iisc/sourashtra/tts",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "saz",
+      "ta"
+    ],
+    "meta": {
+      "endpoint": "https://dhruva-api.bhashini.gov.in/services/inference/pipeline",
+      "gender_options": [
+        "male",
+        "female"
+      ],
+      "model_provider": "IISc",
+      "output": "base64 audioContent",
+      "service_id": "bhashini/iisc/sourashtra/tts",
+      "source_table": "TTS",
+      "speed_range": [
+        0.1,
+        1.99
+      ],
+      "task_type": "tts"
+    },
+    "name": "IISc Sourashtra TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/available-models-for-usage",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/pipeline-compute-call/request-payload",
+        "https://dibd-bhashini.gitbook.io/bhashini-apis/websocket-asr-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
