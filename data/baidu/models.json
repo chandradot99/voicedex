@@ -1,0 +1,2040 @@
+[
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Lower-cost, high-performance end-to-end speech LLM for far-field devices.",
+    "family": "audio-mini-realtime",
+    "first_seen": "2026-11-18",
+    "id": "audio-mini-realtime-far",
+    "interfaces": [
+      "websocket"
+    ],
+    "meta": {
+      "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-mini-realtime-far",
+      "name_zh": "端到端语音语言大模型（Lite）",
+      "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
+      "search_augmentation": "web search enhancement is always on and billed per call"
+    },
+    "name": "Speech-Language LLM Lite (far-field)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Lite postpaid per 1,000 tokens: input audio ¥0.016, input text ¥0.002, output audio ¥0.06, output text ¥0.016; plus ¥0.036 per search-enhancement call. Free trial 500k tokens (personal) / 1M (enterprise).",
+      "price": 1.6e-05,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input text",
+          "price": 2e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output audio",
+          "price": 6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output text",
+          "price": 1.6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement (per call, always on)",
+          "price": 0.036,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid token pack 2M (blended)",
+          "price": 3.5e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 10M (blended)",
+          "price": 3.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 50M (blended)",
+          "price": 3e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 100M (blended)",
+          "price": 2.8e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 1B (blended)",
+          "price": 2.5e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 10k",
+          "price": 0.0352,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 100k",
+          "price": 0.0342,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 1M",
+          "price": 0.0306,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Lower-cost, high-performance end-to-end speech LLM for near-field microphones.",
+    "family": "audio-mini-realtime",
+    "first_seen": "2026-11-18",
+    "id": "audio-mini-realtime-near",
+    "interfaces": [
+      "websocket"
+    ],
+    "meta": {
+      "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-mini-realtime-near",
+      "name_zh": "端到端语音语言大模型（Lite）",
+      "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
+      "search_augmentation": "web search enhancement is always on and billed per call"
+    },
+    "name": "Speech-Language LLM Lite (near-field)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Lite postpaid per 1,000 tokens: input audio ¥0.016, input text ¥0.002, output audio ¥0.06, output text ¥0.016; plus ¥0.036 per search-enhancement call. Free trial 500k tokens (personal) / 1M (enterprise).",
+      "price": 1.6e-05,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input text",
+          "price": 2e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output audio",
+          "price": 6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output text",
+          "price": 1.6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement (per call, always on)",
+          "price": 0.036,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid token pack 2M (blended)",
+          "price": 3.5e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 10M (blended)",
+          "price": 3.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 50M (blended)",
+          "price": 3e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 100M (blended)",
+          "price": 2.8e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 1B (blended)",
+          "price": 2.5e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 10k",
+          "price": 0.0352,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 100k",
+          "price": 0.0342,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 1M",
+          "price": 0.0306,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "End-to-end cross-attention speech LLM, best-quality tier, tuned for far-field devices.",
+    "family": "audio-realtime",
+    "first_seen": "2026-11-18",
+    "id": "audio-realtime-far",
+    "interfaces": [
+      "websocket"
+    ],
+    "meta": {
+      "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-realtime-far",
+      "name_zh": "端到端语音语言大模型（Pro）",
+      "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
+      "search_augmentation": "web search enhancement is always on and billed per call"
+    },
+    "name": "Speech-Language LLM Pro (far-field)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Pro postpaid per 1,000 tokens: input audio ¥0.064, input text ¥0.008, output audio ¥0.24, output text ¥0.064; plus ¥0.036 per search-enhancement call. Free trial 500k tokens (personal) / 1M (enterprise).",
+      "price": 6.4e-05,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input text",
+          "price": 8e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output audio",
+          "price": 0.00024,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output text",
+          "price": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement (per call, always on)",
+          "price": 0.036,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid token pack 2M (blended)",
+          "price": 0.000175,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 10M (blended)",
+          "price": 0.00017,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 50M (blended)",
+          "price": 0.00015,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 100M (blended)",
+          "price": 0.00014,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 1B (blended)",
+          "price": 0.000125,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 10k",
+          "price": 0.0352,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 100k",
+          "price": 0.0342,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 1M",
+          "price": 0.0306,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "End-to-end cross-attention speech LLM, best-quality tier, tuned for near-field microphones.",
+    "family": "audio-realtime",
+    "first_seen": "2026-11-18",
+    "id": "audio-realtime-near",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "meta": {
+      "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-realtime-near",
+      "name_zh": "端到端语音语言大模型（Pro）",
+      "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
+      "search_augmentation": "web search enhancement is always on and billed per call"
+    },
+    "name": "Speech-Language LLM Pro (near-field)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 500000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "Pro postpaid per 1,000 tokens: input audio ¥0.064, input text ¥0.008, output audio ¥0.24, output text ¥0.064; plus ¥0.036 per search-enhancement call. Free trial 500k tokens (personal) / 1M (enterprise).",
+      "price": 6.4e-05,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input text",
+          "price": 8e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output audio",
+          "price": 0.00024,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output text",
+          "price": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement (per call, always on)",
+          "price": 0.036,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid token pack 2M (blended)",
+          "price": 0.000175,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 10M (blended)",
+          "price": 0.00017,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 50M (blended)",
+          "price": 0.00015,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 100M (blended)",
+          "price": 0.00014,
+          "unit": "token"
+        },
+        {
+          "applies_to": "prepaid token pack 1B (blended)",
+          "price": 0.000125,
+          "unit": "token"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 10k",
+          "price": 0.0352,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 100k",
+          "price": 0.0342,
+          "unit": "request"
+        },
+        {
+          "applies_to": "search enhancement prepaid pack 1M",
+          "price": 0.0306,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Configurable realtime speech LLM with voice replacement, knowledge-base retrieval (RAG) and function calling for devices, assistants and industry apps.",
+    "first_seen": "2026-11-18",
+    "id": "qianfan-realtime-flex-v1",
+    "interfaces": [
+      "websocket"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=qianfan-realtime-flex-v1",
+      "function_calling": true,
+      "name_zh": "端到端语音语言大模型（Flex）",
+      "rag": true,
+      "status_note": "公测 (public beta); apply via sales consultation"
+    },
+    "name": "Speech-Language LLM Flex",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "amr",
+      "m4a",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "description": "Asynchronous transcription of 8 kHz Mandarin call recordings, mono or per-channel stereo.",
+    "first_seen": "2026-11-18",
+    "id": "call-center-file-8k",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "endpoint": "https://aip.baidubce.com/rpc/2.0/aasr/v1/create",
+      "name_zh": "呼叫中心语音-音频文件转写（8K）",
+      "pid": 1134
+    },
+    "name": "Call Center File Transcription (8 kHz)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 10.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Postpaid ¥2.2/hour. Free trial 10 h.",
+      "price": 2.2,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 1,000 h",
+          "price": 1.6,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 10,000 h",
+          "price": 1.2,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 100,000 h",
+          "price": 0.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "description": "8 kHz Mandarin telephony recognition delivered through Baidu's downloadable MRCP server for contact-center platforms.",
+    "first_seen": "2026-11-18",
+    "id": "call-center-mrcp-8k",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "name_zh": "呼叫中心语音-语音识别（8K）",
+      "protocol": "MRCP over SIP (self-hosted MRCP server, calls Baidu cloud)",
+      "raw_formats": [
+        "PCMU",
+        "PCMA",
+        "L16/96/8000"
+      ]
+    },
+    "name": "Call Center Speech Recognition (8 kHz, MRCP)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 10.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Postpaid ¥3.3/hour. Extra concurrency ¥100/month or ¥1000/year. Free trial 10 h.",
+      "price": 3.3,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 1,000 h",
+          "price": 3.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 10,000 h",
+          "price": 2.4,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 100,000 h",
+          "price": 1.8,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 1,000,000 h",
+          "price": 1.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "amr",
+      "m4a",
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization"
+    ],
+    "description": "Asynchronous batch transcription of audio files by URL (results typically within 12 hours), with Mandarin, English, Chinese subtitle and speaker-diarization models.",
+    "first_seen": "2026-11-18",
+    "id": "file-transcription",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "endpoint": "https://aip.baidubce.com/rpc/2.0/aasr/v1/create",
+      "max_file_mb": 500,
+      "name_zh": "音频文件转写",
+      "pid": {
+        "1737": "English",
+        "80001": "Mandarin near-field (fast)",
+        "80006": "Chinese audio/video subtitles",
+        "8953": "speaker diarization"
+      }
+    },
+    "name": "Audio File Transcription",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 10.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Mandarin/English postpaid ¥2/hour; subtitle model ¥2.5/hour. Free trial 10 h per model.",
+      "price": 2.0,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "audio/video subtitle model (Chinese), postpaid",
+          "price": 2.5,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Mandarin/English prepaid pack 1,000 h",
+          "price": 1.2,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Mandarin/English prepaid pack 10,000 h",
+          "price": 0.9,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Mandarin/English prepaid pack 100,000 h",
+          "price": 0.7,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Mandarin/English prepaid pack 500,000 h",
+          "price": 0.6,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "subtitle prepaid pack 1,000 h",
+          "price": 1.56,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "subtitle prepaid pack 10,000 h",
+          "price": 1.28,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "subtitle prepaid pack 100,000 h",
+          "price": 1.08,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "subtitle prepaid pack 500,000 h",
+          "price": 0.936,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "amr",
+      "m4a",
+      "mov",
+      "mp3",
+      "mp4",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "Baidu's large-model speech recognizer behind the realtime, short-utterance, file and fast-file LLM ASR APIs, tuned for multilingual, dialect, accented and noisy speech.",
+    "first_seen": "2026-11-18",
+    "id": "qianfan-asr-v1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "endpoints": {
+        "fast file (sync, ≤1 h)": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/asr/topspeed",
+        "file (async)": "https://aip.baidubce.com/rpc/2.0/aasr/v1/llm/voice/create",
+        "realtime": "wss://aip.baidubce.com/ws/2.0/speech/publiccloudspeech/v1/asr",
+        "short (≤60 s)": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/voice/server_api"
+      },
+      "limits": "realtime: pcm 8/16 kHz; short: ≤60 s; file: ≤500 MB, 16 kHz; fast file: ≤1 h / 500 MB, 16 kHz",
+      "name_zh": "语音识别大模型",
+      "sentence_timestamps": true,
+      "smooth_text": true,
+      "status_note": "All four LLM ASR APIs are labelled 邀测 (invite-only testing; apply via sales consultation)."
+    },
+    "name": "Qianfan ASR v1 (speech recognition LLM)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 10.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Base price = realtime LLM ASR postpaid ¥0.9/hour of audio. Prepaid packs valid one year. Free trial (personal-verified accounts): realtime 10 h, short 50k calls, file 10 h, fast file 10 h (enterprise: short 100k).",
+      "price": 0.9,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "short utterance (一句话识别大模型), postpaid",
+          "price": 0.00095,
+          "unit": "request"
+        },
+        {
+          "applies_to": "file transcription (音频文件转写大模型), postpaid",
+          "price": 0.7,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "fast file transcription (极速版), postpaid",
+          "price": 0.78,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime prepaid pack 50 h",
+          "price": 0.88,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime prepaid pack 1,000 h",
+          "price": 0.85,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime prepaid pack 10,000 h",
+          "price": 0.82,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime prepaid pack 100,000 h",
+          "price": 0.78,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime prepaid pack 500,000 h",
+          "price": 0.72,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "short utterance prepaid pack 30k",
+          "price": 0.00093,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short utterance prepaid pack 1M",
+          "price": 0.0009,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short utterance prepaid pack 10M",
+          "price": 0.00085,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short utterance prepaid pack 100M",
+          "price": 0.0008,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short utterance prepaid pack 1B",
+          "price": 0.00076,
+          "unit": "request"
+        },
+        {
+          "applies_to": "file prepaid pack 50 h",
+          "price": 0.68,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "file prepaid pack 1,000 h",
+          "price": 0.66,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "file prepaid pack 10,000 h",
+          "price": 0.63,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "file prepaid pack 100,000 h",
+          "price": 0.6,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "file prepaid pack 500,000 h",
+          "price": 0.56,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "fast file prepaid pack 50 h",
+          "price": 0.75,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "fast file prepaid pack 1,000 h",
+          "price": 0.72,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "fast file prepaid pack 10,000 h",
+          "price": 0.69,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "fast file prepaid pack 100,000 h",
+          "price": 0.65,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "fast file prepaid pack 500,000 h",
+          "price": 0.62,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "WebSocket streaming recognition with sentence start/end times, for dictation, live captions and meeting notes; up to one hour per call.",
+    "first_seen": "2026-11-18",
+    "id": "realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "custom_vocabulary_note": "Mandarin models can load a self-trained model (lm_id) from the EasyDL speech self-training platform.",
+      "dev_pid": {
+        "1537": "Mandarin, light punctuation",
+        "15372": "Mandarin, enhanced punctuation",
+        "15376": "Chinese multi-dialect",
+        "1737": "English, no punctuation",
+        "17372": "English, punctuation"
+      },
+      "endpoint": "wss://vop.baidu.com/realtime_asr",
+      "name_zh": "实时语音识别"
+    },
+    "name": "Realtime Speech Recognition",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 10.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "Mandarin and English realtime ASR, postpaid ¥3/hour. Extra concurrency ¥100/month or ¥1000/year each. Free trial 10 h.",
+      "price": 3.0,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 1,000 h",
+          "price": 1.8,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 10,000 h",
+          "price": 1.5,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 100,000 h",
+          "price": 1.2,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "prepaid pack 500,000 h",
+          "price": 0.9,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "amr",
+      "m4a",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Faster GPU-served recognition of Mandarin recordings up to 60 seconds, with smart punctuation; Baidu cites 2x speed and 15% higher accuracy than Standard.",
+    "first_seen": "2026-11-18",
+    "id": "short-pro",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "dev_pid": 80001,
+      "endpoint": "https://vop.baidu.com/pro_api",
+      "name_zh": "短语音识别极速版"
+    },
+    "name": "Short Speech Recognition (Pro)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 50000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Postpaid ¥4.2 per 1,000 calls for the first 6M calls/month, tiered down to ¥1.4. Free trial 50k calls.",
+      "price": 0.0042,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "postpaid monthly tier 6M-30M calls",
+          "price": 0.0036,
+          "unit": "request"
+        },
+        {
+          "applies_to": "postpaid monthly tier 30M-60M calls",
+          "price": 0.0029,
+          "unit": "request"
+        },
+        {
+          "applies_to": "postpaid monthly tier 60M-150M calls",
+          "price": 0.0019,
+          "unit": "request"
+        },
+        {
+          "applies_to": "postpaid monthly tier >150M calls",
+          "price": 0.0014,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 1M calls",
+          "price": 0.003,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 10M calls",
+          "price": 0.0024,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 100M calls",
+          "price": 0.0018,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 1B calls",
+          "price": 0.0012,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "amr",
+      "m4a",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "REST recognition of complete recordings up to 60 seconds, with Mandarin, English, Cantonese and Sichuanese models selected by dev_pid.",
+    "first_seen": "2026-11-18",
+    "id": "short-standard",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "yue-CN"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "8k_note": "8 kHz only for the Mandarin model",
+      "dev_pid": {
+        "1537": "Mandarin (default; custom vocabulary supported)",
+        "1637": "Cantonese",
+        "1737": "English (no punctuation)",
+        "1837": "Sichuanese"
+      },
+      "endpoint": "http://vop.baidu.com/server_api",
+      "name_zh": "短语音识别标准版"
+    },
+    "name": "Short Speech Recognition (Standard)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 50000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Postpaid ¥3.4 per 1,000 calls for the first 6M calls/month, tiered down to ¥1.1. Same price for all four language models. Free trial (personal): Mandarin 50k calls, other languages 30k each.",
+      "price": 0.0034,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "postpaid monthly tier 6M-30M calls",
+          "price": 0.0028,
+          "unit": "request"
+        },
+        {
+          "applies_to": "postpaid monthly tier 30M-60M calls",
+          "price": 0.0022,
+          "unit": "request"
+        },
+        {
+          "applies_to": "postpaid monthly tier 60M-150M calls",
+          "price": 0.0015,
+          "unit": "request"
+        },
+        {
+          "applies_to": "postpaid monthly tier >150M calls",
+          "price": 0.0011,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 1M calls",
+          "price": 0.0024,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 10M calls",
+          "price": 0.00192,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 100M calls",
+          "price": 0.00144,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 1B calls",
+          "price": 0.00096,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Mandarin telephony synthesis with nine call-center voices, served through Baidu's downloadable MRCP server.",
+    "first_seen": "2026-11-18",
+    "id": "call-center-tts-8k",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "name_zh": "呼叫中心语音-在线合成",
+      "protocol": "MRCP over SIP (self-hosted MRCP server, calls Baidu cloud)",
+      "voices": 9
+    },
+    "name": "Call Center TTS (8 kHz, MRCP)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 100000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Postpaid ¥2.2 per 1,000 calls. Free trial 100k calls.",
+      "price": 0.0022,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "prepaid pack 10k",
+          "price": 0.0018,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 1M",
+          "price": 0.0015,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 10M",
+          "price": 0.0012,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 100M",
+          "price": 0.0009,
+          "unit": "request"
+        },
+        {
+          "applies_to": "prepaid pack 1B",
+          "price": 0.0006,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control"
+    ],
+    "description": "Baidu's entry voice library (4 classic voices) for short-text, long-text and streaming synthesis.",
+    "first_seen": "2026-11-18",
+    "id": "tts-basic",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "endpoints": {
+        "legacy short text": "https://tsn.baidu.com/text2audio",
+        "long text (async, ≤100k chars)": "https://aip.baidubce.com/rpc/2.0/tts/v1/create",
+        "streaming text": "wss://aip.baidubce.com/ws/2.0/speech/publiccloudspeech/v1/tts",
+        "sync short text": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/tts"
+      },
+      "limits": "short text <1024 GBK bytes per request (billed per 120 GBK bytes); streaming ≤1000 chars per frame; long text ≤100,000 chars",
+      "name_zh": "基础音库",
+      "tier_selected_by": "voice id (per / voice parameter)"
+    },
+    "name": "Online TTS, Basic voices",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 50000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Long-text and streaming synthesis postpaid ¥2 per 10,000 characters (first 6M chars/month); short-text synthesis billed per call (≤120 GBK bytes). Concurrency add-ons extra. Prepaid packs valid one year.",
+      "price": 0.0002,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "long text / streaming postpaid 6M-30M chars",
+          "price": 0.00018,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid 30M-60M",
+          "price": 0.00015,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid 60M-150M",
+          "price": 0.00012,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid >150M",
+          "price": 0.0001,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 100k",
+          "price": 0.00019,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 1M",
+          "price": 0.00017,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 5M",
+          "price": 0.00015,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 10M",
+          "price": 0.00013,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 50M",
+          "price": 9e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 100M",
+          "price": 5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "short text postpaid ≤6M calls",
+          "price": 0.002,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 6M-30M",
+          "price": 0.0016,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 30M-60M",
+          "price": 0.00125,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 60M-150M",
+          "price": 0.001,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid >150M",
+          "price": 0.00065,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 50k",
+          "price": 0.0014,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 1M",
+          "price": 0.0012,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 5M",
+          "price": 0.001,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 10M",
+          "price": 0.0008,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 50M",
+          "price": 0.00065,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 100M",
+          "price": 0.0005,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control"
+    ],
+    "description": "Large-model (大模型) and ultra-premium (臻品) voices, sold as one tier; LLM multi-emotion voices accept an emotion parameter and include dialect voices.",
+    "first_seen": "2026-11-18",
+    "id": "tts-llm",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "dialect_voices": "Cantonese, Sichuanese, Taiwanese-accent and other regional voices in the voice list",
+      "emotions": [
+        "neutral",
+        "happy",
+        "down",
+        "angry",
+        "surprise",
+        "fear"
+      ],
+      "endpoints": {
+        "legacy short text": "https://tsn.baidu.com/text2audio",
+        "long text (async, ≤100k chars)": "https://aip.baidubce.com/rpc/2.0/tts/v1/create",
+        "streaming text": "wss://aip.baidubce.com/ws/2.0/speech/publiccloudspeech/v1/tts",
+        "sync short text": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/tts"
+      },
+      "limits": "short text <1024 GBK bytes per request (billed per 120 GBK bytes); streaming ≤1000 chars per frame; long text ≤100,000 chars",
+      "name_zh": "大模型&臻品音库",
+      "tier_selected_by": "voice id (per / voice parameter)"
+    },
+    "name": "Online TTS, LLM & Ultra-premium voices",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 10000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Long-text and streaming synthesis postpaid ¥3.5 per 10,000 characters (first 6M chars/month); short-text synthesis billed per call (≤120 GBK bytes). Concurrency add-ons extra. Prepaid packs valid one year.",
+      "price": 0.00035,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "long text / streaming postpaid 6M-30M chars",
+          "price": 0.0003,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid 30M-60M",
+          "price": 0.00025,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid 60M-150M",
+          "price": 0.00022,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid >150M",
+          "price": 0.0002,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 100k",
+          "price": 0.00032,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 1M",
+          "price": 0.0003,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 5M",
+          "price": 0.00025,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 10M",
+          "price": 0.00022,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 50M",
+          "price": 0.00017,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 100M",
+          "price": 0.00015,
+          "unit": "character"
+        },
+        {
+          "applies_to": "short text postpaid ≤6M calls",
+          "price": 0.0045,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 6M-30M",
+          "price": 0.0038,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 30M-60M",
+          "price": 0.003,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 60M-150M",
+          "price": 0.0025,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid >150M",
+          "price": 0.002,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 10k",
+          "price": 0.0042,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 1M",
+          "price": 0.004,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 5M",
+          "price": 0.0035,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 10M",
+          "price": 0.003,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 50M",
+          "price": 0.0025,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 100M",
+          "price": 0.002,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control"
+    ],
+    "description": "Premium (精品) voice library for short-text, long-text and streaming synthesis.",
+    "first_seen": "2026-11-18",
+    "id": "tts-premium",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "endpoints": {
+        "legacy short text": "https://tsn.baidu.com/text2audio",
+        "long text (async, ≤100k chars)": "https://aip.baidubce.com/rpc/2.0/tts/v1/create",
+        "streaming text": "wss://aip.baidubce.com/ws/2.0/speech/publiccloudspeech/v1/tts",
+        "sync short text": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/tts"
+      },
+      "limits": "short text <1024 GBK bytes per request (billed per 120 GBK bytes); streaming ≤1000 chars per frame; long text ≤100,000 chars",
+      "name_zh": "精品音库",
+      "tier_selected_by": "voice id (per / voice parameter)"
+    },
+    "name": "Online TTS, Premium voices",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 50000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Long-text and streaming synthesis postpaid ¥2.7 per 10,000 characters (first 6M chars/month); short-text synthesis billed per call (≤120 GBK bytes). Concurrency add-ons extra. Prepaid packs valid one year.",
+      "price": 0.00027,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "long text / streaming postpaid 6M-30M chars",
+          "price": 0.00025,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid 30M-60M",
+          "price": 0.00023,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid 60M-150M",
+          "price": 0.0002,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming postpaid >150M",
+          "price": 0.00015,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 100k",
+          "price": 0.00026,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 1M",
+          "price": 0.00024,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 5M",
+          "price": 0.00022,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 10M",
+          "price": 0.0002,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 50M",
+          "price": 0.00015,
+          "unit": "character"
+        },
+        {
+          "applies_to": "long text / streaming prepaid pack 100M",
+          "price": 0.0001,
+          "unit": "character"
+        },
+        {
+          "applies_to": "short text postpaid ≤6M calls",
+          "price": 0.004,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 6M-30M",
+          "price": 0.0032,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 30M-60M",
+          "price": 0.0025,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid 60M-150M",
+          "price": 0.002,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text postpaid >150M",
+          "price": 0.0015,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 10k",
+          "price": 0.0032,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 1M",
+          "price": 0.003,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 5M",
+          "price": 0.0028,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 10M",
+          "price": 0.0025,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 50M",
+          "price": 0.002,
+          "unit": "request"
+        },
+        {
+          "applies_to": "short text prepaid pack 100M",
+          "price": 0.0015,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Large-model voice cloning from a 5–20 second sample, then synthesis with the cloned voice in Chinese/English or Japanese, with emotion and dialect transfer.",
+    "first_seen": "2026-11-18",
+    "id": "voice-clone",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "ja"
+    ],
+    "max_text_chars": 500,
+    "meta": {
+      "cloned_voice_expiry": "deleted after 1 year without synthesis",
+      "dialects": [
+        "Shanghainese",
+        "Henanese",
+        "Sichuanese",
+        "Hunanese",
+        "Guizhou"
+      ],
+      "endpoints": {
+        "create voice": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/voice/clone/create",
+        "synthesis (http)": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/voice/clone/tts",
+        "synthesis (websocket)": "wss://aip.baidubce.com/ws/2.0/speech/publiccloudspeech/v1/voice/clone/tts"
+      },
+      "name_zh": "大模型声音复刻",
+      "sample_audio": "wav/mp3/m4a/ogg/aac, ≤5 MB, 5-20 s (Japanese 10-30 s)"
+    },
+    "name": "LLM Voice Cloning",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 50000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "Synthesis postpaid ¥7 per 10,000 characters; each successful voice creation ¥8.8 postpaid. Free trial (personal): 10 voice creations and 50k characters.",
+      "price": 0.0007,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "voice creation, postpaid",
+          "price": 8.8,
+          "unit": "request"
+        },
+        {
+          "applies_to": "voice creation prepaid pack 50 voices",
+          "price": 8.0,
+          "unit": "request"
+        },
+        {
+          "applies_to": "voice creation prepaid pack 200 voices",
+          "price": 7.0,
+          "unit": "request"
+        },
+        {
+          "applies_to": "voice creation prepaid pack 1,000 voices",
+          "price": 6.0,
+          "unit": "request"
+        },
+        {
+          "applies_to": "voice creation prepaid pack 5,000 voices",
+          "price": 5.0,
+          "unit": "request"
+        },
+        {
+          "applies_to": "voice creation prepaid pack 20,000 voices",
+          "price": 4.0,
+          "unit": "request"
+        },
+        {
+          "applies_to": "synthesis prepaid pack 100k",
+          "price": 0.00068,
+          "unit": "character"
+        },
+        {
+          "applies_to": "synthesis prepaid pack 1M",
+          "price": 0.00065,
+          "unit": "character"
+        },
+        {
+          "applies_to": "synthesis prepaid pack 5M",
+          "price": 0.0006,
+          "unit": "character"
+        },
+        {
+          "applies_to": "synthesis prepaid pack 10M",
+          "price": 0.00055,
+          "unit": "character"
+        },
+        {
+          "applies_to": "synthesis prepaid pack 50M",
+          "price": 0.0005,
+          "unit": "character"
+        },
+        {
+          "applies_to": "synthesis prepaid pack 100M",
+          "price": 0.00045,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+        "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+        "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+        "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+        "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+        "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

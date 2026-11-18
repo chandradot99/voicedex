@@ -1,0 +1,28 @@
+{
+  "access": "regional",
+  "description": "Baidu AI Cloud (百度智能云) is the cloud arm of Baidu, Inc., headquartered in Beijing, China. Its speech technology service sells short, realtime and file speech recognition (including a large-model ASR), text-to-speech voice tiers, large-model voice cloning, call-center telephony speech and an end-to-end realtime speech-language model, priced in CNY. Accounts require Chinese real-name verification.",
+  "docs_urls": [
+    "https://cloud.baidu.com/doc/SPEECH/s/Ck5ymfh10",
+    "https://cloud.baidu.com/doc/SPEECH/s/Tldjm0i4c",
+    "https://cloud.baidu.com/doc/SPEECH/s/Cmwkauvx8",
+    "https://cloud.baidu.com/doc/SPEECH/s/xmw03avls",
+    "https://cloud.baidu.com/doc/SPEECH/s/Wl9mh4doe",
+    "https://cloud.baidu.com/doc/SPEECH/s/Ql9misjot",
+    "https://cloud.baidu.com/doc/SPEECH/s/vm9sbp4z9",
+    "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c",
+    "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei",
+    "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
+  ],
+  "headquarters": "CN",
+  "id": "baidu",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://cloud.baidu.com/doc/SPEECH/s/qlcirqhz0",
+    "docs": "https://cloud.baidu.com/doc/SPEECH/index.html",
+    "pricing": "https://cloud.baidu.com/doc/SPEECH/s/Al9mh44v7"
+  },
+  "name": "Baidu AI Cloud Speech",
+  "source": "docs",
+  "type": "both",
+  "website": "https://cloud.baidu.com/product/speech"
+}
