@@ -1,0 +1,187 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "language_detection",
+      "punctuation"
+    ],
+    "description": "Chinese-English speech recognition model with automatic language detection and native recognition of Chinese dialects.",
+    "first_seen": "2026-11-18",
+    "id": "mimo-v2.5-asr",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "api": "OpenAI-compatible chat completions with input_audio",
+      "dialects": "Cantonese, Wu, Minnan, Sichuanese and other Chinese dialects",
+      "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+      "language_param": "asr_options.language: auto | zh | en",
+      "max_input": "base64 audio <= 10 MB",
+      "stream_output": "stream=true returns the transcript as SSE chunks for an uploaded file"
+    },
+    "name": "MiMo-V2.5-ASR",
+    "open_weights": {
+      "license": "MIT",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-ASR"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Overseas: $0.074 per hour of input audio; China: ¥0.5/h. Duration counted to the second and converted to hourly billing.",
+      "price_usd": 0.074,
+      "source_url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/Speech-Recognition.md",
+        "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/speech-synthesis-v2.5.md",
+        "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "style_control"
+    ],
+    "description": "Speech synthesis with built-in voices, controllable by natural-language instructions and inline style/audio tags, including a singing mode.",
+    "first_seen": "2026-11-18",
+    "id": "mimo-v2.5-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "api": "OpenAI-compatible chat completions: text in the assistant message, style instructions in the user message",
+      "context_tokens": 8192,
+      "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+      "max_output_tokens": 8192,
+      "pricing_note": "Free for a limited time (pay-as-you-go pricing page, domestic and overseas)",
+      "singing": true,
+      "streaming_note": "Low-latency streaming restored; streaming output is pcm16 (24 kHz mono in the docs' sample code)"
+    },
+    "name": "MiMo-V2.5-TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/Speech-Recognition.md",
+        "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/speech-synthesis-v2.5.md",
+        "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Replicates a voice from an mp3 or wav audio sample and synthesizes speech with it, with natural-language style control.",
+    "family": "mimo-v2.5-tts",
+    "first_seen": "2026-11-18",
+    "id": "mimo-v2.5-tts-voiceclone",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "api": "OpenAI-compatible chat completions: text in the assistant message, style instructions in the user message",
+      "context_tokens": 8192,
+      "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+      "max_output_tokens": 8192,
+      "pricing_note": "Free for a limited time (pay-as-you-go pricing page, domestic and overseas)",
+      "sample": "mp3 or wav, base64 <= 10 MB",
+      "streaming_note": "Low-latency streaming not yet available; stream=true returns the result once after inference completes"
+    },
+    "name": "MiMo-V2.5-TTS VoiceClone",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/Speech-Recognition.md",
+        "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/speech-synthesis-v2.5.md",
+        "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_design"
+    ],
+    "description": "Generates a custom voice from a text description (Chinese or English) and synthesizes speech with it.",
+    "family": "mimo-v2.5-tts",
+    "first_seen": "2026-11-18",
+    "id": "mimo-v2.5-tts-voicedesign",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "api": "OpenAI-compatible chat completions: text in the assistant message, style instructions in the user message",
+      "context_tokens": 8192,
+      "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+      "max_output_tokens": 8192,
+      "pricing_note": "Free for a limited time (pay-as-you-go pricing page, domestic and overseas)",
+      "streaming_note": "Low-latency streaming not yet available; stream=true returns the result once after inference completes"
+    },
+    "name": "MiMo-V2.5-TTS VoiceDesign",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/Speech-Recognition.md",
+        "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+        "https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/speech-synthesis-v2.5.md",
+        "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

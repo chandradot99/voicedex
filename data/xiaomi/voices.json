@@ -1,0 +1,128 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chloe",
+    "languages": [
+      "en"
+    ],
+    "name": "Chloe",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Dean",
+    "languages": [
+      "en"
+    ],
+    "name": "Dean",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mia",
+    "languages": [
+      "en"
+    ],
+    "name": "Mia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Milo",
+    "languages": [
+      "en"
+    ],
+    "name": "Milo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "description": "Default voice; resolves to 冰糖 on the China cluster and Mia on other clusters.",
+    "first_seen": "2026-11-18",
+    "id": "mimo_default",
+    "meta": {
+      "alias": true
+    },
+    "name": "MiMo-默认 (MiMo default)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "冰糖",
+    "languages": [
+      "zh"
+    ],
+    "name": "冰糖",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "白桦",
+    "languages": [
+      "zh"
+    ],
+    "name": "白桦",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "苏打",
+    "languages": [
+      "zh"
+    ],
+    "name": "苏打",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "mimo-v2.5-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "茉莉",
+    "languages": [
+      "zh"
+    ],
+    "name": "茉莉",
+    "updated_at": "2026-11-18"
+  }
+]
