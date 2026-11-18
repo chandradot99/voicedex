@@ -1,0 +1,580 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "as_female",
+    "languages": [
+      "as"
+    ],
+    "name": "Assamese Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "as_male",
+    "languages": [
+      "as"
+    ],
+    "name": "Assamese Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "bn_female",
+    "languages": [
+      "bn"
+    ],
+    "name": "Bengali Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "bn_female_2",
+    "languages": [
+      "bn"
+    ],
+    "name": "Bengali Female 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bn_male",
+    "languages": [
+      "bn"
+    ],
+    "name": "Bengali Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bn_male_2",
+    "languages": [
+      "bn"
+    ],
+    "name": "Bengali Male 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "en_female",
+    "languages": [
+      "en-IN"
+    ],
+    "name": "Indian English Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "en_female_2",
+    "languages": [
+      "en-IN"
+    ],
+    "name": "Indian English Female 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "en_male",
+    "languages": [
+      "en-IN"
+    ],
+    "name": "Indian English Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "en_male_2",
+    "languages": [
+      "en-IN"
+    ],
+    "name": "Indian English Male 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "gu_female",
+    "languages": [
+      "gu"
+    ],
+    "name": "Gujarati Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "gu_male",
+    "languages": [
+      "gu"
+    ],
+    "name": "Gujarati Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hi_female",
+    "languages": [
+      "hi"
+    ],
+    "name": "Hindi Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hi_female_2",
+    "languages": [
+      "hi"
+    ],
+    "name": "Hindi Female 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hi_female_3",
+    "languages": [
+      "hi"
+    ],
+    "name": "Hindi Female 3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "hi_male",
+    "languages": [
+      "hi"
+    ],
+    "name": "Hindi Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "hi_male_2",
+    "languages": [
+      "hi"
+    ],
+    "name": "Hindi Male 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "hi_male_3",
+    "languages": [
+      "hi"
+    ],
+    "name": "Hindi Male 3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "hi_male_4",
+    "languages": [
+      "hi"
+    ],
+    "name": "Hindi Male 4",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "kn_female",
+    "languages": [
+      "kn"
+    ],
+    "name": "Kannada Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "kn_female_2",
+    "languages": [
+      "kn"
+    ],
+    "name": "Kannada Female 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kn_male",
+    "languages": [
+      "kn"
+    ],
+    "name": "Kannada Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kn_male_2",
+    "languages": [
+      "kn"
+    ],
+    "name": "Kannada Male 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ml_female",
+    "languages": [
+      "ml"
+    ],
+    "name": "Malayalam Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ml_male",
+    "languages": [
+      "ml"
+    ],
+    "name": "Malayalam Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "mr_female",
+    "languages": [
+      "mr"
+    ],
+    "name": "Marathi Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "mr_female_2",
+    "languages": [
+      "mr"
+    ],
+    "name": "Marathi Female 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "mr_female_3",
+    "languages": [
+      "mr"
+    ],
+    "name": "Marathi Female 3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "mr_male",
+    "languages": [
+      "mr"
+    ],
+    "name": "Marathi Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "mr_male_2",
+    "languages": [
+      "mr"
+    ],
+    "name": "Marathi Male 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "mr_male_3",
+    "languages": [
+      "mr"
+    ],
+    "name": "Marathi Male 3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "or_female",
+    "languages": [
+      "or"
+    ],
+    "name": "Odia Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "or_male",
+    "languages": [
+      "or"
+    ],
+    "name": "Odia Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "pa_female",
+    "languages": [
+      "pa"
+    ],
+    "name": "Punjabi Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "pa_male",
+    "languages": [
+      "pa"
+    ],
+    "name": "Punjabi Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ta_female",
+    "languages": [
+      "ta"
+    ],
+    "name": "Tamil Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ta_male",
+    "languages": [
+      "ta"
+    ],
+    "name": "Tamil Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "te_female",
+    "languages": [
+      "te"
+    ],
+    "name": "Telugu Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "te_female_2",
+    "languages": [
+      "te"
+    ],
+    "name": "Telugu Female 2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "te_male",
+    "languages": [
+      "te"
+    ],
+    "name": "Telugu Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "te_male_2",
+    "languages": [
+      "te"
+    ],
+    "name": "Telugu Male 2",
+    "updated_at": "2026-11-18"
+  }
+]

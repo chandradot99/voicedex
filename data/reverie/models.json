@@ -1,0 +1,380 @@
+[
+  {
+    "audio_formats": [
+      "mulaw",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "word_timestamps"
+    ],
+    "description": "Asynchronous job-based transcription of audio files with word-level timings and optional subtitles.",
+    "first_seen": "2026-11-18",
+    "id": "stt_batch",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-IN",
+      "hi",
+      "bn",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa",
+      "ta",
+      "te",
+      "as",
+      "or"
+    ],
+    "meta": {
+      "code_mixed_languages": [
+        "hi_en",
+        "te_en",
+        "ta_en",
+        "ml_en",
+        "kn_en",
+        "mr_en"
+      ],
+      "docs": "https://docs.reverieinc.com",
+      "domains": [
+        "generic",
+        "bfsi",
+        "ecomm",
+        "healthcare",
+        "voice-search",
+        "alphanumeric",
+        "names",
+        "address",
+        "language",
+        "yes-no",
+        "email"
+      ],
+      "endpoint": "https://revapi.reverieinc.com/upload",
+      "format_codes": [
+        "16k_int16",
+        "16k_uint8",
+        "8k_int16",
+        "8k_uint8",
+        "opus_16k",
+        "opus_8k",
+        "ogg_opus",
+        "16k_ulaw",
+        "8k_ulaw"
+      ],
+      "free_tier": "5 hours STT streaming + 5 hours STT file on sign-up (1-year expiry); paid tiers via RevUp pricing form",
+      "rev_appname": "stt_batch",
+      "subtitles": "srt"
+    },
+    "name": "Reverie Speech-to-Text (Batch)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-languages",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-domains",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-streaming",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-file",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-batch",
+        "https://docs.reverieinc.com/analytics",
+        "https://docs.reverieinc.com/api-reference/text-to-speech",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/key-features",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-speakers",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-sampling-rates"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "Transcribes an uploaded pre-recorded audio file in Indian languages in a single request.",
+    "first_seen": "2026-11-18",
+    "id": "stt_file",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-IN",
+      "hi",
+      "bn",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa",
+      "ta",
+      "te",
+      "as",
+      "or"
+    ],
+    "meta": {
+      "code_mixed_languages": [
+        "hi_en",
+        "te_en",
+        "ta_en",
+        "ml_en",
+        "kn_en",
+        "mr_en"
+      ],
+      "docs": "https://docs.reverieinc.com",
+      "domains": [
+        "generic",
+        "bfsi",
+        "ecomm",
+        "healthcare",
+        "voice-search",
+        "alphanumeric",
+        "names",
+        "address",
+        "language",
+        "yes-no",
+        "email"
+      ],
+      "endpoint": "https://revapi.reverieinc.com/upload",
+      "format_codes": [
+        "16k_int16",
+        "16k_uint8",
+        "8k_int16",
+        "8k_uint8",
+        "opus_16k",
+        "opus_8k",
+        "ogg_opus",
+        "16k_ulaw",
+        "8k_ulaw"
+      ],
+      "free_tier": "5 hours STT streaming + 5 hours STT file on sign-up (1-year expiry); paid tiers via RevUp pricing form",
+      "punctuation_languages": [
+        "en",
+        "hi"
+      ],
+      "rev_appname": "stt_file"
+    },
+    "name": "Reverie Speech-to-Text (File)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-languages",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-domains",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-streaming",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-file",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-batch",
+        "https://docs.reverieinc.com/analytics",
+        "https://docs.reverieinc.com/api-reference/text-to-speech",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/key-features",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-speakers",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-sampling-rates"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "Real-time transcription of live audio over WebSocket for Indian languages, with domain-tuned recognition.",
+    "first_seen": "2026-11-18",
+    "id": "stt_stream",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en-IN",
+      "hi",
+      "bn",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "pa",
+      "ta",
+      "te",
+      "as",
+      "or"
+    ],
+    "meta": {
+      "code_mixed_languages": [
+        "hi_en",
+        "te_en",
+        "ta_en",
+        "ml_en",
+        "kn_en",
+        "mr_en"
+      ],
+      "continuous_decoding": true,
+      "docs": "https://docs.reverieinc.com",
+      "domains": [
+        "generic",
+        "bfsi",
+        "ecomm",
+        "healthcare",
+        "voice-search",
+        "alphanumeric",
+        "names",
+        "address",
+        "language",
+        "yes-no",
+        "email"
+      ],
+      "endpoint": "wss://revapi.reverieinc.com/stream",
+      "format_codes": [
+        "16k_int16",
+        "16k_uint8",
+        "8k_int16",
+        "8k_uint8",
+        "opus_16k",
+        "opus_8k",
+        "ogg_opus",
+        "16k_ulaw",
+        "8k_ulaw"
+      ],
+      "free_tier": "5 hours STT streaming + 5 hours STT file on sign-up (1-year expiry); paid tiers via RevUp pricing form",
+      "punctuation_languages": [
+        "en",
+        "hi"
+      ],
+      "rev_appname": "stt_stream",
+      "session_timeout_default_seconds": 15,
+      "session_timeout_max_seconds": 180,
+      "silence_max_seconds": 30
+    },
+    "name": "Reverie Speech-to-Text (Streaming)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-languages",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-domains",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-streaming",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-file",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-batch",
+        "https://docs.reverieinc.com/analytics",
+        "https://docs.reverieinc.com/api-reference/text-to-speech",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/key-features",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-speakers",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-sampling-rates"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Synthesizes speech in Indian languages with selectable male/female speakers, speed and pitch control and SSML input.",
+    "first_seen": "2026-11-18",
+    "id": "tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "hi",
+      "bn",
+      "kn",
+      "ml",
+      "ta",
+      "te",
+      "gu",
+      "or",
+      "as",
+      "mr",
+      "pa",
+      "en-IN"
+    ],
+    "meta": {
+      "default_format": "wav",
+      "default_sample_rate_hz": 22050,
+      "endpoint": "https://revapi.reverieinc.com/",
+      "free_tier": "10,000 characters on sign-up (1-year expiry); paid tiers via RevUp pricing form",
+      "pitch_range_semitones": [
+        -3,
+        3
+      ],
+      "rev_appname": "tts",
+      "speed_range": [
+        0.5,
+        1.5
+      ]
+    },
+    "name": "Reverie Text-to-Speech",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-languages",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-domains",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-streaming",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-file",
+        "https://docs.reverieinc.com/api-reference/speech-to-text-batch",
+        "https://docs.reverieinc.com/analytics",
+        "https://docs.reverieinc.com/api-reference/text-to-speech",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/key-features",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-speakers",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-audio-formats",
+        "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-sampling-rates"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

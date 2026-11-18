@@ -1,0 +1,48 @@
+{
+  "access": "enterprise",
+  "description": "Reverie Language Technologies is a Bengaluru, India-based language technology company founded in 2009. Its RevUp developer platform sells streaming, file and batch speech-to-text and text-to-speech APIs for Indian languages (11 Indian languages plus Indian English, with code-mixed variants for STT), alongside translation and transliteration APIs.",
+  "docs_urls": [
+    "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-languages",
+    "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-audio-formats",
+    "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-domains",
+    "https://docs.reverieinc.com/api-reference/speech-to-text-streaming",
+    "https://docs.reverieinc.com/api-reference/speech-to-text-file",
+    "https://docs.reverieinc.com/api-reference/speech-to-text-batch",
+    "https://docs.reverieinc.com/analytics",
+    "https://docs.reverieinc.com/api-reference/text-to-speech",
+    "https://docs.reverieinc.com/usage-guides/text-to-speech/key-features",
+    "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-speakers",
+    "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-audio-formats",
+    "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-sampling-rates"
+  ],
+  "headquarters": "IN",
+  "id": "reverie",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.reverieinc.com/api-reference/speech-to-text-streaming",
+    "docs": "https://docs.reverieinc.com/introduction",
+    "pricing": "https://revup.reverieinc.com/pricing"
+  },
+  "name": "Reverie",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-languages",
+      "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-audio-formats",
+      "https://docs.reverieinc.com/usage-guides/speech-to-text/supported-domains",
+      "https://docs.reverieinc.com/api-reference/speech-to-text-streaming",
+      "https://docs.reverieinc.com/api-reference/speech-to-text-file",
+      "https://docs.reverieinc.com/api-reference/speech-to-text-batch",
+      "https://docs.reverieinc.com/analytics",
+      "https://docs.reverieinc.com/api-reference/text-to-speech",
+      "https://docs.reverieinc.com/usage-guides/text-to-speech/key-features",
+      "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-speakers",
+      "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-audio-formats",
+      "https://docs.reverieinc.com/usage-guides/text-to-speech/supported-sampling-rates"
+    ]
+  },
+  "website": "https://reverieinc.com"
+}
