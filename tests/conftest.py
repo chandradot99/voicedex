@@ -58,7 +58,9 @@ def fixture_catalog(tmp_path_factory) -> Catalog:
 
 
 @pytest.fixture
-async def client(fixture_catalog):
+async def client(fixture_catalog, monkeypatch):
+    from voicedex.web import routes
+    monkeypatch.setattr(routes, "load_changes", lambda _data_dir: ())   # never replay the real repo's git history
     app.state.catalog = fixture_catalog
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as c:
         yield c

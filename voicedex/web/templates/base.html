@@ -16,6 +16,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ canonical }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site_name }} changes" href="/changes.xml">
   {% for ld in jsonld or [] %}<script type="application/ld+json">{{ ld|tojson }}</script>
   {% endfor %}
   <meta name="theme-color" content="#111113">
@@ -62,7 +63,7 @@
     <div class="wrap footer-row">
       <p class="footer-brand">{{ site_name }}</p>
       <p>An open catalog of speech models. Data comes from each provider's API and documentation, is reviewed, and is versioned in git.</p>
-      <nav aria-label="Footer"><a href="/speech-to-text">Speech-to-text</a><a href="/text-to-speech">Text-to-speech</a><a href="/speech-to-speech">Speech-to-speech</a><a href="/docs">REST API</a><a href="/v1/catalog.json">Full catalog as JSON</a><a href="/sitemap.xml">Sitemap</a></nav>
+      <nav aria-label="Footer"><a href="/speech-to-text">Speech-to-text</a><a href="/text-to-speech">Text-to-speech</a><a href="/speech-to-speech">Speech-to-speech</a><a href="/changes">Changes</a><a href="/docs">REST API</a><a href="/v1/catalog.json">Full catalog as JSON</a><a href="/sitemap.xml">Sitemap</a></nav>
     </div>
   </footer>
   <dialog id="palette" class="palette" aria-label="Jump to a model, provider, language or feature">

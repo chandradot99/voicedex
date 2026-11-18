@@ -43,6 +43,13 @@ jobs:
       IMAGE: us-central1-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/voicedex/app:${{ github.sha }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # full history: the /changes feed is built from git log of data/
+
+      - uses: astral-sh/setup-uv@v4
+
+      - name: Build changes feed from git history
+        run: uv run --no-dev python scripts/build_changes.py   # -> data/.changes.json, copied into the image
 
       - uses: google-github-actions/auth@v2
         with:
