@@ -147,7 +147,8 @@ async def test_landing_pages(client, monkeypatch):
     from voicedex.web import views
     monkeypatch.setattr(views, "MIN_LANDING_MODELS", 1)                # the fixture catalog is tiny
     hub = await client.get("/speech-to-text")
-    assert hub.status_code == 200 and "<h1>Speech-to-text APIs and models compared</h1>" in hub.text
+    assert hub.status_code == 200 and "<h1>Speech-to-text (STT) APIs and models compared</h1>" in hub.text
+    assert "<title>Speech-to-text (STT) APIs compared:" in hub.text
     assert 'href="/speech-to-text/speaker-diarization"' in hub.text and 'href="/speech-to-text/german"' in hub.text
     german = (await client.get("/speech-to-text/german")).text
     table = german.split('<table class="data models-table">', 1)[1]
@@ -188,3 +189,11 @@ async def test_trailing_slash_redirects_permanently(client):
     assert r.status_code == 301 and r.headers["location"] == "/models?type=stt"
     r = await client.get("http://test//evil.example/", follow_redirects=False)
     assert r.headers["location"] == "/evil.example"                  # never protocol-relative
+
+
+async def test_short_type_aliases_redirect(client):
+    for path, target in (("/tts", "/text-to-speech"), ("/stt/hindi", "/speech-to-text/hindi"),
+                         ("/s2s", "/speech-to-speech"), ("/asr", "/speech-to-text"),
+                         ("/tts/open-source?x=1", "/text-to-speech/open-source?x=1")):
+        r = await client.get(path, follow_redirects=False)
+        assert r.status_code == 301 and r.headers["location"] == target, path
