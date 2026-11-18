@@ -177,7 +177,7 @@ uvx ruff check .
 | `GET /v1/models`, `/v1/voices` | same filters across providers, plus `provider` |
 | `GET /v1/catalog.json` | entire catalog incl. deprecated, one response |
 | `GET /health` | |
-| `POST /mcp` | MCP (Streamable HTTP): search_models, get_model, compare_models, search_voices, list_providers, recent_changes |
+| `POST /mcp` | MCP (Streamable HTTP): search_models, get_model, compare_models, estimate_cost, find_alternatives, search_voices, list_providers, recent_changes |
 
 All list endpoints: `limit`/`offset`, `updated_since` (date granularity; auto-includes deprecated unless
 `include_deprecated=false`). Every `/v1` response carries one catalog-wide `ETag` (304 on `If-None-Match`) and

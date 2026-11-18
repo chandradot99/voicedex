@@ -83,7 +83,10 @@ Give AI assistants the whole catalog over the [Model Context Protocol](https://m
 claude mcp add --transport http voicedex https://voicedex.dev/mcp     # Claude Code
 ```
 
-Tools: `search_models`, `get_model`, `compare_models`, `search_voices`, `list_providers`, `recent_changes`.
+Tools: `search_models`, `get_model`, `compare_models` (accepts loose names like "deepgram nova-3"),
+`estimate_cost` (workload or voice-agent pipeline, maths done server-side), `find_alternatives` (replacements
+for a model, e.g. one shutting down), `search_voices`, `list_providers`, `recent_changes`. Every result carries
+its price source, check dates and a voicedex.dev link; missing prices come with the reason.
 Ask things like "Which text-to-speech APIs support Swahili, cheapest first?" or "Which speech models shut
 down in the next 90 days?".
 
