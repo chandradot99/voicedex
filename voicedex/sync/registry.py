@@ -101,7 +101,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry('gnani'            , 'Gnani.ai', 'both', "voicedex.sync.gnani.GnaniSyncer"),
     SyncerEntry('upliftai'         , 'Uplift AI', 'both', "voicedex.sync.upliftai.UpliftAISyncer"),
     SyncerEntry('navana'           , 'Navana.ai', 'both', "voicedex.sync.navana.NavanaSyncer"),
-    SyncerEntry('dubverse'         , 'Dubverse', 'tts', "voicedex.sync.dubverse.DubverseSyncer"),
+    SyncerEntry('dubverse'           , 'Dubverse', 'tts', "voicedex.sync.retired.RetiredSyncer", retired=True),
     SyncerEntry('reverie'          , 'Reverie', 'both', "voicedex.sync.reverie.ReverieSyncer"),
     SyncerEntry('bhashini'         , 'Bhashini', 'both', "voicedex.sync.bhashini.BhashiniSyncer"),
     SyncerEntry('fptai'            , 'FPT.AI', 'both', "voicedex.sync.fptai.FptAISyncer"),

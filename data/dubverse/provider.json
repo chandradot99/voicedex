@@ -1,0 +1,9 @@
+{
+  "description": "Indian AI dubbing and TTS company whose API sold its own models (neo.one, candy.two, swift.call; neo.one was $0.08 / ₹6 per 1k characters). Exotel acquihired Dubverse's leadership team in April 2026 (Inc42, 2026-04-08). By 2026-11-18 the documented API hosts no longer work: audio.dubverse.ai does not resolve in DNS and macaque.dubverse.ai returns Cloudflare 1016. The marketing site and docs are still online. No end date was published.",
+  "headquarters": "IN",
+  "id": "dubverse",
+  "name": "Dubverse",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://dubverse.ai"
+}
