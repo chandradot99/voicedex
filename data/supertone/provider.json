@@ -1,8 +1,14 @@
 {
+  "api_urls": [
+    "https://huggingface.co/api/models?author=Supertone&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=Supertone&pipeline_tag=text-to-speech"
+  ],
   "description": "HYBE-owned Korean voice-AI company with a public TTS API (Sona Speech and Supertonic models) and the Supertone Play app. Shareholders resolved to dissolve the company on 2026-07-15 (Supertone dissolution notice); the sunset notice set 2026-08-31 as the shutdown of Play, the API and Voice Builder. supertone.ai now redirects to Antinode Audio and the API host returns 404. Supertonic open weights remain in an archived GitHub repo.",
   "id": "supertone",
+  "last_synced": "2026-11-18",
   "name": "Supertone",
   "retired_on": "2026-08-31",
+  "source": "api",
   "status": "deprecated",
   "type": "tts",
   "website": "https://www.supertone.ai"

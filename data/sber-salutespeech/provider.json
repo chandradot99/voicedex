@@ -1,13 +1,19 @@
 {
-  "description": "Russian speech recognition and synthesis API from Sber (SberDevices), billed in roubles. Sber's tariff pages state that from 15 July 2026 new customers can no longer buy packages or use pay-as-you-go, and individuals' Freemium renewals ended; previously purchased packages stay usable until they expire (developers.sber.ru/docs/ru/salutespeech/tariffs/individual-tariffs, legal-tariffs).",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=text-to-speech"
+  ],
+  "description": "Russian speech recognition and synthesis API from Sber (SberDevices), billed in roubles. Sber's tariff pages state that from 15 July 2026 new customers can no longer buy packages or use pay-as-you-go, and individuals' Freemium renewals ended; previously purchased packages stay usable until they expire (developers.sber.ru/docs/ru/salutespeech/tariffs/individual-tariffs, legal-tariffs). Sber's GigaAM speech-recognition models remain published as MIT-licensed open weights under the ai-sage organisation on Hugging Face, listed below.",
   "headquarters": "RU",
   "id": "sber-salutespeech",
+  "last_synced": "2026-11-18",
   "links": {
     "pricing": "https://developers.sber.ru/docs/ru/salutespeech/tariffs/legal-tariffs"
   },
   "name": "Sber SaluteSpeech",
   "retired_on": "2026-07-15",
+  "source": "api",
   "status": "deprecated",
-  "type": "both",
+  "type": "stt",
   "website": "https://developers.sber.ru/portal/products/smartspeech"
 }

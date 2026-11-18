@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "ai-sage/GigaAM-Multilingual",
+    "languages": [
+      "en",
+      "kk",
+      "ky",
+      "ru",
+      "uz"
+    ],
+    "meta": {
+      "huggingface_repo": "ai-sage/GigaAM-Multilingual",
+      "released": "2026-07-14"
+    },
+    "name": "GigaAM-Multilingual",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/ai-sage/GigaAM-Multilingual"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "ai-sage/GigaAM-v3",
+    "languages": [
+      "en",
+      "ru"
+    ],
+    "meta": {
+      "huggingface_repo": "ai-sage/GigaAM-v3",
+      "released": "2025-11-19"
+    },
+    "name": "GigaAM-v3",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/ai-sage/GigaAM-v3"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
