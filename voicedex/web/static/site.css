@@ -6,10 +6,10 @@
    ────────────────────────────────────────────────────────────────────────────── */
 
 :root {
-  --bg: #0b0b0c;
-  --panel: #131314;
-  --panel-2: #19191b;
-  --rule: #262627;
+  --bg: #111113;
+  --panel: #18181b;
+  --panel-2: #1e1e21;
+  --rule: #2a2a2d;
   --rule-2: #3a3a3c;
   --control: #68686b;              /* form-control edges: >= 3:1 against bg and panel (WCAG 1.4.11) */
   --ink: #ededea;
@@ -65,9 +65,9 @@ p { margin: 0; }
 /* ── Header ── */
 .site-header {
   position: sticky; top: 0; z-index: 40; height: var(--header-h);
-  background: rgba(11, 11, 12, .92); border-bottom: 1px solid var(--rule);
+  background: rgba(17, 17, 19, .92); border-bottom: 1px solid var(--rule);
 }
-@supports (backdrop-filter: blur(1px)) { .site-header { background: rgba(11, 11, 12, .8); backdrop-filter: saturate(140%) blur(10px); } }
+@supports (backdrop-filter: blur(1px)) { .site-header { background: rgba(17, 17, 19, .8); backdrop-filter: saturate(140%) blur(10px); } }
 .header-row { height: 100%; display: flex; align-items: center; gap: 28px; }
 .brand { display: flex; align-items: center; gap: 9px; text-decoration: none; font-weight: 600; font-size: 16px; letter-spacing: -0.02em; }
 .brand:hover { color: var(--ink); }
@@ -551,8 +551,8 @@ input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 
 /* ── Dock: now playing + compare tray ── */
 .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; display: grid; }
-.now-playing, .tray { background: rgba(19, 19, 20, .96); border-top: 1px solid var(--rule-2); }
-@supports (backdrop-filter: blur(1px)) { .now-playing, .tray { background: rgba(19, 19, 20, .86); backdrop-filter: blur(12px); } }
+.now-playing, .tray { background: rgba(24, 24, 27, .96); border-top: 1px solid var(--rule-2); }
+@supports (backdrop-filter: blur(1px)) { .now-playing, .tray { background: rgba(24, 24, 27, .86); backdrop-filter: blur(12px); } }
 .now-playing[hidden], .tray[hidden] { display: none; }
 .np-row, .tray-row { display: flex; align-items: center; gap: 16px; min-height: 52px; }
 .np-toggle { width: 32px; height: 32px; border-radius: 50%; border: 0; background: var(--signal); color: var(--signal-ink); display: grid; place-items: center; cursor: pointer; flex: none; }
