@@ -42,13 +42,15 @@
     .docs-page .site-header { z-index: 100; }
     .docs-page { display: block; }
     .docs-page .jump kbd { display: none; }   /* here ⌘K opens the reference's own search */
+    #scalar-docs:not(:empty) + .docs-loading { display: none; }   /* placeholder only until the reference mounts */
     #scalar-docs { --scalar-custom-header-height: 57px; }
   </style>
 </head>
 <body class="docs-page">
   <a class="skip" href="#scalar-docs">Skip to the reference</a>
   {% include "_header.html" %}
-  <main id="scalar-docs"><div class="loading-block" role="status"><span class="loader" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Loading API reference…</div></main>
+  <main id="scalar-docs"></main>
+  <div class="loading-block docs-loading" role="status"><span class="loader" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Loading API reference…</div>
   <script>
     // Focus rings for keyboard users only. Scalar moves focus programmatically after mouse clicks
     // (tabs, dropdown triggers), which browsers treat as :focus-visible — so track the input modality.
@@ -122,6 +124,97 @@
           if (t.textContent.trim() === "Clear optional parameters") t.style.display = "none";   // label says it all
         });
       }).observe(document.body, { childList: true, subtree: true });
+    })();
+
+    // Response examples are capped at ~230px by the reference. Add an Expand / Collapse toggle to each card
+    // whose example is cut off (grows to 70% of the viewport, then scrolls).
+    (() => {
+      const content = (card) => card.children[1];
+      const decorate = (card) => {
+        if (card.querySelector(".vd-expand")) return;
+        const footer = card.lastElementChild;
+        if (!footer || footer === content(card)) return;
+        const btn = document.createElement("button");
+        btn.type = "button"; btn.className = "vd-expand"; btn.textContent = "Expand";
+        btn.setAttribute("aria-expanded", "false");
+        btn.addEventListener("click", () => {
+          const open = card.classList.toggle("vd-expanded");
+          btn.textContent = open ? "Collapse" : "Expand";
+          btn.setAttribute("aria-expanded", String(open));
+          if (!open) card.scrollIntoView({ block: "nearest" });
+        });
+        footer.append(btn);
+        sync(card);
+      };
+      const sync = (card) => {       // only offer it when the example is actually cut off
+        const btn = card.querySelector(".vd-expand"), box = content(card)?.querySelector(".custom-scroll") || content(card);
+        if (!btn || !box) return;
+        btn.hidden = !card.classList.contains("vd-expanded") && box.scrollHeight <= box.clientHeight + 4;
+      };
+      // API client: "Expand" next to the response Body's Download link widens the response to the whole window.
+      const ICON_OPEN = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 1.5h3v3M4.5 10.5h-3v-3M10.5 1.5 7 5M1.5 10.5 5 7"/></svg>';
+      const ICON_CLOSE = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M10.5 5h-3v-3M1.5 7h3v3M7.5 5 11 1M4.5 7 1 11"/></svg>';
+      const decorateClient = () => document.querySelectorAll(".scalar-client a").forEach((dl) => {
+        if (!/Download/.test(dl.textContent) || dl.parentElement.querySelector(".vd-full")) return;
+        let panel = dl; while (panel && !(panel.tagName === "SECTION" && panel.parentElement?.children.length === 2)) panel = panel.parentElement;
+        if (!panel) return;
+        const row = panel.parentElement;
+        const btn = document.createElement("button");
+        btn.type = "button"; btn.className = "vd-full";
+        const paint = () => { const on = row.classList.contains("vd-resp-full");
+          btn.innerHTML = on ? ICON_CLOSE : ICON_OPEN;              // icon only; the label is for screen readers + tooltip
+          btn.setAttribute("aria-pressed", String(on));
+          btn.setAttribute("aria-label", on ? "Collapse response" : "Expand response");
+          btn.title = on ? "Collapse" : "Expand response"; };
+        // Expanded: only the JSON plus Collapse / Download — the Body label and the "massive body" notice hide too.
+        // Expanded: a one-line summary on the left of the bar — method + path, status, time, size.
+        const summary = () => {
+          const head = (panel.querySelector(".request-response-header")?.textContent || "").replace(/\s+/g, " ");
+          const time = head.match(/Duration:\s*([\d.]+\s*m?s)/)?.[1];
+          const st = head.match(/Status:\s*(\d{3})\s*([A-Za-z ]*?)\s*(?=All|$)/);
+          const addr = row.closest(".scalar-app-layout")?.querySelector('[class*="min-h-header"]');
+          const method = addr && [...addr.querySelectorAll("*")].map((e) => e.textContent.trim()).find((t) => /^(GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS)$/.test(t));
+          const path = addr && [...addr.querySelectorAll("*")].filter((e) => !e.children.length).map((e) => e.textContent.trim()).find((t) => t.startsWith("/"));
+          const code = st && +st[1];
+          return [method && path && `<b>${method} ${path}</b>`, st && `<span class="${code < 400 ? "ok" : "bad"}">${st[1]} ${st[2]}</span>`.replace(" </", "</"),
+                  time].filter(Boolean).join("<span aria-hidden=\"true\">·</span>");
+        };
+        btn.addEventListener("click", () => {
+          const info = summary();                                // read before anything is hidden
+          const on = row.classList.toggle("vd-resp-full");
+          const bar = dl.parentElement.parentElement;
+          const label = bar.querySelector(":scope > button");      // the "Body" label (summary takes its place)
+          bar.querySelector(".vd-summary")?.remove();
+          label?.classList.toggle("vd-hide", on);
+          if (on && info) {
+            const el = document.createElement("p"); el.className = "vd-summary"; el.innerHTML = info; bar.prepend(el);
+            // Size: the body on screen is virtualised, so measure the full response the Download link points to.
+            const href = dl.getAttribute("href");
+            if (href?.startsWith("blob:")) fetch(href).then((r) => r.blob()).then((b) => {
+              const kb = b.size / 1024;
+              const size = kb >= 1024 ? `${(kb / 1024).toFixed(1)} MB` : kb >= 1 ? `${Math.round(kb)} KB` : `${b.size} B`;
+              if (el.isConnected) el.insertAdjacentHTML("beforeend", `<span aria-hidden="true">·</span>${size}`);
+            }).catch(() => {});
+          }
+          bar.classList.toggle("vd-bar-end", on && !info);
+          panel.querySelectorAll("*").forEach((e) => {
+            if (!e.children.length && /response body is massive/i.test(e.textContent)) (e.closest("div") || e).classList.toggle("vd-hide", on);
+          });
+          paint();
+        });
+        paint();
+        dl.before(btn);
+        // Download: icon only as well (Scalar renders an icon + "Download" text).
+        dl.classList.add("vd-icon-link");
+        dl.setAttribute("aria-label", "Download response"); dl.title = "Download response";
+      });
+      const scan = () => { document.querySelectorAll("#scalar-docs .scalar-card.response-card").forEach((c) => { decorate(c); sync(c); }); decorateClient();
+        // Status line: coral for 4xx/5xx (the site's error colour), so a failed request stands out.
+        document.querySelectorAll(".scalar-client .animate-response-children a").forEach((a) =>
+          a.classList.toggle("vd-err", /^\s*[45]\d\d/.test(a.textContent))); };
+      let queued = false;
+      new MutationObserver(() => { if (!queued) { queued = true; setTimeout(() => { queued = false; scan(); }, 60); } })
+        .observe(document.body, { childList: true, subtree: true, characterData: true });   // mount node replaced; status text updates in place
     })();
 
     // Parameter info ("ⓘ") popovers open on hover, not click (mouse only; touch keeps tap-to-open).
@@ -243,11 +336,18 @@
           --scalar-border-color: var(--rule-2) !important;
         }
         .scalar-client.scalar-app-layout {
-          background: var(--panel) !important; border: 1px solid var(--control) !important; border-radius: 2px; overflow: hidden;
+          background: var(--panel) !important; border: 1px solid var(--control) !important; border-radius: 2px !important; overflow: hidden;
           box-shadow: 0 40px 140px -20px var(--shadow) !important;
         }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
         .introduction-section h1, .section-header.tight { font-weight: 600; }
+        .section.introduction-section { padding-top: 12px !important; }   /* title lines up with the sidebar's search box */
+        /* Version badges sit on the title line, at the far right. */
+        .introduction-section .section-content { display: grid !important; grid-template-columns: max-content 1fr; column-gap: 14px; row-gap: 12px; align-items: center; }
+        .introduction-section .section-content > div.flex:first-child { grid-column: 2; grid-row: 1; justify-self: end; }
+        .introduction-section .section-content > .section-header-wrapper { grid-column: 1; grid-row: 1; width: max-content; }
+        .introduction-section .section-content > .section-header-wrapper .section-header { margin-bottom: 0 !important; }
+        .introduction-section .section-content > :not(div.flex:first-child):not(.section-header-wrapper) { grid-column: 1 / -1; }
         /* Floating layers (menus, listboxes, search dialog, tooltips) must read as raised above
            whatever they cover: lighter surface, visible edge, real shadow. */
         .z-context > div, [role="tooltip"]:not(.scalar-tooltip), .scalar-modal {
@@ -302,9 +402,30 @@
            (visible joints), so use the equivalent opaque colour. */
         .scalar-sidebar-indent-border { background: var(--rule) !important; width: 1px !important; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
+        /* Datasheet rules for the client: quiet 13px/500 section labels, mono data, 2px corners, no pills,
+           no colours outside the palette (amber = interaction, coral = errors). */
         .scalar-client h3,
-        .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
-        .scalar-client .request-response-header { font-size: 15px !important; font-weight: 600 !important; }
+        .response-section-content button.box-content.max-h-8 { font-size: 13px !important; font-weight: 500 !important; line-height: 20px !important; color: var(--ink) !important; }
+        .scalar-client .request-response-header { font-size: 13px !important; font-weight: 500 !important; }
+        .scalar-client .request-response-header h2 { font-size: 13px !important; font-weight: 500 !important; }
+        /* Status line: "5ms  200 OK" in mono, no underline, no green dot. */
+        .scalar-client .animate-response-children { font: 400 12px var(--mono, "Geist Mono"), ui-monospace, monospace !important; color: var(--ink-2) !important; gap: 12px !important; }
+        .scalar-client .animate-response-children a { text-decoration: none !important; color: var(--ink) !important; font-weight: 500; }
+        .scalar-client .animate-response-children a .rounded-full { display: none !important; }
+        .scalar-client .animate-response-children a.vd-err { color: var(--end) !important; }
+        /* Header counts ("Response Headers 7"): plain muted mono number, like the site's counts — not a round pill. */
+        .scalar-client span.rounded-full.border.h-5.w-5 { border: 0 !important; background: none !important; width: auto !important;
+          font: 400 11px "Geist Mono", ui-monospace, monospace !important; color: var(--muted) !important; }
+        /* Method tag: mono ink, not blue. */
+        .scalar-client .font-code.text-3xs { color: var(--ink-2) !important; font-weight: 500 !important; }
+        /* Send: the site's primary button (ink, amber on hover). */
+        .scalar-client .scalar-button-solid { background: var(--ink) !important; color: var(--bg) !important; border-radius: 2px !important; font-weight: 500 !important; }
+        .scalar-client .scalar-button-solid:hover { background: var(--signal-fill) !important; color: var(--signal-ink) !important; }
+        /* Close: a square 2px icon button, not a circle; focus ring only for keyboard users. */
+        .app-exit-button { border-radius: 2px !important; background: var(--panel) !important; border: 1px solid var(--rule-2) !important;
+          color: var(--ink-2) !important; padding: 6px !important; outline: 0 !important; }
+        .app-exit-button:hover { color: var(--ink) !important; border-color: var(--ink-2) !important; }
+        .app-exit-button:focus-visible { outline: 2px solid var(--signal) !important; outline-offset: 2px; }
         /* Request panel: Scalar puts an empty growing spacer before "Code Snippet", pinning it to the bottom with a
            gap when sections are collapsed. Remove only the spacer — the container keeps the full panel height, so
            popovers inside it (the code-language picker) still have room. */
@@ -333,6 +454,45 @@
         .response-body-virtual .scalar-virtual-text { padding-left: 0 !important; }
         .response-body-virtual .scalar-virtual-text-content { left: 34px !important; }
         .scalar-card, .scalar-codeblock-pre { border-radius: 2px !important; }
+        /* Response examples: Expand / Collapse (button added by the script below). */
+        .scalar-card.response-card.vd-expanded { max-height: 70vh !important; }
+        .scalar-card.response-card > :last-child { display: flex !important; flex-direction: row !important; align-items: center; gap: 10px; }
+        .vd-expand {
+          order: 99; flex: none; height: 24px; padding: 0 8px; cursor: pointer;
+          font: 500 11px/1 "Geist Mono", ui-monospace, monospace; letter-spacing: .04em;
+          color: var(--ink-2); background: transparent; border: 1px solid var(--control); border-radius: 2px;
+        }
+        .vd-expand:hover { color: var(--ink); border-color: var(--ink-2); }
+        .vd-expand[hidden] { display: none; }
+        /* API client: response body can take the whole window (request side hidden). */
+        .vd-resp-full > section:first-child { display: none !important; }
+        /* …and inside the response, only the Body remains (cookies/headers rows hidden), filling the modal. */
+        .vd-resp-full .response-section-content > :not(:has(.vd-full)) { display: none !important; }
+        .vd-resp-full .response-section-content > :has(.vd-full) { flex: 1 1 auto; min-height: 0; }
+        .vd-resp-full .request-response-header { display: none !important; }   /* status row */
+        .scalar-app-layout:has(.vd-resp-full) .scalar-sidebar-toggle { display: none !important; }
+        /* URL / Send bar: collapsed and invisible, not display:none — the close ✕ (position: fixed) lives inside it. */
+        .scalar-app-layout:has(.vd-resp-full) [class*="min-h-header"] {
+          height: 0 !important; min-height: 0 !important; padding: 0 !important; border: 0 !important; overflow: hidden !important; visibility: hidden !important; }
+        .scalar-app-layout:has(.vd-resp-full) .app-exit-button { visibility: visible !important; }
+        .vd-hide { display: none !important; }
+        .vd-bar-end { justify-content: flex-end !important; }
+        .vd-full {
+          height: 24px; padding: 0 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
+          font: 500 11px/1 "Geist Mono", ui-monospace, monospace; color: var(--ink-2);
+          background: transparent; border: 1px solid var(--control); border-radius: 2px;
+        }
+        .vd-full:hover { color: var(--ink); border-color: var(--ink-2); }
+        .vd-full { width: 26px; padding: 0; justify-content: center; border-color: transparent !important; }
+        .vd-full:hover { border-color: var(--rule-2) !important; }
+        .vd-full svg { width: 12px; height: 12px; }
+        .vd-summary { margin-right: auto; padding-left: 12px; display: flex; gap: 14px; align-items: center; white-space: nowrap; overflow: hidden;
+          font: 400 12px "Geist Mono", ui-monospace, monospace; color: var(--muted); }
+        .vd-summary b { font-weight: 500; color: var(--ink); }
+        .vd-summary .ok { color: var(--signal); } .vd-summary .bad { color: var(--end); }
+        .vd-icon-link { font-size: 0 !important; gap: 0 !important; width: 26px; height: 24px; justify-content: center; }
+        .vd-icon-link svg { width: 14px !important; height: 14px !important; }
+        .vd-full svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 1.5; }
         /* Datasheet shapes: no pills (version badge, content-type chip, schema toggle). */
         .badge.rounded-2xl, .selected-content-type, .scalar-card-checkbox-input, .scalar-card-checkbox-checkmark { border-radius: 2px !important; }
       `,
