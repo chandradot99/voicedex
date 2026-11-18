@@ -1,0 +1,38 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "hipaa"
+  ],
+  "description": "Phonic (Phonic Inc.) describes itself as a speech-to-speech model company. It sells its Phonic-1 speech-to-speech model as a per-minute voice-agent API with TypeScript and Python SDKs, a CLI and telephony integrations, covering 50+ languages; enterprise plans add single-tenant, VPC and self-hosted deployment.",
+  "docs_urls": [
+    "https://docs.phonic.ai/docs/get-started/overview.md",
+    "https://docs.phonic.ai/api-reference/agents/create.md",
+    "https://docs.phonic.ai/docs/build/agents/supported_languages.md",
+    "https://phonic.ai/pricing",
+    "https://docs.phonic.ai/docs/build/agents/voices.md"
+  ],
+  "headquarters": "US",
+  "id": "phonic",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.phonic.ai/api-reference",
+    "docs": "https://docs.phonic.ai",
+    "pricing": "https://phonic.ai/pricing"
+  },
+  "name": "Phonic",
+  "source": "docs",
+  "type": "sts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.phonic.ai/docs/get-started/overview.md",
+      "https://docs.phonic.ai/api-reference/agents/create.md",
+      "https://docs.phonic.ai/docs/build/agents/supported_languages.md",
+      "https://phonic.ai/pricing",
+      "https://docs.phonic.ai/docs/build/agents/voices.md"
+    ]
+  },
+  "website": "https://phonic.ai"
+}

@@ -1,0 +1,737 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Peaceful, Mellow, Approachable",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "alice",
+    "name": "Alice",
+    "tags": [
+      "peaceful",
+      "mellow",
+      "approachable"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Cultured, Monotone, Professional",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "amelia",
+    "meta": {
+      "accent_note": "Moderate British Accent"
+    },
+    "name": "Amelia",
+    "tags": [
+      "cultured",
+      "monotone",
+      "professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "brazilian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, Confident, Precise",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "daniela",
+    "meta": {
+      "accent_note": "Moderate Portuguese (Brazil) Accent"
+    },
+    "name": "Daniela",
+    "tags": [
+      "bright",
+      "confident",
+      "precise"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Confident, Deep, Serious",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "derek",
+    "meta": {
+      "accent_note": "Moderate Australian Accent"
+    },
+    "name": "Derek",
+    "tags": [
+      "confident",
+      "deep",
+      "serious"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Cheerful, Clear, Precise",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "divya",
+    "meta": {
+      "accent_note": "Moderate Indian Accent"
+    },
+    "name": "Divya",
+    "tags": [
+      "cheerful",
+      "clear",
+      "precise"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "mexican",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Approachable, Patient, Serious",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "eduardo",
+    "meta": {
+      "accent_note": "Slight Spanish (Mexico) Accent"
+    },
+    "name": "Eduardo",
+    "tags": [
+      "approachable",
+      "patient",
+      "serious"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Grounded, Patient, Reassuring",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "eleanor",
+    "name": "Eleanor",
+    "tags": [
+      "grounded",
+      "patient",
+      "reassuring"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, Confident, Polished",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "eloise",
+    "meta": {
+      "accent_note": "Moderate British Accent"
+    },
+    "name": "Eloise",
+    "tags": [
+      "bright",
+      "confident",
+      "polished"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Calm, Reassuring, Velvety",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "gabrielle",
+    "name": "Gabrielle",
+    "tags": [
+      "calm",
+      "reassuring",
+      "velvety"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, Cheerful, Smooth",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "gina",
+    "name": "Gina",
+    "tags": [
+      "bright",
+      "cheerful",
+      "smooth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Chill, Casual, Friendly",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "grant",
+    "name": "Grant",
+    "tags": [
+      "chill",
+      "casual",
+      "friendly"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Calm, Light, Smooth",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hana",
+    "name": "Hana",
+    "tags": [
+      "calm",
+      "light",
+      "smooth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deliberate, Firm, Flat",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "henri",
+    "name": "Henri",
+    "tags": [
+      "deliberate",
+      "firm",
+      "flat"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "japanese",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Upbeat, Soft-spoken, Light",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hikari",
+    "meta": {
+      "accent_note": "Moderate Japanese Accent"
+    },
+    "name": "Hikari",
+    "tags": [
+      "upbeat",
+      "soft-spoken",
+      "light"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Gravelly, Confident, Chill",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jackson",
+    "name": "Jackson",
+    "tags": [
+      "gravelly",
+      "confident",
+      "chill"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Cheerful, Expressive, Professional",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jerome",
+    "meta": {
+      "accent_note": "Moderate French Accent"
+    },
+    "name": "Jerome",
+    "tags": [
+      "cheerful",
+      "expressive",
+      "professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Grounded, Approachable, Patient",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "joon",
+    "name": "Joon",
+    "tags": [
+      "grounded",
+      "approachable",
+      "patient"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "brazilian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Calm, Friendly, Smooth",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "juliana",
+    "meta": {
+      "accent_note": "Slight Portuguese (Brazil) Accent"
+    },
+    "name": "Juliana",
+    "tags": [
+      "calm",
+      "friendly",
+      "smooth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south_african",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Direct, Friendly, Steady",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "karin",
+    "meta": {
+      "accent_note": "Moderate South African Accent"
+    },
+    "name": "Karin",
+    "tags": [
+      "direct",
+      "friendly",
+      "steady"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "german",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Crisp, Direct, Grounded",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "karoline",
+    "meta": {
+      "accent_note": "Moderate German Accent"
+    },
+    "name": "Karoline",
+    "tags": [
+      "crisp",
+      "direct",
+      "grounded"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "german",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Patient, Reassuring, Chill",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kaspar",
+    "meta": {
+      "accent_note": "Slight German Accent"
+    },
+    "name": "Kaspar",
+    "tags": [
+      "patient",
+      "reassuring",
+      "chill"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, Friendly, Upbeat",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "kourtney",
+    "name": "Kourtney",
+    "tags": [
+      "clear",
+      "friendly",
+      "upbeat"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Confident, Firm, Deep",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "landon",
+    "name": "Landon",
+    "tags": [
+      "confident",
+      "firm",
+      "deep"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Casual, Patient, Mellow",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "mason",
+    "name": "Mason",
+    "tags": [
+      "casual",
+      "patient",
+      "mellow"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, Patient, Upbeat",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "mei",
+    "name": "Mei",
+    "tags": [
+      "clear",
+      "patient",
+      "upbeat"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Chill, Friendly, Twangy",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "mia",
+    "meta": {
+      "accent_note": "Moderate Australian Accent"
+    },
+    "name": "Mia",
+    "tags": [
+      "chill",
+      "friendly",
+      "twangy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep, Serious, Measured",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "michelle",
+    "name": "Michelle",
+    "tags": [
+      "deep",
+      "serious",
+      "measured"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Confident, Direct, Professional",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nolan",
+    "name": "Nolan",
+    "tags": [
+      "confident",
+      "direct",
+      "professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Approachable, Grounded, Smooth",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "paula",
+    "name": "Paula",
+    "tags": [
+      "approachable",
+      "grounded",
+      "smooth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Empathetic, Professional, Friendly",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "phillip",
+    "name": "Phillip",
+    "tags": [
+      "empathetic",
+      "professional",
+      "friendly"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "mexican",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Casual, Confident, Suave",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "roberto",
+    "meta": {
+      "accent_note": "Moderate Spanish (Mexico) Accent"
+    },
+    "name": "Roberto",
+    "tags": [
+      "casual",
+      "confident",
+      "suave"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Cheerful, Expressive, Polished",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "sabrina",
+    "name": "Sabrina",
+    "tags": [
+      "cheerful",
+      "expressive",
+      "polished"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Subdued, Monotone, Serious",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "sandeep",
+    "meta": {
+      "accent_note": "Strong Indian Accent"
+    },
+    "name": "Sandeep",
+    "tags": [
+      "subdued",
+      "monotone",
+      "serious"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "southern american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Friendly, Reassuring, Twangy",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "shelby",
+    "meta": {
+      "accent_note": "Moderate Southern Accent"
+    },
+    "name": "Shelby",
+    "tags": [
+      "friendly",
+      "reassuring",
+      "twangy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, Clear, High-pitched",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "stella",
+    "name": "Stella",
+    "tags": [
+      "bright",
+      "clear",
+      "high-pitched"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Steady, Gravelly, Patient",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "tomoya",
+    "name": "Tomoya",
+    "tags": [
+      "steady",
+      "gravelly",
+      "patient"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "colombian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Cheerful, Direct, Polished",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "valeria",
+    "meta": {
+      "accent_note": "Slight Spanish (Colombia) Accent"
+    },
+    "name": "Valeria",
+    "tags": [
+      "cheerful",
+      "direct",
+      "polished"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Approachable, Empathetic, Friendly",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "virginia",
+    "name": "Virginia",
+    "tags": [
+      "approachable",
+      "empathetic",
+      "friendly"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Confident, Brisk, Monotone",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "william",
+    "meta": {
+      "accent_note": "Moderate British Accent"
+    },
+    "name": "William",
+    "tags": [
+      "confident",
+      "brisk",
+      "monotone"
+    ],
+    "updated_at": "2026-11-18"
+  }
+]
