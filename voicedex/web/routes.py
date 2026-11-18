@@ -485,7 +485,7 @@ async def changes_atom(catalog: Catalog = Depends(get_catalog)):
     """Atom feed: one entry per change, except new providers, which are one entry per day."""
     site = settings.site_url.rstrip("/")
     names = {pid: pd.provider.name for pid, pd in catalog.providers.items()}
-    entries: list[tuple[str, str, str, str, str]] = []          # id, date, title, link, summary
+    entries: list[tuple[str, str, str, str, str, int]] = []     # id, date, title, link, summary, priority
     added: dict[str, list[str]] = {}
     for c in load_changes(settings.data_path):
         name = names.get(c.provider_id, c.provider_id)
@@ -496,17 +496,19 @@ async def changes_atom(catalog: Catalog = Depends(get_catalog)):
         detail = f"{c.before} → {c.after}" if c.before and c.after else (c.after or "")
         title = f"{KIND_LABELS.get(c.kind, c.kind)}: {what}" + (f" ({detail})" if detail else "")
         link = f"{site}/models/{c.model_key}" if c.model_id else f"{site}/providers/{c.provider_id}"
-        entries.append((f"{c.commit}/{c.kind}/{c.model_key or c.provider_id}", c.date, title, link, title))
+        entries.append((f"{c.commit}/{c.kind}/{c.model_key or c.provider_id}", c.date, title, link, title,
+                        _CHANGE_PRIORITY.get(c.kind, 9)))
     for day, provs in added.items():
         entries.append((f"providers/{day}", day, f"{len(provs)} provider{'s' if len(provs) != 1 else ''} added",
-                        f"{site}/changes", "Added: " + ", ".join(sorted(provs))))
-    entries.sort(key=lambda e: e[1], reverse=True)
+                        f"{site}/changes", "Added: " + ", ".join(sorted(provs)), 7))
+    # newest day first; within a day the same order as /changes (shutdowns and prices before additions)
+    entries.sort(key=lambda e: (-date.fromisoformat(e[1]).toordinal(), e[5]))
     entries = entries[:100]
     updated = (entries[0][1] if entries else date.today().isoformat()) + "T00:00:00Z"
     body = "".join(
         f"<entry><id>tag:voicedex.dev,2026:change/{escape(i)}</id><title>{escape(t)}</title>"
         f'<link href="{escape(link)}"/><updated>{d}T00:00:00Z</updated><summary>{escape(sm)}</summary></entry>'
-        for i, d, t, link, sm in entries)
+        for i, d, t, link, sm, _ in entries)
     xml = ('<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom">'
            f"<title>{escape(settings.site_name)}: catalog changes</title>"
            f'<subtitle>New speech models, price changes, shutdown announcements and deprecations.</subtitle>'
