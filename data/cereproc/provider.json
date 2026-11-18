@@ -1,0 +1,31 @@
+{
+  "access": "self_serve",
+  "api_urls": [
+    "https://api.cerevoice.com/v2/voices"
+  ],
+  "description": "CereProc is a text-to-speech company established in 2005 and headquartered in Edinburgh, Scotland; it was acquired by Capacity (St. Louis, US) in 2024 and its site now lists AI Software (Capacity) UK Ltd as the operating entity. It sells the CereVoice Cloud TTS API (pay-as-you-go credits), on-device CereVoice engines and voices, and custom voices, with a catalog weighted towards UK English accents, Welsh, Scottish Gaelic and Irish alongside other European and Asian languages.",
+  "docs_urls": [
+    "https://api.cerevoice.com/v2/",
+    "https://api.cerevoice.com/v2/static/doc_file.json",
+    "https://app.cereproc.com/cloud-credits/one-million"
+  ],
+  "headquarters": "GB",
+  "id": "cereproc",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://api.cerevoice.com/v2/",
+    "docs": "https://api.cerevoice.com/v2/",
+    "pricing": "https://app.cereproc.com/cerecloud"
+  },
+  "name": "CereProc",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://api.cerevoice.com/v2/voices"
+    ]
+  },
+  "website": "https://app.cereproc.com"
+}

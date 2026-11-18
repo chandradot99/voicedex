@@ -1,0 +1,91 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "phoneme_input",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "CereProc's CereVoice Cloud v2 REST text-to-speech, synthesising plain text or SSML with a named CereVoice or CereWave AI voice and streaming the audio by default.",
+    "first_seen": "2026-11-18",
+    "id": "cerevoice-cloud",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ca-ES",
+      "cy-GB",
+      "da-DK",
+      "de-AT",
+      "de-DE",
+      "en-AU",
+      "en-GB",
+      "en-IE",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fr-CA",
+      "fr-FR",
+      "ga-IE",
+      "gd-GB",
+      "it-IT",
+      "ja-JP",
+      "lt-LT",
+      "nb-NO",
+      "nl-NL",
+      "nn-NO",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ro-RO",
+      "ru-RU",
+      "sv-SE",
+      "zh-CN"
+    ],
+    "meta": {
+      "api_version": "2.0.0",
+      "auth": "Bearer token from GET /auth (Basic auth with CereProc account credentials).",
+      "custom_lexicons": "User lexicon and abbreviation files uploaded via /lexicon and /abbreviations.",
+      "default_audio_format": "wav",
+      "emotion_tags": "happy, sad, calm, cross — in voices with emotional support.",
+      "endpoint": "POST https://api.cerevoice.com/v2/speak",
+      "metadata": "metadata=true returns a URL to XML with word, phone and mark timings.",
+      "model_id_note": "No model parameter: POST /speak takes a voice name. 'cerevoice-cloud' is the service name.",
+      "sample_rate_note": "Voices are listed at 24000 Hz; a requested sample_rate that is not available is up/downsampled.",
+      "singing": "POST /sing synthesises a song from a MusicXML sheet.",
+      "streaming_note": "streaming=true (default) streams the audio; streaming=false returns a URL to the audio file.",
+      "vocal_gestures": "Non-speech sounds (laughs, coughs, sighs…) via the <spurt> tag."
+    },
+    "name": "CereVoice Cloud",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "GBP",
+      "free_quota": {
+        "amount": 10000.0,
+        "period": "month",
+        "unit": "character"
+      },
+      "notes": "£12.99 per 1,000,000 Cloud credits (1 credit = 1 character of input text); free tier of 10,000 characters per month for registered Cloud users. Larger volumes via sales.",
+      "price": 1.299e-05,
+      "source_url": "https://app.cereproc.com/cloud-credits/one-million",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api.cerevoice.com/v2/",
+        "https://api.cerevoice.com/v2/static/doc_file.json",
+        "https://app.cereproc.com/cloud-credits/one-million"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

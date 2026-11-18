@@ -1,0 +1,4743 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ada",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "accent_code": "nl",
+      "country": "Netherlands",
+      "encoding": "cep",
+      "language_ms": "413",
+      "region": "Netherlands",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ada",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ada-CereWave",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "accent_code": "nl",
+      "country": "Netherlands",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "413",
+      "region": "Netherlands",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ada-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Adam",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "facebook",
+        "twitter",
+        "cereproc_video"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Adam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Adam-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "facebook",
+        "twitter",
+        "cereproc_video"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Adam-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "german",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Alex",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_code": "hd",
+      "country": "Germany",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "407",
+      "region": "Germany",
+      "sample_rate_hz": 24000
+    },
+    "name": "Alex",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "german",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Alex-CereWave",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_code": "hd",
+      "country": "Germany",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "407",
+      "region": "Germany",
+      "sample_rate_hz": 24000
+    },
+    "name": "Alex-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Amy",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Amy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Amy-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Amy-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "latin american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ana",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "Mexico",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "80a;540a",
+      "region": "DF",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "latin american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ana-CereWave",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "Mexico",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "80a;540a",
+      "region": "DF",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ana-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "standard swedish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Anders",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "accent_code": "se",
+      "country": "Sweden",
+      "encoding": "cep",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "41D",
+      "region": "Stockholm",
+      "sample_rate_hz": 24000
+    },
+    "name": "Anders",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "standard swedish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Anders-CereWave",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "accent_code": "se",
+      "country": "Sweden",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "41D",
+      "region": "Stockholm",
+      "sample_rate_hz": 24000
+    },
+    "name": "Anders-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andrew",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Andrew",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andrew-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Andrew-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "language_ms": "409",
+      "region": "Midwest",
+      "sample_rate_hz": 24000
+    },
+    "name": "Andy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andy-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "409",
+      "region": "Midwest",
+      "sample_rate_hz": 24000
+    },
+    "name": "Andy-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Avrora",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "accent_code": "ru",
+      "country": "Russia",
+      "encoding": "cep",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "419",
+      "region": "Russia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Avrora",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Avrora-CereWave",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "accent_code": "ru",
+      "country": "Russia",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "419",
+      "region": "Russia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Avrora-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ben",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "commanding",
+        "empathetic",
+        "highnrg",
+        "instructional"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ben",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ben-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "commanding",
+        "empathetic",
+        "highnrg",
+        "instructional"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ben-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Caitlin",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "accent_code": "ie",
+      "country": "Ireland",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "Ireland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Caitlin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Caitlin-CereWave",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "accent_code": "ie",
+      "country": "Ireland",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "Ireland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Caitlin-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carolyn",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "custom"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Carolyn",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carolyn-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "custom"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Carolyn-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Catrin-CY-SW-C-F",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Catrin-CY-SW-C-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Catrin-CY-SW-C-F-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Catrin-CY-SW-C-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Catrin-EN-SW-C-F",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Catrin-EN-SW-C-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Catrin-EN-SW-C-F-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Catrin-EN-SW-C-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "mid minch",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ceitidh",
+    "languages": [
+      "gd-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "english_coverage"
+      ],
+      "language_ms": "491;91",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ceitidh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "mid minch",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ceitidh-CereWave",
+    "languages": [
+      "gd-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "english_coverage"
+      ],
+      "language_ms": "491;91",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ceitidh-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "lancashire",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Claire",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "language_ms": "809",
+      "region": "Lancashire",
+      "sample_rate_hz": 24000
+    },
+    "name": "Claire",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "lancashire",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Claire-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "809",
+      "region": "Lancashire",
+      "sample_rate_hz": 24000
+    },
+    "name": "Claire-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "norwegian bokmål",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Clara",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "accent_code": "nb",
+      "country": "Norway",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "414",
+      "region": "Oslo",
+      "sample_rate_hz": 24000
+    },
+    "name": "Clara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "norwegian bokmål",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Clara-CereWave",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "accent_code": "nb",
+      "country": "Norway",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "414",
+      "region": "Oslo",
+      "sample_rate_hz": 24000
+    },
+    "name": "Clara-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Daria",
+    "languages": [
+      "ro-RO"
+    ],
+    "meta": {
+      "accent_code": "ro",
+      "country": "Romania",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "418",
+      "region": "Romania",
+      "sample_rate_hz": 24000
+    },
+    "name": "Daria",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Daria-CereWave",
+    "languages": [
+      "ro-RO"
+    ],
+    "meta": {
+      "accent_code": "ro",
+      "country": "Romania",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "418",
+      "region": "Romania",
+      "sample_rate_hz": 24000
+    },
+    "name": "Daria-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Dario",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "english",
+        "question"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Dario",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Dario-CereWave",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "english",
+        "question"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Dario-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Demon",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Demon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Demon-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Demon-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Dodo",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Dodo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Dodo-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Dodo-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "lithuanian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Egle",
+    "languages": [
+      "lt-LT"
+    ],
+    "meta": {
+      "accent_code": "lt",
+      "country": "Lithuania",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "happy",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "427",
+      "region": "Lithuania",
+      "sample_rate_hz": 24000
+    },
+    "name": "Egle",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "lithuanian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Egle-CereWave",
+    "languages": [
+      "lt-LT"
+    ],
+    "meta": {
+      "accent_code": "lt",
+      "country": "Lithuania",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "happy",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "427",
+      "region": "Lithuania",
+      "sample_rate_hz": 24000
+    },
+    "name": "Egle-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "latin american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Eva",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "neutral",
+        "neutral"
+      ],
+      "language_ms": "80a;540a",
+      "region": "West Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Eva",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "latin american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Eva-CereWave",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "neutral",
+        "neutral"
+      ],
+      "language_ms": "80a;540a",
+      "region": "West Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Eva-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ffion-CY-NW-T-F",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ffion-CY-NW-T-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ffion-CY-NW-T-F-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ffion-CY-NW-T-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ffion-EN-NW-T-F",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ffion-EN-NW-T-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ffion-EN-NW-T-F-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ffion-EN-NW-T-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "canadian french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Florence",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "accent_code": "ca",
+      "country": "Canada",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "C0C",
+      "region": "Quebec",
+      "sample_rate_hz": 24000
+    },
+    "name": "Florence",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "canadian french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Florence-CereWave",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "accent_code": "ca",
+      "country": "Canada",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "C0C",
+      "region": "Quebec",
+      "sample_rate_hz": 24000
+    },
+    "name": "Florence-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Francesco",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "books",
+        "news",
+        "question"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Francesco",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Francesco-CereWave",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "books",
+        "news",
+        "question"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Francesco-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gabriel",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "accent_code": "br",
+      "country": "Brazil",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "english"
+      ],
+      "language_ms": "416",
+      "region": "Brazil",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gabriel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gabriel-CereWave",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "accent_code": "br",
+      "country": "Brazil",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "english"
+      ],
+      "language_ms": "416",
+      "region": "Brazil",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gabriel-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gethin-CY-SW-C-M",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gethin-CY-SW-C-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gethin-CY-SW-C-M-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gethin-CY-SW-C-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gethin-EN-SW-C-M",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gethin-EN-SW-C-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gethin-EN-SW-C-M-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gethin-EN-SW-C-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ghost",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ghost",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ghost-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ghost-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Giles",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Giles",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Giles-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Giles-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Goblin",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "language_ms": "809",
+      "region": "Black Country",
+      "sample_rate_hz": 24000
+    },
+    "name": "Goblin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Goblin-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "809",
+      "region": "Black Country",
+      "sample_rate_hz": 24000
+    },
+    "name": "Goblin-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "german",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gudrun",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_code": "hd",
+      "country": "Germany",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "407",
+      "region": "Germany",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gudrun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "german",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gudrun-CereWave",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "accent_code": "hd",
+      "country": "Germany",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "407",
+      "region": "Germany",
+      "sample_rate_hz": 24000
+    },
+    "name": "Gudrun-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hannah",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Hannah",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hannah-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Hannah-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Heather",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Heather",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Heather-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Heather-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "norwegian nynorsk",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hulda",
+    "languages": [
+      "nn-NO"
+    ],
+    "meta": {
+      "accent_code": "nn",
+      "country": "Norway",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "814",
+      "region": "Oslo",
+      "sample_rate_hz": 24000
+    },
+    "name": "Hulda",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "norwegian nynorsk",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hulda-CereWave",
+    "languages": [
+      "nn-NO"
+    ],
+    "meta": {
+      "accent_code": "nn",
+      "country": "Norway",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "814",
+      "region": "Oslo",
+      "sample_rate_hz": 24000
+    },
+    "name": "Hulda-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Isabella",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Isabella",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Isabella-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Isabella-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jack",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jack",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jack-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jack-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jeff",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "neutral"
+      ],
+      "language_ms": "409",
+      "region": "Midwest America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jeff",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jeff-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "neutral"
+      ],
+      "language_ms": "409",
+      "region": "Midwest America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jeff-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jess",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "dialog",
+        "lombard"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jess",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jess-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "dialog",
+        "lombard"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jess-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jordan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "language_ms": "409",
+      "region": "Midwest",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jordan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jordan-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "409",
+      "region": "Midwest",
+      "sample_rate_hz": 24000
+    },
+    "name": "Jordan-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Katherine",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "joke"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Katherine",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Katherine-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "joke"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Katherine-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kirsty",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Kirsty",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kirsty-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Kirsty-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "insular danish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Lars",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "accent_code": "dk",
+      "country": "Denmark",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "406",
+      "region": "Sjælland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lars",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "insular danish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Lars-CereWave",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "accent_code": "dk",
+      "country": "Denmark",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "406",
+      "region": "Sjælland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lars-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Laura",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "english"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Laura",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Laura-CereWave",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "english"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Laura-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lauren",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lauren",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lauren-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lauren-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "metropolitan french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Laurent",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "accent_code": "fr",
+      "country": "France",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "40C",
+      "region": "France",
+      "sample_rate_hz": 24000
+    },
+    "name": "Laurent",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "metropolitan french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Laurent-CereWave",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "accent_code": "fr",
+      "country": "France",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "40C",
+      "region": "France",
+      "sample_rate_hz": 24000
+    },
+    "name": "Laurent-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Leo",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Australia",
+      "encoding": "cep",
+      "genres": [
+        "neutral"
+      ],
+      "language_ms": "809",
+      "region": "Australia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Leo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Leo-CereWave",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Australia",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "neutral"
+      ],
+      "language_ms": "809",
+      "region": "Australia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Leo-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "austrian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Leopold",
+    "languages": [
+      "de-AT"
+    ],
+    "meta": {
+      "accent_code": "at",
+      "country": "Austria",
+      "encoding": "cep",
+      "language_ms": "407",
+      "region": "Austria",
+      "sample_rate_hz": 24000
+    },
+    "name": "Leopold",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "austrian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Leopold-CereWave",
+    "languages": [
+      "de-AT"
+    ],
+    "meta": {
+      "accent_code": "at",
+      "country": "Austria",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "407",
+      "region": "Austria",
+      "sample_rate_hz": 24000
+    },
+    "name": "Leopold-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lily",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "commanding",
+        "empathetic",
+        "highnrg",
+        "instructional"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lily",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lily-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "commanding",
+        "empathetic",
+        "highnrg",
+        "instructional"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lily-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lucia",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "accent_code": "pt",
+      "country": "Portugal",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "english"
+      ],
+      "language_ms": "816",
+      "region": "Lisbon",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lucia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lucia-CereWave",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "accent_code": "pt",
+      "country": "Portugal",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "english"
+      ],
+      "language_ms": "816",
+      "region": "Lisbon",
+      "sample_rate_hz": 24000
+    },
+    "name": "Lucia-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "norwegian bokmål",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Magnus",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "accent_code": "nb",
+      "country": "Norway",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "414",
+      "region": "Oslo",
+      "sample_rate_hz": 24000
+    },
+    "name": "Magnus",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "norwegian bokmål",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Magnus-CereWave",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "accent_code": "nb",
+      "country": "Norway",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "414",
+      "region": "Oslo",
+      "sample_rate_hz": 24000
+    },
+    "name": "Magnus-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "china",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mailin",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_code": "cn",
+      "country": "China",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "804",
+      "region": "China",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mailin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "china",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mailin-CereWave",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "accent_code": "cn",
+      "country": "China",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "804",
+      "region": "China",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mailin-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mairi",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mairi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mairi-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mairi-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "lithuanian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mantas",
+    "languages": [
+      "lt-LT"
+    ],
+    "meta": {
+      "accent_code": "lt",
+      "country": "Lithuania",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "happy",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "427",
+      "region": "Lithuania",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mantas",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "lithuanian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mantas-CereWave",
+    "languages": [
+      "lt-LT"
+    ],
+    "meta": {
+      "accent_code": "lt",
+      "country": "Lithuania",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "happy",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "427",
+      "region": "Lithuania",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mantas-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "insular danish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Marie",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "accent_code": "dk",
+      "country": "Denmark",
+      "encoding": "cep",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "406",
+      "region": "Fyn",
+      "sample_rate_hz": 24000
+    },
+    "name": "Marie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "insular danish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Marie-CereWave",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "accent_code": "dk",
+      "country": "Denmark",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "406",
+      "region": "Fyn",
+      "sample_rate_hz": 24000
+    },
+    "name": "Marie-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "latin american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mateo",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "english",
+        "neutral",
+        "neutral",
+        "neutral"
+      ],
+      "language_ms": "80a;540a",
+      "region": "West Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mateo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "latin american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mateo-CereWave",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "english",
+        "neutral",
+        "neutral",
+        "neutral"
+      ],
+      "language_ms": "80a;540a",
+      "region": "West Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Mateo-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Megan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "West Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Megan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Megan-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "West Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Megan-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nathan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Nathan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "general american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nathan-CereWave",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accent_code": "ga",
+      "country": "United States",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "409",
+      "region": "East Coast America",
+      "sample_rate_hz": 24000
+    },
+    "name": "Nathan-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "sexy french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nicole",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sf",
+      "country": "France",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "digits"
+      ],
+      "language_ms": "809",
+      "region": "France",
+      "sample_rate_hz": 24000
+    },
+    "name": "Nicole",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "sexy french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nicole-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sf",
+      "country": "France",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "digits"
+      ],
+      "language_ms": "809",
+      "region": "France",
+      "sample_rate_hz": 24000
+    },
+    "name": "Nicole-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nicoletta",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Nicoletta",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nicoletta-CereWave",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "accent_code": "it",
+      "country": "Italia",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "410",
+      "region": "Italia",
+      "sample_rate_hz": 24000
+    },
+    "name": "Nicoletta-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Owain-CY-NW-C-M",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Owain-CY-NW-C-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Owain-CY-NW-C-M-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Owain-CY-NW-C-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Owain-EN-NW-C-M",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Owain-EN-NW-C-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Owain-EN-NW-C-M-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Owain-EN-NW-C-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "ulster",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Peig",
+    "languages": [
+      "ga-IE"
+    ],
+    "meta": {
+      "accent_code": "ie",
+      "country": "Ireland",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "3C;83C",
+      "region": "Ireland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Peig",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "ulster",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Peig-CereWave",
+    "languages": [
+      "ga-IE"
+    ],
+    "meta": {
+      "accent_code": "ie",
+      "country": "Ireland",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "english"
+      ],
+      "language_ms": "3C;83C",
+      "region": "Ireland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Peig-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Pixie",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "dialog",
+        "lombard"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Pixie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Pixie-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "dialog",
+        "lombard"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Pixie-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Pola",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "accent_code": "pl",
+      "country": "Poland",
+      "encoding": "cep",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "415",
+      "region": "Poland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Pola",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Pola-CereWave",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "accent_code": "pl",
+      "country": "Poland",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "415",
+      "region": "Poland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Pola-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rhian-CY-SW-T-F",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhian-CY-SW-T-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rhian-CY-SW-T-F-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhian-CY-SW-T-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rhian-EN-SW-T-F",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhian-EN-SW-T-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rhian-EN-SW-T-F-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhian-EN-SW-T-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rhodri-CY-SW-T-M",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhodri-CY-SW-T-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rhodri-CY-SW-T-M-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhodri-CY-SW-T-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rhodri-EN-SW-T-M",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhodri-EN-SW-T-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rhodri-EN-SW-T-M-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "South Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rhodri-EN-SW-T-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "central",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rita",
+    "languages": [
+      "ca-ES"
+    ],
+    "meta": {
+      "accent_code": "ce",
+      "country": "Espanya",
+      "encoding": "cep",
+      "genres": [
+        "question",
+        "gesture"
+      ],
+      "language_ms": "403",
+      "region": "Catalunya",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "central",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rita-CereWave",
+    "languages": [
+      "ca-ES"
+    ],
+    "meta": {
+      "accent_code": "ce",
+      "country": "Espanya",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "question",
+        "gesture"
+      ],
+      "language_ms": "403",
+      "region": "Catalunya",
+      "sample_rate_hz": 24000
+    },
+    "name": "Rita-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Robot",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "kth"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Robot",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Robot-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "kth"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Robot-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "catalan",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sara",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "accent_code": "ca",
+      "country": "España",
+      "encoding": "cep",
+      "genres": [
+        "question",
+        "exclamation"
+      ],
+      "language_ms": "0c0a",
+      "region": "Cataluña",
+      "sample_rate_hz": 24000
+    },
+    "name": "Sara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "catalan",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sara-CereWave",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "accent_code": "ca",
+      "country": "España",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "question",
+        "exclamation"
+      ],
+      "language_ms": "0c0a",
+      "region": "Cataluña",
+      "sample_rate_hz": 24000
+    },
+    "name": "Sara-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sarah",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Sarah",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sarah-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "Sarah-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Seren-CY-NW-C-F",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Seren-CY-NW-C-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Seren-CY-NW-C-F-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Seren-CY-NW-C-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Seren-EN-NW-C-F",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Seren-EN-NW-C-F",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Seren-EN-NW-C-F-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Seren-EN-NW-C-F-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Stuart",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Stuart",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Stuart-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "sc",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "809",
+      "region": "Scotland",
+      "sample_rate_hz": 24000
+    },
+    "name": "Stuart-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sue",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "language_ms": "809",
+      "region": "Black Country",
+      "sample_rate_hz": 24000
+    },
+    "name": "Sue",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sue-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "language_ms": "809",
+      "region": "Black Country",
+      "sample_rate_hz": 24000
+    },
+    "name": "Sue-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "metropolitan french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Suzanne",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "accent_code": "fr",
+      "country": "France",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "40C",
+      "region": "France",
+      "sample_rate_hz": 24000
+    },
+    "name": "Suzanne",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "metropolitan french",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Suzanne-CereWave",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "accent_code": "fr",
+      "country": "France",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "40C",
+      "region": "France",
+      "sample_rate_hz": 24000
+    },
+    "name": "Suzanne-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tomos-CY-NW-T-M",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Tomos-CY-NW-T-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tomos-CY-NW-T-M-CereWave",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "accent_code": "wa",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "452",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Tomos-CY-NW-T-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tomos-EN-NW-T-M",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Tomos-EN-NW-T-M",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "north wales",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tomos-EN-NW-T-M-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "cy",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "809",
+      "region": "North Wales",
+      "sample_rate_hz": 24000
+    },
+    "name": "Tomos-EN-NW-T-M-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "William",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "kth"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "William",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "William-CereWave",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accent_code": "rp",
+      "country": "Great Britain",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed",
+        "question",
+        "kth"
+      ],
+      "language_ms": "809",
+      "region": "England",
+      "sample_rate_hz": 24000
+    },
+    "name": "William-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "standard swedish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ylva",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "accent_code": "se",
+      "country": "Sweden",
+      "encoding": "cep",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "41D",
+      "region": "Stockholm",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ylva",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "standard swedish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ylva-CereWave",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "accent_code": "se",
+      "country": "Sweden",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "english",
+        "calm",
+        "stressed",
+        "question"
+      ],
+      "language_ms": "41D",
+      "region": "Stockholm",
+      "sample_rate_hz": 24000
+    },
+    "name": "Ylva-CereWave",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "tokyo",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yuki",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "accent_code": "jp",
+      "country": "Japan",
+      "encoding": "cep",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "411",
+      "region": "Kanto",
+      "sample_rate_hz": 24000
+    },
+    "name": "Yuki",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "tokyo",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yuki-CereWave",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "accent_code": "jp",
+      "country": "Japan",
+      "encoding": "cep",
+      "engine": "CereWave AI",
+      "genres": [
+        "calm",
+        "stressed"
+      ],
+      "language_ms": "411",
+      "region": "Kanto",
+      "sample_rate_hz": 24000
+    },
+    "name": "Yuki-CereWave",
+    "updated_at": "2026-11-18"
+  }
+]
