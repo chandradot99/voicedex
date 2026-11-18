@@ -188,11 +188,11 @@ async def main() -> int:
         print(f"Unknown providers: {', '.join(unknown)}\nAvailable: {', '.join(e.provider_id for e in REGISTRY)}")
         return 2
 
-    retired = [p for p in args.providers if BY_ID[p].retired]
+    retired = [p for p in args.providers if not BY_ID[p].syncable]
     for p in retired:
         print(f"Skipping {p}: retired (see data/{p}/provider.json)")
     ids = [p for p in args.providers if p not in retired] if args.providers \
-        else [e.provider_id for e in REGISTRY if not e.retired]
+        else [e.provider_id for e in REGISTRY if e.syncable]
     if not ids:
         return 0
     print(f"Mode: {'WRITE' if args.write else 'DRY-RUN'}   Data: {args.data_dir}")

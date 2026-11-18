@@ -1,0 +1,14 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=SWivid&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=SWivid&pipeline_tag=text-to-speech"
+  ],
+  "description": "Research group behind F5-TTS and E2-TTS, flow-matching zero-shot TTS models. The code is MIT-licensed, but the released weights are CC-BY-NC-4.0 (non-commercial).",
+  "id": "swivid",
+  "last_synced": "2026-11-18",
+  "name": "SWivid (F5-TTS)",
+  "source": "api",
+  "type": "tts",
+  "website": "https://github.com/SWivid/F5-TTS"
+}

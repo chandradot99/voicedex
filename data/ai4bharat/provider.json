@@ -1,0 +1,15 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=ai4bharat&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=ai4bharat&pipeline_tag=text-to-speech"
+  ],
+  "description": "Research lab at IIT Madras building open speech and language models for Indian languages: IndicConformer ASR for the 22 scheduled languages, and Indic Parler-TTS and IndicF5 for speech synthesis. Many of its models also power the government's Bhashini platform.",
+  "headquarters": "IN",
+  "id": "ai4bharat",
+  "last_synced": "2026-11-18",
+  "name": "AI4Bharat",
+  "source": "api",
+  "type": "both",
+  "website": "https://ai4bharat.iitm.ac.in"
+}

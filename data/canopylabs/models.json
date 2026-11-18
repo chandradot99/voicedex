@@ -1,0 +1,35 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "canopylabs/orpheus-3b-0.1-ft",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "base_model": [
+        "meta-llama/Llama-3.2-3B-Instruct",
+        "canopylabs/orpheus-3b-0.1-pretrained"
+      ],
+      "gated": true,
+      "huggingface_repo": "canopylabs/orpheus-3b-0.1-ft",
+      "released": "2025-03-17"
+    },
+    "name": "orpheus-3b-0.1-ft",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=canopylabs&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=canopylabs&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

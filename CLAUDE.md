@@ -107,7 +107,16 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) â
   (sync skips it) and hand-write `data/<id>/provider.json` with `status: "deprecated"`, `retired_on` (if a date is
   published) and the reason + evidence in `description`. Never delete them â€” "is X still alive?" is a question the
   catalog answers. Currently: humeai (2026-11-13), lmnt, lovoai, resemble.
-- **provider.json editorial fields** (`website`, `description`, `regions`, `compliance` [soc2|hipaa|gdpr|iso27001|pci_dss], `links`) are hand-curated; sync never overwrites them.
+- **provider.json editorial fields** (`website`, `description`, `access` [self_serve|enterprise|regional|open_weights],
+  `headquarters` [ISO 3166-1 alpha-2], `regions`, `compliance` [soc2|hipaa|gdpr|iso27001|pci_dss], `links`) are
+  hand-curated; sync never overwrites them. Research passes write `.sync-cache/<id>_editorial.json`, applied with
+  `scripts/apply_editorial.py <id> --write`.
+- **Open weights**: publishers without a hosted API are synced from the Hugging Face Hub API
+  (`voicedex/sync/huggingface.py`, one class per org in `open_weights.py`; popularity bar, no hard-coded repos).
+  `open_weights.commercial_use` is derived from the licence (null when unclear). A retired API seller that still
+  publishes weights keeps `retired=True` and sets `open_weights_path` on its registry entry.
+- **Which providers belong** (inclusion policy, waves, watchlist): `docs/design/provider-expansion.md`.
+  Docs extraction rules for agents: `docs/design/extraction-spec.md`.
 
 ## Adding a provider
 

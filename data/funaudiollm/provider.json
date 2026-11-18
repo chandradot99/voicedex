@@ -1,0 +1,15 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=text-to-speech"
+  ],
+  "description": "Open-source org of Alibaba's Tongyi speech team: SenseVoice and Fun-ASR recognition models and CosyVoice TTS. The hosted versions are sold through Alibaba Cloud Model Studio, listed separately.",
+  "headquarters": "CN",
+  "id": "funaudiollm",
+  "last_synced": "2026-11-18",
+  "name": "FunAudioLLM (Alibaba Tongyi)",
+  "source": "api",
+  "type": "both",
+  "website": "https://github.com/FunAudioLLM"
+}

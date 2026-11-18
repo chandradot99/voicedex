@@ -1,0 +1,108 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "FunAudioLLM/Fun-ASR-Nano-2512",
+    "languages": [
+      "ar",
+      "en",
+      "hi",
+      "id",
+      "ja",
+      "ko",
+      "ms",
+      "th",
+      "tl",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "FunAudioLLM/Fun-ASR-Nano-2512",
+      "released": "2025-12-15"
+    },
+    "name": "Fun-ASR-Nano-2512",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "FunAudioLLM/SenseVoiceSmall",
+    "languages": [
+      "en",
+      "ja",
+      "ko",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "FunAudioLLM/SenseVoiceSmall",
+      "released": "2024-07-03"
+    },
+    "name": "SenseVoiceSmall",
+    "open_weights": {
+      "license": "model-license",
+      "url": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "it",
+      "ja",
+      "ko",
+      "ru",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+      "released": "2025-12-11"
+    },
+    "name": "Fun-CosyVoice3-0.5B-2512",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=FunAudioLLM&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

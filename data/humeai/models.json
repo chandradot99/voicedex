@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "HumeAI/tada-1b",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "base_model": [
+        "meta-llama/Llama-3.2-1B"
+      ],
+      "huggingface_repo": "HumeAI/tada-1b",
+      "released": "2026-01-12"
+    },
+    "name": "tada-1b",
+    "open_weights": {
+      "license": "llama3.2",
+      "url": "https://huggingface.co/HumeAI/tada-1b"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=HumeAI&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=HumeAI&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

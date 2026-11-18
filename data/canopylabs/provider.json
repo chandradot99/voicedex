@@ -1,0 +1,15 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=canopylabs&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=canopylabs&pipeline_tag=text-to-speech"
+  ],
+  "description": "US startup that releases the Orpheus family of Llama-based expressive TTS models under Apache-2.0. Orpheus is served by hosts such as Groq (listed under Groq), Together and DeepInfra.",
+  "headquarters": "US",
+  "id": "canopylabs",
+  "last_synced": "2026-11-18",
+  "name": "Canopy Labs",
+  "source": "api",
+  "type": "tts",
+  "website": "https://canopylabs.ai"
+}

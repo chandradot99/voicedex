@@ -1,0 +1,52 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "SWivid/E2-TTS",
+    "meta": {
+      "huggingface_repo": "SWivid/E2-TTS",
+      "released": "2024-10-14"
+    },
+    "name": "E2-TTS",
+    "open_weights": {
+      "commercial_use": false,
+      "license": "cc-by-nc-4.0",
+      "url": "https://huggingface.co/SWivid/E2-TTS"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=SWivid&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=SWivid&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "SWivid/F5-TTS",
+    "meta": {
+      "huggingface_repo": "SWivid/F5-TTS",
+      "released": "2024-10-07"
+    },
+    "name": "F5-TTS",
+    "open_weights": {
+      "commercial_use": false,
+      "license": "cc-by-nc-4.0",
+      "url": "https://huggingface.co/SWivid/F5-TTS"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=SWivid&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=SWivid&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

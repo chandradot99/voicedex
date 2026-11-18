@@ -1,0 +1,14 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=text-to-speech"
+  ],
+  "description": "Publisher of Kokoro, an 82M-parameter Apache-2.0 TTS model that is the most-downloaded text-to-speech model on Hugging Face. No first-party API; Kokoro is served per character by several inference hosts.",
+  "id": "hexgrad",
+  "last_synced": "2026-11-18",
+  "name": "Hexgrad",
+  "source": "api",
+  "type": "tts",
+  "website": "https://huggingface.co/hexgrad"
+}

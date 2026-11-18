@@ -1,0 +1,31 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "sesame/csm-1b",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "gated": true,
+      "huggingface_repo": "sesame/csm-1b",
+      "released": "2025-03-06"
+    },
+    "name": "csm-1b",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/sesame/csm-1b"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=sesame&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=sesame&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

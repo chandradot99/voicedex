@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "ResembleAI/Dramabox",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "base_model": [
+        "Lightricks/LTX-2.3"
+      ],
+      "huggingface_repo": "ResembleAI/Dramabox",
+      "released": "2026-04-17"
+    },
+    "name": "Dramabox",
+    "open_weights": {
+      "license": "ltx-2-community",
+      "url": "https://huggingface.co/ResembleAI/Dramabox"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "ResembleAI/chatterbox",
+    "languages": [
+      "ar",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ru",
+      "sv",
+      "sw",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "ResembleAI/chatterbox",
+      "released": "2025-04-24"
+    },
+    "name": "chatterbox",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/ResembleAI/chatterbox"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "ResembleAI/chatterbox-turbo",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "huggingface_repo": "ResembleAI/chatterbox-turbo",
+      "released": "2025-12-02"
+    },
+    "name": "chatterbox-turbo",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/ResembleAI/chatterbox-turbo"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+  ],
+  "description": "Microsoft's open-weights speech models on Hugging Face: the VibeVoice ASR and long-form TTS family, Phi-4-multimodal and SpeechT5, mostly MIT-licensed. Microsoft's hosted speech services are listed separately under Azure Speech.",
+  "headquarters": "US",
+  "id": "microsoft",
+  "last_synced": "2026-11-18",
+  "name": "Microsoft (open weights)",
+  "source": "api",
+  "type": "both",
+  "website": "https://huggingface.co/microsoft"
+}

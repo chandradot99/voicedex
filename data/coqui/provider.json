@@ -1,7 +1,13 @@
 {
-  "description": "Berlin-based TTS company (Coqui Studio + API, commercial XTTS licences). Studio disappeared from coqui.ai in mid-December 2023 and by early January 2024 the homepage read 'Coqui is shutting down' (Wayback 2024-01-05). No exact end date was published. The open-source TTS/XTTS code continues as the community fork idiap/coqui-ai-TTS (PyPI coqui-tts).",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=coqui&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=coqui&pipeline_tag=text-to-speech"
+  ],
+  "description": "Berlin-based TTS company (Coqui Studio + API, commercial XTTS licences). Studio disappeared from coqui.ai in mid-December 2023 and by early January 2024 the homepage read 'Coqui is shutting down' (Wayback 2024-01-05). No exact end date was published. The open-source TTS/XTTS code continues as the community fork idiap/coqui-ai-TTS (PyPI coqui-tts). The XTTS weights remain on Hugging Face under the non-commercial Coqui Public Model License.",
   "id": "coqui",
+  "last_synced": "2026-11-18",
   "name": "Coqui",
+  "source": "api",
   "status": "deprecated",
   "type": "tts",
   "website": "https://coqui.ai"

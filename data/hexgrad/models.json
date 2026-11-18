@@ -1,0 +1,61 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "hexgrad/Kokoro-82M",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "base_model": [
+        "yl4579/StyleTTS2-LJSpeech"
+      ],
+      "huggingface_repo": "hexgrad/Kokoro-82M",
+      "released": "2024-12-26"
+    },
+    "name": "Kokoro-82M",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "hexgrad/Kokoro-82M-v1.1-zh",
+    "meta": {
+      "base_model": [
+        "hexgrad/Kokoro-82M"
+      ],
+      "huggingface_repo": "hexgrad/Kokoro-82M-v1.1-zh",
+      "released": "2025-02-27"
+    },
+    "name": "Kokoro-82M-v1.1-zh",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

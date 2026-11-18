@@ -1,0 +1,14 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=k2-fsa&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=k2-fsa&pipeline_tag=text-to-speech"
+  ],
+  "description": "Next-gen Kaldi open-source speech project (k2, icefall, sherpa-onnx). Publishes OmniVoice, a zero-shot TTS model covering 600+ languages; check the repository for its licence terms, which the model card does not state.",
+  "id": "k2-fsa",
+  "last_synced": "2026-11-18",
+  "name": "k2-fsa (Next-gen Kaldi)",
+  "source": "api",
+  "type": "tts",
+  "website": "https://k2-fsa.github.io"
+}

@@ -1,0 +1,286 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "microsoft/Phi-4-multimodal-instruct",
+    "languages": [
+      "ar",
+      "cs",
+      "da",
+      "de",
+      "en",
+      "es",
+      "fi",
+      "fr",
+      "he",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ru",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "microsoft/Phi-4-multimodal-instruct",
+      "released": "2025-02-24"
+    },
+    "name": "Phi-4-multimodal-instruct",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "microsoft/VibeVoice-ASR",
+    "languages": [
+      "aa",
+      "af",
+      "ar",
+      "bg",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "jv",
+      "kl",
+      "ko",
+      "lt",
+      "lv",
+      "mn",
+      "ms",
+      "ne",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sr",
+      "sv",
+      "sw",
+      "th",
+      "tl",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "yi",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "microsoft/VibeVoice-ASR",
+      "released": "2026-01-21"
+    },
+    "name": "VibeVoice-ASR",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "microsoft/VibeVoice-ASR-BitNet",
+    "languages": [
+      "en",
+      "fr",
+      "it",
+      "ko",
+      "pt",
+      "vi",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "microsoft/VibeVoice-ASR-BitNet",
+      "released": "2026-07-24"
+    },
+    "name": "VibeVoice-ASR-BitNet",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "microsoft/VibeVoice-ASR-Streaming-7B",
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "it",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "microsoft/VibeVoice-ASR-Streaming-7B",
+      "released": "2026-09-02"
+    },
+    "name": "VibeVoice-ASR-Streaming-7B",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "microsoft/VibeVoice-1.5B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "microsoft/VibeVoice-1.5B",
+      "released": "2025-08-25"
+    },
+    "name": "VibeVoice-1.5B",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/microsoft/VibeVoice-1.5B"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "microsoft/VibeVoice-Realtime-0.5B",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "base_model": [
+        "Qwen/Qwen2.5-0.5B"
+      ],
+      "huggingface_repo": "microsoft/VibeVoice-Realtime-0.5B",
+      "released": "2025-12-04"
+    },
+    "name": "VibeVoice-Realtime-0.5B",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "microsoft/speecht5_tts",
+    "meta": {
+      "huggingface_repo": "microsoft/speecht5_tts",
+      "released": "2023-02-02"
+    },
+    "name": "speecht5_tts",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/microsoft/speecht5_tts"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

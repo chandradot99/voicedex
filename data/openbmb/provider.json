@@ -1,0 +1,15 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=openbmb&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=openbmb&pipeline_tag=text-to-speech"
+  ],
+  "description": "Open-source group from Tsinghua University's NLP lab and ModelBest. Publishes the VoxCPM family of tokenizer-free TTS models with voice cloning under Apache-2.0.",
+  "headquarters": "CN",
+  "id": "openbmb",
+  "last_synced": "2026-11-18",
+  "name": "OpenBMB",
+  "source": "api",
+  "type": "tts",
+  "website": "https://github.com/OpenBMB"
+}

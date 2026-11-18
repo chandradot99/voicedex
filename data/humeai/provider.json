@@ -1,11 +1,17 @@
 {
-  "description": "Shut down its Octave text-to-speech and EVI (Empathic Voice Interface) APIs on 2026-11-13 (announced 2026-10-02). The voices API now returns 'This API was retired on 2026-11-13'. Hume now focuses on voice-AI evaluation (VoiceEQ) and expression measurement.",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=HumeAI&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=HumeAI&pipeline_tag=text-to-speech"
+  ],
+  "description": "Shut down its Octave text-to-speech and EVI (Empathic Voice Interface) APIs on 2026-11-13 (announced 2026-10-02). The voices API now returns 'This API was retired on 2026-11-13'. Hume now focuses on voice-AI evaluation (VoiceEQ) and expression measurement. Hume's TADA TTS models remain available as open weights (Llama 3.2 community licence).",
   "id": "humeai",
+  "last_synced": "2026-11-18",
   "links": {
     "status": "https://www.cartesia.ai/learn/top-hume-ai-alternatives"
   },
   "name": "Hume AI",
   "retired_on": "2026-11-13",
+  "source": "api",
   "status": "deprecated",
   "type": "tts",
   "website": "https://www.hume.ai"

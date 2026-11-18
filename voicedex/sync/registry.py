@@ -26,6 +26,13 @@ class SyncerEntry:
     syncer_path: str   # "voicedex.sync.deepgram.DeepgramSyncer"
     # Provider shut down its API / stopped selling: never synced; data/<id>/provider.json records why.
     retired: bool = False
+    # Retired as an API seller but still publishing open weights: sync runs this syncer instead
+    # (provider stays status=deprecated; its open-weights models stay active).
+    open_weights_path: str | None = None
+
+    @property
+    def syncable(self) -> bool:
+        return not self.retired or self.open_weights_path is not None
 
 
 REGISTRY: list[SyncerEntry] = [
@@ -37,7 +44,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("sarvam",            "Sarvam",            "both", "voicedex.sync.sarvam.SarvamSyncer"),
     SyncerEntry("azure",             "Azure Speech",      "both", "voicedex.sync.azure.AzureSyncer"),
     SyncerEntry("amazon-polly",      "Amazon Polly",      "tts",  "voicedex.sync.amazon_polly.AmazonPollySyncer"),
-    SyncerEntry("humeai",            "Hume AI",           "tts",  "voicedex.sync.humeai.HumeAISyncer", retired=True),
+    SyncerEntry("humeai",            "Hume AI",           "tts",  "voicedex.sync.humeai.HumeAISyncer", retired=True, open_weights_path="voicedex.sync.open_weights.HumeOpenSyncer"),
     SyncerEntry("inworld",           "Inworld AI",        "both", "voicedex.sync.inworld.InworldAISyncer"),
     SyncerEntry("murf",              "Murf AI",           "tts",  "voicedex.sync.murf.MurfAISyncer"),
     SyncerEntry("speechmatics",      "Speechmatics",      "stt",  "voicedex.sync.speechmatics.SpeechmaticsSyncer"),
@@ -50,7 +57,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry("ibm",               "IBM Watson",        "both", "voicedex.sync.ibm.IBMSyncer"),
     SyncerEntry("neuphonic",         "Neuphonic",         "tts",  "voicedex.sync.neuphonic.NeurophonicSyncer"),
     SyncerEntry("amazon-transcribe", "Amazon Transcribe", "stt",  "voicedex.sync.amazon_transcribe.AmazonTranscribeSyncer"),
-    SyncerEntry("resemble",          "Resemble AI",       "tts",  "voicedex.sync.resemble.ResembleSyncer", retired=True),
+    SyncerEntry("resemble",          "Resemble AI",       "tts",  "voicedex.sync.resemble.ResembleSyncer", retired=True, open_weights_path="voicedex.sync.open_weights.ResembleOpenSyncer"),
     SyncerEntry("fishaudio",         "Fish Audio",        "both", "voicedex.sync.fishaudio.FishAudioSyncer"),
     SyncerEntry("unrealspeech",      "Unreal Speech",     "tts",  "voicedex.sync.unrealspeech.UnrealSpeechSyncer"),
     SyncerEntry("smallestai",        "Smallest AI",       "both", "voicedex.sync.smallestai.SmallestAISyncer"),
@@ -108,9 +115,20 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry('amivoice'         , 'AmiVoice', 'stt', "voicedex.sync.amivoice.AmiVoiceSyncer"),
     SyncerEntry('coefont'          , 'CoeFont', 'tts', "voicedex.sync.coefont.CoeFontSyncer"),
     SyncerEntry('rtzr'             , 'ReturnZero (RTZR)', 'stt', "voicedex.sync.rtzr.RtzrSyncer"),
+    # ── Open-weights publishers (Hugging Face Hub API; voicedex/sync/open_weights.py) ──
+    SyncerEntry("hexgrad",           "Hexgrad",           "tts",  "voicedex.sync.open_weights.HexgradSyncer"),
+    SyncerEntry("kyutai",            "Kyutai",            "both", "voicedex.sync.open_weights.KyutaiSyncer"),
+    SyncerEntry("openbmb",           "OpenBMB",           "tts",  "voicedex.sync.open_weights.OpenBMBSyncer"),
+    SyncerEntry("k2-fsa",            "k2-fsa (Next-gen Kaldi)", "tts", "voicedex.sync.open_weights.K2FsaSyncer"),
+    SyncerEntry("ai4bharat",         "AI4Bharat",         "both", "voicedex.sync.open_weights.AI4BharatSyncer"),
+    SyncerEntry("canopylabs",        "Canopy Labs",       "tts",  "voicedex.sync.open_weights.CanopyLabsSyncer"),
+    SyncerEntry("sesame",            "Sesame",            "tts",  "voicedex.sync.open_weights.SesameSyncer"),
+    SyncerEntry("microsoft",         "Microsoft (open weights)", "both", "voicedex.sync.open_weights.MicrosoftSyncer"),
+    SyncerEntry("swivid",            "SWivid (F5-TTS)",   "tts",  "voicedex.sync.open_weights.SWividSyncer"),
+    SyncerEntry("funaudiollm",       "FunAudioLLM (Alibaba Tongyi)", "both", "voicedex.sync.open_weights.FunAudioLLMSyncer"),
     # Retired, never synced — catalogued so "is X still alive?" has an answer.
     SyncerEntry("playht",            "PlayHT",            "tts",  "voicedex.sync.retired.RetiredSyncer", retired=True),
-    SyncerEntry("coqui",             "Coqui",             "tts",  "voicedex.sync.retired.RetiredSyncer", retired=True),
+    SyncerEntry("coqui",             "Coqui",             "tts",  "voicedex.sync.retired.RetiredSyncer", retired=True, open_weights_path="voicedex.sync.open_weights.CoquiOpenSyncer"),
     SyncerEntry('sber-salutespeech', 'Sber SaluteSpeech', 'both', "voicedex.sync.retired.RetiredSyncer", retired=True),
     SyncerEntry('nijivoice'        , 'Nijivoice', 'tts', "voicedex.sync.retired.RetiredSyncer", retired=True),
     SyncerEntry('replica'          , 'Replica Studios', 'tts', "voicedex.sync.retired.RetiredSyncer", retired=True),
@@ -128,6 +146,7 @@ def get_syncer_entry(provider_id: str) -> SyncerEntry | None:
 def load_syncer(provider_id: str) -> ProviderSyncer:
     """Import and instantiate the syncer for `provider_id`. Raises KeyError if unknown."""
     entry = BY_ID[provider_id]
-    module_path, class_name = entry.syncer_path.rsplit(".", 1)
+    path = entry.open_weights_path if entry.retired and entry.open_weights_path else entry.syncer_path
+    module_path, class_name = path.rsplit(".", 1)
     cls = getattr(importlib.import_module(module_path), class_name)
     return cls()

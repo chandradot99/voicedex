@@ -1,0 +1,15 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=sesame&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=sesame&pipeline_tag=text-to-speech"
+  ],
+  "description": "San Francisco voice-AI company building conversational voice products. It has released CSM-1B, its Conversational Speech Model, as open weights under Apache-2.0; no public hosted API.",
+  "headquarters": "US",
+  "id": "sesame",
+  "last_synced": "2026-11-18",
+  "name": "Sesame",
+  "source": "api",
+  "type": "tts",
+  "website": "https://www.sesame.com"
+}

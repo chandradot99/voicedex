@@ -6,7 +6,7 @@
   <p class="crumbs"><a href="/#providers">Providers</a></p>
   <h1>{{ p.name }}</h1>
   {% if p.status != "active" %}
-  <p class="end-rule"><span class="mono">{{ p.retired_on.strftime('%Y-%m-%d') if p.retired_on else "Retired" }}</span>No longer available{% if p.retired_on %} since {{ p.retired_on.strftime('%B %-d, %Y') }}{% endif %}.</p>
+  <p class="end-rule"><span class="mono">{{ p.retired_on.strftime('%Y-%m-%d') if p.retired_on else "Retired" }}</span>{% if models %}The hosted API is no longer available{% else %}No longer available{% endif %}{% if p.retired_on %} since {{ p.retired_on.strftime('%B %-d, %Y') }}{% endif %}.{% if models %} Its open weights are still published and listed below.{% endif %}</p>
   {% else %}
   <p class="fact-line">
     <span>{% for t in summary.types %}<b>{{ TYPE_SHORT[t] }}</b>{% if not loop.last %} {% endif %}{% endfor %}</span>
