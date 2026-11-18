@@ -1,0 +1,183 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "emotion",
+      "style_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Bilingual English/Chinese real-time TTS model with voice cloning, voice design and instruction-based voice direction; weights are open for research and non-commercial use.",
+    "first_seen": "2026-11-18",
+    "id": "breeze-tts-2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "chinese_accents": 9,
+      "english_accents": 14,
+      "github": "https://github.com/breezeblue-ai/breeze-tts",
+      "huggingface_repo": "BreezeBlue/Breeze-TTS-2",
+      "license_terms": "Source code Apache-2.0; weights, derivatives and self-hosted outputs research/non-commercial only; commercial use via the paid hosted API (all paid plans) or written authorization from RESONIA, INC.",
+      "max_text_chars_note": "1,000 per HTTP request by default; approved accounts up to 2,000",
+      "released": "2026-08-25",
+      "selected_when": "model_id omitted and language_code is en or zh",
+      "vocal_events": "inline tags such as (laugh), (sigh); [笑] in Chinese",
+      "word_timestamps": true
+    },
+    "name": "Breeze TTS 2",
+    "open_weights": {
+      "commercial_use": false,
+      "license": "breezeblue-research-and-non-commercial-license",
+      "url": "https://huggingface.co/BreezeBlue/Breeze-TTS-2"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$30 / 1M characters on every plan (1 credit = 10 characters; Chinese/Japanese/Korean characters count as 2). Top-ups $3 per 10,000 credits. Free plan: 400 credits/day, no commercial use.",
+      "price_usd": 3e-05,
+      "source_url": "https://breezeblue.ai/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.breezeblue.ai/llms.txt",
+        "https://breezeblue.ai/pricing",
+        "https://huggingface.co/BreezeBlue"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "emotion",
+      "style_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Hosted 51-language Breeze TTS 2 model with natural-language performance instructions, voice cloning/design and 34 inline audio-event tags.",
+    "first_seen": "2026-11-18",
+    "id": "breeze-tts-2-multilingual",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "ar",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fr",
+      "gl",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "kn",
+      "ko",
+      "lt",
+      "mr",
+      "ms",
+      "ne",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sq",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "th",
+      "tl",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "zh"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "aliases": [
+        "breeze-tts-2-preview"
+      ],
+      "audio_tags": 34,
+      "endpoint": "https://api.breeze.blue/v1/text-to-speech/{voice_id}",
+      "hosted_only": true,
+      "max_text_chars_note": "1,000 per HTTP request by default; approved accounts up to 2,000",
+      "realtime_ws": "wss://api.breeze.blue/v1/text-to-speech/{voice_id}/stream-input (pcm or mp3)",
+      "selected_when": "model_id omitted and language_code is not en/zh or is omitted",
+      "word_timestamps": true
+    },
+    "name": "Breeze TTS 2 Multilingual",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$30 / 1M characters on every plan (1 credit = 10 characters; Chinese/Japanese/Korean characters count as 2). Top-ups $3 per 10,000 credits. Free plan: 400 credits/day, no commercial use.",
+      "price_usd": 3e-05,
+      "source_url": "https://breezeblue.ai/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.breezeblue.ai/llms.txt",
+        "https://breezeblue.ai/pricing",
+        "https://huggingface.co/BreezeBlue"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

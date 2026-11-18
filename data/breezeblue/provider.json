@@ -1,0 +1,20 @@
+{
+  "access": "self_serve",
+  "description": "BreezeBlue (operated by RESONIA, INC.) builds the Breeze TTS 2 text-to-speech models. It sells a self-serve Developer API and Studio (HTTP, streaming and realtime WebSocket TTS, voice cloning, voice design and dubbing) priced per character, and publishes the bilingual English/Chinese Breeze TTS 2 weights under a research and non-commercial licence; the hosted multilingual model covers 51 languages.",
+  "docs_urls": [
+    "https://docs.breezeblue.ai/llms.txt",
+    "https://breezeblue.ai/pricing",
+    "https://huggingface.co/BreezeBlue"
+  ],
+  "id": "breezeblue",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.breezeblue.ai/api-reference/introduction",
+    "docs": "https://docs.breezeblue.ai",
+    "pricing": "https://breezeblue.ai/pricing"
+  },
+  "name": "BreezeBlue",
+  "source": "docs",
+  "type": "tts",
+  "website": "https://breezeblue.ai"
+}
