@@ -4,7 +4,7 @@
 {% block content %}
 {% set n = namespace(i=0) %}
 <section class="wrap model-head">
-  <p class="crumbs"><a href="/providers/{{ p.id }}">{{ p.name }}</a><span aria-hidden="true">/</span><a href="/models?type={{ m.type }}&provider={{ p.id }}">{{ TYPE_LABELS[m.type] }}</a></p>
+  <p class="crumbs"><a href="/providers/{{ p.id }}">{{ p.name }}</a><span aria-hidden="true">/</span><a href="{{ hub.url if hub else '/models?type=' ~ m.type }}">{{ TYPE_LABELS[m.type] }}</a></p>
   <div class="title-row">
     <h1 class="model-title" style="--vt: model-title"><code translate="no">{{ m.id }}</code></h1>
     <button type="button" class="copy-btn" data-copy="{{ m.id }}" aria-label="Copy model id {{ m.id }}">
@@ -65,12 +65,12 @@
       <p>Many languages. {{ p.name }} doesn't list them individually.</p>
       {% elif lang_groups %}
       <ul class="lang-grid">
-        {% for name, variants in lang_groups[:30] %}<li><span>{{ name }}</span>{% if variants %}<span class="mono">{{ variants|join(" ") }}</span>{% endif %}</li>{% endfor %}
+        {% for name, variants in lang_groups[:30] %}<li>{% if lang_links.get(name) %}<a href="{{ lang_links[name] }}">{{ name }}</a>{% else %}<span>{{ name }}</span>{% endif %}{% if variants %}<span class="mono">{{ variants|join(" ") }}</span>{% endif %}</li>{% endfor %}
       </ul>
       {% if lang_groups|length > 30 %}
       <details class="lang-more">
         <summary>Show all {{ lang_groups|length }} languages</summary>
-        <ul class="lang-grid">{% for name, variants in lang_groups[30:] %}<li><span>{{ name }}</span>{% if variants %}<span class="mono">{{ variants|join(" ") }}</span>{% endif %}</li>{% endfor %}</ul>
+        <ul class="lang-grid">{% for name, variants in lang_groups[30:] %}<li>{% if lang_links.get(name) %}<a href="{{ lang_links[name] }}">{{ name }}</a>{% else %}<span>{{ name }}</span>{% endif %}{% if variants %}<span class="mono">{{ variants|join(" ") }}</span>{% endif %}</li>{% endfor %}</ul>
       </details>
       {% endif %}
       {% else %}<p class="muted">Not published.</p>{% endif %}
@@ -81,7 +81,7 @@
       {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-feat"><span class="n">0{{ n.i }}</span> Features <span class="aside">{{ m.capabilities|length }} of {{ vocab|length }} listed</span></h2>
       <ul class="checklist">
         {% for c in vocab %}{% set has = c in m.capabilities %}
-        <li class="{{ 'yes' if has else 'no' }}">{% if has %}<a href="/models?type={{ m.type }}&capability={{ c }}">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</a>{% else %}{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}<small>not listed</small>{% endif %}</li>
+        <li class="{{ 'yes' if has else 'no' }}">{% if has %}<a href="{{ feature_links.get(c) or '/models?type=' ~ m.type ~ '&capability=' ~ c }}">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</a>{% else %}{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}<small>not listed</small>{% endif %}</li>
         {% endfor %}
       </ul>
       {% set notes = m.meta.get('capability_notes') or {} %}

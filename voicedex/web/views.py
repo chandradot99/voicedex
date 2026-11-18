@@ -5,6 +5,7 @@ from __future__ import annotations
 import math
 from collections import Counter, defaultdict
 from dataclasses import dataclass
+from datetime import date
 
 from voicedex.catalog.schema import Model, Pricing
 from voicedex.catalog.store import Catalog, ModelRow, VoiceRow, language_matches
@@ -561,3 +562,158 @@ def voice_sample(voice, language: str | None = None) -> Sample | None:
     url, lang = candidates[0]
     return Sample(url, lang, False)
 
+
+
+# ── Landing pages: one indexable URL per question people search for ──────────
+# "/text-to-speech", "/text-to-speech/hindi", "/speech-to-text/speaker-diarization", "/text-to-speech/open-source".
+# Filtered /models?… views canonicalize to /models, so without these no filter combination is indexable.
+# Generated from data (never a hand-kept list); a page exists only when it has MIN_LANDING_MODELS to compare.
+
+TYPE_SLUGS = {"stt": "speech-to-text", "tts": "text-to-speech", "sts": "speech-to-speech"}
+SLUG_TYPES = {v: k for k, v in TYPE_SLUGS.items()}
+MIN_LANDING_MODELS = 3
+OPEN_WEIGHTS_SLUG = "open-source"
+
+
+def slugify(text: str) -> str:
+    import re
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+@dataclass(frozen=True)
+class Landing:
+    type: str            # stt | tts | sts
+    kind: str            # hub | language | feature | open
+    value: str = ""      # base language code, or capability
+    slug: str = ""
+    label: str = ""      # "Hindi", "Speaker diarization"
+
+    @property
+    def url(self) -> str:
+        return f"/{TYPE_SLUGS[self.type]}" + (f"/{self.slug}" if self.slug else "")
+
+    def matches(self, row: ModelRow) -> bool:
+        m = row.model
+        if m.type != self.type:
+            return False
+        if self.kind == "language":       # explicit support only: "*" models don't claim this language
+            return any(base_language(lang) == self.value for lang in m.languages if lang != "*")
+        if self.kind == "feature":
+            return self.value in m.capabilities
+        if self.kind == "open":
+            return m.open_weights is not None
+        return True
+
+
+_LANDING_CACHE: list = [None, {}]
+
+
+def landing_pages(catalog: Catalog) -> dict[str, Landing]:
+    """Every landing page, keyed by URL path. Memoized per loaded catalog (the catalog is immutable)."""
+    if _LANDING_CACHE[0] is catalog and _LANDING_CACHE[2:] == [MIN_LANDING_MODELS]:
+        return _LANDING_CACHE[1]
+    rows = active_models(catalog)
+    out: dict[str, Landing] = {}
+    for mtype in TYPE_SLUGS:
+        typed = [r for r in rows if r.model.type == mtype]
+        if not typed:
+            continue
+        hub = Landing(mtype, "hub")
+        out[hub.url] = hub
+        candidates: list[Landing] = []
+        if sum(r.model.open_weights is not None for r in typed) >= MIN_LANDING_MODELS:
+            candidates.append(Landing(mtype, "open", slug=OPEN_WEIGHTS_SLUG, label="Open-weights"))
+        caps = Counter(c for r in typed for c in r.model.capabilities)
+        for cap in sorted(c for c, n in caps.items() if n >= MIN_LANDING_MODELS):
+            candidates.append(Landing(mtype, "feature", cap, slugify(cap), FEATURE_LABELS.get(cap, cap)))
+        langs = Counter(b for r in typed for b in {base_language(lang) for lang in r.model.languages if lang != "*"})
+        names = {code: language_name(code) for code, n in langs.items() if n >= MIN_LANDING_MODELS}
+        name_slugs = Counter(slugify(n) for n in names.values())
+        for code, name in sorted(names.items(), key=lambda x: x[1]):
+            slug = slugify(name) if name != code and name_slugs[slugify(name)] == 1 and slugify(name) else slugify(code)
+            candidates.append(Landing(mtype, "language", code, slug, name))
+        for page in candidates:
+            out.setdefault(page.url, page)        # first wins on a (theoretical) slug collision
+    _LANDING_CACHE[:] = [catalog, out, MIN_LANDING_MODELS]
+    return out
+
+
+def find_landing(catalog: Catalog, mtype: str, kind: str = "hub", value: str = "") -> Landing | None:
+    return next((p for p in landing_pages(catalog).values()
+                 if p.type == mtype and p.kind == kind and p.value == value), None)
+
+
+def landing_rows(catalog: Catalog, page: Landing) -> list[ModelRow]:
+    """Cheapest first (USD-normalized), then unpriced; stable within ties."""
+    rows = [r for r in active_models(catalog) if page.matches(r)]
+    return sorted(rows, key=lambda r: ((normalized_price(r.model) or (math.inf,))[0], r.provider_id, r.model.id))
+
+
+def _lower_label(label: str) -> str:
+    return label if label[:2].isupper() else label[0].lower() + label[1:]
+
+
+@dataclass
+class LandingCopy:
+    title: str
+    h1: str
+    description: str
+    intro: list[str]
+
+
+def landing_copy(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> LandingCopy:
+    """Titles and an intro written from the data, so every page says something specific and true."""
+    kind_label = TYPE_LABELS[page.type].lower()                       # "text-to-speech"
+    n, n_prov = len(rows), len({r.provider_id for r in rows})
+    noun = f"model{'s' if n != 1 else ''}"
+    if page.kind == "language":
+        subject = f"{page.label} {kind_label}"
+        h1 = f"{page.label} {kind_label} models"
+        title = f"{page.label} {kind_label} APIs: {n} models compared by price"
+        lead = f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} list {page.label} support."
+    elif page.kind == "feature":
+        feat = _lower_label(page.label)
+        subject = f"{kind_label} with {feat}"
+        h1 = f"{TYPE_LABELS[page.type]} models with {feat}"
+        title = f"{TYPE_LABELS[page.type]} APIs with {feat}: {n} models compared"
+        lead = f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} list {feat} as a feature."
+    elif page.kind == "open":
+        subject = f"open-weights {kind_label}"
+        h1 = f"Open-source {kind_label} models"
+        title = f"Open-source {kind_label} models: {n} open-weights models compared"
+        lead = (f"{n} {kind_label} {noun} from {n_prov} publisher{'s' if n_prov != 1 else ''} publish their weights, "
+                "so you can run them yourself. Licences differ, so check commercial use on each model.")
+    else:
+        subject = kind_label
+        h1 = f"{TYPE_LABELS[page.type]} APIs and models compared"
+        title = f"{TYPE_LABELS[page.type]} APIs compared: {n} models, prices and languages"
+        lead = f"{n} {kind_label} {noun} from {n_prov} providers, with languages, features, prices and shutdown dates."
+    intro = [lead]
+    priced = [(normalized_price(r.model), r) for r in rows if normalized_price(r.model)]
+    paid = [x for x in priced if x[0][0] > 0]
+    if paid:
+        _, cheapest = min(paid, key=lambda x: x[0][0])
+        name = catalog.providers[cheapest.provider_id].provider.name
+        intro.append(f"The cheapest published USD price is {cheapest.model.name} from {name} at "
+                     f"{price_label(cheapest.model)}; {len(priced)} of {n} have a comparable price.")
+    extras = []
+    if n_free := len(priced) - len(paid):
+        extras.append(f"{n_free} {'are' if n_free != 1 else 'is'} free")
+    if page.kind != "open" and (n_open := sum(r.model.open_weights is not None for r in rows)):
+        extras.append(f"{n_open} {'are' if n_open != 1 else 'is'} open weights")
+    if n_rt := sum(any(str(i) in ("websocket", "webrtc") for i in r.model.interfaces) for r in rows):
+        extras.append(f"{n_rt} stream over WebSocket or WebRTC")
+    if n_eol := sum(r.model.eol_date is not None for r in rows):
+        extras.append(f"{n_eol} {'have' if n_eol != 1 else 'has'} an announced shutdown date")
+    if extras:
+        intro.append(("Of these, " + ", ".join(extras[:-1]) + (" and " if len(extras) > 1 else "") + extras[-1] + "."))
+    description = f"Compare {n} {subject} {noun}: prices, languages, features and status."
+    if paid:
+        description += f" Cheapest paid: {cheapest.model.name} ({name}), {price_label(cheapest.model)}."
+    return LandingCopy(title=title, h1=h1, description=description, intro=intro)
+
+
+def last_modified(rows) -> date | None:
+    """Most recent change among model or voice rows (for sitemap <lastmod> and Dataset dateModified)."""
+    dates = [d for r in rows for rec in [getattr(r, "model", None) or r.voice] for d in (rec.updated_at, rec.first_seen) if d]
+    return max(dates) if dates else None

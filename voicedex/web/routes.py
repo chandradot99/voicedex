@@ -132,7 +132,34 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
         "spectrum": views.price_spectrum(catalog),
         "n_voices_live": sum(s.voices for s in live),
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
+        "jsonld": _home_ld(catalog, len(views.active_models(catalog)), len(views.active_voices(catalog)), len(live)),
     })
+
+
+def _home_ld(catalog: Catalog, n_models: int, n_voices: int, n_providers: int) -> list[dict]:
+    site = settings.site_url.rstrip("/")
+    org = {"@type": "Organization", "name": settings.site_name, "url": site}
+    modified = views.last_modified(views.active_models(catalog))
+    dataset = {
+        "@context": "https://schema.org", "@type": "Dataset",
+        "name": f"{settings.site_name}: catalog of speech AI models, voices and prices",
+        "description": (f"Open catalog of {n_models} speech-to-text, text-to-speech and speech-to-speech models and "
+                        f"{n_voices} voices from {n_providers} providers: supported languages, features, prices "
+                        "(normalized per 1M characters or per hour), regions, lifecycle and shutdown dates. "
+                        "Synced from provider APIs and documentation, reviewed, and versioned in git."),
+        "url": site + "/", "sameAs": "https://github.com/chandradot99/voicedex",
+        "keywords": ["speech-to-text", "text-to-speech", "speech-to-speech", "voice AI", "TTS", "STT", "ASR",
+                     "pricing", "voices", "languages"],
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "isAccessibleForFree": True, "creator": org, "publisher": org,
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": site + "/v1/catalog.json"}],
+    }
+    if modified:
+        dataset["dateModified"] = modified.isoformat()
+    website = {"@context": "https://schema.org", "@type": "WebSite", "name": settings.site_name, "url": site + "/",
+               "description": "Open catalog of speech AI models and voices: languages, features, prices and status."}
+    return [website, dataset]
 
 
 @router.get("/providers/{provider_id}", response_class=HTMLResponse)
@@ -150,6 +177,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
         "voice_count": len(voices), "voice_sample": voices[:12],
         "deprecated": [r for r in catalog.models if r.provider_id == provider_id and r.model.deprecated_at],
         "positions": views.price_positions(views.price_spectrum(catalog)),
+        "jsonld": [_breadcrumb_ld([("Home", "/"), (pd.provider.name, f"/providers/{provider_id}")])],
     })
 
 
@@ -179,20 +207,83 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         rows.sort(key=lambda r: (views.normalized_price(r.model) or (math.inf,))[0])
     else:
         rows.sort(key=lambda r: (r.provider_id, r.model.type, not r.model.is_default, r.model.id))
+    ctx = _models_context(catalog, rows, f)
+    ctx["canonical_path"] = _models_canonical(catalog, f)
+    return templates.TemplateResponse(request, "models.html", ctx)
+
+
+def _models_context(catalog: Catalog, rows: list, f: dict, *, show_tokens: bool = True) -> dict:
     filtered = any(v for k, v in f.items() if k != "sort")
     keys = {views.model_key(r) for r in rows}
     spectrum = [b for b in views.price_spectrum(catalog, highlight=keys if filtered else None)
                 if not filtered or any(it.state == "on" for col in b.columns for it in col)]
     tokens = [(k, _TOKEN_LABEL[k], _token_value(k, v, catalog)) for k, v in f.items() if v and k in _TOKEN_LABEL]
-    return templates.TemplateResponse(request, "models.html", {
-        "rows": rows, "f": f, "filtered": filtered, "spectrum": spectrum, "tokens": tokens,
+    return {
+        "rows": rows, "f": f, "filtered": filtered, "spectrum": spectrum, "tokens": tokens if show_tokens else [],
         "positions": views.price_positions(views.price_spectrum(catalog)),
         "qs": lambda **changes: _qs(f, **changes),
         "languages": views.language_options(catalog),
         "capabilities": sorted(MODEL_CAPABILITIES, key=lambda c: views.FEATURE_LABELS.get(c, c)),
         "providers": [s for s in views.provider_summaries(catalog) if s.models],
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
-    })
+    }
+
+
+def _models_canonical(catalog: Catalog, f: dict) -> str:
+    """A /models filter that's exactly a landing page (type, type+language, type+feature) canonicalizes to it."""
+    active = {k for k, v in f.items() if v and k != "sort"}
+    page = None
+    if active == {"type"}:
+        page = views.find_landing(catalog, f["type"])
+    elif active == {"type", "language"} and "-" not in f["language"]:
+        page = views.find_landing(catalog, f["type"], "language", f["language"].lower())
+    elif active == {"type", "capability"}:
+        page = views.find_landing(catalog, f["type"], "feature", f["capability"])
+    return page.url if page else "/models"
+
+
+def _landing_page(type_slug: str):
+    mtype = views.SLUG_TYPES[type_slug]
+
+    async def page(request: Request, slug: str = "", catalog: Catalog = Depends(get_catalog)):
+        landing = views.landing_pages(catalog).get(f"/{type_slug}" + (f"/{slug}" if slug else ""))
+        if not landing:
+            raise HTTPException(404, "Page not found")
+        rows = views.landing_rows(catalog, landing)
+        f = {"type": mtype, "language": landing.value if landing.kind == "language" else "",
+             "capability": landing.value if landing.kind == "feature" else "",
+             "provider": "", "q": "", "sort": "price", "status": ""}
+        ctx = _models_context(catalog, rows, f, show_tokens=False)
+        ctx["filtered"] = landing.kind != "hub"
+        siblings = [p for p in views.landing_pages(catalog).values() if p.type == mtype and p.kind != "hub"]
+        hub = views.find_landing(catalog, mtype)
+        crumbs = [("Home", "/"), (views.TYPE_LABELS[mtype], hub.url)] + ([(landing.label, landing.url)] if slug else [])
+        wildcard = 0
+        if landing.kind == "language":
+            wildcard = sum(1 for r in views.active_models(catalog)
+                           if r.model.type == mtype and "*" in r.model.languages and not landing.matches(r))
+        ctx.update({
+            "landing": landing, "copy": views.landing_copy(catalog, landing, rows), "crumbs": crumbs,
+            "by_language": [p for p in siblings if p.kind == "language"],
+            "by_feature": [p for p in siblings if p.kind in ("feature", "open")],
+            "other_types": [p for p in views.landing_pages(catalog).values() if p.kind == "hub" and p.type != mtype],
+            "wildcard": wildcard, "filter_url": f"/models?{_qs(f, sort=None)}",
+            "jsonld": [_breadcrumb_ld(crumbs)],
+        })
+        return templates.TemplateResponse(request, "landing.html", ctx)
+    return page
+
+
+for _slug in views.SLUG_TYPES:
+    router.add_api_route(f"/{_slug}", _landing_page(_slug), methods=["GET"], response_class=HTMLResponse)
+    router.add_api_route(f"/{_slug}/{{slug}}", _landing_page(_slug), methods=["GET"], response_class=HTMLResponse)
+
+
+def _breadcrumb_ld(crumbs: list[tuple[str, str]]) -> dict:
+    site = settings.site_url.rstrip("/")
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": name, "item": site + path}
+        for i, (name, path) in enumerate(crumbs, 1)]}
 
 
 @router.get("/voices", response_class=HTMLResponse)
@@ -283,6 +374,14 @@ async def model_page(request: Request, provider_id: str, model_type: str, model_
         "rank": views.price_rank(catalog, row),
         "today": date.today(),
         "api_path": f"/v1/providers/{provider_id}/models/{quote(row.model.id, safe='')}",
+        "lang_links": {views.language_name(page.value): page.url for page in views.landing_pages(catalog).values()
+                       if page.type == row.model.type and page.kind == "language"
+                       and page.value in {views.base_language(lang) for lang in row.model.languages}},
+        "feature_links": {page.value: page.url for page in views.landing_pages(catalog).values()
+                          if page.type == row.model.type and page.kind == "feature"},
+        "hub": views.find_landing(catalog, row.model.type),
+        "jsonld": [_breadcrumb_ld([("Home", "/"), (pd.provider.name, f"/providers/{provider_id}"),
+                                   (row.model.name, views.model_url(row))])],
     })
 
 
@@ -330,12 +429,58 @@ async def robots():
 @router.get("/sitemap.xml")
 async def sitemap(catalog: Catalog = Depends(get_catalog)):
     site = settings.site_url.rstrip("/")
-    paths = ["/", "/models", "/voices", "/docs"]
-    paths += [f"/providers/{pid}" for pid in sorted(catalog.providers)]
-    paths += sorted(views.model_url(r) for r in views.active_models(catalog))
-    body = "".join(f"<url><loc>{escape(site + p)}</loc></url>" for p in paths)
+    models = views.active_models(catalog)
+    entries: list[tuple[str, date | None]] = [
+        ("/", views.last_modified(models)), ("/models", views.last_modified(models)),
+        ("/voices", views.last_modified(views.active_voices(catalog))), ("/docs", None),
+    ]
+    for pid in sorted(catalog.providers):
+        pd = catalog.providers[pid]
+        changed = views.last_modified(views.active_models(catalog, pid) + views.active_voices(catalog, pid))
+        entries.append((f"/providers/{pid}", max(filter(None, (changed, pd.provider.last_synced)), default=None)))
+    for path, page in sorted(views.landing_pages(catalog).items()):
+        entries.append((path, views.last_modified(views.landing_rows(catalog, page))))
+    entries += sorted((views.model_url(r), r.model.updated_at or r.model.first_seen) for r in models)
+    body = "".join(f"<url><loc>{escape(site + p)}</loc>" + (f"<lastmod>{d.isoformat()}</lastmod>" if d else "")
+                   + "</url>" for p, d in entries)
     xml = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>'
     return Response(xml, media_type="application/xml")
+
+
+@router.get("/llms.txt", response_class=PlainTextResponse)
+async def llms_txt(catalog: Catalog = Depends(get_catalog)):
+    """https://llmstxt.org: a plain-Markdown map of the site for LLMs and AI search tools."""
+    site = settings.site_url.rstrip("/")
+    summaries = views.provider_summaries(catalog)
+    live = [s for s in summaries if s.status == "active"]
+    n_models, n_voices = len(views.active_models(catalog)), len(views.active_voices(catalog))
+    hubs = [p for p in views.landing_pages(catalog).values() if p.kind == "hub"]
+    lines = [
+        f"# {settings.site_name}", "",
+        f"> Open catalog of speech AI: {n_models} speech-to-text, text-to-speech and speech-to-speech models and "
+        f"{n_voices:,} voices from {len(live)} providers, with supported languages, features, prices, regions and "
+        "shutdown dates. Free, read-only JSON API; data is synced from provider APIs and docs and versioned in git.",
+        "",
+        "Prices are normalized for comparison: text-to-speech in USD per 1M characters, speech-to-text and "
+        "speech-to-speech in USD per hour of audio. Non-USD prices are shown as published, never converted. "
+        "Language codes are BCP-47; \"*\" means the provider supports many languages without listing them.",
+        "", "## Data", "",
+        f"- [Full catalog as JSON]({site}/v1/catalog.json): every provider, model and voice in one response",
+        f"- [API reference]({site}/docs): REST endpoints with filters for type, language, feature, region and price",
+        f"- [OpenAPI schema]({site}/openapi.json)",
+        "- [Source and data on GitHub](https://github.com/chandradot99/voicedex)",
+        "", "## Compare models", "",
+    ]
+    lines += [f"- [{views.TYPE_LABELS[p.type]} models]({site}{p.url})" for p in hubs]
+    lines += [f"- [All models, filterable]({site}/models)", f"- [Voices with audio samples]({site}/voices)",
+              "", "## Providers", ""]
+    lines += [f"- [{s.name}]({site}/providers/{s.id}): {s.models} models"
+              + (f", {s.voices} voices" if s.voices else "") for s in sorted(live, key=lambda s: s.name.lower())]
+    retired = [s for s in summaries if s.status != "active"]
+    if retired:
+        lines += ["", "## Optional", "", "Providers that shut down or stopped selling (kept for the record):", ""]
+        lines += [f"- [{s.name}]({site}/providers/{s.id})" for s in retired]
+    return "\n".join(lines) + "\n"
 
 
 @router.get("/redoc")

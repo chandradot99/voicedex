@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 {% block title %}Compare speech models | {{ site_name }}{% endblock %}
 {% block content %}
+{% block page_head %}
 <section class="wrap page-head">
   <h1>{{ rows|length }} model{{ 's' if rows|length != 1 }}{% if not filtered %} across every provider{% endif %}</h1>
   <p class="lede">Filter by what you need, sort by price, and tick models to compare. Prices are normalized: text-to-speech per 1M characters, speech-to-text and realtime per hour of audio.</p>
 </section>
+{% endblock %}
 
 <section class="wrap">
+  {% block filters %}
   <details class="filter-bar" open data-collapse-sm>
     <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
     <form class="filters" method="get" action="/models">
@@ -48,6 +51,7 @@
       <button type="submit" class="btn-secondary" data-apply>Apply</button>
     </form>
   </details>
+  {% endblock %}
 
   <div class="result-bar">
     <p class="result-count" role="status">{{ rows|length }} match{{ 'es' if rows|length != 1 }}</p>
@@ -102,4 +106,5 @@
   </div>
   {% endif %}
 </section>
+{% block after_table %}{% endblock %}
 {% endblock %}

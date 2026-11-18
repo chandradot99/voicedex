@@ -6,7 +6,7 @@ import structlog
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
-from fastapi.responses import JSONResponse, Response
+from fastapi.responses import JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
@@ -132,6 +132,19 @@ async def etag_cache(request: Request, call_next):
             response.headers["ETag"] = etag
         response.headers.setdefault("Cache-Control", "public, max-age=300")
     return response
+
+
+@app.middleware("http")
+async def strip_trailing_slash(request: Request, call_next):
+    """`/models/` → 301 `/models`. Starlette's own slash redirect is a 307 (temporary), which search engines
+    don't consolidate; no route here ends in a slash, so a permanent redirect is always right."""
+    path = request.url.path
+    if request.method in ("GET", "HEAD") and len(path) > 1 and path.endswith("/"):
+        target = "/" + path.strip("/")             # also collapses a leading "//" (no protocol-relative redirect)
+        if request.url.query:
+            target += "?" + request.url.query
+        return RedirectResponse(target, status_code=301)
+    return await call_next(request)
 
 
 # Outermost: compress responses (catalog.json is ~8 MB of JSON; gzip cuts transfer time and egress).

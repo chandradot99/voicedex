@@ -754,3 +754,13 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
   .sq, .tl-dot, .h1, .h2, .h3, .h4, .h5 { forced-color-adjust: none; }
   .play[aria-pressed="true"] { border: 2px solid CanvasText; }
 }
+
+/* Landing pages (/text-to-speech, /speech-to-text/hindi…): link lists to sibling pages */
+.landing-more { padding-top: 40px; padding-bottom: 48px; }
+.landing-more .section-title { margin-top: 32px; margin-bottom: 12px; }
+.landing-links { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 0 20px; }
+.landing-links li { padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+.landing-links a, .lang-grid a { color: var(--ink-2); text-decoration: none; }
+.landing-links a:hover, .lang-grid a:hover { color: var(--signal); }
+.landing-links a[aria-current="page"] { color: var(--signal); }
+.page-head .section-note a { color: var(--ink-2); }

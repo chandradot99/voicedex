@@ -111,8 +111,10 @@ async def test_robots_and_sitemap(client):
 
 
 async def test_canonical_and_share_tags(client):
-    html = (await client.get("/models?type=stt")).text
+    html = (await client.get("/models?type=stt&provider=zz-test-provider")).text
     assert '<link rel="canonical" href="https://voicedex.dev/models">' in html     # filters dropped
+    html = (await client.get("/models?type=stt")).text                             # = a landing page
+    assert '<link rel="canonical" href="https://voicedex.dev/speech-to-text">' in html
     assert 'og:image" content="https://voicedex.dev/static/og.png"' in html
     assert (await client.get("/static/og.png")).status_code == 200
 
@@ -136,3 +138,53 @@ async def test_gzip_and_page_caching(client):
     page = await client.get("/models")
     assert page.headers["cache-control"] == "public, max-age=300" and "etag" not in page.headers
     assert (await client.get("/health")).headers["cache-control"] == "no-store"
+
+
+async def test_landing_pages(client, monkeypatch):
+    import json
+    import re
+
+    from voicedex.web import views
+    monkeypatch.setattr(views, "MIN_LANDING_MODELS", 1)                # the fixture catalog is tiny
+    hub = await client.get("/speech-to-text")
+    assert hub.status_code == 200 and "<h1>Speech-to-text APIs and models compared</h1>" in hub.text
+    assert 'href="/speech-to-text/speaker-diarization"' in hub.text and 'href="/speech-to-text/german"' in hub.text
+    german = (await client.get("/speech-to-text/german")).text
+    table = german.split('<table class="data models-table">', 1)[1]
+    assert "stt-eu" in table and "stt-global" not in table            # "*" models don't claim German…
+    assert "1 more speech-to-text model support" in german             # …but are pointed to
+    assert '<link rel="canonical" href="https://voicedex.dev/speech-to-text/german">' in german
+    crumbs = [json.loads(m) for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', german)]
+    assert crumbs[0]["@type"] == "BreadcrumbList" and crumbs[0]["itemListElement"][-1]["name"] == "German"
+    tts = (await client.get("/text-to-speech")).text
+    assert "The cheapest published USD price is TTS Main from ZZ Test at $30.00 per 1M chars" in tts
+    assert (await client.get("/speech-to-text/klingon")).status_code == 404
+    model = (await client.get("/models/zz-test-provider/stt/stt-eu")).text
+    assert 'href="/speech-to-text/german">German</a>' in model and 'href="/speech-to-text/word-timestamps"' in model
+    sitemap = (await client.get("/sitemap.xml")).text
+    assert "<loc>https://voicedex.dev/speech-to-text/german</loc><lastmod>2020-01-01</lastmod>" in sitemap
+
+
+async def test_landing_threshold(client):
+    assert (await client.get("/speech-to-text/german")).status_code == 404    # 1 model < MIN_LANDING_MODELS
+    assert (await client.get("/speech-to-text")).status_code == 200           # hubs always exist
+
+
+async def test_home_structured_data_and_llms_txt(client):
+    import json
+    import re
+    html = (await client.get("/")).text
+    blocks = [json.loads(m) for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html)]
+    dataset = next(b for b in blocks if b["@type"] == "Dataset")
+    assert dataset["distribution"][0]["contentUrl"] == "https://voicedex.dev/v1/catalog.json"
+    assert dataset["dateModified"] == "2020-01-01"
+    llms = await client.get("/llms.txt")
+    assert llms.status_code == 200 and llms.text.startswith("# Voicedex")
+    assert "(https://voicedex.dev/providers/zz-test-provider): 3 models" in llms.text
+
+
+async def test_trailing_slash_redirects_permanently(client):
+    r = await client.get("/models/?type=stt", follow_redirects=False)
+    assert r.status_code == 301 and r.headers["location"] == "/models?type=stt"
+    r = await client.get("http://test//evil.example/", follow_redirects=False)
+    assert r.headers["location"] == "/evil.example"                  # never protocol-relative

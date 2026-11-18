@@ -1,0 +1,39 @@
+{% extends "models.html" %}
+{% block title %}{{ copy.title }} | {{ site_name }}{% endblock %}
+{% block description %}{{ copy.description }}{% endblock %}
+
+{% block page_head %}
+<section class="wrap page-head">
+  <p class="crumbs">{% for name, url in crumbs[:-1] %}<a href="{{ url }}">{{ name }}</a><span aria-hidden="true">/</span>{% endfor %}</p>
+  <h1>{{ copy.h1 }}</h1>
+  {% for line in copy.intro %}<p class="lede">{{ line }}</p>{% endfor %}
+  {% if wildcard %}<p class="section-note">{{ wildcard }} more {{ TYPE_LABELS[landing.type]|lower }} model{{ 's' if wildcard != 1 }} support many languages without listing them, so {{ 'they are' if wildcard != 1 else 'it is' }} not counted here. <a href="{{ filter_url }}">Include them</a>.</p>{% endif %}
+  <p class="section-note">Prices are normalized: {% if landing.type == "tts" %}USD per 1M characters{% else %}USD per hour of audio{% endif %}, cheapest first. Tick models to compare them side by side, or <a href="{{ filter_url }}">refine these filters</a>.</p>
+</section>
+{% endblock %}
+
+{% block filters %}{% endblock %}
+
+{% block after_table %}
+<section class="wrap landing-more">
+  {% if landing.kind != "hub" %}
+  <p class="more-link"><a href="{{ crumbs[1][1] }}">All {{ TYPE_LABELS[landing.type]|lower }} models</a></p>
+  {% endif %}
+  {% if by_feature %}
+  <h2 class="section-title">{{ TYPE_LABELS[landing.type] }} by feature</h2>
+  <ul class="landing-links">
+    {% for p in by_feature %}<li><a href="{{ p.url }}" {% if p.url == landing.url %}aria-current="page"{% endif %}>{{ "Open-source / open weights" if p.kind == "open" else p.label }}</a></li>{% endfor %}
+  </ul>
+  {% endif %}
+  {% if by_language %}
+  <h2 class="section-title">{{ TYPE_LABELS[landing.type] }} by language</h2>
+  <ul class="landing-links">
+    {% for p in by_language %}<li><a href="{{ p.url }}" {% if p.url == landing.url %}aria-current="page"{% endif %}>{{ p.label }}</a></li>{% endfor %}
+  </ul>
+  {% endif %}
+  <h2 class="section-title">Other model types</h2>
+  <ul class="landing-links">
+    {% for p in other_types %}<li><a href="{{ p.url }}">{{ TYPE_LABELS[p.type] }}</a></li>{% endfor %}
+  </ul>
+</section>
+{% endblock %}

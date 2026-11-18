@@ -41,6 +41,10 @@ voicedex/
                        coral only for shutdowns/errors; no pills, gradients or colour-coded types. Price spectrum
                        (views.price_spectrum) is the signature visual. Asset URLs carry a content hash (?v=).
                        Dark is the default for everyone; light is opt-in via the header toggle (localStorage "theme").
+                       SEO: filtered /models?… canonicalizes to /models, so indexable landing pages are generated from
+                       data (views.landing_pages): /{speech-to-text|text-to-speech|speech-to-speech}[/<language>|/<feature>
+                       |/open-source], only when ≥ MIN_LANDING_MODELS match. Also JSON-LD (Dataset, BreadcrumbList),
+                       sitemap <lastmod>, /llms.txt, and a 301 for trailing slashes (main.py).
   routers/           — providers.py (/v1/providers/...), catalog.py (/v1/models, /v1/voices, /v1/catalog.json), _filters.py
   sync/
     base.py          — SyncModel / SyncVoice / SyncResult dataclasses + ProviderSyncer
