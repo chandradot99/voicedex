@@ -21,6 +21,7 @@ from typing import ClassVar
 
 import httpx
 
+from voicedex.sync.ai_parser import parse_models_from_docs
 from voicedex.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncModel, SyncResult, get_with_retry
 from voicedex.sync.language import normalize_languages
 
@@ -88,13 +89,26 @@ class HuggingFaceSyncer(ProviderSyncer):
     hf_authors: ClassVar[list[str]] = []
     repo_filter: ClassVar[str | None] = None   # keep only repo ids matching this regex
     exclude: ClassVar[str | None] = None       # drop repo ids matching this regex
+    # Per-org opt-in for broader tags, e.g. {"text-to-audio": "tts"} for a speech org that tags TTS that way
+    # (not global: text-to-audio is mostly music generation).
+    extra_pipelines: ClassVar[dict[str, str]] = {}
+    # Orgs that also sell a hosted API: docs sections (Claude Code cache extraction, like DocsOnlySyncer).
+    stt_docs: ClassVar[list[str]] = []
+    tts_docs: ClassVar[list[str]] = []
+    sts_docs: ClassVar[list[str]] = []
+    stt_guidance: ClassVar[str] = ""
+    tts_guidance: ClassVar[str] = ""
+    sts_guidance: ClassVar[str] = ""
+
+    def _pipelines(self) -> dict[str, str]:
+        return {**PIPELINES, **self.extra_pipelines}
 
     async def sync(self) -> SyncResult:
         rows: list[dict] = []
         urls: list[str] = []
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
             for author in self.hf_authors:
-                for tag in PIPELINES:
+                for tag in self._pipelines():
                     params = [("author", author), ("pipeline_tag", tag), ("sort", "downloads"),
                               ("direction", "-1"), ("limit", "200")]
                     params += [("expand[]", e) for e in _EXPAND]
@@ -103,23 +117,35 @@ class HuggingFaceSyncer(ProviderSyncer):
                     rows += resp.json()
                     urls.append(f"{_API}?author={author}&pipeline_tag={tag}")
 
-        models = {"stt": [], "tts": []}
+        models: dict[str, list[SyncModel]] = {"stt": [], "tts": [], "sts": []}
         seen: set[str] = set()
         for r in rows:
             m = self._to_model(r)
             if m and m.model_id not in seen:
                 seen.add(m.model_id)
                 models[m.type].append(m)
+        notes = (f"{len(models['stt'])} STT + {len(models['tts'])} TTS repos above the bar "
+                 f"(≥{MIN_DOWNLOADS_30D:,} downloads/30d or ≥{MIN_LIKES} likes) of {len(rows)} candidates.")
+        docs: list[str] = []
+        for kind, seeds, guidance in (("stt", self.stt_docs, self.stt_guidance),
+                                      ("tts", self.tts_docs, self.tts_guidance),
+                                      ("sts", self.sts_docs, self.sts_guidance)):
+            if seeds:
+                hosted, _ = await parse_models_from_docs(
+                    seed_urls=seeds, provider_id=self.provider_id, model_type=kind, guidance=guidance)
+                models[kind] += [m for m in hosted if m.model_id not in seen]
+                docs += seeds
+        if docs:
+            notes += " Hosted API models from docs."
         return SyncResult(
-            stt_models=models["stt"], tts_models=models["tts"], tts_voices=[],
-            source=self.source, api_urls=urls,
-            notes=f"{len(models['stt'])} STT + {len(models['tts'])} TTS repos above the bar "
-                  f"(≥{MIN_DOWNLOADS_30D:,} downloads/30d or ≥{MIN_LIKES} likes) of {len(rows)} candidates.",
+            stt_models=models["stt"], tts_models=models["tts"], sts_models=models["sts"], tts_voices=[],
+            source="mixed" if docs else self.source, api_urls=urls, docs_urls=list(dict.fromkeys(docs)),
+            notes=notes,
         )
 
     def _to_model(self, r: dict) -> SyncModel | None:
         repo = r.get("id", "")
-        kind = PIPELINES.get(r.get("pipeline_tag") or "")
+        kind = self._pipelines().get(r.get("pipeline_tag") or "")
         if not kind or _REPACKAGED.search(repo):
             return None
         if self.repo_filter and not re.search(self.repo_filter, repo):

@@ -38,3 +38,13 @@ def test_licence_from_tags_and_other():
     assert s._to_model(_row("org/c")).open_weights == {
         "license": "unspecified", "url": "https://huggingface.co/org/c", "commercial_use": None}
     assert commercial_use("llama3.2") is None and commercial_use("MIT") is True
+
+
+def test_extra_pipelines_opt_in():
+    from voicedex.sync.open_weights import TwoNoiseSyncer
+    row = {"id": "2Noise/ChatTTS", "pipeline_tag": "text-to-audio", "likes": 1691, "downloads": 8461,
+           "cardData": {"license": "cc-by-nc-4.0"}, "tags": []}
+    m = TwoNoiseSyncer()._to_model(row)
+    assert m is not None and m.type == "tts" and m.open_weights["commercial_use"] is False
+    from voicedex.sync.open_weights import HexgradSyncer
+    assert HexgradSyncer()._to_model({**row, "id": "hexgrad/x"}) is None   # text-to-audio not opted in
