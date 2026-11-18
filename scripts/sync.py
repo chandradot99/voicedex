@@ -112,9 +112,13 @@ def seed_cache_from_data(provider_id: str, data_dir: Path) -> list[str]:
     return seeded
 
 
+def _cache_paths(provider_id: str) -> list[Path]:
+    return [_models_path(provider_id, "stt"), _models_path(provider_id, "tts"),
+            _models_path(provider_id, "sts"), _voices_path(provider_id)]
+
+
 def clear_cache(provider_id: str) -> None:
-    for p in (_models_path(provider_id, "stt"), _models_path(provider_id, "tts"),
-              _models_path(provider_id, "sts"), _voices_path(provider_id)):
+    for p in _cache_paths(provider_id):
         p.unlink(missing_ok=True)
 
 
@@ -122,14 +126,18 @@ async def sync_one(provider_id: str, data_dir: Path, write: bool, allow_shrink: 
                    reuse_docs: bool = False) -> bool:
     print(f"\n{'─' * 60}\n  {provider_id}\n{'─' * 60}")
     entry = BY_ID[provider_id]
+    before = {p for p in _cache_paths(provider_id) if p.exists()}
     seeded = seed_cache_from_data(provider_id, data_dir) if reuse_docs else []
     if seeded:
         print(f"  Reusing reviewed docs data from data/: {', '.join(seeded)}")
     try:
         return await _sync_one(provider_id, entry, data_dir, write, allow_shrink, verbose)
     finally:
-        if seeded:
-            clear_cache(provider_id)  # seeded copies must never masquerade as a fresh extraction
+        # Seeded copies must never masquerade as a fresh extraction; fresh cache files written before the run
+        # (e.g. a new docs section) survive a dry-run (--write clears everything once consumed).
+        for path in _cache_paths(provider_id):
+            if path not in before:
+                path.unlink(missing_ok=True)
 
 
 async def _sync_one(provider_id: str, entry, data_dir: Path, write: bool, allow_shrink: bool, verbose: bool) -> bool:

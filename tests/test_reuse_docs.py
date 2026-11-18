@@ -69,3 +69,23 @@ def test_retired_providers_are_skipped(capsys, monkeypatch):
     monkeypatch.setattr(sys, "argv", ["sync.py", *retired])
     assert asyncio.run(sync_script.main()) == 0
     assert "retired" in capsys.readouterr().out
+
+
+def test_reuse_dry_run_keeps_fresh_cache_and_drops_seeded(tmp_path, monkeypatch):
+    import asyncio
+    result = SyncResult(stt_models=[], tts_models=[SyncModel("m", "M", "tts", source="docs")], tts_voices=[],
+                        source="docs")
+    pd, _ = merge(None, result, provider_id="acme", display_name="Acme", seeded_type="tts", today=date(2026, 11, 1))
+    write_provider_dir(tmp_path / "data" / "acme", pd)
+    fresh = Path(".sync-cache/acme_sts_models.json")
+    fresh.parent.mkdir()
+    fresh.write_text("[]")
+
+    async def fake(*_a, **_k):
+        assert Path(".sync-cache/acme_tts_models.json").exists()   # seeded during the run
+        return True
+
+    monkeypatch.setitem(sync_script.BY_ID, "acme", object())
+    monkeypatch.setattr(sync_script, "_sync_one", fake)
+    assert asyncio.run(sync_script.sync_one("acme", tmp_path / "data", False, False, False, reuse_docs=True))
+    assert fresh.exists() and not Path(".sync-cache/acme_tts_models.json").exists()
