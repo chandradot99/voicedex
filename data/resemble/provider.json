@@ -3,7 +3,7 @@
     "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=automatic-speech-recognition",
     "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=text-to-speech"
   ],
-  "description": "Pivoted to deepfake detection: its TTS/voice models (incl. Chatterbox) are 'no longer offered as commercial paid products' and it stopped taking new TTS customers (2026-08-13 announcement); existing customers are still supported, with no published shutdown date. Resemble still publishes the Chatterbox TTS family as MIT-licensed open weights, listed below.",
+  "description": "Pivoted to deepfake detection: its TTS/voice models (incl. Chatterbox) are 'no longer offered as commercial paid products' and it stopped taking new TTS customers (2026-08-13 announcement); existing customers are still supported, with no published shutdown date. Resemble still publishes the Chatterbox TTS family as MIT-licensed open weights, listed below. Since 2026-04-29 its remaining hosted TTS (\"Resemble Ultra\") is powered by xAI rather than a Resemble model (resemble.ai changelog), and its pricing page lists only detection and security plans.",
   "id": "resemble",
   "last_synced": "2026-11-18",
   "name": "Resemble AI",
