@@ -1,0 +1,28 @@
+{
+  "access": "self_serve",
+  "description": "Khaya AI is a Ghanaian language-technology product that grew out of the GhanaNLP open-source initiative; its developer APIs are licensed under an Algorine Research EULA. It sells translation, automatic speech recognition and text-to-speech APIs focused on Ghanaian and other African languages such as Twi, Ga, Ewe, Dagbani, Hausa and Yoruba, through monthly per-call plans with a free developer tier.",
+  "docs_urls": [
+    "https://developer.khaya.ai/apis",
+    "https://developer.khaya.ai/products"
+  ],
+  "headquarters": "GH",
+  "id": "khaya",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://developer.khaya.ai/apis",
+    "docs": "https://developer.khaya.ai/apis",
+    "pricing": "https://developer.khaya.ai/products"
+  },
+  "name": "Khaya AI (GhanaNLP)",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://developer.khaya.ai/apis",
+      "https://developer.khaya.ai/products"
+    ]
+  },
+  "website": "https://khaya.ai"
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "female",
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "speaker_group": "Multilingual"
+    },
+    "name": "female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "male_high",
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "speaker_group": "Multilingual"
+    },
+    "name": "male_high",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "male_low",
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "speaker_group": "Multilingual"
+    },
+    "name": "male_low",
+    "updated_at": "2026-11-18"
+  }
+]

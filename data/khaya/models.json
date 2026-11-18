@@ -1,0 +1,150 @@
+[
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "word_timestamps"
+    ],
+    "description": "Transcribes audio in Ghanaian and African languages, supporting long-form audio with optional word- or segment-level timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "asr-v3",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "endpoint": "POST https://developer-api.khaya.ai/asr/v3/transcribe?language={iso639-3}",
+      "languages_endpoint": "GET /asr/v3/languages (ISO 639-3 codes; subscription key required)",
+      "no_model_parameter": true,
+      "plans": {
+        "basic": "$14.95/month — 3,000 calls/month, 50 requests/min (Translation, TTS, ASR)",
+        "developer": "Free — 100 calls/month, 10 requests/min",
+        "enterprise": "$749.00/month — 200,000 calls/month, 3,500 requests/min",
+        "standard": "$89.95/month — 20,000 calls/month, 100 requests/min"
+      },
+      "previous_versions": "ASR v1 and v2 are marked deprecated on the portal (no shutdown date published)",
+      "timestamps": "query parameter timestamps=word|segment"
+    },
+    "name": "Khaya ASR v3",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developer.khaya.ai/apis",
+        "https://developer.khaya.ai/products"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "description": "Synthesizes text into audio across 32 Ghanaian, African and other languages and dialects, with optional streamed WAV/MP3 output.",
+    "first_seen": "2026-11-18",
+    "id": "tts-v2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ada",
+      "tw",
+      "dag",
+      "dga",
+      "ee",
+      "en",
+      "fat",
+      "fr",
+      "gaa",
+      "gjn",
+      "gur",
+      "ha",
+      "ig",
+      "xsm",
+      "ki",
+      "xon",
+      "lxn",
+      "kri",
+      "kus",
+      "luo",
+      "maw",
+      "men",
+      "mer",
+      "nzi",
+      "pcm",
+      "sn",
+      "sw",
+      "tem",
+      "wlx",
+      "wo",
+      "yo"
+    ],
+    "meta": {
+      "default_format": "wav",
+      "default_speaker": "If speaker_id is omitted, a default voice for the language is used",
+      "endpoint": "POST https://developer-api.khaya.ai/tts/v2/synthesize",
+      "language_codes": {
+        "Akuapem Twi": "atw",
+        "Asante Twi": "twi",
+        "Dagaare": "dga",
+        "Dagbani": "dag",
+        "Dangme": "ada",
+        "English": "eng",
+        "Ewe": "ewe",
+        "Fante": "fat",
+        "French": "fra",
+        "Ga": "gaa",
+        "Gonja": "gjn",
+        "Gurene": "gur",
+        "Hausa": "hau",
+        "Igbo": "ibo",
+        "Kasem": "xsm",
+        "Kikuyu": "kik",
+        "Konkomba (Likoonli)": "lxn",
+        "Konkomba (Likpakpaanl)": "xon",
+        "Krio": "kri",
+        "Kusaal": "kus",
+        "Luo": "luo",
+        "Mampruli": "maw",
+        "Mende": "men",
+        "Meru/Kimeru": "mer",
+        "Nzema": "nzi",
+        "Pidgin": "pcm",
+        "Shona": "sna",
+        "Swahili": "swa",
+        "Temne": "tem",
+        "Wali": "wlx",
+        "Wolof": "wol",
+        "Yoruba": "yor"
+      },
+      "no_model_parameter": true,
+      "plans": {
+        "basic": "$14.95/month — 3,000 calls/month, 50 requests/min (Translation, TTS, ASR)",
+        "developer": "Free — 100 calls/month, 10 requests/min",
+        "enterprise": "$749.00/month — 200,000 calls/month, 3,500 requests/min",
+        "standard": "$89.95/month — 20,000 calls/month, 100 requests/min"
+      },
+      "previous_versions": "TTS v1 is marked deprecated on the portal (no shutdown date published)",
+      "streaming_note": "stream=true streams the HTTP response for wav/mp3"
+    },
+    "name": "Khaya TTS v2",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developer.khaya.ai/apis",
+        "https://developer.khaya.ai/products"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
