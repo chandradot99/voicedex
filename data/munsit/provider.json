@@ -1,5 +1,8 @@
 {
   "access": "self_serve",
+  "api_urls": [
+    "https://api.munsit.com/api/v1/voices/public"
+  ],
   "compliance": [
     "hipaa",
     "gdpr"
@@ -23,7 +26,14 @@
     "status": "https://docs.munsit.com/status"
   },
   "name": "Munsit",
-  "source": "docs",
+  "source": "mixed",
   "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://api.munsit.com/api/v1/voices/public"
+    ]
+  },
   "website": "https://munsit.com"
 }

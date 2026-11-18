@@ -1,1 +1,4683 @@
-[]
+[
+  {
+    "accent": "najdi",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "08XOzRjaaumxbHhcGOrWkJ7z",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Hala",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "australian",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Australian Male, Broad Accent, Ocker, Emphatic, Rugged, High-Slang, Casual, Thirsty, Energetic, Authentic.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "0VgCldLYqC4yM8Wwt4SpoPdc",
+    "languages": [
+      "en-AU",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "australian"
+      ]
+    },
+    "name": "Mark - Australian",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, articulate male voice with a calm and steady delivery at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "0X9bpHpsaDlcZ95hmUeTmMpx",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mohammed",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Clear And Emotive Fusha Female",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "17Gsmp0EZondV1559mLw3Kyb",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Mayssa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and articulate female voice with a mid-high pitch and a calm, informative tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1hqyy3tsv5cONRJTJNghA6zB",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Huda",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, bright female voice with a calm and measured delivery at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2cQoT73W0NcsKJI1EzDcvmg7",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Zahra",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a medium pitch and a moderate, consistent pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2vZXZUgKGCDzra0zrgITcXph",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Rashid",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "High-pitched, bright female voice with an energetic and expressive tone, speaking at a quick pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "3CPb8YNl54WhYBA3wZ6MYeiz",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Shaima",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pitch and steady, even tone and pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "3MfYmETWJKZ3HVxys8YzxK0K",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Suhail",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "3NQTWYgRxBR3hOgdLtF0U02d",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Ahmad - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, female voice with a moderate pace and a calm, articulate tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "3PAztcjBbFbFg4z470ImTGgT",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Fatima",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "bahraini",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "5SpH0tPzBh9HJcduKfx4vKNK",
+    "languages": [
+      "ar-BH",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "bahraini"
+      ]
+    },
+    "name": "Bayan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a professional and articulate tone, speaking at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "5zKoRoL1smX0owoGTBeHT5RC",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Thuraya",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pitch and a steady, measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "6dPTrJQTQSb63nHdFBjfiwsY",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Yousef",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a stable tone and a moderate, measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "6kCUvBQ5HWhI7va8QFsQ9NSf",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Rayyan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Tone: Professional, articulate, and highly conversational. She strikes a balance between being business-oriented and empathetic.\r\nAccent: Modern British (RP/London). It is polished and clear, sounding trustworthy and sophisticated.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "6p8OjcFY28ijFxXcTUQSFsbv",
+    "languages": [
+      "en-GB",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "british"
+      ]
+    },
+    "name": "May - British",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "ireland",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "This is the confident, persuasive voice of a middle-aged Irish professional — ideal for B2B marketing, corporate narration, and campaigns that require authority and trust.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "6zpnCJaXXOr1n2aEDnyANKxL",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "dialects": [
+        "ireland"
+      ]
+    },
+    "name": "Alex - Irish",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a moderate pace and smooth, conversational tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "79UW2sayvi6bM5cx6zS8nv07",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Bakheta",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "bahraini",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "7BIXV410GvJLSnxEBNc7iFsf",
+    "languages": [
+      "ar-BH",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "bahraini"
+      ]
+    },
+    "name": "Adel",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "characters",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "7KhOTR7XFvP9AIedCog1CFV4",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Nasser - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Conversational, articulate, and grounded. It strikes a balance between being informative and casually friendly.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "8jo3glQpNtAdvRHIyNN8now2",
+    "languages": [
+      "en",
+      "ar-SA"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Faisal - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emirati Female",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "8nPwcI33PqIaPquoUBAVlBiS",
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Dana - 2",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pitch and steady conversational pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AG0x8nJXYnhZdj09W94GUGlX",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mubarak",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, bright female voice with a medium pitch and an articulate, engaging tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "AM5UoSZq4cJqH8YRfVR4GB2b",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hessa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Vibrant And Engaging Fusha Male",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "AVNjm7lKc4fr8Z3tm1LhklzK",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Tamim",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Energetic male voice with a clear, strong tone and a fast, engaging delivery, typical of an announcer.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "B2wF5ZQG72akBLEHPkSSNWbO",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Khalifa - معلق",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a smooth tone and a moderate, informative pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "CaFuux58GuEVjmLWNYzyA4gn",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Layla",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "UAE middle agent Laddy ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "CkVaSJuhmITJuf2155xka02r",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Latifa - Emirati",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, bright female voice with a pleasant tone and a moderate, steady pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "D94XxWPQjrEHveZiITmKOrRR",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Alya",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a moderate pitch and steady, informative delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "DRmFl6Pn5M5ge716Q2nK4SPt",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Rema",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, steady male voice with a calm and informative tone, delivered at a normal pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "DSWb6d6lHvVsbJvQH586BTAo",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Rakan - اعلان",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "DsNnaed3aGVyZZ8iFgXDK0gS",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Mishal",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear, calm male voice with a mid-range pitch and a steady, informative delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "EZ1NOlAh6RxcdjoY9FMgYdW3",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hassan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "kuwaiti",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "possesses the distinct, rhythmic flow of a modern Kuwaiti conversational voice. His voice is curious, energetic, and relatable.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "F8dxBoTJwDiCkTxdif3N882y",
+    "languages": [
+      "ar-KW",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "kuwaiti"
+      ]
+    },
+    "name": "Salim - Kuwaiti",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a smooth tone and moderate pace, showing steady energy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "FtJCuRXMLWyC0rcYmrTrHvZu",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Buthaina",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear, medium-pitched male voice with a calm and conversational tone, speaking at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "GFFhyQxOMw78ljQmnhjrGeUn",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hazim",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "GdTE8XdZObuLNvWBGaVy42Bx",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Nayef - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, steady female voice with a calm tone and moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "H7mr179PmUUaN6aLbUg9DwD3",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Sheikha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, warm female voice with a moderate pace and an expressive, engaged tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "HCMfBPi8idNMhLtDa2wbcr9K",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Aldana",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and calm female voice with a steady, moderate pace and a natural, even tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "HUihxpbVUBM1sCmxfNKahIDV",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Nada",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and calm male voice with a steady, moderate pace and a medium pitch.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "HeWeJAuidElkmxY9vUpdIP2O",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Dhahi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Steady And Engaging Fusha Male",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hpms9VRlMXxRaoO8nYXshz1I",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Yousef",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear adult female voice with a medium pitch and a steady, calm speaking pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "HvlKnElEKbdjKULmw6JtMxNa",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Khadija",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "social_media"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Maha speaks with a calm, measured pace, like a literature professor or a film critic. There is a sense of sophistication and empathy in her voice.\r\nBest Used For: Audiobooks, art and culture podcasts, documentary narration, film reviews, or luxury brand storytelling.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "IPK8qQ3F5NMiQLWFz1a83TG3",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Maha - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, steady male voice with a moderate pitch and a calm, informative tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ITq20d66sSf2PzTqn1bptTs8",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Jassim",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a medium pitch and a moderate, conversational pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "K0qLAyg1wBxfm8zgLxkvbtRJ",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Salama",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a mid-range pitch and a steady, measured delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "K7KvyFo3ZKIH5gSu2VDrHv79",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Waleed",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a steady pace and an articulate, authoritative tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "L5LF33AI6qogcR989Vq8RKer",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Ghanim",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "characters",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and articulate female voice with a smooth, calm tone and a steady, moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "LKOglOvQwx8JSTNe7URXoSXh",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Afra",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and articulate female voice with a moderate pace and calm, professional tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "LrsVDfu8cg4N22MW7VBP7va9",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Meera",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Middle aged man - Calm and professional",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ly3XBDAK8rmxpRAzDZ3zcwYY",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "dialects": [
+        "american"
+      ]
+    },
+    "name": "Eric (V2)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "High-pitched, clear female voice with a bright tone and moderate, steady pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "MOGLQPePQkC40J7dAFftNXly",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Bushra",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm, welcoming. The voice carries a sense of intimacy and respect.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "MvC2GIG9tT9xvPcCWjILXqkM",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Mishari - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, mid-pitch male voice with a slightly authoritative and articulate tone, speaking at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "NMfXfrpfwo3PzGnyKcoJPrsD",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Saeed",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, bright female voice with a calm and steady delivery at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "NVzDD8CfYWgLOd3gyW6fF6op",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hanan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pace and a steady, slightly deliberate tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "NfsBGPstw4gPsJuQKDnjzCya",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mohsen",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Middle Eastern English Female, Sales, Professional, Upbeat, Persuasive, Marketing, Corporate, Clear, Friendly, B2B, Modern.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "OKWPZi8I2sFBiVeyjmG5YCX0",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "name": "Amira",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "advertisement",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a moderate pitch and articulate, steady delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "OMXwBX3NVOs24ogSJ9l3iIgo",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Noor",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Clear And Emotive Fusha Female",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "OUOdy43qiHKwzVLRScXFnUe8",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Arwa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a steady, slightly deep tone and moderate speaking pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "OYv3zQMrqqi2GLtvsc9UCF3M",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Fahad",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and articulate female voice with a moderate pitch and a steady, expressive delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "P4GDte3u2UExkWlI7DYR6QUp",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Nujoom",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a steady, measured pace and a medium pitch",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "PCtWbxjoNTpVQ6gIPaVZ2Hqm",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Majed",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear female voice with a moderate pitch and a steady, expressive, and somewhat instructional tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "PtJhJwpEHInvCKo20IPLHQb3",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mariam",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep, clear male voice with a calm and authoritative tone, speaking at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "QM48qvSI6UwmB4UVOsn4ALee",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Talal",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, clear male voice with a smooth, mid-range tone and a moderate, steady pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "QQS4erPjMrMHtiSTmtuWYXw1",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Omar",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and articulate female voice with a moderate pitch and a calm, steady delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "QmoC4pyx6TVIcKkk4b3I7b0A",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Dhabia",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep, clear male voice with a calm and steady delivery, speaking at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "QrgbrBu5zC0monqyjROLEIgZ",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Saif",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and calm female voice with a steady, slightly formal tone and moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "R4QNgvsNr5KIZsjkH9GbvAj8",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Sara",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a moderate pitch and steady, confident pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "RIix5Jzmlp6vBtEAVUUsQ3I6",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Wadeema",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A poised and empathetic middle-aged female voice with an Emirati accent, featuring a calm, inquisitive tone that conveys depth and sincerity.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "RgtEp9WY8M2c5EJg8EgNALhP",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Aisha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Warm And Nuanced Fusha Male",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "RuBVzt2Q0fW5Qf5sDbHyJxcM",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Saher",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "hijazi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "S4b31lw1JMzSRmWZCYMp7D2l",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "hijazi"
+      ]
+    },
+    "name": "Bader - Hejazi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a smooth tone and moderate, consistent pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "SB4dPijMtQRB8IyMT0UlmS8h",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Zakiya",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, articulate female voice with a moderate pace and an engaged, steady tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ShFjBV74Osi7xqLvrf5cuDka",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Latifa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "omani",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "SyU41Fvh3zAI9ZRf81uuTYQ4",
+    "languages": [
+      "ar-OM",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "omani"
+      ]
+    },
+    "name": "Imad",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Medium-deep, clear male voice with a calm and steady, professional tone and moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "T4Qd8qOYYK4HFI56hoxwxWBb",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Falah",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, mid-high pitched female voice with a moderate pace and engaged, slightly bright tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "T7sT8S5kxBt34RtvJqGqmTl1",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Ghada",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a mid-range pitch and a steady, deliberate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tg2l3HRv5ZEgT4moAEiQ9nQP",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Sultan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and bright female voice with a calm, informative tone and moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "VcwhEFE5l3ZvJTXxwRboZsci",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Nawal",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a steady, moderate pace and an informative tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "WcxyRPjVQcpVYmceBQO4Helb",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Aisha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, articulate female voice with a moderate pace and a calm, professional tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "WmdYsEMDoQq6xdL2fqesrYbO",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Shamma",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "elderly",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep and mature Emirati voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WpB2Nltu72GF4lcZl9yi62D4",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mansour - UAE",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear, calm female voice with a moderate pitch and steady, measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "X38BTIEoZXuRecfFpTW3zAw3",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Salma",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Calm, clear male voice with a steady, moderate pace and a slightly deep pitch.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "XIZ1vZnDV6J0LjNdMSJebjco",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Abdulaziz",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a medium-low pitch and a steady, deliberate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "XRzMhcKoEm2vQv4E6zou9BgY",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Nayef",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Confident, assertive, and informal. It sounds like a candid conversation with a friend or a mentor.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "XXBC0zFrtFqxdJWLCRBqDSSb",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Sultan - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "High-pitched, clear female voice with a slightly reedy tone and an animated, fast delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "YcLT23ay4hArLIFrkSbn62VQ",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Manal",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a steady pitch and moderate, informative pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Z6dua3TPZLuvXoJSpSvNDwMD",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Faisal",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, articulate male voice with a calm and steady, conversational tone and medium pitch.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ZzdoetkW7gMwzYkLPQurOQpR",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Tariq",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pace and an informative, steady tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "aKtlCCjo79fYakrzudspKyQt",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Ali",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a steady pace and a somewhat authoritative tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "aOg0wDwVjo36RB4lyjSPZvWb",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Adel",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bold and direct. Ahmed's deep Emirati voice commands attention from the first word — built for promos, trailers, and messages delivered with conviction.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ae-ahmed-vo-m",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Ahmed",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Young, bright, and up for anything. Dana's playful energy fits vlogs, youth campaigns, and content with a sense of adventure.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-dana-vo-f",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Dana",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Quick, lively, and natural. Duaa sounds like a real conversation — ideal for Q&As, dialogue, and casual explainers.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-duaa-vo-f",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Duaa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Gentle and thoughtful. Mariam speaks with quiet sincerity — suited to personal stories, reflections, and intimate brand moments.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-mariam-alsuwaidi-vo-f",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Mariam AlSuwaidi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Expressive and full of life. Mariam's voice rises, falls, and dances — perfect for children's content, lessons, and playful explainers that need warmth and energy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-mariam-hareb-vo-f",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Mariam Hareb",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Crisp, cheerful, and quick on her feet. Moza brings morning-show freshness to daily tips, announcements, and lively social clips.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-moza-vo-f",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Moza",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Soft and welcoming. Sakina's warm Emirati voice puts people instantly at ease — a lovely fit for greetings, hospitality, and heartfelt messages.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-sakina-vo-f",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Sakina",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, friendly, and effortlessly clear. Salma is the upbeat Emirati voice that makes everything sound simple — a natural for ads, app guides, and social content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-salma-vo-f",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Salma",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Custom voice clone for getMurphy ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ae-shahad-vo-f",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Shahad - getMurphy",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep, calm, and steady. Tahnoun is the classic narrator — a voice that carries long stories without ever tiring the listener. Documentaries, audiobooks, and corporate films feel at home here.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ae-tahnoun-vo-m",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "system"
+    },
+    "name": "Tahnoun",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "The voice is clear and calm with a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "agPAJqfGQHPleoOgAGUzqjyh",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "أحمد",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "hijazi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lama has the warm, slightly anxious tone. Her Hijazi accent is urban and authentic, speaking with a fast, conversational pace that conveys genuine worry and affection.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ar-hijazi-female-1",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "hijazi"
+      ],
+      "type": "neural"
+    },
+    "name": "lama",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A thoughtful and conversational Najdi voice that blends intellectual depth with emotional warmth, making it ideal for narrative podcasts, psychological discussions, and cultural storytelling.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ar-hijazi-female-2",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Maya",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration"
+    ]
+  },
+  {
+    "accent": "hijazi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Omar speaks with a genuine, unpolished charm that resonates immediately with listeners. His style is reflective and laid-back, perfect for scripts that require emotional honesty rather than formal perfection.\nBest for: Personal narrative podcasts, social media ads (Snapchat/TikTok), radio spots for lifestyle brands, and community awareness campaigns.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ar-hijazi-male-1",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "hijazi"
+      ],
+      "type": "neural"
+    },
+    "name": "omar",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "kuwaiti",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Kuwaiti male voice with Gulf dialect",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ar-kuwaiti-male-1",
+    "languages": [
+      "ar-KW",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "kuwaiti"
+      ],
+      "type": "neural"
+    },
+    "name": "yousef",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Modern Standard Arabic male voice with clear pronunciation",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ar-msa-male-2",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ],
+      "type": "neural"
+    },
+    "name": "hassan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Saudi Najdi female voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ar-najdi-female-1",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ],
+      "type": "neural"
+    },
+    "name": "noura",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm and articulate young male voice with a modern Saudi accent, delivering analytical and educational content with a steady, conversational flow perfect for conversational AI and media use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ar-najdi-male-10",
+    "languages": [
+      "en",
+      "ar-SA"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Abdullah",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "elderly",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Fahad represents the voice of experience and reliability. He sounds like a field supervisor or a knowledgeable mentor—the kind of voice you trust to guide you through a problem step-by-step. His tone is authoritative yet patient, with a distinct Saudi flavor (Najdi/General) that feels hands-on and grounded. He removes the anxiety from technical issues by sounding like he’s seen it all before.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ar-najdi-male-2",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ],
+      "type": "neural"
+    },
+    "name": "fahad",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emirati female voice with authentic Gulf dialect",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ar-uae-female-1",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "neural"
+    },
+    "name": "aisha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emirati male voice with warm tone",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ar-uae-male-2",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ],
+      "type": "neural"
+    },
+    "name": "saif",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a steady pace and a slightly bright, yet soft tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "bOJ7yLih8VOJZwWQBJXZtMiK",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Wafa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "High-pitched, clear male voice with a somewhat strained, drawn-out singing style and moderate energy.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bhP9wRYFlaXRhkWUtGjtBUy3",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Khalid",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear, steady male voice with a moderate pitch and calm, measured delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "buAtSH6er69Q2xrnpJDXmj9m",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Butti",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a steady and measured pace and a slightly formal tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "buornhxmBDLDNx4LlWbrRRxH",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Moza",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, clear female voice with a moderate pace and an energetic, expressive tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "c7sAwBv0IgqS606nab6xB4DU",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Maitha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, resonant male voice with a calm and authoritative tone, delivering information at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "cdyYpBnA1R2M4W1TuR9Jl3M9",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Juma",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and calm male voice with a steady, measured pace and a moderately low pitch.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "cfkzSFip1jo8oSbFWRTgztvN",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Ahmed",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "indian",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Indian English Female, Professional, Customer Service, Helpful, Polite, Crisp, Reassuring, Fast-paced, Corporate, Attentive.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dILr0kcyunajWlsk8JcJtThv",
+    "languages": [
+      "en-IN",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "indian"
+      ]
+    },
+    "name": "Priya - Indian",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, medium-pitched female voice with a moderate pace and an engaged, slightly bright tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "db9PjTMlIendmDoqzAsZxsHG",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hend",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pace and an informative, slightly deep tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "dvIJ0vEgffVfZIpgwg0EOMQR",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Turki",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a medium pitch and a steady, measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "eL7mGqAIPhZOBx3MLeWh87hj",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Asma",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Medium-deep, clear male voice with a calm and steady delivery, and a slightly resonant tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "eRD7B50Cr2PRaeUzh3OMzsDb",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Nawaf",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pace and articulate, steady delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ehXNxC2FIPiuhiAaTR4U0YxL",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Humaid",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "eswgQViElepUc5bzshnv6Dvt",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Laila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear male voice with a medium pitch, calm tone, and steady, professional delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ezjLxMRfevlOQDrUGDH4HDXn",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mana",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "fSonMJbD9Dk7daUy4ZHw02c5",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Alaa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Hospital receptionist",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ftCfignpamI3xZG0idcYpeFQ",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Dana - Demo",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and calm female voice with a moderate pace and an even, neutral tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "g5akVKMeJtMDmhlUVVhL0w2B",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Rawdha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pace and steady delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "gct0UvjhTyzMxeES50znzC8d",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mattar",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "vibrant UAE voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "glUSmV1iBFKw2v5cgBMx35qb",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Samir - UAE",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear male voice with a medium pitch, steady tone, and moderate, even pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "h206IBOqPoC0TeXawzK2X3O1",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hamdan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a medium-low pitch and a steady, measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "hC0Ic9NtZyBJIeNBkfM6wBIr",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Nasser",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Middle aged man - energetic and professional",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "hO78gofzL9QxkQIs9nFlt9q3",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "dialects": [
+        "american"
+      ]
+    },
+    "name": "Mark",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Calm, clear female voice with a medium pitch and a soft, gentle tone",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hdqMFiOd3Gm3I5hTrsryAbgO",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Reem",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a smooth, steady tone and a moderate, measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jCVNfTlO3eTWdHGPF3SacD4o",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Zayed",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Turki is Casual, storytelling-driven, and slightly cynical. He sounds like a social media influencer or a friend venting in a private Snapchat story. He speaks with the authority of someone who deals with people's problems daily but is tired of drama.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jEF6Tjsxg3rJhJijqItKNNey",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Turki - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pitch and a steady, informative delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jXGwrxMF6OOQV4rZBx9D4u6U",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Obaid",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a steady and even tone and moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "jnFzBKGU4yAzCdHEjfJ0k2G6",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Dalal",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, medium-pitched male voice with a calm and professional tone, speaking at a steady pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "k2wPpzVxzD0KYjU4MNQOgW96",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Abdulrahman",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic and articulate young male voice with a modern British accent, featuring a lively and engaging tone ideal for tech reviews and narrative storytelling.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kCVThYKOsvp9ZnSgOyEHCPtI",
+    "languages": [
+      "ar",
+      "en-GB"
+    ],
+    "meta": {
+      "dialects": [
+        "british"
+      ]
+    },
+    "name": "Liam",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "narration",
+      "social_media",
+      "educational",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "indian",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Indian voice - female (Professional)",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "knpCLEszMnc4Ts9RotWtkVUE",
+    "languages": [
+      "ar",
+      "en-IN"
+    ],
+    "meta": {
+      "dialects": [
+        "indian"
+      ]
+    },
+    "name": "Naina",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "educational"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A mysterious and suspenseful  Syrian Female. ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lQhCsHldPPHNMpcZBfvtqLHF",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Ruba",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "australian",
+    "age": "elderly",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Australian Male, Casual, Friendly, Laid-back, Warm, Conversational, Optimistic, Beach-vibes, Colloquial.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lUR7uAguISOhFZGWQ3AGVrRm",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "dialects": [
+        "australian"
+      ]
+    },
+    "name": "Kevin - Australian",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "characters",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "olite, efficient, and reassuring. He speaks with a \"smile in his voice\" but maintains a formal distance. He sounds helpful, patient, and strictly follows protocol.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lwenFNRUiUtgYJlmlCYRp8nF",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Fadi - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear and calm female voice with a smooth tone and a moderate, steady pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "m9BVVGutR8z9tmjNBtyJQwM5",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Najla",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Rich And Resonant Fusha Male",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ndi2gFAweBYzvZIAOl9hr4Hh",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Jad",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "neEgrVcmZed7MNWSr1cHyecG",
+    "languages": [
+      "ar-AE",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hamdan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "indian",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Indian Young man.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nqbQ2gXgZIcnpuzXquB9z7Fw",
+    "languages": [
+      "en-IN",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "indian"
+      ]
+    },
+    "name": "Rahul",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Clear And Emotive Fusha Female",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "oDtBBBM2ju6AlDiV0ZjtCgcV",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Lina",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a medium pitch and steady, informative delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "oO8zgqKEMS0jmF8LvKr8MmEL",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Mansour",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a medium pitch and an expressive, reflective tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "pW9mn1CLtGBpWWFbTQ4az62A",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Badr",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "American Female, Receptionist, Professional, Cheery, Welcoming, Hospital Context, Clear, Polite, Customer Service, Bright, Helpful.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "q1FMBOQvy8UbS2ll2sTI5ovv",
+    "languages": [
+      "en-US",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "american"
+      ]
+    },
+    "name": "Sarah - conversational",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a steady, composed delivery and a mid-high pitch.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "qkEOvev8Xr8j2zVNSnTRXfpX",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Muna",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A deep, resonant male voice with a serious and dramatic tone. The delivery is slow, deliberate, and punchy, typical of a cinematic documentary narrator or a high-stakes storyteller. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "qnwatnZiPm1XgtUpp1l0pjuQ",
+    "languages": [
+      "ar",
+      "en-US"
+    ],
+    "meta": {
+      "dialects": [
+        "american"
+      ]
+    },
+    "name": "Jake - American",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Arabic Male, Modern Standard Arabic, Deep Voice, Baritone, Cinematic, Poetic, Narrator, Solemn, Slow-paced, Authoritative, Dramatic.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "rHzpDFOsbm9Cy1gYfoVllk38",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Arabic Poet",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a steady and moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "rUD1OJAtnTIKp4z2Yc8NP0wF",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Dana",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm, easygoing Saudi voice that feels like a friend across the table. Great for podcasts, relaxed ads, and everyday conversational content.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "sa-abdelrahman-hamdi-vo-m",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ],
+      "type": "system"
+    },
+    "name": "Abdelrahman Hamdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "An energetic Saudi presenter with real momentum. Abdulrahman keeps listeners hooked — made for shows, product launches, and anything meant to move fast.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "sa-abdulrahman-beltagy-vo-m",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ],
+      "type": "system"
+    },
+    "name": "Abdulrahman Beltagy",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A rich, velvety Saudi voice with calm confidence. Nora sounds like a seasoned storyteller — grounded, trustworthy, and warm. Ideal for brand films, documentaries, and stories that deserve weight.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "sa-nora-vo-f",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ],
+      "type": "system"
+    },
+    "name": "Nora Alotaibi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "educational",
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm female voice with a medium pitch and a steady, deliberate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "sdWELeEYeUvsre7TsD1TlG1s",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Amna",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear female voice with a moderate pitch and an expressive, somewhat animated tone at a steady pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "swozO4Wub7bVyt1EKJCk00uf",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Jameela",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Clear And Expressive Syrian Male",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "tmip9TnndVNGlYHsC6c4sht8",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Moataz",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear, somewhat high-pitched male voice with a slightly strained tone and slow, deliberate delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "tr6ZxGorFLHBCLM0i7v4xHvU",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hussain",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, steady male voice with a medium pitch and calm, moderate delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "uQMMH3RjGQNJoUqjFHsuisUN",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Abdulla",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, slightly bright female voice with a moderate and engaging pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ulkuraWveBdoDMxtdvYHkzrr",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Ghalia",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Calm, clear male voice with a low pitch and a steady, measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "uonqBulNhTP1T3K2KAcVOSf3",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Haitham",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, pleasant female voice with a moderate pitch and a professional, articulate tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vLRhECgXJ4GluvsjvQFUNHLn",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Noura",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, resonant male voice with a professional and engaged tone, delivering speech at a moderate pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "wyPXXYVqp1ux0lGaYLIvqDQW",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Hamad",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "qatari",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "xUzPiWoU1l97DgHnkLP5mNKk",
+    "languages": [
+      "en",
+      "ar-QA"
+    ],
+    "meta": {
+      "dialects": [
+        "qatari"
+      ]
+    },
+    "name": "Salim - Qatari",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clear, calm male voice with a moderate pace and steady, slightly deep tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "xWjP00kRZAeZnn0p1dLpIpyj",
+    "languages": [
+      "en",
+      "ar-AE"
+    ],
+    "meta": {
+      "dialects": [
+        "emirati"
+      ]
+    },
+    "name": "Salem",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A polished and authoritative middle-aged male voice with a standard American accent, characterized by a deep, resonant tone and exceptional clarity, perfect for commercial and corporate narration.\r\n",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "xqSiYjA5a4Y1PoHRTW99v3FA",
+    "languages": [
+      "ar",
+      "en-US"
+    ],
+    "meta": {
+      "dialects": [
+        "american"
+      ]
+    },
+    "name": "James",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "British Male, Podcast Host, Calm, Intimate, Storyteller, Wellness, Soft-spoken, Reflective, Nature, Slow-paced, Conversational.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "yJwczw5ns74xdRZPdPkmHBSP",
+    "languages": [
+      "en-GB",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "british"
+      ]
+    },
+    "name": "David",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "educational"
+    ]
+  },
+  {
+    "accent": "fusha",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A Clear And Expressive Syrian Male",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "yRRuMDhFftPmzIAA6odGikIC",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "dialects": [
+        "fusha"
+      ]
+    },
+    "name": "Fares",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narration",
+      "educational",
+      "documentary",
+      "news_broadcast"
+    ]
+  },
+  {
+    "accent": "najdi",
+    "age": "middle",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "introspective, soft-spoken, and deeply emotional. She speaks with a sense of fragility that has turned into wisdom. ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ybQaNl0nzt9TjN3Oh1zzyNgp",
+    "languages": [
+      "ar-SA",
+      "en"
+    ],
+    "meta": {
+      "dialects": [
+        "najdi"
+      ]
+    },
+    "name": "Reem - Najdi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational",
+      "social_media",
+      "advertisement"
+    ]
+  }
+]
