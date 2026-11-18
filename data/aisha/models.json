@@ -1,0 +1,113 @@
+[
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization",
+      "summarization"
+    ],
+    "description": "Uzbek-first transcription for short (sync) and long (async) files, plus realtime WebSocket and gRPC streaming.",
+    "first_seen": "2026-11-18",
+    "id": "aisha-stt",
+    "interfaces": [
+      "grpc",
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "uz",
+      "en",
+      "ru"
+    ],
+    "meta": {
+      "default_language": "uz",
+      "diarization_min_audio_seconds": 15,
+      "endpoints": "POST /api/v1/stt/post/ (short, sync); POST /api/v2/stt/post/ (long, async, max 500MB); WSS /api/v1/stt/realtime; gRPC aisha.stt.RealtimeSTT/Transcribe",
+      "meeting_mode": "is_meeting flag on v2",
+      "no_model_parameter": true,
+      "realtime_formats": "webm (Opus in WebM) or pcm (16 kHz mono s16le)",
+      "segment_offsets": "has_offset=true returns segment offsets"
+    },
+    "name": "Aisha Speech to Text",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "UZS",
+      "notes": "Starter pay-as-you-go: 425 UZS per minute of audio; volume discounts on custom Business plans.",
+      "price": 425.0,
+      "source_url": "https://aisha.group/en/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aisha.group/en/api-documentation/speech-to-text",
+        "https://aisha.group/en/pricing",
+        "https://aisha.group/en/api-documentation/text-to-speech"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "capabilities": [
+      "emotion"
+    ],
+    "description": "Built-in Uzbek text-to-speech model with four moods, available over REST, realtime WebSocket and gRPC.",
+    "first_seen": "2026-11-18",
+    "id": "Gulnoza",
+    "interfaces": [
+      "grpc",
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "uz"
+    ],
+    "max_text_chars": 1000,
+    "meta": {
+      "async": "webhook_notification_url runs the request asynchronously",
+      "custom_voices": "voice_id selects a READY custom voice owned by the user",
+      "max_text_chars_note": "1000 characters with API key, 500 for public requests",
+      "moods": "Neutral, Cheerful, Happy, Sad",
+      "other_languages": "The TTS endpoint also accepts language=en and ru, which take no model, mood or speed",
+      "realtime_speaker_ids": "happy, cheerful, neutral, sad (WebSocket/gRPC speaker_id)",
+      "speed_range": "0.5-2.0 (0 = default)"
+    },
+    "name": "Gulnoza",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "UZS",
+      "notes": "Starter pay-as-you-go: 1 UZS per character; volume discounts on custom Business plans.",
+      "price": 1.0,
+      "source_url": "https://aisha.group/en/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aisha.group/en/api-documentation/speech-to-text",
+        "https://aisha.group/en/pricing",
+        "https://aisha.group/en/api-documentation/text-to-speech"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

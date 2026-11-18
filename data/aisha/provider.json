@@ -1,0 +1,21 @@
+{
+  "access": "self_serve",
+  "description": "Aisha AI (by VoiceLab, operated by AI TECH LLC) is a Tashkent, Uzbekistan company building speech technology for Central Asia. It sells Uzbek-first text-to-speech and speech-to-text APIs that also cover English and Russian, priced in Uzbek som, alongside voice agent and call analytics products.",
+  "docs_urls": [
+    "https://aisha.group/en/api-documentation/speech-to-text",
+    "https://aisha.group/en/pricing",
+    "https://aisha.group/en/api-documentation/text-to-speech"
+  ],
+  "headquarters": "UZ",
+  "id": "aisha",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://aisha.group/llms-api.txt",
+    "docs": "https://aisha.group/en/api-documentation",
+    "pricing": "https://aisha.group/en/pricing"
+  },
+  "name": "Aisha AI",
+  "source": "docs",
+  "type": "both",
+  "website": "https://aisha.group"
+}
