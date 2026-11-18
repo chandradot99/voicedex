@@ -1,0 +1,33 @@
+{
+  "access": "self_serve",
+  "api_urls": [
+    "https://api.aivis-project.com/v1/aivm-models/search"
+  ],
+  "description": "Aivis Project is run by Walkers Inc. (株式会社Walkers), a Tokyo software company. It publishes the free AivisSpeech desktop app, the AivisHub voice-model sharing site and the Aivis Cloud API, a Japanese-only TTS API that serves community and official Style-Bert-VITS2 (AIVM) voice models, billed in JPY per character. All API servers run in Japan, and an API-compatible on-premises server (Citoras) is sold separately.",
+  "docs_urls": [
+    "https://aivis-project.com/cloud-api/",
+    "https://api.aivis-project.com/v1/docs"
+  ],
+  "headquarters": "JP",
+  "id": "aivis",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://api.aivis-project.com/v1/swagger-ui",
+    "docs": "https://api.aivis-project.com/v1/docs",
+    "pricing": "https://aivis-project.com/cloud-api/"
+  },
+  "name": "Aivis Cloud API",
+  "regions": [
+    "asia"
+  ],
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://api.aivis-project.com/v1/aivm-models/search"
+    ]
+  },
+  "website": "https://aivis-project.com/cloud-api/"
+}

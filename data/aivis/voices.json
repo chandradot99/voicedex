@@ -1,0 +1,2187 @@
+[
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "00f29eb2-e12b-4f64-a5e8-4188be62de33",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "宗周定昌",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/f7892990-fe0b-47a0-9e5a-9f3627cbc526/speakers/2623012b-d995-4514-9297-a21856e986ee/styles/f3e17fad-64f7-4d07-a6a0-022c99545b6f/voice-samples/0.wav",
+    "tags": [
+      "だる気",
+      "やる気のない"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "01a7121c-a96f-4809-8925-f5f7359be09e",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "AI Maid K1-3486",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/a79c0c50-15de-4e9b-9dec-9dcd6666b00b/speakers/ba6a06e5-a402-4e60-9e1e-c2aa24d4522c/styles/ce0da303-3232-45b5-a365-5f1e847bbae3/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "052bb693-112b-45be-b498-8e05aa9d6e5e",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "ExistingCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ニュートラル",
+        "通常",
+        "呆れ",
+        "感情的"
+      ]
+    },
+    "name": "銀芽(ぎんが)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/45141a77-54db-47df-bb77-012cef2befc1/speakers/686909f0-0884-4ae1-b37d-da96bff4794f/styles/f6589d08-0b75-4e4c-b16e-ccc561aa4412/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "098d4e66-2faf-4a00-889c-a1d2f05bde78",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML-NC 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "Shinjou Tomoharu",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/7bca001b-99d2-49be-87d1-1cd109322d4d/speakers/cc98d87b-a04a-4ae5-807d-2f44e1cdfd84/styles/8c96d410-fd0b-4cf6-bbdd-f0cc7e8f7ce7/voice-samples/0.wav",
+    "tags": [
+      "あああああ"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "0c032c2d-272a-4030-a75c-74dc6f7662ad",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "natto-z",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/4fcf7eca-d2e1-4d5c-87ef-10b4d9a16217/speakers/a9223b5e-56ee-4fc9-a375-431486b93aae/styles/13d2c36b-2fac-4321-96d7-e8d9e7281346/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "0e8ea44c-d904-467d-a0e6-81d52b1db098",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "楽町音穏_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/98267474-d876-475b-aa4e-3ad044d2fd05/speakers/dd3e9e10-7caf-4f07-9bf4-1fb1f4f1e88b/styles/2bf3212c-9ada-441f-aa38-818cafd8e3e9/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "0f6821f4-9f86-4da1-a41a-fbe6fff9ca88",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML-NC 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "じょうきげん",
+        "ふきげん",
+        "ささやき"
+      ]
+    },
+    "name": "天深シノ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/c3264210-975f-4e3b-8357-54700f8886a8/speakers/15ee749b-2c46-434b-b300-11df369238e9/styles/6bbc98fe-8f19-4674-91a4-da1232f4750d/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1112959e-bb11-4a61-8c07-ebea8ea568cc",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "LivingPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML-NC 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "akiRAM",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/86fe55dd-cc09-4fc3-8c0b-bf2ee4d86751/speakers/158737c4-f516-42da-a96d-7e628a17d059/styles/1728ffee-847e-4a98-8886-dbd3126c09dc/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "16d1e9be-9ea2-4c8e-a73e-89b97a003705",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "AI Maid K2-3481",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/5de511f3-062c-40cc-ac5c-facb8f020166/speakers/2c6ae22c-a8be-4758-9cb6-5246fe89ff7e/styles/dc49f621-4110-4afa-a3e7-19d783bc3534/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "18972473-ca36-4e06-a33a-5cc14adba0c4",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "Other",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "kanasimi_kanasimi",
+        "uresii_uresii",
+        "hutuu_hutuu",
+        "odoroki_odoroki"
+      ]
+    },
+    "name": "かりん(現実20代女子AIボイチェン@リアボVC公式モデル)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/01aa0eef-a4d4-4160-9e76-4f1925790e3f/speakers/1437bd38-572d-4ef9-a8ba-4bcd51c69b88/styles/4ce5adcd-bc0c-4c4a-b81b-9ca676846e57/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1a322ad9-6b7e-4a6d-8d0b-c4cd264538dc",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "ExistingCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ニュートラル",
+        "ノーマル",
+        "うきうき",
+        "ほのぼの",
+        "ぷんぷん",
+        "愉悦"
+      ]
+    },
+    "name": "金苗(かなえ)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/af119344-3a5f-401a-a6fd-fdad1caee732/speakers/15a1df58-1b29-4422-80b5-a92e708f2a3f/styles/f2843a25-a3b0-43e2-8afb-235f1baef5e6/voice-samples/0.m4a",
+    "tags": [
+      "鹿児島の旅行割、終わったと思ったら…次の旅行割がある？"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1b2830f4-8cf1-4184-a0d9-3a1bace3a844",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": true,
+      "styles": [
+        "標準",
+        "悲しみ",
+        "怒り",
+        "嫌悪",
+        "驚き",
+        "恐怖",
+        "喜び"
+      ]
+    },
+    "name": "みちのくあいり",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/569fa4b8-c161-4427-90a7-8b7340282500/speakers/5c49e0ab-997f-469c-801a-c7377d5de2aa/styles/f747f29b-b1ad-439e-93d8-e3400cdce177/voice-samples/0.m4a",
+    "tags": [
+      "みちのくあいり"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1f04a608-916c-4d9e-bf6e-b9da5c176f85",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "デフォルト"
+      ]
+    },
+    "name": "yukyu",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/81b17e6f-672c-4e50-848c-8ee863f4742d/speakers/08852022-d17f-44e4-a2a8-afa81c2ee786/styles/20852eef-b573-4c27-a761-919982774712/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1f677b65-741e-4ba4-b029-d5525deb82b8",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "梅𡵅弓哥_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/84fc99e1-62fd-4cb2-9c73-afa37d6b42fe/speakers/48744f9f-0c6e-4800-a07b-66d8fdb90620/styles/78e5e13d-51c9-4a47-9fbf-4c8d5757e042/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "21d8d535-f206-462d-a3bb-05f8252dede7",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "Other",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "kanasimi_kanasimi",
+        "uresii_uresii",
+        "hutuu_hutuu",
+        "odoroki_odoroki"
+      ]
+    },
+    "name": "さつき(現実20代女子AIボイチェン@リアボVC公式モデル)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/cde72c76-47ef-45c5-b439-6ecb92dbe61d/speakers/3f5bf1bd-07ca-4aa2-8ac5-8ea1f970d7d6/styles/282bf1e6-52e4-4b2f-9ca8-c0a1350570ac/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "22e8ed77-94fe-4ef2-871f-a86f94e9a579",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": true,
+      "styles": [
+        "ノーマル",
+        "あまあま",
+        "せつなめ",
+        "ねむたい"
+      ]
+    },
+    "name": "コハク",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/a04de3ee-1440-4b55-8ba5-b8b6a452f7a4/speakers/84c9db01-ea0f-422a-abe1-9059d8e0efd2/styles/6299d1f8-db14-4fdf-bed2-8deb400a0c4b/voice-samples/0.m4a",
+    "tags": [
+      "オズチャット"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "25b39db7-5757-47ef-9fe4-2b7aff328a18",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "FictionalPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "怒り",
+        "嫌悪",
+        "恐れ",
+        "幸せ",
+        "悲しみ",
+        "驚き"
+      ]
+    },
+    "name": "F2",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/09fde66f-582e-4ec1-a61e-a9c6d6fcbf19/speakers/495a6c08-a598-462a-af69-f1c3327bd099/styles/310f7b2f-c552-4663-8bf7-ada6dcb6809f/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2e1fdde8-d089-42d7-b64f-cf89952b1bdc",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "close",
+        "close-shout",
+        "far",
+        "far-shout"
+      ]
+    },
+    "name": "澤原 玄二郎",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/4185e106-ab0f-4037-9ca2-0b5e296bcccb/speakers/a2cbe680-67fb-4dba-90be-985a0a42985a/styles/f646e059-4a1a-462e-9b77-064eb3dc535a/voice-samples/0.wav",
+    "tags": [
+      "けものフレンズアブリッジ"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2ff1c526-27d4-4eeb-b069-4207ae5fe259",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "Other",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "kanasimi_kanasimi",
+        "uresii_uresii",
+        "hutuu_hutuu",
+        "odoroki_odoroki"
+      ]
+    },
+    "name": "すみれ(現実20代女子AIボイチェン@リアボVC公式モデル)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/6d1986f2-58e8-40ca-b8f8-1f6f847883d4/speakers/6792a5c8-7afc-4746-9241-88d0b9197baf/styles/7a8d5967-cec3-48ef-9b54-7672dc4b4e2d/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "33090ea6-7696-491b-afb9-86fdbc4c2e51",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "鰻川叶恵_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/440e76a6-3b47-423d-a9a1-84acc41d3903/speakers/17752d2d-6db7-40ec-8e73-548927d90983/styles/68076e5e-964b-4490-9c30-66e19f70ac54/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "3328da9a-8124-4619-a853-f7fc2f37889f",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "桜音",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/deda0e2f-3368-4604-ab98-5652a6971feb/speakers/44057ed0-e0d0-46ce-98be-f8cdc1d4150d/styles/1508f228-6534-4b32-83a4-057ca8bdcc8c/voice-samples/0.wav",
+    "tags": [
+      "ウェクェq"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "37e49039-522f-4608-b8d6-fc6716ada80e",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "雪降白華_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/fe174977-926b-47e1-b90e-f6a385157598/speakers/d4534e5a-ea6f-46cd-aa86-6f6d270854ad/styles/fc36932e-43f4-4ddf-bcb7-f0c0ac913352/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "3bef4d35-124e-4ddd-93d3-75f292732195",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "kokuren_3rd",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/c795b6b3-fb29-4ae7-a5fb-58857939a101/speakers/60a5f6a1-8650-476a-b497-d27354a4762c/styles/59d826f1-6b24-44cf-9674-b2efae00d156/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "3dabea2b-cc10-41da-955b-4618ce84e716",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "Lux",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/fd9c14ce-f92c-4ece-89f0-d44aa70a039c/speakers/7d5d61cc-f937-48f6-af4b-087b52bcedb5/styles/a6baed99-da82-441a-b993-d75f8e0df31a/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "446d2053-14ca-4b68-897c-380faf555b59",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "落ち着き",
+        "クール",
+        "デフォルト",
+        "元気",
+        "落ち着き２",
+        "元気２",
+        "悲しみ",
+        "キュート",
+        "キュート2"
+      ]
+    },
+    "name": "リダ / Lida（感情表現モデル）",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/8dfe9777-c113-458f-8380-87c77835934c/speakers/c54e5fa5-29fd-4fc4-a3a2-3ef19084c005/styles/2cf18cf9-9123-48b9-97a6-17e1019801dc/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "470a41e2-863f-4bf2-8a20-bf7cde0d8f7b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Anger",
+        "Happy",
+        "Silly",
+        "surprise"
+      ]
+    },
+    "name": "TANAKA",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/18b4de85-ea1a-41c4-9e07-c02be1b86a8d/speakers/bc0bde8e-8e43-4b5c-9c1a-d8c54d88289e/styles/8c1d2513-8729-4647-bd16-47887768ca01/voice-samples/0.wav",
+    "tags": [
+      "はい、どーもー。おとんです"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "47e53151-a378-46f3-abee-ce13aa07feb1",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Calm",
+        "Far",
+        "Heavy",
+        "Mid",
+        "Shout",
+        "Surprise"
+      ]
+    },
+    "name": "阿井田 茂",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/d799f1c0-59f3-4b6b-9a65-56715776fc69/speakers/50880d3a-d63e-4a31-ae3f-ab14e0c0b3cb/styles/1d5aedb4-26c9-4412-b76a-80a4ff5f5b2d/voice-samples/0.wav",
+    "tags": [
+      "文化系心臓部"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "4f281e78-eba6-495a-8e50-5c322d02b5b1",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "るな",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/47d21b9f-7543-4574-b16e-0863646b5bbf/speakers/4ed4bd8e-fb79-4c38-999a-3b6f283397a7/styles/fed939d3-2ac0-4190-a5c2-b22883d35279/voice-samples/0.wav",
+    "tags": [
+      "大好きだよ"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "53c4bdca-992e-4289-8cf7-1338b11eb567",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "夢咲舞空_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/75209165-ed67-49ab-9247-ee05f33e731a/speakers/4e412db8-f761-47aa-89af-77ff66d04ca1/styles/9bf7df2f-9a32-42fe-b9b2-ced554379308/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "55696911-05cb-4cd2-bdb9-dbc8bfe6e5c7",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "水巻咲_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/cb5b69c6-1183-4249-8fc5-6ff3c6acc8ef/speakers/c1adf89a-5073-440a-a90a-4ea55c3eebae/styles/db7c89d3-ad75-46d1-abc7-f4fafaaae12c/voice-samples/0.m4a",
+    "tags": [
+      "朝の電車で、",
+      "ため息を飲み込んでいるお前,,,,オウは",
+      "よく知っている。"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "59f96896-64d2-4378-830a-4d5feb3d81aa",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "Other",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "kanasimi_kanasimi",
+        "uresii_uresii",
+        "hutuu_hutuu",
+        "odoroki_odoroki"
+      ]
+    },
+    "name": "ほのか(~現実20代女子AIボイチェン~リアボVC公式モデル)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/30b0ab4c-893b-4c73-8c2a-29059656e3d8/speakers/b903b46a-4b54-4ff1-9ab9-eb009b179cac/styles/b66ac2c0-3834-4350-b7dd-2a79fee4677a/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "657f4f16-3cf5-4048-9a98-00987038ebf0",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "Standard"
+      ]
+    },
+    "name": "RakumaYue",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/b145000b-1799-452b-9b6d-763e47a1b550/speakers/51d73ed0-f8a9-4708-ae7e-8dc9e80fe68e/styles/c03870a0-707a-4682-8ae7-1f30d1cb2e29/voice-samples/0.wav",
+    "tags": [
+      "楽間勇笑"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "696c98a2-c0b7-4fe7-8cf2-c7e9b8a9bd82",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "ろてじん（長老ボイス）",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/1ab8afa3-2a5e-4e9e-bc5c-09cbd6c4107e/speakers/973723ac-bac8-4bec-8cc8-6a581ee41d25/styles/b79c1120-65e8-4c01-ae01-b71118af71ea/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "6acf95e8-11a9-414e-aa9c-6dbebf9113ca",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "FictionalPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "怒り",
+        "嫌悪",
+        "恐れ",
+        "幸せ",
+        "悲しみ",
+        "驚き"
+      ]
+    },
+    "name": "F1",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/b539a121-ee77-40b6-8504-6f0aa8be32ea/speakers/c11ed70f-4500-4c3c-a79c-4d6cdd4bcaf2/styles/64b18c00-c56f-4df6-a245-bd7258fa9908/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "6d11c6c2-f4a4-4435-887e-23dd60f8b8dd",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "にせ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/976b1a0b-f767-443f-9e9b-b2f7c75e05dc/speakers/8ea9a1b7-bf3b-49f3-9e42-c6ab5cc1aa34/styles/d9e114af-77ba-4b74-b871-2b1f479eb6fa/voice-samples/0.wav",
+    "tags": [
+      "自分の将来に不安を抱えている感じ"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "6e60c40a-6d0f-4d86-9d97-61c11402058a",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "LivingPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML-NC 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "オレンジ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/b780fb21-0efe-434b-8b4c-8a67b5dbb818/speakers/b12ee276-e4ce-47fb-8545-015061abc44e/styles/0527efe6-6068-4f8f-bd1c-e1a6f39c294f/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "70a875a9-feae-41e6-a586-8cf9e47c6c0b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "LivingPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "猩々博士 (雑談ボイス)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/cfef0a38-9051-4fb1-b5e5-46687fa2840d/speakers/58a87b24-4570-4693-b7f5-b81be2481855/styles/d1e04fc9-9083-45af-9690-539d598059ba/voice-samples/0.wav",
+    "tags": [
+      "test"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "70ad7e84-6a10-48d6-8f9a-8dac4bba3c0b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "はきみて れく(瞭魅推 れく)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/62f0255c-c995-419c-95ea-df7229dd1a87/speakers/bca556ec-e048-4258-a297-30fb1471f747/styles/fd50bb76-ad65-4f0c-b176-cc606618267d/voice-samples/0.m4a",
+    "tags": [
+      "VTuber",
+      "技術属性",
+      "モンスター"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "71e72188-2726-4739-9aa9-39567396fb2a",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "fumifumi",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/e56a5ff2-794c-4f16-a58f-3b57668065d6/speakers/7147eb7c-8564-48ed-8ba6-7eca40b18a15/styles/8d3c6879-3722-488a-8636-3c88395f36e6/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "734c12b6-eaf2-4dbd-8596-8663c72d2afa",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "黄金笑_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/77083dbd-fb32-471c-ac75-aa19b4bf00e7/speakers/90e8296f-bb1e-497a-a2da-d56361b1ad71/styles/4bd28c67-761f-4acb-b2d5-3b2c1a72c44e/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "76a774e4-cc4d-4d8c-879e-8d2be3d30dad",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "01_JOY",
+        "02_ANGRY",
+        "03_SAD",
+        "04_FUN",
+        "05_SURPRISE",
+        "06_CONTEMPT",
+        "07_FEAR",
+        "08_CONFUSE",
+        "09_NORMAL",
+        "10_EXPLAIN",
+        "11_ANNOUNCE",
+        "12_WHISPER_ANGRY",
+        "12_WHISPER_CONTEMPT",
+        "12_WHISPER_FEAR",
+        "12_WHISPER_FUN",
+        "12_WHISPER_JOY",
+        "12_WHISPER_SAD",
+        "13_LAZY_ANGRY",
+        "13_LAZY_NORMAL",
+        "13_LAZY_SAD"
+      ]
+    },
+    "name": "Flow",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/600f7990-6936-4ba7-8ad2-4763807758a3/speakers/a49b1c71-83e7-4fe2-847b-23b48847c039/styles/1f1b75f7-d8f2-4fda-b5b9-60f45e451985/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "7ac45cff-1e2f-4545-91bb-e7b2cc67649b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "不機嫌",
+        "落ち着き"
+      ]
+    },
+    "name": "蝶舞和香_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/90e91195-cdb6-4f9b-b35b-37ca85a27d5b/speakers/85005ae0-b315-4a1f-99ba-b6e8489f0984/styles/19eb52aa-a9fc-4178-b93c-a6ddce5acaa1/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "7fc08a41-b64d-456d-8b22-8e1284674775",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "CC0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "name": "zonoko",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/21c2d181-9e7f-4ab5-80c5-ec8e2e70bd91/speakers/27dceb02-55f5-46dc-9960-d77dae24028d/styles/cd8843c2-1458-45cc-8429-cd2c1b8d7f4a/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "80fe2db4-5891-4550-a3f3-dff9a91c0946",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "ろてじん（匿名インタビュー風）",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/84f2049b-dc11-482d-98e6-a9f18943f935/speakers/44fc9368-987e-4b3e-8129-bf4c9849df3a/styles/7abc0f25-e975-46a1-95eb-bf99ffcad3c8/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "83f2930e-4697-4265-822c-04d7337b3047",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "LivingPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML-NC 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "G59",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/343d7484-6e79-42cf-9730-6e8887d2c045/speakers/1e2e125c-8e3c-4bf9-bfde-21cfd583c37c/styles/4dac993b-f7e9-45c8-b799-9aed79f5213a/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "9107b8b6-1ed1-43f5-bebe-0de4df4d229d",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "中2",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/cf99cb7c-4c7b-4c43-a180-3f28df62ee02/speakers/d147c40b-5b00-46a4-a9ac-473a4372cc83/styles/e253fd21-5929-46e1-815a-002fca35a8c5/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "9a7feb22-b6f3-4f79-92d9-26849e063fa1",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "Other",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "kanasimi_kanasimi",
+        "uresii_uresii",
+        "hutuu_hutuu",
+        "odoroki_odoroki"
+      ]
+    },
+    "name": "もえ(現実20代女子AIボイチェン@リアボVC公式モデル)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/fe470261-b167-4419-89a0-e92d6a7554ca/speakers/24ae9992-cc02-42e5-8748-b8191c031b13/styles/78293315-61f7-4a32-b842-72c27b1fc078/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "9badaf1f-f664-47de-9754-51ad6936d693",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "地良谷詩_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/3087932b-69d0-4eea-acb5-e49a354ff9de/speakers/8e3c037f-16b9-41a8-954a-b6277ded0a5d/styles/ccc3ce6d-1488-4d00-9e45-24703a20f723/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "9e9f84bd-05cd-4476-b47e-ad34264b2a03",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML-NC 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "ふきげん",
+        "じょうきげん"
+      ]
+    },
+    "name": "亜空マオ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/28fd1b4a-750a-4d50-9acf-4dd0e5270578/speakers/346d2dad-316f-4539-a892-aa2bce502d1b/styles/7bd8ca85-9769-4862-8800-0f801e4daf56/voice-samples/0.wav",
+    "tags": [
+      "お疲れ様です"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "9f0d1fba-3acd-439a-8446-ea94e8ca6985",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "騾馬原杏_T3モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/57e184c8-53b9-462b-ae20-98f332586b08/speakers/f2bf38a9-6b26-4655-80df-88f88585dc08/styles/0897c03f-7210-466f-97d9-3dbbe34684de/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "neutral",
+    "id": "9f36ec0d-8dac-42dc-aff4-149c5f99faad",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": true,
+      "styles": [
+        "標準",
+        "喜び",
+        "嫌悪",
+        "怒り",
+        "恐怖",
+        "悲しみ",
+        "標準２",
+        "驚き"
+      ]
+    },
+    "name": "らせつん",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/a162cbbf-638a-497e-beb3-d7526d899a2c/speakers/48069934-c576-4c0c-9b50-b2857bbaeed5/styles/4c320f04-c309-44d6-9705-7434863a2608/voice-samples/0.m4a",
+    "tags": [
+      "はじめまして"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "a59cb814-0083-4369-8542-f51a29e72af7",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": true,
+      "styles": [
+        "ノーマル",
+        "ふつー",
+        "あまあま",
+        "おちつき",
+        "からかい",
+        "せつなめ"
+      ]
+    },
+    "name": "まお",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/fd0d9420-7eee-40de-826d-7fe16b562e84/speakers/f6c7343c-a7fd-4d42-b0dc-38fe18c6ab7f/styles/7d39a003-1f4b-4154-800d-bdf8d1e0cd7d/voice-samples/0.m4a",
+    "tags": [
+      "オズチャット"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "a670e6b8-0852-45b2-8704-1bc9862f2fe6",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "花音",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/1a7ae97c-d666-46b4-819a-c63f73dde6bf/speakers/9351a9e0-910e-47c8-a6f6-b506c2d5229d/styles/598c0357-1524-4b91-bcdc-3688062a5bfc/voice-samples/0.wav",
+    "tags": [
+      "Aivis",
+      "Cloud",
+      "API",
+      "は、高速かつ高品質な日本語音声合成をクラウドで利用できる音声合成",
+      "です。"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "b1b8072f-809f-4c6d-9ba1-2ca94d9c3663",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "kanasimi_kanasimi",
+        "uresii_uresii",
+        "hutuu_hutuu",
+        "odoroki_odoroki"
+      ]
+    },
+    "name": "れな(現実20代女子AIボイチェン@リアボVC公式モデル)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/0fe4fc50-e4c8-43af-8043-884b5fa6fa18/speakers/6732185f-1662-4e85-bbc9-2c53d7969240/styles/7b244600-2070-4732-a28e-1164f69a5a2c/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "b2bee8fc-3f65-4c99-9607-a1075a10066b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "立神ケイ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/a902ccf4-d5a4-4366-a6c4-7283c89f1e14/speakers/79d7f941-da7e-4b7c-bcc2-6bac684b1ee5/styles/1bb9ea17-7fe0-47d0-b143-4cf12312e6ad/voice-samples/0.wav",
+    "tags": [
+      "ぼくは・丈ちゃん、です"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "b79c40e4-8a5e-4f20-802c-2c0eba2f0983",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "CC0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "結亜ナル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/24b3c859-458b-4bfd-8d5f-737404761b19/speakers/1a3ff035-ed7d-4d92-9dcd-5ff241257473/styles/4ea3ce9f-eb47-4175-95d8-e7156f50ecce/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "baa6d55a-d751-49b8-bafb-b3a6555a100c",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "七日週_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/894c6952-40d9-432d-aa01-2f3aef23e6b3/speakers/88204c94-504c-4427-b9a6-7dea377eadec/styles/aff76713-9f6a-4cde-b230-938fb9b0c396/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "baaae3c0-7b22-4605-8ba5-80c959b41a48",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "LivingPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "morioki",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/9a3f9768-9fec-423f-b825-9c5e1490cf69/speakers/63642a48-6ab5-4438-9ed6-2c3c254e9263/styles/34c41fb2-97e6-4b67-b3dc-8ecbb7e6dc04/voice-samples/0.wav",
+    "tags": [
+      "「え？これ、ピアスじゃないの！？」",
+      "実は…樹脂ノンホールピアスなんです。"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "d0471c7d-3adc-4c99-b7b7-0e91c4d9d96f",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "木角空_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/848a2deb-3b36-458a-837d-a56579f76d12/speakers/0305fce4-f2af-4c1c-81a9-978dbf276216/styles/1105c132-333f-47c5-bf1f-22b3d606e03e/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "d1a7446f-230d-4077-afdf-923eddabe53c",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "FictionalPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "怒り",
+        "嫌悪",
+        "恐れ",
+        "幸せ",
+        "悲しみ",
+        "驚き"
+      ]
+    },
+    "name": "M2",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/d134e4b0-a0f7-4ac5-a538-021925ee23a0/speakers/2718ad2d-6060-4fc0-aab9-cd083565c9e4/styles/66a996b1-c8a4-42bc-8b00-c41c01caee1c/voice-samples/0.m4a",
+    "tags": [
+      "あなたの",
+      "血をください"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "d200a39c-7c0f-4e03-a947-b3f0cb8d3d6b",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "葉土此_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/3a5e29e8-2169-4351-8b0e-e1d9c9a1c186/speakers/8c7f8042-ed0b-4c7a-83ca-9fc49805aa6e/styles/47483db7-9a07-4552-8eb8-412927b5fea8/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "d6bfe943-6903-491f-8d01-454ad8f88c14",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML-NC 1.0",
+      "official": false,
+      "styles": [
+        "!選択しないでください",
+        "のーまる",
+        "キュートアグレッション"
+      ]
+    },
+    "name": "様子ヶ丘シイナ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/6c1de931-2298-4994-b493-2029dafd4f56/speakers/3d8028d9-29d0-4497-bac8-e2b29d1f754a/styles/c96ded37-5a20-4ad5-aba6-c3f2458e4f0a/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "d7255c2c-ddd0-425a-808c-662cd94c7f41",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "FictionalPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "怒り",
+        "嫌悪",
+        "恐れ",
+        "幸せ",
+        "悲しみ",
+        "驚き"
+      ]
+    },
+    "name": "M1",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/37df5622-8f2c-4129-a961-2a34ecca8820/speakers/8392062b-e0d1-4c60-b13c-29aac2ebf321/styles/8bcd0731-d7e9-4df4-97b3-b57e274c9834/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ddbea2e2-e51f-48da-ace1-197b2c6a77bb",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "Amene Lila",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/7bc5e003-0af0-42d4-99a3-59715af21525/speakers/2899dcc1-c715-4b68-8ffe-e716c98be352/styles/d7fe4b28-162c-4513-8cef-fb0c01aafe3a/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "e40d5b99-8cde-4442-a45b-0ebec9167506",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Disgust",
+        "Fear",
+        "Surprised",
+        "Happy",
+        "Sad"
+      ]
+    },
+    "name": "kokuren_voice",
+    "tags": [
+      "サンプル"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "e4ee047d-3af4-4936-90eb-29a3c9104709",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "火山夢_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/8b948689-39e9-4558-8d31-cf6042a7f727/speakers/c0cbdc5f-7b36-4827-8a1c-5596d5f2482d/styles/273b3230-4135-4154-8a47-ae13f289934b/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "e9339137-2ae3-4d41-9394-fb757a7e61e6",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "まい",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/7ea5a561-0343-422c-a7d5-4cc95ef57b79/speakers/a1ba946c-4d95-41f9-ae0d-6565ce64a91e/styles/2b797521-0ed7-4640-a601-736b110a98cd/voice-samples/0.wav",
+    "tags": [
+      "妖艶な女性"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ebd755af-392e-44ac-a523-53a1b1fa1377",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "Neutral",
+        "セクシー",
+        "あまあま",
+        "ツンツン",
+        "ノーマル"
+      ]
+    },
+    "name": "kuroike ai",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/b30f02e4-0cc6-4cff-be0d-c4275a456f08/speakers/4ed3d32c-a81b-435a-881c-ece6f7585230/styles/9b6caa89-3c17-465f-a0c5-ec909b6cc3f0/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ed0f793d-786c-4fde-8561-e8bbac7bfe1d",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "のーまる",
+        "はきはき",
+        "るんるん",
+        "しんけん"
+      ]
+    },
+    "name": "六弦エレキ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/e6d3c272-6d0b-44a8-86ff-d47de44ad939/speakers/c4a58b92-06b0-4c8a-aefd-d857df6548f7/styles/0794b794-04ad-4092-bdda-a0394ab13af3/voice-samples/0.m4a",
+    "tags": [
+      "無生物"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ed47c952-c253-405e-adba-1172399816a1",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "Other",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "観測症",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/0a75b855-5a9b-4424-be2a-cd7ec3cfac95/speakers/5c5ff59a-e79a-46e9-b979-7dfbe96cb800/styles/3ce6c847-53cd-40b0-b8a6-3607351aa8b1/voice-samples/0.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "eefe1fbd-d15a-49ae-bc83-fc4aaad680e1",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "蒼月ハヤテ",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/0acbf91c-88a2-4c76-bf8e-e6a88ea8b4a1/speakers/40b5754d-51f7-4643-9548-18f11cf856a2/styles/e5146cab-c151-4eec-81cb-401725dee291/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "f13c2ec8-1069-403f-a23e-503b3a270c57",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "矢月舞_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/12edb6d9-2660-4256-8a83-80389d0e0962/speakers/4496bdf3-2f6d-449c-a7c3-ada18da2a439/styles/9dddcfae-022a-417e-a5fc-cde8c9e478ea/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "f493ab6c-1ffa-4534-9bbd-2ba398f17cd5",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "CC0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "すきやき馬太郎",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/3aeb4eb9-2cf1-4f76-9888-14e0bc45231d/speakers/099e6da2-a55f-4d64-8f01-6db822108af9/styles/6c7c12bf-9492-4d39-9357-9dbd048a8d10/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "f5017410-fbb5-49e1-97cb-e785f42e15f5",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Angry",
+        "Fear",
+        "Happy",
+        "Sad"
+      ]
+    },
+    "name": "凛音エル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/9fc6e37f-b8d4-4df5-93e3-30defd0f00ff/speakers/6b0a0fb6-283c-4b7e-928d-37fda7a639bb/styles/17203929-af8f-47cd-8faf-124a14786f8f/voice-samples/0.wav",
+    "tags": [
+      "1日目",
+      "6月12日",
+      "台湾到着",
+      "📍牛老大涮牛肉",
+      "台湾で人気の牛肉火鍋を堪能"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "f79e73ab-3320-473b-8e3f-713c30c39ed1",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "LivingPerson",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル"
+      ]
+    },
+    "name": "MarkN",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/b420a801-3672-4458-b43c-a0bad1b57e37/speakers/2e8ef98d-eefc-4d5e-9b97-fe63c78e0a12/styles/9e00310c-af9d-4a05-b2ba-06a25922f845/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "f83c385c-829b-40c4-8c11-639027e61636",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "Other",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "ACML 1.0",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "悲しい",
+        "嬉しい",
+        "普通",
+        "驚き"
+      ]
+    },
+    "name": "わかな(現実20代女子AIボイチェン@リアボVC公式モデル)",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/cd1bb860-2853-4f75-958d-5717429afd56/speakers/b557abce-3e16-4bd8-a3b7-9fc4f0c990a2/styles/7f625d17-694c-42c2-9e0d-cf65201fecfd/voice-samples/0.wav",
+    "tags": [
+      "来月の食堂、お菓子を焼いて持っていこうかな"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "fb04b883-13cb-40ef-b0ea-fad060a408e8",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "aivm_category": "OriginalCharacter",
+      "architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "license": "Custom",
+      "official": false,
+      "styles": [
+        "ノーマル",
+        "Negative",
+        "Positive"
+      ]
+    },
+    "name": "大日椛_T2モデル",
+    "preview_url": "https://assets.aivis-project.com/aivm-models/e177d5da-9b27-4aa3-9420-0685bc033c95/speakers/4c35d908-4f55-46d0-a112-aa0d2b889050/styles/ac61c859-b1a1-4ecb-9c05-f2d5ee0d85b2/voice-samples/0.m4a",
+    "updated_at": "2026-11-18"
+  }
+]

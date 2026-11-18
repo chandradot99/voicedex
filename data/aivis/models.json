@@ -1,0 +1,82 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Japanese-only synthesis engine behind the Aivis Cloud API; every public, unlisted or private AIVM voice model on AivisHub is served by it.",
+    "first_seen": "2026-11-18",
+    "id": "style-bert-vits2-jp-extra",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ja"
+    ],
+    "max_text_chars": 3000,
+    "meta": {
+      "controls": [
+        "speaking_rate",
+        "emotional_intensity",
+        "tempo_dynamics",
+        "pitch",
+        "volume"
+      ],
+      "custom_models": "Style-Bert-VITS2 models converted with AIVM Generator can be uploaded and used via the API.",
+      "endpoint": "POST https://api.aivis-project.com/v1/tts/synthesize",
+      "model_architecture": "Style-Bert-VITS2 (JP-Extra)",
+      "model_selection": "The API has no engine/model-id parameter: requests pass `model_uuid` (an AivisHub AIVM voice model UUID, or an `ak_` access key for unlisted models) plus optional `speaker_uuid` and `style_id`/`style_name`.",
+      "on_premises": "Citoras (API-compatible self-hosted server)",
+      "ssml_subset": [
+        "break",
+        "prosody rate/pitch/volume",
+        "sub alias",
+        "p",
+        "s"
+      ],
+      "streaming_note": "Audio is streamed progressively in the HTTP response (chunked); no WebSocket endpoint.",
+      "user_dictionaries": true
+    },
+    "name": "Aivis Cloud API (Style-Bert-VITS2 JP-Extra)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "notes": "Pay-as-you-go prepaid credits: JPY 440 (tax incl.) per 10,000 characters; only the synthesis API is billed. New accounts get JPY 500 of free credit (about 11,000 characters). Aivis Premium subscription: JPY 1,980/month (tax incl.) for unlimited characters within a 10 requests/minute rate limit, combinable with pay-as-you-go overage.",
+      "price": 0.044,
+      "source_url": "https://aivis-project.com/cloud-api/",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aivis-project.com/cloud-api/",
+        "https://api.aivis-project.com/v1/docs"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      12000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
