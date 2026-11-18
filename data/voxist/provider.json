@@ -1,0 +1,26 @@
+{
+  "access": "enterprise",
+  "compliance": [
+    "gdpr"
+  ],
+  "description": "Voxist is a French speech AI company based in Paris that builds voicemail, contact-centre, translation and dictation products on its own speech recognition engine. Its ASR API offers batch (REST) and real-time (WebSocket) transcription focused on French and other European languages, including medical and legal processing; accounts are issued on request.",
+  "docs_urls": [
+    "https://api-asr.voxist.com/docs",
+    "https://github.com/Voxist/asr-websocket-samples"
+  ],
+  "headquarters": "FR",
+  "id": "voxist",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://api-asr.voxist.com/docs",
+    "docs": "https://github.com/Voxist/asr-websocket-samples",
+    "status": "https://status.voxist.com"
+  },
+  "name": "Voxist",
+  "regions": [
+    "eu"
+  ],
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.voxist.com"
+}

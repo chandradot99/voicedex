@@ -1,0 +1,303 @@
+[
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation"
+    ],
+    "description": "Batch transcription model selectable via model_type in Voxist's ASR REST API.",
+    "first_seen": "2026-11-18",
+    "id": "fast",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "pt",
+      "it",
+      "de",
+      "pl",
+      "nl",
+      "sv",
+      "ja",
+      "he",
+      "tr"
+    ],
+    "meta": {
+      "api_reference": "https://api-asr.voxist.com/docs",
+      "dual_channel_upload": true,
+      "endpoint": "POST https://api-asr.voxist.com/transcription (config.model_type)",
+      "language_param": "config.lang enum (shared across model types): fr, en, es, pt, it, de, pl, nl, sv, ja, he, tr, auto",
+      "webhook": true
+    },
+    "name": "Voxist Fast (batch)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api-asr.voxist.com/docs",
+        "https://github.com/Voxist/asr-websocket-samples"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation"
+    ],
+    "description": "Default batch transcription model of Voxist's ASR REST API.",
+    "first_seen": "2026-11-18",
+    "id": "fast_v2",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "pt",
+      "it",
+      "de",
+      "pl",
+      "nl",
+      "sv",
+      "ja",
+      "he",
+      "tr"
+    ],
+    "meta": {
+      "api_reference": "https://api-asr.voxist.com/docs",
+      "dual_channel_upload": true,
+      "endpoint": "POST https://api-asr.voxist.com/transcription (config.model_type)",
+      "language_param": "config.lang enum (shared across model types): fr, en, es, pt, it, de, pl, nl, sv, ja, he, tr, auto",
+      "webhook": true
+    },
+    "name": "Voxist Fast v2 (batch)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api-asr.voxist.com/docs",
+        "https://github.com/Voxist/asr-websocket-samples"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Medical-domain batch transcription model of Voxist's ASR REST API.",
+    "first_seen": "2026-11-18",
+    "id": "medical",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "api_reference": "https://api-asr.voxist.com/docs",
+      "dual_channel_upload": true,
+      "endpoint": "POST https://api-asr.voxist.com/transcription (config.model_type)",
+      "language_param": "config.lang enum (shared across model types): fr, en, es, pt, it, de, pl, nl, sv, ja, he, tr, auto",
+      "note": "POST /transcription/v2 forces medical text processing and is only supported for the fr-medical language model",
+      "webhook": true
+    },
+    "name": "Voxist Medical (batch)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api-asr.voxist.com/docs",
+        "https://github.com/Voxist/asr-websocket-samples"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "punctuation"
+    ],
+    "description": "Batch transcription model selectable via model_type in Voxist's ASR REST API.",
+    "first_seen": "2026-11-18",
+    "id": "slow",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "pt",
+      "it",
+      "de",
+      "pl",
+      "nl",
+      "sv",
+      "ja",
+      "he",
+      "tr"
+    ],
+    "meta": {
+      "api_reference": "https://api-asr.voxist.com/docs",
+      "dual_channel_upload": true,
+      "endpoint": "POST https://api-asr.voxist.com/transcription (config.model_type)",
+      "language_param": "config.lang enum (shared across model types): fr, en, es, pt, it, de, pl, nl, sv, ja, he, tr, auto",
+      "webhook": true
+    },
+    "name": "Voxist Slow (batch)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api-asr.voxist.com/docs",
+        "https://github.com/Voxist/asr-websocket-samples"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Real-time WebSocket speech recognition engine of Voxist's ASR API.",
+    "first_seen": "2026-11-18",
+    "id": "voxist-rt",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "de",
+      "it",
+      "es",
+      "nl",
+      "pt",
+      "sv"
+    ],
+    "meta": {
+      "api_reference": "https://api-asr.voxist.com/docs",
+      "audio_input": "raw PCM s16le mono, 16 kHz recommended (server does not resample)",
+      "endpoint": "GET https://api-asr.voxist.com/websocket?engine=... then wss://api-asr.voxist.com/ws",
+      "lang_variants": "e.g. fr-medical",
+      "languages_source": "livekit-plugins-voxist README (WebSocket service; not stated per engine)",
+      "punctuation_modes": [
+        "Generated",
+        "Dictated"
+      ],
+      "samples": "https://github.com/Voxist/asr-websocket-samples"
+    },
+    "name": "Voxist RT (real-time)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api-asr.voxist.com/docs",
+        "https://github.com/Voxist/asr-websocket-samples"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Real-time WebSocket speech recognition engine of Voxist's ASR API.",
+    "first_seen": "2026-11-18",
+    "id": "voxist-rt-2",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "fr",
+      "en",
+      "de",
+      "it",
+      "es",
+      "nl",
+      "pt",
+      "sv"
+    ],
+    "meta": {
+      "api_reference": "https://api-asr.voxist.com/docs",
+      "audio_input": "raw PCM s16le mono, 16 kHz recommended (server does not resample)",
+      "endpoint": "GET https://api-asr.voxist.com/websocket?engine=... then wss://api-asr.voxist.com/ws",
+      "lang_variants": "e.g. fr-medical",
+      "languages_source": "livekit-plugins-voxist README (WebSocket service; not stated per engine)",
+      "punctuation_modes": [
+        "Generated",
+        "Dictated"
+      ],
+      "samples": "https://github.com/Voxist/asr-websocket-samples"
+    },
+    "name": "Voxist RT 2 (real-time)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api-asr.voxist.com/docs",
+        "https://github.com/Voxist/asr-websocket-samples"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
