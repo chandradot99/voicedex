@@ -115,6 +115,8 @@ class VoiceOut(BaseModel):
     languages: list[str]
     description: str | None
     preview_url: str | None
+    preview_language: str | None = None
+    previews: list[dict] = []
     accent: str | None
     age: str | None
     use_cases: list[str]
@@ -131,7 +133,8 @@ class VoiceOut(BaseModel):
         return cls(
             id=voice_uuid(provider_id, v), provider_id=provider_id, voice_id=v.id, display_name=v.name,
             gender=v.gender, category=v.category, languages=v.languages, description=v.description,
-            preview_url=v.preview_url, accent=v.accent, age=v.age, use_cases=v.use_cases, tags=v.tags,
+            preview_url=v.preview_url, preview_language=v.preview_language,
+            previews=[p.model_dump() for p in v.previews], accent=v.accent, age=v.age, use_cases=v.use_cases, tags=v.tags,
             compatible_models=v.compatible_models, capabilities=v.capabilities, meta=v.meta,
             first_seen=v.first_seen, deprecated_at=_dt(v.deprecated_at), updated_at=_dt(v.updated_at),
         )

@@ -17,6 +17,26 @@
       ],
       "title": "VoiceCategory",
       "type": "string"
+    },
+    "VoicePreview": {
+      "additionalProperties": false,
+      "description": "A sample of the voice speaking one specific language.",
+      "properties": {
+        "language": {
+          "title": "Language",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "language",
+        "url"
+      ],
+      "title": "VoicePreview",
+      "type": "object"
     }
   },
   "additionalProperties": false,
@@ -141,6 +161,18 @@
       "title": "Name",
       "type": "string"
     },
+    "preview_language": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Preview Language"
+    },
     "preview_url": {
       "anyOf": [
         {
@@ -152,6 +184,13 @@
       ],
       "default": null,
       "title": "Preview Url"
+    },
+    "previews": {
+      "items": {
+        "$ref": "#/$defs/VoicePreview"
+      },
+      "title": "Previews",
+      "type": "array"
     },
     "tags": {
       "items": {

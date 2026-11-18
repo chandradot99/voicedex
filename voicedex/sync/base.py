@@ -137,6 +137,8 @@ class SyncVoice:
     languages: list[str] = field(default_factory=list)
     description: str | None = None
     preview_url: str | None = None
+    preview_language: str | None = None            # language spoken in preview_url, if stated
+    previews: list[dict] = field(default_factory=list)   # [{"language": "zh-CN", "url": …}] per-language samples
     accent: str | None = None
     age: str | None = None
     use_cases: list[str] = field(default_factory=list)

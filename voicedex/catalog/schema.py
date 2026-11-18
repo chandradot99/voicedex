@@ -288,6 +288,17 @@ class Model(_Record):
             raise ValueError(f"model {self.id}: lifecycle=deprecated and deprecated_at must be set together")
 
 
+class VoicePreview(_Record):
+    """A sample of the voice speaking one specific language."""
+    language: str
+    url: str
+
+    @field_validator("language")
+    @classmethod
+    def _lang(cls, v: str) -> str:
+        return normalize_languages([v])[0]
+
+
 class Voice(_Record):
     id: Slug
     name: str
@@ -300,6 +311,10 @@ class Voice(_Record):
     compatible_models: list[str] = Field(default_factory=list)
     capabilities: list[str] = Field(default_factory=list)
     preview_url: str | None = None
+    # Language spoken in `preview_url` (BCP-47), when the provider states it. None = not stated.
+    preview_language: str | None = None
+    # Further samples in other languages (providers that publish one per language), sorted by language.
+    previews: list[VoicePreview] = Field(default_factory=list)
     use_cases: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
     meta: dict = Field(default_factory=dict)
@@ -321,6 +336,16 @@ class Voice(_Record):
     @classmethod
     def _accent(cls, v: str | None) -> str | None:
         return (v.strip().lower() or None) if v else None
+
+    @field_validator("preview_language")
+    @classmethod
+    def _preview_lang(cls, v: str | None) -> str | None:
+        return normalize_languages([v])[0] if v else None
+
+    @field_validator("previews")
+    @classmethod
+    def _previews(cls, v: list[VoicePreview]) -> list[VoicePreview]:
+        return sorted(v, key=lambda p: p.language)
 
     @field_validator("capabilities")
     @classmethod

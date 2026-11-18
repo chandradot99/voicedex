@@ -126,6 +126,8 @@ def voice_from_sync(v: SyncVoice) -> Voice:
         compatible_models=v.compatible_models,
         capabilities=v.capabilities,
         preview_url=v.preview_url,
+        preview_language=v.preview_language,
+        previews=v.previews,
         use_cases=v.use_cases,
         tags=v.tags,
         meta={k: val for k, val in (v.meta or {}).items() if val is not None},
