@@ -16,8 +16,8 @@ async def test_tools_on_fixture_catalog(client, monkeypatch):           # `clien
     assert keys(tts) == ["zz-test-provider/tts/tts-main"] and tts["results"][0]["price_usd_normalized"] == 30.0
     assert m.search_models(capability="teleport")["error"].startswith("unknown capability")
     assert m.search_models(limit=10_000)["returned"] <= m.MAX_LIMIT
-    assert m.get_model("zz-test-provider", "tts", "tts-main")["record"]["id"] == "tts-main"
-    assert "error" in m.get_model("zz-test-provider", "tts", "nope")
+    assert m.get_model("zz-test-provider/tts/tts-main")["record"]["id"] == "tts-main"
+    assert "error" in m.get_model("zz-test-provider/tts/nope-nothing-like-it")
     cmp = m.compare_models(["zz-test-provider/tts/tts-main", "nope/tts/x"])
     assert cmp["missing"][0]["query"] == "nope/tts/x" and cmp["compare_url"].endswith("m=zz-test-provider/tts/tts-main")
     assert {p["id"] for p in m.list_providers()["providers"]} == {"zz-test-provider"}
@@ -51,10 +51,15 @@ async def test_http_transport(client):
 
 
 async def test_v2_tools(client):
-    # loose names resolve; a miss suggests close matches
-    loose = m.compare_models(["ZZ Test TTS Main", "zz-test-provider stt eu", "zz tts mian"])
-    assert [x["key"] for x in loose["models"]] == ["zz-test-provider/tts/tts-main", "zz-test-provider/stt/stt-eu"]
+    # loose names always resolve to the best match and say so; nonsense gets no random suggestions
+    loose = m.compare_models(["ZZ Test TTS Main", "zz-test-provider stt", "zz test tts mian", "nonexistent foo"])
+    assert [x["key"] for x in loose["models"]] == ["zz-test-provider/tts/tts-main", "zz-test-provider/stt/stt-global"]
+    assert loose["models"][0]["matched_as"]["match"] == "exact_name"
+    stt = loose["models"][1]["matched_as"]
+    assert stt["match"] == "partial" and stt["other_candidates"] == ["zz-test-provider/stt/stt-eu"]  # default first
     assert "zz-test-provider/tts/tts-main" in loose["missing"][0]["did_you_mean"]
+    assert loose["missing"][1] == {"query": "nonexistent foo", "did_you_mean": []}
+    assert "matched_as" not in m.compare_models(["zz-test-provider/tts/tts-main"])["models"][0]
     # cost maths: $30/1M chars x 2M chars = $60; TTS by minutes uses the stated chars/min assumption
     est = m.estimate_cost(["zz-test-provider/tts/tts-main"], characters=2_000_000)
     assert est["lines"][0]["cost_usd"] == 60.0 and est["total_complete"]
@@ -78,3 +83,61 @@ async def test_v2_tools(client):
     p1 = m.search_voices(limit=1)
     p2 = m.search_voices(limit=1, offset=p1["next_offset"])
     assert p1["results"][0]["id"] != p2["results"][0]["id"] and p1["total"] == p2["total"]
+
+
+
+async def test_agent_review_fixes(tmp_path, client):
+    from datetime import date, timedelta
+
+    from tests.conftest import build_fixture_catalog
+    from voicedex.catalog.files import ProviderData, write_provider_dir
+    from voicedex.catalog.schema import Model, Provider
+    from voicedex.catalog.store import Catalog
+    from voicedex.main import app
+    build_fixture_catalog(tmp_path)
+    soon = (date.today() + timedelta(days=30)).isoformat()
+    write_provider_dir(tmp_path / "zz-stream", ProviderData(Provider(id="zz-stream", name="ZZ Stream", type="both"), models=[
+        Model(id="live-stt", name="Live STT", type="stt", languages=["en-US", "en-GB", "fr-FR"], streaming=True,
+              pricing={"unit": "minute", "price_usd": 0.004, "variants": [
+                  {"applies_to": "pre-recorded, Pay as you go", "unit": "minute", "price_usd": 0.004},
+                  {"applies_to": "streaming, monolingual, Pay as you go", "unit": "minute", "price_usd": 0.006},
+                  {"applies_to": "streaming, Growth plan", "unit": "minute", "price_usd": 0.005}]}),
+        Model(id="cheap-ending", name="Cheap Ending", type="tts", languages=["en-US"], eol_date=soon,
+              pricing={"unit": "character", "price_usd": 0.000001}),
+        Model(id="mystery", name="Mystery", type="tts", languages=[])], voices=[]))
+    app.state.catalog = Catalog.load(tmp_path)
+
+    # 1. streaming comes from the record's flag, not only from interfaces
+    live = m.get_model("zz-stream/stt/live-stt")
+    assert live["streaming"] is True and live["record"]["languages"] == ["en", "fr"]
+    assert live["record"]["regional_language_variants"] == 3
+    assert m.get_model("zz-stream/stt/live-stt", detail="full")["record"]["languages"] == ["en-US", "en-GB", "fr-FR"]
+    # 2. a voice-agent estimate (STT + TTS) uses the pay-as-you-go streaming rate; batch mode the headline
+    pipe = m.estimate_cost(["zz-stream/stt/live-stt", "zz-test-provider/tts/tts-main"], audio_minutes=100)
+    stt_line = pipe["lines"][0]
+    assert pipe["mode"] == "streaming" and stt_line["cost_usd"] == 0.6 and "Pay as you go" in stt_line["rate_used"]
+    batch = m.estimate_cost(["zz-stream/stt/live-stt", "zz-test-provider/tts/tts-main"], audio_minutes=100, mode="batch")
+    assert batch["lines"][0]["cost_usd"] == 0.4 and batch["lines"][0]["rate_used"] == "headline"
+    assert m.estimate_cost(["zz-stream/stt/live-stt"], audio_minutes=100)["mode"] == "batch"   # STT alone: headline
+    # 3. upcoming shutdowns are searchable; cheapest-first lists push them down
+    ending = m.search_models(eol_before=(date.today() + timedelta(days=90)).isoformat())
+    assert [x["key"] for x in ending["results"]] == ["zz-stream/tts/cheap-ending"]
+    assert ending["results"][0]["shutting_down_in_days"] == 30
+    assert m.search_models(shutting_down=True)["total"] == 1
+    cheapest = [x["key"] for x in m.search_models(type="tts")["results"]]
+    assert cheapest.index("zz-test-provider/tts/tts-main") < cheapest.index("zz-stream/tts/cheap-ending")  # despite $1 vs $30
+    assert m.search_models(eol_before="next week")["error"]
+    # 6. unknown languages are null, not 0
+    mystery = m.get_model("zz-stream/tts/mystery")
+    assert mystery["languages"] is None and mystery["price_note"].startswith("no per-unit price published")
+
+
+def test_resolver_version_order():
+    from voicedex.catalog.files import ProviderData
+    from voicedex.catalog.schema import Model, Provider
+    from voicedex.catalog.store import Catalog, ModelRow
+    ids = ["flash_v2", "flash_v2_5", "flash_v2_5-2026-01-12"]
+    cat = Catalog({"acme": ProviderData(Provider(id="acme", name="Acme", type="tts"), [], [])},
+                  [ModelRow("acme", Model(id=i, name=i, type="tts")) for i in ids], [])
+    r, info = m.resolve_model(cat, "acme flash")
+    assert r.model.id == "flash_v2_5" and info["other_candidates"][-1] == "acme/tts/flash_v2"

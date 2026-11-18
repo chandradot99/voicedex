@@ -784,7 +784,8 @@ def type_side(rows: list[ModelRow]) -> TypeSide:
         many_languages=any("*" in r.model.languages for r in rows),
         features={c for r in rows for c in r.model.capabilities},
         open_weights=sum(r.model.open_weights is not None for r in rows),
-        streaming=sum(any(str(i) in ("websocket", "webrtc") for i in r.model.interfaces) for r in rows),
+        streaming=sum(bool(r.model.streaming) or any(str(i) in ("websocket", "webrtc") for i in r.model.interfaces)
+                      for r in rows),
         ending=sum(r.model.eol_date is not None for r in rows),
     )
 

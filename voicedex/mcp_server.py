@@ -9,6 +9,7 @@ from __future__ import annotations
 import difflib
 import math
 import re
+from datetime import date
 from typing import Any, Literal
 
 from mcp.server.mcpserver import MCPServer
@@ -99,14 +100,27 @@ def _model_summary(cat: Catalog, r) -> dict[str, Any]:
         "price_source": p.source_url if p else None,
         "price_checked": p.as_of.isoformat() if p and p.as_of else None,
         "data_checked": m.provenance.as_of.isoformat() if m.provenance else None,
-        "languages": "many" if "*" in m.languages else len({views.base_language(lang) for lang in m.languages}),
+        "languages": _lang_count(m),
         "capabilities": sorted(m.capabilities),
-        "streaming": any(str(i) in ("websocket", "webrtc") for i in m.interfaces),
+        "streaming": _streams(m),
         "open_weights": m.open_weights is not None,
         "lifecycle": str(m.lifecycle),
         "eol_date": m.eol_date.isoformat() if m.eol_date else None,
+        "shutting_down_in_days": (m.eol_date - date.today()).days if m.eol_date else None,
         "url": _site() + views.model_url(r),
     }
+
+
+def _streams(m) -> bool:
+    """The record's own streaming flag, or a realtime interface. (interfaces alone is often empty.)"""
+    return bool(m.streaming) or any(str(i) in ("websocket", "webrtc") for i in m.interfaces)
+
+
+def _lang_count(m) -> int | str | None:
+    if "*" in m.languages:
+        return "many"
+    n = len({views.base_language(lang) for lang in m.languages})
+    return n or None                                   # None = not listed, never "supports 0 languages"
 
 
 def _norm(text: str) -> str:
@@ -114,15 +128,20 @@ def _norm(text: str) -> str:
 
 
 def resolve_model(cat: Catalog, ref: str):
-    """A model from an exact key ("deepgram/stt/nova-3-general") or a loose name ("deepgram nova-3",
-    "ElevenLabs Flash v2.5"). Returns (row, suggestions): row is None when nothing or several things match."""
+    """A model from an exact key ("deepgram/stt/nova-3-general") or a loose name ("deepgram nova-3").
+
+    Returns (row, info). Exact key: info is {}. Loose name: the best candidate is always chosen, and info says
+    so: {"query", "resolved_to", "match": "exact_name" | "partial", "other_candidates"}, so the agent can tell
+    the user what it assumed. No match: row is None and info is {"did_you_mean": [...]} (empty when nothing is
+    reasonably close: no random suggestions)."""
     r = views.find_model(cat, ref.strip())
     if r:
-        return r, []
+        return r, {}
     rows = views.active_models(cat)
     words = ref.strip().split()
     provs = {pid for pid, pd in cat.providers.items()
-             for w in (words[:1] + [" ".join(words[:2])]) if w and (_norm(w) == _norm(pid) or _norm(w) == _norm(pd.provider.name))}
+             for w in (words[:1] + [" ".join(words[:2])])
+             if w and (_norm(w) == _norm(pid) or _norm(w) == _norm(pd.provider.name))}
     rest = ref
     if provs:
         rows = [r for r in rows if r.provider_id in provs]
@@ -133,18 +152,25 @@ def resolve_model(cat: Catalog, ref: str):
                 break
     q = _norm(rest) or _norm(ref)
     exact = [r for r in rows if q in (_norm(r.model.id), _norm(r.model.name))]
-    partial = exact or [r for r in rows if q and (q in _norm(r.model.id) or q in _norm(r.model.name))]
-    if len(partial) == 1:
-        return partial[0], []
-    if partial:                                   # prefer the provider's default, then the shortest id
-        partial.sort(key=lambda r: (not r.model.is_default, r.model.eol_date is not None, len(r.model.id)))
-        if partial[0].model.is_default or len(exact) == 1:
-            return partial[0], []
-        return None, [views.model_key(r) for r in partial[:5]]
+    partial = [r for r in rows if q and r not in exact and (q in _norm(r.model.id) or q in _norm(r.model.name))]
+    featured = set(views.COMPARE_PROVIDERS)
+
+    def rank(r):        # widely used provider, provider default, not shutting down, newest version, shortest id
+        # newest first: v2_5 before v2, nova-3 before nova (the trailing 1 sorts shorter versions after longer)
+        undated = re.sub(r"\d{4}-?\d{2}-?\d{2}", "", r.model.id)      # snapshot dates aren't versions
+        version = tuple(-int(n) for n in re.findall(r"\d+", undated)) + (1,)
+        return (r.provider_id not in featured, not r.model.is_default, r.model.eol_date is not None, version,
+                len(r.model.id))
+    cands = sorted(exact, key=rank) + sorted(partial, key=rank)
+    if cands:
+        best = cands[0]
+        return best, {"query": ref, "resolved_to": views.model_key(best),
+                      "match": "exact_name" if best in exact else "partial",
+                      "other_candidates": [views.model_key(r) for r in cands[1:6]]}
     pool = {f"{cat.providers[r.provider_id].provider.name} {r.model.name}".lower(): views.model_key(r)
             for r in views.active_models(cat)}
-    close = difflib.get_close_matches(ref.lower(), list(pool), n=5, cutoff=0.4)
-    return None, [pool[c] for c in close]
+    close = difflib.get_close_matches(ref.lower(), list(pool), n=5, cutoff=0.6)
+    return None, {"did_you_mean": [pool[c] for c in close]}
 
 
 @server.tool(annotations=READ_ONLY)
@@ -158,7 +184,9 @@ def search_models(
     open_weights: bool | None = None,
     query: str | None = None,
     include_unlisted_languages: bool = False,
-    sort: Literal["price", "name"] = "price",
+    shutting_down: bool | None = None,
+    eol_before: str | None = None,
+    sort: Literal["price", "name", "eol_date"] = "price",
     limit: int = 20,
     offset: int = 0,
 ) -> dict[str, Any]:
@@ -168,7 +196,9 @@ def search_models(
     include_unlisted_languages=true also adds models that claim "many languages" without listing them. capability: one feature term, e.g. "speaker_diarization",
     "voice_cloning", "word_timestamps", "ssml". max_price_usd: upper bound on the normalized price (TTS per 1M
     characters, STT/STS per hour); models without a comparable USD price are excluded when it is set.
-    sort="price" puts the cheapest first and unpriced models last.
+    sort="price" puts the cheapest first, models with an announced shutdown after the rest, unpriced last.
+    Shutdowns: shutting_down=true returns only models with an announced end date; eol_before="YYYY-MM-DD" only
+    those ending before it (e.g. "which models shut down in the next 90 days?"); sort="eol_date" orders by it.
     """
     cat = _cat()
     if capability and capability not in MODEL_CAPABILITIES:
@@ -191,43 +221,73 @@ def search_models(
         q = query.lower()
         rows = [r for r in rows if q in r.model.id.lower() or q in r.model.name.lower() or q in r.provider_id]
 
+    if shutting_down is not None:
+        rows = [r for r in rows if (r.model.eol_date is not None) == shutting_down]
+    if eol_before:
+        try:
+            cutoff = date.fromisoformat(eol_before)
+        except ValueError:
+            return {"error": "eol_before must be YYYY-MM-DD"}
+        rows = [r for r in rows if r.model.eol_date and r.model.eol_date < cutoff]
+
     def price(r) -> float:
         n = views.normalized_price(r.model)
         return n[0] if n else float("inf")
     if max_price_usd is not None:
         rows = [r for r in rows if price(r) <= max_price_usd]
-    rows.sort(key=(lambda r: (price(r), r.provider_id, r.model.id)) if sort == "price"
-              else (lambda r: (r.model.name.lower(), r.provider_id)))
+    if sort == "price":
+        rows.sort(key=lambda r: (r.model.eol_date is not None, price(r), r.provider_id, r.model.id))
+    elif sort == "eol_date":
+        rows.sort(key=lambda r: (r.model.eol_date or date.max, r.provider_id, r.model.id))
+    else:
+        rows.sort(key=lambda r: (r.model.name.lower(), r.provider_id))
     chunk, meta = _page(rows, limit, offset)
     return {**meta, "results": [_model_summary(cat, r) for r in chunk]}
 
 
+def _compact_record(m) -> dict[str, Any]:
+    rec = m.model_dump(mode="json", exclude_none=True)
+    if m.languages and "*" not in m.languages:
+        bases = sorted({views.base_language(lang) for lang in m.languages})
+        rec["languages"] = bases                          # base codes only; detail="full" has every regional code
+        rec["regional_language_variants"] = sum(1 for lang in m.languages if "-" in lang)
+    prov = rec.get("provenance") or {}
+    if len(prov.get("urls", [])) > 3:
+        prov["urls"] = prov["urls"][:3] + [f"+{len(prov['urls']) - 3} more"]
+    return rec
+
+
 @server.tool(annotations=READ_ONLY)
-def get_model(provider: str, type: ModelType, model_id: str) -> dict[str, Any]:
-    """Full record for one model: pricing (with variants and source URL), languages, capabilities, regions,
-    interfaces, audio formats, limits, lifecycle and shutdown date, open-weights licence, provenance."""
+def get_model(model: str, detail: Literal["compact", "full"] = "compact") -> dict[str, Any]:
+    """One model's record: pricing with all variants (e.g. streaming vs pre-recorded) and source, languages,
+    capabilities with notes (e.g. "pre-recorded only, English only"), regions, interfaces, audio formats,
+    limits, lifecycle, shutdown date and replacement, open-weights licence, provenance. model: key or loose name.
+    detail="compact" (default) groups regional language codes and trims source URLs; "full" returns everything."""
     cat = _cat()
-    r = views.find_model(cat, f"{provider}/{type}/{model_id}")
+    r, info = resolve_model(cat, model)
     if not r:
-        return {"error": "model not found", "hint": "use search_models to find valid provider/type/model_id"}
+        return {"error": "model not found", **info}
     out = _model_summary(cat, r)
-    out["record"] = r.model.model_dump(mode="json", exclude_none=True)
+    out["record"] = _compact_record(r.model) if detail == "compact" else r.model.model_dump(mode="json", exclude_none=True)
+    if info:
+        out["matched_as"] = info
     return out
 
 
 @server.tool(annotations=READ_ONLY)
 def compare_models(models: list[str]) -> dict[str, Any]:
     """Compare up to 6 models side by side. Each item can be an exact key "provider/type/model_id" (from
-    search_models) or a loose name like "deepgram nova-3" or "Cartesia Sonic 3"; unmatched items come back
-    with "did you mean" suggestions."""
+    search_models) or a loose name like "deepgram nova-3" or "Cartesia Sonic 3". A loose name resolves to the
+    best match and says so in matched_as (with other_candidates): tell the user what was assumed. Unmatched
+    items come back with "did you mean" suggestions when something is close."""
     cat = _cat()
     found, missing = [], []
     for ref in models[:6]:
-        r, suggestions = resolve_model(cat, ref)
+        r, info = resolve_model(cat, ref)
         if r:
-            found.append(_model_summary(cat, r))
+            found.append({**_model_summary(cat, r), **({"matched_as": info} if info else {})})
         else:
-            missing.append({"query": ref, "did_you_mean": suggestions})
+            missing.append({"query": ref, **info})
     url = _site() + "/compare?" + "&".join(f"m={m['key']}" for m in found) if found else None
     return {"models": found, "missing": missing, "compare_url": url}
 
@@ -239,6 +299,7 @@ def estimate_cost(
     audio_minutes: float | None = None,
     tts_chars_per_minute: int = 900,
     tts_share: float = 1.0,
+    mode: Literal["auto", "streaming", "batch"] = "auto",
 ) -> dict[str, Any]:
     """Cost in USD for a workload, computed here so no unit conversion is left to the model.
 
@@ -247,19 +308,36 @@ def estimate_cost(
     default 900 chars ≈ 150 words/min). Passing an STT and a TTS model with audio_minutes gives a voice-agent
     pipeline estimate: STT transcribes all audio_minutes, TTS speaks tts_share of them (e.g. 0.5 if the agent
     talks half the time); "total_usd" sums the models (LLM and telephony not included). Uses each model's headline
-    pay-as-you-go price; volume discounts, free tiers and plan prices (see get_model) are not applied.
+    pay-as-you-go price unless a separate streaming rate applies: mode="streaming" (the default "auto" picks it
+    whenever an STT/STS model is costed together with a TTS model, i.e. a live voice agent) uses the
+    provider's published pay-as-you-go streaming rate where there is one; mode="batch" uses the headline
+    (often pre-recorded) rate. Each line's rate_used says which. Volume discounts, free tiers and plan
+    prices are not applied.
     """
     cat = _cat()
     if characters is None and audio_minutes is None:
         return {"error": "pass characters and/or audio_minutes"}
     lines, missing, total, complete = [], [], 0.0, True
+    resolved = []
     for ref in models[:6]:
-        r, suggestions = resolve_model(cat, ref)
-        if not r:
-            missing.append({"query": ref, "did_you_mean": suggestions})
-            continue
-        m, norm = r.model, views.normalized_price(r.model)
-        line = {"key": views.model_key(r), "name": m.name, "type": str(m.type), "price": views.price_label(m)}
+        r, info = resolve_model(cat, ref)
+        if r:
+            resolved.append((r, info))
+        else:
+            missing.append({"query": ref, **info})
+    pipeline = any(r.model.type == "tts" for r, _ in resolved) and any(r.model.type != "tts" for r, _ in resolved)
+    want_streaming = mode == "streaming" or (mode == "auto" and pipeline)
+    for r, info in resolved:
+        m = r.model
+        norm, rate = views.normalized_price(m), "headline"
+        if want_streaming and m.type != "tts":
+            sv = _streaming_rate(m)
+            if sv:
+                norm, rate = sv
+            else:
+                rate = "headline (no separate streaming price published)"
+        line = {"key": views.model_key(r), "name": m.name, "type": str(m.type), "price": views.price_label(m),
+                "rate_used": rate, **({"matched_as": info} if info else {})}
         if m.type == "tts":
             share = max(0.0, min(float(tts_share), 1.0))
             chars = characters if characters is not None else int(audio_minutes * share * tts_chars_per_minute)
@@ -284,7 +362,24 @@ def estimate_cost(
         line["price_source"] = m.pricing.source_url if m.pricing else None
         lines.append(line)
     return {"lines": lines, "total_usd": round(total, 4) if lines else None, "total_complete": complete and bool(lines),
-            "missing": missing}
+            "mode": "streaming" if want_streaming else "batch", "missing": missing}
+
+
+_PER_HOUR = {"hour": 1, "minute": 60, "second": 3600}
+
+
+def _streaming_rate(m) -> tuple[tuple[float, str], str] | None:
+    """The provider's pay-as-you-go streaming price variant, normalized per hour, if one is published."""
+    if not m.pricing:
+        return None
+    vs = [v for v in m.pricing.variants if "stream" in (v.applies_to or "").lower()
+          and v.price_usd is not None and (v.unit or m.pricing.unit) in _PER_HOUR]
+    if not vs:
+        return None
+    payg = [v for v in vs if "pay as you go" in v.applies_to.lower() or "pay-as-you-go" in v.applies_to.lower()]
+    mono = [v for v in (payg or vs) if "multilingual" not in v.applies_to.lower()]
+    v = (mono or payg or vs)[0]
+    return (v.price_usd * _PER_HOUR[v.unit or m.pricing.unit], "per hour"), f"streaming: {v.applies_to}"
 
 
 @server.tool(annotations=READ_ONLY)
@@ -293,9 +388,9 @@ def find_alternatives(model: str, limit: int = 10) -> dict[str, Any]:
     many of its explicitly listed languages they cover, then shared features, then how close the price is. The
     provider's own announced successor, if any, comes first. model: key or loose name."""
     cat = _cat()
-    r, suggestions = resolve_model(cat, model)
+    r, info = resolve_model(cat, model)
     if not r:
-        return {"error": "model not found", "did_you_mean": suggestions}
+        return {"error": "model not found", **info}
     m = r.model
     langs = {views.base_language(x) for x in m.languages if x != "*"}
     caps, norm = set(m.capabilities), views.normalized_price(m)
@@ -316,6 +411,7 @@ def find_alternatives(model: str, limit: int = 10) -> dict[str, Any]:
     chunk = cands[:_limit(limit)]
     return {
         "model": _model_summary(cat, r),
+        **({"matched_as": info} if info else {}),
         "announced_replacement": successor,
         "alternatives": [{**_model_summary(cat, c),
                           "announced_replacement": a,
