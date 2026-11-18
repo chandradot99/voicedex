@@ -1,5 +1,629 @@
 [
   {
+    "description": "Voice Live API billing tier applied when the session uses one of its generative models; combines Azure speech recognition, the chosen LLM or native-audio realtime model, and Azure text to speech over WebSocket.",
+    "first_seen": "2026-11-18",
+    "id": "voice-live-lite",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api_compat": "Azure OpenAI Realtime API events",
+      "features": [
+        "noise_suppression",
+        "echo_cancellation",
+        "end_of_turn_detection",
+        "avatar",
+        "function_calling"
+      ],
+      "locales_stt": "140+",
+      "models": [
+        "gpt-4.1-nano",
+        "gpt-6-luna",
+        "gpt-5-nano",
+        "phi4-mm-realtime"
+      ],
+      "tier": "Voice Live Lite",
+      "voices_tts": "600+ across 150+ locales"
+    },
+    "name": "Voice Live Lite",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Base = audio input via Azure Speech (standard), $15 per 1M tokens; per-1M-token rates converted to per-token. Amounts from the Azure Retail Prices API (eastus 'Voice Live API' meters, published per 1K tokens) because the pricing page renders them client-side; same categories as azure.microsoft.com/pricing/details/speech/. The tier is determined by the selected model.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "azure_speech_standard_audio_output",
+          "price_usd": 2.5e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "native_audio_input",
+          "price_usd": 4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "native_audio_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 1.1e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 4.4e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 4e-08,
+          "unit": "token"
+        },
+        {
+          "applies_to": "azure_speech_custom_audio_input",
+          "price_usd": 3.8e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "azure_speech_custom_audio_output",
+          "price_usd": 5e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
+        "https://azure.microsoft.com/en-us/pricing/details/speech/",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Voice Live API billing tier applied when the session uses one of its generative models; combines Azure speech recognition, the chosen LLM or native-audio realtime model, and Azure text to speech over WebSocket.",
+    "first_seen": "2026-11-18",
+    "id": "voice-live-pro",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api_compat": "Azure OpenAI Realtime API events",
+      "features": [
+        "noise_suppression",
+        "echo_cancellation",
+        "end_of_turn_detection",
+        "avatar",
+        "function_calling"
+      ],
+      "locales_stt": "140+",
+      "models": [
+        "gpt-realtime-2.1",
+        "gpt-realtime-2.1-datazone",
+        "gpt-realtime-2.1-regional",
+        "gpt-realtime",
+        "gpt-realtime-datazone",
+        "gpt-realtime-regional",
+        "gpt-realtime-1.5",
+        "gpt-realtime-1.5-datazone",
+        "gpt-4o",
+        "gpt-4.1",
+        "gpt-6.1-sol",
+        "gpt-5",
+        "gpt-5-chat",
+        "gpt-5.6-terra",
+        "gpt-5.4",
+        "gpt-5.2",
+        "gpt-5.1",
+        "azure-realtime"
+      ],
+      "tier": "Voice Live Pro",
+      "voices_tts": "600+ across 150+ locales"
+    },
+    "name": "Voice Live Pro",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Base = audio input via Azure Speech (standard), $17 per 1M tokens; per-1M-token rates converted to per-token. Amounts from the Azure Retail Prices API (eastus 'Voice Live API' meters, published per 1K tokens) because the pricing page renders them client-side; same categories as azure.microsoft.com/pricing/details/speech/. The tier is determined by the selected model.",
+      "price_usd": 1.7e-05,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "azure_speech_standard_audio_output",
+          "price_usd": 3.1e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "native_audio_input",
+          "price_usd": 3.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "native_audio_output",
+          "price_usd": 6.4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 4e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 1.6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 4e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "azure_speech_custom_audio_input",
+          "price_usd": 4e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "azure_speech_custom_audio_output",
+          "price_usd": 5.5e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output_2 (gpt-realtime-2, gpt-realtime-2.1)",
+          "price_usd": 2.4e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
+        "https://azure.microsoft.com/en-us/pricing/details/speech/",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Voice Live API billing tier applied when the session uses one of its generative models; combines Azure speech recognition, the chosen LLM or native-audio realtime model, and Azure text to speech over WebSocket.",
+    "first_seen": "2026-11-18",
+    "id": "voice-live-standard",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api_compat": "Azure OpenAI Realtime API events",
+      "features": [
+        "noise_suppression",
+        "echo_cancellation",
+        "end_of_turn_detection",
+        "avatar",
+        "function_calling"
+      ],
+      "locales_stt": "140+",
+      "models": [
+        "gpt-realtime-2.1-mini",
+        "gpt-realtime-mini",
+        "gpt-4o-mini",
+        "gpt-4.1-mini",
+        "gpt-5.6-luna",
+        "gpt-5-mini"
+      ],
+      "tier": "Voice Live Standard",
+      "voices_tts": "600+ across 150+ locales"
+    },
+    "name": "Voice Live Standard",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Base = audio input via Azure Speech (standard), $15 per 1M tokens; per-1M-token rates converted to per-token. Amounts from the Azure Retail Prices API (eastus 'Voice Live API' meters, published per 1K tokens) because the pricing page renders them client-side; same categories as azure.microsoft.com/pricing/details/speech/. The tier is determined by the selected model.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "azure_speech_standard_audio_output",
+          "price_usd": 2.6e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "native_audio_input",
+          "price_usd": 1.1e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "native_audio_output",
+          "price_usd": 2.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 6.6e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.64e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_cached_input",
+          "price_usd": 3.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "azure_speech_custom_audio_input",
+          "price_usd": 3.9e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "azure_speech_custom_audio_output",
+          "price_usd": 5e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
+        "https://azure.microsoft.com/en-us/pricing/details/speech/",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "wav"
+    ],
+    "batch": true,
+    "description": "Previous-generation Microsoft AI transcription model available through the Fast Transcription API's enhanced mode.",
+    "first_seen": "2026-11-18",
+    "id": "MAI-Transcribe-1.5",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "as",
+      "bg",
+      "bn",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fi",
+      "fr",
+      "gu",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "ko",
+      "lt",
+      "ml",
+      "mr",
+      "nb",
+      "nl",
+      "or",
+      "pa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "zh"
+    ],
+    "meta": {
+      "api": "POST /speechtotext/transcriptions:transcribe (enhancedMode.model)",
+      "pricing_note": "Listed on the Azure Speech pricing page as a per-hour line; amount not rendered in static page and no retail meter found."
+    },
+    "name": "MAI-Transcribe-1.5",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
+        "https://azure.microsoft.com/en-us/pricing/details/speech/",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Microsoft AI's in-house transcription model (60 languages) called through the Fast Transcription API's enhanced mode, with diarization, word timestamps, keyword biasing and automatic language identification.",
+    "first_seen": "2026-11-18",
+    "id": "MAI-Transcribe-2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "as",
+      "az",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fil",
+      "fr",
+      "gl",
+      "gu",
+      "he",
+      "hi",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "kk",
+      "kn",
+      "ko",
+      "lt",
+      "lv",
+      "mk",
+      "ml",
+      "mr",
+      "ms",
+      "nb",
+      "ne",
+      "nl",
+      "or",
+      "pa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "api": "POST /speechtotext/transcriptions:transcribe (enhancedMode.model)",
+      "azure_regions": [
+        "centralindia",
+        "eastus",
+        "northeurope",
+        "southeastasia",
+        "westeurope",
+        "westus",
+        "westus2"
+      ],
+      "code_switching": true,
+      "transcribe_styles": [
+        "verbatim",
+        "clean"
+      ],
+      "voice_live_id": "mai-transcribe-2",
+      "voice_live_status": "preview"
+    },
+    "name": "MAI-Transcribe-2",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.10 per hour of audio, limited-time promotional price (Azure pricing page footnote: 'Limited-time promotional offer till 12/31/2026'). The Azure retail price meter 'MAI-Transcribe-2 AzSp Audio' lists $0.54/hour.",
+      "price_usd": 0.1,
+      "source_url": "https://microsoft.ai/models/mai-transcribe-2/",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
+        "https://azure.microsoft.com/en-us/pricing/details/speech/",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "language_detection"
+    ],
+    "description": "Low-latency real-time variant of MAI-Transcribe-2 returning intermediate and final transcripts over an OpenAI Realtime-compatible WebSocket API or the Azure Speech SDK.",
+    "family": "MAI-Transcribe-2",
+    "first_seen": "2026-11-18",
+    "id": "MAI-Transcribe-2-Streaming",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "as",
+      "az",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fil",
+      "fr",
+      "gl",
+      "gu",
+      "he",
+      "hi",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "kk",
+      "kn",
+      "ko",
+      "lt",
+      "lv",
+      "mk",
+      "ml",
+      "mr",
+      "ms",
+      "nb",
+      "ne",
+      "nl",
+      "or",
+      "pa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "azure_regions": [
+        "swedencentral",
+        "centralus",
+        "eastus2",
+        "southeastasia"
+      ],
+      "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe-2-streaming",
+      "status_note": "Public preview, no SLA",
+      "voice_live_id": "mai-transcribe-2-streaming"
+    },
+    "name": "MAI-Transcribe-2-Streaming",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.54 per hour of audio, limited-time (preview) price per Microsoft AI; matches the Azure retail price meter for MAI-Transcribe-2.",
+      "price_usd": 0.54,
+      "source_url": "https://microsoft.ai/models/mai-transcribe-2/",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
+        "https://azure.microsoft.com/en-us/pricing/details/speech/",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
     "batch": true,
     "capabilities": [
       "custom_vocabulary",
