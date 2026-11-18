@@ -1,0 +1,23 @@
+{
+  "access": "self_serve",
+  "description": "Cohere is an enterprise AI company headquartered in Toronto, Canada (founded 2019). Its speech product is Cohere Transcribe, a family of open-weights (Apache-2.0) speech-recognition models served through the v2 Audio Transcriptions API: free with trial rate limits, with production use on dedicated Model Vault capacity priced through sales.",
+  "docs_urls": [
+    "https://docs.cohere.com/docs/transcribe",
+    "https://docs.cohere.com/docs/transcribe-arabic",
+    "https://docs.cohere.com/reference/create-audio-transcription",
+    "https://docs.cohere.com/docs/rate-limits"
+  ],
+  "headquarters": "CA",
+  "id": "cohere",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.cohere.com/reference/create-audio-transcription",
+    "docs": "https://docs.cohere.com/docs/transcribe",
+    "pricing": "https://cohere.com/pricing",
+    "status": "https://status.cohere.com"
+  },
+  "name": "Cohere",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://cohere.com"
+}

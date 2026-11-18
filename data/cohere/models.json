@@ -1,0 +1,110 @@
+[
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "description": "2B-parameter open-weights ASR model for 14 languages, released as an open source research release.",
+    "first_seen": "2026-11-18",
+    "id": "cohere-transcribe-03-2026",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "de",
+      "fr",
+      "it",
+      "es",
+      "pt",
+      "el",
+      "nl",
+      "pl",
+      "vi",
+      "zh",
+      "ar",
+      "ja",
+      "ko"
+    ],
+    "meta": {
+      "diarization": "not supported",
+      "endpoint": "POST https://api.cohere.com/v2/audio/transcriptions",
+      "file_extensions": "flac, mp3, mpeg, mpga, ogg, wav",
+      "language_param": "required, ISO-639-1; no automatic language detection",
+      "max_file_size_mb": 25,
+      "production": "Dedicated Model Vault priced per hour-instance (contact sales); no per-unit price published",
+      "timestamps": "not supported",
+      "trial_rate_limit": "5 requests/min on trial keys"
+    },
+    "name": "Cohere Transcribe",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cohere.com/docs/transcribe",
+        "https://docs.cohere.com/docs/transcribe-arabic",
+        "https://docs.cohere.com/reference/create-audio-transcription",
+        "https://docs.cohere.com/docs/rate-limits"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "description": "Arabic ASR model with multi-dialect support and Arabic-English code-switching.",
+    "first_seen": "2026-11-18",
+    "id": "cohere-transcribe-arabic-07-2026",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "meta": {
+      "dialects": "multidialectal; supports code-switching",
+      "diarization": "not supported",
+      "endpoint": "POST https://api.cohere.com/v2/audio/transcriptions",
+      "max_file_size_mb": 25,
+      "production": "Dedicated Model Vault priced per hour-instance (contact sales); no per-unit price published",
+      "timestamps": "not supported",
+      "trial_rate_limit": "5 requests/min on trial keys"
+    },
+    "name": "Cohere Transcribe Arabic",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cohere.com/docs/transcribe",
+        "https://docs.cohere.com/docs/transcribe-arabic",
+        "https://docs.cohere.com/reference/create-audio-transcription",
+        "https://docs.cohere.com/docs/rate-limits"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
