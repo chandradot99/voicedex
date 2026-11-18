@@ -1,0 +1,22 @@
+{
+  "access": "self_serve",
+  "description": "Lelapa AI is a Johannesburg, South Africa based AI lab whose Vulavula API offers speech-to-text and translation for African languages. Transcription covers isiZulu, South African English, Sesotho, Afrikaans and African French, with a realtime WebSocket API in early beta for enterprise customers and a self-hosted deployment option.",
+  "docs_urls": [
+    "https://docs.lelapa.ai/transcribe/sync.md",
+    "https://docs.lelapa.ai/live/realtime.md",
+    "https://docs.lelapa.ai/overview/language-support.md",
+    "https://docs.lelapa.ai/overview/plans.md"
+  ],
+  "headquarters": "ZA",
+  "id": "lelapa",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.lelapa.ai/api",
+    "docs": "https://docs.lelapa.ai",
+    "pricing": "https://docs.lelapa.ai/overview/plans"
+  },
+  "name": "Lelapa AI",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://lelapa.ai"
+}

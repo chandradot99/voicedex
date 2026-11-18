@@ -1,0 +1,119 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "capabilities": [
+      "translation"
+    ],
+    "description": "Realtime WebSocket transcription with optional live translation, modelled on the OpenAI Realtime API; early beta for Enterprise customers.",
+    "first_seen": "2026-11-18",
+    "id": "vulavula-live",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zu",
+      "en-ZA"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "access": "Early beta, Enterprise only",
+      "endpoint": "wss://api.lelapa.ai/v1/realtime",
+      "model_field_note": "audio.input.transcription.model is accepted for compatibility but ignored (one fixed ASR model)",
+      "pcm_rates_hz": "24000 (default) or 16000; pcmu/pcma at 8000",
+      "plans": {
+        "as_of": "2026-11-18",
+        "dev_pass": "$9.99 per month for 1,000 API calls",
+        "enterprise": "500,000+ calls, contact sales",
+        "free": "100 API calls per month",
+        "note": "Monthly call bundles shared by Transcribe and Translate; only successful calls are billed. No per-call or per-minute price is published.",
+        "smme_pass": "$49 per month for 10,000 API calls",
+        "source_url": "https://docs.lelapa.ai/overview/plans"
+      },
+      "translation_targets": "zu, en"
+    },
+    "name": "Vulavula Live",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.lelapa.ai/transcribe/sync.md",
+        "https://docs.lelapa.ai/live/realtime.md",
+        "https://docs.lelapa.ai/overview/language-support.md",
+        "https://docs.lelapa.ai/overview/plans.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav"
+    ],
+    "capabilities": [
+      "language_detection",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Synchronous transcription for isiZulu (code-switched), South African English, Sesotho, Afrikaans and African French, with optional diarisation and music detection.",
+    "first_seen": "2026-11-18",
+    "id": "vulavula-transcribe",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "zu",
+      "en-ZA",
+      "st",
+      "af",
+      "fr"
+    ],
+    "meta": {
+      "detect_music": true,
+      "endpoint": "POST https://api.lelapa.ai/v1/transcribe/sync",
+      "language_codes": "zul (code-switched isiZulu), eng (South African English), sot, afr, fra",
+      "language_status": "zul, eng production; sot, afr, fra beta",
+      "no_model_parameter": true,
+      "plans": {
+        "as_of": "2026-11-18",
+        "dev_pass": "$9.99 per month for 1,000 API calls",
+        "enterprise": "500,000+ calls, contact sales",
+        "free": "100 API calls per month",
+        "note": "Monthly call bundles shared by Transcribe and Translate; only successful calls are billed. No per-call or per-minute price is published.",
+        "smme_pass": "$49 per month for 10,000 API calls",
+        "source_url": "https://docs.lelapa.ai/overview/plans"
+      },
+      "processing_time_note": "May take up to 2m30s on long or complex audio",
+      "raw_formats": "WAV, MP3, FLAC, AAC, OGG, MP4, AIFF, OPUS",
+      "word_level_note": "Word timings, per-word speaker ids and confidence are not returned for Sesotho"
+    },
+    "name": "Vulavula Transcribe",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.lelapa.ai/transcribe/sync.md",
+        "https://docs.lelapa.ai/live/realtime.md",
+        "https://docs.lelapa.ai/overview/language-support.md",
+        "https://docs.lelapa.ai/overview/plans.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
