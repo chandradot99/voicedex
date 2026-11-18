@@ -1,0 +1,29 @@
+{
+  "access": "self_serve",
+  "description": "Sunbird AI is a Uganda-based non-profit building open-source language technology for African languages. Its API offers speech-to-text for 51 African languages, Orpheus-based text-to-speech in 17 languages with published speaker ids, translation and the Sunflower LLM; the ASR weights are published on Hugging Face.",
+  "docs_urls": [
+    "https://docs.sunbird.ai/guides/speech-to-text.md",
+    "https://docs.sunbird.ai/languages.md",
+    "https://docs.sunbird.ai/guides/text-to-speech.md"
+  ],
+  "headquarters": "UG",
+  "id": "sunbird",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.sunbird.ai/api-reference/introduction",
+    "docs": "https://docs.sunbird.ai"
+  },
+  "name": "Sunbird AI",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.sunbird.ai/guides/speech-to-text.md",
+      "https://docs.sunbird.ai/languages.md",
+      "https://docs.sunbird.ai/guides/text-to-speech.md"
+    ]
+  },
+  "website": "https://sunbird.ai"
+}

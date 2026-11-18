@@ -1,0 +1,818 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "bateesa_kin_0001",
+    "languages": [
+      "rw"
+    ],
+    "meta": {
+      "language_code": "kin",
+      "source_corpus": "bateesa"
+    },
+    "name": "bateesa_kin_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "salt_ach_0001",
+    "languages": [
+      "ach"
+    ],
+    "meta": {
+      "language_code": "ach",
+      "source_corpus": "salt"
+    },
+    "name": "salt_ach_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "salt_eng_0001",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_code": "eng",
+      "source_corpus": "salt"
+    },
+    "name": "salt_eng_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "salt_eng_0002",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_code": "eng",
+      "source_corpus": "salt"
+    },
+    "name": "salt_eng_0002",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "salt_eng_0003",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "language_code": "eng",
+      "source_corpus": "salt"
+    },
+    "name": "salt_eng_0003",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "salt_lug_0001",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "salt"
+    },
+    "name": "salt_lug_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "salt_nyn_0001",
+    "languages": [
+      "nyn"
+    ],
+    "meta": {
+      "language_code": "nyn",
+      "source_corpus": "salt"
+    },
+    "name": "salt_nyn_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "salt_teo_0001",
+    "languages": [
+      "teo"
+    ],
+    "meta": {
+      "language_code": "teo",
+      "source_corpus": "salt"
+    },
+    "name": "salt_teo_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "slr129_ewe_0001",
+    "languages": [
+      "ee"
+    ],
+    "meta": {
+      "language_code": "ewe",
+      "source_corpus": "slr129"
+    },
+    "name": "slr129_ewe_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "slr129_lin_0001",
+    "languages": [
+      "ln"
+    ],
+    "meta": {
+      "language_code": "lin",
+      "source_corpus": "slr129"
+    },
+    "name": "slr129_lin_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "slr32_afr_0009",
+    "languages": [
+      "af"
+    ],
+    "meta": {
+      "language_code": "afr",
+      "source_corpus": "slr32"
+    },
+    "name": "slr32_afr_0009",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "slr32_xho_0012",
+    "languages": [
+      "xh"
+    ],
+    "meta": {
+      "language_code": "xho",
+      "source_corpus": "slr32"
+    },
+    "name": "slr32_xho_0012",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ach_0001",
+    "languages": [
+      "ach"
+    ],
+    "meta": {
+      "language_code": "ach",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ach_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ach_0005",
+    "languages": [
+      "ach"
+    ],
+    "meta": {
+      "language_code": "ach",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ach_0005",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ach_0006",
+    "languages": [
+      "ach"
+    ],
+    "meta": {
+      "language_code": "ach",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ach_0006",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ach_0008",
+    "languages": [
+      "ach"
+    ],
+    "meta": {
+      "language_code": "ach",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ach_0008",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ful_0003",
+    "languages": [
+      "ff"
+    ],
+    "meta": {
+      "language_code": "ful",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ful_0003",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ful_0004",
+    "languages": [
+      "ff"
+    ],
+    "meta": {
+      "language_code": "ful",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ful_0004",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ful_0006",
+    "languages": [
+      "ff"
+    ],
+    "meta": {
+      "language_code": "ful",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ful_0006",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_hau_0004",
+    "languages": [
+      "ha"
+    ],
+    "meta": {
+      "language_code": "hau",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_hau_0004",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_hau_0006",
+    "languages": [
+      "ha"
+    ],
+    "meta": {
+      "language_code": "hau",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_hau_0006",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_hau_0007",
+    "languages": [
+      "ha"
+    ],
+    "meta": {
+      "language_code": "hau",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_hau_0007",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_hau_0008",
+    "languages": [
+      "ha"
+    ],
+    "meta": {
+      "language_code": "hau",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_hau_0008",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ibo_0003",
+    "languages": [
+      "ig"
+    ],
+    "meta": {
+      "language_code": "ibo",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ibo_0003",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ibo_0005",
+    "languages": [
+      "ig"
+    ],
+    "meta": {
+      "language_code": "ibo",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ibo_0005",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_ibo_0008",
+    "languages": [
+      "ig"
+    ],
+    "meta": {
+      "language_code": "ibo",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_ibo_0008",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_kik_0003",
+    "languages": [
+      "ki"
+    ],
+    "meta": {
+      "language_code": "kik",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_kik_0003",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_kik_0004",
+    "languages": [
+      "ki"
+    ],
+    "meta": {
+      "language_code": "kik",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_kik_0004",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_lug_0002",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_lug_0002",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_lug_0003",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_lug_0003",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_lug_0004",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_lug_0004",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_lug_0005",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_lug_0005",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_lug_0006",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_lug_0006",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_lug_0007",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_lug_0007",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_lug_0008",
+    "languages": [
+      "lg"
+    ],
+    "meta": {
+      "language_code": "lug",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_lug_0008",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_luo_0001",
+    "languages": [
+      "luo"
+    ],
+    "meta": {
+      "language_code": "luo",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_luo_0001",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_luo_0002",
+    "languages": [
+      "luo"
+    ],
+    "meta": {
+      "language_code": "luo",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_luo_0002",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_luo_0003",
+    "languages": [
+      "luo"
+    ],
+    "meta": {
+      "language_code": "luo",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_luo_0003",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_luo_0004",
+    "languages": [
+      "luo"
+    ],
+    "meta": {
+      "language_code": "luo",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_luo_0004",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_nyn_0003",
+    "languages": [
+      "nyn"
+    ],
+    "meta": {
+      "language_code": "nyn",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_nyn_0003",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_nyn_0004",
+    "languages": [
+      "nyn"
+    ],
+    "meta": {
+      "language_code": "nyn",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_nyn_0004",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_nyn_0007",
+    "languages": [
+      "nyn"
+    ],
+    "meta": {
+      "language_code": "nyn",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_nyn_0007",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_nyn_0008",
+    "languages": [
+      "nyn"
+    ],
+    "meta": {
+      "language_code": "nyn",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_nyn_0008",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_swa_0006",
+    "languages": [
+      "sw"
+    ],
+    "meta": {
+      "language_code": "swa",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_swa_0006",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_swa_0007",
+    "languages": [
+      "sw"
+    ],
+    "meta": {
+      "language_code": "swa",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_swa_0007",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_yor_0002",
+    "languages": [
+      "yo"
+    ],
+    "meta": {
+      "language_code": "yor",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_yor_0002",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_yor_0006",
+    "languages": [
+      "yo"
+    ],
+    "meta": {
+      "language_code": "yor",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_yor_0006",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "waxal_yor_0008",
+    "languages": [
+      "yo"
+    ],
+    "meta": {
+      "language_code": "yor",
+      "source_corpus": "waxal"
+    },
+    "name": "waxal_yor_0008",
+    "updated_at": "2026-11-18"
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "description": "Faster-whisper ASR model fine-tuned from Whisper large-v3 for 51 African languages, served by the unified transcription endpoint.",
+    "first_seen": "2026-11-18",
+    "id": "Sunbird/faster-whisper-51-african-languages",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ach",
+      "af",
+      "ak",
+      "am",
+      "bm",
+      "bem",
+      "ber",
+      "cgg",
+      "dag",
+      "dga",
+      "en",
+      "ee",
+      "fr",
+      "ff",
+      "ha",
+      "ig",
+      "kab",
+      "kr",
+      "ki",
+      "rw",
+      "kln",
+      "koo",
+      "kpo",
+      "led",
+      "lgg",
+      "ln",
+      "lth",
+      "lg",
+      "luo",
+      "luy",
+      "mg",
+      "myx",
+      "nr",
+      "ny",
+      "nyn",
+      "om",
+      "pcm",
+      "ruc",
+      "rwm",
+      "sn",
+      "so",
+      "st",
+      "sw",
+      "teo",
+      "tn",
+      "ttj",
+      "wo",
+      "xh",
+      "xog",
+      "yo",
+      "zu"
+    ],
+    "meta": {
+      "audio_language_detection": "separate endpoint (Audio Language Detection)",
+      "base_model": "openai/whisper-large-v3",
+      "duration_note": "For files larger than 100MB only the first 10 minutes are transcribed",
+      "endpoint": "POST /tasks/audio/transcriptions",
+      "language_required": "ISO 639-3 code required; automatic language detection is unreliable",
+      "no_model_parameter": true,
+      "timestamps": "per-segment start/end with timestamps=true"
+    },
+    "name": "Sunbird ASR (Whisper large-v3, 51 African languages)",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/Sunbird/faster-whisper-51-african-languages"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sunbird.ai/guides/speech-to-text.md",
+        "https://docs.sunbird.ai/languages.md",
+        "https://docs.sunbird.ai/guides/text-to-speech.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "description": "Multilingual, multi-speaker Orpheus-3B text-to-speech for African languages.",
+    "first_seen": "2026-11-18",
+    "id": "sunbird-orpheus-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ach",
+      "af",
+      "en",
+      "ee",
+      "ff",
+      "ha",
+      "ig",
+      "ki",
+      "rw",
+      "ln",
+      "lg",
+      "luo",
+      "nyn",
+      "sw",
+      "teo",
+      "xh",
+      "yo"
+    ],
+    "meta": {
+      "architecture": "Orpheus-3B (RunPod deployment)",
+      "batch_endpoint": "POST /tasks/audio/speech/batch",
+      "default_voice": "Chosen for `language` when voice is omitted (Luganda by default)",
+      "endpoint": "POST /tasks/audio/speech",
+      "no_model_parameter": true,
+      "response_modes": "url (signed GCS URL, ~30 min), stream (raw bytes), both",
+      "sampling_params": "temperature, top_p, repetition_penalty, max_tokens, seed",
+      "streaming_note": "stream mode returns bytes only after the full waveform is synthesized",
+      "training_mix_without_voices": "lgg, sot, tsn (no individual voice ids yet)"
+    },
+    "name": "Sunbird Orpheus TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sunbird.ai/guides/speech-to-text.md",
+        "https://docs.sunbird.ai/languages.md",
+        "https://docs.sunbird.ai/guides/text-to-speech.md"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
