@@ -153,9 +153,13 @@ Retired orgs with live weights: coqui (XTTS-v2, CPML), resemble (Chatterbox), hu
 
 ## 5. Watchlist (re-check next quarter; not enough evidence yet)
 
-Viettel AI, Zalo AI, Prosa.ai (ID), Lahajati (docs 404), Ramsa (AED), Narakeet (are the voices its own?), Argmax
+Viettel AI (API docs browser-only, prices on request), Lahajati (docs 404), Ramsa (AED), Narakeet (are the voices its own?), Argmax
 WhisperKit, Fireworks streaming ASR, Soniqo, Sanas, Krisp translation, T-Bank VoiceKit, Muxlisa (UZ), AyaSpeech (GH),
 NKENNEAi (Swahili), Devnagri, ConvoZen, GigaTech (BD), DeepBrain AI, Speechtext.ai, Lingvanex, NeuralSpace.
+Round 2 (2026-11-18): Hams.ai (TTS serves SWivid's Habibi-TTS; STT ownership not shown), VK Cloud Voice (API docs now
+console-only), GreenNode/VNG (no current speech product; API host 503), Kling TTS, Kits.ai (request-a-key beta), Voci
+(per-customer models), Verbit (caption jobs), SenseTime, maum.ai, Selvas, Toshiba RECAIUS, Yating, Mihup, Wittify, Gowajee
+(no public docs). Papla, Koemotion, DataBaker: domains no longer resolve. Prosa.ai: acquired by GLAIR and closing (removed).
 Added 2026-11-18: Kakao Kanana-o (closed beta ended 2026-05-27; no key path), SoundHound/Houndify (docs and pricing
 behind login), HUMAIN (SA; Arabic ASR/TTS, no developer docs), Hasab AI (ET; apps only), Wispr (Canto, no API), AppTek
 and Cerence (enterprise, no public docs), MTS AI Audiogram (quote only), ETRI (KR govt ASR API), Klang (SE), Yoob
@@ -215,3 +219,9 @@ Follow-ups: KittenML (Stellon Labs) and Maya Research sell hosted APIs — upgra
 Vbee and Humelo document STT APIs not yet extracted; Krutrim's speech-to-speech translation endpoint (sts);
 DeepL "translated speech" output (sts) when out of beta; Oracle Whisper Large V3 Turbo once its enum is documented;
 Amazon Polly still needs an AWS key.
+
+Follow-up pass (branch `providers/gaps-followups`): round-2 research added Voice.ai, Voxist (STT only — its TTS serves
+Kyutai/OmniVoice), Daglo (ActionPower), SK Telecom A.X TTS, T-Bank VoiceKit (+ T-one weights), Sarj.ai, AI for Thai
+(NECTEC); 2Noise (ChatTTS, via per-org `extra_pipelines`); hosted-API models for KittenML and Maya Research (HF syncer
+now takes docs sections); Krutrim speech-to-speech translation. Vbee/Humelo STT not added (no evidence of own engine).
+Catalog: 125 live + 13 retired providers, 811 active models, 15,380 voices.
