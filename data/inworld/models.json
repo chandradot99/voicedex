@@ -1,5 +1,247 @@
 [
   {
+    "description": "Ultravox Realtime speech-native voice model built on Llama 3.3 70B.",
+    "first_seen": "2026-11-18",
+    "id": "ultravox-v0.6",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "bg",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "it",
+      "ja",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "es",
+      "sv",
+      "ta",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "meta": {
+      "aliases": [
+        "ultravox-v0.6-llama3.3-70b",
+        "fixie-ai/ultravox-llama3.3-70b"
+      ],
+      "base_llm": "Llama 3.3 70B",
+      "call_media": [
+        "webRtc (client SDKs)",
+        "serverWebSocket",
+        "telephony (Twilio, Telnyx, Plivo, Exotel, SIP)"
+      ],
+      "docs": "https://docs.ultravox.ai/changelog/news",
+      "product": "Ultravox"
+    },
+    "name": "Ultravox v0.6 (Llama 3.3 70B)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 30.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "Pay as You Go: first 30 minutes free, $0.05/min after that (Pro plan $100/month adds no-cap concurrency). SIP is an extra $0.005/min. Same per-minute rate for all models.",
+      "price_usd": 0.05,
+      "source_url": "https://www.ultravox.ai/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md",
+        "https://docs.ultravox.ai/",
+        "https://www.ultravox.ai/pricing"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Ultravox Realtime speech-native voice model built on Gemma 3 27B.",
+    "family": "ultravox-v0.6",
+    "first_seen": "2026-11-18",
+    "id": "ultravox-v0.6-gemma3-27b",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "bg",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "it",
+      "ja",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "es",
+      "sv",
+      "ta",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "meta": {
+      "aliases": [
+        "fixie-ai/ultravox-gemma3-27b-preview"
+      ],
+      "base_llm": "Gemma 3 27B",
+      "call_media": [
+        "webRtc (client SDKs)",
+        "serverWebSocket",
+        "telephony (Twilio, Telnyx, Plivo, Exotel, SIP)"
+      ],
+      "docs": "https://docs.ultravox.ai/changelog/news",
+      "product": "Ultravox"
+    },
+    "name": "Ultravox v0.6 (Gemma 3 27B)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 30.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "Pay as You Go: first 30 minutes free, $0.05/min after that (Pro plan $100/month adds no-cap concurrency). SIP is an extra $0.005/min. Same per-minute rate for all models.",
+      "price_usd": 0.05,
+      "source_url": "https://www.ultravox.ai/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md",
+        "https://docs.ultravox.ai/",
+        "https://www.ultravox.ai/pricing"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Ultravox Realtime speech-native voice model built on GLM 4.6; the platform default since 2025-12-22.",
+    "first_seen": "2026-11-18",
+    "id": "ultravox-v0.7",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "bg",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "it",
+      "ja",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "es",
+      "sv",
+      "ta",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "meta": {
+      "aliases": [
+        "fixie-ai/ultravox",
+        "fixie-ai/ultravox-v0.7",
+        "fixie-ai/ultravox-glm4.6-355b-preview"
+      ],
+      "base_llm": "GLM 4.6",
+      "call_media": [
+        "webRtc (client SDKs)",
+        "serverWebSocket",
+        "telephony (Twilio, Telnyx, Plivo, Exotel, SIP)"
+      ],
+      "docs": "https://docs.ultravox.ai/changelog/news",
+      "product": "Ultravox"
+    },
+    "name": "Ultravox v0.7 (GLM 4.6)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 30.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "Pay as You Go: first 30 minutes free, $0.05/min after that (Pro plan $100/month adds no-cap concurrency). SIP is an extra $0.005/min. Same per-minute rate for all models.",
+      "price_usd": 0.05,
+      "source_url": "https://www.ultravox.ai/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://inworld.ai/pricing",
+        "https://docs.inworld.ai/llms.txt",
+        "https://docs.inworld.ai/stt/overview.md",
+        "https://docs.inworld.ai/stt/third-party.md",
+        "https://docs.inworld.ai/stt/languages.md",
+        "https://docs.ultravox.ai/",
+        "https://www.ultravox.ai/pricing"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
     "audio_formats": [
       "pcm"
     ],

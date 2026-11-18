@@ -8,15 +8,17 @@
     "https://docs.inworld.ai/llms.txt",
     "https://docs.inworld.ai/stt/overview.md",
     "https://docs.inworld.ai/stt/third-party.md",
-    "https://docs.inworld.ai/stt/languages.md"
+    "https://docs.inworld.ai/stt/languages.md",
+    "https://docs.ultravox.ai/",
+    "https://www.ultravox.ai/pricing"
   ],
   "id": "inworld",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-18",
   "name": "Inworld AI",
   "source": "mixed",
   "type": "both",
   "voices_source": {
-    "as_of": "2026-11-16",
+    "as_of": "2026-11-18",
     "method": "api",
     "urls": [
       "https://api.inworld.ai/voices/v1/voices"

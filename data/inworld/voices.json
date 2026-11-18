@@ -413,6 +413,32 @@
     "compatible_models": [
       "*"
     ],
+    "description": "Warm, crisp Hebrew male voice with a relaxed, unhurried delivery, ideal for audiobooks, podcasts, and meditation apps.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Amos",
+    "languages": [
+      "he-IL"
+    ],
+    "name": "Amos",
+    "tags": [
+      "warm",
+      "crisp",
+      "relaxed",
+      "hebrew"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "healthcare"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
     "description": "Deep, husky Swedish male voice with a relaxed, measured delivery, ideal for audiobooks, storytelling, and meditation apps.",
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -460,6 +486,84 @@
     "use_cases": [
       "enterprise",
       "education_training"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, clean young Romanian female voice with a thoughtful, welcoming delivery, ideal for virtual companions, podcast hosting, and social media content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Andreea",
+    "languages": [
+      "ro-RO"
+    ],
+    "name": "Andreea",
+    "tags": [
+      "bright",
+      "clean",
+      "welcoming",
+      "romanian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "companions",
+      "interactive_media"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm, deep-toned young Romanian male voice with an articulate, direct delivery, ideal for audiobooks, game characters, and language lessons.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andrei",
+    "languages": [
+      "ro-RO"
+    ],
+    "name": "Andrei",
+    "tags": [
+      "warm",
+      "deep-toned",
+      "articulate",
+      "romanian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "education_training"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Low-pitched, breathy young Colombian Spanish male voice with an approachable, soothing delivery, ideal for documentaries, language lessons, and meditation apps.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andres",
+    "languages": [
+      "es-CO"
+    ],
+    "name": "Andres",
+    "tags": [
+      "low-pitched",
+      "breathy",
+      "approachable",
+      "colombian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "healthcare"
     ]
   },
   {
@@ -519,6 +623,32 @@
     "use_cases": [
       "enterprise",
       "education_training"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Crystalline, silky young Chilean Spanish female voice with an upbeat, conversational delivery, ideal for virtual companions, social media content, and language lessons.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Antonia",
+    "languages": [
+      "es-CL"
+    ],
+    "name": "Antonia",
+    "tags": [
+      "crystalline",
+      "silky",
+      "upbeat",
+      "chilean"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "companions",
+      "interactive_media"
     ]
   },
   {
@@ -927,6 +1057,32 @@
     "use_cases": [
       "companions",
       "interactive_media"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sunny, velvety young Chilean Spanish male voice with an approachable, easygoing delivery, ideal for virtual companions, social media content, and explainer videos.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Benjamin",
+    "languages": [
+      "es-CL"
+    ],
+    "name": "Benjamin",
+    "tags": [
+      "sunny",
+      "velvety",
+      "easygoing",
+      "chilean"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "companions",
+      "education_training"
     ]
   },
   {
@@ -1836,6 +1992,32 @@
     ]
   },
   {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright-toned, gravelly Chilean Spanish male voice with a composed, deliberate delivery, ideal for news reads, corporate training, and customer support.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Cristian",
+    "languages": [
+      "es-CL"
+    ],
+    "name": "Cristian",
+    "tags": [
+      "bright-toned",
+      "gravelly",
+      "composed",
+      "chilean"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
+    ]
+  },
+  {
     "age": "young",
     "category": "premade",
     "compatible_models": [
@@ -1973,6 +2155,32 @@
     "use_cases": [
       "enterprise",
       "companions"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Low-pitched, polished Mexican Spanish female voice with an articulate, grounded delivery, ideal for corporate training, news reads, and customer support.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Daniela",
+    "languages": [
+      "es-MX"
+    ],
+    "name": "Daniela",
+    "tags": [
+      "low-pitched",
+      "polished",
+      "grounded",
+      "mexican"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
     ]
   },
   {
@@ -2216,6 +2424,32 @@
     "updated_at": "2026-11-16"
   },
   {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Boyish, airy young European Portuguese male voice with an earnest, easygoing delivery, ideal for podcasts, video tutorials, and social media stories.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Diogo",
+    "languages": [
+      "pt-PT"
+    ],
+    "name": "Diogo",
+    "tags": [
+      "boyish",
+      "airy",
+      "easygoing",
+      "european portuguese"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "education_training"
+    ]
+  },
+  {
     "age": "middle_aged",
     "category": "premade",
     "compatible_models": [
@@ -2258,6 +2492,58 @@
     "updated_at": "2026-11-16",
     "use_cases": [
       "interactive_media"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Velvety, buttery Polish female voice with an assured, matter-of-fact delivery, ideal for instructional tutorials, public service announcements, and corporate narration.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Dorota",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Dorota",
+    "tags": [
+      "velvety",
+      "buttery",
+      "assured",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Luminous, rich young European Portuguese male voice with a thoughtful, confident delivery, ideal for explainer videos, commercials, and corporate presentations.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Duarte",
+    "languages": [
+      "pt-PT"
+    ],
+    "name": "Duarte",
+    "tags": [
+      "luminous",
+      "rich",
+      "confident",
+      "european portuguese"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
     ]
   },
   {
@@ -2393,6 +2679,32 @@
     "use_cases": [
       "companions",
       "healthcare"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep, full-bodied Hebrew male voice with a matter-of-fact, earnest delivery, ideal for news reads, explainer videos, and corporate presentations.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Eitan",
+    "languages": [
+      "he-IL"
+    ],
+    "name": "Eitan",
+    "tags": [
+      "deep",
+      "full-bodied",
+      "matter-of-fact",
+      "hebrew"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
     ]
   },
   {
@@ -2825,6 +3137,32 @@
     "use_cases": [
       "interactive_media",
       "companions"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Baritone, earthy German male voice with an easygoing, conversational delivery, ideal for audiobooks, explainer videos, and corporate narration.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Florian",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Florian",
+    "tags": [
+      "baritone",
+      "earthy",
+      "easygoing",
+      "german"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "education_training"
     ]
   },
   {
@@ -3552,6 +3890,32 @@
     ]
   },
   {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Earthy, resonant Colombian Spanish male voice with a direct, confident delivery, ideal for explainer videos, corporate training, and news reads.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hernando",
+    "languages": [
+      "es-CO"
+    ],
+    "name": "Hernando",
+    "tags": [
+      "earthy",
+      "resonant",
+      "direct",
+      "colombian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
+    ]
+  },
+  {
     "age": "young",
     "category": "premade",
     "compatible_models": [
@@ -3820,6 +4184,32 @@
     ]
   },
   {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mellow, full-bodied young Romanian female voice with a precise, welcoming delivery, ideal for explainer videos, customer support, and language lessons.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ioana",
+    "languages": [
+      "ro-RO"
+    ],
+    "name": "Ioana",
+    "tags": [
+      "mellow",
+      "full-bodied",
+      "precise",
+      "romanian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
+    ]
+  },
+  {
     "accent": "indian",
     "age": "middle_aged",
     "category": "premade",
@@ -4039,6 +4429,58 @@
       "clear"
     ],
     "updated_at": "2026-11-16"
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Rich, low-pitched Polish female voice with a calm, warm delivery, ideal for audiobooks, meditation apps, and documentaries.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Joanna",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Joanna",
+    "tags": [
+      "rich",
+      "low-pitched",
+      "calm",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "healthcare",
+      "education_training"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Resonant, rich European Portuguese male voice with a grounded, composed delivery, ideal for news reads, documentary narration, and corporate training.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Joaquim",
+    "languages": [
+      "pt-PT"
+    ],
+    "name": "Joaquim",
+    "tags": [
+      "resonant",
+      "rich",
+      "grounded",
+      "european portuguese"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
+    ]
   },
   {
     "age": "young",
@@ -4275,6 +4717,32 @@
     "use_cases": [
       "enterprise",
       "education_training"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Soft, airy young Polish female voice with a gentle, tender delivery, ideal for language lessons, wellness guides, and character narration.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Karolina",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Karolina",
+    "tags": [
+      "soft",
+      "airy",
+      "gentle",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "healthcare"
     ]
   },
   {
@@ -4841,6 +5309,32 @@
     "updated_at": "2026-11-16"
   },
   {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Soft, crystalline young Latin American Spanish female voice with a relaxed, natural delivery, ideal for virtual companions, social media content, and explainer videos.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Luciana",
+    "languages": [
+      "es-419"
+    ],
+    "name": "Luciana",
+    "tags": [
+      "soft",
+      "crystalline",
+      "relaxed",
+      "latin american"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "companions",
+      "interactive_media"
+    ]
+  },
+  {
     "age": "middle_aged",
     "category": "premade",
     "compatible_models": [
@@ -4894,6 +5388,32 @@
     "compatible_models": [
       "*"
     ],
+    "description": "Polished, radiant Chilean Spanish female voice with an articulate, poised delivery, ideal for news reads, explainer videos, and customer support.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Macarena",
+    "languages": [
+      "es-CL"
+    ],
+    "name": "Macarena",
+    "tags": [
+      "polished",
+      "radiant",
+      "articulate",
+      "chilean"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
     "description": "Bright, natural European Portuguese female voice, ideal for education, narration, and business.",
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -4916,6 +5436,32 @@
     "use_cases": [
       "education_training",
       "enterprise"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Polished, resonant young Polish female voice with a brisk, matter-of-fact delivery, ideal for news reads, e-learning modules, and corporate presentations.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Magda",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Magda",
+    "tags": [
+      "polished",
+      "resonant",
+      "brisk",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
     ]
   },
   {
@@ -5307,6 +5853,32 @@
     "updated_at": "2026-11-16"
   },
   {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Chesty, mellow Chilean Spanish male voice with a casual, grounded delivery, ideal for audiobooks, documentaries, and meditation apps.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Matias",
+    "languages": [
+      "es-CL"
+    ],
+    "name": "Matias",
+    "tags": [
+      "chesty",
+      "mellow",
+      "casual",
+      "chilean"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "healthcare"
+    ]
+  },
+  {
     "accent": "australian",
     "age": "young",
     "category": "premade",
@@ -5632,6 +6204,32 @@
     "updated_at": "2026-11-16"
   },
   {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep, baritone Romanian male voice with a measured, precise delivery, ideal for customer support, news reads, and explainer videos.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mihai",
+    "languages": [
+      "ro-RO"
+    ],
+    "name": "Mihai",
+    "tags": [
+      "deep",
+      "baritone",
+      "measured",
+      "romanian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
+    ]
+  },
+  {
     "age": "young",
     "category": "premade",
     "compatible_models": [
@@ -5914,6 +6512,32 @@
     "compatible_models": [
       "*"
     ],
+    "description": "Crisp, satiny young Polish female voice with a calm, measured delivery, ideal for corporate training, documentary narration, and IVR systems.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Natalia",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Natalia",
+    "tags": [
+      "crisp",
+      "satiny",
+      "calm",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
     "description": "Conversational, sociable male voice, great for customer support and friendly guidance",
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -6052,6 +6676,32 @@
     "compatible_models": [
       "*"
     ],
+    "description": "Bright, clean Hebrew female voice with a crisp, brisk delivery, ideal for customer support, explainer videos, and virtual companions.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Noa",
+    "languages": [
+      "he-IL"
+    ],
+    "name": "Noa",
+    "tags": [
+      "bright",
+      "clean",
+      "crisp",
+      "hebrew"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
+    ]
+  },
+  {
+    "age": "middle_aged",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
     "description": "Polished female Arabic voice with a friendly tone, great for voice over or support.",
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -6066,6 +6716,32 @@
       "customer support"
     ],
     "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mellow, soft young European Portuguese male voice with a soothing, even-keeled delivery, ideal for audiobooks, meditation apps, and wellness guides.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nuno",
+    "languages": [
+      "pt-PT"
+    ],
+    "name": "Nuno",
+    "tags": [
+      "mellow",
+      "soft",
+      "soothing",
+      "european portuguese"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "healthcare"
+    ]
   },
   {
     "age": "middle_aged",
@@ -6303,6 +6979,32 @@
     ]
   },
   {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "High, breathy young Polish female voice with a cheerful, conversational delivery, ideal for advertisements, podcasts, and game characters.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Paulina",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Paulina",
+    "tags": [
+      "high",
+      "breathy",
+      "cheerful",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "interactive_media"
+    ]
+  },
+  {
     "age": "middle_aged",
     "category": "premade",
     "compatible_models": [
@@ -6521,6 +7223,32 @@
       "bright"
     ],
     "updated_at": "2026-11-16"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Light, airy young Romanian female voice with a sunny, kind delivery, ideal for game characters, e-learning modules, and social media content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Raluca",
+    "languages": [
+      "ro-RO"
+    ],
+    "name": "Raluca",
+    "tags": [
+      "light",
+      "airy",
+      "sunny",
+      "romanian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "education_training"
+    ]
   },
   {
     "age": "middle_aged",
@@ -6770,6 +7498,32 @@
     "use_cases": [
       "interactive_media",
       "enterprise"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Light, feathery young European Portuguese male voice with a gentle, understated delivery, ideal for audiobooks, game characters, and virtual companions.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rodrigo",
+    "languages": [
+      "pt-PT"
+    ],
+    "name": "Rodrigo",
+    "tags": [
+      "light",
+      "feathery",
+      "understated",
+      "european portuguese"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "companions"
     ]
   },
   {
@@ -7444,6 +8198,32 @@
     "compatible_models": [
       "*"
     ],
+    "description": "Glowing, silky young Romanian female voice with a tender, reassuring delivery, ideal for meditation apps, wellness guides, and soothing audiobooks.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Simona",
+    "languages": [
+      "ro-RO"
+    ],
+    "name": "Simona",
+    "tags": [
+      "glowing",
+      "silky",
+      "reassuring",
+      "romanian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "healthcare",
+      "interactive_media"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
     "description": "Calm, warm Russian female voice, ideal for narration, education, and customer service.",
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -7826,6 +8606,32 @@
     "compatible_models": [
       "*"
     ],
+    "description": "Baritone, full-bodied young European Portuguese male voice with a steady, welcoming delivery, ideal for documentary narration, audio tours, and corporate training.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tiago",
+    "languages": [
+      "pt-PT"
+    ],
+    "name": "Tiago",
+    "tags": [
+      "baritone",
+      "full-bodied",
+      "steady",
+      "european portuguese"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
     "description": "Natural, conversational Russian male voice, ideal for narration, customer support, and business.",
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -7904,6 +8710,32 @@
     "use_cases": [
       "enterprise",
       "education_training"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Focused, bright-toned young European Portuguese male voice with a calm, direct delivery, ideal for e-learning modules, explainer videos, and corporate presentations.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tomas",
+    "languages": [
+      "pt-PT"
+    ],
+    "name": "Tomas",
+    "tags": [
+      "focused",
+      "bright-toned",
+      "direct",
+      "european portuguese"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
     ]
   },
   {
@@ -8070,6 +8902,32 @@
     "use_cases": [
       "interactive_media",
       "enterprise"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Crystalline, lilting young Colombian Spanish female voice with an upbeat, approachable delivery, ideal for customer support, explainer videos, and virtual companions.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Valentina",
+    "languages": [
+      "es-CO"
+    ],
+    "name": "Valentina",
+    "tags": [
+      "crystalline",
+      "lilting",
+      "upbeat",
+      "colombian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "companions"
     ]
   },
   {
@@ -8326,6 +9184,32 @@
     ]
   },
   {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "High, light young Romanian male voice with an assured, no-nonsense delivery, ideal for e-learning modules, corporate presentations, and tutorials.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vlad",
+    "languages": [
+      "ro-RO"
+    ],
+    "name": "Vlad",
+    "tags": [
+      "high",
+      "light",
+      "assured",
+      "romanian"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "education_training",
+      "enterprise"
+    ]
+  },
+  {
     "age": "middle_aged",
     "category": "premade",
     "compatible_models": [
@@ -8462,6 +9346,32 @@
     "use_cases": [
       "companions",
       "healthcare"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clean, sleek young Polish female voice with an upbeat, brisk delivery, ideal for customer support, explainer videos, and social media content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Wiktoria",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Wiktoria",
+    "tags": [
+      "clean",
+      "sleek",
+      "upbeat",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "enterprise",
+      "education_training"
     ]
   },
   {
@@ -8934,6 +9844,32 @@
       "interactive_media",
       "companions",
       "education_training"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, silky young Polish female voice with a gentle, measured delivery, ideal for audiobooks, meditation apps, and virtual companions.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Zuzanna",
+    "languages": [
+      "pl-PL"
+    ],
+    "name": "Zuzanna",
+    "tags": [
+      "bright",
+      "silky",
+      "gentle",
+      "polish"
+    ],
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "interactive_media",
+      "healthcare"
     ]
   },
   {
