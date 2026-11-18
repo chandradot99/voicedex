@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>API reference | {{ site_name }}</title>
   <meta name="description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices: languages, features, prices and shutdown dates.">
-  <meta name="theme-color" content="#111113">
+  <meta name="theme-color" content="#1c1d21">
   <meta property="og:title" content="API reference | {{ site_name }}">
   <meta property="og:description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices.">
   <meta property="og:type" content="website">
@@ -181,17 +181,17 @@
         .dark-mode, .light-mode, :root {
           --scalar-font: "Geist", ui-sans-serif, system-ui, sans-serif;
           --scalar-font-code: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-          --scalar-background-1: #111113;
-          --scalar-background-2: #18181b;
-          --scalar-background-3: #1e1e21;
+          --scalar-background-1: #1c1d21;
+          --scalar-background-2: #23252a;
+          --scalar-background-3: #2a2c32;
           --scalar-background-accent: rgba(245, 165, 36, 0.08);
           --scalar-color-1: #ededea;
-          --scalar-color-2: #b4b4ae;
-          --scalar-color-3: #8a8a84;
+          --scalar-color-2: #b8b8b2;
+          --scalar-color-3: #9a9a94;
           --scalar-color-accent: #f5a524;
           --scalar-border-color: rgba(255, 255, 255, 0.11);
           --scalar-button-1: #ededea;
-          --scalar-button-1-color: #111113;
+          --scalar-button-1-color: #1c1d21;
           --scalar-button-1-hover: #ffffff;
           --scalar-color-green: #a3e635;
           --scalar-color-blue: #7fb4e0;
@@ -201,29 +201,29 @@
           --scalar-radius: 10px;
           --scalar-radius-lg: 14px;
           --scalar-radius-xl: 22px;
-          --scalar-sidebar-background-1: #111113;
-          --scalar-sidebar-item-hover-background: #18181b;
-          --scalar-sidebar-item-active-background: #1e1e21;
+          --scalar-sidebar-background-1: #1c1d21;
+          --scalar-sidebar-item-hover-background: #23252a;
+          --scalar-sidebar-item-active-background: #2a2c32;
           --scalar-sidebar-border-color: rgba(255, 255, 255, 0.08);
           --scalar-sidebar-color-1: #ededea;
-          --scalar-sidebar-color-2: #8a8a84;
+          --scalar-sidebar-color-2: #9a9a94;
           --scalar-sidebar-color-active: #f5a524;
-          --scalar-sidebar-search-background: #18181b;
+          --scalar-sidebar-search-background: #23252a;
           --scalar-sidebar-search-border-color: rgba(255, 255, 255, 0.12);
         }
-        .scalar-api-reference.references-layout { background: #111113; }
+        .scalar-api-reference.references-layout { background: #1c1d21; }
         /* API client ("Test Request"): a raised panel over a dimmed, blurred page.
            !important: Scalar's own theme selectors are more specific than customCss. */
         .scalar-container.scalar-client--open { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
         .scalar.scalar-app.z-overlay { background: transparent !important; }
         .scalar-client.scalar-app-layout, .scalar-client.scalar-app-layout * {
-          --scalar-background-1: #18181b !important;
-          --scalar-background-2: #1e1e21 !important;
-          --scalar-background-3: #242427 !important;
+          --scalar-background-1: #23252a !important;
+          --scalar-background-2: #2a2c32 !important;
+          --scalar-background-3: #2f3137 !important;
           --scalar-border-color: rgba(255, 255, 255, 0.12) !important;
         }
         .scalar-client.scalar-app-layout {
-          background: #18181b !important; border: 1px solid rgba(255, 255, 255, 0.18) !important; border-radius: 4px; overflow: hidden;
+          background: #23252a !important; border: 1px solid rgba(255, 255, 255, 0.18) !important; border-radius: 4px; overflow: hidden;
           box-shadow: 0 40px 140px -20px rgba(0, 0, 0, 0.95), 0 0 80px -30px rgba(20, 184, 166, 0.35) !important;
         }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
@@ -231,7 +231,7 @@
         /* Floating layers (menus, listboxes, search dialog, tooltips) must read as raised above
            whatever they cover: lighter surface, visible edge, real shadow. */
         .z-context > div, [role="tooltip"]:not(.scalar-tooltip), .scalar-modal {
-          background: #1e1e21 !important;
+          background: #2a2c32 !important;
           box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16), 0 24px 60px -12px rgba(0, 0, 0, 0.9) !important;
         }
         /* Scalar's hover tooltips are already a rounded pill; the wrapper stays invisible. */
@@ -244,9 +244,9 @@
         .z-context > div.rounded-xl > div.text-xxs .markdown { line-height: 1.45 !important; }
         /* Search dialog (⌘K) and other modals: dim + blur the page; mark the keyboard selection. */
         .scalar-modal-layout { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
-        .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #2a2a2d !important; box-shadow: inset 2px 0 0 #f5a524; }
+        .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #363840 !important; box-shadow: inset 2px 0 0 #f5a524; }
         .z-context [role="option"]:hover, .z-context [role="option"][data-headlessui-state~="active"],
-        .z-context [role="menuitem"]:hover { background: #2a2a2d !important; }
+        .z-context [role="menuitem"]:hover { background: #363840 !important; }
         .z-context [role="option"] .shadow-border, .z-context [role="menuitem"] .shadow-border { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.32) !important; }
         .z-context [role="option"][aria-selected="true"] .shadow-border { box-shadow: inset 0 0 0 1px #f5a524 !important; color: #f5a524 !important; }
         .z-context ul[role="listbox"] { border-color: rgba(255, 255, 255, 0.12) !important; }
@@ -269,8 +269,8 @@
         a.peer\\/button:has(.scalar-sidebar-indent-border)::before { left: 24px; }
         /* Nested items: 10px between the fill's left edge and the text, same inset as group headings. */
         a.peer\\/button:has(.scalar-sidebar-indent-border) .group\\/button-label { padding-left: 4px; }
-        a.peer\\/button:hover::before { background: #18181b; }
-        a.peer\\/button[aria-current="page"]::before { background: #1e1e21; }
+        a.peer\\/button:hover::before { background: #23252a; }
+        a.peer\\/button[aria-current="page"]::before { background: #2a2c32; }
         a.peer\\/button:hover, a.peer\\/button[aria-current="page"] { color: #ededea !important; }
         a.peer\\/button[aria-current="page"] { font-weight: 500 !important; }
         .group\\/group-button > a.peer\\/button { color: #ededea !important; font-weight: 600 !important; }
