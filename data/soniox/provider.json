@@ -1,9 +1,17 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.soniox.com/v1/models",
     "https://api.soniox.com/v1/tts-models",
     "https://api.soniox.com/v1/shared-voices"
   ],
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "Soniox is a US speech AI company founded in 2020 in Redwood City, California. One API covers real-time and asynchronous speech-to-text with built-in speech translation across 60+ languages, and text-to-speech with voice cloning. Processing and storage are available in US, EU, Japan and India regions.",
   "docs_urls": [
     "https://docs.soniox.com/stt/models.mdx",
     "https://docs.soniox.com/tts/models.mdx",
@@ -12,9 +20,21 @@
     "https://docs.soniox.com/stt/concepts/timestamps.mdx",
     "https://docs.soniox.com/stt/concepts/context.mdx"
   ],
+  "headquarters": "US",
   "id": "soniox",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.soniox.com/api-reference",
+    "docs": "https://docs.soniox.com",
+    "pricing": "https://soniox.com/pricing",
+    "status": "https://status.soniox.com"
+  },
   "name": "Soniox",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -25,5 +45,6 @@
       "https://api.soniox.com/v1/tts-models",
       "https://api.soniox.com/v1/shared-voices"
     ]
-  }
+  },
+  "website": "https://soniox.com"
 }

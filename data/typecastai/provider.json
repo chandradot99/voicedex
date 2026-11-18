@@ -1,15 +1,26 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.typecast.ai/v2/voices"
   ],
+  "compliance": [
+    "iso27001"
+  ],
+  "description": "Typecast is the AI voice product of Neosapience, a South Korean company founded in 2017. It sells a text-to-speech API with emotion control and voice cloning across 35+ languages, alongside the Typecast web editor and mobile apps.",
   "docs_urls": [
     "https://typecast.ai/docs/llms.txt",
     "https://typecast.ai/docs/api-reference/text-to-speech/text-to-speech",
     "https://typecast.ai/docs/changelog",
     "https://typecast.ai/pricing/api/"
   ],
+  "headquarters": "KR",
   "id": "typecastai",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://typecast.ai/docs/api-reference",
+    "docs": "https://typecast.ai/docs",
+    "pricing": "https://typecast.ai/pricing/api/"
+  },
   "name": "Typecast AI",
   "source": "mixed",
   "type": "tts",
@@ -19,5 +30,6 @@
     "urls": [
       "https://api.typecast.ai/v2/voices"
     ]
-  }
+  },
+  "website": "https://typecast.ai"
 }

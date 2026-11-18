@@ -1,4 +1,12 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "hipaa",
+    "gdpr",
+    "pci_dss"
+  ],
+  "description": "Rev AI is the developer speech-to-text API of Rev.com, Inc., a US transcription company. It offers asynchronous and streaming transcription in 57+ languages plus language identification, sentiment analysis, topic extraction and forced alignment. The main service runs in the US, with an EU deployment in Frankfurt.",
   "docs_urls": [
     "https://docs.rev.ai/api/asynchronous/transcribers/",
     "https://docs.rev.ai/api/asynchronous/changelog.md",
@@ -7,9 +15,21 @@
     "https://docs.rev.ai/api/global-deployments.md",
     "https://www.rev.ai/pricing"
   ],
+  "headquarters": "US",
   "id": "revai",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.rev.ai/api",
+    "docs": "https://docs.rev.ai",
+    "pricing": "https://www.rev.ai/pricing",
+    "status": "https://status.rev.ai"
+  },
   "name": "Rev AI",
+  "regions": [
+    "us",
+    "eu"
+  ],
   "source": "docs",
-  "type": "stt"
+  "type": "stt",
+  "website": "https://www.rev.ai"
 }

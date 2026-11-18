@@ -1,11 +1,18 @@
 {
+  "access": "self_serve",
+  "description": "Unreal Speech is a San Francisco text-to-speech API whose voices are powered by the open-weights Kokoro model. It offers synchronous, streaming, WebSocket-with-timestamps and long-form asynchronous endpoints, plus a Studio product.",
   "docs_urls": [
     "https://docs.v8.unrealspeech.com/",
     "https://unrealspeech.com/",
     "https://unrealspeech.com/pricing"
   ],
+  "headquarters": "US",
   "id": "unrealspeech",
   "last_synced": "2026-11-16",
+  "links": {
+    "docs": "https://docs.v8.unrealspeech.com",
+    "pricing": "https://unrealspeech.com/pricing"
+  },
   "name": "Unreal Speech",
   "source": "docs",
   "type": "tts",
@@ -17,5 +24,6 @@
       "https://unrealspeech.com/",
       "https://unrealspeech.com/pricing"
     ]
-  }
+  },
+  "website": "https://unrealspeech.com"
 }

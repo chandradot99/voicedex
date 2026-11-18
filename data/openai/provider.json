@@ -1,4 +1,13 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "gdpr",
+    "pci_dss",
+    "hipaa"
+  ],
+  "description": "OpenAI is an AI company headquartered in San Francisco, founded in 2015. Its API sells speech-to-text transcription, text-to-speech and realtime speech-to-speech models. API data residency is offered in the US, Europe and several Asia-Pacific and Middle East regions.",
   "docs_urls": [
     "https://developers.openai.com/api/docs/models/all",
     "https://developers.openai.com/api/docs/deprecations",
@@ -7,9 +16,21 @@
     "https://developers.openai.com/api/docs/guides/text-to-speech",
     "https://developers.openai.com/api/docs/guides/live-conversations"
   ],
+  "headquarters": "US",
   "id": "openai",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://developers.openai.com/api/reference",
+    "docs": "https://developers.openai.com/api/docs",
+    "pricing": "https://developers.openai.com/api/docs/pricing",
+    "status": "https://status.openai.com"
+  },
   "name": "OpenAI",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "docs",
   "type": "both",
   "voices_source": {
@@ -23,5 +44,6 @@
       "https://developers.openai.com/api/docs/guides/text-to-speech",
       "https://developers.openai.com/api/docs/guides/live-conversations"
     ]
-  }
+  },
+  "website": "https://openai.com"
 }

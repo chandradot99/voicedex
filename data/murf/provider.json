@@ -1,15 +1,33 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.murf.ai/v1/speech/voices"
   ],
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "gdpr",
+    "hipaa"
+  ],
+  "description": "Murf AI is a voice AI company headquartered in San Francisco that began in October 2020. It sells the Falcon text-to-speech API for voice agents alongside its Murf Studio voiceover and dubbing products, and lists Finch, a streaming speech-to-text API. Falcon can be called through regional endpoints in the US, EU, UK, India, Japan, South Korea and other countries, or deployed on-premise.",
   "docs_urls": [
     "https://murf.ai/api/docs/llms.txt",
     "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
     "https://murf.ai/api/docs/text-to-speech-models/gen-2.md"
   ],
+  "headquarters": "US",
   "id": "murf",
   "last_synced": "2026-11-16",
+  "links": {
+    "docs": "https://murf.ai/api/docs",
+    "pricing": "https://murf.ai/api/pricing"
+  },
   "name": "Murf AI",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "tts",
   "voices_source": {
@@ -18,5 +36,6 @@
     "urls": [
       "https://api.murf.ai/v1/speech/voices"
     ]
-  }
+  },
+  "website": "https://murf.ai"
 }

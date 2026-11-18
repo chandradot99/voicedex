@@ -1,15 +1,30 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.speechify.ai/v1/voices"
   ],
+  "compliance": [
+    "soc2"
+  ],
+  "description": "SpeechifyAI is the developer platform of Speechify, the US company behind the Speechify reader app. It sells the Simba text-to-speech API with streaming, speech marks and voice cloning; the managed cloud is hosted in the United States.",
   "docs_urls": [
     "https://docs.speechify.ai/build/guides/concepts/models",
     "https://docs.speechify.ai/build/guides/text-to-speech/language-support",
     "https://speechify.ai/pricing"
   ],
+  "headquarters": "US",
   "id": "speechify",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.speechify.ai/api-reference",
+    "docs": "https://docs.speechify.ai",
+    "pricing": "https://speechify.ai/pricing",
+    "status": "https://status.speechify.ai"
+  },
   "name": "Speechify",
+  "regions": [
+    "us"
+  ],
   "source": "mixed",
   "type": "tts",
   "voices_source": {
@@ -18,5 +33,6 @@
     "urls": [
       "https://api.speechify.ai/v1/voices"
     ]
-  }
+  },
+  "website": "https://speechify.ai"
 }

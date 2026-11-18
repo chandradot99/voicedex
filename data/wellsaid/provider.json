@@ -1,16 +1,29 @@
 {
+  "access": "enterprise",
   "api_urls": [
     "https://api.wellsaidlabs.com/v1/tts/avatars"
   ],
+  "compliance": [
+    "soc2",
+    "gdpr"
+  ],
+  "description": "WellSaid Labs is a US text-to-speech company founded in Seattle in 2018 as a spinout of the Allen Institute for AI. It sells AI voiceover through WellSaid Studio and Producer and a TTS API, with voices built from licensed voice-actor recordings; plans are sold through sales.",
   "docs_urls": [
     "https://docs.wellsaidlabs.com/docs/getting-started",
     "https://docs.wellsaidlabs.com/reference/model-selection-with-the-api",
     "https://docs.wellsaidlabs.com/reference/available-voice-avatars",
     "https://docs.wellsaidlabs.com/reference/ttsstream.md"
   ],
+  "headquarters": "US",
   "id": "wellsaid",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.wellsaidlabs.com/reference",
+    "docs": "https://docs.wellsaidlabs.com/reference/getting-started-with-your-api",
+    "status": "https://status.wellsaidlabs.com"
+  },
   "name": "WellSaid Labs",
   "source": "mixed",
-  "type": "tts"
+  "type": "tts",
+  "website": "https://www.wellsaid.io"
 }

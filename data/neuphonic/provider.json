@@ -1,14 +1,22 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.neuphonic.com/voices"
   ],
+  "description": "Neuphonic is a London-based voice AI lab (Neuphonic Limited, incorporated in 2024) that builds text-to-speech models. It offers a streaming TTS API over SSE and WebSocket and its NeuTTS models for on-device and on-premise deployment.",
   "docs_urls": [
     "https://docs.neuphonic.com/llms.txt",
     "https://docs.neuphonic.com/build-group/text-to-speech",
     "https://docs.neuphonic.com/build-group/languages"
   ],
+  "headquarters": "GB",
   "id": "neuphonic",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://api.neuphonic.com/docs",
+    "docs": "https://docs.neuphonic.com",
+    "status": "https://status.neuphonic.com"
+  },
   "name": "Neuphonic",
   "source": "mixed",
   "type": "tts",
@@ -18,5 +26,6 @@
     "urls": [
       "https://api.neuphonic.com/voices"
     ]
-  }
+  },
+  "website": "https://www.neuphonic.com"
 }

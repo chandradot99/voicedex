@@ -1,13 +1,28 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.smallest.ai/waves/v1/{model}/get_voices"
   ],
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "gdpr",
+    "hipaa"
+  ],
+  "description": "Smallest AI is a voice AI company headquartered in San Francisco, founded in 2023 by Sudarshan Kamath and Akshat Mandloi. It sells Lightning text-to-speech and Pulse speech-to-text models through its Waves API, plus the Atoms voice-agent platform; on-premise deployment is offered.",
   "docs_urls": [
     "https://docs.smallest.ai/model-cards/compare",
     "https://docs.smallest.ai/api-reference/deprecations/models"
   ],
+  "headquarters": "US",
   "id": "smallestai",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.smallest.ai/api-reference/introduction",
+    "docs": "https://docs.smallest.ai",
+    "pricing": "https://smallest.ai/pricing/models",
+    "status": "https://status.smallest.ai"
+  },
   "name": "Smallest AI",
   "source": "mixed",
   "type": "both",
@@ -17,5 +32,6 @@
     "urls": [
       "https://api.smallest.ai/waves/v1/{model}/get_voices"
     ]
-  }
+  },
+  "website": "https://smallest.ai"
 }

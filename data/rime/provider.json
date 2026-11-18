@@ -1,14 +1,27 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://users.rime.ai/data/voices/voice_details.json"
   ],
+  "compliance": [
+    "soc2",
+    "hipaa"
+  ],
+  "description": "Rime is a San Francisco voice AI company founded in 2022 by Lily Clifford, Brooke Larson and Ares Geovanos. It sells the Coda and Mist text-to-speech models and the Prism speech-to-speech model for customer-facing voice applications. Enterprise plans add VPC or on-premise deployment.",
   "docs_urls": [
     "https://docs.rime.ai/docs/models",
     "https://docs.rime.ai/docs/voices",
     "https://www.rime.ai/pricing"
   ],
+  "headquarters": "US",
   "id": "rime",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.rime.ai/api-reference",
+    "docs": "https://docs.rime.ai/docs/introduction",
+    "pricing": "https://www.rime.ai/pricing",
+    "status": "https://www.rimestat.us"
+  },
   "name": "Rime AI",
   "source": "mixed",
   "type": "tts",
@@ -18,5 +31,6 @@
     "urls": [
       "https://users.rime.ai/data/voices/voice_details.json"
     ]
-  }
+  },
+  "website": "https://www.rime.ai"
 }

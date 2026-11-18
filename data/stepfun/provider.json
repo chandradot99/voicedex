@@ -1,10 +1,17 @@
 {
+  "access": "self_serve",
+  "description": "StepFun (阶跃星辰) is a Shanghai AI lab founded in 2023. Its StepAudio models cover speech recognition, text-to-speech and realtime speech-to-speech, sold pay-as-you-go through the international StepFun platform.",
   "docs_urls": [
     "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
     "https://platform.stepfun.ai/docs/en/pricing/details"
   ],
+  "headquarters": "CN",
   "id": "stepfun",
   "last_synced": "2026-11-16",
+  "links": {
+    "docs": "https://platform.stepfun.ai/docs/en/guides/models/audio",
+    "pricing": "https://platform.stepfun.ai/docs/en/pricing/details"
+  },
   "name": "StepFun",
   "source": "docs",
   "type": "both",
@@ -15,5 +22,6 @@
       "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
       "https://platform.stepfun.ai/docs/en/pricing/details"
     ]
-  }
+  },
+  "website": "https://platform.stepfun.ai"
 }

@@ -1,4 +1,10 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001"
+  ],
+  "description": "Sarvam is an AI company based in Bengaluru, India, founded in August 2023 by Vivek Raghavan and Pratyush Kumar. It sells Saaras speech-to-text and Bulbul text-to-speech APIs for English and Indic languages, priced in INR. Customer data for Indian customers is stored in India, with managed production on Azure Central India.",
   "docs_urls": [
     "https://docs.sarvam.ai/api-reference/speech-to-text/transcribe",
     "https://docs.sarvam.ai/api/getting-started/models",
@@ -6,9 +12,19 @@
     "https://docs.sarvam.ai/api/llms.txt",
     "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
   ],
+  "headquarters": "IN",
   "id": "sarvam",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.sarvam.ai/api-reference/introduction",
+    "docs": "https://docs.sarvam.ai",
+    "pricing": "https://docs.sarvam.ai/api/getting-started/pricing",
+    "status": "https://status.sarvam.ai"
+  },
   "name": "Sarvam",
+  "regions": [
+    "asia"
+  ],
   "source": "docs",
   "type": "both",
   "voices_source": {
@@ -21,5 +37,6 @@
       "https://docs.sarvam.ai/api/llms.txt",
       "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
     ]
-  }
+  },
+  "website": "https://www.sarvam.ai"
 }

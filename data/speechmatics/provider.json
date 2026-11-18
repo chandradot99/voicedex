@@ -1,4 +1,12 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "Speechmatics (Cantab Research Limited) is a speech recognition company founded in 2006 and headquartered in Cambridge, UK. It sells batch and realtime speech-to-text in 55+ languages, deployable in its cloud or on-premise. SaaS endpoints are in the EU, US and Australia.",
   "docs_urls": [
     "https://docs.speechmatics.com/speech-to-text/models",
     "https://docs.speechmatics.com/speech-to-text/languages",
@@ -6,9 +14,21 @@
     "https://docs.speechmatics.com/speech-to-text/realtime/input",
     "https://www.speechmatics.com/pricing"
   ],
+  "headquarters": "GB",
   "id": "speechmatics",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.speechmatics.com/api-ref",
+    "docs": "https://docs.speechmatics.com",
+    "pricing": "https://www.speechmatics.com/pricing",
+    "status": "https://status.speechmatics.com"
+  },
   "name": "Speechmatics",
+  "regions": [
+    "eu",
+    "us"
+  ],
   "source": "docs",
-  "type": "stt"
+  "type": "stt",
+  "website": "https://www.speechmatics.com"
 }

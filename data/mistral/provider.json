@@ -1,7 +1,13 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.mistral.ai/v1/audio/voices"
   ],
+  "compliance": [
+    "soc2",
+    "iso27001"
+  ],
+  "description": "Mistral AI is an AI lab headquartered in Paris, France, founded in April 2023. Its Voxtral audio models cover speech-to-text (batch and realtime transcription) and text-to-speech with voice cloning, served through the Mistral API on European, US and global endpoints; several Voxtral models are also published with open weights.",
   "docs_urls": [
     "https://docs.mistral.ai/models.md",
     "https://docs.mistral.ai/studio/audio/migrate-from-voxtral-2.md",
@@ -9,9 +15,20 @@
     "https://docs.mistral.ai/studio/audio/specs-and-limits/audio-formats.md",
     "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
   ],
+  "headquarters": "FR",
   "id": "mistral",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.mistral.ai/api",
+    "docs": "https://docs.mistral.ai/studio/audio/overview",
+    "pricing": "https://mistral.ai/pricing"
+  },
   "name": "Mistral AI",
+  "regions": [
+    "eu",
+    "us"
+  ],
   "source": "mixed",
-  "type": "both"
+  "type": "both",
+  "website": "https://mistral.ai"
 }
