@@ -1,0 +1,30 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "gdpr",
+    "hipaa"
+  ],
+  "description": "Aqua Voice is a New York City company founded in 2023 (Y Combinator W24) that makes AI dictation apps for Mac, Windows, iOS and Android. Its own speech-recognition model, Avalon, is sold to developers through an OpenAI-compatible batch transcription API and a dictation API that adds text formatting, both priced per audio hour.",
+  "docs_urls": [
+    "https://aquavoice.com/llms.txt",
+    "https://aquavoice.com/docs/api/openapi.yaml",
+    "https://aquavoice.com/api"
+  ],
+  "headquarters": "US",
+  "id": "aqua",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://aquavoice.com/docs/api",
+    "docs": "https://aquavoice.com/docs/quickstart",
+    "pricing": "https://aquavoice.com/api"
+  },
+  "name": "Aqua Voice (Avalon)",
+  "regions": [
+    "us"
+  ],
+  "source": "docs",
+  "type": "stt",
+  "website": "https://aquavoice.com"
+}
