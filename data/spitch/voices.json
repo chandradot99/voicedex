@@ -1,0 +1,645 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "aliyu",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ha"
+    },
+    "name": "Aliyu",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/aliyu.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "amara",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ig"
+    },
+    "name": "Amara",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/amara.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "amina",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ha"
+    },
+    "name": "Amina",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/amina.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "boma",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "pcm"
+    },
+    "name": "Boma",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/boma.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ebuka",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ig"
+    },
+    "name": "Ebuka",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/ebuka.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "femi",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "yo"
+    },
+    "name": "Femi",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/femi.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "funmi",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "yo"
+    },
+    "name": "Funmi",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/funmi.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "haile",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "am"
+    },
+    "name": "Haile",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hana",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "am"
+    },
+    "name": "Hana",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/hana.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "hasan",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ha"
+    },
+    "name": "Hasan",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/hasan.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "henry",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "Henry",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/henry.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "john",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "John",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/john.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jude",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "Jude",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/jude.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "justice",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "pcm"
+    },
+    "name": "Justice",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/justice.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "kani",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "Kani",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/kani.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kingsley",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "Kingsley",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/kingsley.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lina",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "Lina",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/lina.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lucy",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "Lucy",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/lucy.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ngozi",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ig"
+    },
+    "name": "Ngozi",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/ngozi.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "obinna",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ig"
+    },
+    "name": "Obinna",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/obinna.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "remi",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "en"
+    },
+    "name": "Remi",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/remi.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "sade",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "yo"
+    },
+    "name": "Sade",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/sade.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "segun",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "yo"
+    },
+    "name": "Segun",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/segun.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "tega",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "pcm"
+    },
+    "name": "Tega",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/tega.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "tena",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "am"
+    },
+    "name": "Tena",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/tena.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "tesfaye",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "am"
+    },
+    "name": "Tesfaye",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/tesfaye.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ufoma",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "pcm"
+    },
+    "name": "Ufoma",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/ufoma.wav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "zainab",
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "designed_for_language": "ha"
+    },
+    "name": "Zainab",
+    "preview_url": "https://mintcdn.com/babstechnologies/DMzWQTDRfPUAJLmw/audio/voices/zainab.wav",
+    "updated_at": "2026-11-18"
+  }
+]

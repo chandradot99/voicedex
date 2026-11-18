@@ -1,0 +1,127 @@
+[
+  {
+    "audio_formats": [
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Transcription endpoint for African-language and English audio with optional sentence or word timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "spitch-stt",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "yo",
+      "ha",
+      "ig",
+      "am"
+    ],
+    "meta": {
+      "async": "?async=true returns a polling URL",
+      "deprecated_model_values": "mansa_v1, legacy (the `model` parameter is deprecated; omit it)",
+      "endpoint": "POST /v1/transcriptions",
+      "languages_note": "Docs say many languages; en, yo, ha, ig, am are the ISO 639 codes named. Omitting language uses automatic language handling (response carries detected_language).",
+      "max_file_size_mb": 25,
+      "no_model_parameter": true
+    },
+    "name": "Spitch Speech to Text",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.00042 per second of input audio in the API docs pricing table; $0.0252 per minute on spitch.app/pricing; new developers get $1 free credit.",
+      "price_usd": 0.00042,
+      "source_url": "https://spitch.app/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://spitch.app/docs/features/transcription",
+        "https://spitch.app/docs/api-reference/speech/speech-to-text",
+        "https://spitch.app/pricing",
+        "https://spitch.app/docs/features/speech",
+        "https://spitch.app/docs/api-reference/speech/text-to-speech",
+        "https://spitch.app/docs/concepts/voices"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Speech synthesis endpoint with system and custom voices for English, Hausa, Igbo, Yoruba, Amharic and Nigerian Pidgin, streamed as chunked audio.",
+    "first_seen": "2026-11-18",
+    "id": "spitch-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "ha",
+      "ig",
+      "yo",
+      "am",
+      "pcm"
+    ],
+    "meta": {
+      "bitrates": "32k-192k for compressed formats",
+      "custom_voices": "POST /v1/voices from a reference recording + transcript + consent",
+      "endpoint": "POST /v1/speech",
+      "no_model_parameter": true,
+      "provenance": "Signed provenance metadata embedded in wav, mp3, ogg_opus, webm_opus, flac",
+      "raw_formats": "wav, mp3, ogg_opus, webm_opus, flac, pcm_s16le, mulaw, alaw, m3u8 (HLS)",
+      "speed_range": "0.7-1.2",
+      "streaming_note": "Audio is streamed with chunked transfer encoding over HTTP",
+      "yoruba_diacritization": "Yoruba input is diacritized before synthesis"
+    },
+    "name": "Spitch Text to Speech",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.0014 per second of generated audio in the API docs pricing table; $0.084 per minute on spitch.app/pricing; new developers get $1 free credit.",
+      "price_usd": 0.0014,
+      "source_url": "https://spitch.app/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://spitch.app/docs/features/transcription",
+        "https://spitch.app/docs/api-reference/speech/speech-to-text",
+        "https://spitch.app/pricing",
+        "https://spitch.app/docs/features/speech",
+        "https://spitch.app/docs/api-reference/speech/text-to-speech",
+        "https://spitch.app/docs/concepts/voices"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

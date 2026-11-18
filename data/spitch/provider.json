@@ -1,0 +1,36 @@
+{
+  "access": "self_serve",
+  "description": "Spitch (legal name Babs Technologies) sells speech-to-text, text-to-speech, translation and Yoruba diacritization APIs focused on Nigerian and other African languages. Its system voices cover English, Hausa, Igbo, Yoruba, Amharic and Nigerian Pidgin, and custom voices can be registered from a short recording.",
+  "docs_urls": [
+    "https://spitch.app/docs/features/transcription",
+    "https://spitch.app/docs/api-reference/speech/speech-to-text",
+    "https://spitch.app/pricing",
+    "https://spitch.app/docs/features/speech",
+    "https://spitch.app/docs/api-reference/speech/text-to-speech",
+    "https://spitch.app/docs/concepts/voices"
+  ],
+  "id": "spitch",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://api.spitch.app/openapi.json",
+    "docs": "https://spitch.app/docs",
+    "pricing": "https://spitch.app/pricing",
+    "status": "https://status.spitch.app"
+  },
+  "name": "Spitch",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://spitch.app/docs/features/transcription",
+      "https://spitch.app/docs/api-reference/speech/speech-to-text",
+      "https://spitch.app/pricing",
+      "https://spitch.app/docs/features/speech",
+      "https://spitch.app/docs/api-reference/speech/text-to-speech",
+      "https://spitch.app/docs/concepts/voices"
+    ]
+  },
+  "website": "https://spitch.app"
+}
