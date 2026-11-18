@@ -1,0 +1,129 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control",
+      "ssml",
+      "voice_cloning"
+    ],
+    "description": "Humelo's voice-cloning TTS engine with context-aware emotional delivery, available via the PROSODY Console REST, streaming and WebSocket APIs.",
+    "first_seen": "2026-11-18",
+    "id": "dive",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "max_text_chars": 500,
+    "meta": {
+      "cross_lingual": true,
+      "endpoints": {
+        "standard": "POST https://api-console.humelo.net/api/v1/dive",
+        "streaming": "POST https://api-console.humelo.net/api/v1/dive/stream",
+        "websocket": "wss://api-console.humelo.net/api/v1/dive/ws"
+      },
+      "max_text_note": "Per-account limit; 500 UTF-16 code units unless configured otherwise.",
+      "model_selection": "Engine is selected by endpoint; there is no model-id parameter.",
+      "on_premises": true,
+      "output_formats_raw": [
+        "wav_8000",
+        "wav_16000",
+        "wav_24000",
+        "wav_48000",
+        "pcm_8000",
+        "pcm_16000",
+        "pcm_24000",
+        "pcm_48000",
+        "opus_48000_32",
+        "opus_48000_64",
+        "opus_48000_96",
+        "opus_48000_128",
+        "mp3_22050_48",
+        "mp3_24000_64",
+        "mp3_44100_96",
+        "mp3_48000_128",
+        "aac_48000_128",
+        "alaw_8000",
+        "ulaw_8000"
+      ],
+      "ssml": "Partial SSML 1.1, Pro and Enterprise plans only.",
+      "timestamps": "enableTimestamps for permitted accounts.",
+      "voice_cloning": "Saved voices (2–20 s Korean/English samples) for pre-approved B2B accounts only.",
+      "voices": "Preset voices selected by voiceName + emotion."
+    },
+    "name": "DIVE",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://console.humelo.com/docs",
+        "https://console.humelo.com/llms-full.txt"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Humelo's in-house foundation TTS model for high-traffic real-time synthesis with preset voices, returning a WAV URL.",
+    "first_seen": "2026-11-18",
+    "id": "frtts",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko",
+      "en-US",
+      "ja",
+      "zh",
+      "es"
+    ],
+    "max_text_chars": 240,
+    "meta": {
+      "custom_voices": "Custom voice training from ~1 minute of audio (about 8 hours of training) via enterprise engagement.",
+      "deployment": "Cloud API only (no on-premises version).",
+      "endpoint": "POST https://agitvxptajouhvoatxio.supabase.co/functions/v1/tts-synthesize-v1",
+      "languages_note": "Five languages (Korean, US English, Japanese, Chinese, Spanish) per the FRTTS product page; the API reference has no language parameter."
+    },
+    "name": "FRTTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://console.humelo.com/docs",
+        "https://console.humelo.com/llms-full.txt"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

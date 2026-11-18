@@ -1,0 +1,19 @@
+{
+  "access": "self_serve",
+  "description": "Humelo (휴멜로) is a Seoul-based voice AI company founded in 2018 that develops its own Korean-focused speech synthesis engines. Its PROSODY Console sells API access to the DIVE voice-cloning TTS engine and the FRTTS real-time TTS engine; DIVE and the conversational DIVE Flex can also be installed on-premises. It also runs the Sody AI phone agent and the Tikita character chat app.",
+  "docs_urls": [
+    "https://console.humelo.com/docs",
+    "https://console.humelo.com/llms-full.txt"
+  ],
+  "headquarters": "KR",
+  "id": "humelo",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://console.humelo.com/llms-full.txt",
+    "docs": "https://console.humelo.com/docs"
+  },
+  "name": "Humelo",
+  "source": "docs",
+  "type": "tts",
+  "website": "https://humelo.com"
+}
