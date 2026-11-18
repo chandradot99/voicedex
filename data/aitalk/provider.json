@@ -1,0 +1,18 @@
+{
+  "access": "enterprise",
+  "description": "AI Inc. (株式会社エーアイ) is a Tokyo-based speech synthesis company founded in April 2003 and listed on the Tokyo Stock Exchange (4388). It develops the AITalk Japanese TTS engines and sells them as SDKs, the 声の職人 (Koe no Shokunin) narration tool and the AITalk WebAPI, a contract-based SaaS TTS API relaunched on 2025-09-30 on the DNN engine AITalk6. Custom voices are offered through its AITalk CustomVoice service.",
+  "docs_urls": [
+    "https://www.ai-j.jp/products/cloud_webapi/",
+    "https://prtimes.jp/main/html/rd/p/000000151.000099620.html"
+  ],
+  "headquarters": "JP",
+  "id": "aitalk",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://www.ai-j.jp/products/cloud_webapi/"
+  },
+  "name": "AITalk (AI Inc.)",
+  "source": "docs",
+  "type": "tts",
+  "website": "https://www.ai-j.jp/"
+}
