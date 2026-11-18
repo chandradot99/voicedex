@@ -1,0 +1,411 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "word_timestamps"
+    ],
+    "description": "Arabic recognition for 16 kHz audio covering Standard Arabic and Egyptian, Saudi and (real-time) UAE dialects; no punctuation, digit normalization or hot words.",
+    "first_seen": "2026-11-18",
+    "id": "arabic_16k_general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "ar-EG",
+      "ar-SA",
+      "ar-AE"
+    ],
+    "meta": {
+      "apis": [
+        "Real-Time ASR (WSS /v1/{project_id}/rasr/{short-stream|continue-stream|sentence-stream})",
+        "Short Sentence Recognition (POST /v1/{project_id}/asr/short-audio, audio ≤ 1 min)"
+      ],
+      "dialects": "Real-Time ASR: Standard Arabic, Egyptian, Saudi, UAE; Short Sentence Recognition: Standard Arabic, Egyptian, Saudi",
+      "huawei_regions": [
+        "ap-southeast-3",
+        "me-east-1"
+      ],
+      "rasr_audio_formats": "pcm16k16bit, pcm8k16bit, ulaw16k8bit, ulaw8k8bit, alaw16k8bit, alaw8k8bit (raw only)",
+      "rasr_max_connection": "WebSocket connection lasts at most 5 hours",
+      "short_sentence_audio_formats": "pcm16k16bit, pcm8k16bit, ulaw16k8bit, ulaw8k8bit, alaw16k8bit, alaw8k8bit, mp3, aac, wav, amr, amrwb, auto (amr, flac, m4a, mp3, ogg, webm, wav, aac, ac3, mov, wma, amrwb)"
+    },
+    "name": "Arabic 16 kHz General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-Time ASR, pay-per-use, monthly tiers: $1.30/hour for 0–4,000 h, $0.81/hour for 4,000–16,000 h, $0.60/hour above 16,000 h (AP-Singapore and ME-Riyadh). Short Sentence Recognition, per successful call: $1.40 per 1,000 calls (0–299k calls/month), $1.20 (299k–999k), $1.00 (999k–2,999k), $0.86 (2,999k–4,999k), $0.70 per 1,000 above.",
+      "price_usd": 1.3,
+      "source_url": "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "Short Sentence Recognition (per call, first tier)",
+          "price_usd": 0.0014,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+        "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "Mandarin Chinese recognition for 16 kHz audio (8 or 16 kHz in Short Sentence Recognition) using the next-gen end-to-end algorithm.",
+    "first_seen": "2026-11-18",
+    "id": "chinese_16k_general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "apis": [
+        "Real-Time ASR (WSS /v1/{project_id}/rasr/{short-stream|continue-stream|sentence-stream})",
+        "Short Sentence Recognition (POST /v1/{project_id}/asr/short-audio, audio ≤ 1 min)"
+      ],
+      "custom_vocabulary_note": "Hot words via vocabulary_id (Real-Time ASR); not supported for Short Sentence Recognition on the international site",
+      "huawei_regions": [
+        "ap-southeast-3",
+        "me-east-1"
+      ],
+      "rasr_audio_formats": "pcm16k16bit, pcm8k16bit, ulaw16k8bit, ulaw8k8bit, alaw16k8bit, alaw8k8bit (raw only)",
+      "rasr_max_connection": "WebSocket connection lasts at most 5 hours",
+      "sample_rate_note": "Real-Time ASR: 16 kHz; Short Sentence Recognition: 8 or 16 kHz",
+      "short_sentence_audio_formats": "pcm16k16bit, pcm8k16bit, ulaw16k8bit, ulaw8k8bit, alaw16k8bit, alaw8k8bit, mp3, aac, wav, amr, amrwb, auto (amr, flac, m4a, mp3, ogg, webm, wav, aac, ac3, mov, wma, amrwb)"
+    },
+    "name": "Chinese Mandarin 16 kHz General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-Time ASR, pay-per-use, monthly tiers: $1.30/hour for 0–4,000 h, $0.81/hour for 4,000–16,000 h, $0.60/hour above 16,000 h (AP-Singapore and ME-Riyadh). Short Sentence Recognition, per successful call: $1.40 per 1,000 calls (0–299k calls/month), $1.20 (299k–999k), $1.00 (999k–2,999k), $0.86 (2,999k–4,999k), $0.70 per 1,000 above.",
+      "price_usd": 1.3,
+      "source_url": "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "Short Sentence Recognition (per call, first tier)",
+          "price_usd": 0.0014,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+        "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Mandarin Chinese recognition for 8 kHz audio using Huawei's next-gen end-to-end algorithm.",
+    "first_seen": "2026-11-18",
+    "id": "chinese_8k_general",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "apis": [
+        "Real-Time ASR (WSS /v1/{project_id}/rasr/{short-stream|continue-stream|sentence-stream})"
+      ],
+      "huawei_regions": [
+        "ap-southeast-3",
+        "me-east-1"
+      ],
+      "rasr_audio_formats": "pcm16k16bit, pcm8k16bit, ulaw16k8bit, ulaw8k8bit, alaw16k8bit, alaw8k8bit (raw only)",
+      "rasr_max_connection": "WebSocket connection lasts at most 5 hours"
+    },
+    "name": "Chinese Mandarin 8 kHz General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-Time ASR, pay-per-use, monthly tiers: $1.30/hour for 0–4,000 h, $0.81/hour for 4,000–16,000 h, $0.60/hour above 16,000 h (AP-Singapore and ME-Riyadh).",
+      "price_usd": 1.3,
+      "source_url": "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+        "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "amr",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "punctuation",
+      "word_timestamps"
+    ],
+    "description": "English short-sentence recognition for 8 or 16 kHz audio; digit normalization not supported.",
+    "first_seen": "2026-11-18",
+    "id": "english_16k_common",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "apis": [
+        "Short Sentence Recognition (POST /v1/{project_id}/asr/short-audio, audio ≤ 1 min)"
+      ],
+      "huawei_regions": [
+        "ap-southeast-3",
+        "me-east-1"
+      ],
+      "short_sentence_audio_formats": "pcm16k16bit, pcm8k16bit, ulaw16k8bit, ulaw8k8bit, alaw16k8bit, alaw8k8bit, mp3, aac, wav, amr, amrwb, auto (amr, flac, m4a, mp3, ogg, webm, wav, aac, ac3, mov, wma, amrwb)"
+    },
+    "name": "English 16 kHz Common",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Short Sentence Recognition, per successful call: $1.40 per 1,000 calls (0–299k calls/month), $1.20 (299k–999k), $1.00 (999k–2,999k), $0.86 (2,999k–4,999k), $0.70 per 1,000 above.",
+      "price_usd": 0.0014,
+      "source_url": "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+      "unit": "request"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+        "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "English recognition for 16 kHz audio using the next-gen end-to-end algorithm; digit normalization not available.",
+    "first_seen": "2026-11-18",
+    "id": "english_16k_general",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "apis": [
+        "Real-Time ASR (WSS /v1/{project_id}/rasr/{short-stream|continue-stream|sentence-stream})"
+      ],
+      "huawei_regions": [
+        "ap-southeast-3",
+        "me-east-1"
+      ],
+      "rasr_audio_formats": "pcm16k16bit, pcm8k16bit, ulaw16k8bit, ulaw8k8bit, alaw16k8bit, alaw8k8bit (raw only)",
+      "rasr_max_connection": "WebSocket connection lasts at most 5 hours"
+    },
+    "name": "English 16 kHz General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Real-Time ASR, pay-per-use, monthly tiers: $1.30/hour for 0–4,000 h, $0.81/hour for 4,000–16,000 h, $0.60/hour above 16,000 h (AP-Singapore and ME-Riyadh).",
+      "price_usd": 1.3,
+      "source_url": "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+        "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "WebSocket text-to-speech that streams synthesized audio for one text per connection, with Arabic and English high-quality (virtual human) speakers.",
+    "first_seen": "2026-11-18",
+    "id": "rtts",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "default_sample_rate": 8000,
+      "endpoint": "WSS /v1/{project_id}/rtts",
+      "huawei_regions": [
+        "me-east-1"
+      ],
+      "no_model_parameter": true,
+      "subtitle": "Optional word_level or phoneme_level timestamps",
+      "voice_parameter": "config.property"
+    },
+    "name": "Real-Time TTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.40 per 1,000 billable calls (pay-per-use, ME-Riyadh). For high-quality speakers each call of up to 50 UTF-8 characters counts as one billable unit (100 characters for average-pronunciation speakers).",
+      "price_usd": 0.0004,
+      "source_url": "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+      "unit": "request"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+        "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+        "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

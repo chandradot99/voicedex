@@ -1,0 +1,41 @@
+{
+  "access": "self_serve",
+  "description": "Huawei Cloud is the cloud computing business of Huawei Technologies, operated by Huawei Cloud Computing Technologies Co., Ltd. (Gui'an, Guizhou, China). Its Speech Interaction Service (SIS) on the international site offers real-time speech recognition and short-sentence recognition for Mandarin Chinese, English and Arabic (including Egyptian, Saudi and UAE dialects), and real-time Arabic/English text-to-speech, in the AP-Singapore and ME-Riyadh regions.",
+  "docs_urls": [
+    "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+    "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+    "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+    "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+    "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+    "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+    "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+  ],
+  "headquarters": "CN",
+  "id": "huawei-cloud",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0002.html",
+    "docs": "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0001.html",
+    "pricing": "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis"
+  },
+  "name": "Huawei Cloud SIS",
+  "regions": [
+    "asia"
+  ],
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0030.html",
+      "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html",
+      "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0004.html",
+      "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0008.html",
+      "https://www.huaweicloud.com/intl/en-us/pricing/calculator.html#/sis",
+      "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0115.html",
+      "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
+    ]
+  },
+  "website": "https://www.huaweicloud.com/intl/en-us/"
+}
