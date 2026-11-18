@@ -33,6 +33,7 @@
     body { min-height: 100vh; }
     .docs-page .site-header { z-index: 100; }
     .docs-page { display: block; }
+    .docs-page .jump kbd { display: none; }   /* here ⌘K opens the reference's own search */
     #scalar-docs { --scalar-custom-header-height: 57px; }
   </style>
 </head>
@@ -202,9 +203,9 @@
           --scalar-color-orange: #fbbf24;
           --scalar-color-red: #fb7c5c;
           --scalar-color-purple: #b79bf0;
-          --scalar-radius: 10px;
-          --scalar-radius-lg: 14px;
-          --scalar-radius-xl: 22px;
+          --scalar-radius: 2px;
+          --scalar-radius-lg: 2px;
+          --scalar-radius-xl: 3px;
           --scalar-sidebar-background-1: var(--bg);
           --scalar-sidebar-item-hover-background: var(--panel);
           --scalar-sidebar-item-active-background: var(--panel-2);
@@ -234,7 +235,7 @@
           --scalar-border-color: var(--rule-2) !important;
         }
         .scalar-client.scalar-app-layout {
-          background: var(--panel) !important; border: 1px solid var(--control) !important; border-radius: 4px; overflow: hidden;
+          background: var(--panel) !important; border: 1px solid var(--control) !important; border-radius: 2px; overflow: hidden;
           box-shadow: 0 40px 140px -20px var(--shadow) !important;
         }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
@@ -248,10 +249,10 @@
         /* Scalar's hover tooltips are already a rounded pill; the wrapper stays invisible. */
         .scalar-tooltip { background: transparent !important; box-shadow: none !important; }
         /* Tooltips and the parameter-info popover: same 8px radius as the site's other small surfaces. */
-        .scalar-tooltip::before { border-radius: 8px !important; }
-        .z-context > div.rounded-xl { border-radius: 8px !important; }
+        .scalar-tooltip::before { border-radius: 2px !important; }
+        .z-context > div.rounded-xl { border-radius: 2px !important; }
         .z-context > div.rounded-xl:has(> div.text-xxs) { padding: 0 !important; }
-        .z-context > div.rounded-xl > div.text-xxs { border-radius: 8px !important; padding: 6px 10px !important; }
+        .z-context > div.rounded-xl > div.text-xxs { border-radius: 2px !important; padding: 6px 10px !important; }
         .z-context > div.rounded-xl > div.text-xxs .markdown { line-height: 1.45 !important; }
         /* Search dialog (⌘K) and other modals: dim + blur the page; mark the keyboard selection. */
         .scalar-modal-layout { background: var(--backdrop) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
@@ -275,8 +276,8 @@
         /* Sidebar, in the site's own pattern (top nav / tabs): active = rounded fill + white text, hover = a
            quieter fill, no accent bars. Scalar draws the nesting line inside each link, so the fill is a layer
            behind the text that starts right of that line for nested items instead of painting over it. */
-        a.peer\\/button { position: relative; isolation: isolate; border-radius: 8px !important; padding: 7px 10px !important; background: transparent !important; box-shadow: none !important; }
-        a.peer\\/button::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 8px; background: transparent; }
+        a.peer\\/button { position: relative; isolation: isolate; border-radius: 2px !important; padding: 7px 10px !important; background: transparent !important; box-shadow: none !important; }
+        a.peer\\/button::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 2px; background: transparent; }
         a.peer\\/button:has(.scalar-sidebar-indent-border)::before { left: 24px; }
         /* Nested items: 10px between the fill's left edge and the text, same inset as group headings. */
         a.peer\\/button:has(.scalar-sidebar-indent-border) .group\\/button-label { padding-left: 4px; }
@@ -303,7 +304,7 @@
         /* API client "include" checkboxes: a real checkbox look. Unchecked = visible empty box (was a near-invisible
            check that read as a glitch); checked = amber box with a dark check; disabled (empty Key rows) = dimmed. */
         .scalar-client input.peer[type="checkbox"] + div > div.rounded {
-          opacity: 1 !important; width: 16px !important; height: 16px !important; border-radius: 4px !important;
+          opacity: 1 !important; width: 16px !important; height: 16px !important; border-radius: 2px !important;
           border: 1.5px solid var(--control) !important; background: transparent;
         }
         .scalar-client input.peer[type="checkbox"]:not(:checked) + div svg { opacity: 0 !important; }
@@ -323,7 +324,9 @@
         .response-body-virtual .font-code.rounded-t { padding-left: 34px !important; }
         .response-body-virtual .scalar-virtual-text { padding-left: 0 !important; }
         .response-body-virtual .scalar-virtual-text-content { left: 34px !important; }
-        .scalar-card, .scalar-codeblock-pre { border-radius: 4px !important; }
+        .scalar-card, .scalar-codeblock-pre { border-radius: 2px !important; }
+        /* Datasheet shapes: no pills (version badge, content-type chip, schema toggle). */
+        .badge.rounded-2xl, .selected-content-type, .scalar-card-checkbox-input, .scalar-card-checkbox-checkmark { border-radius: 2px !important; }
       `,
     });
     });
