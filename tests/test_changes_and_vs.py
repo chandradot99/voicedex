@@ -93,6 +93,8 @@ async def test_changes_page_and_atom(client, monkeypatch):
     titles = [e.find("a:title", ns).text for e in root.findall("a:entry", ns)]
     assert "Price changed: ZZ Test TTS Main ($20.00 per 1M chars → $30.00 per 1M chars)" in titles
     assert "1 provider added" in titles and len(titles) == 3
+    assert titles[0].startswith("Price changed")     # within 2026-11-21: price change before the providers line
+    assert titles[-1].startswith("Shutdown announced")  # 2026-11-20 comes after 2026-11-21
     assert "/changes" in (await client.get("/sitemap.xml")).text
 
 
