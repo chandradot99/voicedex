@@ -1,0 +1,17 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=text-to-speech"
+  ],
+  "description": "Open-source TTS project from Hugging Face. Parler-TTS generates speech whose speaker style (gender, pitch, speaking rate, recording quality) is controlled by a natural-language text description; the Mini (880M) and Large (2.3B) v1 checkpoints were trained on 45k hours of audiobook data and released under Apache-2.0 with their datasets and training code.",
+  "id": "parler-tts",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://github.com/huggingface/parler-tts"
+  },
+  "name": "Parler-TTS (Hugging Face)",
+  "source": "api",
+  "type": "tts",
+  "website": "https://github.com/huggingface/parler-tts"
+}

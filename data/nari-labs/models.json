@@ -1,0 +1,58 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "nari-labs/Dia-1.6B",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "huggingface_repo": "nari-labs/Dia-1.6B",
+      "released": "2025-04-20"
+    },
+    "name": "Dia-1.6B",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/nari-labs/Dia-1.6B"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=nari-labs&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=nari-labs&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "nari-labs/Dia-1.6B-0626",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "huggingface_repo": "nari-labs/Dia-1.6B-0626",
+      "released": "2025-06-26"
+    },
+    "name": "Dia-1.6B-0626",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/nari-labs/Dia-1.6B-0626"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=nari-labs&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=nari-labs&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

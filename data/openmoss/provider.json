@@ -1,0 +1,18 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
+  ],
+  "description": "Open research team from the Shanghai Innovation Institute, the Fudan University NLP Lab and MOSI Intelligence in China, building open-source language, speech and multimodal models. Its MOSS-TTS family covers multilingual voice-cloning TTS, multi-speaker dialogue (MOSS-TTSD), real-time streaming TTS, voice design and the ~100M-parameter CPU model MOSS-TTS-Nano, released mostly under Apache-2.0.",
+  "headquarters": "CN",
+  "id": "openmoss",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://github.com/OpenMOSS/MOSS-TTS"
+  },
+  "name": "OpenMOSS (Fudan)",
+  "source": "api",
+  "type": "tts",
+  "website": "https://openmoss.ai"
+}

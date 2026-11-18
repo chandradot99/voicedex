@@ -1,0 +1,56 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "maya-research/Veena",
+    "languages": [
+      "en",
+      "hi"
+    ],
+    "meta": {
+      "huggingface_repo": "maya-research/Veena",
+      "released": "2025-06-24"
+    },
+    "name": "Veena",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/maya-research/Veena"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=maya-research&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=maya-research&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "maya-research/maya1",
+    "meta": {
+      "huggingface_repo": "maya-research/maya1",
+      "released": "2025-10-18"
+    },
+    "name": "maya1",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/maya-research/maya1"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=maya-research&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=maya-research&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

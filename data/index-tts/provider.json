@@ -1,0 +1,18 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=IndexTeam&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=IndexTeam&pipeline_tag=text-to-speech"
+  ],
+  "description": "Speech team at Chinese video platform bilibili that publishes IndexTTS, a zero-shot voice-cloning TTS system. The latest IndexTTS-2.5 supports Chinese, English, Japanese, Spanish and Arabic with emotion, speed and pronunciation control; weights are under the bilibili Model Use License, with commercial use by arrangement.",
+  "headquarters": "CN",
+  "id": "index-tts",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://github.com/index-tts/index-tts"
+  },
+  "name": "IndexTTS (bilibili)",
+  "source": "api",
+  "type": "tts",
+  "website": "https://github.com/index-tts/index-tts"
+}

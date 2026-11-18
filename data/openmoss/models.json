@@ -1,0 +1,259 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "OpenMOSS-Team/MOSS-TTS",
+    "languages": [
+      "ar",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fr",
+      "he",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "sv",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS",
+      "released": "2026-02-06"
+    },
+    "name": "MOSS-TTS",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "OpenMOSS-Team/MOSS-TTS-Local-Transformer",
+    "languages": [
+      "ar",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fr",
+      "he",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "sv",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer",
+      "released": "2026-02-08"
+    },
+    "name": "MOSS-TTS-Local-Transformer",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
+    "languages": [
+      "ar",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "mk",
+      "ms",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sv",
+      "sw",
+      "th",
+      "tl",
+      "tr",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
+      "released": "2026-06-04"
+    },
+    "name": "MOSS-TTS-Local-Transformer-v1.5",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "OpenMOSS-Team/MOSS-TTS-Nano-100M",
+    "languages": [
+      "ar",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fr",
+      "he",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "sv",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Nano-100M",
+      "released": "2026-04-02"
+    },
+    "name": "MOSS-TTS-Nano-100M",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "OpenMOSS-Team/MOSS-TTS-v1.5",
+    "languages": [
+      "ar",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "mk",
+      "ms",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sv",
+      "sw",
+      "th",
+      "tl",
+      "tr",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-v1.5",
+      "released": "2026-05-25"
+    },
+    "name": "MOSS-TTS-v1.5",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

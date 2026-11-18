@@ -1,0 +1,82 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "suno/bark",
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "suno/bark",
+      "released": "2023-04-25"
+    },
+    "name": "bark",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/suno/bark"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=suno&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=suno&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "suno/bark-small",
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "tr",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "suno/bark-small",
+      "released": "2023-07-18"
+    },
+    "name": "bark-small",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/suno/bark-small"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=suno&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=suno&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

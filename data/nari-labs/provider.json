@@ -1,0 +1,18 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=nari-labs&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=nari-labs&pipeline_tag=text-to-speech"
+  ],
+  "description": "US-based AI lab for open research that started with speech AI. It released Dia, a 1.6B-parameter English dialogue TTS model that generates two-speaker conversations with nonverbal sounds and supports voice cloning from an audio prompt, under Apache-2.0, followed by Dia2.",
+  "headquarters": "US",
+  "id": "nari-labs",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://github.com/nari-labs/dia"
+  },
+  "name": "Nari Labs",
+  "source": "api",
+  "type": "tts",
+  "website": "https://narilabs.com"
+}

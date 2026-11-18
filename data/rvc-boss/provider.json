@@ -1,0 +1,17 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=lj1995&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=lj1995&pipeline_tag=text-to-speech"
+  ],
+  "description": "Open-source project by the GitHub developer RVC-Boss, with weights published on Hugging Face under the lj1995 account. GPT-SoVITS is an MIT-licensed zero-shot and few-shot voice-cloning TTS and voice-conversion WebUI supporting Chinese, English, Japanese, Korean and Cantonese.",
+  "id": "rvc-boss",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://github.com/RVC-Boss/GPT-SoVITS"
+  },
+  "name": "RVC-Boss (GPT-SoVITS)",
+  "source": "api",
+  "type": "tts",
+  "website": "https://github.com/RVC-Boss/GPT-SoVITS"
+}

@@ -1,0 +1,144 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "myshell-ai/MeloTTS-Chinese",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "huggingface_repo": "myshell-ai/MeloTTS-Chinese",
+      "released": "2024-02-29"
+    },
+    "name": "MeloTTS-Chinese",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/myshell-ai/MeloTTS-Chinese"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "myshell-ai/MeloTTS-English",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "huggingface_repo": "myshell-ai/MeloTTS-English",
+      "released": "2024-02-29"
+    },
+    "name": "MeloTTS-English",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/myshell-ai/MeloTTS-English"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "myshell-ai/MeloTTS-Korean",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "huggingface_repo": "myshell-ai/MeloTTS-Korean",
+      "released": "2024-02-29"
+    },
+    "name": "MeloTTS-Korean",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/myshell-ai/MeloTTS-Korean"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "myshell-ai/OpenVoice",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "myshell-ai/OpenVoice",
+      "released": "2024-01-02"
+    },
+    "name": "OpenVoice",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/myshell-ai/OpenVoice"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "myshell-ai/OpenVoiceV2",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "meta": {
+      "huggingface_repo": "myshell-ai/OpenVoiceV2",
+      "released": "2024-04-23"
+    },
+    "name": "OpenVoiceV2",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/myshell-ai/OpenVoiceV2"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

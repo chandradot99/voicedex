@@ -1,0 +1,18 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
+  ],
+  "description": "US-based company building a platform for creating and sharing AI agents and apps. It open-sourced the MIT-licensed OpenVoice voice-cloning model and the MeloTTS multilingual TTS library (English accents, Spanish, French, Chinese, Japanese, Korean), the latter developed with MIT.",
+  "headquarters": "US",
+  "id": "myshell-ai",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://github.com/myshell-ai/OpenVoice"
+  },
+  "name": "MyShell",
+  "source": "api",
+  "type": "tts",
+  "website": "https://myshell.ai"
+}

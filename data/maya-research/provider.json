@@ -1,0 +1,21 @@
+{
+  "access": "self_serve",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=maya-research&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=maya-research&pipeline_tag=text-to-speech"
+  ],
+  "description": "Speech-model startup backed by South Park Commons, focused on Indian languages and native-sounding accents. It published the Apache-2.0 open-weight models Veena (Hindi and English) and Maya-1 (voice described in natural language, with emotion tags), and sells a hosted streaming TTS API for its Maya 2 models with inference regions in Mumbai and Iowa.",
+  "id": "maya-research",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://huggingface.co/maya-research"
+  },
+  "name": "Maya Research",
+  "regions": [
+    "asia",
+    "us"
+  ],
+  "source": "api",
+  "type": "tts",
+  "website": "https://www.mayaresearch.ai"
+}

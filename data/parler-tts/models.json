@@ -1,0 +1,86 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "parler-tts/parler-tts-large-v1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "huggingface_repo": "parler-tts/parler-tts-large-v1",
+      "released": "2024-08-08"
+    },
+    "name": "parler-tts-large-v1",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/parler-tts/parler-tts-large-v1"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "parler-tts/parler-tts-mini-v1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "huggingface_repo": "parler-tts/parler-tts-mini-v1",
+      "released": "2024-06-26"
+    },
+    "name": "parler-tts-mini-v1",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/parler-tts/parler-tts-mini-v1"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "first_seen": "2026-11-18",
+    "id": "parler-tts/parler_tts_mini_v0.1",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "huggingface_repo": "parler-tts/parler_tts_mini_v0.1",
+      "released": "2024-04-09"
+    },
+    "name": "parler_tts_mini_v0.1",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/parler-tts/parler_tts_mini_v0.1"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

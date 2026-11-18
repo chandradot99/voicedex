@@ -1,0 +1,27 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "lj1995/GPT-SoVITS",
+    "meta": {
+      "huggingface_repo": "lj1995/GPT-SoVITS",
+      "released": "2024-01-16"
+    },
+    "name": "GPT-SoVITS",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "mit",
+      "url": "https://huggingface.co/lj1995/GPT-SoVITS"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=lj1995&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=lj1995&pipeline_tag=text-to-speech"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
