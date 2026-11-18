@@ -470,8 +470,11 @@
         .vd-resp-full .response-section-content > :not(:has(.vd-full)) { display: none !important; }
         .vd-resp-full .response-section-content > :has(.vd-full) { flex: 1 1 auto; min-height: 0; }
         .vd-resp-full .request-response-header { display: none !important; }   /* status row */
-        .scalar-app-layout:has(.vd-resp-full) [class*="min-h-header"],
-        .scalar-app-layout:has(.vd-resp-full) .scalar-sidebar-toggle { display: none !important; }   /* URL / Send bar, sidebar toggle */
+        .scalar-app-layout:has(.vd-resp-full) .scalar-sidebar-toggle { display: none !important; }
+        /* URL / Send bar: collapsed and invisible, not display:none — the close ✕ (position: fixed) lives inside it. */
+        .scalar-app-layout:has(.vd-resp-full) [class*="min-h-header"] {
+          height: 0 !important; min-height: 0 !important; padding: 0 !important; border: 0 !important; overflow: hidden !important; visibility: hidden !important; }
+        .scalar-app-layout:has(.vd-resp-full) .app-exit-button { visibility: visible !important; }
         .vd-hide { display: none !important; }
         .vd-bar-end { justify-content: flex-end !important; }
         .vd-full {
