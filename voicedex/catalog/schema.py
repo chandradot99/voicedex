@@ -67,6 +67,14 @@ class VoiceCategory(StrEnum):
     generated = "generated"
 
 
+class Access(StrEnum):
+    """How a developer gets access. Editorial (hand-set in provider.json)."""
+    self_serve = "self_serve"      # sign up, get a key, pay per use or by credit
+    enterprise = "enterprise"      # public API docs, but access or pricing goes through sales
+    regional = "regional"          # needs a local ID, entity, phone or government registration
+    open_weights = "open_weights"  # downloadable weights only; no first-party hosted API
+
+
 class ProvenanceMethod(StrEnum):
     api = "api"
     docs = "docs"       # extracted from documentation (AI-assisted)
@@ -113,6 +121,8 @@ class Provenance(_Record):
 class OpenWeights(_Record):
     license: str
     url: str | None = None
+    # Whether the weights' licence permits commercial use. None = not stated / unclear.
+    commercial_use: bool | None = None
 
 
 class PriceVariant(_Record):
@@ -178,6 +188,8 @@ class Provider(_Record):
     status: str = "active"  # "active" | "deprecated"
     website: str | None = None
     description: str | None = None
+    access: Access | None = None         # editorial: self_serve | enterprise | regional | open_weights
+    headquarters: str | None = None      # editorial: ISO 3166-1 alpha-2 country code, e.g. "IN"
     regions: list[Region] = Field(default_factory=list)
     compliance: list[Compliance] = Field(default_factory=list)
     links: ProviderLinks = Field(default_factory=ProviderLinks)
@@ -196,6 +208,16 @@ class Provider(_Record):
     def _type(cls, v: str) -> str:
         if v not in {"stt", "tts", "sts", "both"}:
             raise ValueError(f"invalid provider type {v!r}")
+        return v
+
+    @field_validator("headquarters")
+    @classmethod
+    def _hq(cls, v: str | None) -> str | None:
+        if v is None:
+            return None
+        v = v.strip().upper()
+        if len(v) != 2 or not v.isalpha():
+            raise ValueError(f"headquarters must be an ISO 3166-1 alpha-2 code, got {v!r}")
         return v
 
     @field_validator("status")

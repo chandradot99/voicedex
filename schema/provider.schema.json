@@ -1,5 +1,16 @@
 {
   "$defs": {
+    "Access": {
+      "description": "How a developer gets access. Editorial (hand-set in provider.json).",
+      "enum": [
+        "self_serve",
+        "enterprise",
+        "regional",
+        "open_weights"
+      ],
+      "title": "Access",
+      "type": "string"
+    },
     "Compliance": {
       "enum": [
         "soc2",
@@ -123,6 +134,17 @@
   },
   "additionalProperties": false,
   "properties": {
+    "access": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Access"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
     "api_urls": {
       "items": {
         "type": "string"
@@ -155,6 +177,18 @@
       },
       "title": "Docs Urls",
       "type": "array"
+    },
+    "headquarters": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Headquarters"
     },
     "id": {
       "maxLength": 256,

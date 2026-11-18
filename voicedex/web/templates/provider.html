@@ -12,6 +12,8 @@
     <span>{% for t in summary.types %}<b>{{ TYPE_SHORT[t] }}</b>{% if not loop.last %} {% endif %}{% endfor %}</span>
     <span><b>{{ summary.models }}</b> model{{ 's' if summary.models != 1 }}</span>
     <span>{% if summary.voices %}<a href="/voices?provider={{ p.id }}"><b>{{ "{:,}".format(summary.voices) }}</b> voices</a>{% else %}no stock voices{% endif %}</span>
+    {% if p.headquarters %}<span>based in {{ country_name(p.headquarters) }}</span>{% endif %}
+    {% if p.access %}<span>{{ ACCESS_LABELS.get(p.access, p.access) }}</span>{% endif %}
     <span>data from {{ {"api": "provider API", "docs": "documentation", "mixed": "API + docs"}.get(p.source, p.source or "–") }}</span>
     {% if p.last_synced %}<span>synced {{ p.last_synced }}</span>{% endif %}
   </p>

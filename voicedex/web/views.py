@@ -13,6 +13,29 @@ from voicedex.sync.language import LANGUAGE_NAMES
 TYPE_LABELS = {"stt": "Speech-to-text", "tts": "Text-to-speech", "sts": "Speech-to-speech"}
 TYPE_SHORT = {"stt": "STT", "tts": "TTS", "sts": "S2S"}
 
+ACCESS_LABELS = {
+    "self_serve": "self-serve API",
+    "enterprise": "API via sales",
+    "regional": "local registration required",
+    "open_weights": "open weights only",
+}
+
+# Countries providers are headquartered in (ISO 3166-1 alpha-2). Unknown codes render as the code.
+COUNTRY_NAMES = {
+    "AE": "UAE", "AU": "Australia", "BD": "Bangladesh", "BE": "Belgium", "BR": "Brazil", "CA": "Canada",
+    "CH": "Switzerland", "CN": "China", "CZ": "Czechia", "DE": "Germany", "EG": "Egypt", "ES": "Spain",
+    "FR": "France", "GB": "United Kingdom", "GH": "Ghana", "HK": "Hong Kong", "ID": "Indonesia",
+    "IL": "Israel", "IN": "India", "IT": "Italy", "JO": "Jordan", "JP": "Japan", "KE": "Kenya",
+    "KR": "South Korea", "KZ": "Kazakhstan", "LV": "Latvia", "NG": "Nigeria", "NL": "Netherlands",
+    "PK": "Pakistan", "PL": "Poland", "RO": "Romania", "RU": "Russia", "SA": "Saudi Arabia",
+    "SE": "Sweden", "SG": "Singapore", "TH": "Thailand", "TR": "Turkey", "TW": "Taiwan", "UG": "Uganda",
+    "US": "United States", "UZ": "Uzbekistan", "VN": "Vietnam", "ZA": "South Africa",
+}
+
+
+def country_name(code: str | None) -> str | None:
+    return COUNTRY_NAMES.get(code, code) if code else None
+
 _CODE_TO_NAME: dict[str, str] = {}
 for _name, _code in LANGUAGE_NAMES.items():
     _CODE_TO_NAME.setdefault(_code, _name.title())

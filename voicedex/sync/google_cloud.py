@@ -62,6 +62,21 @@ _STT_MODELS_DOCS_URLS = [
     "https://cloud.google.com/speech-to-text/pricing",
 ]
 
+_STS_MODELS_DOCS_URLS = [
+    "https://ai.google.dev/gemini-api/docs/live",
+    "https://ai.google.dev/gemini-api/docs/models",
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api",
+]
+
+_STS_MODELS_GUIDANCE = (
+    "Return every native-audio / Live API speech-to-speech model by its exact model code (Gemini API "
+    "and Vertex AI), including preview ones (lifecycle beta) and deprecated ones with a published "
+    "shutdown date (eol_date). Languages as documented. Pricing per token for audio input/output as "
+    "published (unit token, variants for audio in / audio out; per-1M prices go in notes as published, "
+    "price_usd is per single token). Exactly one is_default: the Live model Google recommends."
+)
+
 _GENDER_MAP = {
     "MALE":    "male",
     "FEMALE":  "female",
@@ -95,7 +110,8 @@ class GoogleCloudSyncer(ProviderSyncer):
 
         ai_key = settings.anthropic_api_key or None
 
-        voices_data, stt_api, (tts_models, tts_notes), (stt_models, stt_notes) = await asyncio.gather(
+        (voices_data, stt_api, (tts_models, tts_notes), (stt_models, stt_notes),
+         (sts_models, _)) = await asyncio.gather(
             self._fetch_voices(),
             self._fetch_stt_locations(),
             parse_models_from_docs(
@@ -110,6 +126,13 @@ class GoogleCloudSyncer(ProviderSyncer):
                 provider_id=self.provider_id,
                 model_type="stt",
                 guidance=_STT_MODELS_GUIDANCE,
+                api_key=ai_key,
+            ),
+            parse_models_from_docs(
+                seed_urls=_STS_MODELS_DOCS_URLS,
+                provider_id=self.provider_id,
+                model_type="sts",
+                guidance=_STS_MODELS_GUIDANCE,
                 api_key=ai_key,
             ),
         )
@@ -143,9 +166,10 @@ class GoogleCloudSyncer(ProviderSyncer):
             stt_models=stt_models,
             tts_models=tts_models,
             tts_voices=tts_voices,
+            sts_models=sts_models,
             source=self.source,
             api_urls=[_VOICES_URL] + ([_STT_LOCATIONS_URL.format(project="{project}")] if stt_api else []),
-            docs_urls=_TTS_MODELS_DOCS_URLS + _STT_MODELS_DOCS_URLS,
+            docs_urls=_TTS_MODELS_DOCS_URLS + _STT_MODELS_DOCS_URLS + _STS_MODELS_DOCS_URLS,
             notes=notes,
         )
 

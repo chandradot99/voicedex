@@ -54,6 +54,8 @@ templates.env.globals.update(
     heat_level=views.heat_level,
     TYPE_LABELS=views.TYPE_LABELS,
     TYPE_SHORT=views.TYPE_SHORT,
+    ACCESS_LABELS=views.ACCESS_LABELS,
+    country_name=views.country_name,
 )
 
 router = APIRouter(include_in_schema=False)

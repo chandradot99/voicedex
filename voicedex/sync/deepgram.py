@@ -4,6 +4,8 @@ Deepgram sync script.
 Source: GET https://api.deepgram.com/v1/models (API)
   - stt[] → STT models (one entry per model per language — deduplicated by canonical_name)
   - tts[] → TTS models (deduplicated by architecture) + TTS voices (one per entry)
+Docs supplement: models the /v1/models listing omits (e.g. the Flux conversational STT family, served on
+its own /v2/listen endpoint) come from the docs. API records win on id collisions.
 """
 
 from __future__ import annotations
@@ -11,10 +13,22 @@ from __future__ import annotations
 import httpx
 
 from voicedex.config import settings
+from voicedex.sync.ai_parser import parse_models_from_docs
 from voicedex.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncModel, SyncResult, SyncVoice
 from voicedex.sync.language import normalize_languages
 
 _API_URL = "https://api.deepgram.com/v1/models"
+
+_STT_DOCS_URLS = [
+    "https://developers.deepgram.com/docs/flux/quickstart",
+    "https://developers.deepgram.com/docs/models-languages-overview",
+    "https://deepgram.com/pricing",
+]
+_STT_DOCS_GUIDANCE = (
+    "Return ONLY speech-to-text models that are callable but are NOT listed by GET /v1/models — in "
+    "particular models served on separate endpoints (e.g. /v2/listen). Exact `model` parameter strings, "
+    "languages, per-minute pay-as-you-go pricing as published. is_default=false for all of them."
+)
 
 # Deepgram's API doesn't flag a default. Pick the first of these that the API
 # actually returns (so a removed model never becomes a phantom default).
@@ -27,18 +41,25 @@ _FEMININE_TAGS  = {"feminine"}
 
 class DeepgramSyncer(ProviderSyncer):
     provider_id = "deepgram"
-    source = "api"
+    source = "mixed"
 
     async def sync(self) -> SyncResult:
         data = await self._fetch_raw()
         stt_models, tts_models = self._parse_models(data)
         tts_voices = self._parse_voices(data)
+        docs_stt, _ = await parse_models_from_docs(
+            seed_urls=_STT_DOCS_URLS, provider_id=self.provider_id, model_type="stt",
+            guidance=_STT_DOCS_GUIDANCE,
+        )
+        api_ids = {m.model_id for m in stt_models}
+        stt_models += [m for m in docs_stt if m.model_id not in api_ids]
         return SyncResult(
             stt_models=stt_models,
             tts_models=tts_models,
             tts_voices=tts_voices,
             source=self.source,
             api_urls=[_API_URL],
+            docs_urls=_STT_DOCS_URLS,
         )
 
     # ── Private helpers ───────────────────────────────────────────────────────

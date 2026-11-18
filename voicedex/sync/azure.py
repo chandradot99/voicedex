@@ -15,12 +15,16 @@ Source: api (subscription key; F0 free tier is enough)
                  with their exact live locale lists, plus named model families (e.g. Whisper) the
                  base-model list exposes, with their transcription deprecation date as eol_date.
 
+Docs supplement: STT models selected by name outside the base-model list (e.g. MAI-Transcribe) and the
+speech-to-speech Voice Live API come from the docs (provenance docs). API records win on id collisions.
+
 Voices with Status "Deprecated" are skipped; "Preview" voices are kept (meta.status), and a family
 whose voices are all Preview is lifecycle "beta".
 """
 
 from __future__ import annotations
 
+import asyncio
 import re
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -28,12 +32,34 @@ from datetime import datetime, timezone
 import httpx
 
 from voicedex.config import settings
+from voicedex.sync.ai_parser import parse_models_from_docs
 from voicedex.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncModel, SyncResult, SyncVoice, get_with_retry
 from voicedex.sync.language import ACCENT_MAP, normalize_languages
 
 _VOICES_URL = "https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list"
 _STT_MODELS_URL = "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
 _MAX_STT_PAGES = 50
+
+_STT_DOCS_URLS = [
+    "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+    "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
+    "https://azure.microsoft.com/en-us/pricing/details/speech/",
+]
+_STT_DOCS_GUIDANCE = (
+    "Return ONLY speech-to-text models a developer selects by name that are NOT ordinary per-locale base "
+    "models (e.g. Microsoft AI transcription models). Exact model identifiers as used in the API/SDK, "
+    "languages, lifecycle (preview → beta), per-hour or per-minute pricing as published."
+)
+_STS_DOCS_URLS = [
+    "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+    "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support",
+    "https://azure.microsoft.com/en-us/pricing/details/speech/",
+]
+_STS_DOCS_GUIDANCE = (
+    "Return the Voice Live API speech-to-speech offerings as models: one per billing tier / selectable "
+    "model as documented (exact ids or tier names used in the API). Languages, interfaces, per-token or "
+    "per-minute pricing as published (unit token with variants for audio in/out)."
+)
 
 # Recommended default family, best first. Only used if present in the live voice list.
 _TTS_DEFAULT_PREFERENCE = ["DragonHDLatestNeural", "MultilingualNeural", "Neural"]
@@ -44,7 +70,7 @@ _GENDER = {"male": "male", "female": "female", "neutral": "neutral"}
 
 class AzureSyncer(ProviderSyncer):
     provider_id = "azure"
-    source = "api"
+    source = "mixed"
 
     async def sync(self) -> SyncResult:
         if not settings.azure_speech_key:
@@ -55,12 +81,23 @@ class AzureSyncer(ProviderSyncer):
             base_models = await self._fetch_stt_base_models(client, region)
 
         voices_data = [v for v in voices_data if v.get("Status") != "Deprecated"]
+        (docs_stt, _), (sts_models, _) = await asyncio.gather(
+            parse_models_from_docs(seed_urls=_STT_DOCS_URLS, provider_id=self.provider_id,
+                                   model_type="stt", guidance=_STT_DOCS_GUIDANCE),
+            parse_models_from_docs(seed_urls=_STS_DOCS_URLS, provider_id=self.provider_id,
+                                   model_type="sts", guidance=_STS_DOCS_GUIDANCE),
+        )
+        stt_models = _stt_models(base_models)
+        api_ids = {m.model_id for m in stt_models}
+        stt_models += [m for m in docs_stt if m.model_id not in api_ids]
         return SyncResult(
-            stt_models=_stt_models(base_models),
+            stt_models=stt_models,
             tts_models=_tts_models(voices_data),
             tts_voices=[_to_voice(v) for v in voices_data],
+            sts_models=sts_models,
             source=self.source,
             api_urls=[_VOICES_URL, _STT_MODELS_URL],
+            docs_urls=list(dict.fromkeys(_STT_DOCS_URLS + _STS_DOCS_URLS)),
             notes=f"{len(voices_data)} voices; {len(base_models)} STT base models.",
         )
 

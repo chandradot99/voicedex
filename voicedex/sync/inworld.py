@@ -65,6 +65,16 @@ _STT_MODEL_GUIDANCE = (
     "for the model Inworld's own endpoints run by default."
 )
 
+_STS_DOCS_SEED_URLS = [
+    "https://docs.ultravox.ai/",
+    "https://www.ultravox.ai/pricing",
+]
+_STS_MODEL_GUIDANCE = (
+    "Inworld acquired Ultravox (2026). Return the speech-to-speech / realtime voice models callable "
+    "through the Ultravox API by exact model id, with languages, interfaces and per-minute pricing as "
+    "published. meta.product='Ultravox'. Exactly one is_default: the model Ultravox uses by default."
+)
+
 # Inworld accent labels → our accent format
 _ACCENT_MAP: dict[str, str] = {
     "american":   "american",
@@ -81,7 +91,7 @@ class InworldAISyncer(ProviderSyncer):
     source = "mixed"
 
     async def sync(self) -> SyncResult:
-        voices_data, (tts_models, tts_notes), (stt_models, stt_notes) = await asyncio.gather(
+        voices_data, (tts_models, tts_notes), (stt_models, stt_notes), (sts_models, _) = await asyncio.gather(
             self._fetch_voices(),
             parse_models_from_docs(
                 seed_urls=_TTS_DOCS_SEED_URLS,
@@ -95,6 +105,12 @@ class InworldAISyncer(ProviderSyncer):
                 model_type="stt",
                 guidance=_STT_MODEL_GUIDANCE,
             ),
+            parse_models_from_docs(
+                seed_urls=_STS_DOCS_SEED_URLS,
+                provider_id=self.provider_id,
+                model_type="sts",
+                guidance=_STS_MODEL_GUIDANCE,
+            ),
         )
 
         notes_parts = []
@@ -107,9 +123,10 @@ class InworldAISyncer(ProviderSyncer):
             stt_models=stt_models,
             tts_models=tts_models,
             tts_voices=self._parse_voices(voices_data),
+            sts_models=sts_models,
             source=self.source,
             api_urls=[_VOICES_URL],
-            docs_urls=_TTS_DOCS_SEED_URLS + _STT_DOCS_SEED_URLS,
+            docs_urls=_TTS_DOCS_SEED_URLS + _STT_DOCS_SEED_URLS + _STS_DOCS_SEED_URLS,
             notes="; ".join(notes_parts) if notes_parts else None,
         )
 

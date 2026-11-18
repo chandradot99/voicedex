@@ -24,6 +24,8 @@ class ProviderOut(BaseModel):
     status: str
     website: str | None
     description: str | None
+    access: str | None
+    headquarters: str | None
     source: str | None
     regions: list[str]
     compliance: list[str]
@@ -41,7 +43,8 @@ class ProviderOut(BaseModel):
     def build(cls, p: Provider, model_count: int, voice_count: int) -> ProviderOut:
         return cls(
             id=provider_uuid(p.id), provider_id=p.id, display_name=p.name, type=p.type, status=p.status,
-            website=p.website, description=p.description, source=p.source,
+            website=p.website, description=p.description, access=p.access, headquarters=p.headquarters,
+            source=p.source,
             regions=list(p.regions), compliance=list(p.compliance),
             links=p.links.model_dump(exclude_none=True),
             api_urls=p.api_urls, docs_urls=p.docs_urls,

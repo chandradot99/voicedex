@@ -28,6 +28,8 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 - **ElevenLabs community voice library** (thousands of shared voices) — only premade voices today; consider a separate `community` category.
 - **AssemblyAI** dashboard-only voice catalog ("thousands") — only the 34 documented starter voices.
 - **provider.json editorial fields** (website, description, regions, compliance, links) — empty for every provider; fill from a verified research pass.
+- **Provider expansion (researched 2026-11-18)** — full plan, inclusion policy and waves in `docs/design/provider-expansion.md`
+  (~60 new providers + gaps in Google/Azure/Deepgram/Amazon/Inworld). Supersedes the 2026-11-16 list below.
 - **Missing providers** (researched 2026-11-16; Pipecat/LiveKit integration lists + vendor docs):
   - ADD, API-syncable: **Soniox** (`GET /v1/models`; stt-*-v5 EOL 2026-12-15, v4→v5 aliases), **xAI** (STT/TTS/realtime; `GET /v1/tts/voices`; models docs), **Gradium** (Kyutai spin-off; `GET /api/voices/`), **Alibaba Model Studio intl** (`GET /api/v1/models` filters ASR/TTS/realtime, returns prices + retirement dates).
   - ADD, docs-based: **Meta Muse Voice Transcribe** (STT), **Async** (TTS + ASR), **StepFun** (TTS/ASR/realtime, USD prices), **BytePlus Seed Speech** (JS-rendered docs).
