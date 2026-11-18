@@ -1,0 +1,87 @@
+"""Render the share image (voicedex/web/static/og.png, 1200x630) in the site's "Datasheet" style.
+
+The price strip is drawn from the live catalog's text-to-speech prices, so re-run this after big
+catalog changes. Needs Google Chrome (headless) and network access for the Geist web fonts.
+
+    uv run python scripts/make_og_image.py                      # writes voicedex/web/static/og.png
+    uv run python scripts/make_og_image.py --size 1280x640 --out /tmp/og-github.png   # GitHub social preview
+"""
+
+from __future__ import annotations
+
+import argparse
+import math
+import subprocess
+import tempfile
+from pathlib import Path
+
+from voicedex.catalog.store import Catalog
+from voicedex.config import settings
+from voicedex.web import views
+
+CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def tts_prices(catalog: Catalog) -> list[float]:
+    return sorted(n[0] for r in views.active_models(catalog)
+                  if r.model.type == "tts" and (n := views.normalized_price(r.model)) and n[0] > 0)
+
+
+def page(prices: list[float], W: int, H: int) -> str:
+    pad = round(W * 0.056)
+    lo, hi = math.log10(0.5), math.log10(400)
+    width, ncol, sq, gap, base = W - 2 * pad, 64, 7, 2, 92
+    colw = width / ncol
+    cols: dict[int, int] = {}
+    for p in prices:
+        i = max(0, min(ncol - 1, int((math.log10(p) - lo) / (hi - lo) * ncol)))
+        cols[i] = cols.get(i, 0) + 1
+    rects = "".join(
+        f'<rect x="{colw * (i + .5) - sq / 2:.1f}" y="{base - 6 - (k + 1) * (sq + gap) + gap:.1f}" '
+        f'width="{sq}" height="{sq}" fill="#f5a524"/>' for i, n in cols.items() for k in range(n))
+    ticks = "".join(
+        f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{base}" y2="{base + 6}" stroke="#3a3a3c"/>'
+        f'<text x="{x:.1f}" y="{base + 24}" text-anchor="middle">${v}</text>'
+        for v in (1, 10, 100) for x in [(math.log10(v) - lo) / (hi - lo) * width])
+    svg = (f'<svg width="{width}" height="{base + 30}" font-family="Geist Mono" font-size="15" fill="#8a8a84">'
+           f'{rects}<line x1="0" x2="{width}" y1="{base}" y2="{base}" stroke="#3a3a3c"/>{ticks}</svg>')
+    return f"""<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+html,body{{width:{W}px;height:{H}px;background:#111113;color:#ededea;font-family:Geist,sans-serif;overflow:hidden}}
+.wrap{{position:absolute;inset:0;padding:{pad - 8}px {pad}px {pad - 16}px;display:flex;flex-direction:column}}
+.top{{display:flex;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid #2a2a2d}}
+.brand{{display:flex;align-items:center;gap:16px;font-weight:600;font-size:34px;letter-spacing:-.02em}}
+.url{{font-family:'Geist Mono';font-size:20px;color:#f5a524}}
+h1{{margin-top:{int(H * .075)}px;font-weight:600;font-size:{int(H * .095)}px;line-height:1.06;letter-spacing:-.035em}}
+.facts{{margin-top:22px;font-family:'Geist Mono';font-size:21px;color:#b4b4ae}}
+.facts b{{color:#ededea;font-weight:500}}
+.spec{{margin-top:auto}}
+.label{{font-family:'Geist Mono';font-size:14px;letter-spacing:.08em;color:#8a8a84;margin-bottom:8px;display:flex;justify-content:space-between}}
+</style></head><body><div class="wrap">
+<div class="top"><div class="brand"><svg width="34" height="34" viewBox="0 0 20 20"><g fill="#f5a524"><rect x="1" y="8" width="2.5" height="4"/><rect x="5.5" y="5" width="2.5" height="10"/><rect x="10" y="2" width="2.5" height="16"/><rect x="14.5" y="6.5" width="2.5" height="7"/></g></svg>Voicedex</div><div class="url">voicedex.dev</div></div>
+<h1>Every speech model and voice,<br>compared.</h1>
+<p class="facts"><b>800+</b> models · <b>15,000+</b> voices · <b>120+</b> providers · STT · TTS · S2S</p>
+<div class="spec"><div class="label"><span>TEXT-TO-SPEECH PRICES</span><span>USD PER 1M CHARACTERS, LOG SCALE</span></div>{svg}</div>
+</div></body></html>"""
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--size", default="1200x630")
+    ap.add_argument("--out", default=str(ROOT / "voicedex/web/static/og.png"))
+    args = ap.parse_args()
+    W, H = (int(x) for x in args.size.split("x"))
+    html = page(tts_prices(Catalog.load(settings.data_path)), W, H)
+    with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as f:
+        f.write(html)
+    subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
+                    "--virtual-time-budget=6000", f"--window-size={W},{H}", f"--screenshot={args.out}",
+                    f"file://{f.name}"], check=True, capture_output=True)
+    print(f"wrote {args.out} ({W}x{H})")
+
+
+if __name__ == "__main__":
+    main()
