@@ -72,3 +72,62 @@ class CoquiOpenSyncer(HuggingFaceSyncer):
 class HumeOpenSyncer(HuggingFaceSyncer):
     provider_id = "humeai"
     hf_authors = ["HumeAI"]
+
+
+# ── 2026-11 gap pass (reports: research_notes/Missed voice AI providers) ──
+
+class OpenMOSSSyncer(HuggingFaceSyncer):
+    provider_id = "openmoss"
+    hf_authors = ["OpenMOSS-Team"]
+
+
+class KittenMLSyncer(HuggingFaceSyncer):
+    provider_id = "kittenml"
+    hf_authors = ["KittenML"]
+
+
+class NariLabsSyncer(HuggingFaceSyncer):
+    provider_id = "nari-labs"
+    hf_authors = ["nari-labs"]
+
+
+class MyShellSyncer(HuggingFaceSyncer):
+    provider_id = "myshell-ai"
+    hf_authors = ["myshell-ai"]
+
+
+class IndexTTSSyncer(HuggingFaceSyncer):
+    provider_id = "index-tts"
+    hf_authors = ["IndexTeam"]
+
+
+class RVCBossSyncer(HuggingFaceSyncer):
+    # GPT-SoVITS weights are published from the maintainer's personal account.
+    provider_id = "rvc-boss"
+    hf_authors = ["lj1995"]
+
+
+class SunoSyncer(HuggingFaceSyncer):
+    provider_id = "suno"
+    hf_authors = ["suno"]
+
+
+class ParlerTTSSyncer(HuggingFaceSyncer):
+    provider_id = "parler-tts"
+    hf_authors = ["parler-tts"]
+
+
+class MayaResearchSyncer(HuggingFaceSyncer):
+    provider_id = "maya-research"
+    hf_authors = ["maya-research"]
+
+
+class SberOpenSyncer(HuggingFaceSyncer):
+    # SaluteSpeech stopped selling, but Sber's GigaAM ASR weights are published under ai-sage.
+    provider_id = "sber-salutespeech"
+    hf_authors = ["ai-sage"]
+
+
+class SupertoneOpenSyncer(HuggingFaceSyncer):
+    provider_id = "supertone"
+    hf_authors = ["Supertone"]
