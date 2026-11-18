@@ -1,0 +1,21 @@
+{
+  "access": "regional",
+  "description": "T-Bank VoiceKit is the speech recognition and synthesis API of T-Bank (formerly Tinkoff), a Moscow-based Russian bank, sold through T-Bank Software (developer.tbank.ru). Recognition is trained on Russian call-centre speech and billed per second in roubles; the team also publishes the T-one streaming Russian telephony ASR model as Apache-2.0 open weights. Accounts are created on T-Bank Software and billed monthly in roubles.",
+  "docs_urls": [
+    "https://developer.tbank.ru/voicekit/api/speech-recognition",
+    "https://developer.tbank.ru/voicekit/intro/tariff",
+    "https://huggingface.co/t-tech/T-one",
+    "https://developer.tbank.ru/voicekit/api/synthesis/ttstutorial"
+  ],
+  "headquarters": "RU",
+  "id": "tbank",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://developer.tbank.ru/voicekit/api/speech-recognition",
+    "pricing": "https://developer.tbank.ru/voicekit/intro/tariff"
+  },
+  "name": "T-Bank VoiceKit",
+  "source": "docs",
+  "type": "both",
+  "website": "https://www.tbank.ru/software/voicekit/"
+}

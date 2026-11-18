@@ -1,0 +1,181 @@
+[
+  {
+    "description": "71M-parameter streaming Conformer CTC ASR pipeline for Russian telephony, with phrase-boundary detector and KenLM decoder, published as open weights.",
+    "first_seen": "2026-11-18",
+    "id": "t-tech/T-one",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "github": "https://github.com/voicekit-team/T-one",
+      "huggingface_repo": "t-tech/T-one",
+      "parameters": "71M",
+      "relation_note": "Published by T-Software DC (VoiceKit team); the VoiceKit docs do not state that the cloud API serves T-one, so it is a separate record."
+    },
+    "name": "T-one",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/t-tech/T-one"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developer.tbank.ru/voicekit/api/speech-recognition",
+        "https://developer.tbank.ru/voicekit/intro/tariff",
+        "https://huggingface.co/t-tech/T-one",
+        "https://developer.tbank.ru/voicekit/api/synthesis/ttstutorial"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "profanity_filter",
+      "punctuation"
+    ],
+    "description": "Cloud Russian speech recognition trained on call-centre telephone conversations, for streaming audio, files and deferred batch processing.",
+    "first_seen": "2026-11-18",
+    "id": "voicekit-stt",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "channels": "mono and two-channel",
+      "encodings": [
+        "MuLaw",
+        "ALaw",
+        "Linear16",
+        "RawOpus",
+        "MP3",
+        "AdtsAac",
+        "RawAacLc",
+        "RawErAacLd",
+        "OggOpus"
+      ],
+      "endpoint": "gRPC/REST tinkoff.cloud.stt.v1 (Recognize, StreamingRecognize, long-running)",
+      "features_source": "Feature flags (enable_automatic_punctuation, profanity_filter, beta sentiment and gender identification) from the vendor's tts/stt.proto in github.com/Tinkoff/voicekit-examples.",
+      "limits": "32 MB max message; connections under 3 min 25 s guaranteed; 1 hour max request",
+      "model_id_note": "No public model list: the API's optional `model` field uses the default model when omitted; 'voicekit-stt' is the service name.",
+      "wer_note": "Docs quote WER about 18 on noisy GSM audio and under 10 without noticeable noise."
+    },
+    "name": "T-Bank VoiceKit Speech Recognition",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "RUB",
+      "notes": "1 kopeck/s streaming, 0.63 kopeck/s file, 0.25 kopeck/s deferred; same price for mono and two-channel audio; billed per second, monthly in arrears.",
+      "price": 0.01,
+      "source_url": "https://developer.tbank.ru/voicekit/intro/tariff",
+      "unit": "second",
+      "variants": [
+        {
+          "applies_to": "online streaming",
+          "price": 0.01,
+          "unit": "second"
+        },
+        {
+          "applies_to": "online file processing",
+          "price": 0.0063,
+          "unit": "second"
+        },
+        {
+          "applies_to": "deferred processing",
+          "price": 0.0025,
+          "unit": "second"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developer.tbank.ru/voicekit/api/speech-recognition",
+        "https://developer.tbank.ru/voicekit/intro/tariff",
+        "https://huggingface.co/t-tech/T-one",
+        "https://developer.tbank.ru/voicekit/api/synthesis/ttstutorial"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      11025,
+      12000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000,
+      96000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "Cloud speech synthesis from plain text or SSML with selectable voices, over gRPC (including streaming) and REST.",
+    "first_seen": "2026-11-18",
+    "id": "voicekit-tts",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "is_default": true,
+    "meta": {
+      "encodings": [
+        "LINEAR16",
+        "ALAW",
+        "RAW_OPUS (streaming only)"
+      ],
+      "endpoint": "gRPC/REST tinkoff.cloud.tts.v1 (Synthesize, StreamingSynthesize, ListVoices at /v1/tts:list_voices)",
+      "features_source": "Vendor's tts.proto in github.com/Tinkoff/voicekit-examples.",
+      "model_id_note": "No model parameter; voices are selected by name. 'voicekit-tts' is the service name.",
+      "pricing_note": "Synthesis is priced separately from recognition; no public per-unit rate found.",
+      "rest_note": "REST responses over 1 MB require HTTP/2.",
+      "sample_rate_range_hz": [
+        1000,
+        48000
+      ],
+      "speaking_rate_range": [
+        0.33,
+        3.0
+      ]
+    },
+    "name": "T-Bank VoiceKit Speech Synthesis",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developer.tbank.ru/voicekit/api/speech-recognition",
+        "https://developer.tbank.ru/voicekit/intro/tariff",
+        "https://huggingface.co/t-tech/T-one",
+        "https://developer.tbank.ru/voicekit/api/synthesis/ttstutorial"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
