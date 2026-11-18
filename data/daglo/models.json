@@ -1,0 +1,100 @@
+[
+  {
+    "audio_formats": [
+      "3gp",
+      "aac",
+      "ac3",
+      "aiff",
+      "amr",
+      "au",
+      "avi",
+      "flac",
+      "m4a",
+      "mov",
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mxf",
+      "opus",
+      "ra",
+      "wav",
+      "webm",
+      "wmv"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "sentiment",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "ActionPower's general-purpose Korean-first speech recognition model behind Daglo's sync, async and real-time STT APIs.",
+    "first_seen": "2026-11-18",
+    "id": "general",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ko-KR",
+      "en-US",
+      "ja-JP",
+      "zh-Hans-CN",
+      "de-DE",
+      "fr-FR",
+      "es-ES",
+      "it-IT",
+      "nl-NL",
+      "sv-SE",
+      "hi-IN",
+      "ru-RU",
+      "vi-VN",
+      "th-TH",
+      "id-ID",
+      "fa-IR",
+      "cs-CZ"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "endpoints": {
+        "async": "POST https://apis.daglo.ai/stt/v1/async/transcripts (<=4 h, <=2 GB)",
+        "stream": "gRPC dagloapis.speech.v1.Speech/StreamingRecognize",
+        "sync": "POST https://apis.daglo.ai/stt/v1/sync/transcripts (<=30 s audio)"
+      },
+      "keyword_extraction": true,
+      "language_param": "sttConfig.language; 'mixed' = Korean + English code-switching; default ko-KR",
+      "max_audio_seconds_sync": 30,
+      "model_param": "sttConfig.model (only value: general; default)",
+      "multi_channel": "up to 2 channels",
+      "nlp_features_korean_only": true,
+      "streaming_access": "Stream STT requires additional account permission (contact api-support@daglo.ai)",
+      "streaming_audio": "LINEAR16 PCM, 16 kHz mono; sessions up to 6 h",
+      "streaming_languages": [
+        "ko-KR",
+        "en-US",
+        "mixed"
+      ]
+    },
+    "name": "Daglo STT (general)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "KRW",
+      "notes": "Sync, Async and Stream STT each 10 KRW/min (promotional; list 30/20/30 KRW), VAT excluded. Pay as you go by card; new accounts get free test credits (~10 h of async STT). English page shows a USD conversion at 1,300 KRW/USD.",
+      "price": 10.0,
+      "source_url": "https://developers.daglo.ai/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.daglo.ai/guide/en/STT-Async.html",
+        "https://apis.daglo.ai/en/docs",
+        "https://developers.daglo.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]

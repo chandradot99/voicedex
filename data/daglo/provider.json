@@ -1,0 +1,21 @@
+{
+  "access": "self_serve",
+  "description": "Daglo is the speech AI brand of ActionPower Corp., a Seoul-based company that develops its own Korean-language speech recognition models. The Daglo API offers synchronous, asynchronous and real-time (gRPC) speech-to-text with speaker diarization, keyword boosting and sentiment analysis, alongside summarisation, chat-completion and text-to-speech APIs, priced in KRW.",
+  "docs_urls": [
+    "https://developers.daglo.ai/guide/en/STT-Async.html",
+    "https://apis.daglo.ai/en/docs",
+    "https://developers.daglo.ai/pricing"
+  ],
+  "headquarters": "KR",
+  "id": "daglo",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://apis.daglo.ai/en/docs",
+    "docs": "https://developers.daglo.ai/guide/en/",
+    "pricing": "https://developers.daglo.ai/pricing"
+  },
+  "name": "Daglo (ActionPower)",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://developers.daglo.ai"
+}
