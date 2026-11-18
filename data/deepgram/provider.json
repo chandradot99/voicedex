@@ -2,13 +2,18 @@
   "api_urls": [
     "https://api.deepgram.com/v1/models"
   ],
+  "docs_urls": [
+    "https://developers.deepgram.com/docs/flux/quickstart",
+    "https://developers.deepgram.com/docs/models-languages-overview",
+    "https://deepgram.com/pricing"
+  ],
   "id": "deepgram",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-18",
   "name": "Deepgram",
-  "source": "api",
+  "source": "mixed",
   "type": "both",
   "voices_source": {
-    "as_of": "2026-11-16",
+    "as_of": "2026-11-18",
     "method": "api",
     "urls": [
       "https://api.deepgram.com/v1/models"

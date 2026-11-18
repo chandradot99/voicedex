@@ -575,6 +575,156 @@
     "updated_at": "2026-11-16"
   },
   {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "description": "Conversational streaming STT model with built-in end-of-turn detection, served on the /v2/listen WebSocket endpoint.",
+    "first_seen": "2026-11-18",
+    "id": "flux-general-en",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "encodings": [
+        "linear16",
+        "linear32",
+        "mulaw",
+        "alaw",
+        "opus",
+        "ogg-opus"
+      ],
+      "end_of_turn_detection": true,
+      "endpoint": "/v2/listen",
+      "eot_params": [
+        "eot_threshold",
+        "eager_eot_threshold",
+        "eot_timeout_ms"
+      ]
+    },
+    "name": "Flux General English",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Streaming, pay-as-you-go 'Flux STT English' (labelled promo pricing; previously $0.0077/min, Growth previously $0.0065/min). Billed per second.",
+      "price_usd": 0.0065,
+      "source_url": "https://deepgram.com/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "growth_plan",
+          "price_usd": 0.0057,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.deepgram.com/docs/flux/quickstart",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://deepgram.com/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "description": "Multilingual Flux conversational streaming STT model (10 languages) with end-of-turn detection and optional language_hint biasing, served on /v2/listen.",
+    "first_seen": "2026-11-18",
+    "id": "flux-general-multi",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "hi",
+      "ru",
+      "pt",
+      "ja",
+      "it",
+      "nl"
+    ],
+    "meta": {
+      "encodings": [
+        "linear16",
+        "linear32",
+        "mulaw",
+        "alaw",
+        "opus",
+        "ogg-opus"
+      ],
+      "end_of_turn_detection": true,
+      "endpoint": "/v2/listen",
+      "eot_params": [
+        "eot_threshold",
+        "eager_eot_threshold",
+        "eot_timeout_ms"
+      ],
+      "language_hint": true
+    },
+    "name": "Flux General Multilingual",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Streaming, pay-as-you-go 'Flux STT Multilingual' (speech-to-text section labelled promo pricing). Billed per second.",
+      "price_usd": 0.0078,
+      "source_url": "https://deepgram.com/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "growth_plan",
+          "price_usd": 0.0068,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://developers.deepgram.com/docs/flux/quickstart",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://deepgram.com/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
     "batch": true,
     "capabilities": [
       "custom_vocabulary",
@@ -1990,7 +2140,7 @@
       ],
       "formatted_output": false,
       "multilingual": true,
-      "version": "2026-11-13.32878"
+      "version": "2026-11-16.3133"
     },
     "name": "Nova 3 General",
     "pricing": {
@@ -2038,14 +2188,14 @@
       ]
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-18",
       "method": "api",
       "urls": [
         "https://api.deepgram.com/v1/models"
       ]
     },
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "batch": true,

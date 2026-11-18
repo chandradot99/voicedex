@@ -135,3 +135,11 @@ def test_files_round_trip(tmp_path):
     again = read_provider_dir(tmp_path / "acme")
     assert again.models == pd.models and again.voices == pd.voices
     assert again.models[0].languages == ["no"]  # Norwegian survives (the YAML "no" problem)
+
+
+def test_api_sync_keeps_docs_pass_meta():
+    from voicedex.catalog.merge import _fill_unknowns
+    old = {"meta": {"architecture": "base", "capability_notes": {"sentiment": "en only"}, "docs_sources": ["u"]}}
+    new = {"meta": {"architecture": "nova"}}
+    out = _fill_unknowns(new, old)
+    assert out["meta"] == {"architecture": "nova", "capability_notes": {"sentiment": "en only"}, "docs_sources": ["u"]}

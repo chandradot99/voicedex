@@ -138,9 +138,19 @@ def _content(rec) -> dict:
     return rec.model_dump(mode="json", exclude=_BOOKKEEPING)
 
 
+# meta keys written by a docs pass (scripts/apply_docs.py), not by syncers: an API sync never sends them,
+# so their absence means "not this source's business", not "removed".
+DOCS_PASS_META_KEYS = ("capability_notes", "docs_sources")
+
+
 def _fill_unknowns(incoming: dict, existing: dict) -> dict:
     """D7: an empty/None incoming value means 'unknown' — keep what we already know."""
     out = dict(incoming)
+    old_meta, new_meta = existing.get("meta") or {}, out.get("meta")
+    if isinstance(new_meta, dict) and old_meta:
+        kept = {k: old_meta[k] for k in DOCS_PASS_META_KEYS if k in old_meta and k not in new_meta}
+        if kept:
+            out["meta"] = {**new_meta, **kept}
     for k, old in existing.items():
         if k in _BOOKKEEPING or k in ("is_default", "streaming", "lifecycle"):
             continue
