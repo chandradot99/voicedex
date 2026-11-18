@@ -59,10 +59,23 @@ scripts/check_previews.py — audit every voice-sample link
 .claude/skills/catalog-refresh/ — `/catalog-refresh [freshness|discover|all|<ids>]`: maintenance run in Claude Code
 ```
 
-## Syncing (the main workflow)
+## Skills (Claude Code, `.claude/skills/`)
 
-**Routine maintenance:** run `/catalog-refresh` in Claude Code (health report → re-sync what's due → one commit per
-provider on a branch; `discover` adds a new-provider research pass). It never merges or deploys on its own.
+Project skills run inside Claude Code on the user's subscription — never via the Anthropic API.
+
+| Skill | Use | What it does |
+|---|---|---|
+| `/catalog-refresh` | routine maintenance (default mode `freshness`) | Runs `scripts/catalog_health.py --samples`, then re-syncs what's due in priority order (shutdown date passed → dead samples → near shutdowns → stale api/mixed → stale docs, ≤ ~10 docs re-extractions per run via subagents), validates, one commit per provider on `refresh/<date>`, summary. |
+| `/catalog-refresh discover` | new providers (due every 90 days; `Last discovery pass:` in provider-expansion.md §5) | 4 parallel research subagents (US/EU + clouds, East/SE Asia, India/MENA/Africa/LatAm/CIS, HF open weights + news) against §1 policy; adds qualifying providers, updates the watchlist and the last-pass date. |
+| `/catalog-refresh all` | both of the above | |
+| `/catalog-refresh <id> …` | refresh specific providers | Re-sync (API) or re-extract (docs) just those. |
+
+Rules baked into the skill: work on a branch and **never merge/push main without the user's OK** (push = deploy);
+verify shutdown dates on the vendor's own page; investigate guard refusals before `--allow-shrink`; prices only from
+vendor pages. Health thresholds live in `scripts/catalog_health.py` (`STALE_DAYS`, `EOL_SOON_DAYS`,
+`PRICING_STALE_DAYS`, `DISCOVERY_EVERY_DAYS`); run it directly any time for a quick report.
+
+## Syncing (the main workflow)
 
 ```bash
 uv run python scripts/sync.py deepgram            # dry-run: fetch, merge, print per-field diff
