@@ -1,0 +1,245 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "speex"
+    ],
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "Streaming dictation of short utterances (up to 60 seconds) with basic and large-language-model engines.",
+    "first_seen": "2026-11-18",
+    "id": "iat",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN",
+      "yue",
+      "nan",
+      "en",
+      "ms",
+      "hi",
+      "ru",
+      "ja",
+      "ko",
+      "vi",
+      "th",
+      "bg",
+      "fr",
+      "de",
+      "ar",
+      "id",
+      "bn",
+      "es",
+      "pt",
+      "it",
+      "fil",
+      "tr",
+      "el",
+      "cs",
+      "ur",
+      "ta",
+      "uk",
+      "kk",
+      "uz",
+      "pl",
+      "mn",
+      "sw",
+      "ha",
+      "fa",
+      "nl",
+      "sv",
+      "ro"
+    ],
+    "max_audio_seconds": 60,
+    "meta": {
+      "domains": [
+        "iat",
+        "medical (authorization required)"
+      ],
+      "endpoint": "wss://iat-api-sg.xf-yun.com/v2/iat",
+      "llm_engine": "Large-model engine selected via *_cbm language values (e.g. mq_cbm multilingual).",
+      "minority_languages": "require console authorization",
+      "mp3_note": "lame (MP3) input for Mandarin and English only",
+      "raw_encodings": [
+        "raw",
+        "speex",
+        "speex-wb",
+        "lame"
+      ]
+    },
+    "name": "Short Form ASR (voice dictation)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 100000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "$1.40 per 1,000 service calls pay-as-you-go. Packages (1 year): 1M calls $1,400; 5M $6,650 ($1.33/1k); 10M+ $12,600 ($1.26/1k). Free trial 100,000 calls for 3 months (individual; 200,000 for enterprise accounts).",
+      "price_usd": 0.0014,
+      "source_url": "https://global.xfyun.cn/doc/platform/pricing.html",
+      "unit": "request"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://global.xfyun.cn/doc/asr/voicedictation/API.html",
+        "https://global.xfyun.cn/doc/rtasr/rtasr/API.html",
+        "https://global.xfyun.cn/doc/platform/pricing.html",
+        "https://global.xfyun.cn/products/real-time-asr",
+        "https://global.xfyun.cn/doc/tts/online_tts/API.html"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "punctuation"
+    ],
+    "description": "Real-time transcription of long audio streams (up to 5 hours) with punctuation and number formatting.",
+    "first_seen": "2026-11-18",
+    "id": "ist",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "ar",
+      "fr",
+      "id",
+      "th",
+      "vi",
+      "ko",
+      "yue"
+    ],
+    "max_audio_seconds": 18000,
+    "meta": {
+      "billing": "prepaid audio-hour packages (1 year): 200 h $160, 1,000 h $750, 2,000 h $1,440, 10,000 h $6,000; new users 20 h free",
+      "custom_words": "product page mentions custom word upload",
+      "endpoint": "wss://ist-api-sg.xf-yun.com/v2/ist",
+      "pricing_source": "https://global.xfyun.cn/products/real-time-asr"
+    },
+    "name": "Real-time ASR (transcription)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://global.xfyun.cn/doc/asr/voicedictation/API.html",
+        "https://global.xfyun.cn/doc/rtasr/rtasr/API.html",
+        "https://global.xfyun.cn/doc/platform/pricing.html",
+        "https://global.xfyun.cn/products/real-time-asr",
+        "https://global.xfyun.cn/doc/tts/online_tts/API.html"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "speex"
+    ],
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Streaming text-to-speech over WebSocket in Chinese, English and 25+ other languages, with adjustable speed, pitch and volume.",
+    "first_seen": "2026-11-18",
+    "id": "tts",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ja",
+      "id",
+      "ru",
+      "fr",
+      "de",
+      "ar",
+      "ur",
+      "hi",
+      "vi",
+      "th",
+      "ms",
+      "it",
+      "ko",
+      "pt",
+      "nan",
+      "sv",
+      "fa",
+      "bg",
+      "pl",
+      "nl",
+      "ta",
+      "ro",
+      "cs",
+      "el",
+      "bn",
+      "yue",
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "custom_voice": "speaker customization priced on request",
+      "endpoint": "wss://tts-api-sg.xf-yun.com/v2/tts",
+      "max_text": "base64 text under 8000 bytes (~2,000 Chinese characters) per request",
+      "minority_languages": "speaker must be enabled in console; tte=unicode",
+      "raw_encodings": [
+        "raw",
+        "lame",
+        "speex-org-wb",
+        "speex-org-nb",
+        "speex",
+        "speex-wb"
+      ]
+    },
+    "name": "Online TTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 100000.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "$1.40 per 1,000 service calls pay-as-you-go. Packages (1 year): 1M calls $1,400; 5M $6,650 ($1.33/1k); 10M+ $12,600 ($1.26/1k). Free trial 100,000 calls for 3 months (individual; 200,000 for enterprise accounts).",
+      "price_usd": 0.0014,
+      "source_url": "https://global.xfyun.cn/doc/platform/pricing.html",
+      "unit": "request"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://global.xfyun.cn/doc/asr/voicedictation/API.html",
+        "https://global.xfyun.cn/doc/rtasr/rtasr/API.html",
+        "https://global.xfyun.cn/doc/platform/pricing.html",
+        "https://global.xfyun.cn/products/real-time-asr",
+        "https://global.xfyun.cn/doc/tts/online_tts/API.html"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

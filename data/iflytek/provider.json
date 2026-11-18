@@ -1,0 +1,34 @@
+{
+  "access": "self_serve",
+  "description": "iFLYTEK Co., Ltd. is a Chinese speech and AI company headquartered in Hefei, China. Its global open platform sells short-form and real-time speech recognition, online text-to-speech in Chinese, English and 25+ other languages, and pronunciation assessment APIs, priced per service call or per audio-hour package in USD. The mainland open platform (xfyun.cn) is a separate CNY-priced service.",
+  "docs_urls": [
+    "https://global.xfyun.cn/doc/asr/voicedictation/API.html",
+    "https://global.xfyun.cn/doc/rtasr/rtasr/API.html",
+    "https://global.xfyun.cn/doc/platform/pricing.html",
+    "https://global.xfyun.cn/products/real-time-asr",
+    "https://global.xfyun.cn/doc/tts/online_tts/API.html"
+  ],
+  "headquarters": "CN",
+  "id": "iflytek",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://global.xfyun.cn/doc/asr/voicedictation/API.html",
+    "docs": "https://global.xfyun.cn/doc/platform/quickguide.html",
+    "pricing": "https://global.xfyun.cn/doc/platform/pricing.html"
+  },
+  "name": "iFLYTEK",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://global.xfyun.cn/doc/asr/voicedictation/API.html",
+      "https://global.xfyun.cn/doc/rtasr/rtasr/API.html",
+      "https://global.xfyun.cn/doc/platform/pricing.html",
+      "https://global.xfyun.cn/products/real-time-asr",
+      "https://global.xfyun.cn/doc/tts/online_tts/API.html"
+    ]
+  },
+  "website": "https://global.xfyun.cn"
+}
