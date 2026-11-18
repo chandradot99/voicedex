@@ -1,0 +1,21 @@
+{
+  "access": "self_serve",
+  "description": "Modulate, Inc. is a voice-intelligence company based in Somerville, Massachusetts, known for the ToxMod voice-moderation product. Its developer platform sells Velma speech-to-text (multilingual and English, batch and streaming) alongside deepfake, emotion, accent, language and music detection and PII/PHI redaction APIs.",
+  "docs_urls": [
+    "https://docs.modulate.ai/api-reference/stt/overview.md",
+    "https://docs.modulate.ai/get-started/stt.md",
+    "https://www.modulate.ai/pricing"
+  ],
+  "headquarters": "US",
+  "id": "modulate",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.modulate.ai/api-reference/stt/overview",
+    "docs": "https://docs.modulate.ai/",
+    "pricing": "https://www.modulate.ai/pricing"
+  },
+  "name": "Modulate",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.modulate.ai"
+}

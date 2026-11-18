@@ -1,0 +1,257 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "flac",
+      "mov",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization"
+    ],
+    "description": "Modulate's broadest transcription API: multilingual batch and streaming STT with per-utterance timing, speaker labels and optional emotion, accent, deepfake and PII/PHI signals.",
+    "first_seen": "2026-11-18",
+    "id": "velma-2-stt",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "endpoints": {
+        "batch": "https://platform.modulate.ai/api/velma-2-stt-batch",
+        "streaming": "wss://platform.modulate.ai/api/velma-2-stt-streaming"
+      },
+      "language_coverage": "described as 100 languages; per-utterance auto-detection with optional ISO 639-1 language hint",
+      "max_file_mb": 100,
+      "model_id_note": "Modulate has no model parameter; the id is the endpoint family name.",
+      "optional_signals": [
+        "emotion",
+        "accent",
+        "deepfake_score",
+        "pii_phi_tagging",
+        "medical_domain (English)"
+      ]
+    },
+    "name": "Multilingual Transcription",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Published per hour of audio: $0.03/hr batch, $0.06/hr streaming (pay-as-you-go; 100 credits = $1.00, annual commitments discount 2-10%). Add-ons per hour: emotion $0.02, accent $0.01, PII/PHI tagging $0.02.",
+      "price_usd": 0.03,
+      "source_url": "https://www.modulate.ai/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "batch",
+          "price_usd": 0.03,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "streaming",
+          "price_usd": 0.06,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.modulate.ai/api-reference/stt/overview.md",
+        "https://docs.modulate.ai/get-started/stt.md",
+        "https://www.modulate.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "amr",
+      "flac",
+      "m4a",
+      "mov",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "batch": true,
+    "capabilities": [
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "English-only transcription optimized for throughput and latency, with optional word timestamps and diarization.",
+    "first_seen": "2026-11-18",
+    "id": "velma-2-stt-english-vfast",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "batch_audio_extensions": 96,
+      "endpoints": {
+        "batch": "https://platform.modulate.ai/api/velma-2-stt-batch-english-vfast",
+        "streaming": "wss://platform.modulate.ai/api/velma-2-stt-streaming-english-v2"
+      },
+      "max_file_mb": 100,
+      "medical_domain": true,
+      "model_id_note": "Modulate has no model parameter; the id is the batch endpoint name.",
+      "streaming_max_speakers": 10,
+      "word_timing_max_seconds_default": 3600
+    },
+    "name": "English Fast Transcription",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Published as 'English Fast Speech-to-Text' per hour of audio: $0.025/hr batch, $0.05/hr streaming (pay-as-you-go; 100 credits = $1.00).",
+      "price_usd": 0.025,
+      "source_url": "https://www.modulate.ai/pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "batch",
+          "price_usd": 0.025,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "streaming",
+          "price_usd": 0.05,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.modulate.ai/api-reference/stt/overview.md",
+        "https://docs.modulate.ai/get-started/stt.md",
+        "https://www.modulate.ai/pricing"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "aiff",
+      "flac",
+      "mov",
+      "mp3",
+      "mp4",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Fast transcript-only multilingual STT; streaming covers 25 European languages with auto language identification.",
+    "first_seen": "2026-11-18",
+    "id": "velma-2-stt-multilingual-vfast",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "batch_languages": "multilingual, not enumerated",
+      "endpoints": {
+        "batch": "https://platform.modulate.ai/api/velma-2-stt-batch-multilingual-vfast",
+        "streaming": "wss://platform.modulate.ai/api/velma-2-stt-streaming-multilingual-vfast"
+      },
+      "max_file_mb": 100,
+      "model_id_note": "Modulate has no model parameter; the id is the endpoint family name.",
+      "streaming_languages": [
+        "bg",
+        "hr",
+        "cs",
+        "da",
+        "nl",
+        "en",
+        "et",
+        "fi",
+        "fr",
+        "de",
+        "el",
+        "hu",
+        "it",
+        "lv",
+        "lt",
+        "mt",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "es",
+        "sv",
+        "uk"
+      ],
+      "streaming_max_session_hours": 6,
+      "streaming_only_features": [
+        "speaker_diarization (up to 4 speakers)",
+        "word_timestamps",
+        "per-utterance language detection"
+      ]
+    },
+    "name": "Multilingual Fast Transcription",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Published as 'Multilingual Fast Speech-to-Text' at $0.03 per hour of audio, batch; no streaming price listed.",
+      "price_usd": 0.03,
+      "source_url": "https://www.modulate.ai/pricing",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.modulate.ai/api-reference/stt/overview.md",
+        "https://docs.modulate.ai/get-started/stt.md",
+        "https://www.modulate.ai/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
