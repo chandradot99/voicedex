@@ -1,0 +1,1172 @@
+[
+  {
+    "audio_formats": [
+      "opus",
+      "pcm"
+    ],
+    "description": "End-to-end low-latency voice dialogue model for general conversation, with premium voices, cloned voices and singing.",
+    "first_seen": "2026-11-18",
+    "id": "1.2.1.1",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "context_tokens": "12K",
+      "endpoint": "wss://openspeech.bytedance.com/api/v3/realtime/dialogue",
+      "language_note": "Docs say only Chinese is well supported.",
+      "resource_id": "volc.speech.dialog"
+    },
+    "name": "Doubao Realtime Voice O2.0 (Omni)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "豆包实时语音大模型 pay-as-you-go, per 1M tokens: input audio ¥80 (base price), input text ¥10, cached text/audio input ¥5, output text ¥80, output audio ¥300. ~6.25 tokens per second of input audio, ~25 per second of output audio. Postpaid only. Trial 1M tokens (6 months). (The page's worked example uses ¥30/1M for output text, inconsistent with its table.)",
+      "price": 8e-05,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input_text",
+          "price": 1e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "cached_input",
+          "price": 5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_text",
+          "price": 8e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_audio",
+          "price": 0.0003,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "opus",
+      "pcm"
+    ],
+    "description": "Native full-duplex end-to-end speech model with interruption handling, noise robustness, dynamic end-of-turn detection and tool calling.",
+    "first_seen": "2026-11-18",
+    "id": "1.2.6.1",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "endpoint": "wss://openspeech.bytedance.com/api/v3/duplex/realtime/dialogue",
+      "input": "pcm/speech_opus 16 kHz",
+      "output": "pcm (32-bit or s16le)/ogg_opus 24 kHz",
+      "pricing_note": "Billing page lists one 豆包实时语音大模型 rate; assumed to cover this version.",
+      "released": "2026-06"
+    },
+    "name": "Doubao Realtime Voice 3.0 (Seeduplex, full-duplex)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "豆包实时语音大模型 pay-as-you-go, per 1M tokens: input audio ¥80 (base price), input text ¥10, cached text/audio input ¥5, output text ¥80, output audio ¥300. ~6.25 tokens per second of input audio, ~25 per second of output audio. Postpaid only. Trial 1M tokens (6 months). (The page's worked example uses ¥30/1M for output text, inconsistent with its table.)",
+      "price": 8e-05,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input_text",
+          "price": 1e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "cached_input",
+          "price": 5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_text",
+          "price": 8e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_audio",
+          "price": 0.0003,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "opus",
+      "pcm"
+    ],
+    "description": "End-to-end voice dialogue model for role-play and companionship, with character-manifest control and cloned voices.",
+    "first_seen": "2026-11-18",
+    "id": "2.2.0.0",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "meta": {
+      "context_tokens": "12K",
+      "endpoint": "wss://openspeech.bytedance.com/api/v3/realtime/dialogue",
+      "resource_id": "volc.speech.dialog"
+    },
+    "name": "Doubao Realtime Voice SC2.0 (Strong Character)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "豆包实时语音大模型 pay-as-you-go, per 1M tokens: input audio ¥80 (base price), input text ¥10, cached text/audio input ¥5, output text ¥80, output audio ¥300. ~6.25 tokens per second of input audio, ~25 per second of output audio. Postpaid only. Trial 1M tokens (6 months). (The page's worked example uses ¥30/1M for output text, inconsistent with its table.)",
+      "price": 8e-05,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "input_text",
+          "price": 1e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "cached_input",
+          "price": 5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_text",
+          "price": 8e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_audio",
+          "price": 0.0003,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "End-to-end simultaneous interpretation: streaming speech in, translated text (S2T) or translated speech in the speaker's own or a chosen voice (S2S) out; one side of each pair must be Chinese or English.",
+    "first_seen": "2026-11-18",
+    "id": "volc.service_type.10053",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "es",
+      "pt",
+      "de",
+      "fr",
+      "id",
+      "ja",
+      "ru",
+      "it",
+      "ko",
+      "ar",
+      "ms",
+      "th",
+      "vi",
+      "fil"
+    ],
+    "meta": {
+      "input_sample_rate": 16000,
+      "language_note": "Languages listed are the 16 target languages supporting real-time voice cloning; full list on the docs' language table.",
+      "modes": [
+        "s2t",
+        "s2s"
+      ]
+    },
+    "name": "Doubao Simultaneous Interpretation 2.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 1000000.0,
+        "period": "once",
+        "unit": "token"
+      },
+      "notes": "豆包同声传译大模型 pay-as-you-go, per 1M tokens: input ¥80 (base price), output text ¥80, output audio ¥300. Prepaid token packs ¥56/1M down to ¥40/1M. Trial 1M tokens.",
+      "price": 8e-05,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "output_text",
+          "price": 8e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_audio",
+          "price": 0.0003,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "description": "Previous-generation asynchronous large-model file transcription; kept for existing users, new users are directed to 2.0.",
+    "first_seen": "2026-11-18",
+    "id": "volc.bigasr.auc",
+    "interfaces": [
+      "http"
+    ],
+    "meta": {
+      "legacy": "历史版本 — existing 1.0 users unaffected; new users should choose 2.0"
+    },
+    "name": "Doubao Audio File ASR 1.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "大模型录音文件识别（标准版）: ¥2.3/hour pay-as-you-go; prepaid packs from ¥2.2/h (30 h ¥66) down to ¥1.2/h (300,000 h).",
+      "price": 2.3,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "word_timestamps"
+    ],
+    "description": "Low-cost file transcription using idle compute, results within 24 hours, for files up to 5 hours / 512 MB.",
+    "first_seen": "2026-11-18",
+    "id": "volc.bigasr.auc_idle",
+    "interfaces": [
+      "http"
+    ],
+    "max_audio_seconds": 18000,
+    "meta": {
+      "max_file_mb": 512,
+      "model_list_family": "Listed as a version of 豆包录音文件识别模型2.0 on the model list page"
+    },
+    "name": "Doubao Audio File ASR (Idle-time)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "大模型录音文件识别（闲时版）: ¥1.2/hour pay-as-you-go; prepaid packs from ~¥1.17/h (30 h ¥35) down to ¥0.5/h (1,000,000 h). Listed under the legacy (历史模型) price table.",
+      "price": 1.2,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "word_timestamps"
+    ],
+    "description": "Fast synchronous file transcription (about 10 s for 30 minutes of audio) for files up to 2 hours / 100 MB, no polling needed.",
+    "first_seen": "2026-11-18",
+    "id": "volc.bigasr.auc_turbo",
+    "interfaces": [
+      "http"
+    ],
+    "max_audio_seconds": 7200,
+    "meta": {
+      "max_file_mb": 100,
+      "model_list_family": "Listed as a version of 豆包录音文件识别模型2.0 on the model list page",
+      "no_diarization": true
+    },
+    "name": "Doubao Audio File ASR (Turbo)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "大模型录音文件识别（极速版）: ¥4.5/hour pay-as-you-go; prepaid packs from ¥4.4/h (30 h ¥132) down to ¥2.2/h (300,000 h). Listed under the legacy (历史模型) price table.",
+      "price": 4.5,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "description": "Previous-generation large-model streaming speech recognition; kept for existing users, new users are directed to 2.0.",
+    "first_seen": "2026-11-18",
+    "id": "volc.bigasr.sauc.duration",
+    "interfaces": [
+      "websocket"
+    ],
+    "meta": {
+      "concurrent_resource_id": "volc.bigasr.sauc.concurrent",
+      "legacy": "历史版本 — existing 1.0 users unaffected; new users should choose 2.0"
+    },
+    "name": "Doubao Streaming ASR 1.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "大模型流式语音识别: ¥4.5/hour pay-as-you-go; prepaid packs from ¥4.4/h (30 h ¥132) down to ¥2.4/h (300,000 h). Concurrency-billed id volc.bigasr.sauc.concurrent also exists.",
+      "price": 4.5,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Asynchronous large-model transcription of audio files up to 5 hours / 512 MB, results returned within about 3 hours via a query API.",
+    "family": "doubao-asr-2.0",
+    "first_seen": "2026-11-18",
+    "id": "volc.seedasr.auc",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en-US",
+      "ja-JP",
+      "id-ID",
+      "es-MX",
+      "pt-BR",
+      "de-DE",
+      "fr-FR",
+      "ko-KR",
+      "fil-PH",
+      "ms-MY",
+      "th-TH",
+      "ar-SA",
+      "it-IT",
+      "bn-BD",
+      "el-GR",
+      "nl-NL",
+      "ru-RU",
+      "tr-TR",
+      "vi-VN",
+      "pl-PL",
+      "ro-RO",
+      "ne-NP",
+      "uk-UA",
+      "yue-CN"
+    ],
+    "max_audio_seconds": 18000,
+    "meta": {
+      "dialects_when_language_unset": "Mandarin, English, Shanghainese, Minnan, Sichuanese, Shaanxi, Cantonese, Jilu, Lanyin and Jianghuai Mandarin",
+      "endpoint": "https://openspeech.bytedance.com/api/v3/auc/bigmodel/submit",
+      "max_file_mb": 512
+    },
+    "name": "Doubao Audio File ASR 2.0 (Standard)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "¥0.8/hour pay-as-you-go. Prepaid packs (1 year): 30 h ¥23, 1,000 h ¥750, 10,000 h ¥7,200, 100,000 h ¥70,000, 300,000 h ¥200,000 (¥0.67/h). Trial 20 hours (6 months).",
+      "price": 0.8,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Large-model streaming speech recognition over WebSocket, in bidirectional (word-by-word) and sentence-level streaming modes.",
+    "family": "doubao-asr-2.0",
+    "first_seen": "2026-11-18",
+    "id": "volc.seedasr.sauc.duration",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN",
+      "en-US",
+      "ja-JP",
+      "id-ID",
+      "es-MX",
+      "pt-BR",
+      "de-DE",
+      "fr-FR",
+      "ko-KR",
+      "fil-PH",
+      "ms-MY",
+      "th-TH",
+      "ar-SA",
+      "it-IT",
+      "bn-BD",
+      "el-GR",
+      "nl-NL",
+      "ru-RU",
+      "tr-TR",
+      "vi-VN",
+      "pl-PL",
+      "ro-RO",
+      "ne-NP",
+      "uk-UA",
+      "yue-CN"
+    ],
+    "meta": {
+      "concurrent_resource_id": "volc.seedasr.sauc.concurrent",
+      "default_concurrency": 50,
+      "endpoints": {
+        "bidirectional": "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel_async",
+        "streaming_input": "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel_nostream"
+      },
+      "language_detection_note": "Streaming-input mode only.",
+      "language_note": "Bidirectional mode: Chinese (Mandarin + 10 dialects incl. Cantonese, Minnan, Sichuanese, Shanghainese, Hakka) and English only; the full language list applies to the sentence-level streaming-input mode."
+    },
+    "name": "Doubao Streaming ASR 2.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20.0,
+        "period": "once",
+        "unit": "hour"
+      },
+      "notes": "¥1/hour pay-as-you-go. Prepaid packs (1 year): 30 h ¥28, 1,000 h ¥900 (¥0.9/h), 10,000 h ¥8,800, 100,000 h ¥85,000, 300,000 h ¥240,000 (¥0.8/h). Concurrency-billed variant volc.seedasr.sauc.concurrent: ¥500 per concurrent stream per month, no hourly charge. Trial 20 hours (6 months).",
+      "price": 1.0,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Prompt-driven generation of up to 2 minutes of film-grade audio (speech with sound) from text, image and up to 3 reference audio inputs.",
+    "first_seen": "2026-11-18",
+    "id": "seed-audio-1.0",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "ja",
+      "ko",
+      "es-MX",
+      "es",
+      "de",
+      "fr",
+      "pt-BR",
+      "th",
+      "vi",
+      "ms",
+      "fil",
+      "it",
+      "ru",
+      "nl",
+      "pl",
+      "tr"
+    ],
+    "max_text_chars": 3000,
+    "meta": {
+      "aigc_watermark": true,
+      "max_output": "2 minutes",
+      "ssml": false
+    },
+    "name": "Doubao Audio Generation 1.0 (Seed Audio)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "once",
+        "unit": "minute"
+      },
+      "notes": "¥1 per generated minute pay-as-you-go (billed on raw generated length). Prepaid packs ¥1/min (30 min) down to ¥0.8/min (2M min). Trial 60 minutes.",
+      "price": 1.0,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Previous-generation synthesis with cloned voices.",
+    "first_seen": "2026-11-18",
+    "id": "seed-icl-1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "meta": {
+      "concurrent_resource_id": "seed-icl-1.0-concurr"
+    },
+    "name": "Doubao Voice Cloning 1.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "大模型声音复刻: ¥8 per 10,000 characters pay-as-you-go; prepaid packs ¥7.5/10k down to ¥4.5/10k. A concurrency-billed id seed-icl-1.0-concurr also exists.",
+      "price": 0.0008,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Synthesis with voices cloned from a short reference recording via the voice-cloning API; supports context referencing and voice-instruction tags.",
+    "first_seen": "2026-11-18",
+    "id": "seed-icl-2.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "ja",
+      "ko",
+      "es-MX",
+      "pt-BR",
+      "id",
+      "ms",
+      "th",
+      "vi",
+      "fil",
+      "de",
+      "fr",
+      "es",
+      "ru",
+      "ar",
+      "pt"
+    ],
+    "meta": {
+      "model_param": "req_params.model: seed-tts-2.0-standard (default, lower latency) or seed-tts-2.0-expressive (voice instructions/tags)"
+    },
+    "name": "Doubao Voice Cloning 2.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "¥3 per 10,000 characters pay-as-you-go; prepaid packs ¥2.8–2.1/10k. Voice slots billed separately (¥138 per voice postpaid; prepaid ¥138→¥28 by volume). Concurrency-only plan ¥2,000 per stream per month. Trial 20,000 characters.",
+      "price": 0.0003,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control"
+    ],
+    "description": "Previous-generation large-model text-to-speech with multi-emotion preset voices.",
+    "first_seen": "2026-11-18",
+    "id": "seed-tts-1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh-CN",
+      "en",
+      "ja",
+      "es"
+    ],
+    "meta": {
+      "concurrent_resource_id": "seed-tts-1.0-concurr",
+      "languages_source": "derived from the TTS 1.0 voice list"
+    },
+    "name": "Doubao TTS 1.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "大模型语音合成: ¥5 per 10,000 characters pay-as-you-go; prepaid packs ¥4.5/10k down to ¥1.6/10k. A concurrency-billed id seed-tts-1.0-concurr also exists.",
+      "price": 0.0005,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml",
+      "style_control"
+    ],
+    "description": "Large-model text-to-speech with expressive preset voices, natural-language voice instructions and context referencing.",
+    "first_seen": "2026-11-18",
+    "id": "seed-tts-2.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh-CN",
+      "en",
+      "ja",
+      "ko",
+      "es-MX",
+      "pt-BR",
+      "id",
+      "ms",
+      "th",
+      "vi",
+      "fil",
+      "de",
+      "fr",
+      "es",
+      "ru",
+      "ar"
+    ],
+    "meta": {
+      "default_concurrency": 10,
+      "endpoints": [
+        "wss://openspeech.bytedance.com/api/v3/tts/unidirectional/stream",
+        "wss://openspeech.bytedance.com/api/v3/tts/bidirection",
+        "HTTP chunked/SSE"
+      ],
+      "ssml": "tags only; Chinese/English voices",
+      "word_timestamps": "enable_subtitle (Chinese and English)"
+    },
+    "name": "Doubao TTS 2.0",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "free_quota": {
+        "amount": 20000.0,
+        "period": "once",
+        "unit": "character"
+      },
+      "notes": "¥3 per 10,000 characters pay-as-you-go (1 Chinese character = 1 character). Prepaid packs (1 year): 100k chars ¥28 (¥2.8/10k) down to ¥2.1/10k at 2B chars. Trial 20,000 characters (6 months).",
+      "price": 0.0003,
+      "source_url": "https://docs.volcengine.com/docs/6561/1359370",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

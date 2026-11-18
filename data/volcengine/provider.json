@@ -1,0 +1,53 @@
+{
+  "description": "Volcengine is ByteDance's cloud platform for mainland China. Its Doubao Speech (豆包语音) product sells large-model streaming and file speech recognition, text-to-speech and voice cloning, end-to-end realtime speech-to-speech dialogue and simultaneous interpretation, priced in CNY. International customers are served separately by BytePlus.",
+  "docs_urls": [
+    "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+    "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+  ],
+  "headquarters": "CN",
+  "id": "volcengine",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+    "docs": "https://docs.volcengine.com/docs/6561",
+    "pricing": "https://docs.volcengine.com/docs/6561/1359370"
+  },
+  "name": "Volcengine",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+      "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+    ]
+  },
+  "website": "https://www.volcengine.com/product/voice-tech"
+}
