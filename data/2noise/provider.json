@@ -1,0 +1,18 @@
+{
+  "access": "open_weights",
+  "api_urls": [
+    "https://huggingface.co/api/models?author=2Noise&pipeline_tag=automatic-speech-recognition",
+    "https://huggingface.co/api/models?author=2Noise&pipeline_tag=text-to-speech",
+    "https://huggingface.co/api/models?author=2Noise&pipeline_tag=text-to-audio"
+  ],
+  "description": "2Noise publishes ChatTTS, an open generative text-to-speech model built for everyday dialogue (Chinese and English). The model weights are released on Hugging Face under CC BY-NC 4.0 (non-commercial) and the code on GitHub under AGPL-3.0; there is no hosted API.",
+  "id": "2noise",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://github.com/2noise/ChatTTS"
+  },
+  "name": "2Noise (ChatTTS)",
+  "source": "api",
+  "type": "tts",
+  "website": "https://2noise.com"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "first_seen": "2026-11-18",
+    "id": "2Noise/ChatTTS",
+    "meta": {
+      "huggingface_repo": "2Noise/ChatTTS",
+      "released": "2024-05-25"
+    },
+    "name": "ChatTTS",
+    "open_weights": {
+      "commercial_use": false,
+      "license": "cc-by-nc-4.0",
+      "url": "https://huggingface.co/2Noise/ChatTTS"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "api",
+      "urls": [
+        "https://huggingface.co/api/models?author=2Noise&pipeline_tag=automatic-speech-recognition",
+        "https://huggingface.co/api/models?author=2Noise&pipeline_tag=text-to-speech",
+        "https://huggingface.co/api/models?author=2Noise&pipeline_tag=text-to-audio"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

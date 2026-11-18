@@ -82,8 +82,17 @@ class OpenMOSSSyncer(HuggingFaceSyncer):
 
 
 class KittenMLSyncer(HuggingFaceSyncer):
+    # Stellon Labs also sells a hosted OpenAI-compatible API.
     provider_id = "kittenml"
     hf_authors = ["KittenML"]
+    tts_docs = ["https://kittenml.com"]
+    tts_guidance = (
+        "Hosted API models only (the open-weights repos come from Hugging Face): one record per callable model id "
+        "of the hosted TTS API, with published per-unit prices; set open_weights when the hosted model is the "
+        "same as a published repo."
+    )
+    stt_docs = ["https://kittenml.com"]
+    stt_guidance = "Hosted speech-to-text models only, if the API offers any; same rules as TTS."
 
 
 class NariLabsSyncer(HuggingFaceSyncer):
@@ -118,8 +127,21 @@ class ParlerTTSSyncer(HuggingFaceSyncer):
 
 
 class MayaResearchSyncer(HuggingFaceSyncer):
+    # Also sells a hosted TTS API (Maya Studio).
     provider_id = "maya-research"
     hf_authors = ["maya-research"]
+    tts_docs = ["https://www.mayaresearch.ai"]
+    tts_guidance = (
+        "Hosted API models only (open-weights repos come from Hugging Face): one record per callable model id of "
+        "the hosted TTS API; prices only if published per unit; regions from documented serving regions."
+    )
+
+
+class TwoNoiseSyncer(HuggingFaceSyncer):
+    # ChatTTS is tagged text-to-audio, not text-to-speech.
+    provider_id = "2noise"
+    hf_authors = ["2Noise"]
+    extra_pipelines = {"text-to-audio": "tts"}
 
 
 class SberOpenSyncer(HuggingFaceSyncer):
