@@ -16,6 +16,7 @@
 
 {% block after_table %}
 <section class="wrap landing-more">
+  {% if total_rows > rows|length %}<p class="more-link"><a href="{{ filter_url }}">See all {{ total_rows }} models</a>, with filters and sorting.</p>{% endif %}
   {% if landing.kind != "hub" %}
   <p class="more-link"><a href="{{ crumbs[1][1] }}">All {{ TYPE_LABELS[landing.type]|lower }} models</a></p>
   {% endif %}

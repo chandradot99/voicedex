@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Speech AI language coverage: which providers support which languages | {{ site_name }}{% endblock %}
+{% block description %}Language coverage of {{ coverage.rows|length }} speech AI providers across the {{ coverage.languages|length }} most-supported languages: speech-to-text, text-to-speech and speech-to-speech models per language.{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <h1>Language coverage</h1>
+  <p class="lede">Every active provider against the {{ coverage.languages|length }} most-supported languages. Brighter cells mean more models; select a cell to list them, or a language to see every model that supports it.</p>
+</section>
+{% with map_base="/coverage", full_map=True %}{% include "_coverage.html" %}{% endwith %}
+{% endblock %}
