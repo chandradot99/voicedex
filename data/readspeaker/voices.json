@@ -1,0 +1,5691 @@
+[
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "AWARE",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "AWARE",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Adam",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_uk",
+      "technology": "Neural"
+    },
+    "name": "Adam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Adina",
+    "languages": [
+      "ro-RO"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ro_ro",
+      "technology": "Neural"
+    },
+    "name": "Adina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Agnieszka",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "pl_pl"
+    },
+    "name": "Agnieszka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Aidan",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_sc",
+      "technology": "Neural"
+    },
+    "name": "Aidan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ainhoa",
+    "languages": [
+      "eu-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Microsoft-Neural",
+      "lang_param": "eu_es"
+    },
+    "name": "Ainhoa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Akira",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Akira",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alba",
+    "languages": [
+      "es-AR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "es_ar",
+      "technology": "Neural"
+    },
+    "name": "Alba",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Aleksei",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ru_ru",
+      "technology": "Neural"
+    },
+    "name": "Aleksei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Alex",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "nl_nl",
+      "technology": "Neural"
+    },
+    "name": "Alex",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Alfie",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_uk",
+      "technology": "Neural premium"
+    },
+    "name": "Alfie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alice",
+    "languages": [
+      "en-GB",
+      "it-IT"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "ReadSpeaker-Premium",
+          "lang_param": "en_uk",
+          "technology": "Neural premium"
+        },
+        {
+          "available_in": "Cloud",
+          "engine": "Nuance",
+          "lang_param": "it_it"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Alice",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south african",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alyssa",
+    "languages": [
+      "en-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_za",
+      "technology": "Neural"
+    },
+    "name": "Alyssa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Amelie",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "fr_ca"
+    },
+    "name": "Amelie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Amir",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText",
+      "lang_param": "ar_ar",
+      "technology": "Standard"
+    },
+    "name": "Amir",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Amy",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_uk"
+    },
+    "name": "Amy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ander",
+    "languages": [
+      "eu-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Microsoft-Neural",
+      "lang_param": "eu_es"
+    },
+    "name": "Ander",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Aneta",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "pl_pl",
+      "technology": "Neural premium"
+    },
+    "name": "Aneta",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ania",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "rSpeak",
+      "lang_param": "pl_pl"
+    },
+    "name": "Ania",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anna",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "de_de"
+    },
+    "name": "Anna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anne",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "nl_nl",
+      "technology": "Neural"
+    },
+    "name": "Anne",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Annisa",
+    "languages": [
+      "id-ID"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "id_id",
+      "technology": "Neural"
+    },
+    "name": "Annisa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anwen",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "cy_cy",
+      "technology": "Neural"
+    },
+    "name": "Anwen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arno",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Fluency",
+      "lang_param": "nl_nl"
+    },
+    "name": "Arno",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arthur",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Fluency",
+      "lang_param": "nl_nl"
+    },
+    "name": "Arthur",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arwyn",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "cy_cy",
+      "technology": "Neural"
+    },
+    "name": "Arwyn",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Asad",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Microsoft-Neural",
+      "lang_param": "ur_pk"
+    },
+    "name": "Asad",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ashley",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Ashley",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Attila",
+    "languages": [
+      "hu-HU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "hu_hu",
+      "technology": "Neural"
+    },
+    "name": "Attila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Audrey",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "fr_fr"
+    },
+    "name": "Audrey",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Banele",
+    "languages": [
+      "nr-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "nr_za"
+    },
+    "name": "Banele",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Barwyn",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_uk",
+      "technology": "Neural"
+    },
+    "name": "Barwyn",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Bayu",
+    "languages": [
+      "id-ID"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "id_id",
+      "technology": "Neural"
+    },
+    "name": "Bayu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Benoit",
+    "languages": [
+      "fr-BE",
+      "fr-FR"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "VoiceText-DNN",
+          "lang_param": "fr_be",
+          "technology": "Neural"
+        },
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "ReadSpeaker-Premium",
+          "lang_param": "fr_fr",
+          "technology": "Neural premium"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Benoit",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Beth",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Beth",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Brandon",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Brandon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Branwen",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_uk",
+      "technology": "Neural"
+    },
+    "name": "Branwen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Brent",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Brent",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Brian",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_uk"
+    },
+    "name": "Brian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Bridget",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_uk",
+      "technology": "Neural"
+    },
+    "name": "Bridget",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Brodie",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_au",
+      "technology": "Neural"
+    },
+    "name": "Brodie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Byron",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_au",
+      "technology": "Neural premium"
+    },
+    "name": "Byron",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south african",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Candice",
+    "languages": [
+      "en-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "en_za"
+    },
+    "name": "Candice",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carla",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "it_it"
+    },
+    "name": "Carla",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Carlos",
+    "languages": [
+      "es-US",
+      "es-CO"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud",
+          "engine": "Nuance",
+          "lang_param": "es_us"
+        },
+        {
+          "available_in": "Cloud",
+          "engine": "Nuance",
+          "lang_param": "es_co"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Carlos",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carmela",
+    "languages": [
+      "gl-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "gl_es"
+    },
+    "name": "Carmela",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Carolina",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "pt_pt",
+      "technology": "Neural"
+    },
+    "name": "Carolina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Cecilia",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Cecilia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Celine",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "fr_fr"
+    },
+    "name": "Celine",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Cem",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "tr_tr"
+    },
+    "name": "Cem",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chloe",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "fr_ca",
+      "technology": "Neural"
+    },
+    "name": "Chloe",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Cillian",
+    "languages": [
+      "ga-IE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ga_ie",
+      "technology": "Neural"
+    },
+    "name": "Cillian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Claire",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "nl_nl"
+    },
+    "name": "Claire",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Conchita",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "es_es"
+    },
+    "name": "Conchita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Daisy",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_uk",
+      "technology": "Neural premium"
+    },
+    "name": "Daisy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Damayanti",
+    "languages": [
+      "id-ID"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "id_id"
+    },
+    "name": "Damayanti",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Daniel",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "en_uk"
+    },
+    "name": "Daniel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Daria",
+    "languages": [
+      "bg-BG"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "bg_bg"
+    },
+    "name": "Daria",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Dayoung",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Dayoung",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Dilara",
+    "languages": [
+      "fa-IR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Microsoft-Neural",
+      "lang_param": "fa_ir"
+    },
+    "name": "Dilara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Diya",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "hi_in",
+      "technology": "Neural"
+    },
+    "name": "Diya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Dora",
+    "languages": [
+      "is-IS"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "is_is"
+    },
+    "name": "Dora",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Edouard",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "fr_ca",
+      "technology": "Neural premium"
+    },
+    "name": "Edouard",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Elina",
+    "languages": [
+      "fi-FI"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "fi_fi",
+      "technology": "Neural premium"
+    },
+    "name": "Elina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Elisa",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "it_it",
+      "technology": "Neural"
+    },
+    "name": "Elisa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Elise",
+    "languages": [
+      "fr-BE",
+      "fr-FR"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud",
+          "engine": "VoiceText-DNN",
+          "lang_param": "fr_be",
+          "technology": "Neural"
+        },
+        {
+          "available_in": "Cloud",
+          "engine": "VoiceText-DNN",
+          "lang_param": "fr_fr",
+          "technology": "Neural"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Elise",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ellen",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "nl_be"
+    },
+    "name": "Ellen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Emil",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "de_de",
+      "technology": "Neural premium"
+    },
+    "name": "Emil",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Emma",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_uk"
+    },
+    "name": "Emma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Empar",
+    "languages": [
+      "ca-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "ca_es"
+    },
+    "name": "Empar",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Eric",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_us"
+    },
+    "name": "Eric",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Erica",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Erica",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Erin",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Erin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ewa",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "pl_pl"
+    },
+    "name": "Ewa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Fabio",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "it_it",
+      "technology": "Neural premium"
+    },
+    "name": "Fabio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Farid",
+    "languages": [
+      "fa-IR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Microsoft-Neural",
+      "lang_param": "fa_ir"
+    },
+    "name": "Farid",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Female1",
+    "languages": [
+      "fa-IR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ariana",
+      "lang_param": "fa_ir"
+    },
+    "name": "Female1",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Fiona",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Fluency",
+      "lang_param": "nl_nl"
+    },
+    "name": "Fiona",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Francisco",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "es_mx",
+      "technology": "Neural"
+    },
+    "name": "Francisco",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Fredrik",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "sv_se",
+      "technology": "Neural premium"
+    },
+    "name": "Fredrik",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gaia",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "it_it",
+      "technology": "Neural premium"
+    },
+    "name": "Gaia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gemma",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_uk",
+      "technology": "Neural premium"
+    },
+    "name": "Gemma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Geraint",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "cy_cy"
+    },
+    "name": "Geraint",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gina",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "it_it",
+      "technology": "Neural"
+    },
+    "name": "Gina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Giorgio",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "it_it"
+    },
+    "name": "Giorgio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gloria",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "es_mx",
+      "technology": "Neural"
+    },
+    "name": "Gloria",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Guus",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "nl_nl",
+      "technology": "Neural"
+    },
+    "name": "Guus",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gwyneth",
+    "languages": [
+      "cy-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "cy_cy"
+    },
+    "name": "Gwyneth",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hans",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "de_de"
+    },
+    "name": "Hans",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Haoyu",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_tw",
+      "technology": "Neural"
+    },
+    "name": "Haoyu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Harin",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "ko_kr",
+      "technology": "Neural premium"
+    },
+    "name": "Harin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Haruka",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Haruka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hayato",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Hayato",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Heike",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "de_de",
+      "technology": "Neural premium"
+    },
+    "name": "Heike",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Helena",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "pt_br",
+      "technology": "Neural"
+    },
+    "name": "Helena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Henrik",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "no_nb"
+    },
+    "name": "Henrik",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hikari",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Hikari",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hildur",
+    "languages": [
+      "is-IS"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "is_is",
+      "technology": "Neural"
+    },
+    "name": "Hildur",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hina",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Hina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hong",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_cn",
+      "technology": "Neural"
+    },
+    "name": "Hong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hugh",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_uk",
+      "technology": "Neural"
+    },
+    "name": "Hugh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hugo",
+    "languages": [
+      "fr-BE",
+      "fr-FR"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "VoiceText-DNN",
+          "lang_param": "fr_be",
+          "technology": "Neural"
+        },
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "ReadSpeaker-Premium",
+          "lang_param": "fr_fr",
+          "technology": "Neural premium"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Hugo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hui",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_cn",
+      "technology": "Neural"
+    },
+    "name": "Hui",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hyeryun",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "ko_kr",
+      "technology": "Neural premium"
+    },
+    "name": "Hyeryun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hyuna",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Hyuna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ilse",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "nl_nl",
+      "technology": "Neural premium"
+    },
+    "name": "Ilse",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ioana",
+    "languages": [
+      "ro-RO"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "ro_ro"
+    },
+    "name": "Ioana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Irini",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "el_gr",
+      "technology": "Neural"
+    },
+    "name": "Irini",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Isabel",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "es_es",
+      "technology": "Neural premium"
+    },
+    "name": "Isabel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jacek",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "pl_pl"
+    },
+    "name": "Jacek",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jack",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_au",
+      "technology": "Neural premium"
+    },
+    "name": "Jack",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jake",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Jake",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jakub",
+    "languages": [
+      "sk-SK"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "sk_sk",
+      "technology": "Neural"
+    },
+    "name": "Jakub",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "James",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "James",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jan",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "pl_pl"
+    },
+    "name": "Jan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Javier",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "es_es",
+      "technology": "Neural premium"
+    },
+    "name": "Javier",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jeff",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "rSpeak",
+      "lang_param": "en_us"
+    },
+    "name": "Jeff",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jeffrey",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Fluency",
+      "lang_param": "nl_nl"
+    },
+    "name": "Jeffrey",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jelena",
+    "languages": [
+      "hr-HR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "hr_hr",
+      "technology": "Neural"
+    },
+    "name": "Jelena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jihun",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "ko_kr",
+      "technology": "Neural premium"
+    },
+    "name": "Jihun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jimin",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Jimin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Joana",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "pt_pt"
+    },
+    "name": "Joana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Joey",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_us"
+    },
+    "name": "Joey",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jordi",
+    "languages": [
+      "ca-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "ca_es"
+    },
+    "name": "Jordi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jude",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_uk",
+      "technology": "Neural premium"
+    },
+    "name": "Jude",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Julia",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "pt_br",
+      "technology": "Neural premium"
+    },
+    "name": "Julia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Julie",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Julie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Junwoo",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Junwoo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kaho",
+    "languages": [
+      "zh-HK"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_hk",
+      "technology": "Neural"
+    },
+    "name": "Kaho",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kamohelo",
+    "languages": [
+      "st-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "st_za"
+    },
+    "name": "Kamohelo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kanna",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Kanna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Karen",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "en_au"
+    },
+    "name": "Karen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Karin",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "sv_se",
+      "technology": "Neural"
+    },
+    "name": "Karin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Karl",
+    "languages": [
+      "is-IS"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "is_is"
+    },
+    "name": "Karl",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kate",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Kate",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Katka",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "cs_cz",
+      "technology": "Neural"
+    },
+    "name": "Katka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kayan",
+    "languages": [
+      "zh-HK"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_hk",
+      "technology": "Neural"
+    },
+    "name": "Kayan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kayla",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Kayla",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kinga",
+    "languages": [
+      "hu-HU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "hu_hu",
+      "technology": "Neural"
+    },
+    "name": "Kinga",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Klara",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "de_de",
+      "technology": "Neural premium"
+    },
+    "name": "Klara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kobus",
+    "languages": [
+      "af-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "af_za"
+    },
+    "name": "Kobus",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kota",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Kota",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kyle",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Kyle",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kyoko",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "ja_jp"
+    },
+    "name": "Kyoko",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Laila",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "ar_ar"
+    },
+    "name": "Laila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lana",
+    "languages": [
+      "hr-HR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "hr_hr"
+    },
+    "name": "Lana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Laura",
+    "languages": [
+      "sk-SK"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "sk_sk"
+    },
+    "name": "Laura",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Lee",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "en_au"
+    },
+    "name": "Lee",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lekha",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "hi_in"
+    },
+    "name": "Lekha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lena",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "de_de",
+      "technology": "Neural premium"
+    },
+    "name": "Lena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lene",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "da_dk",
+      "technology": "Neural"
+    },
+    "name": "Lene",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Leo",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "fr_ca",
+      "technology": "Neural"
+    },
+    "name": "Leo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lesya",
+    "languages": [
+      "uk-UA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "uk_ua"
+    },
+    "name": "Lesya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lethabo",
+    "languages": [
+      "tn-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "tn_za"
+    },
+    "name": "Lethabo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Liang",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_cn",
+      "technology": "Neural"
+    },
+    "name": "Liang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lindiwe",
+    "languages": [
+      "zu-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "zu_za"
+    },
+    "name": "Lindiwe",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Linnea",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "sv_se",
+      "technology": "Neural premium"
+    },
+    "name": "Linnea",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Linze",
+    "languages": [
+      "fy-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Fluency",
+      "lang_param": "fy_nl"
+    },
+    "name": "Linze",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Liv",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "no_nb"
+    },
+    "name": "Liv",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lizzy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Lizzy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lola",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "es_es",
+      "technology": "Neural"
+    },
+    "name": "Lola",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Louis",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "fr_fr",
+      "technology": "Neural premium"
+    },
+    "name": "Louis",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Luc",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "nl_be",
+      "technology": "Neural premium"
+    },
+    "name": "Luc",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Lucas",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "pt_br",
+      "technology": "Neural premium"
+    },
+    "name": "Lucas",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lykke",
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "no_nb",
+      "technology": "Neural"
+    },
+    "name": "Lykke",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Maddison",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Maddison",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mai",
+    "languages": [
+      "vi-VN"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "vi_vn",
+      "technology": "Neural"
+    },
+    "name": "Mai",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Maja",
+    "languages": [
+      "pl-PL",
+      "sv-SE"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud",
+          "engine": "Ivona",
+          "lang_param": "pl_pl"
+        },
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "ReadSpeaker-Premium",
+          "lang_param": "sv_se",
+          "technology": "Neural premium"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Maja",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Majsan",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "sv_se",
+      "technology": "Neural premium"
+    },
+    "name": "Majsan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Male1",
+    "languages": [
+      "fa-IR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ariana",
+      "lang_param": "fa_ir"
+    },
+    "name": "Male1",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Manuel",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "es_es",
+      "technology": "Neural"
+    },
+    "name": "Manuel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Marie",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "fr_fr",
+      "technology": "Neural premium"
+    },
+    "name": "Marie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mariska",
+    "languages": [
+      "hu-HU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "hu_hu"
+    },
+    "name": "Mariska",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Marius",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "de_de",
+      "technology": "Neural premium"
+    },
+    "name": "Marius",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mark",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Mark",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Marlene",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "de_de"
+    },
+    "name": "Marlene",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Maru",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Maru",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Maryna",
+    "languages": [
+      "af-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "af_za"
+    },
+    "name": "Maryna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mason",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_au",
+      "technology": "Neural"
+    },
+    "name": "Mason",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Max",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "de_de",
+      "technology": "Neural premium"
+    },
+    "name": "Max",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mayu",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Mayu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Melina",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "el_gr"
+    },
+    "name": "Melina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mia",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_au",
+      "technology": "Neural"
+    },
+    "name": "Mia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Miguel",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "es_us"
+    },
+    "name": "Miguel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mila",
+    "languages": [
+      "uk-UA"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "uk_ua",
+      "technology": "Neural premium"
+    },
+    "name": "Mila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Milena",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "ru_ru"
+    },
+    "name": "Milena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Miren",
+    "languages": [
+      "eu-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "eu_es"
+    },
+    "name": "Miren",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Misaki",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Misaki",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Molly",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Molly",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Monica",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "es_es"
+    },
+    "name": "Monica",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Myles",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Myles",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nadya",
+    "languages": [
+      "bg-BG"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "bg_bg",
+      "technology": "Neural"
+    },
+    "name": "Nadya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Naghma",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "KICS/CLE",
+      "lang_param": "ur_pk"
+    },
+    "name": "Naghma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nao",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Nao",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nara",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "pt_br",
+      "technology": "Neural"
+    },
+    "name": "Nara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nicole",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_au"
+    },
+    "name": "Nicole",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nikos",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "el_gr"
+    },
+    "name": "Nikos",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nora",
+    "languages": [
+      "nn-NO"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "no_nn"
+    },
+    "name": "Nora",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "new zealand",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Olivia",
+    "languages": [
+      "en-NZ"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_nz",
+      "technology": "Neural"
+    },
+    "name": "Olivia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Oskars",
+    "languages": [
+      "lv-LV"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "lv_lv",
+      "technology": "Neural"
+    },
+    "name": "Oskars",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ozan",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "tr_tr",
+      "technology": "Neural"
+    },
+    "name": "Ozan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Paul",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Paul",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Paulina",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "es_mx"
+    },
+    "name": "Paulina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Penelope",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "es_us"
+    },
+    "name": "Penelope",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Pilar",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "es_es",
+      "technology": "Neural premium"
+    },
+    "name": "Pilar",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Piotr",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "pl_pl",
+      "technology": "Neural premium"
+    },
+    "name": "Piotr",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Priya",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_in",
+      "technology": "Neural"
+    },
+    "name": "Priya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Qiang",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_cn",
+      "technology": "Neural"
+    },
+    "name": "Qiang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rabelani",
+    "languages": [
+      "ve-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "ve_za"
+    },
+    "name": "Rabelani",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rachel",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Rachel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rafael",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "pt_br",
+      "technology": "Neural"
+    },
+    "name": "Rafael",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Raveena",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_in"
+    },
+    "name": "Raveena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ricardo",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "pt_br"
+    },
+    "name": "Ricardo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Risa",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Risa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Roberto",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "it_it",
+      "technology": "Neural"
+    },
+    "name": "Roberto",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Robota",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Robota",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Roser",
+    "languages": [
+      "ca-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ca_es",
+      "technology": "Neural"
+    },
+    "name": "Roser",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Roxane",
+    "languages": [
+      "fr-BE",
+      "fr-FR"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "VoiceText-DNN",
+          "lang_param": "fr_be",
+          "technology": "Neural"
+        },
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "ReadSpeaker-Premium",
+          "lang_param": "fr_fr",
+          "technology": "Neural premium"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Roxane",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Roy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_us",
+      "technology": "Neural"
+    },
+    "name": "Roy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ruben",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "nl_nl"
+    },
+    "name": "Ruben",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ruby",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_au",
+      "technology": "Neural"
+    },
+    "name": "Ruby",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ryo",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Ryo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Salli",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "en_us"
+    },
+    "name": "Salli",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Samantha",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "en_us"
+    },
+    "name": "Samantha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sami",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Google-Wavenet",
+      "lang_param": "ar"
+    },
+    "name": "Sami",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Samuel",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Samuel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sara",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "nl_nl",
+      "technology": "Neural premium"
+    },
+    "name": "Sara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sarang",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "KICS/CLE",
+      "lang_param": "ur_pk"
+    },
+    "name": "Sarang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sarawut",
+    "languages": [
+      "th-TH"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "th_th",
+      "technology": "Neural"
+    },
+    "name": "Sarawut",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sasekani",
+    "languages": [
+      "ts-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "ts_za"
+    },
+    "name": "Sasekani",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sayaka",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Sayaka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Seda",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "tr_tr",
+      "technology": "Neural"
+    },
+    "name": "Seda",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sem",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "nl_nl",
+      "technology": "Neural premium"
+    },
+    "name": "Sem",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sena",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Sena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Serena",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "en_uk"
+    },
+    "name": "Serena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Shannon",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "en_ie",
+      "technology": "Neural"
+    },
+    "name": "Shannon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Show",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Show",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Siebren",
+    "languages": [
+      "fy-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Fluency",
+      "lang_param": "fy_nl"
+    },
+    "name": "Siebren",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sifiso",
+    "languages": [
+      "zu-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "zu_za"
+    },
+    "name": "Sifiso",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Simona",
+    "languages": [
+      "sk-SK"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "sk_sk",
+      "technology": "Neural"
+    },
+    "name": "Simona",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sin-Ji",
+    "languages": [
+      "zh-HK"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "zh_hk"
+    },
+    "name": "Sin-Ji",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sjoukje",
+    "languages": [
+      "fy-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Fluency",
+      "lang_param": "fy_nl"
+    },
+    "name": "Sjoukje",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Somsi",
+    "languages": [
+      "th-TH"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "th_th",
+      "technology": "Neural"
+    },
+    "name": "Somsi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sophie",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Sophie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sven",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "sv_se",
+      "technology": "Neural"
+    },
+    "name": "Sven",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Takeru",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Takeru",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Talia",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_au",
+      "technology": "Neural premium"
+    },
+    "name": "Talia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tatyana",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "ru_ru"
+    },
+    "name": "Tatyana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Teemu",
+    "languages": [
+      "fi-FI"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "fi_fi",
+      "technology": "Neural premium"
+    },
+    "name": "Teemu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Temaswati",
+    "languages": [
+      "ss-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "ss_za"
+    },
+    "name": "Temaswati",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Teodor",
+    "languages": [
+      "ro-RO"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ro_ro",
+      "technology": "Neural"
+    },
+    "name": "Teodor",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tess",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "nl_nl",
+      "technology": "Neural premium"
+    },
+    "name": "Tess",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "south african",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tessa",
+    "languages": [
+      "en-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "en_za"
+    },
+    "name": "Tessa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Thomas",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "fr_fr"
+    },
+    "name": "Thomas",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tiago",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "pt_pt",
+      "technology": "Neural"
+    },
+    "name": "Tiago",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tim",
+    "languages": [
+      "de-DE",
+      "en-ZA"
+    ],
+    "meta": {
+      "locales": [
+        {
+          "available_in": "Cloud, Licensing",
+          "engine": "VoiceText-DNN",
+          "lang_param": "de_de",
+          "technology": "Neural"
+        },
+        {
+          "available_in": "Cloud",
+          "engine": "CSIR/Qfrency",
+          "lang_param": "en_za"
+        }
+      ],
+      "note": "Same voice name is used for different voices per language; select with the lang parameter."
+    },
+    "name": "Tim",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tsuna",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Tsuna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Urdu",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "KICS/Festival",
+      "lang_param": "ur_pk"
+    },
+    "name": "Urdu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Uzma",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Microsoft-Neural",
+      "lang_param": "ur_pk"
+    },
+    "name": "Uzma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Veena",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "en_in"
+    },
+    "name": "Veena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Veerle",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "nl_be",
+      "technology": "Neural premium"
+    },
+    "name": "Veerle",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Vera",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ru_ru",
+      "technology": "Neural"
+    },
+    "name": "Vera",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Veronica",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Veronica",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Vicky",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "en_us",
+      "technology": "Neural premium"
+    },
+    "name": "Vicky",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Violeta",
+    "languages": [
+      "es-MX"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "es_mx",
+      "technology": "Neural"
+    },
+    "name": "Violeta",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Vitoria",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Ivona",
+      "lang_param": "pt_br"
+    },
+    "name": "Vitoria",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vuyo",
+    "languages": [
+      "xh-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "xh_za"
+    },
+    "name": "Vuyo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Wesley",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "ReadSpeaker-Premium",
+      "lang_param": "nl_nl",
+      "technology": "Neural premium"
+    },
+    "name": "Wesley",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Xander",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "nl_nl"
+    },
+    "name": "Xander",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yael",
+    "languages": [
+      "he-IL"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "he_il",
+      "technology": "Neural"
+    },
+    "name": "Yael",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yafang",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "zh_tw",
+      "technology": "Neural"
+    },
+    "name": "Yafang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yasmin",
+    "languages": [
+      "ar"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ar_ar",
+      "technology": "Neural"
+    },
+    "name": "Yasmin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yelda",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "tr_tr"
+    },
+    "name": "Yelda",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yuina",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Yuina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yumi",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Yumi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yura",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ko_kr",
+      "technology": "Neural"
+    },
+    "name": "Yura",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Yuuji",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Yuuji",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yuuka",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "available_in": "Cloud, Licensing",
+      "engine": "VoiceText-DNN",
+      "lang_param": "ja_jp",
+      "technology": "Neural"
+    },
+    "name": "Yuuka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Zoleka",
+    "languages": [
+      "xh-ZA"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "CSIR/Qfrency",
+      "lang_param": "xh_za"
+    },
+    "name": "Zoleka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Zuzana",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "cs_cz"
+    },
+    "name": "Zuzana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jorgeNVE",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "es_es"
+    },
+    "name": "jorgeNVE",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lucaNVE",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "available_in": "Cloud",
+      "engine": "Nuance",
+      "lang_param": "it_it"
+    },
+    "name": "lucaNVE",
+    "updated_at": "2026-11-18"
+  }
+]

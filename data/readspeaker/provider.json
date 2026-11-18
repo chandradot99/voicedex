@@ -1,0 +1,35 @@
+{
+  "access": "enterprise",
+  "compliance": [
+    "iso27001",
+    "gdpr"
+  ],
+  "description": "ReadSpeaker is a text-to-speech company working since 1999 that describes itself as headquartered in Uppsala, Sweden (ReadSpeaker AB), with offices in the Netherlands, the UK, Portugal and the US. It sells the speechCloud API (cloud REST TTS), on-premises and embedded speech engines, web/document readers and custom brand voices, across 50+ languages and 200+ voices, including some voices from partner engines.",
+  "docs_urls": [
+    "https://docs.readspeaker.com/assets/speechcloudapi/ps/LATEST_VERSION",
+    "https://www.readspeaker.com/products/speechcloud-api/",
+    "https://www.readspeaker.com/languages-voices/",
+    "https://www.readspeaker.com/sitemap-0.xml"
+  ],
+  "headquarters": "SE",
+  "id": "readspeaker",
+  "last_synced": "2026-11-18",
+  "links": {
+    "docs": "https://docs.readspeaker.com/assets/speechcloudapi/ps/LATEST_VERSION",
+    "pricing": "https://www.readspeaker.com/pricing/"
+  },
+  "name": "ReadSpeaker",
+  "source": "docs",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.readspeaker.com/assets/speechcloudapi/ps/LATEST_VERSION",
+      "https://www.readspeaker.com/products/speechcloud-api/",
+      "https://www.readspeaker.com/languages-voices/",
+      "https://www.readspeaker.com/sitemap-0.xml"
+    ]
+  },
+  "website": "https://www.readspeaker.com"
+}
