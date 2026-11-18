@@ -6,7 +6,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -19,7 +21,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Achernar",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -28,7 +30,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -41,7 +45,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Achird",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -50,7 +54,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -63,7 +69,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Algenib",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -72,7 +78,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -85,7 +93,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Algieba",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -94,7 +102,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -107,7 +117,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Alnilam",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -116,7 +126,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -129,7 +141,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Aoede",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -138,7 +150,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -151,7 +165,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Autonoe",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -160,7 +174,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -173,7 +189,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Callirrhoe",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -182,7 +198,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -195,7 +213,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Charon",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -204,7 +222,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -217,7 +237,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Despina",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -226,7 +246,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -239,7 +261,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Enceladus",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -248,7 +270,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -261,7 +285,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Erinome",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -270,7 +294,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -283,7 +309,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Fenrir",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -292,7 +318,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -305,7 +333,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Gacrux",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -314,7 +342,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -327,7 +357,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Iapetus",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -336,7 +366,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -349,7 +381,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Kore",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -358,7 +390,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -371,7 +405,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Laomedeia",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -380,7 +414,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -393,7 +429,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Leda",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -402,7 +438,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -415,7 +453,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Orus",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -424,7 +462,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -437,7 +477,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Puck",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -446,7 +486,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -459,7 +501,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Pulcherrima",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -468,7 +510,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -481,7 +525,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Rasalgethi",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -490,7 +534,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -503,7 +549,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Sadachbia",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -512,7 +558,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -525,7 +573,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Sadaltager",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -534,7 +582,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -547,7 +597,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Schedar",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -556,7 +606,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -569,7 +621,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Sulafat",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -578,7 +630,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -591,7 +645,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Umbriel",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -600,7 +654,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -613,7 +669,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Vindemiatrix",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -622,7 +678,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -635,7 +693,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Zephyr",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "american",
@@ -644,7 +702,9 @@
       "gemini-2.5-flash-lite-preview-tts",
       "gemini-2.5-flash-tts",
       "gemini-2.5-pro-tts",
-      "gemini-3.1-flash-tts-preview"
+      "gemini-3.1-flash-tts-preview",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-3.8-flash-tts"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -657,7 +717,7 @@
       "sample_rate_hz": 24000
     },
     "name": "Zubenelgenubi",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "accent": "south_african",

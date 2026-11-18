@@ -4227,7 +4227,6 @@
       "grpc",
       "http"
     ],
-    "is_default": true,
     "languages": [
       "ar-EG",
       "bn-BD",
@@ -4438,7 +4437,7 @@
       ]
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-18",
       "method": "docs",
       "urls": [
         "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
@@ -4449,7 +4448,11 @@
         "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
         "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
         "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
-        "https://cloud.google.com/speech-to-text/pricing"
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
     "regions": [
@@ -4458,7 +4461,7 @@
       "us"
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
   },
   {
     "audio_formats": [
@@ -4728,6 +4731,7 @@
       "style_control"
     ],
     "description": "Preview Gemini 3.1 TTS model for low-latency, prompt-controllable single- and multi-speaker generation; supports inline audio tags such as [laughs].",
+    "eol_date": "2026-12-18",
     "family": "gemini-tts",
     "first_seen": "2026-11-16",
     "id": "gemini-3.1-flash-tts-preview",
@@ -4756,12 +4760,14 @@
           "PCM"
         ]
       },
+      "deprecation_notice": "Deprecated February 26, 2026; shutdown December 18, 2026 per the Gemini API deprecations page (https://ai.google.dev/gemini-api/docs/deprecations). Google recommends gemini-3.8-flash-lite-tts as the replacement (migration guide: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide).",
       "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
       "max_output_audio_seconds": 655,
       "notes": "All voices for this model are in Preview. Docs model card does not link the language list.",
       "regional_endpoints": [
         "global"
       ],
+      "replacement": "gemini-3.8-flash-tts or gemini-3.8-flash-lite-tts",
       "speaker_support": "single, multi-speaker",
       "token_limits": {
         "input": 8192,
@@ -4790,7 +4796,7 @@
       ]
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-18",
       "method": "docs",
       "urls": [
         "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
@@ -4801,13 +4807,302 @@
         "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
         "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
         "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
-        "https://cloud.google.com/speech-to-text/pricing"
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
     "regions": [
       "global"
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "prosody_control",
+      "style_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Low-latency, cost-efficient Gemini TTS model for high-throughput production and voice agents; replacement for gemini-3.1-flash-tts-preview.",
+    "family": "gemini-tts",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.8-flash-lite-tts",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "agent_platform_locations": [
+        "global",
+        "us",
+        "eu"
+      ],
+      "api": "Gemini API v1beta (generateContent / streamGenerateContent, Interactions API); Agent Platform (Vertex) API. Not available through the Cloud Text-to-Speech API.",
+      "audio_mime_types": [
+        "audio/wav (unary default)",
+        "audio/l16 (streaming default)",
+        "audio/mulaw",
+        "audio/alaw"
+      ],
+      "consumption_options": [
+        "standard",
+        "batch",
+        "flex",
+        "priority"
+      ],
+      "default_output": "24 kHz mono 16-bit PCM (WAV for unary, raw L16 for streaming)",
+      "inline_vocal_tags": "angle brackets, e.g. <laugh>, <sigh>, <short pause>",
+      "language_count": 101,
+      "language_note": "Over 101 languages; docs list languages by name only.",
+      "max_input_tokens": 8192,
+      "multi_speaker_limit": "up to 2 speakers per request using prebuilt voices",
+      "release_date": "2026-09-22",
+      "token_limits": {
+        "input": 8192,
+        "output": 16384
+      },
+      "voice_design_status": "preview (per Cloud TTS Gemini-TTS page)",
+      "voice_options": "30 prebuilt voices, Extended Voice Library (GET /v1beta/voices), voice design, voice replication, voice remixing",
+      "voice_replication_status": "preview (per Cloud TTS Gemini-TTS page)"
+    },
+    "name": "Gemini 3.8 Flash-Lite TTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini API paid tier, per 1M tokens, through Dec 31, 2026: Standard $0.50 text in / $6.00 audio out; Batch and Flex $0.25 / $3.00; Priority $0.90 / $10.80. Starting Jan 1, 2027: Standard $1.00 / $12.00; Batch and Flex $0.50 / $6.00; Priority $1.80 / $21.60. 25 audio tokens per second. Free tier (Standard, Priority) free of charge on the Gemini API.",
+      "price_usd": 5e-07,
+      "source_url": "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.8-flash-lite-tts",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "standard_text_input",
+          "price_usd": 5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "standard_audio_output",
+          "price_usd": 6e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "batch_text_input",
+          "price_usd": 2.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "batch_audio_output",
+          "price_usd": 3e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "flex_text_input",
+          "price_usd": 2.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "flex_audio_output",
+          "price_usd": 3e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "priority_text_input",
+          "price_usd": 9e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "priority_audio_output",
+          "price_usd": 1.08e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "regions": [
+      "eu",
+      "global",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "prosody_control",
+      "style_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Google's flagship Gemini TTS model for high-fidelity, expressive single- and multi-speaker speech with regional accents and long-form stability.",
+    "family": "gemini-tts",
+    "first_seen": "2026-11-18",
+    "id": "gemini-3.8-flash-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "agent_platform_locations": [
+        "global",
+        "us",
+        "eu"
+      ],
+      "api": "Gemini API v1beta (generateContent / streamGenerateContent, Interactions API); Agent Platform (Vertex) API. Not available through the Cloud Text-to-Speech API.",
+      "audio_mime_types": [
+        "audio/wav (unary default)",
+        "audio/l16 (streaming default)",
+        "audio/mulaw",
+        "audio/alaw"
+      ],
+      "consumption_options": [
+        "standard",
+        "batch",
+        "flex",
+        "priority"
+      ],
+      "default_output": "24 kHz mono 16-bit PCM (WAV for unary, raw L16 for streaming)",
+      "inline_vocal_tags": "angle brackets, e.g. <laugh>, <sigh>, <short pause>",
+      "language_count": 130,
+      "language_note": "Over 130 languages with automatic input-language detection; docs list languages by name only.",
+      "max_input_tokens": 8192,
+      "multi_speaker_limit": "up to 2 speakers per request using prebuilt voices",
+      "release_date": "2026-09-22",
+      "token_limits": {
+        "input": 8192,
+        "output": 16384
+      },
+      "voice_design_status": "preview (per Cloud TTS Gemini-TTS page)",
+      "voice_options": "30 prebuilt voices, Extended Voice Library (GET /v1beta/voices), voice design, voice replication, voice remixing",
+      "voice_replication_status": "preview (per Cloud TTS Gemini-TTS page)"
+    },
+    "name": "Gemini 3.8 Flash TTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Gemini API paid tier, per 1M tokens, through Dec 31, 2026: Standard $0.50 text in / $9.00 audio out; Batch and Flex $0.25 / $4.50; Priority $0.90 / $16.20. Starting Jan 1, 2027: Standard $1.00 / $18.00; Batch and Flex $0.50 / $9.00; Priority $1.80 / $32.40. 25 audio tokens per second. Free tier (Standard, Priority) free of charge on the Gemini API.",
+      "price_usd": 5e-07,
+      "source_url": "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.8-flash-tts",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "standard_text_input",
+          "price_usd": 5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "standard_audio_output",
+          "price_usd": 9e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "batch_text_input",
+          "price_usd": 2.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "batch_audio_output",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "flex_text_input",
+          "price_usd": 2.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "flex_audio_output",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "priority_text_input",
+          "price_usd": 9e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "priority_audio_output",
+          "price_usd": 1.62e-05,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/create-audio-text-streaming",
+        "https://cloud.google.com/text-to-speech/pricing",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3",
+        "https://cloud.google.com/speech-to-text/pricing",
+        "https://ai.google.dev/gemini-api/docs/live",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ]
+    },
+    "regions": [
+      "eu",
+      "global",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
   }
 ]
