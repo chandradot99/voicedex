@@ -75,20 +75,20 @@
           <th scope="col" class="num hide-sm">Langs</th>
           <th scope="col" class="hide-sm">Features</th>
           <th scope="col" class="num"><a href="/models?{{ qs(sort='price') }}" {% if f.sort == 'price' %}aria-current="true"{% endif %}>Price{% if f.sort == 'price' %} ↑{% endif %}</a></th>
-          <th scope="col">Status</th>
+          <th scope="col" class="hide-sm">Status</th>
         </tr>
       </thead>
       <tbody>
         {% for r in rows %}{% set m = r.model %}{% set k = model_key(r) %}
         <tr>
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
-          <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}</span></th>
+          <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
           <td class="hide-sm">{{ names[r.provider_id] }}</td>
           <td class="mono hide-sm">{{ TYPE_SHORT[m.type] }}</td>
           <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
           <td class="mono feat-count hide-sm">{% set tot = feature_vocab(m.type)|length %}{{ m.capabilities|length }}/{{ tot }}<span class="bar" aria-hidden="true"><i style="width: {{ (100 * m.capabilities|length / tot)|round }}%"></i></span></td>
           <td class="num price-cell"><span class="mono">{{ price_label(m) or "–" }}</span>{% if k in positions %}<span class="bar" aria-hidden="true"><i style="width: {{ positions[k]|round }}%"></i></span>{% elif price_label(m) %}<span class="bar" aria-hidden="true"></span>{% endif %}</td>
-          <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}</td>
+          <td class="hide-sm">{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>

@@ -133,6 +133,7 @@ const typing = () => /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.ta
     $(".tray-list", tray).innerHTML = items
       .map((i) => `<li><span>${esc(i.label)}</span><button type="button" data-remove="${esc(i.key)}" aria-label="Remove ${esc(i.label)}">×</button></li>`)
       .join("");
+    $(".tray-count", tray).textContent = `${items.length} selected`;
     const go = $(".tray-go", tray);
     go.href = compareUrl();
     go.textContent = items.length < 2 ? "Pick one more" : `Compare ${items.length}`;
@@ -191,9 +192,9 @@ document.addEventListener("change", (e) => {
     form.requestSubmit();
   }
 });
-// On phones the filter bar starts collapsed unless a filter is active.
+// On phones the filter bar starts collapsed (active filters still show as removable tokens below it).
 if (matchMedia("(max-width: 760px)").matches) {
-  $$("details[data-collapse-sm]").forEach((d) => { if (!/\(\d+\)/.test($("summary", d)?.textContent || "")) d.open = false; });
+  $$("details[data-collapse-sm]").forEach((d) => { d.open = false; });
 }
 
 // ── Tooltips for spectrum squares and timeline dots ("provider|name|price|note").

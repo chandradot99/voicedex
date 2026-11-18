@@ -8,7 +8,7 @@
     <nav class="nav-links" aria-label="Main">
       <a href="/models" {% if path.startswith('/models') %}aria-current="page"{% endif %}>Models</a>
       <a href="/voices" {% if path.startswith('/voices') %}aria-current="page"{% endif %}>Voices</a>
-      <a href="/#providers" {% if path.startswith('/providers') %}aria-current="page"{% endif %}>Providers</a>
+      <a href="/#providers" class="nav-providers" {% if path.startswith('/providers') %}aria-current="page"{% endif %}>Providers</a>
       <a href="/docs" {% if path.startswith('/docs') %}aria-current="page"{% endif %}>API</a>
     </nav>
     <form class="jump" action="/search" role="search" data-palette-trigger>
@@ -36,6 +36,6 @@
         sync();
       })();
     </script>
-    <a class="nav-compare" href="/compare" {% if path.startswith('/compare') %}aria-current="page"{% endif %}>Compare<span id="compare-count" class="nav-count" aria-label="models selected"></span></a>
+    <a class="nav-compare" href="/compare" {% if path.startswith('/compare') %}aria-current="page"{% endif %}><svg viewBox="0 0 16 16" aria-hidden="true" class="i-compare"><rect x="2" y="3" width="4.5" height="10" rx=".5"/><rect x="9.5" y="3" width="4.5" height="10" rx=".5"/></svg><span class="nav-compare-label">Compare</span><span id="compare-count" class="nav-count" aria-label="models selected"></span></a>
   </div>
 </header>

@@ -118,10 +118,11 @@ p { margin: 0; }
 .nav-compare { text-decoration: none; font-size: 14px; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
 .nav-compare:hover, .nav-compare[aria-current="page"] { color: var(--ink); }
 .theme-toggle { width: 32px; height: 32px; display: grid; place-items: center; border: 1px solid transparent; border-radius: var(--r); background: none; color: var(--ink-2); cursor: pointer; flex: none; }
-.theme-toggle:hover { color: var(--ink); border-color: var(--rule-2); }
+@media (hover: hover) { .theme-toggle:hover { color: var(--ink); border-color: var(--rule-2); } }
 .theme-toggle svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; grid-area: 1 / 1; }
 .theme-toggle .i-moon { fill: currentColor; stroke: none; }
 .theme-toggle[data-current="dark"] .i-moon, .theme-toggle[data-current="light"] .i-sun { display: none; }
+.nav-compare .i-compare { display: none; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.4; }
 .nav-count:not(:empty) { font: 500 11px/1 var(--mono); background: var(--signal-fill); color: var(--signal-ink); padding: 3px 5px; border-radius: var(--r); }
 
 /* ── Type scale ── */
@@ -585,6 +586,8 @@ input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 
 /* ── Dock: now playing + compare tray ── */
 .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; display: grid; }
+.dock > * { min-width: 0; }
+.tray-list { min-width: 0; }
 .now-playing, .tray { background: color-mix(in srgb, var(--panel) 96%, transparent); border-top: 1px solid var(--rule-2); }
 @supports (backdrop-filter: blur(1px)) { .now-playing, .tray { background: color-mix(in srgb, var(--panel) 86%, transparent); backdrop-filter: blur(12px); } }
 .now-playing[hidden], .tray[hidden] { display: none; }
@@ -605,6 +608,7 @@ input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 .tray-list li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tray-list button { width: 24px; height: 24px; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 14px; }
 .tray-list button:hover { color: var(--end); }
+.tray-count { display: none; font: 500 13px var(--mono); flex: 1; }
 .tray-actions { display: flex; align-items: center; gap: 16px; flex: none; }
 body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { padding-bottom: 140px; }
 
@@ -627,6 +631,15 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .pal-foot { display: flex; gap: 16px; padding: 10px 14px; border-top: 1px solid var(--rule); font-size: 12px; color: var(--muted); }
 .pal-foot span { display: inline-flex; align-items: center; gap: 4px; }
 .pal-status { margin-left: auto; }
+@media (pointer: coarse) {          /* touch: no keyboard hints; give names the width */
+  .pal-input kbd, .pal-foot > span:not(.pal-status) { display: none; }
+  .palette { margin-top: 8vh; }
+  #pal-list li { flex-wrap: wrap; gap: 2px 10px; padding: 10px; }
+  #pal-list li .pl-kind { width: auto; order: 2; }
+  #pal-list li .pl-main { width: 100%; white-space: normal; overflow-wrap: anywhere; }
+  #pal-list li .pl-sub { order: 3; flex: 1; }
+  #pal-list li .pl-end { order: 4; }
+}
 
 /* ── Footer ── */
 .site-footer { border-top: 1px solid var(--rule); padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
@@ -698,10 +711,25 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
   .voice-desc { display: none; }
   .spec div { grid-template-columns: 104px minmax(0, 1fr); }
   .footer-row { grid-template-columns: 1fr; }
-  .tray-label { display: none; }
+  .tray-label, .tray-list { display: none; }
+  .tray-count { display: block; }
   .band-unit { width: 100%; order: 3; }
   .data th, .data td { padding-right: 10px; }
   .price-cell .bar, .feat-count .bar { display: none; }
+  .price-cell { white-space: normal; min-width: 92px; }
+  .price-cell .mono { min-width: 0; font-size: 12px; }
+  .data th[scope="row"] code { overflow-wrap: anywhere; }
+}
+/* Small phones (≤ 480px): the header must fit in ~350px — Providers moves to the home page / search,
+   Compare becomes an icon with its count. */
+@media (max-width: 480px) {
+  .header-row { gap: 10px; }
+  .nav-links { gap: 12px; }
+  .nav-links .nav-providers { display: none; }
+  .nav-compare-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .nav-compare .i-compare { display: block; }
+  .nav-compare { gap: 4px; }
+  .jump, .theme-toggle { width: 30px; }
 }
 @media (forced-colors: active) {
   .sq, .tl-dot, .h1, .h2, .h3, .h4, .h5 { forced-color-adjust: none; }
