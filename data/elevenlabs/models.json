@@ -123,6 +123,68 @@
     "updated_at": "2026-11-16"
   },
   {
+    "description": "Native speech-to-speech conversational model (speech recognition, turn-taking, reasoning and speech in one model), the higher-capability tier.",
+    "first_seen": "2026-11-18",
+    "id": "eleven_realtime_v1_max",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "announced": "2026-10-19",
+      "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
+      "language_count": "90+",
+      "openai_realtime_compatible": true,
+      "released": "2026-11-02"
+    },
+    "name": "Eleven Realtime v1 Max",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://elevenlabs.io/docs/capabilities/speech-to-text",
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-agents/customization/realtime-models",
+        "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Native speech-to-speech conversational model (speech recognition, turn-taking, reasoning and speech in one model), the lower-latency tier.",
+    "first_seen": "2026-11-18",
+    "id": "eleven_realtime_v1_mini",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "announced": "2026-10-19",
+      "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
+      "language_count": "90+",
+      "openai_realtime_compatible": true,
+      "released": "2026-11-02"
+    },
+    "name": "Eleven Realtime v1 Mini",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://elevenlabs.io/docs/capabilities/speech-to-text",
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-agents/customization/realtime-models",
+        "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
     "audio_formats": [
       "3gpp",
       "aac",

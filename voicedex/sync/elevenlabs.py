@@ -30,6 +30,18 @@ _STT_MODELS_DOCS_URLS = [
     "https://elevenlabs.io/docs/capabilities/speech-to-text",
 ]
 
+# Native speech-to-speech conversational models (Eleven Realtime) are not listed by /v1/models.
+_STS_MODELS_DOCS_URLS = [
+    "https://elevenlabs.io/docs/overview/models",
+    "https://elevenlabs.io/docs/eleven-agents/customization/realtime-models",
+    "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility",
+]
+_STS_MODELS_GUIDANCE = (
+    "Return each callable native speech-to-speech conversational (realtime) model id documented. Voice "
+    "changer models (speech-to-speech voice conversion) come from /v1/models — do not return them. "
+    "streaming=true, interfaces from the documented transports. Prices only if published per unit."
+)
+
 _VOICE_PAGE_SIZE = 100   # ElevenLabs v2 max is 100
 _MAX_VOICE_PAGES = 20    # safety cap; 100 × 20 = 2000 voices ceiling
 
@@ -59,7 +71,7 @@ class ElevenLabsSyncer(ProviderSyncer):
 
         ai_key = settings.anthropic_api_key or None
 
-        models_data, voices_data, (stt_models, stt_notes) = await asyncio.gather(
+        models_data, voices_data, (stt_models, stt_notes), (rt_models, _) = await asyncio.gather(
             self._fetch_models(),
             self._fetch_voices(),
             parse_models_from_docs(
@@ -69,10 +81,19 @@ class ElevenLabsSyncer(ProviderSyncer):
                 guidance=_STT_MODELS_GUIDANCE,
                 api_key=ai_key,
             ),
+            parse_models_from_docs(
+                seed_urls=_STS_MODELS_DOCS_URLS,
+                provider_id=self.provider_id,
+                model_type="sts",
+                guidance=_STS_MODELS_GUIDANCE,
+                api_key=ai_key,
+            ),
         )
 
         api_stt_models, tts_models, sts_models = self._parse_models(models_data)
         tts_voices = self._parse_voices(voices_data)
+        api_sts_ids = {m.model_id for m in sts_models}
+        sts_models += [m for m in rt_models if m.model_id not in api_sts_ids]
 
         # If /v1/models ever starts returning STT entries, merge them in
         # (skipping any IDs the AI parser already produced).
@@ -102,7 +123,7 @@ class ElevenLabsSyncer(ProviderSyncer):
             sts_models=sts_models,
             source=self.source,
             api_urls=[_MODELS_URL, _VOICES_URL],
-            docs_urls=_STT_MODELS_DOCS_URLS,
+            docs_urls=_STT_MODELS_DOCS_URLS + _STS_MODELS_DOCS_URLS,
             notes=notes,
         )
 

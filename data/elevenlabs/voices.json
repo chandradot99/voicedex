@@ -103,11 +103,11 @@
       "tagline": "Enthusiast, Quirky Attitude"
     },
     "name": "Laura",
-    "preview_url": "https://api.us.elevenlabs.io/v1/voices/FGY2WhTYpPnrIDTdsKH5/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiI2NzM0MTc1OS1hZDA4LTQxYTUtYmU2ZS1kZTEyZmU0NDg2MTgubXAzIiwidGltZXN0YW1wIjoxNzk0ODE2MDAwMDAwMDAwfQ%3D%3D",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/FGY2WhTYpPnrIDTdsKH5/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiI2NzM0MTc1OS1hZDA4LTQxYTUtYmU2ZS1kZTEyZmU0NDg2MTgubXAzIiwidGltZXN0YW1wIjoxNzk0OTk2MDAwMDAwMDAwfQ%3D%3D",
     "tags": [
       "sassy"
     ],
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-18",
     "use_cases": [
       "social media"
     ]
@@ -142,11 +142,11 @@
       "tagline": "Deep, Confident, Energetic"
     },
     "name": "Charlie",
-    "preview_url": "https://api.us.elevenlabs.io/v1/voices/IKne3meq5aSn9XLyUdCD/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiIxMDJkZTZmMi0yMmVkLTQzZTAtYTFmMS0xMTFmYTc1YzU0ODEubXAzIiwidGltZXN0YW1wIjoxNzk0ODE2MDAwMDAwMDAwfQ%3D%3D",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/IKne3meq5aSn9XLyUdCD/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiIxMDJkZTZmMi0yMmVkLTQzZTAtYTFmMS0xMTFmYTc1YzU0ODEubXAzIiwidGltZXN0YW1wIjoxNzk0OTk2MDAwMDAwMDAwfQ%3D%3D",
     "tags": [
       "hyped"
     ],
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-18",
     "use_cases": [
       "conversational"
     ]
@@ -183,11 +183,11 @@
       "tagline": "Warm, Captivating Storyteller"
     },
     "name": "George",
-    "preview_url": "https://api.us.elevenlabs.io/v1/voices/JBFqnCBsd6RMkjVDRZzb/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiJlNjIwNmQxYS0wNzIxLTQ3ODctYWFmYi0wNmE2ZTcwNWNhYzUubXAzIiwidGltZXN0YW1wIjoxNzk0ODE2MDAwMDAwMDAwfQ%3D%3D",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/JBFqnCBsd6RMkjVDRZzb/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiJlNjIwNmQxYS0wNzIxLTQ3ODctYWFmYi0wNmE2ZTcwNWNhYzUubXAzIiwidGltZXN0YW1wIjoxNzk0OTk2MDAwMDAwMDAwfQ%3D%3D",
     "tags": [
       "mature"
     ],
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-18",
     "use_cases": [
       "narrative story"
     ]
@@ -650,11 +650,11 @@
       "tagline": "Deep, Resonant and Comforting"
     },
     "name": "Brian",
-    "preview_url": "https://api.us.elevenlabs.io/v1/voices/nPczCjzI2devNBz1zQrb/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiIyZGQzZTcyYy00ZmQzLTQyZjEtOTNlYS1hYmM1ZDRlNWFhMWQubXAzIiwidGltZXN0YW1wIjoxNzk0ODE2MDAwMDAwMDAwfQ%3D%3D",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/nPczCjzI2devNBz1zQrb/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiIyZGQzZTcyYy00ZmQzLTQyZjEtOTNlYS1hYmM1ZDRlNWFhMWQubXAzIiwidGltZXN0YW1wIjoxNzk0OTk2MDAwMDAwMDAwfQ%3D%3D",
     "tags": [
       "classy"
     ],
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-18",
     "use_cases": [
       "social media"
     ]
@@ -687,11 +687,11 @@
       "tagline": "Steady Broadcaster"
     },
     "name": "Daniel",
-    "preview_url": "https://api.us.elevenlabs.io/v1/voices/onwK4e9ZLuTAKqWW03F9/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiI3ZWVlMDIzNi0xYTcyLTRiODYtYjMwMy01ZGNhZGMwMDdiYTkubXAzIiwidGltZXN0YW1wIjoxNzk0ODE2MDAwMDAwMDAwfQ%3D%3D",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/onwK4e9ZLuTAKqWW03F9/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiI3ZWVlMDIzNi0xYTcyLTRiODYtYjMwMy01ZGNhZGMwMDdiYTkubXAzIiwidGltZXN0YW1wIjoxNzk0OTk2MDAwMDAwMDAwfQ%3D%3D",
     "tags": [
       "formal"
     ],
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-18",
     "use_cases": [
       "informative educational"
     ]
