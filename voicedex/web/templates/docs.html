@@ -162,8 +162,10 @@
         const btn = document.createElement("button");
         btn.type = "button"; btn.className = "vd-full";
         const paint = () => { const on = row.classList.contains("vd-resp-full");
-          btn.innerHTML = (on ? ICON_CLOSE : ICON_OPEN) + (on ? "Collapse" : "Expand");
-          btn.setAttribute("aria-pressed", String(on)); btn.title = on ? "Show the request again" : "Show the response across the whole window"; };
+          btn.innerHTML = on ? ICON_CLOSE : ICON_OPEN;              // icon only; the label is for screen readers + tooltip
+          btn.setAttribute("aria-pressed", String(on));
+          btn.setAttribute("aria-label", on ? "Collapse response" : "Expand response");
+          btn.title = on ? "Collapse" : "Expand response"; };
         // Expanded: only the JSON plus Collapse / Download — the Body label and the "massive body" notice hide too.
         btn.addEventListener("click", () => {
           const on = row.classList.toggle("vd-resp-full");
@@ -177,6 +179,9 @@
         });
         paint();
         dl.before(btn);
+        // Download: icon only as well (Scalar renders an icon + "Download" text).
+        dl.classList.add("vd-icon-link");
+        dl.setAttribute("aria-label", "Download response"); dl.title = "Download response";
       });
       const scan = () => { document.querySelectorAll("#scalar-docs .scalar-card.response-card").forEach((c) => { decorate(c); sync(c); }); decorateClient(); };
       let queued = false;
@@ -426,6 +431,11 @@
           background: transparent; border: 1px solid var(--control); border-radius: 2px;
         }
         .vd-full:hover { color: var(--ink); border-color: var(--ink-2); }
+        .vd-full { width: 26px; padding: 0; justify-content: center; border-color: transparent !important; }
+        .vd-full:hover { border-color: var(--rule-2) !important; }
+        .vd-full svg { width: 12px; height: 12px; }
+        .vd-icon-link { font-size: 0 !important; gap: 0 !important; width: 26px; height: 24px; justify-content: center; }
+        .vd-icon-link svg { width: 14px !important; height: 14px !important; }
         .vd-full svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 1.5; }
         /* Datasheet shapes: no pills (version badge, content-type chip, schema toggle). */
         .badge.rounded-2xl, .selected-content-type, .scalar-card-checkbox-input, .scalar-card-checkbox-checkmark { border-radius: 2px !important; }
