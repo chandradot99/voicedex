@@ -1,0 +1,333 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Earlier Deepdub emotive text-to-speech model that remains supported.",
+    "first_seen": "2026-11-18",
+    "id": "dd-etts-3.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar-LB",
+      "ar-QA",
+      "ar-SA",
+      "ar-SY",
+      "cs-CZ",
+      "da-DK",
+      "nl-NL",
+      "en-GB",
+      "en-AU",
+      "en-US",
+      "et-EE",
+      "fi-FI",
+      "fr-FR",
+      "de-DE",
+      "el-GR",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "mk-MK",
+      "nb-NO",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "es-419",
+      "es-MX",
+      "es-ES",
+      "sv-SE",
+      "ta-IN",
+      "th-TH",
+      "tr-TR"
+    ],
+    "meta": {
+      "accent_control": "accentControl blends a base locale with a target accent locale at a ratio",
+      "controls": "tempo (0-2) or targetDuration, variance, temperature",
+      "emotion_tags": "inline [emotion] tags on the streaming-in WebSocket API, resolved against the emotion set configured for the model and base voice",
+      "encodings": [
+        "mp3",
+        "opus",
+        "mulaw",
+        "wav",
+        "s16le"
+      ],
+      "endpoints": {
+        "rest_eu": "https://restapi.eu.deepdub.ai/api/v1/tts",
+        "rest_us": "https://restapi.deepdub.ai/api/v1/tts",
+        "websocket": "wss://wsapi.deepdub.ai/open",
+        "websocket_streaming": "wss://wss.deepdub.ai/ws"
+      },
+      "rest_formats": [
+        "mp3",
+        "opus",
+        "mulaw"
+      ]
+    },
+    "name": "Deepdub eTTS 3.0",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.deepdub.ai/sdk.md",
+        "https://docs.deepdub.ai/sdk-javascript.md",
+        "https://docs.deepdub.ai/api-reference/tts/generate-and-stream-tts-audio.md",
+        "https://docs.deepdub.ai/api-reference/websocket/overview.md",
+        "https://docs.deepdub.ai/api-reference/websocket/streaming.md",
+        "https://docs.deepdub.ai/voice-presets.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      36000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Deepdub's stable production emotive text-to-speech model.",
+    "first_seen": "2026-11-18",
+    "id": "dd-etts-3.4",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar-LB",
+      "ar-QA",
+      "ar-SA",
+      "ar-SY",
+      "cs-CZ",
+      "da-DK",
+      "nl-NL",
+      "en-GB",
+      "en-AU",
+      "en-US",
+      "et-EE",
+      "fi-FI",
+      "fr-FR",
+      "de-DE",
+      "el-GR",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "mk-MK",
+      "nb-NO",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "es-419",
+      "es-MX",
+      "es-ES",
+      "sv-SE",
+      "ta-IN",
+      "th-TH",
+      "tr-TR"
+    ],
+    "meta": {
+      "accent_control": "accentControl blends a base locale with a target accent locale at a ratio",
+      "controls": "tempo (0-2) or targetDuration, variance, temperature",
+      "emotion_tags": "inline [emotion] tags on the streaming-in WebSocket API, resolved against the emotion set configured for the model and base voice",
+      "encodings": [
+        "mp3",
+        "opus",
+        "mulaw",
+        "wav",
+        "s16le"
+      ],
+      "endpoints": {
+        "rest_eu": "https://restapi.eu.deepdub.ai/api/v1/tts",
+        "rest_us": "https://restapi.deepdub.ai/api/v1/tts",
+        "websocket": "wss://wsapi.deepdub.ai/open",
+        "websocket_streaming": "wss://wss.deepdub.ai/ws"
+      },
+      "rest_formats": [
+        "mp3",
+        "opus",
+        "mulaw"
+      ]
+    },
+    "name": "Deepdub eTTS 3.4",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.deepdub.ai/sdk.md",
+        "https://docs.deepdub.ai/sdk-javascript.md",
+        "https://docs.deepdub.ai/api-reference/tts/generate-and-stream-tts-audio.md",
+        "https://docs.deepdub.ai/api-reference/websocket/overview.md",
+        "https://docs.deepdub.ai/api-reference/websocket/streaming.md",
+        "https://docs.deepdub.ai/voice-presets.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      36000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Deepdub's latest emotive text-to-speech model, documented as its best-quality and default model.",
+    "first_seen": "2026-11-18",
+    "id": "dd-etts-4.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar-LB",
+      "ar-QA",
+      "ar-SA",
+      "ar-SY",
+      "cs-CZ",
+      "da-DK",
+      "nl-NL",
+      "en-GB",
+      "en-AU",
+      "en-US",
+      "et-EE",
+      "fi-FI",
+      "fr-FR",
+      "de-DE",
+      "el-GR",
+      "he-IL",
+      "hi-IN",
+      "hu-HU",
+      "id-ID",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "mk-MK",
+      "nb-NO",
+      "pl-PL",
+      "pt-BR",
+      "ro-RO",
+      "ru-RU",
+      "es-419",
+      "es-MX",
+      "es-ES",
+      "sv-SE",
+      "ta-IN",
+      "th-TH",
+      "tr-TR"
+    ],
+    "meta": {
+      "accent_control": "accentControl blends a base locale with a target accent locale at a ratio",
+      "controls": "tempo (0-2) or targetDuration, variance, temperature",
+      "emotion_tags": "inline [emotion] tags on the streaming-in WebSocket API, resolved against the emotion set configured for the model and base voice",
+      "encodings": [
+        "mp3",
+        "opus",
+        "mulaw",
+        "wav",
+        "s16le"
+      ],
+      "endpoints": {
+        "rest_eu": "https://restapi.eu.deepdub.ai/api/v1/tts",
+        "rest_us": "https://restapi.deepdub.ai/api/v1/tts",
+        "websocket": "wss://wsapi.deepdub.ai/open",
+        "websocket_streaming": "wss://wss.deepdub.ai/ws"
+      },
+      "rest_formats": [
+        "mp3",
+        "opus",
+        "mulaw"
+      ]
+    },
+    "name": "Deepdub eTTS 4.0",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.deepdub.ai/sdk.md",
+        "https://docs.deepdub.ai/sdk-javascript.md",
+        "https://docs.deepdub.ai/api-reference/tts/generate-and-stream-tts-audio.md",
+        "https://docs.deepdub.ai/api-reference/websocket/overview.md",
+        "https://docs.deepdub.ai/api-reference/websocket/streaming.md",
+        "https://docs.deepdub.ai/voice-presets.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      36000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

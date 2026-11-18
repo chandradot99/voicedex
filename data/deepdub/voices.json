@@ -1,0 +1,600 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sales Agent (Energetic) preset voiced by Heather Long, speaking style: Joy 2 - Happy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "02215cf5-04af-46f3-a061-48a4c81989bf",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Sales Agent (Energetic)",
+      "speaker": "Heather Long",
+      "speaking_style": "Joy 2 - Happy"
+    },
+    "name": "Heather Long (Joy 2 - Happy)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Sales Agent (Energetic)"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Call Center Agent (Empathetic) preset voiced by Guillermo Castro, speaking style: Romantic 2 - Sentimental.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "060acdd4-cd61-4b78-a513-90e00afa8835",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Call Center Agent (Empathetic)",
+      "speaker": "Guillermo Castro",
+      "speaking_style": "Romantic 2 - Sentimental"
+    },
+    "name": "Guillermo Castro (Romantic 2 - Sentimental)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Call Center Agent (Empathetic)"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Meditation Guide preset voiced by Dalia Eisenberg, speaking style: Conversational.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "080d003b-7701-4a97-8723-62e6bed6cab9",
+    "languages": [
+      "he"
+    ],
+    "meta": {
+      "preset": "Meditation Guide",
+      "speaker": "Dalia Eisenberg",
+      "speaking_style": "Conversational"
+    },
+    "name": "Dalia Eisenberg (Conversational)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Meditation Guide"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Promo / Commercials preset voiced by Sunil Rastogi, speaking style: Host Dramatic.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "0e992325-d431-42f9-82c9-36c304296dc7_prompt-V2-Host-dramatic-regular-speed",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "preset": "Promo / Commercials",
+      "speaker": "Sunil Rastogi",
+      "speaking_style": "Host Dramatic"
+    },
+    "name": "Sunil Rastogi (Host Dramatic)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Promo / Commercials"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Promo / Commercials preset voiced by Ulisses Pereira, speaking style: Commercial Soft Sell.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "24c20fcb-b04c-46fc-82d6-0eabac3cc563_prompt-V2-Commercial-Soft-Sell",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "preset": "Promo / Commercials",
+      "speaker": "Ulisses Pereira",
+      "speaking_style": "Commercial Soft Sell"
+    },
+    "name": "Ulisses Pereira (Commercial Soft Sell)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Promo / Commercials"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emotional Acting preset voiced by Priya Agarwal, speaking style: Sad #2.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2904f343-a223-4097-ac1b-1c92b33b2758_cry-text-sad",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "preset": "Emotional Acting",
+      "speaker": "Priya Agarwal",
+      "speaking_style": "Sad #2"
+    },
+    "name": "Priya Agarwal (Sad #2)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Emotional Acting"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Storyteller preset voiced by Marina Rosales, speaking style: Reading.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "4202cbc4-5862-4af5-83f4-286ef487d593_reading-neutral",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "preset": "Storyteller",
+      "speaker": "Marina Rosales",
+      "speaking_style": "Reading"
+    },
+    "name": "Marina Rosales (Reading)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Storyteller"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sports Narrator preset voiced by Anil Jay, speaking style: Sports Commentator High Energy.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "4b51aefb-4d72-4e2f-8a41-6d546b23eba1_sports-commentator-high-energy",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "preset": "Sports Narrator",
+      "speaker": "Anil Jay",
+      "speaking_style": "Sports Commentator High Energy"
+    },
+    "name": "Anil Jay (Sports Commentator High Energy)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Sports Narrator"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Promo / Commercials preset voiced by Thomas Young, speaking style: Narration 3 - Dramatic Host.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "50a537cf-1ec8-4714-b07e-c589ab76be4b",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Promo / Commercials",
+      "speaker": "Thomas Young",
+      "speaking_style": "Narration 3 - Dramatic Host"
+    },
+    "name": "Thomas Young (Narration 3 - Dramatic Host)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Promo / Commercials"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emotional Acting preset voiced by Isabel Huerta, speaking style: Panic #2.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "5a7cf008-9e48-45ca-beb8-7636a4f6f944_panting-text-panic",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "preset": "Emotional Acting",
+      "speaker": "Isabel Huerta",
+      "speaking_style": "Panic #2"
+    },
+    "name": "Isabel Huerta (Panic #2)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Emotional Acting"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Promo / Commercials preset voiced by Johnny Ross, speaking style: Host Bubbly.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "609b778b-805e-4484-93e3-bd9eb73beb55_prompt-V2-Host-bubbly-regular-speed",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "preset": "Promo / Commercials",
+      "speaker": "Johnny Ross",
+      "speaking_style": "Host Bubbly"
+    },
+    "name": "Johnny Ross (Host Bubbly)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Promo / Commercials"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "News Broadcaster preset voiced by Vijay Bose, speaking style: Newscaster Headlines.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "731912b7-7e63-4de9-acf6-b16c4bdb0c9e_prompt-V2-Newscaster-Headlines",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "preset": "News Broadcaster",
+      "speaker": "Vijay Bose",
+      "speaking_style": "Newscaster Headlines"
+    },
+    "name": "Vijay Bose (Newscaster Headlines)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "News Broadcaster"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Storyteller preset voiced by Anil Keshri, speaking style: Testimonial Intimate.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "81647c16-f959-4284-91f4-23ca8de24d36_prompt-V2-Testimonial-Intimate",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "preset": "Storyteller",
+      "speaker": "Anil Keshri",
+      "speaking_style": "Testimonial Intimate"
+    },
+    "name": "Anil Keshri (Testimonial Intimate)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Storyteller"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emotional Acting preset voiced by Janice Watson, speaking style: Sadness 2 - Muffled.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "81f7a995-37ea-40d2-be99-4c5614c165ce",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Emotional Acting",
+      "speaker": "Janice Watson",
+      "speaking_style": "Sadness 2 - Muffled"
+    },
+    "name": "Janice Watson (Sadness 2 - Muffled)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Emotional Acting"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Classic \"Bad Guy\" preset voiced by Gonzalo Vega, speaking style: Scream.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "8f2a83c5-d6f7-4ad1-9d48-513b8992cd11_scream-catcher-anger",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "preset": "Classic \"Bad Guy\"",
+      "speaker": "Gonzalo Vega",
+      "speaking_style": "Scream"
+    },
+    "name": "Gonzalo Vega (Scream)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Classic \"Bad Guy\""
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "News Broadcaster preset voiced by Julio Machado, speaking style: Newscaster Headlines.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "9758dbd6-8be9-4db4-98cd-401c1be819b2_newscaster-headlines",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "preset": "News Broadcaster",
+      "speaker": "Julio Machado",
+      "speaking_style": "Newscaster Headlines"
+    },
+    "name": "Julio Machado (Newscaster Headlines)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "News Broadcaster"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Companion preset voiced by Pedro Ayala, speaking style: Angry #2.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "99e250e9-5c12-45e6-adf2-d00f582cc275_angry-talk-text-contempt",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "preset": "Companion",
+      "speaker": "Pedro Ayala",
+      "speaking_style": "Angry #2"
+    },
+    "name": "Pedro Ayala (Angry #2)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Companion"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Personal Cheerleader preset voiced by Lucia Mejia, speaking style: Breathy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "9a5a5f6f-b27a-46fa-b7f7-ec49ed06a6dd_breathy-catcher-joy",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "preset": "Personal Cheerleader",
+      "speaker": "Lucia Mejia",
+      "speaking_style": "Breathy"
+    },
+    "name": "Lucia Mejia (Breathy)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Personal Cheerleader"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emotional Acting preset voiced by Lenka Dvorak, speaking style: Testimonial Sad.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "a8300346-7eea-40b6-9b6d-f439beac8d4e_prompt-V2-Testimonial-Sad",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "preset": "Emotional Acting",
+      "speaker": "Lenka Dvorak",
+      "speaking_style": "Testimonial Sad"
+    },
+    "name": "Lenka Dvorak (Testimonial Sad)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Emotional Acting"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Call Center Agent (Neutral) preset voiced by Guillermo Castro, speaking style: Neutral 2 - Interested.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "b2abb241-ac92-48bf-a890-fec03f43e209",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Call Center Agent (Neutral)",
+      "speaker": "Guillermo Castro",
+      "speaking_style": "Neutral 2 - Interested"
+    },
+    "name": "Guillermo Castro (Neutral 2 - Interested)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Call Center Agent (Neutral)"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Storyteller preset voiced by Mario Lopez, speaking style: Romantic 1 - Intimate Affectionate.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bd1b00bb-be1c-4679-8eaa-0fcbfd4ff773",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Storyteller",
+      "speaker": "Mario Lopez",
+      "speaking_style": "Romantic 1 - Intimate Affectionate"
+    },
+    "name": "Mario Lopez (Romantic 1 - Intimate Affectionate)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Storyteller"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Meditation Guide preset voiced by Kathy Evans, speaking style: Narration 1 - Story.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "c0866c1c-0731-45b2-9c90-21be974513b4",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Meditation Guide",
+      "speaker": "Kathy Evans",
+      "speaking_style": "Narration 1 - Story"
+    },
+    "name": "Kathy Evans (Narration 1 - Story)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Meditation Guide"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Young Influencer (Playful, Warm) preset voiced by Anne Reed, speaking style: Joy 2 - Happy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ee96fc26-e96b-41f0-807b-146f595a824d",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "preset": "Young Influencer (Playful, Warm)",
+      "speaker": "Anne Reed",
+      "speaking_style": "Joy 2 - Happy"
+    },
+    "name": "Anne Reed (Joy 2 - Happy)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Young Influencer (Playful, Warm)"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Storyteller preset voiced by Flavio Ribeiro, speaking style: Narration 1 - Story.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "f0c91054-ca6e-4ad6-831d-5fd7921ea944",
+    "languages": [
+      "he"
+    ],
+    "meta": {
+      "preset": "Storyteller",
+      "speaker": "Flavio Ribeiro",
+      "speaking_style": "Narration 1 - Story"
+    },
+    "name": "Flavio Ribeiro (Narration 1 - Story)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Storyteller"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "News Broadcaster preset voiced by Joao Rocha, speaking style: Host Dramatic.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "f55c5d08-9583-461e-a588-86b7ae44b6c7_prompt-V2-Host-dramatic-regular-speed",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "preset": "News Broadcaster",
+      "speaker": "Joao Rocha",
+      "speaking_style": "Host Dramatic"
+    },
+    "name": "Joao Rocha (Host Dramatic)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "News Broadcaster"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sales Agent (Neutral) preset voiced by Raquel Alvarez, speaking style: Spontaneous Speech.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "fb158c16-af06-4a90-abbe-3599c942dd66_prompt-V2-Spontaneous-Speech",
+    "languages": [
+      "he"
+    ],
+    "meta": {
+      "preset": "Sales Agent (Neutral)",
+      "speaker": "Raquel Alvarez",
+      "speaking_style": "Spontaneous Speech"
+    },
+    "name": "Raquel Alvarez (Spontaneous Speech)",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Sales Agent (Neutral)"
+    ]
+  }
+]
