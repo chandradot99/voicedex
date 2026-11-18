@@ -1,1 +1,3879 @@
-[]
+[
+  {
+    "accent": "american",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A legendary Apache leader with a calm, thoughtful voice with quiet strength and deep presence, perfect for reflective narration and composed, confident delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1009",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "public_id": "62afccbb-3d9b-40ad-864e-ab56931c7235",
+      "quality": "high"
+    },
+    "name": "Geronimo",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "irish",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emma is a 32-year-old Northern Irish customer support agent here to help you resolve your issue quickly and efficiently",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1018",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "public_id": "40ae2a24-a8f8-4567-9256-867f59a0b2ba",
+      "quality": "high"
+    },
+    "name": "Emma Gallagher",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Samantha Ferris is a 29-year-old US-based customer support agent with a General American accent. She is highly reliable and always ready to assist customers with their concerns. Her calm and solution-oriented approach ensures that issues are resolved quickly and efficiently.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1071",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "public_id": "30b1eb45-5560-49e0-9b12-2ffda6ffdb49",
+      "quality": "high"
+    },
+    "name": "Samantha Ferris",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "new_zealander",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Olivia Taylor is a 32-year-old New Zealand-based customer support agent with a New Zealand accent. She stays organized even under pressure and handles multiple requests with ease. Her friendly communication style makes customers feel comfortable and well supported.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1072",
+    "languages": [
+      "en-NZ"
+    ],
+    "meta": {
+      "public_id": "b0fdda34-8d8e-4e40-ae40-b67a941022ce",
+      "quality": "high"
+    },
+    "name": "Olivia Taylor",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "canadian",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Noah Tremblay is a 27-year-old Canadian customer support agent with a Canadian accent. He has strong problem-solving skills and responds quickly to customer inquiries. His polite and professional manner builds trust right away.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1073",
+    "languages": [
+      "en-CA"
+    ],
+    "meta": {
+      "public_id": "bd2b9a22-97bf-475b-943e-8b42992a2ed0",
+      "quality": "high"
+    },
+    "name": "Noah Tremblay",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Nick Jones is a 34-year-old US-based customer support agent with a Midwestern American accent. He explains complex issues in a simple and clear way. Customers appreciate his efficiency and helpful attitude.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1074",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "public_id": "bec1378d-3476-4beb-aae6-c74c71f90ad6",
+      "quality": "high"
+    },
+    "name": "Nick Jones",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lucía Navarro is a 27-year-old Spain-based customer support agent with a clear, well-articulated Castilian Spanish accent. She is patient, empathetic, and always finds the right way to put callers at ease. Her warm tone conveys trust from the very first word.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1101",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "public_id": "7600152d-aaf4-42a9-9fa6-28e89656eb25",
+      "quality": "high"
+    },
+    "name": "Lucía",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Diego Ortega is an 18-year-old Spain-based young presenter with a fresh, natural Castilian Spanish accent. His voice carries energy and warmth, making it ideal for digital content, online learning, and dynamic voiceovers aimed at younger audiences.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1102",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "public_id": "71bf2e34-635c-4824-8330-e9bcab5b7755",
+      "quality": "high"
+    },
+    "name": "Diego",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Alejandro is a 25-year-old Spain-based professional narrator with a crisp, well-modulated Castilian Spanish accent.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1104",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "public_id": "52a1f55a-adf0-4680-86be-13b3d9cc345e",
+      "quality": "high"
+    },
+    "name": "Alejandro",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Matteo Conti is a 30-year-old Italian corporate trainer based in northern Italy with a Northern Italian accent. He is articulate, composed, and delivers information with clarity and precision. His professional and trustworthy tone fits instructional, business, and e-learning content.",
+    "first_seen": "2026-11-18",
+    "id": "1131",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "public_id": "1fa64fa5-c378-4b07-8f69-ec0f4002d444",
+      "quality": "high"
+    },
+    "name": "Matteo Conti",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Chiara Esposito is a 31-year-old Italian hospitality manager from Naples with a Southern Italian (Campania) accent. She is warm, expressive, and naturally engaging, which makes her well suited to storytelling and customer-facing content. Her confident and inviting tone draws listeners in",
+    "first_seen": "2026-11-18",
+    "id": "1133",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "public_id": "7771e64a-1bed-4868-a4ec-9c1d6df4b697",
+      "quality": "high"
+    },
+    "name": "Chiara Esposito",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sven van der Berg is a 32-year-old Netherlands-based account manager with a Randstad Dutch accent. He sounds composed, articulate, and quietly confident, the kind of voice that makes complex information feel easy to follow. Sven works well for professional explainers, corporate narration, and customer-facing dialogue.",
+    "first_seen": "2026-11-18",
+    "id": "1134",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "public_id": "ca99543f-cb9d-4336-9e0b-f6a74ae32c3f",
+      "quality": "high"
+    },
+    "name": "Sven van der Berg",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Iris Meijer is a young Netherlands-based marketing coordinator with a regional Dutch accent. Her voice is friendly and energetic, with a conversational warmth that lands well in shorter formats. Iris fits social-media voiceover, brand spots, and upbeat assistant lines.",
+    "first_seen": "2026-11-18",
+    "id": "1135",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "public_id": "83d95907-b081-4d74-8ada-2ea46b26628a",
+      "quality": "high"
+    },
+    "name": "Iris Meijer",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lieke Janssen is a 21-year-old Netherlands-based student and part-time podcast host with a Southern Dutch accent. Her voice is bright, warm, and approachable, with a softness typical of the Brabant/Limburg region. Lieke fits youth-oriented narration, friendly app voices, and casual lifestyle content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1136",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "public_id": "f07ebd57-44b0-45d9-92ef-668ddf525372",
+      "quality": "high"
+    },
+    "name": "Lieke Janssen",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lucien Moreau is a 31-year-old France-based podcast host with a\nstandard French accent. He sounds relaxed, curious, and\nnaturally warm — the kind of voice that carries longer-form\ncontent effortlessly. Lucien is a strong fit for interviews,\neditorial narration, and conversational brand work.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1137",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "76160ed5-a402-4002-9a9e-d95314a3fdec",
+      "quality": "high"
+    },
+    "name": "Lucien Moreau",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Hélène Lambert is a 46-year-old France-based audiobook narrator\nwith a standard French (France) accent. She sounds measured,\narticulate, and quietly authoritative — the kind of voice that\nmakes long passages effortless to listen to. Hélène is a strong\nfit for audiobooks, e-learning, and literary narration.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1138",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "5172f7c9-1833-4c7c-b268-a7249b66be03",
+      "quality": "high"
+    },
+    "name": "Hélène Lambert",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Antoine Dubois is a 31-year-old France-based customer support\nagent with a standard French (France) accent. He sounds clear,\npatient, and approachable — the kind of voice that puts callers\nat ease right away. Antoine is a strong fit for IVR systems,\nsupport flows, and friendly product walkthroughs.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1139",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "e0b25cde-4972-4e9d-9ad3-4829b9b7c4b9",
+      "quality": "high"
+    },
+    "name": "Antoine Dubois",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Julien Bernard is a 44-year-old France-based corporate trainer\nwith a standard French (France) accent. He sounds confident,\npolished, and credible — the kind of voice that conveys\nauthority without sounding stiff. Julien is a strong fit for\ntraining modules, onboarding videos, and professional voiceover.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1140",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "707f7b9d-637d-4273-a2ca-a1d2839a2109",
+      "quality": "high"
+    },
+    "name": "Julien Bernard",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Catherine Rousseau is a 56-year-old France-based executive\nassistant with a standard French (France) accent. She sounds\ngraceful, precise, and reassuring — the kind of voice that\nprojects reliability and quiet authority. Catherine is a strong\nfit for formal announcements, premium brand narration, and\ncustomer-facing communications.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1141",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "4b239b1b-d50c-493e-b49f-2abbf5c30bb7",
+      "quality": "high"
+    },
+    "name": "Catherine Rousseau",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Beatriz Almeida is a 26-year-old Portugal-based podcast host with a European Portuguese accent. She has a warm, conversational tone that puts listeners at ease and brings stories to life. Her natural curiosity and clear delivery make her well-suited for narration, interviews, and lifestyle content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1142",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "public_id": "b90a6097-330a-42ef-a4a3-92471d0e1457",
+      "quality": "high"
+    },
+    "name": "Beatriz Almeida",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Tiago Ferreira is a 28-year-old Portugal-based marketing copywriter with a European Portuguese accent. He delivers with confident energy and a friendly, modern tone that lands well with younger audiences. His versatile voice fits product videos, ads, and brand storytelling.\n\n",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1144",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "public_id": "abe3688c-2c04-4c9e-b016-5fbe25d345dd",
+      "quality": "high"
+    },
+    "name": "Tiago Ferreira",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Diogo Santos is a 23-year-old Portugal-based content creator with a European Portuguese accent. His voice is laid-back and approachable with a touch of dry humor, suiting storytelling, vlogs, and lifestyle narration. He brings authenticity and ease to whatever he reads.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1145",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "public_id": "5d2f2690-966e-40d8-8f85-fee0b112d377",
+      "quality": "high"
+    },
+    "name": "Diogo Santos",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Magdalena Tsvetkova is a 35-year-old Bulgarian female speaker with a Standard Bulgarian (Sofia) accent. Her voice is smooth and richly modulated, with a storytelling quality that draws listeners in from the first sentence. Her natural warmth and precise articulation make her ideal for long-form narration, audiobooks, and literary content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1257",
+    "languages": [
+      "bg-BG"
+    ],
+    "meta": {
+      "public_id": "e227b549-a8ed-491b-a5cf-25ef570cbaa5",
+      "quality": "high"
+    },
+    "name": "Magdalena",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Stefan Kostadinov is a 32-year-old Bulgarian male speaker with a versatile Bulgarian accent. He delivers with confident, modern energy and a clear, punchy rhythm that adapts well to brand storytelling, advertising, and product demonstrations. His dynamic range makes him a reliable choice for commercial content.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1258",
+    "languages": [
+      "bg-BG"
+    ],
+    "meta": {
+      "public_id": "2fb6d54f-92d7-4cbf-af8d-7caaea4369ba",
+      "quality": "high"
+    },
+    "name": "Stefan Kostadinov",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Michał Kowalski is a 32-year-old Polish male speaker with a standard Polish accent. He delivers with confident, modern energy and a clear, purposeful rhythm that suits a wide range of content types. His professional and trustworthy tone makes him well suited to corporate communications, navigation, and brand storytelling.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1259",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "public_id": "109957ba-2318-422b-b2af-38e40a44a39a",
+      "quality": "high"
+    },
+    "name": "Michał Kowalski",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Piotr Wiśniewski is a 19-year-old Polish male speaker with a standard Polish accent. His voice is fresh and naturally enthusiastic, with a spontaneous energy that resonates immediately with younger audiences. His bright, conversational delivery is an ideal fit for app interfaces, social media content, and lifestyle narration.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1260",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "public_id": "55ff1505-daf1-41c4-91eb-3009eb36408a",
+      "quality": "high"
+    },
+    "name": "Piotr Wiśniewski",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Tomasz Wójcik is a 33-year-old Polish male speaker with a standard Polish accent. He speaks with a steady, composed confidence and a measured pace that projects reliability. His clear articulation and professional warmth make him a strong choice for e-learning, corporate training, and telephony applications.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1261",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "public_id": "b029d687-8f73-4e31-9af8-e6de8ab363b2",
+      "quality": "high"
+    },
+    "name": "Tomasz Wójcik",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Natalia Kovalenko is a 29-year-old Ukrainian female speaker with a neutral Ukrainian accent. She delivers with a clear, polished warmth and a professional composure that works equally well in formal and conversational contexts. Her accessible and trustworthy tone is well suited to e-learning, customer service, and corporate communications.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1262",
+    "languages": [
+      "uk-UA"
+    ],
+    "meta": {
+      "public_id": "61aa1a05-9080-45a1-bd0d-5525159387d9",
+      "quality": "high"
+    },
+    "name": "Natalia Kovalenko",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Dmytro Lysenko is an 18-year-old Ukrainian male speaker with a Galician (Lviv / Western Ukraine) accent. His voice is fresh and naturally expressive, with the distinct Western Ukrainian character that gives his delivery an authentic regional identity. His youthful, energetic tone resonates well with younger audiences and suits app onboarding, social content, and lifestyle narration.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1263",
+    "languages": [
+      "uk-UA"
+    ],
+    "meta": {
+      "public_id": "53d997a1-a093-45ed-b39b-0416b7f7a64c",
+      "quality": "high"
+    },
+    "name": "Dmytro Lysenko",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Ana Kovačić is a 53-year-old Croatian female speaker with a Standard Croatian (Zagreb) accent. She speaks with mature warmth and quiet authority, delivering information in a calm, measured way that immediately inspires confidence. Her steady and composed voice is ideally suited to navigation, telephony, and corporate communications.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1268",
+    "languages": [
+      "hr-HR"
+    ],
+    "meta": {
+      "public_id": "52ea6a02-0bea-4bb5-81e0-e3cea933d5d5",
+      "quality": "high"
+    },
+    "name": "Ana Kovačić",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Tomislav Babić is a 35-year-old Croatian male speaker with a Slavonian (Eastern Croatia) accent. His voice carries a grounded, distinctive regional warmth that brings character and authenticity to every read. His natural delivery and relaxed confidence make him a strong fit for storytelling, documentary narration, and regional brand campaigns.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1269",
+    "languages": [
+      "hr-HR"
+    ],
+    "meta": {
+      "public_id": "d076a2f8-ff94-4025-a9f7-b78d0a6b81d6",
+      "quality": "high"
+    },
+    "name": "Tomislav Babić",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "\n\n\nEleni Papadopoulou is a 48-year-old Greek female speaker with a Standard Greek (Attica / Athens) accent. She speaks with polished confidence and a warm, unhurried cadence that conveys both expertise and approachability. Her composed and trustworthy delivery is an excellent fit for e-learning, professional narration, and customer-facing applications.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1270",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "public_id": "2227279e-120b-4972-897c-608c2d15c198",
+      "quality": "high"
+    },
+    "name": "Eleni Papadopoulou",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Nikos Stavrakis is a 32-year-old Greek male speaker with a distinctive Cretan accent. His voice is warm and expressive, with a natural storytelling energy and a rich regional character that sets him apart. His confident and engaging delivery is ideal for cultural content, brand campaigns, and any project that benefits from authentic regional personality.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1271",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "public_id": "0d5742fa-f2b8-4a27-b51d-ef5d49c1f0cf",
+      "quality": "high"
+    },
+    "name": "Nikos Stavrakis",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Milica Jovanović is a 40-year-old Serbian female speaker with an Ekavian accent from Central Serbia / Belgrade. She delivers with mature warmth and polished composure, making complex information feel approachable and clear. Her authoritative yet engaging voice is well suited to corporate communications, e-learning, and professional narration.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1272",
+    "languages": [
+      "sr-RS"
+    ],
+    "meta": {
+      "public_id": "3eb8f1fc-510c-4216-849c-5ae6f36fc339",
+      "quality": "high"
+    },
+    "name": "Milica Jovanović",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Stefan Đorđević is a 40-year-old Serbian male speaker with a Šumadija-Vojvodina accent. His voice is bright and direct, with a confident, forward-moving energy that keeps listeners engaged. His clean delivery and modern pacing make him an ideal fit for digital products, navigation, and brand-forward content.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1273",
+    "languages": [
+      "sr-RS"
+    ],
+    "meta": {
+      "public_id": "740f4ea6-47eb-4de9-8f21-2ce97c58b492",
+      "quality": "high"
+    },
+    "name": "Stefan Đorđević",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Éva Szabó is a 37-year-old Hungarian female speaker with a Standard Hungarian (Budapest) accent. She speaks with a polished, modern energy and a friendly yet professional tone that translates well across a wide range of applications. Her clear articulation and measured pace make her ideal for e-learning, app interfaces, and customer service content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1274",
+    "languages": [
+      "hu-HU"
+    ],
+    "meta": {
+      "public_id": "b2c34637-06da-478d-8914-29d45f6dd653",
+      "quality": "high"
+    },
+    "name": "Éva Szabó",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Gábor Varga is a 38-year-old Hungarian male speaker with a Great Plain (Alföld) accent from Eastern Hungary. His voice is grounded and steady, with a natural warmth and a distinctive regional cadence that brings authenticity to every read. His calm and confident delivery works well for agricultural content, regional campaigns, and documentary-style narration.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1275",
+    "languages": [
+      "hu-HU"
+    ],
+    "meta": {
+      "public_id": "db510fee-8975-409f-8c5b-ff0a1e1e4935",
+      "quality": "high"
+    },
+    "name": "Gábor Varga",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Marcus Bennett is a 39-year-old US-based podcast host with a General American accent. He has a dynamic style that grabs attention instantly. His confident energy works perfectly for advertising, trailers, and high-tempo narration.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1655",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "public_id": "761b257a-0c9a-45d3-b781-f76623cf7476",
+      "quality": "high"
+    },
+    "name": "Marcus Bennett",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "James Whitfield is a 37-year-old UK-based live event host with a British accent. He brings high energy and  enthusiasm to every introduction. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1656",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "c0e3c011-762d-41c3-9d9e-652af5603428",
+      "quality": "high"
+    },
+    "name": "James Whitfield",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Jonas Brandt is a 26-year-old Germany-based event moderator. He is energetic and confident. His dynamic delivery works well for promos, advertising, and live announcements.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1657",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "215198e4-5879-4db1-afb3-0c08c8192e6c",
+      "quality": "high"
+    },
+    "name": "Jonas Brandt",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lena Hoffmann is a 20-year-old Germany-based social-media presenter with a Standard German accent. She is cheerful and expressive, bringing a youthful, high-energy spark to every line. Her lively tone is a great match for advertising, short-form content, and product reveals.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1659",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "671eb357-5e4c-40c0-ae1a-0b3c05e5ea08",
+      "quality": "high"
+    },
+    "name": "Lena Hoffmann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Finn Wagner is an 18-year-old Germany-based gaming streamer with a Standard German accent. He is fast, playful, and full of energy, with a delivery that feels spontaneous and fun. His enthusiastic style suits gaming voiceovers, hype content, and youth-focused campaigns.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1660",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "c97f8c84-1325-4264-90a2-59267678a1da",
+      "quality": "high"
+    },
+    "name": "Finn Wagner",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Camille Rousseau is a 24-year-old France-based event host with a standard French accent. She is bright, animated, and charismatic.  Her warm, high-energy voice fits brand campaigns, promos, and launch reels.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1662",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "1c131d8c-4768-498a-a9f5-4357d148d408",
+      "quality": "high"
+    },
+    "name": "Camille Rousseau",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lucas Moreau is an 26-year-old France-based radio host with a standard French accent. He is fast-paced,  with a playful, engaging delivery that keeps listeners hooked. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1663",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "ae73bb16-6d5c-43d4-a69f-9852fe0f0a53",
+      "quality": "high"
+    },
+    "name": "Lucas Moreau",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Théo Lefèvre is a 25-year-old France-based presenter with a standard French accent. He has a energetic but calm voice, best for support usecases or reading out texts. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1664",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "dbec77cf-bf68-4662-9e12-e04326e7f3e8",
+      "quality": "high"
+    },
+    "name": "Théo Lefèvre",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Woman in her 40s",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1704",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "1773df34-c9e3-47df-b493-11343447e7bd",
+      "quality": "high"
+    },
+    "name": "Tanja",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Woman in her 30s. Calm voice.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1705",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "74b0e43d-f549-4552-8ef1-5ab694d6bb1e",
+      "quality": "high"
+    },
+    "name": "Johanna",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Energetic woman voice. High speed. ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1707",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "87330fe7-d7f2-4523-bedc-1a328f4b45f7",
+      "quality": "high"
+    },
+    "name": "Alexa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Grandpa from northern Germany.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1708",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "b7352b90-fdf7-461f-968c-08c5bac22751",
+      "quality": "high"
+    },
+    "name": "Ernst August",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Woman in her 20s, calm and crystal clear voice. ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1840",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "22884e87-a22b-4f52-a873-48fec9a13151",
+      "quality": "high"
+    },
+    "name": "Sophie Martens",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Larissa is in her 20s and a native German speaker with a crystal-clear voice. She sounds confident, friendly, and engaging, making her a great fit for customer support and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1876",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "a6f04452-2880-42aa-ab63-3def2a6a0696",
+      "quality": "high"
+    },
+    "name": "Larissa Hendriks",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Thomas is in his 40s and a native German speaker with a clear, warm, and confident voice. He sounds professional, approachable, and reassuring",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "1885",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "2ee4563a-468c-4ad3-8d78-883325bad457",
+      "quality": "high"
+    },
+    "name": "Thomas Brandt",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Celine is in her 20s and a native German speaker with a bright, warm, and supportive voice. She sounds positive, approachable, and reassuring, making her a great fit for customer support and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1887",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "161fd0d3-1af8-4559-ae4d-40e3d98cc642",
+      "quality": "high"
+    },
+    "name": "Celine Weber",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Antonia is in her 30s and a native German speaker with a calm, clear, and reassuring voice. She sounds warm, composed, and trustworthy, making her a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1930",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "a664fdec-4ec1-44ab-b650-a94d90b615e3",
+      "quality": "high"
+    },
+    "name": "Antonia Meier",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Erik is a native Swedish speaker from Stockholm with a clear, relaxed, and natural voice. He sounds friendly, grounded, and easy to listen to, making him a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2148",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "public_id": "6d9d9267-231d-4d99-a3c5-37046d7d23bb",
+      "quality": "high"
+    },
+    "name": "Erik Lindqvist",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Johan is a native Swedish speaker from Gothenburg with a warm, easygoing, and conversational voice. He sounds approachable, upbeat, and genuine, making him a great fit for customer support, sales, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2149",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "public_id": "49e74eba-e366-4a34-acd1-4b2345679ef0",
+      "quality": "mid"
+    },
+    "name": "Johan Bergström",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Magnus is a native Swedish speaker from Stockholm with a steady, calm, and natural voice. He sounds composed, reliable, and down to earth, making him a great fit for customer support, information lines, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2150",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "public_id": "b44d8f7d-0552-4200-a5f9-55b09b15a10b",
+      "quality": "mid"
+    },
+    "name": "Magnus Ekström",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Maja is a native Swedish speaker from Stockholm with a bright, clear, and natural voice. She sounds friendly, warm, and trustworthy, making her a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2212",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "public_id": "a06fda35-d54a-43c6-9248-2245d2cdf24f",
+      "quality": "high"
+    },
+    "name": "Maja Holmgren",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Anders is a native Swedish speaker from Stockholm with a calm, clear, and natural voice. He sounds friendly, composed, and trustworthy, making him a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2213",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "public_id": "1e4412fe-544e-4580-97c6-2f85420d889c",
+      "quality": "mid"
+    },
+    "name": "Anders Nyström",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mikkel is a native Danish speaker from Jutland with a calm, clear, and natural voice. He sounds warm, grounded, and trustworthy, making him a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2214",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "public_id": "fe3a159c-8acb-4781-8107-4979c008d26e",
+      "quality": "mid"
+    },
+    "name": "Mikkel Thomsen",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sofie is a native Danish speaker from Copenhagen with a calm, clear, and natural voice. She sounds warm, composed, and trustworthy, making her a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2215",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "public_id": "ee82f401-81ba-480c-9528-ca7021f8a72c",
+      "quality": "mid"
+    },
+    "name": "Sofie Lund",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Kari is a native Norwegian speaker from Oslo with a bright, clear, and natural voice. She sounds warm, friendly, and trustworthy, making her a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2216",
+    "languages": [
+      "no-NO"
+    ],
+    "meta": {
+      "public_id": "c1e841c6-c4ee-429d-801e-d856db82ce74",
+      "quality": "high"
+    },
+    "name": "Kari Solberg",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Silje is a native Norwegian speaker from Oslo with a clear, lively, and natural voice. She sounds friendly, warm, and trustworthy, making her a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2217",
+    "languages": [
+      "no-NO"
+    ],
+    "meta": {
+      "public_id": "f9ec07f9-c3ed-45b8-b7e8-8365a8835a47",
+      "quality": "high"
+    },
+    "name": "Silje Nordby",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Hanne is a native Norwegian speaker from Oslo with a calm, clear, and natural voice. She sounds warm, composed, and trustworthy, making her a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2218",
+    "languages": [
+      "no-NO"
+    ],
+    "meta": {
+      "public_id": "7d90fe34-6078-4c40-95d4-933afdaded21",
+      "quality": "high"
+    },
+    "name": "Hanne Bakken",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Daniel is in his 40s and a native German speaker with an authentic, clear, and grounded voice. He sounds calm, genuine, and trustworthy, making him a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2220",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "e872152b-1f91-48df-bd8d-427e2c1f3ace",
+      "quality": "high"
+    },
+    "name": "Daniel Krüger",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mario is in his 40s and a native German speaker from East Berlin with a distinct, authentic Berlin accent. He sounds down-to-earth, humorous, and genuine, making him a great fit for characterful conversational, storytelling, and customer service use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2221",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "a45d8eae-918d-45f5-b9de-5e584f852b7e",
+      "quality": "mid"
+    },
+    "name": "Mario Lehmann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Julia is in her 30s and a native German speaker with a calm, clear, and very pleasant voice. She sounds warm, natural, and trustworthy, making her a great fit for customer support, service, and conversational use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2222",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "e150b27f-1441-47ab-b57c-9498c7aa80f3",
+      "quality": "high"
+    },
+    "name": "Julia Ziegler",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Emre is a native Turkish speaker from Istanbul with a warm, clear, and friendly voice. He sounds calm, natural, and trustworthy, making him a great fit for customer support, service, and conversational use cases, in Turkish as well as in German with a Turkish accent.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2486",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "public_id": "57544a7a-3047-4785-98b1-12c5c9611910",
+      "quality": "high"
+    },
+    "name": "Emre Aydın",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Elif is a native Turkish speaker from Bursa with a warm, bright, and friendly voice. She sounds natural, approachable, and trustworthy, making her a great fit for customer support, service, and conversational use cases, in Turkish as well as in German with a Turkish accent.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2512",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "public_id": "42db8cf8-195e-4ccd-9cb2-977da5e997ec",
+      "quality": "high"
+    },
+    "name": "Elif Şahin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Omar is a native Egyptian Arabic speaker from Beni Suef with a calm, clear, and reassuring voice. He sounds warm, composed, and trustworthy, making him a great fit for customer support, service, and conversational use cases, in Arabic as well as in German with an Arabic accent.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2513",
+    "languages": [
+      "ar-EG"
+    ],
+    "meta": {
+      "public_id": "bca685ca-a6af-4cb9-8d04-bbcc225cc1a3",
+      "quality": "high"
+    },
+    "name": "Omar Hassan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Jochen is a native German speaker from the Black Forest with a friendly, authentic Swabian dialect. He sounds down-to-earth, warm, and trustworthy, making him a great fit for characterful conversational and service use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2514",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "914e403c-de31-4977-8e23-035c19b51acf",
+      "quality": "high"
+    },
+    "name": "Jochen Haug",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Andreas is a native German speaker from Regensburg with a deep, relaxed voice and a genuine Bavarian dialect. He sounds calm, friendly, and trustworthy, making him a great fit for characterful conversational and service use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2515",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "324a406f-09ca-4c6b-93c6-052c597cfff7",
+      "quality": "mid"
+    },
+    "name": "Andreas Hofbauer",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Franziska is in her 30s and a native German speaker from the Allgäu with a warm Swabian-Allgäu accent. She sounds friendly, relaxed and genuine, making her a great fit for characterful conversational, storytelling and customer service use cases.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2516",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "1f700520-abdf-48c2-941d-da1d58fb1cc9",
+      "quality": "high"
+    },
+    "name": "Franziska Hörmann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Public announcement voice. Hans is a seasoned civil defense officer, trained to maintain composure in high-pressure situations. With a background in public safety communications, he's spent years in a command center, managing emergency broadcasts. His steady voice has become a reliable presence during crises.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "255",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "df442ef2-8e08-48ec-9a3e-b16d8de64605",
+      "quality": "mid"
+    },
+    "name": "Durchsage",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A very-low, slightly rough voice with a calm, authoritative German accent.\n\nHans is a former military strategist who transitioned into engineering and academia. He mentors younger generations, guiding them with patience and firmness, valuing efficiency and harboring a soft, reflective side beneath his stern exterior.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "256",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "1da88d10-62e6-4066-95fb-96587db81065",
+      "quality": "mid"
+    },
+    "name": "Jörg",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A wispering, relaxed, and friendly voice with a German accent, perfect for informal content.\n\nLukas grew up in a small German town, known for his warm greetings and friendly chats at the local café. With a past in hospitality, he now works as a tour guide, relishing in making tourists feel welcome and sharing stories with a personal touch.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "258",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "09ca018f-e5bc-4554-8418-cb56d63f23da",
+      "quality": "mid"
+    },
+    "name": "Lukas der Flüsterer",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A sore, authoritative voice with a dramatic, German edge. \n\nImagine someone who started out in academia, perhaps a professor of philosophy or literature, but discovered a passion for performance. Over time, they transitioned into theater or film, where their commanding voice and presence earned them key roles in dramatic productions. They might also have a keen interest in psychology or the arts, possibly even writing on the side. There’s a deep sense of introspection, but also a confident exterior that leaves a strong impression wherever they go.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "259",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "77e57d2f-aaa0-4e03-a351-4078d7d427b2",
+      "quality": "mid"
+    },
+    "name": "Verrückter Bernd",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Angry shouting voice ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "261",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "88a32ed4-7842-4b2d-893e-cb160d0ea66a",
+      "quality": "mid"
+    },
+    "name": "Sauerer Felix",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A commanding and authoritative voice with a dark, intense tone and a German accent.\n\nHans is a seasoned military officer with extensive experience in high-stakes situations. He has commanded troops under fire, transitioning into a training role where he drills recruits with precision and intensity. Off-duty, he is calm and steady, but in critical moments, he demands immediate obedience.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "262",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "51ccbf36-3235-42ef-9c31-db68c65ea9a1",
+      "quality": "mid"
+    },
+    "name": "Hans",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "characters_animation"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear, relaxed, and thoughtful austrian voice ideal for storytelling and education.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "263",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "bbd6fe63-335e-4868-b747-888942b267d5",
+      "quality": "mid"
+    },
+    "name": "Österreichische Irmgard",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A medium-low, emotionally expressive voice with a German accent, perfect for heartfelt narratives.\n\nKatrin has had a long career in education and counseling, known for her ability to navigate emotionally complex situations. She values fairness and honesty, often finding herself explaining her perspective in misunderstandings. Currently, she might be addressing a family matter where she feels wrongly accused, hence the emotional investment in her voice.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "264",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "f23684f1-9ed6-4801-b8d7-eb5ef1f9a4ae",
+      "quality": "mid"
+    },
+    "name": "Katrin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, thoughtful, and authoritative voice perfect for intellectual content.\n\nHans is a professor at a prestigious university, specializing in philosophy and literature. He has spent his life studying classical works and imparting knowledge to students. In his leisure time, Hans enjoys contemplative walks in nature and has authored books on ethics and art, earning him admiration from his students.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "265",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "69911389-a4e4-4b76-810e-c44e7a113e55",
+      "quality": "mid"
+    },
+    "name": "Angela Österreicherin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A relatively high German reading voice.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "266",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "54d9912f-3390-4186-803e-89b43d7cbf1c",
+      "quality": "mid"
+    },
+    "name": "Petra die Vorleserin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, serious, and slightly reflective voice with a German accent, ideal for delivering reading content.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "267",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "86f961fa-eccd-4ab6-a13a-c2b8634ff331",
+      "quality": "mid"
+    },
+    "name": "Heike die Vorleserin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A composed, German-accented voice with a calm, intellectual presence.\n\nHans is a university professor specializing in philosophy or literature. He has spent years lecturing on the classics, guiding students through complex ideas. In his free time, he enjoys classical music, long walks, and reading poetry, speaking in a gentle but authoritative manner.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "268",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "1a218bf4-d526-427f-99f0-ed02c3487be7",
+      "quality": "mid"
+    },
+    "name": "Hans",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A clear, authoritative German-accented voice ideal for educational and thoughtful content.\n\nHeinrich is a seasoned university professor, specializing in history or philosophy. He has spent many years lecturing in grand, echoing halls, guiding students through complex ideas and classical texts. In his spare time, he writes essays or books on cultural history and enjoys hiking in the mountains, contemplating life's deeper questions.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "269",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "3f51c442-fa73-43e2-89cf-e8e094d57c7c",
+      "quality": "mid"
+    },
+    "name": "Heinrich",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm voice that almost sounds like the speaker is singing. \n\nFriedrich grew up in a small, beautiful village where his love for poetry and music was nurtured from a young age. He developed a deep appreciation for classical languages, nature, and the arts. Now, he shares his passion through spoken-word performances at cultural events, drawing people into the world of poetry and song with his soothing voice.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "270",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "e7f35ffb-8e90-4ad2-b538-60bafc9115fa",
+      "quality": "mid"
+    },
+    "name": "Friedrich Sänger",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, thoughtful voice with a touch of warmth and a German accent.\n\nJohann is a university professor of literature or philosophy who enjoys reciting poetry or classic texts. He dabbles in writing poetry himself, spending quiet moments reading aloud in his study while reflecting on life's deeper meanings. With a history of giving lectures and public readings at cultural events, Johann brings a deep sense of introspection to his work.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "271",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "59e7fa25-591d-4b39-b1e2-d5e6dce29d82",
+      "quality": "mid"
+    },
+    "name": "Johann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A smooth, articulate voice with a calm, German accent perfect for storytelling and narration.\n\nFriedrich is a seasoned academic who grew up with a love of literature and a fascination for myths and science. He has spent years reading to children and students, enjoying the quiet power of storytelling. Alternatively, he is a renowned audiobook narrator known for his calm delivery and ability to captivate listeners.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "272",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "69c091ff-3edb-44fc-8577-7264c04aa3f3",
+      "quality": "mid"
+    },
+    "name": "Friedrich",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Old German reading voice",
+    "first_seen": "2026-11-18",
+    "id": "273",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "ecc7dff4-115d-4a0d-a599-bf411eb62281",
+      "quality": "mid"
+    },
+    "name": "Rita die Vorleserin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A smooth, warm German voice ideal for thoughtful narration.\n\nHeinrich is a retired academic who spent years teaching literature and philosophy. After traveling extensively and immersing himself in various cultures, he now enjoys a quieter life, sharing stories and reading poetry by candlelight, his voice a testament to years of reflection and gentle discourse.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "274",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "eba64bac-f8c9-4c00-a899-568ca798be17",
+      "quality": "mid"
+    },
+    "name": "Heinrich",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Southern German voice perfect for educational content. Jens is a researcher in agricultural economics, passionate about data and theory. He spends his mornings in a quiet office surrounded by books, focusing on his work's intricacies. In his free time, he enjoys hiking and reading about history.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "276",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "ce31c474-4ae5-457a-acea-3a25c6afcba4",
+      "quality": "mid"
+    },
+    "name": "Jens",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lars grew up fascinated by storytelling and communication, listening to radio broadcasts as a child.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "277",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "0bbaebe1-bcfc-4d28-884a-ce9f318a224e",
+      "quality": "mid"
+    },
+    "name": "Radio Lars",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "advertisement"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, clear, and authoritative German voice perfect for intellectual discourse.\n\nMarkus has spent many years as a political analyst, involved in public policy discussions with a background in economics. Respected for his balanced viewpoints, he excels at communicating complex issues clearly to the public.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "279",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "fdcfe91e-830a-401a-a8fa-8184d302a269",
+      "quality": "mid"
+    },
+    "name": "Markus der Analyst",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm, clear German-accented voice ideal for professional and persuasive communication.\n\nJohann started in a large corporation, worked his way through various sales and marketing roles, and eventually founded his own consulting firm. He helps younger sales teams navigate the complexities of lead generation and drives value through personalized, transparent communication. Outside of work, he enjoys networking events, business podcasts, and mentoring young entrepreneurs.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "280",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "68e494be-8d8f-4e45-be23-0a6a82752796",
+      "quality": "mid"
+    },
+    "name": "Johann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A drunken singing voice. Hans is a classically \"trained\" singer from a small town in Germany, deeply influenced by the cultural heritage of his upbringing. Passionate about traditional music, he studied at a conservatory and now revives forgotten compositions, performing at regional festivals and teaching aspiring singers.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "281",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "560437ab-3a83-4580-8aca-9acc2813cb41",
+      "quality": "mid"
+    },
+    "name": "Suffi Thomas",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A warm, clear, and professional voice ideal for storytelling and educational content.\n\nHans grew up in a small, charming German town, fascinated with fairy tales and storytelling. He spent his youth telling stories to younger kids, eventually finding a career in narration and broadcasting. His passion is connecting with listeners and making stories come alive with his warm, comforting voice.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "282",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "6689bef7-eb45-4fa8-a5ed-699f04443170",
+      "quality": "mid"
+    },
+    "name": "Otto der Vorleser",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "narrative_story"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A professional, clear, and authoritative German voice suited for official announcements.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "283",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "40eb08b1-f921-40fd-bcd7-9b81bab5bf77",
+      "quality": "mid"
+    },
+    "name": "Notfallsystem",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "advertisement"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Justin is a news anchor. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "284",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "c1761b94-2db0-4b3d-a149-7eb9b61f3864",
+      "quality": "mid"
+    },
+    "name": "Justin News Anchor",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "entertainment_tv"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Angela is a geography teacher",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "285",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "3b85a308-c00d-4183-9bde-a155d0e68a8d",
+      "quality": "mid"
+    },
+    "name": "Angela Teacher",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "informative_educational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Very distinctive voice with interesting highs",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "286",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "2a2989f4-99d5-467a-803e-36336ef9a3c3",
+      "quality": "mid"
+    },
+    "name": "Tim",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Old voice with an interesting echo. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "287",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "fd8e9c2f-d2ff-47ab-b227-d100490cecfa",
+      "quality": "mid"
+    },
+    "name": "Chucker",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Typical storytelling you would find at a bar, just chatting along, friendly guy. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "289",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "eb794c41-7a72-4a39-a228-211477b900c3",
+      "quality": "mid"
+    },
+    "name": "Lukas Storyteller",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Great for explanatory settings",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "290",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "31d5be90-d4ad-4a40-a397-2cf1fd6c78cf",
+      "quality": "mid"
+    },
+    "name": "Edina",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "informative_educational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Old voice with scratchiness in it. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "292",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "a1f008f3-700c-4ba8-99aa-c6f9f111ea51",
+      "quality": "mid"
+    },
+    "name": "Gustav",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Young voice that is a little unconfident. ",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "293",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "public_id": "f0c5d637-5c8a-4168-b4a6-e960a2cecceb",
+      "quality": "mid"
+    },
+    "name": "Fred",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "402",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "4c98dc68-544c-4543-bd3b-c97b75e65b5b",
+      "quality": "mid"
+    },
+    "name": "Lena Berger",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "404",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "6c4293f8-a94a-4376-8e0f-ccc8fa6fe46b",
+      "quality": "mid"
+    },
+    "name": "Markus Lehmann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "409",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "6cb43c5d-a805-482c-abb0-69b6ede85324",
+      "quality": "mid"
+    },
+    "name": "Helmut Drechsler",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "410",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "2c732d3d-572d-44d2-babf-b31194703709",
+      "quality": "mid"
+    },
+    "name": "Anna Hoffmann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "412",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "7ffaf6a3-5a43-4277-ba20-90ae63d529c9",
+      "quality": "mid"
+    },
+    "name": "Felix Richter",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "413",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "81af19bd-cc2a-4694-89e9-7ed27c916919",
+      "quality": "mid"
+    },
+    "name": "Lukas Ehlers",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "416",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "c3a28451-9986-4c5c-96c5-d53d179c908c",
+      "quality": "mid"
+    },
+    "name": "Jan Schulz",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "420",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "e08d07a0-0912-4b87-89b2-eac6c471c3eb",
+      "quality": "mid"
+    },
+    "name": "Niklas Bauer",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "422",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "9f6fddb0-0190-4c28-a7b9-59dad1d6e03c",
+      "quality": "mid"
+    },
+    "name": "Elisabeth Fuchs",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "436",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "6d54ca84-5337-42e7-94e5-f7b77eb1f07a",
+      "quality": "mid"
+    },
+    "name": "Patrick Müller",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "438",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "4eda6528-d199-4e31-a090-fc2ae6b0d245",
+      "quality": "mid"
+    },
+    "name": "Sabine Neumann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Friendly woman voice ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "439",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "b7182223-5522-4226-96d2-f00b80563e5d",
+      "quality": "mid"
+    },
+    "name": "Christine Kühn",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "446",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "04974070-76d7-431c-8f85-ffc8d8faa4bd",
+      "quality": "mid"
+    },
+    "name": "Hannah Vogel",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "448",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "eaa1d784-8af4-44aa-8484-6064df4d4446",
+      "quality": "mid"
+    },
+    "name": "Andreas Schwarz",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "450",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "2d6b50eb-6839-4d1a-824f-f8b2efe23d3d",
+      "quality": "mid"
+    },
+    "name": "Lisa Hofmann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "458",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "1aaf0a7e-9353-4914-b40f-d4d3c3cf1898",
+      "quality": "mid"
+    },
+    "name": "Monika Weiß",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "460",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "218498df-1eb2-4ad7-9538-5f2b52fb33ac",
+      "quality": "mid"
+    },
+    "name": "Tobias Kraft",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "old",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "462",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "7ffc3d8a-4159-4c6f-ae23-1646ff704a6c",
+      "quality": "mid"
+    },
+    "name": "Renate Haas",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "465",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "8c28678c-8af2-41b1-85a5-6a225c32d7d1",
+      "quality": "mid"
+    },
+    "name": "Paula Beckmann",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "468",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "bbb3d8a8-7f79-46c9-aac3-97f4043c07c8",
+      "quality": "mid"
+    },
+    "name": "Amelie Kraft",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "476",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "48fca9e0-6e8b-4fb6-b375-55e886cd035f",
+      "quality": "mid"
+    },
+    "name": "Greta Winkler",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "480",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "130db4aa-4bc1-45aa-8ce4-262c737db399",
+      "quality": "mid"
+    },
+    "name": "Carla Brandt",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Ibrahim is a deep, calm baritone with a warm Turkish accent that conveys trust and authority. His steady, unhurried delivery reassures listeners and brings clarity to even the most stressful situations.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "583",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "public_id": "76f05921-38b2-4e84-9b66-b014ecc665da",
+      "quality": "mid"
+    },
+    "name": "İbrahim Yıldız",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mehmet sounds like an experienced team lead: friendly, direct, and in-control without being “too formal.” His rich Turkish accent and conversational delivery feel like you’re speaking to someone you already know—confident enough to lead, relaxed enough to de-escalate naturally.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "584",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "public_id": "1bf87e3a-8118-4a65-b8ba-155129173156",
+      "quality": "mid"
+    },
+    "name": "Mehmet Kaya",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Seda is a composed, empathetic alto with a steady Turkish accent and quiet authority. Her calm, grounded delivery diffuses tension instantly and makes even the most upset callers feel heard and safe.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "585",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "public_id": "4dcc8bb1-df9b-42b0-9cdf-6aae6f3fe7c3",
+      "quality": "mid"
+    },
+    "name": "Seda_Aktaş",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Zeynep is a polished, elegant voice with a smooth Turkish accent that signals premium care. She sounds confident and precise yet warmly attentive—ideal for VIP conversations where trust, clarity, and finesse matter.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "586",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "public_id": "a4c61765-4550-4a71-926c-87d1a5eb4ef1",
+      "quality": "mid"
+    },
+    "name": "Zeynep Arslan",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Paula is a clear, composed voice with a precise Spanish accent and a methodical delivery. She excels at breaking down complex technical topics into simple, reassuring explanations that make customers feel confident and informed",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "588",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "public_id": "5b7b7097-4e92-4aa2-a15c-e44a5db4b1e9",
+      "quality": "mid"
+    },
+    "name": "Paula Vega",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Isabel is a warm, comforting voice with a smooth Spanish accent and a gentle, maternal tone. She makes callers feel safe, understood, and supported—especially in emotional or high-stress situations.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "592",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "public_id": "e996431e-5a80-46b9-86b7-315a1e79055e",
+      "quality": "mid"
+    },
+    "name": "Isabel Torres",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Carlos is a reliable, friendly Spanish support voice with a confident and approachable tone. He communicates clearly, listens carefully, and makes customers feel supported and in good hands from the very first moment.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "594",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "public_id": "35bc980d-468a-4fc0-b62b-8797400416c1",
+      "quality": "mid"
+    },
+    "name": "Carlos Fernández",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Héctor Aguilar is a calm, trustworthy Spanish support voice with a grounded, professional presence. His steady delivery and attentive tone help customers feel understood, while his clear explanations keep conversations focused, productive, and reassuring.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "595",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "public_id": "c88bd703-d1c0-46b8-a3ee-d80309281e58",
+      "quality": "mid"
+    },
+    "name": "Héctor Aguilar",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Daniela is a clear, friendly Portuguese voice with a smooth, professional flow. She communicates efficiently and warmly, making support interactions feel easy, natural, and well-structured.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "601",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "public_id": "764492ad-27fc-4462-9a8e-81fc3ccc3be7",
+      "quality": "mid"
+    },
+    "name": "Daniela Campos",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Marcelo is a smooth, diplomatic Portuguese voice with a warm, polished baritone. He sounds thoughtful and composed, handling sensitive conversations with quiet authority and professionalism that never feels intimidating.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "603",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "public_id": "291159dd-00fc-43cd-971a-48a82d474735",
+      "quality": "mid"
+    },
+    "name": "Marcelo Teixeira",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "André is a deep, authoritative Portuguese voice that conveys experience and trust instantly. His calm, deliberate delivery reassures customers that complex technical issues are being handled by a true expert.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "604",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "public_id": "ded91539-e7ad-42f8-aed0-f812972884f9",
+      "quality": "mid"
+    },
+    "name": "André Cardoso",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mariana is an elegant, polished Portuguese voice that signals premium service from the first word. She combines calm confidence with refined warmth, making VIP clients feel valued, understood, and expertly guided.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "606",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "public_id": "7562b205-b2c8-49e1-ae2e-1662cb730202",
+      "quality": "mid"
+    },
+    "name": "Mariana Ferreira",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Beatrice Serra (38) is a warm and professional Customer Success Manager who blends expertise with genuine care. With her refined Italian accent and calm, confident tone, she makes customers feel supported, understood, and truly valued in every interaction.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "682",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "public_id": "fb07d3aa-6669-463e-8b65-b6c0dd1c4147",
+      "quality": "mid"
+    },
+    "name": "Beatrice Serra",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Valentina Bruna (40) is an experienced support specialist known for her warm, maternal presence. With her smooth Italian accent and gentle, reassuring tone, she comforts and guides callers—especially in emotional moments—making them feel heard, understood, and truly supported.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "683",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "public_id": "bc7b085d-6224-44a3-b80e-be53672f7384",
+      "quality": "mid"
+    },
+    "name": "Valentina Bruna",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Alessandro Ricci (31) is a reliable senior support agent known for his steady, professional presence. With his calm baritone voice and subtle Italian accent, he brings clarity and reassurance to every conversation, serving as a dependable anchor for both customers and his team.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "684",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "public_id": "b206b498-a41e-48d8-b058-9038a5155934",
+      "quality": "mid"
+    },
+    "name": "Alessandro Ricci",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Simone Barbieri (32) is an articulate and diplomatic support agent who navigates sensitive situations with tact and composure. With his polished Italian accent and smooth, measured delivery, he turns difficult conversations into constructive, reassuring experiences for every customer.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "685",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "public_id": "837260aa-5d72-4cca-8fd0-87d9dda8afe6",
+      "quality": "mid"
+    },
+    "name": "Simone Barbieri",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Je suis Camille Dupont, spécialiste du service client, chaleureuse et attentive. À 30 ans, je parle d’une voix douce et rassurante, avec un léger accent français qui met naturellement à l’aise. Patiente et à l’écoute, j’explique les choses avec clarté et bienveillance, en prenant toujours le temps d’accompagner chaque personne avec soin.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "732",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "664ad08c-0970-4b57-8ef0-63091080b759",
+      "quality": "mid"
+    },
+    "name": "Camille Dupont",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bonjour, je suis Manon Petit, je travaille chez Kugel Audio et je suis là pour t’aider à faire passer ton service client au niveau supérieur.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "734",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "7f2e4e96-845d-4b49-a9cb-ac1cd1f6a32d",
+      "quality": "mid"
+    },
+    "name": "Manon Petit",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Julien Faure est un spécialiste du support client dynamique et proactif de 35 ans. Il s’exprime avec énergie et assurance, tout en gardant une approche structurée et professionnelle.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "735",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "153762a3-97f8-43bb-900c-faa4b7b51339",
+      "quality": "mid"
+    },
+    "name": "Julien Faure",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Nicolas Leroy est un agent de support de 38 ans, reconnu pour son approche conviviale et orientée vers les solutions. Il excelle dans l’art de simplifier les sujets complexes et de les rendre accessibles à tous.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "736",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "public_id": "c24f97dc-bcfa-487d-a223-2d9937f0dfdd",
+      "quality": "mid"
+    },
+    "name": "Nicolas Leroy",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Tereza Nováková je třicetiletá specialistka zákaznické podpory, která je známá svým vřelým a empatickým přístupem. Mluví klidným a přirozeně uklidňujícím tónem, který zákazníky okamžitě uklidní",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "737",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "public_id": "4156dc0e-fa5d-45dd-91e6-10009c2f4330",
+      "quality": "mid"
+    },
+    "name": "Tereza Nováková",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Veronika Benešová je osmadvacetiletá specialistka zákaznické podpory, která vyniká svou kreativitou a pohotovostí. Ke každému klientovi přistupuje individuálně a dokáže i běžnou konverzaci proměnit v příjemný a zapamatovatelný zážitek",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "739",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "public_id": "0ba6645d-a460-470a-9b33-ea88a1f1bfbb",
+      "quality": "mid"
+    },
+    "name": "Veronika Benešová",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Tomáš Horák je osmatřicetiletý specialista zákaznické podpory, který je známý svým přátelským a na řešení zaměřeným přístupem. Složitá témata dokáže vysvětlit jednoduše a srozumitelně, takže se zákazníci nikdy necítí ztracení",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "740",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "public_id": "e6e904c7-f894-440e-bbb8-3080ee1b9a68",
+      "quality": "mid"
+    },
+    "name": "Tomáš Horák",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Jakub Dvořák je zkušený vedoucí týmu zákaznické podpory s klidným a sebevědomým vystupováním. Působí profesionálně, ale zároveň lidsky a přístupně",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "741",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "public_id": "0ced3082-a5a9-4871-88b0-f17cb34785b4",
+      "quality": "mid"
+    },
+    "name": "Jakub Dvořák",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Dominika Nowak to 34-letnia specjalistka ds. obsługi klienta, znana ze swojej empatii i wyjątkowej umiejętności wyczuwania prawdziwych potrzeb klientów",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "742",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "public_id": "14dd280f-f97b-4e01-b520-33c8d7c3a578",
+      "quality": "mid"
+    },
+    "name": "Dominika Nowak",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Katarzyna Lewandowska to 33-letnia specjalistka ds. obsługi klienta premium, która wyróżnia się pewnością siebie i doskonałą elokwencją.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "743",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "public_id": "0412ef75-5b8b-4b45-95e0-a00fb154e108",
+      "quality": "mid"
+    },
+    "name": "Katarzyna Lewandowska",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Dawid Kwiatkowski to 28-letni specjalista ds. obsługi klienta, który wyróżnia się szybkim myśleniem i dużą elastycznością. W naturalny i swobodny sposób prowadzi rozmowy, dzięki czemu klienci czują się komfortowo i pewnie.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "744",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "public_id": "daaae57c-dd5e-4d91-8990-e4840e023fe8",
+      "quality": "mid"
+    },
+    "name": "Dawid Kwiatkowski",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Krzysztof Wiśniewski to 44-letni, doświadczony lider zespołu obsługi klienta, który łączy profesjonalizm z naturalną otwartością. Jego spokojny, pewny siebie sposób mówienia budzi zaufanie i poczucie bezpieczeństwa.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "745",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "public_id": "e8b186f6-9fa7-426f-8d68-6688f860333f",
+      "quality": "mid"
+    },
+    "name": "Krzysztof Wiśniewski",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Andrej Potočnik is a 38-year-old support agent known for his friendly, solution-oriented approach. He has a talent for explaining complex issues in a simple, clear way, making it easy for customers to understand.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "847",
+    "languages": [
+      "sl-SI"
+    ],
+    "meta": {
+      "public_id": "ceea29c4-659e-42d5-af95-810438e6d657",
+      "quality": "mid"
+    },
+    "name": "Andrej Potočnik",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Matej Kovač is a 44-year-old support team lead who comes across as experienced, confident, and calm. He is professional but approachable, with a steady presence that builds trust. Matej is particularly skilled at de-escalating tense situations and guiding customers toward clear, practical solutions.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "848",
+    "languages": [
+      "sl-SI"
+    ],
+    "meta": {
+      "public_id": "abdc80d0-dec6-44c4-b620-0a34ba7ed3f8",
+      "quality": "mid"
+    },
+    "name": "Matej Kovač",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Ana Novak is a 30-year-old customer support specialist known for her warm and empathetic communication style. She speaks clearly and patiently, explaining things in a thorough yet calming way. Her natural warmth and attentive approach help callers feel comfortable and understood.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "849",
+    "languages": [
+      "sl-SI"
+    ],
+    "meta": {
+      "public_id": "6216d7a3-c76b-426d-b8d3-6252356168ed",
+      "quality": "mid"
+    },
+    "name": "Ana Novak",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Katja Breznik is a 34-year-old support specialist known for her empathy and perceptiveness. She quickly understands what customers truly need and responds with warmth and clarity. Her calm, attentive communication style helps people feel heard while guiding them toward the right solution.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "850",
+    "languages": [
+      "sl-SI"
+    ],
+    "meta": {
+      "public_id": "3c51b88a-5455-457c-aa9c-a9d0f49c6e51",
+      "quality": "mid"
+    },
+    "name": "Katja Breznik",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Daan Mulder is a 37-year-old support agent known for his friendly and solution-oriented approach. He explains complex issues in a simple and clear way, making customers feel comfortable and understood.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "910",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "public_id": "da0bae1f-07d0-4f85-aff9-2e7cf8a808f9",
+      "quality": "mid"
+    },
+    "name": "Daan Mulder",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "I’m Lars de Vries, an experienced support team lead known for staying calm and professional in any situation. I speak with a steady, warm tone that helps de-escalate tension and build trust quickly.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "911",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "public_id": "1d8957d5-1fa7-4770-996f-8a4fdf997851",
+      "quality": "mid"
+    },
+    "name": "Lars de Vries",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "I’m Rosa van den Berg, a calm and methodical technical support specialist who makes complex issues easy to understand. I communicate clearly and patiently, breaking problems down into simple, structured steps. ",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "912",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "public_id": "4cd0d0f9-7b8c-48df-9f07-4ef9acf80900",
+      "quality": "mid"
+    },
+    "name": "Rosa van den Berg",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Hanna Kuiper is a veteran support team supervisor with a kind yet authoritative presence. Her calm, confident communication reflects years of experience and helps build trust quickly.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "913",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "public_id": "0bd258de-b3c6-47db-bf48-5d664fb58f6f",
+      "quality": "high"
+    },
+    "name": "Hanna Kuiper",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Tim is an 30 year old native German professional calm customer support expert.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "972",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "0e021f3f-e5cd-4376-879a-8fc125e62e2b",
+      "quality": "high"
+    },
+    "name": "Tim Schröder",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Anna is a 31 year old German native customer support expert that can handle every situation.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "973",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "3103f24c-f5d4-4283-8cc2-2a40d1f23762",
+      "quality": "high"
+    },
+    "name": "Anna Martin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Lea is a native German 25 years old customer support expert for your voicebot",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "978",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "27f2a987-f10a-4f7e-bc47-c1fb268ad104",
+      "quality": "high"
+    },
+    "name": "Lea Huber",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sara is a 29 years old native German speaker that is your customer support manager",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "979",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "e7a269f1-1bd6-4f97-a33c-29b25657393d",
+      "quality": "high"
+    },
+    "name": "Sara Wagner",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  },
+  {
+    "age": "middle_age",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Marius is a 35 years old German customer success manager that is here to help you.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "980",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "public_id": "9929fab3-d3cd-4dab-adb4-012e2c71399d",
+      "quality": "high"
+    },
+    "name": "Marius Behnke",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "conversational"
+    ]
+  }
+]

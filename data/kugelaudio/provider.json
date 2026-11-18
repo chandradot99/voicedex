@@ -1,5 +1,8 @@
 {
   "access": "self_serve",
+  "api_urls": [
+    "https://api.kugelaudio.com/v1/voices"
+  ],
   "description": "KugelAudio GmbH is a Berlin, Germany voice-AI company that builds and hosts its models in Europe. It sells a multilingual text-to-speech API (Kugel 3 family, 39 languages, zero-shot voice cloning), Kugel Ear speech-to-text for nine European languages, the Kugel Fluid speech-to-speech voice-agent model (beta) and Clarity speech enhancement.",
   "docs_urls": [
     "https://docs.kugelaudio.com/models.md",
@@ -23,7 +26,14 @@
     "eu",
     "us"
   ],
-  "source": "docs",
+  "source": "mixed",
   "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://api.kugelaudio.com/v1/voices"
+    ]
+  },
   "website": "https://kugelaudio.com"
 }
