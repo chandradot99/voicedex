@@ -86,8 +86,8 @@
     "name": "Kitten-ASR Pro",
     "pricing": {
       "as_of": "2026-11-18",
-      "notes": "Pro: $0.10 per audio hour ($14.99/month incl. $24.99 usage); Free plan: 30 free minutes then $1 per audio hour. Enterprise custom.",
-      "price_usd": 0.1,
+      "notes": "$1 per audio hour pay-as-you-go (Free plan, after 30 free minutes). Pro plan ($14.99/month, includes $24.99 usage) lists $0.10 per audio hour; see variants. Enterprise custom.",
+      "price_usd": 1.0,
       "source_url": "https://kittenml.com/#pricing",
       "unit": "hour",
       "variants": [
@@ -232,8 +232,8 @@
     "name": "Kitten TTS 2",
     "pricing": {
       "as_of": "2026-11-18",
-      "notes": "Listed as $0.65 per 1M characters on Pro (limited-time offer, was $15; $14.99/month or $179.88/year, includes $24.99 usage/month); Free plan: 30 free minutes then $15 per 1M characters. Enterprise custom.",
-      "price_usd": 6.5e-07,
+      "notes": "$15 per 1M characters pay-as-you-go (Free plan, after 30 free minutes). Pro plan ($14.99/month or $179.88/year, includes $24.99 usage/month) lists $0.65 per 1M characters as a limited-time offer (was $15); see variants. Enterprise custom.",
+      "price_usd": 1.5e-05,
       "source_url": "https://kittenml.com/#pricing",
       "unit": "character",
       "variants": [
