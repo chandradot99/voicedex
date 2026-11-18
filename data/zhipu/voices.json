@@ -1,0 +1,156 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-tts"
+    ],
+    "description": "锤锤.",
+    "first_seen": "2026-11-18",
+    "id": "chuichui",
+    "name": "chuichui",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-tts"
+    ],
+    "description": "Voice from the 动动动物圈 (Dongdong animal circle) set.",
+    "first_seen": "2026-11-18",
+    "id": "douji",
+    "name": "douji",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-realtime-air",
+      "glm-realtime-flash"
+    ],
+    "description": "Young girl voice (GLM-Realtime).",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "female-shaonv",
+    "name": "female-shaonv",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-realtime-air",
+      "glm-realtime-flash"
+    ],
+    "description": "Sweet female voice (GLM-Realtime).",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "female-tianmei",
+    "name": "female-tianmei",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-tts"
+    ],
+    "description": "Voice from the 动动动物圈 (Dongdong animal circle) set.",
+    "first_seen": "2026-11-18",
+    "id": "jam",
+    "name": "jam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-tts"
+    ],
+    "description": "Voice from the 动动动物圈 (Dongdong animal circle) set.",
+    "first_seen": "2026-11-18",
+    "id": "kazi",
+    "name": "kazi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-realtime-air",
+      "glm-realtime-flash"
+    ],
+    "description": "Cute young girl voice (GLM-Realtime).",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lovely_girl",
+    "name": "lovely_girl",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-tts"
+    ],
+    "description": "Voice from the 动动动物圈 (Dongdong animal circle) set.",
+    "first_seen": "2026-11-18",
+    "id": "luodo",
+    "name": "luodo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-realtime-air",
+      "glm-realtime-flash"
+    ],
+    "description": "Young male college-student voice (GLM-Realtime).",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "male-qn-daxuesheng",
+    "name": "male-qn-daxuesheng",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-realtime-air",
+      "glm-realtime-flash"
+    ],
+    "description": "Elite young male voice (GLM-Realtime).",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "male-qn-jingying",
+    "name": "male-qn-jingying",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-realtime-air",
+      "glm-realtime-flash",
+      "glm-tts"
+    ],
+    "description": "Default voice (彤彤); general female voice in GLM-Realtime.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "tongtong",
+    "meta": {
+      "default_for": [
+        "glm-tts",
+        "GLM-Realtime"
+      ]
+    },
+    "name": "tongtong",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "glm-realtime-air",
+      "glm-realtime-flash",
+      "glm-tts"
+    ],
+    "description": "小陈; general male voice in GLM-Realtime.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "xiaochen",
+    "name": "xiaochen",
+    "updated_at": "2026-11-18"
+  }
+]

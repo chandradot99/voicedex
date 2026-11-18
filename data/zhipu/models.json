@@ -1,0 +1,276 @@
+[
+  {
+    "description": "End-to-end Chinese-English voice model called via chat completions; adjusts emotion, intonation, speed and dialect on instruction.",
+    "first_seen": "2026-11-18",
+    "id": "glm-4-voice",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "api": "chat completions (audio + text in, audio + text out)",
+      "context_tokens": 8192,
+      "max_output_tokens": 4096,
+      "platform": "bigmodel.cn",
+      "weights": "LLM part published as zai-org/glm-4-voice-9b on Hugging Face (license not stated on the model card)"
+    },
+    "name": "GLM-4-Voice",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "¥80 per 1M tokens (bigmodel.cn).",
+      "price": 8e-05,
+      "source_url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "unit": "token"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.z.ai/guides/audio/glm-asr-2512",
+        "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+        "https://docs.z.ai/guides/overview/pricing",
+        "https://docs.bigmodel.cn/cn/guide/start/pricing",
+        "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+        "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+      ]
+    },
+    "streaming": false,
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "Real-time audio and video call model (32B) over WebSocket with function calling and built-in web search.",
+    "first_seen": "2026-11-18",
+    "id": "glm-realtime-air",
+    "interfaces": [
+      "websocket"
+    ],
+    "meta": {
+      "context": "~8K tokens audio calls, 32K video calls",
+      "features": "server/client VAD, interruption, function calling, web search, video input (base64 JPG frames)",
+      "input_audio": "wav or pcm (16 kHz default, 24 kHz option), mono 16-bit",
+      "output_audio": "pcm 24 kHz mono 16-bit",
+      "parameters": "32B",
+      "platform": "bigmodel.cn"
+    },
+    "name": "GLM-Realtime-Air",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "Audio ¥0.3/minute, video ¥2.1/minute (bigmodel.cn).",
+      "price": 0.3,
+      "source_url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "video call",
+          "price": 2.1,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.z.ai/guides/audio/glm-asr-2512",
+        "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+        "https://docs.z.ai/guides/overview/pricing",
+        "https://docs.bigmodel.cn/cn/guide/start/pricing",
+        "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+        "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+      ]
+    },
+    "sample_rates_hz": [
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "Real-time audio and video call model (9B) over WebSocket with function calling and built-in web search.",
+    "first_seen": "2026-11-18",
+    "id": "glm-realtime-flash",
+    "interfaces": [
+      "websocket"
+    ],
+    "meta": {
+      "context": "~8K tokens audio calls, 32K video calls",
+      "features": "server/client VAD, interruption, function calling, web search, video input (base64 JPG frames)",
+      "input_audio": "wav or pcm (16 kHz default, 24 kHz option), mono 16-bit",
+      "output_audio": "pcm 24 kHz mono 16-bit",
+      "parameters": "9B",
+      "platform": "bigmodel.cn"
+    },
+    "name": "GLM-Realtime-Flash",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "Audio ¥0.18/minute, video ¥1.2/minute (bigmodel.cn).",
+      "price": 0.18,
+      "source_url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "video call",
+          "price": 1.2,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.z.ai/guides/audio/glm-asr-2512",
+        "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+        "https://docs.z.ai/guides/overview/pricing",
+        "https://docs.bigmodel.cn/cn/guide/start/pricing",
+        "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+        "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+      ]
+    },
+    "sample_rates_hz": [
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Speech recognition model for Mandarin and Chinese dialects, accented English and dozens of other languages, with a custom hotword dictionary.",
+    "first_seen": "2026-11-18",
+    "id": "glm-asr-2512",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "max_audio_seconds": 30,
+    "meta": {
+      "endpoints": [
+        "https://api.z.ai/api/paas/v4/audio/transcriptions",
+        "https://open.bigmodel.cn/api/paas/v4/audio/transcriptions"
+      ],
+      "hotwords": "up to ~100 terms recommended",
+      "languages_listed": "Mandarin plus Sichuanese, Cantonese, Min Nan and Wu dialects; English (American, British and other accents); 'dozens' of others incl. French, German, Japanese, Korean, Spanish, Arabic",
+      "max_file_mb": 25,
+      "prompt": "previous transcript as context (<8000 chars recommended)",
+      "stream_output": "stream=true returns transcript deltas over SSE for an uploaded file"
+    },
+    "name": "GLM-ASR-2512",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Z.ai: $0.03 per 1M tokens (Z.ai states this is approximately $0.0024/minute). bigmodel.cn (mainland): input ¥16 per 1M tokens (~¥0.0002/second), output not charged.",
+      "price_usd": 3e-08,
+      "source_url": "https://docs.z.ai/guides/overview/pricing",
+      "unit": "token"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.z.ai/guides/audio/glm-asr-2512",
+        "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+        "https://docs.z.ai/guides/overview/pricing",
+        "https://docs.bigmodel.cn/cn/guide/start/pricing",
+        "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+        "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "voice_cloning"
+    ],
+    "description": "Text-to-speech model with system voices and cloned voices, offered on the mainland bigmodel.cn platform.",
+    "first_seen": "2026-11-18",
+    "id": "glm-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "max_text_chars": 1024,
+    "meta": {
+      "platform": "bigmodel.cn",
+      "speed_range": "0.5-2",
+      "stream": "SSE chunks, pcm only when streaming",
+      "voice_clone_endpoint": "POST /paas/v4/voice/clone (model glm-tts-clone; sample <=10 MB, 3-30 s recommended)",
+      "volume_range": "(0, 10]",
+      "watermark": "explicit + implicit watermark; can be disabled after account-level opt-out"
+    },
+    "name": "GLM-TTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "CNY",
+      "notes": "¥2 per 10,000 characters; voice cloning (glm-tts-clone) ¥6 per request. bigmodel.cn only — not listed on Z.ai international pricing.",
+      "price": 0.0002,
+      "source_url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "voice clone creation (glm-tts-clone)",
+          "price": 6.0,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.z.ai/guides/audio/glm-asr-2512",
+        "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+        "https://docs.z.ai/guides/overview/pricing",
+        "https://docs.bigmodel.cn/cn/guide/start/pricing",
+        "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+        "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

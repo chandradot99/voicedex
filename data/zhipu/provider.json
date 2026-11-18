@@ -1,0 +1,40 @@
+{
+  "access": "self_serve",
+  "description": "Zhipu AI is a Chinese AI company that develops the GLM model family and sells API access internationally as Z.ai (USD) and in mainland China through the bigmodel.cn open platform (CNY). Its speech offering is the GLM-ASR speech recognition model on both platforms; GLM-TTS with voice cloning, the GLM-Realtime audio/video call models and the GLM-4-Voice end-to-end voice model are offered on bigmodel.cn. Its speech models focus on Mandarin, Chinese dialects and English.",
+  "docs_urls": [
+    "https://docs.z.ai/guides/audio/glm-asr-2512",
+    "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+    "https://docs.z.ai/guides/overview/pricing",
+    "https://docs.bigmodel.cn/cn/guide/start/pricing",
+    "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+    "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+    "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+    "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+  ],
+  "headquarters": "CN",
+  "id": "zhipu",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+    "docs": "https://docs.z.ai",
+    "pricing": "https://docs.z.ai/guides/overview/pricing"
+  },
+  "name": "Zhipu AI (Z.ai)",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.z.ai/guides/audio/glm-asr-2512",
+      "https://docs.z.ai/api-reference/audio/audio-transcriptions",
+      "https://docs.z.ai/guides/overview/pricing",
+      "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+      "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+      "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+      "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+    ]
+  },
+  "website": "https://z.ai"
+}
