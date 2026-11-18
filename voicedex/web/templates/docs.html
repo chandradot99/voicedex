@@ -44,6 +44,12 @@
     .docs-page .jump kbd { display: none; }   /* here ⌘K opens the reference's own search */
     #scalar-docs:not(:empty) + .docs-loading { display: none; }   /* placeholder only until the reference mounts */
     #scalar-docs { --scalar-custom-header-height: 57px; }
+    /* Wide screens: the reference sits in a centred 1600px column instead of running edge to edge. Wider than
+       the header's 1240px on purpose: endpoint pages need room for parameters + code side by side, and the header
+       stays identical on every page. */
+    #scalar-docs .scalar-api-reference { max-width: 1600px !important; min-width: 0 !important; margin-inline: auto !important; }
+    /* Intro prose: a readable line length (~80 characters); code blocks keep the full width. */
+    #scalar-docs .introduction-section .markdown > :is(p, ul, ol, h2, h3) { max-width: 76ch; }
   </style>
 </head>
 <body class="docs-page">
