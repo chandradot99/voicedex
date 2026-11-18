@@ -1,0 +1,20 @@
+{
+  "access": "regional",
+  "description": "AI for Thai is the Thai AI service platform run by NECTEC (National Electronics and Computer Technology Center, part of NSTDA) in Pathum Thani, Thailand. It exposes NECTEC's own Thai-language AI as APIs, including Partii speech recognition and Vaja text-to-speech, free with rate limits for study and testing; commercial use is arranged with NECTEC. Registration is required to obtain an API key.",
+  "docs_urls": [
+    "https://aiforthai.in.th/en/services/conversation/text-to-speech",
+    "https://github.com/AIforThai/aiforthai",
+    "https://vaja.openservice.in.th/"
+  ],
+  "headquarters": "TH",
+  "id": "aiforthai",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://aiforthai.in.th/user/api-service-list/language",
+    "docs": "https://github.com/AIforThai/aiforthai"
+  },
+  "name": "AI for Thai (NECTEC)",
+  "source": "docs",
+  "type": "both",
+  "website": "https://aiforthai.in.th"
+}

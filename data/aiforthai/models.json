@@ -1,0 +1,86 @@
+[
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "description": "NECTEC's Thai speech recognition service, offered as an AI for Thai API for transcribing Thai speech from audio files.",
+    "first_seen": "2026-11-18",
+    "id": "partii",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "alt_endpoint_partii5": "https://api.aiforthai.in.th/partii5-poc",
+      "auth": "Apikey header (key issued after AI for Thai registration)",
+      "developed_by": "NECTEC Speech & Language Understanding team",
+      "endpoint": "https://api.aiforthai.in.th/partii-webapi",
+      "live_transcribe_app": "https://partii.aiforthai.in.th/ (socket.io live mode, 8000/16000 Hz, API key required; not documented as a public streaming API)",
+      "pricing_note": "Free, rate-limited use for study/testing only (no commercial use); commercial use by arrangement via business@nectec.or.th (AI for Thai FAQ).",
+      "sdk": "https://github.com/AIforThai/aiforthai (aift.speech.stt.partii4 / partii5)"
+    },
+    "name": "Partii",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aiforthai.in.th/en/services/conversation/text-to-speech",
+        "https://github.com/AIforThai/aiforthai",
+        "https://vaja.openservice.in.th/"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "wav"
+    ],
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "Version 9.0 of NECTEC's Vaja Thai text-to-speech engine, available through the AI for Thai API with optional talking-avatar output.",
+    "first_seen": "2026-11-18",
+    "id": "vaja9",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "auth": "Apikey header (key issued after AI for Thai registration)",
+      "developed_by": "NECTEC Speech & Language Understanding team",
+      "endpoint": "https://api.aiforthai.in.th/vaja9/synth_audiovisual",
+      "pricing_note": "Free, rate-limited use for study/testing only (no commercial use); commercial use by arrangement via business@nectec.or.th (AI for Thai FAQ). The service catalog marks Text to Speech as free + premium; no per-unit price is published.",
+      "request_params": [
+        "input_text",
+        "speaker",
+        "phrase_break",
+        "audiovisual"
+      ],
+      "response": "JSON with wav_url to download the synthesized WAV",
+      "sdk": "https://github.com/AIforThai/aiforthai (aift.speech.tts)",
+      "speakers": "integer speaker id (SDK: 0 = male, 1 = female; demo also offers boy and girl voices)",
+      "ssml_source": "https://vaja.openservice.in.th/"
+    },
+    "name": "Vaja 9",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aiforthai.in.th/en/services/conversation/text-to-speech",
+        "https://github.com/AIforThai/aiforthai",
+        "https://vaja.openservice.in.th/"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
