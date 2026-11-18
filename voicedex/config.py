@@ -58,6 +58,18 @@ class Settings(BaseSettings):
     dashscope_api_key: str = ""        # Alibaba Cloud Model Studio — international (Singapore) key
     dashscope_workspace_id: str = ""   # Model Studio workspace id (models-list endpoint host)
     async_api_key: str = ""
+    # Expansion 2026-11: keys that unlock key-gated voice/model lists (docs-only until set)
+    coefont_access_key: str = ""
+    coefont_access_secret: str = ""
+    kugelaudio_api_key: str = ""
+    munsit_api_key: str = ""
+    zyphra_api_key: str = ""
+    respeecher_api_key: str = ""
+    tilde_api_key: str = ""
+    bhashini_user_id: str = ""
+    bhashini_ulca_api_key: str = ""
+    volcengine_access_key: str = ""
+    volcengine_secret_key: str = ""
     ibm_tts_url: str = "https://api.us-south.text-to-speech.watson.cloud.ibm.com"
     ibm_stt_url: str = "https://api.us-south.speech-to-text.watson.cloud.ibm.com"
 
