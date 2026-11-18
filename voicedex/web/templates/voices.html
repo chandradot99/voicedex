@@ -3,7 +3,7 @@
 {% block content %}
 <section class="wrap page-head">
   <h1>{{ "{:,}".format(total) }} voice{{ 's' if total != 1 }}</h1>
-  <p class="lede">Stock voices from every text-to-speech provider. Press play where the provider publishes a sample.<span class="hide-sm"> <kbd>J</kbd> <kbd>K</kbd> move between samples, <kbd>Space</kbd> pauses.</span></p>
+  <p class="lede">Stock voices from every text-to-speech provider. Press play where the provider publishes a sample. {{ providers|length }} of {{ n_live }} providers publish a stock voice list; the rest are speech-to-text only, open weights you run yourself, or keep voices behind an account.<span class="hide-sm"> <kbd>J</kbd> <kbd>K</kbd> move between samples, <kbd>Space</kbd> pauses.</span></p>
 </section>
 
 <section class="wrap">
@@ -13,9 +13,9 @@
     <form class="filters" method="get" action="/voices">
       {% if f.model %}<input type="hidden" name="model" value="{{ f.model }}">{% endif %}
       <label class="field">Provider
-        <select name="provider">
+        <select name="provider" data-searchable="provider">
           <option value="">Any</option>
-          {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }}</option>{% endfor %}
+          {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ "{:,}".format(s.voices) }})</option>{% endfor %}
         </select>
       </label>
       <label class="field">Language

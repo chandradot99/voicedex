@@ -227,6 +227,7 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
         "qs": lambda **changes: _qs({**f, "page": str(page) if page > 1 else ""}, **{k: (str(v) if v else v) for k, v in changes.items()}),
         "languages": views.language_options(catalog),
         "providers": [s for s in views.provider_summaries(catalog) if s.voices],
+        "n_live": sum(1 for pd in catalog.providers.values() if pd.provider.status == "active"),
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
     })
 

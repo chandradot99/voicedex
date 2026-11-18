@@ -29,7 +29,7 @@
         </select>
       </label>
       <label class="field">Provider
-        <select name="provider">
+        <select name="provider" data-searchable="provider">
           <option value="">Any</option>
           {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }}</option>{% endfor %}
         </select>

@@ -356,7 +356,7 @@ addEventListener("pageswap", (e) => {
   if (link) link.querySelector("code").style.viewTransitionName = "model-title";
 });
 
-// ── Searchable picker: long <select data-searchable> (languages) gets a type-to-filter combobox.
+// ── Searchable picker: long <select data-searchable="noun"> (languages, providers) gets a type-to-filter combobox.
 // The real <select> stays in the form (hidden) and still drives submission; phones keep the native picker.
 (() => {
   if (!matchMedia("(pointer: fine)").matches) return;
@@ -364,6 +364,7 @@ addEventListener("pageswap", (e) => {
   $$("select[data-searchable]").forEach((select) => {
     const options = [...select.options].map((o) => ({ value: o.value, text: o.text }));
     const anyText = options.find((o) => o.value === "")?.text || "Any";
+    const noun = select.dataset.searchable || "language";
     const id = `combo-${++uid}`;
     const wrap = document.createElement("span");
     wrap.className = "combo";
@@ -390,7 +391,7 @@ addEventListener("pageswap", (e) => {
             const label = filtering ? esc(o.text).replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "i"), "<mark>$1</mark>") : esc(o.text);
             return `<li role="option" id="${id}-${i}" data-i="${i}" aria-selected="${i === active}" class="${o.value === select.value ? "current" : ""}">${label}</li>`;
           }).join("")
-        : `<li class="combo-empty">No language matches “${esc(input.value.trim())}”</li>`;
+        : `<li class="combo-empty">No ${esc(noun)} matches “${esc(input.value.trim())}”</li>`;
       input.setAttribute("aria-activedescendant", shown.length ? `${id}-${active}` : "");
       list.querySelector('[aria-selected="true"]')?.scrollIntoView({ block: "nearest" });
     };
