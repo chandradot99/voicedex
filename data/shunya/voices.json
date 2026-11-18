@@ -1,0 +1,1980 @@
+[
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Amjad",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "sd"
+    },
+    "name": "Amjad",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ananya",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "mr"
+    },
+    "name": "Ananya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anjana",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "as"
+    },
+    "name": "Anjana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arjun",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "bn"
+    },
+    "name": "Arjun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Bijay",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "or"
+    },
+    "name": "Bijay",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Bikash",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ne"
+    },
+    "name": "Bikash",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Bimal",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "as"
+    },
+    "name": "Bimal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Chandu",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "sat"
+    },
+    "name": "Chandu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Daimalu",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "brx"
+    },
+    "name": "Daimalu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Deepa",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ml"
+    },
+    "name": "Deepa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Farooq",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ks"
+    },
+    "name": "Farooq",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Fatima",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ur"
+    },
+    "name": "Fatima",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gayatri",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "sa"
+    },
+    "name": "Gayatri",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Gurpreet",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "pa"
+    },
+    "name": "Gurpreet",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Habba",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ks"
+    },
+    "name": "Habba",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hasina",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "brx"
+    },
+    "name": "Hasina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ibemhal",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "mni"
+    },
+    "name": "Ibemhal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kavita",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "sd"
+    },
+    "name": "Kavita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kiran",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "kn"
+    },
+    "name": "Kiran",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Krishnan",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ml"
+    },
+    "name": "Krishnan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lakshmi",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "te"
+    },
+    "name": "Lakshmi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Meera",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "mai"
+    },
+    "name": "Meera",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mohan",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "gom"
+    },
+    "name": "Mohan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Murugan",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ta"
+    },
+    "name": "Murugan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Neelam",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "doi"
+    },
+    "name": "Neelam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nisha",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "en"
+    },
+    "name": "Nisha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Pooja",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "gu"
+    },
+    "name": "Pooja",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Priyanka",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "bn"
+    },
+    "name": "Priyanka",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rajesh",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "hi"
+    },
+    "name": "Rajesh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rakesh",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "gu"
+    },
+    "name": "Rakesh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Roshni",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "sat"
+    },
+    "name": "Roshni",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Salman",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ur"
+    },
+    "name": "Salman",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sapana",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ne"
+    },
+    "name": "Sapana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sarita",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "gom"
+    },
+    "name": "Sarita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Shreya",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "kn"
+    },
+    "name": "Shreya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Siddharth",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "mr"
+    },
+    "name": "Siddharth",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Simran",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "pa"
+    },
+    "name": "Simran",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sujata",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "or"
+    },
+    "name": "Sujata",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sunita",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "hi"
+    },
+    "name": "Sunita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Suresh",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "mai"
+    },
+    "name": "Suresh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Thangam",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "ta"
+    },
+    "name": "Thangam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tomba",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "mni"
+    },
+    "name": "Tomba",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Varun",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "en"
+    },
+    "name": "Varun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vedant",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "sa"
+    },
+    "name": "Vedant",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vishal",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "doi"
+    },
+    "name": "Vishal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "radiance-indic"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vishnu",
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "meta": {
+      "cross_lingual": "Any voice can speak any supported Indic language; the text controls the language.",
+      "native_language": "te"
+    },
+    "name": "Vishnu",
+    "updated_at": "2026-11-18"
+  }
+]

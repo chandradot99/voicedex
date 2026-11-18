@@ -1,0 +1,581 @@
+[
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "word_timestamps"
+    ],
+    "description": "ASR for code-switched Indic-English speech (Hinglish, Tanglish, etc.) that restores English words to Latin script.",
+    "first_seen": "2026-11-18",
+    "id": "horizon-codeswitch",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi",
+      "bn",
+      "te",
+      "mr",
+      "kn",
+      "ta",
+      "ml",
+      "gu",
+      "pa",
+      "or",
+      "as",
+      "en",
+      "ur",
+      "ks",
+      "ne",
+      "sd",
+      "sa",
+      "mai",
+      "bho",
+      "mag",
+      "hne",
+      "raj",
+      "doi",
+      "kok",
+      "sat",
+      "brx",
+      "mni",
+      "grt",
+      "rwr",
+      "bgc",
+      "awa",
+      "bra",
+      "gbm",
+      "lmn",
+      "bhb",
+      "bgq",
+      "kfy",
+      "xnr",
+      "bfy",
+      "noe",
+      "rjs",
+      "mwr",
+      "mtr",
+      "wbr",
+      "hoj",
+      "gom",
+      "ahr",
+      "sgj",
+      "kru",
+      "unr",
+      "spv",
+      "kfr",
+      "tcy",
+      "kfa",
+      "sck"
+    ],
+    "meta": {
+      "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
+      "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
+      "language_note": "Docs: '55 Indic + English code-switch combinations'.",
+      "legacy_ids_note": "The earlier zero-* model ids still work.",
+      "streaming_default_sample_rate_hz": 16000,
+      "streaming_dtypes": [
+        "ulaw",
+        "alaw",
+        "int16",
+        "float32"
+      ]
+    },
+    "name": "Horizon Code-Switch",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Horizon Code-Switch: pay-as-you-go rate for batch transcription; realtime streaming rates on request. Indian customers are billed in INR (₹ figures on the pricing page are contractual for India).",
+      "price_usd": 0.005,
+      "source_url": "https://www.shunyalabs.ai/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "volume (prepaid)",
+          "price_usd": 0.0045,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+        "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+        "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+        "https://www.shunyalabs.ai/pricing",
+        "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+        "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+        "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "word_timestamps"
+    ],
+    "description": "Speech recognition for 55 Indian languages; Shunya's default for Indic content.",
+    "first_seen": "2026-11-18",
+    "id": "horizon-indic",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "hi",
+      "bn",
+      "te",
+      "mr",
+      "kn",
+      "ta",
+      "ml",
+      "gu",
+      "pa",
+      "or",
+      "as",
+      "en",
+      "ur",
+      "ks",
+      "ne",
+      "sd",
+      "sa",
+      "mai",
+      "bho",
+      "mag",
+      "hne",
+      "raj",
+      "doi",
+      "kok",
+      "sat",
+      "brx",
+      "mni",
+      "grt",
+      "rwr",
+      "bgc",
+      "awa",
+      "bra",
+      "gbm",
+      "lmn",
+      "bhb",
+      "bgq",
+      "kfy",
+      "xnr",
+      "bfy",
+      "noe",
+      "rjs",
+      "mwr",
+      "mtr",
+      "wbr",
+      "hoj",
+      "gom",
+      "ahr",
+      "sgj",
+      "kru",
+      "unr",
+      "spv",
+      "kfr",
+      "tcy",
+      "kfa",
+      "sck"
+    ],
+    "meta": {
+      "default_note": "Docs: 'The default for Indian languages'; also the default `model` in the streaming init frame.",
+      "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
+      "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
+      "language_note": "55 Indian languages listed by name on the Supported languages page; codes mapped to ISO 639 here. Several are dialects/regional languages (e.g. Ahirani, Surgujia, Sadri).",
+      "legacy_ids_note": "The earlier zero-* model ids still work.",
+      "streaming_default_sample_rate_hz": 16000,
+      "streaming_dtypes": [
+        "ulaw",
+        "alaw",
+        "int16",
+        "float32"
+      ]
+    },
+    "name": "Horizon Indic",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Horizon Indic: pay-as-you-go rate for batch transcription; realtime streaming rates on request. Indian customers are billed in INR (₹ figures on the pricing page are contractual for India).",
+      "price_usd": 0.0045,
+      "source_url": "https://www.shunyalabs.ai/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "volume (prepaid)",
+          "price_usd": 0.004,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+        "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+        "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+        "https://www.shunyalabs.ai/pricing",
+        "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+        "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+        "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "word_timestamps"
+    ],
+    "description": "English clinical ASR that auto-applies medical terminology correction; the model cleared for PHI under Shunya's BAA.",
+    "first_seen": "2026-11-18",
+    "id": "horizon-medical",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
+      "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
+      "legacy_ids_note": "The earlier zero-* model ids still work.",
+      "streaming_default_sample_rate_hz": 16000,
+      "streaming_dtypes": [
+        "ulaw",
+        "alaw",
+        "int16",
+        "float32"
+      ]
+    },
+    "name": "Horizon Medical",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Horizon Medical: pay-as-you-go rate for batch transcription; realtime streaming rates on request. Indian customers are billed in INR (₹ figures on the pricing page are contractual for India).",
+      "price_usd": 0.005,
+      "source_url": "https://www.shunyalabs.ai/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "volume (prepaid)",
+          "price_usd": 0.0045,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+        "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+        "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+        "https://www.shunyalabs.ai/pricing",
+        "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+        "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+        "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "profanity_filter",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "word_timestamps"
+    ],
+    "description": "Broad-coverage foundation ASR model for 204+ languages, strongest on English and European content, with language auto-detection.",
+    "first_seen": "2026-11-18",
+    "id": "horizon-universal",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "benchmark_model": "pingala-v1-universal",
+      "composite_wer_open_asr": 3.1,
+      "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
+      "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
+      "language_count": "204+",
+      "legacy_ids_note": "The earlier zero-* model ids still work.",
+      "open_weights_note": "Docs identify Horizon Universal as pingala-v1-universal on Hugging Face; the repo is gated (automatic approval after accepting the RAIL-M terms) and forbids redistribution and derivatives.",
+      "oriental_note": "Horizon Oriental (Japanese, Korean) is served through this model id.",
+      "streaming_default_sample_rate_hz": 16000,
+      "streaming_dtypes": [
+        "ulaw",
+        "alaw",
+        "int16",
+        "float32"
+      ]
+    },
+    "name": "Horizon Universal",
+    "open_weights": {
+      "license": "pingala-v1-universal-rail-m",
+      "url": "https://huggingface.co/shunyalabs/pingala-v1-universal"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Horizon Universal: pay-as-you-go rate for batch transcription; realtime streaming rates on request. Indian customers are billed in INR (₹ figures on the pricing page are contractual for India).",
+      "price_usd": 0.0039,
+      "source_url": "https://www.shunyalabs.ai/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "volume (prepaid)",
+          "price_usd": 0.0035,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+        "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+        "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+        "https://www.shunyalabs.ai/pricing",
+        "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+        "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+        "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Text-to-speech for 23 Indic languages plus English with 46 named voices, expression styles and voice cloning.",
+    "first_seen": "2026-11-18",
+    "id": "radiance-indic",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "as",
+      "bn",
+      "brx",
+      "doi",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ks",
+      "gom",
+      "mai",
+      "ml",
+      "mni",
+      "mr",
+      "ne",
+      "or",
+      "pa",
+      "sa",
+      "sat",
+      "sd",
+      "ta",
+      "te",
+      "ur"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "default_note": "Radiance models table: 'The default.'",
+      "expression_styles": "11 styles (e.g. Happy, Sad, News, Narrative, Conversational, Enthusiastic) prepended as tags to the text.",
+      "response_formats": [
+        "pcm",
+        "wav",
+        "mp3",
+        "ogg_opus",
+        "flac",
+        "mulaw",
+        "alaw"
+      ],
+      "sample_rate_note": "16 kHz for pcm/wav/mp3/ogg_opus/flac; mulaw and alaw at 8 kHz.",
+      "speed_range": [
+        0.25,
+        4.0
+      ],
+      "voice_cloning": "3-6 s reference audio (reference_wav + reference_text)."
+    },
+    "name": "Radiance Indic",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.0526 per 10K characters ($5.26 per 1M), pay-as-you-go; counted after text normalisation, SSML tags not counted. India billed in INR (₹5.00 per 10K characters).",
+      "price_usd": 5.26e-06,
+      "source_url": "https://www.shunyalabs.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "volume (prepaid)",
+          "price_usd": 4.74e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+        "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+        "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+        "https://www.shunyalabs.ai/pricing",
+        "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+        "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+        "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Text-to-speech for 11 East and Southeast Asian languages, including Japanese, Korean and Chinese.",
+    "first_seen": "2026-11-18",
+    "id": "radiance-oriental",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja",
+      "ko",
+      "zh",
+      "th",
+      "vi",
+      "si",
+      "mn",
+      "ms",
+      "lo",
+      "id",
+      "my"
+    ],
+    "meta": {
+      "language_source": "Language list from the Radiance Oriental product page (www.shunyalabs.ai/radiance/oriental-5jmj).",
+      "pricing_note": "Not listed on the pricing page."
+    },
+    "name": "Radiance Oriental",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+        "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+        "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+        "https://www.shunyalabs.ai/pricing",
+        "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+        "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+        "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Text-to-speech for 669 world languages beyond the Indic catalogue, voiced with a standard built-in speaker.",
+    "first_seen": "2026-11-18",
+    "id": "radiance-universal",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "language_count": 669,
+      "pricing_note": "Priced as 'Radiance' on the pricing page.",
+      "voice_note": "Named voices apply to the Indic catalogue; world languages use a standard built-in speaker."
+    },
+    "name": "Radiance Universal",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.0526 per 10K characters ($5.26 per 1M), pay-as-you-go; counted after text normalisation, SSML tags not counted. India billed in INR (₹5.00 per 10K characters).",
+      "price_usd": 5.26e-06,
+      "source_url": "https://www.shunyalabs.ai/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "volume (prepaid)",
+          "price_usd": 4.74e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+        "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+        "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+        "https://www.shunyalabs.ai/pricing",
+        "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+        "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+        "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

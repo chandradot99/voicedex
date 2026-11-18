@@ -1,0 +1,47 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "gdpr",
+    "hipaa"
+  ],
+  "description": "Shunya Labs (Shunya Research Labs Pvt Ltd) is an Indian voice-AI company with offices in Gurugram and a US office in Wilmington, Delaware. It sells Horizon speech-to-text (Indic, Universal, Code-Switch and Medical models), Radiance text-to-speech and the Resonance voice-agent platform through a pay-as-you-go API, with self-hosted and on-device deployment on Enterprise. Its focus is Indian languages and code-switched speech; the Horizon Universal model is published as gated open weights (pingala-v1-universal).",
+  "docs_urls": [
+    "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+    "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+    "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+    "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+    "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+    "https://www.shunyalabs.ai/pricing",
+    "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+    "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+    "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+  ],
+  "headquarters": "IN",
+  "id": "shunya",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://www.shunyalabs.ai/docs/api-reference-px82",
+    "docs": "https://www.shunyalabs.ai/docs",
+    "pricing": "https://www.shunyalabs.ai/pricing"
+  },
+  "name": "Shunya Labs",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+      "https://www.shunyalabs.ai/docs/horizon/overview-dp3f",
+      "https://www.shunyalabs.ai/docs/horizon/features-jsw1",
+      "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0",
+      "https://www.shunyalabs.ai/docs/get-started/supported-languages-vy4d",
+      "https://www.shunyalabs.ai/pricing",
+      "https://www.shunyalabs.ai/docs/radiance/overview-g7we",
+      "https://www.shunyalabs.ai/docs/radiance/voices-4sa1",
+      "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
+    ]
+  },
+  "website": "https://www.shunyalabs.ai"
+}
