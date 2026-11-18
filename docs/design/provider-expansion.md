@@ -160,3 +160,20 @@ model id. Feeds, in order: **DeepInfra** (`GET api.deepinfra.com/models/list`, p
 - Batch by wave, one commit per provider so each `git diff data/<id>` is reviewable.
 - Expected end state: ~36 → ~95 providers, with Arabic dialects, Urdu, Vietnamese, Thai, Uzbek, Yoruba/Hausa/Igbo, Luganda and Japanese/Korean
   specialists covered by native vendors, not only by hyperscalers.
+
+## Status — 2026-11-18 (branch `providers/expansion`)
+
+Done: §2 prerequisites (access, headquarters, commercial_use, retired-with-weights, HF open-weights syncer,
+apply_editorial); Wave 0 (Google Gemini Live + 3.5 Transcribe, Deepgram Flux, Azure MAI-Transcribe + Voice Live,
+Amazon Nova Sonic, Inworld/Ultravox); Waves 1–3 complete; Wave 4: Deepdub, Intron, Sestek, Huawei Cloud, Khaya,
+ReadSpeaker, Acapela, CereProc, Respeecher, Phonexia; Wave 5: 10 open-weights orgs + weights of Resemble/Hume/Coqui;
+retired records: Sber SaluteSpeech, Nijivoice, Replica, Symbl, Dubverse, Verbio. Editorial fields filled for every
+live provider. Catalog: 92 live + 13 retired providers, 684 active models, 14,766 voices.
+
+Dropped after verification (moved to watchlist): Vocapia (API docs behind a request form), Tilde (system ids need a
+key: `GET /asr/systems`, `/tts/systems` — add an API syncer once a key exists), CPqD (docs return 401; on-prem only),
+Intella (no public docs), aiOla (Jargonic API waitlist-only; console domain gone).
+
+Upgrade candidates (public keyless list endpoints found during extraction): Bland `GET api.bland.ai/v2/models`,
+Zyphra `GET api.zyphracloud.com/api/v1/models` (with prices), Sestek `GET <region>/v1/speech/dictation/models`.
+Key-gated voice lists that would add voices: CoeFont, KugelAudio, Munsit, Zyphra, Respeecher, Bhashini pipelines.
