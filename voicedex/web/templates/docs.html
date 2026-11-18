@@ -333,7 +333,7 @@
           --scalar-border-color: var(--rule-2) !important;
         }
         .scalar-client.scalar-app-layout {
-          background: var(--panel) !important; border: 1px solid var(--control) !important; border-radius: 2px; overflow: hidden;
+          background: var(--panel) !important; border: 1px solid var(--control) !important; border-radius: 2px !important; overflow: hidden;
           box-shadow: 0 40px 140px -20px var(--shadow) !important;
         }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
@@ -399,9 +399,29 @@
            (visible joints), so use the equivalent opaque colour. */
         .scalar-sidebar-indent-border { background: var(--rule) !important; width: 1px !important; }
         /* API client: larger section headings (Cookies, Headers, Query Parameters, Body…) and panel titles. */
+        /* Datasheet rules for the client: quiet 13px/500 section labels, mono data, 2px corners, no pills,
+           no colours outside the palette (amber = interaction, coral = errors). */
         .scalar-client h3,
-        .response-section-content button.box-content.max-h-8 { font-size: 15.5px !important; font-weight: 600 !important; line-height: 22px !important; }
-        .scalar-client .request-response-header { font-size: 15px !important; font-weight: 600 !important; }
+        .response-section-content button.box-content.max-h-8 { font-size: 13px !important; font-weight: 500 !important; line-height: 20px !important; color: var(--ink) !important; }
+        .scalar-client .request-response-header { font-size: 13px !important; font-weight: 500 !important; }
+        .scalar-client .request-response-header h2 { font-size: 13px !important; font-weight: 500 !important; }
+        /* Status line: "5ms  200 OK" in mono, no underline, no green dot. */
+        .scalar-client .animate-response-children { font: 400 12px var(--mono, "Geist Mono"), ui-monospace, monospace !important; color: var(--ink-2) !important; gap: 12px !important; }
+        .scalar-client .animate-response-children a { text-decoration: none !important; color: var(--ink) !important; font-weight: 500; }
+        .scalar-client .animate-response-children a .rounded-full { display: none !important; }
+        /* Header counts ("Response Headers 7"): plain muted mono number, like the site's counts — not a round pill. */
+        .scalar-client span.rounded-full.border.h-5.w-5 { border: 0 !important; background: none !important; width: auto !important;
+          font: 400 11px "Geist Mono", ui-monospace, monospace !important; color: var(--muted) !important; }
+        /* Method tag: mono ink, not blue. */
+        .scalar-client .font-code.text-3xs { color: var(--ink-2) !important; font-weight: 500 !important; }
+        /* Send: the site's primary button (ink, amber on hover). */
+        .scalar-client .scalar-button-solid { background: var(--ink) !important; color: var(--bg) !important; border-radius: 2px !important; font-weight: 500 !important; }
+        .scalar-client .scalar-button-solid:hover { background: var(--signal-fill) !important; color: var(--signal-ink) !important; }
+        /* Close: a square 2px icon button, not a circle; focus ring only for keyboard users. */
+        .app-exit-button { border-radius: 2px !important; background: var(--panel) !important; border: 1px solid var(--rule-2) !important;
+          color: var(--ink-2) !important; padding: 6px !important; outline: 0 !important; }
+        .app-exit-button:hover { color: var(--ink) !important; border-color: var(--ink-2) !important; }
+        .app-exit-button:focus-visible { outline: 2px solid var(--signal) !important; outline-offset: 2px; }
         /* Request panel: Scalar puts an empty growing spacer before "Code Snippet", pinning it to the bottom with a
            gap when sections are collapsed. Remove only the spacer — the container keeps the full panel height, so
            popovers inside it (the code-language picker) still have room. */
