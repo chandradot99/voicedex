@@ -1,5 +1,6 @@
 """Voicedex — open voice AI catalog — public read-only API over the git-backed catalog in data/."""
 
+import logging
 from contextlib import asynccontextmanager
 
 import structlog
@@ -11,6 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
+from voicedex import mcp_server
 from voicedex.catalog.store import Catalog
 from voicedex.config import settings
 from voicedex.limiter import limiter
@@ -18,6 +20,8 @@ from voicedex.routers import catalog, providers
 from voicedex.web import routes as web
 
 log = structlog.get_logger()
+# The MCP SDK logs "Terminating session: None" at INFO for every stateless request; keep warnings only.
+logging.getLogger("mcp.server.streamable_http").setLevel(logging.WARNING)
 
 
 @asynccontextmanager
@@ -26,7 +30,8 @@ async def lifespan(app: FastAPI):
     app.state.catalog = cat
     log.info("catalog_loaded", providers=len(cat.providers), models=len(cat.models),
              voices=len(cat.voices), etag=cat.etag)
-    yield
+    async with mcp_server.server.session_manager.run():      # the /mcp endpoint's task group
+        yield
 
 
 API_DESCRIPTION = """
@@ -109,9 +114,9 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_methods=["GET"],
+    allow_methods=["GET", "POST"],        # POST only for /mcp (browser-based MCP clients); the API is GET-only
     allow_headers=["*"],
-    expose_headers=["ETag"],
+    expose_headers=["ETag", "Mcp-Session-Id"],
 )
 
 
@@ -147,6 +152,17 @@ async def strip_trailing_slash(request: Request, call_next):
     return await call_next(request)
 
 
+@app.middleware("http")
+async def mcp_get(request: Request, call_next):
+    """GET /mcp: the MCP SDK would hold the request open as an SSE stream, which a stateless server never uses.
+    MCP clients asking for a stream get 405 (as the spec allows); browsers and crawlers get the setup page."""
+    if request.url.path == "/mcp" and request.method in ("GET", "HEAD"):
+        if "text/event-stream" in request.headers.get("accept", ""):
+            return Response(status_code=405, headers={"Allow": "POST"})
+        return web.templates.TemplateResponse(request, "mcp.html", {"tools": mcp_server.tool_docs()})
+    return await call_next(request)
+
+
 # Outermost: compress responses (catalog.json is ~8 MB of JSON; gzip cuts transfer time and egress).
 app.add_middleware(GZipMiddleware, minimum_size=1024)
 
@@ -154,6 +170,11 @@ app.add_middleware(GZipMiddleware, minimum_size=1024)
 app.include_router(providers.router, prefix="/v1")
 app.include_router(catalog.router, prefix="/v1")
 app.include_router(web.router)
+
+# Remote MCP server (Streamable HTTP) at /mcp: the SDK's route, added to this app so it shares the lifespan,
+# middleware and 404 handling. The SDK app must be built before the session manager exists.
+_mcp_app = mcp_server.asgi_app()
+app.router.routes.extend(r for r in _mcp_app.routes if getattr(r, "path", "") == "/mcp")
 
 
 @app.exception_handler(404)

@@ -73,6 +73,20 @@ Responses carry an `ETag`, so you can poll cheaply with `If-None-Match`. List en
 For LLMs and AI agents there is [`/llms.txt`](https://voicedex.dev/llms.txt), a plain-Markdown map
 of the site and the data.
 
+## MCP server
+
+Give AI assistants the whole catalog over the [Model Context Protocol](https://modelcontextprotocol.io):
+`https://voicedex.dev/mcp` (Streamable HTTP, free, no key, read-only). Setup for each client is at
+[voicedex.dev/mcp](https://voicedex.dev/mcp).
+
+```bash
+claude mcp add --transport http voicedex https://voicedex.dev/mcp     # Claude Code
+```
+
+Tools: `search_models`, `get_model`, `compare_models`, `search_voices`, `list_providers`, `recent_changes`.
+Ask things like "Which text-to-speech APIs support Swahili, cheapest first?" or "Which speech models shut
+down in the next 90 days?".
+
 ## How the data is kept fresh
 
 Each provider has a syncer in [`voicedex/sync/`](voicedex/sync/). It calls the provider's API where

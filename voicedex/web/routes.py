@@ -606,6 +606,7 @@ async def sitemap(catalog: Catalog = Depends(get_catalog)):
     entries.append(("/changes", date.fromisoformat(feed[0].date) if feed else None))
     entries.append(("/alternatives", None))
     entries.append(("/coverage", views.last_modified(models)))
+    entries.append(("/mcp", None))
     for pid in views.alternatives_subjects(catalog):
         entries.append((f"/alternatives/{pid}", views.last_modified(
             [r for r in views.active_models(catalog) if r.model.type in views._provider_types(catalog, pid)])))
@@ -639,6 +640,7 @@ async def llms_txt(catalog: Catalog = Depends(get_catalog)):
         f"- [Full catalog as JSON]({site}/v1/catalog.json): every provider, model and voice in one response",
         f"- [API reference]({site}/docs): REST endpoints with filters for type, language, feature, region and price",
         f"- [OpenAPI schema]({site}/openapi.json)",
+        f"- [MCP server]({site}/mcp): Streamable HTTP endpoint for AI assistants (search, compare, price models and voices)",
         "- [Source and data on GitHub](https://github.com/chandradot99/voicedex)",
         "", "## Compare models", "",
     ]

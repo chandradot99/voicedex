@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Voicedex MCP server: speech AI catalog for Claude, Cursor and other AI assistants | {{ site_name }}{% endblock %}
+{% block description %}Connect Claude, Cursor or any MCP client to Voicedex: search, compare and price 800+ speech-to-text, text-to-speech and speech-to-speech models and 15,000+ voices. Free, no key.{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <h1>MCP server</h1>
+  <p class="lede">Give your AI assistant the whole catalog. Claude, Cursor, VS Code and any other <a href="https://modelcontextprotocol.io">Model Context Protocol</a> client can search, compare and price speech models and voices directly, with links back to the source.</p>
+  <p class="fact-line"><span>URL <b class="mono">{{ site_url }}/mcp</b></span><span>Streamable HTTP</span><span>No key, read-only</span></p>
+</section>
+
+<section class="wrap vs-section" aria-labelledby="mcp-connect">
+  <h2 id="mcp-connect" class="section-title">Connect</h2>
+  <dl class="spec mcp-setup">
+    <div><dt>Claude (web, desktop)</dt><dd>Settings → Connectors → Add custom connector → URL <code>{{ site_url }}/mcp</code></dd></div>
+    <div><dt>Claude Code</dt><dd><code>claude mcp add --transport http voicedex {{ site_url }}/mcp</code></dd></div>
+    <div><dt>Cursor</dt><dd><code>~/.cursor/mcp.json</code>: <code>{"mcpServers": {"voicedex": {"url": "{{ site_url }}/mcp"}}}</code></dd></div>
+    <div><dt>VS Code</dt><dd><code>.vscode/mcp.json</code>: <code>{"servers": {"voicedex": {"type": "http", "url": "{{ site_url }}/mcp"}}}</code></dd></div>
+  </dl>
+</section>
+
+<section class="wrap vs-section" aria-labelledby="mcp-tools">
+  <h2 id="mcp-tools" class="section-title">Tools</h2>
+  <dl class="spec mcp-tools">
+    {% for name, doc in tools %}<div><dt><code>{{ name }}</code></dt><dd>{{ doc }}</dd></div>{% endfor %}
+  </dl>
+  <p class="section-note">Try asking: "Which text-to-speech APIs support Swahili, cheapest first?", "Compare Deepgram nova-3 and AssemblyAI universal for streaming", "Which speech models shut down in the next 90 days?"</p>
+  <p class="more-link"><a href="/docs">REST API</a> · <a href="/v1/catalog.json">Full catalog as JSON</a> · <a href="/llms.txt">llms.txt</a></p>
+</section>
+{% endblock %}
