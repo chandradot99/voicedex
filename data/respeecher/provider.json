@@ -1,0 +1,27 @@
+{
+  "access": "self_serve",
+  "description": "Respeecher (Respeecher, Inc., a Delaware corporation with a postal address in Burbank, California) was founded in February 2018 by Alex Serdiuk, Dmytro Bielievtsov and Grant Reaber and is known for film and TV voice cloning. It sells the Space API for realtime text-to-speech with per-language models, and the Voice Marketplace (web app, API and Pro Tools plugin) for speech-to-speech voice conversion and text-to-speech with licensed voices.",
+  "docs_urls": [
+    "https://space.respeecher.com/docs/llms.txt",
+    "https://space.respeecher.com/docs/choosing-an-api.md",
+    "https://space.respeecher.com/docs/space/models-and-languages.md",
+    "https://space.respeecher.com/docs/space/limits.md",
+    "https://space.respeecher.com/docs/space/api/tts/bytes.md",
+    "https://space.respeecher.com/docs/space/api/tts/sse.md",
+    "https://space.respeecher.com/docs/marketplace/api-overview.md",
+    "https://www.respeecher.com/real-time-tts-api",
+    "https://www.respeecher.com/marketplace/pricing"
+  ],
+  "headquarters": "US",
+  "id": "respeecher",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://space.respeecher.com/docs/space/api/tts/bytes",
+    "docs": "https://space.respeecher.com/docs",
+    "pricing": "https://www.respeecher.com/real-time-tts-api"
+  },
+  "name": "Respeecher",
+  "source": "docs",
+  "type": "both",
+  "website": "https://www.respeecher.com"
+}
