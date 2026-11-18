@@ -1,4 +1,11 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "gdpr",
+    "hipaa"
+  ],
+  "description": "Gladia is a speech-to-text company founded in 2022 and headquartered in Paris, France. It sells the Solaria models through real-time and asynchronous transcription APIs with audio intelligence add-ons such as diarization and translation. Processing can be pinned to eu-west or us-west via a region parameter.",
   "docs_urls": [
     "https://docs.gladia.io/chapters/introduction/models.md",
     "https://docs.gladia.io/chapters/language/supported-languages.md",
@@ -6,9 +13,21 @@
     "https://docs.gladia.io/api-reference/v2/live/init.md",
     "https://docs.gladia.io/api-reference/v2/pre-recorded/init.md"
   ],
+  "headquarters": "FR",
   "id": "gladia",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.gladia.io/api-reference",
+    "docs": "https://docs.gladia.io",
+    "pricing": "https://www.gladia.io/pricing",
+    "status": "https://status.gladia.io"
+  },
   "name": "Gladia",
+  "regions": [
+    "eu",
+    "us"
+  ],
   "source": "docs",
-  "type": "stt"
+  "type": "stt",
+  "website": "https://www.gladia.io"
 }

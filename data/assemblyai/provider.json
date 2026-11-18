@@ -1,4 +1,12 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "pci_dss",
+    "hipaa"
+  ],
+  "description": "AssemblyAI is a speech AI company founded in 2017 in San Francisco, USA, with offices in San Francisco and New York. It sells the Universal family of pre-recorded and streaming speech-to-text models, speech understanding features, and a text-to-speech API. US and EU (api.eu.assemblyai.com) processing endpoints are documented.",
   "docs_urls": [
     "https://www.assemblyai.com/docs/getting-started/models",
     "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
@@ -10,9 +18,20 @@
     "https://www.assemblyai.com/docs/tts/api-reference/http-api/overview",
     "https://www.assemblyai.com/docs/tts/limits"
   ],
+  "headquarters": "US",
   "id": "assemblyai",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://www.assemblyai.com/docs/api-reference",
+    "docs": "https://www.assemblyai.com/docs",
+    "pricing": "https://www.assemblyai.com/pricing",
+    "status": "https://status.assemblyai.com"
+  },
   "name": "AssemblyAI",
+  "regions": [
+    "us",
+    "eu"
+  ],
   "source": "docs",
   "type": "both",
   "voices_source": {
@@ -29,5 +48,6 @@
       "https://www.assemblyai.com/docs/tts/api-reference/http-api/overview",
       "https://www.assemblyai.com/docs/tts/limits"
     ]
-  }
+  },
+  "website": "https://www.assemblyai.com"
 }

@@ -1,7 +1,14 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.inworld.ai/voices/v1/voices"
   ],
+  "compliance": [
+    "soc2",
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "Inworld AI is a voice and real-time AI company founded in 2021 and headquartered in Mountain View, USA. It sells Inworld TTS text-to-speech, the STT-1 speech-to-text model plus hosted third-party STT, and realtime speech-to-speech; in 2026 it acquired Ultravox, a Seattle voice-agent platform. EU and India data residency is offered on Enterprise plans.",
   "docs_urls": [
     "https://docs.inworld.ai/tts/tts-models.md",
     "https://inworld.ai/pricing",
@@ -12,9 +19,21 @@
     "https://docs.ultravox.ai/",
     "https://www.ultravox.ai/pricing"
   ],
+  "headquarters": "US",
   "id": "inworld",
   "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.inworld.ai/api-reference",
+    "docs": "https://docs.inworld.ai",
+    "pricing": "https://inworld.ai/pricing",
+    "status": "https://status.inworld.ai"
+  },
   "name": "Inworld AI",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -23,5 +42,6 @@
     "urls": [
       "https://api.inworld.ai/voices/v1/voices"
     ]
-  }
+  },
+  "website": "https://inworld.ai"
 }

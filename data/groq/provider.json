@@ -1,14 +1,26 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.groq.com/openai/v1/models"
   ],
+  "compliance": [
+    "soc2"
+  ],
+  "description": "Groq is an AI inference company founded in 2016 and headquartered in Mountain View, USA, running models on its own LPU chips through GroqCloud. In December 2025 it signed a non-exclusive technology licensing agreement with Nvidia and continues to operate GroqCloud independently. Its speech offering is hosted Whisper speech-to-text and Canopy Labs Orpheus text-to-speech.",
   "docs_urls": [
     "https://console.groq.com/docs/text-to-speech/orpheus.md",
     "https://console.groq.com/docs/speech-to-text.md",
     "https://console.groq.com/docs/deprecations.md"
   ],
+  "headquarters": "US",
   "id": "groq",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://console.groq.com/docs/api-reference",
+    "docs": "https://console.groq.com/docs",
+    "pricing": "https://groq.com/pricing",
+    "status": "https://groqstatus.com"
+  },
   "name": "Groq",
   "source": "mixed",
   "type": "both",
@@ -18,5 +30,6 @@
     "urls": [
       "https://api.groq.com/openai/v1/models"
     ]
-  }
+  },
+  "website": "https://groq.com"
 }

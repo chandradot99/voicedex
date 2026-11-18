@@ -1,4 +1,11 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "pci_dss"
+  ],
+  "description": "BytePlus is ByteDance's enterprise technology business, operated by BytePlus Pte Ltd in Singapore. BytePlus Voice sells ByteDance Seed speech models internationally: Seed-ASR streaming and file speech recognition, Seed-TTS text-to-speech and Seed-ICL voice cloning. The mainland-China counterpart is Volcengine.",
   "docs_urls": [
     "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
     "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
@@ -11,8 +18,13 @@
     "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
     "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
   ],
+  "headquarters": "SG",
   "id": "byteplus",
   "last_synced": "2026-11-16",
+  "links": {
+    "docs": "https://docs.byteplus.com/en/docs/byteplusvoice",
+    "pricing": "https://docs.byteplus.com/en/docs/byteplusvoice/TTS_Billing"
+  },
   "name": "BytePlus",
   "source": "docs",
   "type": "both",
@@ -31,5 +43,6 @@
       "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
       "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
     ]
-  }
+  },
+  "website": "https://www.byteplus.com/en/product/voice"
 }

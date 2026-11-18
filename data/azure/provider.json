@@ -1,8 +1,17 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list",
     "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
   ],
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "pci_dss",
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "Azure Speech is the speech service in Microsoft Azure's AI services; Microsoft is headquartered in Redmond, USA. It provides real-time and batch speech-to-text (including MAI-Transcribe models), neural and MAI-Voice text-to-speech with custom voice, and the Voice Live API for realtime speech-to-speech agents. It is deployed per Azure region.",
   "docs_urls": [
     "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
     "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/release-notes",
@@ -10,9 +19,21 @@
     "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
     "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
   ],
+  "headquarters": "US",
   "id": "azure",
   "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-speech-to-text",
+    "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+    "pricing": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+    "status": "https://azure.status.microsoft/en-us/status"
+  },
   "name": "Azure Speech",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -22,5 +43,6 @@
       "https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list",
       "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
     ]
-  }
+  },
+  "website": "https://azure.microsoft.com/en-us/products/ai-services/ai-speech"
 }

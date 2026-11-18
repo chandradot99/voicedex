@@ -1,8 +1,17 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://texttospeech.googleapis.com/v1/voices",
     "https://speech.googleapis.com/v2/projects/{project}/locations"
   ],
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "pci_dss",
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "Google Cloud's speech products come from Google (Alphabet), headquartered in Mountain View, USA. Cloud Speech-to-Text offers Chirp and Gemini-based transcription, Cloud Text-to-Speech offers Chirp 3 HD and Gemini TTS voices, and the Gemini Live API (Gemini API and Vertex AI) provides realtime speech-to-speech. Speech-to-Text v2 runs in regional and multi-region locations.",
   "docs_urls": [
     "https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types",
     "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd",
@@ -18,9 +27,21 @@
     "https://ai.google.dev/gemini-api/docs/pricing",
     "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
   ],
+  "headquarters": "US",
   "id": "google-cloud",
   "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.cloud.google.com/speech-to-text/docs/reference/rest",
+    "docs": "https://docs.cloud.google.com/speech-to-text/docs",
+    "pricing": "https://cloud.google.com/speech-to-text/pricing",
+    "status": "https://status.cloud.google.com"
+  },
   "name": "Google Cloud",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -30,5 +51,6 @@
       "https://texttospeech.googleapis.com/v1/voices",
       "https://speech.googleapis.com/v2/projects/{project}/locations"
     ]
-  }
+  },
+  "website": "https://cloud.google.com/speech-to-text"
 }

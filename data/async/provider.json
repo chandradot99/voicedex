@@ -1,4 +1,6 @@
 {
+  "access": "self_serve",
+  "description": "Async is the company formerly known as Podcastle, founded in 2020 by Arto Yeritsyan; it rebranded as Async in January 2026. Alongside its creator studio, it sells the Async Voice API with text-to-speech (REST, streaming and WebSocket), voice cloning and speech-to-text.",
   "docs_urls": [
     "https://docs.async.com/llms.txt",
     "https://docs.async.com/models-2161359m0.md",
@@ -6,7 +8,12 @@
   ],
   "id": "async",
   "last_synced": "2026-11-16",
+  "links": {
+    "docs": "https://docs.async.com",
+    "pricing": "https://docs.async.com/billing-pricing-2243956m0.md"
+  },
   "name": "Async",
   "source": "docs",
-  "type": "both"
+  "type": "both",
+  "website": "https://async.com"
 }

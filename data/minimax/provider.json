@@ -1,14 +1,23 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.minimax.io/v1/get_voice"
   ],
+  "description": "MiniMax is a foundation-model company founded in December 2021 in Shanghai, China, and listed on the Hong Kong Stock Exchange since January 2026. Its international platform (platform.minimax.io) sells the Speech series of text-to-speech models with voice cloning and voice design, alongside its text, video and music models.",
   "docs_urls": [
     "https://platform.minimax.io/docs/guides/models-intro",
     "https://platform.minimax.io/docs/api-reference/speech-t2a-http.md",
     "https://platform.minimax.io/docs/guides/pricing-paygo"
   ],
+  "headquarters": "CN",
   "id": "minimax",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://platform.minimax.io/docs/api-reference/speech-t2a-http",
+    "docs": "https://platform.minimax.io/docs",
+    "pricing": "https://platform.minimax.io/docs/pricing/overview",
+    "status": "https://status.minimax.io"
+  },
   "name": "MiniMax",
   "source": "mixed",
   "type": "tts",
@@ -18,5 +27,6 @@
     "urls": [
       "https://api.minimax.io/v1/get_voice"
     ]
-  }
+  },
+  "website": "https://www.minimax.io"
 }

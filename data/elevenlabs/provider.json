@@ -1,14 +1,35 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.elevenlabs.io/v1/models",
     "https://api.elevenlabs.io/v2/voices"
   ],
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "pci_dss",
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "ElevenLabs is a voice AI company founded in 2022 by Piotr Dabkowski and Mati Staniszewski, headquartered in New York with a European hub in London. It sells Eleven text-to-speech models, Scribe speech-to-text, speech-to-speech voice conversion, voice cloning and design, and the ElevenAgents conversational platform. Isolated data-residency environments are offered in the EU, India and Singapore.",
   "docs_urls": [
     "https://elevenlabs.io/docs/capabilities/speech-to-text"
   ],
+  "headquarters": "US",
   "id": "elevenlabs",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://elevenlabs.io/docs/api-reference",
+    "docs": "https://elevenlabs.io/docs",
+    "pricing": "https://elevenlabs.io/pricing/api",
+    "status": "https://status.elevenlabs.io"
+  },
   "name": "ElevenLabs",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -18,5 +39,6 @@
       "https://api.elevenlabs.io/v1/models",
       "https://api.elevenlabs.io/v2/voices"
     ]
-  }
+  },
+  "website": "https://elevenlabs.io"
 }

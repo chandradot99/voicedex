@@ -1,15 +1,35 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.deepgram.com/v1/models"
   ],
+  "compliance": [
+    "soc2",
+    "hipaa",
+    "pci_dss",
+    "gdpr"
+  ],
+  "description": "Deepgram is a speech AI company founded in 2015 and headquartered in San Francisco, USA. It sells Nova and Flux speech-to-text, Aura text-to-speech and a Voice Agent API, available as a hosted API or self-hosted. Regional endpoints are documented for the EU, India and Australia in addition to the default US endpoint.",
   "docs_urls": [
     "https://developers.deepgram.com/docs/flux/quickstart",
     "https://developers.deepgram.com/docs/models-languages-overview",
     "https://deepgram.com/pricing"
   ],
+  "headquarters": "US",
   "id": "deepgram",
   "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://developers.deepgram.com/reference",
+    "docs": "https://developers.deepgram.com/docs",
+    "pricing": "https://deepgram.com/pricing",
+    "status": "https://status.deepgram.com"
+  },
   "name": "Deepgram",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -18,5 +38,6 @@
     "urls": [
       "https://api.deepgram.com/v1/models"
     ]
-  }
+  },
+  "website": "https://deepgram.com"
 }

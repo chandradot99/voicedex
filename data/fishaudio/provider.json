@@ -1,7 +1,9 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.fish.audio/model"
   ],
+  "description": "Fish Audio is the voice AI platform of Hanabi AI Inc., based in Palo Alto, USA, and grew out of the open-source Fish Speech project. It sells text-to-speech (S1/S2 models) with voice cloning and a community voice library, and speech-to-text, via web app and API; several of its models are released as open weights.",
   "docs_urls": [
     "https://docs.fish.audio/llms.txt",
     "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
@@ -9,9 +11,19 @@
     "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
     "https://docs.fish.audio/features/speech-to-text"
   ],
+  "headquarters": "US",
   "id": "fishaudio",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.fish.audio/api-reference/introduction",
+    "docs": "https://docs.fish.audio",
+    "pricing": "https://fish.audio/plan/",
+    "status": "https://status.fish.audio"
+  },
   "name": "Fish Audio",
+  "regions": [
+    "us"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -20,5 +32,6 @@
     "urls": [
       "https://api.fish.audio/model"
     ]
-  }
+  },
+  "website": "https://fish.audio"
 }

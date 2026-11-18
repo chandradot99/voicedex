@@ -1,7 +1,9 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.gradium.ai/api/voices/"
   ],
+  "description": "Gradium is a voice AI company founded in September 2025 in Paris, France, as a spin-out of the non-profit research lab Kyutai. It sells streaming text-to-speech with voice cloning, speech-to-text, and real-time speech-to-speech translation APIs. EU (eu.api.gradium.ai) and US (us.api.gradium.ai) data-residency endpoints are documented.",
   "docs_urls": [
     "https://docs.gradium.ai/guides/text-to-speech.md",
     "https://docs.gradium.ai/guides/speech-to-text.md",
@@ -10,9 +12,20 @@
     "https://docs.gradium.ai/guides/voice-settings.md",
     "https://gradium.ai/pricing"
   ],
+  "headquarters": "FR",
   "id": "gradium",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.gradium.ai/api-reference/introduction",
+    "docs": "https://docs.gradium.ai",
+    "pricing": "https://gradium.ai/pricing",
+    "status": "https://gradium.statuspage.io"
+  },
   "name": "Gradium",
+  "regions": [
+    "eu",
+    "us"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -21,5 +34,6 @@
     "urls": [
       "https://api.gradium.ai/api/voices/"
     ]
-  }
+  },
+  "website": "https://gradium.ai"
 }

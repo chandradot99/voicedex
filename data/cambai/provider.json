@@ -1,8 +1,10 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://client.camb.ai/apis/list-voices",
     "https://client.camb.ai/apis/source-languages"
   ],
+  "description": "CAMB.AI is a speech localization company founded in 2022 by Avneesh and Akshat Prakash, focused on dubbing and live translation for media and sports. Its API sells the MARS text-to-speech models (with MARS 5 and 6 released as open source) and BOLI speech-to-text and translation, in 150+ languages.",
   "docs_urls": [
     "https://docs.camb.ai/models",
     "https://docs.camb.ai/language-support",
@@ -11,6 +13,11 @@
   ],
   "id": "cambai",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.camb.ai/api-reference",
+    "docs": "https://docs.camb.ai",
+    "pricing": "https://www.camb.ai/pricing"
+  },
   "name": "CAMB.ai",
   "source": "mixed",
   "type": "both",
@@ -21,5 +28,6 @@
       "https://client.camb.ai/apis/list-voices",
       "https://client.camb.ai/apis/source-languages"
     ]
-  }
+  },
+  "website": "https://www.camb.ai"
 }

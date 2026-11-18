@@ -1,4 +1,12 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "iso27001",
+    "soc2",
+    "pci_dss",
+    "gdpr"
+  ],
+  "description": "Model Studio is the generative-AI model platform of Alibaba Cloud, the cloud computing business of Alibaba Group, headquartered in Hangzhou, China. Its speech catalog covers Qwen and Fun-ASR speech recognition, Qwen-TTS and CosyVoice text-to-speech, and Qwen Omni and LiveTranslate realtime speech-to-speech models. Each region (Singapore international, China (Beijing) mainland, and others) has its own endpoint, API key and model list.",
   "docs_urls": [
     "https://www.alibabacloud.com/help/en/model-studio/models",
     "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
@@ -14,9 +22,19 @@
     "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
     "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
   ],
+  "headquarters": "CN",
   "id": "alibaba",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+    "pricing": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "status": "https://status.alibabacloud.com"
+  },
   "name": "Alibaba Cloud Model Studio",
+  "regions": [
+    "asia"
+  ],
   "source": "docs",
   "type": "both",
   "voices_source": {
@@ -37,5 +55,6 @@
       "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-voice-list",
       "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-voice-list"
     ]
-  }
+  },
+  "website": "https://www.alibabacloud.com/en/product/modelstudio"
 }

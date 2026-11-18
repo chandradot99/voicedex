@@ -1,15 +1,35 @@
 {
+  "access": "self_serve",
   "api_urls": [
     "https://api.cartesia.ai/voices"
   ],
+  "compliance": [
+    "soc2",
+    "hipaa",
+    "pci_dss",
+    "gdpr"
+  ],
+  "description": "Cartesia is a voice AI company founded in 2023 by researchers from the Stanford AI Lab, headquartered in San Francisco, USA. It builds models on state space model architectures and sells Sonic text-to-speech and Ink speech-to-text APIs, plus the Line voice-agent platform. Enterprise customers can use dedicated regional deployments in the US, EU, UK, India and Australia.",
   "docs_urls": [
     "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
     "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
     "https://docs.cartesia.ai/build-with-cartesia/stt-models"
   ],
+  "headquarters": "US",
   "id": "cartesia",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.cartesia.ai/api-reference/tts/bytes",
+    "docs": "https://docs.cartesia.ai",
+    "pricing": "https://cartesia.ai/pricing",
+    "status": "https://status.cartesia.ai"
+  },
   "name": "Cartesia",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "mixed",
   "type": "both",
   "voices_source": {
@@ -18,5 +38,6 @@
     "urls": [
       "https://api.cartesia.ai/voices"
     ]
-  }
+  },
+  "website": "https://cartesia.ai"
 }

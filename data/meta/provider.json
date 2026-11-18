@@ -1,12 +1,21 @@
 {
+  "access": "self_serve",
+  "description": "Meta Platforms, headquartered in Menlo Park, USA, sells hosted models through the Meta Model API (api.meta.ai). Its speech offering is Muse Voice Transcribe, a speech-to-text model for live and file transcription; the API does not offer text-to-speech or speech-to-speech.",
   "docs_urls": [
     "https://dev.meta.ai/docs/models",
     "https://dev.meta.ai/docs/speech-to-text",
     "https://dev.meta.ai/docs/pricing-rate-limits"
   ],
+  "headquarters": "US",
   "id": "meta",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://dev.meta.ai/docs/api-reference",
+    "docs": "https://dev.meta.ai/docs/overview",
+    "pricing": "https://dev.meta.ai/docs/pricing-rate-limits"
+  },
   "name": "Meta",
   "source": "docs",
-  "type": "stt"
+  "type": "stt",
+  "website": "https://dev.meta.ai"
 }

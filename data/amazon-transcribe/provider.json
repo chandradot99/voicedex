@@ -1,11 +1,33 @@
 {
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "pci_dss",
+    "hipaa",
+    "gdpr"
+  ],
+  "description": "Amazon Transcribe is the speech-to-text service of Amazon Web Services (AWS), the cloud division of Amazon, headquartered in Seattle, USA. It offers batch and streaming transcription, plus Amazon Transcribe Medical for clinical speech (HIPAA eligible). AWS sells text-to-speech separately as Amazon Polly.",
   "docs_urls": [
     "https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html",
     "https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html"
   ],
+  "headquarters": "US",
   "id": "amazon-transcribe",
   "last_synced": "2026-11-16",
+  "links": {
+    "api_reference": "https://docs.aws.amazon.com/transcribe/latest/APIReference/Welcome.html",
+    "docs": "https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html",
+    "pricing": "https://aws.amazon.com/transcribe/pricing/",
+    "status": "https://health.aws.amazon.com/health/status"
+  },
   "name": "Amazon Transcribe",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
   "source": "docs",
-  "type": "stt"
+  "type": "stt",
+  "website": "https://aws.amazon.com/transcribe/"
 }
