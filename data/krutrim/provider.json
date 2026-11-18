@@ -1,0 +1,19 @@
+{
+  "access": "self_serve",
+  "description": "Krutrim (Krutrim SI Designs Private Limited, part of India's Ola group) runs Krutrim Cloud, an Indian AI cloud whose AI Studio hosts open-source and in-house models. Its in-house Bhashik model provides Indic speech-to-text, text-to-speech and speech translation APIs for English and eight Indian languages, billed in INR per audio minute/hour.",
+  "docs_urls": [
+    "https://docs.cloud.olakrutrim.com/api-references/bhashik-speech-api"
+  ],
+  "headquarters": "IN",
+  "id": "krutrim",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.cloud.olakrutrim.com/api-references/bhashik-speech-api",
+    "docs": "https://docs.cloud.olakrutrim.com/basics/ai-solutions/bhashik",
+    "pricing": "https://docs.cloud.olakrutrim.com/basics/ai-studio/billing-for-ai-studio"
+  },
+  "name": "Krutrim",
+  "source": "docs",
+  "type": "both",
+  "website": "https://www.olakrutrim.com"
+}

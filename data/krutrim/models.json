@@ -1,0 +1,87 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "translation"
+    ],
+    "description": "Krutrim's in-house Indic speech recognition model (Bhashik), with short-file sync and long-form async transcription.",
+    "first_seen": "2026-11-18",
+    "id": "bhashik-stt",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "gu-IN",
+      "bn-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "api_language_codes": "eng, guj, ben, hin, kan, mal, mar, tam, tel",
+      "endpoints": "POST https://cloud.olakrutrim.com/api/v1/languagelabs/transcribe/upload (short); POST /languagelabs/transcribe/lf/upload (long, async, poll /languagelabs/job_status/{request_id}); POST /languagelabs/stt_trans/upload and /stt_trans/lf/upload (speech translation, source eng only)",
+      "pricing_note": "Billed per minute/hour of audio in INR; rates shown only in the Krutrim Cloud console",
+      "speech_to_speech_translation": "POST /languagelabs/sts_trans/upload (eng source → Indic target speech)"
+    },
+    "name": "Bhashik Speech-to-Text",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.olakrutrim.com/api-references/bhashik-speech-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Krutrim's in-house Indic text-to-speech model (Bhashik) with male and female speakers; returns a download link to the audio file.",
+    "first_seen": "2026-11-18",
+    "id": "bhashik-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en",
+      "gu-IN",
+      "bn-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "api_language_codes": "eng, guj, ben, hin, kan, mal, mar, tam, tel",
+      "endpoints": "POST https://cloud.olakrutrim.com/api/v1/languagelabs/tts; POST /languagelabs/tts_trans (translate eng text then synthesize)",
+      "pricing_note": "Billed per minute/hour of audio in INR; rates shown only in the Krutrim Cloud console",
+      "speakers": [
+        "female",
+        "male"
+      ]
+    },
+    "name": "Bhashik Text-to-Speech",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.cloud.olakrutrim.com/api-references/bhashik-speech-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
