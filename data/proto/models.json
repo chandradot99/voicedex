@@ -1,0 +1,155 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "translation"
+    ],
+    "description": "Speech recognition endpoint whose local-language models are fine-tuned on native-speaker data and tuned for regional accents and code-switching with English.",
+    "first_seen": "2026-11-18",
+    "id": "asr",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "rw-RW",
+      "kj-NA",
+      "tl-PH",
+      "ceb-PH"
+    ],
+    "meta": {
+      "endpoint": "POST https://v3-api.proto.cx/api/platform/v1/voice/{teamspace_id}/asr",
+      "general_model_languages": 95,
+      "in_development_languages": "Ilocano, Pashto, Punjabi, Urdu (local-language pipeline)",
+      "max_file_mb": 15,
+      "note": "The same endpoint also serves ~95 'common languages' through a general large language model (vendor not disclosed); only the Proto fine-tuned local-language models are listed in languages.",
+      "translation": "optional English translation of the transcript"
+    },
+    "name": "Proto Voice API ASR",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 50.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Prepaid voice credits; 1 credit per successful TTS or ASR request (failed requests not charged). Graduated pay-as-you-go tiers on the Starter plan; 50 free credits for new workspaces. Same balance shared by /tts and /asr.",
+      "price_usd": 0.05,
+      "source_url": "https://proto.cx/voice-api",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "first 10,000 credits/month",
+          "price_usd": 0.05,
+          "unit": "request"
+        },
+        {
+          "applies_to": "10,000-100,000 credits/month",
+          "price_usd": 0.04,
+          "unit": "request"
+        },
+        {
+          "applies_to": "100,000-1,000,000 credits/month",
+          "price_usd": 0.025,
+          "unit": "request"
+        },
+        {
+          "applies_to": "1,000,000-5,000,000 credits/month",
+          "price_usd": 0.01,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://proto.cx/voice-api",
+        "https://documentation.proto.cx/docs/developers/apis/voice-api"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Text-to-speech endpoint whose local-language voices are built from native-speaker recordings rather than adapted English voices.",
+    "first_seen": "2026-11-18",
+    "id": "tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "rw-RW",
+      "tl-PH",
+      "ceb-PH"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "endpoint": "POST https://v3-api.proto.cx/api/platform/v1/voice/{teamspace_id}/tts",
+      "excluded_languages": "Oshiwambo and Urdu TTS are proxied to an external OmniVoice relay, not Proto-trained models",
+      "gender_param": "male|female (availability varies by language; Kinyarwanda female only)",
+      "general_model_languages": 95,
+      "note": "The same endpoint also serves ~95 'common languages' through a general large language model (vendor not disclosed); only the Proto fine-tuned local-language models are listed in languages.",
+      "response": "base64-encoded audio",
+      "speed_range": "0.25-4.0"
+    },
+    "name": "Proto Voice API TTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "free_quota": {
+        "amount": 50.0,
+        "period": "once",
+        "unit": "request"
+      },
+      "notes": "Prepaid voice credits; 1 credit per successful TTS or ASR request (failed requests not charged). Graduated pay-as-you-go tiers on the Starter plan; 50 free credits for new workspaces. Same balance shared by /tts and /asr.",
+      "price_usd": 0.05,
+      "source_url": "https://proto.cx/voice-api",
+      "unit": "request",
+      "variants": [
+        {
+          "applies_to": "first 10,000 credits/month",
+          "price_usd": 0.05,
+          "unit": "request"
+        },
+        {
+          "applies_to": "10,000-100,000 credits/month",
+          "price_usd": 0.04,
+          "unit": "request"
+        },
+        {
+          "applies_to": "100,000-1,000,000 credits/month",
+          "price_usd": 0.025,
+          "unit": "request"
+        },
+        {
+          "applies_to": "1,000,000-5,000,000 credits/month",
+          "price_usd": 0.01,
+          "unit": "request"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://proto.cx/voice-api",
+        "https://documentation.proto.cx/docs/developers/apis/voice-api"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

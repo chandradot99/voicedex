@@ -1,0 +1,27 @@
+{
+  "access": "self_serve",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "gdpr",
+    "hipaa"
+  ],
+  "description": "Proto (Proto Global Ltd.) is headquartered in Waterloo, Canada, with offices in Taguig (Philippines) and Kigali (Rwanda). It sells an AI customer-service and grievance-redress platform to governments, financial regulators and enterprises, plus a self-serve Voice API (TTS and ASR) billed in prepaid per-request credits. Its own speech models target low-resource languages such as Kinyarwanda, Tagalog/Filipino, Cebuano and Oshiwambo, trained on native-speaker data.",
+  "docs_urls": [
+    "https://proto.cx/voice-api",
+    "https://documentation.proto.cx/docs/developers/apis/voice-api"
+  ],
+  "headquarters": "CA",
+  "id": "proto",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://documentation.proto.cx/docs/developers/apis/voice-api",
+    "docs": "https://documentation.proto.cx/docs/developers/apis/voice-api",
+    "pricing": "https://proto.cx/voice-api",
+    "status": "https://status.proto.cx/"
+  },
+  "name": "Proto",
+  "source": "docs",
+  "type": "both",
+  "website": "https://proto.cx"
+}
