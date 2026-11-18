@@ -117,7 +117,6 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry('rtzr'             , 'ReturnZero (RTZR)', 'stt', "voicedex.sync.rtzr.RtzrSyncer"),
     # ── Expansion wave 4: sales-led vendors with public API docs ──
     SyncerEntry('deepdub'          , 'Deepdub', 'tts', "voicedex.sync.deepdub.DeepdubSyncer"),
-    SyncerEntry('aiola'            , 'aiOla', 'stt', "voicedex.sync.aiola.AiolaSyncer"),
     SyncerEntry('intron'           , 'Intron Health', 'stt', "voicedex.sync.intron.IntronSyncer"),
     SyncerEntry('sestek'           , 'Sestek (Knovvu)', 'both', "voicedex.sync.sestek.SestekSyncer"),
     SyncerEntry('huawei-cloud'     , 'Huawei Cloud SIS', 'both', "voicedex.sync.huawei_cloud.HuaweiCloudSyncer"),
