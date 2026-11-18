@@ -1,1 +1,500 @@
-[]
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "078836b9-8752-4ccf-b7ab-cfcbeffb3723",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "name": "minjun",
+      "sample_rate_hz": 44100
+    },
+    "name": "Minjun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "09568fd3-c007-4d54-88d5-da69ab58ccf4",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "name": "rupert",
+      "sample_rate_hz": 44100
+    },
+    "name": "Rupert",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Upbeat and energetic.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "192fa0d6-f346-4b27-aaee-ddeca9113911",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "name": "jett",
+      "sample_rate_hz": 44100
+    },
+    "name": "Jett",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2e4153e8-9f81-4382-8ca4-03a411690dcc",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "name": "arjun",
+      "sample_rate_hz": 44100
+    },
+    "name": "Arjun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "36b2d1d7-2bf5-4840-8e58-f65926f194d7",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "name": "wyatt",
+      "sample_rate_hz": 44100
+    },
+    "name": "Wyatt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bold announcer-style delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "39745917-9d23-4b38-9962-145e75df6a5c",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "name": "thaddeus",
+      "sample_rate_hz": 44100
+    },
+    "name": "Thaddeus",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "4d3da5ad-bbed-432f-8810-b4efbf56026c",
+    "languages": [
+      "te"
+    ],
+    "meta": {
+      "name": "sravya",
+      "sample_rate_hz": 44100
+    },
+    "name": "Sravya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "52c85fa7-6f32-4401-96f2-583303564389",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "name": "leonor",
+      "sample_rate_hz": 44100
+    },
+    "name": "Leonor",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "570f7747-aea3-4e68-933a-4764c492704f",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "name": "seoyeon",
+      "sample_rate_hz": 44100
+    },
+    "name": "Seoyeon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Soft, close-mic ASMR delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "5c8618e2-7e9d-424e-adc9-a5253fcff9c8",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "name": "willow",
+      "sample_rate_hz": 44100
+    },
+    "name": "Willow",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "5e8bd57a-9c2f-4ef4-b1bb-79cdeb0aef8e",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "name": "wolfgang",
+      "sample_rate_hz": 44100
+    },
+    "name": "Wolfgang",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Upbeat and energetic.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "6d3b73c9-d10a-4c2b-a45f-2c83d1e76823",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "name": "haoran",
+      "sample_rate_hz": 44100
+    },
+    "name": "Haoran",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "7617825d-c25c-4ab8-9895-4a79cce2263a",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "name": "ximena",
+      "sample_rate_hz": 44100
+    },
+    "name": "Ximena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "7bdb8059-a5e5-415a-b548-57bf2d22a82b",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "name": "ginevra",
+      "sample_rate_hz": 44100
+    },
+    "name": "Ginevra",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Theatrical witch-style delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "859a3469-2d4e-43bd-bebc-14c0725869e2",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "name": "morgana",
+      "sample_rate_hz": 44100
+    },
+    "name": "Morgana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "8eea1422-be81-4711-89be-d174a6cec315",
+    "languages": [
+      "pt"
+    ],
+    "meta": {
+      "name": "thiago",
+      "sample_rate_hz": 44100
+    },
+    "name": "Thiago",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright, anime-style delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "8f80e8e8-6bfe-4ec4-8e26-c83f38190203",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "name": "sakura",
+      "sample_rate_hz": 44100
+    },
+    "name": "Sakura",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Upbeat and energetic.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "91eb33a1-37d0-4c56-a9bb-cdef981446c9",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "name": "meilin",
+      "sample_rate_hz": 44100
+    },
+    "name": "Meilin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "99fb3c3f-b3ef-44e6-ace6-82d65de5da09",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "name": "imogen",
+      "sample_rate_hz": 44100
+    },
+    "name": "Imogen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "9f103d4e-db4b-4609-9a98-212fe1226e85",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "name": "lorenzo",
+      "sample_rate_hz": 44100
+    },
+    "name": "Lorenzo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "a24b5bb9-e587-4ce8-a40b-60cd1f125415",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "name": "gaspard",
+      "sample_rate_hz": 44100
+    },
+    "name": "Gaspard",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "bc1abb8a-ee01-4675-8d56-c3784c1f0675",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "name": "savannah",
+      "sample_rate_hz": 44100
+    },
+    "name": "Savannah",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "c387213d-b7cd-4a54-94cc-a645abaf3312",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "name": "ananya",
+      "sample_rate_hz": 44100
+    },
+    "name": "Ananya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "irish",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "c42f59bf-3750-4732-9d04-f284a4e39cf3",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "name": "cillian",
+      "sample_rate_hz": 44100
+    },
+    "name": "Cillian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "db5c2426-0eb0-4101-b726-87d1ad5b4452",
+    "languages": [
+      "te"
+    ],
+    "meta": {
+      "name": "chaitanya",
+      "sample_rate_hz": 44100
+    },
+    "name": "Chaitanya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "f161afbd-5387-4b5c-83e5-5463af90c503",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "name": "liesel",
+      "sample_rate_hz": 44100
+    },
+    "name": "Liesel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "feeedcee-1424-4f4f-86c8-91335721329d",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "name": "rodrigo",
+      "sample_rate_hz": 44100
+    },
+    "name": "Rodrigo",
+    "updated_at": "2026-11-18"
+  }
+]

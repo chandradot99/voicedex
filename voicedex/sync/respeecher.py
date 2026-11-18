@@ -8,11 +8,54 @@ Space TTS models are the per-language base URLs (api.respeecher.com/v1/public/tt
 synthesise a recording, then order conversions to a target voice (with an accent for STS, a narration style for
 TTS), poll and download. Its voice conversion is recorded as an `sts` model (audio in, converted audio out; not
 streaming) and its TTS as a separate non-streaming `tts` model. Prices: Space TTS from respeecher.com/real-time-tts-api,
-Marketplace credits from respeecher.com/marketplace/pricing. Both voice lists (Space GET /voices, Marketplace
-GET /api/v2/voices) need an API key — docs-only, no voices, until a key is added.
+Marketplace credits from respeecher.com/marketplace/pricing.
+
+Voices (mixed): Space `GET https://api.respeecher.com/v1/public/tts/<model>/voices` (X-API-Key:
+RESPEECHER_API_KEY), one call per Space model; each voice belongs to the model it is listed under. Marketplace
+voices (gateway.respeecher.com/api/v2/voices) need a separate Marketplace key and are not synced. Without a key
+the existing voices are kept.
 """
 
+from __future__ import annotations
+
+import httpx
+
+from voicedex.config import settings
+from voicedex.sync.base import HTTP_TIMEOUT, SyncResult, SyncVoice, get_with_retry
 from voicedex.sync.docs_only import DocsOnlySyncer
+from voicedex.sync.language import normalize_languages
+
+SPACE_VOICES_URL = "https://api.respeecher.com/v1/public/tts/{model}/voices"
+_ACCENTS = {"american": "en-US", "british": "en-GB", "australian": "en-AU", "irish": "en-IE", "scottish": "en-GB"}
+
+
+def parse_space_voices(model_id: str, languages: list[str], rows: list[dict]) -> list[SyncVoice]:
+    """One Space model's voice list. The model's languages apply; an English accent narrows en → en-XX."""
+    voices = []
+    for r in rows:
+        vid = str(r.get("id") or "").strip()
+        if not vid:
+            continue
+        full = (r.get("full_name") or vid).strip()
+        style = full.split(":", 1)[1].strip() if ":" in full else None
+        accent = (r.get("accent") or "").strip().lower() or None
+        langs = [_ACCENTS[accent]] if accent in _ACCENTS and languages == ["en"] else languages
+        gender = (r.get("gender") or "").lower()
+        meta = {"recommended": True if r.get("is_best") else None,
+                "experimental": True if r.get("experimental") else None}
+        voices.append(SyncVoice(
+            voice_id=vid,
+            display_name=full,
+            gender=gender if gender in ("male", "female") else None,
+            category="premade",
+            languages=normalize_languages(langs),
+            accent=accent,
+            age=(r.get("age") or None),
+            tags=[style.lower()] if style else [],
+            compatible_models=[model_id],
+            meta={k: v for k, v in meta.items() if v is not None},
+        ))
+    return voices
 
 _DOCS = "https://space.respeecher.com/docs/"
 
@@ -45,3 +88,24 @@ class RespeecherSyncer(DocsOnlySyncer):
         "Return one model for Marketplace API speech-to-speech voice conversion (order-based, not streaming), "
         "with accepted input formats and the published per-minute credit price."
     )
+
+    async def sync(self) -> SyncResult:
+        result = await super().sync()
+        if not settings.respeecher_api_key:
+            return result   # docs-only; merge keeps existing voices
+        space = [m for m in result.tts_models if m.model_id != "marketplace-tts" and m.streaming]
+        voices: list[SyncVoice] = []
+        urls: list[str] = []
+        async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
+            for m in space:
+                url = SPACE_VOICES_URL.format(model=m.model_id)
+                resp = await get_with_retry(client, url, headers={"X-API-Key": settings.respeecher_api_key})
+                resp.raise_for_status()
+                rows = resp.json()
+                voices += parse_space_voices(m.model_id, m.languages, rows if isinstance(rows, list) else [])
+                urls.append(url)
+        result.tts_voices = voices
+        result.source = "mixed"
+        result.api_urls = urls
+        result.notes = f"docs: {len(result.tts_models)} TTS, {len(result.sts_models)} S2S models; api: {len(voices)} Space voices."
+        return result

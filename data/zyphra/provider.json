@@ -1,5 +1,8 @@
 {
   "access": "self_serve",
+  "api_urls": [
+    "https://api.zyphracloud.com/api/v1/audio/default-voices"
+  ],
   "description": "Zyphra Technologies is a San Francisco-based AI lab that builds open-weights models and runs Zyphra Cloud, an inference platform. Its speech product is the ZONOS text-to-speech family with zero-shot voice cloning, released under Apache-2.0 on Hugging Face and served through an OpenAI-compatible speech API priced per UTF-8 byte of input text.",
   "docs_urls": [
     "https://api.zyphracloud.com/api/v1/models",
@@ -16,7 +19,14 @@
     "pricing": "https://api.zyphracloud.com/api/v1/models"
   },
   "name": "Zyphra",
-  "source": "docs",
+  "source": "mixed",
   "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://api.zyphracloud.com/api/v1/audio/default-voices"
+    ]
+  },
   "website": "https://www.zyphra.com"
 }

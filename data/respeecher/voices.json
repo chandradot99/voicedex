@@ -1,1 +1,1414 @@
-[]
+[
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "abby",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "abby",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ar-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ahmed_advertisement",
+    "languages": [
+      "ar"
+    ],
+    "name": "Ahmed: Advertisement",
+    "tags": [
+      "advertisement"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "amara",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Amara: Conversational",
+    "tags": [
+      "conversational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "anand",
+    "languages": [
+      "en"
+    ],
+    "name": "anand",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "andreas-announcement",
+    "languages": [
+      "de"
+    ],
+    "name": "Andreas: announcement",
+    "tags": [
+      "announcement"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "andreas-asmr",
+    "languages": [
+      "de"
+    ],
+    "name": "Andreas: ASMR",
+    "tags": [
+      "asmr"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "andreas-audiobook-1",
+    "languages": [
+      "de"
+    ],
+    "name": "Andreas: audiobook 1",
+    "tags": [
+      "audiobook 1"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "andreas-audiobook-2",
+    "languages": [
+      "de"
+    ],
+    "name": "Andreas: audiobook 2",
+    "tags": [
+      "audiobook 2"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "andreas-casual",
+    "languages": [
+      "de"
+    ],
+    "name": "Andreas: casual",
+    "tags": [
+      "casual"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "andreas-meditation",
+    "languages": [
+      "de"
+    ],
+    "name": "Andreas: meditation",
+    "tags": [
+      "meditation"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "pt-br-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "barros-chatbot",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Lax: chatbot",
+    "tags": [
+      "chatbot"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "pt-br-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "barros-conversational",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Lax: conversational",
+    "tags": [
+      "conversational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "pt-br-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "barros-documentary",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Lax: documentary",
+    "tags": [
+      "documentary"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "pt-br-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "barros-news",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Lax: news",
+    "tags": [
+      "news"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "pt-br-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "barros-sport",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Lax: sport",
+    "tags": [
+      "sport"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bill",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "bill",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "chandani",
+    "languages": [
+      "en"
+    ],
+    "name": "chandani",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "christian",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Christian: Casual",
+    "tags": [
+      "casual"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-announcement",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: announcement",
+    "tags": [
+      "announcement"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-asmr",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: ASMR",
+    "tags": [
+      "asmr"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-audiobook-1",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: audiobook 1",
+    "tags": [
+      "audiobook 1"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-audiobook-2",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: audiobook 2",
+    "tags": [
+      "audiobook 2"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-commercial",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: commercial",
+    "tags": [
+      "commercial"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "christian-conversational",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Christian: Conversational",
+    "tags": [
+      "conversational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-meditation",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: meditation",
+    "tags": [
+      "meditation"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-radio",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: radio",
+    "tags": [
+      "radio"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christian-teleshopping",
+    "languages": [
+      "de"
+    ],
+    "name": "Christian: teleshopping",
+    "tags": [
+      "teleshopping"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ar-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christina_gentle",
+    "languages": [
+      "ar"
+    ],
+    "name": "Christina: Casual 1",
+    "tags": [
+      "casual 1"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ar-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "christina_melancholic",
+    "languages": [
+      "ar"
+    ],
+    "name": "Christina: Casual 2",
+    "tags": [
+      "casual 2"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "pt-br-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "daniela",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "daniela",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "dmytro-conversation",
+    "languages": [
+      "uk"
+    ],
+    "name": "Дмитро: розмова",
+    "tags": [
+      "розмова"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "surrey british",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "frederick-conversational",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Frederick: Conversational",
+    "tags": [
+      "conversational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "surrey british",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "frederick-smooth",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Frederick: Smooth",
+    "tags": [
+      "smooth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "italian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ginevra",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "experimental": true
+    },
+    "name": "ginevra",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "brazilian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "helena",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "experimental": true
+    },
+    "name": "helena",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "helmut-audiobook-1",
+    "languages": [
+      "de"
+    ],
+    "name": "Helmut: audiobook 1",
+    "tags": [
+      "audiobook 1"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "helmut-audiobook-2",
+    "languages": [
+      "de"
+    ],
+    "name": "Helmut: audiobook 2",
+    "tags": [
+      "audiobook 2"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "helmut-casual",
+    "languages": [
+      "de"
+    ],
+    "name": "Helmut: casual",
+    "tags": [
+      "casual"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "helmut-meditation",
+    "languages": [
+      "de"
+    ],
+    "name": "Helmut: meditation",
+    "tags": [
+      "meditation"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "henry",
+    "languages": [
+      "en-US"
+    ],
+    "name": "henry",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ihoreo-conversation",
+    "languages": [
+      "uk"
+    ],
+    "name": "Ігорео: розмова",
+    "tags": [
+      "розмова"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ihoreo-media",
+    "languages": [
+      "uk"
+    ],
+    "name": "Ігорео: медіа",
+    "tags": [
+      "медіа"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jessie-old-timer",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Jessie: Old-Timer",
+    "tags": [
+      "old-timer"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "ukrainian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "kalyna",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "experimental": true
+    },
+    "name": "kalyna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "moroccan",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "khadija",
+    "languages": [
+      "en"
+    ],
+    "name": "khadija",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "kseniia-conversation",
+    "languages": [
+      "uk"
+    ],
+    "name": "Ксенія: розмова",
+    "tags": [
+      "розмова"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "leon-deep",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Leon: Deep",
+    "tags": [
+      "deep"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lucas",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "lucas",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lucas-audiobook",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Lucas: Audiobook",
+    "tags": [
+      "audiobook"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "mariia-audiobook",
+    "languages": [
+      "uk"
+    ],
+    "name": "Марія: аудіокнига",
+    "tags": [
+      "аудіокнига"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "marta",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Marta: Conversational",
+    "tags": [
+      "conversational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ar-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "mohammad_calm",
+    "languages": [
+      "ar"
+    ],
+    "name": "Mohammad: Casual 2",
+    "tags": [
+      "casual 2"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ar-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "mohammad_casual",
+    "languages": [
+      "ar"
+    ],
+    "name": "Mohammad: Casual 1",
+    "tags": [
+      "casual 1"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ar-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "mohammad_hesitant",
+    "languages": [
+      "ar"
+    ],
+    "name": "Mohammad: Hesitant",
+    "tags": [
+      "hesitant"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "nigerian-british",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "musa",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "experimental": true
+    },
+    "name": "musa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "neal",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "C. L. Neal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "oleksandr-commercial",
+    "languages": [
+      "uk"
+    ],
+    "name": "Олександр: реклама",
+    "tags": [
+      "реклама"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "oleksandr-radio",
+    "languages": [
+      "uk"
+    ],
+    "name": "Олександр: радіо",
+    "tags": [
+      "радіо"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "olesia-announcement",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Олеся: оголошення",
+    "tags": [
+      "оголошення"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "olesia-conversation",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Олеся: розмова",
+    "tags": [
+      "розмова"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "olesia-media",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Олеся: медіа",
+    "tags": [
+      "медіа"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "roksolana-conversation",
+    "languages": [
+      "uk"
+    ],
+    "name": "Роксолана: розмова",
+    "tags": [
+      "розмова"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "russell-tv-narrator",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Russell: TV-narrator",
+    "tags": [
+      "tv-narrator"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "russo-tv-narrator",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Russo: TV-narrator",
+    "tags": [
+      "tv-narrator"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "samantha",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "samantha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "sv-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "sanna-conversational",
+    "languages": [
+      "sv"
+    ],
+    "name": "Sanna: Conversational",
+    "tags": [
+      "conversational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "sv-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "sanna-narration",
+    "languages": [
+      "sv"
+    ],
+    "name": "Sanna: Narration",
+    "tags": [
+      "narration"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "de-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "silpa-support",
+    "languages": [
+      "de"
+    ],
+    "name": "Silpa: support",
+    "tags": [
+      "support"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "cockney british",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "steve",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "steve",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "northern english",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "terry",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "terry",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "theo",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "theo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "tom",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "tom",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vic-chatbot",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Vic: Chatbot",
+    "tags": [
+      "chatbot"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vic-conversation",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Vic: Conversational",
+    "tags": [
+      "conversational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vic-cyber",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Vic: Cyber",
+    "tags": [
+      "cyber"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "victoria-commercial",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Victoria: Commercial",
+    "tags": [
+      "commercial"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "victoria-cyber",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Victoria: Cyber",
+    "tags": [
+      "cyber"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "victoria-voiceover",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "recommended": true
+    },
+    "name": "Victoria: Voiceover",
+    "tags": [
+      "voiceover"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "en-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vikram",
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "experimental": true
+    },
+    "name": "vikram",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "yevhen-audiobook",
+    "languages": [
+      "uk"
+    ],
+    "name": "Євген: аудіокнига",
+    "tags": [
+      "аудіокнига"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "ua-rt"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "yevhen-commercial",
+    "languages": [
+      "uk"
+    ],
+    "name": "Євген: реклама",
+    "tags": [
+      "реклама"
+    ],
+    "updated_at": "2026-11-18"
+  }
+]

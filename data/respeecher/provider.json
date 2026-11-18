@@ -1,5 +1,13 @@
 {
   "access": "self_serve",
+  "api_urls": [
+    "https://api.respeecher.com/v1/public/tts/ar-rt/voices",
+    "https://api.respeecher.com/v1/public/tts/de-rt/voices",
+    "https://api.respeecher.com/v1/public/tts/en-rt/voices",
+    "https://api.respeecher.com/v1/public/tts/pt-br-rt/voices",
+    "https://api.respeecher.com/v1/public/tts/sv-rt/voices",
+    "https://api.respeecher.com/v1/public/tts/ua-rt/voices"
+  ],
   "description": "Respeecher (Respeecher, Inc., a Delaware corporation with a postal address in Burbank, California) was founded in February 2018 by Alex Serdiuk, Dmytro Bielievtsov and Grant Reaber and is known for film and TV voice cloning. It sells the Space API for realtime text-to-speech with per-language models, and the Voice Marketplace (web app, API and Pro Tools plugin) for speech-to-speech voice conversion and text-to-speech with licensed voices.",
   "docs_urls": [
     "https://space.respeecher.com/docs/llms.txt",
@@ -21,7 +29,19 @@
     "pricing": "https://www.respeecher.com/real-time-tts-api"
   },
   "name": "Respeecher",
-  "source": "docs",
+  "source": "mixed",
   "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://api.respeecher.com/v1/public/tts/ar-rt/voices",
+      "https://api.respeecher.com/v1/public/tts/de-rt/voices",
+      "https://api.respeecher.com/v1/public/tts/en-rt/voices",
+      "https://api.respeecher.com/v1/public/tts/pt-br-rt/voices",
+      "https://api.respeecher.com/v1/public/tts/sv-rt/voices",
+      "https://api.respeecher.com/v1/public/tts/ua-rt/voices"
+    ]
+  },
   "website": "https://www.respeecher.com"
 }
