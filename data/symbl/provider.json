@@ -1,0 +1,9 @@
+{
+  "description": "Seattle conversation-intelligence API (transcription, summaries, insights). Invoca acquired Symbl.ai (announced 2025-05-28) and folded the technology into its own platform; by 2026-11-18 the developer docs domain (docs.symbl.ai) no longer resolves and symbl.ai returns server errors. No end date for the standalone API was published.",
+  "headquarters": "US",
+  "id": "symbl",
+  "name": "Symbl.ai",
+  "status": "deprecated",
+  "type": "stt",
+  "website": "https://symbl.ai"
+}

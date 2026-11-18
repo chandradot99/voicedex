@@ -1,0 +1,10 @@
+{
+  "description": "Brisbane-based AI voice company (founded 2018) whose voice library and API were used in games and animation. It discontinued the service on 2025-06-30 and asked users to download their data beforehand (MultiLingual, multilingual.com/replica-studios-shutdown-2025/).",
+  "headquarters": "AU",
+  "id": "replica",
+  "name": "Replica Studios",
+  "retired_on": "2025-06-30",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://www.replicastudios.com"
+}

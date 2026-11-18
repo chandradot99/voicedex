@@ -111,6 +111,10 @@ REGISTRY: list[SyncerEntry] = [
     # Retired, never synced — catalogued so "is X still alive?" has an answer.
     SyncerEntry("playht",            "PlayHT",            "tts",  "voicedex.sync.retired.RetiredSyncer", retired=True),
     SyncerEntry("coqui",             "Coqui",             "tts",  "voicedex.sync.retired.RetiredSyncer", retired=True),
+    SyncerEntry('sber-salutespeech', 'Sber SaluteSpeech', 'both', "voicedex.sync.retired.RetiredSyncer", retired=True),
+    SyncerEntry('nijivoice'        , 'Nijivoice', 'tts', "voicedex.sync.retired.RetiredSyncer", retired=True),
+    SyncerEntry('replica'          , 'Replica Studios', 'tts', "voicedex.sync.retired.RetiredSyncer", retired=True),
+    SyncerEntry('symbl'            , 'Symbl.ai', 'stt', "voicedex.sync.retired.RetiredSyncer", retired=True),
     SyncerEntry("supertone",         "Supertone",         "tts",  "voicedex.sync.retired.RetiredSyncer", retired=True),
 ]
 

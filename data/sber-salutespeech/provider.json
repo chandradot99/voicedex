@@ -1,0 +1,13 @@
+{
+  "description": "Russian speech recognition and synthesis API from Sber (SberDevices), billed in roubles. Sber's tariff pages state that from 15 July 2026 new customers can no longer buy packages or use pay-as-you-go, and individuals' Freemium renewals ended; previously purchased packages stay usable until they expire (developers.sber.ru/docs/ru/salutespeech/tariffs/individual-tariffs, legal-tariffs).",
+  "headquarters": "RU",
+  "id": "sber-salutespeech",
+  "links": {
+    "pricing": "https://developers.sber.ru/docs/ru/salutespeech/tariffs/legal-tariffs"
+  },
+  "name": "Sber SaluteSpeech",
+  "retired_on": "2026-07-15",
+  "status": "deprecated",
+  "type": "both",
+  "website": "https://developers.sber.ru/portal/products/smartspeech"
+}

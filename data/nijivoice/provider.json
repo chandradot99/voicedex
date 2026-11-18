@@ -1,0 +1,10 @@
+{
+  "description": "Japanese anime-style TTS service (にじボイス) from DMM-backed Algomatic, with a prepaid business API (¥825 per 10,000 characters). Algomatic announced on 2025-11-21 that the service, including the API, would end on 2026-02-04 after complaints that voices resembled real voice actors (Impress Watch, forest.watch.impress.co.jp/docs/news/1646992.html).",
+  "headquarters": "JP",
+  "id": "nijivoice",
+  "name": "Nijivoice",
+  "retired_on": "2026-02-04",
+  "status": "deprecated",
+  "type": "tts",
+  "website": "https://nijivoice.com"
+}
