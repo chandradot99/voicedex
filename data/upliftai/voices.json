@@ -1,0 +1,2187 @@
+[
+  {
+    "accent": "balochi",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Balochi-accented elder male — weathered gravity.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "balochi-elder",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Balochi"
+    },
+    "name": "Balochi Elder",
+    "tags": [
+      "Character",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "balochi",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Balochi-accented young woman — resilient, warm, community-driven delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "balochi-seamstress",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Balochi"
+    },
+    "name": "Balochi Seamstress",
+    "tags": [
+      "Character",
+      "Community"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "bengali",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bengali-accented young female — quietly driven entrepreneur voice.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "bengali-businesswoman",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Bengali"
+    },
+    "name": "Bengali Businesswoman",
+    "tags": [
+      "Character",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "bengali",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm Bengali-accented grandfather — garrulous, nostalgic.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bengali-grandfather",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Bengali"
+    },
+    "name": "Bengali Grandfather",
+    "tags": [
+      "Narration",
+      "Character",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "bihari",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bihari-accented young woman — capable, community-driven energy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "bihari-organizer",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Bihari"
+    },
+    "name": "Bihari Organizer",
+    "tags": [
+      "Character",
+      "Community"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Energetic male food vlogger — emphatic, hungry delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "biryani-reviewer",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Biryani Reviewer",
+    "tags": [
+      "Entertainment",
+      "Funny",
+      "Energetic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Polished male telecom support — empathetic, methodical, formal Urdu register.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "broadband-support",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Broadband Support",
+    "tags": [
+      "Professional",
+      "Customer Service"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Wiry, relentless minibus conductor — energetic shouting.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bus-conductor",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Bus Conductor",
+    "tags": [
+      "Character",
+      "Street",
+      "Energetic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "mythic",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Cold, predatory female.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "churail",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Churail",
+    "tags": [
+      "Dramatic",
+      "Horror",
+      "Mythic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "teen",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Determined Karachi college-aged female — natural, conversational delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "college-girl",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "College Girl",
+    "tags": [
+      "Character",
+      "Youth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Animated commentator calling a high-voltage T20 match — energetic, broadcast-grade.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "cricket-commentator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Cricket Commentator",
+    "tags": [
+      "Sports",
+      "Energetic",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Dark, menacing Bollywood-style villain.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "crime-don",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Crime Don",
+    "tags": [
+      "Dramatic",
+      "Character",
+      "Villain"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Crisp, contemplative male narration.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "crisp-storyteller",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Crisp Storyteller",
+    "tags": [
+      "Narration",
+      "Audiobook",
+      "Contemplative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm young male dawah voice — hadith and Islamic knowledge in a friendly register.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "dawah-youtuber",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Dawah YouTuber",
+    "tags": [
+      "Religious",
+      "Educational",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Methodical male defense advocate — precise tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "defense-advocate",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Defense Advocate",
+    "tags": [
+      "Professional",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "burger",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Self-aware burger-Urdu fitness voice.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dha-fitness-devotee",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Burger"
+    },
+    "name": "DHA Fitness Devotee",
+    "tags": [
+      "Character",
+      "Lifestyle",
+      "Funny"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "burger",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Polished mid-40s burger-Urdu — composed delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dha-hostess",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Burger"
+    },
+    "name": "DHA Hostess",
+    "tags": [
+      "Character",
+      "Dramatic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "burger",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "English-educated burger-Urdu grande dame — composed authority.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dha-matriarch",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Burger"
+    },
+    "name": "DHA Matriarch",
+    "tags": [
+      "Character",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "burger",
+    "age": "teen",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Burger-Urdu teen girl — dramatic, expressive delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dha-teen-girl",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Burger"
+    },
+    "name": "DHA Teen Girl",
+    "tags": [
+      "Character",
+      "Funny",
+      "Youth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Plain-speaking male doctor — calm and educational.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "diabetologist",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Diabetologist",
+    "tags": [
+      "Professional",
+      "Medical",
+      "Educational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Frail elderly male, plaintive tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "dua-uncle",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Dua Uncle",
+    "tags": [
+      "Character",
+      "Street"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Composed female advocate — authoritative delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "family-lawyer",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Family Lawyer",
+    "tags": [
+      "Professional",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sharp, fast female debate cadence.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "female-debater",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Female Debater",
+    "tags": [
+      "Dramatic",
+      "Energetic",
+      "Public Speaking"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Female documentary narrator — clean, balanced delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "female-narrator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Female Narrator",
+    "tags": [
+      "Narration",
+      "Professional",
+      "Documentary"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Energetic male field reporter — sharp, fast-paced.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "field-correspondent",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Field Correspondent",
+    "tags": [
+      "News",
+      "Energetic",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mischievous 8-year-old male — playful delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "gaming-kid",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Gaming Kid",
+    "tags": [
+      "Character",
+      "Funny",
+      "Youth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Female religious teacher — calm scholarly authority.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "hadith-narrator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Hadith Narrator",
+    "tags": [
+      "Religious",
+      "Educational",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Authoritative middle-aged male — commanding delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "headmaster",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Headmaster",
+    "tags": [
+      "Authoritative",
+      "Character"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Young male voice-note — soft, weary, emotional.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "heartbroken",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Heartbroken",
+    "tags": [
+      "Emotional",
+      "Vulnerable"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm female customer service voice — patient, empathetic.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "helpdesk-agent",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Helpdesk Agent",
+    "tags": [
+      "Professional",
+      "Customer Service",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Spooky, menacing male voice.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "horror-narrator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Horror Narrator",
+    "tags": [
+      "Dramatic",
+      "Horror",
+      "Narration"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Dramatic Urdu poetry recitation. Bold, passionate cadence.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "iqbalian-shayar",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Iqbalian Shayar",
+    "tags": [
+      "Poetry",
+      "Dramatic",
+      "Devotional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Passionate jalsa speech cadence.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jalsa-mimic",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Jalsa Mimic",
+    "tags": [
+      "Funny",
+      "Character",
+      "Entertainment"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "mythic",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Ancient watcher carrying millennia of cold philosophical dread.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jinn",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Jinn",
+    "tags": [
+      "Dramatic",
+      "Mythic",
+      "Horror"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Young male voice — thinks he's a charmer.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "karachi-romeo",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Karachi Romeo",
+    "tags": [
+      "Character",
+      "Funny",
+      "Street"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Impassioned male religious orator — Arabic and Urdu in one breath.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "khateeb",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Khateeb",
+    "tags": [
+      "Religious",
+      "Dramatic",
+      "Public Speaking"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Androgynous Pakistani character voice — warm, wry, dignified delivery.",
+    "first_seen": "2026-11-18",
+    "id": "khwajasara",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Khwajasara",
+    "tags": [
+      "Character",
+      "Community",
+      "Emotional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Old-city barber running a one-man radio station — comedic, fast-talking.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lahori-barber",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Lahori Barber",
+    "tags": [
+      "Character",
+      "Funny",
+      "Street"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "punjabi",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Late-50s uncle with Punjabi-Urdu accent. Deep voice.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lahori-story-uncle",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Punjabi"
+    },
+    "name": "Lahori Story Uncle",
+    "tags": [
+      "Character",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm late-night female radio host — smooth, intimate tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "late-night-rj",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Late Night RJ",
+    "tags": [
+      "Warm",
+      "Entertainment",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Incisive male debate voice.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "male-debater",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Male Debater",
+    "tags": [
+      "Dramatic",
+      "Energetic",
+      "Public Speaking"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Authoritative male documentary narrator.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "male-narrator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Male Narrator",
+    "tags": [
+      "Narration",
+      "Professional",
+      "Documentary"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "memon",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Memon-accented young woman — warm, quietly capable community voice.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "memon-organizer",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Memon"
+    },
+    "name": "Memon Organizer",
+    "tags": [
+      "Character",
+      "Community"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "memon",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Memon-accented middle-aged male — methodical wholesale-trader delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "memon-trader",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Memon"
+    },
+    "name": "Memon Trader",
+    "tags": [
+      "Character",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "bihari",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bihari-accented elder male — gruff-but-warm authority.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "mohalla-patriarch",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Bihari"
+    },
+    "name": "Mohalla Patriarch",
+    "tags": [
+      "Character",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "bihari",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bihari-accented adult male — corner-shop storyteller cadence.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "mohalla-storyteller",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Bihari"
+    },
+    "name": "Mohalla Storyteller",
+    "tags": [
+      "Narration",
+      "Character"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm-but-firm female teacher.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "montessori-teacher",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Montessori Teacher",
+    "tags": [
+      "Educational",
+      "Warm",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Seasoned commanding officer voice — authoritative, ship-tested delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "navy-officer",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Navy Officer",
+    "tags": [
+      "Professional",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "teen",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Urdu-medium teen boy — natural delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "nazimabad-boy",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Nazimabad Boy",
+    "tags": [
+      "Character",
+      "Youth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Female anchor — sharp, clean, broadcast-ready delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "news-anchor",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "News Anchor",
+    "tags": [
+      "News",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Soft female news voice — slightly fast pace.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "news-reader",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "News Reader",
+    "tags": [
+      "News",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Mohalla broadcaster — chai, gossip, righteous indignation.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nosey-aunty",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Nosey Aunty",
+    "tags": [
+      "Character",
+      "Funny"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Khandan-proud matriarch — proud, expressive, hearty delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "orangi-khala",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Orangi Khala",
+    "tags": [
+      "Character",
+      "Funny"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm female paediatrician — calm authority.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "paediatrician",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Paediatrician",
+    "tags": [
+      "Professional",
+      "Medical",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "pashto",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Pashtun-accented middle-aged male — weathered, steady delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "pashtun-navigator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Pashto"
+    },
+    "name": "Pashtun Navigator",
+    "tags": [
+      "Character",
+      "Street"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "pashto",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Dignified Pashtun-accented elder. Warm, weathered tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "pashtun-pensioner",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Pashto"
+    },
+    "name": "Pashtun Pensioner",
+    "tags": [
+      "Character",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "pashto",
+    "age": "teen",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Pashtun-accented teen boy — sharp-witted youth delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "pashtun-teen",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Pashto"
+    },
+    "name": "Pashtun Teen",
+    "tags": [
+      "Character",
+      "Youth"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "pashto",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Pashtun-accented young female — pragmatic, community-driven tone.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "pashtun-woman",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Pashto"
+    },
+    "name": "Pashtun Woman",
+    "tags": [
+      "Character",
+      "Community"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Reflective male podcast host — measured pace.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "podcast-host",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Podcast Host",
+    "tags": [
+      "Narration",
+      "Professional",
+      "Contemplative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Male prime-time news anchor.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "prime-time-anchor",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Prime Time Anchor",
+    "tags": [
+      "News",
+      "Professional",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "punjabi",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Punjabi-accented middle-aged male — steady mid-career professional voice.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "punjabi-manager",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Punjabi"
+    },
+    "name": "Punjabi Manager",
+    "tags": [
+      "Character",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "punjabi",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Pragmatic Punjabi-accented young female — warm and earthy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "punjabi-masi",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Punjabi"
+    },
+    "name": "Punjabi Masi",
+    "tags": [
+      "Character",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bold, classic male storyteller. Solemn pacing.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "qissa-khawan",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Qissa Khawan",
+    "tags": [
+      "Narration",
+      "Audiobook",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "punjabi",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Punjabi-accented rural aunty — sharp wit, comedic timing, hearty delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "rohtaki-aunty",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Punjabi"
+    },
+    "name": "Rohtaki Aunty",
+    "tags": [
+      "Character",
+      "Funny"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Bright 12-year-old female.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "schoolgirl",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Schoolgirl",
+    "tags": [
+      "Character",
+      "Youth",
+      "Educational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Measured male hadith narrator — scholarly warmth and isnad-recitation cadence.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "seerah-educator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Seerah Educator",
+    "tags": [
+      "Religious",
+      "Educational"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Seasoned scholar — methodical, authoritative delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "seerah-scholar",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Seerah Scholar",
+    "tags": [
+      "Religious",
+      "Educational",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Clean male anchor — balanced tone, good tempo.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "senior-anchor",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Senior Anchor",
+    "tags": [
+      "News",
+      "Authoritative",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Warm kiryana shopkeeper — friendly haggling tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "shopkeeper",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Shopkeeper",
+    "tags": [
+      "Character",
+      "Street",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "sindhi",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sindhi-accented middle-aged male — weary delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "sindhi-navigator",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Sindhi"
+    },
+    "name": "Sindhi Navigator",
+    "tags": [
+      "Character",
+      "Emotional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "sindhi",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sindhi-accented young male — easy, friendly community-networker tone.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "sindhi-networker",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Sindhi"
+    },
+    "name": "Sindhi Networker",
+    "tags": [
+      "Character",
+      "Community"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "sindhi",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Deep Sindhi-accented elder. Sufi gravity.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "sindhi-patriarch",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Sindhi"
+    },
+    "name": "Sindhi Patriarch",
+    "tags": [
+      "Character",
+      "Devotional",
+      "Authoritative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "sindhi",
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sindhi-accented young female professional — composed, contemporary delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "sindhi-professional",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "From Every Corner",
+      "urdu_accent": "Sindhi"
+    },
+    "name": "Sindhi Professional",
+    "tags": [
+      "Character",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Composed PSX commodity analyst — measured Urdu.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "stock-analyst",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Stock Analyst",
+    "tags": [
+      "Professional",
+      "Educational",
+      "Financial"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Sun-baked thela-wala — sharp-tongued, energetic delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "street-vendor",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Street Vendor",
+    "tags": [
+      "Character",
+      "Street",
+      "Energetic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Karachi street vlogger — warm female storytelling with on-the-ground energy.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "street-vlogger",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "On the Air",
+      "urdu_accent": "Standard"
+    },
+    "name": "Street Vlogger",
+    "tags": [
+      "Entertainment",
+      "Narration",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Firm authority with dry chacha-style wit.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "traffic-cop",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Traffic Cop",
+    "tags": [
+      "Character",
+      "Funny",
+      "Street"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Subdued young male — pre-tears delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "udaas-aashiq",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Udaas Aashiq",
+    "tags": [
+      "Emotional",
+      "Vulnerable"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Slow, drawled male monologue.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "udaas-philosopher",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Udaas Philosopher",
+    "tags": [
+      "Emotional",
+      "Funny",
+      "Character"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Measured male university lecturer — erudite delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "urdu-professor",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Every Walk of Life",
+      "urdu_accent": "Standard"
+    },
+    "name": "Urdu Professor",
+    "tags": [
+      "Educational",
+      "Authoritative",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "v_30s70t3a",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Nostalgic News",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "v_8eelc901",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Info/Education",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "v_bl0ab8c4",
+    "languages": [
+      "bal"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Balochi Male",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "v_kwmp7zxt",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Gen Z (beta)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "v_meklc281",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Info/Education V2",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "v_sd0kl3m9",
+    "languages": [
+      "sd"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Sindhi Female",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "v_sd6mn4p2",
+    "languages": [
+      "sd"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Sindhi Male Calm",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "v_sd9qr7x5",
+    "languages": [
+      "sd"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Sindhi Male News",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "v_yypgzenx",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "earlier_voice": "Listed under 'Earlier voices': remain available for existing integrations."
+    },
+    "name": "Dada Jee",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A gloriously tone-deaf shower singer — every note off-key, yet utterly unable to stop belting.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "washroom-singer",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "Only in Pakistan",
+      "urdu_accent": "Standard"
+    },
+    "name": "Washroom Singer",
+    "tags": [
+      "Character",
+      "Funny",
+      "Warm"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "Middle-aged Karachi trader — steady, measured delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "wholesale-trader",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "group": "City to City",
+      "urdu_accent": "Standard"
+    },
+    "name": "Wholesale Trader",
+    "tags": [
+      "Character",
+      "Professional"
+    ],
+    "updated_at": "2026-11-18"
+  }
+]

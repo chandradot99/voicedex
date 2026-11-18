@@ -1,0 +1,38 @@
+{
+  "access": "self_serve",
+  "description": "Uplift AI (Uplift AI, Inc., a Delaware company working from San Francisco and Lahore) builds voice models for Pakistani languages. It sells Orator text-to-speech, chiefly Urdu with Sindhi and Balochi voices, a beta Urdu speech-to-text API (Scribe) and Urdu AI calling agents, through monthly self-serve subscriptions with a free tier.",
+  "docs_urls": [
+    "https://docs.upliftai.org/api-reference/endpoint/speech-to-text.md",
+    "https://docs.upliftai.org/orator.md",
+    "https://docs.upliftai.org/orator_limits.md",
+    "https://docs.upliftai.org/websocket-tts.md",
+    "https://docs.upliftai.org/api-reference/endpoint/text-to-speech.md",
+    "https://docs.upliftai.org/orator_voices.md",
+    "https://docs.upliftai.org/voices.json"
+  ],
+  "headquarters": "US",
+  "id": "upliftai",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.upliftai.org/api-reference/endpoint/text-to-speech",
+    "docs": "https://docs.upliftai.org",
+    "pricing": "https://upliftai.org"
+  },
+  "name": "Uplift AI",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.upliftai.org/api-reference/endpoint/speech-to-text.md",
+      "https://docs.upliftai.org/orator.md",
+      "https://docs.upliftai.org/orator_limits.md",
+      "https://docs.upliftai.org/websocket-tts.md",
+      "https://docs.upliftai.org/api-reference/endpoint/text-to-speech.md",
+      "https://docs.upliftai.org/orator_voices.md",
+      "https://docs.upliftai.org/voices.json"
+    ]
+  },
+  "website": "https://upliftai.org"
+}

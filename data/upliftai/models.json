@@ -1,0 +1,142 @@
+[
+  {
+    "description": "Full-accuracy Urdu speech-to-text model (beta), with optional domain optimization.",
+    "first_seen": "2026-11-18",
+    "id": "scribe",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "ur"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "credit_rate": "40 credits per minute",
+      "default_note": "OpenAPI: `model` default is `scribe`.",
+      "domains": [
+        "phone-commerce",
+        "farming"
+      ],
+      "endpoint": "POST https://api.upliftai.org/v1/transcribe/speech-to-text",
+      "max_file_mb": 25,
+      "plans": "Monthly subscriptions (Free $0, Starter $5, Pro $50, Growth $300) bundle TTS minutes and AI-calling minutes; no per-unit money rate is published."
+    },
+    "name": "Scribe",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.upliftai.org/api-reference/endpoint/speech-to-text.md",
+        "https://docs.upliftai.org/orator.md",
+        "https://docs.upliftai.org/orator_limits.md",
+        "https://docs.upliftai.org/websocket-tts.md",
+        "https://docs.upliftai.org/api-reference/endpoint/text-to-speech.md",
+        "https://docs.upliftai.org/orator_voices.md",
+        "https://docs.upliftai.org/voices.json"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "description": "Cost-effective Urdu speech-to-text model (beta) at half the credit rate of Scribe.",
+    "first_seen": "2026-11-18",
+    "id": "scribe-mini",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ur"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "credit_rate": "20 credits per minute",
+      "domains": [
+        "phone-commerce",
+        "farming"
+      ],
+      "endpoint": "POST https://api.upliftai.org/v1/transcribe/speech-to-text",
+      "max_file_mb": 25,
+      "plans": "Monthly subscriptions (Free $0, Starter $5, Pro $50, Growth $300) bundle TTS minutes and AI-calling minutes; no per-unit money rate is published."
+    },
+    "name": "Scribe Mini",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.upliftai.org/api-reference/endpoint/speech-to-text.md",
+        "https://docs.upliftai.org/orator.md",
+        "https://docs.upliftai.org/orator_limits.md",
+        "https://docs.upliftai.org/websocket-tts.md",
+        "https://docs.upliftai.org/api-reference/endpoint/text-to-speech.md",
+        "https://docs.upliftai.org/orator_voices.md",
+        "https://docs.upliftai.org/voices.json"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "description": "Text-to-speech for Pakistani languages, chiefly Urdu with Urdu-English code-switching, over REST, HTTP streaming, async and WebSocket APIs.",
+    "first_seen": "2026-11-18",
+    "id": "orator",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ur",
+      "sd",
+      "bal"
+    ],
+    "max_text_chars": 2500,
+    "meta": {
+      "language_note": "Sindhi and Balochi come from the earlier-voices table; the current 82-voice catalog speaks Urdu.",
+      "model_id_note": "No model parameter; requests select a voiceId. 'orator' is the product name.",
+      "output_formats": [
+        "PCM_22050_16",
+        "WAV_22050_16",
+        "WAV_22050_32",
+        "MP3_22050_32",
+        "MP3_22050_64",
+        "MP3_22050_128",
+        "OGG_22050_16",
+        "ULAW_8000_8"
+      ],
+      "phrase_replacement": "Phrase replacement configs control pronunciation of brand names and terms.",
+      "plans": "Monthly subscriptions: Free $0 (10 min TTS), Starter $5 (100 min), Pro $50 (25 h), Growth $300 (200 h); no per-unit rate published.",
+      "rate_limit": "100 requests per minute"
+    },
+    "name": "Orator",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.upliftai.org/api-reference/endpoint/speech-to-text.md",
+        "https://docs.upliftai.org/orator.md",
+        "https://docs.upliftai.org/orator_limits.md",
+        "https://docs.upliftai.org/websocket-tts.md",
+        "https://docs.upliftai.org/api-reference/endpoint/text-to-speech.md",
+        "https://docs.upliftai.org/orator_voices.md",
+        "https://docs.upliftai.org/voices.json"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      22050
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
