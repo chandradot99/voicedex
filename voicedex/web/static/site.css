@@ -404,6 +404,8 @@ input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 }
 .combo:has(.combo-input[aria-expanded="true"])::after { transform: translateY(3px) rotate(225deg); }
 .field .combo-input::placeholder { color: var(--ink); }
+.field .combo-input { cursor: pointer; }
+.field .combo-input[aria-expanded="true"] { cursor: text; }       /* typing to filter once open */
 .field .combo-input:hover { border-color: var(--ink-2); }
 .field .combo-input:focus { border-color: var(--signal); }
 .field .combo-input[aria-expanded="true"]::placeholder { color: var(--muted); }
