@@ -1,0 +1,3242 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ar-SA.",
+    "first_seen": "2026-11-18",
+    "id": "Arabic",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.cloud.unifonic.com (Oracle Cloud Jeddah)",
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        8,
+        9
+      ]
+    },
+    "name": "Knovvu SR Arabic",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes ar-SA, en-US.",
+    "first_seen": "2026-11-18",
+    "id": "ArabicEnglish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-SA",
+      "en-US"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.cloud.unifonic.com (Oracle Cloud Jeddah)",
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        4
+      ]
+    },
+    "name": "Knovvu SR ArabicEnglish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK real-time (WebSocket) recognition model for ar-SA, en-US.",
+    "first_seen": "2026-11-18",
+    "id": "ArabicEnglishStream",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "ar-SA",
+      "en-US"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "raw pcm, sample-rate e.g. 8000 or 16000",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR ArabicEnglishStream",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes ar-SA, en-US, tr-TR.",
+    "first_seen": "2026-11-18",
+    "id": "ArabicEnglishTurkish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-SA",
+      "en-US",
+      "tr-TR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR ArabicEnglishTurkish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for az-Latn-AZ.",
+    "first_seen": "2026-11-18",
+    "id": "Azerbaijani",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "az-Latn-AZ"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Azerbaijani",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for cs-CZ.",
+    "first_seen": "2026-11-18",
+    "id": "Czech",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Czech",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for da-DK.",
+    "first_seen": "2026-11-18",
+    "id": "Danish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR Danish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for nl-NL.",
+    "first_seen": "2026-11-18",
+    "id": "Dutch",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        6
+      ]
+    },
+    "name": "Knovvu SR Dutch",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for en-US.",
+    "first_seen": "2026-11-18",
+    "id": "English",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.cloud.unifonic.com (Oracle Cloud Jeddah)",
+        "sr.tr.knovvu.com (Eclit Türkiye)",
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        9,
+        10
+      ]
+    },
+    "name": "Knovvu SR English",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes en-US, hi-IN.",
+    "first_seen": "2026-11-18",
+    "id": "EnglishHindi",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US",
+      "hi-IN"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR EnglishHindi",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes en-US, es-ES.",
+    "first_seen": "2026-11-18",
+    "id": "EnglishSpanish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US",
+      "es-ES"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.useast.knovvu.com (AWS Ohio)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR EnglishSpanish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK real-time (WebSocket) recognition model for en-US.",
+    "first_seen": "2026-11-18",
+    "id": "EnglishStream",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "raw pcm, sample-rate e.g. 8000 or 16000",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR EnglishStream",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes en-US, tr-TR.",
+    "first_seen": "2026-11-18",
+    "id": "EnglishTurkish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US",
+      "tr-TR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)",
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR EnglishTurkish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for fi-FI.",
+    "first_seen": "2026-11-18",
+    "id": "Finnish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "fi-FI"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        4
+      ]
+    },
+    "name": "Knovvu SR Finnish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for fr-FR.",
+    "first_seen": "2026-11-18",
+    "id": "French",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)",
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        6
+      ]
+    },
+    "name": "Knovvu SR French",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for de-DE.",
+    "first_seen": "2026-11-18",
+    "id": "German",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        4,
+        5
+      ]
+    },
+    "name": "Knovvu SR German",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for hi-IN.",
+    "first_seen": "2026-11-18",
+    "id": "Hindi",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Hindi",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for id-ID.",
+    "first_seen": "2026-11-18",
+    "id": "Indonesian",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "id-ID"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR Indonesian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for it-IT.",
+    "first_seen": "2026-11-18",
+    "id": "Italian",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        5
+      ]
+    },
+    "name": "Knovvu SR Italian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ja-JP.",
+    "first_seen": "2026-11-18",
+    "id": "Japanese",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR Japanese",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "description": "SESTEK grammar-based recognition model for tr-TR.",
+    "first_seen": "2026-11-18",
+    "id": "JoinedGrammar",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "recognition_method": "grammar",
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR JoinedGrammar",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "description": "SESTEK grammar-based recognition model for nl-NL.",
+    "first_seen": "2026-11-18",
+    "id": "JoinedGrammarDutch",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "recognition_method": "grammar",
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR JoinedGrammarDutch",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "description": "SESTEK grammar-based recognition model for en-US.",
+    "first_seen": "2026-11-18",
+    "id": "JoinedGrammarEnglish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "recognition_method": "grammar",
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        10
+      ]
+    },
+    "name": "Knovvu SR JoinedGrammarEnglish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "description": "SESTEK grammar-based recognition model for de-DE.",
+    "first_seen": "2026-11-18",
+    "id": "JoinedGrammarGerman",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "recognition_method": "grammar",
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR JoinedGrammarGerman",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ko-KR.",
+    "first_seen": "2026-11-18",
+    "id": "Korean",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR Korean",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ku.",
+    "first_seen": "2026-11-18",
+    "id": "Kurdish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ku"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Kurdish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes ar-SA, da-DK, nl-NL, en-US, fi-FI, fr-FR, de-DE, hi-IN, it-IT, lv-LV, zh-CN, nb-NO, pt-PT, ru-RU, es-ES, sv-SE, tl-PH, tr-TR, ur-PK.",
+    "first_seen": "2026-11-18",
+    "id": "Large",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-SA",
+      "da-DK",
+      "nl-NL",
+      "en-US",
+      "fi-FI",
+      "fr-FR",
+      "de-DE",
+      "hi-IN",
+      "it-IT",
+      "lv-LV",
+      "zh-CN",
+      "nb-NO",
+      "pt-PT",
+      "ru-RU",
+      "es-ES",
+      "sv-SE",
+      "tl-PH",
+      "tr-TR",
+      "ur-PK"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Large",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ms-MY.",
+    "first_seen": "2026-11-18",
+    "id": "Malay",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ms-MY"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR Malay",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for zh-CN.",
+    "first_seen": "2026-11-18",
+    "id": "Mandarin",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        4
+      ]
+    },
+    "name": "Knovvu SR Mandarin",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes ar-SA, en-US, fr-FR, ur-PK.",
+    "first_seen": "2026-11-18",
+    "id": "Mena",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-SA",
+      "en-US",
+      "fr-FR",
+      "ur-PK"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.cloud.unifonic.com (Oracle Cloud Jeddah)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR Mena",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for nb-NO.",
+    "first_seen": "2026-11-18",
+    "id": "Norwegian",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "nb-NO"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        6
+      ]
+    },
+    "name": "Knovvu SR Norwegian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for pl-PL.",
+    "first_seen": "2026-11-18",
+    "id": "Polish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Polish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for pt-PT.",
+    "first_seen": "2026-11-18",
+    "id": "Portuguese",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        4
+      ]
+    },
+    "name": "Knovvu SR Portuguese",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ro-RO.",
+    "first_seen": "2026-11-18",
+    "id": "Romanian",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ro-RO"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Romanian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ru-RU.",
+    "first_seen": "2026-11-18",
+    "id": "Russian",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        3
+      ]
+    },
+    "name": "Knovvu SR Russian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "SESTEK multilingual end-to-end dictation model that detects and transcribes ar-SA, en-US, fr-FR, es-ES, ru-RU, tr-TR.",
+    "first_seen": "2026-11-18",
+    "id": "SixLanguagesMulti",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar-SA",
+      "en-US",
+      "fr-FR",
+      "es-ES",
+      "ru-RU",
+      "tr-TR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR SixLanguagesMulti",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for es-ES.",
+    "first_seen": "2026-11-18",
+    "id": "Spanish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        3
+      ]
+    },
+    "name": "Knovvu SR Spanish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for sw-KE.",
+    "first_seen": "2026-11-18",
+    "id": "Swahili",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "sw-KE"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Swahili",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for sv-SE.",
+    "first_seen": "2026-11-18",
+    "id": "Swedish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        7
+      ]
+    },
+    "name": "Knovvu SR Swedish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ta-IN.",
+    "first_seen": "2026-11-18",
+    "id": "Tamil",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Tamil",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for tr-TR.",
+    "first_seen": "2026-11-18",
+    "id": "Turkish",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.cloud.unifonic.com (Oracle Cloud Jeddah)",
+        "sr.tr.knovvu.com (Eclit Türkiye)",
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        8,
+        9
+      ]
+    },
+    "name": "Knovvu SR Turkish",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "batch": false,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK real-time (WebSocket) recognition model for tr-TR.",
+    "first_seen": "2026-11-18",
+    "id": "TurkishStream",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.tr.knovvu.com (Eclit Türkiye)",
+        "sr.tr2.knovvu.com (Huawei Cloud Türkiye)",
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "raw pcm, sample-rate e.g. 8000 or 16000",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        2
+      ]
+    },
+    "name": "Knovvu SR TurkishStream",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for uk-UA.",
+    "first_seen": "2026-11-18",
+    "id": "Ukrainian",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "uk-UA"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "sr.useast.knovvu.com (AWS Ohio)",
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        1
+      ]
+    },
+    "name": "Knovvu SR Ukrainian",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "mp4",
+      "opus",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "word_timestamps"
+    ],
+    "description": "SESTEK end-to-end dictation model for ur-PK.",
+    "first_seen": "2026-11-18",
+    "id": "Urdu",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "cloud_hosts": [
+        "srapi.knovvu.com (AWS Paris)"
+      ],
+      "encodings": "audio/wav, audio/opus and other ffmpeg-decodable formats (mp3, mp4, G.729)",
+      "model_sample_rate_hz": [
+        16000
+      ],
+      "version_note": "ModelVersion header pins a version; omitted or 0 selects the latest.",
+      "versions": [
+        3
+      ]
+    },
+    "name": "Knovvu SR Urdu",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "regions": [
+      "eu"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000,
+      96000,
+      192000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "GPU-optimised VITS-based neural voices for low latency and high throughput.",
+    "first_seen": "2026-11-18",
+    "id": "knovvu-tts-flash",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar-SA",
+      "en-US",
+      "tr-TR"
+    ],
+    "meta": {
+      "billing": "1 credit per synthesized phoneme plus 1 per punctuation mark; credit prices are not published.",
+      "endpoints": {
+        "http": "POST {Address}/v1/speech/synthesis/tts",
+        "voices": "GET {Address}/v1/speech/synthesis/voices",
+        "websocket": "wss://<tts-service-host>/synthesizer"
+      },
+      "formats_note": "HTTP returns WAV, Opus, MP3 or FLV; the WebSocket API streams pcm.",
+      "model_id_note": "No model parameter: the tier is implied by the voice name (Name / voice-name).",
+      "voice_cloning": "custom/cloned voices via SESTEK sales only (not available via API)"
+    },
+    "name": "Knovvu TTS Flash",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "LLM-based voices tuned for natural-sounding output, served from a GPU server.",
+    "first_seen": "2026-11-18",
+    "id": "knovvu-tts-premium",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar-AE",
+      "ar-IQ",
+      "ar-KW",
+      "ar-SA",
+      "en-GB",
+      "en-US",
+      "fil-PH",
+      "fr-CA",
+      "id-ID",
+      "ms-MY",
+      "sw-KE",
+      "th-TH",
+      "tr-TR",
+      "ur-PK"
+    ],
+    "meta": {
+      "billing": "1 credit per synthesized phoneme plus 1 per punctuation mark; credit prices are not published.",
+      "endpoints": {
+        "http": "POST {Address}/v1/speech/synthesis/tts",
+        "voices": "GET {Address}/v1/speech/synthesis/voices",
+        "websocket": "wss://<tts-service-host>/synthesizer"
+      },
+      "formats_note": "HTTP returns WAV, Opus, MP3 or FLV; the WebSocket API streams pcm.",
+      "model_id_note": "No model parameter: the tier is implied by the voice name (Name / voice-name).",
+      "voice_cloning": "custom/cloned voices via SESTEK sales only (not available via API)"
+    },
+    "name": "Knovvu TTS Premium",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "VITS-based neural voices that run on CPU across Windows, Linux and Kubernetes deployments.",
+    "first_seen": "2026-11-18",
+    "id": "knovvu-tts-standard",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ar-AE",
+      "ar-KW",
+      "ar-SA",
+      "az-AZ",
+      "de-DE",
+      "en-GB",
+      "en-US",
+      "es-ES",
+      "fa-IR",
+      "ps-AF",
+      "ru-RU",
+      "tr-TR",
+      "uk-UA",
+      "ur-PK"
+    ],
+    "meta": {
+      "billing": "1 credit per synthesized phoneme plus 1 per punctuation mark; credit prices are not published.",
+      "endpoints": {
+        "http": "POST {Address}/v1/speech/synthesis/tts",
+        "voices": "GET {Address}/v1/speech/synthesis/voices",
+        "websocket": "wss://<tts-service-host>/synthesizer"
+      },
+      "formats_note": "HTTP returns WAV, Opus, MP3 or FLV; the WebSocket API streams pcm.",
+      "model_id_note": "No model parameter: the tier is implied by the voice name (Name / voice-name).",
+      "voice_cloning": "custom/cloned voices via SESTEK sales only (not available via API)"
+    },
+    "name": "Knovvu TTS Standard",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+        "https://docs.sestek.com/docs/sr-language-models.md",
+        "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+        "https://docs.sestek.com/docs/sr-transcription.md",
+        "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+        "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+        "https://docs.sestek.com/docs/sr-features.md",
+        "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text.md",
+        "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+        "https://docs.sestek.com/docs/tts-features.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

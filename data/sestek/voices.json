@@ -1,0 +1,2433 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ada_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Ada (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ali_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Ali (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alya_Premium",
+    "languages": [
+      "ms-MY"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Malay",
+      "tier": "Premium"
+    },
+    "name": "Alya (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Amina_Premium",
+    "languages": [
+      "sw-KE"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Swahili",
+      "tier": "Premium"
+    },
+    "name": "Amina (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Amy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Amy (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anisa_Premium",
+    "languages": [
+      "id-ID"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Indonesian",
+      "tier": "Premium"
+    },
+    "name": "Anisa (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Annabella",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "German",
+      "tier": "Standard"
+    },
+    "name": "Annabella (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Aras",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Turkish",
+      "tier": "Standard"
+    },
+    "name": "Aras (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Aras_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Aras (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arda_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Arda (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arda_Premium_HD",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Arda HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Aysu_Flash",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "Optional (Recommended)",
+      "language_label": "Turkish",
+      "tier": "Flash"
+    },
+    "name": "Aysu (Flash)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Aysu_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Aysu (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Aysu_Premium_HD",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Aysu HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ceren_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Ceren (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Charlotte_Premium",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "French (Canadian)",
+      "tier": "Premium"
+    },
+    "name": "Charlotte (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chloe_Flash",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "Optional (Recommended)",
+      "language_label": "English (American)",
+      "tier": "Flash"
+    },
+    "name": "Chloe (Flash)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chloe_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Chloe (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chloe_Premium_HD",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Chloe HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Clara_Flash",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "Optional (Recommended)",
+      "language_label": "English (American)",
+      "tier": "Flash"
+    },
+    "name": "Clara (Flash)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "David",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "David (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Debbie_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Debbie (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Debbie_Premium_HD",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Debbie HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Defne_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Defne (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "msa",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Delal",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Arabic (MSA)",
+      "tier": "Standard"
+    },
+    "name": "Delal (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "msa",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Delal_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (MSA)",
+      "tier": "Premium"
+    },
+    "name": "Delal (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Derya_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Derya (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Derya_Premium_HD",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Derya HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Eda",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Turkish",
+      "tier": "Standard"
+    },
+    "name": "Eda (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Eda_Flash",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "Optional (Recommended)",
+      "language_label": "Turkish",
+      "tier": "Flash"
+    },
+    "name": "Eda (Flash)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Eda_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Eda (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ege_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Ege (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Emily",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (British)",
+      "tier": "Standard"
+    },
+    "name": "Emily (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Emily_Premium",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (British)",
+      "tier": "Premium"
+    },
+    "name": "Emily (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Emre_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Emre (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Emre_Premium_HD",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Emre HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Enzo_Premium",
+    "languages": [
+      "fil-PH"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Filipino",
+      "tier": "Premium"
+    },
+    "name": "Enzo (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ethan_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Ethan (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ethan_Premium_HD",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Ethan HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "iraqi",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Furat_Premium",
+    "languages": [
+      "ar-IQ"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Iraqi)",
+      "tier": "Premium"
+    },
+    "name": "Furat (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gladys",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Spanish",
+      "tier": "Standard"
+    },
+    "name": "Gladys (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gokce",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Turkish",
+      "tier": "Standard"
+    },
+    "name": "Gökçe (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gokce_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Gökçe (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gul",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Turkish",
+      "tier": "Standard"
+    },
+    "name": "Gül (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Gul_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Gül (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hakim_Premium",
+    "languages": [
+      "ms-MY"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Malay",
+      "tier": "Premium"
+    },
+    "name": "Hakim (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hamad",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Arabic (Emirati)",
+      "tier": "Standard"
+    },
+    "name": "Hamad (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "emirati",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hamad_Premium",
+    "languages": [
+      "ar-AE"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Emirati)",
+      "tier": "Premium"
+    },
+    "name": "Hamad (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jabari_Premium",
+    "languages": [
+      "sw-KE"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Swahili",
+      "tier": "Premium"
+    },
+    "name": "Jabari (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "James_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "James (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "James_Premium_HD",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "hd": "Premium HD: conversational Premium voice enhanced with call-centre recordings",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "James HD (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "kuwaiti",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jassim",
+    "languages": [
+      "ar-KW"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Arabic (Kuwaiti)",
+      "tier": "Standard"
+    },
+    "name": "Jassim (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "kuwaiti",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jassim_Premium",
+    "languages": [
+      "ar-KW"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Kuwaiti)",
+      "tier": "Premium"
+    },
+    "name": "Jassim (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jennifer",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Jennifer (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jennifer_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Jennifer (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Juan",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Spanish",
+      "tier": "Standard"
+    },
+    "name": "Juan (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kathy",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Kathy (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kristina",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Russian",
+      "tier": "Standard"
+    },
+    "name": "Kristina (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lalita_Premium",
+    "languages": [
+      "th-TH"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Thai",
+      "tier": "Premium"
+    },
+    "name": "Lalita (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lara_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Lara (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Layan_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Najdi)",
+      "locale_in_docs": "ar-NJ",
+      "tier": "Premium"
+    },
+    "name": "Layan (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lujain_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Najdi)",
+      "locale_in_docs": "ar-NJ",
+      "tier": "Premium"
+    },
+    "name": "Lujain (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mansour_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Najdi)",
+      "locale_in_docs": "ar-NJ",
+      "tier": "Premium"
+    },
+    "name": "Mansour (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mark",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Mark (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Melissa",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Melissa (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mert_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Mert (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mia_Premium",
+    "languages": [
+      "fil-PH"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Filipino",
+      "tier": "Premium"
+    },
+    "name": "Mia (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Michael_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Michael (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Michelle_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Michelle (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mina_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Mina (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Muntaha_Premium",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Urdu",
+      "tier": "Premium"
+    },
+    "name": "Muntaha (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Narin_Premium",
+    "languages": [
+      "th-TH"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Thai",
+      "tier": "Premium"
+    },
+    "name": "Narin (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nehir_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Nehir (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nil",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Turkish",
+      "tier": "Standard"
+    },
+    "name": "Nil (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nil_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Nil (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Oliver_Premium",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "English (American)",
+      "tier": "Premium"
+    },
+    "name": "Oliver (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Paul",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Paul (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rae",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Rae (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "msa",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rima_Flash",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "Optional (Recommended)",
+      "language_label": "Arabic (MSA)",
+      "tier": "Flash"
+    },
+    "name": "Rima (Flash)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "msa",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rima_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (MSA)",
+      "tier": "Premium"
+    },
+    "name": "Rima (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rizky_Premium",
+    "languages": [
+      "id-ID"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Indonesian",
+      "tier": "Premium"
+    },
+    "name": "Rizky (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ryan",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (American)",
+      "tier": "Standard"
+    },
+    "name": "Ryan (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "msa",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Salem",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Arabic (MSA)",
+      "tier": "Standard"
+    },
+    "name": "Salem (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "msa",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Salem_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (MSA)",
+      "tier": "Premium"
+    },
+    "name": "Salem (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sameer_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Najdi)",
+      "locale_in_docs": "ar-NJ",
+      "tier": "Premium"
+    },
+    "name": "Sameer (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Selin_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Selin (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sestek Darya 24k",
+    "languages": [
+      "uk-UA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Ukrainian",
+      "tier": "Standard"
+    },
+    "name": "Darya (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "SestekFiruza24k",
+    "languages": [
+      "ps-AF"
+    ],
+    "meta": {
+      "deployment": [
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Pashto",
+      "tier": "Standard"
+    },
+    "name": "Firuza (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "SestekJohannes24k",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "German",
+      "tier": "Standard"
+    },
+    "name": "Johannes (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "SestekOliver24k",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "English (British)",
+      "tier": "Standard"
+    },
+    "name": "Oliver (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "SestekTara24k",
+    "languages": [
+      "fa-IR"
+    ],
+    "meta": {
+      "deployment": [
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Persian",
+      "tier": "Standard"
+    },
+    "name": "Tara (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "msa",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "SestekYousef24k",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Arabic (MSA)",
+      "tier": "Standard"
+    },
+    "name": "Yousef (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sibel_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Sibel (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sinan_Premium",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Turkish",
+      "tier": "Premium"
+    },
+    "name": "Sinan (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ulviye",
+    "languages": [
+      "az-AZ"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Azerbaijani",
+      "tier": "Standard"
+    },
+    "name": "Ulviye (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Yasser",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Arabic (Najdi)",
+      "locale_in_docs": "ar-NJ",
+      "tier": "Standard"
+    },
+    "name": "Yasser (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "najdi",
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Yasser_Premium",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Arabic (Najdi)",
+      "locale_in_docs": "ar-NJ",
+      "tier": "Premium"
+    },
+    "name": "Yasser (Premium)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-standard"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Zain",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "Neural",
+      "gpu_required": "No",
+      "language_label": "Urdu",
+      "tier": "Standard"
+    },
+    "name": "Zain (Standard)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "knovvu-tts-premium"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Zain_Premium",
+    "languages": [
+      "ur-PK"
+    ],
+    "meta": {
+      "deployment": [
+        "Cloud",
+        "On-premises"
+      ],
+      "engine_type": "LLM",
+      "gpu_required": "Yes",
+      "language_label": "Urdu",
+      "tier": "Premium"
+    },
+    "name": "Zain (Premium)",
+    "updated_at": "2026-11-18"
+  }
+]

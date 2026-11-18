@@ -1,0 +1,54 @@
+{
+  "access": "enterprise",
+  "compliance": [
+    "iso27001",
+    "soc2",
+    "pci_dss"
+  ],
+  "description": "SESTEK, founded in 2000 with offices in Istanbul (Türkiye), Dubai and Wilmington, Delaware, sells the Knovvu speech recognition and text-to-speech engines alongside AI agent, analytics and voice biometrics products for contact centres. Its SR API serves SESTEK-built end-to-end models (single-language, multilingual and real-time stream models, strongest in Turkish and Arabic) plus hosted Whisper and Dolphin models, from AWS, Huawei Cloud, Oracle and Turkish cloud regions or on-premises; TTS offers Standard, Flash and Premium voice tiers. Access is through SESTEK sales with credit-based licensing.",
+  "docs_urls": [
+    "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+    "https://docs.sestek.com/docs/sr-language-models.md",
+    "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+    "https://docs.sestek.com/docs/sr-transcription.md",
+    "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+    "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+    "https://docs.sestek.com/docs/sr-features.md",
+    "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+    "https://docs.sestek.com/docs/tts-synthesize-text.md",
+    "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+    "https://docs.sestek.com/docs/tts-features.md"
+  ],
+  "id": "sestek",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.sestek.com/docs/sr-transcribe-a-file",
+    "docs": "https://docs.sestek.com/docs/sr-about"
+  },
+  "name": "Sestek (Knovvu)",
+  "regions": [
+    "eu",
+    "us",
+    "asia"
+  ],
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.sestek.com/docs/sr-supported-languages-and-models.md",
+      "https://docs.sestek.com/docs/sr-language-models.md",
+      "https://docs.sestek.com/docs/sr-cloud-api-region-urls.md",
+      "https://docs.sestek.com/docs/sr-transcription.md",
+      "https://docs.sestek.com/docs/sr-transcribe-a-file.md",
+      "https://docs.sestek.com/docs/sr-transcribe-in-real-time.md",
+      "https://docs.sestek.com/docs/sr-features.md",
+      "https://docs.sestek.com/docs/tts-supported-languages-and-voices.md",
+      "https://docs.sestek.com/docs/tts-synthesize-text.md",
+      "https://docs.sestek.com/docs/tts-synthesize-text-via-websocket.md",
+      "https://docs.sestek.com/docs/tts-features.md"
+    ]
+  },
+  "website": "https://www.sestek.com"
+}
