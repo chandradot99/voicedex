@@ -144,6 +144,13 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry('vbee'             , 'Vbee', 'tts', "voicedex.sync.vbee.VbeeSyncer"),
     SyncerEntry('aitalk'           , 'AITalk (AI Inc.)', 'tts', "voicedex.sync.aitalk.AITalkSyncer"),
     SyncerEntry('breezeblue'       , 'BreezeBlue', 'tts', "voicedex.sync.breezeblue.BreezeBlueSyncer"),
+    SyncerEntry('voiceai'          , 'Voice.ai', 'tts', "voicedex.sync.voiceai.VoiceAISyncer"),
+    SyncerEntry('voxist'           , 'Voxist', 'stt', "voicedex.sync.voxist.VoxistSyncer"),
+    SyncerEntry('daglo'            , 'Daglo (ActionPower)', 'stt', "voicedex.sync.daglo.DagloSyncer"),
+    SyncerEntry('skt'              , 'SK Telecom (A.X)', 'tts', "voicedex.sync.skt.SKTSyncer"),
+    SyncerEntry('tbank'            , 'T-Bank VoiceKit', 'both', "voicedex.sync.tbank.TBankSyncer"),
+    SyncerEntry('sarj'             , 'Sarj.ai', 'both', "voicedex.sync.sarj.SarjSyncer"),
+    SyncerEntry('aiforthai'        , 'AI for Thai (NECTEC)', 'both', "voicedex.sync.aiforthai.AIForThaiSyncer"),
     # ── Open-weights publishers (Hugging Face Hub API; voicedex/sync/open_weights.py) ──
     SyncerEntry("hexgrad",           "Hexgrad",           "tts",  "voicedex.sync.open_weights.HexgradSyncer"),
     SyncerEntry("kyutai",            "Kyutai",            "both", "voicedex.sync.open_weights.KyutaiSyncer"),
