@@ -48,6 +48,7 @@ templates.env.globals.update(
     duration=views.duration,
     lang_count=views.lang_count,
     voice_chips=views.voice_chips,
+    pick_sample=views.voice_sample,
     FEATURE_LABELS=views.FEATURE_LABELS,
     feature_vocab=views.feature_vocab,
     INTERFACE_LABELS=views.INTERFACE_LABELS,
@@ -207,13 +208,16 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     if f["gender"] in ("male", "female", "neutral"):
         rows = [r for r in rows if r.voice.gender == f["gender"]]
     if f["preview"]:
-        rows = [r for r in rows if r.voice.preview_url]
+        rows = [r for r in rows if r.voice.preview_url or r.voice.previews]
     if f["q"]:
         needle = f["q"].lower()
         rows = [r for r in rows if needle in r.voice.name.lower() or needle in r.voice.id.lower()
                 or needle in (r.voice.description or "").lower() or needle in (r.voice.accent or "")
                 or any(needle in t.lower() for t in r.voice.use_cases + r.voice.tags)]
-    rows = sorted(rows, key=lambda r: r.voice.preview_url is None)   # stable: samples first
+    def _sample_rank(r) -> int:   # stable sort: samples in the filtered language, other samples, none
+        s = views.voice_sample(r.voice, f["language"])
+        return 2 if s is None else (1 if s.matched is False else 0)
+    rows = sorted(rows, key=_sample_rank)
     try:
         page = max(1, int(_q(request, "page") or 1))
     except ValueError:

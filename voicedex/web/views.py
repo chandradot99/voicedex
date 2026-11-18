@@ -7,7 +7,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 
 from voicedex.catalog.schema import Model, Pricing
-from voicedex.catalog.store import Catalog, ModelRow, VoiceRow
+from voicedex.catalog.store import Catalog, ModelRow, VoiceRow, language_matches
 from voicedex.sync.language import LANGUAGE_NAMES
 
 TYPE_LABELS = {"stt": "Speech-to-text", "tts": "Text-to-speech", "sts": "Speech-to-speech"}
@@ -525,3 +525,39 @@ def feature_vocab(model_type: str) -> list[str]:
     vocab = {"stt": STT_CAPABILITIES, "tts": TTS_CAPABILITIES}.get(str(model_type), MODEL_CAPABILITIES)
     order = list(FEATURE_LABELS)
     return sorted(vocab, key=lambda c: order.index(c) if c in order else len(order))
+
+
+# ── Voice samples: play the one in the language the visitor filtered for ─────
+
+@dataclass(frozen=True)
+class Sample:
+    url: str
+    language: str | None   # language spoken in the sample; None = the provider doesn't say
+    matched: bool | None   # True/False vs the language filter; None when no filter is set
+
+
+def sample_language(voice) -> str | None:
+    """The stated sample language, or the voice's only language (a monolingual voice's sample is in it)."""
+    if voice.preview_language:
+        return voice.preview_language
+    langs = voice.languages
+    if langs and "*" not in langs and len({base_language(code) for code in langs}) == 1:
+        return langs[0]
+    return None
+
+
+def voice_sample(voice, language: str | None = None) -> Sample | None:
+    candidates = [(p.url, p.language) for p in voice.previews]
+    if voice.preview_url:
+        candidates.insert(0, (voice.preview_url, sample_language(voice)))
+    if not candidates:
+        return None
+    if not language:
+        url, lang = candidates[0]
+        return Sample(url, lang, None)
+    for url, lang in candidates:
+        if lang and language_matches(language, [lang]):
+            return Sample(url, lang, True)
+    url, lang = candidates[0]
+    return Sample(url, lang, False)
+

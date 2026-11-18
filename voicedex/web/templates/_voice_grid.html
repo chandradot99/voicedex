@@ -1,11 +1,12 @@
 <div class="voice-head" aria-hidden="true"><span></span><span>Voice</span><span>Traits and language</span><span>Voice id</span></div>
 <ul class="voice-list">
-  {% for r in rows %}{% set v = r.voice %}
+  {% set filter_lang = f.language if f is defined and f else None %}
+  {% for r in rows %}{% set v = r.voice %}{% set s = pick_sample(v, filter_lang) %}
   {% set pname = names.get(r.provider_id, r.provider_id) if names else "" %}
-  <li class="voice{% if not v.preview_url %} no-sample{% endif %}" data-name="{{ v.name }}" data-meta="{{ pname }}">
+  <li class="voice{% if not s %} no-sample{% endif %}" data-name="{{ v.name }}" data-meta="{{ pname }}">
     <div class="voice-play">
-      {% if v.preview_url %}
-      <button class="play" type="button" data-src="{{ v.preview_url }}" aria-pressed="false" aria-label="Play sample of {{ v.name }}">
+      {% if s %}
+      <button class="play" type="button" data-src="{{ s.url }}" aria-pressed="false" aria-label="Play sample of {{ v.name }}{% if s.language %} ({{ language_name(s.language) }}){% endif %}">
         <svg viewBox="0 0 16 16" aria-hidden="true" class="i-play"><path d="M5 3v10l8-5z"/></svg>
         <svg viewBox="0 0 16 16" aria-hidden="true" class="i-stop"><rect x="4" y="4" width="8" height="8"/></svg>
         <span class="loader loader-xs" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
@@ -17,6 +18,8 @@
     <div class="voice-main">
       <p class="voice-name">{{ v.name }}{% if names %}<a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ pname }}</a>{% endif %}</p>
       {% if v.description %}<p class="voice-desc" title="{{ v.description }}">{{ v.description|truncate(140) }}</p>{% endif %}
+      {% if s and s.matched is false %}<p class="voice-sample-note">{% if s.language %}Sample in {{ language_name(s.language) }}{% else %}Sample language not stated{% endif %}</p>
+      {% elif s and s.matched and v.languages and s.language.split('-')[0] != v.languages[0].split('-')[0] %}<p class="voice-sample-note">Sample in {{ language_name(s.language) }}</p>{% endif %}
       <p class="voice-error" role="status" hidden>Sample unavailable. The provider may have moved it.</p>
     </div>
     <p class="voice-traits">
