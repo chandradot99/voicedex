@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from voicedex.catalog.files import DEFAULT_DATA_DIR, read_provider_dir, write_provider_dir  # noqa: E402
 from voicedex.catalog.merge import GuardError, MergeReport, merge  # noqa: E402
 from voicedex.sync.cache import _models_path, _voices_path  # noqa: E402
+from voicedex.sync.previews import drop_dead_previews  # noqa: E402
 from voicedex.sync.registry import BY_ID, REGISTRY, load_syncer  # noqa: E402
 
 _MAX_LISTED = 15
@@ -123,7 +124,7 @@ def clear_cache(provider_id: str) -> None:
 
 
 async def sync_one(provider_id: str, data_dir: Path, write: bool, allow_shrink: bool, verbose: bool,
-                   reuse_docs: bool = False) -> bool:
+                   reuse_docs: bool = False, check_samples: bool = True) -> bool:
     print(f"\n{'─' * 60}\n  {provider_id}\n{'─' * 60}")
     entry = BY_ID[provider_id]
     before = {p for p in _cache_paths(provider_id) if p.exists()}
@@ -131,7 +132,7 @@ async def sync_one(provider_id: str, data_dir: Path, write: bool, allow_shrink: 
     if seeded:
         print(f"  Reusing reviewed docs data from data/: {', '.join(seeded)}")
     try:
-        return await _sync_one(provider_id, entry, data_dir, write, allow_shrink, verbose)
+        return await _sync_one(provider_id, entry, data_dir, write, allow_shrink, verbose, check_samples)
     finally:
         # Seeded copies must never masquerade as a fresh extraction; fresh cache files written before the run
         # (e.g. a new docs section) survive a dry-run (--write clears everything once consumed).
@@ -140,7 +141,8 @@ async def sync_one(provider_id: str, data_dir: Path, write: bool, allow_shrink: 
                 path.unlink(missing_ok=True)
 
 
-async def _sync_one(provider_id: str, entry, data_dir: Path, write: bool, allow_shrink: bool, verbose: bool) -> bool:
+async def _sync_one(provider_id: str, entry, data_dir: Path, write: bool, allow_shrink: bool, verbose: bool,
+                    check_samples: bool = True) -> bool:
     print("  Fetching…", end="", flush=True)
     try:
         result = await load_syncer(provider_id).sync()
@@ -151,6 +153,10 @@ async def _sync_one(provider_id: str, entry, data_dir: Path, write: bool, allow_
             print(f"     {line.strip()}")
         return False
     print(" done")
+    if check_samples and result.tts_voices:
+        dropped = await drop_dead_previews(result.tts_voices)
+        if dropped:
+            print(f"  Samples: dropped {dropped} dead link(s) (meta.preview_unavailable records why)")
 
     pdir = data_dir / provider_id
     current = read_provider_dir(pdir) if (pdir / "provider.json").exists() else None
@@ -188,6 +194,8 @@ async def main() -> int:
     ap.add_argument("-v", "--verbose", action="store_true", help="List every change")
     ap.add_argument("--reuse-docs", action="store_true",
                     help="Refresh API data only; reuse docs-extracted records already in data/")
+    ap.add_argument("--no-sample-check", action="store_true",
+                    help="Skip checking that voice sample links still serve audio")
     ap.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
     args = ap.parse_args()
 
@@ -205,7 +213,8 @@ async def main() -> int:
         return 0
     print(f"Mode: {'WRITE' if args.write else 'DRY-RUN'}   Data: {args.data_dir}")
     failed = [pid for pid in ids
-              if not await sync_one(pid, args.data_dir, args.write, args.allow_shrink, args.verbose, args.reuse_docs)]
+              if not await sync_one(pid, args.data_dir, args.write, args.allow_shrink, args.verbose, args.reuse_docs,
+                                    not args.no_sample_check)]
     print(f"\n{'═' * 60}\n  {len(ids) - len(failed)}/{len(ids)} providers synced")
     if failed:
         print(f"  ✗ FAILED: {', '.join(failed)} — see the errors above")

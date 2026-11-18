@@ -153,8 +153,11 @@ def _fill_unknowns(incoming: dict, existing: dict) -> dict:
         kept = {k: old_meta[k] for k in DOCS_PASS_META_KEYS if k in old_meta and k not in new_meta}
         if kept:
             out["meta"] = {**new_meta, **kept}
+    # A sample the link check found dead is a known absence, not an unknown: don't restore it.
+    sample_gone = ("preview_url", "preview_language", "previews") if (out.get("meta") or {}).get(
+        "preview_unavailable") else ()
     for k, old in existing.items():
-        if k in _BOOKKEEPING or k in ("is_default", "streaming", "lifecycle"):
+        if k in _BOOKKEEPING or k in ("is_default", "streaming", "lifecycle") or k in sample_gone:
             continue
         if out.get(k) in (None, [], {}, "") and old not in (None, [], {}, ""):
             out[k] = old
