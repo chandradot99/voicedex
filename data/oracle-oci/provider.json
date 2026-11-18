@@ -1,0 +1,27 @@
+{
+  "access": "self_serve",
+  "description": "OCI Speech is Oracle Cloud Infrastructure's speech service (Oracle Corporation, US). It offers batch transcription jobs and live transcription with Oracle's own ASR model plus hosted OpenAI Whisper models, and text-to-speech with standard and natural voices (US West Phoenix only).",
+  "docs_urls": [
+    "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+    "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+    "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
+    "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm"
+  ],
+  "headquarters": "US",
+  "id": "oracle-oci",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.oracle.com/en-us/iaas/api/#/en/speech/20220101/",
+    "docs": "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+    "pricing": "https://www.oracle.com/artificial-intelligence/speech/pricing/"
+  },
+  "name": "Oracle OCI Speech",
+  "regions": [
+    "us",
+    "eu",
+    "asia"
+  ],
+  "source": "docs",
+  "type": "both",
+  "website": "https://www.oracle.com/artificial-intelligence/speech/"
+}

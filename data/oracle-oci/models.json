@@ -1,0 +1,477 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Oracle's native ASR model for batch transcription jobs and Live Transcribe, with generic and medical domains.",
+    "first_seen": "2026-11-18",
+    "id": "ORACLE",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en-US",
+      "es-ES",
+      "pt-BR",
+      "en-GB",
+      "en-AU",
+      "en-IN",
+      "hi-IN",
+      "fr-FR",
+      "de-DE",
+      "it-IT"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "base_model": "Oracle (native)",
+      "domains": [
+        "GENERIC",
+        "MEDICAL (live transcribe)"
+      ],
+      "max_file_size": "2 GB",
+      "other_input_formats": [
+        "ac3",
+        "amr",
+        "au",
+        "mkv",
+        "mp4",
+        "oga"
+      ],
+      "outputs": [
+        "json",
+        "srt"
+      ],
+      "realtime_encodings": [
+        "audio/raw;rate=16000",
+        "audio/raw;rate=8000",
+        "audio/raw;rate=8000;codec=mulaw",
+        "audio/raw;rate=8000;codec=alaw"
+      ],
+      "regions_note": "all OCI commercial regions; also US Government Cloud (FedRAMP)"
+    },
+    "name": "Oracle ASR",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Oracle price list SKU B94896 'Speech' (metric: Transcription Hour), billed per second; first 5 hours at $0 per the tiered price. Single SKU — Oracle does not publish separate prices per model.",
+      "price_usd": 0.35,
+      "source_url": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "language_detection",
+      "punctuation"
+    ],
+    "description": "OpenAI Whisper model selectable in OCI Speech Live Transcribe (realtime WebSocket), 90+ languages with auto-detect; final results only.",
+    "first_seen": "2026-11-18",
+    "id": "WHISPER",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "base_model": "OpenAI Whisper (size not documented)",
+      "languages_note": "over 90 languages per 2025-08-27 release note",
+      "partial_results": false,
+      "realtime_only": true,
+      "third_party": "OpenAI Whisper hosted by Oracle"
+    },
+    "name": "Whisper (OCI Live Transcribe)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Oracle price list SKU B94896 'Speech' (metric: Transcription Hour), billed per second; first 5 hours at $0 per the tiered price. Single SKU — Oracle does not publish separate prices per model.",
+      "price_usd": 0.35,
+      "source_url": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "OpenAI Whisper Large V2 served by OCI Speech for batch transcription jobs; enabled on service request.",
+    "first_seen": "2026-11-18",
+    "id": "WHISPER_LARGE_V2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "az",
+      "be",
+      "bg",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "gl",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "kk",
+      "kn",
+      "ko",
+      "lt",
+      "lv",
+      "mi",
+      "mk",
+      "mr",
+      "ms",
+      "ne",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sr",
+      "sv",
+      "sw",
+      "ta",
+      "th",
+      "tl",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "zh"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "availability": "upon service request",
+      "base_model": "openai/whisper-large-v2",
+      "third_party": "OpenAI Whisper hosted by Oracle"
+    },
+    "name": "Whisper Large V2 (OCI Speech)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Oracle price list SKU B94896 'Speech' (metric: Transcription Hour), billed per second; first 5 hours at $0 per the tiered price. Single SKU — Oracle does not publish separate prices per model.",
+      "price_usd": 0.35,
+      "source_url": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "OpenAI Whisper Medium served by OCI Speech for batch transcription jobs, with language auto-detection and diarization.",
+    "first_seen": "2026-11-18",
+    "id": "WHISPER_MEDIUM",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "az",
+      "be",
+      "bg",
+      "bs",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "gl",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "ja",
+      "kk",
+      "kn",
+      "ko",
+      "lt",
+      "lv",
+      "mi",
+      "mk",
+      "mr",
+      "ms",
+      "ne",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sr",
+      "sv",
+      "sw",
+      "ta",
+      "th",
+      "tl",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "zh"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "base_model": "openai/whisper-medium",
+      "third_party": "OpenAI Whisper hosted by Oracle",
+      "whisper_prompt_max_chars": 4000
+    },
+    "name": "Whisper Medium (OCI Speech)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Oracle price list SKU B94896 'Speech' (metric: Transcription Hour), billed per second; first 5 hours at $0 per the tiered price. Single SKU — Oracle does not publish separate prices per model.",
+      "price_usd": 0.35,
+      "source_url": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm"
+    ],
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "Oracle's standard text-to-speech model with US English voices, all supporting SSML.",
+    "first_seen": "2026-11-18",
+    "id": "TTS_1_STANDARD",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "model_family": "ORACLE",
+      "region_note": "US West (Phoenix) only",
+      "speech_marks": [
+        "SENTENCE",
+        "WORD"
+      ]
+    },
+    "name": "OCI TTS Standard",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm"
+      ]
+    },
+    "regions": [
+      "us"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "ogg",
+      "pcm"
+    ],
+    "capabilities": [
+      "ssml"
+    ],
+    "description": "Oracle's natural (human-like) neural text-to-speech model in nine languages, over HTTPS (chunked) and a realtime WebSocket API.",
+    "first_seen": "2026-11-18",
+    "id": "TTS_2_NATURAL",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en-US",
+      "en-GB",
+      "es-ES",
+      "pt-BR",
+      "fr-FR",
+      "it-IT",
+      "hi-IN",
+      "ja-JP",
+      "zh-CN"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "doc_language_code_mandarin": "cmn-CN",
+      "model_family": "ORACLE",
+      "realtime_tts_released": "2026-11-04",
+      "region_note": "US West (Phoenix) only",
+      "sample_rate_range_hz": "8000-48000 (realtime API)",
+      "speech_marks": [
+        "SENTENCE",
+        "WORD"
+      ],
+      "ssml_note": "SSML only for some en-US voices"
+    },
+    "name": "OCI TTS Natural",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm"
+      ]
+    },
+    "regions": [
+      "us"
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
