@@ -35,7 +35,7 @@
   color-scheme: dark;
 }
 
-/* Light theme: the visitor's system preference, unless they picked a theme with the header toggle. */
+/* Light theme: opt-in via the header toggle (dark is the default for everyone). */
 :root[data-theme="light"] {
   --bg: #f7f7f5;
   --panel: #efefec;
@@ -55,28 +55,6 @@
   --row-hover: rgba(0, 0, 0, .025);
   --backdrop: rgba(24, 24, 30, .28);
   color-scheme: light;
-}
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-  --bg: #f7f7f5;
-  --panel: #efefec;
-  --panel-2: #ffffff;
-  --rule: #e2e2de;
-  --rule-2: #cfcfca;
-  --control: #828287;
-  --ink: #18181b;
-  --ink-2: #45454b;
-  --muted: #6a6a70;
-  --signal: #a85600;
-  --signal-fill: #cc7a00;
-  --signal-ink: #18181b;
-  --end: #c8331f;
-  --heat: 214 128 8;
-  --shadow: rgba(24, 24, 30, .14);
-  --row-hover: rgba(0, 0, 0, .025);
-  --backdrop: rgba(24, 24, 30, .28);
-  color-scheme: light;
-  }
 }
 
 /* ── Base ── */

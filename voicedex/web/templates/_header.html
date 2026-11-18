@@ -24,7 +24,7 @@
     <script>
       (function () {
         var b = document.currentScript.previousElementSibling, root = document.documentElement;
-        var cur = function () { return root.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"); };
+        var cur = function () { return root.dataset.theme === "light" ? "light" : "dark"; };
         var sync = function () { var t = cur(); b.dataset.current = t; b.setAttribute("aria-label", "Switch to " + (t === "dark" ? "light" : "dark") + " theme"); };
         b.addEventListener("click", function () {
           var next = cur() === "dark" ? "light" : "dark";

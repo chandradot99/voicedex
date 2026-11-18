@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>API reference | {{ site_name }}</title>
   <meta name="description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices: languages, features, prices and shutdown dates.">
-  <meta name="theme-color" content="#111113" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111113">
   <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
   <meta property="og:title" content="API reference | {{ site_name }}">
   <meta property="og:description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices.">
@@ -158,7 +157,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.76.4/dist/browser/standalone.js"></script>
   <script>
     // Fill the real host into the quickstart examples and server list.
-    window.__theme = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    window.__theme = document.documentElement.dataset.theme === "light" ? "light" : "dark";
     document.addEventListener("themechange", () => location.reload());     // Scalar's own dark/light state is set at mount
     fetch("/openapi.json").then((r) => r.text()).then((raw) => {
     const spec = JSON.parse(raw.replaceAll("https://<host>", location.origin));
