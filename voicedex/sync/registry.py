@@ -120,8 +120,6 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry('aiola'            , 'aiOla', 'stt', "voicedex.sync.aiola.AiolaSyncer"),
     SyncerEntry('intron'           , 'Intron Health', 'stt', "voicedex.sync.intron.IntronSyncer"),
     SyncerEntry('sestek'           , 'Sestek (Knovvu)', 'both', "voicedex.sync.sestek.SestekSyncer"),
-    SyncerEntry('cpqd'             , 'CPqD', 'both', "voicedex.sync.cpqd.CpqdSyncer"),
-    SyncerEntry('intella'          , 'Intella', 'stt', "voicedex.sync.intella.IntellaSyncer"),
     SyncerEntry('huawei-cloud'     , 'Huawei Cloud SIS', 'both', "voicedex.sync.huawei_cloud.HuaweiCloudSyncer"),
     SyncerEntry('readspeaker'      , 'ReadSpeaker', 'tts', "voicedex.sync.readspeaker.ReadSpeakerSyncer"),
     SyncerEntry('acapela'          , 'Acapela Group', 'tts', "voicedex.sync.acapela.AcapelaSyncer"),
