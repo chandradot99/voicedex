@@ -15,6 +15,10 @@ TTS models, voices, and the STT parse all run concurrently via asyncio.gather.
 from __future__ import annotations
 
 import asyncio
+import base64
+import binascii
+import json
+from urllib.parse import quote, unquote
 
 import httpx
 
@@ -59,6 +63,43 @@ _STT_MODELS_GUIDANCE = (
     "set meta.batch for models usable via the file-upload endpoint. Use canonical capability flags "
     "(word_timestamps, speaker_diarization, language_detection, …) rather than meta for documented features."
 )
+
+
+def _stable_preview(url: str | None) -> str | None:
+    """API-hosted previews carry `payload=base64({voice_source, filename, timestamp})`; the timestamp is an hourly
+    cache-buster (any value serves the same file), so it is pinned to 0 to stop every sync rewriting the URL."""
+    if not url or "payload=" not in url:
+        return url
+    head, _, rest = url.partition("payload=")
+    token, amp, tail = rest.partition("&")
+    try:
+        data = json.loads(base64.b64decode(unquote(token)))
+    except (ValueError, binascii.Error):
+        return url
+    if not isinstance(data, dict) or "timestamp" not in data:
+        return url
+    data["timestamp"] = 0
+    packed = base64.b64encode(json.dumps(data, separators=(",", ":")).encode()).decode()
+    return f"{head}payload={quote(packed, safe='')}{amp}{tail}"
+
+
+def _sample_languages(v: dict, verified: list[dict]) -> dict:
+    """verified_languages carries one sample per language: the entry whose preview is the main preview_url
+    names its language; every other language with its own sample becomes a per-language preview."""
+    main = _stable_preview(v.get("preview_url"))
+    main_lang, extra = None, {}
+    for e in verified:
+        lang = e.get("locale") or e.get("language")
+        url = _stable_preview(e.get("preview_url"))
+        if not lang or not url:
+            continue
+        if url == main:
+            main_lang = main_lang or lang
+        else:
+            extra.setdefault(lang, url)
+    if main_lang:
+        extra.pop(main_lang, None)
+    return {"preview_language": main_lang, "previews": [{"language": k, "url": u} for k, u in extra.items()]}
 
 
 class ElevenLabsSyncer(ProviderSyncer):
@@ -247,7 +288,8 @@ class ElevenLabsSyncer(ProviderSyncer):
                 category="premade",
                 languages=languages,
                 description=v.get("description"),
-                preview_url=v.get("preview_url"),
+                preview_url=_stable_preview(v.get("preview_url")),
+                **_sample_languages(v, verified),
                 accent=labels.get("accent"),
                 age=(labels.get("age") or "").replace("_", " ") or None,
                 use_cases=[labels["use_case"].replace("_", " ")] if labels.get("use_case") else [],
