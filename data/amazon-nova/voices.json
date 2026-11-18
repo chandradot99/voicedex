@@ -1,0 +1,266 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ambre",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Ambre",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "amy",
+    "languages": [
+      "en-GB"
+    ],
+    "name": "Amy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "arjun",
+    "languages": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "name": "Arjun",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "beatrice",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Beatrice",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "carlos",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Carlos",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "carolina",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Carolina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "florian",
+    "languages": [
+      "fr-FR"
+    ],
+    "name": "Florian",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "kiara",
+    "languages": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "name": "Kiara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lennart",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Lennart",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "leo",
+    "languages": [
+      "pt-BR"
+    ],
+    "name": "Leo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "lorenzo",
+    "languages": [
+      "it-IT"
+    ],
+    "name": "Lorenzo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lupe",
+    "languages": [
+      "es-US"
+    ],
+    "name": "Lupe",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "matthew",
+    "languages": [
+      "en-US",
+      "en-GB",
+      "en-AU",
+      "en-IN",
+      "fr-FR",
+      "it-IT",
+      "de-DE",
+      "es-US",
+      "pt-BR",
+      "hi-IN"
+    ],
+    "meta": {
+      "home_locale": "en-US",
+      "polyglot": true
+    },
+    "name": "Matthew",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "olivia",
+    "languages": [
+      "en-AU"
+    ],
+    "name": "Olivia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "tiffany",
+    "languages": [
+      "en-US",
+      "en-GB",
+      "en-AU",
+      "en-IN",
+      "fr-FR",
+      "it-IT",
+      "de-DE",
+      "es-US",
+      "pt-BR",
+      "hi-IN"
+    ],
+    "meta": {
+      "home_locale": "en-US",
+      "polyglot": true
+    },
+    "name": "Tiffany",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "amazon.nova-2-sonic-v1:0"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "tina",
+    "languages": [
+      "de-DE"
+    ],
+    "name": "Tina",
+    "updated_at": "2026-11-18"
+  }
+]

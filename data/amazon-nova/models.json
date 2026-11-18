@@ -1,0 +1,165 @@
+[
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Amazon's latest speech-to-speech foundation model on Bedrock, with improved reasoning, instruction following and tool calling over Nova 2 Sonic, plus lower latency.",
+    "first_seen": "2026-11-18",
+    "id": "amazon.nova-2-5-sonic",
+    "is_default": true,
+    "languages": [
+      "*"
+    ],
+    "meta": {
+      "api": "InvokeModelWithBidirectionalStream (bedrock-runtime)",
+      "aws_regions": [
+        "us-east-1",
+        "us-west-2",
+        "eu-north-1",
+        "ap-northeast-1"
+      ],
+      "bedrock_lifecycle": "Active",
+      "context_window": 256000,
+      "cross_region_inference": false,
+      "default_concurrent_sessions": 20,
+      "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-5-sonic.html",
+      "eol_no_sooner_than": "2027-10-05",
+      "features": [
+        "tool_use",
+        "async_tool_calling",
+        "cross_modal_text_input",
+        "polyglot_voices",
+        "code_switching",
+        "streaming_transcripts",
+        "turn_detection"
+      ],
+      "languages_note": "Launch announcement cites expressive voices in seven languages; the model card does not list them.",
+      "launch_date": "2026-10-05",
+      "max_output_tokens": 64000
+    },
+    "name": "Nova 2.5 Sonic",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "On-demand Standard tier, US East (N. Virginia): speech input $0.003, speech output $0.012, text input $0.00033, text output $0.00275 per 1K tokens ($3 / $12 / $0.33 / $2.75 per 1M), converted to per-token. Amounts read from the AWS Price List API (AmazonBedrock offer, us-east-1) as the pricing page renders tables client-side.",
+      "price_usd": 3e-06,
+      "source_url": "https://aws.amazon.com/bedrock/pricing/",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "speech_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 3.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.75e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html",
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html",
+        "https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html",
+        "https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-language-support.html",
+        "https://aws.amazon.com/bedrock/pricing/"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Amazon's speech-to-speech foundation model for real-time voice conversations on Bedrock, with polyglot voices and code-switching across seven languages.",
+    "first_seen": "2026-11-18",
+    "id": "amazon.nova-2-sonic-v1:0",
+    "languages": [
+      "en-US",
+      "en-GB",
+      "en-AU",
+      "en-IN",
+      "fr-FR",
+      "it-IT",
+      "de-DE",
+      "es-US",
+      "pt-BR",
+      "hi-IN"
+    ],
+    "meta": {
+      "api": "InvokeModelWithBidirectionalStream (bedrock-runtime)",
+      "aws_regions": [
+        "us-east-1",
+        "us-west-2",
+        "eu-north-1",
+        "ap-northeast-1"
+      ],
+      "bedrock_lifecycle": "Active",
+      "connection_limit_minutes": 8,
+      "context_window": 1000000,
+      "cross_region_inference": true,
+      "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html",
+      "eol_no_sooner_than": "2026-12-02",
+      "launch_date": "2025-12-02",
+      "max_output_tokens": 64000,
+      "model_eol_date": "N/A (not announced)"
+    },
+    "name": "Nova 2 Sonic",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "On-demand Standard tier, US East (N. Virginia): speech input $0.003, speech output $0.012, text input $0.00033, text output $0.00275 per 1K tokens ($3 / $12 / $0.33 / $2.75 per 1M), converted to per-token. Amounts read from the AWS Price List API (AmazonBedrock offer, us-east-1) as the pricing page renders tables client-side.",
+      "price_usd": 3e-06,
+      "source_url": "https://aws.amazon.com/bedrock/pricing/",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "speech_output",
+          "price_usd": 1.2e-05,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_input",
+          "price_usd": 3.3e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "text_output",
+          "price_usd": 2.75e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html",
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html",
+        "https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html",
+        "https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-language-support.html",
+        "https://aws.amazon.com/bedrock/pricing/"
+      ]
+    },
+    "regions": [
+      "asia",
+      "eu",
+      "us"
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  }
+]
