@@ -29,8 +29,7 @@ def _provider_out(catalog: Catalog, provider_id: str) -> ProviderOut:
 
 
 def _require_active(catalog: Catalog, provider_id: str) -> None:
-    p = catalog.provider(provider_id)
-    if p is None or p.status != "active":
+    if provider_id not in catalog.active_provider_ids():
         raise HTTPException(404, f"Provider '{provider_id}' not found")
 
 

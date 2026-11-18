@@ -65,7 +65,10 @@ class Catalog:
         return pd.provider if pd else None
 
     def active_provider_ids(self) -> set[str]:
-        return {pid for pid, pd in self.providers.items() if pd.provider.status == "active"}
+        """Providers whose models are served: active ones, plus retired API sellers that still publish
+        open weights (status stays "deprecated"; their live models are listed)."""
+        return {pid for pid, pd in self.providers.items()
+                if pd.provider.status == "active" or any(m.deprecated_at is None and m.open_weights for m in pd.models)}
 
 
 def language_matches(query: str, languages: list[str]) -> bool:

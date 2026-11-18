@@ -122,7 +122,7 @@
   <div class="table-scroll">
     <table class="data">
       <thead>
-        <tr><th scope="col">Provider</th><th scope="col">Offers</th><th scope="col" class="num">Models</th><th scope="col" class="num hide-sm">Voices</th><th scope="col" class="num hide-sm">Languages</th><th scope="col" class="hide-sm">Synced</th></tr>
+        <tr><th scope="col">Provider</th><th scope="col">Offers</th><th scope="col" class="num">Models</th><th scope="col" class="num hide-sm">Voices</th><th scope="col" class="num hide-sm">Languages</th><th scope="col" class="hide-sm">Based in</th></tr>
       </thead>
       <tbody>
         {% for s in live %}
@@ -132,7 +132,7 @@
           <td class="num mono">{{ s.models }}</td>
           <td class="num mono hide-sm">{{ "{:,}".format(s.voices) if s.voices else "–" }}</td>
           <td class="num mono hide-sm">{{ s.languages or "–" }}{% if s.multilingual %}<span class="plus" title="Some models support many unlisted languages">+</span>{% endif %}</td>
-          <td class="mono muted hide-sm">{{ s.last_synced or "–" }}</td>
+          <td class="muted hide-sm">{{ country_name(s.headquarters) or "–" }}{% if s.access == "open_weights" %} <span class="sub">open weights</span>{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -141,7 +141,7 @@
         {% for s in retired %}
         <tr>
           <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
-          <td colspan="5" class="muted">{{ 'Shut down ' ~ s.retired_on if s.retired_on else 'Shut down' }}</td>
+          <td colspan="5" class="muted">{{ 'Shut down ' ~ s.retired_on if s.retired_on else 'Shut down' }}{% if s.models %}; open weights still published ({{ s.models }}){% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>

@@ -111,6 +111,8 @@ class ProviderSummary:
     description: str | None
     retired_on: str | None
     website: str | None
+    headquarters: str | None = None
+    access: str | None = None
 
 
 def active_models(catalog: Catalog, provider_id: str | None = None) -> list[ModelRow]:
@@ -140,6 +142,7 @@ def provider_summaries(catalog: Catalog) -> list[ProviderSummary]:
             multilingual=any("*" in m.languages for m in ms),
             last_synced=p.last_synced.isoformat() if p.last_synced else None,
             description=p.description, retired_on=p.retired_on.isoformat() if p.retired_on else None,
+            headquarters=p.headquarters, access=p.access,
             website=p.website,
         ))
     return sorted(out, key=lambda s: s.name.lower())
