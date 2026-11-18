@@ -37,6 +37,7 @@ async def test_http_transport(client):
     assert "<code>search_models</code>" in page.text
     sse = await client.get("/mcp", headers={"accept": "text/event-stream"})
     assert sse.status_code == 405 and sse.headers["allow"] == "POST"
+    assert page.headers["cache-control"] == sse.headers["cache-control"] == "no-store"   # CDN must not cache /mcp
     hdrs = {"content-type": "application/json", "accept": "application/json, text/event-stream"}
     async with m.server.session_manager.run():                          # normally entered by the app lifespan
         listed = (await client.post("/mcp", headers=hdrs, json={"jsonrpc": "2.0", "id": 1, "method": "tools/list"})).json()

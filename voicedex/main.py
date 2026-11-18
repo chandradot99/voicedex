@@ -157,9 +157,13 @@ async def mcp_get(request: Request, call_next):
     """GET /mcp: the MCP SDK would hold the request open as an SSE stream, which a stateless server never uses.
     MCP clients asking for a stream get 405 (as the spec allows); browsers and crawlers get the setup page."""
     if request.url.path == "/mcp" and request.method in ("GET", "HEAD"):
+        # never cached: the CDN's cache key ignores Accept, so a cached page would be served to MCP clients too
+        nocache = {"Cache-Control": "no-store"}
         if "text/event-stream" in request.headers.get("accept", ""):
-            return Response(status_code=405, headers={"Allow": "POST"})
-        return web.templates.TemplateResponse(request, "mcp.html", {"tools": mcp_server.tool_docs()})
+            return Response(status_code=405, headers={"Allow": "POST", **nocache})
+        page = web.templates.TemplateResponse(request, "mcp.html", {"tools": mcp_server.tool_docs()})
+        page.headers.update(nocache)
+        return page
     return await call_next(request)
 
 
