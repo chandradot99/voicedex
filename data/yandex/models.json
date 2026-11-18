@@ -1,0 +1,659 @@
+[
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Experimental Realtime API voice model built on DeepSeek V4 Flash, speaking with general-model voices.",
+    "first_seen": "2026-11-18",
+    "id": "speech-realtime-deepseek-v4-flash",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "ru-RU",
+      "kk-KZ"
+    ],
+    "lifecycle": "alpha",
+    "meta": {
+      "context_tokens": 1048576,
+      "languages_note": "Realtime models are 'designed specifically for the Russian and Kazakh languages'",
+      "model_uri": "gpt://<folder_ID>/speech-realtime-deepseek-v4-flash",
+      "protocol": "OpenAI Realtime-compatible event API over WebSocket",
+      "status_note": "'This is an experimental model and may take longer to respond compared to other models available in the Realtime API'",
+      "voices": "general-model voices"
+    },
+    "name": "Speech Realtime DeepSeek V4 Flash",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Incoming audio $0.0002163934/s, outgoing audio $0.0001663934/s; tokens $0.002459016 input, $0.000614754 cached/tool, $0.00409836 output per 1,000 tokens (USD excl. VAT).",
+      "price_usd": 0.0002163934,
+      "source_url": "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+      "unit": "second",
+      "variants": [
+        {
+          "applies_to": "outgoing audio",
+          "price_usd": 0.0001663934,
+          "unit": "second"
+        },
+        {
+          "applies_to": "input tokens",
+          "price_usd": 2.459016e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "cached or tool tokens",
+          "price_usd": 6.14754e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output tokens",
+          "price_usd": 4.09836e-06,
+          "unit": "token"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Realtime API voice-agent model for conversation, tool use and long contexts, speaking with LiveTTS voices.",
+    "first_seen": "2026-11-18",
+    "id": "speech-realtime-max-tts-live",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ru-RU",
+      "kk-KZ"
+    ],
+    "meta": {
+      "branch": "latest",
+      "context_tokens": 1048576,
+      "languages_note": "Realtime models are 'designed specifically for the Russian and Kazakh languages'",
+      "max_output_tokens": 393216,
+      "model_uri": "gpt://<folder_ID>/speech-realtime-max-tts-live/latest",
+      "protocol": "OpenAI Realtime-compatible event API over WebSocket",
+      "voices": "LiveTTS voices only"
+    },
+    "name": "Speech Realtime Max TTS Live",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Voice agents: incoming audio $0.0002163934 per second (USD excl. VAT). Outgoing audio for this model is billed at the LiveTTS rate; LLM tokens are billed separately.",
+      "price_usd": 0.0002163934,
+      "source_url": "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+      "unit": "second"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "General model in deferred asynchronous mode: lower price, results returned with a delay.",
+    "family": "general",
+    "first_seen": "2026-11-18",
+    "id": "deferred-general",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "languages": [
+      "de-DE",
+      "en-US",
+      "es-ES",
+      "fi-FI",
+      "fr-FR",
+      "he-IL",
+      "it-IT",
+      "kk-KZ",
+      "nl-NL",
+      "pl-PL",
+      "pt-PT",
+      "pt-BR",
+      "ru-RU",
+      "sv-SE",
+      "tr-TR",
+      "uz-UZ"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "api_versions": "streaming: gRPC v2/v3; synchronous: REST v1; asynchronous: REST v2/v3, gRPC v3",
+      "audio_encodings": [
+        "LINEAR16_PCM",
+        "WAV",
+        "OGG_OPUS",
+        "MP3"
+      ],
+      "auto_language": "language code 'auto' (API v3 only)",
+      "limits": "streaming 5 min / 10 MB per session; synchronous 30 s / 1 MB; asynchronous 4 h / 1 GB",
+      "mode": "asynchronous recognition only (deferred)"
+    },
+    "name": "SpeechKit deferred general",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Published as $0.0003122955 per 15 seconds of audio (asynchronous, deferred mode; USD excl. VAT); per-minute = 4 units. Billed per second with a 15-second minimum per two channels.",
+      "price_usd": 0.001249182,
+      "source_url": "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      48000
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Main supported speech recognition model, used for streaming, synchronous and asynchronous recognition.",
+    "first_seen": "2026-11-18",
+    "id": "general",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "de-DE",
+      "en-US",
+      "es-ES",
+      "fi-FI",
+      "fr-FR",
+      "he-IL",
+      "it-IT",
+      "kk-KZ",
+      "nl-NL",
+      "pl-PL",
+      "pt-PT",
+      "pt-BR",
+      "ru-RU",
+      "sv-SE",
+      "tr-TR",
+      "uz-UZ"
+    ],
+    "max_audio_seconds": 14400,
+    "meta": {
+      "api_versions": "streaming: gRPC v2/v3; synchronous: REST v1; asynchronous: REST v2/v3, gRPC v3",
+      "audio_encodings": [
+        "LINEAR16_PCM",
+        "WAV",
+        "OGG_OPUS",
+        "MP3"
+      ],
+      "auto_language": "language code 'auto' (API v3 only)",
+      "limits": "streaming 5 min / 10 MB per session; synchronous 30 s / 1 MB; asynchronous 4 h / 1 GB"
+    },
+    "name": "SpeechKit general",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Published as $0.0013327867 per 15-second unit for streaming and synchronous recognition and $0.0012418035 per 15 seconds for asynchronous recognition (USD excl. VAT, international billing); per-minute = 4 units. Streaming/sync bill whole 15-second units per channel (rounded up); async bills per second with a 15-second minimum per two channels.",
+      "price_usd": 0.0053311468,
+      "source_url": "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "asynchronous file recognition",
+          "price_usd": 0.004967214,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "profanity_filter",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Release-candidate version of the general recognition model, available for testing before it becomes the main version.",
+    "family": "general",
+    "first_seen": "2026-11-18",
+    "id": "general:rc",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "languages": [
+      "de-DE",
+      "en-US",
+      "es-ES",
+      "fi-FI",
+      "fr-FR",
+      "he-IL",
+      "it-IT",
+      "kk-KZ",
+      "nl-NL",
+      "pl-PL",
+      "pt-PT",
+      "pt-BR",
+      "ru-RU",
+      "sv-SE",
+      "tr-TR",
+      "uz-UZ"
+    ],
+    "lifecycle": "beta",
+    "max_audio_seconds": 14400,
+    "meta": {
+      "api_versions": "streaming: gRPC v2/v3; synchronous: REST v1; asynchronous: REST v2/v3, gRPC v3",
+      "audio_encodings": [
+        "LINEAR16_PCM",
+        "WAV",
+        "OGG_OPUS",
+        "MP3"
+      ],
+      "auto_language": "language code 'auto' (API v3 only)",
+      "limits": "streaming 5 min / 10 MB per session; synchronous 30 s / 1 MB; asynchronous 4 h / 1 GB",
+      "version_tag_note": "'Release candidate version available for testing.'"
+    },
+    "name": "SpeechKit general (release candidate)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Published as $0.0013327867 per 15-second unit for streaming and synchronous recognition and $0.0012418035 per 15 seconds for asynchronous recognition (USD excl. VAT, international billing); per-minute = 4 units. Streaming/sync bill whole 15-second units per channel (rounded up); async bills per second with a 15-second minimum per two channels.",
+      "price_usd": 0.0053311468,
+      "source_url": "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "asynchronous file recognition",
+          "price_usd": 0.004967214,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Main SpeechKit speech synthesis model with stock voices and roles, available in API v1 and API v3.",
+    "first_seen": "2026-11-18",
+    "id": "general",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "de-DE",
+      "en-US",
+      "he-IL",
+      "kk-KZ",
+      "ru-RU",
+      "uz-UZ"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "api_versions": [
+        "v1 (REST)",
+        "v3 (gRPC, REST)"
+      ],
+      "limits": "v1 5,000 chars; v3 250 chars and 24 s per request (5,000 chars in unsafe or streaming mode)",
+      "lpcm_sample_rates": "v1: 8/16/48 kHz; v3: any value 8-48 kHz",
+      "pitch_shift": "API v3 only, [-1000;1000] Hz",
+      "roles_param": "emotion (v1) / hints.role (v3)",
+      "ssml": "API v1 only"
+    },
+    "name": "SpeechKit general (synthesis)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "API v1: $10.99999824 per 1,000,000 characters; API v3: $0.0013327867 per request billing unit of 250 characters (per-character = /250). USD excl. VAT. Empty requests count as 1 character (v1) / 1 unit (v3).",
+      "price_usd": 1.099999824e-05,
+      "source_url": "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "API v3 (billed per 250-character request unit)",
+          "price_usd": 5.3311468e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Release-candidate version of the general synthesis model, available for testing.",
+    "family": "general",
+    "first_seen": "2026-11-18",
+    "id": "general:rc",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "languages": [
+      "de-DE",
+      "en-US",
+      "he-IL",
+      "kk-KZ",
+      "ru-RU",
+      "uz-UZ"
+    ],
+    "lifecycle": "beta",
+    "max_text_chars": 5000,
+    "meta": {
+      "api_versions": [
+        "v1 (REST)",
+        "v3 (gRPC, REST)"
+      ],
+      "limits": "v1 5,000 chars; v3 250 chars and 24 s per request (5,000 chars in unsafe or streaming mode)",
+      "lpcm_sample_rates": "v1: 8/16/48 kHz; v3: any value 8-48 kHz",
+      "pitch_shift": "API v3 only, [-1000;1000] Hz",
+      "roles_param": "emotion (v1) / hints.role (v3)",
+      "ssml": "API v1 only"
+    },
+    "name": "SpeechKit general (synthesis, release candidate)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "API v1: $10.99999824 per 1,000,000 characters; API v3: $0.0013327867 per request billing unit of 250 characters (per-character = /250). USD excl. VAT. Empty requests count as 1 character (v1) / 1 unit (v3).",
+      "price_usd": 1.099999824e-05,
+      "source_url": "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "API v3 (billed per 250-character request unit)",
+          "price_usd": 5.3311468e-06,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion"
+    ],
+    "description": "Synthesis model with its own Russian LiveTTS voices and roles, available in SpeechKit API v3 and in LiveTTS Realtime models.",
+    "first_seen": "2026-11-18",
+    "id": "livetts",
+    "interfaces": [
+      "grpc",
+      "http"
+    ],
+    "languages": [
+      "ru-RU"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "api_versions": [
+        "v3"
+      ],
+      "limits": "API v3: 250 chars per UtteranceSynthesis request, 5,000 in streaming mode (no LiveTTS-specific limit published)",
+      "unsupported": "speed, pitch_shift, duration, templates and MAX_PEAK normalization in API v3; no word_timings"
+    },
+    "name": "SpeechKit LiveTTS",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "API v3 price: $0.0013327867 per request billing unit of 250 characters (the v3 row is not model-specific). USD excl. VAT.",
+      "price_usd": 5.3311468e-06,
+      "source_url": "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Realtime API model that synthesizes speech from text with LiveTTS voices, without an LLM or audio input.",
+    "first_seen": "2026-11-18",
+    "id": "speech-realtime-tts-live",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "billing": "Only input text is billed: each started 250-character block of response.create text is one unit (no separate rate published).",
+      "branch": "latest",
+      "model_uri": "gpt://<folder_ID>/speech-realtime-tts-live/latest"
+    },
+    "name": "Speech TTS Live (Realtime API)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+        "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+        "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+        "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

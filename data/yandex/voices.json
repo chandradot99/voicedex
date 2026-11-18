@@ -1,0 +1,957 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "alexander",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "good"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Alexander",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "amira",
+    "languages": [
+      "kk-KZ"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "roles": [],
+      "voice_family": "general"
+    },
+    "name": "Amira",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "anton",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "good"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Anton",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "dasha",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "good",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Dasha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "livetts",
+      "speech-realtime-max-tts-live",
+      "speech-realtime-tts-live"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "denis",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3 (livetts)",
+        "Realtime (LiveTTS models)"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "casual",
+        "formal",
+        "sales"
+      ],
+      "voice_family": "LiveTTS"
+    },
+    "name": "Denis",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "ermil",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "good"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Ermil",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "filipp",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "roles": [],
+      "voice_family": "general"
+    },
+    "name": "Filipp",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "livetts",
+      "speech-realtime-max-tts-live",
+      "speech-realtime-tts-live"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "irina",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3 (livetts)",
+        "Realtime (LiveTTS models)"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "formal",
+        "support",
+        "narrator",
+        "sales"
+      ],
+      "voice_family": "LiveTTS"
+    },
+    "name": "Irina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "jane",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "good",
+        "evil"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Jane",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "john",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "roles": [],
+      "voice_family": "general"
+    },
+    "name": "John",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "julia",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Julia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "kirill",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict",
+        "good"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Kirill",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lea",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "roles": [],
+      "voice_family": "general"
+    },
+    "name": "Lea",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lera",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Lera",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "madi",
+    "languages": [
+      "kk-KZ"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "roles": [],
+      "voice_family": "general"
+    },
+    "name": "Madi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "madi_ru",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "roles": [],
+      "voice_family": "general"
+    },
+    "name": "Madi (Russian)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "marina",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "default_voice_for_language": true,
+      "roles": [
+        "neutral",
+        "whisper",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Marina",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "masha",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "good",
+      "roles": [
+        "good",
+        "strict",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Masha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "naomi",
+    "languages": [
+      "he-IL"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "modern",
+      "roles": [
+        "modern",
+        "classic"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Naomi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nigora",
+    "languages": [
+      "uz-UZ"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "roles": [],
+      "voice_family": "general"
+    },
+    "name": "Nigora",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "omazh",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "evil"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Omazh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "saule",
+    "languages": [
+      "kk-KZ"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Saule",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "saule_ru",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict",
+        "whisper"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Saule (Russian)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "livetts",
+      "speech-realtime-max-tts-live",
+      "speech-realtime-tts-live"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "sergey",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3 (livetts)",
+        "Realtime (LiveTTS models)"
+      ],
+      "default_role": "support",
+      "roles": [
+        "support",
+        "sales"
+      ],
+      "voice_family": "LiveTTS"
+    },
+    "name": "Sergey",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "livetts",
+      "speech-realtime-max-tts-live",
+      "speech-realtime-tts-live"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "sofia",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3 (livetts)",
+        "Realtime (LiveTTS models)"
+      ],
+      "default_role": "support",
+      "roles": [
+        "support",
+        "casual"
+      ],
+      "voice_family": "LiveTTS"
+    },
+    "name": "Sofia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "livetts",
+      "speech-realtime-max-tts-live",
+      "speech-realtime-tts-live"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "vasily",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3 (livetts)",
+        "Realtime (LiveTTS models)"
+      ],
+      "default_role": "support",
+      "roles": [
+        "support",
+        "sales"
+      ],
+      "voice_family": "LiveTTS"
+    },
+    "name": "Vasily",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "livetts",
+      "speech-realtime-max-tts-live",
+      "speech-realtime-tts-live"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "vera",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3 (livetts)",
+        "Realtime (LiveTTS models)"
+      ],
+      "default_role": "support",
+      "roles": [
+        "support",
+        "casual"
+      ],
+      "voice_family": "LiveTTS"
+    },
+    "name": "Vera",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "yulduz",
+    "languages": [
+      "uz-UZ"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict",
+        "friendly",
+        "whisper"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Yulduz",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "yulduz_ru",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict",
+        "friendly",
+        "whisper"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Yulduz (Russian)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "zahar",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v1",
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "good"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Zahar",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "zamira",
+    "languages": [
+      "uz-UZ"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Zamira",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "zamira_ru",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Zamira (Russian)",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "zhanar",
+    "languages": [
+      "kk-KZ"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Zhanar",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "general",
+      "general:rc",
+      "speech-realtime-deepseek-v4-flash"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "zhanar_ru",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "api_versions": [
+        "v3",
+        "Realtime"
+      ],
+      "default_role": "neutral",
+      "roles": [
+        "neutral",
+        "strict",
+        "friendly"
+      ],
+      "voice_family": "general"
+    },
+    "name": "Zhanar (Russian)",
+    "updated_at": "2026-11-18"
+  }
+]

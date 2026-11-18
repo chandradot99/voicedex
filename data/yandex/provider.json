@@ -1,0 +1,46 @@
+{
+  "access": "self_serve",
+  "description": "Yandex SpeechKit is the speech recognition and synthesis service of Yandex AI Studio, the AI platform of the Russian technology company Yandex (formerly documented under Yandex Cloud). It sells streaming, synchronous and asynchronous speech recognition, text-to-speech with stock voices and custom Brand Voice voices, and Realtime API voice-agent models, with a focus on Russian, Kazakh and Uzbek alongside several European languages. Prices are published in RUB for customers of Yandex.Cloud LLC and in USD for customers of its international entities Iron Hive doo Beograd (Serbia) and Direct Cursus Technology L.L.C. (Dubai).",
+  "docs_urls": [
+    "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+    "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+    "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+    "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+    "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+    "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+    "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+    "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+    "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+    "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+    "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+  ],
+  "headquarters": "RU",
+  "id": "yandex",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://aistudio.yandex.ru/docs/en/speechkit/stt-v3/api-ref/grpc/Recognizer/",
+    "docs": "https://aistudio.yandex.ru/docs/en/speechkit/",
+    "pricing": "https://aistudio.yandex.ru/docs/en/speechkit/pricing"
+  },
+  "name": "Yandex SpeechKit",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://aistudio.yandex.ru/docs/en/speechkit/stt/models",
+      "https://aistudio.yandex.ru/docs/en/speechkit/stt/",
+      "https://aistudio.yandex.ru/docs/en/speechkit/formats",
+      "https://aistudio.yandex.ru/docs/en/speechkit/concepts/limits",
+      "https://aistudio.yandex.ru/docs/en/speechkit/pricing",
+      "https://aistudio.yandex.ru/docs/en/speechkit/tts/models",
+      "https://aistudio.yandex.ru/docs/en/speechkit/tts/",
+      "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models",
+      "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+      "https://aistudio.yandex.ru/docs/en/ai-studio/pricing",
+      "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
+    ]
+  },
+  "website": "https://aistudio.yandex.ru/en/ai-speech"
+}
