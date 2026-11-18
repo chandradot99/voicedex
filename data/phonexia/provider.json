@@ -1,0 +1,23 @@
+{
+  "access": "enterprise",
+  "description": "Phonexia is a speech technology company founded in 2006 in Brno, Czech Republic, as an offshoot of the Speech@FIT research group at Brno University of Technology; it was acquired by South Korean fund Crescendo Equity Partners in 2025. Its Speech Platform 4 is on-premises software (virtual appliance with a REST API, or Docker microservices with gRPC) offering speech-to-text (its own 6th-generation engine and an enhanced Whisper-based engine), keyword spotting, language identification, speaker identification and deepfake detection. Models and licenses are supplied by Phonexia on request; no public pricing.",
+  "docs_urls": [
+    "https://docs.phonexia.com/products/speech-platform-4/technologies/speech-to-text/supported-languages",
+    "https://docs.phonexia.com/products/speech-platform-4/technologies/speech-to-text/phonexia-speech-to-text",
+    "https://docs.phonexia.com/products/speech-platform-4/technologies/speech-to-text/enhanced-speech-to-text-built-on-whisper",
+    "https://docs.phonexia.com/products/speech-platform-4/rest/api/speech-to-text-by-phonexia",
+    "https://docs.phonexia.com/products/speech-platform-4/rest/api/enhanced-speech-to-text-built-on-whisper",
+    "https://docs.phonexia.com/products/speech-platform-4/microservices/audio-formats"
+  ],
+  "headquarters": "CZ",
+  "id": "phonexia",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.phonexia.com/products/speech-platform-4/rest/api",
+    "docs": "https://docs.phonexia.com/products/speech-platform-4/technologies/speech-to-text"
+  },
+  "name": "Phonexia",
+  "source": "docs",
+  "type": "stt",
+  "website": "https://www.phonexia.com"
+}
