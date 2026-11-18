@@ -1,0 +1,44 @@
+{
+  "access": "enterprise",
+  "compliance": [
+    "soc2",
+    "iso27001",
+    "hipaa",
+    "gdpr",
+    "pci_dss"
+  ],
+  "description": "Gnani.ai is a voice-AI company founded in Bengaluru, India in 2016. Through its Vachana speech APIs it sells Prisma speech-to-text, Timbre text-to-speech and voice-cloned TTS for ten Indian languages including English (REST, streaming and batch), alongside a voice-agent builder and an LLM API. API keys come from the Gnani platform, but prices are not published; pricing goes through sales.",
+  "docs_urls": [
+    "https://docs.gnani.ai/api/STT/models/overview.md",
+    "https://docs.gnani.ai/api/STT/limits.md",
+    "https://docs.gnani.ai/api/STT/stt-websocket.md",
+    "https://docs.gnani.ai/api/STTBatch/Introduction.md",
+    "https://docs.gnani.ai/api/TTS/tts-inference.md",
+    "https://docs.gnani.ai/api/TTS/available-voices.md",
+    "https://docs.gnani.ai/api/VC/vc-inference.md"
+  ],
+  "headquarters": "IN",
+  "id": "gnani",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.gnani.ai/api/introduction/introduction",
+    "docs": "https://docs.gnani.ai"
+  },
+  "name": "Gnani.ai",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.gnani.ai/api/STT/models/overview.md",
+      "https://docs.gnani.ai/api/STT/limits.md",
+      "https://docs.gnani.ai/api/STT/stt-websocket.md",
+      "https://docs.gnani.ai/api/STTBatch/Introduction.md",
+      "https://docs.gnani.ai/api/TTS/tts-inference.md",
+      "https://docs.gnani.ai/api/TTS/available-voices.md",
+      "https://docs.gnani.ai/api/VC/vc-inference.md"
+    ]
+  },
+  "website": "https://www.gnani.ai"
+}

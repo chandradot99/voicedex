@@ -1,0 +1,340 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization"
+    ],
+    "description": "Gnani's default Indic speech-to-text model: one fixed language per request across nine Indian languages and English, with number formatting, word boosting and find-and-replace.",
+    "first_seen": "2026-11-18",
+    "id": "prisma-v2.5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "batch_max_audio_hours_per_file": 4,
+      "default_note": "Docs: 'The default model is currently Prisma v2.5.' Used when `model` is omitted on REST and Realtime.",
+      "diarization_note": "Speaker diarization is a Batch pipeline step (with_diarization), not available on REST or Realtime.",
+      "itn_languages": [
+        "hi-IN",
+        "en-IN"
+      ],
+      "output_styles": [
+        "verbatim",
+        "transcribe"
+      ],
+      "rest_max_audio_seconds": 30,
+      "streaming_input": "raw 16-bit PCM, mono",
+      "streaming_sample_rates_hz": [
+        8000,
+        16000,
+        44100,
+        48000
+      ],
+      "streaming_session_max_minutes": 15,
+      "word_boosting": "bias_list (up to 100 single words) + bias_score"
+    },
+    "name": "Prisma v2.5",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.gnani.ai/api/STT/models/overview.md",
+        "https://docs.gnani.ai/api/STT/limits.md",
+        "https://docs.gnani.ai/api/STT/stt-websocket.md",
+        "https://docs.gnani.ai/api/STTBatch/Introduction.md",
+        "https://docs.gnani.ai/api/TTS/tts-inference.md",
+        "https://docs.gnani.ai/api/TTS/available-voices.md",
+        "https://docs.gnani.ai/api/VC/vc-inference.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "speaker_diarization"
+    ],
+    "description": "Multilingual Indic speech-to-text for nine Indian languages and English with automatic language identification, code-mixed output styles and context hints.",
+    "first_seen": "2026-11-18",
+    "id": "prisma-v3.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "auto_language_code": "indic-auto",
+      "batch_max_audio_hours_per_file": 4,
+      "context_hints": "keyterms (up to 200), topic, previous_text, speaker_names",
+      "diarization_note": "Speaker diarization is a Batch pipeline step (with_diarization), not available on REST or Realtime.",
+      "not_supported": "word-level timestamps, translation, multi-channel audio on REST/Realtime",
+      "opt_in_note": "Opt-in: send model=prisma-v3.0; requests without a model use Prisma v2.5.",
+      "output_styles": [
+        "verbatim",
+        "transcribe",
+        "codemix",
+        "transliterate"
+      ],
+      "release_date": "2026-10-22",
+      "rest_max_audio_seconds": 30,
+      "streaming_input": "raw 16-bit PCM, mono",
+      "streaming_sample_rates_hz": [
+        8000,
+        16000,
+        44100,
+        48000
+      ],
+      "streaming_session_max_minutes": 15
+    },
+    "name": "Prisma v3.0",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.gnani.ai/api/STT/models/overview.md",
+        "https://docs.gnani.ai/api/STT/limits.md",
+        "https://docs.gnani.ai/api/STT/stt-websocket.md",
+        "https://docs.gnani.ai/api/STTBatch/Introduction.md",
+        "https://docs.gnani.ai/api/TTS/tts-inference.md",
+        "https://docs.gnani.ai/api/TTS/available-voices.md",
+        "https://docs.gnani.ai/api/VC/vc-inference.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "description": "Indic text-to-speech with 42 voices, each tuned to one preferred language among ten.",
+    "first_seen": "2026-11-18",
+    "id": "timbre-v2.5",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "also": "SSE streaming and WebSocket realtime endpoints",
+      "containers": [
+        "wav",
+        "raw",
+        "mp3",
+        "ogg",
+        "mulaw",
+        "alaw"
+      ],
+      "hinglish_language_value": "hi-en",
+      "pricing_note": "No published price; pricing via sales (gnani.ai pricing link leads to a demo booking).",
+      "rest_endpoint": "POST https://api.vachana.ai/api/v1/tts/inference",
+      "speed_shortcuts": {
+        "fast": 1.15,
+        "medium": 1.0,
+        "slow": 0.85
+      }
+    },
+    "name": "Timbre v2.5",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.gnani.ai/api/STT/models/overview.md",
+        "https://docs.gnani.ai/api/STT/limits.md",
+        "https://docs.gnani.ai/api/STT/stt-websocket.md",
+        "https://docs.gnani.ai/api/STTBatch/Introduction.md",
+        "https://docs.gnani.ai/api/TTS/tts-inference.md",
+        "https://docs.gnani.ai/api/TTS/available-voices.md",
+        "https://docs.gnani.ai/api/VC/vc-inference.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion"
+    ],
+    "description": "Indic text-to-speech with 34 voices that each speak all ten supported languages, plus inline audio tags for non-verbal cues.",
+    "first_seen": "2026-11-18",
+    "id": "timbre-v3.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "also": "SSE streaming and WebSocket realtime endpoints",
+      "audio_tags": "<laugh>, <sigh>, <whispers>, <pauses>, <excited> and others inline in text",
+      "containers": [
+        "wav",
+        "raw",
+        "mp3",
+        "ogg",
+        "mulaw",
+        "alaw"
+      ],
+      "default_note": "`model` is required on every TTS request; marked default here as the newest Timbre model (no API default exists).",
+      "pricing_note": "No published price; pricing via sales (gnani.ai pricing link leads to a demo booking).",
+      "rest_endpoint": "POST https://api.vachana.ai/api/v1/tts/inference",
+      "speed_values": [
+        0.8,
+        1.0,
+        1.2
+      ]
+    },
+    "name": "Timbre v3.0",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.gnani.ai/api/STT/models/overview.md",
+        "https://docs.gnani.ai/api/STT/limits.md",
+        "https://docs.gnani.ai/api/STT/stt-websocket.md",
+        "https://docs.gnani.ai/api/STTBatch/Introduction.md",
+        "https://docs.gnani.ai/api/TTS/tts-inference.md",
+        "https://docs.gnani.ai/api/TTS/available-voices.md",
+        "https://docs.gnani.ai/api/VC/vc-inference.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Voice-cloned text-to-speech that synthesizes from a speaker embedding generated from a reference audio clip.",
+    "first_seen": "2026-11-18",
+    "id": "vachana-vc-v1",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "meta": {
+      "flow": "POST a reference clip to the voice-clone-embeddings endpoint, then pass speaker_embedding to /api/v1/tts/inference (REST), SSE or WebSocket.",
+      "model_selection": "Set automatically when speaker_embedding is provided.",
+      "pricing_note": "No published price.",
+      "sample_rate_range_hz": [
+        8000,
+        44100
+      ]
+    },
+    "name": "Vachana VC v1",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.gnani.ai/api/STT/models/overview.md",
+        "https://docs.gnani.ai/api/STT/limits.md",
+        "https://docs.gnani.ai/api/STT/stt-websocket.md",
+        "https://docs.gnani.ai/api/STTBatch/Introduction.md",
+        "https://docs.gnani.ai/api/TTS/tts-inference.md",
+        "https://docs.gnani.ai/api/TTS/available-voices.md",
+        "https://docs.gnani.ai/api/VC/vc-inference.md"
+      ]
+    },
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

@@ -1,0 +1,2164 @@
+[
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Clear, composed virtual assistant",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ambuja",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Hindi"
+    },
+    "name": "Ambuja",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Firm yet empathetic",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anitasingh",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Firm yet empathetic",
+      "recommended_languages": [
+        "mr-IN"
+      ]
+    },
+    "name": "Anitasingh",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Collections",
+      "payment reminders",
+      "BFSI"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Deep authoritative baritone",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Arko",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Deep authoritative baritone",
+      "recommended_languages": [
+        "hi-IN",
+        "en-IN",
+        "ta-IN",
+        "te-IN",
+        "mr-IN",
+        "bn-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Arko",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Narration",
+      "announcements",
+      "brand"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Polished, refined, smooth corporate voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Asmita",
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Tamil"
+    },
+    "name": "Asmita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Calm and captivating",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Avinash",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Calm and captivating",
+      "recommended_languages": [
+        "hi-IN",
+        "ta-IN",
+        "mr-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Avinash",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Brand films",
+      "e-learning",
+      "advertising"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Friendly voice for customer support",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Bhavna",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Hindi"
+    },
+    "name": "Bhavna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Steady, even-paced professional voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Brinda",
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Tamil"
+    },
+    "name": "Brinda",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Soft and intimate",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chetana",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Soft and intimate",
+      "recommended_languages": [
+        "hi-IN",
+        "te-IN",
+        "mr-IN",
+        "pa-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Chetana",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Audiobooks",
+      "romance",
+      "ASMR-style content"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Mature voice for customer care",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chitra",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Warm, empathetic",
+      "preferred_language": "Hindi"
+    },
+    "name": "Chitra",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Clear, measured voice for corporate use",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Deepak",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Hindi"
+    },
+    "name": "Deepak",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Soft and sincere",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Devansh",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Soft and sincere",
+      "recommended_languages": [
+        "hi-IN",
+        "te-IN",
+        "pa-IN"
+      ]
+    },
+    "name": "Devansh",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Storytelling",
+      "drama",
+      "emotional content"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Authoritative voice for customer support",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Devika",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "English"
+    },
+    "name": "Devika",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Casual, relatable voice for conversations",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Dhruva",
+    "languages": [
+      "bn-IN"
+    ],
+    "meta": {
+      "persona": "Conversational",
+      "preferred_language": "Bengali"
+    },
+    "name": "Dhruva",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Youthful, clear voice for narration",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Falak",
+    "languages": [
+      "gu-IN"
+    ],
+    "meta": {
+      "persona": "Conversational",
+      "preferred_language": "Gujarati"
+    },
+    "name": "Falak",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Warm voice with natural storytelling",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Girish",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "persona": "Expressive, energetic",
+      "preferred_language": "English"
+    },
+    "name": "Girish",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Deep and grounded",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Harshad",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Deep and grounded",
+      "recommended_languages": [
+        "hi-IN",
+        "te-IN",
+        "pa-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Harshad",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Conversational IVR",
+      "regional engagement"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Confident voice for demos",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hemraj",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Confident, authoritative",
+      "preferred_language": "Hindi"
+    },
+    "name": "Hemraj",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Clear voice for instructions and narration",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ishaan",
+    "languages": [
+      "mr-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Marathi"
+    },
+    "name": "Ishaan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Expressive voice for storytelling",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jalaj",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Expressive, energetic",
+      "preferred_language": "Hindi"
+    },
+    "name": "Jalaj",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Friendly, approachable everyday voice",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jwala",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Hindi"
+    },
+    "name": "Jwala",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Friendly and encouraging",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kalpana",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Friendly and encouraging",
+      "recommended_languages": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN",
+        "pa-IN",
+        "bn-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Kalpana",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Tutoring",
+      "e-learning",
+      "onboarding"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Firm voice for customer support",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kaveri",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "English"
+    },
+    "name": "Kaveri",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Firm, articulate voice for presentations",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kavin",
+    "languages": [
+      "kn-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Kannada"
+    },
+    "name": "Kavin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Soft-spoken voice for casual conversations",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kirra",
+    "languages": [
+      "bn-IN"
+    ],
+    "meta": {
+      "persona": "Conversational",
+      "preferred_language": "Bengali"
+    },
+    "name": "Kirra",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Clear and authoritative",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lakshmi",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Clear and authoritative",
+      "recommended_languages": [
+        "hi-IN",
+        "te-IN",
+        "mr-IN",
+        "pa-IN",
+        "bn-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Lakshmi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Corporate IVR",
+      "explainers",
+      "announcements"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Warm and patient",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lakshmidevi",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Warm and patient",
+      "recommended_languages": [
+        "mr-IN"
+      ]
+    },
+    "name": "Lakshmidevi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Inbound support",
+      "banking",
+      "healthcare"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Soft, empathetic voice for care and support",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lavanya",
+    "languages": [
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Warm, empathetic",
+      "preferred_language": "Telugu"
+    },
+    "name": "Lavanya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Gentle, reassuring voice for comfort and trust",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lehara",
+    "languages": [
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Warm, empathetic",
+      "preferred_language": "Telugu"
+    },
+    "name": "Lehara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Youthful and energetic",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mahendra",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Youthful and energetic",
+      "recommended_languages": [
+        "en-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Mahendra",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Apps",
+      "tech support",
+      "Gen-Z engagement"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Steady and dependable",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Manjunath",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Steady and dependable",
+      "recommended_languages": [
+        "mr-IN"
+      ]
+    },
+    "name": "Manjunath",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Narration",
+      "IVR",
+      "informational content"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Expressive voice for commercials and promotions",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mehuli",
+    "languages": [
+      "pa-IN"
+    ],
+    "meta": {
+      "persona": "Expressive, energetic",
+      "preferred_language": "Punjabi"
+    },
+    "name": "Mehuli",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Friendly voice for playful conversations",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Nalini",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Hindi"
+    },
+    "name": "Nalini",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Versatile and expressive",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Neelam",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Versatile and expressive",
+      "recommended_languages": [
+        "mr-IN",
+        "pa-IN"
+      ]
+    },
+    "name": "Neelam",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Multi-language campaigns",
+      "IVR",
+      "narration"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Measured and unhurried",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nitin",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Measured and unhurried"
+    },
+    "name": "Nitin",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Audiobooks",
+      "long-form narration",
+      "politics"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Warm voice for everyday conversations",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Noopur",
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Tamil"
+    },
+    "name": "Noopur",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Energetic voice for customer support",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Omkar",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Confident, authoritative",
+      "preferred_language": "Hindi"
+    },
+    "name": "Omkar",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Natural voice for bilingual conversations",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Poorvi",
+    "languages": [
+      "hi-IN",
+      "en-IN"
+    ],
+    "meta": {
+      "language_value": "hi-en",
+      "persona": "Conversational",
+      "preferred_language": "Hinglish"
+    },
+    "name": "Poorvi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Calm and reassuring",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Prakash",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Calm and reassuring",
+      "recommended_languages": [
+        "hi-IN",
+        "ta-IN",
+        "kn-IN",
+        "mr-IN",
+        "pa-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Prakash",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Support bots",
+      "healthcare",
+      "guided flows"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Friendly voice for customer support",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Pranav",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "English"
+    },
+    "name": "Pranav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Warm and patient",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Priyasharm",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Warm and patient",
+      "recommended_languages": [
+        "hi-IN",
+        "en-IN",
+        "mr-IN",
+        "pa-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Priyasharm",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Inbound support",
+      "banking",
+      "healthcare"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Expressive and warm",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rahulmehta",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Expressive and warm"
+    },
+    "name": "Rahulmehta",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "E-learning",
+      "narration",
+      "explainers"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Authentic and earthy",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rajeev",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Authentic and earthy",
+      "recommended_languages": [
+        "te-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Rajeev",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Regional outreach",
+      "health",
+      "social campaigns"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Mature and commanding",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rajni",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Mature and commanding",
+      "recommended_languages": [
+        "ml-IN"
+      ]
+    },
+    "name": "Rajni",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Announcements",
+      "governance",
+      "formal IVR"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Clean and neutral",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rakesh",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Clean and neutral",
+      "recommended_languages": [
+        "te-IN",
+        "pa-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Rakesh",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "News",
+      "broadcast",
+      "general-purpose IVR"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Warm and relatable",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rekha",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Warm and relatable",
+      "recommended_languages": [
+        "gu-IN"
+      ]
+    },
+    "name": "Rekha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Rural engagement",
+      "agriculture",
+      "social outreach"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Bright voice for greetings and support",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Reshma",
+    "languages": [
+      "ml-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Malayalam"
+    },
+    "name": "Reshma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Upbeat and persuasive",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Riyaa",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Upbeat and persuasive",
+      "recommended_languages": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN",
+        "pa-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Riyaa",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Retail ads",
+      "e-commerce",
+      "promotions"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Easygoing voice for casual conversations",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Riyaan",
+    "languages": [
+      "ml-IN"
+    ],
+    "meta": {
+      "persona": "Conversational",
+      "preferred_language": "Malayalam"
+    },
+    "name": "Riyaan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Grounded, knowledgeable, professional voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Roopesh",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Hindi"
+    },
+    "name": "Roopesh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Lively voice for ads and promotions",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Saanvi",
+    "languages": [
+      "kn-IN"
+    ],
+    "meta": {
+      "persona": "Expressive, energetic",
+      "preferred_language": "Kannada"
+    },
+    "name": "Saanvi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Fresh and unaffected",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Santosh",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Fresh and unaffected",
+      "recommended_languages": [
+        "hi-IN",
+        "bn-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Santosh",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Local conversation",
+      "community engagement"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Warm and affectionate",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Shivani",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Warm and affectionate",
+      "recommended_languages": [
+        "hi-IN",
+        "mr-IN",
+        "bn-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Shivani",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Companion apps",
+      "casual engagement"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Warm, conversational voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Shlok",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "persona": "Conversational",
+      "preferred_language": "English"
+    },
+    "name": "Shlok",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Confident and polished",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Shruthi",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Confident and polished",
+      "recommended_languages": [
+        "kn-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Shruthi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Finance",
+      "health",
+      "professional IVR"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Bold and high-energy",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Shubham",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Bold and high-energy",
+      "recommended_languages": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN",
+        "kn-IN",
+        "ml-IN",
+        "pa-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Shubham",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Ads",
+      "promotions",
+      "mass-market campaigns"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Bright and articulate",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sneha",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Bright and articulate",
+      "recommended_languages": [
+        "kn-IN",
+        "pa-IN"
+      ]
+    },
+    "name": "Sneha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Education",
+      "health",
+      "regional campaigns"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Clear and composed",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sohini",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Clear and composed",
+      "recommended_languages": [
+        "hi-IN",
+        "en-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Sohini",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Support",
+      "education",
+      "financial services"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Calm, soothing voice with confidence",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Suhana",
+    "languages": [
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Warm, empathetic",
+      "preferred_language": "Telugu"
+    },
+    "name": "Suhana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Grounded and natural",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sunaina",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Grounded and natural",
+      "recommended_languages": [
+        "hi-IN",
+        "en-IN",
+        "ta-IN",
+        "te-IN",
+        "kn-IN",
+        "ml-IN",
+        "mr-IN",
+        "pa-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Sunaina",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "IVR",
+      "rural outreach",
+      "government services"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Modern and confident",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Swathi",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Modern and confident",
+      "recommended_languages": [
+        "hi-IN",
+        "te-IN",
+        "bn-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Swathi",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Education",
+      "social media",
+      "youth engagement"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Soft-spoken and gentle",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tarika",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Soft-spoken and gentle",
+      "recommended_languages": [
+        "hi-IN",
+        "ta-IN",
+        "te-IN",
+        "ml-IN",
+        "mr-IN",
+        "pa-IN",
+        "gu-IN"
+      ]
+    },
+    "name": "Tarika",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Tech support",
+      "guided troubleshooting"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Warm, approachable voice for guidance",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Trisha",
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Tamil"
+    },
+    "name": "Trisha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Upbeat, articulate voice with maturity",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Trupti",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "English"
+    },
+    "name": "Trupti",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Refined voice for formal announcements",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Urmila",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Hindi"
+    },
+    "name": "Urmila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Clear, natural voice for everyday use",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Varuni",
+    "languages": [
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Conversational",
+      "preferred_language": "Telugu"
+    },
+    "name": "Varuni",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Polished and aspirational",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Vasudha",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Polished and aspirational",
+      "recommended_languages": [
+        "te-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Vasudha",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Premium ads",
+      "brand campaigns"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Crisp, articulate voice for information",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Vedika",
+    "languages": [
+      "ta-IN"
+    ],
+    "meta": {
+      "persona": "Professional",
+      "preferred_language": "Tamil"
+    },
+    "name": "Vedika",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Friendly voice for casual conversations",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Veera",
+    "languages": [
+      "gu-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Gujarati"
+    },
+    "name": "Veera",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Energetic and persuasive",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vikramdasu",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Energetic and persuasive",
+      "recommended_languages": [
+        "gu-IN"
+      ]
+    },
+    "name": "Vikramdasu",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Outbound sales",
+      "lead qualification"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Warm, genuine conversational voice",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vikrant",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Conversational",
+      "preferred_language": "Hindi"
+    },
+    "name": "Vikrant",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Mature and seasoned",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vinod",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Mature and seasoned",
+      "recommended_languages": [
+        "te-IN",
+        "pa-IN"
+      ]
+    },
+    "name": "Vinod",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Formal narration",
+      "institutional content"
+    ]
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v3.0"
+    ],
+    "description": "Smooth and magnetic",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Yashraj",
+    "languages": [
+      "bn-IN",
+      "en-IN",
+      "gu-IN",
+      "hi-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "pa-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Smooth and magnetic",
+      "recommended_languages": [
+        "hi-IN",
+        "te-IN",
+        "mr-IN",
+        "bn-IN"
+      ]
+    },
+    "name": "Yashraj",
+    "updated_at": "2026-11-18",
+    "use_cases": [
+      "Brand voiceovers",
+      "luxury",
+      "lifestyle"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Gentle, reassuring voice for comfort",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yashvi",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "persona": "Warm, empathetic",
+      "preferred_language": "Hindi"
+    },
+    "name": "Yashvi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Warm, welcoming voice that puts listeners at ease",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Yukti",
+    "languages": [
+      "te-IN"
+    ],
+    "meta": {
+      "persona": "Friendly",
+      "preferred_language": "Telugu"
+    },
+    "name": "Yukti",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Energetic voice for sales and casual chat",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Zahira",
+    "languages": [
+      "mr-IN"
+    ],
+    "meta": {
+      "persona": "Expressive, energetic",
+      "preferred_language": "Marathi"
+    },
+    "name": "Zahira",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "timbre-v2.5"
+    ],
+    "description": "Soft, caring voice for empathetic conversations",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Zayan",
+    "languages": [
+      "pa-IN"
+    ],
+    "meta": {
+      "persona": "Warm, empathetic",
+      "preferred_language": "Punjabi"
+    },
+    "name": "Zayan",
+    "updated_at": "2026-11-18"
+  }
+]
