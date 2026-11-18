@@ -1,0 +1,21 @@
+{
+  "access": "self_serve",
+  "description": "Voice.ai (Voice AI, Inc.) is a voice technology company known for its real-time AI voice changer. It sells a developer API with its own hosted text-to-speech models (standard English, Lite and multilingual for ten European languages), instant voice cloning and AI voice agents, priced through monthly credit plans.",
+  "docs_urls": [
+    "https://voice.ai/docs/api-reference/text-to-speech/generate-speech",
+    "https://voice.ai/docs/guides/text-to-speech/quickstart",
+    "https://voice.ai/pricing",
+    "https://voice.ai/tts-lite"
+  ],
+  "id": "voiceai",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://voice.ai/docs/api-reference",
+    "docs": "https://voice.ai/docs/introduction",
+    "pricing": "https://voice.ai/pricing"
+  },
+  "name": "Voice.ai",
+  "source": "docs",
+  "type": "tts",
+  "website": "https://voice.ai"
+}

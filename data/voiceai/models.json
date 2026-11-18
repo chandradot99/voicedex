@@ -1,0 +1,365 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Voice.ai's lightweight 112M-parameter English text-to-speech model (also announced as open source), served via the hosted API.",
+    "family": "voiceai-tts-lite-v1",
+    "first_seen": "2026-11-18",
+    "id": "voiceai-tts-lite-v1-2026-04-15",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
+      "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "endpoint": "POST https://dev.voice.ai/api/v1/tts/speech",
+      "inline_spelling_markup": "[SPELL:...]",
+      "open_source_announced": "Apache 2.0, GitHub repo 'coming soon' (voice-ai/tts-lite) as of 2026-11-18",
+      "paralinguistic_tags": true,
+      "parameters": "112M",
+      "pronunciation_dictionaries": true
+    },
+    "name": "Voice.ai TTS Lite v1 (2026-04-15)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "TTS Lite page lists '$1 /M TTS API chars'. Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "price_usd": 1e-06,
+      "source_url": "https://voice.ai/tts-lite",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://voice.ai/docs/api-reference/text-to-speech/generate-speech",
+        "https://voice.ai/docs/guides/text-to-speech/quickstart",
+        "https://voice.ai/pricing",
+        "https://voice.ai/tts-lite"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "snapshot_date": "2026-04-15",
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "alias_of": "voiceai-tts-lite-v1-2026-04-15",
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Voice.ai's lightweight 112M-parameter English text-to-speech model (also announced as open source), served via the hosted API.",
+    "family": "voiceai-tts-lite-v1",
+    "first_seen": "2026-11-18",
+    "id": "voiceai-tts-lite-v1-latest",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
+      "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "endpoint": "POST https://dev.voice.ai/api/v1/tts/speech",
+      "inline_spelling_markup": "[SPELL:...]",
+      "open_source_announced": "Apache 2.0, GitHub repo 'coming soon' (voice-ai/tts-lite) as of 2026-11-18",
+      "paralinguistic_tags": true,
+      "parameters": "112M",
+      "pronunciation_dictionaries": true
+    },
+    "name": "Voice.ai TTS Lite v1 (latest)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "TTS Lite page lists '$1 /M TTS API chars'. Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "price_usd": 1e-06,
+      "source_url": "https://voice.ai/tts-lite",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://voice.ai/docs/api-reference/text-to-speech/generate-speech",
+        "https://voice.ai/docs/guides/text-to-speech/quickstart",
+        "https://voice.ai/pricing",
+        "https://voice.ai/tts-lite"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Voice.ai's hosted multilingual text-to-speech model for ten European languages (English uses the standard model).",
+    "family": "voiceai-tts-multilingual-v1",
+    "first_seen": "2026-11-18",
+    "id": "voiceai-tts-multilingual-v1-2026-02-10",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ca",
+      "sv",
+      "es",
+      "fr",
+      "de",
+      "it",
+      "pt",
+      "pl",
+      "ru",
+      "nl"
+    ],
+    "meta": {
+      "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
+      "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "endpoint": "POST https://dev.voice.ai/api/v1/tts/speech",
+      "inline_spelling_markup": "[SPELL:...]",
+      "pronunciation_dictionaries": true
+    },
+    "name": "Voice.ai TTS Multilingual v1 (2026-02-10)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://voice.ai/docs/api-reference/text-to-speech/generate-speech",
+        "https://voice.ai/docs/guides/text-to-speech/quickstart",
+        "https://voice.ai/pricing",
+        "https://voice.ai/tts-lite"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "snapshot_date": "2026-02-10",
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "alias_of": "voiceai-tts-multilingual-v1-2026-02-10",
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Voice.ai's hosted multilingual text-to-speech model for ten European languages (English uses the standard model).",
+    "family": "voiceai-tts-multilingual-v1",
+    "first_seen": "2026-11-18",
+    "id": "voiceai-tts-multilingual-v1-latest",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ca",
+      "sv",
+      "es",
+      "fr",
+      "de",
+      "it",
+      "pt",
+      "pl",
+      "ru",
+      "nl"
+    ],
+    "meta": {
+      "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
+      "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "endpoint": "POST https://dev.voice.ai/api/v1/tts/speech",
+      "inline_spelling_markup": "[SPELL:...]",
+      "pronunciation_dictionaries": true
+    },
+    "name": "Voice.ai TTS Multilingual v1 (latest)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://voice.ai/docs/api-reference/text-to-speech/generate-speech",
+        "https://voice.ai/docs/guides/text-to-speech/quickstart",
+        "https://voice.ai/pricing",
+        "https://voice.ai/tts-lite"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Voice.ai's standard hosted English text-to-speech model.",
+    "family": "voiceai-tts-v1",
+    "first_seen": "2026-11-18",
+    "id": "voiceai-tts-v1-2026-02-10",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
+      "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "endpoint": "POST https://dev.voice.ai/api/v1/tts/speech",
+      "inline_spelling_markup": "[SPELL:...]",
+      "pronunciation_dictionaries": true
+    },
+    "name": "Voice.ai TTS v1 (2026-02-10)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://voice.ai/docs/api-reference/text-to-speech/generate-speech",
+        "https://voice.ai/docs/guides/text-to-speech/quickstart",
+        "https://voice.ai/pricing",
+        "https://voice.ai/tts-lite"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "snapshot_date": "2026-02-10",
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "alias_of": "voiceai-tts-v1-2026-02-10",
+    "audio_formats": [
+      "alaw",
+      "mp3",
+      "mulaw",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "voice_cloning"
+    ],
+    "description": "Voice.ai's standard hosted English text-to-speech model.",
+    "family": "voiceai-tts-v1",
+    "first_seen": "2026-11-18",
+    "id": "voiceai-tts-v1-latest",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
+      "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
+      "endpoint": "POST https://dev.voice.ai/api/v1/tts/speech",
+      "inline_spelling_markup": "[SPELL:...]",
+      "pronunciation_dictionaries": true
+    },
+    "name": "Voice.ai TTS v1 (latest)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://voice.ai/docs/api-reference/text-to-speech/generate-speech",
+        "https://voice.ai/docs/guides/text-to-speech/quickstart",
+        "https://voice.ai/pricing",
+        "https://voice.ai/tts-lite"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
