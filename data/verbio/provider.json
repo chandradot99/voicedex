@@ -1,0 +1,9 @@
+{
+  "description": "Barcelona speech-technology company whose Speech Center sold STT and TTS (gRPC) for Spanish, Catalan and other languages. Capacity acquired Verbio in August 2025. By 2026-11-18 verbio.com and speechcenter.verbio.com redirect to capacity.com, the developer docs domain no longer resolves and the public SDK repositories are gone, so the API is no longer sold as a separate product. No end date was published.",
+  "headquarters": "ES",
+  "id": "verbio",
+  "name": "Verbio",
+  "status": "deprecated",
+  "type": "both",
+  "website": "https://www.verbio.com"
+}

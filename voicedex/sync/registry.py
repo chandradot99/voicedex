@@ -127,9 +127,7 @@ REGISTRY: list[SyncerEntry] = [
     SyncerEntry('acapela'          , 'Acapela Group', 'tts', "voicedex.sync.acapela.AcapelaSyncer"),
     SyncerEntry('cereproc'         , 'CereProc', 'tts', "voicedex.sync.cereproc.CereProcSyncer"),
     SyncerEntry('phonexia'         , 'Phonexia', 'stt', "voicedex.sync.phonexia.PhonexiaSyncer"),
-    SyncerEntry('vocapia'          , 'Vocapia', 'stt', "voicedex.sync.vocapia.VocapiaSyncer"),
-    SyncerEntry('tilde'            , 'Tilde', 'both', "voicedex.sync.tilde.TildeSyncer"),
-    SyncerEntry('verbio'           , 'Verbio', 'both', "voicedex.sync.verbio.VerbioSyncer"),
+    SyncerEntry('verbio'             , 'Verbio', 'both', "voicedex.sync.retired.RetiredSyncer", retired=True),
     SyncerEntry('respeecher'       , 'Respeecher', 'tts', "voicedex.sync.respeecher.RespeecherSyncer"),
     SyncerEntry('khaya'            , 'Khaya AI (GhanaNLP)', 'both', "voicedex.sync.khaya.KhayaSyncer"),
     # ── Open-weights publishers (Hugging Face Hub API; voicedex/sync/open_weights.py) ──
