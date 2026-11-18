@@ -2,38 +2,51 @@
 {% block title %}Search{% if q %}: {{ q }}{% endif %} | {{ site_name }}{% endblock %}
 {% block content %}
 <section class="wrap page-head">
-  <h1>Search</h1>
-  <form class="search" action="/search" role="search">
-    <label for="q" class="visually-hidden">Search providers, models and voices</label>
-    <input id="q" name="q" type="search" value="{{ q }}" placeholder="Search a provider, model or voice name…" autocomplete="off" spellcheck="false">
-    <button type="submit">Search</button>
+  <h1>{% if q %}Results for “{{ q }}”{% else %}Search{% endif %}</h1>
+  <form class="search-big" action="/search" role="search">
+    <label for="q" class="visually-hidden">Search providers, models, voices, languages and features</label>
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+    <input id="q" name="q" type="search" value="{{ q }}" placeholder="A provider, model, voice, language or feature" autocomplete="off" spellcheck="false">
+    <button type="submit" class="btn">Search</button>
   </form>
 </section>
 
 <section class="wrap">
   {% if not q %}
-  <p class="empty">Type a provider (Deepgram), a model (nova-3, sonic), a voice (Rachel), a language (Hindi) or a feature (diarization).</p>
+  <p class="empty">Try a provider (Deepgram), a model (nova-3, sonic), a voice (Rachel), a language (Hindi) or a feature (diarization).</p>
   {% elif not (providers or models or voices or lang_hits or feature_hits) %}
-  <p class="empty">Nothing matches "{{ q }}". Search matches provider, model, voice, language and feature names. To filter by language or feature, use the <a href="/models">model filters</a>.</p>
+  <div class="empty">
+    <span class="mono">0 results for “{{ q }}”</span>
+    <p>Search matches provider, model, voice, language and feature names. To combine conditions, use the <a href="/models">model filters</a>.</p>
+  </div>
   {% else %}
-    {% for code, name in lang_hits %}
-    <p class="lang-hit">{{ name }}: <a href="/models?language={{ code }}">models that support it</a>, <a href="/voices?language={{ code }}">voices that speak it</a>.</p>
-    {% endfor %}
-    {% for c, label in feature_hits %}
-    <p class="lang-hit">{{ label }}: <a href="/models?capability={{ c }}">models that list it</a>.</p>
-    {% endfor %}
+    {% if lang_hits or feature_hits %}
+    <div class="result-group">
+      <p class="label">Languages and features <span class="n">{{ (lang_hits|length) + (feature_hits|length) }}</span></p>
+      <ul class="result-list">
+        {% for code, name in lang_hits %}<li><span>{{ name }}</span><span class="r-links"><a href="/models?language={{ code }}">Models that support it</a><a href="/voices?language={{ code }}">Voices that speak it</a></span></li>{% endfor %}
+        {% for c, label in feature_hits %}<li><span>{{ label }}</span><span class="r-links"><a href="/models?capability={{ c }}">Models that list it</a></span></li>{% endfor %}
+      </ul>
+    </div>
+    {% endif %}
     {% if providers %}
-    <h2>Providers</h2>
-    <ul class="plain-list">{% for s in providers %}<li><a href="/providers/{{ s.id }}">{{ s.name }}</a> <span class="muted">{{ s.models }} models{% if s.voices %}, {{ "{:,}".format(s.voices) }} voices{% endif %}</span></li>{% endfor %}</ul>
+    <div class="result-group">
+      <p class="label">Providers <span class="n">{{ providers|length }}</span></p>
+      <ul class="result-list">{% for s in providers %}<li><a href="/providers/{{ s.id }}">{{ s.name }}</a><span class="muted">{{ s.models }} models{% if s.voices %}, {{ "{:,}".format(s.voices) }} voices{% endif %}</span>{% if s.status != "active" %}<span class="badge badge-eol">Retired</span>{% endif %}</li>{% endfor %}</ul>
+    </div>
     {% endif %}
     {% if models %}
-    <h2>Models</h2>
-    <ul class="plain-list">{% for r in models %}<li><a href="{{ model_url(r) }}"><code translate="no">{{ r.model.id }}</code></a> <span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}</span></li>{% endfor %}</ul>
+    <div class="result-group">
+      <p class="label">Models <span class="n">{{ models|length }}</span></p>
+      <ul class="result-list">{% for r in models %}<li><a href="{{ model_url(r) }}"><code translate="no">{{ r.model.id }}</code></a><span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}</span>{% if r.model.eol_date %}<span class="badge badge-eol">Ends {{ r.model.eol_date.strftime('%Y-%m-%d') }}</span>{% endif %}<span class="r-end">{{ price_label(r.model) or "" }}</span></li>{% endfor %}</ul>
+    </div>
     {% endif %}
     {% if voices %}
-    <h2>Voices</h2>
-    {% with rows=voices %}{% include "_voice_grid.html" %}{% endwith %}
-    {% if voices|length == 40 %}<p class="section-note"><a href="/voices?q={{ q|urlencode }}">See all matching voices</a></p>{% endif %}
+    <div class="result-group">
+      <p class="label">Voices <span class="n">{{ voices|length }}{% if voices|length == 40 %}+{% endif %}</span></p>
+      {% with rows=voices %}{% include "_voice_grid.html" %}{% endwith %}
+      {% if voices|length == 40 %}<p class="more-link"><a href="/voices?q={{ q|urlencode }}">See all matching voices</a></p>{% endif %}
+    </div>
     {% endif %}
   {% endif %}
 </section>

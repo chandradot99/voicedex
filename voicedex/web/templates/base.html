@@ -15,49 +15,61 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ site_url }}{{ request.url.path }}">
-  <meta name="theme-color" content="#07080b">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230b6e69'/%3E%3Crect x='4' y='10' width='2.4' height='4' rx='1.2' fill='white'/%3E%3Crect x='8.2' y='7' width='2.4' height='10' rx='1.2' fill='white'/%3E%3Crect x='12.4' y='4.5' width='2.4' height='15' rx='1.2' fill='white'/%3E%3Crect x='16.6' y='8.5' width='2.4' height='7' rx='1.2' fill='white'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="color-scheme" content="dark">
+  {% include "_favicon.html" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/site.css">
-  <script defer src="/static/site.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/site.css?v={{ asset_v() }}">
+  <script defer src="/static/site.js?v={{ asset_v() }}"></script>
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="nav-pill">
-      <a class="brand" href="/" aria-label="{{ site_name }} home">
-        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="9" width="3" height="6" rx="1.5"/><rect x="7" y="5" width="3" height="14" rx="1.5"/><rect x="12" y="2" width="3" height="20" rx="1.5"/><rect x="17" y="7" width="3" height="10" rx="1.5"/></svg>
-        <span>{{ site_name }}</span>
-      </a>
-      {% set path = request.url.path %}
-      <nav class="nav-links" aria-label="Main">
-        <a href="/models" {% if path.startswith('/models') %}aria-current="page"{% endif %}>Models</a>
-        <a href="/voices" {% if path.startswith('/voices') %}aria-current="page"{% endif %}>Voices</a>
-        <a href="/#providers">Providers</a>
-        <a href="/docs">API</a>
-      </nav>
-      <a class="nav-cta" href="/compare" {% if path.startswith('/compare') %}aria-current="page"{% endif %}>Compare <span id="compare-count" class="nav-count" aria-label="models selected"></span></a>
-    </div>
-  </header>
+  {% include "_header.html" %}
   <main id="main">
     {% block content %}{% endblock %}
   </main>
-  <aside id="compare-tray" class="tray" hidden aria-label="Models selected for comparison" aria-live="polite">
-    <div class="wrap tray-row">
-      <ul class="tray-list"></ul>
-      <div class="tray-actions">
-        <button type="button" class="btn-link tray-clear">Clear</button>
-        <a class="btn tray-go" href="/compare">Compare</a>
+  <div class="dock" aria-live="polite">
+    <aside id="now-playing" class="now-playing" hidden aria-label="Now playing">
+      <div class="wrap np-row">
+        <button type="button" class="np-toggle" aria-label="Pause">
+          <svg viewBox="0 0 16 16" aria-hidden="true" class="i-pause"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></svg>
+          <svg viewBox="0 0 16 16" aria-hidden="true" class="i-play"><path d="M5 3v10l8-5z"/></svg>
+        </button>
+        <p class="np-title"><span class="np-name"></span> <span class="np-meta"></span></p>
+        <div class="np-track" aria-hidden="true"><i></i></div>
+        <p class="np-keys" aria-hidden="true"><kbd>J</kbd><kbd>K</kbd> prev / next <kbd>Esc</kbd> stop</p>
       </div>
-    </div>
-  </aside>
+    </aside>
+    <aside id="compare-tray" class="tray" hidden aria-label="Models selected for comparison">
+      <div class="wrap tray-row">
+        <p class="tray-label">Compare</p>
+        <ul class="tray-list"></ul>
+        <div class="tray-actions">
+          <button type="button" class="btn-link tray-clear">Clear</button>
+          <a class="btn tray-go" href="/compare">Compare</a>
+        </div>
+      </div>
+    </aside>
+  </div>
   <footer class="site-footer">
     <div class="wrap footer-row">
-      <p>Data is pulled from each provider's API and documentation, reviewed, and versioned in git. Every page here is also available as JSON.</p>
-      <p><a href="/docs">REST API</a> <a href="/v1/catalog.json">Download the full catalog</a></p>
+      <p class="footer-brand">{{ site_name }}</p>
+      <p>An open catalog of speech models. Data comes from each provider's API and documentation, is reviewed, and is versioned in git.</p>
+      <nav aria-label="Footer"><a href="/docs">REST API</a><a href="/v1/catalog.json">Full catalog as JSON</a><a href="/sitemap.xml">Sitemap</a></nav>
     </div>
   </footer>
+  <dialog id="palette" class="palette" aria-label="Jump to a model, provider, language or feature">
+    <div class="pal-box">
+      <div class="pal-input">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+        <input id="pal-q" type="text" role="combobox" aria-expanded="true" aria-controls="pal-list" aria-autocomplete="list" placeholder="Model, provider, language or feature" autocomplete="off" spellcheck="false">
+        <kbd>Esc</kbd>
+      </div>
+      <ul id="pal-list" role="listbox" aria-label="Results"></ul>
+      <p class="pal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span class="pal-status" role="status"></span></p>
+    </div>
+  </dialog>
 </body>
 </html>

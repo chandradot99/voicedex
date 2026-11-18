@@ -1,0 +1,27 @@
+{# Price spectrum. Expects `bands` (views.price_spectrum), optional `cap` (max squares drawn per column),
+   `compact` (thin strip), `animate` (columns rise on first view), `legend_note`. #}
+{% set cap = cap or 16 %}
+<figure class="spectrum{% if compact %} compact{% endif %}{% if animate %} rise{% endif %}">
+  {% for b in bands %}
+  <div class="band">
+    <p class="band-head">
+      <span class="band-title">{{ b.title }}</span>
+      <span class="band-unit">$ {{ b.unit }}, log scale</span>
+      <span class="band-count">{{ b.priced }} priced{% if b.unpriced %}<span class="hide-sm">, {{ b.unpriced }} without a USD price</span>{% endif %}</span>
+    </p>
+    <div class="cols" style="--rows: {{ [b.tallest, cap]|min }}" aria-hidden="true">
+      {% for col in b.columns %}
+      <div class="col" style="--i: {{ loop.index0 }}">
+        {%- for it in col[:cap] -%}
+        <a class="sq{% if it.ending %} ending{% endif %}{% if it.state %} {{ it.state }}{% endif %}" href="{{ it.url }}" tabindex="-1" data-tip="{{ it.provider }}|{{ it.label }}|{{ it.price }}{% if it.ending %}|Shutdown scheduled{% endif %}"></a>
+        {%- endfor -%}
+        {% if col|length > cap %}<span class="over">+{{ col|length - cap }}</span>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="axis" aria-hidden="true">{% for pos, label in b.ticks %}<span style="left: {{ '%.2f'|format(pos) }}%">{{ label }}</span>{% endfor %}</div>
+    <figcaption class="visually-hidden">{{ b.title }}: {{ b.priced }} models with a published USD price {{ b.unit }}, from {{ b.ticks[0][1] if b.ticks else '' }} to {{ b.ticks[-1][1] if b.ticks else '' }} and beyond, shown on a log scale.</figcaption>
+  </div>
+  {% endfor %}
+  {% if legend_note %}<p class="spectrum-legend"><span class="key"><i class="sq-key{% if legend_note != 'home' %} off{% endif %}"></i> {{ "one model" if legend_note == "home" else "other models" }}</span>{% if legend_note == "home" %}<span class="key"><i class="sq-key ending"></i> shutdown scheduled</span>{% else %}<span class="key"><i class="sq-key on"></i> {{ legend_note }}</span>{% endif %}<a href="/models?sort=price">All models by price</a></p>{% endif %}
+</figure>

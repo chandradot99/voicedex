@@ -36,6 +36,10 @@ voicedex/
     files.py         — deterministic read/write of data/<provider>/*.json
     merge.py         — SyncResult → records; merge rules; shrink guard; diff report
     store.py         — in-memory Catalog, stable UUIDv5 ids, language matching
+  web/               — server-rendered pages (Jinja + one site.css/site.js, no build). Design system "The Datasheet":
+                       dark, 1px rules, Geist + Geist Mono, one accent (amber #f5a524) for interaction/magnitude,
+                       coral only for shutdowns/errors; no pills, gradients or colour-coded types. Price spectrum
+                       (views.price_spectrum) is the signature visual. Asset URLs carry a content hash (?v=).
   routers/           — providers.py (/v1/providers/...), catalog.py (/v1/models, /v1/voices, /v1/catalog.json), _filters.py
   sync/
     base.py          — SyncModel / SyncVoice / SyncResult dataclasses + ProviderSyncer

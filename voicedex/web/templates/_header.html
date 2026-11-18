@@ -1,0 +1,22 @@
+{% set path = request.url.path %}
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/" aria-label="{{ site_name }} home">
+      <svg class="brand-mark" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="8" width="2.5" height="4"/><rect x="5.5" y="5" width="2.5" height="10"/><rect x="10" y="2" width="2.5" height="16"/><rect x="14.5" y="6.5" width="2.5" height="7"/></svg>
+      <span>{{ site_name }}</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/models" {% if path.startswith('/models') %}aria-current="page"{% endif %}>Models</a>
+      <a href="/voices" {% if path.startswith('/voices') %}aria-current="page"{% endif %}>Voices</a>
+      <a href="/#providers" {% if path.startswith('/providers') %}aria-current="page"{% endif %}>Providers</a>
+      <a href="/docs" {% if path.startswith('/docs') %}aria-current="page"{% endif %}>API</a>
+    </nav>
+    <form class="jump" action="/search" role="search" data-palette-trigger>
+      <label for="jump-q" class="visually-hidden">Search models, voices, providers, languages and features</label>
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input id="jump-q" name="q" type="search" placeholder="Search" autocomplete="off" spellcheck="false">
+      <kbd aria-hidden="true">⌘K</kbd>
+    </form>
+    <a class="nav-compare" href="/compare" {% if path.startswith('/compare') %}aria-current="page"{% endif %}>Compare<span id="compare-count" class="nav-count" aria-label="models selected"></span></a>
+  </div>
+</header>

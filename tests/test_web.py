@@ -18,7 +18,8 @@ async def test_home_lists_retired_and_active(client):
 
 async def test_model_filters(client):
     html = (await client.get("/models?type=stt&language=de")).text
-    assert "stt-eu" in html and "tts-main" not in html
+    table = html.split('<table class="data models-table">', 1)[1]       # the spectrum above shows every model, dimmed
+    assert "stt-eu" in table and "tts-main" not in table
     assert "tts-old" not in (await client.get("/models")).text      # deprecated hidden
 
 

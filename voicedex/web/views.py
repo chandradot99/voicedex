@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 
@@ -213,6 +214,7 @@ class CompareRow:
     group: str
     same: bool = False
     best: int | None = None      # index of the highlighted cell
+    diff: list = None            # per cell: True when it differs from a value the others share
 
 
 def _v(x) -> str:
@@ -229,7 +231,10 @@ def compare_table(rows: list[ModelRow], names: dict[str, str], check_language: s
 
     def add(group: str, label: str, cells: list[str], best: int | None = None) -> None:
         flat = [tuple(c) if isinstance(c, list) else c for c in cells]
-        out.append(CompareRow(label, cells, group, same=len(set(flat)) <= 1 and len(cells) > 1, best=best))
+        common = Counter(flat).most_common(1)[0][0] if flat else None
+        majority = Counter(flat).most_common(1)[0][1] > 1 if flat else False
+        diff = [majority and c != common for c in flat]        # outliers only; an all-different row marks nothing
+        out.append(CompareRow(label, cells, group, same=len(set(flat)) <= 1 and len(cells) > 1, best=best, diff=diff))
 
     ms = [r.model for r in rows]
     add("Overview", "Type", [TYPE_LABELS[m.type] for m in ms])
@@ -349,3 +354,146 @@ def voice_chips(voice, limit: int = 4) -> list[str]:
         if len(out) >= limit:
             break
     return out
+
+
+# ── Price spectrum: every USD-priced model as one square in its log-price column ──
+
+SPECTRUM_BANDS = [
+    ("audio", ("stt", "sts"), "Speech-to-text and realtime", "per hour of audio"),
+    ("text", ("tts",), "Text-to-speech", "per 1M characters"),
+]
+_NICE = [m * 10 ** e for e in range(-3, 4) for m in (1, 2, 5)]
+
+
+@dataclass
+class SpectrumItem:
+    key: str
+    url: str
+    label: str
+    provider: str
+    price: str
+    value: float
+    ending: bool
+    state: str = ""            # "" | "on" (highlighted) | "off" (dimmed)
+
+
+@dataclass
+class SpectrumBand:
+    id: str
+    title: str
+    unit: str
+    columns: list[list[SpectrumItem]]
+    ticks: list[tuple[float, str]]      # (position 0–100 %, label)
+    free: list[SpectrumItem]
+    priced: int
+    unpriced: int
+    tallest: int
+
+
+def _money(v: float) -> str:
+    if v >= 1:
+        return f"${v:,.0f}" if v == int(v) else f"${v:,.2f}"
+    return f"${v:.2f}" if v >= 0.01 else f"${v:g}"
+
+
+def price_spectrum(catalog: Catalog, highlight: set[str] | None = None, n_columns: int = 44) -> list[SpectrumBand]:
+    """Live providers' active models. `highlight`: keys to light up; with it, every other square is dimmed."""
+    live = {pid for pid, pd in catalog.providers.items() if pd.provider.status == "active"}
+    names = {pid: pd.provider.name for pid, pd in catalog.providers.items()}
+    bands = []
+    for band_id, types, title, unit in SPECTRUM_BANDS:
+        rows = [r for r in active_models(catalog) if r.provider_id in live and r.model.type in types]
+        items, free, unpriced = [], [], 0
+        for r in rows:
+            p = r.model.pricing
+            is_free = bool(p and (p.price_usd if p.price_usd is not None else p.price) == 0)
+            n = normalized_price(r.model)
+            if not n and not is_free:
+                unpriced += 1
+                continue
+            key = model_key(r)
+            state = "" if highlight is None else ("on" if key in highlight else "off")
+            item = SpectrumItem(key, model_url(r), r.model.name, names[r.provider_id], price_label(r.model) or "",
+                                0.0 if is_free else n[0], bool(r.model.eol_date), state)
+            (free if is_free else items).append(item)
+        if not items:
+            continue
+        lo, hi = math.log10(min(i.value for i in items)), math.log10(max(i.value for i in items))
+        span = (hi - lo) or 1.0
+        columns: list[list[SpectrumItem]] = [[] for _ in range(n_columns)]
+        for it in sorted(items, key=lambda i: i.value):
+            idx = min(n_columns - 1, int((math.log10(it.value) - lo) / span * n_columns))
+            columns[idx].append(it)
+        for col in columns:                      # highlighted squares first, so a capped stack still shows them
+            col.sort(key=lambda i: i.state != "on")
+        nice = [v for v in _NICE if lo <= math.log10(v) <= hi]
+        step = max(1, math.ceil(len(nice) / 6))
+        ticks = [((math.log10(v) - lo) / span * 100, _money(v)) for v in nice[::step]]
+        bands.append(SpectrumBand(band_id, title, unit, columns, ticks, free, len(items) + len(free), unpriced,
+                                  max(len(c) for c in columns)))
+    return bands
+
+
+def price_rank(catalog: Catalog, row: ModelRow) -> tuple[int, int] | None:
+    """(share of priced peers in the same band that cost more, peer count) — for "cheaper than N%"."""
+    n = normalized_price(row.model)
+    if not n:
+        return None
+    band = next(t for _, t, _, _ in SPECTRUM_BANDS if row.model.type in t)
+    live = {pid for pid, pd in catalog.providers.items() if pd.provider.status == "active"}
+    peers = [normalized_price(r.model) for r in active_models(catalog) if r.model.type in band and r.provider_id in live]
+    peers = [p[0] for p in peers if p]
+    if len(peers) < 5:
+        return None
+    pricier = sum(1 for v in peers if v > n[0])
+    return round(100 * pricier / len(peers)), len(peers)
+
+
+@dataclass
+class Timeline:
+    months: list[tuple[float, str]]          # (position %, "Jan") — year shown on January and at the start
+    items: list[tuple[float, ModelRow]]      # (position %, row)
+    span_days: int
+
+
+def shutdown_timeline(rows: list[ModelRow], today, months_ahead: int = 12) -> Timeline | None:
+    """Upcoming shutdowns on a fixed axis from today; later dates are pinned to the right edge."""
+    from datetime import date
+    if not rows:
+        return None
+    y, m = today.year, today.month
+    end_y, end_m = y + (m - 1 + months_ahead) // 12, (m - 1 + months_ahead) % 12 + 1
+    end = date(end_y, end_m, 1)
+    span = (end - today).days
+    def pos(d) -> float:
+        return max(0.0, min(100.0, (d - today).days / span * 100))
+    months = []
+    for i in range(1, months_ahead + 1):
+        yy, mm = y + (m - 1 + i) // 12, (m - 1 + i) % 12 + 1
+        d = date(yy, mm, 1)
+        months.append((pos(d), d.strftime("%b") + (f" {yy}" if mm == 1 or i == 1 else "")))
+    return Timeline(months, [(pos(r.model.eol_date), r) for r in rows if r.model.eol_date], span)
+
+
+def price_positions(bands: list[SpectrumBand]) -> dict[str, float]:
+    """Model key → 0–100 position of its price within its spectrum band (log scale), for table micro-bars."""
+    out = {}
+    for b in bands:
+        vals = [it.value for col in b.columns for it in col]
+        if not vals:
+            continue
+        lo, hi = math.log10(min(vals)), math.log10(max(vals))
+        for col in b.columns:
+            for it in col:
+                out[it.key] = 6 + 94 * ((math.log10(it.value) - lo) / ((hi - lo) or 1))
+        for it in b.free:
+            out[it.key] = 2
+    return out
+
+
+def feature_vocab(model_type: str) -> list[str]:
+    """The controlled feature vocabulary that applies to a model type (for checklists and n/total counts)."""
+    from voicedex.catalog.schema import MODEL_CAPABILITIES, STT_CAPABILITIES, TTS_CAPABILITIES
+    vocab = {"stt": STT_CAPABILITIES, "tts": TTS_CAPABILITIES}.get(str(model_type), MODEL_CAPABILITIES)
+    order = list(FEATURE_LABELS)
+    return sorted(vocab, key=lambda c: order.index(c) if c in order else len(order))

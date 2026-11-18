@@ -1,34 +1,38 @@
+<div class="voice-head" aria-hidden="true"><span></span><span>Voice</span><span>Traits and language</span><span>Voice id</span></div>
 <ul class="voice-list">
-  <li class="voice-head" aria-hidden="true"><span></span><span>Voice</span><span>Traits</span><span>Language</span><span>Style</span><span>Voice id</span></li>
   {% for r in rows %}{% set v = r.voice %}
-  <li class="voice{% if not v.preview_url %} no-sample{% endif %}">
+  {% set pname = names.get(r.provider_id, r.provider_id) if names else "" %}
+  <li class="voice{% if not v.preview_url %} no-sample{% endif %}" data-name="{{ v.name }}" data-meta="{{ pname }}">
     <div class="voice-play">
       {% if v.preview_url %}
       <button class="play" type="button" data-src="{{ v.preview_url }}" aria-pressed="false" aria-label="Play sample of {{ v.name }}">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5.5v13l11-6.5z"/></svg>
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="i-stop"><rect x="7" y="7" width="10" height="10" rx="1.5"/></svg>
-        <svg viewBox="0 0 40 40" aria-hidden="true" class="ring"><circle cx="20" cy="20" r="18.25"/></svg>
+        <svg viewBox="0 0 16 16" aria-hidden="true" class="i-play"><path d="M5 3v10l8-5z"/></svg>
+        <svg viewBox="0 0 16 16" aria-hidden="true" class="i-stop"><rect x="4" y="4" width="8" height="8"/></svg>
       </button>
       {% else %}
-      <span class="no-play" title="No sample published" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h1M9 9v6M13 7v10M17 10v4"/></svg></span>
+      <span class="no-play" title="No sample published"><svg viewBox="0 0 12 2" aria-hidden="true"><rect width="12" height="2"/></svg><span class="visually-hidden">No sample published</span></span>
       {% endif %}
     </div>
     <div class="voice-main">
-      <p class="voice-name">{{ v.name }}{% if names %} <a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ names.get(r.provider_id, r.provider_id) }}</a>{% endif %}</p>
-      {% if v.description %}<p class="voice-desc">{{ v.description|truncate(120) }}</p>{% endif %}
-      <p class="voice-error" role="status" hidden>This sample couldn't be played. The provider may have moved it.</p>
+      <p class="voice-name">{{ v.name }}{% if names %}<a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ pname }}</a>{% endif %}</p>
+      {% if v.description %}<p class="voice-desc" title="{{ v.description }}">{{ v.description|truncate(140) }}</p>{% endif %}
+      <p class="voice-error" role="status" hidden>Sample unavailable. The provider may have moved it.</p>
     </div>
-    <div class="voice-traits">
-      {% set traits = [] %}{% if v.gender %}{% set _ = traits.append(v.gender|capitalize) %}{% endif %}{% if v.age %}{% set _ = traits.append(v.age|replace('_', ' ')|capitalize) %}{% endif %}{% if v.accent %}{% set _ = traits.append(v.accent.replace('_', ' ')|capitalize) %}{% endif %}
-      {{ traits|join(", ") or "–" }}
-    </div>
-    <div class="voice-lang">
-      {% if "*" in v.languages %}Multilingual{% elif v.languages %}{{ language_name(v.languages[0]) }}{% if v.languages|length > 1 %} <span class="muted">+{{ v.languages|length - 1 }}</span>{% endif %}{% else %}–{% endif %}
-    </div>
-    <div class="voice-tags">{% for t in voice_chips(v, 3) %}<span>{{ t }}</span>{% endfor %}</div>
+    <p class="voice-traits">
+      {%- set traits = [] -%}
+      {%- if v.gender %}{% set _ = traits.append(v.gender) %}{% endif -%}
+      {%- if v.age %}{% set _ = traits.append(v.age|replace('_', ' ')) %}{% endif -%}
+      {%- if v.accent %}{% set _ = traits.append(v.accent.replace('_', ' ')) %}{% endif -%}
+      {{ traits|join(", ") }}{% if traits %}<span class="muted"> / </span>{% endif %}
+      {%- if "*" in v.languages %}multilingual{% elif v.languages %}{{ language_name(v.languages[0]) }}{% if v.languages|length > 1 %}<span class="muted"> +{{ v.languages|length - 1 }}</span>{% endif %}{% else %}<span class="muted">language not listed</span>{% endif %}
+      {%- set chips = voice_chips(v, 3) %}{% if chips %}<br><span class="muted">{{ chips|join(", ") }}</span>{% endif -%}
+    </p>
     <div class="voice-id">
       <code translate="no" title="{{ v.id }}">{{ v.id }}</code>
-      <button type="button" class="copy-id" data-copy="{{ v.id }}" aria-label="Copy voice id {{ v.id }}"><svg viewBox="0 0 24 24" aria-hidden="true" class="i-copy"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-check"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+      <button type="button" class="copy-btn" data-copy="{{ v.id }}" aria-label="Copy voice id {{ v.id }}">
+        <svg viewBox="0 0 16 16" aria-hidden="true" class="i-copy"><rect x="5" y="5" width="8.5" height="8.5" rx="1"/><path d="M11 5V3.5a1 1 0 0 0-1-1H3.5a1 1 0 0 0-1 1V10a1 1 0 0 0 1 1H5"/></svg>
+        <svg viewBox="0 0 16 16" aria-hidden="true" class="i-check"><path d="M3.5 8.5l3 3 6-7"/></svg>
+      </button>
     </div>
   </li>
   {% endfor %}

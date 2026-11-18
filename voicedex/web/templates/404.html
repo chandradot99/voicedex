@@ -2,12 +2,14 @@
 {% block title %}Not found | {{ site_name }}{% endblock %}
 {% block content %}
 <section class="wrap page-head">
-  <h1>Not found</h1>
-  <p class="lede">{{ detail }}. It may have been renamed or retired by its provider.</p>
-  <form class="search" action="/search" role="search">
+  <p class="code-404">404, no such record</p>
+  <h1>{{ detail }}</h1>
+  <p class="lede">It may have been renamed, or retired by its provider. Retired models and providers stay in the catalog, so search usually finds them.</p>
+  <form class="search-big" action="/search" role="search">
     <label for="q" class="visually-hidden">Search providers, models and voices</label>
-    <input id="q" name="q" type="search" placeholder="Search a provider, model or voice name…" autocomplete="off" spellcheck="false">
-    <button type="submit">Search</button>
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+    <input id="q" name="q" type="search" placeholder="A provider, model or voice" autocomplete="off" spellcheck="false">
+    <button type="submit" class="btn">Search</button>
   </form>
   <p class="quick">Or browse <a href="/models">all models</a>, <a href="/voices">voices</a> or <a href="/#providers">providers</a>.</p>
 </section>

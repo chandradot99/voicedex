@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import math
 from collections import Counter
+from datetime import date
 from html import escape
 from pathlib import Path
+from urllib.parse import quote
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import HTMLResponse, PlainTextResponse, Response
@@ -18,9 +20,26 @@ from voicedex.routers._filters import get_catalog
 from voicedex.web import views
 
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
+
+
+_ASSETS: dict = {}
+
+
+def _asset_version() -> str:
+    """Content hash of the static CSS/JS, appended to their URLs so a deploy is never served stale assets
+    (they're cached for 5 minutes by browsers and the CDN). Recomputed only when a file's mtime changes."""
+    import hashlib
+    static = Path(__file__).parent / "static"
+    stamp = tuple((static / n).stat().st_mtime_ns for n in ("site.css", "site.js"))
+    if _ASSETS.get("stamp") != stamp:
+        h = hashlib.sha1(b"".join((static / n).read_bytes() for n in ("site.css", "site.js")))
+        _ASSETS.update(stamp=stamp, v=h.hexdigest()[:10])
+    return _ASSETS["v"]
+
 templates.env.globals.update(
     site_name=settings.site_name,
     site_url=settings.site_url.rstrip("/"),
+    asset_v=_asset_version,
     language_name=views.language_name,
     price_label=views.price_label,
     model_url=views.model_url,
@@ -30,6 +49,7 @@ templates.env.globals.update(
     lang_count=views.lang_count,
     voice_chips=views.voice_chips,
     FEATURE_LABELS=views.FEATURE_LABELS,
+    feature_vocab=views.feature_vocab,
     INTERFACE_LABELS=views.INTERFACE_LABELS,
     heat_level=views.heat_level,
     TYPE_LABELS=views.TYPE_LABELS,
@@ -46,6 +66,34 @@ def _q(request: Request, name: str) -> str:
     return (request.query_params.get(name) or "").strip()
 
 
+def _qs(f: dict, **changes) -> str:
+    """Query string for the current filters with some keys changed (None/"" removes a key)."""
+    from urllib.parse import urlencode
+    merged = {**f, **changes}
+    return urlencode({k: v for k, v in merged.items() if v})
+
+
+_TOKEN_LABEL = {"type": "type", "language": "language", "capability": "feature", "provider": "provider",
+                "status": "status", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
+
+
+def _token_value(key: str, value: str, catalog: Catalog) -> str:
+    if key == "type":
+        return views.TYPE_SHORT.get(value, value)
+    if key == "language":
+        return views.language_name(value)
+    if key == "capability":
+        return views.FEATURE_LABELS.get(value, value)
+    if key == "provider":
+        pd = catalog.providers.get(value)
+        return pd.provider.name if pd else value
+    if key == "status":
+        return {"ending": "shutting down", "beta": "beta / preview"}.get(value, value)
+    if key == "preview":
+        return "has sample"
+    return value
+
+
 @router.get("/", response_class=HTMLResponse)
 async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
     map_type = _q(request, "map") if _q(request, "map") in views.TYPE_LABELS else ""
@@ -60,8 +108,11 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
             r.model.first_seen == initial_import and r.model.updated_at == initial_import)),
         key=lambda r: (r.model.updated_at, r.model.first_seen == r.model.updated_at), reverse=True,
     )[:12]
+    today = date.today()
+    live_ids = {s.id for s in live}
     upcoming_eol = sorted(
-        (r for r in views.active_models(catalog) if r.model.eol_date),
+        (r for r in views.active_models(catalog) if r.model.eol_date and r.model.eol_date >= today
+         and r.provider_id in live_ids),
         key=lambda r: r.model.eol_date,
     )
     return templates.TemplateResponse(request, "home.html", {
@@ -73,6 +124,10 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
         "n_voices": len(views.active_voices(catalog)),
         "recent": recent,
         "upcoming_eol": upcoming_eol,
+        "timeline": views.shutdown_timeline(upcoming_eol, today),
+        "today": today,
+        "spectrum": views.price_spectrum(catalog),
+        "n_voices_live": sum(s.voices for s in live),
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
     })
 
@@ -91,6 +146,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
         "p": pd.provider, "summary": summary, "models": models,
         "voice_count": len(voices), "voice_sample": voices[:12],
         "deprecated": [r for r in catalog.models if r.provider_id == provider_id and r.model.deprecated_at],
+        "positions": views.price_positions(views.price_spectrum(catalog)),
     })
 
 
@@ -120,10 +176,17 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         rows.sort(key=lambda r: (views.normalized_price(r.model) or (math.inf,))[0])
     else:
         rows.sort(key=lambda r: (r.provider_id, r.model.type, not r.model.is_default, r.model.id))
+    filtered = any(v for k, v in f.items() if k != "sort")
+    keys = {views.model_key(r) for r in rows}
+    spectrum = [b for b in views.price_spectrum(catalog, highlight=keys if filtered else None)
+                if not filtered or any(it.state == "on" for col in b.columns for it in col)]
+    tokens = [(k, _TOKEN_LABEL[k], _token_value(k, v, catalog)) for k, v in f.items() if v and k in _TOKEN_LABEL]
     return templates.TemplateResponse(request, "models.html", {
-        "rows": rows, "f": f,
+        "rows": rows, "f": f, "filtered": filtered, "spectrum": spectrum, "tokens": tokens,
+        "positions": views.price_positions(views.price_spectrum(catalog)),
+        "qs": lambda **changes: _qs(f, **changes),
         "languages": views.language_options(catalog),
-        "capabilities": sorted(MODEL_CAPABILITIES),
+        "capabilities": sorted(MODEL_CAPABILITIES, key=lambda c: views.FEATURE_LABELS.get(c, c)),
         "providers": [s for s in views.provider_summaries(catalog) if s.models],
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
     })
@@ -158,6 +221,8 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     return templates.TemplateResponse(request, "voices.html", {
         "rows": rows[(page - 1) * VOICES_PER_PAGE: page * VOICES_PER_PAGE],
         "total": len(rows), "page": page, "pages": pages, "f": f,
+        "tokens": [(k, _TOKEN_LABEL[k], _token_value(k, v, catalog)) for k, v in f.items() if v and k in _TOKEN_LABEL],
+        "qs": lambda **changes: _qs({**f, "page": str(page) if page > 1 else ""}, **{k: (str(v) if v else v) for k, v in changes.items()}),
         "languages": views.language_options(catalog),
         "providers": [s for s in views.provider_summaries(catalog) if s.voices],
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
@@ -206,6 +271,11 @@ async def model_page(request: Request, provider_id: str, model_type: str, model_
         "voice_count": len(voices), "voice_sample": sorted(voices, key=lambda v: v.voice.preview_url is None)[:6],
         "replacement": replacement,
         "lang_groups": views.language_groups(row.model.languages),
+        "spectrum": [b for b in views.price_spectrum(catalog, highlight={views.model_key(row)})
+                     if row.model.type in next(t for i, t, _, _ in views.SPECTRUM_BANDS if i == b.id)],
+        "rank": views.price_rank(catalog, row),
+        "today": date.today(),
+        "api_path": f"/v1/providers/{provider_id}/models/{quote(row.model.id, safe='')}",
     })
 
 
@@ -222,6 +292,7 @@ async def compare_page(request: Request, catalog: Catalog = Depends(get_catalog)
         "language": lang, "languages": views.language_options(catalog),
         "options": [r for r in options if views.model_key(r) not in keys],
         "max_compare": MAX_COMPARE, "missing": [k for k in keys if not views.find_model(catalog, k)],
+        "spectrum": views.price_spectrum(catalog, highlight={views.model_key(r) for r in rows}) if rows else [],
     })
 
 

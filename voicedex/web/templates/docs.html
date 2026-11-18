@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>API reference | {{ site_name }}</title>
   <meta name="description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices: languages, features, prices and shutdown dates.">
-  <meta name="theme-color" content="#07080b">
+  <meta name="theme-color" content="#0b0b0c">
   <meta property="og:title" content="API reference | {{ site_name }}">
   <meta property="og:description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices.">
   <meta property="og:type" content="website">
@@ -16,40 +16,27 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ site_url }}/docs">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230b6e69'/%3E%3Crect x='4' y='10' width='2.4' height='4' rx='1.2' fill='white'/%3E%3Crect x='8.2' y='7' width='2.4' height='10' rx='1.2' fill='white'/%3E%3Crect x='12.4' y='4.5' width='2.4' height='15' rx='1.2' fill='white'/%3E%3Crect x='16.6' y='8.5' width='2.4' height='7' rx='1.2' fill='white'/%3E%3C/svg%3E">
+  {% include "_favicon.html" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <!-- Site CSS goes into a low-priority cascade layer here: Scalar's styles live in layers declared
        later, so they win inside the reference (our button/heading rules must not leak into it), while
        the site header below still gets its look. -->
   <style>
     @layer site;
-    @import url("/static/site.css") layer(site);
+    @import url("/static/site.css?v={{ asset_v() }}") layer(site);
   </style>
   <style>
     body { min-height: 100vh; }
-    .docs-header { position: sticky; top: 0; z-index: 100; padding: 12px 12px 10px; background: var(--bg); }
-    #scalar-docs { --scalar-custom-header-height: 82px; }
+    .docs-page .site-header { z-index: 100; }
+    .docs-page { display: block; }
+    #scalar-docs { --scalar-custom-header-height: 57px; }
   </style>
 </head>
 <body class="docs-page">
   <a class="skip" href="#scalar-docs">Skip to the reference</a>
-  <header class="site-header docs-header">
-    <div class="nav-pill">
-      <a class="brand" href="/" aria-label="{{ site_name }} home">
-        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="9" width="3" height="6" rx="1.5"/><rect x="7" y="5" width="3" height="14" rx="1.5"/><rect x="12" y="2" width="3" height="20" rx="1.5"/><rect x="17" y="7" width="3" height="10" rx="1.5"/></svg>
-        <span>{{ site_name }}</span>
-      </a>
-      <nav class="nav-links" aria-label="Main">
-        <a href="/models">Models</a>
-        <a href="/voices">Voices</a>
-        <a href="/#providers">Providers</a>
-        <a href="/docs" aria-current="page">API</a>
-      </nav>
-      <a class="nav-cta" href="/v1/catalog.json">Download catalog</a>
-    </div>
-  </header>
+  {% include "_header.html" %}
   <main id="scalar-docs"></main>
   <script>
     // Focus rings for keyboard users only. Scalar moves focus programmatically after mouse clicks
@@ -193,18 +180,18 @@
       customCss: `
         .dark-mode, .light-mode, :root {
           --scalar-font: "Geist", ui-sans-serif, system-ui, sans-serif;
-          --scalar-font-code: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-          --scalar-background-1: #07080b;
-          --scalar-background-2: #11141a;
-          --scalar-background-3: #171b23;
-          --scalar-background-accent: rgba(94, 234, 212, 0.08);
-          --scalar-color-1: #f2f4f7;
-          --scalar-color-2: #c9ced8;
-          --scalar-color-3: #8b93a3;
-          --scalar-color-accent: #5eead4;
+          --scalar-font-code: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+          --scalar-background-1: #0b0b0c;
+          --scalar-background-2: #131314;
+          --scalar-background-3: #19191b;
+          --scalar-background-accent: rgba(245, 165, 36, 0.08);
+          --scalar-color-1: #ededea;
+          --scalar-color-2: #b4b4ae;
+          --scalar-color-3: #8a8a84;
+          --scalar-color-accent: #f5a524;
           --scalar-border-color: rgba(255, 255, 255, 0.11);
-          --scalar-button-1: #f2f4f7;
-          --scalar-button-1-color: #07080b;
+          --scalar-button-1: #ededea;
+          --scalar-button-1-color: #0b0b0c;
           --scalar-button-1-hover: #ffffff;
           --scalar-color-green: #a3e635;
           --scalar-color-blue: #7fb4e0;
@@ -214,29 +201,29 @@
           --scalar-radius: 10px;
           --scalar-radius-lg: 14px;
           --scalar-radius-xl: 22px;
-          --scalar-sidebar-background-1: #07080b;
-          --scalar-sidebar-item-hover-background: #11141a;
-          --scalar-sidebar-item-active-background: #171b23;
+          --scalar-sidebar-background-1: #0b0b0c;
+          --scalar-sidebar-item-hover-background: #131314;
+          --scalar-sidebar-item-active-background: #19191b;
           --scalar-sidebar-border-color: rgba(255, 255, 255, 0.08);
-          --scalar-sidebar-color-1: #f2f4f7;
-          --scalar-sidebar-color-2: #8b93a3;
-          --scalar-sidebar-color-active: #5eead4;
-          --scalar-sidebar-search-background: #11141a;
+          --scalar-sidebar-color-1: #ededea;
+          --scalar-sidebar-color-2: #8a8a84;
+          --scalar-sidebar-color-active: #f5a524;
+          --scalar-sidebar-search-background: #131314;
           --scalar-sidebar-search-border-color: rgba(255, 255, 255, 0.12);
         }
-        .scalar-api-reference.references-layout { background: #07080b; }
+        .scalar-api-reference.references-layout { background: #0b0b0c; }
         /* API client ("Test Request"): a raised panel over a dimmed, blurred page.
            !important: Scalar's own theme selectors are more specific than customCss. */
         .scalar-container.scalar-client--open { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
         .scalar.scalar-app.z-overlay { background: transparent !important; }
         .scalar-client.scalar-app-layout, .scalar-client.scalar-app-layout * {
-          --scalar-background-1: #11141a !important;
-          --scalar-background-2: #171b23 !important;
-          --scalar-background-3: #1f2430 !important;
+          --scalar-background-1: #131314 !important;
+          --scalar-background-2: #19191b !important;
+          --scalar-background-3: #222224 !important;
           --scalar-border-color: rgba(255, 255, 255, 0.12) !important;
         }
         .scalar-client.scalar-app-layout {
-          background: #11141a !important; border: 1px solid rgba(255, 255, 255, 0.18) !important; border-radius: 22px; overflow: hidden;
+          background: #131314 !important; border: 1px solid rgba(255, 255, 255, 0.18) !important; border-radius: 4px; overflow: hidden;
           box-shadow: 0 40px 140px -20px rgba(0, 0, 0, 0.95), 0 0 80px -30px rgba(20, 184, 166, 0.35) !important;
         }
         .section-header, .section .section-header-label, h1.section-header { letter-spacing: -0.025em; }
@@ -244,7 +231,7 @@
         /* Floating layers (menus, listboxes, search dialog, tooltips) must read as raised above
            whatever they cover: lighter surface, visible edge, real shadow. */
         .z-context > div, [role="tooltip"]:not(.scalar-tooltip), .scalar-modal {
-          background: #1c212b !important;
+          background: #19191b !important;
           box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16), 0 24px 60px -12px rgba(0, 0, 0, 0.9) !important;
         }
         /* Scalar's hover tooltips are already a rounded pill; the wrapper stays invisible. */
@@ -257,11 +244,11 @@
         .z-context > div.rounded-xl > div.text-xxs .markdown { line-height: 1.45 !important; }
         /* Search dialog (⌘K) and other modals: dim + blur the page; mark the keyboard selection. */
         .scalar-modal-layout { background: rgba(2, 3, 5, 0.72) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
-        .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #2a313e !important; box-shadow: inset 2px 0 0 #5eead4; }
+        .scalar-modal a[aria-selected="true"], .scalar-modal a:hover { background: #262627 !important; box-shadow: inset 2px 0 0 #f5a524; }
         .z-context [role="option"]:hover, .z-context [role="option"][data-headlessui-state~="active"],
-        .z-context [role="menuitem"]:hover { background: #2a313e !important; }
+        .z-context [role="menuitem"]:hover { background: #262627 !important; }
         .z-context [role="option"] .shadow-border, .z-context [role="menuitem"] .shadow-border { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.32) !important; }
-        .z-context [role="option"][aria-selected="true"] .shadow-border { box-shadow: inset 0 0 0 1px #5eead4 !important; color: #5eead4 !important; }
+        .z-context [role="option"][aria-selected="true"] .shadow-border { box-shadow: inset 0 0 0 1px #f5a524 !important; color: #f5a524 !important; }
         .z-context ul[role="listbox"] { border-color: rgba(255, 255, 255, 0.12) !important; }
         /* Intro "Client Libraries" card keeps Scalar's own design; only the focus ring Scalar leaves on a
            clicked tab is removed (keyboard focus still shows one). */
@@ -282,11 +269,11 @@
         a.peer\\/button:has(.scalar-sidebar-indent-border)::before { left: 24px; }
         /* Nested items: 10px between the fill's left edge and the text, same inset as group headings. */
         a.peer\\/button:has(.scalar-sidebar-indent-border) .group\\/button-label { padding-left: 4px; }
-        a.peer\\/button:hover::before { background: #11141a; }
-        a.peer\\/button[aria-current="page"]::before { background: #171b23; }
-        a.peer\\/button:hover, a.peer\\/button[aria-current="page"] { color: #f2f4f7 !important; }
+        a.peer\\/button:hover::before { background: #131314; }
+        a.peer\\/button[aria-current="page"]::before { background: #19191b; }
+        a.peer\\/button:hover, a.peer\\/button[aria-current="page"] { color: #ededea !important; }
         a.peer\\/button[aria-current="page"] { font-weight: 500 !important; }
-        .group\\/group-button > a.peer\\/button { color: #f2f4f7 !important; font-weight: 600 !important; }
+        .group\\/group-button > a.peer\\/button { color: #ededea !important; font-weight: 600 !important; }
         a.peer\\/button .sidebar-heading-type { opacity: 0.7; }
         /* Scalar overlays a brighter, offset segment on the nesting line beside the current item; the fill already
            marks it, so drop the segment and keep one continuous line. */
@@ -303,14 +290,14 @@
            popovers inside it (the code-language picker) still have room. */
         .request-section-content .flex.grow:empty { display: none !important; }
         /* API client "include" checkboxes: a real checkbox look. Unchecked = visible empty box (was a near-invisible
-           check that read as a glitch); checked = teal box with a dark check; disabled (empty Key rows) = dimmed. */
+           check that read as a glitch); checked = amber box with a dark check; disabled (empty Key rows) = dimmed. */
         .scalar-client input.peer[type="checkbox"] + div > div.rounded {
           opacity: 1 !important; width: 16px !important; height: 16px !important; border-radius: 4px !important;
           border: 1.5px solid rgba(255, 255, 255, 0.34) !important; background: transparent;
         }
         .scalar-client input.peer[type="checkbox"]:not(:checked) + div svg { opacity: 0 !important; }
-        .scalar-client input.peer[type="checkbox"]:checked + div { color: #04201c !important; }
-        .scalar-client input.peer[type="checkbox"]:checked + div > div.rounded { background: #5eead4 !important; border-color: #5eead4 !important; }
+        .scalar-client input.peer[type="checkbox"]:checked + div { color: #120c02 !important; }
+        .scalar-client input.peer[type="checkbox"]:checked + div > div.rounded { background: #f5a524 !important; border-color: #f5a524 !important; }
         .scalar-client input.peer[type="checkbox"]:checked + div svg { position: relative; z-index: 1; }
         .scalar-client input.peer[type="checkbox"]:not(:checked):not(:disabled):hover + div > div.rounded { border-color: rgba(255, 255, 255, 0.65) !important; }
         .scalar-client input.peer[type="checkbox"]:checked:hover + div > div.rounded { background: #8af0e0 !important; border-color: #8af0e0 !important; }
@@ -325,7 +312,7 @@
         .response-body-virtual .font-code.rounded-t { padding-left: 34px !important; }
         .response-body-virtual .scalar-virtual-text { padding-left: 0 !important; }
         .response-body-virtual .scalar-virtual-text-content { left: 34px !important; }
-        .scalar-card, .scalar-codeblock-pre { border-radius: 14px !important; }
+        .scalar-card, .scalar-codeblock-pre { border-radius: 4px !important; }
       `,
     });
     });

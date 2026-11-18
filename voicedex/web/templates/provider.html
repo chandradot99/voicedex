@@ -6,19 +6,18 @@
   <p class="crumbs"><a href="/#providers">Providers</a></p>
   <h1>{{ p.name }}</h1>
   {% if p.status != "active" %}
-  <p class="notice">No longer available{% if p.retired_on %} since {{ p.retired_on.strftime('%B %-d, %Y') }}{% endif %}.</p>
+  <p class="end-rule"><span class="mono">{{ p.retired_on.strftime('%Y-%m-%d') if p.retired_on else "Retired" }}</span>No longer available{% if p.retired_on %} since {{ p.retired_on.strftime('%B %-d, %Y') }}{% endif %}.</p>
+  {% else %}
+  <p class="fact-line">
+    <span>{% for t in summary.types %}<b>{{ TYPE_SHORT[t] }}</b>{% if not loop.last %} {% endif %}{% endfor %}</span>
+    <span><b>{{ summary.models }}</b> model{{ 's' if summary.models != 1 }}</span>
+    <span>{% if summary.voices %}<a href="/voices?provider={{ p.id }}"><b>{{ "{:,}".format(summary.voices) }}</b> voices</a>{% else %}no stock voices{% endif %}</span>
+    <span>data from {{ {"api": "provider API", "docs": "documentation", "mixed": "API + docs"}.get(p.source, p.source or "–") }}</span>
+    {% if p.last_synced %}<span>synced {{ p.last_synced }}</span>{% endif %}
+  </p>
   {% endif %}
   {% if p.description %}<p class="lede">{{ p.description }}</p>{% endif %}
-  {% if p.status == "active" %}
-  <dl class="facts">
-    <div><dt>Offers</dt><dd>{% for t in summary.types %}{{ TYPE_LABELS[t] }}{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
-    <div><dt>Models</dt><dd>{{ summary.models }}</dd></div>
-    <div><dt>Voices</dt><dd>{% if summary.voices %}<a href="/voices?provider={{ p.id }}">{{ "{:,}".format(summary.voices) }}</a>{% else %}–{% endif %}</dd></div>
-    <div><dt>Data from</dt><dd>{{ {"api": "Provider API", "docs": "Documentation", "mixed": "API and documentation"}.get(p.source, p.source or "–") }}</dd></div>
-    <div><dt>Last synced</dt><dd>{{ p.last_synced or "–" }}</dd></div>
-  </dl>
-  {% endif %}
-  <p class="links">
+  <p class="page-links">
     {% if p.website %}<a href="{{ p.website }}" rel="noopener">Website</a>{% endif %}
     {% for u in p.docs_urls[:1] %}<a href="{{ u }}" rel="noopener">Documentation</a>{% endfor %}
     {% if p.status == "active" %}<a href="/v1/providers/{{ p.id }}/models">Models as JSON</a>{% endif %}
@@ -27,23 +26,32 @@
 
 {% for t in ["stt", "tts", "sts"] %}
 {% set group = models|selectattr("model.type", "equalto", t)|list %}
-{% if group %}
+{% set gone = deprecated|selectattr("model.type", "equalto", t)|list %}
+{% if group or gone %}
 <section class="wrap model-group" aria-labelledby="g-{{ t }}">
-  <h2 id="g-{{ t }}">{{ TYPE_LABELS[t] }} <span class="count">{{ group|length }}</span></h2>
+  <h2 id="g-{{ t }}" class="section-title group-title">{{ TYPE_LABELS[t] }} <span class="count">{{ group|length }}</span></h2>
   <div class="table-scroll">
     <table class="data models-table">
       <thead>
-        <tr><th scope="col" class="pick"><span class="visually-hidden">Compare</span></th><th scope="col">Model</th><th scope="col" class="num hide-sm">Languages</th><th scope="col">Price</th><th scope="col" class="hide-sm">Features</th><th scope="col">Status</th></tr>
+        <tr><th scope="col" class="pick"><span class="visually-hidden">Compare</span></th><th scope="col">Model</th><th scope="col" class="num hide-sm">Langs</th><th scope="col" class="hide-sm">Features</th><th scope="col" class="num">Price</th><th scope="col">Status</th></tr>
       </thead>
       <tbody>
-        {% for r in group %}{% set m = r.model %}
+        {% for r in group %}{% set m = r.model %}{% set k = model_key(r) %}
         <tr id="{{ m.type }}-{{ m.id }}">
-          <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ p.name }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
+          <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ p.name }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
           <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}</th>
-          <td class="num hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
-          <td>{{ price_label(m) or "–" }}</td>
-          <td class="feat hide-sm">{% for c in m.capabilities[:3] %}<span class="cap">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</span>{% endfor %}{% if m.capabilities|length > 3 %}<span class="muted">+{{ m.capabilities|length - 3 }}</span>{% endif %}</td>
-          <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%b %-d, %Y') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge">Default</span>{% endif %}{% if m.alias_of %} <span class="badge badge-quiet">Alias</span>{% endif %}</td>
+          <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
+          <td class="mono feat-count hide-sm">{% set tot = feature_vocab(m.type)|length %}{{ m.capabilities|length }}/{{ tot }}<span class="bar" aria-hidden="true"><i style="width: {{ (100 * m.capabilities|length / tot)|round }}%"></i></span></td>
+          <td class="num price-cell"><span class="mono">{{ price_label(m) or "–" }}</span>{% if k in positions %}<span class="bar" aria-hidden="true"><i style="width: {{ positions[k]|round }}%"></i></span>{% elif price_label(m) %}<span class="bar" aria-hidden="true"></span>{% endif %}</td>
+          <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}{% if m.alias_of %} <span class="badge badge-quiet">Alias</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+        {% for r in gone %}
+        <tr class="struck">
+          <td class="pick"></td>
+          <th scope="row"><code translate="no">{{ r.model.id }}</code><span class="sub">Removed from {{ p.name }}'s listings <span class="mono">{{ r.model.deprecated_at }}</span></span></th>
+          <td class="hide-sm"></td><td class="hide-sm"></td><td></td>
+          <td><span class="badge badge-quiet">Deprecated</span></td>
         </tr>
         {% endfor %}
       </tbody>
@@ -55,19 +63,9 @@
 
 {% if voice_count %}
 <section class="wrap" aria-labelledby="voices-title">
-  <h2 id="voices-title">Voices</h2>
-  <p class="section-note">{{ "{:,}".format(voice_count) }} voices. <a href="/voices?provider={{ p.id }}">Browse and filter all of them</a>.</p>
+  <h2 id="voices-title" class="section-title group-title">Voices <span class="count">{{ "{:,}".format(voice_count) }}</span></h2>
+  <p class="section-note"><a href="/voices?provider={{ p.id }}">Browse and filter all of them</a>.</p>
   {% with rows=voice_sample, names={} %}{% include "_voice_grid.html" %}{% endwith %}
-</section>
-{% endif %}
-
-{% if deprecated %}
-<section class="wrap" aria-labelledby="dep-title">
-  <h2 id="dep-title">Deprecated models</h2>
-  <p class="section-note">No longer listed by {{ p.name }}. Kept here for reference.</p>
-  <ul class="plain-list">
-    {% for r in deprecated %}<li><code translate="no">{{ r.model.id }}</code> <span class="muted">{{ TYPE_LABELS[r.model.type]|lower }}, removed from listings {{ r.model.deprecated_at }}</span></li>{% endfor %}
-  </ul>
 </section>
 {% endif %}
 {% endblock %}

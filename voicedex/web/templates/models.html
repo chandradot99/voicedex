@@ -2,80 +2,104 @@
 {% block title %}Compare speech models | {{ site_name }}{% endblock %}
 {% block content %}
 <section class="wrap page-head">
-  <h1>Models</h1>
-  <p class="lede">Filter by what you need, sort by price, and tick models to compare them side by side. Prices are normalized: text-to-speech per million characters, speech-to-text and speech-to-speech per hour of audio.</p>
+  <h1>{{ rows|length }} model{{ 's' if rows|length != 1 }}{% if not filtered %} across every provider{% endif %}</h1>
+  <p class="lede">Filter by what you need, sort by price, and tick models to compare. Prices are normalized: text-to-speech per 1M characters, speech-to-text and realtime per hour of audio.</p>
 </section>
 
 <section class="wrap">
-  <form class="filters" method="get" action="/models">
-    <label>Type
-      <select name="type">
-        <option value="">Any</option>
-        {% for k, label in TYPE_LABELS.items() %}<option value="{{ k }}" {% if f.type == k %}selected{% endif %}>{{ label }}</option>{% endfor %}
-      </select>
-    </label>
-    <label>Language
-      <select name="language">
-        <option value="">Any</option>
-        {% for code, name in languages %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
-      </select>
-    </label>
-    <label>Feature
-      <select name="capability">
-        <option value="">Any</option>
-        {% for c in capabilities %}<option value="{{ c }}" {% if f.capability == c %}selected{% endif %}>{{ c.replace('_', ' ')|capitalize }}</option>{% endfor %}
-      </select>
-    </label>
-    <label>Provider
-      <select name="provider">
-        <option value="">Any</option>
-        {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }}</option>{% endfor %}
-      </select>
-    </label>
-    <label>Status
-      <select name="status">
-        <option value="">Any</option>
-        <option value="ending" {% if f.status == "ending" %}selected{% endif %}>Shutting down</option>
-        <option value="beta" {% if f.status == "beta" %}selected{% endif %}>Beta / preview</option>
-      </select>
-    </label>
-    <label>Sort
-      <select name="sort">
-        <option value="">{{ "Soonest shutdown" if f.status == "ending" else "Provider" }}</option>
-        <option value="price" {% if f.sort == "price" %}selected{% endif %}>Lowest price</option>
-      </select>
-    </label>
-    <label class="grow">Name contains
-      <input type="search" name="q" value="{{ f.q }}" placeholder="e.g. nova, sonic, flash…" autocomplete="off" spellcheck="false">
-    </label>
-    <button type="submit">Apply filters</button>
-  </form>
+  <details class="filter-bar" open data-collapse-sm>
+    <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
+    <form class="filters" method="get" action="/models">
+      <label class="field">Type
+        <select name="type">
+          <option value="">Any</option>
+          {% for k, label in TYPE_LABELS.items() %}<option value="{{ k }}" {% if f.type == k %}selected{% endif %}>{{ label }}</option>{% endfor %}
+        </select>
+      </label>
+      <label class="field">Language
+        <select name="language">
+          <option value="">Any</option>
+          {% for code, name in languages %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
+        </select>
+      </label>
+      <label class="field">Feature
+        <select name="capability">
+          <option value="">Any</option>
+          {% for c in capabilities %}<option value="{{ c }}" {% if f.capability == c %}selected{% endif %}>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</option>{% endfor %}
+        </select>
+      </label>
+      <label class="field">Provider
+        <select name="provider">
+          <option value="">Any</option>
+          {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }}</option>{% endfor %}
+        </select>
+      </label>
+      <label class="field">Status
+        <select name="status">
+          <option value="">Any</option>
+          <option value="ending" {% if f.status == "ending" %}selected{% endif %}>Shutting down</option>
+          <option value="beta" {% if f.status == "beta" %}selected{% endif %}>Beta / preview</option>
+        </select>
+      </label>
+      <label class="field grow">Name
+        <input type="search" name="q" value="{{ f.q }}" placeholder="nova, sonic, flash…" autocomplete="off" spellcheck="false">
+      </label>
+      {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
+      <button type="submit" class="btn-secondary">Apply</button>
+    </form>
+  </details>
 
-  <p class="result-count" role="status">{{ rows|length }} model{{ 's' if rows|length != 1 }}{% if f.values()|select|list %} match. <a href="/models">Clear filters</a>{% endif %}</p>
+  <div class="result-bar">
+    <p class="result-count" role="status">{{ rows|length }} match{{ 'es' if rows|length != 1 }}</p>
+    {% if tokens %}
+    <div class="tokens">
+      {% for k, label, value in tokens %}<a class="token" href="/models?{{ qs(**{k: None}) }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}
+    </div>
+    <a class="btn-link" href="/models{% if f.sort %}?sort={{ f.sort }}{% endif %}">Clear all</a>
+    {% endif %}
+  </div>
+
+  {% if filtered and rows %}
+  {% with bands=spectrum, cap=8, compact=True, legend_note="matches your filters" %}{% include "_spectrum.html" %}{% endwith %}
+  {% endif %}
 
   {% if rows %}
   <div class="table-scroll">
     <table class="data models-table">
       <thead>
-        <tr><th scope="col" class="pick"><span class="visually-hidden">Compare</span></th><th scope="col">Model</th><th scope="col" class="hide-sm">Provider</th><th scope="col" class="hide-sm">Type</th><th scope="col" class="num hide-sm">Languages</th><th scope="col">Price</th><th scope="col">Status</th></tr>
+        <tr>
+          <th scope="col" class="pick"><span class="visually-hidden">Compare</span></th>
+          <th scope="col"><a href="/models?{{ qs(sort=None) }}" {% if not f.sort %}aria-current="true"{% endif %}>Model</a></th>
+          <th scope="col" class="hide-sm">Provider</th>
+          <th scope="col" class="hide-sm">Type</th>
+          <th scope="col" class="num hide-sm">Langs</th>
+          <th scope="col" class="hide-sm">Features</th>
+          <th scope="col" class="num"><a href="/models?{{ qs(sort='price') }}" {% if f.sort == 'price' %}aria-current="true"{% endif %}>Price{% if f.sort == 'price' %} ↑{% endif %}</a></th>
+          <th scope="col">Status</th>
+        </tr>
       </thead>
       <tbody>
-        {% for r in rows %}{% set m = r.model %}
+        {% for r in rows %}{% set m = r.model %}{% set k = model_key(r) %}
         <tr>
-          <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ model_key(r) }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
+          <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
           <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}</span></th>
           <td class="hide-sm">{{ names[r.provider_id] }}</td>
-          <td class="hide-sm"><span class="tag tag-{{ m.type }}">{{ TYPE_SHORT[m.type] }}</span></td>
-          <td class="num hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
-          <td>{{ price_label(m) or "–" }}</td>
-          <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%b %-d, %Y') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge">Default</span>{% endif %}</td>
+          <td class="mono hide-sm">{{ TYPE_SHORT[m.type] }}</td>
+          <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
+          <td class="mono feat-count hide-sm">{% set tot = feature_vocab(m.type)|length %}{{ m.capabilities|length }}/{{ tot }}<span class="bar" aria-hidden="true"><i style="width: {{ (100 * m.capabilities|length / tot)|round }}%"></i></span></td>
+          <td class="num price-cell"><span class="mono">{{ price_label(m) or "–" }}</span>{% if k in positions %}<span class="bar" aria-hidden="true"><i style="width: {{ positions[k]|round }}%"></i></span>{% elif price_label(m) %}<span class="bar" aria-hidden="true"></span>{% endif %}</td>
+          <td>{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
   {% else %}
-  <p class="empty">No model matches all of these filters. Remove one, or <a href="/models">start over</a>.</p>
+  <div class="empty">
+    <span class="mono">0 models{% for k, label, value in tokens %} {{ label }}:{{ value }}{% endfor %}</span>
+    <p>No model matches all of these filters. Remove one:</p>
+    <ul>{% for k, label, value in tokens %}<li><a href="/models?{{ qs(**{k: None}) }}">Drop {{ label }}: {{ value }}</a></li>{% endfor %}<li><a href="/models">Start over</a></li></ul>
+  </div>
   {% endif %}
 </section>
 {% endblock %}
