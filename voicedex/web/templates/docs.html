@@ -402,6 +402,9 @@
         .vd-expand[hidden] { display: none; }
         /* API client: response body can take the whole window (request side hidden). */
         .vd-resp-full > section:first-child { display: none !important; }
+        /* …and inside the response, only the Body remains (cookies/headers rows hidden), filling the modal. */
+        .vd-resp-full .response-section-content > :not(:has(.vd-full)) { display: none !important; }
+        .vd-resp-full .response-section-content > :has(.vd-full) { flex: 1 1 auto; min-height: 0; }
         .vd-full {
           height: 24px; padding: 0 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
           font: 500 11px/1 "Geist Mono", ui-monospace, monospace; color: var(--ink-2);
