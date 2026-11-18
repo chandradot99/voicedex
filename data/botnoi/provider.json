@@ -1,0 +1,34 @@
+{
+  "access": "self_serve",
+  "api_urls": [
+    "https://api-voice.botnoi.ai/openapi/v1/get_speaker_data",
+    "https://api-voice.botnoi.ai/openapi/v1/get_speaker_data_v2",
+    "https://api-voice.botnoi.ai/openapi/v1/get_speaker_data_v4"
+  ],
+  "description": "Botnoi Voice is the AI voice platform of Botnoi Group, a Thai company (API served from Bangkok). It sells Thai-first text-to-speech in three voice generations (V1 Classic, V2 Premium, V4 Beta) across about 24 languages, with voice cloning and Voice Design, through a studio and a points-billed REST API.",
+  "docs_urls": [
+    "https://voice.botnoi.ai/llms.txt",
+    "https://voice.botnoi.ai/llm.txt"
+  ],
+  "headquarters": "TH",
+  "id": "botnoi",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://voice.botnoi.ai/developer/api",
+    "docs": "https://voice.botnoi.ai/llms.txt",
+    "pricing": "https://voice.botnoi.ai/payment/quote"
+  },
+  "name": "Botnoi Voice",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://api-voice.botnoi.ai/openapi/v1/get_speaker_data",
+      "https://api-voice.botnoi.ai/openapi/v1/get_speaker_data_v2",
+      "https://api-voice.botnoi.ai/openapi/v1/get_speaker_data_v4"
+    ]
+  },
+  "website": "https://voice.botnoi.ai"
+}
