@@ -201,3 +201,25 @@ async def test_short_type_aliases_redirect(client):
                          ("/tts/open-source?x=1", "/text-to-speech/open-source?x=1")):
         r = await client.get(path, follow_redirects=False)
         assert r.status_code == 301 and r.headers["location"] == target, path
+
+
+async def test_home_map_slice_and_full_coverage_page(client, monkeypatch):
+    from voicedex.web import routes
+    home = (await client.get("/")).text
+    assert 'href="/coverage"' in home and "see the full map" in home
+    page = await client.get("/coverage?map=stt")
+    assert page.status_code == 200 and 'href="/coverage?map=tts#coverage"' in page.text
+    assert "see the full map" not in page.text                        # the full page doesn't link to itself
+    assert "<loc>https://voicedex.dev/coverage</loc>" in (await client.get("/sitemap.xml")).text
+    monkeypatch.setattr(routes, "HOME_MAP_PROVIDERS", 0)
+    capped = (await client.get("/")).text.split('id="coverage"', 1)[1].split("</section>", 1)[0]
+    assert 'href="/providers/zz-test-provider"' not in capped              # no provider rows when capped at 0
+
+
+async def test_landing_caps_rows_with_see_all(client, monkeypatch):
+    from voicedex.web import routes
+    monkeypatch.setattr(routes, "LANDING_ROWS", 1)
+    html = (await client.get("/speech-to-text")).text
+    table = html.split('<table class="data models-table">', 1)[1].split("</table>", 1)[0]
+    assert table.count('class="compare-pick"') == 1
+    assert "2 matches, cheapest 1 shown" in html and "See all 2 models" in html

@@ -27,47 +27,7 @@
   {% with bands=spectrum, cap=16, animate=True, legend_note="home" %}{% include "_spectrum.html" %}{% endwith %}
 </section>
 
-<section class="wrap" id="coverage" aria-labelledby="coverage-title">
-  <div class="section-row">
-    <div>
-      <h2 id="coverage-title" class="section-title">Language coverage</h2>
-      <p class="section-note">Rows are providers, columns the <span id="coverage-cols">{{ coverage.languages|length }}</span> most-supported languages, and Total counts every language a provider covers. Brighter cells mean more models. Select a cell to list them.</p>
-    </div>
-    <nav class="seg" aria-label="Model type">
-      {% for k, label in [("", "All"), ("stt", "STT"), ("tts", "TTS"), ("sts", "Realtime")] %}
-      <a href="/?map={{ k }}#coverage" {% if map_type == k %}aria-current="true"{% endif %}>{{ label }}</a>
-      {% endfor %}
-    </nav>
-  </div>
-  <div class="map-scroll" tabindex="0" aria-label="Language coverage map, scrollable">
-    <table class="map">
-      <thead>
-        <tr>
-          <th scope="col" class="map-corner"><span class="visually-hidden">Provider</span></th>
-          {% for lang in coverage.languages %}
-          <th scope="col" class="map-lang"><a href="/models?language={{ lang }}{% if map_type %}&type={{ map_type }}{% endif %}" title="Models for {{ language_name(lang) }}"><span>{{ language_name(lang) }}</span></a></th>
-          {% endfor %}
-          <th scope="col" class="map-total">Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for s, counts in coverage.rows %}
-        <tr>
-          <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
-          {% for c in counts %}
-          {% set lang = coverage.languages[loop.index0] %}
-          <td class="h{{ heat_level(c, coverage.max_count) }}"{% if c %} title="{{ s.name }}: {{ c }} {{ language_name(lang) }} model{{ 's' if c != 1 }}"{% endif %}>
-            {% if c %}<a href="/models?provider={{ s.id }}&language={{ lang }}{% if map_type %}&type={{ map_type }}{% endif %}" aria-label="{{ s.name }}, {{ language_name(lang) }}: {{ c }} model{{ 's' if c != 1 }}"></a>{% endif %}
-          </td>
-          {% endfor %}
-          <td class="map-total"><a href="/providers/{{ s.id }}" title="{{ s.name }}: {{ coverage.totals.get(s.id, 0) }} languages in total">{{ coverage.totals.get(s.id, 0) }}</a></td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  <p class="legend" aria-hidden="true"><span>Fewer models</span><i class="h1"></i><i class="h2"></i><i class="h3"></i><i class="h4"></i><i class="h5"></i><span>More</span></p>
-</section>
+{% with map_base="/", full_map=False %}{% include "_coverage.html" %}{% endwith %}
 
 <section class="wrap" aria-labelledby="eol-title">
   <h2 id="eol-title" class="section-title">Scheduled shutdowns</h2>

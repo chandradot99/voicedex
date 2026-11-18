@@ -54,7 +54,7 @@
   {% endblock %}
 
   <div class="result-bar">
-    <p class="result-count" role="status">{{ rows|length }} match{{ 'es' if rows|length != 1 }}</p>
+    {% set n_all = total_rows|default(rows|length) %}<p class="result-count" role="status">{{ n_all }} match{{ 'es' if n_all != 1 }}{% if n_all > rows|length %}, cheapest {{ rows|length }} shown{% endif %}</p>
     {% if tokens %}
     <div class="tokens">
       {% for k, label, value in tokens %}<a class="token" href="/models?{{ qs(**{k: None}) }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}

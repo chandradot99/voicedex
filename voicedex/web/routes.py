@@ -98,6 +98,20 @@ def _token_value(key: str, value: str, catalog: Catalog) -> str:
     return value
 
 
+# The home page shows a slice of the coverage map (the full one is ~9k elements, too heavy for phones);
+# /coverage has all of it.
+HOME_MAP_PROVIDERS, HOME_MAP_LANGUAGES = 24, 32
+LANDING_ROWS = 100            # cheapest-first rows on a landing page; the rest via "see all"
+
+
+@router.get("/coverage", response_class=HTMLResponse)
+async def coverage_page(request: Request, catalog: Catalog = Depends(get_catalog)):
+    map_type = _q(request, "map") if _q(request, "map") in views.TYPE_LABELS else ""
+    return templates.TemplateResponse(request, "coverage.html", {
+        "coverage": views.coverage_map(catalog, model_type=map_type), "map_type": map_type,
+    })
+
+
 @router.get("/", response_class=HTMLResponse)
 async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
     map_type = _q(request, "map") if _q(request, "map") in views.TYPE_LABELS else ""
@@ -122,7 +136,9 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
     return templates.TemplateResponse(request, "home.html", {
         "live": live,
         "retired": [s for s in summaries if s.status != "active"],
-        "coverage": views.coverage_map(catalog, model_type=map_type),
+        "coverage": views.coverage_map(catalog, n_languages=HOME_MAP_LANGUAGES, model_type=map_type,
+                                       n_providers=HOME_MAP_PROVIDERS),
+        "coverage_providers": len(views.coverage_map(catalog, n_languages=1, model_type=map_type).rows),
         "map_type": map_type,
         "n_models": len(views.active_models(catalog)),
         "n_voices": len(views.active_voices(catalog)),
@@ -270,6 +286,7 @@ def _landing_page(type_slug: str):
              "provider": "", "q": "", "sort": "price", "status": ""}
         ctx = _models_context(catalog, rows, f, show_tokens=False)
         ctx["filtered"] = landing.kind != "hub"
+        ctx["total_rows"], ctx["rows"] = len(rows), rows[:LANDING_ROWS]
         siblings = [p for p in views.landing_pages(catalog).values() if p.type == mtype and p.kind != "hub"]
         hub = views.find_landing(catalog, mtype)
         crumbs = [("Home", "/"), (views.TYPE_LABELS[mtype], hub.url)] + ([(landing.label, landing.url)] if slug else [])
@@ -588,6 +605,7 @@ async def sitemap(catalog: Catalog = Depends(get_catalog)):
     feed = load_changes(settings.data_path)
     entries.append(("/changes", date.fromisoformat(feed[0].date) if feed else None))
     entries.append(("/alternatives", None))
+    entries.append(("/coverage", views.last_modified(models)))
     for pid in views.alternatives_subjects(catalog):
         entries.append((f"/alternatives/{pid}", views.last_modified(
             [r for r in views.active_models(catalog) if r.model.type in views._provider_types(catalog, pid)])))

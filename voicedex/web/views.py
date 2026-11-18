@@ -159,7 +159,8 @@ class CoverageMap:
     totals: dict[str, int] = None        # provider id → distinct languages overall (not just the columns shown)
 
 
-def coverage_map(catalog: Catalog, n_languages: int = 48, model_type: str = "") -> CoverageMap:
+def coverage_map(catalog: Catalog, n_languages: int = 48, model_type: str = "",
+                 n_providers: int | None = None) -> CoverageMap:
     counts: dict[str, Counter] = defaultdict(Counter)
     for r in active_models(catalog):
         if model_type and r.model.type != model_type:
@@ -171,6 +172,8 @@ def coverage_map(catalog: Catalog, n_languages: int = 48, model_type: str = "") 
     summaries = [s for s in provider_summaries(catalog) if s.status == "active" and s.models]
     rows = [(s, [counts[s.id][lang] for lang in langs]) for s in summaries]
     rows.sort(key=lambda r: (-sum(1 for x in r[1] if x), r[0].name.lower()))
+    if n_providers is not None:
+        rows = rows[:n_providers]
     return CoverageMap(langs, rows, max((x for _, cs in rows for x in cs), default=1),
                        {pid: len(c) for pid, c in counts.items()})
 
