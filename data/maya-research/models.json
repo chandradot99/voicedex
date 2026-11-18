@@ -1,5 +1,229 @@
 [
   {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Maya 2 model available over the HTTP endpoint only (not on the WebSocket).",
+    "first_seen": "2026-11-18",
+    "id": "Maya 2 Global",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "hi",
+      "bn",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "pa",
+      "ta",
+      "te",
+      "en-IN"
+    ],
+    "meta": {
+      "voices": [
+        "Ananya",
+        "Arjun"
+      ]
+    },
+    "name": "Maya 2 Global",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.mayaresearch.ai/reference/models",
+        "https://docs.mayaresearch.ai/api-reference/tts",
+        "https://www.mayaresearch.ai/llm.txt"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Default hosted streaming TTS model for 11 Indian languages including Indian English, region-local and pre-warmed.",
+    "first_seen": "2026-11-18",
+    "id": "Maya 2 Native",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "hi",
+      "bn",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "pa",
+      "ta",
+      "te",
+      "en-IN"
+    ],
+    "meta": {
+      "encoding": "pcm_s16le",
+      "serving": "India from Mumbai, elsewhere from the US",
+      "voices": [
+        "Ananya",
+        "Arjun"
+      ]
+    },
+    "name": "Maya 2 Native",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/maya-research/maya2-native"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.mayaresearch.ai/reference/models",
+        "https://docs.mayaresearch.ai/api-reference/tts",
+        "https://www.mayaresearch.ai/llm.txt"
+      ]
+    },
+    "regions": [
+      "asia",
+      "us"
+    ],
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion"
+    ],
+    "description": "Maya 2 Native variant that accepts inline emotion and non-verbal tags; single Mumbai deployment, non-deterministic output.",
+    "first_seen": "2026-11-18",
+    "id": "Maya 2 Native Emotional",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi",
+      "bn",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "pa",
+      "ta",
+      "te",
+      "en-IN"
+    ],
+    "meta": {
+      "emotion_tags": [
+        "whispers",
+        "excited",
+        "frustrated",
+        "nervous",
+        "sad",
+        "curious",
+        "laughs",
+        "sighs",
+        "clears throat",
+        "coughs"
+      ],
+      "serving": "single deployment in Mumbai, not pre-warmed",
+      "voices": [
+        "Ananya",
+        "Arjun"
+      ]
+    },
+    "name": "Maya 2 Native Emotional",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.mayaresearch.ai/reference/models",
+        "https://docs.mayaresearch.ai/api-reference/tts",
+        "https://www.mayaresearch.ai/llm.txt"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Hosted TTS model with 26 voices across 11 Indian languages, with 8/16/24 kHz PCM or mu-law output for telephony.",
+    "first_seen": "2026-11-18",
+    "id": "Maya Calyx",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi",
+      "bn",
+      "gu",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "pa",
+      "ta",
+      "te",
+      "en-IN"
+    ],
+    "meta": {
+      "encodings": [
+        "pcm_s16le",
+        "mulaw"
+      ],
+      "note": "llm.txt documents Maya Calyx as the default model; docs.mayaresearch.ai documents Maya 2 Native as default.",
+      "source": "https://www.mayaresearch.ai/llm.txt",
+      "voice_count": 26
+    },
+    "name": "Maya Calyx",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.mayaresearch.ai/reference/models",
+        "https://docs.mayaresearch.ai/api-reference/tts",
+        "https://www.mayaresearch.ai/llm.txt"
+      ]
+    },
+    "regions": [
+      "asia",
+      "us"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
     "first_seen": "2026-11-18",
     "id": "maya-research/Veena",
     "languages": [

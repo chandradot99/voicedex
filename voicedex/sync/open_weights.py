@@ -85,14 +85,23 @@ class KittenMLSyncer(HuggingFaceSyncer):
     # Stellon Labs also sells a hosted OpenAI-compatible API.
     provider_id = "kittenml"
     hf_authors = ["KittenML"]
-    tts_docs = ["https://kittenml.com"]
+    tts_docs = [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/tts/generate-speech",
+        "https://kittenml.com/#pricing",
+    ]
     tts_guidance = (
         "Hosted API models only (the open-weights repos come from Hugging Face): one record per callable model id "
         "of the hosted TTS API, with published per-unit prices; set open_weights when the hosted model is the "
         "same as a published repo."
     )
-    stt_docs = ["https://kittenml.com"]
-    stt_guidance = "Hosted speech-to-text models only, if the API offers any; same rules as TTS."
+    stt_docs = [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/stt/upload-transcription",
+        "https://docs.kittenml.com/stt/language-hints",
+        "https://kittenml.com/#pricing",
+    ]
+    stt_guidance = "Hosted speech-to-text models only; same rules as TTS (aliases in meta)."
 
 
 class NariLabsSyncer(HuggingFaceSyncer):
@@ -130,7 +139,11 @@ class MayaResearchSyncer(HuggingFaceSyncer):
     # Also sells a hosted TTS API (Maya Studio).
     provider_id = "maya-research"
     hf_authors = ["maya-research"]
-    tts_docs = ["https://www.mayaresearch.ai"]
+    tts_docs = [
+        "https://docs.mayaresearch.ai/reference/models",
+        "https://docs.mayaresearch.ai/api-reference/tts",
+        "https://www.mayaresearch.ai/llm.txt",
+    ]
     tts_guidance = (
         "Hosted API models only (open-weights repos come from Hugging Face): one record per callable model id of "
         "the hosted TTS API; prices only if published per unit; regions from documented serving regions."

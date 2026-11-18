@@ -5,6 +5,13 @@
     "https://huggingface.co/api/models?author=KittenML&pipeline_tag=text-to-speech"
   ],
   "description": "KittenML is the model brand of Stellon Labs, Inc., a Delaware corporation whose terms place disputes in San Francisco courts. It publishes the Kitten-TTS models on Hugging Face (lightweight 15M-80M-parameter v0.8 models and Kitten-TTS 2, a 1-bit model with voice cloning and emotion tags) and also sells a hosted, OpenAI-compatible TTS and speech-to-text API, with free use of the weights for commercial users under $1M revenue.",
+  "docs_urls": [
+    "https://docs.kittenml.com/models",
+    "https://docs.kittenml.com/stt/upload-transcription",
+    "https://docs.kittenml.com/stt/language-hints",
+    "https://kittenml.com/#pricing",
+    "https://docs.kittenml.com/tts/generate-speech"
+  ],
   "headquarters": "US",
   "id": "kittenml",
   "last_synced": "2026-11-18",
@@ -13,7 +20,7 @@
     "pricing": "https://kittenml.com/#pricing"
   },
   "name": "KittenML",
-  "source": "api",
-  "type": "tts",
+  "source": "mixed",
+  "type": "both",
   "website": "https://kittenml.com"
 }

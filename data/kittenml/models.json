@@ -1,5 +1,128 @@
 [
   {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mp4",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "language_detection",
+      "speaker_diarization"
+    ],
+    "description": "Hosted emotion-aware ASR returning text plus enriched transcript metadata (delivery, pauses, emphasis, accent), for file upload and realtime.",
+    "first_seen": "2026-11-18",
+    "id": "kitten-asr-pro-enhanced",
+    "interfaces": [
+      "http",
+      "webrtc",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fi",
+      "fil",
+      "fr",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "mk",
+      "ms",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sv",
+      "th",
+      "tr",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "aliases": [
+        "kittenasr-enhanced-preview",
+        "whisper-1",
+        "gpt-4o-transcribe",
+        "gpt-4o-mini-transcribe",
+        "gpt-realtime-whisper"
+      ],
+      "chinese_dialect_hints": true,
+      "diarization_note": "turn-level only; not on WebRTC",
+      "max_upload_bytes": 26214400,
+      "realtime_encodings": [
+        "pcm_s16le 16/24 kHz",
+        "pcm_f32le 16/24 kHz",
+        "g711_ulaw 8 kHz",
+        "g711_alaw 8 kHz"
+      ],
+      "response_formats": [
+        "json",
+        "verbose_json",
+        "text",
+        "srt",
+        "vtt"
+      ]
+    },
+    "name": "Kitten-ASR Pro",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Pro: $0.10 per audio hour ($14.99/month incl. $24.99 usage); Free plan: 30 free minutes then $1 per audio hour. Enterprise custom.",
+      "price_usd": 0.1,
+      "source_url": "https://kittenml.com/#pricing",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "Free plan pay-as-you-go",
+          "price_usd": 1.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "Pro plan",
+          "price_usd": 0.1,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/stt/upload-transcription",
+        "https://docs.kittenml.com/stt/language-hints",
+        "https://kittenml.com/#pricing",
+        "https://docs.kittenml.com/tts/generate-speech"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
     "first_seen": "2026-11-18",
     "id": "KittenML/kitten-tts-2",
     "meta": {
@@ -45,6 +168,298 @@
       ]
     },
     "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "voice_cloning"
+    ],
+    "description": "Current Kitten TTS 2 release (1.7B-parameter ternary model) with 172 built-in voices, zero-shot voice cloning and experimental emotion/sound tags.",
+    "first_seen": "2026-11-18",
+    "id": "kitten-tts-2-latest",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "zh",
+      "da",
+      "nl",
+      "en",
+      "fi",
+      "fr",
+      "de",
+      "he",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "es",
+      "sv",
+      "tr"
+    ],
+    "max_text_chars": 40000,
+    "meta": {
+      "alias_note": "Output can change between releases; no pinned snapshot id is published.",
+      "default_voice": "eleanor_en",
+      "emotion_tags_status": "experimental",
+      "moving_alias": true,
+      "parameters": "1.7B (ternary)",
+      "pricing_plan": "Kitten-TTS 2",
+      "related_open_weights": "KittenML/kitten-tts-2 (115 voices; not stated to be identical to the hosted release)",
+      "speed_range": [
+        0.25,
+        4.0
+      ],
+      "voice_count": 172
+    },
+    "name": "Kitten TTS 2",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Listed as $0.65 per 1M characters on Pro (limited-time offer, was $15; $14.99/month or $179.88/year, includes $24.99 usage/month); Free plan: 30 free minutes then $15 per 1M characters. Enterprise custom.",
+      "price_usd": 6.5e-07,
+      "source_url": "https://kittenml.com/#pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Free plan pay-as-you-go",
+          "price_usd": 1.5e-05,
+          "unit": "character"
+        },
+        {
+          "applies_to": "Pro plan (limited-time offer, $14.99/month incl. $24.99 usage)",
+          "price_usd": 6.5e-07,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/stt/upload-transcription",
+        "https://docs.kittenml.com/stt/language-hints",
+        "https://kittenml.com/#pricing",
+        "https://docs.kittenml.com/tts/generate-speech"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "82M-parameter Kitten TTS 2 model with 118 voices in 16 languages.",
+    "first_seen": "2026-11-18",
+    "id": "kitten-tts-2-mini",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_text_chars": 40000,
+    "meta": {
+      "huggingface_alias": "KittenML/kitten-tts-2-mini",
+      "language_count": 16,
+      "parameters": "82M",
+      "voice_count": 118
+    },
+    "name": "Kitten TTS 2 Mini",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/KittenML/kitten-tts-2-mini"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/stt/upload-transcription",
+        "https://docs.kittenml.com/stt/language-hints",
+        "https://kittenml.com/#pricing",
+        "https://docs.kittenml.com/tts/generate-speech"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Kitten TTS 2 model with 17M parameters per language, 37 voices in 8 languages.",
+    "first_seen": "2026-11-18",
+    "id": "kitten-tts-2-nano",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_text_chars": 40000,
+    "meta": {
+      "huggingface_alias": "KittenML/kitten-tts-2-nano",
+      "language_count": 8,
+      "parameters": "17M per language",
+      "voice_count": 37
+    },
+    "name": "Kitten TTS 2 Nano",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/KittenML/kitten-tts-2-nano"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/stt/upload-transcription",
+        "https://docs.kittenml.com/stt/language-hints",
+        "https://kittenml.com/#pricing",
+        "https://docs.kittenml.com/tts/generate-speech"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "Kitten TTS 2 model with 7M parameters per language, 30 voices in 8 languages.",
+    "first_seen": "2026-11-18",
+    "id": "kitten-tts-2-pico",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_text_chars": 40000,
+    "meta": {
+      "huggingface_alias": "KittenML/kitten-tts-2-pico",
+      "language_count": 8,
+      "parameters": "7M per language",
+      "voice_count": 30
+    },
+    "name": "Kitten TTS 2 Pico",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/KittenML/kitten-tts-2-pico"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/stt/upload-transcription",
+        "https://docs.kittenml.com/stt/language-hints",
+        "https://kittenml.com/#pricing",
+        "https://docs.kittenml.com/tts/generate-speech"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "description": "80M-parameter English-only KittenTTS 0.8 model with eight voices; the API default when no model is given.",
+    "first_seen": "2026-11-18",
+    "id": "kitten-tts-mini-0.8",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "en"
+    ],
+    "max_text_chars": 40000,
+    "meta": {
+      "api_default_when_model_omitted": true,
+      "default_voice": "Bella",
+      "free": "Docs: 'KittenTTS 0.8 Mini is free, but authentication is still required.'",
+      "parameters": "80M",
+      "retired_siblings": [
+        "kitten-tts-nano-0.8",
+        "kitten-tts-micro-0.8"
+      ],
+      "voice_count": 8
+    },
+    "name": "KittenTTS 0.8 Mini",
+    "open_weights": {
+      "commercial_use": true,
+      "license": "apache-2.0",
+      "url": "https://huggingface.co/KittenML/kitten-tts-mini-0.8"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.kittenml.com/models",
+        "https://docs.kittenml.com/stt/upload-transcription",
+        "https://docs.kittenml.com/stt/language-hints",
+        "https://kittenml.com/#pricing",
+        "https://docs.kittenml.com/tts/generate-speech"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
     "type": "tts",
     "updated_at": "2026-11-18"
   }
