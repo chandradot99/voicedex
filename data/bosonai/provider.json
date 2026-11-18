@@ -1,0 +1,42 @@
+{
+  "access": "self_serve",
+  "description": "Boson AI was founded in 2023 by Alex Smola and Mu Li, with teams in Santa Clara, Toronto and Barrie. It sells the Higgs TTS text-to-speech model, the Higgs Realtime speech-to-speech model and Higgs Avatar talking-head video through a prepaid API, and publishes Higgs TTS weights on Hugging Face under a research and non-commercial licence.",
+  "docs_urls": [
+    "https://docs.boson.ai/llms.txt",
+    "https://docs.boson.ai/models/higgs-tts/overview.md",
+    "https://docs.boson.ai/models/higgs-tts/languages.md",
+    "https://docs.boson.ai/api-reference/audio/create-a-speech.md",
+    "https://docs.boson.ai/pricing.md",
+    "https://docs.boson.ai/models/higgs-realtime/overview.md",
+    "https://docs.boson.ai/models/higgs-realtime/guides/connections-and-sessions.md",
+    "https://docs.boson.ai/models/higgs-realtime/guides/audio-and-voices.md",
+    "https://docs.boson.ai/models/higgs-tts/voices.md"
+  ],
+  "headquarters": "US",
+  "id": "bosonai",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.boson.ai/api-reference/audio/create-a-speech",
+    "docs": "https://docs.boson.ai",
+    "pricing": "https://www.boson.ai/pricing"
+  },
+  "name": "Boson AI",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.boson.ai/llms.txt",
+      "https://docs.boson.ai/models/higgs-tts/overview.md",
+      "https://docs.boson.ai/models/higgs-tts/languages.md",
+      "https://docs.boson.ai/api-reference/audio/create-a-speech.md",
+      "https://docs.boson.ai/pricing.md",
+      "https://docs.boson.ai/models/higgs-realtime/overview.md",
+      "https://docs.boson.ai/models/higgs-realtime/guides/connections-and-sessions.md",
+      "https://docs.boson.ai/models/higgs-realtime/guides/audio-and-voices.md",
+      "https://docs.boson.ai/models/higgs-tts/voices.md"
+    ]
+  },
+  "website": "https://www.boson.ai"
+}

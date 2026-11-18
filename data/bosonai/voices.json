@@ -1,0 +1,104 @@
+[
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A friendly and clear female voice with an engaging, informative tone and a standard American accent.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "chloe",
+    "meta": {
+      "also_usable_in": "higgs-realtime (audio.output.voice)"
+    },
+    "name": "Chloe",
+    "preview_url": "https://docs.boson.ai/public/audio/higgs-audio-tts-voices/Chloe_Adams_intro.mp3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, articulate female voice with a clear, professional Standard American English accent.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "eleanor",
+    "meta": {
+      "also_usable_in": "higgs-realtime (audio.output.voice)"
+    },
+    "name": "Eleanor",
+    "preview_url": "https://docs.boson.ai/public/audio/higgs-audio-tts-voices/Eleanor_Reed_intro.mp3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A male speaker with an energetic and slightly dramatic tone, conveying passion and enthusiasm, especially about sports.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "jake",
+    "meta": {
+      "also_usable_in": "higgs-realtime (audio.output.voice)"
+    },
+    "name": "Jake",
+    "preview_url": "https://docs.boson.ai/public/audio/higgs-audio-tts-voices/Jake_Rivers_intro.mp3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A male speaker with an enthusiastic, confident, and slightly professorial American delivery.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "marcus",
+    "meta": {
+      "also_usable_in": "higgs-realtime (audio.output.voice)"
+    },
+    "name": "Marcus",
+    "preview_url": "https://docs.boson.ai/public/audio/higgs-audio-tts-voices/Marcus_Webb_intro.mp3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A female speaker with a calm, clear, and narrative voice, using standard American English.",
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "nora",
+    "meta": {
+      "also_usable_in": "higgs-realtime (audio.output.voice)"
+    },
+    "name": "Nora",
+    "preview_url": "https://docs.boson.ai/public/audio/higgs-audio-tts-voices/Nora_Vance_intro.mp3",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "description": "A calm, articulate male voice with a thoughtful American accent, suited to explanatory or reflective content.",
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "oliver",
+    "meta": {
+      "also_usable_in": "higgs-realtime (audio.output.voice)"
+    },
+    "name": "Oliver",
+    "preview_url": "https://docs.boson.ai/public/audio/higgs-audio-tts-voices/Oliver_Grant_intro.mp3",
+    "updated_at": "2026-11-18"
+  }
+]

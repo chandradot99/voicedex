@@ -1,0 +1,258 @@
+[
+  {
+    "audio_formats": [
+      "mulaw",
+      "opus",
+      "pcm"
+    ],
+    "description": "Full-duplex realtime voice model over WebSocket with turn detection, barge-in, tool calling and an OpenAI Realtime-compatible event protocol.",
+    "first_seen": "2026-11-18",
+    "id": "higgs-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "meta": {
+      "audio_formats_raw": [
+        "audio/pcm (PCM16 LE mono)",
+        "audio/pcmu (G.711 mu-law, 8 kHz)",
+        "audio/opus (24 kHz)"
+      ],
+      "input_transcription_model": "higgs-stt-3.1",
+      "openai_realtime_compatible": true,
+      "tool_calling": true,
+      "turn_detection": [
+        "server_vad",
+        "semantic_vad"
+      ],
+      "webrtc": "in progress"
+    },
+    "name": "Higgs Realtime",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "Token-billed. Base = input tokens ($0.75 per 1M). Per-minute audio figures are Boson's usage estimates; actual cost is computed from tokens.",
+      "price_usd": 7.5e-07,
+      "source_url": "https://docs.boson.ai/pricing",
+      "unit": "token",
+      "variants": [
+        {
+          "applies_to": "cached_input_tokens",
+          "price_usd": 2.5e-07,
+          "unit": "token"
+        },
+        {
+          "applies_to": "output_tokens",
+          "price_usd": 4.5e-06,
+          "unit": "token"
+        },
+        {
+          "applies_to": "audio_input_estimated",
+          "price_usd": 0.0023,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "audio_output_estimated",
+          "price_usd": 0.014,
+          "unit": "minute"
+        },
+        {
+          "applies_to": "transcription_input",
+          "price_usd": 0.0025,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.boson.ai/llms.txt",
+        "https://docs.boson.ai/models/higgs-tts/overview.md",
+        "https://docs.boson.ai/models/higgs-tts/languages.md",
+        "https://docs.boson.ai/api-reference/audio/create-a-speech.md",
+        "https://docs.boson.ai/pricing.md",
+        "https://docs.boson.ai/models/higgs-realtime/overview.md",
+        "https://docs.boson.ai/models/higgs-realtime/guides/connections-and-sessions.md",
+        "https://docs.boson.ai/models/higgs-realtime/guides/audio-and-voices.md",
+        "https://docs.boson.ai/models/higgs-tts/voices.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "mp3",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Chat-native multilingual TTS with streaming, zero-shot voice cloning, inline emotion/style/prosody tags and token timestamps.",
+    "first_seen": "2026-11-18",
+    "id": "higgs-tts-3",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "ar",
+      "as",
+      "ast",
+      "az",
+      "ba",
+      "be",
+      "bg",
+      "bn",
+      "bs",
+      "ca",
+      "ceb",
+      "ckb",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "el",
+      "en",
+      "eo",
+      "es",
+      "et",
+      "eu",
+      "fa",
+      "fi",
+      "fr",
+      "ga",
+      "gl",
+      "gu",
+      "ha",
+      "he",
+      "hi",
+      "hr",
+      "ht",
+      "hu",
+      "hy",
+      "id",
+      "is",
+      "it",
+      "jv",
+      "ka",
+      "kab",
+      "kam",
+      "kea",
+      "kk",
+      "kn",
+      "ko",
+      "ky",
+      "la",
+      "lb",
+      "lg",
+      "ln",
+      "lt",
+      "luo",
+      "lv",
+      "mhr",
+      "mi",
+      "mk",
+      "ml",
+      "mn",
+      "mr",
+      "ms",
+      "mt",
+      "ne",
+      "nl",
+      "no",
+      "nso",
+      "ny",
+      "oc",
+      "om",
+      "pa",
+      "pl",
+      "ps",
+      "pt",
+      "ro",
+      "ru",
+      "rw",
+      "sd",
+      "sk",
+      "sl",
+      "sn",
+      "so",
+      "sq",
+      "sr",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "tg",
+      "tl",
+      "tr",
+      "ug",
+      "uk",
+      "umb",
+      "ur",
+      "uz",
+      "vi",
+      "xh",
+      "zh",
+      "zu"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "languages_note": "Docs list 102 languages by name (85 with WER/CER < 5, 17 between 5 and 10); codes taken from the Hugging Face model card (100 codes).",
+      "max_text_chars_streaming": 50000,
+      "open_weights_note": "Licence permits research/non-commercial use plus a creator-content grant with attribution; hosting/API/product use needs a separate commercial licence.",
+      "sample_rate_note": "24 kHz documented for streamed raw PCM output.",
+      "sfx_tags": true,
+      "text_normalization": true,
+      "timestamps": true
+    },
+    "name": "Higgs TTS 3",
+    "open_weights": {
+      "commercial_use": false,
+      "license": "Boson Higgs TTS 3 Research and Non-Commercial License",
+      "url": "https://huggingface.co/bosonai/higgs-tts-3-4b"
+    },
+    "pricing": {
+      "as_of": "2026-11-18",
+      "notes": "$0.015 per 1K characters of text input; generated audio free. Counted before normalization; control tags don't count. Prepaid credits; $10 free trial credit.",
+      "price_usd": 1.5e-05,
+      "source_url": "https://docs.boson.ai/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.boson.ai/llms.txt",
+        "https://docs.boson.ai/models/higgs-tts/overview.md",
+        "https://docs.boson.ai/models/higgs-tts/languages.md",
+        "https://docs.boson.ai/api-reference/audio/create-a-speech.md",
+        "https://docs.boson.ai/pricing.md",
+        "https://docs.boson.ai/models/higgs-realtime/overview.md",
+        "https://docs.boson.ai/models/higgs-realtime/guides/connections-and-sessions.md",
+        "https://docs.boson.ai/models/higgs-realtime/guides/audio-and-voices.md",
+        "https://docs.boson.ai/models/higgs-tts/voices.md"
+      ]
+    },
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
