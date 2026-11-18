@@ -1,0 +1,1542 @@
+[
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "achu",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Achu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ammu",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Ammu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "anirban",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Anirban",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ann",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Ann",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "arasi",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Arasi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ayesha",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Ayesha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "basava",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Basava",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "basheer",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Basheer",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "bhavana",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Bhavana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "bijay",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Bijay",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "bimla",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Bimla",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "champa",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Champa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "chhotu",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Chhotu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "elango",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Elango",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "faizal",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Faizal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "falguni",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Falguni",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "flavia",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Flavia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "gurdeep",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Gurdeep",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "harleen",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Harleen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "imran",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Imran",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ipsita",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Ipsita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "jayita",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Jayita",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "jessy",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Jessy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "kannan",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Kannan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "kayal",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Kayal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "kishan",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Kishan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "mahadevi",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Mahadevi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "malar",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Malar",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "maria",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Maria",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "merin",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Merin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "mukta",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Mukta",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "murugan",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Murugan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "nasrin",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Nasrin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "nayeema",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Nayeema",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "netra",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Netra",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "nila",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Nila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "ponni",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Ponni",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "porkavi",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Porkavi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "rukhiya",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Rukhiya",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "rukhsana",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Rukhsana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "savio",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Savio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "selvi",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Selvi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "shabnam",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Shabnam",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "sharon",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Sharon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "shikha",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Shikha",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "shivanna",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Shivanna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "srinu",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Srinu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "sulaiman",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Sulaiman",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "tanaji",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Tanaji",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "temjen",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Temjen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "vanaja",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Vanaja",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "vetri",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Vetri",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "xavier",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Xavier",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "yasmin",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Yasmin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "id": "zoya",
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "note": "Same voice id speaks all ten synthesis languages; the request default is default_female."
+    },
+    "name": "Zoya",
+    "updated_at": "2026-11-18"
+  }
+]

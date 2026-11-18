@@ -1,0 +1,589 @@
+[
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Bengali speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "bn-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": false,
+      "language_code": "bn",
+      "language_note": "Bilingual with English (code-switching)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Bengali (bn-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "English speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "en-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": false,
+      "language_code": "en",
+      "language_note": "English-only (dedicated model)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT English (en-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Gujarati speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "gu-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "gu"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": true,
+      "language_code": "gu",
+      "language_note": "Monolingual",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Gujarati (gu-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Hindi speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "hi-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": true,
+      "language_code": "hi",
+      "language_note": "Bilingual with English (code-switching)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Hindi (hi-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Hinglish speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "hi-en-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "compatibility": "Retained for compatibility",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": false,
+      "language_code": "hi-en",
+      "language_note": "Hinglish; bilingual with English, retained for compatibility",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Hinglish (hi-en-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Kannada speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "kn-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "kn",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": true,
+      "language_code": "kn",
+      "language_note": "Bilingual with English (code-switching)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Kannada (kn-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Malayalam speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "ml-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ml",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": true,
+      "language_code": "ml",
+      "language_note": "Bilingual with English (code-switching)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Malayalam (ml-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Marathi speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "mr-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "mr",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": true,
+      "language_code": "mr",
+      "language_note": "Bilingual with English (code-switching)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Marathi (mr-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Odia speech-to-text model tuned for general telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "or-general-v3-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "or"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "general",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": false,
+      "language_code": "or",
+      "language_note": "Monolingual",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Odia (or-general-v3-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Tamil speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "ta-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ta",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": false,
+      "language_code": "ta",
+      "language_note": "Bilingual with English (code-switching)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Tamil (ta-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "mp3",
+      "ogg",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
+    "description": "Telugu speech-to-text model tuned for banking and financial-services telephony audio, trained at 8 kHz.",
+    "first_seen": "2026-11-18",
+    "id": "te-banking-v2-8khz",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "te",
+      "en"
+    ],
+    "meta": {
+      "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "domain": "banking",
+      "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
+      "itn_beta": false,
+      "language_code": "te",
+      "language_note": "Bilingual with English (code-switching)",
+      "pricing_note": "Metered on audio duration against a prepaid INR credit balance; the per-minute rate is shown only inside the logged-in platform.",
+      "training_sample_rate_hz": 8000
+    },
+    "name": "Bodhi STT Telugu (te-banking-v2-8khz)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Text-to-speech for ten Indian languages in which every voice id speaks every language, returned as raw PCM over REST or a streaming WebSocket.",
+    "first_seen": "2026-11-18",
+    "id": "bodhi-tts",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "bn",
+      "en",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "ta",
+      "te"
+    ],
+    "meta": {
+      "concurrency": "5 concurrent requests per account by default",
+      "default_output_format": "24000:float32",
+      "encodings": [
+        "pcm16",
+        "float32"
+      ],
+      "model_id_note": "No model parameter; each language maps to a single backend. 'bodhi-tts' is the product name.",
+      "reported_price": "₹12 per 10,000 characters per launch press coverage (Sept 2026); not on a Navana-published page.",
+      "romanized_input": "Indian languages typed in Latin letters are supported (romanized text).",
+      "speed_range": [
+        0.25,
+        4.0
+      ],
+      "text_length_note": "API reference says up to 10,000 characters per request; the non-streaming guide says there is no maximum."
+    },
+    "name": "Bodhi TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.navana.ai/speech-to-text/models/index.md",
+        "https://docs.navana.ai/speech-to-text/advanced-features/index.md",
+        "https://docs.navana.ai/concepts/audio-formats/index.md",
+        "https://docs.navana.ai/text-to-speech/index.md",
+        "https://docs.navana.ai/text-to-speech/non-streaming/index.md",
+        "https://docs.navana.ai/text-to-speech/voices/index.md"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]
