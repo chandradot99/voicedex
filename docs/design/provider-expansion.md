@@ -153,6 +153,8 @@ Retired orgs with live weights: coqui (XTTS-v2, CPML), resemble (Chatterbox), hu
 
 ## 5. Watchlist (re-check next quarter; not enough evidence yet)
 
+Last discovery pass: 2026-11-18 (`/catalog-refresh discover` updates this line).
+
 Viettel AI (API docs browser-only, prices on request), Lahajati (docs 404), Ramsa (AED), Narakeet (are the voices its own?), Argmax
 WhisperKit, Fireworks streaming ASR, Soniqo, Sanas, Krisp translation, T-Bank VoiceKit, Muxlisa (UZ), AyaSpeech (GH),
 NKENNEAi (Swahili), Devnagri, ConvoZen, GigaTech (BD), DeepBrain AI, Speechtext.ai, Lingvanex, NeuralSpace.
