@@ -1,0 +1,132 @@
+[
+  {
+    "audio_formats": [
+      "aac",
+      "ac3",
+      "aiff",
+      "alaw",
+      "asf",
+      "flac",
+      "mka",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm",
+      "wma"
+    ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "ssml"
+    ],
+    "description": "Acapela Cloud REST text-to-speech that streams audio chunks or returns a generated file for a chosen Acapela voice, with optional word, viseme and mark events.",
+    "first_seen": "2026-11-18",
+    "id": "acapela-cloud",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "ar",
+      "ar-SA",
+      "ca-ES",
+      "cs-CZ",
+      "da-DK",
+      "de-DE",
+      "el-GR",
+      "en",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-IN",
+      "en-US",
+      "es-ES",
+      "es-US",
+      "fi-FI",
+      "fo-FO",
+      "fr-BE",
+      "fr-CA",
+      "fr-FR",
+      "hi-IN",
+      "it-IT",
+      "ja-JP",
+      "ko-KR",
+      "nl-BE",
+      "nl-NL",
+      "no-NO",
+      "pl-PL",
+      "pt-BR",
+      "pt-PT",
+      "ru-RU",
+      "sv-FI",
+      "sv-SE",
+      "tr-TR",
+      "zh-CN"
+    ],
+    "meta": {
+      "auth": "Token from POST /api/login/ (email + password).",
+      "default_sample_rate_hz": 22050,
+      "dictionaries": "Custom .dic pronunciation dictionaries uploaded to account storage and applied per request.",
+      "encodings": [
+        "mp3",
+        "ogg",
+        "wav",
+        "flac",
+        "ac3",
+        "asf",
+        "wma",
+        "opus",
+        "aac",
+        "aiff",
+        "webm",
+        "mka",
+        "s16le",
+        "alaw",
+        "mulaw",
+        "wav_mulaw",
+        "wav_alaw"
+      ],
+      "endpoint": "GET/POST https://www.acapela-cloud.com/api/command/",
+      "events": "Word positions (wordpos), mouth/viseme positions (mouthpos) and mark positions (markpos) as JSON.",
+      "model_id_note": "No model parameter: /api/command/ takes a voice name (e.g. <Speaker>22k_HQ). 'acapela-cloud' is the service name.",
+      "neural_voices_note": "The product page says neural voices are available in real time on request ('contact us'); the public voice list returns only HQ voices.",
+      "opus_note": "Opus only supports 48000 Hz.",
+      "output_modes": "stream (default; audio chunks), file (full audio, or zip with events), events (JSON only)",
+      "shaping_range": [
+        50,
+        150
+      ],
+      "speed_range": [
+        30,
+        300
+      ],
+      "text_limits": "GET requests limited to 2,048 characters; stream output limited to 3,000 characters.",
+      "voice_tags": "Proprietary inline tags (pause, phonetic \\prx, speed, volume, shaping, voice switch, audio mixing) plus SSML."
+    },
+    "name": "Acapela Cloud TTS",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://www.acapela-cloud.com/docs_api/",
+        "https://www.acapela-cloud.com/docs_tags/",
+        "https://www.acapela-cloud.com/docs_product/"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      11025,
+      12000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

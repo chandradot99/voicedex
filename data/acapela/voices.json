@@ -1,0 +1,2967 @@
+[
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alice-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Alice",
+      "voice_type": "standard-classic"
+    },
+    "name": "Alice",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alice22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Alice",
+      "voice_type": "standard-classic"
+    },
+    "name": "Alice",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Alyona22k_HQ",
+    "languages": [
+      "ru-RU"
+    ],
+    "meta": {
+      "acapela_language": "Russian",
+      "locale": "rus-rus",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Alyona",
+      "voice_type": "standard-classic"
+    },
+    "name": "Alyona",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anais-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Anais",
+      "voice_type": "standard-classic"
+    },
+    "name": "Anais",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Anais22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Anais",
+      "voice_type": "standard-classic"
+    },
+    "name": "Anais",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Andreas22k_HQ",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "acapela_language": "German",
+      "locale": "deu-deu",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Andreas",
+      "voice_type": "standard-classic"
+    },
+    "name": "Andreas",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ania22k_HQ",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "acapela_language": "Polish",
+      "locale": "pol-pol",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Ania",
+      "voice_type": "standard-classic"
+    },
+    "name": "Ania",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Anthony22k_HQ",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "acapela_language": "CanadianFrench",
+      "locale": "fra-can",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Anthony",
+      "voice_type": "standard-classic"
+    },
+    "name": "Anthony",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Antoine-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Antoine22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineFromAfar-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "FromAfar",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (FromAfar)",
+    "tags": [
+      "fromafar"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineFromAfar22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "FromAfar",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (FromAfar)",
+    "tags": [
+      "fromafar"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineHappy-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineHappy22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineSad-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineSad22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineUpClose-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "UpClose",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (UpClose)",
+    "tags": [
+      "upclose"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "AntoineUpClose22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "UpClose",
+      "quality": "Classic",
+      "speaker": "Antoine",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antoine (UpClose)",
+    "tags": [
+      "upclose"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Antonio22k_HQ",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "acapela_language": "Spanish",
+      "locale": "spa-esp",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Antonio",
+      "voice_type": "standard-classic"
+    },
+    "name": "Antonio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Bente22k_HQ",
+    "languages": [
+      "no-NO"
+    ],
+    "meta": {
+      "acapela_language": "Norwegian",
+      "locale": "nor-nor",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Bente",
+      "voice_type": "standard-classic"
+    },
+    "name": "Bente",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Bruno-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Bruno",
+      "voice_type": "standard-classic"
+    },
+    "name": "Bruno",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Bruno22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Bruno",
+      "voice_type": "standard-classic"
+    },
+    "name": "Bruno",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Callum22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "ScottishEnglish",
+      "locale": "eng-sct",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Callum",
+      "voice_type": "standard-classic"
+    },
+    "name": "Callum",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Celia22k_HQ",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "acapela_language": "Portuguese",
+      "locale": "por-prt",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Celia",
+      "voice_type": "standard-classic"
+    },
+    "name": "Celia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Chiara22k_HQ",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "acapela_language": "Italian",
+      "locale": "ita-ita",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Chiara",
+      "voice_type": "standard-classic"
+    },
+    "name": "Chiara",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Claire-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Claire",
+      "voice_type": "standard-classic"
+    },
+    "name": "Claire",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Claire22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Claire",
+      "voice_type": "standard-classic"
+    },
+    "name": "Claire",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Claudia22k_HQ",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "acapela_language": "German",
+      "locale": "deu-deu",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Claudia",
+      "voice_type": "standard-classic"
+    },
+    "name": "Claudia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "ClaudiaSmile22k_HQ",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "acapela_language": "German",
+      "locale": "deu-deu",
+      "mood": "Smile",
+      "quality": "Classic",
+      "speaker": "Claudia",
+      "voice_type": "standard-classic"
+    },
+    "name": "Claudia (Smile)",
+    "tags": [
+      "smile"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Daan22k_HQ",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "acapela_language": "Dutch",
+      "locale": "nld-nld",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Daan",
+      "voice_type": "standard-classic"
+    },
+    "name": "Daan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Darius22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Darius",
+      "voice_type": "standard-classic"
+    },
+    "name": "Darius",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Deepa22k_HQ",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "acapela_language": "IndianEnglish",
+      "locale": "eng-ind",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Deepa",
+      "voice_type": "standard-classic"
+    },
+    "name": "Deepa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Dimitris22k_HQ",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "acapela_language": "Greek",
+      "locale": "ell-grc",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Dimitris",
+      "voice_type": "standard-classic"
+    },
+    "name": "Dimitris",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "DimitrisHappy22k_HQ",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "acapela_language": "Greek",
+      "locale": "ell-grc",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Dimitris",
+      "voice_type": "standard-classic"
+    },
+    "name": "Dimitris (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "DimitrisSad22k_HQ",
+    "languages": [
+      "el-GR"
+    ],
+    "meta": {
+      "acapela_language": "Greek",
+      "locale": "ell-grc",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Dimitris",
+      "voice_type": "standard-classic"
+    },
+    "name": "Dimitris (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Elin22k_HQ",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "acapela_language": "Swedish",
+      "locale": "swe-swe",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Elin",
+      "voice_type": "standard-classic"
+    },
+    "name": "Elin",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Eliska22k_HQ",
+    "languages": [
+      "cs-CZ"
+    ],
+    "meta": {
+      "acapela_language": "Czech",
+      "locale": "ces-cze",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Eliska",
+      "voice_type": "standard-classic"
+    },
+    "name": "Eliska",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Emil22k_HQ",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "acapela_language": "Swedish",
+      "locale": "swe-swe",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Emil",
+      "voice_type": "standard-classic"
+    },
+    "name": "Emil",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Emma22k_HQ",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "acapela_language": "Swedish",
+      "locale": "swe-swe",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Emma",
+      "voice_type": "standard-classic"
+    },
+    "name": "Emma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Erik22k_HQ",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "acapela_language": "Swedish",
+      "locale": "swe-swe",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Erik",
+      "voice_type": "standard-classic"
+    },
+    "name": "Erik",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Fabiana22k_HQ",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "acapela_language": "Italian",
+      "locale": "ita-ita",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Fabiana",
+      "voice_type": "standard-classic"
+    },
+    "name": "Fabiana",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Femke22k_HQ",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "acapela_language": "Dutch",
+      "locale": "nld-nld",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Femke",
+      "voice_type": "standard-classic"
+    },
+    "name": "Femke",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Graham22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "British",
+      "locale": "eng-gbr",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Graham",
+      "voice_type": "standard-classic"
+    },
+    "name": "Graham",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Hanna22k_HQ",
+    "languages": [
+      "fo-FO"
+    ],
+    "meta": {
+      "acapela_language": "Faroese",
+      "locale": "fao-fro",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Hanna",
+      "voice_type": "standard-classic"
+    },
+    "name": "Hanna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Hanus22k_HQ",
+    "languages": [
+      "fo-FO"
+    ],
+    "meta": {
+      "acapela_language": "Faroese",
+      "locale": "fao-fro",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Hanus",
+      "voice_type": "standard-classic"
+    },
+    "name": "Hanus",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Ines22k_HQ",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "acapela_language": "Spanish",
+      "locale": "spa-esp",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Ines",
+      "voice_type": "standard-classic"
+    },
+    "name": "Ines",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ipek22k_HQ",
+    "languages": [
+      "tr-TR"
+    ],
+    "meta": {
+      "acapela_language": "Turkish",
+      "locale": "tur-tur",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Ipek",
+      "voice_type": "standard-classic"
+    },
+    "name": "Ipek",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Isabel22k_HQ",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "acapela_language": "Portuguese",
+      "locale": "por-prt",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Isabel",
+      "voice_type": "standard-classic"
+    },
+    "name": "Isabel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Jasmijn22k_HQ",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "acapela_language": "Dutch",
+      "locale": "nld-nld",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Jasmijn",
+      "voice_type": "standard-classic"
+    },
+    "name": "Jasmijn",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Jeroen22k_HQ",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianDutch",
+      "locale": "nld-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Jeroen",
+      "voice_type": "standard-classic"
+    },
+    "name": "Jeroen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "JeroenHappy22k_HQ",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianDutch",
+      "locale": "nld-bel",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Jeroen",
+      "voice_type": "standard-classic"
+    },
+    "name": "Jeroen (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "JeroenSad22k_HQ",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianDutch",
+      "locale": "nld-bel",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Jeroen",
+      "voice_type": "standard-classic"
+    },
+    "name": "Jeroen (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Julia22k_HQ",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "acapela_language": "German",
+      "locale": "deu-deu",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Julia",
+      "voice_type": "standard-classic"
+    },
+    "name": "Julia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Julie-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Julie",
+      "voice_type": "standard-classic"
+    },
+    "name": "Julie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Julie22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Julie",
+      "voice_type": "standard-classic"
+    },
+    "name": "Julie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "gothenburg",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Kal22k_HQ",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "acapela_language": "GothenburgSwedish",
+      "locale": "sws-got",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Kal",
+      "voice_type": "standard-classic"
+    },
+    "name": "Kal",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Karen22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Karen",
+      "voice_type": "standard-classic"
+    },
+    "name": "Karen",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Kari22k_HQ",
+    "languages": [
+      "no-NO"
+    ],
+    "meta": {
+      "acapela_language": "Norwegian",
+      "locale": "nor-nor",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Kari",
+      "voice_type": "standard-classic"
+    },
+    "name": "Kari",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Klaus22k_HQ",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "acapela_language": "German",
+      "locale": "deu-deu",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Klaus",
+      "voice_type": "standard-classic"
+    },
+    "name": "Klaus",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Laia22k_HQ",
+    "languages": [
+      "ca-ES"
+    ],
+    "meta": {
+      "acapela_language": "Catalan",
+      "locale": "cat-esp",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Laia",
+      "voice_type": "standard-classic"
+    },
+    "name": "Laia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Laura22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Laura",
+      "voice_type": "standard-classic"
+    },
+    "name": "Laura",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Leila22k_HQ",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "acapela_language": "Arabic",
+      "locale": "ara-sau",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Leila",
+      "voice_type": "standard-classic"
+    },
+    "name": "Leila",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lisa22k_HQ",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "acapela_language": "AustralianEnglish",
+      "locale": "eng-aus",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Lisa",
+      "voice_type": "standard-classic"
+    },
+    "name": "Lisa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Louise22k_HQ",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "acapela_language": "CanadianFrench",
+      "locale": "fra-can",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Louise",
+      "voice_type": "standard-classic"
+    },
+    "name": "Louise",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lucy22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "British",
+      "locale": "eng-gbr",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Lucy",
+      "voice_type": "standard-classic"
+    },
+    "name": "Lucy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Lulu22k_HQ",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "acapela_language": "MandarinChinese",
+      "locale": "zho-chn",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Lulu",
+      "voice_type": "standard-classic"
+    },
+    "name": "Lulu",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Manon-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Manon",
+      "voice_type": "standard-classic"
+    },
+    "name": "Manon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Manon22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Manon",
+      "voice_type": "standard-classic"
+    },
+    "name": "Manon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Marcia22k_HQ",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "acapela_language": "Brazilian",
+      "locale": "por-bra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Marcia",
+      "voice_type": "standard-classic"
+    },
+    "name": "Marcia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Margaux-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Margaux",
+      "voice_type": "standard-classic"
+    },
+    "name": "Margaux",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Margaux22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Margaux",
+      "voice_type": "standard-classic"
+    },
+    "name": "Margaux",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "MargauxHappy-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Margaux",
+      "voice_type": "standard-classic"
+    },
+    "name": "Margaux (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "MargauxHappy22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Margaux",
+      "voice_type": "standard-classic"
+    },
+    "name": "Margaux (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "MargauxSad-BE22k_HQ",
+    "languages": [
+      "fr-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianFrench",
+      "locale": "fra-bel",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Margaux",
+      "voice_type": "standard-classic"
+    },
+    "name": "Margaux (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "MargauxSad22k_HQ",
+    "languages": [
+      "fr-FR"
+    ],
+    "meta": {
+      "acapela_language": "French",
+      "locale": "fra-fra",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Margaux",
+      "voice_type": "standard-classic"
+    },
+    "name": "Margaux (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Maria22k_HQ",
+    "languages": [
+      "es-ES"
+    ],
+    "meta": {
+      "acapela_language": "Spanish",
+      "locale": "spa-esp",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Maria",
+      "voice_type": "standard-classic"
+    },
+    "name": "Maria",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Max22k_HQ",
+    "languages": [
+      "nl-NL"
+    ],
+    "meta": {
+      "acapela_language": "Dutch",
+      "locale": "nld-nld",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Max",
+      "voice_type": "standard-classic"
+    },
+    "name": "Max",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Mehdi22k_HQ",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "acapela_language": "Arabic",
+      "locale": "ara-sau",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Mehdi",
+      "voice_type": "standard-classic"
+    },
+    "name": "Mehdi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Melanie22k_HQ",
+    "languages": [
+      "fr-CA"
+    ],
+    "meta": {
+      "acapela_language": "CanadianFrench",
+      "locale": "fra-can",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Melanie",
+      "voice_type": "standard-classic"
+    },
+    "name": "Melanie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "canadian",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Melany22k_HQ",
+    "languages": [
+      "en-CA"
+    ],
+    "meta": {
+      "acapela_language": "CanadianEnglish",
+      "locale": "eng-can",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Melany",
+      "voice_type": "standard-classic"
+    },
+    "name": "Melany",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mette22k_HQ",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "acapela_language": "Danish",
+      "locale": "dan-dnk",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Mette",
+      "voice_type": "standard-classic"
+    },
+    "name": "Mette",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scanian",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Mia22k_HQ",
+    "languages": [
+      "sv-SE"
+    ],
+    "meta": {
+      "acapela_language": "Scanian",
+      "locale": "sws-sca",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Mia",
+      "voice_type": "standard-classic"
+    },
+    "name": "Mia",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Micah22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Micah",
+      "voice_type": "standard-classic"
+    },
+    "name": "Micah",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Minji22k_HQ",
+    "languages": [
+      "ko-KR"
+    ],
+    "meta": {
+      "acapela_language": "Korean",
+      "locale": "kor-kor",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Minji",
+      "voice_type": "standard-classic"
+    },
+    "name": "Minji",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nizar22k_HQ",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "acapela_language": "Arabic",
+      "locale": "ara-sau",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Nizar",
+      "voice_type": "standard-classic"
+    },
+    "name": "Nizar",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Nizareng22k_HQ",
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "meta": {
+      "acapela_language": "ArabicEnglish",
+      "locale": "eng-ara",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Nizareng",
+      "voice_type": "standard-classic"
+    },
+    "name": "Nizareng",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Olav22k_HQ",
+    "languages": [
+      "no-NO"
+    ],
+    "meta": {
+      "acapela_language": "Norwegian",
+      "locale": "nor-nor",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Olav",
+      "voice_type": "standard-classic"
+    },
+    "name": "Olav",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Peter22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "British",
+      "locale": "eng-gbr",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Peter",
+      "voice_type": "standard-classic"
+    },
+    "name": "Peter",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "PeterHappy22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "British",
+      "locale": "eng-gbr",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Peter",
+      "voice_type": "standard-classic"
+    },
+    "name": "Peter (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "PeterSad22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "British",
+      "locale": "eng-gbr",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Peter",
+      "voice_type": "standard-classic"
+    },
+    "name": "Peter (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Piotr22k_HQ",
+    "languages": [
+      "pl-PL"
+    ],
+    "meta": {
+      "acapela_language": "Polish",
+      "locale": "pol-pol",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Piotr",
+      "voice_type": "standard-classic"
+    },
+    "name": "Piotr",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "QueenElizabeth22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "British",
+      "locale": "eng-gbr",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "QueenElizabeth",
+      "voice_type": "standard-classic"
+    },
+    "name": "QueenElizabeth",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "british",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rachel22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "British",
+      "locale": "eng-gbr",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Rachel",
+      "voice_type": "standard-classic"
+    },
+    "name": "Rachel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rasmus22k_HQ",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "acapela_language": "Danish",
+      "locale": "dan-dnk",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Rasmus",
+      "voice_type": "standard-classic"
+    },
+    "name": "Rasmus",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "scottish",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rhona22k_HQ",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "acapela_language": "ScottishEnglish",
+      "locale": "eng-sct",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Rhona",
+      "voice_type": "standard-classic"
+    },
+    "name": "Rhona",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rikke22k_HQ",
+    "languages": [
+      "da-DK"
+    ],
+    "meta": {
+      "acapela_language": "Danish",
+      "locale": "dan-dnk",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Rikke",
+      "voice_type": "standard-classic"
+    },
+    "name": "Rikke",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rod22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Rod",
+      "voice_type": "standard-classic"
+    },
+    "name": "Rod",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Rodrigo22k_HQ",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "acapela_language": "USSpanish",
+      "locale": "spa-mex",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Rodrigo",
+      "voice_type": "standard-classic"
+    },
+    "name": "Rodrigo",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Rosa22k_HQ",
+    "languages": [
+      "es-US"
+    ],
+    "meta": {
+      "acapela_language": "USSpanish",
+      "locale": "spa-mex",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Rosa",
+      "voice_type": "standard-classic"
+    },
+    "name": "Rosa",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Ryan22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Ryan",
+      "voice_type": "standard-classic"
+    },
+    "name": "Ryan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sakura22k_HQ",
+    "languages": [
+      "ja-JP"
+    ],
+    "meta": {
+      "acapela_language": "Japanese",
+      "locale": "jpn-jpn",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Sakura",
+      "voice_type": "standard-classic"
+    },
+    "name": "Sakura",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Salma22k_HQ",
+    "languages": [
+      "ar-SA"
+    ],
+    "meta": {
+      "acapela_language": "Arabic",
+      "locale": "ara-sau",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Salma",
+      "voice_type": "standard-classic"
+    },
+    "name": "Salma",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Samuel22k_HQ",
+    "languages": [
+      "sv-FI"
+    ],
+    "meta": {
+      "acapela_language": "FinlandSwedish",
+      "locale": "swe-fin",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Samuel",
+      "voice_type": "standard-classic"
+    },
+    "name": "Samuel",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sanna22k_HQ",
+    "languages": [
+      "fi-FI"
+    ],
+    "meta": {
+      "acapela_language": "Finnish",
+      "locale": "fin-fin",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Sanna",
+      "voice_type": "standard-classic"
+    },
+    "name": "Sanna",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sarah22k_HQ",
+    "languages": [
+      "de-DE"
+    ],
+    "meta": {
+      "acapela_language": "German",
+      "locale": "deu-deu",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Sarah",
+      "voice_type": "standard-classic"
+    },
+    "name": "Sarah",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Saul22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Saul",
+      "voice_type": "standard-classic"
+    },
+    "name": "Saul",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Sergio22k_HQ",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "acapela_language": "Brazilian",
+      "locale": "por-bra",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Sergio",
+      "voice_type": "standard-classic"
+    },
+    "name": "Sergio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sharon22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Sharon",
+      "voice_type": "standard-classic"
+    },
+    "name": "Sharon",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Sofie22k_HQ",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianDutch",
+      "locale": "nld-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Sofie",
+      "voice_type": "standard-classic"
+    },
+    "name": "Sofie",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tamira22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Tamira",
+      "voice_type": "standard-classic"
+    },
+    "name": "Tamira",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Tracy22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Tracy",
+      "voice_type": "standard-classic"
+    },
+    "name": "Tracy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "australian",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Tyler22k_HQ",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "acapela_language": "AustralianEnglish",
+      "locale": "eng-aus",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Tyler",
+      "voice_type": "standard-classic"
+    },
+    "name": "Tyler",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vidhi22k_HQ",
+    "languages": [
+      "hi-IN"
+    ],
+    "meta": {
+      "acapela_language": "Hindi",
+      "locale": "hin-ind",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Vidhi",
+      "voice_type": "standard-classic"
+    },
+    "name": "Vidhi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "indian",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vidhienglish22k_HQ",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "acapela_language": "IndianEnglish",
+      "locale": "eng-ind",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Vidhi",
+      "voice_type": "standard-classic"
+    },
+    "name": "Vidhi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Vittorio22k_HQ",
+    "languages": [
+      "it-IT"
+    ],
+    "meta": {
+      "acapela_language": "Italian",
+      "locale": "ita-ita",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Vittorio",
+      "voice_type": "standard-classic"
+    },
+    "name": "Vittorio",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "Will22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Will",
+      "voice_type": "standard-classic"
+    },
+    "name": "Will",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WillBadGuy22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "BadGuy",
+      "quality": "Classic",
+      "speaker": "Will",
+      "voice_type": "standard-classic"
+    },
+    "name": "Will (BadGuy)",
+    "tags": [
+      "badguy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WillFromAfar22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "FromAfar",
+      "quality": "Classic",
+      "speaker": "Will",
+      "voice_type": "standard-classic"
+    },
+    "name": "Will (FromAfar)",
+    "tags": [
+      "fromafar"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WillHappy22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Happy",
+      "quality": "Classic",
+      "speaker": "Will",
+      "voice_type": "standard-classic"
+    },
+    "name": "Will (Happy)",
+    "tags": [
+      "happy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WillLittleCreature22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "LittleCreature",
+      "quality": "Classic",
+      "speaker": "Will",
+      "voice_type": "standard-classic"
+    },
+    "name": "Will (LittleCreature)",
+    "tags": [
+      "littlecreature"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WillOldMan22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "OldMan",
+      "quality": "Classic",
+      "speaker": "WillOldMan",
+      "voice_type": "standard-classic"
+    },
+    "name": "WillOldMan",
+    "tags": [
+      "oldman"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WillSad22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "Sad",
+      "quality": "Classic",
+      "speaker": "Will",
+      "voice_type": "standard-classic"
+    },
+    "name": "Will (Sad)",
+    "tags": [
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "WillUpClose22k_HQ",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "acapela_language": "USEnglish",
+      "locale": "eng-usa",
+      "mood": "UpClose",
+      "quality": "Classic",
+      "speaker": "Will",
+      "voice_type": "standard-classic"
+    },
+    "name": "Will (UpClose)",
+    "tags": [
+      "upclose"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "*"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "Zoe22k_HQ",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "acapela_language": "BelgianDutch",
+      "locale": "nld-bel",
+      "mood": "Neutral",
+      "quality": "Classic",
+      "speaker": "Zoe",
+      "voice_type": "standard-classic"
+    },
+    "name": "Zoe",
+    "updated_at": "2026-11-18"
+  }
+]

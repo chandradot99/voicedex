@@ -1,0 +1,30 @@
+{
+  "access": "self_serve",
+  "api_urls": [
+    "https://www.acapela-cloud.com/api/voice/"
+  ],
+  "description": "Acapela Group is a text-to-speech company with its registered office in Mons, Belgium, formed in 2003 from the merger of Babel Technologies (BE), Elan Speech (FR) and Infovox (SE), and acquired by Tobii Dynavox in 2022. It sells the Acapela Cloud TTS API and audio-production service, TTS engines for Windows, Linux, Android, iOS and embedded devices, and custom and personal (voice banking) voices, with 100+ voices in 30+ languages including children's voices.",
+  "docs_urls": [
+    "https://www.acapela-cloud.com/docs_api/",
+    "https://www.acapela-cloud.com/docs_tags/",
+    "https://www.acapela-cloud.com/docs_product/"
+  ],
+  "headquarters": "BE",
+  "id": "acapela",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://www.acapela-cloud.com/docs_api/",
+    "docs": "https://www.acapela-cloud.com/docs_product/"
+  },
+  "name": "Acapela Group",
+  "source": "mixed",
+  "type": "tts",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "api",
+    "urls": [
+      "https://www.acapela-cloud.com/api/voice/"
+    ]
+  },
+  "website": "https://www.acapela-group.com"
+}
