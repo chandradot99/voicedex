@@ -1,0 +1,113 @@
+[
+  {
+    "description": "FPT.AI's speech recognition API: upload an audio file and get back the recognised sentences.",
+    "first_seen": "2026-11-18",
+    "id": "general",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "endpoint": "POST https://api.fpt.ai/hmi/asr/general",
+      "free_tier": "Trial: 60 minutes per year.",
+      "language_note": "The API reference does not list languages; it notes the Vietnamese text in the JSON response is UTF-8 encoded, and FPT.AI Speech is a Vietnamese product.",
+      "model_id_note": "No model parameter; the id is the last segment of the endpoint path.",
+      "pricing_note": "Business packs include standard technical support; over 10,000 minutes is contact-sales. No per-minute rate is published.",
+      "pricing_packs_vnd": [
+        {
+          "minutes": 2000,
+          "price_vnd": 1400000
+        },
+        {
+          "minutes": 5000,
+          "price_vnd": 3100000
+        },
+        {
+          "minutes": 10000,
+          "price_vnd": 5400000
+        }
+      ],
+      "pricing_source": "https://docs.fpt.ai/docs/en/speech/documentation/stt-pricing/"
+    },
+    "name": "FPT.AI Speech to Text (general)",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.fpt.ai/docs/en/speech/api/speech-to-text/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/speech-to-text/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/stt-pricing/",
+        "https://docs.fpt.ai/docs/en/speech/api/text-to-speech/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/text-to-speech/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/tts-pricing/"
+      ]
+    },
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "wav"
+    ],
+    "description": "FPT.AI's Vietnamese text-to-speech API (version 5) with northern, central and southern voices; audio is returned asynchronously as a link.",
+    "first_seen": "2026-11-18",
+    "id": "v5",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "vi"
+    ],
+    "max_text_chars": 5000,
+    "meta": {
+      "delivery": "Async: the response holds a link to the audio (ready in about 5 s to 2 min); optional callback_url header.",
+      "endpoint": "POST https://api.fpt.ai/hmi/tts/v5",
+      "free_tier": "100,000 characters per month (version 5 voices), low conversion speed, daily request limit, queued requests.",
+      "min_text_chars": 3,
+      "model_id_note": "No model parameter; the id is the API version in the endpoint path.",
+      "pricing_note": "Premium packs add their characters on top of the free tier; Business Premium is contact-sales. No per-character rate is published.",
+      "pricing_packs_vnd": [
+        {
+          "characters": 1500000,
+          "price_vnd": 500000
+        },
+        {
+          "characters": 4000000,
+          "price_vnd": 1000000
+        },
+        {
+          "characters": 10000000,
+          "price_vnd": 2000000
+        },
+        {
+          "characters": 27000000,
+          "price_vnd": 5000000
+        }
+      ],
+      "pricing_source": "https://docs.fpt.ai/docs/en/speech/documentation/tts-pricing/",
+      "speed_range": "-3 (slowest) to +3 (fastest), default 0"
+    },
+    "name": "FPT.AI Text to Speech v5",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.fpt.ai/docs/en/speech/api/speech-to-text/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/speech-to-text/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/stt-pricing/",
+        "https://docs.fpt.ai/docs/en/speech/api/text-to-speech/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/text-to-speech/",
+        "https://docs.fpt.ai/docs/en/speech/documentation/tts-pricing/"
+      ]
+    },
+    "streaming": false,
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

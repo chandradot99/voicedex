@@ -1,0 +1,36 @@
+{
+  "access": "self_serve",
+  "description": "FPT.AI is the AI platform of FPT Smart Cloud, part of FPT Corporation, headquartered in Hanoi, Vietnam (FPT.AI established in 2017). It sells Vietnamese text-to-speech (v5 voices with northern, central and southern accents) and speech-to-text APIs, alongside conversational AI, document reading and voice agents.",
+  "docs_urls": [
+    "https://docs.fpt.ai/docs/en/speech/api/speech-to-text/",
+    "https://docs.fpt.ai/docs/en/speech/documentation/speech-to-text/",
+    "https://docs.fpt.ai/docs/en/speech/documentation/stt-pricing/",
+    "https://docs.fpt.ai/docs/en/speech/api/text-to-speech/",
+    "https://docs.fpt.ai/docs/en/speech/documentation/text-to-speech/",
+    "https://docs.fpt.ai/docs/en/speech/documentation/tts-pricing/"
+  ],
+  "headquarters": "VN",
+  "id": "fptai",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://docs.fpt.ai/docs/en/speech/api/text-to-speech/",
+    "docs": "https://docs.fpt.ai/docs/en/speech/documentation/text-to-speech/",
+    "pricing": "https://docs.fpt.ai/docs/en/speech/documentation/tts-pricing/"
+  },
+  "name": "FPT.AI",
+  "source": "docs",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-18",
+    "method": "docs",
+    "urls": [
+      "https://docs.fpt.ai/docs/en/speech/api/speech-to-text/",
+      "https://docs.fpt.ai/docs/en/speech/documentation/speech-to-text/",
+      "https://docs.fpt.ai/docs/en/speech/documentation/stt-pricing/",
+      "https://docs.fpt.ai/docs/en/speech/api/text-to-speech/",
+      "https://docs.fpt.ai/docs/en/speech/documentation/text-to-speech/",
+      "https://docs.fpt.ai/docs/en/speech/documentation/tts-pricing/"
+    ]
+  },
+  "website": "https://fpt.ai"
+}

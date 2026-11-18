@@ -1,0 +1,128 @@
+[
+  {
+    "accent": "northern",
+    "category": "premade",
+    "compatible_models": [
+      "v5"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "banmai",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "region_label": "Northern"
+    },
+    "name": "Banmai",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "central",
+    "category": "premade",
+    "compatible_models": [
+      "v5"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "giahuy",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "region_label": "Middle"
+    },
+    "name": "Giahuy",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "southern",
+    "category": "premade",
+    "compatible_models": [
+      "v5"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "lannhi",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "region_label": "Southern"
+    },
+    "name": "Lannhi",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "northern",
+    "category": "premade",
+    "compatible_models": [
+      "v5"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "leminh",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "region_label": "Northern"
+    },
+    "name": "Leminh",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "southern",
+    "category": "premade",
+    "compatible_models": [
+      "v5"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "linhsan",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "region_label": "Southern"
+    },
+    "name": "Linhsan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "central",
+    "category": "premade",
+    "compatible_models": [
+      "v5"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "myan",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "region_label": "Middle"
+    },
+    "name": "Myan",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "northern",
+    "category": "premade",
+    "compatible_models": [
+      "v5"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "thuminh",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "region_label": "Northern"
+    },
+    "name": "Thuminh",
+    "updated_at": "2026-11-18"
+  }
+]
