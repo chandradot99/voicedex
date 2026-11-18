@@ -1,5 +1,1101 @@
 [
   {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "0fadb4fe-df40-469c-9144-88dc834e6623",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "pitch_group": "mid",
+      "slug": "arnaud-za89t",
+      "voice_talent": false
+    },
+    "name": "Arnaud",
+    "tags": [
+      "calm",
+      "measured",
+      "lively",
+      "energetic",
+      "indifferent",
+      "hastened",
+      "animated",
+      "passionate",
+      "determined",
+      "articulated",
+      "relaxed"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "11e74e2d-c423-465f-96fa-7b27615d4bca",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Top Voice Actor",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "cl-neal-ka4g5",
+      "voice_talent": true
+    },
+    "name": "CL Neal",
+    "tags": [
+      "whisper",
+      "announcement",
+      "yelling",
+      "documentary",
+      "animated",
+      "excited",
+      "angered",
+      "energetic",
+      "usual"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "12cd0d43-5994-4d5c-b7e5-ad2d63867b73",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "pw-dawn-w-1qt6q",
+      "voice_talent": true
+    },
+    "name": "Dawn Wynne",
+    "tags": [
+      "angered",
+      "sad",
+      "whispered",
+      "friendly",
+      "neutral"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "1e6cb51b-1043-4c2f-8201-ce5968188279",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "Yours",
+        "Balanced",
+        "American"
+      ],
+      "pitch_group": "mid",
+      "slug": "flora-a2ba5",
+      "voice_talent": false
+    },
+    "name": "Emma",
+    "tags": [
+      "endearing",
+      "relaxed",
+      "direct",
+      "impartial",
+      "passive",
+      "soft"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "22aadaea-d1c7-453c-8618-302ace6e549e",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-b1-tom-dhere-zhzx5",
+      "voice_talent": true
+    },
+    "name": "Tom Dheere",
+    "tags": [
+      "angered",
+      "whisper",
+      "sad",
+      "warm",
+      "frustrated",
+      "annoyed",
+      "audiobook",
+      "narration",
+      "hunted",
+      "podcast"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2443f0a1-1703-4d7f-b791-ab99e5ee4150",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "jay-hicks-weca2",
+      "voice_talent": true
+    },
+    "name": "Jay Hicks",
+    "tags": [
+      "authentic conversational",
+      "empathic storyteller",
+      "conversational educator",
+      "reflective narrative",
+      "motivational & emphatic",
+      "playful humor"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "2695c013-f7b0-4018-b6a9-f0ec64437b89",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "Yours",
+        "American",
+        "Balanced"
+      ],
+      "pitch_group": "mid",
+      "slug": "mary-8cd70",
+      "voice_talent": false
+    },
+    "name": "Amelia",
+    "tags": [
+      "upbeat",
+      "light",
+      "modulated",
+      "stiff"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2b27115b-02cf-4200-80e8-5ba313327e39",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "low",
+      "slug": "adam-s-apple-jxd77",
+      "voice_talent": true
+    },
+    "name": "Adam S. Apple",
+    "tags": [
+      "neutral",
+      "excited",
+      "irritated",
+      "melancholic",
+      "sad",
+      "conversational",
+      "animated",
+      "apathetic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "2ef2ea9f-3f76-4ca7-a0cf-a24cfbe4a1ac",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "pitch_group": "mid",
+      "slug": "cesar-281cc",
+      "voice_talent": false
+    },
+    "name": "Cesar",
+    "tags": [
+      "reserved",
+      "soft",
+      "articulated",
+      "measured",
+      "passive"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "senior",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "3364af14-5ead-4b1a-af57-5f24fded88d2",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "Yours",
+        "Balanced",
+        "American"
+      ],
+      "pitch_group": "mid",
+      "slug": "samantha-b3f21",
+      "voice_talent": false
+    },
+    "name": "Samantha",
+    "tags": [
+      "upbeat",
+      "slow-paced",
+      "lively",
+      "animated"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "3eac7990-b0e5-4b20-bc10-815b68112836",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "pitch_group": "mid",
+      "slug": "janine-jgbw2",
+      "voice_talent": false
+    },
+    "name": "Janine",
+    "tags": [
+      "calm",
+      "neutral",
+      "matter-of-fact",
+      "upbeat",
+      "playful",
+      "awed",
+      "direct",
+      "impartial"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "42df58fa-2b9f-4595-9958-a05ce27309cc",
+    "meta": {
+      "pitch_group": "mid",
+      "slug": "grace-tabjx",
+      "voice_talent": false
+    },
+    "name": "Meera",
+    "tags": [
+      "mellow",
+      "soft",
+      "measured",
+      "slow-paced",
+      "endearing",
+      "relaxed"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "4425a74e-2e1c-4aa3-8e4f-28f66ceab05d",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-b1-yevhen-xbq85",
+      "voice_talent": true
+    },
+    "name": "James Carter",
+    "tags": [
+      "narrative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "child",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "46dbad33-8f6c-4fe4-8d63-c912b209047b",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "pv-zaiden-2ewu5",
+      "voice_talent": true
+    },
+    "name": "Zaiden Andersson",
+    "tags": [
+      "energetic",
+      "sad",
+      "proclamation",
+      "conversational",
+      "girlish",
+      "excited",
+      "fictional monster",
+      "announcement",
+      "formal",
+      "troubled",
+      "news",
+      "articulated",
+      "cute",
+      "enthusiastic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "4793e1a5-d2df-4d11-aba9-d451f6246746",
+    "meta": {
+      "pitch_group": "mid",
+      "slug": "diego-xoxh7",
+      "voice_talent": false
+    },
+    "name": "Samir",
+    "tags": [
+      "measured",
+      "neutral"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "497e8dbb-a803-431c-b39f-1503f1b436f3",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "pitch_group": "mid",
+      "slug": "nico-763ee",
+      "voice_talent": false
+    },
+    "name": "Nico",
+    "tags": [
+      "animated",
+      "lively",
+      "narrative",
+      "podcast"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "4b5f183f-9c02-4209-ab55-b483a3b410fa",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vb-b1-danylo-tipbh",
+      "voice_talent": true
+    },
+    "name": "Viliam Geen",
+    "tags": [
+      "narrative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "5574e240-266c-4538-bd83-d5e4426ba539",
+    "meta": {
+      "accents": [
+        "Conversational",
+        "Excited"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-sacha-9hqwc",
+      "voice_talent": true
+    },
+    "name": "Sacha Criado",
+    "tags": [
+      "documentary",
+      "announcement",
+      "news",
+      "conversational",
+      "audiobook",
+      "fear",
+      "angry",
+      "excited"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "5aa8e5de-7ed9-4c6d-a007-f98a8818e996",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "av-maria-abepp",
+      "voice_talent": true
+    },
+    "name": "Maria",
+    "tags": [
+      "audiobook"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "5c60bb98-36ab-41b7-aa48-6e6c84590d72",
+    "meta": {
+      "pitch_group": "mid",
+      "slug": "harper-2b6e8",
+      "voice_talent": false
+    },
+    "name": "Khadija",
+    "tags": [
+      "measured",
+      "reserved"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "73d311f0-e397-4270-9695-f81e8b0fd6d0",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "bill-oxley-le0t1",
+      "voice_talent": true
+    },
+    "name": "Bill Oxley",
+    "tags": [
+      "amazed",
+      "monotone",
+      "calm",
+      "whisper"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "7646b62e-b636-47aa-ae31-eb1dd58551fe",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "av-yevhen-lk6f4",
+      "voice_talent": true
+    },
+    "name": "Yevhen",
+    "tags": [
+      "audiobook",
+      "commercial"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "78e29195-7ab3-46ab-9d72-1ecfee9ab076",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "Balanced",
+        "American",
+        "Yours"
+      ],
+      "pitch_group": "high",
+      "slug": "alice-d01d4",
+      "voice_talent": false
+    },
+    "name": "Mia",
+    "tags": [
+      "youthful",
+      "neutral"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "7b3d6e68-8057-4d7c-a9c1-7face6cc740d",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accents": [
+        "Balanced",
+        "Yours",
+        "British"
+      ],
+      "pitch_group": "mid",
+      "slug": "vincent-913c2",
+      "voice_talent": false
+    },
+    "name": "Theo",
+    "tags": [
+      "resonant",
+      "neutral",
+      "warm",
+      "mellow",
+      "lively",
+      "animated"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "7c9448a7-f782-4a81-9971-ed6918a5ef8e",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-nadia-b2-38tpu",
+      "voice_talent": true
+    },
+    "name": "Cherry Twinkle",
+    "tags": [
+      "angered",
+      "amazed",
+      "happy",
+      "fear",
+      "news",
+      "gratitude",
+      "conversational",
+      "storytelling"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "7f7ae862-fca4-49dc-9b63-8ed4ef6daaff",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-fernando-9ux5p",
+      "voice_talent": true
+    },
+    "name": "Fernando Borges",
+    "tags": [
+      "storytelling",
+      "sad",
+      "soothing",
+      "energetic",
+      "whisper",
+      "conversational",
+      "news",
+      "documentary"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "838ea978-323f-4d08-aee8-1adedf2a5660",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "anand-9vvw3",
+      "voice_talent": true
+    },
+    "name": "Anand",
+    "tags": [
+      "arrogant",
+      "documentary",
+      "sadness",
+      "yelling",
+      "happy",
+      "announcement",
+      "surprise",
+      "gratitude",
+      "news",
+      "conversational",
+      "ecstasy",
+      "shame",
+      "fear",
+      "angry"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "8681c6d8-ab26-4dac-8632-f834543910f8",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "victoria-sts-1-k4a0r",
+      "voice_talent": true
+    },
+    "name": "Victoria Lynn",
+    "tags": [
+      "whispering",
+      "instructional",
+      "calm",
+      "inspired",
+      "crying",
+      "laughing",
+      "narration",
+      "excited"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "8d93770b-c8ac-4c95-a2f2-cb4ffd3b7cbe",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-andreas-nuw7i",
+      "voice_talent": true
+    },
+    "name": "Andreas Schütze",
+    "tags": [
+      "happy",
+      "gratitude",
+      "neutral",
+      "breathy",
+      "angered",
+      "whisper",
+      "documentary"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "9034475d-bcb8-4d8a-87ed-30efdce171ab",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "pv-evelina-alba-8i11s",
+      "voice_talent": true
+    },
+    "name": "Evelina Alba",
+    "tags": [
+      "mildly animated",
+      "haughty",
+      "full",
+      "conversational",
+      "enthusiastic",
+      "sad",
+      "announcement",
+      "beldam",
+      "animated",
+      "narration",
+      "excited"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "90ee548b-1544-4d33-8836-ff829a427ef4",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "American",
+        "Yours",
+        "Balanced"
+      ],
+      "pitch_group": "high",
+      "slug": "lorelei-90348",
+      "voice_talent": false
+    },
+    "name": "Sophia",
+    "tags": [
+      "mocking",
+      "animated",
+      "neutral",
+      "raspy",
+      "playful",
+      "valley girl",
+      "bubbly",
+      "sassy"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "9d146b18-6373-492c-bc41-d6a188836623",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "accents": [
+        "Yours",
+        "Balanced",
+        "Slavic"
+      ],
+      "pitch_group": "low",
+      "slug": "gregory-2618c",
+      "voice_talent": false
+    },
+    "name": "Volodymyr",
+    "tags": [
+      "resonant",
+      "monotone",
+      "eager"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "a66883d1-e2a0-4181-8052-6a97342afa7b",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accents": [
+        "Yours",
+        "Indian",
+        "Balanced"
+      ],
+      "pitch_group": "high",
+      "slug": "salome-7cdad",
+      "voice_talent": false
+    },
+    "name": "Jhumpa",
+    "tags": [
+      "upbeat",
+      "matter-of-fact",
+      "squeaking",
+      "vibrant"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "a8acc3cd-7244-4022-8a8e-e6864b315469",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "American",
+        "Yours",
+        "Balanced"
+      ],
+      "pitch_group": "mid",
+      "slug": "spencer-f5660",
+      "voice_talent": false
+    },
+    "name": "Henry",
+    "tags": [
+      "narrative",
+      "podcast",
+      "slightly animated",
+      "measured",
+      "neutral"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "a99e4073-e501-44d6-ba70-960a6fa2661a",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "chris-butera-ml76j",
+      "voice_talent": true
+    },
+    "name": "Chris Butera",
+    "tags": [
+      "documentary",
+      "animated",
+      "news",
+      "nervous",
+      "announcement",
+      "yelling",
+      "angered",
+      "whisper",
+      "irritated",
+      "audiobook",
+      "energetic"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
     "accent": "american",
     "category": "premade",
     "compatible_models": [
@@ -15,6 +1111,34 @@
       "recommended": true
     },
     "name": "abby",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "aed713b0-37e2-43e2-a266-cf0995232d85",
+    "meta": {
+      "pitch_group": "mid",
+      "slug": "emily-dqif4",
+      "voice_talent": false
+    },
+    "name": "Amara",
+    "tags": [
+      "indifferent",
+      "flat",
+      "warm",
+      "narrative",
+      "hurried",
+      "neutral",
+      "light",
+      "mildly animated"
+    ],
     "updated_at": "2026-11-18"
   },
   {
@@ -166,6 +1290,36 @@
     "updated_at": "2026-11-18"
   },
   {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "b79fa5e4-2637-4c45-b51d-529db2c2fdcf",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-elsie-4bc1y",
+      "voice_talent": true
+    },
+    "name": "Elsi Eng",
+    "tags": [
+      "energetic",
+      "narrative",
+      "metropolitan",
+      "angry",
+      "sad"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "pt-br-rt"
@@ -246,6 +1400,140 @@
     "updated_at": "2026-11-18"
   },
   {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "bb53a3bf-870f-4323-ba0b-32dbcac0f933",
+    "meta": {
+      "accents": [
+        "Balanced",
+        "Yours",
+        "Spanish"
+      ],
+      "pitch_group": "mid",
+      "slug": "roman-c6670",
+      "voice_talent": false
+    },
+    "name": "Mateo",
+    "tags": [
+      "neutral",
+      "youthful"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "bd5eca45-8a03-43d6-b8ad-a508c74c7811",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "pv-miriam-olson-0sy3f",
+      "voice_talent": true
+    },
+    "name": "Alexandra Collins",
+    "tags": [
+      "conversational",
+      "questioning",
+      "cheerful",
+      "calm",
+      "dreamy",
+      "narration",
+      "amazed",
+      "pretentious",
+      "enthusiastic",
+      "llight",
+      "instructive",
+      "upbeat",
+      "announcement",
+      "documentary",
+      "haughty",
+      "anxious",
+      "sad",
+      "cute",
+      "youthful",
+      "relaxed",
+      "whisper"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "be021aca-0a47-4095-a009-9763d3ba4cbf",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-eva-m-usan7",
+      "voice_talent": true
+    },
+    "name": "Lena Falk",
+    "tags": [
+      "instructional",
+      "narrative"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "be5cf579-c504-4d5b-82f3-57c16665d94a",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "accents": [
+        "Balanced",
+        "Yours",
+        "Indian"
+      ],
+      "pitch_group": "mid",
+      "slug": "zane-94dbc",
+      "voice_talent": false
+    },
+    "name": "Vikram",
+    "tags": [
+      "lively",
+      "hastened",
+      "nasal",
+      "animated",
+      "flat",
+      "neutral"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
     "accent": "american",
     "category": "premade",
     "compatible_models": [
@@ -261,6 +1549,84 @@
       "recommended": true
     },
     "name": "bill",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "c48fe003-d1fc-4188-b9c8-9cc7351bb5e0",
+    "meta": {
+      "accents": [
+        "Yours",
+        "Soft"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "vt-b1-taylor-brock-mh9xt",
+      "voice_talent": true
+    },
+    "name": "Taylor Brock",
+    "tags": [
+      "narrative",
+      "conversational",
+      "documentary",
+      "whisper",
+      "surprise",
+      "happy",
+      "news",
+      "angered",
+      "fear"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "cb2f64f1-5e08-41f4-ba15-bc6f76b72983",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "lucas-6fo7h",
+      "voice_talent": true
+    },
+    "name": "Lucas",
+    "tags": [
+      "announcement",
+      "happy",
+      "usual",
+      "shame",
+      "dubbing",
+      "calling",
+      "whispering",
+      "fear",
+      "yelling",
+      "asking",
+      "gratitude",
+      "sadness",
+      "news",
+      "ecstasy",
+      "documentary",
+      "angry",
+      "audiobook",
+      "surprise"
+    ],
     "updated_at": "2026-11-18"
   },
   {
@@ -481,6 +1847,76 @@
     "updated_at": "2026-11-18"
   },
   {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "da15eddf-f8f9-4634-8049-d553e4dbc58e",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "Yours",
+        "American",
+        "Balanced"
+      ],
+      "pitch_group": "mid",
+      "slug": "irene-14508",
+      "voice_talent": false
+    },
+    "name": "Ava",
+    "tags": [
+      "modulated",
+      "stiff",
+      "steady",
+      "detached"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "da71b8ad-c699-4d00-b2fd-7af43d100ec9",
+    "meta": {
+      "accents": [
+        "Yours",
+        "NY Italian"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "pv-croselli-npafh",
+      "voice_talent": true
+    },
+    "name": "Christian Rosselli",
+    "tags": [
+      "documentary",
+      "angry",
+      "neutral",
+      "excited",
+      "fear",
+      "announcement",
+      "narration",
+      "whisper",
+      "ny accent (neutral)",
+      "sad",
+      "news",
+      "ny accent (ad)"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "pt-br-rt"
@@ -491,6 +1927,38 @@
       "pt-BR"
     ],
     "name": "daniela",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "dbed8fee-808f-4e58-b1b4-9a13a375e252",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "American",
+        "Balanced",
+        "Yours"
+      ],
+      "pitch_group": "mid",
+      "slug": "ritter-18557",
+      "voice_talent": false
+    },
+    "name": "Liam",
+    "tags": [
+      "annoyed",
+      "sassy",
+      "stressed",
+      "baffled"
+    ],
     "updated_at": "2026-11-18"
   },
   {
@@ -506,6 +1974,144 @@
     "name": "Дмитро: розмова",
     "tags": [
       "розмова"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "eda64455-02e6-4691-bbb4-a981b61e1f83",
+    "meta": {
+      "accents": [
+        "Teleshopping",
+        "Neutral",
+        "Announcing"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "pv-christian-plasa-iu7tq",
+      "voice_talent": true
+    },
+    "name": "Christian Plasa",
+    "tags": [
+      "angered",
+      "commercial",
+      "neutral",
+      "news",
+      "teleshopping",
+      "excited",
+      "audiobook",
+      "announcement"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "f454990b-6f2f-42f8-b038-faaa7f3ce9fe",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Incognito Artist",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "pv-donna-rav8m",
+      "voice_talent": true
+    },
+    "name": "Donna",
+    "tags": [
+      "news",
+      "narration",
+      "fear",
+      "audiobook",
+      "sad",
+      "calm",
+      "joy",
+      "positive",
+      "excited",
+      "whispering",
+      "questioning",
+      "angered",
+      "amazed",
+      "shame",
+      "documentary"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "adult",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "male",
+    "id": "f80dc7d8-41b9-4a27-9712-d887aa2a0cff",
+    "meta": {
+      "accents": [
+        "Yours"
+      ],
+      "category": "Voice Talent",
+      "cost_multiplier": 1,
+      "pitch_group": "mid",
+      "slug": "av-oleksandr-n-cj9ge",
+      "voice_talent": true
+    },
+    "name": "Oleksandr Nekrasov",
+    "tags": [
+      "commercial",
+      "narration",
+      "commentary (medium intensity)"
+    ],
+    "updated_at": "2026-11-18"
+  },
+  {
+    "age": "young",
+    "category": "premade",
+    "compatible_models": [
+      "marketplace-sts",
+      "marketplace-tts"
+    ],
+    "first_seen": "2026-11-18",
+    "gender": "female",
+    "id": "f812c129-0497-4126-a558-037a372052cf",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "accents": [
+        "Balanced",
+        "American",
+        "Yours"
+      ],
+      "pitch_group": "mid",
+      "slug": "laura-742d5",
+      "voice_talent": false
+    },
+    "name": "Evelyn",
+    "tags": [
+      "energetic",
+      "upbeat",
+      "enticing",
+      "breathy",
+      "relaxed",
+      "positive",
+      "stormy"
     ],
     "updated_at": "2026-11-18"
   },
