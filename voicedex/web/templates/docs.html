@@ -167,11 +167,36 @@
           btn.setAttribute("aria-label", on ? "Collapse response" : "Expand response");
           btn.title = on ? "Collapse" : "Expand response"; };
         // Expanded: only the JSON plus Collapse / Download — the Body label and the "massive body" notice hide too.
+        // Expanded: a one-line summary on the left of the bar — method + path, status, time, size.
+        const summary = () => {
+          const head = (panel.querySelector(".request-response-header")?.textContent || "").replace(/\s+/g, " ");
+          const time = head.match(/Duration:\s*([\d.]+\s*m?s)/)?.[1];
+          const st = head.match(/Status:\s*(\d{3})\s*([A-Za-z ]*?)\s*(?=All|$)/);
+          const addr = row.closest(".scalar-app-layout")?.querySelector('[class*="min-h-header"]');
+          const method = addr && [...addr.querySelectorAll("*")].map((e) => e.textContent.trim()).find((t) => /^(GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS)$/.test(t));
+          const path = addr && [...addr.querySelectorAll("*")].filter((e) => !e.children.length).map((e) => e.textContent.trim()).find((t) => t.startsWith("/"));
+          const code = st && +st[1];
+          return [method && path && `<b>${method} ${path}</b>`, st && `<span class="${code < 400 ? "ok" : "bad"}">${st[1]} ${st[2]}</span>`.replace(" </", "</"),
+                  time].filter(Boolean).join("<span aria-hidden=\"true\">·</span>");
+        };
         btn.addEventListener("click", () => {
+          const info = summary();                                // read before anything is hidden
           const on = row.classList.toggle("vd-resp-full");
           const bar = dl.parentElement.parentElement;
-          bar.classList.toggle("vd-bar-end", on);
-          bar.firstElementChild?.classList.toggle("vd-hide", on);
+          const label = bar.querySelector(":scope > button");      // the "Body" label (summary takes its place)
+          bar.querySelector(".vd-summary")?.remove();
+          label?.classList.toggle("vd-hide", on);
+          if (on && info) {
+            const el = document.createElement("p"); el.className = "vd-summary"; el.innerHTML = info; bar.prepend(el);
+            // Size: the body on screen is virtualised, so measure the full response the Download link points to.
+            const href = dl.getAttribute("href");
+            if (href?.startsWith("blob:")) fetch(href).then((r) => r.blob()).then((b) => {
+              const kb = b.size / 1024;
+              const size = kb >= 1024 ? `${(kb / 1024).toFixed(1)} MB` : kb >= 1 ? `${Math.round(kb)} KB` : `${b.size} B`;
+              if (el.isConnected) el.insertAdjacentHTML("beforeend", `<span aria-hidden="true">·</span>${size}`);
+            }).catch(() => {});
+          }
+          bar.classList.toggle("vd-bar-end", on && !info);
           panel.querySelectorAll("*").forEach((e) => {
             if (!e.children.length && /response body is massive/i.test(e.textContent)) (e.closest("div") || e).classList.toggle("vd-hide", on);
           });
@@ -434,6 +459,10 @@
         .vd-full { width: 26px; padding: 0; justify-content: center; border-color: transparent !important; }
         .vd-full:hover { border-color: var(--rule-2) !important; }
         .vd-full svg { width: 12px; height: 12px; }
+        .vd-summary { margin-right: auto; padding-left: 12px; display: flex; gap: 14px; align-items: center; white-space: nowrap; overflow: hidden;
+          font: 400 12px "Geist Mono", ui-monospace, monospace; color: var(--muted); }
+        .vd-summary b { font-weight: 500; color: var(--ink); }
+        .vd-summary .ok { color: var(--signal); } .vd-summary .bad { color: var(--end); }
         .vd-icon-link { font-size: 0 !important; gap: 0 !important; width: 26px; height: 24px; justify-content: center; }
         .vd-icon-link svg { width: 14px !important; height: 14px !important; }
         .vd-full svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 1.5; }
