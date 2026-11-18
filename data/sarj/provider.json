@@ -1,0 +1,19 @@
+{
+  "access": "enterprise",
+  "description": "Sarj is a Saudi Arabian enterprise AI automation company whose platform runs Arabic voice agents for outbound and inbound calls, collections and document processing. It exposes its own Arabic speech recognition (sarj-stt) and Saudi-voice speech synthesis (sarj-tts) through OpenAI-compatible APIs; access is arranged with the company rather than through a public self-serve plan.",
+  "docs_urls": [
+    "https://platform-docs.sarj.ai/speech-to-text.md",
+    "https://platform-docs.sarj.ai/text-to-speech.md"
+  ],
+  "headquarters": "SA",
+  "id": "sarj",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://sarj-omni-tts.sarj.ai/openapi.json",
+    "docs": "https://platform-docs.sarj.ai/speech-to-text"
+  },
+  "name": "Sarj.ai",
+  "source": "docs",
+  "type": "both",
+  "website": "https://sarj.ai"
+}
