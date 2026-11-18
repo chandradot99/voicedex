@@ -126,6 +126,37 @@
       }).observe(document.body, { childList: true, subtree: true });
     })();
 
+    // Response examples are capped at ~230px by the reference. Add an Expand / Collapse toggle to each card
+    // whose example is cut off (grows to 70% of the viewport, then scrolls).
+    (() => {
+      const content = (card) => card.children[1];
+      const decorate = (card) => {
+        if (card.querySelector(".vd-expand")) return;
+        const footer = card.lastElementChild;
+        if (!footer || footer === content(card)) return;
+        const btn = document.createElement("button");
+        btn.type = "button"; btn.className = "vd-expand"; btn.textContent = "Expand";
+        btn.setAttribute("aria-expanded", "false");
+        btn.addEventListener("click", () => {
+          const open = card.classList.toggle("vd-expanded");
+          btn.textContent = open ? "Collapse" : "Expand";
+          btn.setAttribute("aria-expanded", String(open));
+          if (!open) card.scrollIntoView({ block: "nearest" });
+        });
+        footer.append(btn);
+        sync(card);
+      };
+      const sync = (card) => {       // only offer it when the example is actually cut off
+        const btn = card.querySelector(".vd-expand"), box = content(card)?.querySelector(".custom-scroll") || content(card);
+        if (!btn || !box) return;
+        btn.hidden = !card.classList.contains("vd-expanded") && box.scrollHeight <= box.clientHeight + 4;
+      };
+      const scan = () => document.querySelectorAll("#scalar-docs .scalar-card.response-card").forEach((c) => { decorate(c); sync(c); });
+      let queued = false;
+      new MutationObserver(() => { if (!queued) { queued = true; setTimeout(() => { queued = false; scan(); }, 60); } })
+        .observe(document.body, { childList: true, subtree: true });     // the reference replaces its mount node
+    })();
+
     // Parameter info ("ⓘ") popovers open on hover, not click (mouse only; touch keeps tap-to-open).
     // Scalar renders them as click-toggled popovers, so hover drives the same toggle; a short grace period
     // lets the pointer move from the icon onto the popover.
@@ -342,6 +373,16 @@
         .response-body-virtual .scalar-virtual-text { padding-left: 0 !important; }
         .response-body-virtual .scalar-virtual-text-content { left: 34px !important; }
         .scalar-card, .scalar-codeblock-pre { border-radius: 2px !important; }
+        /* Response examples: Expand / Collapse (button added by the script below). */
+        .scalar-card.response-card.vd-expanded { max-height: 70vh !important; }
+        .scalar-card.response-card > :last-child { display: flex !important; flex-direction: row !important; align-items: center; gap: 10px; }
+        .vd-expand {
+          order: 99; flex: none; height: 24px; padding: 0 8px; cursor: pointer;
+          font: 500 11px/1 "Geist Mono", ui-monospace, monospace; letter-spacing: .04em;
+          color: var(--ink-2); background: transparent; border: 1px solid var(--control); border-radius: 2px;
+        }
+        .vd-expand:hover { color: var(--ink); border-color: var(--ink-2); }
+        .vd-expand[hidden] { display: none; }
         /* Datasheet shapes: no pills (version badge, content-type chip, schema toggle). */
         .badge.rounded-2xl, .selected-content-type, .scalar-card-checkbox-input, .scalar-card-checkbox-checkmark { border-radius: 2px !important; }
       `,
