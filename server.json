@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.chandradot99/voicedex",
+  "title": "Voicedex",
+  "description": "Search, compare and price 800+ speech-to-text, text-to-speech and voice models from 120+ providers",
+  "version": "1.0.0",
+  "websiteUrl": "https://voicedex.dev/mcp",
+  "repository": {
+    "url": "https://github.com/chandradot99/voicedex",
+    "source": "github",
+    "id": "1212248600"
+  },
+  "icons": [
+    {
+      "src": "https://voicedex.dev/static/logo.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://voicedex.dev/mcp"
+    }
+  ]
+}
