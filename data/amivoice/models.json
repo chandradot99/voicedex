@@ -1,0 +1,1519 @@
+[
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid Japanese conversation engine with finance-industry vocabulary.",
+    "first_seen": "2026-11-18",
+    "id": "-a-bizfinance",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "finance",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "16k only",
+      "use": "conversation"
+    },
+    "name": "Conversation – Finance",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Finance category: ¥148.5/h (¥0.04125/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 118.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid Japanese dictation engine with finance-industry vocabulary.",
+    "first_seen": "2026-11-18",
+    "id": "-a-bizfinance-input",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "finance",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "16k only",
+      "use": "voice input"
+    },
+    "name": "Voice Input – Finance",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Finance category: ¥148.5/h (¥0.04125/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 118.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid Japanese conversation engine with insurance-industry vocabulary.",
+    "first_seen": "2026-11-18",
+    "id": "-a-bizinsurance",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "insurance",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "16k only",
+      "use": "conversation"
+    },
+    "name": "Conversation – Insurance",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Insurance category: ¥148.5/h (¥0.04125/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 118.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid Japanese dictation engine with insurance-industry vocabulary.",
+    "first_seen": "2026-11-18",
+    "id": "-a-bizinsurance-input",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "insurance",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "16k only",
+      "use": "voice input"
+    },
+    "name": "Voice Input – Insurance",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Insurance category: ¥148.5/h (¥0.04125/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 118.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid engine for transcribing natural Japanese conversation such as meetings, calls and video.",
+    "first_seen": "2026-11-18",
+    "id": "-a-general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "general",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k",
+      "use": "conversation"
+    },
+    "name": "Conversation – General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid general-purpose English engine.",
+    "first_seen": "2026-11-18",
+    "id": "-a-general-en",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "category": "general",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k",
+      "use": "conversation",
+      "user_dictionary": false
+    },
+    "name": "English – General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid Japanese voice-input (dictation / voice bot) engine with a large general vocabulary.",
+    "first_seen": "2026-11-18",
+    "id": "-a-general-input",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "general",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "16k only",
+      "use": "voice input"
+    },
+    "name": "Voice Input – General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid general-purpose Korean engine.",
+    "first_seen": "2026-11-18",
+    "id": "-a-general-ko",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "category": "general",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k",
+      "use": "conversation"
+    },
+    "name": "Korean – General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid general-purpose Chinese engine.",
+    "first_seen": "2026-11-18",
+    "id": "-a-general-zh",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "category": "general",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k",
+      "use": "conversation"
+    },
+    "name": "Chinese – General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid Japanese conversation engine with a medical vocabulary (diseases, drugs, hospitals), incl. 8 kHz telephone audio.",
+    "first_seen": "2026-11-18",
+    "id": "-a-medical",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "medical",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k",
+      "use": "conversation"
+    },
+    "name": "Conversation – Medical",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Medical category: ¥222.75/h (¥0.061875/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 222.75,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 148.5,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Hybrid Japanese dictation engine for medical documents such as electronic health records.",
+    "first_seen": "2026-11-18",
+    "id": "-a-medical-input",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "medical",
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "16k only",
+      "use": "voice input"
+    },
+    "name": "Voice Input – Medical",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Medical category: ¥222.75/h (¥0.061875/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 222.75,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 148.5,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Newest-generation end-to-end engine for general Japanese; recognizes incrementally as audio arrives.",
+    "first_seen": "2026-11-18",
+    "id": "-a2-ja-general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "general",
+      "custom_vocabulary": "word emphasis (no classes)",
+      "engine_generation": "end-to-end",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k"
+    },
+    "name": "Japanese E2E General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "End-to-end engine that transcribes mixed Japanese, English and Chinese speech, labelling each word's language.",
+    "first_seen": "2026-11-18",
+    "id": "-a2-multi-general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja",
+      "en",
+      "zh"
+    ],
+    "meta": {
+      "category": "multilingual",
+      "custom_vocabulary": "word emphasis (no classes)",
+      "engine_generation": "end-to-end",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k"
+    },
+    "name": "Multilingual E2E General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Multilingual category: ¥148.5/h (¥0.04125/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 118.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "End-to-end engine for general Chinese; recognizes incrementally as audio arrives.",
+    "first_seen": "2026-11-18",
+    "id": "-a2-zh-general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "category": "general",
+      "custom_vocabulary": "word emphasis (no classes)",
+      "engine_generation": "end-to-end",
+      "parameter": "grammarFileNames",
+      "sample_rate_support": "8k/16k"
+    },
+    "name": "Chinese E2E General",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Accuracy-oriented batch variant of the Japanese end-to-end engine; recognizes each utterance after its end is detected.",
+    "first_seen": "2026-11-18",
+    "id": "-a2b-ja-general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "category": "general",
+      "custom_vocabulary": "word emphasis (no classes)",
+      "engine_generation": "end-to-end",
+      "interim_results": "not available (WebSocket U events are empty)",
+      "parameter": "grammarFileNames",
+      "recommended_for": "asynchronous HTTP",
+      "sample_rate_support": "8k/16k"
+    },
+    "name": "Japanese E2E General (Batch)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Accuracy-oriented batch variant of the multilingual (Japanese/English/Chinese) end-to-end engine.",
+    "first_seen": "2026-11-18",
+    "id": "-a2b-multi-general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "ja",
+      "en",
+      "zh"
+    ],
+    "meta": {
+      "category": "multilingual",
+      "custom_vocabulary": "word emphasis (no classes)",
+      "engine_generation": "end-to-end",
+      "interim_results": "not available (WebSocket U events are empty)",
+      "parameter": "grammarFileNames",
+      "recommended_for": "asynchronous HTTP",
+      "sample_rate_support": "8k/16k"
+    },
+    "name": "Multilingual E2E General (Batch)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "Multilingual category: ¥148.5/h (¥0.04125/s) without log retention, any interface. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "any interface, with log retention",
+          "price": 118.8,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "punctuation",
+      "speaker_diarization",
+      "word_timestamps"
+    ],
+    "description": "Accuracy-oriented batch variant of the Chinese end-to-end engine.",
+    "first_seen": "2026-11-18",
+    "id": "-a2b-zh-general",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "category": "general",
+      "custom_vocabulary": "word emphasis (no classes)",
+      "engine_generation": "end-to-end",
+      "interim_results": "not available (WebSocket U events are empty)",
+      "parameter": "grammarFileNames",
+      "recommended_for": "asynchronous HTTP",
+      "sample_rate_support": "8k/16k"
+    },
+    "name": "Chinese E2E General (Batch)",
+    "pricing": {
+      "as_of": "2026-11-18",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-18"
+  }
+]
