@@ -2,6 +2,19 @@
 
 Known gaps and follow-ups, newest first. Move items to commits as they're done.
 
+## Next after launch
+- **Provider manifest ("get listed by hosting one file")** — decided 2026-11-18, first item after the redesign ships.
+  Providers host `https://<provider>/.well-known/voicedex.json` (models, voices, languages, prices, shutdown dates);
+  Voicedex syncs it automatically. Pitch it as a free, always-current listing — not an industry standard.
+  - Publish the schema as **draft v0** at a stable, versioned URL (from `schema/*.schema.json`); no breaking-change
+    promises until a few providers use it.
+  - "Get your models listed" page: what to host, a minimal + full example, how to validate it (`scripts/validate.py`).
+  - One generic `ManifestSyncer` (registry `source: "manifest"`) that fetches the file; same review path as every sync
+    (git diff, shrink guard, merge rules). Self-reported data gets no special trust — prices especially.
+  - Outreach: personally invite 5–10 smaller providers (Gradium, StepFun, Async, Rime, Neuphonic, Smallest AI…);
+    take adoption to the larger providers only once there's a list of adopters.
+  - Precondition: real traffic on voicedex.dev (providers won't host a file for a site nobody reads).
+
 ## Data coverage
 - **Syncer fixes queued for when keys arrive** (docs already extracted into .sync-cache/):
   smallestai voices endpoint `/lightning-v3.1/get_voices` retires 2026-11-30 → use `/lightning-v3.1-pro/get_voices`;
