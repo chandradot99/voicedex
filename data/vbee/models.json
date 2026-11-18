@@ -1,0 +1,60 @@
+[
+  {
+    "audio_formats": [
+      "mp3",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "prosody_control"
+    ],
+    "description": "Vbee's Vietnamese TTS API with an async batch mode for long text and a sync realtime mode that streams audio chunks (~500 ms to first chunk).",
+    "first_seen": "2026-11-18",
+    "id": "vbee-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "vi-VN"
+    ],
+    "max_text_chars": 100000,
+    "meta": {
+      "bitrates_kbps": [
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "emphasis_intensity": "0-100 on supported voices",
+      "endpoint": "POST https://api.vbee.vn/v1/tts",
+      "legacy_api": "Text to Speech (Lagacy) endpoints still documented",
+      "modes": "mode=async (batch, webhookUrl, ≤100,000 chars, mp3/wav); mode=sync (realtime chunked audio, ≤300 chars, mp3/wav/pcm, limited to 5 voices)",
+      "pause_control": "clientPause majorBreak/mediumBreak/sentenceBreak/paragraphBreak",
+      "pricing_note": "API is quote-based (contact sales); vbee.vn/pricing lists Studio plans only",
+      "speed_range": "0.25-1.9",
+      "voice_list_api": "GET https://vbee.vn/api/public/v1/voices (also lists voices for ~50 non-Vietnamese locales; their origin is not stated)"
+    },
+    "name": "Vbee Text to Speech API",
+    "provenance": {
+      "as_of": "2026-11-18",
+      "method": "docs",
+      "urls": [
+        "https://api-docs.vbee.vn/vbee-api/text-to-speech/batch-api"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-18"
+  }
+]

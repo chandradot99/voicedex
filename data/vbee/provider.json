@@ -1,0 +1,19 @@
+{
+  "access": "self_serve",
+  "description": "Vbee (Vbee AITalk Artificial Intelligence Technology JSC) is a Hanoi, Vietnam company that grew out of research at Hanoi University of Science and Technology. It sells the Vbee AIVoice studio and a Vietnamese-focused text-to-speech API, plus speech-to-text and conversational voice-agent products (AICall).",
+  "docs_urls": [
+    "https://api-docs.vbee.vn/vbee-api/text-to-speech/batch-api"
+  ],
+  "headquarters": "VN",
+  "id": "vbee",
+  "last_synced": "2026-11-18",
+  "links": {
+    "api_reference": "https://api-docs.vbee.vn/vbee-api/text-to-speech",
+    "docs": "https://api-docs.vbee.vn",
+    "pricing": "https://vbee.vn/pricing"
+  },
+  "name": "Vbee",
+  "source": "docs",
+  "type": "tts",
+  "website": "https://vbee.vn"
+}
