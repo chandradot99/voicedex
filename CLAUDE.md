@@ -28,6 +28,8 @@ provider APIs / docs ──▶ voicedex/sync/<provider>.py ──▶ SyncResult
 ```
 voicedex/
   main.py            — app, catalog loading, ETag/Cache-Control middleware
+  mcp_server.py      — remote MCP server at /mcp (Streamable HTTP, stateless, read-only tools over the Catalog);
+                       GET /mcp serves the setup page (SSE-only GETs get 405)
   config.py          — provider API keys, DATA_DIR, rate limit
   limiter.py         — slowapi; keys on right-most X-Forwarded-For (proxy-appended)
   schemas.py         — API response models (v1-compatible field names + v2 additions)
@@ -175,6 +177,7 @@ uvx ruff check .
 | `GET /v1/models`, `/v1/voices` | same filters across providers, plus `provider` |
 | `GET /v1/catalog.json` | entire catalog incl. deprecated, one response |
 | `GET /health` | |
+| `POST /mcp` | MCP (Streamable HTTP): search_models, get_model, compare_models, search_voices, list_providers, recent_changes |
 
 All list endpoints: `limit`/`offset`, `updated_since` (date granularity; auto-includes deprecated unless
 `include_deprecated=false`). Every `/v1` response carries one catalog-wide `ETag` (304 on `If-None-Match`) and
