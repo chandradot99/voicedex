@@ -155,8 +155,8 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
 
 
 # Profiles that are the same entity as voicedex.dev (schema.org sameAs). Only the project's own profiles belong
-# here, not personal ones: add an X/LinkedIn/Bluesky page once Voicedex has one.
-SAME_AS = ["https://github.com/chandradot99/voicedex"]
+# here, not personal ones (add X/Bluesky once Voicedex has them).
+SAME_AS = ["https://github.com/chandradot99/voicedex", "https://www.linkedin.com/company/voicedex"]
 
 
 def _home_ld(catalog: Catalog, n_models: int, n_voices: int, n_providers: int) -> list[dict]:
