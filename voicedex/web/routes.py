@@ -578,6 +578,16 @@ async def api_docs(request: Request):
     return templates.TemplateResponse(request, "docs.html", {})
 
 
+_FAVICON = Path(__file__).parent / "static" / "favicon.ico"
+
+
+@router.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    """Root favicon: browsers and Google's favicon crawler request this path directly."""
+    return Response(_FAVICON.read_bytes(), media_type="image/x-icon",
+                    headers={"Cache-Control": "public, max-age=86400"})
+
+
 @router.get("/robots.txt", response_class=PlainTextResponse)
 async def robots():
     site = settings.site_url.rstrip("/")
