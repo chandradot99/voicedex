@@ -154,3 +154,9 @@ async def test_favicon_is_a_real_crawlable_file(client):
     assert 'rel="icon" href="/favicon.ico"' in html and "data:image/svg" not in html
     for path in ("/static/favicon.svg", "/static/favicon-96.png", "/static/apple-touch-icon.png"):
         assert (await client.get(path)).status_code == 200
+
+
+async def test_linkedin_in_footer_and_organization_same_as(client):
+    html = (await client.get("/")).text
+    assert '<a href="https://www.linkedin.com/company/voicedex" rel="noopener">LinkedIn</a>' in html
+    assert '"sameAs": ["https://github.com/chandradot99/voicedex", "https://www.linkedin.com/company/voicedex"]' in html

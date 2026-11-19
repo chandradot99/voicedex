@@ -180,7 +180,7 @@ async def test_home_structured_data_and_llms_txt(client):
     assert dataset["distribution"][0]["contentUrl"] == "https://voicedex.dev/v1/catalog.json"
     assert dataset["dateModified"] == "2020-01-01"
     org = next(b for b in blocks if b["@type"] == "Organization")
-    assert org["sameAs"] == ["https://github.com/chandradot99/voicedex"] and org["logo"]["url"].endswith("/static/logo.png")
+    assert org["sameAs"] == ["https://github.com/chandradot99/voicedex", "https://www.linkedin.com/company/voicedex"] and org["logo"]["url"].endswith("/static/logo.png")
     assert dataset["publisher"] == {"@id": org["@id"]}
     assert (await client.get("/static/logo.png")).status_code == 200
     llms = await client.get("/llms.txt")
