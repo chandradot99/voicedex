@@ -24,44 +24,71 @@
       "translation",
       "word_timestamps"
     ],
-    "description": "Accurate, cost-effective pre-recorded model covering 99 languages; also the automatic fallback for languages Universal-3.5 Pro doesn't support.",
-    "first_seen": "2026-11-16",
-    "id": "universal-2",
+    "description": "AssemblyAI's flagship pre-recorded model (launched Nov 17, 2026): 32 languages with automatic language detection, native code switching, contextual prompting and a new diarization model.",
+    "first_seen": "2026-11-19",
+    "id": "assemblyai-stt-3-7",
     "interfaces": [
       "http"
     ],
     "languages": [
-      "*"
+      "af",
+      "ar",
+      "yue",
+      "ca",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "he",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "zh",
+      "mr",
+      "no",
+      "nn",
+      "fa",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "ur",
+      "vi",
+      "xh",
+      "zu"
     ],
-    "max_audio_seconds": 36000,
     "meta": {
-      "code_switching": true,
-      "keyterms_max_words": 200,
-      "language_count": 99,
-      "max_file_size_gb": 5
+      "code_switching": "native",
+      "disfluencies_default": true,
+      "domains": [
+        "medical-v1",
+        "veterinary"
+      ],
+      "format_text_default": true,
+      "pre_recorded_default": "default speech_models for accounts created on/after 2026-11-17 is [\"assemblyai-stt-3-7\"]; falls back to universal-2 for language codes it doesn't support",
+      "pre_recorded_endpoints": {
+        "eu": "https://api.eu.assemblyai.com",
+        "us": "https://api.assemblyai.com"
+      },
+      "recommended": true
     },
-    "name": "Universal-2",
+    "name": "AssemblyAI-STT-3.7",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "Pre-recorded, pro-rated per second. Other add-ons billed separately (see pricing page).",
-      "price_usd": 0.15,
+      "as_of": "2026-11-19",
+      "notes": "Pre-recorded, billed per audio hour submitted. Add-ons (/hr): speaker diarization 0.02 (experimental diarization not offered), keyterms prompting 0.05, general prompting (beta) 0.05, medical or vet mode 0.15, translation 0.06, sentiment 0.02, summarization 0.02-0.07, entity detection 0.08, topic detection 0.15, profanity filter 0.01, PII audio 0.05, PII text 0.08. Multichannel billed per channel. $50 free credits at signup; EU and US pricing identical.",
+      "price_usd": 0.21,
       "source_url": "https://www.assemblyai.com/pricing",
-      "unit": "hour",
-      "variants": [
-        {
-          "applies_to": "Keyterms prompting add-on",
-          "price_usd": 0.05,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "Speaker diarization add-on (async standard)",
-          "price_usd": 0.02,
-          "unit": "hour"
-        }
-      ]
+      "unit": "hour"
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-19",
       "method": "docs",
       "urls": [
         "https://www.assemblyai.com/docs/getting-started/models",
@@ -81,7 +108,293 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "speaker_diarization"
+    ],
+    "description": "Streaming model for notetakers, captions and agent assist (launched Nov 17, 2026) with realtime speaker labels across 32 languages; not tuned for agent turn-taking. Replaces Universal-Streaming English and Multilingual.",
+    "first_seen": "2026-11-19",
+    "id": "assemblyai-stt-3-7-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "yue",
+      "ca",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "he",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "zh",
+      "mr",
+      "no",
+      "nn",
+      "fa",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "ur",
+      "vi",
+      "xh",
+      "zu"
+    ],
+    "meta": {
+      "keyterms_max_terms": 100,
+      "prompt_max_chars": 400,
+      "recommended_for": "notetakers, captions, agent assist",
+      "replaces": [
+        "universal-streaming-english",
+        "universal-streaming-multilingual"
+      ],
+      "streaming_encodings": [
+        "pcm_s16le",
+        "pcm_mulaw",
+        "opus",
+        "ogg_opus",
+        "aac"
+      ],
+      "streaming_endpoints": {
+        "edge": "wss://streaming.assemblyai.com/v3/ws",
+        "eu": "wss://streaming.eu.assemblyai.com/v3/ws",
+        "us": "wss://streaming.us.assemblyai.com/v3/ws"
+      },
+      "streaming_sample_rate_range_hz": [
+        8000,
+        96000
+      ]
+    },
+    "name": "AssemblyAI-STT-3.7-Realtime",
+    "pricing": {
+      "as_of": "2026-11-19",
+      "notes": "Billed per hour of session duration (WebSocket open time, not audio sent). Keyterms prompting included. Add-ons (/hr): streaming speaker diarization 0.12, general prompting (beta) 0.05, medical or vet mode 0.15, PII text redaction 0.12.",
+      "price_usd": 0.3,
+      "source_url": "https://www.assemblyai.com/pricing",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-19",
+      "method": "docs",
+      "urls": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
+        "https://www.assemblyai.com/docs/streaming/select-the-speech-model",
+        "https://www.assemblyai.com/docs/pre-recorded-audio/supported-languages",
+        "https://www.assemblyai.com/pricing",
+        "https://www.assemblyai.com/docs/tts/voices",
+        "https://www.assemblyai.com/docs/tts/connect-parameters",
+        "https://www.assemblyai.com/docs/tts/api-reference/http-api/overview",
+        "https://www.assemblyai.com/docs/tts/limits"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "speaker_diarization"
+    ],
+    "description": "Streaming model tuned for voice agents and IVR (launched Nov 17, 2026), with built-in keyterm prompting, context carryover, Voice Focus and native code switching across 32 languages; successor to Universal-3.6 Pro Realtime.",
+    "first_seen": "2026-11-19",
+    "id": "assemblyai-stt-3-7-realtime-agent",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "af",
+      "ar",
+      "yue",
+      "ca",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "gl",
+      "de",
+      "he",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "zh",
+      "mr",
+      "no",
+      "nn",
+      "fa",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "ur",
+      "vi",
+      "xh",
+      "zu"
+    ],
+    "meta": {
+      "keyterms_max_terms": 100,
+      "recommended_for": "voice agents",
+      "replaces": "universal-3-6-pro",
+      "streaming_encodings": [
+        "pcm_s16le",
+        "pcm_mulaw",
+        "opus",
+        "ogg_opus",
+        "aac"
+      ],
+      "streaming_endpoints": {
+        "edge": "wss://streaming.assemblyai.com/v3/ws",
+        "eu": "wss://streaming.eu.assemblyai.com/v3/ws",
+        "us": "wss://streaming.us.assemblyai.com/v3/ws"
+      },
+      "streaming_sample_rate_range_hz": [
+        8000,
+        96000
+      ]
+    },
+    "name": "AssemblyAI-STT-3.7-Realtime-Agent",
+    "pricing": {
+      "as_of": "2026-11-19",
+      "notes": "Billed per hour of session duration (WebSocket open time, not audio sent). Keyterms prompting included. Add-ons (/hr): streaming speaker diarization 0.12, general prompting (beta) 0.05, Voice Focus 0.10, medical or vet mode 0.15, PII text redaction 0.12.",
+      "price_usd": 0.45,
+      "source_url": "https://www.assemblyai.com/pricing",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-19",
+      "method": "docs",
+      "urls": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
+        "https://www.assemblyai.com/docs/streaming/select-the-speech-model",
+        "https://www.assemblyai.com/docs/pre-recorded-audio/supported-languages",
+        "https://www.assemblyai.com/pricing",
+        "https://www.assemblyai.com/docs/tts/voices",
+        "https://www.assemblyai.com/docs/tts/connect-parameters",
+        "https://www.assemblyai.com/docs/tts/api-reference/http-api/overview",
+        "https://www.assemblyai.com/docs/tts/limits"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "opus",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "profanity_filter",
+      "punctuation",
+      "sentiment",
+      "speaker_diarization",
+      "summarization",
+      "topic_detection",
+      "translation",
+      "word_timestamps"
+    ],
+    "description": "Cost-effective pre-recorded model covering 99 languages; also the fallback for languages AssemblyAI-STT-3.7 doesn't support.",
+    "first_seen": "2026-11-16",
+    "id": "universal-2",
+    "interfaces": [
+      "http"
+    ],
+    "languages": [
+      "*"
+    ],
+    "max_audio_seconds": 36000,
+    "meta": {
+      "code_switching": "limited to 2 languages, one must be English",
+      "keyterms_max_words": 200,
+      "language_count": 99,
+      "max_file_size_gb": 5
+    },
+    "name": "Universal-2",
+    "pricing": {
+      "as_of": "2026-11-19",
+      "notes": "Pre-recorded, billed per audio hour submitted. Add-ons (/hr): speaker diarization 0.02 (experimental 0.065), keyterms prompting 0.05, medical or vet mode 0.15, other Speech Understanding/guardrail add-ons billed separately (see pricing page).",
+      "price_usd": 0.15,
+      "source_url": "https://www.assemblyai.com/pricing",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-19",
+      "method": "docs",
+      "urls": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
+        "https://www.assemblyai.com/docs/streaming/select-the-speech-model",
+        "https://www.assemblyai.com/docs/pre-recorded-audio/supported-languages",
+        "https://www.assemblyai.com/pricing",
+        "https://www.assemblyai.com/docs/tts/voices",
+        "https://www.assemblyai.com/docs/tts/connect-parameters",
+        "https://www.assemblyai.com/docs/tts/api-reference/http-api/overview",
+        "https://www.assemblyai.com/docs/tts/limits"
+      ]
+    },
+    "regions": [
+      "eu",
+      "us"
+    ],
+    "streaming": false,
+    "type": "stt",
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
@@ -110,6 +423,7 @@
       "translation",
       "word_timestamps"
     ],
+    "deprecated_at": "2026-11-19",
     "description": "AssemblyAI's recommended pre-recorded model (highest accuracy, 18 languages, code switching, contextual prompting), also available as the previous-flagship streaming model.",
     "first_seen": "2026-11-16",
     "id": "universal-3-5-pro",
@@ -137,6 +451,7 @@
       "tr",
       "vi"
     ],
+    "lifecycle": "deprecated",
     "max_audio_seconds": 36000,
     "meta": {
       "code_switching": "native",
@@ -213,20 +528,15 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
       "aac",
-      "flac",
-      "m4a",
-      "mp3",
       "mulaw",
       "ogg",
       "opus",
-      "pcm",
-      "wav",
-      "webm"
+      "pcm"
     ],
     "capabilities": [
       "custom_vocabulary",
@@ -236,7 +546,7 @@
       "speaker_diarization",
       "word_timestamps"
     ],
-    "description": "AssemblyAI's flagship real-time model with 32 languages, native code switching, prompting and conversational context; also powers the Sync and Dictation APIs.",
+    "description": "Previous-generation flagship streaming model (Sept 2026), still fully supported, with 32 languages, native code switching, prompting and conversational context; also powers the Sync and Dictation APIs.",
     "first_seen": "2026-11-16",
     "id": "universal-3-6-pro",
     "interfaces": [
@@ -279,17 +589,11 @@
       "zu"
     ],
     "meta": {
-      "code_switching": "native",
       "dictation_api": "Dictation API runs on Universal-3.6 Pro (no separate model id)",
-      "display_name_streaming": "Universal-3.6 Pro Realtime",
-      "domains": [
-        "medical-v1",
-        "veterinary-v1 (beta)"
-      ],
-      "keyterms_max_terms_streaming": 100,
-      "latency": "sub-300ms",
-      "pre_recorded_counterpart": "universal-3-6-pro-preview",
+      "keyterms_max_terms": 100,
+      "status": "previous generation, still fully supported",
       "streaming_default": true,
+      "streaming_default_note": "Streaming API reference: a connection with no speech_model uses universal-3-6-pro; AssemblyAI notes defaults can differ between free and paid accounts",
       "streaming_encodings": [
         "pcm_s16le",
         "pcm_mulaw",
@@ -306,65 +610,35 @@
         8000,
         96000
       ],
+      "successor": "assemblyai-stt-3-7-realtime-agent",
       "sync_api": {
         "endpoint": "https://sync.assemblyai.com/v1/transcribe",
-        "formats": [
-          "wav",
-          "pcm_s16le",
-          "aac",
-          "mp3",
-          "m4a",
-          "ogg_opus",
-          "flac",
-          "webm"
-        ],
-        "max_audio_seconds_http": 1200,
-        "max_audio_seconds_sdk": 120,
-        "max_file_mb": 256,
-        "model_header": "X-AAI-Model: universal-3-6-pro",
-        "sample_rates_hz": [
-          8000,
-          16000,
-          22050,
-          24000,
-          32000,
-          44100,
-          48000
-        ]
+        "max_audio_seconds": 1200,
+        "model_header": "X-AAI-Model: universal-3-6-pro"
       }
     },
     "name": "Universal-3.6 Pro",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "Streaming billed per hour of WebSocket session duration (not audio sent). Keyterms prompting included at no extra charge. $50 free credits for new accounts. Volume discounts available.",
+      "as_of": "2026-11-19",
+      "notes": "Streaming billed per hour of session duration (WebSocket open time, not audio sent). Keyterms prompting included. Listed as previous generation; AssemblyAI recommends the STT-3.7 models for new builds. $50 free credits at signup.",
       "price_usd": 0.45,
       "source_url": "https://www.assemblyai.com/pricing",
       "unit": "hour",
       "variants": [
         {
-          "applies_to": "Sync API (synchronous HTTP transcription)",
+          "applies_to": "Sync API (synchronous HTTP transcription, no LLM cleanup)",
           "price_usd": 0.3,
           "unit": "hour"
         },
         {
-          "applies_to": "Dictation API (transcription + cleanup included)",
+          "applies_to": "Dictation API (transcription + LLM cleanup included)",
           "price_usd": 0.62,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "Streaming speaker diarization add-on",
-          "price_usd": 0.12,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "Medical Mode add-on",
-          "price_usd": 0.15,
           "unit": "hour"
         }
       ]
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-19",
       "method": "docs",
       "urls": [
         "https://www.assemblyai.com/docs/getting-started/models",
@@ -383,7 +657,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
@@ -410,6 +684,7 @@
       "translation",
       "word_timestamps"
     ],
+    "deprecated_at": "2026-11-19",
     "description": "Next-generation pre-recorded model in preview, supporting 32 languages; behavior and parameters may change before GA.",
     "first_seen": "2026-11-16",
     "id": "universal-3-6-pro-preview",
@@ -450,7 +725,7 @@
       "xh",
       "zu"
     ],
-    "lifecycle": "beta",
+    "lifecycle": "deprecated",
     "max_audio_seconds": 36000,
     "meta": {
       "disfluencies_default": true,
@@ -481,7 +756,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
@@ -497,6 +772,7 @@
       "profanity_filter",
       "speaker_diarization"
     ],
+    "deprecated_at": "2026-11-19",
     "description": "Fast, cost-effective English-only streaming model with ~300ms immutable word-by-word transcripts and intelligent endpointing.",
     "first_seen": "2026-11-16",
     "id": "universal-streaming-english",
@@ -506,6 +782,7 @@
     "languages": [
       "en"
     ],
+    "lifecycle": "deprecated",
     "meta": {
       "format_turns": true,
       "keyterms_max_terms": 100,
@@ -562,7 +839,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
@@ -579,6 +856,7 @@
       "profanity_filter",
       "speaker_diarization"
     ],
+    "deprecated_at": "2026-11-19",
     "description": "Cost-effective multilingual streaming model across six languages with per-turn language handling and intelligent endpointing.",
     "first_seen": "2026-11-16",
     "id": "universal-streaming-multilingual",
@@ -593,6 +871,7 @@
       "pt",
       "it"
     ],
+    "lifecycle": "deprecated",
     "meta": {
       "format_turns": true,
       "keyterms_max_terms": 100,
@@ -644,7 +923,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [

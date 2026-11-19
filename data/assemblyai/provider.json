@@ -20,7 +20,7 @@
   ],
   "headquarters": "US",
   "id": "assemblyai",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-19",
   "links": {
     "api_reference": "https://www.assemblyai.com/docs/api-reference",
     "docs": "https://www.assemblyai.com/docs",
@@ -35,7 +35,7 @@
   "source": "docs",
   "type": "both",
   "voices_source": {
-    "as_of": "2026-11-16",
+    "as_of": "2026-11-19",
     "method": "docs",
     "urls": [
       "https://www.assemblyai.com/docs/getting-started/models",
