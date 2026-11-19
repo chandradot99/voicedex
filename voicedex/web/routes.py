@@ -58,6 +58,7 @@ templates.env.globals.update(
     TYPE_SHORT=views.TYPE_SHORT,
     ACCESS_LABELS=views.ACCESS_LABELS,
     country_name=views.country_name,
+    report_url=views.report_url,
 )
 
 router = APIRouter(include_in_schema=False)

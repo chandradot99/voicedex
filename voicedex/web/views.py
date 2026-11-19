@@ -938,3 +938,18 @@ def alternatives_page(catalog: Catalog, pid: str) -> AlternativesPage:
                             retired_on=p.retired_on.isoformat() if p.retired_on else None, types=types,
                             subject_sides=sides, subject_features=feats, alternatives=alts, totals=totals,
                             cheaper=cheaper, title=title, description=desc, intro=intro)
+
+
+REPO_URL = "https://github.com/chandradot99/voicedex"
+
+
+def report_url(provider_id: str, model_id: str | None = None, page: str | None = None) -> str:
+    """A pre-filled 'Data correction' GitHub issue for a provider (and optionally one model)."""
+    from urllib.parse import urlencode
+    title = f"Data: {provider_id}" + (f" / {model_id}" if model_id else "")
+    q = {"template": "data-correction.yml", "title": title, "provider": provider_id}
+    if model_id:
+        q["model"] = model_id
+    if page:
+        q["page"] = page
+    return f"{REPO_URL}/issues/new?{urlencode(q)}"

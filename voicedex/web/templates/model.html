@@ -133,6 +133,7 @@
         {% if m.meta.get('docs_sources') %}Features added from {{ p.name }}'s documentation.{% endif %}
         {% if m.pricing and m.pricing.source_url and m.provenance and m.provenance.method == "api" %}Price from {{ p.name }}'s pricing page.{% endif %}</p>
       {% if m.provenance and m.provenance.urls %}<ul class="side-list">{% for u in m.provenance.urls[:4] %}<li><a href="{{ u if u.startswith('http') else '#' }}" rel="noopener">{{ u.split('//')[-1].split('?')[0][:44] }}</a></li>{% endfor %}</ul>{% endif %}
+      <p class="side-note"><a href="{{ report_url(p.id, m.id, site_url ~ request.url.path) }}" rel="noopener">Spot an error? Report it</a></p>
     </div>
 
     {% if siblings %}

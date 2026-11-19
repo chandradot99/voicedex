@@ -1,0 +1,48 @@
+name: Data correction
+description: Something on voicedex.dev is wrong, missing or out of date (a price, model, language, feature or shutdown date).
+title: "Data: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the catalog accurate. A link to the provider's own page (pricing, docs, changelog) lets us fix it quickly.
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      placeholder: e.g. speechmatics
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model or voice (if it's about one)
+      placeholder: e.g. melia-1
+  - type: input
+    id: page
+    attributes:
+      label: Page on voicedex.dev
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong or missing?
+      placeholder: e.g. The price shown is $0.30/hr but the pricing page says $0.24/hr.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link to the provider's own page that shows the correct information.
+      placeholder: https://
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Do you work at this provider?
+      description: Providers who confirm their listing can have it marked as verified by the provider.
+      options:
+        - "No"
+        - "Yes, I work there"
+    validations:
+      required: true

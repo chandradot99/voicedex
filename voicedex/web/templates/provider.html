@@ -23,6 +23,7 @@
     {% if p.website %}<a href="{{ p.website }}" rel="noopener">Website</a>{% endif %}
     {% for u in p.docs_urls[:1] %}<a href="{{ u }}" rel="noopener">Documentation</a>{% endfor %}
     {% if p.status == "active" %}<a href="/v1/providers/{{ p.id }}/models">Models as JSON</a>{% endif %}
+    <a href="{{ report_url(p.id, page=site_url ~ '/providers/' ~ p.id) }}" rel="noopener">Spot an error? Report it</a>
   </p>
 </section>
 
