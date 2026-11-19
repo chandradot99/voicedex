@@ -4,8 +4,9 @@ Deepgram sync script.
 Source: GET https://api.deepgram.com/v1/models (API)
   - stt[] → STT models (one entry per model per language — deduplicated by canonical_name)
   - tts[] → TTS models (deduplicated by architecture) + TTS voices (one per entry)
-Docs supplement: models the /v1/models listing omits (e.g. the Flux conversational STT family, served on
-its own /v2/listen endpoint) come from the docs. API records win on id collisions.
+Docs supplement: models the /v1/models listing omits come from the docs — the Flux conversational STT
+family (its own /v2/listen endpoint) and Flux TTS (/v2/speak; one model family, the per-voice `model`
+strings are its voices). API records win on id collisions.
 """
 
 from __future__ import annotations
@@ -13,7 +14,7 @@ from __future__ import annotations
 import httpx
 
 from voicedex.config import settings
-from voicedex.sync.ai_parser import parse_models_from_docs
+from voicedex.sync.ai_parser import parse_models_from_docs, parse_voices_from_docs
 from voicedex.sync.base import HTTP_TIMEOUT, ProviderSyncer, SyncModel, SyncResult, SyncVoice
 from voicedex.sync.language import normalize_languages
 
@@ -28,6 +29,25 @@ _STT_DOCS_GUIDANCE = (
     "Return ONLY speech-to-text models that are callable but are NOT listed by GET /v1/models — in "
     "particular models served on separate endpoints (e.g. /v2/listen). Exact `model` parameter strings, "
     "languages, per-minute pay-as-you-go pricing as published. is_default=false for all of them."
+)
+
+_TTS_DOCS_URLS = [
+    "https://developers.deepgram.com/docs/flux-tts/overview",
+    "https://developers.deepgram.com/docs/flux-tts/voices",
+    "https://developers.deepgram.com/docs/tts-voice-controls",
+    "https://deepgram.com/pricing",
+]
+_TTS_DOCS_GUIDANCE = (
+    "Return ONLY text-to-speech model families that are callable but are NOT listed by GET /v1/models — "
+    "in particular those served on the separate /v2/speak endpoint. One record per model family (not per "
+    "voice): the family name as model_id, every language its voices cover, per-character pay-as-you-go "
+    "pricing as published (plan rates as variants). is_default=false."
+)
+_TTS_VOICES_GUIDANCE = (
+    "Return ONLY voices of text-to-speech models served on /v2/speak (not listed by GET /v1/models). "
+    "voice_id = the exact `model` parameter string for that voice; compatible_models = [the family "
+    "model_id used for the model record]. Name, gender, accent and language as the voices page states them; "
+    "mark voices in languages labelled Early Access with meta.early_access=true."
 )
 
 # Deepgram's API doesn't flag a default. Pick the first of these that the API
@@ -53,13 +73,24 @@ class DeepgramSyncer(ProviderSyncer):
         )
         api_ids = {m.model_id for m in stt_models}
         stt_models += [m for m in docs_stt if m.model_id not in api_ids]
+        docs_tts, _ = await parse_models_from_docs(
+            seed_urls=_TTS_DOCS_URLS, provider_id=self.provider_id, model_type="tts",
+            guidance=_TTS_DOCS_GUIDANCE,
+        )
+        docs_voices, _ = await parse_voices_from_docs(
+            seed_urls=_TTS_DOCS_URLS[:2], provider_id=self.provider_id, guidance=_TTS_VOICES_GUIDANCE,
+        )
+        tts_ids = {m.model_id for m in tts_models}
+        tts_models += [m for m in docs_tts if m.model_id not in tts_ids]
+        voice_ids = {v.voice_id for v in tts_voices}
+        tts_voices += [v for v in docs_voices if v.voice_id not in voice_ids]
         return SyncResult(
             stt_models=stt_models,
             tts_models=tts_models,
             tts_voices=tts_voices,
             source=self.source,
             api_urls=[_API_URL],
-            docs_urls=_STT_DOCS_URLS,
+            docs_urls=list(dict.fromkeys(_STT_DOCS_URLS + _TTS_DOCS_URLS)),
         )
 
     # ── Private helpers ───────────────────────────────────────────────────────

@@ -97,8 +97,10 @@ def seed_cache_from_data(provider_id: str, data_dir: Path) -> list[str]:
             path.write_text(json.dumps([_model_to_cache(m) for m in recs], indent=2))
             seeded.append(f"{t} models ({len(recs)})")
     vs = pd.provider.voices_source
-    if vs is not None and vs.method == "docs" and not _voices_path(provider_id).exists():
-        voices = [v for v in pd.voices if v.deprecated_at is None]
+    all_docs = vs is not None and vs.method == "docs"
+    # API-voiced providers can carry docs-extracted voices too (meta.source == "docs", e.g. Deepgram Flux TTS)
+    voices = [v for v in pd.voices if v.deprecated_at is None and (all_docs or v.meta.get("source") == "docs")]
+    if voices and not _voices_path(provider_id).exists():
         rows = []
         for v in voices:
             d = v.model_dump(mode="json", exclude_none=True)

@@ -13,11 +13,14 @@
   "docs_urls": [
     "https://developers.deepgram.com/docs/flux/quickstart",
     "https://developers.deepgram.com/docs/models-languages-overview",
-    "https://deepgram.com/pricing"
+    "https://deepgram.com/pricing",
+    "https://developers.deepgram.com/docs/flux-tts/overview",
+    "https://developers.deepgram.com/docs/flux-tts/voices",
+    "https://developers.deepgram.com/docs/tts-voice-controls"
   ],
   "headquarters": "US",
   "id": "deepgram",
-  "last_synced": "2026-11-18",
+  "last_synced": "2026-11-19",
   "links": {
     "api_reference": "https://developers.deepgram.com/reference",
     "docs": "https://developers.deepgram.com/docs",
@@ -33,7 +36,7 @@
   "source": "mixed",
   "type": "both",
   "voices_source": {
-    "as_of": "2026-11-18",
+    "as_of": "2026-11-19",
     "method": "api",
     "urls": [
       "https://api.deepgram.com/v1/models"

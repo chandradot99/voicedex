@@ -2028,6 +2028,7 @@
       "ko-KR",
       "kok",
       "ks",
+      "ks-Arab",
       "ky",
       "lg",
       "lt",
@@ -2140,7 +2141,7 @@
       ],
       "formatted_output": false,
       "multilingual": true,
-      "version": "2026-11-16.3133"
+      "version": "2026-11-18.24185"
     },
     "name": "Nova 3 General",
     "pricing": {
@@ -2188,14 +2189,14 @@
       ]
     },
     "provenance": {
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-19",
       "method": "api",
       "urls": [
         "https://api.deepgram.com/v1/models"
       ]
     },
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-19"
   },
   {
     "batch": true,
@@ -3898,5 +3899,186 @@
     },
     "type": "tts",
     "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "aac",
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control"
+    ],
+    "description": "Deepgram's conversation-native TTS for real-time voice agents, served on /v2/speak over streaming WebSocket and batch REST with turn-based synthesis and barge-in reporting.",
+    "first_seen": "2026-11-19",
+    "id": "flux-tts",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "bg",
+      "bn",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "de-CH",
+      "el",
+      "en-AU",
+      "en-GB",
+      "en-IE",
+      "en-IN",
+      "en-PH",
+      "en-SG",
+      "en-US",
+      "es",
+      "et",
+      "fi",
+      "fr",
+      "gu",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "kn",
+      "ko",
+      "lt",
+      "lv",
+      "mr",
+      "ms",
+      "nl",
+      "nl-BE",
+      "no",
+      "pl",
+      "pt-BR",
+      "pt-PT",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sv",
+      "ta",
+      "te",
+      "tl",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "yue",
+      "zh",
+      "zh-TW"
+    ],
+    "meta": {
+      "capability_notes": {
+        "phoneme_input": "Inline IPA pronunciation overrides; Early Access on Flux TTS; English only; cannot be combined with speed (other than 1.0) or pause",
+        "prosody_control": "speed 0.5-1.5 (0.05 steps; mid-stream Configure on WebSocket) and inline pause markers (batch REST only, 500-3000 ms, max 8); English only"
+      },
+      "docs_sources": [
+        "https://developers.deepgram.com/docs/flux-tts/overview",
+        "https://developers.deepgram.com/docs/flux-tts/voices",
+        "https://developers.deepgram.com/docs/flux-tts/feature-overview",
+        "https://developers.deepgram.com/docs/flux-tts/batch",
+        "https://developers.deepgram.com/docs/flux-tts/quickstart",
+        "https://developers.deepgram.com/docs/tts-voice-controls",
+        "https://developers.deepgram.com/docs/tts-expressivity"
+      ],
+      "early_access_languages_note": "Early Access languages have no text normalization (numbers/dates read as written); normalization for en, de, nl, fr, hi, it, ja, pt, ru, es",
+      "encodings": {
+        "batch": [
+          "mp3",
+          "opus",
+          "flac",
+          "aac",
+          "linear16",
+          "mulaw",
+          "alaw"
+        ],
+        "streaming": [
+          "linear16",
+          "mulaw",
+          "alaw"
+        ]
+      },
+      "endpoint": "/v2/speak",
+      "expressivity": "beta: integer -2 (calm) to 2 (animated), default 0; both transports",
+      "hosting_note": "Non-English voices available on api.deepgram.com, api.eu.deepgram.com and api.in.deepgram.com; not yet on api.au.deepgram.com",
+      "inactivity_timeout_seconds": 60,
+      "max_session_seconds": 3600,
+      "model_parameter_format": "flux-{voice}-{language}",
+      "sample_rates_by_encoding": {
+        "alaw": [
+          8000,
+          16000
+        ],
+        "flac": [
+          8000,
+          16000,
+          22050,
+          32000,
+          48000
+        ],
+        "linear16": [
+          8000,
+          16000,
+          24000,
+          32000,
+          44100,
+          48000
+        ],
+        "mulaw": [
+          8000,
+          16000
+        ]
+      }
+    },
+    "name": "Flux TTS",
+    "pricing": {
+      "as_of": "2026-11-19",
+      "notes": "$0.0450 per 1,000 characters Pay as you go; $0.0405/1k on Growth. Promo: for Flux TTS, $1 in credits for every $1 spent, up to $500, through Dec. 31, 2026. $200 free credit on Pay as you go.",
+      "price_usd": 4.5e-05,
+      "source_url": "https://deepgram.com/pricing",
+      "unit": "character",
+      "variants": [
+        {
+          "applies_to": "Growth plan",
+          "price_usd": 4.05e-05,
+          "unit": "character"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-19",
+      "method": "docs",
+      "urls": [
+        "https://developers.deepgram.com/docs/flux/quickstart",
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://deepgram.com/pricing",
+        "https://developers.deepgram.com/docs/flux-tts/overview",
+        "https://developers.deepgram.com/docs/flux-tts/voices",
+        "https://developers.deepgram.com/docs/tts-voice-controls"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-19"
   }
 ]

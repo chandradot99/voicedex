@@ -3619,5 +3619,5415 @@
     "use_cases": [
       "IVR"
     ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-afsana-bn",
+    "languages": [
+      "bn"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bengali",
+      "source": "docs"
+    },
+    "name": "Afsana",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-agnese-lv",
+    "languages": [
+      "lv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Latvian",
+      "source": "docs"
+    },
+    "name": "Agnese",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-aina-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Aina",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-ajay-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Ajay",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-alexis-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Alexis",
+    "tags": [
+      "clear",
+      "professional",
+      "calm",
+      "caring",
+      "empathetic"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR",
+      "financial services"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-alfredo-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Alfredo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ambreen-ur",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Urdu",
+      "source": "docs"
+    },
+    "name": "Ambreen",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-andrei-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Andrei",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-angela-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Angela",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-anjali-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Anjali",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-anouk-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Anouk",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-arjun-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Arjun",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-arnaud-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Arnaud",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-artur-pt",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Portugal)",
+      "source": "docs"
+    },
+    "name": "Artur",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-axel-sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Swedish",
+      "source": "docs"
+    },
+    "name": "Axel",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ayumi-ja",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese",
+      "source": "docs"
+    },
+    "name": "Ayumi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-bartosz-pl",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Polish",
+      "source": "docs"
+    },
+    "name": "Bartosz",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-bence-hu",
+    "languages": [
+      "hu"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Hungarian",
+      "source": "docs"
+    },
+    "name": "Bence",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-benedita-pt",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Portugal)",
+      "source": "docs"
+    },
+    "name": "Benedita",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-benjamin-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Benjamin",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-benoit-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Benoit",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-bhavna-gu",
+    "languages": [
+      "gu"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Gujarati",
+      "source": "docs"
+    },
+    "name": "Bhavna",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-bianca-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Bianca",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-bo-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Bo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-bram-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Bram",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-bree-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Bree",
+    "tags": [
+      "friendly",
+      "sweet",
+      "kind"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "casual chat"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-brigitte-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Brigitte",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-brittany-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Brittany",
+    "tags": [
+      "confident",
+      "kind",
+      "soft"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-brooke-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Brooke",
+    "tags": [
+      "friendly",
+      "intelligent",
+      "fast",
+      "confident",
+      "energetic"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Healthcare",
+      "financial services",
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-bruce-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Bruce",
+    "tags": [
+      "friendly",
+      "kind",
+      "natural",
+      "believable",
+      "engaged"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-bruno-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Bruno",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-camille-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Camille",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-carmen-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Carmen",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-catarina-pt",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Portugal)",
+      "source": "docs"
+    },
+    "name": "Catarina",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-cecilia-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Cecilia",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-charlotta-sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Swedish",
+      "source": "docs"
+    },
+    "name": "Charlotta",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-chiara-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Chiara",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-chiaying-zh",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Taiwanese Mandarin)",
+      "source": "docs"
+    },
+    "name": "Chiaying",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-chloe-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Chloe",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-christian-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Christian",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-claudia-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Claudia",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-cliff-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Cliff",
+    "tags": [
+      "deep",
+      "confident",
+      "calm",
+      "raspy",
+      "clear"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Financial services",
+      "narration",
+      "customer service"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-cole-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Cole",
+    "tags": [
+      "friendly",
+      "clear",
+      "interesting",
+      "energetic",
+      "engaging"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-colin-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Colin",
+    "tags": [
+      "warm",
+      "friendly",
+      "trustworthy",
+      "confident",
+      "authoritative"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "financial services",
+      "narration"
+    ]
+  },
+  {
+    "accent": "british",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-conor-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Conor",
+    "tags": [
+      "confident",
+      "deep",
+      "friendly",
+      "relaxed"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-cosmin-ro",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Romanian",
+      "source": "docs"
+    },
+    "name": "Cosmin",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-dalibor-hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Croatian",
+      "source": "docs"
+    },
+    "name": "Dalibor",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-danijela-hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Croatian",
+      "source": "docs"
+    },
+    "name": "Danijela",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-denys-uk",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Ukrainian",
+      "source": "docs"
+    },
+    "name": "Denys",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-desislava-bg",
+    "languages": [
+      "bg"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bulgarian",
+      "source": "docs"
+    },
+    "name": "Desislava",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-dewi-id",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Indonesian",
+      "source": "docs"
+    },
+    "name": "Dewi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-dilek-tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Turkish",
+      "source": "docs"
+    },
+    "name": "Dilek",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-dirk-nl",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "language_label": "Dutch (Flemish)",
+      "source": "docs"
+    },
+    "name": "Dirk",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-divya-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Divya",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-domagoj-hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Croatian",
+      "source": "docs"
+    },
+    "name": "Domagoj",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-dominika-sk",
+    "languages": [
+      "sk"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Slovak",
+      "source": "docs"
+    },
+    "name": "Dominika",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-donovan-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Donovan",
+    "tags": [
+      "professional",
+      "calm",
+      "thoughtful"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-drew-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Drew",
+    "tags": [
+      "confident",
+      "relaxed",
+      "soft",
+      "young",
+      "calm"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Healthcare",
+      "financial services",
+      "customer service",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-duvan-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Duvan",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ecem-tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Turkish",
+      "source": "docs"
+    },
+    "name": "Ecem",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-edgars-lv",
+    "languages": [
+      "lv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Latvian",
+      "source": "docs"
+    },
+    "name": "Edgars",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-eduardo-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Eduardo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-elise-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Elise",
+    "tags": [
+      "clear",
+      "professional",
+      "calm",
+      "caring",
+      "empathetic"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "financial services",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-emre-tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Turkish",
+      "source": "docs"
+    },
+    "name": "Emre",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-erlend-no",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Norwegian",
+      "source": "docs"
+    },
+    "name": "Erlend",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-ernesto-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Ernesto",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-espen-no",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Norwegian",
+      "source": "docs"
+    },
+    "name": "Espen",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-eszter-hu",
+    "languages": [
+      "hu"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Hungarian",
+      "source": "docs"
+    },
+    "name": "Eszter",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-eunji-ko",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Korean",
+      "source": "docs"
+    },
+    "name": "Eunji",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ewa-pl",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Polish",
+      "source": "docs"
+    },
+    "name": "Ewa",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-fajar-id",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Indonesian",
+      "source": "docs"
+    },
+    "name": "Fajar",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-federico-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Federico",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-fernanda-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Fernanda",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-fiorella-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Fiorella",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-fitri-id",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Indonesian",
+      "source": "docs"
+    },
+    "name": "Fitri",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-fleur-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Fleur",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-florian-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Florian",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-frida-sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Swedish",
+      "source": "docs"
+    },
+    "name": "Frida",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "british",
+    "age": "Young",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-gemma-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Gemma",
+    "tags": [
+      "friendly",
+      "kind",
+      "approachable",
+      "caring",
+      "happy"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-gergana-bg",
+    "languages": [
+      "bg"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bulgarian",
+      "source": "docs"
+    },
+    "name": "Gergana",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-giorgio-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Giorgio",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-gizem-tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Turkish",
+      "source": "docs"
+    },
+    "name": "Gizem",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-goda-lt",
+    "languages": [
+      "lt"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Lithuanian",
+      "source": "docs"
+    },
+    "name": "Goda",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-gokul-ta",
+    "languages": [
+      "ta"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tamil",
+      "source": "docs"
+    },
+    "name": "Gokul",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-gregor-sl",
+    "languages": [
+      "sl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Slovenian",
+      "source": "docs"
+    },
+    "name": "Gregor",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-gustavo-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Gustavo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-haley-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Haley",
+    "tags": [
+      "clear",
+      "professional",
+      "caring",
+      "calm",
+      "empathetic"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "financial services",
+      "IVR"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Young",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-hannah-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Hannah",
+    "tags": [
+      "clear",
+      "confident",
+      "thoughtful",
+      "pleasant",
+      "nice"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Casual chat",
+      "storytelling"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-haoran-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Haoran",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-hayato-ja",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese",
+      "source": "docs"
+    },
+    "name": "Hayato",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-haziq-ms",
+    "languages": [
+      "ms"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Malay",
+      "source": "docs"
+    },
+    "name": "Haziq",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Young",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-heather-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Heather",
+    "tags": [
+      "clear",
+      "engaging",
+      "energetic",
+      "friendly",
+      "thoughtful"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-hetal-gu",
+    "languages": [
+      "gu"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Gujarati",
+      "source": "docs"
+    },
+    "name": "Hetal",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-hoa-vi",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Vietnamese",
+      "source": "docs"
+    },
+    "name": "Hoa",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-hugo-pt",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Portugal)",
+      "source": "docs"
+    },
+    "name": "Hugo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-hyunwoo-ko",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Korean",
+      "source": "docs"
+    },
+    "name": "Hyunwoo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ida-no",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Norwegian",
+      "source": "docs"
+    },
+    "name": "Ida",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ioana-ro",
+    "languages": [
+      "ro"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Romanian",
+      "source": "docs"
+    },
+    "name": "Ioana",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-irene-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Irene",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ishrat-bn",
+    "languages": [
+      "bn"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bengali",
+      "source": "docs"
+    },
+    "name": "Ishrat",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-izzah-ms",
+    "languages": [
+      "ms"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Malay",
+      "source": "docs"
+    },
+    "name": "Izzah",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jack-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Jack",
+    "tags": [
+      "confident",
+      "thoughtful",
+      "friendly",
+      "professional",
+      "clear"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "storytelling"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jaime-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Jaime",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jakub-cs",
+    "languages": [
+      "cs"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Czech",
+      "source": "docs"
+    },
+    "name": "Jakub",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-janine-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Janine",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-jasna-hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Croatian",
+      "source": "docs"
+    },
+    "name": "Jasna",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jerome-tl",
+    "languages": [
+      "tl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tagalog",
+      "source": "docs"
+    },
+    "name": "Jerome",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jian-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Jian",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jie-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Jie",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jignesh-gu",
+    "languages": [
+      "gu"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Gujarati",
+      "source": "docs"
+    },
+    "name": "Jignesh",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jomar-tl",
+    "languages": [
+      "tl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tagalog",
+      "source": "docs"
+    },
+    "name": "Jomar",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-jordi-ca",
+    "languages": [
+      "ca"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Catalan",
+      "source": "docs"
+    },
+    "name": "Jordi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-josipa-hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Croatian",
+      "source": "docs"
+    },
+    "name": "Josipa",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-judit-ca",
+    "languages": [
+      "ca"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Catalan",
+      "source": "docs"
+    },
+    "name": "Judit",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-julien-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Julien",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-juraj-sk",
+    "languages": [
+      "sk"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Slovak",
+      "source": "docs"
+    },
+    "name": "Juraj",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-justyna-pl",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Polish",
+      "source": "docs"
+    },
+    "name": "Justyna",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-jyoti-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Jyoti",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-kacper-pl",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Polish",
+      "source": "docs"
+    },
+    "name": "Kacper",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "singaporean",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-kai-en",
+    "languages": [
+      "en-SG"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (Singaporean)",
+      "source": "docs"
+    },
+    "name": "Kai",
+    "tags": [
+      "clear",
+      "calm",
+      "professional",
+      "knowledgeable",
+      "caring"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "informative",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-katja-sl",
+    "languages": [
+      "sl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Slovenian",
+      "source": "docs"
+    },
+    "name": "Katja",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-kavya-ta",
+    "languages": [
+      "ta"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tamil",
+      "source": "docs"
+    },
+    "name": "Kavya",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-kelsey-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Kelsey",
+    "tags": [
+      "clear",
+      "professional",
+      "caring",
+      "calm",
+      "empathetic"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR",
+      "financial services"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-kinga-hu",
+    "languages": [
+      "hu"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Hungarian",
+      "source": "docs"
+    },
+    "name": "Kinga",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-kirill-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Kirill",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-kirsi-fi",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Finnish",
+      "source": "docs"
+    },
+    "name": "Kirsi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "british",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-kit-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Kit",
+    "tags": [
+      "friendly",
+      "energetic",
+      "thoughtful",
+      "calm",
+      "helpful"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "narration",
+      "financial services"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-konrad-pl",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Polish",
+      "source": "docs"
+    },
+    "name": "Konrad",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-kostas-el",
+    "languages": [
+      "el"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Greek",
+      "source": "docs"
+    },
+    "name": "Kostas",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-kuanyu-zh",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Taiwanese Mandarin)",
+      "source": "docs"
+    },
+    "name": "Kuanyu",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-leandro-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Leandro",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-leonie-de",
+    "languages": [
+      "de-CH"
+    ],
+    "meta": {
+      "language_label": "German (Swiss)",
+      "source": "docs"
+    },
+    "name": "Leonie",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-liezel-tl",
+    "languages": [
+      "tl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tagalog",
+      "source": "docs"
+    },
+    "name": "Liezel",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-lijuan-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Lijuan",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-lotte-nl",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "language_label": "Dutch (Flemish)",
+      "source": "docs"
+    },
+    "name": "Lotte",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-ludvig-sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Swedish",
+      "source": "docs"
+    },
+    "name": "Ludvig",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-luuk-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Luuk",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "irish",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-maeve-en",
+    "languages": [
+      "en-IE"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (Irish)",
+      "source": "docs"
+    },
+    "name": "Maeve",
+    "tags": [
+      "friendly",
+      "energetic",
+      "confident",
+      "gentle",
+      "calm"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR",
+      "narration"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-magdalena-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Magdalena",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-mamun-bn",
+    "languages": [
+      "bn"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bengali",
+      "source": "docs"
+    },
+    "name": "Mamun",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-manjunath-kn",
+    "languages": [
+      "kn"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Kannada",
+      "source": "docs"
+    },
+    "name": "Manjunath",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-manlok-zh",
+    "languages": [
+      "yue"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Cantonese)",
+      "source": "docs"
+    },
+    "name": "Manlok",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "filipino",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-marcelo-en",
+    "languages": [
+      "en-PH"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (Filipino)",
+      "source": "docs"
+    },
+    "name": "Marcelo",
+    "tags": [
+      "clear",
+      "calm",
+      "professional",
+      "knowledgeable",
+      "caring"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "informative",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-marcia-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Marcia",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-marcus-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Marcus",
+    "tags": [
+      "friendly",
+      "helpful",
+      "smooth",
+      "professional",
+      "kind"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "casual chat"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-mariana-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Mariana",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-marta-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Marta",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-martin-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Martin",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-mateus-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Mateus",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-mathieu-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Mathieu",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-matteo-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Matteo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-mauricio-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Mauricio",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-maxim-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Maxim",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "indian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-meena-en",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (Indian)",
+      "source": "docs"
+    },
+    "name": "Meena",
+    "tags": [
+      "empathetic",
+      "professional",
+      "calm",
+      "reassuring",
+      "satisfying"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "casual chat"
+    ]
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-meghan-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Meghan",
+    "tags": [
+      "friendly",
+      "nice",
+      "energetic",
+      "kind",
+      "confident"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Healthcare",
+      "financial services"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-mehmet-tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Turkish",
+      "source": "docs"
+    },
+    "name": "Mehmet",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-miguel-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Miguel",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-mihaela-hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Croatian",
+      "source": "docs"
+    },
+    "name": "Mihaela",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-mikhail-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Mikhail",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-mikyung-ko",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Korean",
+      "source": "docs"
+    },
+    "name": "Mikyung",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-miles-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Miles",
+    "tags": [
+      "clear",
+      "calm",
+      "professional",
+      "confident",
+      "sincere"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "financial services",
+      "informative"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-minh-vi",
+    "languages": [
+      "vi"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Vietnamese",
+      "source": "docs"
+    },
+    "name": "Minh",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-minjun-ko",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Korean",
+      "source": "docs"
+    },
+    "name": "Minjun",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-monique-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Monique",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-moritz-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Moritz",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-nadine-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Nadine",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-natalia-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Natalia",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "indian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-naveen-en",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (Indian)",
+      "source": "docs"
+    },
+    "name": "Naveen",
+    "tags": [
+      "clear",
+      "professional",
+      "knowledgeable",
+      "calm",
+      "caring"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "IVR",
+      "informative"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-neringa-lt",
+    "languages": [
+      "lt"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Lithuanian",
+      "source": "docs"
+    },
+    "name": "Neringa",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-niels-nl",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "language_label": "Dutch (Flemish)",
+      "source": "docs"
+    },
+    "name": "Niels",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-nikhil-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Nikhil",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-nikolai-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Nikolai",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-noel-tl",
+    "languages": [
+      "tl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tagalog",
+      "source": "docs"
+    },
+    "name": "Noel",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-nozomi-ja",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese",
+      "source": "docs"
+    },
+    "name": "Nozomi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-olga-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Olga",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-oskar-sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Swedish",
+      "source": "docs"
+    },
+    "name": "Oskar",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-paige-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Paige",
+    "tags": [
+      "clear",
+      "professional",
+      "calm",
+      "comfortable",
+      "caring"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "financial services",
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-pallavi-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Pallavi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-paola-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Paola",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-patricia-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Patricia",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-pavan-te",
+    "languages": [
+      "te"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Telugu",
+      "source": "docs"
+    },
+    "name": "Pavan",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-pedro-pt",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Portugal)",
+      "source": "docs"
+    },
+    "name": "Pedro",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-pernille-da",
+    "languages": [
+      "da"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Danish",
+      "source": "docs"
+    },
+    "name": "Pernille",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-pierre-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Pierre",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-pilar-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Pilar",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-polina-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Polina",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-pontus-sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Swedish",
+      "source": "docs"
+    },
+    "name": "Pontus",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-pooja-mr",
+    "languages": [
+      "mr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Marathi",
+      "source": "docs"
+    },
+    "name": "Pooja",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-prachi-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Prachi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-pratik-mr",
+    "languages": [
+      "mr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Marathi",
+      "source": "docs"
+    },
+    "name": "Pratik",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "indian",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-priya-en",
+    "languages": [
+      "en-IN"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (Indian)",
+      "source": "docs"
+    },
+    "name": "Priya",
+    "tags": [
+      "confident",
+      "empathetic",
+      "professional",
+      "calm",
+      "reassuring"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rafael-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Rafael",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rahul-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Rahul",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rajesh-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Rajesh",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rasmus-da",
+    "languages": [
+      "da"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Danish",
+      "source": "docs"
+    },
+    "name": "Rasmus",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-ravi-te",
+    "languages": [
+      "te"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Telugu",
+      "source": "docs"
+    },
+    "name": "Ravi",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-renato-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Renato",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-ricardo-pt",
+    "languages": [
+      "pt-PT"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Portugal)",
+      "source": "docs"
+    },
+    "name": "Ricardo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rikke-da",
+    "languages": [
+      "da"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Danish",
+      "source": "docs"
+    },
+    "name": "Rikke",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ritu-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Ritu",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rizky-id",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Indonesian",
+      "source": "docs"
+    },
+    "name": "Rizky",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-roberto-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Roberto",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rocco-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Rocco",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rodrigo-pt",
+    "languages": [
+      "pt-BR"
+    ],
+    "meta": {
+      "language_label": "Portuguese (Brazil)",
+      "source": "docs"
+    },
+    "name": "Rodrigo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rolf-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Rolf",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-ruben-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Ruben",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-rufus-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Rufus",
+    "tags": [
+      "friendly",
+      "confident",
+      "intelligent",
+      "gentle",
+      "enthusiastic"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Healthcare",
+      "financial services",
+      "storytelling"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-sabbir-bn",
+    "languages": [
+      "bn"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bengali",
+      "source": "docs"
+    },
+    "name": "Sabbir",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sanne-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Sanne",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sayaka-ja",
+    "languages": [
+      "ja"
+    ],
+    "meta": {
+      "language_label": "Japanese",
+      "source": "docs"
+    },
+    "name": "Sayaka",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "british",
+    "age": "Mature",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-sean-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Sean",
+    "tags": [
+      "friendly",
+      "kind",
+      "caring",
+      "calming"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "IVR"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-serkan-tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Turkish",
+      "source": "docs"
+    },
+    "name": "Serkan",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "australian",
+    "age": "Young",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sharon-en",
+    "languages": [
+      "en-AU"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (Australian)",
+      "source": "docs"
+    },
+    "name": "Sharon",
+    "tags": [
+      "formal",
+      "calm",
+      "relaxed",
+      "confident"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Healthcare",
+      "financial services"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-shreya-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Shreya",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-shufen-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Shufen",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-shuvo-bn",
+    "languages": [
+      "bn"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bengali",
+      "source": "docs"
+    },
+    "name": "Shuvo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Young Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sienna-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": true,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Sienna",
+    "tags": [
+      "clear",
+      "professional",
+      "calm",
+      "warm",
+      "caring"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "financial services",
+      "narration"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-signe-no",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Norwegian",
+      "source": "docs"
+    },
+    "name": "Signe",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-silje-no",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Norwegian",
+      "source": "docs"
+    },
+    "name": "Silje",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sneha-mr",
+    "languages": [
+      "mr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Marathi",
+      "source": "docs"
+    },
+    "name": "Sneha",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sofia-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Sofia",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-solomiya-uk",
+    "languages": [
+      "uk"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Ukrainian",
+      "source": "docs"
+    },
+    "name": "Solomiya",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sonja-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Sonja",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-soojin-ko",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Korean",
+      "source": "docs"
+    },
+    "name": "Soojin",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sowmya-ta",
+    "languages": [
+      "ta"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tamil",
+      "source": "docs"
+    },
+    "name": "Sowmya",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sravani-te",
+    "languages": [
+      "te"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Telugu",
+      "source": "docs"
+    },
+    "name": "Sravani",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-stefano-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Stefano",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sumaiya-bn",
+    "languages": [
+      "bn"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Bengali",
+      "source": "docs"
+    },
+    "name": "Sumaiya",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-sungmin-ko",
+    "languages": [
+      "ko"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Korean",
+      "source": "docs"
+    },
+    "name": "Sungmin",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-sunita-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Sunita",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-sven-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Sven",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "british",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-tanner-en",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (British)",
+      "source": "docs"
+    },
+    "name": "Tanner",
+    "tags": [
+      "professional",
+      "calm",
+      "confident"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-teemu-fi",
+    "languages": [
+      "fi"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Finnish",
+      "source": "docs"
+    },
+    "name": "Teemu",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-teguh-id",
+    "languages": [
+      "id"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Indonesian",
+      "source": "docs"
+    },
+    "name": "Teguh",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-thierry-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Thierry",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-tibor-hu",
+    "languages": [
+      "hu"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Hungarian",
+      "source": "docs"
+    },
+    "name": "Tibor",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-tobias-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Tobias",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-tomas-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Tomas",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-triin-et",
+    "languages": [
+      "et"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Estonian",
+      "source": "docs"
+    },
+    "name": "Triin",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-trisha-tl",
+    "languages": [
+      "tl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tagalog",
+      "source": "docs"
+    },
+    "name": "Trisha",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-usman-ur",
+    "languages": [
+      "ur"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Urdu",
+      "source": "docs"
+    },
+    "name": "Usman",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-valentina-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Valentina",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-vedran-hr",
+    "languages": [
+      "hr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Croatian",
+      "source": "docs"
+    },
+    "name": "Vedran",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-veerle-nl",
+    "languages": [
+      "nl-BE"
+    ],
+    "meta": {
+      "language_label": "Dutch (Flemish)",
+      "source": "docs"
+    },
+    "name": "Veerle",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-vegard-no",
+    "languages": [
+      "no"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Norwegian",
+      "source": "docs"
+    },
+    "name": "Vegard",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-verena-de",
+    "languages": [
+      "de"
+    ],
+    "meta": {
+      "language_label": "German",
+      "source": "docs"
+    },
+    "name": "Verena",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-veronique-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Veronique",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-vikram-hi",
+    "languages": [
+      "hi"
+    ],
+    "meta": {
+      "language_label": "Hindi",
+      "source": "docs"
+    },
+    "name": "Vikram",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-vincenzo-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Vincenzo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-vinoth-ta",
+    "languages": [
+      "ta"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Tamil",
+      "source": "docs"
+    },
+    "name": "Vinoth",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-vito-it",
+    "languages": [
+      "it"
+    ],
+    "meta": {
+      "language_label": "Italian",
+      "source": "docs"
+    },
+    "name": "Vito",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-vladimir-ru",
+    "languages": [
+      "ru"
+    ],
+    "meta": {
+      "language_label": "Russian",
+      "source": "docs"
+    },
+    "name": "Vladimir",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-wade-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Wade",
+    "tags": [
+      "warm",
+      "confident",
+      "clear",
+      "enthusiastic",
+      "friendly"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "casual chat"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-wenbo-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Wenbo",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-wenjing-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Wenjing",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "accent": "american",
+    "age": "Adult",
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-wes-en",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "featured": false,
+      "language_label": "English (American)",
+      "source": "docs"
+    },
+    "name": "Wes",
+    "tags": [
+      "thoughtful",
+      "friendly",
+      "warm",
+      "interesting"
+    ],
+    "updated_at": "2026-11-19",
+    "use_cases": [
+      "Customer service",
+      "casual chat"
+    ]
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-wilma-sv",
+    "languages": [
+      "sv"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Swedish",
+      "source": "docs"
+    },
+    "name": "Wilma",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "male",
+    "id": "flux-yannick-de",
+    "languages": [
+      "de-CH"
+    ],
+    "meta": {
+      "language_label": "German (Swiss)",
+      "source": "docs"
+    },
+    "name": "Yannick",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-yasmine-fr",
+    "languages": [
+      "fr"
+    ],
+    "meta": {
+      "language_label": "French",
+      "source": "docs"
+    },
+    "name": "Yasmine",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-yawen-zh",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Taiwanese Mandarin)",
+      "source": "docs"
+    },
+    "name": "Yawen",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-ysabel-es",
+    "languages": [
+      "es"
+    ],
+    "meta": {
+      "language_label": "Spanish",
+      "source": "docs"
+    },
+    "name": "Ysabel",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-yuting-zh",
+    "languages": [
+      "zh-TW"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Taiwanese Mandarin)",
+      "source": "docs"
+    },
+    "name": "Yuting",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-yvonne-nl",
+    "languages": [
+      "nl"
+    ],
+    "meta": {
+      "language_label": "Dutch",
+      "source": "docs"
+    },
+    "name": "Yvonne",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-zeynep-tr",
+    "languages": [
+      "tr"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Turkish",
+      "source": "docs"
+    },
+    "name": "Zeynep",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-zhen-zh",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Chinese (Mandarin)",
+      "source": "docs"
+    },
+    "name": "Zhen",
+    "updated_at": "2026-11-19"
+  },
+  {
+    "category": "premade",
+    "compatible_models": [
+      "flux-tts"
+    ],
+    "first_seen": "2026-11-19",
+    "gender": "female",
+    "id": "flux-zuzanna-pl",
+    "languages": [
+      "pl"
+    ],
+    "meta": {
+      "early_access": true,
+      "language_label": "Polish",
+      "source": "docs"
+    },
+    "name": "Zuzanna",
+    "updated_at": "2026-11-19"
   }
 ]

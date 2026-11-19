@@ -89,3 +89,16 @@ def test_reuse_dry_run_keeps_fresh_cache_and_drops_seeded(tmp_path, monkeypatch)
     monkeypatch.setattr(sync_script, "_sync_one", fake)
     assert asyncio.run(sync_script.sync_one("acme", tmp_path / "data", False, False, False, reuse_docs=True))
     assert fresh.exists() and not Path(".sync-cache/acme_tts_models.json").exists()
+
+
+def test_seed_docs_voices_of_an_api_voiced_provider(tmp_path):
+    """API voices (Aura) + docs voices (Flux TTS, meta.source='docs'): only the docs ones are re-seeded."""
+    from voicedex.sync.base import SyncVoice
+    voices = [SyncVoice("aura-x", "X", compatible_models=["m"]),
+              SyncVoice("flux-y", "Y", compatible_models=["m"], meta={"source": "docs"})]
+    result = SyncResult(stt_models=[], tts_models=[SyncModel("m", "M", "tts")], tts_voices=voices, source="mixed")
+    pd, _ = merge(None, result, provider_id="acme", display_name="Acme", seeded_type="tts", today=date(2026, 11, 1))
+    write_provider_dir(tmp_path / "data" / "acme", pd)
+    assert sync_script.seed_cache_from_data("acme", tmp_path / "data") == ["voices (1)"]
+    import json
+    assert [v["voice_id"] for v in json.loads(Path(".sync-cache/acme_voices.json").read_text())] == ["flux-y"]
