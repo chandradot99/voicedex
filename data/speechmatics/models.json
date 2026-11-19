@@ -154,29 +154,29 @@
     "name": "Enhanced",
     "pricing": {
       "as_of": "2026-11-19",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
-      "price_usd": 0.75,
+      "notes": "Current rates as given by Speechmatics (2026-11-19): with the model-training opt-in (33% off) and an annual commitment (up to 25% off). Pay-as-you-go list rate with no discounts: batch $0.75, realtime $0.80 per hour. $100 free credits on the Free plan.",
+      "price_usd": 0.38,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
       "variants": [
         {
           "applies_to": "batch (pre-recorded)",
-          "price_usd": 0.75,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "realtime",
-          "price_usd": 0.8,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
           "price_usd": 0.38,
           "unit": "hour"
         },
         {
-          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "applies_to": "realtime",
           "price_usd": 0.4,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), pay-as-you-go list rate",
+          "price_usd": 0.75,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, pay-as-you-go list rate",
+          "price_usd": 0.8,
           "unit": "hour"
         }
       ]
@@ -287,14 +287,19 @@
     "name": "Linden 1",
     "pricing": {
       "as_of": "2026-11-19",
-      "notes": "Realtime list rate (originally $0.40/hr); Agent STT only. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
-      "price_usd": 0.3,
+      "notes": "Current rates as given by Speechmatics (2026-11-19): with the model-training opt-in (33% off) and an annual commitment (up to 25% off). Pay-as-you-go list rate with no discounts: realtime $0.30 per hour. $100 free credits on the Free plan. Linden 1 is realtime only (voice agents).",
+      "price_usd": 0.15,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
       "variants": [
         {
-          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "applies_to": "realtime",
           "price_usd": 0.15,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, pay-as-you-go list rate (introductory; originally $0.40)",
+          "price_usd": 0.3,
           "unit": "hour"
         }
       ]
@@ -431,29 +436,29 @@
     "name": "Melia 1",
     "pricing": {
       "as_of": "2026-11-19",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
-      "price_usd": 0.24,
+      "notes": "Current rates as given by Speechmatics (2026-11-19): with the model-training opt-in (33% off) and an annual commitment (up to 25% off). Pay-as-you-go list rate with no discounts: batch $0.24, realtime $0.40 per hour. $100 free credits on the Free plan.",
+      "price_usd": 0.12,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
       "variants": [
         {
           "applies_to": "batch (pre-recorded)",
-          "price_usd": 0.24,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "realtime",
-          "price_usd": 0.4,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
           "price_usd": 0.12,
           "unit": "hour"
         },
         {
-          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "applies_to": "realtime",
           "price_usd": 0.2,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), pay-as-you-go list rate",
+          "price_usd": 0.24,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, pay-as-you-go list rate",
+          "price_usd": 0.4,
           "unit": "hour"
         }
       ]
@@ -600,29 +605,29 @@
     "name": "Oak 1",
     "pricing": {
       "as_of": "2026-11-19",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
-      "price_usd": 0.3,
+      "notes": "Current rates as given by Speechmatics (2026-11-19): with the model-training opt-in (33% off) and an annual commitment (up to 25% off). Pay-as-you-go list rate with no discounts: batch $0.30, realtime $0.46 per hour. $100 free credits on the Free plan.",
+      "price_usd": 0.15,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
       "variants": [
         {
           "applies_to": "batch (pre-recorded)",
-          "price_usd": 0.3,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "realtime",
-          "price_usd": 0.46,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
           "price_usd": 0.15,
           "unit": "hour"
         },
         {
-          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "applies_to": "realtime",
           "price_usd": 0.23,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), pay-as-you-go list rate",
+          "price_usd": 0.3,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, pay-as-you-go list rate",
+          "price_usd": 0.46,
           "unit": "hour"
         }
       ]
@@ -787,29 +792,29 @@
     "name": "Standard",
     "pricing": {
       "as_of": "2026-11-19",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
-      "price_usd": 0.45,
+      "notes": "Current rates as given by Speechmatics (2026-11-19): with the model-training opt-in (33% off) and an annual commitment (up to 25% off). Pay-as-you-go list rate with no discounts: batch $0.45, realtime $0.45 per hour. $100 free credits on the Free plan.",
+      "price_usd": 0.23,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
       "variants": [
         {
           "applies_to": "batch (pre-recorded)",
-          "price_usd": 0.45,
+          "price_usd": 0.23,
           "unit": "hour"
         },
         {
           "applies_to": "realtime",
+          "price_usd": 0.23,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), pay-as-you-go list rate",
           "price_usd": 0.45,
           "unit": "hour"
         },
         {
-          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
-          "price_usd": 0.23,
-          "unit": "hour"
-        },
-        {
-          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
-          "price_usd": 0.23,
+          "applies_to": "realtime, pay-as-you-go list rate",
+          "price_usd": 0.45,
           "unit": "hour"
         }
       ]
