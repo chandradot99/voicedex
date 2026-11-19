@@ -143,3 +143,14 @@ async def test_alternatives_pages(tmp_path, monkeypatch, client):
     assert 'href="/alternatives/zz-test-deprecated"' in index and "Shut down or no longer sold" in index
     assert 'href="/alternatives/zz-rival"' in (await client.get("/providers/zz-rival")).text
     assert "/alternatives/zz-rival</loc>" in (await client.get("/sitemap.xml")).text
+
+
+async def test_favicon_is_a_real_crawlable_file(client):
+    """Google search results ignore data: URI favicons; the icon needs its own URL, >= 48x48."""
+    r = await client.get("/favicon.ico")
+    assert r.status_code == 200 and r.headers["content-type"] == "image/x-icon"
+    assert r.content[:4] == b"\x00\x00\x01\x00"
+    html = (await client.get("/")).text
+    assert 'rel="icon" href="/favicon.ico"' in html and "data:image/svg" not in html
+    for path in ("/static/favicon.svg", "/static/favicon-96.png", "/static/apple-touch-icon.png"):
+        assert (await client.get(path)).status_code == 200
