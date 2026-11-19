@@ -802,3 +802,8 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .mcp-setup div, .mcp-tools div { grid-template-columns: 200px minmax(0, 1fr); }
 .mcp-setup code, .mcp-tools code { font-size: 12.5px; overflow-wrap: anywhere; }
 @media (max-width: 640px) { .mcp-setup div, .mcp-tools div { grid-template-columns: 1fr; gap: 4px; } }
+
+/* GitHub link in the header: same footprint and colour as the theme toggle */
+.gh-link { width: 32px; height: 32px; display: grid; place-items: center; border-radius: var(--r); color: var(--ink-2); flex: none; }
+.gh-link svg { width: 17px; height: 17px; fill: currentColor; }
+.gh-link:hover, .gh-link:focus-visible { color: var(--ink); }
