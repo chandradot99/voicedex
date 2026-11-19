@@ -134,12 +134,22 @@
     ],
     "meta": {
       "announced": "2026-10-19",
+      "docs_sources": [
+        "https://elevenlabs.io/pricing/api"
+      ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",
       "openai_realtime_compatible": true,
       "released": "2026-11-02"
     },
     "name": "Eleven Realtime v1 Max",
+    "pricing": {
+      "as_of": "2026-11-19",
+      "notes": "$0.08 per minute of connected audio plus LLM usage: $1.80 per 1M input tokens, $9.00 per 1M output tokens. Burst pricing above the concurrency limit is $0.16 per minute. Plans include some minutes.",
+      "price_usd": 0.08,
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "unit": "minute"
+    },
     "provenance": {
       "as_of": "2026-11-18",
       "method": "docs",
@@ -151,7 +161,7 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-19"
   },
   {
     "description": "Native speech-to-speech conversational model (speech recognition, turn-taking, reasoning and speech in one model), the lower-latency tier.",
@@ -165,12 +175,22 @@
     ],
     "meta": {
       "announced": "2026-10-19",
+      "docs_sources": [
+        "https://elevenlabs.io/pricing/api"
+      ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",
       "openai_realtime_compatible": true,
       "released": "2026-11-02"
     },
     "name": "Eleven Realtime v1 Mini",
+    "pricing": {
+      "as_of": "2026-11-19",
+      "notes": "$0.08 per minute of connected audio plus LLM usage: $0.20 per 1M input tokens, $6.00 per 1M output tokens. Burst pricing above the concurrency limit is $0.16 per minute. Plans include some minutes.",
+      "price_usd": 0.08,
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "unit": "minute"
+    },
     "provenance": {
       "as_of": "2026-11-18",
       "method": "docs",
@@ -182,7 +202,7 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
