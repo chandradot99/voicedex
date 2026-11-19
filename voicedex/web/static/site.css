@@ -649,9 +649,9 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 
 /* ── Footer ── */
 .site-footer { border-top: 1px solid var(--rule); padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
-.footer-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px 32px; align-items: baseline; }
+.footer-row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px 32px; align-items: baseline; }
 .footer-brand { font-weight: 600; color: var(--ink); letter-spacing: -0.02em; }
-.site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.site-footer nav { grid-column: 1 / -1; display: flex; gap: 8px 18px; flex-wrap: wrap; }   /* own row: it outgrew a column */
 .site-footer a { color: var(--ink-2); }
 
 /* ── Loader: the logo's four bars, moving like a level meter ── */
