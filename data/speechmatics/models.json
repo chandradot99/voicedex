@@ -18,6 +18,7 @@
       "custom_vocabulary",
       "language_detection",
       "pii_redaction",
+      "profanity_filter",
       "punctuation",
       "sentiment",
       "speaker_diarization",
@@ -95,7 +96,13 @@
       "audio_events": true,
       "auto_chapters_batch": true,
       "auto_language_batch_only": true,
+      "capability_notes": {
+        "profanity_filter": "Confirmed by Speechmatics developer relations, 2026-11-19"
+      },
       "confidence_scores": true,
+      "docs_sources": [
+        "https://www.speechmatics.com/pricing"
+      ],
       "entity_detection": true,
       "language_packs": [
         "ar_en",
@@ -146,8 +153,8 @@
     },
     "name": "Enhanced",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "as_of": "2026-11-19",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
       "price_usd": 0.75,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
@@ -160,6 +167,16 @@
         {
           "applies_to": "realtime",
           "price_usd": 0.8,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.38,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.4,
           "unit": "hour"
         }
       ]
@@ -180,7 +197,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "batch": false,
@@ -254,6 +271,9 @@
     ],
     "meta": {
       "api": "agent-stt",
+      "docs_sources": [
+        "https://www.speechmatics.com/pricing"
+      ],
       "endpoint_path": "/v2/agent",
       "regions_detail": [
         "global",
@@ -266,11 +286,18 @@
     },
     "name": "Linden 1",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "Realtime list rate (originally $0.40/hr); Agent STT only.",
+      "as_of": "2026-11-19",
+      "notes": "Realtime list rate (originally $0.40/hr); Agent STT only. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
       "price_usd": 0.3,
       "source_url": "https://www.speechmatics.com/pricing",
-      "unit": "hour"
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.15,
+          "unit": "hour"
+        }
+      ]
     },
     "provenance": {
       "as_of": "2026-11-16",
@@ -288,7 +315,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
@@ -306,6 +333,7 @@
     ],
     "batch": true,
     "capabilities": [
+      "language_detection",
       "punctuation",
       "speaker_diarization",
       "word_timestamps"
@@ -375,6 +403,12 @@
       "cy"
     ],
     "meta": {
+      "capability_notes": {
+        "language_detection": "Confirmed by Speechmatics developer relations, 2026-11-19"
+      },
+      "docs_sources": [
+        "https://www.speechmatics.com/pricing"
+      ],
       "language_hints": true,
       "language_param": "multi",
       "max_batch_upload_bytes": 1000000000,
@@ -396,8 +430,8 @@
     },
     "name": "Melia 1",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "as_of": "2026-11-19",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
       "price_usd": 0.24,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
@@ -410,6 +444,16 @@
         {
           "applies_to": "realtime",
           "price_usd": 0.4,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.12,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.2,
           "unit": "hour"
         }
       ]
@@ -430,7 +474,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
@@ -517,6 +561,9 @@
       "cy"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.speechmatics.com/pricing"
+      ],
       "domain": "medical",
       "language_hints": true,
       "language_param": "multi",
@@ -552,8 +599,8 @@
     },
     "name": "Oak 1",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "as_of": "2026-11-19",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
       "price_usd": 0.3,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
@@ -566,6 +613,16 @@
         {
           "applies_to": "realtime",
           "price_usd": 0.46,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.15,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.23,
           "unit": "hour"
         }
       ]
@@ -586,7 +643,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-19"
   },
   {
     "audio_formats": [
@@ -607,6 +664,7 @@
       "custom_vocabulary",
       "language_detection",
       "pii_redaction",
+      "profanity_filter",
       "punctuation",
       "sentiment",
       "speaker_diarization",
@@ -686,7 +744,13 @@
       "audio_events": true,
       "auto_chapters_batch": true,
       "auto_language_batch_only": true,
+      "capability_notes": {
+        "profanity_filter": "Confirmed by Speechmatics developer relations, 2026-11-19"
+      },
       "confidence_scores": true,
+      "docs_sources": [
+        "https://www.speechmatics.com/pricing"
+      ],
       "entity_detection": true,
       "language_packs": [
         "ar_en",
@@ -722,8 +786,8 @@
     },
     "name": "Standard",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in.",
+      "as_of": "2026-11-19",
+      "notes": "List rate, no discounts; $100 free credits on Free plan; 33% off with model-training opt-in. Up to 25% off with an annual commitment (15% monthly, 20% credit packs). Both discounts together give roughly half the list rate; best-case figures confirmed by Speechmatics on 2026-11-19.",
       "price_usd": 0.45,
       "source_url": "https://www.speechmatics.com/pricing",
       "unit": "hour",
@@ -736,6 +800,16 @@
         {
           "applies_to": "realtime",
           "price_usd": 0.45,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "batch (pre-recorded), best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.23,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "realtime, best case: model-training opt-in + top annual commitment",
+          "price_usd": 0.23,
           "unit": "hour"
         }
       ]
@@ -756,74 +830,6 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
-  },
-  {
-    "audio_formats": [
-      "pcm",
-      "wav"
-    ],
-    "description": "Speechmatics' text-to-speech API: four English voices (UK and US) over HTTP, with audio streamed back as it is generated.",
-    "first_seen": "2026-11-19",
-    "id": "speechmatics-tts",
-    "interfaces": [
-      "http"
-    ],
-    "is_default": true,
-    "languages": [
-      "en-GB",
-      "en-US"
-    ],
-    "lifecycle": "beta",
-    "meta": {
-      "controls": "No speed, pitch or emphasis control yet (docs FAQ).",
-      "endpoint": "POST https://preview.tts.speechmatics.com/generate/<voice_id>",
-      "first_chunk_latency": "typically under 200 ms (docs)",
-      "max_text_note": "No per-request limit stated; text is split server-side.",
-      "no_model_parameter": true,
-      "output_format_values": [
-        "wav_16000",
-        "pcm_16000"
-      ],
-      "preview_data_retention": "During the preview, input text and generated audio are stored to improve the service (docs FAQ).",
-      "raw_encodings": [
-        "16-bit signed integer, mono, 16 kHz (pcm_16000 little-endian)"
-      ],
-      "source_urls": [
-        "https://docs.speechmatics.com/text-to-speech/quickstart",
-        "https://www.speechmatics.com/pricing"
-      ],
-      "streaming_note": "Streams audio output over HTTP; no bidirectional streaming (docs FAQ)."
-    },
-    "name": "Speechmatics TTS",
-    "pricing": {
-      "as_of": "2026-11-19",
-      "free_quota": {
-        "amount": 1000000.0,
-        "unit": "character"
-      },
-      "notes": "$0.011 per 1,000 characters; first 1 million characters free (pricing page). The TTS quickstart still says the service is in preview and free to use, with billing from 1 October (2025); the pages disagree.",
-      "price_usd": 1.1e-05,
-      "source_url": "https://www.speechmatics.com/pricing",
-      "unit": "character"
-    },
-    "provenance": {
-      "as_of": "2026-11-19",
-      "method": "docs",
-      "urls": [
-        "https://docs.speechmatics.com/speech-to-text/models",
-        "https://docs.speechmatics.com/speech-to-text/languages",
-        "https://docs.speechmatics.com/speech-to-text/batch/input",
-        "https://docs.speechmatics.com/speech-to-text/realtime/input",
-        "https://www.speechmatics.com/pricing",
-        "https://docs.speechmatics.com/text-to-speech/quickstart",
-        "https://www.speechmatics.com/pricing"
-      ]
-    },
-    "sample_rates_hz": [
-      16000
-    ],
-    "type": "tts",
     "updated_at": "2026-11-19"
   }
 ]
