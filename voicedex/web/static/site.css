@@ -807,3 +807,8 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .gh-link { width: 32px; height: 32px; display: grid; place-items: center; border-radius: var(--r); color: var(--ink-2); flex: none; }
 .gh-link svg { width: 17px; height: 17px; fill: currentColor; }
 .gh-link:hover, .gh-link:focus-visible { color: var(--ink); }
+
+/* Demo video on /mcp */
+.mcp-demo figure { margin: 8px 0 0; }
+.mcp-demo video { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: var(--r); background: var(--panel); }
+.mcp-demo figcaption { margin-top: 8px; font-size: 13px; color: var(--muted); }

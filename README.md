@@ -75,6 +75,8 @@ of the site and the data.
 
 ## MCP server
 
+![Claude, connected to Voicedex, answering "Which text-to-speech APIs support Swahili? Show the 5 cheapest with prices, and flag any that are shutting down", then opening the model on voicedex.dev](voicedex/web/static/mcp-demo.gif)
+
 Give AI assistants the whole catalog over the [Model Context Protocol](https://modelcontextprotocol.io):
 `https://voicedex.dev/mcp` (Streamable HTTP, free, no key, read-only). Setup for each client is at
 [voicedex.dev/mcp](https://voicedex.dev/mcp).
