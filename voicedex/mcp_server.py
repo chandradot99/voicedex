@@ -103,6 +103,7 @@ def _model_summary(cat: Catalog, r) -> dict[str, Any]:
         "languages": _lang_count(m),
         "capabilities": sorted(m.capabilities),
         "streaming": _streams(m),
+        "batch": m.batch,
         "open_weights": m.open_weights is not None,
         "lifecycle": str(m.lifecycle),
         "eol_date": m.eol_date.isoformat() if m.eol_date else None,
@@ -182,6 +183,8 @@ def search_models(
     region: Literal["us", "eu", "asia", "global"] | None = None,
     max_price_usd: float | None = None,
     open_weights: bool | None = None,
+    streaming: bool | None = None,
+    batch: bool | None = None,
     query: str | None = None,
     include_unlisted_languages: bool = False,
     shutting_down: bool | None = None,
@@ -195,7 +198,9 @@ def search_models(
 
     language: BCP-47 code, e.g. "hi" or "en-GB". Only models that explicitly list it are returned, unless
     include_unlisted_languages=true also adds models that claim "many languages" without listing them. capability: one feature term, e.g. "speaker_diarization",
-    "voice_cloning", "word_timestamps", "ssml". max_price_usd: upper bound on the normalized price (TTS per 1M
+    "voice_cloning", "word_timestamps", "ssml". streaming=true: models usable live (realtime transcription,
+    low-latency TTS, voice agents); batch=true: models that accept files / pre-recorded jobs (batch=false excludes
+    them; models whose batch support isn't documented are left out of either filter). max_price_usd: upper bound on the normalized price (TTS per 1M
     characters, STT/STS per hour); models without a comparable USD price are excluded when it is set.
     sort: default "price" (cheapest first, announced shutdowns after the rest, unpriced last), or "eol_date"
     (soonest end first) whenever shutting_down or eol_before is set. Shutdowns: shutting_down=true returns only
@@ -221,6 +226,10 @@ def search_models(
         rows = [r for r in rows if region in r.model.regions or "global" in r.model.regions]
     if open_weights is not None:
         rows = [r for r in rows if (r.model.open_weights is not None) == open_weights]
+    if streaming is not None:
+        rows = [r for r in rows if _streams(r.model) == streaming]
+    if batch is not None:
+        rows = [r for r in rows if r.model.batch is batch]
     if query:
         q = query.lower()
         rows = [r for r in rows if q in r.model.id.lower() or q in r.model.name.lower() or q in r.provider_id]
@@ -307,22 +316,70 @@ def get_model(model: str, detail: Literal["compact", "full"] = "compact") -> dic
     return out
 
 
+def _compare_detail(cat: Catalog, r) -> dict[str, Any]:
+    """Summary plus what decides between models: deployment, limits, formats, feature caveats, licence."""
+    m = r.model
+    notes = m.meta.get("capability_notes") if isinstance(m.meta, dict) else None
+    ow = m.open_weights
+    return {
+        **_model_summary(cat, r),
+        "regions": [str(x) for x in m.regions] or None,
+        "interfaces": [str(x) for x in m.interfaces] or None,
+        "max_text_chars": m.max_text_chars,
+        "max_audio_seconds": m.max_audio_seconds,
+        "audio_formats": m.audio_formats or None,
+        "sample_rates_hz": m.sample_rates_hz or None,
+        "capability_notes": notes or None,
+        "open_weights_license": ({"license": ow.license, "commercial_use": ow.commercial_use, "url": ow.url}
+                                 if ow else None),
+        "replacement": m.meta.get("replacement") if isinstance(m.meta, dict) else None,
+    }
+
+
+_DIFF_FIELDS = ("price", "streaming", "batch", "languages", "regions", "interfaces", "max_text_chars",
+                "max_audio_seconds", "lifecycle", "eol_date", "open_weights")
+
+
+def _differences(rows: list[dict[str, Any]]) -> list[str]:
+    """Where the compared models diverge, in plain words, so the agent doesn't have to diff the records."""
+    if len(rows) < 2:
+        return []
+    out = []
+    for f in _DIFF_FIELDS:
+        vals = {r["key"]: r.get(f) for r in rows}
+        if len({repr(v) for v in vals.values()}) > 1:
+            out.append(f"{f}: " + "; ".join(f"{k.split('/', 2)[2]} = {'not listed' if v is None else v}"
+                                            for k, v in vals.items()))
+    caps = {r["key"]: set(r["capabilities"]) for r in rows}
+    allc = set().union(*caps.values())
+    for c in sorted(allc):
+        have = [k.split("/", 2)[2] for k, v in caps.items() if c in v]
+        if len(have) < len(rows):
+            out.append(f"{c}: listed only by {', '.join(have)}")
+    return out
+
+
 @server.tool(annotations=READ_ONLY)
 def compare_models(models: list[str]) -> dict[str, Any]:
     """Compare up to 6 models side by side. Each item can be an exact key "provider/type/model_id" (from
     search_models) or a loose name like "deepgram nova-3" or "Cartesia Sonic 3". A loose name resolves to the
     best match and says so in matched_as (with other_candidates): tell the user what was assumed. Unmatched
-    items come back with "did you mean" suggestions when something is close."""
+    items come back with "did you mean" suggestions when something is close.
+
+    Each model includes price (with source and check date), streaming / batch, languages, regions, interfaces,
+    limits (max_text_chars, max_audio_seconds), audio formats, sample rates, feature caveats
+    (capability_notes, e.g. "pre-recorded only"), open-weights licence and shutdown date. "differences" lists, in
+    plain words, every field and feature where the models disagree."""
     cat = _cat()
     found, missing = [], []
     for ref in models[:6]:
         r, info = resolve_model(cat, ref)
         if r:
-            found.append({**_model_summary(cat, r), **({"matched_as": info} if info else {})})
+            found.append({**_compare_detail(cat, r), **({"matched_as": info} if info else {})})
         else:
             missing.append({"query": ref, **info})
     url = _site() + "/compare?" + "&".join(f"m={m['key']}" for m in found) if found else None
-    return {"models": found, "missing": missing, "compare_url": url}
+    return {"models": found, "differences": _differences(found), "missing": missing, "compare_url": url}
 
 
 @server.tool(annotations=READ_ONLY)

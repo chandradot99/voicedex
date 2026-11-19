@@ -181,3 +181,34 @@ async def test_review_round3_tools(tmp_path, client):
     assert alt["provider_recommends"] == "new-b"
     assert [a["id"] for a in alt["alternatives"][:2]] == ["new-b", "new-a"]
     assert alt["alternatives"][0]["recommended_by_provider"] and alt["alternatives"][1]["announced_replacement"]
+
+
+async def test_streaming_filters_and_rich_compare(tmp_path, client):
+    from tests.conftest import build_fixture_catalog
+    from voicedex.catalog.files import ProviderData, write_provider_dir
+    from voicedex.catalog.schema import Model, Provider
+    from voicedex.catalog.store import Catalog
+    from voicedex.main import app
+    build_fixture_catalog(tmp_path)
+    write_provider_dir(tmp_path / "zz-cmp", ProviderData(Provider(id="zz-cmp", name="ZZ Cmp", type="stt"), models=[
+        Model(id="live", name="Live", type="stt", languages=["en-US"], streaming=True, batch=False,
+              interfaces=["websocket"], regions=["us"], capabilities=["word_timestamps", "speaker_diarization"],
+              meta={"capability_notes": {"speaker_diarization": "pre-recorded only"}}),
+        Model(id="files", name="Files", type="stt", languages=["en-US", "de-DE"], streaming=False, batch=True,
+              regions=["eu"], max_audio_seconds=7200, capabilities=["word_timestamps"])], voices=[]))
+    app.state.catalog = Catalog.load(tmp_path)
+    keys = lambda r: {x["key"] for x in r["results"]}                      # noqa: E731
+    assert keys(m.search_models(provider="zz-cmp", streaming=True)) == {"zz-cmp/stt/live"}
+    assert keys(m.search_models(provider="zz-cmp", streaming=False)) == {"zz-cmp/stt/files"}
+    assert keys(m.search_models(provider="zz-cmp", batch=True)) == {"zz-cmp/stt/files"}
+    assert keys(m.search_models(type="stt", batch=True)) == {"zz-cmp/stt/files"}   # unknown batch excluded
+    cmp = m.compare_models(["zz-cmp/stt/live", "zz-cmp/stt/files"])
+    live, files = cmp["models"]
+    assert live["interfaces"] == ["websocket"] and live["capability_notes"] == {"speaker_diarization": "pre-recorded only"}
+    assert files["max_audio_seconds"] == 7200 and files["regions"] == ["eu"] and files["batch"] is True
+    diffs = cmp["differences"]
+    assert any(d.startswith("streaming: live = True; files = False") for d in diffs)
+    assert any(d.startswith("regions:") for d in diffs) and any(d.startswith("languages: live = 1; files = 2") for d in diffs)
+    assert "speaker_diarization: listed only by live" in diffs
+    assert not any(d.startswith("word_timestamps") for d in diffs)          # both list it: not a difference
+    assert m.compare_models(["zz-cmp/stt/live"])["differences"] == []
