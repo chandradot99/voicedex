@@ -757,5 +757,73 @@
     ],
     "type": "stt",
     "updated_at": "2026-11-16"
+  },
+  {
+    "audio_formats": [
+      "pcm",
+      "wav"
+    ],
+    "description": "Speechmatics' text-to-speech API: four English voices (UK and US) over HTTP, with audio streamed back as it is generated.",
+    "first_seen": "2026-11-19",
+    "id": "speechmatics-tts",
+    "interfaces": [
+      "http"
+    ],
+    "is_default": true,
+    "languages": [
+      "en-GB",
+      "en-US"
+    ],
+    "lifecycle": "beta",
+    "meta": {
+      "controls": "No speed, pitch or emphasis control yet (docs FAQ).",
+      "endpoint": "POST https://preview.tts.speechmatics.com/generate/<voice_id>",
+      "first_chunk_latency": "typically under 200 ms (docs)",
+      "max_text_note": "No per-request limit stated; text is split server-side.",
+      "no_model_parameter": true,
+      "output_format_values": [
+        "wav_16000",
+        "pcm_16000"
+      ],
+      "preview_data_retention": "During the preview, input text and generated audio are stored to improve the service (docs FAQ).",
+      "raw_encodings": [
+        "16-bit signed integer, mono, 16 kHz (pcm_16000 little-endian)"
+      ],
+      "source_urls": [
+        "https://docs.speechmatics.com/text-to-speech/quickstart",
+        "https://www.speechmatics.com/pricing"
+      ],
+      "streaming_note": "Streams audio output over HTTP; no bidirectional streaming (docs FAQ)."
+    },
+    "name": "Speechmatics TTS",
+    "pricing": {
+      "as_of": "2026-11-19",
+      "free_quota": {
+        "amount": 1000000.0,
+        "unit": "character"
+      },
+      "notes": "$0.011 per 1,000 characters; first 1 million characters free (pricing page). The TTS quickstart still says the service is in preview and free to use, with billing from 1 October (2025); the pages disagree.",
+      "price_usd": 1.1e-05,
+      "source_url": "https://www.speechmatics.com/pricing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-19",
+      "method": "docs",
+      "urls": [
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://docs.speechmatics.com/speech-to-text/languages",
+        "https://docs.speechmatics.com/speech-to-text/batch/input",
+        "https://docs.speechmatics.com/speech-to-text/realtime/input",
+        "https://www.speechmatics.com/pricing",
+        "https://docs.speechmatics.com/text-to-speech/quickstart",
+        "https://www.speechmatics.com/pricing"
+      ]
+    },
+    "sample_rates_hz": [
+      16000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-19"
   }
 ]

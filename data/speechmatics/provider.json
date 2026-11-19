@@ -12,11 +12,12 @@
     "https://docs.speechmatics.com/speech-to-text/languages",
     "https://docs.speechmatics.com/speech-to-text/batch/input",
     "https://docs.speechmatics.com/speech-to-text/realtime/input",
-    "https://www.speechmatics.com/pricing"
+    "https://www.speechmatics.com/pricing",
+    "https://docs.speechmatics.com/text-to-speech/quickstart"
   ],
   "headquarters": "GB",
   "id": "speechmatics",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-19",
   "links": {
     "api_reference": "https://docs.speechmatics.com/api-ref",
     "docs": "https://docs.speechmatics.com",
@@ -29,6 +30,18 @@
     "us"
   ],
   "source": "docs",
-  "type": "stt",
+  "type": "both",
+  "voices_source": {
+    "as_of": "2026-11-19",
+    "method": "docs",
+    "urls": [
+      "https://docs.speechmatics.com/speech-to-text/models",
+      "https://docs.speechmatics.com/speech-to-text/languages",
+      "https://docs.speechmatics.com/speech-to-text/batch/input",
+      "https://docs.speechmatics.com/speech-to-text/realtime/input",
+      "https://www.speechmatics.com/pricing",
+      "https://docs.speechmatics.com/text-to-speech/quickstart"
+    ]
+  },
   "website": "https://www.speechmatics.com"
 }
