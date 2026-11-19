@@ -172,6 +172,17 @@ class Pricing(_Record):
         return v
 
 
+class ProviderVerification(_Record):
+    """The provider itself reviewed its listing and confirmed it is accurate (editorial, hand-set).
+
+    It records accuracy on one date, not an endorsement. Records changed after `on` are shown as
+    changed since the review. The evidence (email, issue link) is kept in git, never personal names."""
+    on: date
+    by: str                                   # who confirmed, as a role: "Speechmatics developer relations"
+    scope: list[str] = Field(default_factory=list)   # what was reviewed, e.g. ["models", "pricing", "features"]
+    evidence: str | None = None               # how it was confirmed, e.g. "email reply to our review request"
+
+
 class ProviderLinks(_Record):
     docs: str | None = None
     api_reference: str | None = None
@@ -202,6 +213,8 @@ class Provider(_Record):
     # Shut down / no longer sold to new customers. Set with status="deprecated"; the reason and the
     # source go in `description` / `links.status`. Kept in the catalog so "is X still alive?" is answerable.
     retired_on: date | None = None
+    # The provider confirmed this listing is accurate (editorial; see docs/verification.md)
+    verified: ProviderVerification | None = None
 
     @field_validator("type")
     @classmethod

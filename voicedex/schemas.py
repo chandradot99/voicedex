@@ -36,6 +36,7 @@ class ProviderOut(BaseModel):
     voice_count: int
     last_synced_at: datetime | None
     retired_on: date | None
+    verified: dict | None
     deprecated_at: datetime | None
     updated_at: datetime | None
 
@@ -51,6 +52,7 @@ class ProviderOut(BaseModel):
             model_count=model_count, voice_count=voice_count,
             last_synced_at=_dt(p.last_synced),
             retired_on=p.retired_on,
+            verified=p.verified.model_dump(mode="json") if p.verified else None,
             deprecated_at=None if p.status == "active" else _dt(p.retired_on or p.last_synced),
             updated_at=_dt(p.last_synced),
         )

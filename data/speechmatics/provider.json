@@ -30,5 +30,15 @@
   ],
   "source": "docs",
   "type": "stt",
+  "verified": {
+    "by": "Speechmatics developer relations",
+    "evidence": "Email reply to our review request. At their request, the preview text-to-speech is left out and the prices are their current rates.",
+    "on": "2026-11-19",
+    "scope": [
+      "models",
+      "pricing",
+      "features"
+    ]
+  },
   "website": "https://www.speechmatics.com"
 }

@@ -953,3 +953,27 @@ def report_url(provider_id: str, model_id: str | None = None, page: str | None =
     if page:
         q["page"] = page
     return f"{REPO_URL}/issues/new?{urlencode(q)}"
+
+
+VERIFICATION_DOC = f"{REPO_URL}/blob/main/docs/verification.md"
+
+
+@dataclass
+class VerificationStatus:
+    by: str
+    on: str
+    scope: list[str]
+    changed_models: int   # active models updated after the provider's review
+    changed_voices: int
+
+
+def verification_status(catalog: Catalog, provider_id: str) -> VerificationStatus | None:
+    """The provider's review of its own listing, and how much has changed since (None if never reviewed)."""
+    v = catalog.providers[provider_id].provider.verified
+    if v is None:
+        return None
+    return VerificationStatus(
+        by=v.by, on=v.on.isoformat(), scope=list(v.scope),
+        changed_models=sum(1 for r in active_models(catalog, provider_id) if r.model.updated_at and r.model.updated_at > v.on),
+        changed_voices=sum(1 for r in active_voices(catalog, provider_id) if r.voice.updated_at and r.voice.updated_at > v.on),
+    )

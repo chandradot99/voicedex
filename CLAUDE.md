@@ -144,6 +144,9 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) â
   `headquarters` [ISO 3166-1 alpha-2], `regions`, `compliance` [soc2|hipaa|gdpr|iso27001|pci_dss], `links`) are
   hand-curated; sync never overwrites them. Research passes write `.sync-cache/<id>_editorial.json`, applied with
   `scripts/apply_editorial.py <id> --write`.
+- **verified** (provider.json, editorial): `{on, by, scope, evidence}` set only when someone at the provider confirms
+  the listing (`by` = a role, never a person's name). Pages show "Verified by X on date" and count records changed
+  since. Not an endorsement: never affects sorting. Policy: `docs/verification.md`.
 - **Open weights**: publishers without a hosted API are synced from the Hugging Face Hub API
   (`voicedex/sync/huggingface.py`, one class per org in `open_weights.py`; popularity bar, no hard-coded repos).
   `open_weights.commercial_use` is derived from the licence (null when unclear). A retired API seller that still

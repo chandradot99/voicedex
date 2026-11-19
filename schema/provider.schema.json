@@ -121,6 +121,46 @@
       "title": "ProviderLinks",
       "type": "object"
     },
+    "ProviderVerification": {
+      "additionalProperties": false,
+      "description": "The provider itself reviewed its listing and confirmed it is accurate (editorial, hand-set).\n\nIt records accuracy on one date, not an endorsement. Records changed after `on` are shown as\nchanged since the review. The evidence (email, issue link) is kept in git, never personal names.",
+      "properties": {
+        "by": {
+          "title": "By",
+          "type": "string"
+        },
+        "evidence": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Evidence"
+        },
+        "on": {
+          "format": "date",
+          "title": "On",
+          "type": "string"
+        },
+        "scope": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Scope",
+          "type": "array"
+        }
+      },
+      "required": [
+        "on",
+        "by"
+      ],
+      "title": "ProviderVerification",
+      "type": "object"
+    },
     "Region": {
       "enum": [
         "us",
@@ -266,6 +306,17 @@
         }
       ],
       "title": "Type"
+    },
+    "verified": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ProviderVerification"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
     },
     "voices_source": {
       "anyOf": [

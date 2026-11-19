@@ -133,6 +133,7 @@
         {% if m.meta.get('docs_sources') %}Features added from {{ p.name }}'s documentation.{% endif %}
         {% if m.pricing and m.pricing.source_url and m.provenance and m.provenance.method == "api" %}Price from {{ p.name }}'s pricing page.{% endif %}</p>
       {% if m.provenance and m.provenance.urls %}<ul class="side-list">{% for u in m.provenance.urls[:4] %}<li><a href="{{ u if u.startswith('http') else '#' }}" rel="noopener">{{ u.split('//')[-1].split('?')[0][:44] }}</a></li>{% endfor %}</ul>{% endif %}
+      {% if p.verified %}<p class="side-note">{% if not m.updated_at or m.updated_at <= p.verified.on %}<a href="{{ VERIFICATION_DOC }}" rel="noopener">Verified by {{ p.name }}</a> on <span class="mono">{{ p.verified.on.strftime('%Y-%m-%d') }}</span>.{% else %}{{ p.name }} <a href="{{ VERIFICATION_DOC }}" rel="noopener">verified its listing</a> on <span class="mono">{{ p.verified.on.strftime('%Y-%m-%d') }}</span>; this model changed after that.{% endif %}</p>{% endif %}
       <p class="side-note"><a href="{{ report_url(p.id, m.id, site_url ~ request.url.path) }}" rel="noopener">Spot an error? Report it</a></p>
     </div>
 

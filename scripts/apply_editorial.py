@@ -27,7 +27,7 @@ from voicedex.catalog.files import read_provider_dir, write_provider_dir  # noqa
 from voicedex.catalog.schema import Provider  # noqa: E402
 
 CACHE = ROOT / ".sync-cache"
-FIELDS = {"website", "description", "access", "headquarters", "regions", "compliance", "links"}
+FIELDS = {"website", "description", "access", "headquarters", "regions", "compliance", "links", "verified"}
 
 
 def apply(provider_id: str, data_dir: Path, write: bool) -> int:

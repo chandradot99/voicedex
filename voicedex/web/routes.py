@@ -58,7 +58,7 @@ templates.env.globals.update(
     TYPE_SHORT=views.TYPE_SHORT,
     ACCESS_LABELS=views.ACCESS_LABELS,
     country_name=views.country_name,
-    report_url=views.report_url,
+    report_url=views.report_url, VERIFICATION_DOC=views.VERIFICATION_DOC,
 )
 
 router = APIRouter(include_in_schema=False)
@@ -203,6 +203,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
     voices = views.active_voices(catalog, provider_id)
     return templates.TemplateResponse(request, "provider.html", {
         "p": pd.provider, "summary": summary, "models": models,
+        "verified": views.verification_status(catalog, provider_id),
         "voice_count": len(voices), "voice_sample": voices[:12],
         "deprecated": [r for r in catalog.models if r.provider_id == provider_id and r.model.deprecated_at],
         "compare_with": [(views.provider_pair_slug(provider_id, other), catalog.providers[other].provider.name)
