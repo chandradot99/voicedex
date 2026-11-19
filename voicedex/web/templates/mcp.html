@@ -8,6 +8,21 @@
   <p class="fact-line"><span>URL <b class="mono">{{ site_url }}/mcp</b></span><span>Streamable HTTP</span><span>No key, read-only</span></p>
 </section>
 
+<section class="wrap mcp-demo">
+  <figure>
+    <video src="/static/mcp-demo.mp4" poster="/static/mcp-demo-poster.jpg" width="1280" height="694"
+           autoplay muted loop playsinline preload="metadata"
+           aria-label="Claude, connected to Voicedex, answering which text-to-speech APIs support Swahili, cheapest first, flagging models that are shutting down, then opening one on voicedex.dev"></video>
+    <figcaption>Claude with the Voicedex connector: "Which text-to-speech APIs support Swahili? Show the 5 cheapest with prices, and flag any that are shutting down." (36 s, sped up while it thinks)</figcaption>
+  </figure>
+  <script>
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {   // no autoplay for people who opt out of motion
+      var v = document.currentScript.previousElementSibling.querySelector("video");
+      v.removeAttribute("autoplay"); v.controls = true; v.pause();
+    }
+  </script>
+</section>
+
 <section class="wrap vs-section" aria-labelledby="mcp-connect">
   <h2 id="mcp-connect" class="section-title">Connect</h2>
   <dl class="spec mcp-setup">
