@@ -103,6 +103,9 @@ async def test_openapi_examples_use_real_data(client):
 async def test_robots_and_sitemap(client):
     robots = (await client.get("/robots.txt")).text
     assert "Disallow: /search" in robots and "Sitemap: https://voicedex.dev/sitemap.xml" in robots
+    # filtered list views are blocked, but only with a query string: the plain lists and model pages stay open
+    assert "Disallow: /models?*\n" in robots and "Disallow: /voices?*\n" in robots
+    assert "Disallow: /models\n" not in robots and "Disallow: /voices\n" not in robots
     r = await client.get("/sitemap.xml")
     assert r.status_code == 200 and r.headers["content-type"].startswith("application/xml")
     assert "<loc>https://voicedex.dev/providers/zz-test-provider</loc>" in r.text
