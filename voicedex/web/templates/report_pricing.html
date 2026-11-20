@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% set as_of = rep.as_of.strftime("%-d %B %Y") if rep.as_of else "" %}
+{% block title %}Speech AI pricing report: what TTS, STT and realtime voice APIs cost ({{ rep.as_of.strftime("%B %Y") if rep.as_of else "" }}) | {{ site_name }}{% endblock %}
+{% block description %}What speech AI costs, from the published list prices of {{ rep.providers }} providers: text-to-speech per 1M characters, speech-to-text per hour, streaming vs batch, prices by language, and how many models publish a price at all.{% endblock %}
+{% block content %}
+<section class="wrap page-head report-head">
+  <p class="crumbs"><a href="/">Home</a><span aria-hidden="true">/</span></p>
+  <h1>Speech AI pricing report</h1>
+  <p class="lede">What text-to-speech, speech-to-text and realtime voice APIs cost, worked out from the published list prices in the Voicedex catalog. The figures are recomputed from the data every time it changes{% if as_of %}; last sync {{ as_of }}{% endif %}.</p>
+  <p class="fact-line">{% for t in rep.types %}<span><b>{{ t.models }}</b> {{ t.label|lower }} models</span>{% endfor %}<span><b>{{ rep.providers }}</b> providers</span><a href="#method">How this is calculated</a></p>
+</section>
+
+<section class="wrap report-sec" aria-labelledby="findings-title">
+  <h2 id="findings-title" class="section-title">Key findings</h2>
+  <ol class="findings">{% for f in rep.findings %}<li>{{ f }}</li>{% endfor %}</ol>
+</section>
+
+<section class="wrap report-sec" aria-labelledby="spread-title">
+  <h2 id="spread-title" class="section-title">Where prices fall</h2>
+  <p class="section-note">Each square is one model at its published list price, on a log scale. Lit squares stream over WebSocket or WebRTC; hover or tap one to see it. The table below gives the same distribution in numbers.</p>
+  {% with bands=spectrum, cap=12, compact=False, legend_note="streams (WebSocket or WebRTC)" %}{% include "_spectrum.html" %}{% endwith %}
+  <div class="table-scroll">
+    <table class="data report-table">
+      <caption class="visually-hidden">Distribution of published list prices by model type</caption>
+      <thead><tr><th scope="col">Type</th><th scope="col" class="num">Priced models</th><th scope="col" class="num">5th percentile</th><th scope="col" class="num">Lower quartile</th><th scope="col" class="num">Median</th><th scope="col" class="num">Upper quartile</th><th scope="col" class="num">95th percentile</th></tr></thead>
+      <tbody>{% for t in rep.types if t.comparable %}
+        <tr><th scope="row">{{ t.label }} <span class="sub">USD {{ t.unit }}</span></th><td class="num mono">{{ t.comparable|length }}</td><td class="num mono">{{ money(t.p5) }}</td><td class="num mono">{{ money(t.p25) }}</td><td class="num mono"><b>{{ money(t.median) }}</b></td><td class="num mono">{{ money(t.p75) }}</td><td class="num mono">{{ money(t.p95) }}</td></tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+  <p class="section-note">For the cheapest options in a language, see the language pages, e.g. <a href="/text-to-speech/hindi">Hindi text-to-speech</a> or <a href="/speech-to-text/spanish">Spanish speech-to-text</a>, sorted by price with a monthly cost calculator.</p>
+</section>
+
+<section class="wrap report-sec" aria-labelledby="rt-title">
+  <h2 id="rt-title" class="section-title">Streaming vs not streaming</h2>
+  <p class="section-note">Median list price of models that stream over WebSocket or WebRTC against those that don't (HTTP request and response, or batch files).</p>
+  <div class="table-scroll">
+    <table class="data report-table">
+      <thead><tr><th scope="col">Type</th><th scope="col" class="num">Streaming: median</th><th scope="col" class="num">Not streaming: median</th><th scope="col" class="num">Ratio</th></tr></thead>
+      <tbody>{% for t in rep.types if t.realtime and t.batch %}
+        <tr><th scope="row">{{ t.label }} <span class="sub">USD {{ t.unit }}</span></th><td class="num mono">{{ money(t.realtime[0]) }} <span class="sub">{{ t.realtime[1] }} models</span></td><td class="num mono">{{ money(t.batch[0]) }} <span class="sub">{{ t.batch[1] }} models</span></td><td class="num mono"><b>{{ '%.1f'|format(t.realtime[0] / t.batch[0]) }}×</b></td></tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+</section>
+
+{% for t in rep.types if t.languages %}
+<section class="wrap report-sec" aria-labelledby="lang-{{ t.type }}-title">
+  <h2 id="lang-{{ t.type }}-title" class="section-title">{{ t.label }} prices by language</h2>
+  <p class="section-note">The {{ t.languages|length }} languages with the most priced {{ t.label|lower }} models. A model counts for every language it lists; models that support "many languages" without listing them aren't counted.</p>
+  <div class="table-scroll">
+    <table class="data report-table">
+      <thead><tr><th scope="col">Language</th><th scope="col" class="num">Priced models</th><th scope="col" class="num">Median</th><th scope="col" class="num">Middle half</th></tr></thead>
+      <tbody>{% for lp in t.languages %}
+        <tr><th scope="row">{% if lp.url %}<a href="{{ lp.url }}">{{ lp.name }}</a>{% else %}{{ lp.name }}{% endif %}</th><td class="num mono">{{ lp.n }}</td><td class="num mono"><b>{{ money(lp.median) }}</b></td><td class="num mono">{{ money(lp.p25) }} to {{ money(lp.p75) }}</td></tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+  <p class="section-note">USD {{ t.unit }}.</p>
+</section>
+{% endfor %}
+
+<section class="wrap report-sec" aria-labelledby="transp-title">
+  <h2 id="transp-title" class="section-title">How many models publish a price</h2>
+  <p class="section-note">"Comparable" means a USD price in the unit the catalog normalizes to. The rest are counted, not compared: we never convert currencies or guess a per-character rate from tokens.</p>
+  <div class="table-scroll">
+    <table class="data report-table transparency">
+      <thead><tr><th scope="col">Type</th><th scope="col" class="num">Models</th><th scope="col">Comparable USD price</th><th scope="col" class="num">USD, other unit</th><th scope="col" class="num">Other currency only</th><th scope="col" class="num">No public price</th><th scope="col" class="num">Open weights, self-hosted</th></tr></thead>
+      <tbody>{% for t in rep.types %}
+        <tr>
+          <th scope="row">{{ t.label }}</th>
+          <td class="num mono">{{ t.models }}</td>
+          <td class="share"><span class="mono">{{ t.comparable|length }} <span class="sub">{{ (100 * t.comparable_share)|round|int }}%</span></span><span class="bar" aria-hidden="true"><i style="width: {{ (100 * t.comparable_share)|round }}%"></i></span></td>
+          <td class="num mono" title="{% for u, n in t.usd_other_unit.most_common() %}{{ n }} per {{ u }}{% if not loop.last %}, {% endif %}{% endfor %}">{{ t.usd_other_unit.values()|sum }}</td>
+          <td class="num mono" title="{% for c, n in t.other_currency.most_common() %}{{ c }} {{ n }}{% if not loop.last %}, {% endif %}{% endfor %}">{{ t.other_currency.values()|sum }}</td>
+          <td class="num mono">{{ t.unpriced_hosted }}</td>
+          <td class="num mono">{{ t.unpriced_open }}</td>
+        </tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+  {% for t in rep.types if t.other_currency %}{% if loop.first %}<p class="section-note">Other currencies: {% endif %}{{ t.label|lower }}: {% for c, n in t.other_currency.most_common() %}{{ c }} {{ n }}{% if not loop.last %}, {% endif %}{% endfor %}{% if not loop.last %}; {% else %}.</p>{% endif %}{% endfor %}
+</section>
+
+<section class="wrap report-sec method" id="method" aria-labelledby="method-title">
+  <h2 id="method-title" class="section-title">How this is calculated</h2>
+  <ul>
+    <li><b>Source.</b> Each price is read from the provider's own pricing page or API and stored with its source link and the date it was checked; every model page shows both. The catalog is <a href="https://github.com/chandradot99/voicedex">versioned in git</a>, so every price change has a history.</li>
+    <li><b>Which price.</b> The published list price anyone can pay without a subscription commitment. Plan-gated rates, volume discounts and free tiers are recorded on each model page but not used here.</li>
+    <li><b>What's counted.</b> Active models from providers that are still selling, with each <code>-latest</code> alias counted once. Prices are normalized to USD per 1M characters for text-to-speech and USD per hour of audio for speech-to-text and speech-to-speech; prices in other currencies or units are counted in the last table but not compared.</li>
+    <li><b>Ranges, not extremes.</b> Spreads use the 5th to 95th percentile, so one unusual price at either end can't distort them. Single cheapest models change often and some depend on conditions, so they are on the <a href="/text-to-speech">price-sorted pages</a>, with notes, rather than here.</li>
+    <li><b>Streaming</b> means the model accepts or returns audio over WebSocket or WebRTC.</li>
+  </ul>
+  <p class="fact-line"><a href="/catalog.csv">Download every model as CSV</a><a href="/v1/catalog.json">Full catalog as JSON</a><a href="/changes">What changed</a><a href="{{ issue_url }}" rel="noopener">Spot an error? Report it</a></p>
+</section>
+{% endblock %}

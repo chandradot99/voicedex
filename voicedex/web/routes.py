@@ -128,6 +128,30 @@ async def coverage_page(request: Request, catalog: Catalog = Depends(get_catalog
     })
 
 
+@router.get("/reports/speech-ai-pricing", response_class=HTMLResponse)
+async def pricing_report_page(request: Request, catalog: Catalog = Depends(get_catalog)):
+    """Pricing report, recomputed from the catalog (views.pricing_report): findings, spreads, languages."""
+    rep = views.pricing_report(catalog)
+    site = settings.site_url.rstrip("/")
+    realtime = {views.model_key(r) for r in views.active_models(catalog) if views.is_realtime(r.model)}
+    crumbs = [("Home", "/"), ("Speech AI pricing report", "/reports/speech-ai-pricing")]
+    article = {
+        "@context": "https://schema.org", "@type": "Article",
+        "headline": "Speech AI pricing report: what TTS, STT and realtime voice APIs cost",
+        "description": rep.findings[0] if rep.findings else "",
+        "url": f"{site}/reports/speech-ai-pricing",
+        "dateModified": rep.as_of.isoformat() if rep.as_of else None,
+        "author": {"@id": f"{site}/#organization"}, "publisher": {"@id": f"{site}/#organization"},
+        "isBasedOn": f"{site}/catalog.csv", "about": ["text-to-speech pricing", "speech-to-text pricing",
+                                                      "voice AI API pricing"],
+    }
+    return templates.TemplateResponse(request, "report_pricing.html", {
+        "rep": rep, "spectrum": views.price_spectrum(catalog, highlight=realtime),
+        "issue_url": f"{views.REPO_URL}/issues/new?title=" + quote("Pricing report: "),
+        "jsonld": [_breadcrumb_ld(crumbs), article],
+    })
+
+
 @router.get("/", response_class=HTMLResponse)
 async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
     map_type = _q(request, "map") if _q(request, "map") in views.TYPE_LABELS else ""
@@ -678,6 +702,7 @@ async def sitemap(catalog: Catalog = Depends(get_catalog)):
     entries.append(("/changes", date.fromisoformat(feed[0].date) if feed else None))
     entries.append(("/alternatives", None))
     entries.append(("/coverage", views.last_modified(models)))
+    entries.append(("/reports/speech-ai-pricing", views.last_modified(models)))
     entries.append(("/mcp", None))
     for pid in views.alternatives_subjects(catalog):
         entries.append((f"/alternatives/{pid}", views.last_modified(
@@ -717,6 +742,8 @@ async def llms_txt(catalog: Catalog = Depends(get_catalog)):
         f"- [OpenAPI schema]({site}/openapi.json)",
         f"- [MCP server]({site}/mcp): Streamable HTTP endpoint for AI assistants (search, compare, price models and voices)",
         f"- [All models as CSV]({site}/catalog.csv): one row per model with normalized price, price source and check date",
+        f"- [Speech AI pricing report]({site}/reports/speech-ai-pricing): what TTS, STT and realtime voice cost, "
+        "streaming vs batch, prices by language, how many models publish a price (recomputed from the data)",
         f"- [What changed]({site}/changes) ([Atom feed]({site}/changes.xml)): new models, price changes, shutdowns",
         "- [Source and data on GitHub](https://github.com/chandradot99/voicedex)",
         "", "## Compare models", "",

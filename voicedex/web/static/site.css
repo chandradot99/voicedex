@@ -882,3 +882,17 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .month-cell { color: var(--ink); white-space: nowrap; }
 .month-col { white-space: nowrap; }
 @media (max-width: 640px) { .usage input[type="number"] { width: 11ch; } .usage-presets button { padding: 8px 9px; } }
+
+/* Pricing report */
+.report-sec { margin-top: 48px; }
+.findings { margin: 0; padding-left: 1.4em; display: grid; gap: 12px; max-width: 78ch; font-size: 16px; line-height: 1.55; }
+.findings li::marker { font: 500 13px var(--mono); color: var(--muted); }
+.report-table { margin-top: 14px; }
+.report-table .sub { display: block; font: 400 12px/1.3 var(--sans); color: var(--muted); }
+.report-table td.num .sub { font-family: var(--mono); }
+.report-table b { font-weight: 500; color: var(--ink); }
+.transparency .share { min-width: 160px; }
+.transparency .share .bar { display: block; height: 4px; margin-top: 6px; background: var(--rule); border-radius: 2px; }
+.transparency .share .bar i { display: block; height: 100%; background: var(--signal-fill); border-radius: 2px; }
+.transparency .share .sub { display: inline; margin-left: 6px; }
+.method ul { margin: 12px 0 0; padding-left: 1.2em; display: grid; gap: 10px; max-width: 80ch; line-height: 1.55; }
