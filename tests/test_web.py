@@ -226,3 +226,41 @@ async def test_landing_caps_rows_with_see_all(client, monkeypatch):
     table = html.split('<table class="data models-table">', 1)[1].split("</table>", 1)[0]
     assert table.count('class="compare-pick"') == 1
     assert "2 matches, cheapest 1 shown" in html and "See all 2 models" in html
+
+
+async def test_landing_faq_tasks_and_licence_tiers(client, monkeypatch):
+    import json
+    import re
+
+    from voicedex.catalog.schema import OpenWeights
+    from voicedex.web import views
+    monkeypatch.setattr(views, "MIN_LANDING_MODELS", 1)
+    tts = (await client.get("/text-to-speech")).text
+    lds = [json.loads(m) for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', tts)]
+    faq = next(ld for ld in lds if ld["@type"] == "FAQPage")
+    names = [q["name"] for q in faq["mainEntity"]]
+    assert "What is the cheapest text-to-speech API?" in names
+    assert 'class="faq-list"' in tts and '<a href="/changes">/changes</a>' in tts     # paths become links in HTML
+    # Tasks only point at landing pages that exist, and the hub never links to itself.
+    home = (await client.get("/")).text
+    for url in re.findall(r'<ul class="tasks">(.*?)</ul>', home, re.S)[0].split('href="')[1:]:
+        assert (await client.get(url.split('"')[0])).status_code == 200
+    # Licence tiers: commercial first, unclear, then non-commercial.
+    m = Model(id="x", name="x", type="tts", open_weights=OpenWeights(license="cc-by-nc-4.0", commercial_use=False))
+    assert views.licence_tier(m) == views.LICENCE_TIERS[2]
+    m.open_weights.commercial_use = None
+    assert views.licence_tier(m) == views.LICENCE_TIERS[1]
+
+
+async def test_realtime_mode_filter_and_glance(client):
+    r = await client.get("/models?mode=realtime")
+    assert r.status_code == 200 and "realtime streaming" in r.text
+    model = (await client.get("/models/zz-test-provider/stt/stt-eu")).text
+    assert '<dl class="glance">' in model
+
+
+async def test_provider_faq(client):
+    html = (await client.get("/providers/zz-test-provider")).text
+    assert "ZZ Test questions" in html or "faq-list" not in html
+    retired = (await client.get("/providers/zz-test-deprecated")).text
+    assert "still available?" in retired

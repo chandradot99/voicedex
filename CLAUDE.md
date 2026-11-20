@@ -45,7 +45,9 @@ voicedex/
                        Dark is the default for everyone; light is opt-in via the header toggle (localStorage "theme").
                        SEO: filtered /models?… canonicalizes to /models, so indexable landing pages are generated from
                        data (views.landing_pages): /{speech-to-text|text-to-speech|speech-to-speech}[/<language>|/<feature>
-                       |/open-source], only when ≥ MIN_LANDING_MODELS match. Also JSON-LD (Dataset, BreadcrumbList),
+                       |/open-source (grouped by licence tier)|/realtime (WebSocket/WebRTC)], only when ≥ MIN_LANDING_MODELS match.
+                       views.TASKS = "start from what you're building" cards pointing at those pages (home + hubs).
+                       Landing and provider pages carry a data-generated FAQ (views.landing_faq/provider_faq) + FAQPage JSON-LD. Also JSON-LD (Dataset, BreadcrumbList),
                        sitemap <lastmod>, /llms.txt, and a 301 for trailing slashes (main.py).
                        /compare/<a>-vs-<b>: provider pairs from views.COMPARE_PROVIDERS (editorial list) that share a
                        model type; alphabetical slug, reverse order 301s. /changes + /changes.xml (Atom): web/changes.py

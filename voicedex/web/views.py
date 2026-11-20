@@ -576,6 +576,13 @@ TYPE_SLUGS = {"stt": "speech-to-text", "tts": "text-to-speech", "sts": "speech-t
 SLUG_TYPES = {v: k for k, v in TYPE_SLUGS.items()}
 MIN_LANDING_MODELS = 3
 OPEN_WEIGHTS_SLUG = "open-source"
+REALTIME_SLUG = "realtime"
+REALTIME_INTERFACES = ("websocket", "webrtc")
+
+
+def is_realtime(model: Model) -> bool:
+    """Streams over a persistent connection (WebSocket/WebRTC): what live captions and voice agents need."""
+    return any(str(getattr(i, "value", i)) in REALTIME_INTERFACES for i in model.interfaces)
 
 
 def slugify(text: str) -> str:
@@ -586,7 +593,7 @@ def slugify(text: str) -> str:
 @dataclass(frozen=True)
 class Landing:
     type: str            # stt | tts | sts
-    kind: str            # hub | language | feature | open
+    kind: str            # hub | language | feature | open | realtime
     value: str = ""      # base language code, or capability
     slug: str = ""
     label: str = ""      # "Hindi", "Speaker diarization"
@@ -605,6 +612,8 @@ class Landing:
             return self.value in m.capabilities
         if self.kind == "open":
             return m.open_weights is not None
+        if self.kind == "realtime":
+            return is_realtime(m)
         return True
 
 
@@ -626,6 +635,9 @@ def landing_pages(catalog: Catalog) -> dict[str, Landing]:
         candidates: list[Landing] = []
         if sum(r.model.open_weights is not None for r in typed) >= MIN_LANDING_MODELS:
             candidates.append(Landing(mtype, "open", slug=OPEN_WEIGHTS_SLUG, label="Open-weights"))
+        n_rt = sum(is_realtime(r.model) for r in typed)
+        if MIN_LANDING_MODELS <= n_rt < len(typed):     # a filter that keeps everything isn't a page
+            candidates.append(Landing(mtype, "realtime", slug=REALTIME_SLUG, label="Realtime streaming"))
         caps = Counter(c for r in typed for c in r.model.capabilities)
         for cap in sorted(c for c, n in caps.items() if n >= MIN_LANDING_MODELS):
             candidates.append(Landing(mtype, "feature", cap, slugify(cap), FEATURE_LABELS.get(cap, cap)))
@@ -649,7 +661,19 @@ def find_landing(catalog: Catalog, mtype: str, kind: str = "hub", value: str = "
 def landing_rows(catalog: Catalog, page: Landing) -> list[ModelRow]:
     """Cheapest first (USD-normalized), then unpriced; stable within ties."""
     rows = [r for r in active_models(catalog) if page.matches(r)]
-    return sorted(rows, key=lambda r: ((normalized_price(r.model) or (math.inf,))[0], r.provider_id, r.model.id))
+    rows.sort(key=lambda r: ((normalized_price(r.model) or (math.inf,))[0], r.provider_id, r.model.id))
+    if page.kind == "open":     # licence tier first: "can I ship this?" decides before price does
+        rows.sort(key=lambda r: LICENCE_TIERS.index(licence_tier(r.model)))
+    return rows
+
+
+# Open-weights licence tiers, in the order a builder cares about them (from open_weights.commercial_use).
+LICENCE_TIERS = ("Commercial use allowed", "Licence terms unclear: check before commercial use", "Non-commercial only")
+
+
+def licence_tier(model: Model) -> str:
+    use = model.open_weights.commercial_use if model.open_weights else None
+    return LICENCE_TIERS[0] if use is True else LICENCE_TIERS[2] if use is False else LICENCE_TIERS[1]
 
 
 def _lower_label(label: str) -> str:
@@ -681,12 +705,21 @@ def landing_copy(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> Landi
         h1 = f"{TYPE_LABELS[page.type]} models with {feat}"
         title = f"{TYPE_LABELS[page.type]}{abbr} APIs with {feat}: {n} models compared"
         lead = f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} list {feat} as a feature."
+    elif page.kind == "realtime":
+        subject = f"realtime {kind_label}"
+        h1 = f"Realtime streaming {kind_label} models"
+        title = f"Realtime {kind_label}{abbr} APIs: {n} streaming models compared"
+        what = "transcribe audio as it arrives" if page.type == "stt" else "stream audio back as it is generated"
+        lead = (f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} {what} over a "
+                "WebSocket or WebRTC connection, for live captions, calls and voice agents.")
     elif page.kind == "open":
         subject = f"open-weights {kind_label}"
         h1 = f"Open-source {kind_label} models"
         title = f"Open-source {kind_label}{abbr} models: {n} open-weights models compared"
         lead = (f"{n} {kind_label} {noun} from {n_prov} publisher{'s' if n_prov != 1 else ''} publish their weights, "
-                "so you can run them yourself. Licences differ, so check commercial use on each model.")
+                "so you can run them yourself. They are grouped by what the licence allows: "
+                + ", ".join(f"{sum(licence_tier(r.model) == t for r in rows)} {t.split(':')[0].lower()}"
+                            for t in LICENCE_TIERS) + ".")
     else:
         subject = kind_label
         h1 = f"{TYPE_LABELS[page.type]}{abbr} APIs and models compared"
@@ -705,7 +738,7 @@ def landing_copy(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> Landi
         extras.append(f"{n_free} {'are' if n_free != 1 else 'is'} free")
     if page.kind != "open" and (n_open := sum(r.model.open_weights is not None for r in rows)):
         extras.append(f"{n_open} {'are' if n_open != 1 else 'is'} open weights")
-    if n_rt := sum(any(str(i) in ("websocket", "webrtc") for i in r.model.interfaces) for r in rows):
+    if page.kind != "realtime" and (n_rt := sum(is_realtime(r.model) for r in rows)):
         extras.append(f"{n_rt} stream over WebSocket or WebRTC")
     if n_eol := sum(r.model.eol_date is not None for r in rows):
         extras.append(f"{n_eol} {'have' if n_eol != 1 else 'has'} an announced shutdown date")
@@ -715,6 +748,222 @@ def landing_copy(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> Landi
     if paid:
         description += f" Cheapest paid: {cheapest.model.name} ({name}), {price_label(cheapest.model)}."
     return LandingCopy(title=title, h1=h1, description=description, intro=intro)
+
+
+# ── Start from the task: entry points worded the way people describe what they're building ──────────
+# Each task is a pointer to a data-generated landing page; it only shows when that page exists, and its numbers
+# come from the catalog. Never name models here.
+
+@dataclass(frozen=True)
+class Task:
+    title: str
+    blurb: str
+    type: str
+    kind: str              # Landing.kind
+    value: str = ""
+    home: bool = True      # also on the home page (which shows two rows of four), not only on its type's hub
+
+
+TASKS = (
+    Task("Transcribe live audio", "Captions, phone calls and voice-agent input, transcribed as it streams in.",
+         "stt", "realtime"),
+    Task("Transcribe meetings and calls", "Recordings labelled by who spoke.", "stt", "feature", "speaker_diarization"),
+    Task("Redact personal data", "Transcripts with names, numbers and card details removed.",
+         "stt", "feature", "pii_redaction", home=False),
+    Task("Give a voice agent a voice", "Speech streamed back over WebSocket or WebRTC as it is generated.",
+         "tts", "realtime"),
+    Task("Clone a voice", "A custom voice made from your own recordings.", "tts", "feature", "voice_cloning"),
+    Task("Design a voice from a prompt", "A new voice from a text description, no recording needed.",
+         "tts", "feature", "voice_design"),
+    Task("Build a speech-to-speech agent", "Audio in, audio out: one realtime model instead of STT + LLM + TTS.",
+         "sts", "hub"),
+    Task("Run speech recognition yourself", "Open weights you can host on your own hardware.", "stt", "open"),
+    Task("Run text-to-speech yourself", "Open weights you can host on your own hardware.", "tts", "open"),
+)
+
+
+@dataclass
+class TaskCard:
+    task: Task
+    url: str
+    count: int
+    from_price: str | None      # cheapest published paid USD price
+
+
+def task_cards(catalog: Catalog, model_type: str | None = None) -> list[TaskCard]:
+    out = []
+    for t in TASKS:
+        if model_type and (t.type != model_type or t.kind == "hub"):
+            continue
+        if not model_type and not t.home:
+            continue
+        page = find_landing(catalog, t.type, t.kind, t.value)
+        if not page:
+            continue
+        rows = landing_rows(catalog, page)
+        paid = [r for r in rows if (np := normalized_price(r.model)) and np[0] > 0]
+        cheapest = min(paid, key=lambda r: normalized_price(r.model)[0]) if paid else None
+        # Hosted prices would mislead on "run it yourself" cards: the weights are free to download.
+        show_price = cheapest and t.kind != "open"
+        out.append(TaskCard(t, page.url, len(rows), price_label(cheapest.model) if show_price else None))
+    return out
+
+
+# ── FAQ: questions people search for, answered from the data (rendered as text + FAQPage JSON-LD) ──────
+
+def _join(names: list[str], limit: int = 6) -> str:
+    names = list(dict.fromkeys(names))
+    shown, rest = names[:limit], len(names) - limit
+    if rest > 0:
+        return ", ".join(shown) + f" and {rest} more"
+    return ", ".join(shown[:-1]) + (" and " if len(shown) > 1 else "") + shown[-1] if shown else ""
+
+
+def _model_ref(catalog: Catalog, row: ModelRow, with_price: bool = True) -> str:
+    name = catalog.providers[row.provider_id].provider.name
+    label = price_label(row.model) if with_price else None
+    return f"{row.model.name} ({name}{', ' + label if label else ''})"
+
+
+def _cheapest_paid(rows: list[ModelRow]) -> list[ModelRow]:
+    """Paid USD-priced rows, cheapest first; models with a shutdown date aren't a recommendation."""
+    paid = [r for r in rows if (np := normalized_price(r.model)) and np[0] > 0 and not r.model.eol_date]
+    return sorted(paid, key=lambda r: normalized_price(r.model)[0])
+
+
+def landing_faq(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> list[tuple[str, str]]:
+    if not rows:
+        return []
+    kind_label = TYPE_LABELS[page.type].lower()
+    subject = {"language": f"{page.label} {kind_label}", "open": f"open-source {kind_label}",
+               "realtime": f"realtime {kind_label}"}.get(page.kind, kind_label)
+    if page.kind == "feature":
+        subject = f"{kind_label} with {_lower_label(page.label)}"
+    names = {pid: pd.provider.name for pid, pd in catalog.providers.items()}
+    faq = []
+    paid = _cheapest_paid(rows)
+    if paid:
+        a = f"The lowest published USD list price is {_model_ref(catalog, paid[0])}."
+        if len(paid) > 1:
+            a += " Next cheapest: " + "; ".join(_model_ref(catalog, r) for r in paid[1:3]) + "."
+        if page.kind == "open":
+            a += " These are hosted prices; downloading the weights is free and you pay only for your own hardware."
+        faq.append((f"What is the cheapest {subject} API?", a))
+    by_provider = Counter(r.provider_id for r in rows)
+    faq.append((f"Which providers offer {subject}?",
+                f"{len(by_provider)} provider{'s' if len(by_provider) != 1 else ''} list {len(rows)} "
+                f"{'models' if len(rows) != 1 else 'model'}: "
+                + _join([f"{names[pid]} ({n})" for pid, n in by_provider.most_common()], 10) + "."))
+    if page.kind == "open":
+        for tier in LICENCE_TIERS[:1] + LICENCE_TIERS[2:]:
+            in_tier = [r for r in rows if licence_tier(r.model) == tier]
+            q = (f"Which open-source {kind_label} models can be used commercially?" if tier == LICENCE_TIERS[0]
+                 else f"Which open-source {kind_label} models are non-commercial only?")
+            if in_tier:
+                a = (f"{len(in_tier)} of {len(rows)}, going by each licence: "
+                     + _join([f"{r.model.name} ({r.model.open_weights.license})" for r in in_tier], 8) + ".")
+                if tier == LICENCE_TIERS[0]:
+                    unclear = sum(licence_tier(r.model) == LICENCE_TIERS[1] for r in rows)
+                    if unclear:
+                        a += f" {unclear} more have licences whose commercial terms aren't clear; read them first."
+                faq.append((q, a))
+    if page.type != "sts" and page.kind != "realtime":
+        rt = [r for r in rows if is_realtime(r.model)]
+        a = (f"{len(rt)} of {len(rows)} stream over WebSocket or WebRTC, from "
+             + _join([names[r.provider_id] for r in rt]) + "." if rt
+             else "None of these list a WebSocket or WebRTC streaming interface.")
+        faq.append((f"Which {subject} models work in real time?", a))
+    if page.kind != "open":
+        ow = [r for r in rows if r.model.open_weights]
+        if ow:
+            commercial = sum(licence_tier(r.model) == LICENCE_TIERS[0] for r in ow)
+            faq.append((f"Is there an open-source {subject} model?",
+                        f"Yes: {len(ow)} publish their weights, including "
+                        + _join([r.model.name for r in ow], 5)
+                        + f". {commercial} of them have a licence that allows commercial use."))
+    eol = sorted((r for r in rows if r.model.eol_date), key=lambda r: r.model.eol_date)
+    if eol:
+        faq.append((f"Are any {subject} models being shut down?",
+                    f"{len(eol)} {'have' if len(eol) != 1 else 'has'} an announced shutdown date: "
+                    + _join([f"{_model_ref(catalog, r, False)} on {r.model.eol_date.isoformat()}" for r in eol], 5)
+                    + "."))
+    modified = last_modified(rows)
+    faq.append(("Where does this data come from?",
+                "From each provider's own API, documentation and pricing pages, synced and reviewed in git"
+                + (f"; the latest change on this page was on {modified.isoformat()}" if modified else "")
+                + ". Every price change, new model and shutdown is in the public changelog at /changes."))
+    return faq
+
+
+def provider_faq(catalog: Catalog, provider_id: str) -> list[tuple[str, str]]:
+    p = catalog.providers[provider_id].provider
+    rows = active_models(catalog, provider_id)
+    faq = []
+    if p.status != "active":
+        when = f" on {p.retired_on.isoformat()}" if p.retired_on else ""
+        faq.append((f"Is {p.name} still available?",
+                    f"No. {p.name} stopped selling its hosted API{when}."
+                    + (" Its open weights are still published." if rows else "")
+                    + (f" See /alternatives/{provider_id} for who offers the same today."
+                       if provider_id in alternatives_subjects(catalog) else "")))
+        return faq
+    if not rows:
+        return faq
+    parts = []
+    for t in ("tts", "stt", "sts"):
+        priced = sorted(((np[0], r) for r in rows if r.model.type == t and (np := normalized_price(r.model))),
+                        key=lambda x: x[0])
+        if priced:
+            lo, hi = price_label(priced[0][1].model), price_label(priced[-1][1].model)
+            parts.append(f"{TYPE_LABELS[t].lower()} {'costs ' + lo if lo == hi else 'ranges from ' + lo + ' to ' + hi}"
+                         f" ({len(priced)} priced model{'s' if len(priced) != 1 else ''})")
+    if parts:
+        faq.append((f"How much does {p.name} cost?",
+                    "At published list prices, " + "; ".join(parts) + ". Volume and enterprise discounts aren't included."))
+    free = [r for r in rows if r.model.pricing and r.model.pricing.free_quota]
+    if free:
+        faq.append((f"Does {p.name} have a free tier?",
+                    "Yes: " + "; ".join(f"{r.model.name}, {free_quota_label(r.model)}" for r in free[:4]) + "."))
+    many = any("*" in r.model.languages for r in rows)
+    langs = Counter(b for r in rows for b in {base_language(lang) for lang in r.model.languages if lang != "*"})
+    if langs or many:
+        a = (f"{len(langs)} language{'s' if len(langs) != 1 else ''} across its models, including "
+             + _join([language_name(c) for c, _ in langs.most_common(8)], 8) + "." if langs else "")
+        if many:
+            a += (" " if a else "") + "Some models support many languages without listing them individually."
+        faq.append((f"Which languages does {p.name} support?", a))
+    for t in ("stt", "tts"):
+        caps = sorted({c for r in rows if r.model.type == t for c in r.model.capabilities})
+        if caps:
+            faq.append((f"Which {TYPE_LABELS[t].lower()} features does {p.name} offer?",
+                        f"Its {TYPE_LABELS[t].lower()} models list "
+                        + _join([_lower_label(FEATURE_LABELS.get(c, c.replace('_', ' '))) for c in caps], 12) + "."))
+    eol = sorted((r for r in rows if r.model.eol_date), key=lambda r: r.model.eol_date)
+    if eol:
+        faq.append((f"Is {p.name} shutting down any models?",
+                    "Yes: " + _join([f"{r.model.name} on {r.model.eol_date.isoformat()}"
+                                     + (f" (replacement: {r.model.meta['replacement']})"
+                                        if r.model.meta.get("replacement") else "") for r in eol], 6) + "."))
+    return faq
+
+
+def connection_label(model: Model) -> str:
+    """'WebSocket, WebRTC' for realtime models; 'No (HTTP only)' otherwise; 'Not listed' when unknown."""
+    ifaces = [str(getattr(i, "value", i)) for i in model.interfaces]
+    if not ifaces:
+        return "Not listed"
+    rt = [INTERFACE_LABELS.get(i, i) for i in ifaces if i in REALTIME_INTERFACES]
+    if rt:
+        return ", ".join(rt)
+    return "No (" + ", ".join(INTERFACE_LABELS.get(i, i) for i in ifaces) + " only)"
+
+
+def free_quota_label(model: Model) -> str | None:
+    fq = model.pricing.free_quota if model.pricing else None
+    if not fq:
+        return None
+    period = (" on sign-up" if fq.period == "once" else f" per {fq.period}" if fq.period else "")
+    return f"{fq.amount:,g} {fq.unit}s free{period}"
 
 
 def last_modified(rows) -> date | None:

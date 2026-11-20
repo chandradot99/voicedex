@@ -83,4 +83,6 @@
   {% with rows=voice_sample, names={} %}{% include "_voice_grid.html" %}{% endwith %}
 </section>
 {% endif %}
+
+{% with faq_title=p.name ~ " questions" %}{% include "_faq.html" %}{% endwith %}
 {% endblock %}

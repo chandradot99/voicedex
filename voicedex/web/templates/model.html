@@ -24,6 +24,14 @@
     {% if m.alias_of %}<span class="badge badge-quiet">Alias of {{ m.alias_of }}</span>{% endif %}
     <span class="mono">{{ "streaming" if m.streaming else "no streaming" }}{% if m.batch %}, batch{% endif %}{% if m.interfaces %}, {{ m.interfaces|join(", ") }}{% endif %}</span>
   </p>
+  <dl class="glance">
+    <div><dt>Price</dt><dd>{{ price_label(m) or "Not published" }}</dd></div>
+    <div><dt>Languages</dt><dd>{% if "*" in m.languages %}Many{% elif lang_groups %}{{ lang_groups|length }}{% else %}Not published{% endif %}</dd></div>
+    {% if m.open_weights %}<div><dt>Open weights</dt><dd>{{ m.open_weights.license }}{% if m.open_weights.commercial_use is true %}, commercial OK{% elif m.open_weights.commercial_use is false %}, non-commercial{% endif %}</dd></div>
+    {% else %}<div><dt>Free tier</dt><dd>{{ free_quota_label(m) or "None listed" }}</dd></div>{% endif %}
+    {% if m.interfaces %}<div><dt>{{ "Realtime" if m.type != "sts" else "Connect via" }}</dt><dd>{{ connection_label(m) }}</dd></div>{% endif %}
+    <div><dt>Status</dt><dd{% if m.eol_date %} class="urgent"{% endif %}>{% if m.eol_date %}Ends {{ m.eol_date.strftime('%Y-%m-%d') }}{% elif m.lifecycle in ("alpha", "beta") %}{{ m.lifecycle|capitalize }}{% else %}Generally available{% endif %}</dd></div>
+  </dl>
   {% if m.eol_date %}{% set days = (m.eol_date - today).days %}
   <div class="eol-banner" role="note">
     <span class="mono">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}{% if days >= 0 %}, {{ days }} day{{ 's' if days != 1 }} left{% endif %}</span>

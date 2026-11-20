@@ -1,0 +1,9 @@
+{# faq: list of (question, answer) generated from the data (views.*_faq); same text goes into FAQPage JSON-LD. #}
+{% if faq %}
+<section class="wrap faq" aria-labelledby="faq-title">
+  <h2 id="faq-title" class="section-title">{{ faq_title|default("Questions") }}</h2>
+  <dl class="faq-list">
+    {% for q, a in faq %}<div><dt>{{ q }}</dt><dd>{{ a|path_links }}</dd></div>{% endfor %}
+  </dl>
+</section>
+{% endif %}

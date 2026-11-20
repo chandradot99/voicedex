@@ -8,13 +8,16 @@
   <h1>{{ copy.h1 }}</h1>
   {% for line in copy.intro %}<p class="lede">{{ line }}</p>{% endfor %}
   {% if wildcard %}<p class="section-note">{{ wildcard }} more {{ TYPE_LABELS[landing.type]|lower }} model{{ 's' if wildcard != 1 }} support many languages without listing them, so {{ 'they are' if wildcard != 1 else 'it is' }} not counted here. <a href="{{ filter_url }}">Include them</a>.</p>{% endif %}
-  <p class="section-note">Prices are normalized: {% if landing.type == "tts" %}USD per 1M characters{% else %}USD per hour of audio{% endif %}, cheapest first. Tick models to compare them side by side, or <a href="{{ filter_url }}">refine these filters</a>.</p>
+  <p class="section-note">Prices are normalized: {% if landing.type == "tts" %}USD per 1M characters{% else %}USD per hour of audio{% endif %}, cheapest first{% if tiered %} within each licence group{% endif %}. Tick models to compare them side by side, or <a href="{{ filter_url }}">refine these filters</a>.</p>
 </section>
+{% with tasks_title="By use case" %}{% include "_tasks.html" %}{% endwith %}
 {% endblock %}
 
 {% block filters %}{% endblock %}
 
 {% block after_table %}
+{% include "_faq.html" %}
+
 <section class="wrap landing-more">
   {% if total_rows > rows|length %}<p class="more-link"><a href="{{ filter_url }}">See all {{ total_rows }} models</a>, with filters and sorting.</p>{% endif %}
   {% if landing.kind != "hub" %}

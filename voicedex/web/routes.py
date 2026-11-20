@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import re
 from collections import Counter
 from datetime import date
 from html import escape
@@ -12,6 +13,7 @@ from urllib.parse import quote
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import HTMLResponse, PlainTextResponse, Response
 from fastapi.templating import Jinja2Templates
+from markupsafe import Markup
 
 from voicedex.catalog.schema import MODEL_CAPABILITIES
 from voicedex.catalog.store import Catalog, language_matches
@@ -37,6 +39,12 @@ def _asset_version() -> str:
         _ASSETS.update(stamp=stamp, v=h.hexdigest()[:10])
     return _ASSETS["v"]
 
+def _path_links(text: str) -> Markup:
+    """Escape text, then link bare site paths like /changes (FAQ answers are plain text for JSON-LD)."""
+    return Markup(re.sub(r"(?<![\w/])(/[a-z0-9][a-z0-9/-]*[a-z0-9])", r'<a href="\1">\1</a>', str(escape(text))))
+
+
+templates.env.filters["path_links"] = _path_links
 templates.env.globals.update(
     site_name=settings.site_name,
     site_url=settings.site_url.rstrip("/"),
@@ -59,6 +67,8 @@ templates.env.globals.update(
     ACCESS_LABELS=views.ACCESS_LABELS,
     country_name=views.country_name,
     report_url=views.report_url, VERIFICATION_DOC=views.VERIFICATION_DOC,
+    is_realtime=views.is_realtime, licence_tier=views.licence_tier, free_quota_label=views.free_quota_label,
+    connection_label=views.connection_label,
 )
 
 router = APIRouter(include_in_schema=False)
@@ -79,7 +89,7 @@ def _qs(f: dict, **changes) -> str:
 
 
 _TOKEN_LABEL = {"type": "type", "language": "language", "capability": "feature", "provider": "provider",
-                "status": "status", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
+                "status": "status", "mode": "mode", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
 
 
 def _token_value(key: str, value: str, catalog: Catalog) -> str:
@@ -94,6 +104,8 @@ def _token_value(key: str, value: str, catalog: Catalog) -> str:
         return pd.provider.name if pd else value
     if key == "status":
         return {"ending": "shutting down", "beta": "beta / preview"}.get(value, value)
+    if key == "mode":
+        return {"realtime": "realtime streaming"}.get(value, value)
     if key == "preview":
         return "has sample"
     return value
@@ -148,6 +160,7 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
         "timeline": views.shutdown_timeline(upcoming_eol, today),
         "today": today,
         "spectrum": views.price_spectrum(catalog),
+        "tasks": views.task_cards(catalog),
         "n_voices_live": sum(s.voices for s in live),
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
         "jsonld": _home_ld(catalog, len(views.active_models(catalog)), len(views.active_voices(catalog)), len(live)),
@@ -201,6 +214,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
                                    r.model.name.lower()))
     summary = next(s for s in views.provider_summaries(catalog) if s.id == provider_id)
     voices = views.active_voices(catalog, provider_id)
+    faq = views.provider_faq(catalog, provider_id)
     return templates.TemplateResponse(request, "provider.html", {
         "p": pd.provider, "summary": summary, "models": models,
         "verified": views.verification_status(catalog, provider_id),
@@ -210,13 +224,15 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
                          for other in views.compare_partners(catalog, provider_id)],
         "has_alternatives": provider_id in views.alternatives_subjects(catalog),
         "positions": views.price_positions(views.price_spectrum(catalog)),
-        "jsonld": [_breadcrumb_ld([("Home", "/"), (pd.provider.name, f"/providers/{provider_id}")])],
+        "faq": faq,
+        "jsonld": [_breadcrumb_ld([("Home", "/"), (pd.provider.name, f"/providers/{provider_id}")])]
+                  + ([_faq_ld(faq)] if faq else []),
     })
 
 
 @router.get("/models", response_class=HTMLResponse)
 async def models_page(request: Request, catalog: Catalog = Depends(get_catalog)):
-    f = {k: _q(request, k) for k in ("type", "language", "capability", "provider", "q", "sort", "status")}
+    f = {k: _q(request, k) for k in ("type", "language", "capability", "provider", "q", "sort", "status", "mode")}
     rows = views.active_models(catalog)
     if f["type"] in views.TYPE_LABELS:
         rows = [r for r in rows if r.model.type == f["type"]]
@@ -232,6 +248,8 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
                 or needle in (r.model.description or "").lower() or needle in r.provider_id]
     if f["status"] == "ending":
         rows = [r for r in rows if r.model.eol_date]
+    if f["mode"] == "realtime":
+        rows = [r for r in rows if views.is_realtime(r.model)]
     if f["status"] == "beta":
         rows = [r for r in rows if str(getattr(r.model.lifecycle, "value", r.model.lifecycle)) in ("alpha", "beta")]
     if f["status"] == "ending" and f["sort"] != "price":
@@ -272,6 +290,8 @@ def _models_canonical(catalog: Catalog, f: dict) -> str:
         page = views.find_landing(catalog, f["type"], "language", f["language"].lower())
     elif active == {"type", "capability"}:
         page = views.find_landing(catalog, f["type"], "feature", f["capability"])
+    elif active == {"type", "mode"} and f["mode"] == "realtime":
+        page = views.find_landing(catalog, f["type"], "realtime")
     return page.url if page else "/models"
 
 
@@ -285,7 +305,8 @@ def _landing_page(type_slug: str):
         rows = views.landing_rows(catalog, landing)
         f = {"type": mtype, "language": landing.value if landing.kind == "language" else "",
              "capability": landing.value if landing.kind == "feature" else "",
-             "provider": "", "q": "", "sort": "price", "status": ""}
+             "provider": "", "q": "", "sort": "price", "status": "",
+             "mode": "realtime" if landing.kind == "realtime" else ""}
         ctx = _models_context(catalog, rows, f, show_tokens=False)
         ctx["filtered"] = landing.kind != "hub"
         ctx["total_rows"], ctx["rows"] = len(rows), rows[:LANDING_ROWS]
@@ -296,13 +317,16 @@ def _landing_page(type_slug: str):
         if landing.kind == "language":
             wildcard = sum(1 for r in views.active_models(catalog)
                            if r.model.type == mtype and "*" in r.model.languages and not landing.matches(r))
+        faq = views.landing_faq(catalog, landing, rows)
         ctx.update({
             "landing": landing, "copy": views.landing_copy(catalog, landing, rows), "crumbs": crumbs,
             "by_language": [p for p in siblings if p.kind == "language"],
-            "by_feature": [p for p in siblings if p.kind in ("feature", "open")],
+            "by_feature": [p for p in siblings if p.kind in ("feature", "open", "realtime")],
             "other_types": [p for p in views.landing_pages(catalog).values() if p.kind == "hub" and p.type != mtype],
             "wildcard": wildcard, "filter_url": f"/models?{_qs(f, sort=None)}",
-            "jsonld": [_breadcrumb_ld(crumbs)],
+            "tasks": views.task_cards(catalog, mtype) if landing.kind == "hub" else [],
+            "tiered": landing.kind == "open", "faq": faq,
+            "jsonld": [_breadcrumb_ld(crumbs)] + ([_faq_ld(faq)] if faq else []),
         })
         return templates.TemplateResponse(request, "landing.html", ctx)
     return page
@@ -332,6 +356,11 @@ def _short_alias(target: str):
 for _alias, _target in SHORT_TYPE_ALIASES.items():
     router.add_api_route(f"/{_alias}", _short_alias(_target), methods=["GET"])
     router.add_api_route(f"/{_alias}/{{slug}}", _short_alias(_target), methods=["GET"])
+
+
+def _faq_ld(faq: list[tuple[str, str]]) -> dict:
+    return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
 
 
 def _breadcrumb_ld(crumbs: list[tuple[str, str]]) -> dict:

@@ -1,0 +1,16 @@
+{# tasks: views.task_cards — entry points by what you're building, each a data-generated landing page. #}
+{% if tasks %}
+<section class="wrap tasks-section" aria-labelledby="tasks-title">
+  <h2 id="tasks-title" class="section-title">{{ tasks_title|default("Start from what you're building") }}</h2>
+  <ul class="tasks">
+    {% for c in tasks %}
+    <li><a href="{{ c.url }}">
+      <span class="task-type mono">{{ TYPE_SHORT[c.task.type] }}</span>
+      <b>{{ c.task.title }}</b>
+      <span class="task-blurb">{{ c.task.blurb }}</span>
+      <span class="task-facts mono">{{ c.count }} model{{ 's' if c.count != 1 }}{% if c.from_price %} · from {{ c.from_price }}{% endif %}</span>
+    </a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
