@@ -13,6 +13,9 @@
   <details class="filter-bar" open data-collapse-sm>
     <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
     <form class="filters" method="get" action="/models">
+      <label class="field grow">Search
+        <input type="search" name="q" value="{{ f.q }}" placeholder="nova, sonic, flash…" autocomplete="off" spellcheck="false">
+      </label>
       <label class="field">Type
         <select name="type">
           <option value="">Any</option>
@@ -25,16 +28,16 @@
           {% for code, name in languages %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
         </select>
       </label>
-      <label class="field">Feature
-        <select name="capability">
-          <option value="">Any</option>
-          {% for c in capabilities %}<option value="{{ c }}" {% if f.capability == c %}selected{% endif %}>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</option>{% endfor %}
-        </select>
-      </label>
       <label class="field">Provider
         <select name="provider" data-searchable="provider">
           <option value="">Any</option>
           {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }}</option>{% endfor %}
+        </select>
+      </label>
+      <label class="field">Feature
+        <select name="capability">
+          <option value="">Any</option>
+          {% for c in capabilities %}<option value="{{ c }}" {% if f.capability == c %}selected{% endif %}>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</option>{% endfor %}
         </select>
       </label>
       <label class="field">Status
@@ -44,22 +47,11 @@
           <option value="beta" {% if f.status == "beta" %}selected{% endif %}>Beta / preview</option>
         </select>
       </label>
-      <label class="field">Connection
-        <select name="mode">
-          <option value="">Any</option>
-          <option value="realtime" {% if f.mode == "realtime" %}selected{% endif %}>Realtime (WebSocket / WebRTC)</option>
-        </select>
-      </label>
-      <label class="field">Weights
-        <select name="weights">
-          <option value="">Any</option>
-          <option value="open" {% if f.weights == "open" %}selected{% endif %}>Open weights</option>
-          <option value="hosted" {% if f.weights == "hosted" %}selected{% endif %}>Hosted only</option>
-        </select>
-      </label>
-      <label class="field grow">Name
-        <input type="search" name="q" value="{{ f.q }}" placeholder="nova, sonic, flash…" autocomplete="off" spellcheck="false">
-      </label>
+      <div class="filter-toggles">
+        <label class="field-check"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}> Realtime (WebSocket / WebRTC)</label>
+        <label class="field-check"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}> Open weights</label>
+        {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
+      </div>
       {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
       <button type="submit" class="btn-secondary" data-apply>Apply</button>
     </form>
