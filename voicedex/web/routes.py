@@ -593,6 +593,8 @@ async def robots():
     site = settings.site_url.rstrip("/")
     return ("User-agent: *\n"
             "Disallow: /search\n"            # result pages for arbitrary queries
+            "Disallow: /models?*\n"          # filtered/paged list views: canonical to /models, endless combinations
+            "Disallow: /voices?*\n"          # (model pages are all in the sitemap; plain /models and /voices stay open)
             "Allow: /compare/\n"             # provider-vs-provider pages (curated, finite)
             "Disallow: /compare\n"           # unbounded combinations of models
             "Disallow: /v1/\n"               # the JSON API
