@@ -1,0 +1,10 @@
+{# Cost calculator. Needs: usage_type, usage, USAGE. Works without JS (GET ?usage=…); site.js updates every
+   [data-rate] on the page as you type. hidden: extra (name, value) pairs to keep filters on submit. #}
+{% set u = USAGE[usage_type] %}
+<form class="usage" method="get" data-usage data-scale="{{ u.scale }}" aria-label="Monthly cost calculator">
+  {% for name, value in hidden or [] %}<input type="hidden" name="{{ name }}" value="{{ value }}">{% endfor %}
+  <label for="usage-in">Usage per month</label>
+  <span class="usage-field"><input id="usage-in" name="usage" type="number" min="0" step="any" inputmode="decimal" value="{{ plain_number(usage) }}"><span class="usage-unit">{{ u.unit }}</span></span>
+  <span class="usage-presets">{% for v in u.presets %}<button type="submit" name="usage" value="{{ plain_number(v) }}"{% if v == usage %} aria-pressed="true"{% endif %}>{{ compact_number(v) }}</button>{% endfor %}</span>
+  <p class="usage-note">Monthly cost at each model's published list price, before free tiers, volume discounts and taxes.</p>
+</form>

@@ -1297,3 +1297,70 @@ def catalog_csv_rows(catalog: Catalog, site: str) -> list[list]:
             site + model_url(r),
         ])
     return out
+
+
+# ── Cost calculator ──────────────────────────────────────────────────────────
+# Monthly cost at the published list price (the no-subscription rate; see the pricing rule), before free tiers,
+# volume discounts and taxes. Server-rendered at a default usage so the numbers are in the HTML; site.js
+# recomputes them live from data-rate when the usage changes.
+
+@dataclass(frozen=True)
+class Usage:
+    default: float
+    unit: str            # shown after the input
+    short: str           # "chars", "hours"
+    scale: float         # cost = normalized rate × usage × scale
+    presets: tuple[float, ...]
+
+
+USAGE = {
+    # TTS default 10M, not 1M: at 1M chars the monthly cost would just repeat the per-1M price column
+    "tts": Usage(10_000_000, "characters", "chars", 1e-6, (1_000_000, 10_000_000, 100_000_000, 1_000_000_000)),
+    "stt": Usage(100, "hours of audio", "hours", 1, (10, 100, 1_000, 10_000)),
+    "sts": Usage(100, "hours of audio", "hours", 1, (10, 100, 1_000, 10_000)),
+}
+USAGE_MAX = 1e12
+
+
+def parse_usage(model_type: str, raw: str | None) -> float:
+    try:
+        value = float((raw or "").replace(",", "").replace("_", ""))
+    except ValueError:
+        value = 0.0
+    if not (0 < value <= USAGE_MAX) or value != value:
+        return USAGE[model_type].default
+    return value
+
+
+def monthly_cost(model: Model, usage: float) -> float | None:
+    """USD per month at the published list price; None when there's no comparable USD price."""
+    norm = normalized_price(model)
+    if not norm or model.type not in USAGE:
+        return None
+    return norm[0] * usage * USAGE[model.type].scale
+
+
+def money(value: float | None) -> str:
+    """Matches fmtMoney() in site.js."""
+    if value is None:
+        return "–"
+    if value == 0:
+        return "$0"
+    if value < 0.01:
+        return "<$0.01"
+    if value < 1000:
+        return f"${value:,.2f}"
+    return f"${value:,.0f}"
+
+
+def compact_number(value: float) -> str:
+    """1000000 → 1M, 100000 → 100k, 10 → 10."""
+    for size, suffix in ((1e9, "B"), (1e6, "M"), (1e3, "k")):
+        if value >= size:
+            return f"{value / size:g}{suffix}"
+    return f"{value:g}"
+
+
+def plain_number(value: float) -> str:
+    """For an <input type=number>: 10000000, not 1e+07."""
+    return f"{value:.0f}" if value == int(value) else f"{value:.6g}"

@@ -67,6 +67,7 @@ templates.env.globals.update(
     ACCESS_LABELS=views.ACCESS_LABELS,
     country_name=views.country_name,
     report_url=views.report_url, VERIFICATION_DOC=views.VERIFICATION_DOC,
+    monthly_cost=views.monthly_cost, money=views.money, compact_number=views.compact_number, plain_number=views.plain_number, USAGE=views.USAGE,
     is_realtime=views.is_realtime, licence_tier=views.licence_tier, licence_short=views.licence_short, free_quota_label=views.free_quota_label,
     connection_label=views.connection_label,
 )
@@ -263,12 +264,13 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         rows.sort(key=lambda r: (views.normalized_price(r.model) or (math.inf,))[0])
     else:
         rows.sort(key=lambda r: (r.provider_id, r.model.type, not r.model.is_default, r.model.id))
-    ctx = _models_context(catalog, rows, f)
+    ctx = _models_context(catalog, rows, f, usage_raw=_q(request, "usage"))
     ctx["canonical_path"] = _models_canonical(catalog, f)
     return templates.TemplateResponse(request, "models.html", ctx)
 
 
-def _models_context(catalog: Catalog, rows: list, f: dict, *, show_tokens: bool = True) -> dict:
+def _models_context(catalog: Catalog, rows: list, f: dict, *, show_tokens: bool = True,
+                    usage_raw: str | None = None) -> dict:
     filtered = any(v for k, v in f.items() if k != "sort")
     keys = {views.model_key(r) for r in rows}
     spectrum = [b for b in views.price_spectrum(catalog, highlight=keys if filtered else None)
@@ -282,6 +284,10 @@ def _models_context(catalog: Catalog, rows: list, f: dict, *, show_tokens: bool 
         "capabilities": sorted(MODEL_CAPABILITIES, key=lambda c: views.FEATURE_LABELS.get(c, c)),
         "providers": [s for s in views.provider_summaries(catalog) if s.models],
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
+        # Cost calculator: only when every row is one model type (a per-month figure needs one usage unit)
+        "usage_type": f["type"] if f.get("type") in views.USAGE else None,
+        "usage": views.parse_usage(f["type"], usage_raw) if f.get("type") in views.USAGE else None,
+        "usage_hidden": [(k, v) for k, v in f.items() if v],
     }
 
 
@@ -314,7 +320,8 @@ def _landing_page(type_slug: str):
              "capability": landing.value if landing.kind == "feature" else "",
              "provider": "", "q": "", "sort": "price", "status": "",
              "mode": "realtime" if landing.kind == "realtime" else ""}
-        ctx = _models_context(catalog, rows, f, show_tokens=False)
+        ctx = _models_context(catalog, rows, f, show_tokens=False, usage_raw=_q(request, "usage"))
+        ctx["usage_hidden"] = []
         ctx["filtered"] = landing.kind != "hub"
         ctx["total_rows"], ctx["rows"] = len(rows), rows[:LANDING_ROWS]
         siblings = [p for p in views.landing_pages(catalog).values() if p.type == mtype and p.kind != "hub"]
@@ -463,6 +470,7 @@ async def model_page(request: Request, provider_id: str, model_type: str, model_
         "spectrum": [b for b in views.price_spectrum(catalog, highlight={views.model_key(row)})
                      if row.model.type in next(t for i, t, _, _ in views.SPECTRUM_BANDS if i == b.id)],
         "rank": views.price_rank(catalog, row),
+        "usage": views.parse_usage(row.model.type, _q(request, "usage")) if row.model.type in views.USAGE else None,
         "today": date.today(),
         "api_path": f"/v1/providers/{provider_id}/models/{quote(row.model.id, safe='')}",
         "lang_links": {views.language_name(page.value): page.url for page in views.landing_pages(catalog).values()
