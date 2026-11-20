@@ -232,3 +232,12 @@ def test_pricing_report_small_samples_are_not_overstated(fixture_catalog):
             assert t.p5 is None and t.p95 is None          # no fake percentiles from a handful of prices
         assert t.realtime is None or t.realtime[1] >= views.MIN_GROUP
         assert t.batch is None or t.batch[1] >= views.MIN_GROUP
+
+
+def test_voiceai_self_host_estimate_is_not_a_price():
+    """TTS Lite's '$1/M' is a self-hosting cost estimate, not a rate Voice.ai charges (checked 2026-11-21)."""
+    import json
+    from pathlib import Path
+    for m in json.loads(Path("data/voiceai/models.json").read_text()):
+        if m.get("family") == "voiceai-tts-lite-v1":
+            assert not m.get("pricing") and "self-hosting" in m["meta"]["pricing_note"]
