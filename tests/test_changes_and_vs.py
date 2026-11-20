@@ -160,3 +160,30 @@ async def test_linkedin_in_footer_and_organization_same_as(client):
     html = (await client.get("/")).text
     assert '<a href="https://www.linkedin.com/company/voicedex" rel="noopener">LinkedIn</a>' in html
     assert '"sameAs": ["https://github.com/chandradot99/voicedex", "https://www.linkedin.com/company/voicedex"]' in html
+
+
+async def test_catalog_csv(client):
+    import csv
+    import io
+    r = await client.get("/catalog.csv")
+    assert r.status_code == 200 and r.headers["content-type"].startswith("text/csv")
+    rows = list(csv.DictReader(io.StringIO(r.text)))
+    assert rows and set(rows[0]) == set(views_csv_columns())
+    assert all(row["url"].startswith("https://voicedex.dev/models/") for row in rows)
+    assert not any(row["model_id"] == "tts-old" for row in rows)          # deprecated models left out
+
+
+def views_csv_columns():
+    from voicedex.web import views
+    return views.CSV_COLUMNS
+
+
+async def test_home_freshness_line(client):
+    html = (await client.get("/")).text
+    assert 'class="fact-line freshness"' in html and "synced in the last 30 days" in html
+
+
+async def test_llms_txt_links_landing_pages_and_csv(client):
+    txt = (await client.get("/llms.txt")).text
+    assert "/catalog.csv" in txt and "/alternatives" in txt and "/changes.xml" in txt
+    assert not any(line.endswith(": 1 models") or ": 1 models," in line for line in txt.splitlines())

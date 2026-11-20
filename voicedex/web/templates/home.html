@@ -19,6 +19,13 @@
     <div><dt>Providers</dt><dd data-count="{{ live|length }}">{{ live|length }}</dd></div>
     <div><dt>Shutdowns ahead</dt><dd data-count="{{ upcoming_eol|length }}">{{ upcoming_eol|length }}</dd></div>
   </dl>
+  {% set f = freshness %}{% if f.last_sync %}
+  <p class="fact-line freshness">
+    <span>{% if f.providers_fresh == f.providers %}All {{ f.providers }} providers{% else %}{{ f.providers_fresh }} of {{ f.providers }} providers{% endif %} synced in the last 30 days</span>
+    <span>{{ f.prices_fresh }} of {{ f.priced }} prices checked in the last 30 days</span>
+    <span>Last sync {{ f.last_sync.strftime("%-d %b %Y") }}</span>
+    <a href="/changes">What changed</a>
+  </p>{% endif %}
 </section>
 
 {% include "_tasks.html" %}

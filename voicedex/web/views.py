@@ -1233,3 +1233,67 @@ def verification_status(catalog: Catalog, provider_id: str) -> VerificationStatu
         changed_models=sum(1 for r in active_models(catalog, provider_id) if r.model.updated_at and r.model.updated_at > v.on),
         changed_voices=sum(1 for r in active_voices(catalog, provider_id) if r.voice.updated_at and r.voice.updated_at > v.on),
     )
+
+
+# ── Freshness (home page trust line) ─────────────────────────────────────────
+
+FRESH_DAYS = 30
+
+
+@dataclass
+class Freshness:
+    providers: int            # live providers
+    providers_fresh: int      # synced within FRESH_DAYS
+    priced: int               # active models with a published price
+    prices_fresh: int         # of those, price checked within FRESH_DAYS
+    last_sync: date | None
+
+
+def catalog_freshness(catalog: Catalog, today: date | None = None) -> Freshness:
+    """How recently the catalog was checked. Computed, so the home page stays honest as data ages."""
+    today = today or date.today()
+    live = [s for s in provider_summaries(catalog) if s.status == "active"]
+    synced = [date.fromisoformat(str(s.last_synced)[:10]) for s in live if s.last_synced]
+    priced = [r.model.pricing for r in active_models(catalog) if r.model.pricing
+              and (r.model.pricing.price_usd is not None or r.model.pricing.price is not None)]
+    return Freshness(
+        providers=len(live),
+        providers_fresh=sum((today - d).days <= FRESH_DAYS for d in synced),
+        priced=len(priced),
+        prices_fresh=sum(bool(p.as_of) and (today - p.as_of).days <= FRESH_DAYS for p in priced),
+        last_sync=max(synced) if synced else None,
+    )
+
+
+# ── CSV export ───────────────────────────────────────────────────────────────
+
+CSV_COLUMNS = ["provider_id", "provider", "model_id", "model", "type", "lifecycle", "eol_date", "languages",
+               "language_count", "capabilities", "streaming", "interfaces", "regions", "price_normalized_usd",
+               "price_normalized_unit", "price_published", "price_published_currency", "price_published_unit",
+               "price_checked", "price_source", "open_weights_license", "commercial_use", "url"]
+
+
+def catalog_csv_rows(catalog: Catalog, site: str) -> list[list]:
+    """One row per active model; lists are ';'-joined. Published price kept as published, never converted."""
+    names = {pid: pd.provider.name for pid, pd in catalog.providers.items()}
+    out = []
+    for r in sorted(active_models(catalog), key=lambda r: (r.provider_id, r.model.type, r.model.id)):
+        m, p = r.model, r.model.pricing
+        norm = normalized_price(m)
+        published = (p.price_usd if p.price_usd is not None else p.price) if p else None
+        langs = [lang for lang in m.languages if lang != "*"]
+        out.append([
+            r.provider_id, names.get(r.provider_id, r.provider_id), m.id, m.name, m.type, str(m.lifecycle.value
+            if hasattr(m.lifecycle, "value") else m.lifecycle), m.eol_date or "", ";".join(m.languages),
+            "many" if "*" in m.languages and not langs else (len(langs) or ""), ";".join(m.capabilities),
+            str(m.streaming).lower(), ";".join(str(getattr(i, "value", i)) for i in m.interfaces),
+            ";".join(str(getattr(g, "value", g)) for g in m.regions),
+            f"{norm[0]:.6g}" if norm else "", norm[1].replace("per ", "") if norm else "",
+            "" if published is None else f"{published:.10g}", p.currency if p and published is not None else "",
+            p.unit if p and published is not None else "", (p.as_of or "") if p else "",
+            (p.source_url or "") if p else "", m.open_weights.license if m.open_weights else "",
+            "" if not m.open_weights or m.open_weights.commercial_use is None
+            else str(m.open_weights.commercial_use).lower(),
+            site + model_url(r),
+        ])
+    return out
