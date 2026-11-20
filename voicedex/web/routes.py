@@ -163,6 +163,7 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
         "today": today,
         "spectrum": views.price_spectrum(catalog),
         "tasks": views.task_cards(catalog),
+        "freshness": views.catalog_freshness(catalog, today),
         "n_voices_live": sum(s.voices for s in live),
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
         "jsonld": _home_ld(catalog, len(views.active_models(catalog)), len(views.active_voices(catalog)), len(live)),
@@ -613,6 +614,20 @@ async def api_docs(request: Request):
     return templates.TemplateResponse(request, "docs.html", {})
 
 
+@router.get("/catalog.csv", include_in_schema=False)
+async def catalog_csv(catalog: Catalog = Depends(get_catalog)):
+    """Every active model as one CSV (spreadsheets, notebooks). Lives outside /v1 so crawlers may fetch it."""
+    import csv
+    import io
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(views.CSV_COLUMNS)
+    w.writerows(views.catalog_csv_rows(catalog, settings.site_url.rstrip("/")))
+    return Response(buf.getvalue(), media_type="text/csv; charset=utf-8",
+                    headers={"Content-Disposition": 'inline; filename="voicedex-models.csv"',
+                             "Cache-Control": "public, max-age=3600"})
+
+
 _FAVICON = Path(__file__).parent / "static" / "favicon.ico"
 
 
@@ -668,6 +683,9 @@ async def sitemap(catalog: Catalog = Depends(get_catalog)):
     return Response(xml, media_type="application/xml")
 
 
+LLMS_LANGUAGES = 20   # per model type: the languages with the most models
+
+
 @router.get("/llms.txt", response_class=PlainTextResponse)
 async def llms_txt(catalog: Catalog = Depends(get_catalog)):
     """https://llmstxt.org: a plain-Markdown map of the site for LLMs and AI search tools."""
@@ -690,14 +708,38 @@ async def llms_txt(catalog: Catalog = Depends(get_catalog)):
         f"- [API reference]({site}/docs): REST endpoints with filters for type, language, feature, region and price",
         f"- [OpenAPI schema]({site}/openapi.json)",
         f"- [MCP server]({site}/mcp): Streamable HTTP endpoint for AI assistants (search, compare, price models and voices)",
+        f"- [All models as CSV]({site}/catalog.csv): one row per model with normalized price, price source and check date",
+        f"- [What changed]({site}/changes) ([Atom feed]({site}/changes.xml)): new models, price changes, shutdowns",
         "- [Source and data on GitHub](https://github.com/chandradot99/voicedex)",
         "", "## Compare models", "",
     ]
     lines += [f"- [{views.TYPE_LABELS[p.type]} models]({site}{p.url})" for p in hubs]
     lines += [f"- [All models, filterable]({site}/models)", f"- [Voices with audio samples]({site}/voices)",
-              "", "## Providers", ""]
-    lines += [f"- [{s.name}]({site}/providers/{s.id}): {s.models} models"
-              + (f", {s.voices} voices" if s.voices else "") for s in sorted(live, key=lambda s: s.name.lower())]
+              f"- [Alternatives to a provider]({site}/alternatives): who else offers the same, e.g. "
+              f"[ElevenLabs alternatives]({site}/alternatives/elevenlabs)",
+              f"- [Provider vs provider]({site}/compare/cartesia-vs-elevenlabs): side-by-side pages for "
+              f"{len(views.provider_pairs(catalog))} pairs, e.g. Cartesia vs ElevenLabs",
+              f"- [Language coverage]({site}/coverage): which providers support which languages"]
+    pages = views.landing_pages(catalog)
+    for mtype in views.TYPE_SLUGS:
+        typed = [p for p in pages.values() if p.type == mtype and p.kind != "hub"]
+        if not typed:
+            continue
+        label = views.TYPE_LABELS[mtype]
+        lines += ["", f"## {label} by need", ""]
+        lines += [f"- [{label}: {p.label}]({site}{p.url})"
+                  for p in typed if p.kind in ("realtime", "open", "feature")]
+        langs = sorted((p for p in typed if p.kind == "language"),
+                       key=lambda p: -len(views.landing_rows(catalog, p)))[:LLMS_LANGUAGES]
+        if langs:
+            lines.append(f"- {label} by language: " + ", ".join(
+                f"[{p.label}]({site}{p.url})" for p in sorted(langs, key=lambda p: p.label)))
+    lines += ["", "## Providers", ""]
+
+    def _n(n: int, word: str) -> str:
+        return f"{n} {word}" + ("" if n == 1 else "s")
+    lines += [f"- [{s.name}]({site}/providers/{s.id}): {_n(s.models, 'model')}"
+              + (f", {_n(s.voices, 'voice')}" if s.voices else "") for s in sorted(live, key=lambda s: s.name.lower())]
     retired = [s for s in summaries if s.status != "active"]
     if retired:
         lines += ["", "## Optional", "", "Providers that shut down or stopped selling (kept for the record):", ""]

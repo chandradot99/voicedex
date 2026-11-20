@@ -856,3 +856,6 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
   .glance div:nth-child(even) { border-left: 1px solid var(--rule); padding-left: 16px; }
   .glance div:last-child { border-bottom: 0; }
 }
+
+/* Home: how fresh the data is (computed in views.catalog_freshness) */
+.hero .freshness { grid-column: 1 / -1; margin-top: 0; font-size: 12px; color: var(--ink-3, var(--ink-2)); }
