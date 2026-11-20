@@ -89,7 +89,7 @@ def _qs(f: dict, **changes) -> str:
 
 
 _TOKEN_LABEL = {"type": "type", "language": "language", "capability": "feature", "provider": "provider",
-                "status": "status", "mode": "mode", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
+                "status": "status", "mode": "mode", "weights": "weights", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
 
 
 def _token_value(key: str, value: str, catalog: Catalog) -> str:
@@ -106,6 +106,8 @@ def _token_value(key: str, value: str, catalog: Catalog) -> str:
         return {"ending": "shutting down", "beta": "beta / preview"}.get(value, value)
     if key == "mode":
         return {"realtime": "realtime streaming"}.get(value, value)
+    if key == "weights":
+        return {"open": "open weights", "hosted": "hosted only"}.get(value, value)
     if key == "preview":
         return "has sample"
     return value
@@ -232,7 +234,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
 
 @router.get("/models", response_class=HTMLResponse)
 async def models_page(request: Request, catalog: Catalog = Depends(get_catalog)):
-    f = {k: _q(request, k) for k in ("type", "language", "capability", "provider", "q", "sort", "status", "mode")}
+    f = {k: _q(request, k) for k in ("type", "language", "capability", "provider", "q", "sort", "status", "mode", "weights")}
     rows = views.active_models(catalog)
     if f["type"] in views.TYPE_LABELS:
         rows = [r for r in rows if r.model.type == f["type"]]
@@ -250,6 +252,8 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         rows = [r for r in rows if r.model.eol_date]
     if f["mode"] == "realtime":
         rows = [r for r in rows if views.is_realtime(r.model)]
+    if f["weights"] in ("open", "hosted"):
+        rows = [r for r in rows if (r.model.open_weights is not None) == (f["weights"] == "open")]
     if f["status"] == "beta":
         rows = [r for r in rows if str(getattr(r.model.lifecycle, "value", r.model.lifecycle)) in ("alpha", "beta")]
     if f["status"] == "ending" and f["sort"] != "price":
@@ -292,6 +296,8 @@ def _models_canonical(catalog: Catalog, f: dict) -> str:
         page = views.find_landing(catalog, f["type"], "feature", f["capability"])
     elif active == {"type", "mode"} and f["mode"] == "realtime":
         page = views.find_landing(catalog, f["type"], "realtime")
+    elif active == {"type", "weights"} and f["weights"] == "open":
+        page = views.find_landing(catalog, f["type"], "open")
     return page.url if page else "/models"
 
 

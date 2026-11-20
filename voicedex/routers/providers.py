@@ -6,6 +6,7 @@ from voicedex.catalog.store import Catalog
 from voicedex.config import settings
 from voicedex.limiter import limiter
 from voicedex.routers._filters import (
+    OPEN_WEIGHTS_DESC,
     UPDATED_SINCE_DESC,
     effective_include_deprecated,
     filter_models,
@@ -78,6 +79,7 @@ async def list_models(
     search: str | None = Query(None, description="Case-insensitive match on name, id, description"),
     updated_since: datetime | None = Query(None, description=UPDATED_SINCE_DESC),
     include_deprecated: bool | None = Query(None, description="Include deprecated models."),
+    open_weights: bool | None = Query(None, description=OPEN_WEIGHTS_DESC),
     limit: int = Query(100, ge=1, le=500),
     offset: int = Query(0, ge=0),
     catalog: Catalog = Depends(get_catalog),
@@ -87,7 +89,7 @@ async def list_models(
     rows = filter_models(
         catalog.models, provider=provider_id, model_type=model_type, language=language,
         capabilities=capabilities, lifecycle=lifecycle, region=region, search=search,
-        updated_since=updated_since, include_deprecated=include_deprecated,
+        updated_since=updated_since, include_deprecated=include_deprecated, open_weights=open_weights,
     )
     rows = sort_models(rows, cross_provider=False)
     page = rows[offset:offset + limit]

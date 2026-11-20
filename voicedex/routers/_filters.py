@@ -16,6 +16,8 @@ VALID_MODEL_TYPES = {"stt", "tts", "sts"}
 VALID_GENDERS = {"male", "female", "neutral"}
 VALID_CATEGORIES = {"premade", "cloned", "generated"}
 
+OPEN_WEIGHTS_DESC = "true = only models with downloadable weights (open_weights set); false = only hosted-only models."
+
 UPDATED_SINCE_DESC = (
     "ISO-8601 date or timestamp; returns rows whose updated_at date is on/after this day. "
     "When set, deprecated rows are included by default so polling consumers see deprecations; "
@@ -82,6 +84,7 @@ def filter_models(
     search: str | None = None,
     updated_since: datetime | None = None,
     include_deprecated: bool | None = None,
+    open_weights: bool | None = None,
 ) -> list[ModelRow]:
     mtype = _enum(model_type, VALID_MODEL_TYPES, "type")
     caps = set(parse_capabilities(capabilities, MODEL_CAPABILITIES, "model"))
@@ -112,6 +115,8 @@ def filter_models(
                 and needle not in (m.description or "").lower():
             continue
         if since and (m.updated_at is None or m.updated_at < since):
+            continue
+        if open_weights is not None and (m.open_weights is not None) != open_weights:
             continue
         out.append(r)
     return out

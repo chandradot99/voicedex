@@ -264,3 +264,12 @@ async def test_provider_faq(client):
     assert "ZZ Test questions" in html or "faq-list" not in html
     retired = (await client.get("/providers/zz-test-deprecated")).text
     assert "still available?" in retired
+
+
+async def test_models_weights_filter_and_marker(client):
+    html = (await client.get("/models")).text
+    assert "open weights, apache-2.0" in html                       # marker on open models in the main list
+    open_only = (await client.get("/models?weights=open")).text
+    assert "stt-eu" in open_only and "stt-global" not in open_only and "tts-main" not in open_only
+    hosted = (await client.get("/models?weights=hosted")).text
+    assert "stt-eu" not in hosted and "stt-global" in hosted

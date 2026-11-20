@@ -191,3 +191,9 @@ async def test_retired_provider_shape(client):
     p = (await client.get("/v1/providers", params={"include_deprecated": "true"})).json()
     gone = next(x for x in p if x["provider_id"] == DEPRECATED_PROVIDER)
     assert gone["status"] == "deprecated" and "retired_on" in gone
+
+
+async def test_models_open_weights_filter(client):
+    assert _ids(await client.get(f"{MODELS}?open_weights=true"), "model_id") == {"stt-eu"}
+    assert _ids(await client.get(f"{MODELS}?open_weights=false"), "model_id") == {"stt-global", "tts-main"}
+    assert _ids(await client.get("/v1/models?open_weights=true"), "model_id") == {"stt-eu"}
