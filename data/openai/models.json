@@ -321,14 +321,21 @@
     },
     "name": "GPT-Live 1",
     "pricing": {
-      "as_of": "2026-11-16",
-      "notes": "Voice sessions billed per second",
+      "as_of": "2026-11-20",
+      "notes": "Voice sessions billed per second. Lower standby rate applies to WebRTC sessions while inference is paused. Backend model and tool usage billed separately.",
       "price_usd": 0.05,
-      "source_url": "https://developers.openai.com/api/docs/models/gpt-live-1",
-      "unit": "minute"
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "standby (WebRTC, inference paused)",
+          "price_usd": 0.02,
+          "unit": "minute"
+        }
+      ]
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-20",
       "method": "docs",
       "urls": [
         "https://developers.openai.com/api/docs/models/all",
@@ -345,7 +352,72 @@
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Full-duplex voice model for multilingual conversations; compared with GPT-Live-1 it transcribes speech more accurately and keeps a more consistent accent and voice across languages.",
+    "first_seen": "2026-11-20",
+    "id": "gpt-live-1.1",
+    "interfaces": [
+      "webrtc",
+      "websocket"
+    ],
+    "meta": {
+      "audio_format_detail": [
+        "audio/pcm@24000",
+        "audio/pcm@16000",
+        "audio/pcmu@8000",
+        "audio/pcma@8000"
+      ],
+      "concurrency_note": "Separate concurrent-session limits from GPT-Live-1",
+      "custom_voices": true,
+      "default_voice": "marin",
+      "endpoints": [
+        "v1/live/sessions"
+      ],
+      "full_duplex": true,
+      "function_calling": true,
+      "sip": true
+    },
+    "name": "GPT-Live-1.1",
+    "pricing": {
+      "as_of": "2026-11-20",
+      "notes": "Voice sessions billed per second. Lower standby rate applies to WebRTC sessions while inference is paused. Backend model and tool usage billed separately.",
+      "price_usd": 0.05,
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "standby (WebRTC, inference paused)",
+          "price_usd": 0.02,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-20",
+      "method": "docs",
+      "urls": [
+        "https://developers.openai.com/api/docs/models/all",
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/guides/live-conversations"
+      ]
+    },
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-20"
   },
   {
     "alias_of": "gpt-realtime-2025-08-28",

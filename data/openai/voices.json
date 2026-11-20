@@ -67,7 +67,8 @@
     "accent": "filipino",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -82,13 +83,14 @@
       "voice_source": "generated"
     },
     "name": "Beacon",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "accent": "brazilian",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -103,12 +105,13 @@
       "voice_source": "natural"
     },
     "name": "Bossa",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -122,7 +125,7 @@
       "voice_source": "natural"
     },
     "name": "Brise",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -151,7 +154,8 @@
     "accent": "southern us",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -166,7 +170,7 @@
       "voice_source": "generated"
     },
     "name": "Cinder",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -194,7 +198,8 @@
     "accent": "southern us",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -209,7 +214,7 @@
       "voice_source": "generated"
     },
     "name": "Delta",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -253,7 +258,8 @@
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -267,13 +273,14 @@
       "voice_source": "natural"
     },
     "name": "Flitz",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "accent": "american",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -288,12 +295,13 @@
       "voice_source": "natural"
     },
     "name": "Gleam",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -307,12 +315,13 @@
       "voice_source": "natural"
     },
     "name": "Harema",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -326,7 +335,7 @@
       "voice_source": "natural"
     },
     "name": "Juni",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -335,6 +344,7 @@
       "gpt-4o-mini-tts-2025-03-20",
       "gpt-4o-mini-tts-2025-12-15",
       "gpt-live-1",
+      "gpt-live-1.1",
       "gpt-realtime",
       "gpt-realtime-1.5",
       "gpt-realtime-2",
@@ -353,13 +363,14 @@
       "recommended": true
     },
     "name": "Marin",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "accent": "american",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -374,12 +385,13 @@
       "voice_source": "natural"
     },
     "name": "Meridian",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -393,12 +405,13 @@
       "voice_source": "natural"
     },
     "name": "Nira",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -412,7 +425,7 @@
       "voice_source": "natural"
     },
     "name": "Noeul",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -434,7 +447,8 @@
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -448,7 +462,7 @@
       "voice_source": "natural"
     },
     "name": "Nuri",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -471,7 +485,8 @@
     "accent": "australian",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -486,13 +501,14 @@
       "voice_source": "generated"
     },
     "name": "Quartz",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "accent": "australian",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -507,7 +523,7 @@
       "voice_source": "natural"
     },
     "name": "Ripple",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -534,7 +550,8 @@
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -548,7 +565,7 @@
       "voice_source": "natural"
     },
     "name": "Shida",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -575,7 +592,8 @@
   {
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -589,13 +607,14 @@
       "voice_source": "natural"
     },
     "name": "Sillage",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "accent": "irish",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -610,13 +629,14 @@
       "voice_source": "natural"
     },
     "name": "Stone",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "accent": "brazilian",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -631,7 +651,7 @@
       "voice_source": "natural"
     },
     "name": "Tempo",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "category": "premade",
@@ -657,7 +677,8 @@
     "accent": "british",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "male",
@@ -672,13 +693,14 @@
       "voice_source": "natural"
     },
     "name": "Vesper",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   },
   {
     "accent": "irish",
     "category": "premade",
     "compatible_models": [
-      "gpt-live-1"
+      "gpt-live-1",
+      "gpt-live-1.1"
     ],
     "first_seen": "2026-11-16",
     "gender": "female",
@@ -693,6 +715,6 @@
       "voice_source": "natural"
     },
     "name": "Willow",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-20"
   }
 ]

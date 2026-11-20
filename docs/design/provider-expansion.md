@@ -169,6 +169,8 @@ and Cerence (enterprise, no public docs), MTS AI Audiogram (quote only), ETRI (K
 Moonshot Kimi-Audio (below the bar), 2Noise ChatTTS (repos untagged — HF syncer can't see them), Typhoon (SCB 10X,
 Thai; below the bar), ivrit.ai (Hebrew; Whisper fine-tunes, below the bar), Mesolitica (Malay; no licence tags),
 ISSAI (Kazakh), Edge0 Audio8 / higurashi-ai Haru-4B (trending near-misses).
+Added 2026-11-20: Microsoft MAI Realtime 1 (azure sts; announced 2026-11-17, Foundry limited-access preview, no API
+model id, not billed until public preview; $0.01/min + reasoning $1/$5 per 1M tokens). Add when it has a model id.
 Left the watchlist: Baidu, Krutrim, Vbee, Aivis (added); Kotoba (being acquired by ElevenLabs, announced 2026-11-17).
 **Coverage holes with no viable vendor found:** Nepal (Reverie covers ne), Indonesia (Prosa only), Persian (Iran is
 sanctioned; no API), Burmese, Khmer, Sinhala, LatAm independents. Filled 2026-11: Philippines (Proto), Mongolia (Chimege).
