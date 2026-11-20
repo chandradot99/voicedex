@@ -67,7 +67,7 @@ templates.env.globals.update(
     ACCESS_LABELS=views.ACCESS_LABELS,
     country_name=views.country_name,
     report_url=views.report_url, VERIFICATION_DOC=views.VERIFICATION_DOC,
-    is_realtime=views.is_realtime, licence_tier=views.licence_tier, free_quota_label=views.free_quota_label,
+    is_realtime=views.is_realtime, licence_tier=views.licence_tier, licence_short=views.licence_short, free_quota_label=views.free_quota_label,
     connection_label=views.connection_label,
 )
 

@@ -676,6 +676,13 @@ def licence_tier(model: Model) -> str:
     return LICENCE_TIERS[0] if use is True else LICENCE_TIERS[2] if use is False else LICENCE_TIERS[1]
 
 
+LICENCE_SHORT = dict(zip(LICENCE_TIERS, ("commercial use", "check licence", "non-commercial"), strict=True))
+
+
+def licence_short(model: Model) -> str:
+    return LICENCE_SHORT[licence_tier(model)]
+
+
 def _lower_label(label: str) -> str:
     return label if label[:2].isupper() else label[0].lower() + label[1:]
 

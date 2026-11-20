@@ -300,6 +300,7 @@ button, input, select { font: inherit; color: inherit; }
 .data .mono { font-size: 13px; }
 .data code { font-size: 13px; }
 .data .sub { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+.data .weights-cell { white-space: nowrap; }
 .data .group-row th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding-top: 24px; }
 .data tbody.retired a { color: var(--ink-2); }
 .types span + span { margin-left: 8px; }
