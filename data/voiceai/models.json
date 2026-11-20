@@ -30,16 +30,10 @@
       "open_source_announced": "Apache 2.0, GitHub repo 'coming soon' (voice-ai/tts-lite) as of 2026-11-18",
       "paralinguistic_tags": true,
       "parameters": "112M",
+      "pricing_note": "No per-unit API price. The TTS Lite page's '$1 /M TTS API chars' is Voice.ai's estimate of self-hosting the open model on a $42/mo CPU instance ('100× cheaper than hosted TTS ... no per-token fees'), not a rate Voice.ai charges. The hosted API is sold through credit plans (see credit_pricing). Checked 2026-11-21: https://voice.ai/tts-lite, https://voice.ai/pricing",
       "pronunciation_dictionaries": true
     },
     "name": "Voice.ai TTS Lite v1 (2026-04-15)",
-    "pricing": {
-      "as_of": "2026-11-18",
-      "notes": "TTS Lite page lists '$1 /M TTS API chars'. Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
-      "price_usd": 1e-06,
-      "source_url": "https://voice.ai/tts-lite",
-      "unit": "character"
-    },
     "provenance": {
       "as_of": "2026-11-18",
       "method": "docs",
@@ -95,16 +89,10 @@
       "open_source_announced": "Apache 2.0, GitHub repo 'coming soon' (voice-ai/tts-lite) as of 2026-11-18",
       "paralinguistic_tags": true,
       "parameters": "112M",
+      "pricing_note": "No per-unit API price. The TTS Lite page's '$1 /M TTS API chars' is Voice.ai's estimate of self-hosting the open model on a $42/mo CPU instance ('100× cheaper than hosted TTS ... no per-token fees'), not a rate Voice.ai charges. The hosted API is sold through credit plans (see credit_pricing). Checked 2026-11-21: https://voice.ai/tts-lite, https://voice.ai/pricing",
       "pronunciation_dictionaries": true
     },
     "name": "Voice.ai TTS Lite v1 (latest)",
-    "pricing": {
-      "as_of": "2026-11-18",
-      "notes": "TTS Lite page lists '$1 /M TTS API chars'. Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
-      "price_usd": 1e-06,
-      "source_url": "https://voice.ai/tts-lite",
-      "unit": "character"
-    },
     "provenance": {
       "as_of": "2026-11-18",
       "method": "docs",

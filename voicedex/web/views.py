@@ -1525,19 +1525,25 @@ def _report_findings(rep: PricingReport) -> list[str]:
                        f"lists at {_money(tr.realtime[0])} {tr.unit}, against {_money(tr.batch[0])} for models that "
                        f"don't: {tr.realtime[0] / tr.batch[0]:.1f}× as much.")
             break
-    if tts and tts.languages and tts.languages[0].name == "English" and len(tts.languages) > 3:
-        en = tts.languages[0].median
-        others = median(lp.median for lp in tts.languages[1:])
-        if others >= 1.1 * en:
-            out.append(f"The language tax is real for text-to-speech: the median price for English is {_money(en)} per "
-                       f"1M characters, against {_money(others)} across the next {len(tts.languages) - 1} most-covered "
-                       f"languages ({_pct(others / en - 1)} more).")
-        if stt and stt.languages and stt.languages[0].name == "English" and len(stt.languages) > 3:
-            s_en = stt.languages[0].median
-            s_others = median(lp.median for lp in stt.languages[1:])
-            if s_others <= 1.05 * s_en:
-                out.append(f"Speech-to-text has no such premium: {_money(s_en)} per hour for English, "
-                           f"{_money(s_others)} across the other top languages.")
+    def _en_vs_rest(tr):
+        if tr and tr.languages and tr.languages[0].name == "English" and len(tr.languages) > 3:
+            return tr.languages[0].median, median(lp.median for lp in tr.languages[1:]), len(tr.languages) - 1
+        return None
+    t_lang, s_lang = _en_vs_rest(tts), _en_vs_rest(stt)
+    if t_lang and t_lang[1] >= 1.1 * t_lang[0]:
+        en, others, k = t_lang
+        out.append(f"The language tax is real for text-to-speech: the median price for English is {_money(en)} per "
+                   f"1M characters, against {_money(others)} across the next {k} most-covered languages "
+                   f"({_pct(others / en - 1)} more)."
+                   + (f" Speech-to-text has no such premium: {_money(s_lang[0])} per hour for English, "
+                      f"{_money(s_lang[1])} across the other top languages." if s_lang and s_lang[1] <= 1.05 * s_lang[0]
+                      else ""))
+    elif t_lang:
+        en, others, k = t_lang
+        out.append(f"Among the most-covered languages, language barely moves the median list price: text-to-speech is "
+                   f"{_money(en)} per 1M characters for English and {_money(others)} across the next {k}"
+                   + (f"; speech-to-text is {_money(s_lang[0])} and {_money(s_lang[1])} per hour." if s_lang else ".")
+)
     if tts:
         no_price = tts.unpriced_hosted
         out.append(f"Prices are hard to find. Only {_pct(tts.comparable_share)} of text-to-speech models publish a "

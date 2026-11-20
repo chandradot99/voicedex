@@ -18,5 +18,7 @@ class VoiceAISyncer(DocsOnlySyncer):
     tts_guidance = (
         "One record per callable TTS model id (exact API string; if the API has no model parameter, one "
         "endpoint-level record with the endpoint in meta). Prices only from the vendor's own pages, in the "
-        "published currency; credit plans → pricing.notes unless a per-unit rate is published."
+        "published currency; credit plans → pricing.notes unless a per-unit rate is published. A cost figure for "
+        "self-hosting an open model (e.g. '$X per 1M chars on your own CPU instance') is not a Voice.ai price: "
+        "never put it in pricing; note it in meta.pricing_note."
     )
