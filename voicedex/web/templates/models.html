@@ -73,6 +73,7 @@
   {% endif %}
 
   {% if rows %}
+  {% if usage_type %}{% with hidden=usage_hidden %}{% include "_usage.html" %}{% endwith %}{% endif %}
   <div class="table-scroll">
     <table class="data models-table">
       <thead>
@@ -85,13 +86,14 @@
           <th scope="col" class="hide-sm">Features</th>
           <th scope="col" class="hide-sm">Weights</th>
           <th scope="col" class="num"><a href="/models?{{ qs(sort='price') }}" {% if f.sort == 'price' %}aria-current="true"{% endif %}>Price{% if f.sort == 'price' %} ↑{% endif %}</a></th>
+          {% if usage_type %}<th scope="col" class="num month-col">Per month</th>{% endif %}
           <th scope="col" class="hide-sm">Status</th>
         </tr>
       </thead>
       <tbody>
         {% for r in rows %}{% set m = r.model %}{% set k = model_key(r) %}
         {% if tiered and (loop.first or licence_tier(m) != licence_tier(rows[loop.index0 - 1].model)) %}
-        <tr class="group-row"><th scope="rowgroup" colspan="9">{{ licence_tier(m) }}</th></tr>
+        <tr class="group-row"><th scope="rowgroup" colspan="{{ 10 if usage_type else 9 }}">{{ licence_tier(m) }}</th></tr>
         {% endif %}
         <tr>
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
@@ -102,6 +104,7 @@
           <td class="mono feat-count hide-sm">{% set tot = feature_vocab(m.type)|length %}{{ m.capabilities|length }}/{{ tot }}<span class="bar" aria-hidden="true"><i style="width: {{ (100 * m.capabilities|length / tot)|round }}%"></i></span></td>
           <td class="hide-sm weights-cell">{% if m.open_weights %}<span title="{{ m.open_weights.license or 'Licence not stated' }}">Open</span><span class="sub">{{ licence_short(m) }}</span>{% else %}<span class="muted">–</span>{% endif %}</td>
           <td class="num price-cell"><span class="mono">{{ price_label(m) or "–" }}</span>{% if k in positions %}<span class="bar" aria-hidden="true"><i style="width: {{ positions[k]|round }}%"></i></span>{% elif price_label(m) %}<span class="bar" aria-hidden="true"></span>{% endif %}</td>
+          {% if usage_type %}{% set mc = monthly_cost(m, usage) %}<td class="num mono month-cell"{% if mc is not none %} data-rate="{{ mc / usage / USAGE[usage_type].scale }}"{% endif %}>{{ money(mc) }}</td>{% endif %}
           <td class="hide-sm">{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}</td>
         </tr>
         {% endfor %}

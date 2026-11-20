@@ -47,6 +47,9 @@ voicedex/
                        data (views.landing_pages): /{speech-to-text|text-to-speech|speech-to-speech}[/<language>|/<feature>
                        |/open-source (grouped by licence tier)|/realtime (WebSocket/WebRTC)], only when ≥ MIN_LANDING_MODELS match.
                        views.TASKS = "start from what you're building" cards pointing at those pages (home + hubs).
+                       Cost calculator (views.USAGE/monthly_cost, _usage.html, site.js [data-usage]/[data-rate]): "Per month"
+                       column on single-type model tables + a block on model pages; server-rendered at a default usage
+                       (TTS 10M chars, STT/STS 100 h), live in JS, ?usage= without JS. List price, before free tiers.
                        Landing and provider pages carry a data-generated FAQ (views.landing_faq/provider_faq) + FAQPage JSON-LD. Also JSON-LD (Dataset, BreadcrumbList),
                        sitemap <lastmod>, /llms.txt, and a 301 for trailing slashes (main.py).
                        /compare/<a>-vs-<b>: provider pairs from views.COMPARE_PROVIDERS (editorial list) that share a

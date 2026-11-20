@@ -51,6 +51,15 @@
       {% set pl = price_label(m) %}
       <p class="price-hero">{% if pl and ' per ' in pl %}{{ pl.split(' per ')[0] }}<small>per {{ pl.split(' per ', 1)[1] }}</small>{% else %}{{ pl }}{% endif %}</p>
       {% if rank %}<p class="price-rank">Cheaper than <b>{{ rank[0] }}%</b> of {{ rank[1] }} priced {{ "text-to-speech" if m.type == "tts" else "speech-to-text and realtime" }} models.</p>{% endif %}
+      {% set mc = monthly_cost(m, usage) if usage else none %}
+      {% if mc is not none %}{% set u = USAGE[m.type] %}
+      <form class="usage usage-inline" method="get" data-usage data-scale="{{ u.scale }}" aria-label="Monthly cost calculator">
+        <label for="usage-in">At</label>
+        <span class="usage-field"><input id="usage-in" name="usage" type="number" min="0" step="any" inputmode="decimal" value="{{ plain_number(usage) }}"><span class="usage-unit">{{ u.unit }} a month</span></span>
+        <span class="usage-result">≈ <b class="mono" data-rate="{{ mc / usage / u.scale }}">{{ money(mc) }}</b> per month</span>
+        <p class="usage-note">At the list price above, before free tiers, volume discounts and taxes.</p>
+      </form>
+      {% endif %}
       {% if pr.free_quota %}<p class="free-quota">Free tier: {{ "{:,g}".format(pr.free_quota.amount) }} {{ pr.free_quota.unit }}s{% if pr.free_quota.period and pr.free_quota.period != "once" %} per {{ pr.free_quota.period }}{% elif pr.free_quota.period == "once" %} on sign-up{% endif %}.</p>{% endif %}
       {% if spectrum and rank %}{% with bands=spectrum, cap=10, compact=True, legend_note="this model" %}{% include "_spectrum.html" %}{% endwith %}{% endif %}
       {% if pr.variants %}

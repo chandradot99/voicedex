@@ -187,3 +187,28 @@ async def test_llms_txt_links_landing_pages_and_csv(client):
     txt = (await client.get("/llms.txt")).text
     assert "/catalog.csv" in txt and "/alternatives" in txt and "/changes.xml" in txt
     assert not any(line.endswith(": 1 models") or ": 1 models," in line for line in txt.splitlines())
+
+
+def test_cost_calculator_helpers():
+    from voicedex.catalog.schema import Model
+    from voicedex.web import views
+    tts = Model(id="t", name="T", type="tts", pricing={"unit": "character", "price_usd": 0.00003})   # $30 / 1M chars
+    stt = Model(id="s", name="S", type="stt", pricing={"unit": "minute", "price_usd": 0.004})        # $0.24 / hour
+    assert views.monthly_cost(tts, 1_000_000) == 30.0
+    assert abs(views.monthly_cost(stt, 100) - 24.0) < 1e-9
+    assert views.monthly_cost(Model(id="x", name="X", type="tts"), 1_000_000) is None
+    assert views.parse_usage("tts", None) == 10_000_000 and views.parse_usage("stt", "-5") == 100
+    assert views.parse_usage("tts", "2,500,000") == 2_500_000 and views.parse_usage("tts", "nan") == 10_000_000
+    assert [views.money(v) for v in (None, 0, 0.004, 3.5, 12345.6)] == ["–", "$0", "<$0.01", "$3.50", "$12,346"]
+    assert views.compact_number(1_000_000) == "1M" and views.compact_number(100_000) == "100k"
+
+
+async def test_cost_calculator_in_tables_and_model_page(client):
+    html = (await client.get("/models?type=tts")).text
+    assert "Per month" in html and 'data-usage' in html and "$300.00" in html         # 10M chars default
+    assert 'value="10000000"' in html                                                  # not 1e+07
+    html = (await client.get("/models?type=tts&usage=1000000")).text
+    assert "$30.00" in html and 'name="type" value="tts"' in html                    # filters kept on submit
+    assert "Per month" not in (await client.get("/models")).text                       # mixed types: no column
+    html = (await client.get("/models/zz-test-provider/tts/tts-main")).text
+    assert "usage-inline" in html and "$300.00" in html

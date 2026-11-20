@@ -472,3 +472,30 @@ document.addEventListener("formdata", (e) => {
   fit();
   addEventListener("resize", fit);
 })();
+
+// ── Cost calculator: a [data-usage] form updates every [data-rate] on the page as you type (rate = normalized
+// USD price, cost = rate × usage × data-scale). Without JS the form submits ?usage= and the server renders it.
+(() => {
+  const fmtMoney = (v) => v === 0 ? "$0" : v < 0.01 ? "<$0.01"     // matches views.money()
+    : "$" + v.toLocaleString("en-US", v < 1000 ? { minimumFractionDigits: 2, maximumFractionDigits: 2 } : { maximumFractionDigits: 0 });
+  document.querySelectorAll("form[data-usage]").forEach((form) => {
+    const input = form.querySelector('input[name="usage"]');
+    const scale = parseFloat(form.dataset.scale) || 1;
+    const presets = form.querySelectorAll('button[name="usage"]');
+    const update = (push) => {
+      const usage = parseFloat(input.value);
+      if (!(usage >= 0)) return;
+      document.querySelectorAll("[data-rate]").forEach((el) => { el.textContent = fmtMoney(parseFloat(el.dataset.rate) * usage * scale); });
+      presets.forEach((b) => b.setAttribute("aria-pressed", String(parseFloat(b.value) === usage)));
+      if (push) {
+        const url = new URL(location.href);
+        url.searchParams.set("usage", String(usage));
+        history.replaceState(null, "", url);
+      }
+    };
+    input.addEventListener("input", () => update(false));
+    input.addEventListener("change", () => update(true));
+    presets.forEach((b) => b.addEventListener("click", (e) => { e.preventDefault(); input.value = b.value; update(true); }));
+    form.addEventListener("submit", (e) => { e.preventDefault(); update(true); });
+  });
+})();
