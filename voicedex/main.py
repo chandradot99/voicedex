@@ -1,7 +1,9 @@
 """Voicedex — open voice AI catalog — public read-only API over the git-backed catalog in data/."""
 
+import hashlib
 import logging
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 import structlog
 from fastapi import FastAPI, Request
@@ -120,6 +122,27 @@ app.add_middleware(
 )
 
 
+def _code_version() -> str:
+    """Hash of this package's Python source. Folded into the API ETag so a deploy that changes API code but
+    not data still invalidates cached responses (a data-only ETag let Cloudflare revalidate stale bodies)."""
+    h = hashlib.sha1()
+    root = Path(__file__).parent
+    for f in sorted(root.rglob("*.py")):
+        h.update(str(f.relative_to(root)).encode())
+        h.update(f.read_bytes())
+    return h.hexdigest()
+
+
+_CODE_VERSION = _code_version()
+_API_ETAGS: dict[str, str] = {}
+
+
+def api_etag(catalog_etag: str) -> str:
+    if catalog_etag not in _API_ETAGS:
+        _API_ETAGS[catalog_etag] = '"' + hashlib.sha1((catalog_etag + _CODE_VERSION).encode()).hexdigest()[:20] + '"'
+    return _API_ETAGS[catalog_etag]
+
+
 @app.middleware("http")
 async def etag_cache(request: Request, call_next):
     """The catalog only changes on deploy, so one ETag covers every /v1 response, and every page can be
@@ -128,7 +151,7 @@ async def etag_cache(request: Request, call_next):
     if request.method != "GET":
         return await call_next(request)
     is_api = request.url.path.startswith("/v1")
-    etag = request.app.state.catalog.etag
+    etag = api_etag(request.app.state.catalog.etag)
     if is_api and request.headers.get("if-none-match") == etag:
         return Response(status_code=304, headers={"ETag": etag})
     response = await call_next(request)

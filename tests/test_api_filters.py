@@ -197,3 +197,12 @@ async def test_models_open_weights_filter(client):
     assert _ids(await client.get(f"{MODELS}?open_weights=true"), "model_id") == {"stt-eu"}
     assert _ids(await client.get(f"{MODELS}?open_weights=false"), "model_id") == {"stt-global", "tts-main"}
     assert _ids(await client.get("/v1/models?open_weights=true"), "model_id") == {"stt-eu"}
+
+
+def test_api_etag_changes_with_code(monkeypatch):
+    """A deploy that changes API code but not data must change the ETag, or CDNs keep serving old bodies."""
+    from voicedex import main
+    before = main.api_etag('"data"')
+    monkeypatch.setattr(main, "_CODE_VERSION", "other-code")
+    monkeypatch.setattr(main, "_API_ETAGS", {})
+    assert main.api_etag('"data"') != before
