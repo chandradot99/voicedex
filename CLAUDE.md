@@ -50,6 +50,9 @@ voicedex/
                        Cost calculator (views.USAGE/monthly_cost, _usage.html, site.js [data-usage]/[data-rate]): "Per month"
                        column on single-type model tables + a block on model pages; server-rendered at a default usage
                        (TTS 10M chars, STT/STS 100 h), live in JS, ?usage= without JS. List price, before free tiers.
+                       /reports/speech-ai-pricing (views.pricing_report): recomputed from data; findings are written only when
+                       the numbers support them; ranges = 5th–95th percentile (≥20 prices), medians need ≥ MIN_GROUP models;
+                       never names a single cheapest model (extremes can be plan-gated - see the pricing rule).
                        Landing and provider pages carry a data-generated FAQ (views.landing_faq/provider_faq) + FAQPage JSON-LD. Also JSON-LD (Dataset, BreadcrumbList),
                        sitemap <lastmod>, /llms.txt, and a 301 for trailing slashes (main.py).
                        /compare/<a>-vs-<b>: provider pairs from views.COMPARE_PROVIDERS (editorial list) that share a

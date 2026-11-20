@@ -212,3 +212,23 @@ async def test_cost_calculator_in_tables_and_model_page(client):
     assert "Per month" not in (await client.get("/models")).text                       # mixed types: no column
     html = (await client.get("/models/zz-test-provider/tts/tts-main")).text
     assert "usage-inline" in html and "$300.00" in html
+
+
+async def test_pricing_report_page(client):
+    r = await client.get("/reports/speech-ai-pricing")
+    assert r.status_code == 200
+    html = r.text
+    assert "Speech AI pricing report" in html and "Key findings" in html and "How this is calculated" in html
+    assert '"@type": "Article"' in html
+    assert "/reports/speech-ai-pricing" in (await client.get("/sitemap.xml")).text
+    assert "/reports/speech-ai-pricing" in (await client.get("/llms.txt")).text
+
+
+def test_pricing_report_small_samples_are_not_overstated(fixture_catalog):
+    from voicedex.web import views
+    rep = views.pricing_report(fixture_catalog)
+    for t in rep.types:
+        if len(t.comparable) < 20:
+            assert t.p5 is None and t.p95 is None          # no fake percentiles from a handful of prices
+        assert t.realtime is None or t.realtime[1] >= views.MIN_GROUP
+        assert t.batch is None or t.batch[1] >= views.MIN_GROUP

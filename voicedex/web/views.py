@@ -1364,3 +1364,186 @@ def compact_number(value: float) -> str:
 def plain_number(value: float) -> str:
     """For an <input type=number>: 10000000, not 1e+07."""
     return f"{value:.0f}" if value == int(value) else f"{value:.6g}"
+
+
+# ── Pricing report (/reports/speech-ai-pricing) ──────────────────────────────
+# Computed from the live catalog on every load, so its figures and sentences never go stale. Rules: live
+# providers only; `-latest` aliases counted once (alias_of skipped); "comparable" = a positive USD price in the
+# type's normalized unit (TTS per 1M chars, STT/STS per hour) - other units and currencies are counted, not priced.
+
+REPORT_LANGUAGES = 10
+MIN_GROUP = 5          # smallest group a median is reported for (streaming vs not)
+
+
+@dataclass
+class PricePoint:
+    row: ModelRow
+    provider: str
+    price: float
+
+
+@dataclass
+class LanguagePrice:
+    name: str
+    url: str | None
+    n: int
+    median: float
+    p25: float
+    p75: float
+
+
+@dataclass
+class TypeReport:
+    type: str
+    label: str
+    unit: str
+    models: int
+    comparable: list[PricePoint]            # sorted cheapest first
+    median: float | None
+    p25: float | None
+    p75: float | None
+    p5: float | None                         # middle-90% range: robust to one odd price at either end
+    p95: float | None
+    realtime: tuple[float, int] | None      # (median, n)
+    batch: tuple[float, int] | None
+    free_quota: int                          # comparable models listing a free tier
+    usd_other_unit: Counter
+    other_currency: Counter
+    unpriced_hosted: int
+    unpriced_open: int
+    languages: list[LanguagePrice]
+
+    @property
+    def spread(self) -> float | None:
+        c = self.comparable
+        return c[-1].price / c[0].price if len(c) > 1 and c[0].price else None
+
+    @property
+    def comparable_share(self) -> float:
+        return len(self.comparable) / self.models if self.models else 0.0
+
+
+@dataclass
+class PricingReport:
+    as_of: date | None
+    providers: int
+    types: list[TypeReport]
+    findings: list[str]
+
+
+def _quartiles(values: list[float]) -> tuple[float, float, float]:
+    from statistics import median, quantiles
+    if len(values) < 4:
+        m = median(values)
+        return m, m, m
+    q = quantiles(values, n=4, method="inclusive")
+    return q[0], median(values), q[2]
+
+
+def pricing_report(catalog: Catalog) -> PricingReport:
+    from statistics import median
+    names = {pid: pd.provider.name for pid, pd in catalog.providers.items()}
+    live = [s for s in provider_summaries(catalog) if s.status == "active"]
+    live_ids = {s.id for s in live}
+    rows = [r for r in active_models(catalog) if r.provider_id in live_ids and not r.model.alias_of]
+    pages = landing_pages(catalog)
+    types: list[TypeReport] = []
+    for mtype in ("tts", "stt", "sts"):
+        typed = [r for r in rows if r.model.type == mtype]
+        if not typed:
+            continue
+        comparable, other_unit, other_cur, hosted, open_ = [], Counter(), Counter(), 0, 0
+        for r in typed:
+            p, norm = r.model.pricing, normalized_price(r.model)
+            if norm and p.price_usd and p.price_usd > 0:
+                comparable.append(PricePoint(r, names[r.provider_id], norm[0]))
+            elif p and p.price_usd is not None:
+                if p.price_usd > 0:
+                    other_unit[p.unit] += 1
+            elif p and p.price is not None:
+                other_cur[p.currency] += 1
+            elif r.model.open_weights:
+                open_ += 1
+            else:
+                hosted += 1
+        comparable.sort(key=lambda x: (x.price, x.provider, x.row.model.id))
+        prices = [c.price for c in comparable]
+        p25, med, p75 = _quartiles(prices) if prices else (None, None, None)
+        rt = [c.price for c in comparable if is_realtime(c.row.model)]
+        bt = [c.price for c in comparable if not is_realtime(c.row.model)]
+        langs: list[LanguagePrice] = []
+        if mtype in ("tts", "stt"):
+            by: dict[str, list[PricePoint]] = defaultdict(list)
+            for c in comparable:
+                for b in {base_language(lang) for lang in c.row.model.languages if lang != "*"}:
+                    by[b].append(c)
+            top = sorted(by.items(), key=lambda kv: (-len(kv[1]), kv[0]))[:REPORT_LANGUAGES]
+            if "en" in by and "en" not in dict(top):
+                top = [("en", by["en"])] + top[:-1]
+            for code, pts in sorted(top, key=lambda kv: (kv[0] != "en", -len(kv[1]), kv[0])):
+                page = next((p for p in pages.values() if p.type == mtype and p.kind == "language" and p.value == code), None)
+                lq = _quartiles([p.price for p in pts])
+                langs.append(LanguagePrice(language_name(code), page.url if page else None, len(pts), lq[1], lq[0], lq[2]))
+        types.append(TypeReport(
+            mtype, TYPE_LABELS[mtype], "per 1M characters" if mtype == "tts" else "per hour of audio", len(typed),
+            comparable, med, p25, p75, *_p5_p95(prices),
+            (median(rt), len(rt)) if len(rt) >= MIN_GROUP else None, (median(bt), len(bt)) if len(bt) >= MIN_GROUP else None,
+            sum(1 for c in comparable if c.row.model.pricing.free_quota), other_unit, other_cur, hosted, open_, langs))
+    synced = [date.fromisoformat(str(s.last_synced)[:10]) for s in live if s.last_synced]
+    report = PricingReport(max(synced) if synced else None, len(live), types, [])
+    report.findings = _report_findings(report)
+    return report
+
+
+def _p5_p95(values: list[float]) -> tuple[float | None, float | None]:
+    from statistics import quantiles
+    if len(values) < 20:              # with fewer, the "5th/95th percentile" would just be the min and max
+        return None, None
+    q = quantiles(values, n=20, method="inclusive")
+    return q[0], q[-1]
+
+
+def _pct(x: float) -> str:
+    return f"{round(100 * x)}%"
+
+
+def _report_findings(rep: PricingReport) -> list[str]:
+    """Plain-English takeaways, each written only when the numbers support it."""
+    from statistics import median
+    out = []
+    t = {tr.type: tr for tr in rep.types}
+    if (tts := t.get("tts")) and tts.p5 and tts.p95:
+        out.append(f"Text-to-speech list prices vary {tts.p95 / tts.p5:,.0f}-fold: the middle 90% of priced models "
+                   f"cost between {_money(tts.p5)} and {_money(tts.p95)} per 1M characters. The median is "
+                   f"{_money(tts.median)}, and half cost between {_money(tts.p25)} and {_money(tts.p75)}.")
+    if (stt := t.get("stt")) and stt.p5 and stt.p95:
+        out.append(f"Speech-to-text varies {stt.p95 / stt.p5:,.0f}-fold: the middle 90% cost between "
+                   f"{_money(stt.p5)} and {_money(stt.p95)} per hour of audio, with a median of {_money(stt.median)}.")
+    for tr in (stt, tts):
+        if tr and tr.realtime and tr.batch and tr.realtime[0] >= 1.25 * tr.batch[0]:
+            out.append(f"Streaming costs more. The median {tr.label.lower()} model that streams over WebSocket or WebRTC "
+                       f"lists at {_money(tr.realtime[0])} {tr.unit}, against {_money(tr.batch[0])} for models that "
+                       f"don't: {tr.realtime[0] / tr.batch[0]:.1f}× as much.")
+            break
+    if tts and tts.languages and tts.languages[0].name == "English" and len(tts.languages) > 3:
+        en = tts.languages[0].median
+        others = median(lp.median for lp in tts.languages[1:])
+        if others >= 1.1 * en:
+            out.append(f"The language tax is real for text-to-speech: the median price for English is {_money(en)} per "
+                       f"1M characters, against {_money(others)} across the next {len(tts.languages) - 1} most-covered "
+                       f"languages ({_pct(others / en - 1)} more).")
+        if stt and stt.languages and stt.languages[0].name == "English" and len(stt.languages) > 3:
+            s_en = stt.languages[0].median
+            s_others = median(lp.median for lp in stt.languages[1:])
+            if s_others <= 1.05 * s_en:
+                out.append(f"Speech-to-text has no such premium: {_money(s_en)} per hour for English, "
+                           f"{_money(s_others)} across the other top languages.")
+    if tts:
+        no_price = tts.unpriced_hosted
+        out.append(f"Prices are hard to find. Only {_pct(tts.comparable_share)} of text-to-speech models publish a "
+                   f"per-character price in USD; {sum(tts.other_currency.values())} publish in another currency only, "
+                   f"and {no_price} hosted models have no public price at all.")
+    if (sts := t.get("sts")) and sts.usd_other_unit.get("token"):
+        out.append(f"Realtime speech-to-speech is mostly sold by the token: {sts.usd_other_unit['token']} of "
+                   f"{sts.models} models, so only {len(sts.comparable)} can be compared per hour of audio.")
+    return out
