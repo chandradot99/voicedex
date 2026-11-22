@@ -8981,6 +8981,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "461",
@@ -8988,13 +8989,12 @@
       "thai_name": "อะดา"
     },
     "name": "Ada",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ada/sound_tr_ada.wav",
     "tags": [
       "sweet",
       "storytelling",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9015,6 +9015,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "462",
@@ -9022,13 +9023,12 @@
       "thai_name": "อาห์เม็ท"
     },
     "name": "Ahmet",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ahmet/sound_tr_ahmet.wav",
     "tags": [
       "calm",
       "soothing",
       "documentary"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9049,6 +9049,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "463",
@@ -9056,13 +9057,12 @@
       "thai_name": "อัสลัน"
     },
     "name": "Aslan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_aslan/sound_tr_aslan.wav",
     "tags": [
       "exciting",
       "news reading",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9083,6 +9083,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "464",
@@ -9090,13 +9091,12 @@
       "thai_name": "อัซรา"
     },
     "name": "Azra",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_azra/sound_tr_azra.wav",
     "tags": [
       "cute",
       "storytelling",
       "anime"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9117,6 +9117,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "465",
@@ -9124,13 +9125,12 @@
       "thai_name": "อาจารย์บูรัค"
     },
     "name": "Professor Burak",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_burak/sound_tr_burak.wav",
     "tags": [
       "trustworthy",
       "clear",
       "teaching"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9151,6 +9151,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "466",
@@ -9158,13 +9159,12 @@
       "thai_name": "เจย์ลัน"
     },
     "name": "Ceylan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ceylan/sound_tr_ceylan.wav",
     "tags": [
       "confident",
       "sweet",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9185,6 +9185,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TR",
       "speaker_id": "467",
@@ -9192,13 +9193,12 @@
       "thai_name": "อาจารย์เดรีย"
     },
     "name": "Professor Derya",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_derya/sound_tr_derya.wav",
     "tags": [
       "calm",
       "teaching",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9219,6 +9219,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "468",
@@ -9226,13 +9227,12 @@
       "thai_name": "เอลา"
     },
     "name": "Ela",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ela/sound_tr_ela.wav",
     "tags": [
       "cute",
       "calm",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9253,6 +9253,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "469",
@@ -9260,13 +9261,12 @@
       "thai_name": "ฟารุก"
     },
     "name": "Faruk",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_faruk/sound_tr_faruk.wav",
     "tags": [
       "clear",
       "calm",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "teens",
@@ -9333,6 +9333,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TR",
       "speaker_id": "470",
@@ -9340,13 +9341,12 @@
       "thai_name": "เคริม"
     },
     "name": "Kerim",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_kerim/sound_tr_kerim.wav",
     "tags": [
       "serious",
       "calm",
       "documentary"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9367,6 +9367,7 @@
         "en",
         "tr"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "TR",
       "speaker_id": "471",
@@ -9374,13 +9375,12 @@
       "thai_name": "เมลิก"
     },
     "name": "Melik",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_melik/sound_tr_melik.wav",
     "tags": [
       "soothing",
       "documentary",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9401,6 +9401,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "472",
@@ -9408,13 +9409,12 @@
       "thai_name": "ไอลี"
     },
     "name": "Aili",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_aili/sound_id_aili.wav",
     "tags": [
       "cute",
       "storytelling",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9435,6 +9435,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "473",
@@ -9442,13 +9443,12 @@
       "thai_name": "อาลินา"
     },
     "name": "Alina_a",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_alina_a/sound_id_alina_a.wav",
     "tags": [
       "cute",
       "sweet",
       "anime"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9469,6 +9469,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "474",
@@ -9476,13 +9477,12 @@
       "thai_name": "อัลเวีย เมลินา"
     },
     "name": "Alvia_meilina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_alvia_meilina/sound_id_alvia_meilina.wav",
     "tags": [
       "exciting",
       "anime",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9503,6 +9503,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "475",
@@ -9510,12 +9511,11 @@
       "thai_name": "อันโด"
     },
     "name": "Ando",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ando/sound_id_ando.wav",
     "tags": [
       "exciting",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9536,6 +9536,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "476",
@@ -9543,13 +9544,12 @@
       "thai_name": "อายุ"
     },
     "name": "Ayu",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ayu/sound_id_ayu.wav",
     "tags": [
       "exciting",
       "storytelling",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9570,6 +9570,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "477",
@@ -9577,13 +9578,12 @@
       "thai_name": "ครูเบทซี"
     },
     "name": "Teacher Betcy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_betcy/sound_id_betcy.wav",
     "tags": [
       "trustworthy",
       "clear",
       "teaching"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9604,6 +9604,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "478",
@@ -9611,13 +9612,12 @@
       "thai_name": "คริสตา"
     },
     "name": "Christa_a",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_christa_a/sound_id_christa_a.wav",
     "tags": [
       "soothing",
       "news reading",
       "documentary"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9638,6 +9638,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "479",
@@ -9645,13 +9646,12 @@
       "thai_name": "คัท เจ"
     },
     "name": "Cut_j",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_cut_j/sound_id_cut_j.wav",
     "tags": [
       "cute",
       "calm",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "teens",
@@ -9718,6 +9718,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "480",
@@ -9725,13 +9726,12 @@
       "thai_name": "ดาเนีย"
     },
     "name": "Dania",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_dania/sound_id_dania.wav",
     "tags": [
       "clear",
       "calm",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9752,6 +9752,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "481",
@@ -9759,13 +9760,12 @@
       "thai_name": "เดลลา"
     },
     "name": "Della",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_della/sound_id_della.wav",
     "tags": [
       "cute",
       "sweet",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "child",
@@ -9786,6 +9786,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "482",
@@ -9793,12 +9794,11 @@
       "thai_name": "ดวี"
     },
     "name": "Dwi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_dwi/sound_id_dwi.wav",
     "tags": [
       "cute",
       "anime"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9819,6 +9819,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "483",
@@ -9826,13 +9827,12 @@
       "thai_name": "ดวี รูมิ"
     },
     "name": "Dwi_rumi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_dwi_rumi/sound_id_dwi_rumi.wav",
     "tags": [
       "calm",
       "narrating",
       "documentary"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9853,6 +9853,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "484",
@@ -9860,13 +9861,12 @@
       "thai_name": "เอกา"
     },
     "name": "Eka_a",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_eka_a/sound_id_eka_a.wav",
     "tags": [
       "calm",
       "soothing",
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9887,6 +9887,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "485",
@@ -9894,12 +9895,11 @@
       "thai_name": "แม่ค้าเอไน"
     },
     "name": "Eni seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_eni/sound_id_eni.wav",
     "tags": [
       "confident",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9920,6 +9920,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "486",
@@ -9927,12 +9928,11 @@
       "thai_name": "พ่อค้าฟรานเชสโก"
     },
     "name": "Fransesco seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_fransesco/sound_id_fransesco.wav",
     "tags": [
       "trustworthy",
       "confident"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9953,6 +9953,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "487",
@@ -9960,13 +9961,12 @@
       "thai_name": "จีน่า"
     },
     "name": "Gina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_gina/sound_id_gina.wav",
     "tags": [
       "calm",
       "narrating",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -9987,6 +9987,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "488",
@@ -9994,12 +9995,11 @@
       "thai_name": "แม่ค้าอิรลี"
     },
     "name": "Irly seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_irly/sound_id_irly.wav",
     "tags": [
       "trustworthy",
       "documentary"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10020,6 +10020,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "489",
@@ -10027,13 +10028,12 @@
       "thai_name": "อีร์วาน"
     },
     "name": "Irvan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_irvan/sound_id_irvan.wav",
     "tags": [
       "clear",
       "calm",
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10054,6 +10054,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "490",
@@ -10061,13 +10062,12 @@
       "thai_name": "ลีลิส"
     },
     "name": "Lilis",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_lilis/sound_id_lilis.wav",
     "tags": [
       "calm",
       "documentary",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10088,6 +10088,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "491",
@@ -10095,13 +10096,12 @@
       "thai_name": "เมลี"
     },
     "name": "Mely",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_mely/sound_id_mely.wav",
     "tags": [
       "sweet",
       "news reading",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10122,6 +10122,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "492",
@@ -10129,13 +10130,12 @@
       "thai_name": "โมนา"
     },
     "name": "Mona",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_mona/sound_id_mona.wav",
     "tags": [
       "confident",
       "sweet",
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10156,6 +10156,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "493",
@@ -10163,12 +10164,11 @@
       "thai_name": "มูฮัมมัด อิกบาล"
     },
     "name": "Muhammad_iqbal",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_muhammad_iqbal/sound_id_muhammad_iqbal.wav",
     "tags": [
       "exciting",
       "soothing"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10189,6 +10189,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "494",
@@ -10196,13 +10197,12 @@
       "thai_name": "ครูนาห์รี"
     },
     "name": "Teacher Nahri_s",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nahri_s/sound_id_nahri_s.wav",
     "tags": [
       "confident",
       "clear",
       "teaching"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10223,6 +10223,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "495",
@@ -10230,13 +10231,12 @@
       "thai_name": "นาวรา"
     },
     "name": "Nawra",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nawra/sound_id_nawra.wav",
     "tags": [
       "confident",
       "clear",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10257,6 +10257,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "496",
@@ -10264,13 +10265,12 @@
       "thai_name": "เนนี่ ริซกา"
     },
     "name": "Neni_rizka",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_neni_rizka/sound_id_neni_rizka.wav",
     "tags": [
       "cute",
       "sweet",
       "anime"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10291,6 +10291,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "497",
@@ -10298,13 +10299,12 @@
       "thai_name": "นิเซอรา ฟรี่"
     },
     "name": "Nizarea_frey",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nizarea_frey/sound_id_nizarea_frey.wav",
     "tags": [
       "clear",
       "calm",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10325,6 +10325,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "498",
@@ -10332,13 +10333,12 @@
       "thai_name": "โอวี่"
     },
     "name": "Ovy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ovy/sound_id_ovy.wav",
     "tags": [
       "sweet",
       "calm",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10359,6 +10359,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "499",
@@ -10366,13 +10367,12 @@
       "thai_name": "พอลา"
     },
     "name": "Paula",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_paula/sound_id_paula.wav",
     "tags": [
       "calm",
       "mellow",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10439,6 +10439,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "500",
@@ -10446,13 +10447,12 @@
       "thai_name": "พรัปติวี"
     },
     "name": "Praptiwi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_praptiwi/sound_id_praptiwi.wav",
     "tags": [
       "cute",
       "sweet",
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10473,6 +10473,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "501",
@@ -10480,13 +10481,12 @@
       "thai_name": "ริฮาด"
     },
     "name": "Rihad",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_rihad/sound_id_rihad.wav",
     "tags": [
       "soothing",
       "warm",
       "documentary"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10507,6 +10507,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "502",
@@ -10514,12 +10515,11 @@
       "thai_name": "แม่ค้ารีนา"
     },
     "name": "Rina seller",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_rina/sound_id_rina.wav",
     "tags": [
       "confident",
       "clear"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10540,6 +10540,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "503",
@@ -10547,13 +10548,12 @@
       "thai_name": "รีนี รินจานี"
     },
     "name": "Rini_rinjani",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_rini_rinjani/sound_id_rini_rinjani.wav",
     "tags": [
       "calm",
       "mellow",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10574,6 +10574,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "504",
@@ -10581,13 +10582,12 @@
       "thai_name": "รูบี้"
     },
     "name": "Ruby",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ruby/sound_id_ruby.wav",
     "tags": [
       "sweet",
       "calm",
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10608,6 +10608,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "505",
@@ -10615,11 +10616,10 @@
       "thai_name": "ริยาน"
     },
     "name": "Ryan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ryan/sound_id_ryan.wav",
     "tags": [
       "documentary"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10640,6 +10640,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "506",
@@ -10647,12 +10648,11 @@
       "thai_name": "อาจารย์ซายิด"
     },
     "name": "Professor Sayid",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_sayid/sound_id_sayid.wav",
     "tags": [
       "trustworthy",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10673,6 +10673,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "507",
@@ -10680,13 +10681,12 @@
       "thai_name": "ชาบรีน่า"
     },
     "name": "Shabrina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_shabrina/sound_id_shabrina.wav",
     "tags": [
       "cute",
       "narrating",
       "anime"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10707,6 +10707,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "508",
@@ -10714,13 +10715,12 @@
       "thai_name": "อาจารย์เชวา ดาเวิด เฮช"
     },
     "name": "Professor Sheva_david_h",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_sheva_david_h/sound_id_sheva_david_h.wav",
     "tags": [
       "clear",
       "narrating",
       "teaching"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10741,6 +10741,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "509",
@@ -10748,13 +10749,12 @@
       "thai_name": "ซิติ คิว"
     },
     "name": "Siti_q",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_siti_q/sound_id_siti_q.wav",
     "tags": [
       "cute",
       "confident",
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10775,6 +10775,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "510",
@@ -10782,13 +10783,12 @@
       "thai_name": "ติติน"
     },
     "name": "Titin",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_titin/sound_id_titin.wav",
     "tags": [
       "calm",
       "mellow",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10809,6 +10809,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "511",
@@ -10816,13 +10817,12 @@
       "thai_name": "อูมิ"
     },
     "name": "Umi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_umi/sound_id_umi.wav",
     "tags": [
       "cute",
       "calm",
       "narrating"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10843,6 +10843,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "512",
@@ -10850,13 +10851,12 @@
       "thai_name": "วีดา"
     },
     "name": "Widha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_widha/sound_id_widha.wav",
     "tags": [
       "sweet",
       "calm",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10877,6 +10877,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "513",
@@ -10884,11 +10885,10 @@
       "thai_name": "สายปาน"
     },
     "name": "Zaipan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_zaipan/sound_id_zaipan.wav",
     "tags": [
       "news reading"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10909,6 +10909,7 @@
         "en",
         "id"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 0,
       "primary_language": "ID",
       "speaker_id": "514",
@@ -10916,13 +10917,12 @@
       "thai_name": "ซีซี"
     },
     "name": "Zizi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_zizi/sound_id_zizi.wav",
     "tags": [
       "confident",
       "news reading",
       "local"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -10975,6 +10975,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "520",
@@ -10982,11 +10983,10 @@
       "thai_name": "ออย่า"
     },
     "name": "Oya",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sale_oil/sound_sale_oil.wav",
     "tags": [
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -11007,6 +11007,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "522",
@@ -11014,11 +11015,10 @@
       "thai_name": "มินท์"
     },
     "name": "mint",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/sale_prang/sound_sale_prang.wav",
     "tags": [
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -11039,6 +11039,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "523",
@@ -11046,12 +11047,11 @@
       "thai_name": "ไบโอ"
     },
     "name": "Bio",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/callcenter_bio/sound_callcenter_bio.wav",
     "tags": [
       "cute",
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -11072,6 +11072,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "524",
@@ -11079,12 +11080,11 @@
       "thai_name": "แพร"
     },
     "name": "Prae",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/callcenter_yin/sound_callcenter_yin.wav",
     "tags": [
       "storytelling",
       "anime"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -11105,6 +11105,7 @@
         "en",
         "th"
       ],
+      "preview_unavailable": "http 403",
       "price_multiplier": 1.0,
       "primary_language": "TH",
       "speaker_id": "525",
@@ -11112,11 +11113,10 @@
       "thai_name": "ต้น"
     },
     "name": "Ton",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/callcenter_oat/sound_callcenter_oat.wav",
     "tags": [
       "storytelling"
     ],
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-22"
   },
   {
     "age": "adult",
@@ -15686,8 +15686,8 @@
       "speaker_id": "1"
     },
     "name": "Fommy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/01-fommy.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/fommy/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15702,8 +15702,8 @@
       "speaker_id": "10"
     },
     "name": "Nick",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/10-nick.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nick/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15718,8 +15718,8 @@
       "speaker_id": "1059"
     },
     "name": "Juan",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/juan/sound_1_juan.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/juan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15734,7 +15734,8 @@
       "speaker_id": "1060"
     },
     "name": "Xin Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/xin-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15749,7 +15750,8 @@
       "speaker_id": "1061"
     },
     "name": "Jie Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/jie-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15760,12 +15762,12 @@
     "id": "v4-1062",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "qing",
       "speaker_id": "1062"
     },
     "name": "Qing",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/qing/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15780,7 +15782,8 @@
       "speaker_id": "1063"
     },
     "name": "Kanna Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kanna-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15795,8 +15798,8 @@
       "speaker_id": "1064"
     },
     "name": "Sae",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/sae/sound_1_sae.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sae/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15811,8 +15814,8 @@
       "speaker_id": "1065"
     },
     "name": "Dia",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/dia/sound_1_dia.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dia/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15827,8 +15830,8 @@
       "speaker_id": "1066"
     },
     "name": "Taufik",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/taufik/sound_1_taufik.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/taufik/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15843,8 +15846,8 @@
       "speaker_id": "1067"
     },
     "name": "Tedi",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/tedi/sound_1_tedi.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/tedi/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15859,7 +15862,8 @@
       "speaker_id": "1068"
     },
     "name": "Zamira Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/zamira-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15874,8 +15878,8 @@
       "speaker_id": "1069"
     },
     "name": "Dang",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/dang/sound_1_dang.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dang/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15890,8 +15894,8 @@
       "speaker_id": "1070"
     },
     "name": "Hung",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/hung/sound_1_hung.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/hung/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15906,8 +15910,8 @@
       "speaker_id": "1071"
     },
     "name": "Thanh",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/thanh/sound_1_thanh.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/thanh/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15922,8 +15926,8 @@
       "speaker_id": "1072"
     },
     "name": "Diep",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/diep/sound_1_diep.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/diep/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15938,8 +15942,8 @@
       "speaker_id": "1073"
     },
     "name": "Phuong",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/phuong/sound_1_phuong.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/phuong/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15954,8 +15958,8 @@
       "speaker_id": "1074"
     },
     "name": "Johnny",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/johnny/sound_1_johnny.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/johnny/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15970,8 +15974,8 @@
       "speaker_id": "1077"
     },
     "name": "Phorn",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/phorn/sound_1_phorn.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/phorn/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -15986,8 +15990,8 @@
       "speaker_id": "1078"
     },
     "name": "Sorn",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/sorn/sound_1_sorn.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sorn/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16002,7 +16006,8 @@
       "speaker_id": "1079"
     },
     "name": "Waris Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/waris-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16017,8 +16022,8 @@
       "speaker_id": "1080"
     },
     "name": "Bunyang",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/bunyang/sound_1_bunyang.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/bunyang/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16033,7 +16038,8 @@
       "speaker_id": "1081"
     },
     "name": "Yati Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/yati-teacher/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16048,8 +16054,8 @@
       "speaker_id": "1082"
     },
     "name": "Heyma",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/heyma/sound_1_heyma.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/heyma/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16060,12 +16066,12 @@
     "id": "v4-1083",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "gawa",
       "speaker_id": "1083"
     },
     "name": "Gawa",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/gawa/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16080,8 +16086,8 @@
       "speaker_id": "1084"
     },
     "name": "Cetan",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/cetan/sound_1_cetan.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/cetan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16096,8 +16102,8 @@
       "speaker_id": "1094"
     },
     "name": "Tola",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/thanaw/sound_1_thanaw.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/tola/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16112,8 +16118,8 @@
       "speaker_id": "1095"
     },
     "name": "Mala",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/mala/sound_1_mala.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/mala/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16128,8 +16134,8 @@
       "speaker_id": "11"
     },
     "name": "Siren",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/11-siren.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/siren/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16144,8 +16150,8 @@
       "speaker_id": "1119"
     },
     "name": "Kubo",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/kubo/sound_1_kubo.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kubo/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16160,8 +16166,8 @@
       "speaker_id": "1139"
     },
     "name": "Sreymum",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/sreymum/sound_1_sreymum.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sreymum/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16176,8 +16182,8 @@
       "speaker_id": "1140"
     },
     "name": "Chai",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/chai/sound_1_chai.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/chai/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16192,8 +16198,8 @@
       "speaker_id": "1141"
     },
     "name": "Samai",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/samai/sound_1_samai.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/samai/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16208,7 +16214,8 @@
       "speaker_id": "1142"
     },
     "name": "Kosal Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kosal-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16223,8 +16230,8 @@
       "speaker_id": "1143"
     },
     "name": "Sopheap",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/sopheap/sound_1_sopheap.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sopheap/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16239,8 +16246,8 @@
       "speaker_id": "1144"
     },
     "name": "Sokhim",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/sokhim/sound_1_sokhim.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sokhim/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16255,7 +16262,8 @@
       "speaker_id": "1145"
     },
     "name": "Rathaa Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rathaa-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16270,8 +16278,8 @@
       "speaker_id": "1146"
     },
     "name": "Kriza",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/kriza/sound_1_kriza.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kriza/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16286,7 +16294,8 @@
       "speaker_id": "1147"
     },
     "name": "Mickyla Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/mickyla-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16301,8 +16310,8 @@
       "speaker_id": "1148"
     },
     "name": "Shuncey",
-    "preview_url": "https://bn-voice-pics.s3.ap-southeast-1.amazonaws.com/picture/shuncey/sound_1_shuncey.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/shuncey/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16313,12 +16322,12 @@
     "id": "v4-1163",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ari",
       "speaker_id": "1163"
     },
     "name": "Ari",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ari/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16333,7 +16342,8 @@
       "speaker_id": "1198"
     },
     "name": "Fr 4",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/fr-4/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16348,8 +16358,8 @@
       "speaker_id": "12"
     },
     "name": "Jaidee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/12-jaidee.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/jaidee/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16360,12 +16370,12 @@
     "id": "v4-1214",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "dewi",
       "speaker_id": "1214"
     },
     "name": "Dewi",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dewi/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16380,7 +16390,8 @@
       "speaker_id": "1215"
     },
     "name": "Sari Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sari-seller/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16395,7 +16406,8 @@
       "speaker_id": "1216"
     },
     "name": "Rizky Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rizky-teacher/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16406,12 +16418,12 @@
     "id": "v4-1217",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "andi",
       "speaker_id": "1217"
     },
     "name": "Andi",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/andi/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16426,7 +16438,8 @@
       "speaker_id": "1218"
     },
     "name": "Intan Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/intan-seller/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16441,7 +16454,8 @@
       "speaker_id": "1220"
     },
     "name": "Nazira",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ayu/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16456,7 +16470,8 @@
       "speaker_id": "1221"
     },
     "name": "Rina Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rina-teacher/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16471,7 +16486,8 @@
       "speaker_id": "1222"
     },
     "name": "Lina Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/lina-seller/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16482,12 +16498,12 @@
     "id": "v4-1223",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "nina",
       "speaker_id": "1223"
     },
     "name": "Nina",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nina/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16498,12 +16514,12 @@
     "id": "v4-1224",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "maya",
       "speaker_id": "1224"
     },
     "name": "Maya",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/maya/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16514,12 +16530,12 @@
     "id": "v4-1225",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "annisa",
       "speaker_id": "1225"
     },
     "name": "Annisa",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/annisa/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16530,12 +16546,12 @@
     "id": "v4-1257",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "sara",
       "speaker_id": "1257"
     },
     "name": "Sara",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sara/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16546,12 +16562,12 @@
     "id": "v4-1258",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ashley",
       "speaker_id": "1258"
     },
     "name": "Ashley",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ashley/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16566,7 +16582,8 @@
       "speaker_id": "1259"
     },
     "name": "Sg Imda Nsc 010 En Guy",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sg-imda-nsc-010-en-guy/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16581,7 +16598,8 @@
       "speaker_id": "1260"
     },
     "name": "Sg Imda Nsc 011 En Jacob",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sg-imda-nsc-011-en-jacob/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16596,7 +16614,8 @@
       "speaker_id": "1262"
     },
     "name": "Sara Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sara-seller/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16611,8 +16630,8 @@
       "speaker_id": "1263"
     },
     "name": "Omar",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/ar_matilda_en_jacob/sound_ar_matilda_en_jacob.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/omar/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16627,7 +16646,8 @@
       "speaker_id": "1264"
     },
     "name": "Ahmed Gamer",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ahmed-gamer/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16642,7 +16662,8 @@
       "speaker_id": "1265"
     },
     "name": "Nora Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nora-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16657,7 +16678,8 @@
       "speaker_id": "1271"
     },
     "name": "Sofia Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sofia-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16672,7 +16694,8 @@
       "speaker_id": "1272"
     },
     "name": "Gavi Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/gavi-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16683,12 +16706,12 @@
     "id": "v4-1273",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "pedri",
       "speaker_id": "1273"
     },
     "name": "Pedri",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/pedri/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16703,7 +16726,8 @@
       "speaker_id": "1274"
     },
     "name": "Bianca Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/bianca-teacher/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16718,7 +16742,8 @@
       "speaker_id": "1275"
     },
     "name": "Elise Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/elise-seller/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16733,7 +16758,8 @@
       "speaker_id": "1278"
     },
     "name": "Park Gamer",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/park-gamer/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16744,12 +16770,12 @@
     "id": "v4-1279",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "silvia",
       "speaker_id": "1279"
     },
     "name": "Silvia",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/silvia/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16764,7 +16790,8 @@
       "speaker_id": "1280"
     },
     "name": "Eva Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/eva-teacher/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16775,12 +16802,12 @@
     "id": "v4-1281",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "thomas",
       "speaker_id": "1281"
     },
     "name": "Thomas",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/thomas/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16791,12 +16818,12 @@
     "id": "v4-1282",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "stephan",
       "speaker_id": "1282"
     },
     "name": "Stephan",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/stephan/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16807,12 +16834,12 @@
     "id": "v4-1288",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "johan",
       "speaker_id": "1288"
     },
     "name": "Johan",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/johan/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16827,8 +16854,8 @@
       "speaker_id": "13"
     },
     "name": "Alisa",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/13-alisa.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/alisa/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16839,12 +16866,12 @@
     "id": "v4-1345",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "alex",
       "speaker_id": "1345"
     },
     "name": "Alex",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/alex/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16855,12 +16882,12 @@
     "id": "v4-1346",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "nastya",
       "speaker_id": "1346"
     },
     "name": "Nastya",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nastya/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16875,7 +16902,8 @@
       "speaker_id": "1347"
     },
     "name": "Sasha Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sasha-seller/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16890,7 +16918,8 @@
       "speaker_id": "1348"
     },
     "name": "Nikita Professor",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nikita-professor/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16905,7 +16934,8 @@
       "speaker_id": "1349"
     },
     "name": "Park Gamer 2",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/park-gamer-2/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16916,12 +16946,12 @@
     "id": "v4-1350",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ji-a",
       "speaker_id": "1350"
     },
     "name": "Ji A",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ji-a/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16936,7 +16966,8 @@
       "speaker_id": "1351"
     },
     "name": "Su A Professor",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/su-a-professor/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16947,12 +16978,12 @@
     "id": "v4-1352",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "maria",
       "speaker_id": "1352"
     },
     "name": "Maria",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/maria/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16963,12 +16994,12 @@
     "id": "v4-1353",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ana",
       "speaker_id": "1353"
     },
     "name": "Ana",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ana/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16983,7 +17014,8 @@
       "speaker_id": "1354"
     },
     "name": "Hugo Gamer",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/hugo-gamer/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -16994,12 +17026,12 @@
     "id": "v4-1355",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "lucas",
       "speaker_id": "1355"
     },
     "name": "Lucas",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/lucas/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17010,12 +17042,12 @@
     "id": "v4-1356",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "izan",
       "speaker_id": "1356"
     },
     "name": "Izan",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/izan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17026,12 +17058,12 @@
     "id": "v4-1357",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ira",
       "speaker_id": "1357"
     },
     "name": "Ira",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ira/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17046,7 +17078,8 @@
       "speaker_id": "1358"
     },
     "name": "Dhia Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dhia-seller/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17057,12 +17090,12 @@
     "id": "v4-1359",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "faiz",
       "speaker_id": "1359"
     },
     "name": "Faiz",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/faiz/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17077,8 +17110,8 @@
       "speaker_id": "1363"
     },
     "name": "Usha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/hi_usha/sound_hi_usha.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/usha/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17089,12 +17122,12 @@
     "id": "v4-1364",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ram",
       "speaker_id": "1364"
     },
     "name": "Ram",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ram/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17109,8 +17142,8 @@
       "speaker_id": "1365"
     },
     "name": "Preeti",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/hi_preeti/sound_hi_preeti.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/preeti/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17121,12 +17154,12 @@
     "id": "v4-1366",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "andrea",
       "speaker_id": "1366"
     },
     "name": "Andrea",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/andrea/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17141,7 +17174,8 @@
       "speaker_id": "1367"
     },
     "name": "Isa Professor",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/isa-professor/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17156,7 +17190,8 @@
       "speaker_id": "1368"
     },
     "name": "Kristine Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kristine-seller/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17167,12 +17202,12 @@
     "id": "v4-1369",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "christina",
       "speaker_id": "1369"
     },
     "name": "Christina",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/christina/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17187,7 +17222,8 @@
       "speaker_id": "1370"
     },
     "name": "Maria 2",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/maria-2/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17198,12 +17234,12 @@
     "id": "v4-1371",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ayani",
       "speaker_id": "1371"
     },
     "name": "Ayani",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ayani/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17214,12 +17250,12 @@
     "id": "v4-1372",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "sofia",
       "speaker_id": "1372"
     },
     "name": "Sofia",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sofia/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17230,12 +17266,12 @@
     "id": "v4-1373",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "cristiana",
       "speaker_id": "1373"
     },
     "name": "Cristiana",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/cristiana/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17246,12 +17282,12 @@
     "id": "v4-1374",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "leone",
       "speaker_id": "1374"
     },
     "name": "Leone",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/leone/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17262,12 +17298,12 @@
     "id": "v4-1375",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "alfeo",
       "speaker_id": "1375"
     },
     "name": "Alfeo",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/alfeo/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17282,7 +17318,8 @@
       "speaker_id": "1376"
     },
     "name": "Rosalia Professor",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rosalia-professor/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17297,8 +17334,8 @@
       "speaker_id": "14"
     },
     "name": "Bamboo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/14-bamboo.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/bamboo/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17309,12 +17346,12 @@
     "id": "v4-1400",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "wen",
       "speaker_id": "1400"
     },
     "name": "Wen",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/wen/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17329,7 +17366,8 @@
       "speaker_id": "1401"
     },
     "name": "Tao Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/tao-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17340,12 +17378,12 @@
     "id": "v4-1402",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ling",
       "speaker_id": "1402"
     },
     "name": "Ling",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ling/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17356,12 +17394,12 @@
     "id": "v4-1403",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "kai",
       "speaker_id": "1403"
     },
     "name": "Kai",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kai/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17376,7 +17414,8 @@
       "speaker_id": "1404"
     },
     "name": "Jia Teacher",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/jia-teacher/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17391,8 +17430,8 @@
       "speaker_id": "1405"
     },
     "name": "Min",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_min/sound_zh_min.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/min/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17407,7 +17446,8 @@
       "speaker_id": "1406"
     },
     "name": "Mei Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/mei-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17422,8 +17462,8 @@
       "speaker_id": "1407"
     },
     "name": "Chen",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/zh_chen/sound_zh_chen.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/chen/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17434,12 +17474,12 @@
     "id": "v4-1408",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "shu",
       "speaker_id": "1408"
     },
     "name": "Shu",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/shu/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17450,12 +17490,12 @@
     "id": "v4-1409",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "yuuta",
       "speaker_id": "1409"
     },
     "name": "Yuuta",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/yuuta/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17466,12 +17506,12 @@
     "id": "v4-1410",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "suzume",
       "speaker_id": "1410"
     },
     "name": "Suzume",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/suzume/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17482,12 +17522,12 @@
     "id": "v4-1411",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "masaru",
       "speaker_id": "1411"
     },
     "name": "Masaru",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/masaru/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17498,12 +17538,12 @@
     "id": "v4-1412",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "kaito",
       "speaker_id": "1412"
     },
     "name": "Kaito",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kaito/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17514,12 +17554,12 @@
     "id": "v4-1413",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "anan",
       "speaker_id": "1413"
     },
     "name": "Anan",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/anan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17530,12 +17570,12 @@
     "id": "v4-1414",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "anny",
       "speaker_id": "1414"
     },
     "name": "Anny",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/anny/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17546,12 +17586,12 @@
     "id": "v4-1415",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "aon",
       "speaker_id": "1415"
     },
     "name": "Aon",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/aon/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17562,12 +17602,12 @@
     "id": "v4-1416",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "aoy",
       "speaker_id": "1416"
     },
     "name": "Aoy",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/aoy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17578,12 +17618,12 @@
     "id": "v4-1417",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "athit",
       "speaker_id": "1417"
     },
     "name": "Athit",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/athit/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17598,7 +17638,8 @@
       "speaker_id": "1418"
     },
     "name": "Teacher Bo",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-bo/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17609,12 +17650,12 @@
     "id": "v4-1419",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "bouaban",
       "speaker_id": "1419"
     },
     "name": "Bouaban",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/bouaban/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17625,12 +17666,12 @@
     "id": "v4-1420",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "chinda",
       "speaker_id": "1420"
     },
     "name": "Chinda",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/chinda/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17641,12 +17682,12 @@
     "id": "v4-1421",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "damdy",
       "speaker_id": "1421"
     },
     "name": "Damdy",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/damdy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17657,12 +17698,12 @@
     "id": "v4-1422",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "dokmai",
       "speaker_id": "1422"
     },
     "name": "Dokmai",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dokmai/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17673,12 +17714,12 @@
     "id": "v4-1423",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "gampha",
       "speaker_id": "1423"
     },
     "name": "Gampha",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/gampha/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17689,12 +17730,12 @@
     "id": "v4-1424",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "happynight",
       "speaker_id": "1424"
     },
     "name": "Happynight",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/happynight/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17705,12 +17746,12 @@
     "id": "v4-1425",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "hom",
       "speaker_id": "1425"
     },
     "name": "Hom",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/hom/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17721,12 +17762,12 @@
     "id": "v4-1426",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "inpaeng",
       "speaker_id": "1426"
     },
     "name": "Inpaeng",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/inpaeng/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17737,12 +17778,12 @@
     "id": "v4-1427",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ju",
       "speaker_id": "1427"
     },
     "name": "Ju",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ju/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17753,12 +17794,12 @@
     "id": "v4-1428",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "kaysone",
       "speaker_id": "1428"
     },
     "name": "Kaysone",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kaysone/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17769,12 +17810,12 @@
     "id": "v4-1429",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "khamhou",
       "speaker_id": "1429"
     },
     "name": "Khamhou",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/khamhou/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17785,12 +17826,12 @@
     "id": "v4-1430",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "khamkeo",
       "speaker_id": "1430"
     },
     "name": "Khamkeo",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/khamkeo/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17805,7 +17846,8 @@
       "speaker_id": "1431"
     },
     "name": "Khamlar Gamer",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/khamlar-gamer/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17816,12 +17858,12 @@
     "id": "v4-1432",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "kinoy",
       "speaker_id": "1432"
     },
     "name": "Kinoy",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kinoy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17832,12 +17874,12 @@
     "id": "v4-1433",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "koung",
       "speaker_id": "1433"
     },
     "name": "Koung",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/koung/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17848,12 +17890,12 @@
     "id": "v4-1434",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "larsoy",
       "speaker_id": "1434"
     },
     "name": "Larsoy",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/larsoy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17864,12 +17906,12 @@
     "id": "v4-1435",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "manee",
       "speaker_id": "1435"
     },
     "name": "Manee",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/manee/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17884,7 +17926,8 @@
       "speaker_id": "1436"
     },
     "name": "Teacher Mao",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-mao/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17895,12 +17938,12 @@
     "id": "v4-1437",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "matthana",
       "speaker_id": "1437"
     },
     "name": "Matthana",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/matthana/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17915,7 +17958,8 @@
       "speaker_id": "1438"
     },
     "name": "May Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/may-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17930,7 +17974,8 @@
       "speaker_id": "1439"
     },
     "name": "Teacher Min",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-min/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17941,12 +17986,12 @@
     "id": "v4-1440",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "nalee",
       "speaker_id": "1440"
     },
     "name": "Nalee",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nalee/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17957,12 +18002,12 @@
     "id": "v4-1441",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "nalika",
       "speaker_id": "1441"
     },
     "name": "Nalika",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nalika/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17977,7 +18022,8 @@
       "speaker_id": "1442"
     },
     "name": "Teacher Namwan",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-namwan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -17988,12 +18034,12 @@
     "id": "v4-1443",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "nong",
       "speaker_id": "1443"
     },
     "name": "Nong",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nong/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18004,12 +18050,12 @@
     "id": "v4-1444",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "nun",
       "speaker_id": "1444"
     },
     "name": "Nun",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nun/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18024,7 +18070,8 @@
       "speaker_id": "1445"
     },
     "name": "Teacher Nut",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-nut/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18039,7 +18086,8 @@
       "speaker_id": "1446"
     },
     "name": "Phana Gamer",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/phana-gamer/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18054,7 +18102,8 @@
       "speaker_id": "1447"
     },
     "name": "Teacher Phim",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-phim/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18065,12 +18114,12 @@
     "id": "v4-1448",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "phone",
       "speaker_id": "1448"
     },
     "name": "Phone",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/phone/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18085,7 +18134,8 @@
       "speaker_id": "1449"
     },
     "name": "Piw Gamer",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/piw-gamer/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18096,12 +18146,12 @@
     "id": "v4-1450",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "pong",
       "speaker_id": "1450"
     },
     "name": "Pong",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/pong/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18112,12 +18162,12 @@
     "id": "v4-1451",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "sakone",
       "speaker_id": "1451"
     },
     "name": "Sakone",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sakone/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18128,12 +18178,12 @@
     "id": "v4-1452",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "setha",
       "speaker_id": "1452"
     },
     "name": "Setha",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/setha/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18144,12 +18194,12 @@
     "id": "v4-1453",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "sinxay",
       "speaker_id": "1453"
     },
     "name": "Sinxay",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sinxay/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18160,12 +18210,12 @@
     "id": "v4-1454",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "som-o",
       "speaker_id": "1454"
     },
     "name": "Som O",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/som-o/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18176,12 +18226,12 @@
     "id": "v4-1455",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "sompong",
       "speaker_id": "1455"
     },
     "name": "Sompong",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sompong/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18196,7 +18246,8 @@
       "speaker_id": "1456"
     },
     "name": "Somsy Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/somsy-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18211,7 +18262,8 @@
       "speaker_id": "1457"
     },
     "name": "Teacher Thida",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-thida/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18222,12 +18274,12 @@
     "id": "v4-1458",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "thiw",
       "speaker_id": "1458"
     },
     "name": "Thiw",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/thiw/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18238,12 +18290,12 @@
     "id": "v4-1459",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "toukta",
       "speaker_id": "1459"
     },
     "name": "Toukta",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/toukta/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18254,12 +18306,12 @@
     "id": "v4-1460",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "yoy",
       "speaker_id": "1460"
     },
     "name": "Yoy",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/yoy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18274,8 +18326,8 @@
       "speaker_id": "1461"
     },
     "name": "Ada",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ada/sound_tr_ada.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ada/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18290,8 +18342,8 @@
       "speaker_id": "1462"
     },
     "name": "Ahmet",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ahmet/sound_tr_ahmet.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ahmet/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18306,8 +18358,8 @@
       "speaker_id": "1463"
     },
     "name": "Aslan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_aslan/sound_tr_aslan.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/aslan/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18322,8 +18374,8 @@
       "speaker_id": "1464"
     },
     "name": "Azra",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_azra/sound_tr_azra.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/azra/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18338,7 +18390,8 @@
       "speaker_id": "1465"
     },
     "name": "Professor Burak",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/professor-burak/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18353,8 +18406,8 @@
       "speaker_id": "1466"
     },
     "name": "Ceylan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ceylan/sound_tr_ceylan.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ceylan/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18369,7 +18422,8 @@
       "speaker_id": "1467"
     },
     "name": "Professor Derya",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/professor-derya/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18384,8 +18438,8 @@
       "speaker_id": "1468"
     },
     "name": "Ela",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_ela/sound_tr_ela.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ela/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18400,8 +18454,8 @@
       "speaker_id": "1469"
     },
     "name": "Faruk",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_faruk/sound_tr_faruk.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/faruk/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18416,8 +18470,8 @@
       "speaker_id": "1470"
     },
     "name": "Kerim",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_kerim/sound_tr_kerim.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kerim/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18432,8 +18486,8 @@
       "speaker_id": "1471"
     },
     "name": "Melik",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/tr_melik/sound_tr_melik.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/melik/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18448,8 +18502,8 @@
       "speaker_id": "1472"
     },
     "name": "Aili",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_aili/sound_id_aili.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/aili/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18464,7 +18518,8 @@
       "speaker_id": "1473"
     },
     "name": "Alina A",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/alina-a/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18479,7 +18534,8 @@
       "speaker_id": "1474"
     },
     "name": "Alvia Meilina",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/alvia-meilina/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18494,8 +18550,8 @@
       "speaker_id": "1475"
     },
     "name": "Ando",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ando/sound_id_ando.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ando/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18506,12 +18562,12 @@
     "id": "v4-1476",
     "meta": {
       "api_version": "v4",
-      "preview_unavailable": "http 403",
       "slug": "ayu",
       "speaker_id": "1476"
     },
     "name": "Ayu",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ayu-2/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18526,7 +18582,8 @@
       "speaker_id": "1477"
     },
     "name": "Teacher Betcy",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-betcy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18541,7 +18598,8 @@
       "speaker_id": "1478"
     },
     "name": "Christa A",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/christa-a/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18556,7 +18614,8 @@
       "speaker_id": "1479"
     },
     "name": "Cut J",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/cut-j/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18571,8 +18630,8 @@
       "speaker_id": "1480"
     },
     "name": "Dania",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_dania/sound_id_dania.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dania/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18587,8 +18646,8 @@
       "speaker_id": "1481"
     },
     "name": "Della",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_della/sound_id_della.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/della/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18603,8 +18662,8 @@
       "speaker_id": "1482"
     },
     "name": "Dwi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_dwi/sound_id_dwi.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dwi/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18619,7 +18678,8 @@
       "speaker_id": "1483"
     },
     "name": "Dwi Rumi",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/dwi-rumi/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18634,7 +18694,8 @@
       "speaker_id": "1484"
     },
     "name": "Eka A",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/eka-a/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18649,7 +18710,8 @@
       "speaker_id": "1485"
     },
     "name": "Eni Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/eni-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18664,7 +18726,8 @@
       "speaker_id": "1486"
     },
     "name": "Fransesco Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/fransesco-seller/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18679,8 +18742,8 @@
       "speaker_id": "1487"
     },
     "name": "Gina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_gina/sound_id_gina.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/gina/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18695,7 +18758,8 @@
       "speaker_id": "1488"
     },
     "name": "Irly Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/irly-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18710,8 +18774,8 @@
       "speaker_id": "1489"
     },
     "name": "Irvan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_irvan/sound_id_irvan.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/irvan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18726,8 +18790,8 @@
       "speaker_id": "1490"
     },
     "name": "Lilis",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_lilis/sound_id_lilis.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/lilis/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18742,8 +18806,8 @@
       "speaker_id": "1491"
     },
     "name": "Mely",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_mely/sound_id_mely.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/mely/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18758,8 +18822,8 @@
       "speaker_id": "1492"
     },
     "name": "Mona",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_mona/sound_id_mona.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/mona/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18774,7 +18838,8 @@
       "speaker_id": "1493"
     },
     "name": "Muhammad Iqbal",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/muhammad-iqbal/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18789,7 +18854,8 @@
       "speaker_id": "1494"
     },
     "name": "Teacher Nahri S",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teacher-nahri-s/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18804,8 +18870,8 @@
       "speaker_id": "1495"
     },
     "name": "Nawra",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_nawra/sound_id_nawra.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nawra/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18820,7 +18886,8 @@
       "speaker_id": "1496"
     },
     "name": "Neni Rizka",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/neni-rizka/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18835,7 +18902,8 @@
       "speaker_id": "1497"
     },
     "name": "Nizarea Frey",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nizarea-frey/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18850,8 +18918,8 @@
       "speaker_id": "1498"
     },
     "name": "Ovy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ovy/sound_id_ovy.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ovy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18866,8 +18934,8 @@
       "speaker_id": "1499"
     },
     "name": "Paula",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_paula/sound_id_paula.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/paula/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18882,8 +18950,8 @@
       "speaker_id": "15"
     },
     "name": "Oto",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/15-oto.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/oto/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18898,8 +18966,8 @@
       "speaker_id": "1500"
     },
     "name": "Praptiwi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_praptiwi/sound_id_praptiwi.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/praptiwi/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18914,8 +18982,8 @@
       "speaker_id": "1501"
     },
     "name": "Rihad",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_rihad/sound_id_rihad.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rihad/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18930,7 +18998,8 @@
       "speaker_id": "1502"
     },
     "name": "Rina Seller",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rina-seller/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18945,7 +19014,8 @@
       "speaker_id": "1503"
     },
     "name": "Rini Rinjani",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rini-rinjani/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18960,8 +19030,8 @@
       "speaker_id": "1504"
     },
     "name": "Ruby",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ruby/sound_id_ruby.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ruby/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18976,8 +19046,8 @@
       "speaker_id": "1505"
     },
     "name": "Ryan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_ryan/sound_id_ryan.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ryan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -18992,7 +19062,8 @@
       "speaker_id": "1506"
     },
     "name": "Professor Sayid",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/professor-sayid/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19007,8 +19078,8 @@
       "speaker_id": "1507"
     },
     "name": "Shabrina",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_shabrina/sound_id_shabrina.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/shabrina/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19023,7 +19094,8 @@
       "speaker_id": "1508"
     },
     "name": "Professor Sheva David H",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/professor-sheva-david-h/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19038,7 +19110,8 @@
       "speaker_id": "1509"
     },
     "name": "Siti Q",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/siti-q/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19053,8 +19126,8 @@
       "speaker_id": "1510"
     },
     "name": "Titin",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_titin/sound_id_titin.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/titin/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19069,8 +19142,8 @@
       "speaker_id": "1511"
     },
     "name": "Umi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_umi/sound_id_umi.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/umi/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19085,8 +19158,8 @@
       "speaker_id": "1512"
     },
     "name": "Widha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_widha/sound_id_widha.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/widha/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19101,8 +19174,8 @@
       "speaker_id": "1513"
     },
     "name": "Zaipan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_zaipan/sound_id_zaipan.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/zaipan/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19117,8 +19190,8 @@
       "speaker_id": "1514"
     },
     "name": "Zizi",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/picture/id_zizi/sound_id_zizi.wav",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/zizi/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19133,8 +19206,8 @@
       "speaker_id": "16"
     },
     "name": "Hiro",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/16-hiro.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/hiro/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19149,8 +19222,8 @@
       "speaker_id": "17"
     },
     "name": "Ben",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/17-ben.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ben/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19165,8 +19238,8 @@
       "speaker_id": "18"
     },
     "name": "Sali",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/18-sali.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/sali/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19181,8 +19254,8 @@
       "speaker_id": "19"
     },
     "name": "Mr Bread",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/19-mr-bread.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/mr-bread/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19197,8 +19270,8 @@
       "speaker_id": "2"
     },
     "name": "Ava",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/02-ava.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ava/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19213,8 +19286,8 @@
       "speaker_id": "20"
     },
     "name": "Vanilla",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/20-vanilla.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/vanilla/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19229,8 +19302,8 @@
       "speaker_id": "21"
     },
     "name": "Ileen",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/21-ileen.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ileen/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19245,8 +19318,8 @@
       "speaker_id": "22"
     },
     "name": "Meow",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/22-meow.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/meow/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19261,8 +19334,8 @@
       "speaker_id": "23"
     },
     "name": "Jao Nerd",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/23-jao-nerd.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/jao-nerd/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19277,8 +19350,8 @@
       "speaker_id": "24"
     },
     "name": "Teddy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/24-teddy.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/teddy/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19293,8 +19366,8 @@
       "speaker_id": "25"
     },
     "name": "Ngam",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/25-ngam.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ngam/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19309,8 +19382,8 @@
       "speaker_id": "26"
     },
     "name": "Top",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/26-top.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/top/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19325,8 +19398,8 @@
       "speaker_id": "27"
     },
     "name": "Mani",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/27-mani.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/mani/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19341,8 +19414,8 @@
       "speaker_id": "28"
     },
     "name": "Ananda",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/28-ananda.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/ananda/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19357,8 +19430,8 @@
       "speaker_id": "29"
     },
     "name": "Know",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/29-know.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/know/sample-v4.mp3?r=1",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19373,8 +19446,8 @@
       "speaker_id": "3"
     },
     "name": "Smoke",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/03-smoke.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/smoke/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19389,8 +19462,8 @@
       "speaker_id": "30"
     },
     "name": "Kaew Northeast",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/30-kaew-northeast.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/kaew-northeast/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19405,8 +19478,8 @@
       "speaker_id": "31"
     },
     "name": "Uncle Warm",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/31-uncle-warm.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/uncle-warm/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19421,8 +19494,8 @@
       "speaker_id": "32"
     },
     "name": "Tee",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/32-tee.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/tee/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19437,8 +19510,8 @@
       "speaker_id": "33"
     },
     "name": "Toto",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/33-toto.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/toto/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19453,8 +19526,8 @@
       "speaker_id": "34"
     },
     "name": "Aekkarat",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/34-aekkarat.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/aekkarat/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19469,8 +19542,8 @@
       "speaker_id": "35"
     },
     "name": "Leo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/35-leo.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/leo/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19485,8 +19558,8 @@
       "speaker_id": "36"
     },
     "name": "Bio",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/36-bio.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/bio/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19501,8 +19574,8 @@
       "speaker_id": "37"
     },
     "name": "Timmy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/37-timmy.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/timmy/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19517,8 +19590,8 @@
       "speaker_id": "38"
     },
     "name": "Emma",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/38-emma.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/emma/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19533,8 +19606,8 @@
       "speaker_id": "39"
     },
     "name": "Chris",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/39-chris.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/chris/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19549,8 +19622,8 @@
       "speaker_id": "4"
     },
     "name": "Nadia",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/04-nadia.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nadia/sample-v4.mp3?r=1",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19565,8 +19638,8 @@
       "speaker_id": "40"
     },
     "name": "Michael",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/40-michael.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/michael/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19581,8 +19654,8 @@
       "speaker_id": "41"
     },
     "name": "Albert",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/41-albert.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/albert/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19597,8 +19670,8 @@
       "speaker_id": "42"
     },
     "name": "James",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/42-james.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/james/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19613,8 +19686,8 @@
       "speaker_id": "43"
     },
     "name": "John",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/43-john.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/john/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19629,8 +19702,8 @@
       "speaker_id": "44"
     },
     "name": "Joseph",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/44-joseph.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/joseph/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19645,8 +19718,8 @@
       "speaker_id": "45"
     },
     "name": "Rowan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/45-rowan.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/rowan/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19661,8 +19734,8 @@
       "speaker_id": "46"
     },
     "name": "Orion",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/46-orion.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/orion/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19677,8 +19750,8 @@
       "speaker_id": "47"
     },
     "name": "Tristan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/47-tristan.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/tristan/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19693,8 +19766,8 @@
       "speaker_id": "48"
     },
     "name": "William",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/48-william.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/william/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19709,8 +19782,8 @@
       "speaker_id": "49"
     },
     "name": "Andrew",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/49-andrew.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/andrew/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19725,8 +19798,8 @@
       "speaker_id": "5"
     },
     "name": "Neo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/05-neo.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/neo/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19741,8 +19814,8 @@
       "speaker_id": "50"
     },
     "name": "Morgan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/50-morgan.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/morgan/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19757,8 +19830,8 @@
       "speaker_id": "51"
     },
     "name": "Remy",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/51-remy.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/remy/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19773,8 +19846,8 @@
       "speaker_id": "52"
     },
     "name": "Fiona",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/52-fiona.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/fiona/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19789,8 +19862,8 @@
       "speaker_id": "53"
     },
     "name": "Amanda",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/53-amanda.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/amanda/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19805,8 +19878,8 @@
       "speaker_id": "54"
     },
     "name": "Amber",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/54-amber.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/amber/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19821,8 +19894,8 @@
       "speaker_id": "55"
     },
     "name": "Christa",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/55-christa.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/christa/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19837,8 +19910,8 @@
       "speaker_id": "56"
     },
     "name": "Noelle",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/56-noelle.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/noelle/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19853,8 +19926,8 @@
       "speaker_id": "57"
     },
     "name": "Jules",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/57-jules.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/jules/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19869,8 +19942,8 @@
       "speaker_id": "58"
     },
     "name": "Amb",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/58-amb.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/amb/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19885,8 +19958,8 @@
       "speaker_id": "59"
     },
     "name": "Aonnie",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/59-aonnie.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/aonnie/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19901,8 +19974,8 @@
       "speaker_id": "6"
     },
     "name": "Bow",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/06-bow.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/bow/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19917,8 +19990,8 @@
       "speaker_id": "60"
     },
     "name": "Applepie",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/60-applepie.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/applepie/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19933,8 +20006,8 @@
       "speaker_id": "61"
     },
     "name": "Care",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/61-care.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/care/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19949,8 +20022,8 @@
       "speaker_id": "62"
     },
     "name": "Cream",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/62-cream.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/cream/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19965,8 +20038,8 @@
       "speaker_id": "63"
     },
     "name": "Naii",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/63-naii.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/naii/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19981,8 +20054,8 @@
       "speaker_id": "64"
     },
     "name": "Nemo",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/64-nemo.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nemo/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -19997,8 +20070,8 @@
       "speaker_id": "65"
     },
     "name": "Nin",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/65-nin.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/nin/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20013,8 +20086,8 @@
       "speaker_id": "66"
     },
     "name": "Grandpa Udom",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/66-grandpa-udom.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/grandpa-udom/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20029,8 +20102,8 @@
       "speaker_id": "67"
     },
     "name": "Grandpa Charn",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/67-grandpa-charn.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/grandpa-charn/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20045,8 +20118,8 @@
       "speaker_id": "68"
     },
     "name": "Grandma Napha",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/68-grandma-napha.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/grandma-napha/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20061,8 +20134,8 @@
       "speaker_id": "69"
     },
     "name": "Grandma Sai",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/69-grandma-sai.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/grandma-sai/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20077,8 +20150,8 @@
       "speaker_id": "7"
     },
     "name": "Alan",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/07-alan.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/alan/sample-v4.mp3?r=5",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20093,8 +20166,8 @@
       "speaker_id": "70"
     },
     "name": "Grandpa Thana",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/70-grandpa-thana.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/grandpa-thana/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20109,7 +20182,8 @@
       "speaker_id": "71"
     },
     "name": "Bio Flagship",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/belle/sample-v4.wav?r=6",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20124,7 +20198,8 @@
       "speaker_id": "72"
     },
     "name": "Monk Kanthana",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/monk-kanthana/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20139,7 +20214,8 @@
       "speaker_id": "73"
     },
     "name": "Monk Kitsanha",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/monk-kitsanha/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20154,7 +20230,8 @@
       "speaker_id": "74"
     },
     "name": "Monk Paradon",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/monk-paradon/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20169,7 +20246,8 @@
       "speaker_id": "75"
     },
     "name": "Monk Sanugron",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/monk-sanugron/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20184,7 +20262,8 @@
       "speaker_id": "76"
     },
     "name": "Monk Somha",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/monk-somha/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20199,7 +20278,8 @@
       "speaker_id": "77"
     },
     "name": "Monk Suwapon",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/monk-suwapon/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20214,7 +20294,8 @@
       "speaker_id": "78"
     },
     "name": "Monk Thawee",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/monk-thawee/sample-v4.mp3?r=4",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20229,8 +20310,8 @@
       "speaker_id": "8"
     },
     "name": "Yingaiko",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/08-yingaiko.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/yingaiko/sample-v4.mp3?r=2",
+    "updated_at": "2026-11-22"
   },
   {
     "category": "premade",
@@ -20245,7 +20326,7 @@
       "speaker_id": "9"
     },
     "name": "Aunty Grace",
-    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/v4-samples/09-aunty-grace.mp3",
-    "updated_at": "2026-11-18"
+    "preview_url": "https://botnoi-voice.s3.ap-southeast-1.amazonaws.com/characters/aunty-grace/sample-v4.mp3?r=3",
+    "updated_at": "2026-11-22"
   }
 ]

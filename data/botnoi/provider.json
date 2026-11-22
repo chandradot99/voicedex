@@ -12,7 +12,7 @@
   ],
   "headquarters": "TH",
   "id": "botnoi",
-  "last_synced": "2026-11-18",
+  "last_synced": "2026-11-22",
   "links": {
     "api_reference": "https://voice.botnoi.ai/developer/api",
     "docs": "https://voice.botnoi.ai/llms.txt",
@@ -22,7 +22,7 @@
   "source": "mixed",
   "type": "tts",
   "voices_source": {
-    "as_of": "2026-11-18",
+    "as_of": "2026-11-22",
     "method": "api",
     "urls": [
       "https://api-voice.botnoi.ai/openapi/v1/get_speaker_data",
