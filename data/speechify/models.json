@@ -363,6 +363,7 @@
       "ssml",
       "voice_cloning"
     ],
+    "deprecated_at": "2026-11-22",
     "description": "Legacy Simba 1.6 English model with full SSML including emphasis and emotion styles; only selectable on API versions before 2026-09-21.",
     "eol_date": "2026-11-21",
     "first_seen": "2026-11-16",
@@ -373,6 +374,7 @@
     "languages": [
       "en"
     ],
+    "lifecycle": "deprecated",
     "meta": {
       "deprecation_notice": "Simba 1.6 model retired from API version 2026-09-21 (400 model_retired); workspaces pinned earlier keep it until 2026-11-21, after which the id is served by current models.",
       "fine_tuned_cloning": "contact sales",
@@ -391,13 +393,14 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-22"
   },
   {
     "capabilities": [
       "ssml",
       "voice_cloning"
     ],
+    "deprecated_at": "2026-11-22",
     "description": "Legacy Simba 1.6 multilingual model with in-sentence language mixing; only selectable on API versions before 2026-09-21.",
     "eol_date": "2026-11-21",
     "first_seen": "2026-11-16",
@@ -438,6 +441,7 @@
       "ur-IN",
       "vi-VN"
     ],
+    "lifecycle": "deprecated",
     "meta": {
       "beta_languages": [
         "ar-AE",
@@ -483,6 +487,6 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-22"
   }
 ]
