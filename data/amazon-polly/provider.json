@@ -17,6 +17,25 @@
   ],
   "headquarters": "US",
   "id": "amazon-polly",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin (aws)",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/aws/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/aws"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://docs.aws.amazon.com/polly/latest/APIReference/Welcome.html",

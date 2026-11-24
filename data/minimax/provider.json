@@ -11,6 +11,41 @@
   ],
   "headquarters": "CN",
   "id": "minimax",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/minimax/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/minimax"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.vapi.ai/providers/voice/minimax"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "retell",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.retellai.com/build/voice"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://platform.minimax.io/docs/api-reference/speech-t2a-http",

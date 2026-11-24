@@ -10,6 +10,18 @@
     "https://spitch.app/docs/concepts/voices"
   ],
   "id": "spitch",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/stt/spitch/"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://api.spitch.app/openapi.json",

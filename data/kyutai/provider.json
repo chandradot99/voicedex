@@ -7,6 +7,17 @@
   "description": "Non-profit AI research lab in Paris that releases speech models as open weights (Moshi full-duplex speech model, streaming STT and TTS), mostly under CC-BY-4.0. Its commercial spin-off Gradium sells a hosted API and is listed separately.",
   "headquarters": "FR",
   "id": "kyutai",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "notes": "Pocket TTS (kyutai-labs pocket-tts), runs locally",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/pocket-tts"
+    }
+  ],
   "last_synced": "2026-11-18",
   "name": "Kyutai",
   "source": "api",

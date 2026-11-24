@@ -14,6 +14,27 @@
   ],
   "headquarters": "FR",
   "id": "gradium",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin + LiveKit Inference (TTS)",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/stt/gradium/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/gradium"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://docs.gradium.ai/api-reference/introduction",

@@ -14,6 +14,25 @@
   ],
   "headquarters": "US",
   "id": "amazon-transcribe",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin (aws)",
+      "types": [
+        "stt"
+      ],
+      "url": "https://docs.livekit.io/agents/models/stt/aws/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "stt"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/aws"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://docs.aws.amazon.com/transcribe/latest/APIReference/Welcome.html",

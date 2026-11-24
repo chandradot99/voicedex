@@ -18,6 +18,51 @@
   ],
   "headquarters": "US",
   "id": "openai",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin + LiveKit Inference (STT, Realtime, GPT-Live)",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/realtime/openai/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "notes": "Also local Whisper STT service; S2S: Realtime and GPT-Live",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/openai"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "notes": "STT/TTS: /providers/transcriber/openai, /providers/voice/openai",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.vapi.ai/openai-realtime"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "retell",
+      "notes": "TTS: tts-1/gpt-4o-mini-tts; STS: gpt-realtime family + GPT Live",
+      "types": [
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.retellai.com/build/gpt-live"
+    }
+  ],
   "last_synced": "2026-11-20",
   "links": {
     "api_reference": "https://developers.openai.com/api/reference",
