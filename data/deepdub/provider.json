@@ -6,6 +6,7 @@
   ],
   "description": "Deepdub, co-founded by Ofir Krakowski (CEO) and Nir Krakowski (CTO), builds emotive text-to-speech (eTTS) models with voice cloning and accent control, alongside AI-assisted managed dubbing and live dubbing services. The TTS API is served over REST and WebSocket from US and EU regions; production API keys are issued through sales, with a rate-limited free trial key.",
   "docs_urls": [
+    "https://docs.deepdub.ai/api-reference/stt/realtime.md",
     "https://docs.deepdub.ai/sdk.md",
     "https://docs.deepdub.ai/sdk-javascript.md",
     "https://docs.deepdub.ai/api-reference/tts/generate-and-stream-tts-audio.md",
@@ -14,7 +15,7 @@
     "https://docs.deepdub.ai/voice-presets.md"
   ],
   "id": "deepdub",
-  "last_synced": "2026-11-18",
+  "last_synced": "2026-11-24",
   "links": {
     "api_reference": "https://docs.deepdub.ai/api-reference/tts/generate-and-stream-tts-audio",
     "docs": "https://docs.deepdub.ai/introduction"
@@ -25,11 +26,12 @@
     "eu"
   ],
   "source": "docs",
-  "type": "tts",
+  "type": "both",
   "voices_source": {
-    "as_of": "2026-11-18",
+    "as_of": "2026-11-24",
     "method": "docs",
     "urls": [
+      "https://docs.deepdub.ai/api-reference/stt/realtime.md",
       "https://docs.deepdub.ai/sdk.md",
       "https://docs.deepdub.ai/sdk-javascript.md",
       "https://docs.deepdub.ai/api-reference/tts/generate-and-stream-tts-audio.md",

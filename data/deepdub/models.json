@@ -1,6 +1,80 @@
 [
   {
     "audio_formats": [
+      "aac",
+      "alaw",
+      "flac",
+      "m4a",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection"
+    ],
+    "description": "Real-time speech-to-text over WebSocket for Hebrew and English with per-utterance language detection.",
+    "first_seen": "2026-11-24",
+    "id": "stt-egf",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "he",
+      "en"
+    ],
+    "meta": {
+      "containers": [
+        "auto",
+        "wav",
+        "ogg",
+        "flac",
+        "mp3",
+        "webm",
+        "aac",
+        "m4a",
+        "amr",
+        "mp4"
+      ],
+      "context_terms_max": 200,
+      "docs_sources": [
+        "https://docs.deepdub.ai/api-reference/stt/realtime.md"
+      ],
+      "endpoint": "wss://wsgw.deepdub.ai/transcribe-websocket",
+      "max_session_hours": 5,
+      "partial_results": true,
+      "raw_encodings": [
+        "pcm_s16le",
+        "pcm_f32le",
+        "pcm_mulaw",
+        "pcm_alaw"
+      ],
+      "speaker_diarization": "not supported (rejected)",
+      "token_timestamps": true
+    },
+    "name": "Deepdub Realtime STT",
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.deepdub.ai/api-reference/stt/realtime.md",
+        "https://docs.deepdub.ai/sdk.md",
+        "https://docs.deepdub.ai/sdk-javascript.md",
+        "https://docs.deepdub.ai/api-reference/tts/generate-and-stream-tts-audio.md",
+        "https://docs.deepdub.ai/api-reference/websocket/overview.md",
+        "https://docs.deepdub.ai/api-reference/websocket/streaming.md",
+        "https://docs.deepdub.ai/voice-presets.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
       "mp3",
       "mulaw",
       "opus",

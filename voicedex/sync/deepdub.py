@@ -1,5 +1,6 @@
 """
-Deepdub — eTTS (emotive text-to-speech) models over REST and WebSocket, with voice cloning and accent control.
+Deepdub — eTTS (emotive text-to-speech) models over REST and WebSocket, with voice cloning and accent control,
+plus realtime Hebrew/English speech-to-text over WebSocket.
 
 Source: docs (docs.deepdub.ai; index at https://docs.deepdub.ai/llms.txt). Model ids are listed in the SDK
 reference; supported locales, formats and sample rates in the REST API reference. Stock voices are the curated
@@ -21,11 +22,16 @@ class DeepdubSyncer(DocsOnlySyncer):
         _DOCS + "api-reference/websocket/overview.md",
         _DOCS + "api-reference/websocket/streaming.md",
     ]
+    stt_docs = [_DOCS + "api-reference/stt/realtime.md"]
     voices_docs = [_DOCS + "voice-presets.md"]
     tts_guidance = (
         "Return every model id in the SDK 'Available Models' table. Languages are the locale table in the REST "
         "API reference; formats and sample rates from the REST and WebSocket references. Default only the model "
         "the docs mark as default. No prices unless Deepdub publishes a per-unit rate."
+    )
+    stt_guidance = (
+        "Return every speech-to-text model id the realtime STT WebSocket accepts (exact ids). Languages, "
+        "encodings and limits from the realtime reference. No prices unless Deepdub publishes a per-unit rate."
     )
     voices_guidance = (
         "Return every voice preset row (Voice Prompt ID is the exact voice_id); language from the section "
