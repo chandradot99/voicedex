@@ -3,6 +3,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search (cost-optimized tier).",
     "family": "qwen-audio-realtime",
     "first_seen": "2026-11-16",
@@ -28,6 +36,10 @@
     ],
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
+      "capability_notes": {
+        "custom_vocabulary": "instant hotwords",
+        "turn_detection": "server_vad or semantic smart_turn / smart_turn_v2"
+      },
       "chinese_dialects": [
         "Mandarin",
         "Cantonese",
@@ -57,7 +69,10 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
@@ -135,6 +150,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search.",
     "family": "qwen-audio-realtime",
     "first_seen": "2026-11-16",
@@ -160,6 +183,10 @@
     ],
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
+      "capability_notes": {
+        "custom_vocabulary": "instant hotwords",
+        "turn_detection": "server_vad or semantic smart_turn / smart_turn_v2"
+      },
       "chinese_dialects": [
         "Mandarin",
         "Cantonese",
@@ -189,7 +216,10 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
@@ -267,6 +297,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search (cost-optimized tier).",
     "family": "qwen-audio-realtime",
     "first_seen": "2026-11-16",
@@ -295,6 +333,10 @@
     ],
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
+      "capability_notes": {
+        "custom_vocabulary": "instant hotwords",
+        "turn_detection": "server_vad or semantic smart_turn / smart_turn_v2"
+      },
       "chinese_dialects": [
         "Mandarin",
         "Cantonese",
@@ -325,7 +367,10 @@
       "deployment_scope": "International",
       "docs_sources": [
         "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
-        "https://www.alibabacloud.com/help/en/model-studio/models"
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
@@ -410,6 +455,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "End-to-end full-duplex real-time voice conversation model with function calling and web search.",
     "family": "qwen-audio-realtime",
     "first_seen": "2026-11-16",
@@ -438,6 +491,10 @@
     ],
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
+      "capability_notes": {
+        "custom_vocabulary": "instant hotwords",
+        "turn_detection": "server_vad or semantic smart_turn / smart_turn_v2"
+      },
       "chinese_dialects": [
         "Mandarin",
         "Cantonese",
@@ -469,7 +526,9 @@
       "docs_sources": [
         "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
         "https://www.alibabacloud.com/help/en/model-studio/models",
-        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides"
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
@@ -554,6 +613,11 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "Previous-generation Qwen3-Omni real-time model snapshot over WebSocket.",
     "family": "qwen3-omni-flash-realtime",
     "first_seen": "2026-11-16",
@@ -579,6 +643,10 @@
     ],
     "meta": {
       "audio_tokens": "12.5 tokens/s input and output",
+      "capability_notes": {
+        "turn_detection": "server_vad",
+        "video_input": "image frames via input_image_buffer.append"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -592,7 +660,10 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
@@ -671,6 +742,15 @@
   },
   {
     "alias_of": "qwen3.5-livetranslate-flash-realtime-2026-05-19",
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "transcription",
+      "translation",
+      "turn_detection",
+      "video_input",
+      "voice_cloning"
+    ],
     "description": "Real-time speech (and video-assisted) translation model that outputs translated text and speech, with real-time voice cloning of the speaker.",
     "first_seen": "2026-11-16",
     "id": "qwen3.5-livetranslate-flash-realtime",
@@ -743,6 +823,11 @@
     ],
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
+      "capability_notes": {
+        "custom_vocabulary": "hotwords (fixed translations)",
+        "language_detection": "source language auto-detected",
+        "voice_cloning": "real-time cloning of the speaker, or a pre-cloned voice"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -753,7 +838,9 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
@@ -854,6 +941,14 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "transcription",
+      "translation",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Real-time speech (and video-assisted) translation model that outputs translated text and speech, with real-time voice cloning of the speaker.",
     "family": "qwen3.5-livetranslate-flash-realtime",
     "first_seen": "2026-11-16",
@@ -927,6 +1022,11 @@
     ],
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
+      "capability_notes": {
+        "custom_vocabulary": "hotwords (fixed translations)",
+        "language_detection": "source language auto-detected",
+        "voice_cloning": "real-time cloning of the speaker, or a pre-cloned voice"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -937,7 +1037,9 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
@@ -1044,6 +1146,13 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input",
+      "voice_cloning"
+    ],
     "description": "Qwen3.5-Omni Flash real-time multimodal voice conversation model (stable name).",
     "first_seen": "2026-11-16",
     "id": "qwen3.5-omni-flash-realtime",
@@ -1087,6 +1196,10 @@
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
       "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "capability_notes": {
+        "turn_detection": "server_vad or semantic_vad",
+        "video_input": "image frames (~1 fps)"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -1100,7 +1213,12 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-omni-voice-cloning-user-guide"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
@@ -1190,6 +1308,12 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "Dated snapshot of Qwen3.5-Omni Flash Realtime.",
     "family": "qwen3.5-omni-flash-realtime",
     "first_seen": "2026-11-16",
@@ -1234,6 +1358,10 @@
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
       "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "capability_notes": {
+        "turn_detection": "server_vad or semantic_vad",
+        "video_input": "image frames (~1 fps)"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -1247,7 +1375,11 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
@@ -1339,6 +1471,13 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input",
+      "voice_cloning"
+    ],
     "description": "Qwen3.5-Omni Plus real-time multimodal voice conversation model (stable name).",
     "first_seen": "2026-11-16",
     "id": "qwen3.5-omni-plus-realtime",
@@ -1382,6 +1521,10 @@
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
       "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "capability_notes": {
+        "turn_detection": "server_vad or semantic_vad",
+        "video_input": "image frames (~1 fps)"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -1395,7 +1538,12 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-omni-voice-cloning-user-guide"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
@@ -1490,6 +1638,12 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "Dated snapshot of Qwen3.5-Omni Plus Realtime.",
     "family": "qwen3.5-omni-plus-realtime",
     "first_seen": "2026-11-16",
@@ -1534,6 +1688,10 @@
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
       "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "capability_notes": {
+        "turn_detection": "server_vad or semantic_vad",
+        "video_input": "image frames (~1 fps)"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -1547,7 +1705,11 @@
       ],
       "deployment_scope": "International",
       "docs_sources": [
-        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
@@ -1634,6 +1796,15 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "transcription",
+      "translation",
+      "turn_detection",
+      "video_input",
+      "voice_cloning"
+    ],
     "description": "Real-time speech (and video-assisted) translation model that outputs translated text and speech, with real-time voice cloning of the speaker.",
     "first_seen": "2026-11-16",
     "id": "qwen3.8-livetranslate-flash-realtime",
@@ -1706,6 +1877,12 @@
     ],
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
+      "capability_notes": {
+        "custom_vocabulary": "hotwords (fixed translations)",
+        "language_detection": "source language auto-detected",
+        "turn_detection": "speaker_detection (server-side)",
+        "voice_cloning": "real-time cloning of the speaker, or a pre-cloned voice"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -1715,6 +1892,10 @@
         "Singapore"
       ],
       "deployment_scope": "International",
+      "docs_sources": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-livetranslate-flash-realtime"
+      ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-livetranslate-flash-realtime",
         "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-livetranslate-flash-realtime",
@@ -1815,11 +1996,19 @@
       "asia"
     ],
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
       "pcm"
+    ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input",
+      "voice_cloning"
     ],
     "description": "Full-duplex real-time omni model that takes text, image, streaming audio and video and returns text and speech, with tools, MCP and web search.",
     "first_seen": "2026-11-16",
@@ -1865,6 +2054,10 @@
     "meta": {
       "also_via": "AOQ (AI over QUIC)",
       "audio_tokens": "input 7 tokens/s, output 12.5 tokens/s",
+      "capability_notes": {
+        "function_calling": "custom functions and remote MCP tools",
+        "turn_detection": "server_vad, semantic_vad or semantic_vad_ec"
+      },
       "chinese_dialects": [
         "Sichuan",
         "Beijing",
@@ -1879,7 +2072,12 @@
       "deployment_scope": "International",
       "docs_sources": [
         "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
-        "https://www.alibabacloud.com/help/en/model-studio/models"
+        "https://www.alibabacloud.com/help/en/model-studio/models",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash-realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/realtime",
+        "https://www.alibabacloud.com/help/en/model-studio/client-events",
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-omni-voice-cloning-user-guide",
+        "https://www.alibabacloud.com/help/en/model-studio/s2s-model"
       ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/s2s-model",
@@ -4641,6 +4839,9 @@
       "opus",
       "pcm"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Qwen3-TTS real-time WebSocket speech synthesis with incremental text input.",
     "family": "qwen3-tts",
     "first_seen": "2026-11-16",
@@ -4664,6 +4865,9 @@
       "ru"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speech_rate and pitch_rate 0.5-2.0"
+      },
       "chinese_dialects": [
         "Beijing",
         "Sichuan",
@@ -4675,6 +4879,9 @@
         "Singapore"
       ],
       "deployment_scope": "International",
+      "docs_sources": [
+        "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-realtime-client-events"
+      ],
       "docs_urls": [
         "https://www.alibabacloud.com/help/en/model-studio/tts-model",
         "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-realtime-client-events",
@@ -4722,6 +4929,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]
