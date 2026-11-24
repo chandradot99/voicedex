@@ -4,6 +4,9 @@
       "mp3",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Botnoi's classic voice generation with the widest choice of voices and languages at the lowest point cost.",
     "first_seen": "2026-11-18",
     "id": "v1",
@@ -37,9 +40,13 @@
     ],
     "max_text_chars": 500,
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed 0.5-2.0, volume"
+      },
       "docs": "https://voice.botnoi.ai/llms.txt",
       "docs_sources": [
-        "https://voice.botnoi.ai/llms.txt"
+        "https://voice.botnoi.ai/llms.txt",
+        "https://voice.botnoi.ai/llm.txt"
       ],
       "endpoint": "POST https://api-voice.botnoi.ai/openapi/v1/generate_audio",
       "price_points": "API: 0.1 points per letter (0.05 for subscribers), spaces not counted, rounded up per request; some speakers carry a price multiplier.",
@@ -68,6 +75,9 @@
       "mp3",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Botnoi's premium natural-sounding voice generation for Thai and English.",
     "first_seen": "2026-11-18",
     "id": "v2",
@@ -81,9 +91,13 @@
     ],
     "max_text_chars": 500,
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed 0.5-2.0, volume"
+      },
       "docs": "https://voice.botnoi.ai/llms.txt",
       "docs_sources": [
-        "https://voice.botnoi.ai/llms.txt"
+        "https://voice.botnoi.ai/llms.txt",
+        "https://voice.botnoi.ai/llm.txt"
       ],
       "endpoint": "POST https://api-voice.botnoi.ai/openapi/v1/generate_audio_v2",
       "price_points": "API: 0.2 points per letter (0.1 for subscribers), rounded up per request.",
