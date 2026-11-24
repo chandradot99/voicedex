@@ -1,5 +1,12 @@
 [
   {
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Ultravox Realtime speech-native voice model built on Llama 3.3 70B.",
     "first_seen": "2026-11-18",
     "id": "ultravox-v0.6",
@@ -46,7 +53,17 @@
         "serverWebSocket",
         "telephony (Twilio, Telnyx, Plivo, Exotel, SIP)"
       ],
+      "capability_notes": {
+        "function_calling": "Ultravox Realtime platform feature, all model strings"
+      },
       "docs": "https://docs.ultravox.ai/changelog/news",
+      "docs_sources": [
+        "https://docs.ultravox.ai/overview",
+        "https://docs.ultravox.ai/tools/overview",
+        "https://docs.ultravox.ai/noise/understanding-vad",
+        "https://docs.ultravox.ai/voices/cloning",
+        "https://docs.ultravox.ai/changelog/news"
+      ],
       "product": "Ultravox"
     },
     "name": "Ultravox v0.6 (Llama 3.3 70B)",
@@ -77,9 +94,16 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Ultravox Realtime speech-native voice model built on Gemma 3 27B.",
     "family": "ultravox-v0.6",
     "first_seen": "2026-11-18",
@@ -126,7 +150,17 @@
         "serverWebSocket",
         "telephony (Twilio, Telnyx, Plivo, Exotel, SIP)"
       ],
+      "capability_notes": {
+        "function_calling": "Ultravox Realtime platform feature, all model strings"
+      },
       "docs": "https://docs.ultravox.ai/changelog/news",
+      "docs_sources": [
+        "https://docs.ultravox.ai/overview",
+        "https://docs.ultravox.ai/tools/overview",
+        "https://docs.ultravox.ai/noise/understanding-vad",
+        "https://docs.ultravox.ai/voices/cloning",
+        "https://docs.ultravox.ai/changelog/news"
+      ],
       "product": "Ultravox"
     },
     "name": "Ultravox v0.6 (Gemma 3 27B)",
@@ -157,9 +191,16 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Ultravox Realtime speech-native voice model built on GLM 4.6; the platform default since 2025-12-22.",
     "first_seen": "2026-11-18",
     "id": "ultravox-v0.7",
@@ -208,7 +249,17 @@
         "serverWebSocket",
         "telephony (Twilio, Telnyx, Plivo, Exotel, SIP)"
       ],
+      "capability_notes": {
+        "function_calling": "Ultravox Realtime platform feature, all model strings"
+      },
       "docs": "https://docs.ultravox.ai/changelog/news",
+      "docs_sources": [
+        "https://docs.ultravox.ai/overview",
+        "https://docs.ultravox.ai/tools/overview",
+        "https://docs.ultravox.ai/noise/understanding-vad",
+        "https://docs.ultravox.ai/voices/cloning",
+        "https://docs.ultravox.ai/changelog/news"
+      ],
       "product": "Ultravox"
     },
     "name": "Ultravox v0.7 (GLM 4.6)",
@@ -239,7 +290,7 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
