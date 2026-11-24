@@ -1120,7 +1120,7 @@ h1.with-logo { display: flex; gap: 14px; }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 @media (prefers-reduced-motion: no-preference) {
-  .hero-band::before { animation: ripple 3.2s linear infinite; }
+  .hero-band::before { animation: ripple 10s linear infinite; }
   @keyframes ripple { from { --ripple: 0px; } to { --ripple: 56px; } }
 }
 
@@ -1374,3 +1374,4 @@ h1.with-logo { display: flex; gap: 14px; }
     radial-gradient(420px circle at var(--cx) var(--cy), var(--glow), transparent 70%),
     radial-gradient(1000px 700px at var(--cx) var(--cy), var(--glow-2), transparent 70%);
 }
+.hero-strip { border-top: 0; }

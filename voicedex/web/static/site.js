@@ -578,7 +578,7 @@ document.addEventListener("formdata", (e) => {
   const band = fig.closest(".hero-band");
   const fcv = band ? document.createElement("canvas") : null;
   const fctx = fcv && fcv.getContext("2d");
-  let field = [], FW = 0, FH = 0, px = 0, py = 0;
+  let field = [], FW = 0, FH = 0;
   const fieldImgs = {};
   if (fcv) { fcv.className = "hero-field"; fcv.setAttribute("aria-hidden", "true"); band.prepend(fcv); }
   const rand = (seed) => () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;     // stable layout
@@ -606,12 +606,12 @@ document.addEventListener("formdata", (e) => {
       if (strip && y > strip.top - b.top - pad) return true;
       return Math.hypot(x - rc.x, y - rc.y) < rc.r + s;
     };
-    const rnd = rand(9173), want = FW < 760 ? 14 : 40;
+    const rnd = rand(9173), want = FW < 760 ? 10 : 24;
     const order = data.map((d, i) => i).filter((i) => data[i].logo).sort((i, j) => (data[j].pop - data[i].pop) || (data[j].n - data[i].n));
     field = [];
     for (let tries = 0; field.length < Math.min(want, order.length) && tries < 4000; tries++) {
       const s = 20 + rnd() * 16, x = 12 + rnd() * (FW - 24), y = 12 + rnd() * (FH - 24);
-      if (blocked(x, y, s) || field.some((f) => Math.hypot(f.x - x, f.y - y) < (f.s + s) * 1.25)) continue;
+      if (blocked(x, y, s) || field.some((f) => Math.hypot(f.x - x, f.y - y) < (f.s + s) * 2.2)) continue;   // airy spacing
       field.push({ i: order[field.length], x, y, s, ph: rnd() * 6.28, z: 0.4 + rnd() * 0.6 });
     }
     field.forEach((f) => {
@@ -621,34 +621,19 @@ document.addEventListener("formdata", (e) => {
       im.addEventListener("load", () => { fieldImgs[d.id] = { color: im, mute: muted(im) }; if (still || !running) draw(performance.now()); });
     });
   };
-  const drawField = (t, active) => {
+  const drawField = (t) => {                                     // quiet backdrop: muted, slow, never highlighted
     if (!fctx || !FW) return;
     fctx.clearRect(0, 0, FW, FH);
-    const ring = fig.getBoundingClientRect(), b = band.getBoundingClientRect();
-    const cx = ring.left - b.left + ring.width / 2, cy = ring.top - b.top + ring.height / 2;
     for (const f of field) {
       const im = fieldImgs[data[f.i].id];
       if (!im) continue;
-      const on = f.i === active;
-      const dx = still ? 0 : Math.sin(t * 0.00031 + f.ph) * 5 - px * 14 * f.z;
-      const dy = still ? 0 : Math.cos(t * 0.00027 + f.ph) * 7 - py * 10 * f.z;
-      const x = f.x + dx, y = f.y + dy, s = on ? f.s * 1.25 : f.s;
-      if (on) {                                                // signal line to the ring's centre
-        const g = fctx.createLinearGradient(x, y, cx, cy);
-        g.addColorStop(0, colors.amber + "aa"); g.addColorStop(1, colors.amber + "00");
-        fctx.strokeStyle = g; fctx.lineWidth = 1; fctx.setLineDash([3, 5]);
-        fctx.beginPath(); fctx.moveTo(x, y); fctx.lineTo(cx, cy); fctx.stroke(); fctx.setLineDash([]);
-        fctx.shadowColor = colors.amber; fctx.shadowBlur = 18;
-      }
-      fctx.globalAlpha = on ? 1 : 0.11 * (0.55 + 0.45 * f.z);              // nearer logos a touch brighter
-      fctx.save(); fctx.beginPath(); fctx.roundRect(x - s / 2, y - s / 2, s, s, s * 0.24); fctx.clip();
-      fctx.drawImage(on ? im.color : im.mute, x - s / 2, y - s / 2, s, s); fctx.restore();
-      fctx.shadowBlur = 0; fctx.globalAlpha = 1;
+      const x = f.x + (still ? 0 : Math.sin(t * 0.00009 + f.ph) * 4), y = f.y + (still ? 0 : Math.cos(t * 0.00008 + f.ph) * 5);
+      fctx.globalAlpha = 0.07 + 0.04 * f.z;
+      fctx.save(); fctx.beginPath(); fctx.roundRect(x - f.s / 2, y - f.s / 2, f.s, f.s, f.s * 0.24); fctx.clip();
+      fctx.drawImage(im.mute, x - f.s / 2, y - f.s / 2, f.s, f.s); fctx.restore();
     }
+    fctx.globalAlpha = 1;
   };
-  if (band && !still) band.addEventListener("pointermove", (e) => {     // a little depth when the pointer moves
-    const b = band.getBoundingClientRect(); px = (e.clientX - b.left) / b.width - 0.5; py = (e.clientY - b.top) / b.height - 0.5;
-  });
 
   const draw = (t) => {
     if (!W) return;
@@ -659,7 +644,7 @@ document.addEventListener("formdata", (e) => {
     let lead = -1, leadDa = 9;
     for (let i = 0; i < N; i++) {
       const d = data[i], a = angleOf(i);
-      const wob = still ? 0 : 0.11 * Math.sin(t * 0.0023 + i * 0.57) + 0.07 * Math.sin(t * 0.0041 + i * 1.73);
+      const wob = still ? 0 : 0.055 * Math.sin(t * 0.0011 + i * 0.57) + 0.035 * Math.sin(t * 0.0019 + i * 1.73);
       const len = (outer - inner) * share(d) * (1 + wob);
       const da = (((sweep - a) % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);    // 0 at the sweep, grows behind it
       const glow = still ? 0 : Math.max(0, 1 - da / 1.1);
@@ -667,14 +652,14 @@ document.addEventListener("formdata", (e) => {
       ctx.globalAlpha = hot ? 1 : 0.35 + 0.65 * glow * glow;           // amber is level: dim at rest, full in the sweep
       ctx.strokeStyle = colors.amber;
       ctx.lineWidth = width;
-      ctx.shadowColor = colors.amber; ctx.shadowBlur = hot || glow > 0.55 ? 12 * Math.max(glow, hot ? 1 : 0) : 0;
+      ctx.shadowColor = colors.amber; ctx.shadowBlur = hot || glow > 0.7 ? 6 * Math.max(glow, hot ? 1 : 0) : 0;
       const cs = Math.cos(a), sn = Math.sin(a);
       ctx.beginPath(); ctx.moveTo(c + cs * inner, c + sn * inner); ctx.lineTo(c + cs * (inner + len), c + sn * (inner + len)); ctx.stroke();
       ctx.shadowBlur = 0;
       if (d.pop && da < leadDa) { leadDa = da; lead = i; }
       const im = withLogo.has(i) && imgs[d.id];
       if (im && im.complete && im.naturalWidth) {
-        ctx.globalAlpha = hot ? 1 : 0.5 + 0.5 * glow;
+        ctx.globalAlpha = hot ? 1 : 0.55;
         const r = inner + len + logo * 0.95;                                    // rides just past its own bar's tip
         const x = c + cs * r - logo / 2, y = c + sn * r - logo / 2;
         ctx.save(); ctx.beginPath(); ctx.roundRect(x, y, logo, logo, logo * 0.22); ctx.clip(); ctx.drawImage(im, x, y, logo, logo); ctx.restore();
@@ -683,13 +668,13 @@ document.addEventListener("formdata", (e) => {
     ctx.globalAlpha = 1;
     const active = hover >= 0 ? hover : (still ? peak : lead);
     label(active);
-    drawField(t, active);
+    drawField(t);
   };
 
   const frame = (t) => {
     running = false;
     const dt = Math.min(64, t - last); last = t;
-    sweep += dt * 0.00034;                          // about 18 s per lap
+    sweep += dt * 0.00015;                          // about 40 s per lap: calm
     draw(t);
     if (visible && !document.hidden) { running = true; requestAnimationFrame(frame); }
   };
