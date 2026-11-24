@@ -1,5 +1,8 @@
 [
   {
+    "capabilities": [
+      "transcription"
+    ],
     "description": "Japanese end-to-end speech-to-speech model (1.5B) built on LFM2.5-Audio, with interleaved generation for real-time conversation and sequential generation for ASR/TTS; open weights only.",
     "family": "LiquidAI/LFM2.5-Audio-1.5B",
     "first_seen": "2026-11-18",
@@ -8,7 +11,13 @@
       "ja"
     ],
     "meta": {
+      "capability_notes": {
+        "transcription": "ASR via sequential generation mode"
+      },
       "context_window": 32768,
+      "docs_sources": [
+        "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-JP"
+      ],
       "hosted_api": false,
       "huggingface_repo": "LiquidAI/LFM2.5-Audio-1.5B-JP",
       "license_terms": "Free for commercial use only by entities with annual revenue under US$10M (LFM Open License v1.0, s.5); larger entities need a commercial licence; non-profits free for non-commercial/research use."
@@ -30,12 +39,17 @@
     },
     "released_on": "2026-05-26",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
       "pcm",
       "wav"
+    ],
+    "capabilities": [
+      "function_calling",
+      "transcription",
+      "translation"
     ],
     "description": "2B end-to-end audio model taking text or audio in and answering in text, speech or both: voice chat, ASR, TTS and speech translation in 18 languages.",
     "first_seen": "2026-11-18",
@@ -67,6 +81,9 @@
     ],
     "meta": {
       "context_window": 128000,
+      "docs_sources": [
+        "https://huggingface.co/LiquidAI/LFM3-Audio-2B"
+      ],
       "endpoint": "POST https://api.liquid.ai/openai/v1/chat/completions (OpenAI-compatible, modalities text+audio)",
       "huggingface_repo": "LiquidAI/LFM3-Audio-2B",
       "input_audio_formats": [
@@ -134,12 +151,18 @@
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
       "pcm",
       "wav"
+    ],
+    "capabilities": [
+      "function_calling",
+      "transcription",
+      "translation",
+      "video_input"
     ],
     "description": "2.2B omni model that understands text, images, video and audio and answers in text and speech; video input is not yet accepted by the hosted API.",
     "first_seen": "2026-11-18",
@@ -169,7 +192,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "video_input": "open weights only; hosted API does not accept video yet"
+      },
       "context_window": 128000,
+      "docs_sources": [
+        "https://huggingface.co/LiquidAI/LFM3-Omni-2B"
+      ],
       "endpoint": "POST https://api.liquid.ai/openai/v1/chat/completions (OpenAI-compatible, modalities text+audio)",
       "huggingface_repo": "LiquidAI/LFM3-Omni-2B",
       "image_input_price_usd_per_token": 1e-07,
@@ -234,6 +263,6 @@
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

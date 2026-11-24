@@ -1,5 +1,8 @@
 [
   {
+    "capabilities": [
+      "translation"
+    ],
     "description": "Krutrim's Bhashik speech-to-speech translation: upload a short English audio file and receive synthesized speech in the target Indic language as a download link.",
     "first_seen": "2026-11-18",
     "id": "bhashik-sts",
@@ -20,6 +23,9 @@
     ],
     "meta": {
       "api_language_codes": "tgt_lang_code: eng, guj, ben, hin, kan, mal, mar, tam, tel",
+      "capability_notes": {
+        "translation": "English source into 8 Indic languages"
+      },
       "docs_sources": [
         "https://docs.cloud.olakrutrim.com/api-references/bhashik-speech-api"
       ],

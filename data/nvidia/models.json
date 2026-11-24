@@ -1,5 +1,8 @@
 [
   {
+    "capabilities": [
+      "transcription"
+    ],
     "description": "12B end-to-end full-duplex speech-to-speech model for conversational agents, with persona control via text role prompts.",
     "first_seen": "2026-11-18",
     "id": "nvidia/nemotron-voicechat",
@@ -8,6 +11,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "capability_notes": {
+        "transcription": "outputs user speech transcription and agent text"
+      },
       "docs_sources": [
         "https://build.nvidia.com/nvidia/nemotron-voicechat"
       ],

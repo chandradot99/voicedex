@@ -4,6 +4,9 @@
       "wav"
     ],
     "batch": true,
+    "capabilities": [
+      "punctuation"
+    ],
     "description": "Asynchronous Mongolian transcription for hours-long audio: submit a file, then poll for the transcript by UUID.",
     "first_seen": "2026-11-18",
     "id": "stt-long",
@@ -14,6 +17,12 @@
       "mn-MN"
     ],
     "meta": {
+      "capability_notes": {
+        "punctuation": "docs: same features as the short STT endpoint"
+      },
+      "docs_sources": [
+        "https://docs.api.chimege.com/v1.2/en/openapi.yml?v=4"
+      ],
       "endpoint": "POST https://api.chimege.com/v1.2/stt-long; GET /stt-long-transcript"
     },
     "name": "Chimege Long Speech to Text",
@@ -26,13 +35,16 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
       "wav"
     ],
     "batch": true,
+    "capabilities": [
+      "punctuation"
+    ],
     "description": "High-quality variant of the asynchronous long-audio Mongolian transcription endpoint.",
     "first_seen": "2026-11-18",
     "id": "stt-long-hq",
@@ -43,6 +55,12 @@
       "mn-MN"
     ],
     "meta": {
+      "capability_notes": {
+        "punctuation": "docs: same features as the short STT endpoint"
+      },
+      "docs_sources": [
+        "https://docs.api.chimege.com/v1.2/en/openapi.yml?v=4"
+      ],
       "endpoint": "POST https://api.chimege.com/v1.2/stt-long-hq; GET /stt-long-hq-transcript"
     },
     "name": "Chimege Long Speech to Text (High quality)",
@@ -55,7 +73,7 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

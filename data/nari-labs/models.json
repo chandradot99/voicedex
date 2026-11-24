@@ -1,11 +1,23 @@
 [
   {
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "nari-labs/Dia-1.6B",
     "languages": [
       "en"
     ],
     "meta": {
+      "capability_notes": {
+        "emotion": "via audio-prompt conditioning",
+        "multi_speaker": "[S1]/[S2] dialogue tags"
+      },
+      "docs_sources": [
+        "https://huggingface.co/nari-labs/Dia-1.6B"
+      ],
       "huggingface_repo": "nari-labs/Dia-1.6B"
     },
     "name": "Dia-1.6B",
@@ -25,15 +37,27 @@
     "released_on": "2025-04-20",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "emotion",
+      "multi_speaker",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "nari-labs/Dia-1.6B-0626",
     "languages": [
       "en"
     ],
     "meta": {
+      "capability_notes": {
+        "emotion": "via audio-prompt conditioning",
+        "multi_speaker": "[S1]/[S2] dialogue tags"
+      },
+      "docs_sources": [
+        "https://huggingface.co/nari-labs/Dia-1.6B-0626"
+      ],
       "huggingface_repo": "nari-labs/Dia-1.6B-0626"
     },
     "name": "Dia-1.6B-0626",
@@ -53,6 +77,6 @@
     "released_on": "2025-06-26",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

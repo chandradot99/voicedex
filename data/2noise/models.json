@@ -1,8 +1,18 @@
 [
   {
+    "capabilities": [
+      "prosody_control"
+    ],
     "first_seen": "2026-11-18",
     "id": "2Noise/ChatTTS",
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed, pauses, laughter via prompt/inline tokens"
+      },
+      "docs_sources": [
+        "https://huggingface.co/2Noise/ChatTTS",
+        "https://github.com/2noise/ChatTTS"
+      ],
       "huggingface_repo": "2Noise/ChatTTS"
     },
     "name": "ChatTTS",
@@ -23,6 +33,6 @@
     "released_on": "2024-05-25",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

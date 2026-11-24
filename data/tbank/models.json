@@ -1,5 +1,8 @@
 [
   {
+    "capabilities": [
+      "word_timestamps"
+    ],
     "description": "71M-parameter streaming Conformer CTC ASR pipeline for Russian telephony, with phrase-boundary detector and KenLM decoder, published as open weights.",
     "first_seen": "2026-11-18",
     "id": "t-tech/T-one",

@@ -134,6 +134,9 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Legacy Mist-family TTS model, superseded by Mist v3.",
     "eol_date": "2026-12-03",
     "first_seen": "2026-11-16",
@@ -145,9 +148,13 @@
       "es"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speedAlpha (speed)"
+      },
       "deprecation_notice": "Legacy model; retires December 3, 2026. After that date Mist v3 serves HTTP requests naming this model (voice kept if Mist v3 has it, else a comparable voice); WebSocket clients (/ws2) must switch before then.",
       "docs_sources": [
-        "https://docs.rime.ai/docs/models"
+        "https://docs.rime.ai/docs/models",
+        "https://docs.rime.ai/docs/migrate-legacy-mist.md"
       ],
       "legacy_features": [
         "JSON envelope with base64 audioContent",

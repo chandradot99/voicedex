@@ -3,6 +3,12 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Amazon's latest speech-to-speech foundation model on Bedrock, with improved reasoning, instruction following and tool calling over Nova 2 Sonic, plus lower latency.",
     "first_seen": "2026-11-18",
     "id": "amazon.nova-2-5-sonic",
@@ -90,6 +96,13 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "language_detection",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Amazon's speech-to-speech foundation model for real-time voice conversations on Bedrock, with polyglot voices and code-switching across seven languages.",
     "first_seen": "2026-11-18",
     "id": "amazon.nova-2-sonic-v1:0",
@@ -119,7 +132,9 @@
       "cross_region_inference": true,
       "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html",
       "docs_sources": [
-        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html"
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html",
+        "https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html",
+        "https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-output-events.html"
       ],
       "eol_no_sooner_than": "2026-12-02",
       "max_output_tokens": 64000,

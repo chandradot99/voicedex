@@ -128,9 +128,23 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "KittenML/kitten-tts-2",
     "meta": {
+      "capability_notes": {
+        "emotion": "beta; [emotion] and <event> tags",
+        "prosody_control": "speed (hosted API 0.25-4.0)"
+      },
+      "docs_sources": [
+        "https://huggingface.co/KittenML/kitten-tts-2",
+        "https://github.com/KittenML/KittenTTS",
+        "https://docs.kittenml.com/models"
+      ],
       "huggingface_repo": "KittenML/kitten-tts-2"
     },
     "name": "kitten-tts-2",
@@ -149,12 +163,21 @@
     "released_on": "2026-09-30",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "prosody_control"
+    ],
     "first_seen": "2026-11-18",
     "id": "KittenML/kitten-tts-nano-0.8-fp32",
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed"
+      },
+      "docs_sources": [
+        "https://github.com/KittenML/KittenTTS/blob/main/docs/onnx-models.md"
+      ],
       "huggingface_repo": "KittenML/kitten-tts-nano-0.8-fp32"
     },
     "name": "kitten-tts-nano-0.8-fp32",
@@ -174,7 +197,7 @@
     "released_on": "2026-02-19",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -285,6 +308,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "82M-parameter Kitten TTS 2 model with 118 voices in 16 languages.",
     "first_seen": "2026-11-18",
     "id": "kitten-tts-2-mini",
@@ -296,8 +322,12 @@
     ],
     "max_text_chars": 40000,
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed"
+      },
       "docs_sources": [
-        "https://docs.kittenml.com/models"
+        "https://docs.kittenml.com/models",
+        "https://huggingface.co/KittenML/kitten-tts-2-mini"
       ],
       "huggingface_alias": "KittenML/kitten-tts-2-mini",
       "language_count": 16,
@@ -338,6 +368,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Kitten TTS 2 model with 17M parameters per language, 37 voices in 8 languages.",
     "first_seen": "2026-11-18",
     "id": "kitten-tts-2-nano",
@@ -349,8 +382,12 @@
     ],
     "max_text_chars": 40000,
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed"
+      },
       "docs_sources": [
-        "https://docs.kittenml.com/models"
+        "https://docs.kittenml.com/models",
+        "https://huggingface.co/KittenML/kitten-tts-2-nano"
       ],
       "huggingface_alias": "KittenML/kitten-tts-2-nano",
       "language_count": 8,
@@ -391,6 +428,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Kitten TTS 2 model with 7M parameters per language, 30 voices in 8 languages.",
     "first_seen": "2026-11-18",
     "id": "kitten-tts-2-pico",
@@ -402,8 +442,12 @@
     ],
     "max_text_chars": 40000,
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed"
+      },
       "docs_sources": [
-        "https://docs.kittenml.com/models"
+        "https://docs.kittenml.com/models",
+        "https://huggingface.co/KittenML/kitten-tts-2-pico"
       ],
       "huggingface_alias": "KittenML/kitten-tts-2-pico",
       "language_count": 8,
@@ -444,6 +488,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "80M-parameter English-only KittenTTS 0.8 model with eight voices; the API default when no model is given.",
     "first_seen": "2026-11-18",
     "id": "kitten-tts-mini-0.8",
@@ -456,9 +503,13 @@
     "max_text_chars": 40000,
     "meta": {
       "api_default_when_model_omitted": true,
+      "capability_notes": {
+        "prosody_control": "speed"
+      },
       "default_voice": "Bella",
       "docs_sources": [
-        "https://docs.kittenml.com/models"
+        "https://docs.kittenml.com/models",
+        "https://github.com/KittenML/KittenTTS/blob/main/docs/onnx-models.md"
       ],
       "free": "Docs: 'KittenTTS 0.8 Mini is free, but authentication is still required.'",
       "parameters": "80M",

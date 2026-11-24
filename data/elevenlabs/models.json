@@ -1,7 +1,8 @@
 [
   {
     "capabilities": [
-      "style_control"
+      "style_control",
+      "voice_cloning"
     ],
     "description": "Our state-of-the-art speech to speech model suitable for scenarios where you need maximum control over the content and prosody of your generations.",
     "first_seen": "2026-11-16",
@@ -17,12 +18,17 @@
     "meta": {
       "can_be_finetuned": false,
       "can_use_speaker_boost": true,
+      "capability_notes": {
+        "voice_cloning": "converts input speech into any cloned or designed voice"
+      },
       "character_cost_multiplier": 1.0,
       "concurrency_group": "standard_eleven_english_sts_v2",
       "docs_sources": [
         "https://web.archive.org/web/20240723092359/https://elevenlabs.io/blog/speech-to-speech-release",
         "https://elevenlabs.io/blog/speech-to-speech",
-        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model",
+        "https://elevenlabs.io/docs/capabilities/voice-changer",
+        "https://api.elevenlabs.io/v1/models"
       ],
       "max_characters_free_user": 5000,
       "mode": "voice_conversion",
@@ -56,7 +62,8 @@
   },
   {
     "capabilities": [
-      "style_control"
+      "style_control",
+      "voice_cloning"
     ],
     "description": "Our cutting-edge, multilingual speech-to-speech model is designed for situations that demand unparalleled control over both the content and the prosody of the generated speech across various languages.",
     "first_seen": "2026-11-16",
@@ -99,11 +106,16 @@
     "meta": {
       "can_be_finetuned": true,
       "can_use_speaker_boost": true,
+      "capability_notes": {
+        "voice_cloning": "converts input speech into any cloned or designed voice"
+      },
       "character_cost_multiplier": 1.0,
       "concurrency_group": "standard_eleven_multilingual_sts_v2",
       "docs_sources": [
         "https://web.archive.org/web/20241009222543/https://elevenlabs.io/blog/multilingual-speech-to-speech-release",
-        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model",
+        "https://elevenlabs.io/docs/capabilities/voice-changer",
+        "https://api.elevenlabs.io/v1/models"
       ],
       "max_characters_free_user": 10000,
       "mode": "voice_conversion",
@@ -140,6 +152,11 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "turn_detection"
+    ],
     "description": "Native speech-to-speech conversational model (speech recognition, turn-taking, reasoning and speech in one model), the higher-capability tier.",
     "first_seen": "2026-11-18",
     "id": "eleven_realtime_v1_max",
@@ -155,7 +172,9 @@
         "https://elevenlabs.io/pricing/api",
         "https://elevenlabs.io/docs/changelog/2026/10/19",
         "https://elevenlabs.io/docs/changelog/2026/11/2",
-        "https://elevenlabs.io/docs/overview/models"
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-agents/customization/realtime-models",
+        "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
       ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",
@@ -186,6 +205,11 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "turn_detection"
+    ],
     "description": "Native speech-to-speech conversational model (speech recognition, turn-taking, reasoning and speech in one model), the lower-latency tier.",
     "first_seen": "2026-11-18",
     "id": "eleven_realtime_v1_mini",
@@ -201,7 +225,9 @@
         "https://elevenlabs.io/pricing/api",
         "https://elevenlabs.io/docs/changelog/2026/10/19",
         "https://elevenlabs.io/docs/changelog/2026/11/2",
-        "https://elevenlabs.io/docs/overview/models"
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-agents/customization/realtime-models",
+        "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
       ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",

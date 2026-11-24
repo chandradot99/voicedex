@@ -90,7 +90,14 @@ TTS_CAPABILITIES = frozenset({
     "emotion", "voice_cloning", "voice_design", "ssml", "phoneme_input",
     "prosody_control", "style_control", "multi_speaker",
 })
-MODEL_CAPABILITIES = STT_CAPABILITIES | TTS_CAPABILITIES
+# Speech-to-speech (realtime voice agents, live translation, voice conversion). The first five are what realtime
+# models differ on; the rest are shared terms that also apply to them.
+STS_CAPABILITIES = frozenset({
+    "function_calling", "turn_detection", "barge_in", "transcription", "video_input",
+    "translation", "voice_cloning", "emotion", "style_control", "custom_vocabulary", "language_detection",
+})
+CAPABILITIES_BY_TYPE = {"stt": STT_CAPABILITIES, "tts": TTS_CAPABILITIES, "sts": STS_CAPABILITIES}
+MODEL_CAPABILITIES = STT_CAPABILITIES | TTS_CAPABILITIES | STS_CAPABILITIES
 VOICE_CAPABILITIES = frozenset({"emotion", "multilingual_native"})
 
 PRICING_UNITS = frozenset({"character", "byte", "minute", "second", "word", "token", "request", "hour"})

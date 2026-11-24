@@ -1132,6 +1132,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "600M-parameter ultra-low-latency MARS 8 model for real-time voice agents and call centers.",
     "family": "MARS 8",
     "first_seen": "2026-11-16",
@@ -1177,9 +1180,13 @@
     "max_text_chars": 3000,
     "meta": {
       "available_on_cloud_providers": true,
+      "capability_notes": {
+        "prosody_control": "voice_settings.speaking_rate"
+      },
       "docs_sources": [
         "https://docs.camb.ai/choosing-a-model.md",
-        "https://www.camb.ai/news/camb-ai-unveils-mars8-the-first-family-of-tts-models"
+        "https://www.camb.ai/news/camb-ai-unveils-mars8-the-first-family-of-tts-models",
+        "https://docs.camb.ai/api-reference/endpoint/create-tts-stream.md"
       ],
       "locale_count": 33,
       "output_encodings": [
@@ -1432,6 +1439,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "600M-parameter MARS 8 model balancing speed and fidelity for expressive speech, dubbing and audiobooks.",
     "family": "MARS 8",
     "first_seen": "2026-11-16",
@@ -1478,9 +1488,13 @@
     "max_text_chars": 3000,
     "meta": {
       "available_on_cloud_providers": true,
+      "capability_notes": {
+        "prosody_control": "voice_settings.speaking_rate"
+      },
       "docs_sources": [
         "https://docs.camb.ai/choosing-a-model.md",
-        "https://www.camb.ai/news/camb-ai-unveils-mars8-the-first-family-of-tts-models"
+        "https://www.camb.ai/news/camb-ai-unveils-mars8-the-first-family-of-tts-models",
+        "https://docs.camb.ai/api-reference/endpoint/create-tts-stream.md"
       ],
       "locale_count": 33,
       "output_encodings": [

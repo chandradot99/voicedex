@@ -3,6 +3,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "style_control",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "End-to-end speech-to-speech model over a WebSocket Realtime API with paralinguistic understanding and server-side VAD turn-taking.",
     "first_seen": "2026-11-16",
     "id": "stepaudio-2.5-realtime",
@@ -14,6 +22,15 @@
     ],
     "meta": {
       "audio_encoding": "pcm16 mono 24 kHz",
+      "capability_notes": {
+        "style_control": "session instructions",
+        "turn_detection": "server_vad",
+        "voice_cloning": "voice cloned via the stepaudio-2.5-tts voice API"
+      },
+      "docs_sources": [
+        "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-2.5-realtime",
+        "https://platform.stepfun.ai/docs/en/api-reference/realtime/chat.md"
+      ],
       "endpoint": "wss://api.stepfun.ai/v1/realtime?model=stepaudio-2.5-realtime",
       "language_note": "Model spec lists English; Realtime endpoint supports Chinese and English only.",
       "tool_calling": true
@@ -56,6 +73,12 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Full-duplex realtime voice flagship with interruption handling, adaptive think-while-speaking reasoning and Voice Agent tool calling.",
     "family": "stepaudio-3-realtime",
     "first_seen": "2026-11-24",
@@ -72,7 +95,8 @@
       "audio_encoding": "pcm16",
       "docs_sources": [
         "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-3-realtime.md",
-        "https://platform.stepfun.ai/docs/en/guides/pricing/details.md"
+        "https://platform.stepfun.ai/docs/en/guides/pricing/details.md",
+        "https://platform.stepfun.ai/docs/en/api-reference/realtime/chat.md"
       ],
       "endpoint": "wss://api.stepfun.ai/v1/realtime?model=<id>",
       "full_duplex": true,
@@ -155,6 +179,9 @@
       "wav"
     ],
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "4B-parameter Multi-Token-Prediction ASR model for fast one-shot transcription over HTTP + SSE.",
     "first_seen": "2026-11-16",
     "id": "stepaudio-2.5-asr",
@@ -170,6 +197,12 @@
       "es"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "hotwords list"
+      },
+      "docs_sources": [
+        "https://platform.stepfun.ai/docs/en/api-reference/audio/asr-sse.md"
+      ],
       "endpoint": "POST /v1/audio/asr/sse",
       "itn": true,
       "language_note": "Model page says Chinese and English; API language parameter also lists ja/ko/fr/es (preview).",
@@ -198,7 +231,7 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -261,6 +294,9 @@
       "wav"
     ],
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "StepFun's largest LLM-based ASR model, with context-aware recognition of names, domain terms, dialects, code-switching, whispers and singing.",
     "first_seen": "2026-11-16",
     "id": "stepaudio-3-asr-max",
@@ -277,6 +313,12 @@
       "es"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "hotwords list"
+      },
+      "docs_sources": [
+        "https://platform.stepfun.ai/docs/en/api-reference/audio/asr-sse.md"
+      ],
       "endpoint": "POST /v1/audio/asr/sse (HTTP + SSE incremental output)",
       "itn": true,
       "pcm_codec": "pcm_s16le",
@@ -305,7 +347,7 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

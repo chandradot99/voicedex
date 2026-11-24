@@ -1,6 +1,10 @@
 [
   {
     "batch": true,
+    "capabilities": [
+      "translation",
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "whisper-large-v3",
     "interfaces": [
@@ -11,8 +15,12 @@
       "*"
     ],
     "meta": {
+      "capability_notes": {
+        "translation": "into English only (/audio/translations)"
+      },
       "docs_sources": [
-        "https://console.groq.com/docs/speech-to-text"
+        "https://console.groq.com/docs/speech-to-text",
+        "https://console.groq.com/docs/speech-to-text.md"
       ],
       "hugging_face_id": "openai/whisper-large-v3",
       "model_card": "https://huggingface.co/openai/whisper-large-v3",
@@ -41,6 +49,9 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "word_timestamps"
+    ],
     "first_seen": "2026-11-16",
     "id": "whisper-large-v3-turbo",
     "interfaces": [
@@ -51,7 +62,8 @@
     ],
     "meta": {
       "docs_sources": [
-        "https://console.groq.com/docs/speech-to-text"
+        "https://console.groq.com/docs/speech-to-text",
+        "https://console.groq.com/docs/speech-to-text.md"
       ],
       "hugging_face_id": "openai/whisper-large-v3-turbo",
       "upstream": "OpenAI"
@@ -108,6 +120,9 @@
     "updated_at": "2026-11-16"
   },
   {
+    "capabilities": [
+      "emotion"
+    ],
     "first_seen": "2026-11-16",
     "id": "canopylabs/orpheus-v1-english",
     "interfaces": [
@@ -119,6 +134,12 @@
     ],
     "max_text_chars": 4000,
     "meta": {
+      "capability_notes": {
+        "emotion": "bracketed vocal directions, e.g. [cheerful]"
+      },
+      "docs_sources": [
+        "https://console.groq.com/docs/text-to-speech/orpheus.md"
+      ],
       "upstream": "Canopy Labs"
     },
     "name": "Canopy Labs Orpheus V1 English",
@@ -136,6 +157,6 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

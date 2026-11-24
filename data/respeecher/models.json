@@ -7,6 +7,9 @@
       "wav"
     ],
     "batch": true,
+    "capabilities": [
+      "voice_cloning"
+    ],
     "description": "Order-based speech-to-speech voice conversion on the Voice Marketplace API: upload a recording and convert it to marketplace voices and accents, with optional pitch calibration and semitone correction.",
     "first_seen": "2026-11-18",
     "id": "marketplace-sts",
@@ -18,8 +21,12 @@
       "audio_formats_note": "Accepted input formats for uploaded recordings.",
       "base_url": "https://gateway.respeecher.com",
       "calibration": "POST /api/calibration measures the speaker's mean pitch for better conversion; automatic calibration otherwise.",
+      "capability_notes": {
+        "voice_cloning": "converts recordings into a target marketplace voice/accent"
+      },
       "docs_sources": [
-        "https://space.respeecher.com/docs/choosing-an-api.md"
+        "https://space.respeecher.com/docs/choosing-an-api.md",
+        "https://space.respeecher.com/docs/marketplace/api-overview.md"
       ],
       "export": "Projects or recordings exportable as .zip.",
       "kind": "voice conversion (audio in, converted audio out); not a conversational realtime model",
@@ -245,6 +252,9 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "style_control"
+    ],
     "description": "Order-based text-to-speech on the Voice Marketplace API: synthesise a text recording, then order conversions to marketplace voices with a narration style and download the results.",
     "first_seen": "2026-11-18",
     "id": "marketplace-tts",
@@ -254,7 +264,13 @@
     "meta": {
       "api": "Marketplace API (api-key header)",
       "base_url": "https://gateway.respeecher.com",
+      "capability_notes": {
+        "style_control": "per-voice narration styles"
+      },
       "daily_tts_request_limits": "Plan dependent (e.g. 200 per day on the 16-credit pack).",
+      "docs_sources": [
+        "https://space.respeecher.com/docs/marketplace/api-overview.md"
+      ],
       "model_id_note": "No model parameter: POST /api/v2/recordings/tts then POST /api/v2/orders with voice_id + narration_style_id. 'marketplace-tts' is a catalog label."
     },
     "name": "Respeecher Voice Marketplace TTS",
@@ -282,7 +298,7 @@
     },
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

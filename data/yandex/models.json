@@ -80,6 +80,11 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "function_calling",
+      "style_control",
+      "turn_detection"
+    ],
     "description": "Realtime API voice-agent model for conversation, tool use and long contexts, speaking with LiveTTS voices.",
     "first_seen": "2026-11-18",
     "id": "speech-realtime-max-tts-live",
@@ -93,9 +98,15 @@
     ],
     "meta": {
       "branch": "latest",
+      "capability_notes": {
+        "style_control": "LiveTTS voice roles (casual, support, sales, formal...)",
+        "turn_detection": "server_vad"
+      },
       "context_tokens": 1048576,
       "docs_sources": [
-        "https://aistudio.yandex.ru/docs/en/ai-studio/release-notes/"
+        "https://aistudio.yandex.ru/docs/en/ai-studio/release-notes/",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/agents/realtime",
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
       ],
       "languages_note": "Realtime models are 'designed specifically for the Russian and Kazakh languages'",
       "max_output_tokens": 393216,
@@ -638,6 +649,9 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "style_control"
+    ],
     "description": "Realtime API model that synthesizes speech from text with LiveTTS voices, without an LLM or audio input.",
     "first_seen": "2026-11-18",
     "id": "speech-realtime-tts-live",
@@ -650,6 +664,13 @@
     "meta": {
       "billing": "Only input text is billed: each started 250-character block of response.create text is one unit (no separate rate published).",
       "branch": "latest",
+      "capability_notes": {
+        "style_control": "LiveTTS voice roles (casual, support, sales, formal...)"
+      },
+      "docs_sources": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices",
+        "https://aistudio.yandex.ru/docs/en/ai-studio/concepts/generation/models"
+      ],
       "model_uri": "gpt://<folder_ID>/speech-realtime-tts-live/latest"
     },
     "name": "Speech TTS Live (Realtime API)",
@@ -671,6 +692,6 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

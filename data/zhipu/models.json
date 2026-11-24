@@ -1,5 +1,9 @@
 [
   {
+    "capabilities": [
+      "emotion",
+      "style_control"
+    ],
     "description": "End-to-end Chinese-English voice model called via chat completions; adjusts emotion, intonation, speed and dialect on instruction.",
     "first_seen": "2026-11-18",
     "id": "glm-4-voice",
@@ -12,7 +16,13 @@
     ],
     "meta": {
       "api": "chat completions (audio + text in, audio + text out)",
+      "capability_notes": {
+        "style_control": "instructions adjust intonation, speed and dialect"
+      },
       "context_tokens": 8192,
+      "docs_sources": [
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
+      ],
       "max_output_tokens": 4096,
       "platform": "bigmodel.cn",
       "weights": "LLM part published as zai-org/glm-4-voice-9b on Hugging Face (license not stated on the model card)"
@@ -42,12 +52,19 @@
     },
     "streaming": false,
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
       "pcm",
       "wav"
+    ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
     ],
     "description": "Real-time audio and video call model (32B) over WebSocket with function calling and built-in web search.",
     "first_seen": "2026-11-18",
@@ -56,7 +73,15 @@
       "websocket"
     ],
     "meta": {
+      "capability_notes": {
+        "function_calling": "audio calls only",
+        "turn_detection": "server_vad or client_vad"
+      },
       "context": "~8K tokens audio calls, 32K video calls",
+      "docs_sources": [
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+        "https://docs.bigmodel.cn/cn/asyncapi/realtime"
+      ],
       "features": "server/client VAD, interruption, function calling, web search, video input (base64 JPG frames)",
       "input_audio": "wav or pcm (16 kHz default, 24 kHz option), mono 16-bit",
       "output_audio": "pcm 24 kHz mono 16-bit",
@@ -98,12 +123,19 @@
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
       "pcm",
       "wav"
+    ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
     ],
     "description": "Real-time audio and video call model (9B) over WebSocket with function calling and built-in web search.",
     "first_seen": "2026-11-18",
@@ -112,7 +144,15 @@
       "websocket"
     ],
     "meta": {
+      "capability_notes": {
+        "function_calling": "audio calls only",
+        "turn_detection": "server_vad or client_vad"
+      },
       "context": "~8K tokens audio calls, 32K video calls",
+      "docs_sources": [
+        "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-realtime",
+        "https://docs.bigmodel.cn/cn/asyncapi/realtime"
+      ],
       "features": "server/client VAD, interruption, function calling, web search, video input (base64 JPG frames)",
       "input_audio": "wav or pcm (16 kHz default, 24 kHz option), mono 16-bit",
       "output_audio": "pcm 24 kHz mono 16-bit",
@@ -154,7 +194,7 @@
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

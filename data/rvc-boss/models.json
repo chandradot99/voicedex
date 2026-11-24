@@ -1,8 +1,19 @@
 [
   {
+    "capabilities": [
+      "prosody_control",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "lj1995/GPT-SoVITS",
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speaking speed",
+        "voice_cloning": "zero-shot from 5 s sample; few-shot fine-tune"
+      },
+      "docs_sources": [
+        "https://github.com/RVC-Boss/GPT-SoVITS"
+      ],
       "huggingface_repo": "lj1995/GPT-SoVITS"
     },
     "name": "GPT-SoVITS",
@@ -22,6 +33,6 @@
     "released_on": "2024-01-16",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -1,5 +1,9 @@
 [
   {
+    "capabilities": [
+      "transcription",
+      "translation"
+    ],
     "description": "Live speech translation: transcribes, translates into target_language and speaks it in a chosen voice.",
     "first_seen": "2026-11-16",
     "id": "s2s-translate",
@@ -15,8 +19,14 @@
       "pt"
     ],
     "meta": {
+      "capability_notes": {
+        "transcription": "translated transcript of the output",
+        "translation": "into en, fr, de, es, pt"
+      },
       "docs_sources": [
-        "https://docs.gradium.ai/guides/release-notes/2026-08.md"
+        "https://docs.gradium.ai/guides/release-notes/2026-08.md",
+        "https://docs.gradium.ai/guides/speech-to-speech-overview.md",
+        "https://docs.gradium.ai/guides/speech-to-speech-settings.md"
       ],
       "inner_models": {
         "stt_model_name": "stt-translate",

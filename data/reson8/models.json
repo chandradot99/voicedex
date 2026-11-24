@@ -241,6 +241,9 @@
       "webm"
     ],
     "batch": true,
+    "capabilities": [
+      "language_detection"
+    ],
     "description": "Reson8's fastest, smallest (0.5B) model for plain transcripts on the Prerecorded endpoint; also released as open weights.",
     "first_seen": "2026-11-18",
     "id": "rumble-2-flash",
@@ -295,6 +298,10 @@
       "zh"
     ],
     "meta": {
+      "docs_sources": [
+        "https://huggingface.co/Reson8/Rumble-2-Flash",
+        "https://docs.reson8.dev/llms-full.txt"
+      ],
       "endpoints": [
         "prerecorded"
       ],
@@ -350,6 +357,6 @@
     "released_on": "2026-11-03",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
