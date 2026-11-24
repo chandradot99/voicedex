@@ -945,7 +945,9 @@ async def llms_txt(catalog: Catalog = Depends(get_catalog)):
         "", "## Compare models", "",
     ]
     lines += [f"- [{views.TYPE_LABELS[p.type]} models]({site}{p.url})" for p in hubs]
-    lines += [f"- [All models, filterable]({site}/models)", f"- [Voices with audio samples]({site}/voices)",
+    lines += [f"- [All models, filterable]({site}/models)",
+              f"- [Voices, filterable by language, gender, use case, age and accent]({site}/voices)",
+              f"- [All providers]({site}/providers): every provider with what it offers, sortable",
               f"- [Alternatives to a provider]({site}/alternatives): who else offers the same, e.g. "
               f"[ElevenLabs alternatives]({site}/alternatives/elevenlabs)",
               f"- [Provider vs provider]({site}/compare/cartesia-vs-elevenlabs): side-by-side pages for "

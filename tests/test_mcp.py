@@ -212,3 +212,15 @@ async def test_streaming_filters_and_rich_compare(tmp_path, client):
     assert "speaker_diarization: listed only by live" in diffs
     assert not any(d.startswith("word_timestamps") for d in diffs)          # both list it: not a difference
     assert m.compare_models(["zz-cmp/stt/live"])["differences"] == []
+
+
+async def test_search_voices_facets(client):                         # `client` installs the fixture catalog
+    names = lambda r: [x["name"] for x in r["results"]]                 # noqa: E731
+    assert names(m.search_voices(accent="british")) == ["Anywhere Voice"]      # case-insensitive, normalized
+    assert names(m.search_voices(accent="Indian")) == ["Hindi Voice"]
+    assert names(m.search_voices(emotion=True)) == ["Anywhere Voice"]
+    assert names(m.search_voices(multilingual=True)) == ["Anywhere Voice"]     # languages=["*"]
+    assert m.search_voices(use_case="Narration")["results"] == []              # no use-case data: never matches
+    r = m.search_voices(accent="british", emotion=True)
+    assert "accent=British" in r["browse_url"] and "emotion=1" in r["browse_url"]
+    assert {"age", "use_cases"} <= set(r["results"][0])
