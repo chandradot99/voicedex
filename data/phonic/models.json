@@ -4,6 +4,14 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "language_detection",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Phonic's speech-to-speech model for agentic voice conversations (Oct 2026), with tool calls during user speech and mid-call language switching.",
     "first_seen": "2026-11-18",
     "id": "phonic-1",
@@ -73,9 +81,15 @@
         "mulaw_8000"
       ],
       "boosted_keywords": true,
+      "capability_notes": {
+        "custom_vocabulary": "boosted_keywords",
+        "language_detection": "multilingual_mode auto"
+      },
       "docs_sources": [
         "https://phonic.ai/blog/phonic-1",
-        "https://phonic.ai/blog/phonic-1-1"
+        "https://phonic.ai/blog/phonic-1-1",
+        "https://docs.phonic.ai/api-reference/agents/create.md",
+        "https://docs.phonic.ai/docs/get-started/overview.md"
       ],
       "excluded": "phonic-0.5 is deprecated (available only to pre-Phonic-1 customers), no shutdown date published.",
       "intelligence_level": [
@@ -127,6 +141,14 @@
     "audio_formats": [
       "mulaw",
       "pcm"
+    ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "language_detection",
+      "transcription",
+      "turn_detection"
     ],
     "description": "Phonic's latest speech-to-speech model (Nov 2026), improving turn-taking, reasoning/task performance and speech naturalness over Phonic-1.",
     "first_seen": "2026-11-24",
@@ -198,9 +220,14 @@
         "mulaw_8000"
       ],
       "boosted_keywords": true,
+      "capability_notes": {
+        "custom_vocabulary": "boosted_keywords",
+        "language_detection": "multilingual_mode auto"
+      },
       "docs_sources": [
         "https://phonic.ai/blog/phonic-1-1",
-        "https://docs.phonic.ai/api-reference/agents/create.md"
+        "https://docs.phonic.ai/api-reference/agents/create.md",
+        "https://docs.phonic.ai/docs/get-started/overview.md"
       ],
       "intelligence_level": [
         "standard",
