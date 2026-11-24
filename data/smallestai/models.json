@@ -3,6 +3,11 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "turn_detection"
+    ],
     "description": "Original full-duplex English speech-to-speech model with barge-in and tool calling; 48 kHz output.",
     "first_seen": "2026-11-24",
     "id": "hydra-v1.0",
@@ -16,7 +21,8 @@
       "barge_in": true,
       "docs_sources": [
         "https://docs.smallest.ai/model-cards/speech-to-speech/hydra",
-        "https://docs.smallest.ai/api-reference/deprecations/models"
+        "https://docs.smallest.ai/api-reference/deprecations/models",
+        "https://docs.smallest.ai/models/speech-to-speech/overview"
       ],
       "endpoint": "wss://api.smallest.ai/waves/v1/s2s",
       "input_audio": "PCM16 LE, 16 kHz, mono",
@@ -47,6 +53,11 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "turn_detection"
+    ],
     "description": "Full-duplex English speech-to-speech model over a single WebSocket with native barge-in and tool calling.",
     "first_seen": "2026-11-24",
     "id": "hydra-v1.1",
@@ -62,7 +73,8 @@
       "docs_sources": [
         "https://docs.smallest.ai/model-cards/speech-to-speech/hydra",
         "https://docs.smallest.ai/models/changelog/general/2026/8/20",
-        "https://docs.smallest.ai/api-reference/deprecations/models"
+        "https://docs.smallest.ai/api-reference/deprecations/models",
+        "https://docs.smallest.ai/models/speech-to-speech/overview"
       ],
       "endpoint": "wss://api.smallest.ai/waves/v1/s2s",
       "input_audio": "PCM16 LE, 16 kHz, mono",
@@ -512,6 +524,10 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control",
+      "voice_cloning"
+    ],
     "description": "Premium 44.1 kHz TTS on dedicated capacity with curated Indian, British and American voices, Hindi code-switching and 31 languages.",
     "first_seen": "2026-11-16",
     "id": "lightning_v3.1_pro",
@@ -555,11 +571,17 @@
     ],
     "meta": {
       "becomes_api_default_on": "2026-11-30",
+      "capability_notes": {
+        "prosody_control": "speed only"
+      },
       "checkpoint_note": "On 2026-11-28 the lightning_v3.1_pro_10_26 checkpoint becomes stable lightning_v3.1_pro for en/es/hi; other languages unchanged.",
       "docs_sources": [
         "https://docs.smallest.ai/model-cards/compare",
         "https://docs.smallest.ai/changelog/lightning-v-3-1/2026/5/15",
-        "https://docs.smallest.ai/api-reference/deprecations/models"
+        "https://docs.smallest.ai/api-reference/deprecations/models",
+        "https://docs.smallest.ai/model-cards/text-to-speech/lightning-v-3-1-pro",
+        "https://docs.smallest.ai/api-reference/models/text-to-speech/synthesize-speech",
+        "https://docs.smallest.ai/models/text-to-speech/pronunciation-dictionaries"
       ],
       "language_auto_routing": true,
       "max_chunk_chars": 250,
@@ -621,6 +643,10 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control",
+      "voice_cloning"
+    ],
     "description": "Preview checkpoint of Lightning v3.1 Pro for English, Spanish and Hindi, promoted to stable lightning_v3.1_pro on 2026-11-28.",
     "eol_date": "2026-12-28",
     "family": "lightning_v3.1_pro",
@@ -637,10 +663,16 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed only"
+      },
       "deprecation_notice": "Preview until 2026-11-28; the dated ID remains available until 2026-12-28 after promotion to stable lightning_v3.1_pro.",
       "docs_sources": [
         "https://docs.smallest.ai/changelog/lightning-v-3-1/2026/10/29",
-        "https://docs.smallest.ai/api-reference/deprecations/models"
+        "https://docs.smallest.ai/api-reference/deprecations/models",
+        "https://docs.smallest.ai/model-cards/text-to-speech/lightning-v-3-1-pro",
+        "https://docs.smallest.ai/api-reference/models/text-to-speech/synthesize-speech",
+        "https://docs.smallest.ai/models/text-to-speech/pronunciation-dictionaries"
       ],
       "max_chunk_chars": 250,
       "replacement": "lightning_v3.1_pro",
