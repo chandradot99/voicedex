@@ -52,6 +52,15 @@ curl "https://<host>/v1/models?type=stt&language=hi&capabilities=speaker_diariza
 # British female voices from one provider
 curl "https://<host>/v1/providers/elevenlabs/voices?gender=female&accent=british"
 
+# Cheapest realtime text-to-speech under $20 per 1M characters
+curl "https://<host>/v1/models?type=tts&realtime=true&max_price_usd=20&sort=price"
+
+# Narration voices you can listen to first
+curl "https://<host>/v1/voices?use_case=Narration&has_sample=true"
+
+# Providers that list HIPAA and SOC 2
+curl "https://<host>/v1/providers?compliance=hipaa,soc2"
+
 # Everything, in one response
 curl "https://<host>/v1/catalog.json"
 ```
@@ -67,6 +76,11 @@ curl "https://<host>/v1/catalog.json"
 - **Lifecycle**: `alpha`, `beta`, `ga`, `deprecated`. A model with an announced shutdown date carries
   `eol_date` and is listed until that day.
 - **IDs**: `id` is a stable UUID; `model_id` / `voice_id` is the exact string to send to the provider.
+- **Normalized price**: text-to-speech in USD per 1M characters, speech-to-text and speech-to-speech in USD per
+  hour. `max_price_usd` and `sort=price` use it; models without a comparable USD price are left out of the cap
+  and listed last in the sort.
+- **Voice use cases and ages** (`use_case`, `age`) are normalized from each provider's free-text tags; a voice
+  without that information never matches.
 
 ## Caching and limits
 

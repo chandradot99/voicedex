@@ -188,11 +188,14 @@ def search_models(
     open_weights: bool | None = None,
     streaming: bool | None = None,
     batch: bool | None = None,
+    realtime: bool | None = None,
+    recommended: bool | None = None,
+    preview: bool | None = None,
     query: str | None = None,
     include_unlisted_languages: bool = False,
     shutting_down: bool | None = None,
     eol_before: str | None = None,
-    sort: Literal["price", "name", "eol_date"] | None = None,
+    sort: Literal["price", "name", "eol_date", "newest"] | None = None,
     collapse_snapshots: bool = True,
     limit: int = 20,
     offset: int = 0,
@@ -210,7 +213,9 @@ def search_models(
     models with an announced end date; eol_before="YYYY-MM-DD" only those ending before it (e.g. "which models
     shut down in the next 90 days?"). collapse_snapshots (default true) shows one row per model family (the
     moving alias, e.g. gpt-realtime) and lists its dated snapshots (gpt-realtime-2025-08-28) in "snapshots";
-    pass false to get every snapshot as its own row.
+    pass false to get every snapshot as its own row. realtime=true: models served over WebSocket or WebRTC
+    (stricter than streaming). recommended=true: models the provider's docs point new integrations to.
+    preview=true: alpha/beta/preview models only (false excludes them). sort="newest": latest release first.
     """
     cat = _cat()
     if capability and capability not in MODEL_CAPABILITIES:
@@ -233,6 +238,12 @@ def search_models(
         rows = [r for r in rows if _streams(r.model) == streaming]
     if batch is not None:
         rows = [r for r in rows if r.model.batch is batch]
+    if realtime is not None:
+        rows = [r for r in rows if views.is_realtime(r.model) == realtime]
+    if recommended is not None:
+        rows = [r for r in rows if (r.model.recommended is True) == recommended]
+    if preview is not None:
+        rows = [r for r in rows if (str(getattr(r.model.lifecycle, "value", r.model.lifecycle)) in ("alpha", "beta")) == preview]
     if query:
         q = query.lower()
         rows = [r for r in rows if q in r.model.id.lower() or q in r.model.name.lower() or q in r.provider_id]
@@ -260,6 +271,8 @@ def search_models(
         rows.sort(key=lambda r: (r.model.eol_date is not None, price(r), r.provider_id, r.model.id))
     elif sort == "eol_date":
         rows.sort(key=lambda r: (r.model.eol_date or date.max, r.provider_id, r.model.id))
+    elif sort == "newest":
+        rows.sort(key=views.newest_model_order)
     else:
         rows.sort(key=lambda r: (r.model.name.lower(), r.provider_id))
     chunk, meta = _page(rows, limit, offset)
@@ -619,18 +632,35 @@ def search_voices(
 
 
 @server.tool(annotations=READ_ONLY)
-def list_providers(type: ModelType | None = None, include_retired: bool = False) -> dict[str, Any]:
-    """Providers in the catalog with model and voice counts, headquarters and access model. Retired providers
-    (shut down or no longer sold) are included only when include_retired=true, with their retirement date."""
+def list_providers(
+    type: ModelType | None = None,
+    include_retired: bool = False,
+    compliance: list[Literal["soc2", "hipaa", "gdpr", "iso27001", "pci_dss"]] | None = None,
+    access: Literal["self_serve", "enterprise", "regional", "open_weights"] | None = None,
+    headquarters: str | None = None,
+) -> dict[str, Any]:
+    """Providers in the catalog with model and voice counts, headquarters, access model and compliance. Retired
+    providers (shut down or no longer sold) are included only when include_retired=true, with their retirement
+    date. compliance: providers must list ALL of them (e.g. ["hipaa"]); a provider that doesn't publish its
+    certifications never matches. headquarters: ISO 3166-1 alpha-2 country code, e.g. "US", "IN"."""
     cat = _cat()
     out = []
+    need = {c.lower() for c in compliance or []}
     for s in views.provider_summaries(cat):
         if s.status != "active" and not include_retired:
             continue
         if type and type not in s.types:
             continue
+        p = cat.providers[s.id].provider
+        has = sorted(str(getattr(c, "value", c)).lower() for c in (p.compliance or []))
+        if need and not need <= set(has):
+            continue
+        if access and s.access != access:
+            continue
+        if headquarters and (s.headquarters or "").upper() != headquarters.strip().upper():
+            continue
         out.append({"id": s.id, "name": s.name, "status": s.status, "types": s.types, "models": s.models,
-                    "voices": s.voices, "headquarters": s.headquarters, "access": s.access,
+                    "voices": s.voices, "headquarters": s.headquarters, "access": s.access, "compliance": has,
                     "retired_on": s.retired_on, "url": f"{_site()}/providers/{s.id}"})
     return {"total": len(out), "providers": out}
 

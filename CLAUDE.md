@@ -204,13 +204,13 @@ uvx ruff check .
 
 | Path | Notes |
 |---|---|
-| `GET /v1/providers`, `/v1/providers/{id}` | provider list/detail with model & voice counts |
-| `GET /v1/providers/{id}/models`, `/models/{model_id}` | filters: type, language, capabilities (ALL), lifecycle, region, search |
-| `GET /v1/providers/{id}/voices`, `/voices/{voice_id}` | filters: gender, category, language, model, accent, capabilities, search |
+| `GET /v1/providers`, `/v1/providers/{id}` | provider list/detail with model & voice counts; filters: type, compliance (ALL), access, headquarters |
+| `GET /v1/providers/{id}/models`, `/models/{model_id}` | filters: type, language, capabilities (ALL), lifecycle, region, realtime, open_weights, recommended, shutting_down, max_price_usd, search; sort=name\|price\|newest |
+| `GET /v1/providers/{id}/voices`, `/voices/{voice_id}` | filters: gender, category, language, model, accent, use_case, age, has_sample, multilingual, capabilities, search (use_case/age = views.voice_facets buckets) |
 | `GET /v1/models`, `/v1/voices` | same filters across providers, plus `provider` |
 | `GET /v1/catalog.json` | entire catalog incl. deprecated, one response |
 | `GET /health` | |
-| `POST /mcp` | MCP (Streamable HTTP): search_models, get_model, compare_models, estimate_cost, find_alternatives, search_voices, list_providers, recent_changes |
+| `POST /mcp` | MCP (Streamable HTTP): search_models, get_model, compare_models, estimate_cost, find_alternatives, search_voices, list_providers, recent_changes. Keep tool filters at parity with the API and the site (e.g. search_voices use_case/age/accent; list_providers compliance) |
 
 All list endpoints: `limit`/`offset`, `updated_since` (date granularity; auto-includes deprecated unless
 `include_deprecated=false`). Every `/v1` response carries one catalog-wide `ETag` (304 on `If-None-Match`) and

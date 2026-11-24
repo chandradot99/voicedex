@@ -23,12 +23,21 @@ download it as one JSON file.
 - **Filter by feature**, for example
   [speech-to-text with speaker diarization](https://voicedex.dev/speech-to-text/speaker-diarization)
   or [open-source text-to-speech](https://voicedex.dev/text-to-speech/open-source).
-- **Listen to voices** across providers, with samples in the language you choose:
-  [voices](https://voicedex.dev/voices?preview=1).
+- **Listen to voices** across providers, with samples in the language you choose, filtered by use case,
+  age, accent and gender: [voices](https://voicedex.dev/voices?preview=1).
 - **See what's shutting down** before it breaks your app:
   [scheduled shutdowns](https://voicedex.dev/models?status=ending).
 - **Compare models side by side** on languages, features, price, limits and audio formats
-  ([compare](https://voicedex.dev/compare)).
+  ([compare](https://voicedex.dev/compare)), or two providers head to head
+  ([Deepgram vs ElevenLabs](https://voicedex.dev/compare/deepgram-vs-elevenlabs)).
+- **Find alternatives** to a provider or a model that's shutting down
+  ([ElevenLabs alternatives](https://voicedex.dev/alternatives/elevenlabs)).
+- **Estimate monthly cost** at your usage on any model list or model page.
+- **Browse every provider** ([providers](https://voicedex.dev/providers)) and
+  [which languages each covers](https://voicedex.dev/coverage).
+- **Follow what changes**: new models, price changes and shutdowns
+  ([changes](https://voicedex.dev/changes), [Atom feed](https://voicedex.dev/changes.xml)), and what speech AI
+  costs overall ([pricing report](https://voicedex.dev/reports/speech-ai-pricing)).
 
 ## Why trust the data
 
@@ -61,9 +70,9 @@ curl -O "https://voicedex.dev/v1/catalog.json"
 
 | Path | |
 |---|---|
-| `GET /v1/providers` · `/v1/providers/{id}` | Providers, with model and voice counts |
-| `GET /v1/providers/{id}/models` · `/models/{model_id}` | Filters: `type`, `language`, `capabilities`, `lifecycle`, `region`, `search` |
-| `GET /v1/providers/{id}/voices` · `/voices/{voice_id}` | Filters: `gender`, `category`, `language`, `model`, `accent`, `capabilities`, `search` |
+| `GET /v1/providers` · `/v1/providers/{id}` | Providers, with model and voice counts. Filters: `type`, `compliance`, `access`, `headquarters` |
+| `GET /v1/providers/{id}/models` · `/models/{model_id}` | Filters: `type`, `language`, `capabilities`, `lifecycle`, `region`, `realtime`, `open_weights`, `recommended`, `shutting_down`, `max_price_usd`, `search`; `sort` = `name`, `price` or `newest` |
+| `GET /v1/providers/{id}/voices` · `/voices/{voice_id}` | Filters: `gender`, `category`, `language`, `model`, `accent`, `use_case`, `age`, `has_sample`, `multilingual`, `capabilities`, `search` |
 | `GET /v1/models` · `/v1/voices` | The same filters across all providers, plus `provider` |
 | `GET /v1/catalog.json` | Everything in one response, deprecated records included |
 
