@@ -1,11 +1,22 @@
 [
   {
+    "capabilities": [
+      "prosody_control",
+      "voice_design"
+    ],
     "first_seen": "2026-11-18",
     "id": "parler-tts/parler-tts-large-v1",
     "languages": [
       "en"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speaking rate and pitch via text description",
+        "voice_design": "voice described in a text prompt"
+      },
+      "docs_sources": [
+        "https://huggingface.co/parler-tts/parler-tts-large-v1"
+      ],
       "huggingface_repo": "parler-tts/parler-tts-large-v1"
     },
     "name": "parler-tts-large-v1",
@@ -25,15 +36,26 @@
     "released_on": "2024-08-08",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "prosody_control",
+      "voice_design"
+    ],
     "first_seen": "2026-11-18",
     "id": "parler-tts/parler-tts-mini-v1",
     "languages": [
       "en"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speaking rate and pitch via text description",
+        "voice_design": "voice described in a text prompt"
+      },
+      "docs_sources": [
+        "https://huggingface.co/parler-tts/parler-tts-mini-v1"
+      ],
       "huggingface_repo": "parler-tts/parler-tts-mini-v1"
     },
     "name": "parler-tts-mini-v1",
@@ -53,15 +75,26 @@
     "released_on": "2024-06-26",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "prosody_control",
+      "voice_design"
+    ],
     "first_seen": "2026-11-18",
     "id": "parler-tts/parler_tts_mini_v0.1",
     "languages": [
       "en"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speaking rate and pitch via text description",
+        "voice_design": "voice described in a text prompt"
+      },
+      "docs_sources": [
+        "https://huggingface.co/parler-tts/parler_tts_mini_v0.1"
+      ],
       "huggingface_repo": "parler-tts/parler_tts_mini_v0.1"
     },
     "name": "parler_tts_mini_v0.1",
@@ -81,6 +114,6 @@
     "released_on": "2024-04-09",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
