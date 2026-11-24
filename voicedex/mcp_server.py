@@ -102,6 +102,7 @@ def _model_summary(cat: Catalog, r) -> dict[str, Any]:
         "data_checked": m.provenance.as_of.isoformat() if m.provenance else None,
         "languages": _lang_count(m),
         "capabilities": sorted(m.capabilities),
+        "works_with": views.model_frameworks(cat, r),   # voice-agent frameworks with a first-party integration
         "streaming": _streams(m),
         "batch": m.batch,
         "open_weights": m.open_weights is not None,
@@ -191,6 +192,7 @@ def search_models(
     realtime: bool | None = None,
     recommended: bool | None = None,
     preview: bool | None = None,
+    framework: Literal["livekit", "pipecat", "vapi", "retell"] | None = None,
     query: str | None = None,
     include_unlisted_languages: bool = False,
     shutting_down: bool | None = None,
@@ -217,6 +219,8 @@ def search_models(
     pass false to get every snapshot as its own row. realtime=true: models served over WebSocket or WebRTC
     (stricter than streaming). recommended=true: models the provider's docs point new integrations to.
     preview=true: alpha/beta/preview models only (false excludes them). sort="newest": latest release first.
+    framework: only models whose provider has a first-party integration for that model type in the framework's
+    own docs (LiveKit Agents, Pipecat, Vapi, Retell); each result lists them in works_with.
     """
     cat = _cat()
     if capability and capability not in MODEL_CAPABILITIES:
@@ -243,6 +247,8 @@ def search_models(
         rows = [r for r in rows if views.is_realtime(r.model) == realtime]
     if recommended is not None:
         rows = [r for r in rows if (r.model.recommended is True) == recommended]
+    if framework:
+        rows = [r for r in rows if framework in views.model_frameworks(cat, r)]
     if preview is not None:
         rows = [r for r in rows if (str(getattr(r.model.lifecycle, "value", r.model.lifecycle)) in ("alpha", "beta")) == preview]
     if query:
@@ -639,11 +645,14 @@ def list_providers(
     compliance: list[Literal["soc2", "hipaa", "gdpr", "iso27001", "pci_dss"]] | None = None,
     access: Literal["self_serve", "enterprise", "regional", "open_weights"] | None = None,
     headquarters: str | None = None,
+    framework: Literal["livekit", "pipecat", "vapi", "retell"] | None = None,
 ) -> dict[str, Any]:
     """Providers in the catalog with model and voice counts, headquarters, access model and compliance. Retired
     providers (shut down or no longer sold) are included only when include_retired=true, with their retirement
     date. compliance: providers must list ALL of them (e.g. ["hipaa"]); a provider that doesn't publish its
-    certifications never matches. headquarters: ISO 3166-1 alpha-2 country code, e.g. "US", "IN"."""
+    certifications never matches. headquarters: ISO 3166-1 alpha-2 country code, e.g. "US", "IN".
+    framework: providers with a first-party integration in that voice-agent framework's docs; every result lists
+    its integrations (framework, the model types covered, the framework's docs url)."""
     cat = _cat()
     out = []
     need = {c.lower() for c in compliance or []}
@@ -660,8 +669,11 @@ def list_providers(
             continue
         if headquarters and (s.headquarters or "").upper() != headquarters.strip().upper():
             continue
+        if framework and framework not in {i.framework for i in p.integrations}:
+            continue
         out.append({"id": s.id, "name": s.name, "status": s.status, "types": s.types, "models": s.models,
                     "voices": s.voices, "headquarters": s.headquarters, "access": s.access, "compliance": has,
+                    "integrations": [{"framework": i.framework, "types": i.types, "url": i.url} for i in p.integrations],
                     "retired_on": s.retired_on, "url": f"{_site()}/providers/{s.id}"})
     return {"total": len(out), "providers": out}
 

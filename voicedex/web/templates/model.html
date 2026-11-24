@@ -140,6 +140,8 @@
       {% if m.max_audio_seconds %}<div><dt>Max audio</dt><dd>{{ duration(m.max_audio_seconds) }} / request</dd></div>{% endif %}
       {% if m.regions %}<div><dt>Regions</dt><dd class="mono">{{ m.regions|join(", ")|upper }}</dd></div>{% endif %}
       {% if m.open_weights %}<div><dt>Open weights</dt><dd>{% if m.open_weights.url %}<a href="{{ m.open_weights.url }}" rel="noopener">{{ m.open_weights.license }}</a>{% else %}{{ m.open_weights.license }}{% endif %}{% if m.open_weights.commercial_use is true %} · commercial use allowed{% elif m.open_weights.commercial_use is false %} · non-commercial only{% endif %}</dd></div>{% endif %}
+      {% set fws = p.integrations|selectattr("types", "contains_type", m.type)|list %}
+      {% if fws %}<div><dt>Works with</dt><dd>{% for i in fws %}<a href="{{ i.url }}" rel="noopener">{{ FRAMEWORK_LABELS[i.framework] }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
       {% if m.family %}<div><dt>Family</dt><dd><code translate="no">{{ m.family }}</code></dd></div>{% endif %}
       {% if m.meta.get('aliases') %}<div><dt>Also callable</dt><dd>{% for a in m.meta['aliases'] %}<code translate="no">{{ a }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
       {% if m.first_seen %}<div><dt>Listed since</dt><dd class="mono">{{ m.first_seen.strftime('%Y-%m-%d') }}</dd></div>{% endif %}

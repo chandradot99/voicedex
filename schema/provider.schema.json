@@ -22,6 +22,51 @@
       "title": "Compliance",
       "type": "string"
     },
+    "Integration": {
+      "additionalProperties": false,
+      "description": "A framework supports this provider out of the box (editorial, researched from the framework's own docs).",
+      "properties": {
+        "as_of": {
+          "format": "date",
+          "title": "As Of",
+          "type": "string"
+        },
+        "framework": {
+          "title": "Framework",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "types": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Types",
+          "type": "array"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "framework",
+        "url",
+        "as_of"
+      ],
+      "title": "Integration",
+      "type": "object"
+    },
     "ModelType": {
       "enum": [
         "stt",
@@ -235,6 +280,13 @@
       "minLength": 1,
       "title": "Id",
       "type": "string"
+    },
+    "integrations": {
+      "items": {
+        "$ref": "#/$defs/Integration"
+      },
+      "title": "Integrations",
+      "type": "array"
     },
     "last_synced": {
       "anyOf": [

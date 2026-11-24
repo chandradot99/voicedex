@@ -52,6 +52,22 @@ def _enum_ci(raw: str | None, valid: list[str], name: str) -> str | None:
     return hit
 
 
+FRAMEWORK_DESC = ("livekit, pipecat, vapi, retell: only models whose provider has a first-party integration "
+                  "for that model type in the framework's own docs.")
+
+
+def filter_framework(rows, framework: str | None, catalog: Catalog):
+    """Keep rows whose provider the framework integrates for that model type (provider-level, per type)."""
+    from voicedex.catalog.schema import FRAMEWORKS
+    from voicedex.web import views
+    if not framework:
+        return rows
+    fw = framework.strip().lower()
+    if fw not in FRAMEWORKS:
+        raise HTTPException(400, f"Invalid framework: {framework!r}. Allowed: {list(FRAMEWORKS)}")
+    return [r for r in rows if fw in views.model_frameworks(catalog, r)]
+
+
 def parse_capabilities(raw: str | None, valid: frozenset[str], kind: str) -> list[str]:
     parts = _csv(raw)
     bad = [p for p in parts if p not in valid]

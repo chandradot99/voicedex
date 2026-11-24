@@ -45,6 +45,7 @@ def _path_links(text: str) -> Markup:
 
 
 templates.env.filters["path_links"] = _path_links
+templates.env.tests["contains_type"] = lambda types, t: str(getattr(t, "value", t)) in types
 templates.env.globals.update(
     site_name=settings.site_name,
     site_url=settings.site_url.rstrip("/"),
@@ -52,7 +53,7 @@ templates.env.globals.update(
     language_name=views.language_name,
     price_label=views.price_label, price_parts=views.price_parts, price_group=views.price_group,
     PRICE_GROUP_LABELS=views.PRICE_GROUP_LABELS, MODEL_SORTS=views.MODEL_SORTS, name_adds=views.name_adds,
-    provider_logo=views.provider_logo, MIN_GROUP=views.MIN_GROUP,
+    provider_logo=views.provider_logo, MIN_GROUP=views.MIN_GROUP, FRAMEWORK_LABELS=views.FRAMEWORK_LABELS,
     model_url=views.model_url,
     model_key=views.model_key,
     variant_label=views.variant_label,
@@ -94,7 +95,7 @@ def _qs(f: dict, **changes) -> str:
 
 _TOKEN_LABEL = {"age": "age", "accent": "accent", "use": "use case", "emotion": "feature", "multi": "feature",
                 "type": "type", "language": "language", "capability": "feature", "provider": "provider",
-                "status": "status", "mode": "mode", "weights": "weights", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
+                "status": "status", "mode": "mode", "weights": "weights", "framework": "works with", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
 
 
 def _token_value(key: str, value: str, catalog: Catalog) -> str:
@@ -104,6 +105,8 @@ def _token_value(key: str, value: str, catalog: Catalog) -> str:
         return views.language_name(value)
     if key == "capability":
         return views.FEATURE_LABELS.get(value, value)
+    if key == "framework":
+        return views.FRAMEWORK_LABELS.get(value, value)
     if key == "provider":
         pd = catalog.providers.get(value)
         return pd.provider.name if pd else value
@@ -319,7 +322,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
     })
 
 
-MODEL_FILTER_KEYS = ("type", "language", "capability", "provider", "q", "sort", "status", "mode", "weights")
+MODEL_FILTER_KEYS = ("type", "language", "capability", "provider", "q", "sort", "status", "mode", "weights", "framework")
 
 
 def _model_filters(request: Request) -> dict:
@@ -329,10 +332,12 @@ def _model_filters(request: Request) -> dict:
     f["capability"] = [c for c in caps if c in MODEL_CAPABILITIES]
     if f["sort"] not in views.MODEL_SORTS:
         f["sort"] = ""
+    if f["framework"] not in views.FRAMEWORK_LABELS:
+        f["framework"] = ""
     return f
 
 
-def _filter_models(rows: list, f: dict, skip: frozenset = frozenset()) -> list:
+def _filter_models(rows: list, f: dict, skip: frozenset = frozenset(), catalog: Catalog | None = None) -> list:
     """Apply every filter in f except those in skip (facet counts: "how many if I picked this instead")."""
     on = lambda k: f.get(k) and k not in skip           # noqa: E731
     if on("type") and f["type"] in views.TYPE_LABELS:
@@ -355,12 +360,14 @@ def _filter_models(rows: list, f: dict, skip: frozenset = frozenset()) -> list:
         rows = [r for r in rows if views.is_realtime(r.model)]
     if on("weights") and f["weights"] in ("open", "hosted"):
         rows = [r for r in rows if (r.model.open_weights is not None) == (f["weights"] == "open")]
+    if on("framework") and catalog is not None:
+        rows = [r for r in rows if f["framework"] in views.model_frameworks(catalog, r)]
     return rows
 
 
-def _model_facets(all_rows: list, rows: list, f: dict) -> dict:
+def _model_facets(all_rows: list, rows: list, f: dict, catalog: Catalog) -> dict:
     """Counts beside each filter option: what the result would be with that option, all other filters kept."""
-    without = lambda k: _filter_models(all_rows, f, frozenset({k}))     # noqa: E731
+    without = lambda k: _filter_models(all_rows, f, frozenset({k}), catalog)     # noqa: E731
     by_type = Counter(r.model.type for r in without("type"))
     status_base = without("status")
     caps = Counter(c for r in rows for c in r.model.capabilities)
@@ -373,6 +380,7 @@ def _model_facets(all_rows: list, rows: list, f: dict) -> dict:
                        if caps[c] or c in f["capability"]],
         "realtime": sum(1 for r in without("mode") if views.is_realtime(r.model)),
         "open": sum(1 for r in without("weights") if r.model.open_weights is not None),
+        "framework": Counter(fw for r in without("framework") for fw in views.model_frameworks(catalog, r)),
         "status_total": len(status_base),
         "ending": sum(1 for r in status_base if r.model.eol_date),
         "beta": sum(1 for r in status_base
@@ -384,7 +392,7 @@ def _model_facets(all_rows: list, rows: list, f: dict) -> dict:
 async def models_page(request: Request, catalog: Catalog = Depends(get_catalog)):
     f = _model_filters(request)
     all_rows = views.active_models(catalog)
-    rows = _filter_models(all_rows, f)
+    rows = _filter_models(all_rows, f, catalog=catalog)
     if f["sort"] == "price":
         rows.sort(key=views.price_sort_key)
     elif f["sort"] == "newest":
@@ -397,7 +405,7 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         rows.sort(key=views.default_model_order)
     ctx = _models_context(catalog, rows, f, usage_raw=_q(request, "usage"))
     ctx["canonical_path"] = _models_canonical(catalog, f)
-    ctx["facets"] = fc = _model_facets(all_rows, rows, f)
+    ctx["facets"] = fc = _model_facets(all_rows, rows, f, catalog)
     lang_n = lambda code: fc["language"].get(code, fc["language"].get("*", 0))      # noqa: E731
     ctx["filter_opts"] = {
         "provider": [(s.id, s.name, fc["provider"][s.id]) for s in ctx["providers"]
@@ -406,6 +414,8 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         "capability": sorted(((c, views.FEATURE_LABELS.get(c, c.replace("_", " ").capitalize()), n) for c, n in fc["capability"]),
                              key=lambda o: -o[2]),
         "status": [("ending", "Shutting down", fc["ending"]), ("beta", "Beta / preview", fc["beta"])],
+        "framework": [(fw, label, fc["framework"][fw]) for fw, label in views.FRAMEWORK_LABELS.items()
+                      if fc["framework"][fw] or fw == f["framework"]],
     }
     ctx["tokens"] = [t for t in ctx["tokens"] if t[0] != _TOKEN_LABEL["type"]]     # the type tabs show it
     # Paginate after the context is built: the spectrum and the compare keys describe every match, not one page.
@@ -465,6 +475,8 @@ def _models_canonical(catalog: Catalog, f: dict) -> str:
         page = views.find_landing(catalog, f["type"], "realtime")
     elif active == {"type", "weights"} and f["weights"] == "open":
         page = views.find_landing(catalog, f["type"], "open")
+    elif active == {"type", "framework"}:
+        page = views.find_landing(catalog, f["type"], "framework", f["framework"])
     return page.url if page else "/models"
 
 
@@ -479,7 +491,8 @@ def _landing_page(type_slug: str):
         f = {"type": mtype, "language": landing.value if landing.kind == "language" else "",
              "capability": [landing.value] if landing.kind == "feature" else [],
              "provider": "", "q": "", "sort": "price", "status": "",
-             "mode": "realtime" if landing.kind == "realtime" else ""}
+             "mode": "realtime" if landing.kind == "realtime" else "", "weights": "",
+             "framework": landing.value if landing.kind == "framework" else ""}
         ctx = _models_context(catalog, rows, f, show_tokens=False, usage_raw=_q(request, "usage"))
         ctx["usage_hidden"] = []
         ctx["filtered"] = landing.kind != "hub"
@@ -496,6 +509,7 @@ def _landing_page(type_slug: str):
             "landing": landing, "copy": views.landing_copy(catalog, landing, rows), "crumbs": crumbs,
             "by_language": [p for p in siblings if p.kind == "language"],
             "by_feature": [p for p in siblings if p.kind in ("feature", "open", "realtime")],
+            "by_framework": [p for p in siblings if p.kind == "framework"],
             "other_types": [p for p in views.landing_pages(catalog).values() if p.kind == "hub" and p.type != mtype],
             "wildcard": wildcard, "filter_url": f"/models?{_qs(f, sort=None)}",
             "tasks": views.task_cards(catalog, mtype) if landing.kind == "hub" else [],

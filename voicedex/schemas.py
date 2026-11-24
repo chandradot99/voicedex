@@ -37,6 +37,7 @@ class ProviderOut(BaseModel):
     last_synced_at: datetime | None
     retired_on: date | None
     verified: dict | None
+    integrations: list[dict] = []     # voice-agent frameworks with a first-party integration, per their own docs
     deprecated_at: datetime | None
     updated_at: datetime | None
 
@@ -53,6 +54,7 @@ class ProviderOut(BaseModel):
             last_synced_at=_dt(p.last_synced),
             retired_on=p.retired_on,
             verified=p.verified.model_dump(mode="json") if p.verified else None,
+            integrations=[i.model_dump(mode="json", exclude_none=True) for i in p.integrations],
             deprecated_at=None if p.status == "active" else _dt(p.retired_on or p.last_synced),
             updated_at=_dt(p.last_synced),
         )

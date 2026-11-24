@@ -32,6 +32,7 @@ from voicedex.sync.registry import REGISTRY  # noqa: E402
 STALE_DAYS = {"api": 14, "mixed": 21, "docs": 45}
 EOL_SOON_DAYS = 30
 PRICING_STALE_DAYS = 120
+INTEGRATIONS_STALE_DAYS = 90     # re-check each framework's integration list (scripts/apply_integrations.py)
 DISCOVERY_EVERY_DAYS = 90
 EXPANSION_DOC = ROOT / "docs" / "design" / "provider-expansion.md"
 _DISCOVERY_MARK = re.compile(r"Last discovery pass:\s*(\d{4}-\d{2}-\d{2})")
@@ -49,6 +50,7 @@ class Report:
     pricing_stale: list[dict] = field(default_factory=list)  # {provider, models, oldest}
     discovery: dict = field(default_factory=dict)            # {last, due}
     dead_samples: dict = field(default_factory=dict)         # provider -> count (only with --samples)
+    integrations: dict = field(default_factory=dict)         # framework -> {providers, oldest}
     no_features: list[dict] = field(default_factory=list)    # {provider, models, active}: models with no capabilities
     uncommitted_data: bool = False
 
@@ -65,6 +67,10 @@ def build(today: date, samples: bool) -> Report:
     for pid in sorted(on_disk):
         pd = read_provider_dir(data / pid)
         prov, entry = pd.provider, registered.get(pid)
+        for i in prov.integrations:
+            row = rep.integrations.setdefault(i.framework, {"providers": 0, "oldest": i.as_of.isoformat()})
+            row["providers"] += 1
+            row["oldest"] = min(row["oldest"], i.as_of.isoformat())
         if prov.status == "active" and prov.retired_on and prov.retired_on <= today:
             rep.retired_due.append({"provider": pid, "retired_on": prov.retired_on.isoformat()})
         if entry is None or not entry.syncable:
@@ -147,6 +153,11 @@ def render(rep: Report) -> str:
     section(f"Models with no features documented ({bare}; capability filters hide them — re-extract with a docs pass)",
             [f"- {r['provider']}: {r['models']} of {r['active']}" for r in rep.no_features[:15]]
             + ([f"- … {len(rep.no_features) - 15} more providers"] if len(rep.no_features) > 15 else []))
+    section(f"Framework integrations (re-check every {INTEGRATIONS_STALE_DAYS} days)",
+            [f"- {fw}: {r['providers']} providers, checked {r['oldest']}"
+             + (" — DUE" if (date.fromisoformat(rep.today) - date.fromisoformat(r["oldest"])).days
+                > INTEGRATIONS_STALE_DAYS else "") for fw, r in sorted(rep.integrations.items())],
+            empty="none recorded")
     d = rep.discovery
     section("New-provider discovery", [f"- last pass: {d['last'] or 'never recorded'}; "
                                        f"{'DUE' if d['due'] else 'not due'} (every {d['every_days']} days)"])

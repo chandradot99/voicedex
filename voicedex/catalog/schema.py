@@ -192,6 +192,33 @@ class ProviderVerification(_Record):
     evidence: str | None = None               # how it was confirmed, e.g. "email reply to our review request"
 
 
+# Voice-agent frameworks / platforms whose own docs list a first-party integration for a provider.
+FRAMEWORKS = ("livekit", "pipecat", "vapi", "retell")
+
+
+class Integration(_Record):
+    """A framework supports this provider out of the box (editorial, researched from the framework's own docs)."""
+    framework: str
+    types: list[str] = Field(default_factory=list)   # which of the provider's model types it covers: stt|tts|sts
+    url: str                                          # the framework's page for this integration
+    as_of: date
+    notes: str | None = None                          # e.g. "plugin" / "LiveKit Inference"
+
+    @field_validator("framework")
+    @classmethod
+    def _framework(cls, v: str) -> str:
+        if v not in FRAMEWORKS:
+            raise ValueError(f"unknown framework {v!r}; allowed: {list(FRAMEWORKS)}")
+        return v
+
+    @field_validator("types")
+    @classmethod
+    def _types(cls, v: list[str]) -> list[str]:
+        if bad := [t for t in v if t not in ("stt", "tts", "sts")] or not v:
+            raise ValueError(f"integration types must be a non-empty subset of stt/tts/sts, got {v!r} {bad or ''}")
+        return sorted(set(v), key=("stt", "tts", "sts").index)
+
+
 class ProviderLinks(_Record):
     docs: str | None = None
     api_reference: str | None = None
@@ -224,6 +251,15 @@ class Provider(_Record):
     retired_on: date | None = None
     # The provider confirmed this listing is accurate (editorial; see docs/verification.md)
     verified: ProviderVerification | None = None
+    # Voice-agent frameworks with a first-party integration (editorial; scripts/apply_integrations.py)
+    integrations: list[Integration] = Field(default_factory=list)
+
+    @field_validator("integrations")
+    @classmethod
+    def _integrations(cls, v: list[Integration]) -> list[Integration]:
+        if len({i.framework for i in v}) != len(v):
+            raise ValueError("one integration entry per framework")
+        return sorted(v, key=lambda i: FRAMEWORKS.index(i.framework))
 
     @field_validator("type")
     @classmethod

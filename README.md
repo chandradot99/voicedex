@@ -30,6 +30,10 @@ download it as one JSON file.
 - **Compare models side by side** on languages, features, price, limits and audio formats
   ([compare](https://voicedex.dev/compare)), or two providers head to head
   ([Deepgram vs ElevenLabs](https://voicedex.dev/compare/deepgram-vs-elevenlabs)).
+- **See what works with your framework**: providers with a built-in LiveKit, Pipecat, Vapi or Retell
+  integration, from each framework's own docs
+  ([text-to-speech for Pipecat](https://voicedex.dev/text-to-speech/pipecat),
+  [speech-to-text for LiveKit](https://voicedex.dev/speech-to-text/livekit)).
 - **Find alternatives** to a provider or a model that's shutting down
   ([ElevenLabs alternatives](https://voicedex.dev/alternatives/elevenlabs)).
 - **Estimate monthly cost** at your usage on any model list or model page.
@@ -70,8 +74,8 @@ curl -O "https://voicedex.dev/v1/catalog.json"
 
 | Path | |
 |---|---|
-| `GET /v1/providers` · `/v1/providers/{id}` | Providers, with model and voice counts. Filters: `type`, `compliance`, `access`, `headquarters` |
-| `GET /v1/providers/{id}/models` · `/models/{model_id}` | Filters: `type`, `language`, `capabilities`, `lifecycle`, `region`, `realtime`, `open_weights`, `recommended`, `shutting_down`, `max_price_usd`, `search`; `sort` = `name`, `price` or `newest` |
+| `GET /v1/providers` · `/v1/providers/{id}` | Providers, with model and voice counts and framework integrations. Filters: `type`, `compliance`, `access`, `headquarters`, `framework` |
+| `GET /v1/providers/{id}/models` · `/models/{model_id}` | Filters: `type`, `language`, `capabilities`, `lifecycle`, `region`, `realtime`, `open_weights`, `recommended`, `shutting_down`, `max_price_usd`, `framework`, `search`; `sort` = `name`, `price` or `newest` |
 | `GET /v1/providers/{id}/voices` · `/voices/{voice_id}` | Filters: `gender`, `category`, `language`, `model`, `accent`, `use_case`, `age`, `has_sample`, `multilingual`, `capabilities`, `search` |
 | `GET /v1/models` · `/v1/voices` | The same filters across all providers, plus `provider` |
 | `GET /v1/catalog.json` | Everything in one response, deprecated records included |

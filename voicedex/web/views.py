@@ -266,6 +266,7 @@ FEATURE_LABELS = {
     "function_calling": "Function calling", "turn_detection": "Turn detection",
     "barge_in": "Interruptions (barge-in)", "transcription": "Transcripts", "video_input": "Video input",
 }
+FRAMEWORK_LABELS = {"livekit": "LiveKit", "pipecat": "Pipecat", "vapi": "Vapi", "retell": "Retell AI"}
 INTERFACE_LABELS = {"http": "HTTP", "websocket": "WebSocket", "grpc": "gRPC", "webrtc": "WebRTC"}
 
 
@@ -627,13 +628,35 @@ def slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
+_FW_CACHE: list = [None, {}]
+
+
+def framework_index(catalog: Catalog) -> dict[tuple[str, str], list[str]]:
+    """(provider id, model type) → frameworks with a first-party integration covering it, in FRAMEWORK_LABELS
+    order. Memoized per loaded catalog."""
+    if _FW_CACHE[0] is catalog:
+        return _FW_CACHE[1]
+    out: dict[tuple[str, str], list[str]] = {}
+    for pid, pd in catalog.providers.items():
+        for i in pd.provider.integrations:
+            for t in i.types:
+                out.setdefault((pid, t), []).append(i.framework)
+    _FW_CACHE[:] = [catalog, out]
+    return out
+
+
+def model_frameworks(catalog: Catalog, row: ModelRow) -> list[str]:
+    return framework_index(catalog).get((row.provider_id, str(getattr(row.model.type, "value", row.model.type))), [])
+
+
 @dataclass(frozen=True)
 class Landing:
     type: str            # stt | tts | sts
-    kind: str            # hub | language | feature | open | realtime
-    value: str = ""      # base language code, or capability
+    kind: str            # hub | language | feature | open | realtime | framework
+    value: str = ""      # base language code, capability, or framework id
     slug: str = ""
-    label: str = ""      # "Hindi", "Speaker diarization"
+    label: str = ""      # "Hindi", "Speaker diarization", "Pipecat"
+    providers: frozenset = frozenset()   # framework pages: providers it integrates for this type
 
     @property
     def url(self) -> str:
@@ -651,6 +674,8 @@ class Landing:
             return m.open_weights is not None
         if self.kind == "realtime":
             return is_realtime(m)
+        if self.kind == "framework":
+            return row.provider_id in self.providers
         return True
 
 
@@ -678,6 +703,11 @@ def landing_pages(catalog: Catalog) -> dict[str, Landing]:
         caps = Counter(c for r in typed for c in r.model.capabilities)
         for cap in sorted(c for c, n in caps.items() if n >= MIN_LANDING_MODELS):
             candidates.append(Landing(mtype, "feature", cap, slugify(cap), FEATURE_LABELS.get(cap, cap)))
+        fw_index = framework_index(catalog)
+        for fw, fw_label in FRAMEWORK_LABELS.items():
+            provs = frozenset(pid for (pid, t), fws in fw_index.items() if t == mtype and fw in fws)
+            if sum(r.provider_id in provs for r in typed) >= MIN_LANDING_MODELS:
+                candidates.append(Landing(mtype, "framework", fw, fw, fw_label, provs))
         langs = Counter(b for r in typed for b in {base_language(lang) for lang in r.model.languages if lang != "*"})
         names = {code: language_name(code) for code, n in langs.items() if n >= MIN_LANDING_MODELS}
         name_slugs = Counter(slugify(n) for n in names.values())
@@ -756,6 +786,12 @@ def landing_copy(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> Landi
         what = "transcribe audio as it arrives" if page.type == "stt" else "stream audio back as it is generated"
         lead = (f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} {what} over a "
                 "WebSocket or WebRTC connection, for live captions, calls and voice agents.")
+    elif page.kind == "framework":
+        subject = f"{page.label} {kind_label}"
+        h1 = f"{TYPE_LABELS[page.type]} models that work with {page.label}"
+        title = f"{TYPE_LABELS[page.type]}{abbr} for {page.label}: {n} models with a built-in integration"
+        lead = (f"{n} {kind_label} {noun} from {n_prov} provider{'s' if n_prov != 1 else ''} that {page.label} "
+                f"supports out of the box, going by {page.label}'s own integration docs.")
     elif page.kind == "open":
         subject = f"open-weights {kind_label}"
         h1 = f"Open-source {kind_label} models"
@@ -880,7 +916,7 @@ def landing_faq(catalog: Catalog, page: Landing, rows: list[ModelRow]) -> list[t
         return []
     kind_label = TYPE_LABELS[page.type].lower()
     subject = {"language": f"{page.label} {kind_label}", "open": f"open-source {kind_label}",
-               "realtime": f"realtime {kind_label}"}.get(page.kind, kind_label)
+               "realtime": f"realtime {kind_label}", "framework": f"{page.label} {kind_label}"}.get(page.kind, kind_label)
     if page.kind == "feature":
         subject = f"{kind_label} with {_lower_label(page.label)}"
     names = {pid: pd.provider.name for pid, pd in catalog.providers.items()}
