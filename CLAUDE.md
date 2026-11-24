@@ -58,9 +58,15 @@ voicedex/
                        /compare/<a>-vs-<b>: provider pairs from views.COMPARE_PROVIDERS (editorial list) that share a
                        model type; alphabetical slug, reverse order 301s. /changes + /changes.xml (Atom): web/changes.py
                        replays git history of data/ (CI bakes data/.changes.json; local dev reads git).
-                       /providers: sortable index (type filter; filtered views canonicalize to /providers). /models
-                       paginates at MODELS_PER_PAGE (100); price sort groups comparable USD → other currency/unit → unpriced.
-                       Shared table cells (price amount + unit, features count) live in templates/_cells.html.
+                       /providers: sortable index (type filter; filtered views canonicalize to /providers); home shows
+                       only the widely used ones (COMPARE_PROVIDERS). /models and /voices are "workbench" pages
+                       (.wrap-wide, up to 1600px): a filter rail with live counts per option (routes._filter_models /
+                       _filter_voices with skip=…), repeatable ?capability= (AND), radios for type/status/gender, and a
+                       compact-rows toggle (localStorage "density", applied in <head>). /models default order =
+                       views.default_model_order (recommended → default → widely used providers); also ?sort=price|newest|name.
+                       /models paginates at MODELS_PER_PAGE (100); price sort groups comparable USD → other currency/unit
+                       → unpriced. Display names show under ids only when views.name_adds. Shared table cells (price
+                       amount + unit, features count) live in templates/_cells.html.
                        /alternatives/<provider>: COMPARE_PROVIDERS + every retired provider; active providers of the same
                        type, widely used first, then shared features (only if the subject lists ≥3), then price.
   routers/           — providers.py (/v1/providers/...), catalog.py (/v1/models, /v1/voices, /v1/catalog.json), _filters.py

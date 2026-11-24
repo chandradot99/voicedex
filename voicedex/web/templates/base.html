@@ -20,7 +20,7 @@
   {% for ld in jsonld or [] %}<script type="application/ld+json">{{ ld|tojson }}</script>
   {% endfor %}
   <meta name="theme-color" content="#111113">
-  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;if(localStorage.getItem("density")==="compact")document.documentElement.dataset.density="compact"}catch(e){}</script>
   <meta name="color-scheme" content="dark">
   {% include "_favicon.html" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">

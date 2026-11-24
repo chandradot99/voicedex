@@ -13,9 +13,9 @@ async def test_pages_render(client):
         assert r.status_code == 200, path
 
 
-async def test_home_lists_retired_and_active(client):
+async def test_home_links_full_provider_list(client):
     html = (await client.get("/")).text
-    assert "ZZ Test" in html and "No longer available" in html
+    assert 'href="/providers"' in html and "that shut down" in html      # the full list, retired included
 
 
 async def test_model_filters(client):
@@ -302,3 +302,31 @@ async def test_providers_index(client):
     only_sts = (await client.get("/providers?type=sts&sort=models")).text
     assert re.search(r'rel="canonical" href="[^"]*/providers"', only_sts)     # filtered views canonicalize
     assert "No longer available" not in only_sts                       # retired list only on the unfiltered view
+
+
+async def test_models_facets_and_multi_feature(client):
+    from voicedex.catalog.schema import MODEL_CAPABILITIES
+    html = (await client.get("/models")).text
+    assert 'type="checkbox" name="capability"' in html
+    assert re.search(r'name="type" value="tts"[^>]*>.*?<i>\d+</i>', html, re.S)          # counts beside options
+    caps = sorted(MODEL_CAPABILITIES)[:2]
+    both = (await client.get(f"/models?capability={caps[0]}&capability={caps[1]}")).text
+    assert both.count('class="token"') == 2                             # one removable token per ticked feature
+    assert "/models?capability=bogus" not in both
+    assert (await client.get("/models?capability=bogus")).status_code == 200   # unknown terms are ignored
+
+
+async def test_models_sorts(client):
+    for sort in ("", "price", "newest", "name", "nonsense"):
+        assert (await client.get(f"/models?sort={sort}")).status_code == 200
+
+
+def test_name_adds():
+    from voicedex.web.views import name_adds
+    assert not name_adds(Model(id="eleven_v4", name="Eleven v4", type="tts"))
+    assert name_adds(Model(id="16k_ar", name="Arabic", type="stt"))
+
+
+async def test_voices_facets(client):
+    html = (await client.get("/voices?gender=male")).text
+    assert 'name="gender" value="female"' in html and "Has a sample to play" in html

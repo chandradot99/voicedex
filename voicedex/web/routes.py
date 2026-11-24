@@ -51,7 +51,7 @@ templates.env.globals.update(
     asset_v=_asset_version,
     language_name=views.language_name,
     price_label=views.price_label, price_parts=views.price_parts, price_group=views.price_group,
-    PRICE_GROUP_LABELS=views.PRICE_GROUP_LABELS,
+    PRICE_GROUP_LABELS=views.PRICE_GROUP_LABELS, MODEL_SORTS=views.MODEL_SORTS, name_adds=views.name_adds,
     model_url=views.model_url,
     model_key=views.model_key,
     variant_label=views.variant_label,
@@ -88,7 +88,7 @@ def _qs(f: dict, **changes) -> str:
     """Query string for the current filters with some keys changed (None/"" removes a key)."""
     from urllib.parse import urlencode
     merged = {**f, **changes}
-    return urlencode({k: v for k, v in merged.items() if v})
+    return urlencode({k: v for k, v in merged.items() if v}, doseq=True)
 
 
 _TOKEN_LABEL = {"type": "type", "language": "language", "capability": "feature", "provider": "provider",
@@ -178,6 +178,8 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
     return templates.TemplateResponse(request, "home.html", {
         "live": live,
         "retired": [s for s in summaries if s.status != "active"],
+        "popular": sorted((s for s in live if s.id in views.COMPARE_PROVIDERS),
+                          key=lambda s: views.COMPARE_PROVIDERS.index(s.id)),
         "coverage": views.coverage_map(catalog, n_languages=HOME_MAP_LANGUAGES, model_type=map_type,
                                        n_providers=HOME_MAP_PROVIDERS),
         "coverage_providers": len(views.coverage_map(catalog, n_languages=1, model_type=map_type).rows),
@@ -283,38 +285,85 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
     })
 
 
-@router.get("/models", response_class=HTMLResponse)
-async def models_page(request: Request, catalog: Catalog = Depends(get_catalog)):
-    f = {k: _q(request, k) for k in ("type", "language", "capability", "provider", "q", "sort", "status", "mode", "weights")}
-    rows = views.active_models(catalog)
-    if f["type"] in views.TYPE_LABELS:
+MODEL_FILTER_KEYS = ("type", "language", "capability", "provider", "q", "sort", "status", "mode", "weights")
+
+
+def _model_filters(request: Request) -> dict:
+    f = {k: _q(request, k) for k in MODEL_FILTER_KEYS if k != "capability"}
+    # Features combine (a model must have every ticked one), so ?capability= may repeat.
+    caps = dict.fromkeys(c.strip() for c in request.query_params.getlist("capability"))
+    f["capability"] = [c for c in caps if c in MODEL_CAPABILITIES]
+    if f["sort"] not in views.MODEL_SORTS:
+        f["sort"] = ""
+    return f
+
+
+def _filter_models(rows: list, f: dict, skip: frozenset = frozenset()) -> list:
+    """Apply every filter in f except those in skip (facet counts: "how many if I picked this instead")."""
+    on = lambda k: f.get(k) and k not in skip           # noqa: E731
+    if on("type") and f["type"] in views.TYPE_LABELS:
         rows = [r for r in rows if r.model.type == f["type"]]
-    if f["provider"]:
+    if on("provider"):
         rows = [r for r in rows if r.provider_id == f["provider"]]
-    if f["language"]:
+    if on("language"):
         rows = [r for r in rows if language_matches(f["language"], r.model.languages)]
-    if f["capability"]:
-        rows = [r for r in rows if f["capability"] in r.model.capabilities]
-    if f["q"]:
+    if on("capability"):
+        rows = [r for r in rows if all(c in r.model.capabilities for c in f["capability"])]
+    if on("q"):
         needle = f["q"].lower()
         rows = [r for r in rows if needle in r.model.id.lower() or needle in r.model.name.lower()
                 or needle in (r.model.description or "").lower() or needle in r.provider_id]
-    if f["status"] == "ending":
+    if on("status") and f["status"] == "ending":
         rows = [r for r in rows if r.model.eol_date]
-    if f["mode"] == "realtime":
-        rows = [r for r in rows if views.is_realtime(r.model)]
-    if f["weights"] in ("open", "hosted"):
-        rows = [r for r in rows if (r.model.open_weights is not None) == (f["weights"] == "open")]
-    if f["status"] == "beta":
+    if on("status") and f["status"] == "beta":
         rows = [r for r in rows if str(getattr(r.model.lifecycle, "value", r.model.lifecycle)) in ("alpha", "beta")]
-    if f["status"] == "ending" and f["sort"] != "price":
-        rows.sort(key=lambda r: (r.model.eol_date, r.provider_id, r.model.id))
-    elif f["sort"] == "price":
+    if on("mode") and f["mode"] == "realtime":
+        rows = [r for r in rows if views.is_realtime(r.model)]
+    if on("weights") and f["weights"] in ("open", "hosted"):
+        rows = [r for r in rows if (r.model.open_weights is not None) == (f["weights"] == "open")]
+    return rows
+
+
+def _model_facets(all_rows: list, rows: list, f: dict) -> dict:
+    """Counts beside each filter option: what the result would be with that option, all other filters kept."""
+    without = lambda k: _filter_models(all_rows, f, frozenset({k}))     # noqa: E731
+    by_type = Counter(r.model.type for r in without("type"))
+    status_base = without("status")
+    caps = Counter(c for r in rows for c in r.model.capabilities)
+    vocab = views.feature_vocab(f["type"]) if f["type"] in views.TYPE_LABELS else sorted(MODEL_CAPABILITIES)
+    return {
+        "type": by_type, "type_total": sum(by_type.values()),
+        "provider": Counter(r.provider_id for r in without("provider")),
+        "language": views.language_counts(without("language")),
+        "capability": [(c, caps[c]) for c in sorted(vocab, key=lambda c: views.FEATURE_LABELS.get(c, c))
+                       if caps[c] or c in f["capability"]],
+        "realtime": sum(1 for r in without("mode") if views.is_realtime(r.model)),
+        "open": sum(1 for r in without("weights") if r.model.open_weights is not None),
+        "status_total": len(status_base),
+        "ending": sum(1 for r in status_base if r.model.eol_date),
+        "beta": sum(1 for r in status_base
+                    if str(getattr(r.model.lifecycle, "value", r.model.lifecycle)) in ("alpha", "beta")),
+    }
+
+
+@router.get("/models", response_class=HTMLResponse)
+async def models_page(request: Request, catalog: Catalog = Depends(get_catalog)):
+    f = _model_filters(request)
+    all_rows = views.active_models(catalog)
+    rows = _filter_models(all_rows, f)
+    if f["sort"] == "price":
         rows.sort(key=views.price_sort_key)
-    else:
+    elif f["sort"] == "newest":
+        rows.sort(key=views.newest_model_order)
+    elif f["sort"] == "name":
         rows.sort(key=lambda r: (r.provider_id, r.model.type, not r.model.is_default, r.model.id))
+    elif f["status"] == "ending":
+        rows.sort(key=lambda r: (r.model.eol_date, r.provider_id, r.model.id))
+    else:
+        rows.sort(key=views.default_model_order)
     ctx = _models_context(catalog, rows, f, usage_raw=_q(request, "usage"))
     ctx["canonical_path"] = _models_canonical(catalog, f)
+    ctx["facets"] = _model_facets(all_rows, rows, f)
     # Paginate after the context is built: the spectrum and the compare keys describe every match, not one page.
     try:
         page = max(1, int(_q(request, "page") or 1))
@@ -328,25 +377,36 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
     return templates.TemplateResponse(request, "models.html", ctx)
 
 
+def _filter_tokens(f: dict, catalog: Catalog) -> list[tuple[str, str, str]]:
+    """Active filters as (label, value, query string without it). Repeated keys get one token per value."""
+    out = []
+    for k, v in f.items():
+        if not v or k not in _TOKEN_LABEL:
+            continue
+        for one in (v if isinstance(v, list) else [v]):
+            rest = [x for x in v if x != one] if isinstance(v, list) else None
+            out.append((_TOKEN_LABEL[k], _token_value(k, one, catalog), _qs(f, **{k: rest})))
+    return out
+
+
 def _models_context(catalog: Catalog, rows: list, f: dict, *, show_tokens: bool = True,
                     usage_raw: str | None = None) -> dict:
     filtered = any(v for k, v in f.items() if k != "sort")
     keys = {views.model_key(r) for r in rows}
     spectrum = [b for b in views.price_spectrum(catalog, highlight=keys if filtered else None)
                 if not filtered or any(it.state == "on" for col in b.columns for it in col)]
-    tokens = [(k, _TOKEN_LABEL[k], _token_value(k, v, catalog)) for k, v in f.items() if v and k in _TOKEN_LABEL]
     return {
-        "rows": rows, "f": f, "filtered": filtered, "spectrum": spectrum, "tokens": tokens if show_tokens else [],
+        "rows": rows, "f": f, "filtered": filtered, "spectrum": spectrum,
+        "tokens": _filter_tokens(f, catalog) if show_tokens else [],
         "positions": views.price_positions(views.price_spectrum(catalog)),
         "qs": lambda **changes: _qs(f, **changes),
         "languages": views.language_options(catalog),
-        "capabilities": sorted(MODEL_CAPABILITIES, key=lambda c: views.FEATURE_LABELS.get(c, c)),
         "providers": [s for s in views.provider_summaries(catalog) if s.models],
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
         # Cost calculator: only when every row is one model type (a per-month figure needs one usage unit)
         "usage_type": f["type"] if f.get("type") in views.USAGE else None,
         "usage": views.parse_usage(f["type"], usage_raw) if f.get("type") in views.USAGE else None,
-        "usage_hidden": [(k, v) for k, v in f.items() if v],
+        "usage_hidden": [(k, x) for k, v in f.items() if v for x in (v if isinstance(v, list) else [v])],
     }
 
 
@@ -358,8 +418,8 @@ def _models_canonical(catalog: Catalog, f: dict) -> str:
         page = views.find_landing(catalog, f["type"])
     elif active == {"type", "language"} and "-" not in f["language"]:
         page = views.find_landing(catalog, f["type"], "language", f["language"].lower())
-    elif active == {"type", "capability"}:
-        page = views.find_landing(catalog, f["type"], "feature", f["capability"])
+    elif active == {"type", "capability"} and len(f["capability"]) == 1:
+        page = views.find_landing(catalog, f["type"], "feature", f["capability"][0])
     elif active == {"type", "mode"} and f["mode"] == "realtime":
         page = views.find_landing(catalog, f["type"], "realtime")
     elif active == {"type", "weights"} and f["weights"] == "open":
@@ -376,7 +436,7 @@ def _landing_page(type_slug: str):
             raise HTTPException(404, "Page not found")
         rows = views.landing_rows(catalog, landing)
         f = {"type": mtype, "language": landing.value if landing.kind == "language" else "",
-             "capability": landing.value if landing.kind == "feature" else "",
+             "capability": [landing.value] if landing.kind == "feature" else [],
              "provider": "", "q": "", "sort": "price", "status": "",
              "mode": "realtime" if landing.kind == "realtime" else ""}
         ctx = _models_context(catalog, rows, f, show_tokens=False, usage_raw=_q(request, "usage"))
@@ -443,25 +503,43 @@ def _breadcrumb_ld(crumbs: list[tuple[str, str]]) -> dict:
         for i, (name, path) in enumerate(crumbs, 1)]}
 
 
-@router.get("/voices", response_class=HTMLResponse)
-async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog)):
-    f = {k: _q(request, k) for k in ("provider", "model", "language", "gender", "q", "preview")}
-    rows = views.active_voices(catalog)
-    if f["provider"]:
+def _filter_voices(rows: list, f: dict, skip: frozenset = frozenset()) -> list:
+    on = lambda k: f.get(k) and k not in skip           # noqa: E731
+    if on("provider"):
         rows = [r for r in rows if r.provider_id == f["provider"]]
     if f["provider"] and f["model"]:
         rows = [r for r in rows if "*" in r.voice.compatible_models or f["model"] in r.voice.compatible_models]
-    if f["language"]:
+    if on("language"):
         rows = [r for r in rows if language_matches(f["language"], r.voice.languages)]
-    if f["gender"] in ("male", "female", "neutral"):
+    if on("gender") and f["gender"] in VOICE_GENDERS:
         rows = [r for r in rows if r.voice.gender == f["gender"]]
-    if f["preview"]:
+    if on("preview"):
         rows = [r for r in rows if r.voice.preview_url or r.voice.previews]
-    if f["q"]:
+    if on("q"):
         needle = f["q"].lower()
         rows = [r for r in rows if needle in r.voice.name.lower() or needle in r.voice.id.lower()
                 or needle in (r.voice.description or "").lower() or needle in (r.voice.accent or "")
                 or any(needle in t.lower() for t in r.voice.use_cases + r.voice.tags)]
+    return rows
+
+
+VOICE_GENDERS = ("female", "male", "neutral")
+
+
+@router.get("/voices", response_class=HTMLResponse)
+async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog)):
+    f = {k: _q(request, k) for k in ("provider", "model", "language", "gender", "q", "preview")}
+    all_rows = views.active_voices(catalog)
+    rows = _filter_voices(all_rows, f)
+    without = lambda k: _filter_voices(all_rows, f, frozenset({k}))     # noqa: E731
+    gender_base = without("gender")
+    by_gender = Counter(r.voice.gender for r in gender_base)
+    facets = {
+        "provider": Counter(r.provider_id for r in without("provider")),
+        "language": views.language_counts(without("language"), "voice"),
+        "gender": by_gender, "gender_total": len(gender_base),
+        "preview": sum(1 for r in without("preview") if r.voice.preview_url or r.voice.previews),
+    }
     def _sample_rank(r) -> int:   # stable sort: samples in the filtered language, other samples, none
         s = views.voice_sample(r.voice, f["language"])
         return 2 if s is None else (1 if s.matched is False else 0)
@@ -475,9 +553,11 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     return templates.TemplateResponse(request, "voices.html", {
         "rows": rows[(page - 1) * VOICES_PER_PAGE: page * VOICES_PER_PAGE],
         "total": len(rows), "page": page, "pages": pages, "f": f,
-        "tokens": [(k, _TOKEN_LABEL[k], _token_value(k, v, catalog)) for k, v in f.items() if v and k in _TOKEN_LABEL],
+        "tokens": _filter_tokens(f, catalog), "facets": facets, "genders": VOICE_GENDERS,
         "qs": lambda **changes: _qs({**f, "page": str(page) if page > 1 else ""}, **{k: (str(v) if v else v) for k, v in changes.items()}),
-        "languages": views.language_options(catalog),
+        "languages": sorted(((c, views.language_name(c)) for c in {views.base_language(lang) for r in all_rows
+                                                                    for lang in r.voice.languages if lang != "*"}),
+                           key=lambda x: x[1]),
         "providers": [s for s in views.provider_summaries(catalog) if s.voices],
         "n_live": sum(1 for pd in catalog.providers.values() if pd.provider.status == "active"),
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},

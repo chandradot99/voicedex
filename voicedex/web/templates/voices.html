@@ -6,46 +6,49 @@
   <p class="lede">Stock voices from every text-to-speech provider. Press play where the provider publishes a sample. {{ providers|length }} of {{ n_live }} providers publish a stock voice list; the rest are speech-to-text only, open weights you run yourself, or keep voices behind an account.<span class="hide-sm"> <kbd>J</kbd> <kbd>K</kbd> move between samples, <kbd>Space</kbd> pauses.</span></p>
 </section>
 
-<section class="wrap">
-  {% if f.model and f.provider %}<p class="filter-note">Voices that work with <code translate="no">{{ f.model }}</code>. <a href="/voices?provider={{ f.provider }}">Show all {{ f.provider }} voices</a></p>{% endif %}
-  <details class="filter-bar" open data-collapse-sm>
+<section class="wrap wrap-wide workbench">{% set fc = facets %}
+  <details class="filter-bar rail" open data-collapse-sm>
     <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
-    <form class="filters" method="get" action="/voices">
+    <form class="filters facets" method="get" action="/voices" aria-label="Filter voices">
       {% if f.model %}<input type="hidden" name="model" value="{{ f.model }}">{% endif %}
+      <label class="field">Name, accent or style
+        <input type="search" name="q" value="{{ f.q }}" placeholder="british, narration, calm…" autocomplete="off">
+      </label>
       <label class="field">Provider
         <select name="provider" data-searchable="provider">
           <option value="">Any</option>
-          {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ "{:,}".format(s.voices) }})</option>{% endfor %}
+          {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
         </select>
       </label>
       <label class="field">Language
         <select name="language" data-searchable>
           <option value="">Any</option>
-          {% for code, name in languages %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
+          {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
         </select>
       </label>
-      <label class="field">Gender
-        <select name="gender">
-          <option value="">Any</option>
-          {% for g in ["female", "male", "neutral"] %}<option value="{{ g }}" {% if f.gender == g %}selected{% endif %}>{{ g|capitalize }}</option>{% endfor %}
-        </select>
-      </label>
-      <label class="field grow">Name, accent or style
-        <input type="search" name="q" value="{{ f.q }}" placeholder="british, narration, calm…" autocomplete="off">
-      </label>
-      <label class="field-check"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}> Has a sample</label>
+      <fieldset class="facet">
+        <legend>Gender</legend>
+        <label class="opt"><input type="radio" name="gender" value="" {% if not f.gender %}checked{% endif %}><span>Any</span><i>{{ "{:,}".format(fc.gender_total) }}</i></label>
+        {% for g in genders %}<label class="opt"><input type="radio" name="gender" value="{{ g }}" {% if f.gender == g %}checked{% endif %}><span>{{ g|capitalize }}</span><i>{{ "{:,}".format(fc.gender[g]) }}</i></label>{% endfor %}
+      </fieldset>
+      <fieldset class="facet">
+        <legend>Sample</legend>
+        <label class="opt"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}><span>Has a sample to play</span><i>{{ "{:,}".format(fc.preview) }}</i></label>
+      </fieldset>
       <button type="submit" class="btn-secondary" data-apply>Apply</button>
     </form>
   </details>
 
+  <div class="bench-main">
+  {% if f.model and f.provider %}<p class="filter-note">Voices that work with <code translate="no">{{ f.model }}</code>. <a href="/voices?provider={{ f.provider }}">Show all {{ f.provider }} voices</a></p>{% endif %}
   <div class="result-bar">
     <p class="result-count" role="status">{{ "{:,}".format(total) }} match{{ 'es' if total != 1 }}</p>
     {% if tokens %}
-    <div class="tokens">{% for k, label, value in tokens %}<a class="token" href="/voices?{{ qs(**{k: None, 'page': None}) }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}</div>
-    <a class="btn-link" href="/voices">Clear all</a>
+    <div class="tokens">{% for label, value, rest in tokens %}<a class="token" href="/voices?{{ rest }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}</div>
+    <a class="btn-link clear-all" href="/voices">Clear all</a>
     {% endif %}
+    <div class="view-tools"><button type="button" class="btn-secondary density-toggle hide-sm" aria-pressed="false" hidden>Compact rows</button></div>
   </div>
-
   {% if rows %}
     {% include "_voice_grid.html" %}
     {% if pages > 1 %}
@@ -57,10 +60,11 @@
     {% endif %}
   {% else %}
   <div class="empty">
-    <span class="mono">0 voices{% for k, label, value in tokens %} {{ label }}:{{ value }}{% endfor %}</span>
+    <span class="mono">0 voices{% for label, value, rest in tokens %} {{ label }}:{{ value }}{% endfor %}</span>
     <p>No voice matches all of these filters. Remove one:</p>
-    <ul>{% for k, label, value in tokens %}<li><a href="/voices?{{ qs(**{k: None, 'page': None}) }}">Drop {{ label }}: {{ value }}</a></li>{% endfor %}<li><a href="/voices">Start over</a></li></ul>
+    <ul>{% for label, value, rest in tokens %}<li><a href="/voices?{{ rest }}">Drop {{ label }}: {{ value }}</a></li>{% endfor %}<li><a href="/voices">Start over</a></li></ul>
   </div>
   {% endif %}
+  </div>
 </section>
 {% endblock %}
