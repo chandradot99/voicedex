@@ -5,6 +5,7 @@
       "wav"
     ],
     "batch": true,
+    "deprecated_at": "2026-11-24",
     "description": "Arabic speech recognition with an OpenAI-compatible file transcription endpoint and a WebSocket endpoint for live audio.",
     "first_seen": "2026-11-18",
     "id": "sarj-stt",
@@ -12,10 +13,10 @@
       "http",
       "websocket"
     ],
-    "is_default": true,
     "languages": [
       "ar"
     ],
+    "lifecycle": "deprecated",
     "meta": {
       "endpoint": "POST https://stt-rnnt-ar.sarj.ai/openai/v1/audio/transcriptions; wss://stt-rnnt-ar.sarj.ai/stream",
       "file_sse": "stream=true returns transcription events over SSE for uploaded files",
@@ -38,7 +39,68 @@
       ]
     },
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "flac",
+      "m4a",
+      "mp3",
+      "ogg",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection"
+    ],
+    "description": "Bilingual Arabic and English speech recognition (including in-sentence code-switching) over a live WebSocket stream and an OpenAI-compatible file transcription endpoint, with keyword prompting.",
+    "first_seen": "2026-11-24",
+    "id": "sarj-stt-v2",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "eager_end_of_turn": "eou=true sends EagerEndOfTurn events",
+      "endpoint": "wss://sarj-stt-v2.sarj.ai/stream; POST <private v2 base URL>/openai/v1/audio/transcriptions (model sarj-stt-v2)",
+      "endpointing": "finalizes after ~600 ms of silence",
+      "file_api_access": "private v2 endpoint, provisioned per integration",
+      "file_limits": "25 MiB and one hour per file",
+      "keywords": "up to 15 terms (5 words / 50 chars each, 240 prompt tokens)",
+      "other_input_formats": [
+        "mp4",
+        "mpeg",
+        "mpga"
+      ],
+      "response_formats": [
+        "json",
+        "text",
+        "verbose_json",
+        "srt",
+        "vtt"
+      ],
+      "streaming_input": "mono s16le PCM; sample_rate sent in the first message"
+    },
+    "name": "Sarj STT v2",
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://platform-docs.sarj.ai/speech-to-text.md",
+        "https://platform-docs.sarj.ai/text-to-speech.md"
+      ]
+    },
+    "type": "stt",
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -51,10 +113,11 @@
     ],
     "capabilities": [
       "emotion",
+      "multi_speaker",
       "prosody_control",
       "voice_cloning"
     ],
-    "description": "Saudi Arabic speech synthesis with built-in voices, one-shot voice cloning from a reference recording and delivery instructions, via an OpenAI-compatible endpoint.",
+    "description": "Saudi Najdi Arabic and English speech synthesis with catalog voices, one-shot voice cloning, delivery controls and multi-speaker dialogue, via an OpenAI-compatible endpoint.",
     "first_seen": "2026-11-18",
     "id": "sarj-tts",
     "interfaces": [
@@ -62,19 +125,48 @@
     ],
     "is_default": true,
     "languages": [
-      "ar-SA"
+      "ar-SA",
+      "en",
+      "ur"
     ],
     "max_text_chars": 50000,
     "meta": {
       "controls": "controls.emotion / delivery / recording, dialect, pronunciations, instructions",
+      "dialects": [
+        "msa",
+        "saudi",
+        "najdi",
+        "hijazi",
+        "gulf",
+        "egyptian",
+        "levantine",
+        "iraqi",
+        "yemeni",
+        "sudanese",
+        "moroccan",
+        "algerian",
+        "tunisian",
+        "libyan",
+        "maghrebi"
+      ],
+      "dialects_note": "catalog voices are Najdi/English; other dialects via cloning or synthetic presets",
+      "dialogue_endpoint": "POST /v1/audio/script",
       "documented_voices": [
         "ars_male",
-        "ars_female",
         "nourah",
-        "ars_ibrahim_studio_male",
-        "ars_fares"
+        "ars_fares",
+        "ars_ibrahim_studio_male"
       ],
-      "endpoint": "POST https://sarj-omni-tts.sarj.ai/v1/audio/speech; clone: POST /v1/audio/speech/clone",
+      "endpoint": "POST https://sarj-omni-tts.sarj.ai/v1/audio/speech; clone: POST /v1/audio/speech/clone; dialogue: POST /v1/audio/script",
+      "inline_events": [
+        "laughter",
+        "sigh",
+        "cry",
+        "cough",
+        "throat clear",
+        "yawn",
+        "sneeze"
+      ],
       "instructions_max_chars": 4096,
       "openapi": "https://sarj-omni-tts.sarj.ai/openapi.json",
       "speed_range": [
@@ -85,11 +177,12 @@
         "sse",
         "audio"
       ],
+      "streaming_output": "stream=true with pcm returns 24 kHz mono s16le as each sentence chunk finishes",
       "voices_endpoint": "GET /v1/voices (API key)"
     },
     "name": "Sarj TTS",
     "provenance": {
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-24",
       "method": "docs",
       "urls": [
         "https://platform-docs.sarj.ai/speech-to-text.md",
@@ -97,6 +190,6 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

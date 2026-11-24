@@ -7,7 +7,7 @@
   ],
   "headquarters": "SA",
   "id": "sarj",
-  "last_synced": "2026-11-18",
+  "last_synced": "2026-11-24",
   "links": {
     "api_reference": "https://sarj-omni-tts.sarj.ai/openapi.json",
     "docs": "https://platform-docs.sarj.ai/speech-to-text"
