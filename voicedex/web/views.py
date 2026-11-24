@@ -448,6 +448,7 @@ class SpectrumBand:
     priced: int
     unpriced: int
     tallest: int
+    stats: dict | None = None        # median / p25 / p75 (+ p5 / p95 with ≥ 20 prices) and their x positions (0–100)
 
 
 def _money(v: float) -> str:
@@ -489,8 +490,14 @@ def price_spectrum(catalog: Catalog, highlight: set[str] | None = None, n_column
         nice = [v for v in _NICE if lo <= math.log10(v) <= hi]
         step = max(1, math.ceil(len(nice) / 6))
         ticks = [((math.log10(v) - lo) / span * 100, _money(v)) for v in nice[::step]]
+        values = sorted(i.value for i in items)
+        p25, med, p75 = _quartiles(values)
+        p5, p95 = _p5_p95(values)
+        pos = lambda v: None if v is None else round((math.log10(v) - lo) / span * 100, 2)   # noqa: E731
+        stats = {"median": med, "p25": p25, "p75": p75, "p5": p5, "p95": p95,
+                 "x_median": pos(med), "x_p25": pos(p25), "x_p75": pos(p75), "n": len(values)}
         bands.append(SpectrumBand(band_id, title, unit, columns, ticks, free, len(items) + len(free), unpriced,
-                                  max(len(c) for c in columns)))
+                                  max(len(c) for c in columns), stats))
     return bands
 
 
@@ -1820,3 +1827,46 @@ def provider_logo(pid: str) -> str | None:
         _LOGOS.update(stamp=stamp, files={p.stem: int(p.stat().st_mtime) for p in _LOGO_DIR.glob("*.png")})
     v = _LOGOS["files"].get(pid)
     return f"/static/logos/{pid}.png?v={v}" if v is not None else None
+
+
+
+def popular_rates(catalog: Catalog, types: tuple[str, ...], limit: int = 8) -> list[dict]:
+    """List price of each widely used provider's main model of these types: the one its docs recommend, else its
+    default. Cheapest first. A main model, never "the cheapest": extremes are often plan-gated or promotional."""
+    out = []
+    for pid in COMPARE_PROVIDERS:
+        pd = catalog.providers.get(pid)
+        if not pd or pd.provider.status != "active":
+            continue
+        rows = [r for r in active_models(catalog, pid) if r.model.type in types and normalized_price(r.model)
+                and normalized_price(r.model)[0] > 0 and not r.model.eol_date]     # paid rate, not a free tier
+        main = next((r for r in rows if r.model.recommended is True), None) or next((r for r in rows if r.model.is_default), None)
+        if not main:
+            continue
+        out.append({"pid": pid, "name": pd.provider.name, "row": main, "key": model_key(main),
+                    "value": normalized_price(main.model)[0], "amount": price_parts(main.model)})
+    return sorted(out, key=lambda x: x["value"])[:limit]
+
+
+def band_facts(catalog: Catalog, types: tuple[str, ...]) -> list[tuple[str, str, str]]:
+    """Facts under the home price chart, as (label, value, note). Medians only for groups of ≥ MIN_GROUP prices."""
+    from statistics import median
+    live = {pid for pid, pd in catalog.providers.items() if pd.provider.status == "active"}
+    rows = [r for r in active_models(catalog) if r.provider_id in live and r.model.type in types]
+    def _free(r):
+        p = r.model.pricing
+        return bool(p and (p.price_usd if p.price_usd is not None else p.price) == 0)
+    # the same set price_spectrum counts as "priced": a normalized USD price, or free
+    priced = [(r, 0.0 if _free(r) else normalized_price(r.model)[0]) for r in rows if _free(r) or normalized_price(r.model)]
+    rt = [v for r, v in priced if v > 0 and is_realtime(r.model)]
+    bt = [v for r, v in priced if v > 0 and not is_realtime(r.model)]
+    out = []
+    if len(rt) >= MIN_GROUP:
+        out.append(("Realtime median", money(median(rt)), f"{len(rt)} streaming models"))
+    if len(bt) >= MIN_GROUP:
+        out.append(("Batch median", money(median(bt)), f"{len(bt)} file / batch models"))
+    free = sum(1 for r, _ in priced if r.model.pricing.free_quota)
+    out.append(("Free tier listed", f"{free}", f"of {len(priced)} priced models"))
+    out.append(("Providers with a USD price", f"{len({r.provider_id for r, _ in priced})}",
+                f"of {len({r.provider_id for r in rows})} offering these models"))
+    return out

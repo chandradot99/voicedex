@@ -2,6 +2,7 @@
 {% import "_cells.html" as cells %}
 {% block body_class %}home{% endblock %}
 {% block content %}
+<div class="hero-band">
 <section class="wrap hero" aria-labelledby="hero-title">
   <div class="hero-copy">
     <h1 id="hero-title">Every speech model,<br>priced and compared.</h1>
@@ -35,12 +36,9 @@
     <a href="/changes">What changed</a>
   </p>{% endif %}
 </section>
+</div>
 
-<section class="wrap spectrum-section" aria-labelledby="spectrum-title">
-  <h2 id="spectrum-title" class="section-title">What speech costs</h2>
-  <p class="section-note">Each square is one model at its published list price. Select one to open it.</p>
-  {% with bands=spectrum, cap=16, animate=True, legend_note="home" %}{% include "_spectrum.html" %}{% endwith %}
-</section>
+{% include "_costs.html" %}
 
 {% include "_tasks.html" %}
 

@@ -119,7 +119,7 @@ def _token_value(key: str, value: str, catalog: Catalog) -> str:
 
 # The home page shows a slice of the coverage map (the full one is ~9k elements, too heavy for phones);
 # /coverage has all of it.
-HOME_MAP_PROVIDERS, HOME_MAP_LANGUAGES = 24, 32
+HOME_MAP_PROVIDERS, HOME_MAP_LANGUAGES = 24, 80   # site.js shows as many language columns as fit
 LANDING_ROWS = 100            # cheapest-first rows on a landing page; the rest via "see all"
 
 
@@ -195,6 +195,8 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
         "timeline": views.shutdown_timeline(upcoming_eol, today),
         "today": today,
         "spectrum": views.price_spectrum(catalog),
+        "rates": {b_id: views.popular_rates(catalog, types, limit=6) for b_id, types, *_ in views.SPECTRUM_BANDS},
+        "band_facts": {b_id: views.band_facts(catalog, types) for b_id, types, *_ in views.SPECTRUM_BANDS},
         "tasks": views.task_cards(catalog),
         "freshness": views.catalog_freshness(catalog, today),
         "n_voices_live": sum(s.voices for s in live),

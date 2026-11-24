@@ -475,12 +475,12 @@ document.addEventListener("formdata", (e) => {
   document.head.append(style);
   const fit = () => {
     style.textContent = "";
-    if (innerWidth <= 760) return;                       // phones: scroll the full map
+    // Phones fit fewer columns too (at least 8) instead of scrolling sideways; desktops fill the full width.
     const first = $("tbody th", table)?.getBoundingClientRect().width || 0;
     const total = $("td.map-total", table)?.getBoundingClientRect().width || 0;
     const cell = 20;                                     // 18px cell + 2px spacing
     const cols = $$("thead th.map-lang", table).length;
-    const fitCols = Math.max(12, Math.min(cols, Math.floor((wrap.clientWidth - first - total - 12) / cell)));
+    const fitCols = Math.max(innerWidth <= 760 ? 8 : 12, Math.min(cols, Math.floor((wrap.clientWidth - first - total - 12) / cell)));
     if (fitCols < cols) style.textContent = `.map tr > :nth-child(n+${fitCols + 2}):not(.map-total) { display: none; }`;
     const note = $("#coverage-cols");
     if (note) note.textContent = String(fitCols);
@@ -626,10 +626,44 @@ document.addEventListener("formdata", (e) => {
   cv.addEventListener("pointerleave", () => { hover = -1; cv.style.cursor = ""; if (still || !running) draw(performance.now()); });
   cv.addEventListener("click", (e) => { const i = hit(e); if (i >= 0) location.href = "/providers/" + data[i].id; });
 
-  readColors(); size(); draw(performance.now());
-  new ResizeObserver(() => { size(); draw(performance.now()); }).observe(fig);
+  // The hero band's sound-wave rings radiate from the ring's centre wherever the layout puts it.
+  const band = fig.closest(".hero-band");
+  const centre = () => {
+    if (!band) return;
+    const b = band.getBoundingClientRect(), r = fig.getBoundingClientRect();
+    band.style.setProperty("--cx", (r.left - b.left + r.width / 2).toFixed(0) + "px");
+    band.style.setProperty("--cy", (r.top - b.top + r.height / 2).toFixed(0) + "px");
+  };
+  readColors(); size(); centre(); draw(performance.now());
+  new ResizeObserver(() => { size(); centre(); draw(performance.now()); }).observe(fig);
   document.addEventListener("themechange", () => { readColors(); draw(performance.now()); });
   document.addEventListener("visibilitychange", start);
   new IntersectionObserver(([en]) => { visible = en.isIntersecting; start(); }).observe(fig);
   Object.values(imgs).forEach((im) => im.addEventListener("load", () => { if (still) draw(performance.now()); }));
+})();
+
+// ── Home "What speech costs": tabs between price bands; hovering a provider's rate lights its square on the chart.
+(() => {
+  const sec = $("[data-costs]");
+  if (!sec) return;
+  const tabs = $$('[role="tab"]', sec), panels = $$('[role="tabpanel"]', sec);
+  const show = (tab) => {
+    tabs.forEach((t) => t.setAttribute("aria-selected", String(t === tab)));
+    panels.forEach((p) => { p.hidden = p.id !== tab.getAttribute("aria-controls"); });
+  };
+  if (tabs.length > 1) {
+    $(".costs-tabs", sec).hidden = false;
+    tabs.forEach((t) => t.addEventListener("click", () => show(t)));
+    show(tabs[0]);
+  }
+  sec.addEventListener("pointerover", (e) => {
+    const a = e.target.closest(".rate-list a");
+    $$(".sq.is-rate", sec).forEach((q) => q.classList.remove("is-rate"));
+    if (a) $$(`.sq[data-key="${CSS.escape(a.dataset.key)}"]`, sec).forEach((q) => q.classList.add("is-rate"));
+  });
+  sec.addEventListener("focusin", (e) => {
+    const a = e.target.closest(".rate-list a");
+    $$(".sq.is-rate", sec).forEach((q) => q.classList.remove("is-rate"));
+    if (a) $$(`.sq[data-key="${CSS.escape(a.dataset.key)}"]`, sec).forEach((q) => q.classList.add("is-rate"));
+  });
 })();
