@@ -1,5 +1,9 @@
 [
   {
+    "capabilities": [
+      "emotion",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "canopylabs/orpheus-3b-0.1-ft",
     "languages": [
@@ -9,6 +13,12 @@
       "base_model": [
         "meta-llama/Llama-3.2-3B-Instruct",
         "canopylabs/orpheus-3b-0.1-pretrained"
+      ],
+      "capability_notes": {
+        "emotion": "via inline tags"
+      },
+      "docs_sources": [
+        "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft"
       ],
       "gated": true,
       "huggingface_repo": "canopylabs/orpheus-3b-0.1-ft"
@@ -30,6 +40,6 @@
     "released_on": "2025-03-17",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
