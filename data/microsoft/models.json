@@ -1,5 +1,9 @@
 [
   {
+    "capabilities": [
+      "summarization",
+      "translation"
+    ],
     "first_seen": "2026-11-18",
     "id": "microsoft/Phi-4-multimodal-instruct",
     "languages": [
@@ -28,6 +32,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "summarization": "via prompt; audio up to ~30 min",
+        "translation": "speech translation via prompt"
+      },
+      "docs_sources": [
+        "https://huggingface.co/microsoft/Phi-4-multimodal-instruct"
+      ],
       "huggingface_repo": "microsoft/Phi-4-multimodal-instruct"
     },
     "name": "Phi-4-multimodal-instruct",
@@ -47,9 +58,13 @@
     "released_on": "2025-02-24",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization"
+    ],
     "first_seen": "2026-11-18",
     "id": "microsoft/VibeVoice-ASR",
     "languages": [
@@ -106,6 +121,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "customized hotwords"
+      },
+      "docs_sources": [
+        "https://huggingface.co/microsoft/VibeVoice-ASR",
+        "https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-asr.md"
+      ],
       "huggingface_repo": "microsoft/VibeVoice-ASR"
     },
     "name": "VibeVoice-ASR",
@@ -125,7 +147,7 @@
     "released_on": "2026-01-21",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "first_seen": "2026-11-18",
@@ -162,6 +184,10 @@
     "updated_at": "2026-11-18"
   },
   {
+    "capabilities": [
+      "custom_vocabulary",
+      "speaker_diarization"
+    ],
     "first_seen": "2026-11-18",
     "id": "microsoft/VibeVoice-ASR-Streaming-7B",
     "languages": [
@@ -177,6 +203,14 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "customized hotwords",
+        "speaker_diarization": "speaker-attributed streaming transcription"
+      },
+      "docs_sources": [
+        "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
+        "https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-asr-streaming.md"
+      ],
       "huggingface_repo": "microsoft/VibeVoice-ASR-Streaming-7B"
     },
     "name": "VibeVoice-ASR-Streaming-7B",
@@ -196,9 +230,12 @@
     "released_on": "2026-09-02",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "multi_speaker"
+    ],
     "first_seen": "2026-11-18",
     "id": "microsoft/VibeVoice-1.5B",
     "languages": [
@@ -206,6 +243,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "multi_speaker": "up to 4 speakers"
+      },
+      "docs_sources": [
+        "https://huggingface.co/microsoft/VibeVoice-1.5B",
+        "https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-tts.md"
+      ],
       "huggingface_repo": "microsoft/VibeVoice-1.5B"
     },
     "name": "VibeVoice-1.5B",
@@ -225,7 +269,7 @@
     "released_on": "2025-08-25",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "first_seen": "2026-11-18",
