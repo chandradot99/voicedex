@@ -228,6 +228,7 @@ class ElevenLabsSyncer(ProviderSyncer):
                 "can_use_speaker_boost": m.get("can_use_speaker_boost"),
                 "serves_pro_voices":    m.get("serves_pro_voices"),
                 "concurrency_group":    m.get("concurrency_group"),
+                "can_use_style":        m.get("can_use_style") or None,
                 "character_cost_multiplier": rates.get("character_cost_multiplier"),
                 "max_characters_free_user": m.get("max_characters_request_free_user"),
             }
@@ -239,7 +240,9 @@ class ElevenLabsSyncer(ProviderSyncer):
                 lifecycle="alpha" if alpha else "ga",
                 description=m.get("description"),
                 max_text_chars=m.get("maximum_text_length_per_request"),
-                capabilities=["style_control"] if m.get("can_use_style") else [],
+                # TTS features come from a docs pass (scripts/apply_docs.py): the API's one flag would
+                # overwrite that reviewed list on every sync. S2S has no docs pass, so it keeps the flag.
+                capabilities=[],
                 interfaces=["http", "websocket"],
                 meta={k: v for k, v in meta.items() if v is not None},
             )
@@ -247,6 +250,7 @@ class ElevenLabsSyncer(ProviderSyncer):
             if m.get("can_do_text_to_speech"):
                 tts_models.append(SyncModel(type="tts", **common))
             if m.get("can_do_voice_conversion"):
+                common["capabilities"] = ["style_control"] if m.get("can_use_style") else []
                 sts_models.append(SyncModel(type="sts", **{
                     **common, "interfaces": ["http"],
                     "meta": {**common["meta"], "mode": "voice_conversion"},

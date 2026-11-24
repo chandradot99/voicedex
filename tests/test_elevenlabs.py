@@ -35,7 +35,8 @@ def test_model_fields():
     v4, _, ml2 = tts
     assert v4.max_text_chars == 10000
     assert v4.languages == ["en", "zh"]
-    assert ml2.capabilities == ["style_control"] and v4.capabilities == []
+    # TTS features are docs-owned (apply_docs); the API flag is kept in meta only
+    assert ml2.capabilities == [] and v4.capabilities == [] and ml2.meta["can_use_style"] is True
 
 
 def test_voice_mapping():
