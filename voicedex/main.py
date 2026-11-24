@@ -158,6 +158,8 @@ async def etag_cache(request: Request, call_next):
     if response.status_code == 200 and request.url.path != "/health":
         if is_api:
             response.headers["ETag"] = etag
+        if request.url.hostname in ("localhost", "127.0.0.1") and not is_api:
+            response.headers["Cache-Control"] = "no-store"     # local dev: template/CSS edits show on every page at once
         response.headers.setdefault("Cache-Control", "public, max-age=300")
     return response
 
