@@ -67,6 +67,9 @@
         "pcm_mulaw"
       ],
       "declared_language_count": 44,
+      "docs_sources": [
+        "https://docs.neuphonic.com/build-group/text-to-speech"
+      ],
       "implicit_model": true,
       "implicit_model_note": "No `model` request parameter; the cloud API always runs NeuTTS-Max.",
       "lang_codes_raw_unmapped": [
@@ -102,6 +105,7 @@
         "https://docs.neuphonic.com/build-group/languages"
       ]
     },
+    "recommended": true,
     "sample_rates_hz": [
       8000,
       16000,
@@ -109,6 +113,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

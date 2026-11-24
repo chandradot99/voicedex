@@ -36,6 +36,9 @@
       "batch_formats": "mp3, wav, m4a, flac, ogg, opus, webm, aac, amr, wma, mp2, m4r",
       "dialect_parameter": false,
       "diarization_max_speakers": 8,
+      "docs_sources": [
+        "https://docs.munsit.com/speech-to-text/get-started.md"
+      ],
       "max_duration_note": "Files under 60 minutes; live streaming unbounded",
       "recognition_sample_rate_hz": 16000,
       "regional_endpoints": {
@@ -82,12 +85,14 @@
         "https://docs.munsit.com/reference/websocket.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Arabic speech across dialects",
     "sample_rates_hz": [
       8000,
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -203,6 +208,9 @@
     "meta": {
       "break_tags": "<break time=\"...\"/> up to 3 s per tag, 20 tags per request",
       "dialect_hint": "auto, emirati, fusha",
+      "docs_sources": [
+        "https://docs.munsit.com/text-to-speech/models.md"
+      ],
       "emotion_tags": "excited, happy, calm, serious, sad, fearful, angry ([neutral] resets)",
       "lifecycle_note": "Model id carries a -preview suffix",
       "pricing_credits": "Billed per character at the model's credit cost per character (rate not published in the docs); munsit.com/pricing plan allowances equate 200k credits to ~100K speech characters (~2 credits/char). 20,000 credits = $1 per the STT docs.",
@@ -225,7 +233,9 @@
         "https://docs.munsit.com/reference/websocket.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Arabic speech synthesis",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -38,6 +38,9 @@
     "max_text_chars": 500,
     "meta": {
       "docs": "https://voice.botnoi.ai/llms.txt",
+      "docs_sources": [
+        "https://voice.botnoi.ai/llms.txt"
+      ],
       "endpoint": "POST https://api-voice.botnoi.ai/openapi/v1/generate_audio",
       "price_points": "API: 0.1 points per letter (0.05 for subscribers), spaces not counted, rounded up per request; some speakers carry a price multiplier.",
       "pricing_note": "Points are bought in THB packs/plans (about 41 to 200 points per THB); no per-unit money price is published.",
@@ -54,9 +57,11 @@
         "https://voice.botnoi.ai/llm.txt"
       ]
     },
+    "recommended": true,
+    "recommended_for": "widest voice and language choice, lowest cost",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -77,6 +82,9 @@
     "max_text_chars": 500,
     "meta": {
       "docs": "https://voice.botnoi.ai/llms.txt",
+      "docs_sources": [
+        "https://voice.botnoi.ai/llms.txt"
+      ],
       "endpoint": "POST https://api-voice.botnoi.ai/openapi/v1/generate_audio_v2",
       "price_points": "API: 0.2 points per letter (0.1 for subscribers), rounded up per request.",
       "pricing_note": "Points are bought in THB packs/plans; no per-unit money price is published.",
@@ -93,9 +101,11 @@
         "https://voice.botnoi.ai/llm.txt"
       ]
     },
+    "recommended": true,
+    "recommended_for": "natural premium voices",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -117,6 +127,9 @@
     "meta": {
       "clone_endpoint": "POST /openapi/v1/generate_audio_clone",
       "docs": "https://voice.botnoi.ai/llms.txt",
+      "docs_sources": [
+        "https://voice.botnoi.ai/llms.txt"
+      ],
       "endpoint": "POST https://api-voice.botnoi.ai/openapi/v1/generate_audio_v4",
       "price_points": "API: 0.2 points per spoken letter (0.1 for subscribers); a line of only sound tags 0.6 points per tag; same for Voice Design and clones.",
       "pricing_note": "Points are bought in THB packs/plans; no per-unit money price is published.",
@@ -133,8 +146,10 @@
         "https://voice.botnoi.ai/llm.txt"
       ]
     },
+    "recommended": true,
+    "recommended_for": "expressive voices with sound tags",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

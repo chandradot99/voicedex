@@ -44,6 +44,9 @@
         "audio/PCMU"
       ],
       "custom_lexicon": "X-SAMPA, up to 500 entries; en/de/es/fr/it/pt",
+      "docs_sources": [
+        "https://docs.rime.ai/docs/models"
+      ],
       "on_prem": true,
       "replaces": [
         "arcana",
@@ -90,13 +93,15 @@
         "https://www.rime.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "new applications, general use",
     "released_on": "2026-05",
     "sample_rates_hz": [
       8000,
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Legacy Mist v1 TTS model, superseded by Mist v3.",
@@ -105,6 +110,9 @@
     "id": "mist",
     "meta": {
       "deprecation_notice": "Legacy model; retires December 3, 2026. After that date Mist v3 serves HTTP requests naming this model (voice kept if Mist v3 has it, else a comparable voice); WebSocket clients (/ws2) must switch before then.",
+      "docs_sources": [
+        "https://docs.rime.ai/docs/models"
+      ],
       "legacy_features": [
         "JSON envelope with base64 audioContent",
         "/ws2 WebSocket"
@@ -121,8 +129,9 @@
         "https://www.rime.ai/pricing"
       ]
     },
+    "recommended": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Legacy Mist-family TTS model, superseded by Mist v3.",
@@ -137,6 +146,9 @@
     ],
     "meta": {
       "deprecation_notice": "Legacy model; retires December 3, 2026. After that date Mist v3 serves HTTP requests naming this model (voice kept if Mist v3 has it, else a comparable voice); WebSocket clients (/ws2) must switch before then.",
+      "docs_sources": [
+        "https://docs.rime.ai/docs/models"
+      ],
       "legacy_features": [
         "JSON envelope with base64 audioContent",
         "server-sent events (Accept: text/event-stream)",
@@ -154,8 +166,9 @@
         "https://www.rime.ai/pricing"
       ]
     },
+    "recommended": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -196,6 +209,10 @@
       ],
       "custom_pauses": true,
       "default_when_model_id_omitted": true,
+      "docs_sources": [
+        "https://docs.rime.ai/docs/models",
+        "https://docs.rime.ai/docs/migrate-legacy-mist.md"
+      ],
       "inline_pronunciation": "Rime phonetic alphabet via phonemizeBetweenBrackets, English only",
       "on_prem": true,
       "sampling_rate_note": "samplingRate accepts any positive rate; default 24000, 8000 for telephony",
@@ -233,6 +250,8 @@
         "https://www.rime.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "lowest time to first audio, English pronunciation control",
     "released_on": "2026-03",
     "replaces": [
       "mist",
@@ -243,6 +262,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

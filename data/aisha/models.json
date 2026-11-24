@@ -80,6 +80,9 @@
     "meta": {
       "async": "webhook_notification_url runs the request asynchronously",
       "custom_voices": "voice_id selects a READY custom voice owned by the user",
+      "docs_sources": [
+        "https://aisha.group/en/api-documentation/text-to-speech"
+      ],
       "max_text_chars_note": "1000 characters with API key, 500 for public requests",
       "moods": "Neutral, Cheerful, Happy, Sad",
       "other_languages": "The TTS endpoint also accepts language=en and ru, which take no model, mood or speed",
@@ -104,10 +107,12 @@
         "https://aisha.group/en/api-documentation/text-to-speech"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Uzbek text-to-speech",
     "sample_rates_hz": [
       16000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -101,7 +101,8 @@
       },
       "confidence_scores": true,
       "docs_sources": [
-        "https://www.speechmatics.com/pricing"
+        "https://www.speechmatics.com/pricing",
+        "https://docs.speechmatics.com/speech-to-text/models"
       ],
       "entity_detection": true,
       "language_packs": [
@@ -192,12 +193,14 @@
         "https://www.speechmatics.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "single-language audio needing high accuracy",
     "regions": [
       "eu",
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": false,
@@ -272,7 +275,9 @@
     "meta": {
       "api": "agent-stt",
       "docs_sources": [
-        "https://www.speechmatics.com/pricing"
+        "https://www.speechmatics.com/pricing",
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://www.speechmatics.com/company/articles-and-news/meet-agent-stt-powered-by-linden-1-fast-accurate-speech-recognition"
       ],
       "endpoint_path": "/v2/agent",
       "regions_detail": [
@@ -315,12 +320,15 @@
         "https://www.speechmatics.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time voice agents",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-09-17",
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -412,7 +420,9 @@
         "language_detection": "Confirmed by Speechmatics developer relations, 2026-11-19"
       },
       "docs_sources": [
-        "https://www.speechmatics.com/pricing"
+        "https://www.speechmatics.com/pricing",
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://www.speechmatics.com/company/articles-and-news/introducing-melia-multilingual-speech-to-text-model"
       ],
       "language_hints": true,
       "language_param": "multi",
@@ -474,12 +484,15 @@
         "https://www.speechmatics.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "audio with more than one language",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-06-17",
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -567,7 +580,9 @@
     ],
     "meta": {
       "docs_sources": [
-        "https://www.speechmatics.com/pricing"
+        "https://www.speechmatics.com/pricing",
+        "https://docs.speechmatics.com/speech-to-text/models",
+        "https://www.speechmatics.com/company/articles-and-news/meet-oak-multilingual-medical-speech-to-text"
       ],
       "domain": "medical",
       "language_hints": true,
@@ -643,12 +658,15 @@
         "https://www.speechmatics.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "multilingual healthcare audio",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-10-14",
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -754,7 +772,8 @@
       },
       "confidence_scores": true,
       "docs_sources": [
-        "https://www.speechmatics.com/pricing"
+        "https://www.speechmatics.com/pricing",
+        "https://docs.speechmatics.com/speech-to-text/models"
       ],
       "entity_detection": true,
       "language_packs": [
@@ -830,11 +849,13 @@
         "https://www.speechmatics.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "throughput or latency over peak accuracy",
     "regions": [
       "eu",
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   }
 ]

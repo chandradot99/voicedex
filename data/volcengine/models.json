@@ -16,6 +16,10 @@
     ],
     "meta": {
       "context_tokens": "12K",
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md"
+      ],
       "endpoint": "wss://openspeech.bytedance.com/api/v3/realtime/dialogue",
       "language_note": "Docs say only Chinese is well supported.",
       "resource_id": "volc.speech.dialog"
@@ -77,11 +81,14 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice chat with a configurable persona",
+    "released_on": "2026-01",
     "sample_rates_hz": [
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -99,6 +106,10 @@
       "en"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md"
+      ],
       "endpoint": "wss://openspeech.bytedance.com/api/v3/duplex/realtime/dialogue",
       "input": "pcm/speech_opus 16 kHz",
       "output": "pcm (32-bit or s16le)/ogg_opus 24 kHz",
@@ -166,7 +177,7 @@
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -185,6 +196,10 @@
     ],
     "meta": {
       "context_tokens": "12K",
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md"
+      ],
       "endpoint": "wss://openspeech.bytedance.com/api/v3/realtime/dialogue",
       "resource_id": "volc.speech.dialog"
     },
@@ -245,11 +260,14 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "character role-play with cloned voices",
+    "released_on": "2026-01",
     "sample_rates_hz": [
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "End-to-end simultaneous interpretation: streaming speech in, translated text (S2T) or translated speech in the speaker's own or a chosen voice (S2S) out; one side of each pair must be Chinese or English.",
@@ -348,6 +366,9 @@
       "http"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md"
+      ],
       "legacy": "历史版本 — existing 1.0 users unaffected; new users should choose 2.0"
     },
     "name": "Doubao Audio File ASR 1.0",
@@ -385,9 +406,10 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "recommended": false,
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -411,6 +433,9 @@
     ],
     "max_audio_seconds": 18000,
     "meta": {
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md"
+      ],
       "max_file_mb": 512,
       "model_list_family": "Listed as a version of 豆包录音文件识别模型2.0 on the model list page"
     },
@@ -449,9 +474,10 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "released_on": "2025-09",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -473,6 +499,9 @@
     ],
     "max_audio_seconds": 7200,
     "meta": {
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md"
+      ],
       "max_file_mb": 100,
       "model_list_family": "Listed as a version of 豆包录音文件识别模型2.0 on the model list page",
       "no_diarization": true
@@ -512,9 +541,10 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "released_on": "2025-07",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -531,6 +561,9 @@
     ],
     "meta": {
       "concurrent_resource_id": "volc.bigasr.sauc.concurrent",
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md"
+      ],
       "legacy": "历史版本 — existing 1.0 users unaffected; new users should choose 2.0"
     },
     "name": "Doubao Streaming ASR 1.0",
@@ -568,11 +601,12 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "recommended": false,
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -626,6 +660,10 @@
     "max_audio_seconds": 18000,
     "meta": {
       "dialects_when_language_unset": "Mandarin, English, Shanghainese, Minnan, Sichuanese, Shaanxi, Cantonese, Jilu, Lanyin and Jianghuai Mandarin",
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md"
+      ],
       "endpoint": "https://openspeech.bytedance.com/api/v3/auc/bigmodel/submit",
       "max_file_mb": 512
     },
@@ -664,9 +702,15 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "recorded audio files",
+    "released_on": "2025-12",
+    "replaces": [
+      "volc.bigasr.auc"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -720,6 +764,10 @@
     "meta": {
       "concurrent_resource_id": "volc.seedasr.sauc.concurrent",
       "default_concurrency": 50,
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md"
+      ],
       "endpoints": {
         "bidirectional": "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel_async",
         "streaming_input": "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel_nostream"
@@ -762,11 +810,17 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time streaming transcription",
+    "released_on": "2025-12",
+    "replaces": [
+      "volc.bigasr.sauc.duration"
+    ],
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -804,6 +858,10 @@
     "max_text_chars": 3000,
     "meta": {
       "aigc_watermark": true,
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md"
+      ],
       "max_output": "2 minutes",
       "ssml": false
     },
@@ -842,6 +900,7 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "released_on": "2026-06",
     "sample_rates_hz": [
       8000,
       16000,
@@ -850,7 +909,7 @@
     ],
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -950,6 +1009,9 @@
       "pt"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md"
+      ],
       "model_param": "req_params.model: seed-tts-2.0-standard (default, lower latency) or seed-tts-2.0-expressive (voice instructions/tags)"
     },
     "name": "Doubao Voice Cloning 2.0",
@@ -987,6 +1049,7 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "released_on": "2025-10",
     "sample_rates_hz": [
       8000,
       16000,
@@ -997,7 +1060,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1114,6 +1177,9 @@
     ],
     "meta": {
       "default_concurrency": 10,
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md"
+      ],
       "endpoints": [
         "wss://openspeech.bytedance.com/api/v3/tts/unidirectional/stream",
         "wss://openspeech.bytedance.com/api/v3/tts/bidirection",
@@ -1157,6 +1223,7 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "released_on": "2025-09",
     "sample_rates_hz": [
       8000,
       16000,
@@ -1167,6 +1234,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

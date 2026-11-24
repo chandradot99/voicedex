@@ -476,6 +476,10 @@
         "westus2"
       ],
       "code_switching": true,
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe"
+      ],
       "transcribe_styles": [
         "verbatim",
         "clean"
@@ -502,14 +506,17 @@
         "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support"
       ]
     },
+    "recommended": true,
+    "recommended_for": "recorded audio, fast transcription",
     "regions": [
       "asia",
       "eu",
       "us"
     ],
+    "released_on": "2026-09",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1084,6 +1091,9 @@
       "zh-CN"
     ],
     "meta": {
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes"
+      ],
       "model_series": [
         "HDFlash"
       ],
@@ -1108,11 +1118,12 @@
         "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
       ]
     },
+    "released_on": "2025-03",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1219,6 +1230,10 @@
       "zu-ZA"
     ],
     "meta": {
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/high-definition-voices"
+      ],
       "model_series": [
         "HDLatest"
       ],
@@ -1250,11 +1265,14 @@
         "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
       ]
     },
+    "recommended": true,
+    "recommended_for": "enterprise customer service, specific personas",
+    "released_on": "2024-10",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1361,6 +1379,10 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/high-definition-voices"
+      ],
       "model_series": [
         "HDOmni"
       ],
@@ -1385,11 +1407,14 @@
         "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
       ]
     },
+    "recommended": true,
+    "recommended_for": "content creation, audiobooks, broad voice variety",
+    "released_on": "2025-12",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1620,6 +1645,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes"
+      ],
       "model_series": [
         "MAI-Voice-2-Flash"
       ],
@@ -1640,11 +1668,12 @@
         "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
       ]
     },
+    "released_on": "2026-07",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1689,6 +1718,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices"
+      ],
       "model_series": [
         "MAI-Voice-2.1"
       ],
@@ -1709,11 +1741,13 @@
         "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
       ]
     },
+    "recommended": true,
+    "recommended_for": "expressive long-form content, audiobooks, voice-overs",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1758,6 +1792,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices"
+      ],
       "model_series": [
         "MAI-Voice-2.1-Flash"
       ],
@@ -1778,11 +1815,13 @@
         "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time voice agents and assistants",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2302,6 +2341,9 @@
       "zu-ZA"
     ],
     "meta": {
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes"
+      ],
       "model_series": [
         "Multilingual"
       ],
@@ -2359,10 +2401,11 @@
         "https://{region}.api.cognitive.microsoft.com/speechtotext/v3.2/models/base"
       ]
     },
+    "released_on": "2024-07",
     "sample_rates_hz": [
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

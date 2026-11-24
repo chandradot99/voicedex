@@ -69,6 +69,9 @@
     "meta": {
       "audio_language_detection": "separate endpoint (Audio Language Detection)",
       "base_model": "openai/whisper-large-v3",
+      "docs_sources": [
+        "https://docs.sunbird.ai/guides/speech-to-text.md"
+      ],
       "duration_note": "For files larger than 100MB only the first 10 minutes are transcribed",
       "endpoint": "POST /tasks/audio/transcriptions",
       "language_required": "ISO 639-3 code required; automatic language detection is unreliable",
@@ -90,9 +93,11 @@
         "https://docs.sunbird.ai/guides/text-to-speech.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "African languages transcription",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -128,6 +133,9 @@
       "architecture": "Orpheus-3B (RunPod deployment)",
       "batch_endpoint": "POST /tasks/audio/speech/batch",
       "default_voice": "Chosen for `language` when voice is omitted (Luganda by default)",
+      "docs_sources": [
+        "https://docs.sunbird.ai/guides/text-to-speech.md"
+      ],
       "endpoint": "POST /tasks/audio/speech",
       "no_model_parameter": true,
       "response_modes": "url (signed GCS URL, ~30 min), stream (raw bytes), both",
@@ -145,11 +153,13 @@
         "https://docs.sunbird.ai/guides/text-to-speech.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "African languages speech synthesis",
     "sample_rates_hz": [
       24000
     ],
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

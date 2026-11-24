@@ -108,6 +108,9 @@
     ],
     "meta": {
       "base_model": "OpenAI Whisper (size not documented)",
+      "docs_sources": [
+        "https://docs.oracle.com/en-us/iaas/releasenotes/speech/aug-25-whisper-new-languages.htm"
+      ],
       "languages_note": "over 90 languages per 2025-08-27 release note",
       "partial_results": false,
       "realtime_only": true,
@@ -136,8 +139,9 @@
       "eu",
       "us"
     ],
+    "released_on": "2025-08-27",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
