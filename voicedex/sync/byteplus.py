@@ -10,8 +10,9 @@ _BASE = "https://docs.byteplus.com/docs/en/byteplusvoice/"
 # Docs pages render client-side; each has a plain-text twin at <page>.md (index: llms.txt).
 _DOCS = [_BASE + p + ".md" for p in (
     "texttospeechv2", "streaming_tts", "speechtotextv2", "asrunidirect", "asraudiofilesubmittask",
-    "asraudiofile-flash", "TTS_Billing", "asrbilling")]
-_VOICE_DOCS = [_BASE + p + ".md" for p in ("tts-voice-list", "voicelist")]
+    "asraudiofile-flash", "TTS_Billing", "asrbilling", "seed-tts-3", "seed-tts-3-0-http-streaming",
+    "seed-tts-3-0-websocket")] + [_BASE + "llms.txt"]   # the index: new product pages show up here first
+_VOICE_DOCS = [_BASE + p + ".md" for p in ("tts-voice-list", "voicelist", "voicelist-3-0")]
 
 
 class BytePlusSyncer(DocsOnlySyncer):

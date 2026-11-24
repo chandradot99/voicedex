@@ -629,6 +629,203 @@
     "capabilities": [
       "emotion",
       "prosody_control",
+      "ssml",
+      "style_control",
+      "voice_cloning"
+    ],
+    "description": "Expressive multilingual TTS (100+ languages) steered by 80+ inline audio tags for emotion, delivery and nonverbal sounds, with cross-lingual voice cloning and automatic language detection.",
+    "family": "seed-tts",
+    "first_seen": "2026-11-24",
+    "id": "dola-seed-tts-3.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "sq",
+      "am",
+      "ar",
+      "hy",
+      "as",
+      "ast",
+      "az",
+      "be",
+      "bn",
+      "bs",
+      "bg",
+      "my",
+      "kea",
+      "ca",
+      "ceb",
+      "ny",
+      "zh",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fil",
+      "fi",
+      "fr",
+      "gl",
+      "ka",
+      "de",
+      "el",
+      "gu",
+      "ha",
+      "he",
+      "hi",
+      "hu",
+      "is",
+      "ig",
+      "id",
+      "it",
+      "ja",
+      "jv",
+      "kam",
+      "kn",
+      "kk",
+      "km",
+      "ko",
+      "ky",
+      "lo",
+      "lv",
+      "ln",
+      "lt",
+      "lg",
+      "luo",
+      "lb",
+      "mk",
+      "ms",
+      "ml",
+      "mt",
+      "mi",
+      "mr",
+      "mn",
+      "ne",
+      "fuv",
+      "nso",
+      "no",
+      "oc",
+      "or",
+      "ps",
+      "fa",
+      "pl",
+      "pt-BR",
+      "pt-PT",
+      "pa-PK",
+      "ro",
+      "ru",
+      "sr",
+      "sn",
+      "sd",
+      "sk",
+      "sl",
+      "ku",
+      "es-MX",
+      "es-ES",
+      "sw",
+      "sv",
+      "tg",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "umb",
+      "ur",
+      "uz",
+      "vi",
+      "cy",
+      "wo",
+      "xh",
+      "yo",
+      "zu"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "audio_tags": 82,
+      "auth": "X-Api-Key header",
+      "docs": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-http-streaming",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-websocket",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-language-support",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist-3-0"
+      ],
+      "encodings": [
+        "mp3",
+        "pcm",
+        "ogg_opus"
+      ],
+      "endpoint_region": "ap-southeast-1",
+      "endpoints": [
+        "https://voice.ap-southeast-1.bytepluses.com/api/v3/text-to-speech/{voice_id}/streaming",
+        "wss://voice.ap-southeast-1.bytepluses.com/api/v3/text-to-speech/{voice_id}/streaming-input"
+      ],
+      "instructions_param": true,
+      "language_codes_note": "Vendor codes lin/lug/oci/ory/wol/asm mapped to ISO 639-1 ln/lg/oc/or/wo/as; dialect codes (e.g. zh-CN-x-sichuan) on the Supported Languages page.",
+      "language_detection": true,
+      "model_param": "model_id (default dola-seed-tts-3.0)",
+      "sample_rate_note": "ogg_opus is always 48000 Hz",
+      "subtitles": "enable_subtitle=true (word-level timestamps, supported languages only)"
+    },
+    "name": "Seed TTS 3.0",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "notes": "Pay-as-you-go only, $20 per 1M characters; audio tag characters are billed at the same rate.",
+      "price_usd": 2e-05,
+      "source_url": "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/streaming_tts.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/speechtotextv2.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrunidirect.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofilesubmittask.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-http-streaming.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-websocket.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/llms.txt",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist-3-0.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
       "voice_cloning"
     ],
     "description": "Legacy voice-cloning resource; newly purchased speaker IDs only work with the new (2.0) cloning API.",
@@ -915,7 +1112,6 @@
       "http",
       "websocket"
     ],
-    "is_default": true,
     "languages": [
       "en",
       "zh",
@@ -973,7 +1169,7 @@
       "unit": "character"
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-24",
       "method": "docs",
       "urls": [
         "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
@@ -984,8 +1180,13 @@
         "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
         "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
         "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-http-streaming.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-websocket.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/llms.txt",
         "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
-        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md",
+        "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist-3-0.md"
       ]
     },
     "regions": [
@@ -998,6 +1199,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

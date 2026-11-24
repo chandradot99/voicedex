@@ -15,12 +15,17 @@
     "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
     "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
     "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-http-streaming.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-websocket.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/llms.txt",
     "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
-    "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+    "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md",
+    "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist-3-0.md"
   ],
   "headquarters": "SG",
   "id": "byteplus",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-24",
   "links": {
     "docs": "https://docs.byteplus.com/en/docs/byteplusvoice",
     "pricing": "https://docs.byteplus.com/en/docs/byteplusvoice/TTS_Billing"
@@ -29,7 +34,7 @@
   "source": "docs",
   "type": "both",
   "voices_source": {
-    "as_of": "2026-11-16",
+    "as_of": "2026-11-24",
     "method": "docs",
     "urls": [
       "https://docs.byteplus.com/docs/en/byteplusvoice/texttospeechv2.md",
@@ -40,8 +45,13 @@
       "https://docs.byteplus.com/docs/en/byteplusvoice/asraudiofile-flash.md",
       "https://docs.byteplus.com/docs/en/byteplusvoice/TTS_Billing.md",
       "https://docs.byteplus.com/docs/en/byteplusvoice/asrbilling.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-http-streaming.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/seed-tts-3-0-websocket.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/llms.txt",
       "https://docs.byteplus.com/docs/en/byteplusvoice/tts-voice-list.md",
-      "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md"
+      "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist.md",
+      "https://docs.byteplus.com/docs/en/byteplusvoice/voicelist-3-0.md"
     ]
   },
   "website": "https://www.byteplus.com/en/product/voice"
