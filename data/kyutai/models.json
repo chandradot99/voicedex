@@ -7,8 +7,7 @@
       "fr"
     ],
     "meta": {
-      "huggingface_repo": "kyutai/tts-1.6b-en_fr",
-      "released": "2025-06-30"
+      "huggingface_repo": "kyutai/tts-1.6b-en_fr"
     },
     "name": "tts-1.6b-en_fr",
     "open_weights": {
@@ -24,6 +23,7 @@
         "https://huggingface.co/api/models?author=kyutai&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-06-30",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

@@ -9,8 +9,7 @@
       "base_model": [
         "yl4579/StyleTTS2-LJSpeech"
       ],
-      "huggingface_repo": "hexgrad/Kokoro-82M",
-      "released": "2024-12-26"
+      "huggingface_repo": "hexgrad/Kokoro-82M"
     },
     "name": "Kokoro-82M",
     "open_weights": {
@@ -26,6 +25,7 @@
         "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-12-26",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -37,8 +37,7 @@
       "base_model": [
         "hexgrad/Kokoro-82M"
       ],
-      "huggingface_repo": "hexgrad/Kokoro-82M-v1.1-zh",
-      "released": "2025-02-27"
+      "huggingface_repo": "hexgrad/Kokoro-82M-v1.1-zh"
     },
     "name": "Kokoro-82M-v1.1-zh",
     "open_weights": {
@@ -54,6 +53,7 @@
         "https://huggingface.co/api/models?author=hexgrad&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-02-27",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

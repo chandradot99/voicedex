@@ -139,8 +139,7 @@
       ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",
-      "openai_realtime_compatible": true,
-      "released": "2026-11-02"
+      "openai_realtime_compatible": true
     },
     "name": "Eleven Realtime v1 Max",
     "pricing": {
@@ -160,6 +159,7 @@
         "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
       ]
     },
+    "released_on": "2026-11-02",
     "type": "sts",
     "updated_at": "2026-11-19"
   },
@@ -180,8 +180,7 @@
       ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",
-      "openai_realtime_compatible": true,
-      "released": "2026-11-02"
+      "openai_realtime_compatible": true
     },
     "name": "Eleven Realtime v1 Mini",
     "pricing": {
@@ -201,6 +200,7 @@
         "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
       ]
     },
+    "released_on": "2026-11-02",
     "type": "sts",
     "updated_at": "2026-11-19"
   },

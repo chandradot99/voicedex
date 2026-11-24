@@ -156,7 +156,6 @@
         "turns"
       ],
       "filler_mode": true,
-      "launched": "2026-11-10",
       "max_custom_terms": 50000,
       "max_phrases_per_request": 250,
       "number_formatting": true,
@@ -220,6 +219,7 @@
     "regions": [
       "eu"
     ],
+    "released_on": "2026-11-10",
     "type": "stt",
     "updated_at": "2026-11-18"
   },
@@ -294,7 +294,6 @@
         "prerecorded"
       ],
       "hf_architecture": "qwen3_asr",
-      "launched": "2026-11-03",
       "parameters_b": 0.5,
       "unsupported_params": [
         "diarize",
@@ -343,6 +342,7 @@
     "regions": [
       "eu"
     ],
+    "released_on": "2026-11-03",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"

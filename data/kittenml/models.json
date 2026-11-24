@@ -126,8 +126,7 @@
     "first_seen": "2026-11-18",
     "id": "KittenML/kitten-tts-2",
     "meta": {
-      "huggingface_repo": "KittenML/kitten-tts-2",
-      "released": "2026-09-30"
+      "huggingface_repo": "KittenML/kitten-tts-2"
     },
     "name": "kitten-tts-2",
     "open_weights": {
@@ -142,6 +141,7 @@
         "https://huggingface.co/api/models?author=KittenML&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-09-30",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -150,8 +150,7 @@
     "first_seen": "2026-11-18",
     "id": "KittenML/kitten-tts-nano-0.8-fp32",
     "meta": {
-      "huggingface_repo": "KittenML/kitten-tts-nano-0.8-fp32",
-      "released": "2026-02-19"
+      "huggingface_repo": "KittenML/kitten-tts-nano-0.8-fp32"
     },
     "name": "kitten-tts-nano-0.8-fp32",
     "open_weights": {
@@ -167,6 +166,7 @@
         "https://huggingface.co/api/models?author=KittenML&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-02-19",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

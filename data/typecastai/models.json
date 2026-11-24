@@ -300,8 +300,6 @@
       ],
       "language_param": "ISO 639-3, auto-detected if omitted",
       "output_detail": "wav 16-bit mono 44.1 kHz (non-streaming) / 32 kHz (streaming); mp3 320 kbps 44.1 kHz",
-      "recommended": true,
-      "released": "2026-10-28",
       "smart_emotion": true,
       "ssml": false
     },
@@ -350,6 +348,8 @@
         "https://typecast.ai/pricing/api/"
       ]
     },
+    "recommended": true,
+    "released_on": "2026-10-28",
     "sample_rates_hz": [
       32000,
       44100

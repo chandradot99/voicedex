@@ -96,7 +96,11 @@ SyncModel schema (each item in the `models` array):
         "notes":      "<short qualifier>" | omit
       }
     Only populate when you find explicit numeric pricing in the docs — never guess.
-  - meta (object)                    — provider-specific extras that don't fit elsewhere
+  - meta (object)                    — provider-specific extras that don't fit elsewhere. Lineage keys (promoted to fields):
+                                       released_on ("YYYY-MM-DD" or "YYYY-MM", the published API release date),
+                                       recommended (true only if the docs point new integrations to it; false if they
+                                       call it legacy/previous-generation), recommended_for (the use case they name),
+                                       replaces (ids of this provider's models the docs say it succeeds)
 
 Rules:
   1. Don't invent fields. If docs don't say, omit (or use the default).

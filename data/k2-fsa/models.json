@@ -654,8 +654,7 @@
       "base_model": [
         "Qwen/Qwen3-0.6B"
       ],
-      "huggingface_repo": "k2-fsa/OmniVoice",
-      "released": "2026-03-30"
+      "huggingface_repo": "k2-fsa/OmniVoice"
     },
     "name": "OmniVoice",
     "open_weights": {
@@ -670,6 +669,7 @@
         "https://huggingface.co/api/models?author=k2-fsa&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-03-30",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

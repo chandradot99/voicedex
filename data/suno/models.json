@@ -18,8 +18,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "suno/bark",
-      "released": "2023-04-25"
+      "huggingface_repo": "suno/bark"
     },
     "name": "bark",
     "open_weights": {
@@ -35,6 +34,7 @@
         "https://huggingface.co/api/models?author=suno&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2023-04-25",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -58,8 +58,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "suno/bark-small",
-      "released": "2023-07-18"
+      "huggingface_repo": "suno/bark-small"
     },
     "name": "bark-small",
     "open_weights": {
@@ -75,6 +74,7 @@
         "https://huggingface.co/api/models?author=suno&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2023-07-18",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

@@ -1271,7 +1271,7 @@
       "engine_generation": "end-to-end",
       "interim_results": "not available (WebSocket U events are empty)",
       "parameter": "grammarFileNames",
-      "recommended_for": "asynchronous HTTP",
+      "recommended_interface": "asynchronous HTTP",
       "sample_rate_support": "8k/16k"
     },
     "name": "Japanese E2E General (Batch)",
@@ -1369,7 +1369,7 @@
       "engine_generation": "end-to-end",
       "interim_results": "not available (WebSocket U events are empty)",
       "parameter": "grammarFileNames",
-      "recommended_for": "asynchronous HTTP",
+      "recommended_interface": "asynchronous HTTP",
       "sample_rate_support": "8k/16k"
     },
     "name": "Multilingual E2E General (Batch)",
@@ -1455,7 +1455,7 @@
       "engine_generation": "end-to-end",
       "interim_results": "not available (WebSocket U events are empty)",
       "parameter": "grammarFileNames",
-      "recommended_for": "asynchronous HTTP",
+      "recommended_interface": "asynchronous HTTP",
       "sample_rate_support": "8k/16k"
     },
     "name": "Chinese E2E General (Batch)",

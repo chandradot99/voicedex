@@ -67,7 +67,8 @@ def _model_to_cache(m) -> dict:
     d = m.model_dump(mode="json", exclude_none=True)
     meta = dict(d.pop("meta", {}))
     for src, dst in (("family", "parent_model_id"), ("snapshot_date", "snapshot_date"),
-                     ("alias_of", "alias_of"), ("batch", "batch")):
+                     ("alias_of", "alias_of"), ("batch", "batch"), ("released_on", "released_on"),
+                     ("recommended", "recommended"), ("recommended_for", "recommended_for"), ("replaces", "replaces")):
         if src in d:
             meta[dst] = d.pop(src)
     for k in ("first_seen", "updated_at", "deprecated_at", "provenance"):

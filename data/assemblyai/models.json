@@ -76,8 +76,7 @@
       "pre_recorded_endpoints": {
         "eu": "https://api.eu.assemblyai.com",
         "us": "https://api.assemblyai.com"
-      },
-      "recommended": true
+      }
     },
     "name": "AssemblyAI-STT-3.7",
     "pricing": {
@@ -102,6 +101,7 @@
         "https://www.assemblyai.com/docs/tts/limits"
       ]
     },
+    "recommended": true,
     "regions": [
       "eu",
       "us"
@@ -167,11 +167,6 @@
     "meta": {
       "keyterms_max_terms": 100,
       "prompt_max_chars": 400,
-      "recommended_for": "notetakers, captions, agent assist",
-      "replaces": [
-        "universal-streaming-english",
-        "universal-streaming-multilingual"
-      ],
       "streaming_encodings": [
         "pcm_s16le",
         "pcm_mulaw",
@@ -212,9 +207,15 @@
         "https://www.assemblyai.com/docs/tts/limits"
       ]
     },
+    "recommended": true,
+    "recommended_for": "notetakers, captions, agent assist",
     "regions": [
       "eu",
       "us"
+    ],
+    "replaces": [
+      "universal-streaming-english",
+      "universal-streaming-multilingual"
     ],
     "type": "stt",
     "updated_at": "2026-11-19"
@@ -275,8 +276,6 @@
     ],
     "meta": {
       "keyterms_max_terms": 100,
-      "recommended_for": "voice agents",
-      "replaces": "universal-3-6-pro",
       "streaming_encodings": [
         "pcm_s16le",
         "pcm_mulaw",
@@ -317,9 +316,14 @@
         "https://www.assemblyai.com/docs/tts/limits"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice agents",
     "regions": [
       "eu",
       "us"
+    ],
+    "replaces": [
+      "universal-3-6-pro"
     ],
     "type": "stt",
     "updated_at": "2026-11-19"

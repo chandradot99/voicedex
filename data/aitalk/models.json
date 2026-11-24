@@ -14,7 +14,6 @@
     "meta": {
       "custom_voice": "AITalk CustomVoice (original voice dictionary creation service) supports AITalk6 speakers.",
       "engine_note": "No engine/model-id request parameter is documented publicly; 'aitalk6' is the engine name.",
-      "launched": "2025-09-30",
       "subscription_pricing": "Basic plan JPY 80,000/month (excl. tax) for 100,000 requests/month, max 300 characters per request, 2 speakers, 1 user-dictionary-editor ID; more requests/speakers at extra cost. Source: AI Inc. press release 2025-09-29 (https://prtimes.jp/main/html/rd/p/000000151.000099620.html).",
       "trial": "Evaluation account by application (screened): 2 weeks, 10 requests/day, demo audio inserted.",
       "user_dictionary_editor": true,
@@ -29,6 +28,7 @@
         "https://prtimes.jp/main/html/rd/p/000000151.000099620.html"
       ]
     },
+    "released_on": "2025-09-30",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

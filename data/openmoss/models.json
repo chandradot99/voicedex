@@ -25,8 +25,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS",
-      "released": "2026-02-06"
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS"
     },
     "name": "MOSS-TTS",
     "open_weights": {
@@ -42,6 +41,7 @@
         "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-02-06",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -72,8 +72,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer",
-      "released": "2026-02-08"
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer"
     },
     "name": "MOSS-TTS-Local-Transformer",
     "open_weights": {
@@ -89,6 +88,7 @@
         "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-02-08",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -130,8 +130,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
-      "released": "2026-06-04"
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5"
     },
     "name": "MOSS-TTS-Local-Transformer-v1.5",
     "open_weights": {
@@ -147,6 +146,7 @@
         "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-06-04",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -177,8 +177,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Nano-100M",
-      "released": "2026-04-02"
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Nano-100M"
     },
     "name": "MOSS-TTS-Nano-100M",
     "open_weights": {
@@ -194,6 +193,7 @@
         "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-04-02",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -235,8 +235,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-v1.5",
-      "released": "2026-05-25"
+      "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-v1.5"
     },
     "name": "MOSS-TTS-v1.5",
     "open_weights": {
@@ -252,6 +251,7 @@
         "https://huggingface.co/api/models?author=OpenMOSS-Team&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-05-25",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

@@ -7,8 +7,7 @@
     ],
     "meta": {
       "gated": true,
-      "huggingface_repo": "sesame/csm-1b",
-      "released": "2025-03-06"
+      "huggingface_repo": "sesame/csm-1b"
     },
     "name": "csm-1b",
     "open_weights": {
@@ -24,6 +23,7 @@
         "https://huggingface.co/api/models?author=sesame&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-03-06",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

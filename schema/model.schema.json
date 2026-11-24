@@ -491,11 +491,55 @@
       ],
       "default": null
     },
+    "recommended": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Recommended"
+    },
+    "recommended_for": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Recommended For"
+    },
     "regions": {
       "items": {
         "$ref": "#/$defs/Region"
       },
       "title": "Regions",
+      "type": "array"
+    },
+    "released_on": {
+      "anyOf": [
+        {
+          "pattern": "^\\d{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\\d|3[01]))?)?$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Released On"
+    },
+    "replaces": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Replaces",
       "type": "array"
     },
     "sample_rates_hz": {

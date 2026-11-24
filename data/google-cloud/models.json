@@ -4871,7 +4871,6 @@
       "language_note": "Over 101 languages; docs list languages by name only.",
       "max_input_tokens": 8192,
       "multi_speaker_limit": "up to 2 speakers per request using prebuilt voices",
-      "release_date": "2026-09-22",
       "token_limits": {
         "input": 8192,
         "output": 16384
@@ -4954,6 +4953,7 @@
       "global",
       "us"
     ],
+    "released_on": "2026-09-22",
     "sample_rates_hz": [
       8000,
       16000,
@@ -5014,7 +5014,6 @@
       "language_note": "Over 130 languages with automatic input-language detection; docs list languages by name only.",
       "max_input_tokens": 8192,
       "multi_speaker_limit": "up to 2 speakers per request using prebuilt voices",
-      "release_date": "2026-09-22",
       "token_limits": {
         "input": 8192,
         "output": 16384
@@ -5097,6 +5096,7 @@
       "global",
       "us"
     ],
+    "released_on": "2026-09-22",
     "sample_rates_hz": [
       8000,
       16000,

@@ -3,8 +3,7 @@
     "first_seen": "2026-11-18",
     "id": "2Noise/ChatTTS",
     "meta": {
-      "huggingface_repo": "2Noise/ChatTTS",
-      "released": "2024-05-25"
+      "huggingface_repo": "2Noise/ChatTTS"
     },
     "name": "ChatTTS",
     "open_weights": {
@@ -21,6 +20,7 @@
         "https://huggingface.co/api/models?author=2Noise&pipeline_tag=text-to-audio"
       ]
     },
+    "released_on": "2024-05-25",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

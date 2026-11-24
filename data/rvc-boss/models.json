@@ -3,8 +3,7 @@
     "first_seen": "2026-11-18",
     "id": "lj1995/GPT-SoVITS",
     "meta": {
-      "huggingface_repo": "lj1995/GPT-SoVITS",
-      "released": "2024-01-16"
+      "huggingface_repo": "lj1995/GPT-SoVITS"
     },
     "name": "GPT-SoVITS",
     "open_weights": {
@@ -20,6 +19,7 @@
         "https://huggingface.co/api/models?author=lj1995&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-01-16",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

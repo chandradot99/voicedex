@@ -3,8 +3,7 @@
     "first_seen": "2026-11-18",
     "id": "coqui/XTTS-v1",
     "meta": {
-      "huggingface_repo": "coqui/XTTS-v1",
-      "released": "2023-09-13"
+      "huggingface_repo": "coqui/XTTS-v1"
     },
     "name": "XTTS-v1",
     "open_weights": {
@@ -20,6 +19,7 @@
         "https://huggingface.co/api/models?author=coqui&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2023-09-13",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -28,8 +28,7 @@
     "first_seen": "2026-11-18",
     "id": "coqui/XTTS-v2",
     "meta": {
-      "huggingface_repo": "coqui/XTTS-v2",
-      "released": "2023-10-31"
+      "huggingface_repo": "coqui/XTTS-v2"
     },
     "name": "XTTS-v2",
     "open_weights": {
@@ -45,6 +44,7 @@
         "https://huggingface.co/api/models?author=coqui&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2023-10-31",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

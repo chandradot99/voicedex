@@ -53,8 +53,7 @@
         "tier3_review_outputs": "Swedish, Hindi, Tamil, Telugu, Thai, Norwegian, Bengali, Tagalog, Arabic, Danish, Indonesian, Polish, Ukrainian, Romanian, Finnish, Hungarian, Lithuanian, Estonian, Slovak, Croatian, Latvian"
       },
       "max_generation": "up to one minute of audio per generation (launch post)",
-      "rate_limits": "free: 1 concurrent request, 50 requests/day; paid: 5 concurrent, no daily cap",
-      "release_date": "2026-06-12"
+      "rate_limits": "free: 1 concurrent request, 50 requests/day; paid: 5 concurrent, no daily cap"
     },
     "name": "ZONOS2",
     "open_weights": {
@@ -79,6 +78,7 @@
         "https://www.zyphra.com/our-work/zonos2"
       ]
     },
+    "released_on": "2026-06-12",
     "sample_rates_hz": [
       44100
     ],
@@ -150,8 +150,7 @@
       "max_reference_audio_seconds": {
         "embedding_clone": 120,
         "raw_clone": 60
-      },
-      "release_date": "2026-11-09"
+      }
     },
     "name": "ZONOS3-Mini",
     "open_weights": {
@@ -176,6 +175,7 @@
         "https://www.zyphra.com/our-work/zonos2"
       ]
     },
+    "released_on": "2026-11-09",
     "type": "tts",
     "updated_at": "2026-11-18"
   }

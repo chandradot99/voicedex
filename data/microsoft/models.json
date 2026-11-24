@@ -28,8 +28,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "microsoft/Phi-4-multimodal-instruct",
-      "released": "2025-02-24"
+      "huggingface_repo": "microsoft/Phi-4-multimodal-instruct"
     },
     "name": "Phi-4-multimodal-instruct",
     "open_weights": {
@@ -45,6 +44,7 @@
         "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-02-24",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"
@@ -106,8 +106,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "microsoft/VibeVoice-ASR",
-      "released": "2026-01-21"
+      "huggingface_repo": "microsoft/VibeVoice-ASR"
     },
     "name": "VibeVoice-ASR",
     "open_weights": {
@@ -123,6 +122,7 @@
         "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-01-21",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"
@@ -140,8 +140,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "microsoft/VibeVoice-ASR-BitNet",
-      "released": "2026-07-24"
+      "huggingface_repo": "microsoft/VibeVoice-ASR-BitNet"
     },
     "name": "VibeVoice-ASR-BitNet",
     "open_weights": {
@@ -157,6 +156,7 @@
         "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-07-24",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"
@@ -177,8 +177,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "microsoft/VibeVoice-ASR-Streaming-7B",
-      "released": "2026-09-02"
+      "huggingface_repo": "microsoft/VibeVoice-ASR-Streaming-7B"
     },
     "name": "VibeVoice-ASR-Streaming-7B",
     "open_weights": {
@@ -194,6 +193,7 @@
         "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-09-02",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"
@@ -206,8 +206,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "microsoft/VibeVoice-1.5B",
-      "released": "2025-08-25"
+      "huggingface_repo": "microsoft/VibeVoice-1.5B"
     },
     "name": "VibeVoice-1.5B",
     "open_weights": {
@@ -223,6 +222,7 @@
         "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-08-25",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -237,8 +237,7 @@
       "base_model": [
         "Qwen/Qwen2.5-0.5B"
       ],
-      "huggingface_repo": "microsoft/VibeVoice-Realtime-0.5B",
-      "released": "2025-12-04"
+      "huggingface_repo": "microsoft/VibeVoice-Realtime-0.5B"
     },
     "name": "VibeVoice-Realtime-0.5B",
     "open_weights": {
@@ -254,6 +253,7 @@
         "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-12-04",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -262,8 +262,7 @@
     "first_seen": "2026-11-18",
     "id": "microsoft/speecht5_tts",
     "meta": {
-      "huggingface_repo": "microsoft/speecht5_tts",
-      "released": "2023-02-02"
+      "huggingface_repo": "microsoft/speecht5_tts"
     },
     "name": "speecht5_tts",
     "open_weights": {
@@ -279,6 +278,7 @@
         "https://huggingface.co/api/models?author=microsoft&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2023-02-02",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

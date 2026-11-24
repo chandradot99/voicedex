@@ -35,6 +35,13 @@ Optional — include only if stated:
 - `interfaces`: subset of http | websocket | grpc | webrtc
 - `pricing` (only explicit published numbers; non-USD-only providers: `"currency": "INR", "price": n` instead of `price_usd`, never converted): `{"unit": "character|minute|second|word|token|request|hour", "price_usd": n, "as_of": "<today>", "source_url": url, "notes": "plan/qualifiers"}`; differing tiers → `"variants": [{"applies_to": "...", "unit": "...", "price_usd": n}]`. `price_usd` is the price anyone can pay without a subscription commitment (pay-as-you-go / list rate) when one is published; a lower rate that requires buying a monthly or annual plan goes in `variants` with the plan named in `applies_to`, never in `price_usd` (it would show as the "cheapest" price everywhere). Promotions open to every customer are the current price: keep them in `price_usd` and say "promo" plus any end date in `notes`
 - `meta`: provider extras. Special keys promoted to fields: `parent_model_id` (family root), `snapshot_date`, `alias_of` (for moving aliases), `batch` (bool: usable via file/batch API).
+- Lineage (feeds the provider page "Start here" header; top-level keys or `meta`, only from the vendor's own pages):
+  `released_on` — when the model became callable via the API, at the precision published ("2026-04-17" or "2026-04"; a
+  waitlist/alpha date doesn't count, a public preview does). `recommended` — `true` only when the docs point new
+  integrations to it ("recommended", "use X for …", flagship on the models page), with `recommended_for` = the use case
+  they name; `false` when they call it legacy / previous-generation / say to use something else; omit otherwise. Several
+  models per type can be recommended (one per use case). `replaces` — ids of this provider's models the docs say it
+  succeeds; never inferred from version numbers. Reviewed values survive later syncs (empty = unknown).
 
 **Deprecated models:** INCLUDE models that are deprecated but still callable with an announced future
 shutdown date — set `eol_date` to it and `meta.replacement` / `meta.deprecation_notice`. EXCLUDE models

@@ -4,8 +4,7 @@
     "id": "ai4bharat/indic-conformer-600m-multilingual",
     "meta": {
       "gated": true,
-      "huggingface_repo": "ai4bharat/indic-conformer-600m-multilingual",
-      "released": "2025-03-15"
+      "huggingface_repo": "ai4bharat/indic-conformer-600m-multilingual"
     },
     "name": "indic-conformer-600m-multilingual",
     "open_weights": {
@@ -21,6 +20,7 @@
         "https://huggingface.co/api/models?author=ai4bharat&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-03-15",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"
@@ -43,8 +43,7 @@
     ],
     "meta": {
       "gated": true,
-      "huggingface_repo": "ai4bharat/IndicF5",
-      "released": "2025-03-11"
+      "huggingface_repo": "ai4bharat/IndicF5"
     },
     "name": "IndicF5",
     "open_weights": {
@@ -60,6 +59,7 @@
         "https://huggingface.co/api/models?author=ai4bharat&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-03-11",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -89,8 +89,7 @@
     ],
     "meta": {
       "gated": true,
-      "huggingface_repo": "ai4bharat/indic-parler-tts",
-      "released": "2024-10-28"
+      "huggingface_repo": "ai4bharat/indic-parler-tts"
     },
     "name": "indic-parler-tts",
     "open_weights": {
@@ -106,6 +105,7 @@
         "https://huggingface.co/api/models?author=ai4bharat&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-10-28",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

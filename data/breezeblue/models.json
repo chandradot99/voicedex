@@ -34,7 +34,6 @@
       "huggingface_repo": "BreezeBlue/Breeze-TTS-2",
       "license_terms": "Source code Apache-2.0; weights, derivatives and self-hosted outputs research/non-commercial only; commercial use via the paid hosted API (all paid plans) or written authorization from RESONIA, INC.",
       "max_text_chars_note": "1,000 per HTTP request by default; approved accounts up to 2,000",
-      "released": "2026-08-25",
       "selected_when": "model_id omitted and language_code is en or zh",
       "vocal_events": "inline tags such as (laugh), (sigh); [笑] in Chinese",
       "word_timestamps": true
@@ -61,6 +60,7 @@
         "https://huggingface.co/BreezeBlue"
       ]
     },
+    "released_on": "2026-08-25",
     "sample_rates_hz": [
       24000
     ],

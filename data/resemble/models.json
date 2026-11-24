@@ -9,8 +9,7 @@
       "base_model": [
         "Lightricks/LTX-2.3"
       ],
-      "huggingface_repo": "ResembleAI/Dramabox",
-      "released": "2026-04-17"
+      "huggingface_repo": "ResembleAI/Dramabox"
     },
     "name": "Dramabox",
     "open_weights": {
@@ -25,6 +24,7 @@
         "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-04-17",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -58,8 +58,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "ResembleAI/chatterbox",
-      "released": "2025-04-24"
+      "huggingface_repo": "ResembleAI/chatterbox"
     },
     "name": "chatterbox",
     "open_weights": {
@@ -75,6 +74,7 @@
         "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-04-24",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -86,8 +86,7 @@
       "en"
     ],
     "meta": {
-      "huggingface_repo": "ResembleAI/chatterbox-turbo",
-      "released": "2025-12-02"
+      "huggingface_repo": "ResembleAI/chatterbox-turbo"
     },
     "name": "chatterbox-turbo",
     "open_weights": {
@@ -103,6 +102,7 @@
         "https://huggingface.co/api/models?author=ResembleAI&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-12-02",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

@@ -45,7 +45,6 @@
       ],
       "custom_lexicon": "X-SAMPA, up to 500 entries; en/de/es/fr/it/pt",
       "on_prem": true,
-      "release_date": "2026-05",
       "replaces": [
         "arcana",
         "arcanav2",
@@ -91,6 +90,7 @@
         "https://www.rime.ai/pricing"
       ]
     },
+    "released_on": "2026-05",
     "sample_rates_hz": [
       8000,
       24000
@@ -198,11 +198,6 @@
       "default_when_model_id_omitted": true,
       "inline_pronunciation": "Rime phonetic alphabet via phonemizeBetweenBrackets, English only",
       "on_prem": true,
-      "release_date": "2026-03",
-      "replaces": [
-        "mist",
-        "mistv2"
-      ],
       "sampling_rate_note": "samplingRate accepts any positive rate; default 24000, 8000 for telephony",
       "speed_control": "timeScaleFactor 0.4-2.5, inlineSpeedAlpha / inlineTimeScaleFactors",
       "spell_function": true,
@@ -238,6 +233,11 @@
         "https://www.rime.ai/pricing"
       ]
     },
+    "released_on": "2026-03",
+    "replaces": [
+      "mist",
+      "mistv2"
+    ],
     "sample_rates_hz": [
       8000,
       24000

@@ -1455,8 +1455,7 @@
       ],
       "no_speaker_labels": true,
       "no_vad": true,
-      "no_word_timestamps": true,
-      "recommended_for": "realtime transcription"
+      "no_word_timestamps": true
     },
     "name": "GPT-Live-Transcribe",
     "pricing": {
@@ -1478,6 +1477,8 @@
         "https://developers.openai.com/api/docs/guides/live-conversations"
       ]
     },
+    "recommended": true,
+    "recommended_for": "realtime transcription",
     "sample_rates_hz": [
       24000
     ],
@@ -1559,7 +1560,6 @@
       "keywords_param": true,
       "max_file_mb": 25,
       "prompt_param": true,
-      "recommended_for": "recorded speech in its original language",
       "returns_detected_languages": true
     },
     "name": "GPT-Transcribe",
@@ -1581,6 +1581,8 @@
         "https://developers.openai.com/api/docs/guides/live-conversations"
       ]
     },
+    "recommended": true,
+    "recommended_for": "recorded speech in its original language",
     "type": "stt",
     "updated_at": "2026-11-16"
   },

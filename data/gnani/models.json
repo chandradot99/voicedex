@@ -120,7 +120,6 @@
         "codemix",
         "transliterate"
       ],
-      "release_date": "2026-10-22",
       "rest_max_audio_seconds": 30,
       "streaming_input": "raw 16-bit PCM, mono",
       "streaming_sample_rates_hz": [
@@ -145,6 +144,7 @@
         "https://docs.gnani.ai/api/VC/vc-inference.md"
       ]
     },
+    "released_on": "2026-10-22",
     "type": "stt",
     "updated_at": "2026-11-18"
   },

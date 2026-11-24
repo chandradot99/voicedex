@@ -76,7 +76,14 @@ def _voices_path(provider_id: str) -> Path:
 
 # ── Deserializers ───────────────────────────��─────────────────────────────────
 
+# Model fields with no SyncModel slot: accepted at the top level of a cache entry and carried in meta,
+# where merge.model_from_sync promotes them (so extraction agents can write them either way).
+_META_FIELDS = ("parent_model_id", "family", "snapshot_date", "alias_of", "batch",
+                "released_on", "recommended", "recommended_for", "replaces")
+
+
 def _model_from_dict(d: dict) -> SyncModel:
+    meta = {**{k: d[k] for k in _META_FIELDS if d.get(k) is not None}, **(d.get("meta") or {})}
     return SyncModel(
         model_id=d["model_id"],
         display_name=d["display_name"],
@@ -94,7 +101,7 @@ def _model_from_dict(d: dict) -> SyncModel:
         capabilities=d.get("capabilities") or [],
         regions=d.get("regions") or [],
         pricing=d.get("pricing") or {},
-        meta=d.get("meta") or {},
+        meta=meta,
         interfaces=d.get("interfaces") or [],
         open_weights=d.get("open_weights"),
         source=d.get("source") or "docs",

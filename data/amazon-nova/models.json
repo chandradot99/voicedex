@@ -34,7 +34,6 @@
         "turn_detection"
       ],
       "languages_note": "Launch announcement cites expressive voices in seven languages; the model card does not list them.",
-      "launch_date": "2026-10-05",
       "max_output_tokens": 64000
     },
     "name": "Nova 2.5 Sonic",
@@ -78,6 +77,7 @@
       "eu",
       "us"
     ],
+    "released_on": "2026-10-05",
     "type": "sts",
     "updated_at": "2026-11-18"
   },
@@ -114,7 +114,6 @@
       "cross_region_inference": true,
       "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html",
       "eol_no_sooner_than": "2026-12-02",
-      "launch_date": "2025-12-02",
       "max_output_tokens": 64000,
       "model_eol_date": "N/A (not announced)"
     },
@@ -159,6 +158,7 @@
       "eu",
       "us"
     ],
+    "released_on": "2025-12-02",
     "type": "sts",
     "updated_at": "2026-11-18"
   }

@@ -6,8 +6,7 @@
       "ko"
     ],
     "meta": {
-      "huggingface_repo": "myshell-ai/MeloTTS-Chinese",
-      "released": "2024-02-29"
+      "huggingface_repo": "myshell-ai/MeloTTS-Chinese"
     },
     "name": "MeloTTS-Chinese",
     "open_weights": {
@@ -23,6 +22,7 @@
         "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-02-29",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -34,8 +34,7 @@
       "ko"
     ],
     "meta": {
-      "huggingface_repo": "myshell-ai/MeloTTS-English",
-      "released": "2024-02-29"
+      "huggingface_repo": "myshell-ai/MeloTTS-English"
     },
     "name": "MeloTTS-English",
     "open_weights": {
@@ -51,6 +50,7 @@
         "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-02-29",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -62,8 +62,7 @@
       "ko"
     ],
     "meta": {
-      "huggingface_repo": "myshell-ai/MeloTTS-Korean",
-      "released": "2024-02-29"
+      "huggingface_repo": "myshell-ai/MeloTTS-Korean"
     },
     "name": "MeloTTS-Korean",
     "open_weights": {
@@ -79,6 +78,7 @@
         "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-02-29",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -91,8 +91,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "myshell-ai/OpenVoice",
-      "released": "2024-01-02"
+      "huggingface_repo": "myshell-ai/OpenVoice"
     },
     "name": "OpenVoice",
     "open_weights": {
@@ -108,6 +107,7 @@
         "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-01-02",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -120,8 +120,7 @@
       "zh"
     ],
     "meta": {
-      "huggingface_repo": "myshell-ai/OpenVoiceV2",
-      "released": "2024-04-23"
+      "huggingface_repo": "myshell-ai/OpenVoiceV2"
     },
     "name": "OpenVoiceV2",
     "open_weights": {
@@ -137,6 +136,7 @@
         "https://huggingface.co/api/models?author=myshell-ai&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-04-23",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

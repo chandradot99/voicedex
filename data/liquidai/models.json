@@ -11,8 +11,7 @@
       "context_window": 32768,
       "hosted_api": false,
       "huggingface_repo": "LiquidAI/LFM2.5-Audio-1.5B-JP",
-      "license_terms": "Free for commercial use only by entities with annual revenue under US$10M (LFM Open License v1.0, s.5); larger entities need a commercial licence; non-profits free for non-commercial/research use.",
-      "released": "2026-05-26"
+      "license_terms": "Free for commercial use only by entities with annual revenue under US$10M (LFM Open License v1.0, s.5); larger entities need a commercial licence; non-profits free for non-commercial/research use."
     },
     "name": "LFM2.5-Audio-1.5B-JP",
     "open_weights": {
@@ -29,6 +28,7 @@
         "https://huggingface.co/LiquidAI"
       ]
     },
+    "released_on": "2026-05-26",
     "type": "sts",
     "updated_at": "2026-11-18"
   },
@@ -79,7 +79,6 @@
         "pcm16 (24 kHz mono)",
         "wav"
       ],
-      "released": "2026-09-08",
       "tasks": [
         "asr",
         "tts",
@@ -130,6 +129,7 @@
         "https://huggingface.co/LiquidAI"
       ]
     },
+    "released_on": "2026-09-08",
     "sample_rates_hz": [
       24000
     ],

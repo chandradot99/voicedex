@@ -6,8 +6,7 @@
       "en"
     ],
     "meta": {
-      "huggingface_repo": "Supertone/supertonic",
-      "released": "2025-11-18"
+      "huggingface_repo": "Supertone/supertonic"
     },
     "name": "supertonic",
     "open_weights": {
@@ -23,6 +22,7 @@
         "https://huggingface.co/api/models?author=Supertone&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-11-18",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -38,8 +38,7 @@
       "pt"
     ],
     "meta": {
-      "huggingface_repo": "Supertone/supertonic-2",
-      "released": "2026-01-06"
+      "huggingface_repo": "Supertone/supertonic-2"
     },
     "name": "supertonic-2",
     "open_weights": {
@@ -55,6 +54,7 @@
         "https://huggingface.co/api/models?author=Supertone&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-01-06",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -96,8 +96,7 @@
       "vi"
     ],
     "meta": {
-      "huggingface_repo": "Supertone/supertonic-3",
-      "released": "2026-05-06"
+      "huggingface_repo": "Supertone/supertonic-3"
     },
     "name": "supertonic-3",
     "open_weights": {
@@ -113,6 +112,7 @@
         "https://huggingface.co/api/models?author=Supertone&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-05-06",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

@@ -56,6 +56,12 @@ def check_provider(pdir: Path) -> list[str]:
         if len(defaults) > 1:
             errs.append(f"{pdir.name}: multiple default {t} models {defaults}")
 
+    ids_by_type = {t: {m.id for m in pd.models if m.type == t} for t in ("stt", "tts", "sts")}
+    for m in pd.models:
+        unknown = [r for r in m.replaces if r not in ids_by_type[m.type] or r == m.id]
+        if unknown:
+            errs.append(f"{pdir.name}: {m.type} model {m.id} replaces unknown models {unknown}")
+
     known_tts = {m.id for m in pd.models if m.type in ("tts", "sts")}
     for v in pd.voices:
         unknown = [c for c in v.compatible_models if c != "*" and c not in known_tts]

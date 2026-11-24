@@ -36,7 +36,6 @@
       "max_file_bytes": 268435456,
       "max_speakers": 8,
       "prompt": "free-text hint with names and terms",
-      "released": "2026-04",
       "response_formats": [
         "json",
         "text",
@@ -75,6 +74,7 @@
     "regions": [
       "us"
     ],
+    "released_on": "2026-04",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"

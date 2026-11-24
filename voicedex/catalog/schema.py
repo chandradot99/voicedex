@@ -104,6 +104,8 @@ def _check_vocab(values: list[str], allowed: frozenset[str], what: str) -> list[
 
 
 Slug = Annotated[str, Field(min_length=1, max_length=256)]
+# A date at the precision the vendor published it: "2026", "2026-04" or "2026-04-17" (sorts as a string).
+PartialDate = Annotated[str, Field(pattern=r"^\d{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01]))?)?$")]
 
 
 class _Record(BaseModel):
@@ -249,6 +251,12 @@ class Model(_Record):
     family: str | None = None          # family root id, e.g. "sonic-3"
     alias_of: str | None = None        # e.g. "sonic-latest" → "sonic-3"
     snapshot_date: date | None = None  # dated snapshots, e.g. sonic-3-2026-01-12
+    released_on: PartialDate | None = None  # vendor-published release date, at its published precision
+    # The vendor's own pointer for new integrations: True = its docs recommend this model (for
+    # `recommended_for`, e.g. "real-time agents"), False = docs call it legacy/superseded, None = no signal.
+    recommended: bool | None = None
+    recommended_for: str | None = None
+    replaces: list[str] = Field(default_factory=list)  # ids of this provider's models it succeeds, per vendor
     lifecycle: Lifecycle = Lifecycle.ga
     is_default: bool = False
     languages: list[str] = Field(default_factory=list)

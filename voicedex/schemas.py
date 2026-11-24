@@ -68,6 +68,10 @@ class ModelOut(BaseModel):
     family: str | None
     alias_of: str | None
     snapshot_date: date | None
+    released_on: str | None = None       # "YYYY", "YYYY-MM" or "YYYY-MM-DD", as the vendor published it
+    recommended: bool | None = None      # vendor's docs recommend it for new integrations (None = no signal)
+    recommended_for: str | None = None
+    replaces: list[str] = []
     lifecycle: str
     is_default: bool
     languages: list[str]
@@ -95,7 +99,8 @@ class ModelOut(BaseModel):
         return cls(
             id=model_uuid(provider_id, m), provider_id=provider_id, model_id=m.id, display_name=m.name,
             type=m.type, description=m.description, family=m.family, alias_of=m.alias_of,
-            snapshot_date=m.snapshot_date, lifecycle=m.lifecycle, is_default=m.is_default,
+            snapshot_date=m.snapshot_date, released_on=m.released_on, recommended=m.recommended,
+            recommended_for=m.recommended_for, replaces=m.replaces, lifecycle=m.lifecycle, is_default=m.is_default,
             languages=m.languages, streaming=m.streaming, batch=m.batch, interfaces=list(m.interfaces),
             sample_rates_hz=m.sample_rates_hz, audio_formats=m.audio_formats,
             max_text_chars=m.max_text_chars, max_audio_seconds=m.max_audio_seconds,

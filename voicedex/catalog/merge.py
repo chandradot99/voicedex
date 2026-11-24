@@ -13,6 +13,7 @@ Rules:
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Any
@@ -71,8 +72,52 @@ def _provenance_for(source: str | None, result: SyncResult, today: date) -> Prov
     return Provenance(method=method, urls=list(urls), as_of=today)
 
 
+# Release dates arrived under several meta keys before `released_on` existed; the first parseable one wins.
+RELEASE_META_KEYS = ("released_on", "released", "release_date", "launched", "launch_date")
+_MONTHS = {m: i for i, m in enumerate(("january", "february", "march", "april", "may", "june", "july", "august",
+                                       "september", "october", "november", "december"), 1)}
+
+
+def partial_date(value: Any) -> str | None:
+    """'2026-04-17' / '2026-04' / '2026' / 'June 2026' → ISO partial date; anything else → None."""
+    if isinstance(value, date):
+        return value.isoformat()
+    if not isinstance(value, str):
+        return None
+    v = value.strip()
+    if re.fullmatch(r"\d{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01]))?)?", v):
+        return v
+    mo = re.fullmatch(r"([A-Za-z]+)\.? (\d{4})", v)
+    if mo and mo.group(1).lower() in _MONTHS:
+        return f"{mo.group(2)}-{_MONTHS[mo.group(1).lower()]:02d}"
+    return None
+
+
+def _pop_lineage(meta: dict) -> dict:
+    """Pull released_on / recommended / recommended_for / replaces out of meta (syncers send them there)."""
+    out: dict[str, Any] = {}
+    for k in RELEASE_META_KEYS:
+        if k in meta and (d := partial_date(meta[k])):
+            meta.pop(k)
+            out.setdefault("released_on", d)
+    if isinstance(meta.get("recommended"), bool):
+        out["recommended"] = meta.pop("recommended")
+    if isinstance(meta.get("recommended_for"), str):
+        out["recommended_for"] = meta.pop("recommended_for")
+        if out.get("recommended") is not False:   # "recommended for X" in the vendor's docs is a recommendation
+            out["recommended"] = True
+    rep = meta.get("replaces")
+    if isinstance(rep, str):
+        rep = [rep]
+    if isinstance(rep, list) and all(isinstance(x, str) for x in rep):
+        meta.pop("replaces")
+        out["replaces"] = rep
+    return out
+
+
 def model_from_sync(m: SyncModel, result: SyncResult, today: date) -> Model:
     meta = dict(m.meta or {})
+    lineage = _pop_lineage(meta)
     family = meta.pop("parent_model_id", None) or meta.pop("family", None)
     snapshot_date = meta.pop("snapshot_date", None)
     meta.pop("is_snapshot", None)
@@ -93,6 +138,7 @@ def model_from_sync(m: SyncModel, result: SyncResult, today: date) -> Model:
         family=family,
         alias_of=alias_of,
         snapshot_date=snapshot_date,
+        **lineage,
         lifecycle=m.lifecycle,
         is_default=m.is_default,
         languages=m.languages,

@@ -3,8 +3,7 @@
     "first_seen": "2026-11-18",
     "id": "SWivid/E2-TTS",
     "meta": {
-      "huggingface_repo": "SWivid/E2-TTS",
-      "released": "2024-10-14"
+      "huggingface_repo": "SWivid/E2-TTS"
     },
     "name": "E2-TTS",
     "open_weights": {
@@ -20,6 +19,7 @@
         "https://huggingface.co/api/models?author=SWivid&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-10-14",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -28,8 +28,7 @@
     "first_seen": "2026-11-18",
     "id": "SWivid/F5-TTS",
     "meta": {
-      "huggingface_repo": "SWivid/F5-TTS",
-      "released": "2024-10-07"
+      "huggingface_repo": "SWivid/F5-TTS"
     },
     "name": "F5-TTS",
     "open_weights": {
@@ -45,6 +44,7 @@
         "https://huggingface.co/api/models?author=SWivid&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-10-07",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

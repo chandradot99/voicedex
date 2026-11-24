@@ -10,6 +10,10 @@ Reads .sync-cache/<provider>_docs.json (and the older <provider>_pricing.json):
       "pricing": {<Pricing>},                      # optional
       "capabilities": ["speaker_diarization", ...],  # optional, controlled vocabulary
       "capability_notes": {"term": "caveat"},      # optional → meta.capability_notes
+      "released_on": "2026-04" | "2026-04-17",     # optional, vendor-published release date
+      "recommended": true | false,                 # optional, vendor recommends it / calls it legacy
+      "recommended_for": "real-time agents",       # optional, the use case it is recommended for
+      "replaces": ["older-model-id"],              # optional, this provider's models it succeeds
       "source_urls": ["https://..."]}]             # optional → meta.docs_sources
 
 Changed models get updated_at = today. Unknown model ids are reported, never created.
@@ -30,6 +34,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from voicedex.catalog.files import read_provider_dir, write_provider_dir  # noqa: E402
+from voicedex.catalog.merge import partial_date  # noqa: E402
 from voicedex.catalog.schema import MODEL_CAPABILITIES, TTS_CAPABILITIES, Pricing  # noqa: E402
 
 CACHE = ROOT / ".sync-cache"
@@ -70,8 +75,25 @@ def apply(provider_id: str, data_dir: Path, write: bool) -> int:
             model.capabilities = sorted(set(row["capabilities"]))
             if row.get("capability_notes"):
                 model.meta = {**model.meta, "capability_notes": row["capability_notes"]}
-        if row.get("source_urls"):
-            model.meta = {**model.meta, "docs_sources": row["source_urls"]}
+        if row.get("released_on"):
+            if not (d := partial_date(row["released_on"])):
+                print(f"  ✗ {key[0]}:{key[1]}: unparseable released_on {row['released_on']!r}")
+                rc = 1
+                continue
+            model.released_on = d
+        if isinstance(row.get("recommended"), bool):
+            model.recommended = row["recommended"]
+            model.recommended_for = row.get("recommended_for") if row["recommended"] else None
+        if row.get("replaces"):
+            same_type = {k[1] for k in by_key if k[0] == key[0]}
+            if bad := [r for r in row["replaces"] if r not in same_type or r == key[1]]:
+                print(f"  ✗ {key[0]}:{key[1]}: replaces unknown {key[0]} models {bad}")
+                rc = 1
+                continue
+            model.replaces = list(row["replaces"])
+        if row.get("source_urls"):   # union: a lineage pass must not drop the pricing pass's sources
+            old = model.meta.get("docs_sources") or []
+            model.meta = {**model.meta, "docs_sources": old + [u for u in row["source_urls"] if u not in old]}
         if model.model_dump(mode="json") != before:
             model.updated_at = date.today()
             changed.append(f"{key[0]}:{key[1]}")

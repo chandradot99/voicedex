@@ -11,8 +11,7 @@
         "canopylabs/orpheus-3b-0.1-pretrained"
       ],
       "gated": true,
-      "huggingface_repo": "canopylabs/orpheus-3b-0.1-ft",
-      "released": "2025-03-17"
+      "huggingface_repo": "canopylabs/orpheus-3b-0.1-ft"
     },
     "name": "orpheus-3b-0.1-ft",
     "open_weights": {
@@ -28,6 +27,7 @@
         "https://huggingface.co/api/models?author=canopylabs&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-03-17",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

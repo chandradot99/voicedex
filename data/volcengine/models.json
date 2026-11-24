@@ -102,8 +102,7 @@
       "endpoint": "wss://openspeech.bytedance.com/api/v3/duplex/realtime/dialogue",
       "input": "pcm/speech_opus 16 kHz",
       "output": "pcm (32-bit or s16le)/ogg_opus 24 kHz",
-      "pricing_note": "Billing page lists one 豆包实时语音大模型 rate; assumed to cover this version.",
-      "released": "2026-06"
+      "pricing_note": "Billing page lists one 豆包实时语音大模型 rate; assumed to cover this version."
     },
     "name": "Doubao Realtime Voice 3.0 (Seeduplex, full-duplex)",
     "pricing": {
@@ -162,6 +161,7 @@
         "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
       ]
     },
+    "released_on": "2026-06",
     "sample_rates_hz": [
       24000
     ],

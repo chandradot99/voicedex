@@ -6,8 +6,7 @@
       "en"
     ],
     "meta": {
-      "huggingface_repo": "parler-tts/parler-tts-large-v1",
-      "released": "2024-08-08"
+      "huggingface_repo": "parler-tts/parler-tts-large-v1"
     },
     "name": "parler-tts-large-v1",
     "open_weights": {
@@ -23,6 +22,7 @@
         "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-08-08",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -34,8 +34,7 @@
       "en"
     ],
     "meta": {
-      "huggingface_repo": "parler-tts/parler-tts-mini-v1",
-      "released": "2024-06-26"
+      "huggingface_repo": "parler-tts/parler-tts-mini-v1"
     },
     "name": "parler-tts-mini-v1",
     "open_weights": {
@@ -51,6 +50,7 @@
         "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-06-26",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"
@@ -62,8 +62,7 @@
       "en"
     ],
     "meta": {
-      "huggingface_repo": "parler-tts/parler_tts_mini_v0.1",
-      "released": "2024-04-09"
+      "huggingface_repo": "parler-tts/parler_tts_mini_v0.1"
     },
     "name": "parler_tts_mini_v0.1",
     "open_weights": {
@@ -79,6 +78,7 @@
         "https://huggingface.co/api/models?author=parler-tts&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2024-04-09",
     "streaming": false,
     "type": "tts",
     "updated_at": "2026-11-18"

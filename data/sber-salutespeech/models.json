@@ -10,8 +10,7 @@
       "uz"
     ],
     "meta": {
-      "huggingface_repo": "ai-sage/GigaAM-Multilingual",
-      "released": "2026-07-14"
+      "huggingface_repo": "ai-sage/GigaAM-Multilingual"
     },
     "name": "GigaAM-Multilingual",
     "open_weights": {
@@ -27,6 +26,7 @@
         "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2026-07-14",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"
@@ -39,8 +39,7 @@
       "ru"
     ],
     "meta": {
-      "huggingface_repo": "ai-sage/GigaAM-v3",
-      "released": "2025-11-19"
+      "huggingface_repo": "ai-sage/GigaAM-v3"
     },
     "name": "GigaAM-v3",
     "open_weights": {
@@ -56,6 +55,7 @@
         "https://huggingface.co/api/models?author=ai-sage&pipeline_tag=text-to-speech"
       ]
     },
+    "released_on": "2025-11-19",
     "streaming": false,
     "type": "stt",
     "updated_at": "2026-11-18"
