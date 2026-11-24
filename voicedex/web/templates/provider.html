@@ -39,6 +39,8 @@
 </section>
 {% endif %}
 
+{% if start %}{% include "_start_here.html" %}{% endif %}
+
 {% for t in ["stt", "tts", "sts"] %}
 {% set group = models|selectattr("model.type", "equalto", t)|list %}
 {% set gone = deprecated|selectattr("model.type", "equalto", t)|list %}

@@ -106,6 +106,9 @@ def _model_summary(cat: Catalog, r) -> dict[str, Any]:
         "batch": m.batch,
         "open_weights": m.open_weights is not None,
         "lifecycle": str(m.lifecycle),
+        "released_on": m.released_on,
+        "recommended_by_provider": m.recommended,       # True = vendor docs point new integrations here; None = unknown
+        "recommended_for": m.recommended_for,
         "eol_date": m.eol_date.isoformat() if m.eol_date else None,
         "shutting_down_in_days": (m.eol_date - date.today()).days if m.eol_date else None,
         "url": _site() + views.model_url(r),

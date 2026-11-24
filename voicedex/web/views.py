@@ -1235,6 +1235,149 @@ def verification_status(catalog: Catalog, provider_id: str) -> VerificationStatu
     )
 
 
+# ── "Start here" (provider page header) ──────────────────────────────────────
+# What the provider itself points new integrations to, per model type, with how it stands against the rest of
+# the catalog. Built only from `recommended=True` (the vendor's own docs); a type without one shows nothing,
+# so the header never guesses a flagship. Comparisons are counts and percentiles, never "best".
+
+START_HERE_MAX = 3          # picks per type
+MIN_RANK_PEERS = 20         # smallest peer group a language percentile is shown for
+
+
+@dataclass
+class Delta:
+    """What changed from the model a pick replaces (`Model.replaces`)."""
+    old: ModelRow
+    languages: int                    # base-language count difference
+    added: list[str]                  # feature labels gained
+    removed: list[str]                # feature labels lost
+    price: str | None                 # "same price", "40% cheaper", "2× the price"; None if not comparable
+
+
+@dataclass
+class Pick:
+    row: ModelRow
+    use: str | None                   # the vendor's "recommended for …"
+    summary: str | None               # first sentence of the description
+    languages: int | None             # None = "many" (unenumerated)
+    lang_rank: str | None             # "more languages than 81% of STT models"
+    features: list[str]               # feature labels
+    feature_total: int
+    price: str | None
+    price_rank: str | None            # "cheaper than 79% of priced STT models"
+    monthly: float | None             # at USAGE default
+    realtime: bool
+    delta: Delta | None
+
+
+@dataclass
+class StartHere:
+    groups: list[tuple[str, list[Pick]]]   # (model type, picks)
+    rest: dict[str, int]                   # model type → other active models listed below
+
+
+def _summary(text: str | None) -> str | None:
+    """First sentence, without the vendor's first person ("Our fastest model…" → "Fastest model…")."""
+    if not text:
+        return None
+    first = text.strip().split(". ")[0].rstrip(".")
+    for lead in ("Our ", "our "):
+        if first.startswith(lead):
+            first = first[len(lead)].upper() + first[len(lead) + 1:]
+    return first if len(first) <= 160 else first[:157].rsplit(" ", 1)[0] + "…"
+
+
+def _features(model: Model) -> list[str]:
+    return [FEATURE_LABELS.get(c, c) for c in feature_vocab(model.type) if c in model.capabilities]
+
+
+def _price_change(new: Model, old: Model) -> str | None:
+    a, b = normalized_price(new), normalized_price(old)
+    if not a or not b or not b[0]:
+        return None
+    ratio = a[0] / b[0]
+    if abs(ratio - 1) < 0.005:
+        return "same price"
+    if ratio < 1:
+        return f"{round(100 * (1 - ratio))}% cheaper"
+    return f"{ratio:.1f}× the price".replace(".0×", "×")
+
+
+def _delta(catalog: Catalog, row: ModelRow) -> Delta | None:
+    by_id = {r.model.id: r for r in catalog.models if r.provider_id == row.provider_id and r.model.type == row.model.type}
+    old = next((by_id[i] for i in row.model.replaces if i in by_id), None)
+    if old is None:
+        return None
+    new_f, old_f = set(row.model.capabilities), set(old.model.capabilities)
+    many = "*" in row.model.languages or "*" in old.model.languages
+    return Delta(
+        old=old,
+        languages=0 if many else lang_count(row.model) - lang_count(old.model),
+        added=[FEATURE_LABELS.get(c, c) for c in feature_vocab(row.model.type) if c in new_f - old_f],
+        removed=[FEATURE_LABELS.get(c, c) for c in feature_vocab(row.model.type) if c in old_f - new_f],
+        price=_price_change(row.model, old.model),
+    )
+
+
+def _peers(catalog: Catalog, model_type: str) -> list[Model]:
+    live = {pid for pid, pd in catalog.providers.items() if pd.provider.status == "active"}
+    return [r.model for r in active_models(catalog) if r.model.type == model_type and r.provider_id in live]
+
+
+def _share_phrase(below: int, above: int, total: int, more: str, less: str, group: str) -> str | None:
+    """Phrase a percentile from whichever side is the majority: "cheaper than 79% of …" / "62% of … cost less"."""
+    if total < MIN_RANK_PEERS:
+        return None
+    if below >= above:
+        return f"{more} {round(100 * below / total)}% of {group}"
+    return f"{round(100 * above / total)}% of {group} {less}"
+
+
+def _lang_rank(catalog: Catalog, model: Model) -> str | None:
+    if "*" in model.languages or lang_count(model) < 2:
+        return None
+    peers = [lang_count(m) for m in _peers(catalog, model.type) if "*" not in m.languages]
+    n = lang_count(model)
+    return _share_phrase(sum(v < n for v in peers), sum(v > n for v in peers), len(peers),
+                         "more languages than", "cover more", f"{TYPE_SHORT[model.type]} models")
+
+
+def _price_rank(catalog: Catalog, model: Model) -> str | None:
+    n = normalized_price(model)
+    if not n:
+        return None
+    peers = [p[0] for m in _peers(catalog, model.type) if (p := normalized_price(m))]
+    return _share_phrase(sum(v > n[0] for v in peers), sum(v < n[0] for v in peers), len(peers),
+                         "cheaper than", "cost less", f"priced {TYPE_SHORT[model.type]} models")
+
+
+def start_here(catalog: Catalog, provider_id: str) -> StartHere | None:
+    rows = active_models(catalog, provider_id)
+    groups, rest = [], {}
+    for t in ("tts", "stt", "sts"):
+        typed = [r for r in rows if r.model.type == t]
+        recs = [r for r in typed if r.model.recommended is True and not r.model.eol_date]
+        if not recs:
+            continue
+        recs.sort(key=lambda r: (r.model.released_on or "", r.model.is_default), reverse=True)
+        recs = recs[:START_HERE_MAX]
+        picks = []
+        for r in recs:
+            m = r.model
+            picks.append(Pick(
+                row=r, use=m.recommended_for, summary=_summary(m.description),
+                languages=None if "*" in m.languages else lang_count(m),
+                lang_rank=_lang_rank(catalog, m),
+                features=_features(m), feature_total=len(feature_vocab(m.type)),
+                price=price_label(m), price_rank=_price_rank(catalog, m),
+                monthly=monthly_cost(m, USAGE[t].default) if t in USAGE else None,
+                realtime=is_realtime(m), delta=_delta(catalog, r),
+            ))
+        groups.append((t, picks))
+        rest[t] = len(typed) - len(picks)
+    return StartHere(groups, rest) if groups else None
+
+
 # ── Freshness (home page trust line) ─────────────────────────────────────────
 
 FRESH_DAYS = 30

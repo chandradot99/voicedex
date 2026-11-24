@@ -896,3 +896,34 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .transparency .share .bar i { display: block; height: 100%; background: var(--signal-fill); border-radius: 2px; }
 .transparency .share .sub { display: inline; margin-left: 6px; }
 .method ul { margin: 12px 0 0; padding-left: 1.2em; display: grid; gap: 10px; max-width: 80ch; line-height: 1.55; }
+
+/* ── Start here (provider page header: the vendor's recommended models, measured against the catalog) ── */
+.start-here { margin-top: 8px; margin-bottom: 40px; }
+.sh-group { display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; border-top: 1px solid var(--rule); padding: 20px 0; }
+.sh-group:last-of-type { border-bottom: 1px solid var(--rule); }
+.sh-type { font: 400 12px/1.4 var(--mono); color: var(--muted); display: flex; flex-direction: column; gap: 2px; }
+.sh-type b { font-weight: 500; color: var(--ink); font-size: 13px; }
+.sh-picks { display: grid; gap: 22px; }
+.sh-pick + .sh-pick { border-top: 1px dashed var(--rule); padding-top: 20px; }
+.sh-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.sh-head code { font-size: 16px; color: var(--ink); }
+.sh-head a:hover code { color: var(--signal); }
+.sh-name { color: var(--ink-2); font-size: 14px; }
+.sh-meta { margin-left: auto; font-size: 12px; color: var(--muted); }
+.sh-use { margin-top: 6px; font-size: 14px; color: var(--ink); }
+.sh-use .mono { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--signal); margin-right: 6px; }
+.sh-summary { margin-top: 4px; color: var(--ink-2); font-size: 14px; line-height: 1.55; max-width: 72ch; }
+.sh-facts { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 24px; }
+.sh-facts dt { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.sh-facts dd { margin-top: 4px; display: flex; flex-direction: column; gap: 2px; }
+.sh-facts dd .mono { font-size: 14px; color: var(--ink); }
+.sh-rank { font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+.sh-delta { margin-top: 12px; font-size: 13px; color: var(--ink-2); }
+.sh-delta .mono { color: var(--muted); margin-right: 8px; font-size: 12px; }
+.sh-delta a { color: var(--ink-2); }
+.sh-foot { margin-top: 10px; font-size: 12px; color: var(--muted); }
+@media (max-width: 720px) {
+  .sh-group { grid-template-columns: 1fr; gap: 10px; }
+  .sh-type { flex-direction: row; gap: 10px; }
+  .sh-meta { margin-left: 0; width: 100%; }
+}

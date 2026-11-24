@@ -246,6 +246,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
     return templates.TemplateResponse(request, "provider.html", {
         "p": pd.provider, "summary": summary, "models": models,
         "verified": views.verification_status(catalog, provider_id),
+        "start": views.start_here(catalog, provider_id) if pd.provider.status == "active" else None,
         "voice_count": len(voices), "voice_sample": voices[:12],
         "deprecated": [r for r in catalog.models if r.provider_id == provider_id and r.model.deprecated_at],
         "compare_with": [(views.provider_pair_slug(provider_id, other), catalog.providers[other].provider.name)

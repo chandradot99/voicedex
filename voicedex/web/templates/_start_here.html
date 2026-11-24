@@ -1,0 +1,38 @@
+{# "Start here": the models this provider recommends for new integrations (Model.recommended), per type. #}
+<section class="wrap start-here" aria-labelledby="start-here-title">
+  <p class="ds-label" id="start-here-title">Start here<span class="aside">What {{ p.name }}'s docs recommend for new integrations, measured against the catalog</span></p>
+  {% for t, picks in start.groups %}
+  <div class="sh-group">
+    <p class="sh-type"><b>{{ TYPE_SHORT[t] }}</b><span>{{ TYPE_LABELS[t] }}</span></p>
+    <div class="sh-picks">
+      {% for k in picks %}{% set m = k.row.model %}
+      <article class="sh-pick">
+        <header class="sh-head">
+          <a href="{{ model_url(k.row) }}"><code translate="no">{{ m.id }}</code></a>
+          {% if m.name != m.id %}<span class="sh-name">{{ m.name }}</span>{% endif %}
+          <span class="sh-meta mono">{% if m.released_on %}released {{ m.released_on }}{% endif %}{% if m.lifecycle in ("alpha", "beta") %}{% if m.released_on %} · {% endif %}{{ m.lifecycle }}{% endif %}</span>
+        </header>
+        {% if k.use %}<p class="sh-use"><span class="mono">For</span> {{ k.use }}</p>{% endif %}
+        {% if k.summary %}<p class="sh-summary">{{ k.summary }}</p>{% endif %}
+        <dl class="sh-facts">
+          <div><dt>Languages</dt><dd><span class="mono">{% if k.languages is none %}Many{% elif k.languages == 1 %}{{ language_name(m.languages[0]) }} only{% else %}{{ k.languages }}{% endif %}</span>{% if k.lang_rank %}<span class="sh-rank">{{ k.lang_rank }}</span>{% endif %}</dd></div>
+          <div><dt>Features</dt><dd><span class="mono">{% if k.features %}{{ k.features|length }}/{{ k.feature_total }}{% else %}None documented{% endif %}</span>{% if k.features %}<span class="sh-rank">{{ k.features|join(", ") }}</span>{% endif %}</dd></div>
+          <div><dt>Price</dt><dd><span class="mono">{{ k.price or "not published" }}</span>{% if k.price_rank or k.monthly is not none %}<span class="sh-rank">{{ k.price_rank or "" }}{% if k.price_rank and k.monthly is not none %} · {% endif %}{% if k.monthly is not none %}{{ money(k.monthly) }}/month at {{ compact_number(USAGE[t].default) }} {{ USAGE[t].short }}{% endif %}</span>{% endif %}</dd></div>
+          <div><dt>Connection</dt><dd><span class="mono">{{ "Real-time" if k.realtime else ("Streaming" if m.streaming else "Batch") }}</span>{% if m.interfaces %}<span class="sh-rank">{{ m.interfaces|map("upper")|join(", ")|replace("WEBSOCKET", "WebSocket")|replace("WEBRTC", "WebRTC")|replace("GRPC", "gRPC") }}</span>{% endif %}</dd></div>
+        </dl>
+        {% if k.delta %}{% set d = k.delta %}
+        <p class="sh-delta"><span class="mono">vs <a href="{{ model_url(d.old) }}">{{ d.old.model.id }}</a></span>
+          {%- set parts = [] %}
+          {%- if d.languages > 0 %}{% set _ = parts.append("+" ~ d.languages ~ " languages") %}{% elif d.languages < 0 %}{% set _ = parts.append(d.languages ~ " languages") %}{% endif %}
+          {%- for f in d.added %}{% set _ = parts.append("+ " ~ f) %}{% endfor %}
+          {%- for f in d.removed %}{% set _ = parts.append("no " ~ f) %}{% endfor %}
+          {%- if d.price %}{% set _ = parts.append(d.price) %}{% endif %}
+          {{ parts|join(" · ") if parts else "same languages, features and price" }}</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <p class="sh-foot mono">{% for t, n in start.rest.items() if n %}{{ n }} other {{ TYPE_SHORT[t] }} model{{ "s" if n != 1 }}{% if not loop.last %} · {% endif %}{% endfor %}{% if start.rest.values()|sum %} listed below{% endif %}</p>
+</section>
