@@ -89,3 +89,24 @@ async def test_start_here_on_provider_page(tmp_path, client):
     assert "Start here" not in (await client.get("/providers/zz-none")).text
     api = (await client.get("/v1/providers/zz-sh/models/v2")).json()
     assert (api["released_on"], api["recommended"], api["replaces"]) == ("2026-05", True, ["v1"])
+
+
+def test_newest_release_shown_when_newer_than_every_recommendation(tmp_path):
+    cat = _catalog(tmp_path)
+    write_provider_dir(tmp_path / "zz-new", ProviderData(
+        Provider(id="zz-new", name="ZZ New", type="stt"),
+        models=[Model(id="rec", name="Rec", type="stt", recommended=True, released_on="2025-01"),
+                Model(id="fresh", name="Fresh", type="stt", released_on="2026-08-26"),
+                Model(id="fresh-live", name="Fresh Live", type="stt", released_on="2026-08-26"),
+                Model(id="legacy", name="Legacy", type="stt", recommended=False, released_on="2026-09"),
+                Model(id="yearonly", name="Year", type="stt", released_on="2027")],
+        voices=[]))
+    cat = Catalog.load(tmp_path)
+    (_, picks), = views.start_here(cat, "zz-new").groups
+    assert [(k.row.model.id, k.newest) for k in picks] == [("fresh", True), ("fresh-live", True), ("rec", False)]
+    # in zz-sh the newest dated model is already a recommendation → nothing extra
+    assert not views.start_here(cat, "zz-sh").has_newest
+
+
+def test_summary_keeps_abbreviations():
+    assert views._summary("Fast model incl. code-mixing. Second sentence.") == "Fast model incl. code-mixing"

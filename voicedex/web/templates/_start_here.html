@@ -1,6 +1,6 @@
 {# "Start here": the models this provider recommends for new integrations (Model.recommended), per type. #}
 <section class="wrap start-here" aria-labelledby="start-here-title">
-  <p class="ds-label" id="start-here-title">Start here<span class="aside">What {{ p.name }}{{ "'" if p.name.endswith("s") else "'s" }} docs recommend for new integrations, measured against the catalog</span></p>
+  <p class="ds-label" id="start-here-title">Start here<span class="aside">What {{ p.name }}{{ "'" if p.name.endswith("s") else "'s" }} docs recommend for new integrations{% if start.has_newest %}, and its newest release{% endif %}, measured against the catalog</span></p>
   {% for t, picks in start.groups %}
   <div class="sh-group">
     <p class="sh-type"><b>{{ TYPE_SHORT[t] }}</b><span>{{ TYPE_LABELS[t] }}</span></p>
@@ -12,7 +12,8 @@
           {% if m.name != m.id %}<span class="sh-name">{{ m.name }}</span>{% endif %}
           <span class="sh-meta mono">{% if m.released_on %}released {{ m.released_on }}{% endif %}{% if m.lifecycle in ("alpha", "beta") %}{% if m.released_on %} · {% endif %}{{ m.lifecycle }}{% endif %}</span>
         </header>
-        {% if k.use %}<p class="sh-use"><span class="mono">For</span> {{ k.use }}</p>{% endif %}
+        {% if k.newest %}<p class="sh-use"><span class="mono">Newest</span> Latest release. {{ p.name }}{{ "'" if p.name.endswith("s") else "'s" }} docs don't name it as a recommendation.</p>
+        {% elif k.use %}<p class="sh-use"><span class="mono">For</span> {{ k.use }}</p>{% endif %}
         {% if k.summary %}<p class="sh-summary">{{ k.summary }}</p>{% endif %}
         <dl class="sh-facts">
           <div><dt>Languages</dt><dd><span class="mono">{% if k.languages is none %}Many{% elif k.languages == 1 %}{{ language_name(m.languages[0]) }} only{% else %}{{ k.languages }}{% endif %}</span>{% if k.lang_rank %}<span class="sh-rank">{{ k.lang_rank }}</span>{% endif %}</dd></div>

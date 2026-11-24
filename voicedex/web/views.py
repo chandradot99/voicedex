@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import date
@@ -1268,6 +1269,7 @@ class Pick:
     monthly: float | None             # at USAGE default
     realtime: bool
     delta: Delta | None
+    newest: bool = False              # shown as the newest release, not as a vendor recommendation
 
 
 @dataclass
@@ -1275,12 +1277,16 @@ class StartHere:
     groups: list[tuple[str, list[Pick]]]   # (model type, picks)
     rest: dict[str, int]                   # model type → other active models listed below
 
+    @property
+    def has_newest(self) -> bool:
+        return any(k.newest for _, picks in self.groups for k in picks)
+
 
 def _summary(text: str | None) -> str | None:
     """First sentence, without the vendor's first person ("Our fastest model…" → "Fastest model…")."""
     if not text:
         return None
-    first = text.strip().split(". ")[0].rstrip(".")
+    first = re.split(r"(?<=[a-z0-9)])\.\s+(?=[A-Z])", text.strip())[0].rstrip(".")
     for lead in ("Our ", "our "):
         if first.startswith(lead):
             first = first[len(lead)].upper() + first[len(lead) + 1:]
@@ -1351,16 +1357,32 @@ def _price_rank(catalog: Catalog, model: Model) -> str | None:
                          "cheaper than", "cost less", f"priced {TYPE_SHORT[model.type]} models")
 
 
+def _newest(rows: list[ModelRow]) -> list[ModelRow]:
+    """The most recent dated release(s) the vendor hasn't called legacy (aliases and shutdowns excluded).
+    Only a full date or month counts: a bare year can't be ordered against the rest. Up to 2 tied releases
+    (e.g. a batch model and its live twin); more ties than that → no pick."""
+    dated = [r for r in rows if r.model.released_on and len(r.model.released_on) >= 7 and not r.model.alias_of
+             and not r.model.eol_date and r.model.recommended is not False]
+    if not dated:
+        return []
+    top = max(r.model.released_on for r in dated)
+    tied = [r for r in dated if r.model.released_on == top]
+    return tied if len(tied) <= 2 else []
+
+
 def start_here(catalog: Catalog, provider_id: str) -> StartHere | None:
     rows = active_models(catalog, provider_id)
     groups, rest = [], {}
     for t in ("tts", "stt", "sts"):
         typed = [r for r in rows if r.model.type == t]
         recs = [r for r in typed if r.model.recommended is True and not r.model.eol_date]
-        if not recs:
-            continue
         recs.sort(key=lambda r: (r.model.released_on or "", r.model.is_default), reverse=True)
         recs = recs[:START_HERE_MAX]
+        latest_rec = max((r.model.released_on or "" for r in recs), default="")
+        newest = [r for r in _newest(typed) if r not in recs and r.model.released_on > latest_rec]
+        recs = newest + recs[:START_HERE_MAX - len(newest)]
+        if not recs:
+            continue
         picks = []
         for r in recs:
             m = r.model
@@ -1371,7 +1393,7 @@ def start_here(catalog: Catalog, provider_id: str) -> StartHere | None:
                 features=_features(m), feature_total=len(feature_vocab(m.type)),
                 price=price_label(m), price_rank=_price_rank(catalog, m),
                 monthly=monthly_cost(m, USAGE[t].default) if t in USAGE else None,
-                realtime=is_realtime(m), delta=_delta(catalog, r),
+                realtime=is_realtime(m), delta=_delta(catalog, r), newest=r in newest,
             ))
         groups.append((t, picks))
         rest[t] = len(typed) - len(picks)
