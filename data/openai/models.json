@@ -1,6 +1,9 @@
 [
   {
     "alias_of": "gpt-audio-2025-08-28",
+    "capabilities": [
+      "function_calling"
+    ],
     "description": "Audio-in, audio-out model served through Chat Completions.",
     "eol_date": "2027-01-20",
     "first_seen": "2026-11-16",
@@ -63,6 +66,9 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "function_calling"
+    ],
     "description": "Audio-in, audio-out model served through the Chat Completions API.",
     "first_seen": "2026-11-16",
     "id": "gpt-audio-1.5",
@@ -75,7 +81,8 @@
         "https://developers.openai.com/api/docs/changelog",
         "https://developers.openai.com/api/docs/deprecations",
         "https://developers.openai.com/api/docs/models/all",
-        "https://developers.openai.com/api/docs/guides/audio-chat-completions"
+        "https://developers.openai.com/api/docs/guides/audio-chat-completions",
+        "https://developers.openai.com/api/docs/models/gpt-audio-1.5"
       ],
       "endpoints": [
         "v1/chat/completions"
@@ -133,6 +140,9 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "function_calling"
+    ],
     "description": "Dated snapshot of GPT-Audio.",
     "eol_date": "2027-01-20",
     "family": "gpt-audio",
@@ -198,6 +208,9 @@
   },
   {
     "alias_of": "gpt-audio-mini-2025-12-15",
+    "capabilities": [
+      "function_calling"
+    ],
     "description": "Cost-efficient version of GPT-Audio for Chat Completions.",
     "eol_date": "2027-01-20",
     "first_seen": "2026-11-16",
@@ -210,7 +223,8 @@
       "deprecation_notice": "2026-07-20",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/models/gpt-audio-mini"
       ],
       "endpoints": [
         "v1/chat/completions"
@@ -261,6 +275,9 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "function_calling"
+    ],
     "description": "Dated snapshot of GPT-Audio mini.",
     "eol_date": "2027-01-20",
     "family": "gpt-audio-mini",
@@ -274,7 +291,8 @@
       "deprecation_notice": "2026-07-20",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/models/gpt-audio-mini"
       ],
       "endpoints": [
         "v1/chat/completions"
@@ -331,6 +349,13 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "OpenAI's premier model for natural, expressive voice conversations with smooth interruption handling.",
     "first_seen": "2026-11-16",
     "id": "gpt-live-1",
@@ -346,10 +371,18 @@
         "audio/pcmu@8000",
         "audio/pcma@8000"
       ],
+      "capability_notes": {
+        "barge_in": "full duplex: listens while speaking",
+        "voice_cloning": "custom voices from a prompt or (eligible customers) a recording"
+      },
       "custom_voices": true,
       "default_voice": "marin",
       "docs_sources": [
-        "https://developers.openai.com/api/docs/changelog"
+        "https://developers.openai.com/api/docs/changelog",
+        "https://developers.openai.com/api/docs/models/gpt-live-1",
+        "https://developers.openai.com/api/docs/guides/live-conversations",
+        "https://developers.openai.com/api/docs/guides/custom-voices",
+        "https://openai.com/index/introducing-gpt-live-1-in-the-api/"
       ],
       "endpoints": [
         "v1/live/sessions"
@@ -401,6 +434,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "voice_cloning"
+    ],
     "description": "Full-duplex voice model for multilingual conversations; compared with GPT-Live-1 it transcribes speech more accurately and keeps a more consistent accent and voice across languages.",
     "first_seen": "2026-11-20",
     "id": "gpt-live-1.1",
@@ -415,6 +454,10 @@
         "audio/pcmu@8000",
         "audio/pcma@8000"
       ],
+      "capability_notes": {
+        "barge_in": "full duplex: listens while speaking",
+        "voice_cloning": "custom voices from a prompt or (eligible customers) a recording"
+      },
       "concurrency_note": "Separate concurrent-session limits from GPT-Live-1",
       "custom_voices": true,
       "default_voice": "marin",
@@ -422,7 +465,9 @@
         "https://developers.openai.com/api/docs/changelog",
         "https://developers.openai.com/api/docs/guides/audio",
         "https://developers.openai.com/api/docs/guides/live",
-        "https://developers.openai.com/api/docs/models/gpt-live-1.1"
+        "https://developers.openai.com/api/docs/models/gpt-live-1.1",
+        "https://developers.openai.com/api/docs/guides/live-conversations",
+        "https://developers.openai.com/api/docs/guides/custom-voices"
       ],
       "endpoints": [
         "v1/live/sessions"
@@ -475,6 +520,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Realtime model with text and audio inputs and outputs.",
     "eol_date": "2027-01-20",
     "first_seen": "2026-11-16",
@@ -489,7 +540,9 @@
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
         "https://developers.openai.com/api/docs/deprecations",
-        "https://developers.openai.com/api/docs/models/gpt-realtime"
+        "https://developers.openai.com/api/docs/models/gpt-realtime",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad"
       ],
       "endpoints": [
         "v1/realtime"
@@ -559,6 +612,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Non-reasoning audio-in, audio-out voice model for voice agents and customer support.",
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-1.5",
@@ -569,7 +628,10 @@
     "meta": {
       "context_window": 32000,
       "docs_sources": [
-        "https://developers.openai.com/api/docs/changelog"
+        "https://developers.openai.com/api/docs/changelog",
+        "https://developers.openai.com/api/docs/models/gpt-realtime-1.5",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad"
       ],
       "endpoints": [
         "v1/realtime"
@@ -638,6 +700,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Realtime reasoning voice model with tool use and configurable reasoning effort.",
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-2",
@@ -648,7 +716,10 @@
     "meta": {
       "context_window": 128000,
       "docs_sources": [
-        "https://developers.openai.com/api/docs/changelog"
+        "https://developers.openai.com/api/docs/changelog",
+        "https://developers.openai.com/api/docs/models/gpt-realtime-2",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad"
       ],
       "endpoints": [
         "v1/realtime"
@@ -719,6 +790,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Realtime reasoning voice model with tool use; updates GPT-Realtime-2 with better alphanumeric recognition, noise handling and interruptions.",
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-2.1",
@@ -733,7 +810,9 @@
         "https://developers.openai.com/api/docs/deprecations",
         "https://developers.openai.com/api/docs/models/gpt-realtime-2.1",
         "https://developers.openai.com/api/docs/guides/realtime",
-        "https://developers.openai.com/api/docs/guides/realtime-translation"
+        "https://developers.openai.com/api/docs/guides/realtime-translation",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad"
       ],
       "endpoints": [
         "v1/realtime"
@@ -810,6 +889,13 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Distilled reasoning model for faster, lower-cost realtime voice interactions.",
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-2.1-mini",
@@ -818,10 +904,17 @@
       "websocket"
     ],
     "meta": {
+      "capability_notes": {
+        "voice_cloning": "recording-based custom voices; eligible customers only"
+      },
       "context_window": 128000,
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad",
+        "https://developers.openai.com/api/docs/guides/custom-voices"
       ],
       "endpoints": [
         "v1/realtime"
@@ -901,6 +994,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Dated snapshot of GPT-Realtime.",
     "eol_date": "2027-01-20",
     "family": "gpt-realtime",
@@ -916,7 +1015,9 @@
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
         "https://developers.openai.com/api/docs/deprecations",
-        "https://developers.openai.com/api/docs/models/gpt-realtime"
+        "https://developers.openai.com/api/docs/models/gpt-realtime",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad"
       ],
       "endpoints": [
         "v1/realtime"
@@ -988,6 +1089,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Cost-efficient version of GPT-Realtime.",
     "eol_date": "2027-01-20",
     "first_seen": "2026-11-16",
@@ -1001,7 +1108,10 @@
       "deprecation_notice": "2026-07-20",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/models/gpt-realtime-mini",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad"
       ],
       "endpoints": [
         "v1/realtime"
@@ -1071,6 +1181,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Dated snapshot of GPT-Realtime mini.",
     "eol_date": "2027-01-20",
     "family": "gpt-realtime-mini",
@@ -1085,7 +1201,10 @@
       "deprecation_notice": "2026-07-20",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/models/gpt-realtime-mini",
+        "https://developers.openai.com/api/docs/guides/realtime-conversations",
+        "https://developers.openai.com/api/docs/guides/realtime-vad"
       ],
       "endpoints": [
         "v1/realtime"
@@ -1155,6 +1274,10 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "transcription",
+      "translation"
+    ],
     "description": "Streaming speech-to-speech translation model for live multilingual audio.",
     "first_seen": "2026-11-16",
     "id": "gpt-realtime-translate",
@@ -1163,9 +1286,13 @@
       "websocket"
     ],
     "meta": {
+      "capability_notes": {
+        "translation": "one target language per session"
+      },
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/guides/realtime-translation"
+        "https://developers.openai.com/api/docs/guides/realtime-translation",
+        "https://developers.openai.com/api/docs/models/gpt-realtime-translate"
       ],
       "endpoints": [
         "v1/realtime/translations"
@@ -1216,6 +1343,9 @@
       "webm"
     ],
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "Speech-to-text model powered by GPT-4o mini.",
     "eol_date": "2027-02-26",
     "first_seen": "2026-11-16",
@@ -1224,11 +1354,15 @@
       "http"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "via prompt (names, acronyms, domain terms)"
+      },
       "context_window": 16000,
       "deprecation_notice": "2026-08-26",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
       ],
       "endpoints": [
         "v1/audio/transcriptions"
@@ -1289,6 +1423,9 @@
       "webm"
     ],
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "Dated snapshot of GPT-4o Mini Transcribe.",
     "eol_date": "2027-01-20",
     "family": "gpt-4o-mini-transcribe",
@@ -1298,11 +1435,15 @@
       "http"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "via prompt (names, acronyms, domain terms)"
+      },
       "context_window": 16000,
       "deprecation_notice": "2026-07-20",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
       ],
       "endpoints": [
         "v1/audio/transcriptions"
@@ -1364,6 +1505,9 @@
       "webm"
     ],
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "Dated snapshot of GPT-4o Mini Transcribe.",
     "eol_date": "2027-02-26",
     "family": "gpt-4o-mini-transcribe",
@@ -1373,11 +1517,15 @@
       "http"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "via prompt (names, acronyms, domain terms)"
+      },
       "context_window": 16000,
       "deprecation_notice": "2026-08-26",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
       ],
       "endpoints": [
         "v1/audio/transcriptions"
@@ -1442,6 +1590,9 @@
       "webm"
     ],
     "batch": true,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "Speech-to-text model powered by GPT-4o.",
     "eol_date": "2027-02-26",
     "first_seen": "2026-11-16",
@@ -1450,11 +1601,15 @@
       "http"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "via prompt (names, acronyms, domain terms)"
+      },
       "context_window": 16000,
       "deprecation_notice": "2026-08-26",
       "docs_sources": [
         "https://developers.openai.com/api/docs/changelog",
-        "https://developers.openai.com/api/docs/deprecations"
+        "https://developers.openai.com/api/docs/deprecations",
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
       ],
       "endpoints": [
         "v1/audio/transcriptions"
@@ -2248,6 +2403,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Text-to-speech model optimized for speed and lower latency.",
     "eol_date": "2027-01-06",
     "first_seen": "2026-11-16",
@@ -2315,10 +2473,15 @@
       "cy"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed 0.25-4.0 only; instructions not supported"
+      },
       "deprecation_notice": "2026-10-01",
       "docs_sources": [
         "https://developers.openai.com/api/docs/deprecations",
-        "https://developers.openai.com/api/docs/guides/text-to-speech"
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/models/tts-1",
+        "https://developers.openai.com/api/reference/resources/audio/subresources/speech/methods/create"
       ],
       "endpoints": [
         "v1/audio/speech"
@@ -2361,6 +2524,9 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "capabilities": [
+      "prosody_control"
     ],
     "description": "Text-to-speech model optimized for quality.",
     "eol_date": "2027-01-06",
@@ -2429,10 +2595,15 @@
       "cy"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed 0.25-4.0 only; instructions not supported"
+      },
       "deprecation_notice": "2026-10-01",
       "docs_sources": [
         "https://developers.openai.com/api/docs/deprecations",
-        "https://developers.openai.com/api/docs/guides/text-to-speech"
+        "https://developers.openai.com/api/docs/guides/text-to-speech",
+        "https://developers.openai.com/api/docs/models/tts-1-hd",
+        "https://developers.openai.com/api/reference/resources/audio/subresources/speech/methods/create"
       ],
       "endpoints": [
         "v1/audio/speech"
