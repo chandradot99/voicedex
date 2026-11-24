@@ -1,8 +1,19 @@
 [
   {
+    "capabilities": [
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "SWivid/E2-TTS",
     "meta": {
+      "capability_notes": {
+        "voice_cloning": "zero-shot from reference audio"
+      },
+      "docs_sources": [
+        "https://huggingface.co/SWivid/E2-TTS",
+        "https://github.com/SWivid/F5-TTS",
+        "https://github.com/SWivid/F5-TTS/blob/main/src/f5_tts/infer/README.md"
+      ],
       "huggingface_repo": "SWivid/E2-TTS"
     },
     "name": "E2-TTS",
@@ -22,12 +33,23 @@
     "released_on": "2024-10-14",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "SWivid/F5-TTS",
     "meta": {
+      "capability_notes": {
+        "voice_cloning": "zero-shot from reference audio"
+      },
+      "docs_sources": [
+        "https://huggingface.co/SWivid/F5-TTS",
+        "https://github.com/SWivid/F5-TTS",
+        "https://github.com/SWivid/F5-TTS/blob/main/src/f5_tts/infer/README.md"
+      ],
       "huggingface_repo": "SWivid/F5-TTS"
     },
     "name": "F5-TTS",
@@ -47,6 +69,6 @@
     "released_on": "2024-10-07",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
