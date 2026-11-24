@@ -180,7 +180,7 @@ def views_csv_columns():
 
 async def test_home_freshness_line(client):
     html = (await client.get("/")).text
-    assert 'class="fact-line freshness"' in html and "synced in the last 30 days" in html
+    assert 'class="freshness"' in html and "synced in the last 30 days" in html
 
 
 async def test_llms_txt_links_landing_pages_and_csv(client):

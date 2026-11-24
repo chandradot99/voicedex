@@ -211,10 +211,10 @@ async def test_short_type_aliases_redirect(client):
 async def test_home_map_slice_and_full_coverage_page(client, monkeypatch):
     from voicedex.web import routes
     home = (await client.get("/")).text
-    assert 'href="/coverage"' in home and "see the full map" in home
+    assert 'href="/coverage"' in home and "See the full map" in home
     page = await client.get("/coverage?map=stt")
     assert page.status_code == 200 and 'href="/coverage?map=tts#coverage"' in page.text
-    assert "see the full map" not in page.text                        # the full page doesn't link to itself
+    assert "See the full map" not in page.text                        # the full page doesn't link to itself
     assert "<loc>https://voicedex.dev/coverage</loc>" in (await client.get("/sitemap.xml")).text
     monkeypatch.setattr(routes, "HOME_MAP_PROVIDERS", 0)
     capped = (await client.get("/")).text.split('id="coverage"', 1)[1].split("</section>", 1)[0]
@@ -270,7 +270,7 @@ async def test_provider_faq(client):
 
 async def test_models_weights_filter_and_marker(client):
     html = (await client.get("/models")).text
-    assert 'title="apache-2.0">Open</span><span class="sub">commercial use</span>' in html   # Weights column
+    assert 'title="Open weights: apache-2.0 (commercial use)">open</span>' in html   # tag beside the model id
     open_only = (await client.get("/models?weights=open")).text
     assert "stt-eu" in open_only and "stt-global" not in open_only and "tts-main" not in open_only
     hosted = (await client.get("/models?weights=hosted")).text
@@ -308,7 +308,8 @@ async def test_models_facets_and_multi_feature(client):
     from voicedex.catalog.schema import MODEL_CAPABILITIES
     html = (await client.get("/models")).text
     assert 'type="checkbox" name="capability"' in html
-    assert re.search(r'name="type" value="tts"[^>]*>.*?<i>\d+</i>', html, re.S)          # counts beside options
+    assert re.search(r'href="/models\?type=tts"[^>]*>[^<]*<i>\d+</i>', html)              # type tabs carry counts
+    assert re.search(r'name="mode" value="realtime"[^>]*>.*?<i>\d+</i>', html, re.S)        # so do rail options
     caps = sorted(MODEL_CAPABILITIES)[:2]
     both = (await client.get(f"/models?capability={caps[0]}&capability={caps[1]}")).text
     assert both.count('class="token"') == 2                             # one removable token per ticked feature
@@ -329,4 +330,21 @@ def test_name_adds():
 
 async def test_voices_facets(client):
     html = (await client.get("/voices?gender=male")).text
-    assert 'name="gender" value="female"' in html and "Has a sample to play" in html
+    assert re.search(r'href="/voices\?gender=female"[^>]*>Female<i>[\d,]+</i>', html)            # gender tabs with counts
+    assert "Has a sample" in html and 'class="filters fbar"' in html and 'class="data voices-table"' in html
+
+
+def test_voice_facet_buckets():
+    from voicedex.catalog.schema import Voice
+    from voicedex.web.views import _age_bucket, _uses
+    assert _age_bucket("middle_aged") == _age_bucket("Middle age") == "Middle-aged"
+    assert _age_bucket("young adult") == "Young" and _age_bucket("elder") == "Older" and _age_bucket(None) is None
+    v = Voice(id="v", name="v", use_cases=["Conversational"], tags=["use-case:audiobook-long-form", "calm"])
+    assert _uses(v) == {"Conversational", "Audiobooks & stories"}
+
+
+async def test_voice_extra_filters(client):
+    for q in ("use=Narration", "age=Young", "accent=British", "emotion=1", "multi=1", "use=Nope"):
+        assert (await client.get(f"/voices?{q}")).status_code == 200
+    html = (await client.get("/voices")).text
+    assert 'name="use"' in html and 'name="emotion"' in html

@@ -9,16 +9,21 @@
       <span class="band-unit">$ {{ b.unit }}, log scale</span>
       <span class="band-count">{{ b.priced }} priced{% if b.unpriced %}<span class="hide-sm">, {{ b.unpriced }} without a USD price</span>{% endif %}</span>
     </p>
+    {% if show_stats and b.stats %}{% set st = b.stats %}<div class="plot">
+    <div class="iqr" style="left: {{ st.x_p25 }}%; width: {{ [st.x_p75 - st.x_p25, 0.6]|max }}%" aria-hidden="true"><span>Middle half</span></div>
+    <div class="median" style="left: {{ st.x_median }}%" aria-hidden="true"><span>Median {{ money(st.median) }}</span></div>{% endif %}
     <div class="cols" style="--rows: {{ [b.tallest, cap]|min }}" aria-hidden="true">
       {% for col in b.columns %}
-      <div class="col" style="--i: {{ loop.index0 }}">
+      {% set cx = loop.index0 / b.columns|length * 100 %}
+      <div class="col{% if mark_capped and col|length > cap %} capped{% endif %}{% if show_stats and b.stats and b.stats.x_p25 <= cx + 100 / b.columns|length and cx <= b.stats.x_p75 %} in-iqr{% endif %}" style="--i: {{ loop.index0 }}"{% if mark_capped and col|length > cap %} title="{{ col|length }} models"{% endif %}>
         {%- for it in col[:cap] -%}
-        <a class="sq{% if it.ending %} ending{% endif %}{% if it.state %} {{ it.state }}{% endif %}" href="{{ it.url }}" tabindex="-1" data-tip="{{ it.provider }}|{{ it.label }}|{{ it.price }}{% if it.ending %}|Shutdown scheduled{% endif %}"></a>
+        <a class="sq{% if it.ending %} ending{% endif %}{% if it.state %} {{ it.state }}{% endif %}" href="{{ it.url }}" data-key="{{ it.key }}" tabindex="-1" data-tip="{{ it.provider }}|{{ it.label }}|{{ it.price }}{% if it.ending %}|Shutdown scheduled{% endif %}"></a>
         {%- endfor -%}
-        {% if col|length > cap %}<span class="over">+{{ col|length - cap }}</span>{% endif %}
+        {% if col|length > cap and not mark_capped %}<span class="over">+{{ col|length - cap }}</span>{% endif %}
       </div>
       {% endfor %}
     </div>
+    {% if show_stats and b.stats %}</div>{% endif %}
     <div class="axis" aria-hidden="true">{% for pos, label in b.ticks %}<span style="left: {{ '%.2f'|format(pos) }}%">{{ label }}</span>{% endfor %}</div>
     <figcaption class="visually-hidden">{{ b.title }}: {{ b.priced }} models with a published USD price {{ b.unit }}, from {{ b.ticks[0][1] if b.ticks else '' }} to {{ b.ticks[-1][1] if b.ticks else '' }} and beyond, shown on a log scale.</figcaption>
   </div>

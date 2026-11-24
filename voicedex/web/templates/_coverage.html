@@ -1,9 +1,9 @@
-<section class="wrap" id="coverage" aria-labelledby="coverage-title">
-  <div class="section-row">
-    <div>
+<section class="wrap{% if not full_map %} coverage-home{% endif %}" id="coverage" aria-labelledby="coverage-title">
+  <div class="section-row{% if full_map %} map-tools{% endif %}">
+    {% if not full_map %}<div>
       <h2 id="coverage-title" class="section-title">Language coverage</h2>
-      <p class="section-note">Rows are providers, columns the <span id="coverage-cols">{{ coverage.languages|length }}</span> most-supported languages, and Total counts every language a provider covers. Brighter cells mean more models. Select a cell to list them.{% if not full_map %} Showing the {{ coverage.rows|length }} providers with the widest coverage; <a href="/coverage{% if map_type %}?map={{ map_type }}{% endif %}">see the full map</a> of all {{ coverage_providers }}.{% endif %}</p>
-    </div>
+      <p class="section-note">Which providers cover which languages; brighter cells mean more models.</p>
+    </div>{% endif %}
     <nav class="seg" aria-label="Model type">
       {% for k, label in [("", "All"), ("stt", "STT"), ("tts", "TTS"), ("sts", "Realtime")] %}
       <a href="{{ map_base }}?map={{ k }}#coverage" {% if map_type == k %}aria-current="true"{% endif %}>{{ label }}</a>
@@ -31,11 +31,13 @@
             {% if c %}<a href="/models?provider={{ s.id }}&language={{ lang }}{% if map_type %}&type={{ map_type }}{% endif %}" aria-label="{{ s.name }}, {{ language_name(lang) }}: {{ c }} model{{ 's' if c != 1 }}"></a>{% endif %}
           </td>
           {% endfor %}
-          <td class="map-total"><a href="/providers/{{ s.id }}" title="{{ s.name }}: {{ coverage.totals.get(s.id, 0) }} languages in total">{{ coverage.totals.get(s.id, 0) }}</a></td>
+          {% set tot = coverage.totals.get(s.id, 0) %}{% set tmax = coverage.totals.values()|max if coverage.totals else 1 %}
+          <td class="map-total"><a href="/providers/{{ s.id }}" title="{{ s.name }}: {{ tot }} languages in total"><span class="tot-bar" aria-hidden="true"><i style="width: {{ ((tot / tmax) ** 0.5 * 100)|round(1) }}%"></i></span>{{ tot }}</a></td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
-  <p class="legend" aria-hidden="true"><span>Fewer models</span><i class="h1"></i><i class="h2"></i><i class="h3"></i><i class="h4"></i><i class="h5"></i><span>More</span></p>
+  {% if not full_map %}<div class="map-more"><a class="btn-secondary" href="/coverage{% if map_type %}?map={{ map_type }}{% endif %}">See the full map of all {{ coverage_providers }} providers</a></div>{% endif %}
+  <p class="legend" aria-hidden="true"><span>Fewer models</span><i class="h1"></i><i class="h2"></i><i class="h3"></i><i class="h4"></i><i class="h5"></i><span>More</span><span class="legend-note">Total: every language a provider covers. Columns: the most-supported languages{% if not full_map %}; showing {{ coverage.rows|length }} providers with the widest coverage{% endif %}.</span></p>
 </section>

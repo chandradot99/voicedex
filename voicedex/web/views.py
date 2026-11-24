@@ -448,6 +448,7 @@ class SpectrumBand:
     priced: int
     unpriced: int
     tallest: int
+    stats: dict | None = None        # median / p25 / p75 (+ p5 / p95 with ≥ 20 prices) and their x positions (0–100)
 
 
 def _money(v: float) -> str:
@@ -489,8 +490,14 @@ def price_spectrum(catalog: Catalog, highlight: set[str] | None = None, n_column
         nice = [v for v in _NICE if lo <= math.log10(v) <= hi]
         step = max(1, math.ceil(len(nice) / 6))
         ticks = [((math.log10(v) - lo) / span * 100, _money(v)) for v in nice[::step]]
+        values = sorted(i.value for i in items)
+        p25, med, p75 = _quartiles(values)
+        p5, p95 = _p5_p95(values)
+        pos = lambda v: None if v is None else round((math.log10(v) - lo) / span * 100, 2)   # noqa: E731
+        stats = {"median": med, "p25": p25, "p75": p75, "p5": p5, "p95": p95, "lo": lo, "hi": hi,
+                 "x_median": pos(med), "x_p25": pos(p25), "x_p75": pos(p75), "n": len(values)}
         bands.append(SpectrumBand(band_id, title, unit, columns, ticks, free, len(items) + len(free), unpriced,
-                                  max(len(c) for c in columns)))
+                                  max(len(c) for c in columns), stats))
     return bands
 
 
@@ -1800,3 +1807,130 @@ def language_counts(rows: list[ModelRow] | list[VoiceRow], attr: str = "model") 
             counts[code] += wildcard
         counts["*"] = wildcard
     return counts
+
+
+# ── Provider logos (static/logos/<id>.png, fetched by scripts/fetch_logos.py) ─
+
+_LOGO_DIR = __import__("pathlib").Path(__file__).parent / "static" / "logos"
+_LOGOS: dict = {}
+
+
+def provider_logo(pid: str) -> str | None:
+    """URL of the provider's logo tile with a content-hash ?v=, or None (templates then draw a lettered tile). The
+    directory is re-read when it changes, so logos added while the dev server runs show up without a restart."""
+    try:
+        stamp = _LOGO_DIR.stat().st_mtime_ns
+    except FileNotFoundError:
+        return None
+    if _LOGOS.get("stamp") != stamp:                 # re-read only when the directory changes
+        import hashlib
+        _LOGOS.clear()
+        _LOGOS.update(stamp=stamp, files={p.stem: hashlib.sha1(p.read_bytes()).hexdigest()[:10]
+                                          for p in _LOGO_DIR.glob("*.png")})
+    v = _LOGOS["files"].get(pid)
+    return f"/static/logos/{pid}.png?v={v}" if v is not None else None
+
+
+
+def popular_rates(catalog: Catalog, types: tuple[str, ...], limit: int = 8) -> list[dict]:
+    """List price of each widely used provider's main model of these types: the one its docs recommend, else its
+    default. Cheapest first. A main model, never "the cheapest": extremes are often plan-gated or promotional."""
+    out = []
+    for pid in COMPARE_PROVIDERS:
+        pd = catalog.providers.get(pid)
+        if not pd or pd.provider.status != "active":
+            continue
+        rows = [r for r in active_models(catalog, pid) if r.model.type in types and not r.model.eol_date]
+        main = next((r for r in rows if r.model.recommended is True), None) or next((r for r in rows if r.model.is_default), None)
+        price = normalized_price(main.model) if main else None
+        if not price or price[0] <= 0:          # the main model has no paid USD rate: skip, never substitute another
+            continue
+        out.append({"pid": pid, "name": pd.provider.name, "row": main, "key": model_key(main),
+                    "value": normalized_price(main.model)[0], "amount": price_parts(main.model)})
+    return sorted(out, key=lambda x: x["value"])[:limit]
+
+
+def band_facts(catalog: Catalog, types: tuple[str, ...]) -> list[tuple[str, str, str]]:
+    """Facts under the home price chart, as (label, value, note). Medians only for groups of ≥ MIN_GROUP prices."""
+    from statistics import median
+    live = {pid for pid, pd in catalog.providers.items() if pd.provider.status == "active"}
+    rows = [r for r in active_models(catalog) if r.provider_id in live and r.model.type in types]
+    def _free(r):
+        p = r.model.pricing
+        return bool(p and (p.price_usd if p.price_usd is not None else p.price) == 0)
+    # the same set price_spectrum counts as "priced": a normalized USD price, or free
+    priced = [(r, 0.0 if _free(r) else normalized_price(r.model)[0]) for r in rows if _free(r) or normalized_price(r.model)]
+    rt = [v for r, v in priced if v > 0 and is_realtime(r.model)]
+    bt = [v for r, v in priced if v > 0 and not is_realtime(r.model)]
+    out = []
+    if len(rt) >= MIN_GROUP:
+        out.append(("Realtime median", money(median(rt)), f"{len(rt)} streaming models"))
+    if len(bt) >= MIN_GROUP:
+        out.append(("Batch median", money(median(bt)), f"{len(bt)} file / batch models"))
+    free = sum(1 for r, _ in priced if r.model.pricing.free_quota)
+    out.append(("Free tier listed", f"{free}", f"of {len(priced)} priced models"))
+    out.append(("Providers with a USD price", f"{len({r.provider_id for r, _ in priced})}",
+                f"of {len({r.provider_id for r in rows})} offering these models"))
+    return out
+
+
+# ── Voice facets: provider data is free text ("middle_aged", "Middle age"; "Conversational" vs "conversational";
+# use cases also arrive as "use-case:…" tags). These buckets make it filterable. Computed once per catalog. ──
+
+VOICE_AGES = ("Young", "Adult", "Middle-aged", "Older", "Teen", "Child")
+VOICE_USES = {        # bucket → keywords matched inside use_cases and use-case tags
+    "Conversational": ("convers", "chat", "assistant", "agent"),
+    "Narration": ("narrat", "documentar", "explainer", "voiceover", "voice over"),
+    "Audiobooks & stories": ("audiobook", "story", "storytell", "book"),
+    "Characters & gaming": ("character", "animation", "gaming", "game", "roleplay", "cartoon"),
+    "Customer service": ("customer", "support", "ivr", "call center", "telephony"),
+    "Ads & social": ("advert", "ads", "social", "marketing", "promo", "commercial"),
+    "Education": ("educat", "learning", "training", "tutorial"),
+    "Podcasts": ("podcast",),
+    "News": ("news", "broadcast"),
+    "Meditation": ("meditat", "asmr", "wellness", "sleep"),
+}
+_FACETS: dict = {}
+
+
+def _age_bucket(age: str | None) -> str | None:
+    a = (age or "").lower().replace("_", " ").replace("-", " ")
+    if not a:
+        return None
+    if "child" in a or "kid" in a:
+        return "Child"
+    if "teen" in a:
+        return "Teen"
+    if "middle" in a:
+        return "Middle-aged"
+    if any(w in a for w in ("old", "elder", "senior", "mature")):
+        return "Older"
+    if "young" in a:
+        return "Young"
+    return "Adult" if "adult" in a else None
+
+
+_USE_RES = {b: re.compile(r"\b(?:" + "|".join(re.escape(k) for k in keys) + ")") for b, keys in VOICE_USES.items()}
+
+
+def _uses(voice) -> frozenset:
+    """Keywords match at the start of a word ("ads" in "ads & social", not in "reads"; "book" not in "facebook")."""
+    raw = [u.lower().replace("-", " ").replace("_", " ") for u in voice.use_cases]
+    raw += [t.lower()[9:].replace("-", " ") for t in voice.tags if t.lower().startswith("use-case:")]
+    return frozenset(b for b, rx in _USE_RES.items() if any(rx.search(u) for u in raw))
+
+
+def voice_facets(catalog: Catalog, row: VoiceRow) -> dict:
+    """{age, accent, uses, emotion, multilingual} for one voice, from a per-catalog cache."""
+    cache = _FACETS.get(id(catalog))
+    if cache is None:
+        _FACETS.clear()
+        cache = _FACETS[id(catalog)] = {}
+    key = (row.provider_id, row.voice.id)
+    if key not in cache:
+        v = row.voice
+        accent = (v.accent or "").replace("_", " ").replace("-", " ").strip().title() or None
+        cache[key] = {"age": _age_bucket(v.age), "accent": accent, "uses": _uses(v),
+                      "emotion": "emotion" in v.capabilities,
+                      "multilingual": "*" in v.languages or len(v.languages) > 1 or "multilingual_native" in v.capabilities}
+    return cache[key]

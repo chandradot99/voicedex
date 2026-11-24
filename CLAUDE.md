@@ -38,15 +38,19 @@ voicedex/
     files.py         — deterministic read/write of data/<provider>/*.json
     merge.py         — SyncResult → records; merge rules; shrink guard; diff report
     store.py         — in-memory Catalog, stable UUIDv5 ids, language matching
-  web/               — server-rendered pages (Jinja + one site.css/site.js, no build). Design system "The Datasheet"
-                       (tokens at the top of site.css): warm graphite dark (#16171a ground, warm greys), 1px rules.
-                       Type: Archivo (variable width; tables/rails/headings at --narrow 87.5%, body normal) + Geist
-                       Mono ONLY for things you copy (ids, code, keys); numbers use Archivo tabular figures (.mono =
-                       tabular-nums, not monospace). Scale 12/13/14/16/20/28/40px (--t-*), nothing below 12px.
-                       Labels sentence case, never tracked uppercase. Amber (#f5a524) means selected / "this one" /
-                       focus only, never link hover or nav; coral only for shutdowns/errors; no pills, gradients,
-                       colour-coded types or 01/02/03 numbering on non-sequences. Price spectrum (views.price_spectrum)
-                       is the signature visual. og.png comes from scripts/make_og_image.py. Asset URLs carry a content hash (?v=).
+  web/               — server-rendered pages (Jinja + one site.css/site.js, no build). Design system (tokens at the
+                       top of site.css), benchmarked against premium dark products (Linear, OpenRouter, Raycast):
+                       "Ink" dark = warm near-black #0b0a08 (OKLCH L 0.145, hue 80, matched to the amber), panels step
+                       up / wells step down, borders translucent; text 18:1 / 11.7:1 / muted 7.4:1. Light "Paper"
+                       #fdfcf9. Type: Instrument Sans (variable width; tables/rails at --narrow 94%) + Geist Mono ONLY
+                       for things you copy (ids, code, keys); numbers use tabular figures (.mono = tabular-nums).
+                       Scale 12/13/14/16/20/28/40px (+60px home headline), nothing below 12px; labels sentence case.
+                       Radius 6px controls/cards, 4px badges/logos; 1px rules between table rows. Amber (#f5a524) =
+                       selected / "this one" / focus only; coral only for shutdowns/errors; no gradients, colour-coded
+                       types or 01/02/03 numbering on non-sequences. Inline 16px stroke icons in templates/_icons.html.
+                       Provider logos: static/logos/<id>.png (64px opaque tiles from scripts/fetch_logos.py, lettered
+                       tile fallback via cells.logo). Home hero: the "provider equaliser" (site.js [data-hero-ring], canvas): one bar per provider, length ∝ log(models), level-meter wobble, an amber sweep naming widely used providers; static under reduced motion. The hero sits in a full-width .hero-band (sound-wave rings radiating from the ring centre, which site.js sets as --cx/--cy; warm light; grain). Then "What speech costs" (_costs.html): per band, spectrum with middle-half shading + median (SpectrumBand.stats), views.band_facts tiles, and a side panel with the median and views.popular_rates (widely used providers' recommended/default paid model, never a free tier or "cheapest"); tabs via site.js [data-costs]. Language coverage on home fills the page width (up to 80 language columns, as many as fit, by site.js; phones: 12 providers, ≥ 8 columns, no sideways scroll). Home direction ("signal on ink", from a design review): black is silence, amber is level. Sections after the hero sit in full-width .room bands that alternate surface (.room-well = --well), 112px padding, 36px titles; the costs section leads with the median as a 72px readout; coverage cells are an LED matrix (gaps, rounded, dark low end, -45° labels, crosshair hover, 16 rows fading into "See the full map"); shutdowns (countdown + days-left bars) sit beside recently changed (grouped by day); providers are a 24-tile logo wall. No numbered eyebrows, no single coloured headline word, no per-section scroll reveals.
+                       Logo: the "V-meter" (five dark level-meter bars whose tops trace a V, on an amber #f5a524 app-icon tile); its single source is scripts/make_favicons.py (favicons, apple-touch-icon full-bleed, logo.png), inlined in _header.html and make_og_image.py. og.png comes from scripts/make_og_image.py. Asset URLs carry a content hash (?v=).
                        Dark is the default for everyone; light is opt-in via the header toggle (localStorage "theme").
                        SEO: filtered /models?… canonicalizes to /models, so indexable landing pages are generated from
                        data (views.landing_pages): /{speech-to-text|text-to-speech|speech-to-speech}[/<language>|/<feature>
@@ -63,11 +67,10 @@ voicedex/
                        /compare/<a>-vs-<b>: provider pairs from views.COMPARE_PROVIDERS (editorial list) that share a
                        model type; alphabetical slug, reverse order 301s. /changes + /changes.xml (Atom): web/changes.py
                        replays git history of data/ (CI bakes data/.changes.json; local dev reads git).
-                       /providers: sortable index (type filter; filtered views canonicalize to /providers); home shows
-                       only the widely used ones (COMPARE_PROVIDERS). /models and /voices are "workbench" pages
-                       (.wrap-wide, up to 1600px): a filter rail with live counts per option (routes._filter_models /
-                       _filter_voices with skip=…), repeatable ?capability= (AND), radios for type/status/gender, and a
-                       compact-rows toggle (localStorage "density", applied in <head>). /models default order =
+                       /providers: sortable index (type filter; filtered views canonicalize to /providers); home shows a
+                       24-tile wall: widely used ones (COMPARE_PROVIDERS) first, then the largest catalogs. /models and /voices are "workbench" pages
+                       (.wrap-wide, up to 1600px): a filter bar above the results (templates/_filters.html: dropdowns with counts and in-panel search, toggle chips) with live counts per option (routes._filter_models /
+                       _filter_voices with skip=…), repeatable ?capability= (AND), radios for type/status/gender. /models default order =
                        views.default_model_order (recommended → default → widely used providers); also ?sort=price|newest|name.
                        /models paginates at MODELS_PER_PAGE (100); price sort groups comparable USD → other currency/unit
                        → unpriced. Display names show under ids only when views.name_adds. Shared table cells (price
@@ -89,6 +92,7 @@ scripts/sync.py      — sync providers into data/ (dry-run default, --write)
 scripts/validate.py  — validate data/ + cross-record rules + canonical formatting; CI gate
 scripts/catalog_health.py — what's stale/broken/due (syncs, shutdown dates, prices, discovery; --samples)
 scripts/check_previews.py — audit every voice-sample link
+scripts/fetch_logos.py   — provider logos from their own sites (`uv run --with pillow …`; --report, --force <ids>)
 .claude/skills/catalog-refresh/ — `/catalog-refresh [freshness|discover|all|<ids>]`: maintenance run in Claude Code
 ```
 

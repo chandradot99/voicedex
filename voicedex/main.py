@@ -134,6 +134,9 @@ def _code_version() -> str:
 
 
 _CODE_VERSION = _code_version()
+# Local dev (LOCAL_DEV=true in .env): pages aren't cached, so edits show at once. From config, never from the
+# request's Host header.
+_LOCAL_DEV = settings.local_dev
 _API_ETAGS: dict[str, str] = {}
 
 
@@ -158,6 +161,8 @@ async def etag_cache(request: Request, call_next):
     if response.status_code == 200 and request.url.path != "/health":
         if is_api:
             response.headers["ETag"] = etag
+        if _LOCAL_DEV and not is_api:
+            response.headers["Cache-Control"] = "no-store"     # local dev: template/CSS edits show on every page at once
         response.headers.setdefault("Cache-Control", "public, max-age=300")
     return response
 

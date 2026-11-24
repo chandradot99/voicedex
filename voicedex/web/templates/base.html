@@ -19,13 +19,13 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site_name }} changes" href="/changes.xml">
   {% for ld in jsonld or [] %}<script type="application/ld+json">{{ ld|tojson }}</script>
   {% endfor %}
-  <meta name="theme-color" content="#16171a">
-  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;if(localStorage.getItem("density")==="compact")document.documentElement.dataset.density="compact"}catch(e){}</script>
+  <meta name="theme-color" content="#0b0a08">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
   <meta name="color-scheme" content="dark">
   {% include "_favicon.html" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/site.css?v={{ asset_v() }}">
   <script defer src="/static/site.js?v={{ asset_v() }}"></script>
 </head>
@@ -60,10 +60,14 @@
     </aside>
   </div>
   <footer class="site-footer">
-    <div class="wrap footer-row">
-      <p class="footer-brand">{{ site_name }}</p>
-      <p>An open catalog of speech models. Data comes from each provider's API and documentation, is reviewed, and is versioned <a href="https://github.com/chandradot99/voicedex" rel="noopener">in git</a> (Apache 2.0).</p>
-      <nav aria-label="Footer"><a href="/speech-to-text">Speech-to-text</a><a href="/text-to-speech">Text-to-speech</a><a href="/speech-to-speech">Speech-to-speech</a><a href="/providers">Providers</a><a href="/alternatives">Alternatives</a><a href="/reports/speech-ai-pricing">Pricing report</a><a href="/coverage">Language coverage</a><a href="/changes">Changes</a><a href="/docs">REST API</a><a href="/mcp">MCP server</a><a href="/v1/catalog.json">Full catalog as JSON</a><a href="/sitemap.xml">Sitemap</a><a href="https://github.com/chandradot99/voicedex" rel="noopener">GitHub</a><a href="https://www.linkedin.com/company/voicedex" rel="noopener">LinkedIn</a></nav>
+    <div class="wrap footer-grid">
+      <div class="footer-about">
+        <p class="footer-brand">{{ site_name }}</p>
+        <p>An open catalog of speech models. Data comes from each provider's API and documentation, is reviewed, and is versioned <a href="https://github.com/chandradot99/voicedex" rel="noopener">in git</a> (Apache 2.0).</p>
+      </div>
+      <nav aria-label="Browse"><p class="footer-h">Browse</p><a href="/speech-to-text">Speech-to-text</a><a href="/text-to-speech">Text-to-speech</a><a href="/speech-to-speech">Speech-to-speech</a><a href="/providers">Providers</a><a href="/alternatives">Alternatives</a><a href="/coverage">Language coverage</a></nav>
+      <nav aria-label="Data"><p class="footer-h">Data</p><a href="/reports/speech-ai-pricing">Pricing report</a><a href="/changes">Changes</a><a href="/v1/catalog.json">Full catalog as JSON</a><a href="/docs">REST API</a><a href="/mcp">MCP server</a><a href="/sitemap.xml">Sitemap</a></nav>
+      <nav aria-label="Project"><p class="footer-h">Project</p><a href="https://github.com/chandradot99/voicedex" rel="noopener">GitHub</a><a href="https://www.linkedin.com/company/voicedex" rel="noopener">LinkedIn</a></nav>
     </div>
   </footer>
   <dialog id="palette" class="palette" aria-label="Jump to a model, provider, language or feature">

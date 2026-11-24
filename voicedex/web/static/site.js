@@ -200,20 +200,6 @@ $$("form.filters [data-apply]").forEach((b) => {
   b.tabIndex = -1;
   b.setAttribute("aria-hidden", "true");
 });
-// ── Row density on the workbench tables: comfortable (default) or compact, remembered per browser. The saved
-// choice is applied in <head> before first paint (base.html), so rows never jump.
-$$(".density-toggle").forEach((b) => {
-  const root = document.documentElement;
-  const sync = () => b.setAttribute("aria-pressed", String(root.dataset.density === "compact"));
-  b.hidden = false;
-  sync();
-  b.addEventListener("click", () => {
-    const next = root.dataset.density === "compact" ? "" : "compact";
-    if (next) root.dataset.density = next; else delete root.dataset.density;
-    try { next ? localStorage.setItem("density", next) : localStorage.removeItem("density"); } catch (e) {}
-    sync();
-  });
-});
 // On phones the filter bar starts collapsed (active filters still show as removable tokens below it).
 if (matchMedia("(max-width: 760px)").matches) {
   $$("details[data-collapse-sm]").forEach((d) => { d.open = false; });
@@ -475,12 +461,12 @@ document.addEventListener("formdata", (e) => {
   document.head.append(style);
   const fit = () => {
     style.textContent = "";
-    if (innerWidth <= 760) return;                       // phones: scroll the full map
+    // Phones fit fewer columns too (at least 8) instead of scrolling sideways; desktops fill the full width.
     const first = $("tbody th", table)?.getBoundingClientRect().width || 0;
     const total = $("td.map-total", table)?.getBoundingClientRect().width || 0;
-    const cell = 20;                                     // 18px cell + 2px spacing
+    const cell = 21;                                     // 18px cell + 3px spacing
     const cols = $$("thead th.map-lang", table).length;
-    const fitCols = Math.max(12, Math.min(cols, Math.floor((wrap.clientWidth - first - total - 12) / cell)));
+    const fitCols = Math.max(innerWidth <= 760 ? 8 : 12, Math.min(cols, Math.floor((wrap.clientWidth - first - total - 40) / cell)));   // 40: room for the last angled label
     if (fitCols < cols) style.textContent = `.map tr > :nth-child(n+${fitCols + 2}):not(.map-total) { display: none; }`;
     const note = $("#coverage-cols");
     if (note) note.textContent = String(fitCols);
@@ -514,4 +500,218 @@ document.addEventListener("formdata", (e) => {
     presets.forEach((b) => b.addEventListener("click", (e) => { e.preventDefault(); input.value = b.value; update(true); }));
     form.addEventListener("submit", (e) => { e.preventDefault(); update(true); });
   });
+})();
+
+// ── Home hero: the provider equaliser. One bar per provider around a ring (length ∝ log of models listed), each
+// wobbling like a level meter; an amber sweep circles like a playhead and names the widely used providers it passes.
+// Hover names any bar, click opens it. Reduced motion: drawn once, no wobble or sweep. Paused in background tabs
+// (requestAnimationFrame) and while scrolled out of view.
+(() => {
+  const fig = $("[data-hero-ring]");
+  if (!fig) return;
+  let data;
+  try { data = JSON.parse($(".ring-data", fig).textContent); } catch (e) { return; }
+  if (!data.length) return;
+  const cv = $("canvas", fig), ctx = cv.getContext("2d");
+  const cap = { logo: $(".ring-logo", fig), name: $(".ring-name", fig), meta: $(".ring-meta", fig) };
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const N = data.length, step = (2 * Math.PI) / N, maxN = Math.max(...data.map((d) => d.n));
+  const peak = data.findIndex((d) => d.n === maxN);      // reduced motion: the ring rests on the largest catalog
+  const share = (d) => 0.16 + 0.84 * (Math.log1p(d.n) / Math.log1p(maxN));
+  const imgs = {};
+  data.forEach((d) => { if (d.logo && d.pop) { const im = new Image(); im.src = d.logo; imgs[d.id] = im; } });
+  let W = 0, colors = {}, sweep = -Math.PI / 2, hover = -1, shown = -2, last = performance.now(), visible = true, running = false;
+  let withLogo = new Set();     // which widely used providers show a logo: at most one per stretch of ring, no overlaps
+  const layoutLogos = () => {
+    const { inner, outer, logo } = geom();
+    const minGap = (logo * 1.35) / outer;
+    const order = data.map((d, i) => i).filter((i) => imgs[data[i].id]);
+    const keep = [];
+    for (const i of order.sort((a, b) => data[b].n - data[a].n)) {            // bigger catalogs claim space first
+      if (keep.every((k) => { const g = Math.abs(k - i) * step; return Math.min(g, 2 * Math.PI - g) >= minGap; })) keep.push(i);
+    }
+    withLogo = new Set(keep);
+  };
+
+  const readColors = () => {
+    const cs = getComputedStyle(document.documentElement);
+    colors = { ink: cs.getPropertyValue("--ink").trim(), amber: cs.getPropertyValue("--signal-fill").trim(), muted: cs.getPropertyValue("--muted").trim() };
+  };
+  const size = () => {
+    const w = fig.clientWidth, dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (!w) return;
+    W = w; cv.width = w * dpr; cv.height = w * dpr; cv.style.width = cv.style.height = w + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    layoutLogos();
+  };
+  const angleOf = (i) => -Math.PI / 2 + i * step;
+  const geom = () => ({ c: W / 2, inner: W * 0.235, outer: W * 0.39, logoR: W * 0.46, logo: Math.max(14, W * 0.046) });
+
+  const label = (i) => {
+    if (i === shown) return;
+    shown = i;
+    if (i < 0) return;
+    const d = data[i];
+    cap.logo.replaceChildren();
+    if (d.logo) { const im = new Image(); im.src = d.logo; im.alt = ""; im.className = "logo logo-lg"; cap.logo.append(im); }
+    else { const s = document.createElement("span"); s.className = "logo logo-lg logo-letter"; s.textContent = d.name[0].toUpperCase(); cap.logo.append(s); }
+    cap.name.textContent = d.name;
+    cap.meta.textContent = `${d.n} model${d.n === 1 ? "" : "s"} · ${d.types.join(" ")}`;
+  };
+
+  const band = fig.closest(".hero-band");
+  const draw = (t) => {
+    if (!W) return;
+    const { c, inner, outer, logoR, logo } = geom();
+    ctx.clearRect(0, 0, W, W);
+    ctx.lineCap = "round";
+    const width = Math.max(1.6, step * inner * 0.62);
+    let lead = -1, leadDa = 9;
+    for (let i = 0; i < N; i++) {
+      const d = data[i], a = angleOf(i);
+      const wob = still ? 0 : 0.055 * Math.sin(t * 0.0011 + i * 0.57) + 0.035 * Math.sin(t * 0.0019 + i * 1.73);
+      const len = (outer - inner) * share(d) * (1 + wob);
+      const da = (((sweep - a) % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);    // 0 at the sweep, grows behind it
+      const glow = still ? 0 : Math.max(0, 1 - da / 1.1);
+      const hot = i === hover || (still && hover < 0 && i === peak);
+      ctx.globalAlpha = hot ? 1 : 0.35 + 0.65 * glow * glow;           // amber is level: dim at rest, full in the sweep
+      ctx.strokeStyle = colors.amber;
+      ctx.lineWidth = width;
+      ctx.shadowColor = colors.amber; ctx.shadowBlur = hot || glow > 0.7 ? 6 * Math.max(glow, hot ? 1 : 0) : 0;
+      const cs = Math.cos(a), sn = Math.sin(a);
+      ctx.beginPath(); ctx.moveTo(c + cs * inner, c + sn * inner); ctx.lineTo(c + cs * (inner + len), c + sn * (inner + len)); ctx.stroke();
+      ctx.shadowBlur = 0;
+      if (d.pop && da < leadDa) { leadDa = da; lead = i; }
+      const im = withLogo.has(i) && imgs[d.id];
+      if (im && im.complete && im.naturalWidth) {
+        ctx.globalAlpha = hot ? 1 : 0.55;
+        const r = inner + (outer - inner) * 1.1 + logo * 0.85;                  // a fixed orbit beyond the longest bar (wobble included)
+        const x = c + cs * r - logo / 2, y = c + sn * r - logo / 2;
+        ctx.save(); ctx.beginPath(); (ctx.roundRect ? ctx.roundRect(x, y, logo, logo, logo * 0.22) : ctx.rect(x, y, logo, logo)); ctx.clip(); ctx.drawImage(im, x, y, logo, logo); ctx.restore();
+      }
+    }
+    ctx.globalAlpha = 1;
+    const active = hover >= 0 ? hover : (still ? peak : lead);
+    label(active);
+  };
+
+  const frame = (t) => {
+    running = false;
+    const dt = Math.min(64, t - last); last = t;
+    sweep += dt * 0.00009;                          // about 70 s per lap, in step with the drifting rings
+    draw(t);
+    if (visible && !document.hidden) { running = true; requestAnimationFrame(frame); }
+  };
+  const start = () => { if (!still && !running && visible && !document.hidden) { running = true; last = performance.now(); requestAnimationFrame(frame); } };
+
+  // Hover / click: which bar is under the pointer (by angle, within the ring's band)
+  const hit = (e) => {
+    const r = cv.getBoundingClientRect(), { inner, logoR, logo } = geom();
+    const x = e.clientX - r.left - W / 2, y = e.clientY - r.top - W / 2, dist = Math.hypot(x, y);
+    if (dist < inner * 0.85 || dist > logoR + logo) return -1;
+    const a = Math.atan2(y, x) + Math.PI / 2;
+    return Math.round((((a % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / step) % N;
+  };
+  cv.addEventListener("pointermove", (e) => { const i = hit(e); if (i !== hover) { hover = i; cv.style.cursor = i >= 0 ? "pointer" : ""; if (still || !running) draw(performance.now()); } });
+  cv.addEventListener("pointerleave", () => { hover = -1; cv.style.cursor = ""; if (still || !running) draw(performance.now()); });
+  cv.addEventListener("click", (e) => { const i = hit(e); if (i >= 0) location.href = "/providers/" + data[i].id; });
+
+  // The hero band's sound-wave rings radiate from the ring's centre wherever the layout puts it (band: above).
+  const centre = () => {
+    if (!band) return;
+    const b = band.getBoundingClientRect(), r = fig.getBoundingClientRect();
+    band.style.setProperty("--cx", (r.left - b.left + r.width / 2).toFixed(0) + "px");
+    band.style.setProperty("--cy", (r.top - b.top + r.height / 2).toFixed(0) + "px");
+  };
+  readColors(); size(); centre(); draw(performance.now());
+  new ResizeObserver(() => { size(); centre(); draw(performance.now()); }).observe(fig);
+  document.addEventListener("themechange", () => { readColors(); draw(performance.now()); });
+  document.addEventListener("visibilitychange", start);
+  new IntersectionObserver(([en]) => { visible = en.isIntersecting; start(); }).observe(fig);
+  Object.values(imgs).forEach((im) => im.addEventListener("load", () => { if (still) draw(performance.now()); }));
+})();
+
+// ── Home "What speech costs": tabs between price bands; hovering a provider's rate lights its square on the chart.
+(() => {
+  const sec = $("[data-costs]");
+  if (!sec) return;
+  const tabs = $$('[role="tab"]', sec), panels = $$('[role="tabpanel"]', sec);
+  const show = (tab) => {
+    tabs.forEach((t) => t.setAttribute("aria-selected", String(t === tab)));
+    panels.forEach((p) => { p.hidden = p.id !== tab.getAttribute("aria-controls"); });
+  };
+  if (tabs.length > 1) {
+    $(".costs-tabs", sec).hidden = false;
+    tabs.forEach((t) => t.addEventListener("click", () => show(t)));
+    show(tabs[0]);
+  }
+  sec.addEventListener("pointerover", (e) => {
+    const a = e.target.closest(".rate-list a");
+    $$(".sq.is-rate", sec).forEach((q) => q.classList.remove("is-rate"));
+    if (a) $$(`.sq[data-key="${CSS.escape(a.dataset.key)}"]`, sec).forEach((q) => q.classList.add("is-rate"));
+  });
+  sec.addEventListener("focusin", (e) => {
+    const a = e.target.closest(".rate-list a");
+    $$(".sq.is-rate", sec).forEach((q) => q.classList.remove("is-rate"));
+    if (a) $$(`.sq[data-key="${CSS.escape(a.dataset.key)}"]`, sec).forEach((q) => q.classList.add("is-rate"));
+  });
+})();
+
+// ── Price spectra rise once, when they first come into view. The squares are in the page from the start, so a
+// background tab, a screenshot or reduced motion always shows the full chart.
+(() => {
+  const els = $$(".spectrum.rise");
+  if (!els.length || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+    if (en.isIntersecting && !document.hidden) { en.target.classList.add("go"); io.unobserve(en.target); }
+  }), { threshold: 0.25 });
+  els.forEach((el) => io.observe(el));
+})();
+
+// ── Coverage map crosshair: hovering a cell lights its provider row and its language column.
+(() => {
+  const table = $("table.map");
+  if (!table) return;
+  const clear = () => $$(".x-row, .x-col", table).forEach((el) => el.classList.remove("x-row", "x-col"));
+  table.addEventListener("pointerover", (e) => {
+    const td = e.target.closest("td:not(.map-total)");
+    clear();
+    if (!td) return;
+    const tr = td.parentElement, col = td.cellIndex;
+    tr.classList.add("x-row");
+    $$("tr", table).forEach((row) => row.cells[col]?.classList.add("x-col"));
+  });
+  table.addEventListener("pointerleave", clear);
+})();
+
+// ── Header: solid once the page has scrolled (on home it starts transparent over the hero band).
+(() => {
+  const h = $(".site-header");
+  if (!h) return;
+  const sync = () => h.classList.toggle("is-scrolled", scrollY > 8);
+  sync();
+  addEventListener("scroll", sync, { passive: true });
+})();
+
+// ── Filter bar dropdowns: one open at a time; close on outside click or Escape; focus the search box on open and
+// narrow the option list as you type. Picking an option submits the form (the change handler above).
+(() => {
+  const drops = $$(".fdrop");
+  if (!drops.length) return;
+  drops.forEach((d) => d.addEventListener("toggle", () => {
+    if (!d.open) return;
+    drops.forEach((o) => { if (o !== d) o.open = false; });
+    const q = $(".fpop-search", d);
+    if (q && matchMedia("(pointer: fine)").matches) q.focus();
+  }));
+  document.addEventListener("click", (e) => { drops.forEach((d) => { if (d.open && !d.contains(e.target)) d.open = false; }); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const d = drops.find((x) => x.open);
+    if (d) { d.open = false; $("summary", d).focus(); }
+  });
+  $$(".fpop-search").forEach((q) => q.addEventListener("input", () => {
+    const needle = q.value.trim().toLowerCase();
+    $$(".opt", q.closest(".fpop")).forEach((o) => { o.hidden = !!needle && !o.textContent.toLowerCase().includes(needle); });
+  }));
 })();
