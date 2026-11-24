@@ -54,6 +54,9 @@
       "mp3",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "FPT.AI's Vietnamese text-to-speech API (version 5) with northern, central and southern voices; audio is returned asynchronously as a link.",
     "first_seen": "2026-11-18",
     "id": "v5",
@@ -66,6 +69,9 @@
     ],
     "max_text_chars": 5000,
     "meta": {
+      "capability_notes": {
+        "prosody_control": "speed -3 to +3"
+      },
       "delivery": "Async: the response holds a link to the audio (ready in about 5 s to 2 min); optional callback_url header.",
       "docs_sources": [
         "https://docs.fpt.ai/docs/en/speech/api/text-to-speech/"
