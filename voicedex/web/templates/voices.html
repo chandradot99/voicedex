@@ -2,9 +2,10 @@
 {% import "_icons.html" as icons %}
 {% block title %}Browse text-to-speech voices | {{ site_name }}{% endblock %}
 {% block content %}
-<section class="wrap page-head">
+<section class="wrap wrap-wide page-head">
   <h1>{{ "{:,}".format(total) }} voice{{ 's' if total != 1 }}</h1>
-  <p class="lede">Stock voices from every text-to-speech provider. Press play where the provider publishes a sample. {{ providers|length }} of {{ n_live }} providers publish a stock voice list; the rest are speech-to-text only, open weights you run yourself, or keep voices behind an account.<span class="hide-sm"> <kbd>J</kbd> <kbd>K</kbd> move between samples, <kbd>Space</kbd> pauses.</span></p>
+  <p class="lede">Stock voices from {{ providers|length }} text-to-speech providers. Press play to hear a sample where the provider publishes one.</p>
+  <p class="page-hint hide-sm"><kbd>J</kbd> <kbd>K</kbd> next and previous sample · <kbd>Space</kbd> pause · {{ n_live - providers|length }} other providers are speech-to-text only, open weights you run yourself, or keep voices behind an account</p>
 </section>
 
 <section class="wrap wrap-wide workbench">{% set fc = facets %}

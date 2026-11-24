@@ -573,7 +573,10 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     def _sample_rank(r) -> int:   # stable sort: samples in the filtered language, other samples, none
         s = views.voice_sample(r.voice, f["language"])
         return 2 if s is None else (1 if s.matched is False else 0)
-    rows = sorted(rows, key=_sample_rank)
+    popular = {pid: i for i, pid in enumerate(views.COMPARE_PROVIDERS)}
+    # samples first (in the filtered language, then any), widely used providers first, then provider A–Z; the sort
+    # is stable, so each provider's own voice order is kept
+    rows = sorted(rows, key=lambda r: (_sample_rank(r), popular.get(r.provider_id, len(popular)), r.provider_id))
     try:
         page = max(1, int(_q(request, "page") or 1))
     except ValueError:
