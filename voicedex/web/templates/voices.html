@@ -16,6 +16,11 @@
       <label class="field rail-search">{{ icons.icon("search") }}<span class="visually-hidden">Name, accent or style</span>
         <input type="search" name="q" value="{{ f.q }}" placeholder="Name, accent or style" autocomplete="off">
       </label>
+      <fieldset class="facet quick"><legend class="visually-hidden">Show only</legend>
+        <label class="opt"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}><span>Has a sample to play</span><i>{{ "{:,}".format(fc.preview) }}</i></label>
+        <label class="opt"><input type="checkbox" name="emotion" value="1" {% if f.emotion %}checked{% endif %}><span>Emotion control</span><i>{{ "{:,}".format(fc.emotion) }}</i></label>
+        <label class="opt"><input type="checkbox" name="multi" value="1" {% if f.multi %}checked{% endif %}><span>Speaks several languages</span><i>{{ "{:,}".format(fc.multi) }}</i></label>
+      </fieldset>
       <details class="facet-group" open>
         <summary>{{ icons.icon("building") }}<span>Provider</span>{{ icons.icon("chevron") }}</summary>
         <label class="field"><span class="visually-hidden">Provider</span>
@@ -59,19 +64,6 @@
             {% if f.accent and not fc.accent[f.accent] %}<option value="{{ f.accent }}" selected>{{ f.accent }} (0)</option>{% endif %}
           </select>
         </label>
-      </details>
-      <details class="facet-group"{% if f.emotion or f.multi %} open{% endif %}>
-        <summary>{{ icons.icon("bolt") }}<span>Features</span>{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Features</legend>
-          <label class="opt"><input type="checkbox" name="emotion" value="1" {% if f.emotion %}checked{% endif %}><span>Emotion control</span><i>{{ "{:,}".format(fc.emotion) }}</i></label>
-          <label class="opt"><input type="checkbox" name="multi" value="1" {% if f.multi %}checked{% endif %}><span>Speaks several languages</span><i>{{ "{:,}".format(fc.multi) }}</i></label>
-        </fieldset>
-      </details>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("play") }}<span>Sample</span>{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Sample</legend>
-          <label class="opt"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}><span>Has a sample to play</span><i>{{ "{:,}".format(fc.preview) }}</i></label>
-        </fieldset>
       </details>
       <button type="submit" class="btn-secondary" data-apply>Apply</button>
     </form>

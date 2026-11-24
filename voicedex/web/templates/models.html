@@ -19,6 +19,11 @@
       <label class="field rail-search">{{ icons.icon("search") }}<span class="visually-hidden">Search models</span>
         <input type="search" name="q" value="{{ f.q }}" placeholder="Search models" autocomplete="off" spellcheck="false">
       </label>
+      <fieldset class="facet quick"><legend class="visually-hidden">Show only</legend>
+        <label class="opt"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}><span>Realtime (WebSocket / WebRTC)</span><i>{{ fc.realtime }}</i></label>
+        <label class="opt"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}><span>Open weights</span><i>{{ fc.open }}</i></label>
+        {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
+      </fieldset>
       <details class="facet-group" open>
         <summary>{{ icons.icon("globe") }}<span>Language</span>{{ icons.icon("chevron") }}</summary>
         <label class="field"><span class="visually-hidden">Language</span>
@@ -45,14 +50,6 @@
           {% set rest = fc.capability|rejectattr("0", "in", top)|rejectattr("0", "in", f.capability)|list %}
           {% if rest %}<details class="more-opts"><summary>Show all {{ fc.capability|length }}</summary>{% for c, n in rest %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}"><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% endfor %}</details>{% endif %}
           <p class="facet-note">Models must have every ticked feature.</p>
-        </fieldset>
-      </details>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("bolt") }}<span>Connection and weights</span>{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Connection and weights</legend>
-          <label class="opt"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}><span>Realtime (WebSocket / WebRTC)</span><i>{{ fc.realtime }}</i></label>
-          <label class="opt"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}><span>Open weights</span><i>{{ fc.open }}</i></label>
-          {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
         </fieldset>
       </details>
       <details class="facet-group"{% if f.status %} open{% endif %}>
