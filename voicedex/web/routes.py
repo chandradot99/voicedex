@@ -436,11 +436,8 @@ def _filter_tokens(f: dict, catalog: Catalog) -> list[tuple[str, str, str]]:
 def _models_context(catalog: Catalog, rows: list, f: dict, *, show_tokens: bool = True,
                     usage_raw: str | None = None) -> dict:
     filtered = any(v for k, v in f.items() if k != "sort")
-    keys = {views.model_key(r) for r in rows}
-    spectrum = [b for b in views.price_spectrum(catalog, highlight=keys if filtered else None)
-                if not filtered or any(it.state == "on" for col in b.columns for it in col)]
     return {
-        "rows": rows, "f": f, "filtered": filtered, "spectrum": spectrum,
+        "rows": rows, "f": f, "filtered": filtered,
         "tokens": _filter_tokens(f, catalog) if show_tokens else [],
         "positions": views.price_positions(views.price_spectrum(catalog)),
         "qs": lambda **changes: _qs(f, **changes),

@@ -51,9 +51,6 @@
     {% endif %}
   </div>
 
-  {% if filtered and rows %}
-  {% with bands=spectrum, cap=8, compact=True, legend_note="matches your filters" %}{% include "_spectrum.html" %}{% endwith %}
-  {% endif %}
 
   {% if rows %}
   {% if usage_type %}{% with hidden=usage_hidden %}{% include "_usage.html" %}{% endwith %}{% endif %}
