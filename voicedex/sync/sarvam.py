@@ -2,7 +2,7 @@
 Sarvam sync script.
 
 Source: docs
-  - STT models : AI-parsed from docs.sarvam.ai (Saaras + Saarika families)
+  - STT models : AI-parsed from docs.sarvam.ai (every STT product/API)
   - TTS models : AI-parsed from docs.sarvam.ai (Bulbul family)
     + Instant Voice Cloning (beta) — a separate /voices/clone API with no model
       parameter; catalogued as TTS model "instant-voice-cloning"
@@ -57,7 +57,8 @@ _COMMON = (
     "meta.pricing_inr with the source URL unless an explicit USD price is published."
 )
 _STT_GUIDANCE = (
-    "Return every Sarvam speech-to-text model (Saaras / Saarika families). streaming=true only for "
+    "Return every Sarvam speech-to-text model across all of its STT products and APIs (each product's "
+    "model ids, moving aliases with meta.alias_of → the dated snapshot). streaming=true only for "
     "models usable over the WebSocket API; meta.batch for the batch/REST APIs. " + _COMMON
 )
 _TTS_GUIDANCE = (
