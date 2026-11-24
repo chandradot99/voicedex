@@ -573,68 +573,7 @@ document.addEventListener("formdata", (e) => {
     cap.meta.textContent = `${d.n} model${d.n === 1 ? "" : "s"} · ${d.types.join(" ")}`;
   };
 
-  // ── Logo field: muted provider logos floating across the hero band, clear of the copy and the ring. The one the
-  // sweep is naming lights up in colour, with a faint signal line to the ring's centre.
   const band = fig.closest(".hero-band");
-  const fcv = band ? document.createElement("canvas") : null;
-  const fctx = fcv && fcv.getContext("2d");
-  let field = [], FW = 0, FH = 0;
-  const fieldImgs = {};
-  if (fcv) { fcv.className = "hero-field"; fcv.setAttribute("aria-hidden", "true"); band.prepend(fcv); }
-  const rand = (seed) => () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;     // stable layout
-  const muted = (im) => {                                      // greyscale, ink-tinted copy for the resting state
-    const c = document.createElement("canvas"); c.width = c.height = 64;
-    const x = c.getContext("2d"); x.drawImage(im, 0, 0, 64, 64);
-    try {
-      const d = x.getImageData(0, 0, 64, 64), p = d.data, light = document.documentElement.dataset.theme === "light";
-      for (let i = 0; i < p.length; i += 4) { const l = (0.3 * p[i] + 0.59 * p[i + 1] + 0.11 * p[i + 2]) / 255; const v = light ? 40 + l * 120 : 120 + l * 135; p[i] = v; p[i + 1] = v * 0.97; p[i + 2] = v * 0.93; }
-      x.putImageData(d, 0, 0);
-    } catch (e) { return im; }
-    return c;
-  };
-  const layoutField = () => {
-    if (!fcv) return;
-    const b = band.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1);
-    FW = b.width; FH = b.height;
-    fcv.width = FW * dpr; fcv.height = FH * dpr; fcv.style.width = FW + "px"; fcv.style.height = FH + "px";
-    fctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const copy = $(".hero-copy", band)?.getBoundingClientRect(), strip = $(".hero-strip", band)?.getBoundingClientRect(), ring = fig.getBoundingClientRect();
-    const rc = { x: ring.left - b.left + ring.width / 2, y: ring.top - b.top + ring.height / 2, r: ring.width * 0.5 };
-    const blocked = (x, y, s) => {
-      const pad = 18 + s / 2;
-      if (copy && x > copy.left - b.left - pad && x < copy.right - b.left + pad && y > copy.top - b.top - pad && y < copy.bottom - b.top + pad) return true;
-      if (strip && y > strip.top - b.top - pad) return true;
-      return Math.hypot(x - rc.x, y - rc.y) < rc.r + s;
-    };
-    const rnd = rand(9173), want = FW < 760 ? 10 : 24;
-    const order = data.map((d, i) => i).filter((i) => data[i].logo).sort((i, j) => (data[j].pop - data[i].pop) || (data[j].n - data[i].n));
-    field = [];
-    for (let tries = 0; field.length < Math.min(want, order.length) && tries < 4000; tries++) {
-      const s = 20 + rnd() * 16, x = 12 + rnd() * (FW - 24), y = 12 + rnd() * (FH - 24);
-      if (blocked(x, y, s) || field.some((f) => Math.hypot(f.x - x, f.y - y) < (f.s + s) * 2.2)) continue;   // airy spacing
-      field.push({ i: order[field.length], x, y, s, ph: rnd() * 6.28, z: 0.4 + rnd() * 0.6 });
-    }
-    field.forEach((f) => {
-      const d = data[f.i];
-      if (fieldImgs[d.id]) return;
-      const im = new Image(); im.decoding = "async"; im.src = d.logo;
-      im.addEventListener("load", () => { fieldImgs[d.id] = { color: im, mute: muted(im) }; if (still || !running) draw(performance.now()); });
-    });
-  };
-  const drawField = (t) => {                                     // quiet backdrop: muted, slow, never highlighted
-    if (!fctx || !FW) return;
-    fctx.clearRect(0, 0, FW, FH);
-    for (const f of field) {
-      const im = fieldImgs[data[f.i].id];
-      if (!im) continue;
-      const x = f.x + (still ? 0 : Math.sin(t * 0.00009 + f.ph) * 4), y = f.y + (still ? 0 : Math.cos(t * 0.00008 + f.ph) * 5);
-      fctx.globalAlpha = 0.07 + 0.04 * f.z;
-      fctx.save(); fctx.beginPath(); fctx.roundRect(x - f.s / 2, y - f.s / 2, f.s, f.s, f.s * 0.24); fctx.clip();
-      fctx.drawImage(im.mute, x - f.s / 2, y - f.s / 2, f.s, f.s); fctx.restore();
-    }
-    fctx.globalAlpha = 1;
-  };
-
   const draw = (t) => {
     if (!W) return;
     const { c, inner, outer, logoR, logo } = geom();
@@ -668,7 +607,6 @@ document.addEventListener("formdata", (e) => {
     ctx.globalAlpha = 1;
     const active = hover >= 0 ? hover : (still ? peak : lead);
     label(active);
-    drawField(t);
   };
 
   const frame = (t) => {
@@ -700,14 +638,8 @@ document.addEventListener("formdata", (e) => {
     band.style.setProperty("--cy", (r.top - b.top + r.height / 2).toFixed(0) + "px");
   };
   readColors(); size(); centre(); draw(performance.now());
-  const later = window.requestIdleCallback || ((fn) => setTimeout(fn, 300));
-  later(() => { layoutField(); draw(performance.now()); });                 // logos load after first paint
-  new ResizeObserver(() => { size(); centre(); layoutField(); draw(performance.now()); }).observe(fig);
-  document.addEventListener("themechange", () => {
-    readColors();
-    Object.values(fieldImgs).forEach((v) => { v.mute = muted(v.color); });
-    draw(performance.now());
-  });
+  new ResizeObserver(() => { size(); centre(); draw(performance.now()); }).observe(fig);
+  document.addEventListener("themechange", () => { readColors(); draw(performance.now()); });
   document.addEventListener("visibilitychange", start);
   new IntersectionObserver(([en]) => { visible = en.isIntersecting; start(); }).observe(fig);
   Object.values(imgs).forEach((im) => im.addEventListener("load", () => { if (still) draw(performance.now()); }));

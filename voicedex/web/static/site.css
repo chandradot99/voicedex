@@ -1362,9 +1362,7 @@ h1.with-logo { display: flex; gap: 14px; }
 .eol-days.urgent { color: var(--end); }
 .costs-band > .costs-side { align-self: stretch; }
 
-/* Hero logo field (canvas, site.js) sits under the content; glow is copper fading to a neutral lift, not amber
-   (amber at low alpha on near-black reads olive) */
-.hero-field { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+/* Hero glow: copper fading to a neutral lift, not amber (amber at low alpha on near-black reads olive) */
 .hero-band > .hero, .hero-band > .hero-strip { position: relative; z-index: 1; }
 .hero-band { --glow: rgb(255 118 52 / .10); --glow-2: rgb(255 244 232 / .035); }
 :root[data-theme="light"] .hero-band { --glow: rgb(230 110 40 / .09); --glow-2: rgb(20 18 14 / .02); }
