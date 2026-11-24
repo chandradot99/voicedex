@@ -9,7 +9,6 @@
     "interfaces": [
       "websocket"
     ],
-    "is_default": true,
     "languages": [
       "en"
     ],
@@ -40,7 +39,7 @@
       ]
     },
     "provenance": {
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-24",
       "method": "docs",
       "urls": [
         "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
@@ -51,12 +50,64 @@
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
       "pcm"
     ],
+    "description": "Full-duplex realtime voice flagship with interruption handling, adaptive think-while-speaking reasoning and Voice Agent tool calling.",
+    "family": "stepaudio-3-realtime",
+    "first_seen": "2026-11-24",
+    "id": "stepaudio-3-realtime",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "meta": {
+      "audio_encoding": "pcm16",
+      "docs_sources": [
+        "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-3-realtime.md",
+        "https://platform.stepfun.ai/docs/en/guides/pricing/details.md"
+      ],
+      "endpoint": "wss://api.stepfun.ai/v1/realtime?model=<id>",
+      "full_duplex": true,
+      "note": "Paid successor of stepaudio-3-realtime-preview (free trial ended 2026-11-23 12:00 UTC+8). As of 2026-11-24 the model id appears on the pricing page; the Realtime API reference and Audio Models page still list only stepaudio-3-realtime-preview.",
+      "tool_calling": true
+    },
+    "name": "StepAudio 3 Realtime",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "notes": "$0.125 per session minute ($7.50/session hour), billed by session duration (user + agent speaking time), per-second rounding up. Effective 2026-11-23 12:00 UTC+8.",
+      "price_usd": 0.125,
+      "source_url": "https://platform.stepfun.ai/docs/en/guides/pricing/details",
+      "unit": "minute"
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
+        "https://platform.stepfun.ai/docs/en/pricing/details"
+      ]
+    },
+    "recommended": true,
+    "recommended_for": "real-time voice interaction",
+    "replaces": [
+      "stepaudio-3-realtime-preview"
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "deprecated_at": "2026-11-24",
     "description": "Full-duplex realtime voice flagship with interruption handling, adaptive think-while-speaking reasoning and Voice Agent tool calling.",
     "family": "stepaudio-3-realtime",
     "first_seen": "2026-11-16",
@@ -68,7 +119,7 @@
       "zh",
       "en"
     ],
-    "lifecycle": "beta",
+    "lifecycle": "deprecated",
     "meta": {
       "audio_encoding": "pcm16",
       "deprecation_notice": "Free-trial preview name; will be retired when the trial ends and a formal paid version is added (no date published).",
@@ -93,7 +144,7 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

@@ -7,7 +7,7 @@
   ],
   "headquarters": "CN",
   "id": "stepfun",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-24",
   "links": {
     "docs": "https://platform.stepfun.ai/docs/en/guides/models/audio",
     "pricing": "https://platform.stepfun.ai/docs/en/pricing/details"
@@ -16,7 +16,7 @@
   "source": "docs",
   "type": "both",
   "voices_source": {
-    "as_of": "2026-11-16",
+    "as_of": "2026-11-24",
     "method": "docs",
     "urls": [
       "https://platform.stepfun.ai/docs/en/guides/models/audio.md",
