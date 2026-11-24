@@ -554,11 +554,14 @@ def _filter_voices(rows: list, f: dict, skip: frozenset = frozenset()) -> list:
 
 
 VOICE_GENDERS = ("female", "male", "neutral")
+VOICE_SORTS = {"": "Recommended", "name": "A–Z"}
 
 
 @router.get("/voices", response_class=HTMLResponse)
 async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog)):
-    f = {k: _q(request, k) for k in ("provider", "model", "language", "gender", "q", "preview")}
+    f = {k: _q(request, k) for k in ("provider", "model", "language", "gender", "q", "preview", "sort")}
+    if f["sort"] not in VOICE_SORTS:
+        f["sort"] = ""
     all_rows = views.active_voices(catalog)
     rows = _filter_voices(all_rows, f)
     without = lambda k: _filter_voices(all_rows, f, frozenset({k}))     # noqa: E731
@@ -577,6 +580,8 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     # samples first (in the filtered language, then any), widely used providers first, then provider A–Z; the sort
     # is stable, so each provider's own voice order is kept
     rows = sorted(rows, key=lambda r: (_sample_rank(r), popular.get(r.provider_id, len(popular)), r.provider_id))
+    if f["sort"] == "name":
+        rows.sort(key=lambda r: r.voice.name.casefold())
     try:
         page = max(1, int(_q(request, "page") or 1))
     except ValueError:
@@ -586,7 +591,8 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     return templates.TemplateResponse(request, "voices.html", {
         "rows": rows[(page - 1) * VOICES_PER_PAGE: page * VOICES_PER_PAGE],
         "total": len(rows), "page": page, "pages": pages, "f": f,
-        "tokens": _filter_tokens(f, catalog), "facets": facets, "genders": VOICE_GENDERS,
+        "tokens": [t for t in _filter_tokens(f, catalog) if t[0] != _TOKEN_LABEL["gender"]],   # the tabs show it
+        "facets": facets, "genders": VOICE_GENDERS, "sorts": VOICE_SORTS,
         "qs": lambda **changes: _qs({**f, "page": str(page) if page > 1 else ""}, **{k: (str(v) if v else v) for k, v in changes.items()}),
         "languages": sorted(((c, views.language_name(c)) for c in {views.base_language(lang) for r in all_rows
                                                                     for lang in r.voice.languages if lang != "*"}),

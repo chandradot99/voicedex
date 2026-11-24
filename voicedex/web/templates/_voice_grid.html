@@ -1,11 +1,27 @@
 {% import "_cells.html" as cells %}
-<div class="voice-head" aria-hidden="true"><span></span><span>Voice</span><span>Traits and language</span><span>Voice id</span></div>
-<ul class="voice-list">
-  {% set filter_lang = f.language if f is defined and f else None %}
+{# Voices as a data table, matching the model tables. `names` (provider id → name) adds the Provider column; pages
+   listing one provider's voices pass names={} and leave it out. Rows keep class="voice" + data-name/data-meta and
+   a .voice-error slot: the sample player in site.js relies on them. #}
+{% set filter_lang = f.language if f is defined and f else None %}
+<div class="table-scroll">
+<table class="data voices-table">
+  <thead>
+    <tr>
+      <th scope="col" class="play-col"><span class="visually-hidden">Sample</span></th>
+      <th scope="col">Voice</th>
+      {% if names %}<th scope="col" class="hide-sm">Provider</th>{% endif %}
+      <th scope="col" class="hide-sm">Gender</th>
+      <th scope="col" class="hide-sm">Age</th>
+      <th scope="col" class="hide-sm">Accent</th>
+      <th scope="col" class="hide-sm">Language</th>
+      <th scope="col" class="num hide-sm">Voice id</th>
+    </tr>
+  </thead>
+  <tbody>
   {% for r in rows %}{% set v = r.voice %}{% set s = pick_sample(v, filter_lang) %}
   {% set pname = names.get(r.provider_id, r.provider_id) if names else "" %}
-  <li class="voice{% if not s %} no-sample{% endif %}" data-name="{{ v.name }}" data-meta="{{ pname }}">
-    <div class="voice-play">
+  <tr class="voice{% if not s %} no-sample{% endif %}" data-name="{{ v.name }}" data-meta="{{ pname }}">
+    <td class="play-col">
       {% if s %}
       <button class="play" type="button" data-src="{{ s.url }}" aria-pressed="false" aria-label="Play sample of {{ v.name }}{% if s.language %} ({{ language_name(s.language) }}){% endif %}">
         <svg viewBox="0 0 16 16" aria-hidden="true" class="i-play"><path d="M5 3v10l8-5z"/></svg>
@@ -16,30 +32,28 @@
       {% set no_sample = "The provider's sample link is broken" if v.meta.get("preview_unavailable") else "No sample published" %}
       <span class="no-play" title="{{ no_sample }}"><svg viewBox="0 0 12 2" aria-hidden="true"><rect width="12" height="2"/></svg><span class="visually-hidden">{{ no_sample }}</span></span>
       {% endif %}
-    </div>
-    <div class="voice-main">
-      <p class="voice-name">{% if names %}<a class="voice-logo" href="/providers/{{ r.provider_id }}" title="{{ pname }}" aria-label="{{ pname }}">{{ cells.logo(r.provider_id, pname) }}</a>{% endif %}<span>{{ v.name }}</span></p>
-      {% if names or v.description %}<p class="voice-desc"{% if v.description %} title="{{ v.description }}"{% endif %}>{% if names %}<a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ pname }}</a>{% if v.description %} · {% endif %}{% endif %}{{ v.description|truncate(140) if v.description else "" }}</p>{% endif %}
-      {% if s and s.matched is false %}<p class="voice-sample-note">{% if s.language %}Sample in {{ language_name(s.language) }}{% else %}Sample language not stated{% endif %}</p>
-      {% elif s and s.matched and v.languages and s.language.split('-')[0] != v.languages[0].split('-')[0] %}<p class="voice-sample-note">Sample in {{ language_name(s.language) }}</p>{% endif %}
-      <p class="voice-error" role="status" hidden>Sample unavailable. The provider may have moved it.</p>
-    </div>
-    <p class="voice-traits">
-      {%- set traits = [] -%}
-      {%- if v.gender %}{% set _ = traits.append(v.gender) %}{% endif -%}
-      {%- if v.age %}{% set _ = traits.append(v.age|replace('_', ' ')) %}{% endif -%}
-      {%- if v.accent %}{% set _ = traits.append(v.accent.replace('_', ' ')) %}{% endif -%}
-      {{ traits|join(", ") }}{% if traits %}<span class="muted"> / </span>{% endif %}
-      {%- if "*" in v.languages %}multilingual{% elif v.languages %}{{ language_name(v.languages[0]) }}{% if v.languages|length > 1 %}<span class="muted"> +{{ v.languages|length - 1 }}</span>{% endif %}{% else %}<span class="muted">language not listed</span>{% endif %}
-      {%- set chips = voice_chips(v, 3) %}{% if chips %}<br><span class="muted">{{ chips|join(", ") }}</span>{% endif -%}
-    </p>
-    <div class="voice-id">
-      <code translate="no" title="{{ v.id }}">{{ v.id }}</code>
+    </td>
+    <th scope="row" class="voice-main">
+      <span class="voice-name">{{ v.name }}</span>
+      {%- set chips = voice_chips(v, 3) %}
+      {% if v.description or chips %}<span class="sub voice-desc"{% if v.description %} title="{{ v.description }}"{% endif %}>{{ v.description|truncate(110) if v.description else chips|join(", ") }}</span>{% endif %}
+      {% if names %}<span class="sub show-sm">{{ pname }}{% if v.gender %} · {{ v.gender }}{% endif %}</span>{% endif %}
+      {% if s and s.matched is false %}<span class="sub voice-sample-note">{% if s.language %}Sample in {{ language_name(s.language) }}{% else %}Sample language not stated{% endif %}</span>
+      {% elif s and s.matched and v.languages and s.language.split('-')[0] != v.languages[0].split('-')[0] %}<span class="sub voice-sample-note">Sample in {{ language_name(s.language) }}</span>{% endif %}
+      <span class="sub voice-error" role="status" hidden>Sample unavailable. The provider may have moved it.</span>
+    </th>
+    {% if names %}<td class="hide-sm provider-cell"><a class="with-logo" href="/providers/{{ r.provider_id }}">{{ cells.logo(r.provider_id, pname) }}{{ pname }}</a></td>{% endif %}
+    <td class="hide-sm">{{ v.gender|capitalize if v.gender else "–" }}</td>
+    <td class="hide-sm">{{ (v.age|replace('_', ' '))|capitalize if v.age else "–" }}</td>
+    <td class="hide-sm">{{ (v.accent.replace('_', ' '))|capitalize if v.accent else "–" }}</td>
+    <td class="hide-sm lang-cell">{% if "*" in v.languages %}Multilingual{% elif v.languages %}{{ language_name(v.languages[0]) }}{% if v.languages|length > 1 %}<span class="plus-n">+{{ v.languages|length - 1 }}</span>{% endif %}{% else %}<span class="muted">–</span>{% endif %}{% if chips and v.description %}<span class="sub">{{ chips|join(", ") }}</span>{% endif %}</td>
+    <td class="num hide-sm voice-id-cell"><span class="voice-id"><code translate="no" title="{{ v.id }}">{{ v.id }}</code>
       <button type="button" class="copy-btn" data-copy="{{ v.id }}" aria-label="Copy voice id {{ v.id }}">
         <svg viewBox="0 0 16 16" aria-hidden="true" class="i-copy"><rect x="5" y="5" width="8.5" height="8.5" rx="1"/><path d="M11 5V3.5a1 1 0 0 0-1-1H3.5a1 1 0 0 0-1 1V10a1 1 0 0 0 1 1H5"/></svg>
         <svg viewBox="0 0 16 16" aria-hidden="true" class="i-check"><path d="M3.5 8.5l3 3 6-7"/></svg>
-      </button>
-    </div>
-  </li>
+      </button></span></td>
+  </tr>
   {% endfor %}
-</ul>
+  </tbody>
+</table>
+</div>

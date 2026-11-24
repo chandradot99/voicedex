@@ -34,13 +34,8 @@
           </select>
         </label>
       </details>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("person") }}<span>Gender</span>{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Gender</legend>
-          <label class="opt"><input type="radio" name="gender" value="" {% if not f.gender %}checked{% endif %}><span>Any</span><i>{{ "{:,}".format(fc.gender_total) }}</i></label>
-          {% for g in genders %}<label class="opt"><input type="radio" name="gender" value="{{ g }}" {% if f.gender == g %}checked{% endif %}><span>{{ g|capitalize }}</span><i>{{ "{:,}".format(fc.gender[g]) }}</i></label>{% endfor %}
-        </fieldset>
-      </details>
+      {% if f.gender %}<input type="hidden" name="gender" value="{{ f.gender }}">{% endif %}
+      {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
       <details class="facet-group" open>
         <summary>{{ icons.icon("play") }}<span>Sample</span>{{ icons.icon("chevron") }}</summary>
         <fieldset class="facet"><legend class="visually-hidden">Sample</legend>
@@ -53,13 +48,20 @@
 
   <div class="bench-main">
   {% if f.model and f.provider %}<p class="filter-note">Voices that work with <code translate="no">{{ f.model }}</code>. <a href="/voices?provider={{ f.provider }}">Show all {{ f.provider }} voices</a></p>{% endif %}
+  <nav class="type-tabs" aria-label="Gender">
+    <a href="/voices?{{ qs(gender=None, page=None) }}" {% if not f.gender %}aria-current="page"{% endif %}>{{ icons.icon("wave") }}All<i>{{ "{:,}".format(fc.gender_total) }}</i></a>
+    {% for g in genders %}<a href="/voices?{{ qs(gender=g, page=None) }}" {% if f.gender == g %}aria-current="page"{% endif %}>{{ g|capitalize }}<i>{{ "{:,}".format(fc.gender[g]) }}</i></a>{% endfor %}
+  </nav>
   <div class="result-bar">
     <p class="result-count" role="status">{{ "{:,}".format(total) }} match{{ 'es' if total != 1 }}</p>
     {% if tokens %}
     <div class="tokens">{% for label, value, rest in tokens %}<a class="token" href="/voices?{{ rest }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}</div>
     <a class="btn-link clear-all" href="/voices">Clear all</a>
     {% endif %}
-    <div class="view-tools"><button type="button" class="btn-secondary density-toggle hide-sm" aria-pressed="false" hidden>Compact rows</button></div>
+    <div class="view-tools">
+      <nav class="seg seg-sm" aria-label="Sort voices">{% for key, label in sorts.items() %}<a href="/voices?{{ qs(sort=key or None, page=None) }}" {% if f.sort == key %}aria-current="true"{% endif %}>{{ label }}</a>{% endfor %}</nav>
+      <button type="button" class="btn-secondary density-toggle hide-sm" aria-pressed="false" hidden>Compact rows</button>
+    </div>
   </div>
   {% if rows %}
     {% include "_voice_grid.html" %}
