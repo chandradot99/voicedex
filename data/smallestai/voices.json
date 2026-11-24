@@ -1272,7 +1272,6 @@
     "age": "young",
     "category": "premade",
     "compatible_models": [
-      "lightning_v3.1",
       "lightning_v3.1_pro"
     ],
     "first_seen": "2026-11-16",
@@ -1283,7 +1282,7 @@
       "en"
     ],
     "name": "Anvita",
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-24",
     "use_cases": [
       "Customer Support"
     ]
@@ -9634,7 +9633,6 @@
     "age": "middle aged",
     "category": "premade",
     "compatible_models": [
-      "lightning_v3.1",
       "lightning_v3.1_pro"
     ],
     "first_seen": "2026-11-16",
@@ -9645,7 +9643,7 @@
       "en"
     ],
     "name": "Mohan",
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-24",
     "use_cases": [
       "Customer Support"
     ]
@@ -11169,7 +11167,6 @@
     "age": "young",
     "category": "premade",
     "compatible_models": [
-      "lightning_v3.1",
       "lightning_v3.1_pro"
     ],
     "first_seen": "2026-11-16",
@@ -11180,7 +11177,7 @@
       "en"
     ],
     "name": "Prisha",
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-24",
     "use_cases": [
       "Customer Support"
     ]
@@ -12265,7 +12262,6 @@
     "age": "young",
     "category": "premade",
     "compatible_models": [
-      "lightning_v3.1",
       "lightning_v3.1_pro"
     ],
     "first_seen": "2026-11-16",
@@ -12277,7 +12273,7 @@
       "en"
     ],
     "name": "Rutuja",
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-24",
     "use_cases": [
       "Customer Support"
     ]
@@ -13079,7 +13075,6 @@
     "age": "young",
     "category": "premade",
     "compatible_models": [
-      "lightning_v3.1",
       "lightning_v3.1_pro"
     ],
     "first_seen": "2026-11-16",
@@ -13090,7 +13085,7 @@
       "en"
     ],
     "name": "Shaurya",
-    "updated_at": "2026-11-16",
+    "updated_at": "2026-11-24",
     "use_cases": [
       "Customer Support"
     ]
@@ -14320,6 +14315,26 @@
       "Customer support agent",
       "Educational",
       "Narration"
+    ]
+  },
+  {
+    "accent": "indian",
+    "age": "middle aged",
+    "category": "premade",
+    "compatible_models": [
+      "lightning_v3.1_pro"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "tanmay",
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "name": "Tanmay",
+    "updated_at": "2026-11-24",
+    "use_cases": [
+      "Customer Support"
     ]
   },
   {

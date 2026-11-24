@@ -1,6 +1,100 @@
 [
   {
     "audio_formats": [
+      "pcm"
+    ],
+    "description": "Original full-duplex English speech-to-speech model with barge-in and tool calling; 48 kHz output.",
+    "first_seen": "2026-11-24",
+    "id": "hydra-v1.0",
+    "interfaces": [
+      "websocket"
+    ],
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "barge_in": true,
+      "docs_sources": [
+        "https://docs.smallest.ai/model-cards/speech-to-speech/hydra",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ],
+      "endpoint": "wss://api.smallest.ai/waves/v1/s2s",
+      "input_audio": "PCM16 LE, 16 kHz, mono",
+      "note": "Bare ?model=hydra routes to hydra-v1.0 and is deprecated (since 2026-08-20, no removal date)",
+      "output_audio": "PCM16 LE mono, 48 kHz fixed",
+      "pricing_note": "Not public; billed per session minute via account manager",
+      "tool_calling": true,
+      "voices": 14
+    },
+    "name": "Hydra v1.0",
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models",
+        "https://docs.smallest.ai/model-cards/speech-to-speech/hydra"
+      ]
+    },
+    "sample_rates_hz": [
+      16000,
+      48000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "pcm"
+    ],
+    "description": "Full-duplex English speech-to-speech model over a single WebSocket with native barge-in and tool calling.",
+    "first_seen": "2026-11-24",
+    "id": "hydra-v1.1",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "en"
+    ],
+    "meta": {
+      "barge_in": true,
+      "docs_sources": [
+        "https://docs.smallest.ai/model-cards/speech-to-speech/hydra",
+        "https://docs.smallest.ai/models/changelog/general/2026/8/20",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ],
+      "endpoint": "wss://api.smallest.ai/waves/v1/s2s",
+      "input_audio": "PCM16 LE, 16 kHz, mono",
+      "output_audio": "PCM16 LE mono, 24 kHz default, configurable 8000-48000 Hz",
+      "pricing_note": "Not public; billed per session minute via account manager",
+      "tool_calling": true,
+      "voices": 19
+    },
+    "name": "Hydra v1.1",
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/api-reference/deprecations/models",
+        "https://docs.smallest.ai/model-cards/speech-to-speech/hydra"
+      ]
+    },
+    "recommended": true,
+    "recommended_for": "voice assistants and phone agents (full-duplex, barge-in, tool calling)",
+    "released_on": "2026-08-20",
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      48000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
       "alaw",
       "flac",
       "m4a",

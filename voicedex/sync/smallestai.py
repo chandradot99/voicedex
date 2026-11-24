@@ -5,6 +5,7 @@ Source: mixed
   - TTS voices: GET https://api.smallest.ai/waves/v1/{model}/get_voices (auth required)
   - TTS models: AI-parsed from docs
   - STT models: AI-parsed from docs
+  - STS models (Hydra): AI-parsed from docs
 
 Voice endpoint is per-model. Voices are fetched for the default model (lightning-v3.1).
 
@@ -43,6 +44,11 @@ _DOCS_URLS = [
     "https://docs.smallest.ai/api-reference/deprecations/models",
 ]
 
+_STS_DOCS_URLS = [
+    "https://docs.smallest.ai/model-cards/speech-to-speech/hydra",
+    "https://docs.smallest.ai/api-reference/deprecations/models",
+]
+
 _TTS_MODEL_GUIDANCE = (
     "Return every Lightning TTS model id the API accepts (exact ids). Keep deprecated models with a "
     "published shutdown date (eol_date); exclude those deprecated with no date. is_default=true for "
@@ -50,6 +56,11 @@ _TTS_MODEL_GUIDANCE = (
 )
 _STT_MODEL_GUIDANCE = (
     "Return every Pulse STT model id the API accepts. is_default=true for the model the docs call current."
+)
+
+_STS_MODEL_GUIDANCE = (
+    "Return every Hydra speech-to-speech model id accepted in ?model= on the s2s WebSocket (exact ids, not "
+    "deprecated bare tags). is_default=true for the version the changelog/deprecations call current."
 )
 
 _GENDER_MAP = {"male": "male", "female": "female", "neutral": "neutral"}
@@ -60,11 +71,13 @@ class SmallestAISyncer(ProviderSyncer):
     source = "mixed"
 
     async def sync(self) -> SyncResult:
-        (tts_models, tts_notes), (stt_models, stt_notes) = await asyncio.gather(
+        (tts_models, tts_notes), (stt_models, stt_notes), (sts_models, _) = await asyncio.gather(
             parse_models_from_docs(seed_urls=_DOCS_URLS, provider_id=self.provider_id,
                                    model_type="tts", guidance=_TTS_MODEL_GUIDANCE),
             parse_models_from_docs(seed_urls=_DOCS_URLS, provider_id=self.provider_id,
                                    model_type="stt", guidance=_STT_MODEL_GUIDANCE),
+            parse_models_from_docs(seed_urls=_STS_DOCS_URLS, provider_id=self.provider_id,
+                                   model_type="sts", guidance=_STS_MODEL_GUIDANCE),
         )
         # Voices are per-model endpoints, so the model list decides which endpoints to query.
         voices_data = await self._fetch_voices_by_model([_slug(m.model_id) for m in tts_models])
@@ -76,19 +89,20 @@ class SmallestAISyncer(ProviderSyncer):
         )
         sync_notes = (
             f"{len(tts_voices)} voices. {len(tts_models)} TTS models, "
-            f"{len(stt_models)} STT models (cache)."
+            f"{len(stt_models)} STT, {len(sts_models)} STS models (cache)."
             if from_cache else
             f"{len(tts_voices)} voices. {len(tts_models)} TTS models, "
-            f"{len(stt_models)} STT models."
+            f"{len(stt_models)} STT, {len(sts_models)} STS models."
         )
 
         return SyncResult(
             stt_models=stt_models,
             tts_models=tts_models,
+            sts_models=sts_models,
             tts_voices=tts_voices,
             source=self.source,
             api_urls=[_VOICES_URL.format(slug="{model}")],
-            docs_urls=_DOCS_URLS,
+            docs_urls=list(dict.fromkeys(_DOCS_URLS + _STS_DOCS_URLS)),
             notes=sync_notes,
         )
 
