@@ -4,13 +4,12 @@
       "mulaw",
       "pcm"
     ],
-    "description": "Phonic's latest speech-to-speech model for agentic voice conversations, with tool calls during user speech and mid-call language switching.",
+    "description": "Phonic's speech-to-speech model for agentic voice conversations (Oct 2026), with tool calls during user speech and mid-call language switching.",
     "first_seen": "2026-11-18",
     "id": "phonic-1",
     "interfaces": [
       "websocket"
     ],
-    "is_default": true,
     "languages": [
       "ar",
       "az",
@@ -104,7 +103,7 @@
       ]
     },
     "provenance": {
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-24",
       "method": "docs",
       "urls": [
         "https://docs.phonic.ai/docs/get-started/overview.md",
@@ -115,6 +114,131 @@
       ]
     },
     "released_on": "2026-10-29",
+    "sample_rates_hz": [
+      8000,
+      16000,
+      24000,
+      44100
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "mulaw",
+      "pcm"
+    ],
+    "description": "Phonic's latest speech-to-speech model (Nov 2026), improving turn-taking, reasoning/task performance and speech naturalness over Phonic-1.",
+    "first_seen": "2026-11-24",
+    "id": "phonic-1.1",
+    "interfaces": [
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "ar",
+      "az",
+      "bg",
+      "bn",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fi",
+      "fil",
+      "fr",
+      "gu",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ka",
+      "km",
+      "kn",
+      "ko",
+      "lt",
+      "lv",
+      "ml",
+      "mr",
+      "ms",
+      "ne",
+      "nl",
+      "no",
+      "pa",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "si",
+      "sk",
+      "sq",
+      "sv",
+      "sw",
+      "ta",
+      "te",
+      "th",
+      "tr",
+      "uk",
+      "ur",
+      "vi",
+      "yue",
+      "zh"
+    ],
+    "meta": {
+      "audio_format_values": [
+        "pcm_44100",
+        "pcm_24000",
+        "pcm_16000",
+        "pcm_8000",
+        "mulaw_8000"
+      ],
+      "boosted_keywords": true,
+      "docs_sources": [
+        "https://phonic.ai/blog/phonic-1-1",
+        "https://docs.phonic.ai/api-reference/agents/create.md"
+      ],
+      "intelligence_level": [
+        "standard",
+        "high"
+      ],
+      "languages_note": "Docs say 51 languages; the table lists 52 codes (Filipino `fil`, Cantonese `yue`).",
+      "max_conversation_duration_sec_default": 7200,
+      "notes": "Model id from the agent `model` enum (phonic-0.5, phonic-1, phonic-1.1). Languages, audio formats and agent options are documented per agent, not per model; copied from Phonic-1. The docs overview still calls Phonic-1 the latest model.",
+      "pii_phi_redaction": true,
+      "pronunciation_dictionary": true
+    },
+    "name": "Phonic-1.1",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "notes": "Starter plan, per conversation minute; pricing page lists plan rates without distinguishing models. Enterprise: custom.",
+      "price_usd": 0.07,
+      "source_url": "https://phonic.ai/pricing",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "Pro plan ($200 monthly minimum)",
+          "price_usd": 0.065,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.phonic.ai/docs/get-started/overview.md",
+        "https://docs.phonic.ai/api-reference/agents/create.md",
+        "https://docs.phonic.ai/docs/build/agents/supported_languages.md",
+        "https://phonic.ai/pricing",
+        "https://docs.phonic.ai/docs/build/agents/voices.md"
+      ]
+    },
+    "released_on": "2026-11-23",
     "sample_rates_hz": [
       8000,
       16000,

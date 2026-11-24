@@ -14,7 +14,7 @@
   ],
   "headquarters": "US",
   "id": "phonic",
-  "last_synced": "2026-11-18",
+  "last_synced": "2026-11-24",
   "links": {
     "api_reference": "https://docs.phonic.ai/api-reference",
     "docs": "https://docs.phonic.ai",
@@ -24,7 +24,7 @@
   "source": "docs",
   "type": "sts",
   "voices_source": {
-    "as_of": "2026-11-18",
+    "as_of": "2026-11-24",
     "method": "docs",
     "urls": [
       "https://docs.phonic.ai/docs/get-started/overview.md",
