@@ -3,6 +3,15 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "emotion",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "Gemini 2.5 Flash Live API preview model with native audio reasoning for bidirectional voice and video agents.",
     "eol_date": "2027-03-31",
     "first_seen": "2026-11-18",
@@ -15,10 +24,17 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "for input transcription, up to 1,000 terms",
+        "emotion": "affective dialog (opt-in, v1beta)",
+        "video_input": "frames up to 1 fps"
+      },
       "deprecation_notice": "Gemini API deprecations page: shutdown March 31, 2027 (earliest possible retirement date)",
       "docs_sources": [
         "https://aistudio.google.com/docs/changelog",
-        "https://aistudio.google.com/docs/deprecations"
+        "https://aistudio.google.com/docs/deprecations",
+        "https://aistudio.google.com/docs/models/gemini-2.5-flash-native-audio-preview-12-2025",
+        "https://aistudio.google.com/docs/live-api/capabilities"
       ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
@@ -81,6 +97,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "Earlier audio-to-audio Live API preview model; Google now recommends gemini-3.8-live.",
     "first_seen": "2026-11-18",
     "id": "gemini-3.1-flash-live-preview",
@@ -92,12 +116,18 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "for input transcription, up to 1,000 terms",
+        "function_calling": "synchronous only",
+        "video_input": "frames up to 1 fps"
+      },
       "deprecation_notice": "Listed as legacy; no shutdown date announced",
       "docs_sources": [
         "https://aistudio.google.com/docs/changelog",
         "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
         "https://aistudio.google.com/docs/models/gemini-3.1-flash-live-preview",
-        "https://aistudio.google.com/docs/deprecations"
+        "https://aistudio.google.com/docs/deprecations",
+        "https://aistudio.google.com/docs/live-api/capabilities"
       ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
@@ -164,6 +194,10 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "transcription",
+      "translation"
+    ],
     "description": "Real-time speech-to-speech translation model on the Live API covering 70+ languages.",
     "first_seen": "2026-11-18",
     "id": "gemini-3.5-live-translate-preview",
@@ -175,10 +209,15 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "capability_notes": {
+        "translation": "70+ languages; target set per session"
+      },
       "docs_sources": [
         "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
         "https://aistudio.google.com/docs/models",
-        "https://aistudio.google.com/docs/deprecations"
+        "https://aistudio.google.com/docs/deprecations",
+        "https://aistudio.google.com/docs/models/gemini-3.5-live-translate-preview",
+        "https://aistudio.google.com/docs/live-api/live-translate"
       ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
@@ -229,6 +268,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "Google's recommended Live API native-audio model for low-latency voice agents (text, image and audio in; text and audio out), on the Gemini API and Vertex AI.",
     "first_seen": "2026-11-18",
     "id": "gemini-3.8-live",
@@ -240,12 +287,18 @@
       "*"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "for input transcription, up to 1,000 terms",
+        "video_input": "frames up to 1 fps"
+      },
       "docs_sources": [
         "https://aistudio.google.com/docs/changelog",
         "https://aistudio.google.com/docs/models",
         "https://aistudio.google.com/docs/deprecations",
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api",
-        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions"
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
+        "https://aistudio.google.com/docs/models/gemini-3.8-live",
+        "https://aistudio.google.com/docs/live-api/capabilities"
       ],
       "features": [
         "function_calling",
@@ -329,6 +382,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "High-reasoning variant of Gemini 3.8 Live with configurable thinking budgets for multi-step reasoning in live audio sessions.",
     "family": "gemini-3.8-live",
     "first_seen": "2026-11-18",
@@ -340,10 +401,17 @@
       "*"
     ],
     "meta": {
+      "capability_notes": {
+        "custom_vocabulary": "for input transcription, up to 1,000 terms",
+        "function_calling": "asynchronous (NON_BLOCKING) only",
+        "video_input": "frames up to 1 fps"
+      },
       "docs_sources": [
         "https://aistudio.google.com/docs/changelog",
         "https://aistudio.google.com/docs/models",
-        "https://aistudio.google.com/docs/models/gemini-3.1-flash-live-preview"
+        "https://aistudio.google.com/docs/models/gemini-3.1-flash-live-preview",
+        "https://aistudio.google.com/docs/models/gemini-3.8-live-extended-thinking",
+        "https://aistudio.google.com/docs/live-api/capabilities"
       ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
@@ -413,6 +481,14 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "emotion",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "video_input"
+    ],
     "description": "Vertex AI GA Live API native-audio model (24 languages, 30 HD voices) with emotion-aware tone; retiring in favour of gemini-3.8-live.",
     "eol_date": "2026-12-13",
     "first_seen": "2026-11-18",
@@ -424,12 +500,18 @@
       "*"
     ],
     "meta": {
+      "capability_notes": {
+        "emotion": "affective dialog (opt-in)",
+        "video_input": "JPEG frames at 1 fps"
+      },
       "context_window": 128000,
       "deprecation_notice": "Vertex AI model versions: released 2025-12-12, retirement 2026-12-13",
       "docs_sources": [
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
-        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-live-api",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api/configure-gemini-capabilities"
       ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "languages_note": "24 languages, 30 HD voices",
