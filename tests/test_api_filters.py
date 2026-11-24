@@ -206,3 +206,34 @@ def test_api_etag_changes_with_code(monkeypatch):
     monkeypatch.setattr(main, "_CODE_VERSION", "other-code")
     monkeypatch.setattr(main, "_API_ETAGS", {})
     assert main.api_etag('"data"') != before
+
+
+async def test_model_parity_filters_and_sort(client):
+    ids = lambda r: [m["model_id"] for m in r.json()["data"]]          # noqa: E731
+    cheap = await client.get("/v1/models", params={"max_price_usd": 40})
+    assert cheap.status_code == 200 and "tts-main" in ids(cheap)
+    assert ids(await client.get("/v1/models", params={"max_price_usd": 1})) == []
+    priced = await client.get("/v1/models", params={"sort": "price"})
+    assert priced.status_code == 200 and ids(priced)[0] == "tts-main"        # the only USD-priced model leads
+    assert (await client.get("/v1/models", params={"sort": "newest"})).status_code == 200
+    assert (await client.get("/v1/models", params={"sort": "loudest"})).status_code == 400
+    ending = (await client.get("/v1/models", params={"shutting_down": "true"})).json()["data"]
+    assert all(m["eol_date"] for m in ending)
+    live = (await client.get("/v1/models", params={"realtime": "true"})).json()["data"]
+    assert all({"websocket", "webrtc"} & set(m["interfaces"] or []) or m["type"] == "sts" for m in live)
+    assert (await client.get("/v1/providers/zz-test-provider/models", params={"sort": "price"})).status_code == 200
+
+
+async def test_voice_parity_filters(client):
+    names = lambda r: [v["display_name"] for v in r.json()["data"]]     # noqa: E731
+    assert names(await client.get("/v1/voices", params={"accent": "British"})) == ["Anywhere Voice"]
+    assert names(await client.get("/v1/voices", params={"multilingual": "true"})) == ["Anywhere Voice"]
+    assert names(await client.get("/v1/voices", params={"use_case": "narration"})) == []   # case-insensitive label
+    assert (await client.get("/v1/voices", params={"use_case": "karaoke"})).status_code == 400
+    assert (await client.get("/v1/voices", params={"age": "Young"})).status_code == 200
+    assert (await client.get("/v1/providers/zz-test-provider/voices", params={"has_sample": "false"})).status_code == 200
+
+
+async def test_provider_list_filters(client):
+    assert (await client.get("/v1/providers", params={"compliance": "hipaa"})).status_code == 200
+    assert (await client.get("/v1/providers", params={"headquarters": "zz"})).json() == []

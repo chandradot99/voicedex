@@ -36,6 +36,11 @@ async def list_all_models(
     updated_since: datetime | None = Query(None, description=UPDATED_SINCE_DESC),
     include_deprecated: bool | None = Query(None, description="Include deprecated models."),
     open_weights: bool | None = Query(None, description=OPEN_WEIGHTS_DESC),
+    realtime: bool | None = Query(None, description="true: models served over WebSocket or WebRTC (live voice agents, realtime transcription)."),
+    recommended: bool | None = Query(None, description="true: models the provider's docs point new integrations to."),
+    shutting_down: bool | None = Query(None, description="true: only models with an announced shutdown date (eol_date)."),
+    max_price_usd: float | None = Query(None, ge=0, description="Upper bound on the normalized USD price (TTS per 1M characters, STT/STS per hour). Excludes models without a comparable USD price."),
+    sort: str | None = Query(None, description="name (default), price (cheapest normalized USD first), newest (latest release first)."),
     limit: int = Query(100, ge=1, le=500),
     offset: int = Query(0, ge=0),
     catalog: Catalog = Depends(get_catalog),
@@ -47,8 +52,9 @@ async def list_all_models(
         provider=provider, model_type=model_type, language=language, capabilities=capabilities,
         lifecycle=lifecycle, region=region, search=search,
         updated_since=updated_since, include_deprecated=include_deprecated, open_weights=open_weights,
+        realtime=realtime, recommended=recommended, shutting_down=shutting_down, max_price_usd=max_price_usd,
     )
-    rows = sort_models(rows, cross_provider=True)
+    rows = sort_models(rows, cross_provider=True, sort=sort)
     page = rows[offset:offset + limit]
     return PaginatedModels(total=len(rows), limit=limit, offset=offset,
                            data=[ModelOut.build(r.provider_id, r.model) for r in page])
@@ -68,6 +74,10 @@ async def list_all_voices(
     search: str | None = Query(None, description="Case-insensitive match on name, id, tags, description"),
     updated_since: datetime | None = Query(None, description=UPDATED_SINCE_DESC),
     include_deprecated: bool | None = Query(None, description="Include deprecated voices."),
+    use_case: str | None = Query(None, description="Conversational, Narration, Audiobooks & stories, Characters & gaming, Customer service, Ads & social, Education, Podcasts, News, Meditation (normalized from providers' use cases and tags)."),
+    age: str | None = Query(None, description="Young, Adult, Middle-aged, Older, Teen, Child (normalized from providers' age labels)."),
+    has_sample: bool | None = Query(None, description="true: only voices with an audio preview."),
+    multilingual: bool | None = Query(None, description="true: voices that speak several languages."),
     limit: int = Query(100, ge=1, le=500),
     offset: int = Query(0, ge=0),
     catalog: Catalog = Depends(get_catalog),
@@ -79,6 +89,7 @@ async def list_all_voices(
         provider=provider, gender=gender, category=category, language=language, model=model,
         accent=accent, capabilities=capabilities, search=search,
         updated_since=updated_since, include_deprecated=include_deprecated,
+        use_case=use_case, age=age, has_sample=has_sample, multilingual=multilingual,
     )
     rows = sort_voices(rows, cross_provider=True)
     page = rows[offset:offset + limit]

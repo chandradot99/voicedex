@@ -224,3 +224,16 @@ async def test_search_voices_facets(client):                         # `client` 
     r = m.search_voices(accent="british", emotion=True)
     assert "accent=British" in r["browse_url"] and "emotion=1" in r["browse_url"]
     assert {"age", "use_cases"} <= set(r["results"][0])
+
+
+async def test_search_models_and_providers_parity(client):
+    assert m.search_models(sort="newest")["returned"] >= 1
+    assert all(r.get("key") for r in m.search_models(realtime=False)["results"])
+    rec = {r["key"] for r in m.search_models(recommended=True, collapse_snapshots=False)["results"]}
+    not_rec = {r["key"] for r in m.search_models(recommended=False, collapse_snapshots=False)["results"]}
+    every = {r["key"] for r in m.search_models(collapse_snapshots=False)["results"]}
+    assert rec | not_rec == every and not rec & not_rec                 # the two halves partition the catalog
+    assert m.search_models(preview=True)["returned"] <= m.search_models()["returned"]
+    assert m.list_providers(compliance=["pci_dss", "hipaa", "soc2", "gdpr", "iso27001"])["total"] == 0
+    assert m.list_providers(headquarters="zz")["total"] == 0
+    assert "compliance" in m.list_providers()["providers"][0]

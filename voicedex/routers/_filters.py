@@ -42,6 +42,16 @@ def _enum(raw: str | None, valid: set[str], name: str) -> str | None:
     return val
 
 
+def _enum_ci(raw: str | None, valid: list[str], name: str) -> str | None:
+    """Case-insensitive match against labels like "Audiobooks & stories"; returns the canonical label."""
+    if not raw:
+        return None
+    hit = next((v for v in valid if v.lower() == raw.strip().lower()), None)
+    if hit is None:
+        raise HTTPException(400, f"Invalid {name}: {raw!r}. Allowed: {valid}")
+    return hit
+
+
 def parse_capabilities(raw: str | None, valid: frozenset[str], kind: str) -> list[str]:
     parts = _csv(raw)
     bad = [p for p in parts if p not in valid]
@@ -85,7 +95,12 @@ def filter_models(
     updated_since: datetime | None = None,
     include_deprecated: bool | None = None,
     open_weights: bool | None = None,
+    realtime: bool | None = None,
+    recommended: bool | None = None,
+    shutting_down: bool | None = None,
+    max_price_usd: float | None = None,
 ) -> list[ModelRow]:
+    from voicedex.web import views
     mtype = _enum(model_type, VALID_MODEL_TYPES, "type")
     caps = set(parse_capabilities(capabilities, MODEL_CAPABILITIES, "model"))
     stages = set(parse_lifecycles(lifecycle))
@@ -118,6 +133,16 @@ def filter_models(
             continue
         if open_weights is not None and (m.open_weights is not None) != open_weights:
             continue
+        if realtime is not None and views.is_realtime(m) != realtime:
+            continue
+        if recommended is not None and (m.recommended is True) != recommended:
+            continue
+        if shutting_down is not None and (m.eol_date is not None) != shutting_down:
+            continue
+        if max_price_usd is not None:
+            norm = views.normalized_price(m)
+            if norm is None or norm[0] > max_price_usd:
+                continue
         out.append(r)
     return out
 
@@ -135,13 +160,21 @@ def filter_voices(
     search: str | None = None,
     updated_since: datetime | None = None,
     include_deprecated: bool | None = None,
+    use_case: str | None = None,
+    age: str | None = None,
+    has_sample: bool | None = None,
+    multilingual: bool | None = None,
 ) -> list[VoiceRow]:
+    from voicedex.web import views
     gender_val = _enum(gender, VALID_GENDERS, "gender")
+    use_val = _enum_ci(use_case, list(views.VOICE_USES), "use_case")
+    age_val = _enum_ci(age, list(views.VOICE_AGES), "age")
     category_val = _enum(category, VALID_CATEGORIES, "category")
     caps = set(parse_capabilities(capabilities, VOICE_CAPABILITIES, "voice"))
     incl_dep = effective_include_deprecated(include_deprecated, updated_since)
     since = _since(updated_since)
-    accent_val = accent.strip().lower() if accent else None
+    norm_accent = lambda a: (a or "").replace("_", " ").replace("-", " ").strip().lower()   # noqa: E731
+    accent_val = norm_accent(accent) if accent else None
     needle = search.strip().lower() if search else None
 
     out = []
@@ -159,7 +192,16 @@ def filter_voices(
             continue
         if model and model not in v.compatible_models and "*" not in v.compatible_models:
             continue
-        if accent_val and v.accent != accent_val:
+        if accent_val and norm_accent(v.accent) != accent_val:
+            continue
+        if use_val and use_val not in views._uses(v):
+            continue
+        if age_val and views._age_bucket(v.age) != age_val:
+            continue
+        if has_sample is not None and bool(v.preview_url or v.previews) != has_sample:
+            continue
+        if multilingual is not None and ("*" in v.languages or len(v.languages) > 1
+                                         or "multilingual_native" in v.capabilities) != multilingual:
             continue
         if caps and not caps <= set(v.capabilities):
             continue
@@ -173,7 +215,18 @@ def filter_voices(
     return out
 
 
-def sort_models(rows: list[ModelRow], cross_provider: bool) -> list[ModelRow]:
+MODEL_SORTS = ("name", "price", "newest")
+
+
+def sort_models(rows: list[ModelRow], cross_provider: bool, sort: str | None = None) -> list[ModelRow]:
+    """name (default): provider, then name. price: cheapest normalized USD first, other currencies/units after,
+    unpriced last. newest: latest release first (first_seen when no release date is published)."""
+    from voicedex.web import views
+    sort_val = _enum(sort, set(MODEL_SORTS), "sort")
+    if sort_val == "price":
+        return sorted(rows, key=views.price_sort_key)
+    if sort_val == "newest":
+        return sorted(rows, key=views.newest_model_order)
     key = (lambda r: (r.provider_id, r.model.name.lower(), r.model.id)) if cross_provider \
         else (lambda r: (r.model.name.lower(), r.model.id))
     return sorted(rows, key=key)
