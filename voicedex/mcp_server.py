@@ -550,15 +550,36 @@ def search_voices(
     gender: Literal["male", "female", "neutral"] | None = None,
     model: str | None = None,
     has_sample: bool | None = None,
+    use_case: Literal["Conversational", "Narration", "Audiobooks & stories", "Characters & gaming",
+                      "Customer service", "Ads & social", "Education", "Podcasts", "News", "Meditation"] | None = None,
+    age: Literal["Young", "Adult", "Middle-aged", "Older", "Teen", "Child"] | None = None,
+    accent: str | None = None,
+    emotion: bool | None = None,
+    multilingual: bool | None = None,
     query: str | None = None,
     limit: int = 20,
     offset: int = 0,
 ) -> dict[str, Any]:
     """Search stock voices (15,000+, so results are compact and paged: pass next_offset for more).
     model: a model id of that provider (voices compatible with it). has_sample=true returns only voices with
-    an audio preview URL."""
+    an audio preview URL. use_case / age / accent (e.g. "British", "Indian") filter on values normalized from
+    each provider's free-text tags; a voice without that information never matches. emotion=true: voices with
+    emotion control; multilingual=true: voices that speak several languages. Results list voices with a sample
+    first, then widely used providers."""
     cat = _cat()
     rows = views.active_voices(cat)
+    fx = lambda r: views.voice_facets(cat, r)                 # noqa: E731
+    if use_case:
+        rows = [r for r in rows if use_case in fx(r)["uses"]]
+    if age:
+        rows = [r for r in rows if fx(r)["age"] == age]
+    if accent:
+        want = accent.strip().lower()
+        rows = [r for r in rows if (fx(r)["accent"] or "").lower() == want]
+    if emotion:
+        rows = [r for r in rows if fx(r)["emotion"]]
+    if multilingual:
+        rows = [r for r in rows if fx(r)["multilingual"]]
     if provider:
         rows = [r for r in rows if r.provider_id == provider]
     if model:
@@ -573,19 +594,28 @@ def search_voices(
         q = query.lower()
         rows = [r for r in rows if q in r.voice.name.lower() or q in (r.voice.description or "").lower()
                 or q in (r.voice.accent or "").lower()]
+    popular = {pid: i for i, pid in enumerate(views.COMPARE_PROVIDERS)}    # same order as the /voices page
+    rows = sorted(rows, key=lambda r: (views.voice_sample(r.voice, language) is None,
+                                       popular.get(r.provider_id, len(popular)), r.provider_id))
     chunk, meta = _page(rows, limit, offset)
     out = []
     for r in chunk:
         v = r.voice
         sample = views.voice_sample(v, language)
         desc = v.description or None
+        facets = fx(r)
         out.append({"provider": r.provider_id, "id": v.id, "name": v.name, "gender": v.gender, "accent": v.accent,
+                    "age": facets["age"], "use_cases": sorted(facets["uses"]),
                     "languages": v.languages[:8] + ([f"+{len(v.languages) - 8} more"] if len(v.languages) > 8 else []),
                     "compatible_models": v.compatible_models[:5] + (["…"] if len(v.compatible_models) > 5 else []),
                     "sample_url": sample.url if sample else None,
                     "description": (desc[:140] + "…") if desc and len(desc) > 140 else desc})
-    return {**meta, "results": out,
-            "browse_url": _site() + "/voices" + (f"?provider={provider}" if provider else "")}
+    from urllib.parse import urlencode
+    params = {"provider": provider, "language": language, "gender": gender, "use": use_case, "age": age,
+              "accent": accent.strip().title() if accent else None, "emotion": "1" if emotion else None,
+              "multi": "1" if multilingual else None, "preview": "1" if has_sample else None, "q": query}
+    qs = urlencode({k: v for k, v in params.items() if v})
+    return {**meta, "results": out, "browse_url": _site() + "/voices" + (f"?{qs}" if qs else "")}
 
 
 @server.tool(annotations=READ_ONLY)
