@@ -50,7 +50,8 @@ templates.env.globals.update(
     site_url=settings.site_url.rstrip("/"),
     asset_v=_asset_version,
     language_name=views.language_name,
-    price_label=views.price_label,
+    price_label=views.price_label, price_parts=views.price_parts, price_group=views.price_group,
+    PRICE_GROUP_LABELS=views.PRICE_GROUP_LABELS,
     model_url=views.model_url,
     model_key=views.model_key,
     variant_label=views.variant_label,
@@ -75,6 +76,7 @@ templates.env.globals.update(
 router = APIRouter(include_in_schema=False)
 
 VOICES_PER_PAGE = 60
+MODELS_PER_PAGE = 100
 MAX_COMPARE = 6
 
 
@@ -232,6 +234,28 @@ def _home_ld(catalog: Catalog, n_models: int, n_voices: int, n_providers: int) -
     return [org, website, dataset]
 
 
+PROVIDER_SORTS = {"models": lambda s: -s.models, "voices": lambda s: -s.voices, "languages": lambda s: -s.languages}
+
+
+@router.get("/providers", response_class=HTMLResponse)
+async def providers_index(request: Request, catalog: Catalog = Depends(get_catalog)):
+    f = {"type": _q(request, "type") if _q(request, "type") in views.TYPE_LABELS else "",
+         "sort": _q(request, "sort") if _q(request, "sort") in PROVIDER_SORTS else ""}
+    summaries = views.provider_summaries(catalog)
+    live = [s for s in summaries if s.status == "active" and (not f["type"] or f["type"] in s.types)]
+    live.sort(key=lambda s: s.name.lower())          # stable base order, so ties under a numeric sort stay A-Z
+    if f["sort"]:
+        live.sort(key=PROVIDER_SORTS[f["sort"]])
+    crumbs = [("Home", "/"), ("Providers", "/providers")]
+    return templates.TemplateResponse(request, "providers.html", {
+        "live": live, "f": f, "qs": lambda **changes: _qs(f, **changes),
+        "retired": [s for s in summaries if s.status != "active"] if not f["type"] else [],
+        "n_live": sum(1 for s in summaries if s.status == "active"),
+        "canonical_path": "/providers",
+        "jsonld": [_breadcrumb_ld(crumbs)],
+    })
+
+
 @router.get("/providers/{provider_id}", response_class=HTMLResponse)
 async def provider_page(request: Request, provider_id: str, catalog: Catalog = Depends(get_catalog)):
     pd = catalog.providers.get(provider_id)
@@ -254,7 +278,7 @@ async def provider_page(request: Request, provider_id: str, catalog: Catalog = D
         "has_alternatives": provider_id in views.alternatives_subjects(catalog),
         "positions": views.price_positions(views.price_spectrum(catalog)),
         "faq": faq,
-        "jsonld": [_breadcrumb_ld([("Home", "/"), (pd.provider.name, f"/providers/{provider_id}")])]
+        "jsonld": [_breadcrumb_ld([("Home", "/"), ("Providers", "/providers"), (pd.provider.name, f"/providers/{provider_id}")])]
                   + ([_faq_ld(faq)] if faq else []),
     })
 
@@ -286,11 +310,21 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
     if f["status"] == "ending" and f["sort"] != "price":
         rows.sort(key=lambda r: (r.model.eol_date, r.provider_id, r.model.id))
     elif f["sort"] == "price":
-        rows.sort(key=lambda r: (views.normalized_price(r.model) or (math.inf,))[0])
+        rows.sort(key=views.price_sort_key)
     else:
         rows.sort(key=lambda r: (r.provider_id, r.model.type, not r.model.is_default, r.model.id))
     ctx = _models_context(catalog, rows, f, usage_raw=_q(request, "usage"))
     ctx["canonical_path"] = _models_canonical(catalog, f)
+    # Paginate after the context is built: the spectrum and the compare keys describe every match, not one page.
+    try:
+        page = max(1, int(_q(request, "page") or 1))
+    except ValueError:
+        page = 1
+    pages = max(1, math.ceil(len(rows) / MODELS_PER_PAGE))
+    page = min(page, pages)
+    start = (page - 1) * MODELS_PER_PAGE
+    ctx.update({"rows": rows[start:start + MODELS_PER_PAGE], "total_rows": len(rows), "page": page, "pages": pages,
+                "first": start + 1, "usage_raw": _q(request, "usage") or ""})
     return templates.TemplateResponse(request, "models.html", ctx)
 
 
@@ -690,6 +724,7 @@ async def sitemap(catalog: Catalog = Depends(get_catalog)):
     models = views.active_models(catalog)
     entries: list[tuple[str, date | None]] = [
         ("/", views.last_modified(models)), ("/models", views.last_modified(models)),
+        ("/providers", views.last_modified(models)),
         ("/voices", views.last_modified(views.active_voices(catalog))), ("/docs", None),
     ]
     for pid in sorted(catalog.providers):

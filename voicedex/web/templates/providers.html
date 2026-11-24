@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Speech AI providers: {{ n_live }} STT, TTS and realtime voice APIs | {{ site_name }}{% endblock %}
+{% block description %}Every speech-to-text, text-to-speech and speech-to-speech provider in the catalog: what each offers, how many models, voices and languages, and where it's based.{% endblock %}
+{% block content %}
+<section class="wrap page-head">
+  <h1>{{ n_live }} speech AI providers</h1>
+  <p class="lede">Every provider in the catalog, with what it offers and how many models, voices and languages it lists. Providers that have shut down stay listed at the bottom.</p>
+</section>
+
+<section class="wrap">
+  <div class="result-bar">
+    <nav class="seg" aria-label="Filter by model type">
+      <a href="/providers?{{ qs(type=None) }}" {% if not f.type %}aria-current="true"{% endif %}>All</a>
+      {% for t in TYPE_LABELS %}<a href="/providers?{{ qs(type=t) }}" {% if f.type == t %}aria-current="true"{% endif %}>{{ TYPE_SHORT[t] }}</a>{% endfor %}
+    </nav>
+    <p class="result-count" role="status">{{ live|length }} provider{{ 's' if live|length != 1 }}{% if f.type %} offering {{ TYPE_LABELS[f.type]|lower }}{% endif %}</p>
+  </div>
+  <div class="table-scroll">
+    <table class="data">
+      <thead>
+        <tr>
+          <th scope="col"><a href="/providers?{{ qs(sort=None) }}" {% if not f.sort %}aria-current="true"{% endif %}>Provider</a></th>
+          <th scope="col">Offers</th>
+          <th scope="col" class="num"><a href="/providers?{{ qs(sort='models') }}" {% if f.sort == 'models' %}aria-current="true"{% endif %}>Models{% if f.sort == 'models' %} ↓{% endif %}</a></th>
+          <th scope="col" class="num hide-sm"><a href="/providers?{{ qs(sort='voices') }}" {% if f.sort == 'voices' %}aria-current="true"{% endif %}>Voices{% if f.sort == 'voices' %} ↓{% endif %}</a></th>
+          <th scope="col" class="num hide-sm"><a href="/providers?{{ qs(sort='languages') }}" {% if f.sort == 'languages' %}aria-current="true"{% endif %}>Languages{% if f.sort == 'languages' %} ↓{% endif %}</a></th>
+          <th scope="col" class="hide-sm">Access</th>
+          <th scope="col" class="hide-sm">Based in</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in live %}
+        <tr>
+          <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
+          <td class="mono types">{% for t in s.types %}<span>{{ TYPE_SHORT[t] }}</span>{% endfor %}</td>
+          <td class="num mono">{{ s.models }}</td>
+          <td class="num mono hide-sm">{{ "{:,}".format(s.voices) if s.voices else "–" }}</td>
+          <td class="num mono hide-sm">{{ s.languages or "–" }}{% if s.multilingual %}<span class="plus" title="Some models support many unlisted languages">+</span>{% endif %}</td>
+          <td class="muted hide-sm">{{ ACCESS_LABELS.get(s.access, s.access) if s.access else "–" }}</td>
+          <td class="muted hide-sm">{{ country_name(s.headquarters) or "–" }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      {% if retired %}
+      <tbody class="retired">
+        <tr class="group-row"><th scope="rowgroup" colspan="7">No longer available</th></tr>
+        {% for s in retired %}
+        <tr>
+          <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
+          <td colspan="6" class="muted">{{ 'Shut down ' ~ s.retired_on if s.retired_on else 'Shut down' }}{% if s.models %}; open weights still published ({{ s.models }}){% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      {% endif %}
+    </table>
+  </div>
+  <p class="more-link"><a href="/alternatives">Find alternatives to a provider</a> · <a href="/coverage">Which providers cover which languages</a></p>
+</section>
+{% endblock %}

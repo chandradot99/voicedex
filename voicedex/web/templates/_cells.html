@@ -1,0 +1,15 @@
+{# Table cells shared by the model tables (/models, landing pages, provider pages). #}
+
+{# Documented features. A missing feature means "not documented", not "unsupported", so zero shows a dash
+   rather than an empty 0/N bar that reads as a bad score. #}
+{% macro feat_cell(m) -%}
+{% set n = m.capabilities|length %}{% set tot = feature_vocab(m.type)|length %}
+<td class="mono feat-count hide-sm">{% if n %}{{ n }}/{{ tot }}<span class="bar" aria-hidden="true"><i style="width: {{ (100 * n / tot)|round }}%"></i></span>{% else %}<span class="muted" title="No features documented">–</span>{% endif %}</td>
+{%- endmacro %}
+
+{# Price as amount + unit, so amounts right-align. The bar is a position on the comparable (USD, normalized)
+   spectrum, so it only appears for prices that are on it. #}
+{% macro price_cell(m, k, positions) -%}
+{% set pp = price_parts(m) %}
+<td class="num price-cell">{% if pp %}<span class="amt mono">{{ pp[0] }}</span><span class="unit">{{ pp[1] }}</span>{% else %}<span class="muted">–</span>{% endif %}{% if k in positions %}<span class="bar" aria-hidden="true"><i style="width: {{ positions[k]|round }}%"></i></span>{% endif %}</td>
+{%- endmacro %}

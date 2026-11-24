@@ -273,7 +273,7 @@ if (matchMedia("(max-width: 760px)").matches) {
   const PAGES = [
     { kind: "Go to", main: "Models", sub: "Filter, sort by price, compare", url: "/models" },
     { kind: "Go to", main: "Voices", sub: "Browse and play samples", url: "/voices" },
-    { kind: "Go to", main: "Providers", sub: "Every provider, including retired ones", url: "/#providers" },
+    { kind: "Go to", main: "Providers", sub: "Every provider, including retired ones", url: "/providers" },
     { kind: "Go to", main: "Compare", sub: "Models side by side", url: "/compare" },
     { kind: "Go to", main: "API docs", sub: "Free REST API, no key", url: "/docs" },
   ];
