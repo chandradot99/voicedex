@@ -1,3 +1,4 @@
+{% import "_cells.html" as cells %}
 <div class="voice-head" aria-hidden="true"><span></span><span>Voice</span><span>Traits and language</span><span>Voice id</span></div>
 <ul class="voice-list">
   {% set filter_lang = f.language if f is defined and f else None %}
@@ -17,7 +18,7 @@
       {% endif %}
     </div>
     <div class="voice-main">
-      <p class="voice-name">{{ v.name }}{% if names %}<a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ pname }}</a>{% endif %}</p>
+      <p class="voice-name">{{ v.name }}{% if names %}<a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ cells.logo(r.provider_id, pname, "xs") }}{{ pname }}</a>{% endif %}</p>
       {% if v.description %}<p class="voice-desc" title="{{ v.description }}">{{ v.description|truncate(140) }}</p>{% endif %}
       {% if s and s.matched is false %}<p class="voice-sample-note">{% if s.language %}Sample in {{ language_name(s.language) }}{% else %}Sample language not stated{% endif %}</p>
       {% elif s and s.matched and v.languages and s.language.split('-')[0] != v.languages[0].split('-')[0] %}<p class="voice-sample-note">Sample in {{ language_name(s.language) }}</p>{% endif %}

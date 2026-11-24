@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_icons.html" as icons %}
 {% block title %}Browse text-to-speech voices | {{ site_name }}{% endblock %}
 {% block content %}
 <section class="wrap page-head">
@@ -11,30 +12,40 @@
     <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
     <form class="filters facets" method="get" action="/voices" aria-label="Filter voices">
       {% if f.model %}<input type="hidden" name="model" value="{{ f.model }}">{% endif %}
-      <label class="field">Name, accent or style
-        <input type="search" name="q" value="{{ f.q }}" placeholder="british, narration, calm…" autocomplete="off">
+      <label class="field rail-search">{{ icons.icon("search") }}<span class="visually-hidden">Name, accent or style</span>
+        <input type="search" name="q" value="{{ f.q }}" placeholder="Name, accent or style" autocomplete="off">
       </label>
-      <label class="field">Provider
-        <select name="provider" data-searchable="provider">
-          <option value="">Any</option>
-          {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
-        </select>
-      </label>
-      <label class="field">Language
-        <select name="language" data-searchable>
-          <option value="">Any</option>
-          {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
-        </select>
-      </label>
-      <fieldset class="facet">
-        <legend>Gender</legend>
-        <label class="opt"><input type="radio" name="gender" value="" {% if not f.gender %}checked{% endif %}><span>Any</span><i>{{ "{:,}".format(fc.gender_total) }}</i></label>
-        {% for g in genders %}<label class="opt"><input type="radio" name="gender" value="{{ g }}" {% if f.gender == g %}checked{% endif %}><span>{{ g|capitalize }}</span><i>{{ "{:,}".format(fc.gender[g]) }}</i></label>{% endfor %}
-      </fieldset>
-      <fieldset class="facet">
-        <legend>Sample</legend>
-        <label class="opt"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}><span>Has a sample to play</span><i>{{ "{:,}".format(fc.preview) }}</i></label>
-      </fieldset>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("building") }}<span>Provider</span>{{ icons.icon("chevron") }}</summary>
+        <label class="field"><span class="visually-hidden">Provider</span>
+          <select name="provider" data-searchable="provider">
+            <option value="">Any provider</option>
+            {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
+          </select>
+        </label>
+      </details>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("globe") }}<span>Language</span>{{ icons.icon("chevron") }}</summary>
+        <label class="field"><span class="visually-hidden">Language</span>
+          <select name="language" data-searchable>
+            <option value="">Any language</option>
+            {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
+          </select>
+        </label>
+      </details>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("person") }}<span>Gender</span>{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Gender</legend>
+          <label class="opt"><input type="radio" name="gender" value="" {% if not f.gender %}checked{% endif %}><span>Any</span><i>{{ "{:,}".format(fc.gender_total) }}</i></label>
+          {% for g in genders %}<label class="opt"><input type="radio" name="gender" value="{{ g }}" {% if f.gender == g %}checked{% endif %}><span>{{ g|capitalize }}</span><i>{{ "{:,}".format(fc.gender[g]) }}</i></label>{% endfor %}
+        </fieldset>
+      </details>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("play") }}<span>Sample</span>{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Sample</legend>
+          <label class="opt"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}><span>Has a sample to play</span><i>{{ "{:,}".format(fc.preview) }}</i></label>
+        </fieldset>
+      </details>
       <button type="submit" class="btn-secondary" data-apply>Apply</button>
     </form>
   </details>

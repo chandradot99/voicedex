@@ -1800,3 +1800,23 @@ def language_counts(rows: list[ModelRow] | list[VoiceRow], attr: str = "model") 
             counts[code] += wildcard
         counts["*"] = wildcard
     return counts
+
+
+# ── Provider logos (static/logos/<id>.png, fetched by scripts/fetch_logos.py) ─
+
+_LOGO_DIR = __import__("pathlib").Path(__file__).parent / "static" / "logos"
+_LOGOS: dict = {}
+
+
+def provider_logo(pid: str) -> str | None:
+    """URL of the provider's logo tile, or None (templates then draw a lettered tile). The directory listing is
+    re-read when it changes, so logos added while the dev server runs show up without a restart."""
+    try:
+        stamp = _LOGO_DIR.stat().st_mtime_ns
+    except FileNotFoundError:
+        return None
+    if _LOGOS.get("stamp") != stamp:
+        _LOGOS.clear()
+        _LOGOS.update(stamp=stamp, files={p.stem: int(p.stat().st_mtime) for p in _LOGO_DIR.glob("*.png")})
+    v = _LOGOS["files"].get(pid)
+    return f"/static/logos/{pid}.png?v={v}" if v is not None else None

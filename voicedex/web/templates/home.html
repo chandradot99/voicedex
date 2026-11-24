@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_cells.html" as cells %}
 {% block body_class %}home{% endblock %}
 {% block content %}
 <section class="wrap hero" aria-labelledby="hero-title">
@@ -12,13 +13,20 @@
       <kbd aria-hidden="true">⌘K</kbd>
     </form>
     <p class="hero-links"><a href="/speech-to-text">Speech-to-text</a><a href="/text-to-speech">Text-to-speech</a><a href="/speech-to-speech">Realtime</a><a href="/voices?preview=1">Voices with samples</a></p>
-  </div>
-  <dl class="stats">
+    <dl class="stats stats-inline">
     <div><dt>Models</dt><dd data-count="{{ n_models }}">{{ "{:,}".format(n_models) }}</dd></div>
     <div><dt>Voices</dt><dd data-count="{{ n_voices }}">{{ "{:,}".format(n_voices) }}</dd></div>
     <div><dt>Providers</dt><dd data-count="{{ live|length }}">{{ live|length }}</dd></div>
     <div><dt>Shutdowns ahead</dt><dd data-count="{{ upcoming_eol|length }}">{{ upcoming_eol|length }}</dd></div>
   </dl>
+  </div>
+  {# Provider equaliser: one bar per provider (length = models listed), a level-meter wobble, and an amber sweep that
+     names the widely used providers as it passes. Static under reduced motion; hover names a bar, click opens it. #}
+  <figure class="hero-ring" data-hero-ring role="img" aria-label="{{ ring|length }} providers drawn as a circular level meter, one bar each, longer bars list more models">
+    <canvas></canvas>
+    <figcaption class="ring-center" aria-hidden="true"><span class="ring-logo"></span><b class="ring-name">{{ ring|length }} providers</b><span class="ring-meta">one bar each, by models listed</span></figcaption>
+    <script type="application/json" class="ring-data">{{ ring|tojson }}</script>
+  </figure>
   {% set f = freshness %}{% if f.last_sync %}
   <p class="fact-line freshness">
     <span>{% if f.providers_fresh == f.providers %}All {{ f.providers }} providers{% else %}{{ f.providers_fresh }} of {{ f.providers }} providers{% endif %} synced in the last 30 days</span>
@@ -28,13 +36,14 @@
   </p>{% endif %}
 </section>
 
-{% include "_tasks.html" %}
-
 <section class="wrap spectrum-section" aria-labelledby="spectrum-title">
   <h2 id="spectrum-title" class="section-title">What speech costs</h2>
   <p class="section-note">Each square is one model at its published list price. Select one to open it.</p>
   {% with bands=spectrum, cap=16, animate=True, legend_note="home" %}{% include "_spectrum.html" %}{% endwith %}
 </section>
+
+{% include "_tasks.html" %}
+
 
 {% with map_base="/", full_map=False %}{% include "_coverage.html" %}{% endwith %}
 
@@ -94,7 +103,7 @@
   </div>
   <ul class="provider-grid">
     {% for s in popular %}
-    <li><a href="/providers/{{ s.id }}">{{ s.name }}</a><span class="mono">{% for t in s.types %}{{ TYPE_SHORT[t] }}{% if not loop.last %} {% endif %}{% endfor %}</span><span class="mono muted">{{ s.models }} model{{ 's' if s.models != 1 }}</span></li>
+    <li><a class="with-logo" href="/providers/{{ s.id }}">{{ cells.logo(s.id, s.name) }}{{ s.name }}</a><span class="mono">{% for t in s.types %}{{ TYPE_SHORT[t] }}{% if not loop.last %} {% endif %}{% endfor %}</span><span class="mono muted">{{ s.models }} model{{ 's' if s.models != 1 }}</span></li>
     {% endfor %}
   </ul>
 </section>

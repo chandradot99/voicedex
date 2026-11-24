@@ -52,6 +52,7 @@ templates.env.globals.update(
     language_name=views.language_name,
     price_label=views.price_label, price_parts=views.price_parts, price_group=views.price_group,
     PRICE_GROUP_LABELS=views.PRICE_GROUP_LABELS, MODEL_SORTS=views.MODEL_SORTS, name_adds=views.name_adds,
+    provider_logo=views.provider_logo,
     model_url=views.model_url,
     model_key=views.model_key,
     variant_label=views.variant_label,
@@ -178,6 +179,9 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
     return templates.TemplateResponse(request, "home.html", {
         "live": live,
         "retired": [s for s in summaries if s.status != "active"],
+        "ring": [{"id": s.id, "name": s.name, "n": s.models, "types": [views.TYPE_SHORT[t] for t in s.types],
+                  "logo": views.provider_logo(s.id), "pop": s.id in views.COMPARE_PROVIDERS}
+                 for s in sorted(live, key=lambda s: s.name.lower()) if s.models],
         "popular": sorted((s for s in live if s.id in views.COMPARE_PROVIDERS),
                           key=lambda s: views.COMPARE_PROVIDERS.index(s.id)),
         "coverage": views.coverage_map(catalog, n_languages=HOME_MAP_LANGUAGES, model_type=map_type,
@@ -364,6 +368,7 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
     ctx = _models_context(catalog, rows, f, usage_raw=_q(request, "usage"))
     ctx["canonical_path"] = _models_canonical(catalog, f)
     ctx["facets"] = _model_facets(all_rows, rows, f)
+    ctx["tokens"] = [t for t in ctx["tokens"] if t[0] != _TOKEN_LABEL["type"]]     # the type tabs show it
     # Paginate after the context is built: the spectrum and the compare keys describe every match, not one page.
     try:
         page = max(1, int(_q(request, "page") or 1))

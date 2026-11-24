@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>API reference | {{ site_name }}</title>
   <meta name="description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices: languages, features, prices and shutdown dates.">
-  <meta name="theme-color" content="#16171a">
+  <meta name="theme-color" content="#0b0a08">
   <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
   <meta property="og:title" content="API reference | {{ site_name }}">
   <meta property="og:description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices.">
@@ -20,7 +20,7 @@
   {% include "_favicon.html" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <!-- Site CSS goes into a low-priority cascade layer here: Scalar's styles live in layers declared
        later, so they win inside the reference (our button/heading rules must not leak into it), while
        the site header below still gets its look. -->
@@ -28,8 +28,8 @@
        rules keep our theme background from the first frame. Start fetching the spec right away, in
        parallel with the reference script. -->
   <style>
-    html, body { background: #16171a !important; color: #eceae4; }
-    html[data-theme="light"], html[data-theme="light"] body { background: #f7f6f3 !important; color: #18181b; }
+    html, body { background: #0b0a08 !important; color: #f6f5f2; }
+    html[data-theme="light"], html[data-theme="light"] body { background: #fdfcf9 !important; color: #151411; }
   </style>
   <link rel="preload" href="/openapi.json" as="fetch" crossorigin="anonymous">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -291,7 +291,7 @@
       metaData: { title: "API reference | {{ site_name }}" },
       customCss: `
         .dark-mode, .light-mode, :root {
-          --scalar-font: "Archivo", ui-sans-serif, system-ui, sans-serif;
+          --scalar-font: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
           --scalar-font-code: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
           --scalar-background-1: var(--bg);
           --scalar-background-2: var(--panel);
@@ -310,9 +310,9 @@
           --scalar-color-orange: #fbbf24;
           --scalar-color-red: #fb7c5c;
           --scalar-color-purple: #b79bf0;
-          --scalar-radius: 2px;
-          --scalar-radius-lg: 2px;
-          --scalar-radius-xl: 3px;
+          --scalar-radius: 6px;
+          --scalar-radius-lg: 8px;
+          --scalar-radius-xl: 10px;
           --scalar-sidebar-background-1: var(--bg);
           --scalar-sidebar-item-hover-background: var(--panel);
           --scalar-sidebar-item-active-background: var(--panel-2);

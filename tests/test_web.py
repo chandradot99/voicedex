@@ -308,7 +308,8 @@ async def test_models_facets_and_multi_feature(client):
     from voicedex.catalog.schema import MODEL_CAPABILITIES
     html = (await client.get("/models")).text
     assert 'type="checkbox" name="capability"' in html
-    assert re.search(r'name="type" value="tts"[^>]*>.*?<i>\d+</i>', html, re.S)          # counts beside options
+    assert re.search(r'href="/models\?type=tts"[^>]*>[^<]*<i>\d+</i>', html)              # type tabs carry counts
+    assert re.search(r'name="mode" value="realtime"[^>]*>.*?<i>\d+</i>', html, re.S)        # so do rail options
     caps = sorted(MODEL_CAPABILITIES)[:2]
     both = (await client.get(f"/models?capability={caps[0]}&capability={caps[1]}")).text
     assert both.count('class="token"') == 2                             # one removable token per ticked feature

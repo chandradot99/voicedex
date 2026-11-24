@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% import "_cells.html" as cells %}
 {% block title %}{{ m.name }} ({{ p.name }}): languages, price, features | {{ site_name }}{% endblock %}
 {% block description %}{{ p.name }} {{ m.id }}: {{ TYPE_LABELS[m.type]|lower }} model. {% if price_label(m) %}{{ price_label(m) }}. {% endif %}{{ m.languages|length }} languages{% if m.capabilities %}, {{ m.capabilities|length }} listed features{% endif %}.{% endblock %}
 {% block content %}
 {% set n = namespace(i=0) %}
 <section class="wrap model-head">
-  <p class="crumbs"><a href="/providers/{{ p.id }}">{{ p.name }}</a><span aria-hidden="true">/</span><a href="{{ hub.url if hub else '/models?type=' ~ m.type }}">{{ TYPE_LABELS[m.type] }}</a></p>
+  <p class="crumbs"><a class="with-logo" href="/providers/{{ p.id }}">{{ cells.logo(p.id, p.name, "xs") }}{{ p.name }}</a><span aria-hidden="true">/</span><a href="{{ hub.url if hub else '/models?type=' ~ m.type }}">{{ TYPE_LABELS[m.type] }}</a></p>
   <div class="title-row">
     <h1 class="model-title" style="--vt: model-title"><code translate="no">{{ m.id }}</code></h1>
     <button type="button" class="copy-btn" data-copy="{{ m.id }}" aria-label="Copy model id {{ m.id }}">

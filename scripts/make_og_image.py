@@ -1,7 +1,7 @@
-"""Render the share image (voicedex/web/static/og.png, 1200x630) in the site's "Datasheet" style (Archivo + Geist Mono, warm graphite).
+"""Render the share image (voicedex/web/static/og.png, 1200x630) in the site's "Datasheet" style (Instrument Sans + Geist Mono, warm ink).
 
 The price strip is drawn from the live catalog's text-to-speech prices, so re-run this after big
-catalog changes. Needs Google Chrome (headless) and network access for the Archivo / Geist Mono web fonts.
+catalog changes. Needs Google Chrome (headless) and network access for the Instrument Sans / Geist Mono web fonts.
 
     uv run python scripts/make_og_image.py                      # writes voicedex/web/static/og.png
     uv run python scripts/make_og_image.py --size 1280x640 --out /tmp/og-github.png   # GitHub social preview
@@ -41,25 +41,25 @@ def page(prices: list[float], W: int, H: int) -> str:
         f'<rect x="{colw * (i + .5) - sq / 2:.1f}" y="{base - 6 - (k + 1) * (sq + gap) + gap:.1f}" '
         f'width="{sq}" height="{sq}" fill="#f5a524"/>' for i, n in cols.items() for k in range(n))
     ticks = "".join(
-        f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{base}" y2="{base + 6}" stroke="#3c3d40"/>'
+        f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{base}" y2="{base + 6}" stroke="#33312d"/>'
         f'<text x="{x:.1f}" y="{base + 24}" text-anchor="middle">${v}</text>'
         for v in (1, 10, 100) for x in [(math.log10(v) - lo) / (hi - lo) * width])
-    svg = (f'<svg width="{width}" height="{base + 30}" font-family="Archivo" font-size="15" fill="#8d8a82">'
-           f'{rects}<line x1="0" x2="{width}" y1="{base}" y2="{base}" stroke="#3c3d40"/>{ticks}</svg>')
+    svg = (f'<svg width="{width}" height="{base + 30}" font-family="Instrument Sans" font-size="15" fill="#a19e99">'
+           f'{rects}<line x1="0" x2="{width}" y1="{base}" y2="{base}" stroke="#33312d"/>{ticks}</svg>')
     return f"""<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Geist+Mono:wght@400;500&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=Geist+Mono:wght@400;500&display=block" rel="stylesheet">
 <style>
 *{{margin:0;padding:0;box-sizing:border-box}}
-html,body{{width:{W}px;height:{H}px;background:#16171a;color:#eceae4;font-family:Archivo,sans-serif;overflow:hidden}}
+html,body{{width:{W}px;height:{H}px;background:#0b0a08;color:#f6f5f2;font-family:'Instrument Sans',sans-serif;overflow:hidden}}
 .wrap{{position:absolute;inset:0;padding:{pad - 8}px {pad}px {pad - 16}px;display:flex;flex-direction:column}}
-.top{{display:flex;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid #2b2c2f}}
+.top{{display:flex;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid #22211e}}
 .brand{{display:flex;align-items:center;gap:16px;font-weight:600;font-size:34px;letter-spacing:-.02em}}
 .url{{font-family:'Geist Mono';font-size:20px;color:#f5a524}}
-h1{{margin-top:{int(H * .075)}px;font-weight:600;font-stretch:80%;font-size:{int(H * .1)}px;line-height:1.04;letter-spacing:-.025em}}
-.facts{{margin-top:22px;font-size:22px;font-stretch:87.5%;font-variant-numeric:tabular-nums;color:#bab7ae}}
-.facts b{{color:#eceae4;font-weight:600}}
+h1{{margin-top:{int(H * .075)}px;font-weight:700;letter-spacing:-.04em;font-size:{int(H * .1)}px;line-height:1.04;letter-spacing:-.025em}}
+.facts{{margin-top:22px;font-size:22px;font-variant-numeric:tabular-nums;color:#c9c7c3}}
+.facts b{{color:#f6f5f2;font-weight:600}}
 .spec{{margin-top:auto}}
-.label{{font-size:15px;font-weight:500;color:#8d8a82;margin-bottom:8px;display:flex;justify-content:space-between}}
+.label{{font-size:15px;font-weight:500;color:#a19e99;margin-bottom:8px;display:flex;justify-content:space-between}}
 </style></head><body><div class="wrap">
 <div class="top"><div class="brand"><svg width="34" height="34" viewBox="0 0 20 20"><g fill="#f5a524"><rect x="1" y="8" width="2.5" height="4"/><rect x="5.5" y="5" width="2.5" height="10"/><rect x="10" y="2" width="2.5" height="16"/><rect x="14.5" y="6.5" width="2.5" height="7"/></g></svg>Voicedex</div><div class="url">voicedex.dev</div></div>
 <h1>Every speech model and voice,<br>compared.</h1>

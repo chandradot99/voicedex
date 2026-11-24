@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "_cells.html" as cells %}
+{% import "_icons.html" as icons %}
 {% block title %}Compare speech models | {{ site_name }}{% endblock %}
 {% block content %}
 {% block page_head %}
@@ -14,42 +15,51 @@
   <details class="filter-bar rail" open data-collapse-sm>
     <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
     <form class="filters facets" method="get" action="/models" aria-label="Filter models">
-      <label class="field">Search
-        <input type="search" name="q" value="{{ f.q }}" placeholder="nova, sonic, flash…" autocomplete="off" spellcheck="false">
+      {% if f.type %}<input type="hidden" name="type" value="{{ f.type }}">{% endif %}
+      <label class="field rail-search">{{ icons.icon("search") }}<span class="visually-hidden">Search models</span>
+        <input type="search" name="q" value="{{ f.q }}" placeholder="Search models" autocomplete="off" spellcheck="false">
       </label>
-      <fieldset class="facet">
-        <legend>Type</legend>
-        <label class="opt"><input type="radio" name="type" value="" {% if not f.type %}checked{% endif %}><span>Any</span><i>{{ fc.type_total }}</i></label>
-        {% for t, label in TYPE_LABELS.items() %}<label class="opt"><input type="radio" name="type" value="{{ t }}" {% if f.type == t %}checked{% endif %}><span>{{ label }}</span><i>{{ fc.type[t] }}</i></label>{% endfor %}
-      </fieldset>
-      <label class="field">Language
-        <select name="language" data-searchable>
-          <option value="">Any</option>
-          {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ n }})</option>{% endif %}{% endfor %}
-        </select>
-      </label>
-      <label class="field">Provider
-        <select name="provider" data-searchable="provider">
-          <option value="">Any</option>
-          {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ n }})</option>{% endif %}{% endfor %}
-        </select>
-      </label>
-      <fieldset class="facet">
-        <legend>Features <span>has all ticked</span></legend>
-        {% for c, n in fc.capability %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}" {% if c in f.capability %}checked{% endif %}><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% else %}<p class="facet-empty">None documented for these models</p>{% endfor %}
-      </fieldset>
-      <fieldset class="facet">
-        <legend>Connection and weights</legend>
-        <label class="opt"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}><span>Realtime (WebSocket / WebRTC)</span><i>{{ fc.realtime }}</i></label>
-        <label class="opt"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}><span>Open weights</span><i>{{ fc.open }}</i></label>
-        {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
-      </fieldset>
-      <fieldset class="facet">
-        <legend>Status</legend>
-        <label class="opt"><input type="radio" name="status" value="" {% if not f.status %}checked{% endif %}><span>Any</span><i>{{ fc.status_total }}</i></label>
-        <label class="opt"><input type="radio" name="status" value="ending" {% if f.status == "ending" %}checked{% endif %}><span>Shutting down</span><i>{{ fc.ending }}</i></label>
-        <label class="opt"><input type="radio" name="status" value="beta" {% if f.status == "beta" %}checked{% endif %}><span>Beta / preview</span><i>{{ fc.beta }}</i></label>
-      </fieldset>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("globe") }}<span>Language</span>{{ icons.icon("chevron") }}</summary>
+        <label class="field"><span class="visually-hidden">Language</span>
+          <select name="language" data-searchable>
+            <option value="">Any language</option>
+            {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ n }})</option>{% endif %}{% endfor %}
+          </select>
+        </label>
+      </details>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("building") }}<span>Provider</span>{{ icons.icon("chevron") }}</summary>
+        <label class="field"><span class="visually-hidden">Provider</span>
+          <select name="provider" data-searchable="provider">
+            <option value="">Any provider</option>
+            {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ n }})</option>{% endif %}{% endfor %}
+          </select>
+        </label>
+      </details>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("sparkle") }}<span>Features</span>{% if f.capability %}<b class="facet-n">{{ f.capability|length }}</b>{% endif %}{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Features (a model must have every ticked one)</legend>
+          {% for c, n in fc.capability %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}" {% if c in f.capability %}checked{% endif %}><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% else %}<p class="facet-empty">None documented for these models</p>{% endfor %}
+          <p class="facet-note">Models must have every ticked feature.</p>
+        </fieldset>
+      </details>
+      <details class="facet-group" open>
+        <summary>{{ icons.icon("bolt") }}<span>Connection and weights</span>{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Connection and weights</legend>
+          <label class="opt"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}><span>Realtime (WebSocket / WebRTC)</span><i>{{ fc.realtime }}</i></label>
+          <label class="opt"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}><span>Open weights</span><i>{{ fc.open }}</i></label>
+          {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
+        </fieldset>
+      </details>
+      <details class="facet-group"{% if f.status %} open{% endif %}>
+        <summary>{{ icons.icon("status") }}<span>Status</span>{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Status</legend>
+          <label class="opt"><input type="radio" name="status" value="" {% if not f.status %}checked{% endif %}><span>Any</span><i>{{ fc.status_total }}</i></label>
+          <label class="opt"><input type="radio" name="status" value="ending" {% if f.status == "ending" %}checked{% endif %}><span>Shutting down</span><i>{{ fc.ending }}</i></label>
+          <label class="opt"><input type="radio" name="status" value="beta" {% if f.status == "beta" %}checked{% endif %}><span>Beta / preview</span><i>{{ fc.beta }}</i></label>
+        </fieldset>
+      </details>
       {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
       <button type="submit" class="btn-secondary" data-apply>Apply</button>
     </form>
@@ -57,6 +67,12 @@
   {% endblock %}
 
   <div class="bench-main">
+  {% if facets %}
+  <nav class="type-tabs" aria-label="Model type">
+    <a href="/models?{{ qs(type=None) }}" {% if not f.type %}aria-current="page"{% endif %}>{{ icons.icon("wave") }}All<i>{{ facets.type_total }}</i></a>
+    {% for t, label in TYPE_LABELS.items() %}<a href="/models?{{ qs(type=t) }}" {% if f.type == t %}aria-current="page"{% endif %}>{{ label }}<i>{{ facets.type[t] }}</i></a>{% endfor %}
+  </nav>
+  {% endif %}
   <div class="result-bar">
     {% set n_all = total_rows|default(rows|length) %}<p class="result-count" role="status">{{ "{:,}".format(n_all) }} match{{ 'es' if n_all != 1 }}{% if pages|default(1) > 1 %}, {{ first }}–{{ first + rows|length - 1 }} shown{% elif n_all > rows|length %}, cheapest {{ rows|length }} shown{% endif %}</p>
     {% if tokens %}
@@ -106,7 +122,7 @@
         <tr>
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
           <th scope="row"><a href="{{ model_url(r) }}" title="{{ m.name }}"><code translate="no">{{ m.id }}</code></a>{% if name_adds(m) %}<span class="sub model-name">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
-          <td class="hide-sm provider-cell">{{ names[r.provider_id] }}</td>
+          <td class="hide-sm provider-cell"><span class="with-logo">{{ cells.logo(r.provider_id, names[r.provider_id]) }}{{ names[r.provider_id] }}</span></td>
           <td class="mono hide-sm">{{ TYPE_SHORT[m.type] }}</td>
           <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
           {{ cells.feat_cell(m) }}

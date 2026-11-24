@@ -515,3 +515,121 @@ document.addEventListener("formdata", (e) => {
     form.addEventListener("submit", (e) => { e.preventDefault(); update(true); });
   });
 })();
+
+// ── Home hero: the provider equaliser. One bar per provider around a ring (length ∝ log of models listed), each
+// wobbling like a level meter; an amber sweep circles like a playhead and names the widely used providers it passes.
+// Hover names any bar, click opens it. Reduced motion: drawn once, no wobble or sweep. Paused in background tabs
+// (requestAnimationFrame) and while scrolled out of view.
+(() => {
+  const fig = $("[data-hero-ring]");
+  if (!fig) return;
+  let data;
+  try { data = JSON.parse($(".ring-data", fig).textContent); } catch (e) { return; }
+  if (!data.length) return;
+  const cv = $("canvas", fig), ctx = cv.getContext("2d");
+  const cap = { logo: $(".ring-logo", fig), name: $(".ring-name", fig), meta: $(".ring-meta", fig) };
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const N = data.length, step = (2 * Math.PI) / N, maxN = Math.max(...data.map((d) => d.n));
+  const share = (d) => 0.16 + 0.84 * (Math.log1p(d.n) / Math.log1p(maxN));
+  const imgs = {};
+  data.forEach((d) => { if (d.logo && d.pop) { const im = new Image(); im.src = d.logo; imgs[d.id] = im; } });
+  let W = 0, colors = {}, sweep = -Math.PI / 2, hover = -1, shown = -2, last = performance.now(), visible = true, running = false;
+  let withLogo = new Set();     // which widely used providers show a logo: at most one per stretch of ring, no overlaps
+  const layoutLogos = () => {
+    const { inner, outer, logo } = geom();
+    const minGap = (logo * 1.35) / outer;
+    const order = data.map((d, i) => i).filter((i) => imgs[data[i].id]);
+    const keep = [];
+    for (const i of order.sort((a, b) => data[b].n - data[a].n)) {            // bigger catalogs claim space first
+      if (keep.every((k) => { const g = Math.abs(k - i) * step; return Math.min(g, 2 * Math.PI - g) >= minGap; })) keep.push(i);
+    }
+    withLogo = new Set(keep);
+  };
+
+  const readColors = () => {
+    const cs = getComputedStyle(document.documentElement);
+    colors = { ink: cs.getPropertyValue("--ink").trim(), amber: cs.getPropertyValue("--signal-fill").trim(), muted: cs.getPropertyValue("--muted").trim() };
+  };
+  const size = () => {
+    const w = fig.clientWidth, dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (!w) return;
+    W = w; cv.width = w * dpr; cv.height = w * dpr; cv.style.width = cv.style.height = w + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    layoutLogos();
+  };
+  const angleOf = (i) => -Math.PI / 2 + i * step;
+  const geom = () => ({ c: W / 2, inner: W * 0.235, outer: W * 0.39, logoR: W * 0.46, logo: Math.max(14, W * 0.046) });
+
+  const label = (i) => {
+    if (i === shown) return;
+    shown = i;
+    if (i < 0) return;
+    const d = data[i];
+    cap.logo.replaceChildren();
+    if (d.logo) { const im = new Image(); im.src = d.logo; im.alt = ""; im.className = "logo logo-lg"; cap.logo.append(im); }
+    else { const s = document.createElement("span"); s.className = "logo logo-lg logo-letter"; s.textContent = d.name[0].toUpperCase(); cap.logo.append(s); }
+    cap.name.textContent = d.name;
+    cap.meta.textContent = `${d.n} model${d.n === 1 ? "" : "s"} · ${d.types.join(" ")}`;
+  };
+
+  const draw = (t) => {
+    if (!W) return;
+    const { c, inner, outer, logoR, logo } = geom();
+    ctx.clearRect(0, 0, W, W);
+    ctx.lineCap = "round";
+    const width = Math.max(1.6, step * inner * 0.62);
+    let lead = -1, leadDa = 9;
+    for (let i = 0; i < N; i++) {
+      const d = data[i], a = angleOf(i);
+      const wob = still ? 0 : 0.11 * Math.sin(t * 0.0023 + i * 0.57) + 0.07 * Math.sin(t * 0.0041 + i * 1.73);
+      const len = (outer - inner) * share(d) * (1 + wob);
+      const da = (((sweep - a) % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);    // 0 at the sweep, grows behind it
+      const glow = still ? 0 : Math.max(0, 1 - da / 1.1);
+      const hot = i === hover;
+      ctx.globalAlpha = hot ? 1 : 0.26 + 0.74 * glow * glow;
+      ctx.strokeStyle = hot || glow > 0.04 ? colors.amber : colors.ink;
+      if (!hot && glow <= 0.04) ctx.globalAlpha = 0.26;
+      ctx.lineWidth = width;
+      const cs = Math.cos(a), sn = Math.sin(a);
+      ctx.beginPath(); ctx.moveTo(c + cs * inner, c + sn * inner); ctx.lineTo(c + cs * (inner + len), c + sn * (inner + len)); ctx.stroke();
+      if (d.pop && da < leadDa) { leadDa = da; lead = i; }
+      const im = withLogo.has(i) && imgs[d.id];
+      if (im && im.complete && im.naturalWidth) {
+        ctx.globalAlpha = hot ? 1 : 0.5 + 0.5 * glow;
+        const r = inner + len + logo * 0.95;                                    // rides just past its own bar's tip
+        const x = c + cs * r - logo / 2, y = c + sn * r - logo / 2;
+        ctx.save(); ctx.beginPath(); ctx.roundRect(x, y, logo, logo, logo * 0.22); ctx.clip(); ctx.drawImage(im, x, y, logo, logo); ctx.restore();
+      }
+    }
+    ctx.globalAlpha = 1;
+    label(hover >= 0 ? hover : (still ? -1 : lead));
+  };
+
+  const frame = (t) => {
+    running = false;
+    const dt = Math.min(64, t - last); last = t;
+    sweep += dt * 0.00034;                          // about 18 s per lap
+    draw(t);
+    if (visible && !document.hidden) { running = true; requestAnimationFrame(frame); }
+  };
+  const start = () => { if (!still && !running && visible && !document.hidden) { running = true; last = performance.now(); requestAnimationFrame(frame); } };
+
+  // Hover / click: which bar is under the pointer (by angle, within the ring's band)
+  const hit = (e) => {
+    const r = cv.getBoundingClientRect(), { inner, logoR, logo } = geom();
+    const x = e.clientX - r.left - W / 2, y = e.clientY - r.top - W / 2, dist = Math.hypot(x, y);
+    if (dist < inner * 0.85 || dist > logoR + logo) return -1;
+    const a = Math.atan2(y, x) + Math.PI / 2;
+    return Math.round((((a % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / step) % N;
+  };
+  cv.addEventListener("pointermove", (e) => { const i = hit(e); if (i !== hover) { hover = i; cv.style.cursor = i >= 0 ? "pointer" : ""; if (still || !running) draw(performance.now()); } });
+  cv.addEventListener("pointerleave", () => { hover = -1; cv.style.cursor = ""; if (still || !running) draw(performance.now()); });
+  cv.addEventListener("click", (e) => { const i = hit(e); if (i >= 0) location.href = "/providers/" + data[i].id; });
+
+  readColors(); size(); draw(performance.now());
+  new ResizeObserver(() => { size(); draw(performance.now()); }).observe(fig);
+  document.addEventListener("themechange", () => { readColors(); draw(performance.now()); });
+  document.addEventListener("visibilitychange", start);
+  new IntersectionObserver(([en]) => { visible = en.isIntersecting; start(); }).observe(fig);
+  Object.values(imgs).forEach((im) => im.addEventListener("load", () => { if (still) draw(performance.now()); }));
+})();
