@@ -1,5 +1,13 @@
 [
   {
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Voice Live API billing tier applied when the session uses one of its generative models; combines Azure speech recognition, the chosen LLM or native-audio realtime model, and Azure text to speech over WebSocket.",
     "first_seen": "2026-11-18",
     "id": "voice-live-lite",
@@ -11,6 +19,14 @@
     ],
     "meta": {
       "api_compat": "Azure OpenAI Realtime API events",
+      "capability_notes": {
+        "custom_vocabulary": "phrase list / custom speech via Azure STT input",
+        "voice_cloning": "Azure custom voice; limited access"
+      },
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to"
+      ],
       "features": [
         "noise_suppression",
         "echo_cancellation",
@@ -90,9 +106,17 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Voice Live API billing tier applied when the session uses one of its generative models; combines Azure speech recognition, the chosen LLM or native-audio realtime model, and Azure text to speech over WebSocket.",
     "first_seen": "2026-11-18",
     "id": "voice-live-pro",
@@ -105,6 +129,14 @@
     ],
     "meta": {
       "api_compat": "Azure OpenAI Realtime API events",
+      "capability_notes": {
+        "custom_vocabulary": "phrase list / custom speech via Azure STT input",
+        "voice_cloning": "Azure custom voice; limited access"
+      },
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to"
+      ],
       "features": [
         "noise_suppression",
         "echo_cancellation",
@@ -203,9 +235,17 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "barge_in",
+      "custom_vocabulary",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Voice Live API billing tier applied when the session uses one of its generative models; combines Azure speech recognition, the chosen LLM or native-audio realtime model, and Azure text to speech over WebSocket.",
     "first_seen": "2026-11-18",
     "id": "voice-live-standard",
@@ -217,6 +257,14 @@
     ],
     "meta": {
       "api_compat": "Azure OpenAI Realtime API events",
+      "capability_notes": {
+        "custom_vocabulary": "phrase list / custom speech via Azure STT input",
+        "voice_cloning": "Azure custom voice; limited access"
+      },
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live",
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-how-to"
+      ],
       "features": [
         "noise_suppression",
         "echo_cancellation",
@@ -298,7 +346,7 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1047,6 +1095,10 @@
   },
   {
     "batch": true,
+    "capabilities": [
+      "speaker_diarization",
+      "word_timestamps"
+    ],
     "description": "Whisper Large V2 hosted by Azure; selected by base-model id in batch transcription.",
     "eol_date": "2027-04-15",
     "first_seen": "2026-11-16",
@@ -1060,6 +1112,13 @@
     "meta": {
       "base_model_ids": [
         "e418c4a9-9937-4db7-b2c9-8afbff72d950"
+      ],
+      "capability_notes": {
+        "speaker_diarization": "via Azure Speech batch transcription",
+        "word_timestamps": "via Azure Speech batch transcription"
+      },
+      "docs_sources": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/whisper-overview"
       ]
     },
     "name": "Azure Whisper Large V2",
@@ -1073,7 +1132,7 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
