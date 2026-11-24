@@ -1,5 +1,9 @@
 [
   {
+    "capabilities": [
+      "emotion",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "IndexTeam/IndexTTS-2",
     "languages": [
@@ -7,6 +11,10 @@
       "zh"
     ],
     "meta": {
+      "docs_sources": [
+        "https://huggingface.co/IndexTeam/IndexTTS-2",
+        "https://github.com/index-tts/index-tts"
+      ],
       "huggingface_repo": "IndexTeam/IndexTTS-2"
     },
     "name": "IndexTTS-2",
@@ -25,9 +33,15 @@
     "released_on": "2025-06-18",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "emotion",
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "IndexTeam/IndexTTS-2.5",
     "languages": [
@@ -38,6 +52,14 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "phoneme_input": "Pinyin, CMU phonemes, Japanese Kana",
+        "prosody_control": "speed (duration_factor 0.5-2.0)"
+      },
+      "docs_sources": [
+        "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+        "https://github.com/index-tts/index-tts"
+      ],
       "huggingface_repo": "IndexTeam/IndexTTS-2.5"
     },
     "name": "IndexTTS-2.5",
@@ -56,6 +78,6 @@
     "released_on": "2026-08-10",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
