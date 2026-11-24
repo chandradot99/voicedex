@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "_icons.html" as icons %}
+{% import "_filters.html" as fl %}
 {% block title %}Browse text-to-speech voices | {{ site_name }}{% endblock %}
 {% block content %}
 <section class="wrap wrap-wide page-head">
@@ -8,66 +9,7 @@
   <p class="page-hint hide-sm"><kbd>J</kbd> <kbd>K</kbd> next and previous sample · <kbd>Space</kbd> pause · {{ n_live - providers|length }} other providers are speech-to-text only, open weights you run yourself, or keep voices behind an account</p>
 </section>
 
-<section class="wrap wrap-wide workbench">{% set fc = facets %}
-  <details class="filter-bar rail" open data-collapse-sm>
-    <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
-    <form class="filters facets" method="get" action="/voices" aria-label="Filter voices">
-      {% if f.model %}<input type="hidden" name="model" value="{{ f.model }}">{% endif %}
-      <label class="field rail-search">{{ icons.icon("search") }}<span class="visually-hidden">Name, accent or style</span>
-        <input type="search" name="q" value="{{ f.q }}" placeholder="Name, accent or style" autocomplete="off">
-      </label>
-      <fieldset class="facet quick"><legend class="visually-hidden">Show only</legend>
-        <label class="opt"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}><span>Has a sample to play</span><i>{{ "{:,}".format(fc.preview) }}</i></label>
-        <label class="opt"><input type="checkbox" name="emotion" value="1" {% if f.emotion %}checked{% endif %}><span>Emotion control</span><i>{{ "{:,}".format(fc.emotion) }}</i></label>
-        <label class="opt"><input type="checkbox" name="multi" value="1" {% if f.multi %}checked{% endif %}><span>Speaks several languages</span><i>{{ "{:,}".format(fc.multi) }}</i></label>
-      </fieldset>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("building") }}<span>Provider</span>{{ icons.icon("chevron") }}</summary>
-        <label class="field"><span class="visually-hidden">Provider</span>
-          <select name="provider" data-searchable="provider">
-            <option value="">Any provider</option>
-            {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
-          </select>
-        </label>
-      </details>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("globe") }}<span>Language</span>{{ icons.icon("chevron") }}</summary>
-        <label class="field"><span class="visually-hidden">Language</span>
-          <select name="language" data-searchable>
-            <option value="">Any language</option>
-            {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ "{:,}".format(n) }})</option>{% endif %}{% endfor %}
-          </select>
-        </label>
-      </details>
-      {% if f.gender %}<input type="hidden" name="gender" value="{{ f.gender }}">{% endif %}
-      {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("sparkle") }}<span>Use case</span>{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Use case</legend>
-          <label class="opt"><input type="radio" name="use" value="" {% if not f.use %}checked{% endif %}><span>Any</span><i></i></label>
-          {% for u in uses %}{% set n = fc.use[u] %}{% if n or f.use == u %}<label class="opt"><input type="radio" name="use" value="{{ u }}" {% if f.use == u %}checked{% endif %}><span>{{ u }}</span><i>{{ "{:,}".format(n) }}</i></label>{% endif %}{% endfor %}
-        </fieldset>
-      </details>
-      <details class="facet-group"{% if f.age %} open{% endif %}>
-        <summary>{{ icons.icon("person") }}<span>Age</span>{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Age</legend>
-          <label class="opt"><input type="radio" name="age" value="" {% if not f.age %}checked{% endif %}><span>Any</span><i></i></label>
-          {% for a in ages %}{% set n = fc.age[a] %}{% if n or f.age == a %}<label class="opt"><input type="radio" name="age" value="{{ a }}" {% if f.age == a %}checked{% endif %}><span>{{ a }}</span><i>{{ "{:,}".format(n) }}</i></label>{% endif %}{% endfor %}
-        </fieldset>
-      </details>
-      <details class="facet-group"{% if f.accent %} open{% endif %}>
-        <summary>{{ icons.icon("wave") }}<span>Accent</span>{{ icons.icon("chevron") }}</summary>
-        <label class="field"><span class="visually-hidden">Accent</span>
-          <select name="accent" data-searchable="accent">
-            <option value="">Any accent</option>
-            {% for a, n in fc.accent.most_common() %}<option value="{{ a }}" {% if f.accent == a %}selected{% endif %}>{{ a }} ({{ "{:,}".format(n) }})</option>{% endfor %}
-            {% if f.accent and not fc.accent[f.accent] %}<option value="{{ f.accent }}" selected>{{ f.accent }} (0)</option>{% endif %}
-          </select>
-        </label>
-      </details>
-      <button type="submit" class="btn-secondary" data-apply>Apply</button>
-    </form>
-  </details>
+<section class="wrap wrap-wide bench">{% set fc = facets %}
 
   <div class="bench-main">
   {% if f.model and f.provider %}<p class="filter-note">Voices that work with <code translate="no">{{ f.model }}</code>. <a href="/voices?provider={{ f.provider }}">Show all {{ f.provider }} voices</a></p>{% endif %}
@@ -75,6 +17,22 @@
     <a href="/voices?{{ qs(gender=None, page=None) }}" {% if not f.gender %}aria-current="page"{% endif %}>{{ icons.icon("wave") }}All<i>{{ "{:,}".format(fc.gender_total) }}</i></a>
     {% for g in genders %}<a href="/voices?{{ qs(gender=g, page=None) }}" {% if f.gender == g %}aria-current="page"{% endif %}>{{ g|capitalize }}<i>{{ "{:,}".format(fc.gender[g]) }}</i></a>{% endfor %}
   </nav>
+  {% set fo = filter_opts %}
+  <form class="filters fbar" method="get" action="/voices" aria-label="Filter voices">
+    {% if f.model %}<input type="hidden" name="model" value="{{ f.model }}">{% endif %}
+    {% if f.gender %}<input type="hidden" name="gender" value="{{ f.gender }}">{% endif %}
+    {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
+    {{ fl.search(f.q, "Name, accent or style") }}
+    {{ fl.dropdown("provider", "Provider", fo.provider, f.provider, search=True, any_label="Any provider") }}
+    {{ fl.dropdown("language", "Language", fo.language, f.language, search=True, any_label="Any language") }}
+    {{ fl.dropdown("use", "Use case", fo.use, f.use, any_label="Any use case") }}
+    {{ fl.dropdown("age", "Age", fo.age, f.age, any_label="Any age") }}
+    {{ fl.dropdown("accent", "Accent", fo.accent, f.accent, search=True, any_label="Any accent") }}
+    {{ fl.toggle("preview", "1", "Has a sample", f.preview, fc.preview) }}
+    {{ fl.toggle("emotion", "1", "Emotion control", f.emotion, fc.emotion) }}
+    {{ fl.toggle("multi", "1", "Several languages", f.multi, fc.multi) }}
+    <button type="submit" class="btn-secondary" data-apply>Apply</button>
+  </form>
   <div class="result-bar">
     <p class="result-count" role="status">{{ "{:,}".format(total) }} match{{ 'es' if total != 1 }}</p>
     {% if tokens %}

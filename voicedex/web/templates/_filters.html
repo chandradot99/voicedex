@@ -1,0 +1,31 @@
+{# Filter bar: one row above the results. Each filter is a <details> dropdown with its options and counts (long lists
+   get a search box); the button shows the chosen value. Yes/no options are toggle chips. Everything is one GET form:
+   site.js submits it on change and closes other dropdowns; without JS the Apply button submits. #}
+{% import "_icons.html" as icons %}
+
+{# options: list of (value, text, count). selected: a value (radio) or a list of values (checkbox). #}
+{% macro dropdown(name, label, options, selected, kind="radio", search=False, any_label="Any", note="") -%}
+{% set chosen = (selected if selected is string else "") if kind == "radio" else (selected or []) %}
+{% set is_set = chosen|length > 0 %}
+{% if kind == "radio" %}{% set shown = (options|selectattr("0", "equalto", chosen)|map(attribute="1")|first) or chosen %}
+{% else %}{% set shown = ((options|selectattr("0", "in", chosen)|map(attribute="1")|first) if chosen|length == 1 else (chosen|length ~ " selected")) %}{% endif %}
+<details class="fdrop{% if is_set %} is-set{% endif %}">
+  <summary><span class="fdrop-label">{{ label }}</span>{% if is_set %}<b>{{ shown }}</b>{% endif %}{{ icons.icon("chevron") }}</summary>
+  <div class="fpop" role="group" aria-label="{{ label }}">
+    {% if search %}<input class="fpop-search" type="search" placeholder="Find {{ label|lower }}" aria-label="Find {{ label|lower }}" autocomplete="off">{% endif %}
+    <div class="fpop-list">
+      {% if kind == "radio" %}<label class="opt"><input type="radio" name="{{ name }}" value="" {% if not is_set %}checked{% endif %}><span>{{ any_label }}</span><i></i></label>{% endif %}
+      {% for value, text, n in options %}<label class="opt"><input type="{{ kind }}" name="{{ name }}" value="{{ value }}" {% if (kind == "radio" and value == chosen) or (kind != "radio" and value in chosen) %}checked{% endif %}><span>{{ text }}</span><i>{{ "{:,}".format(n) }}</i></label>{% else %}<p class="facet-empty">Nothing matches the other filters</p>{% endfor %}
+    </div>
+    {% if note %}<p class="fpop-note">{{ note }}</p>{% endif %}
+  </div>
+</details>
+{%- endmacro %}
+
+{% macro toggle(name, value, label, checked, n) -%}
+<label class="ftoggle"><input type="checkbox" name="{{ name }}" value="{{ value }}" {% if checked %}checked{% endif %}><span>{{ label }}</span><i>{{ "{:,}".format(n) }}</i></label>
+{%- endmacro %}
+
+{% macro search(value, placeholder) -%}
+<label class="fsearch">{{ icons.icon("search") }}<span class="visually-hidden">{{ placeholder }}</span><input type="search" name="q" value="{{ value }}" placeholder="{{ placeholder }}" autocomplete="off" spellcheck="false"></label>
+{%- endmacro %}

@@ -331,7 +331,7 @@ def test_name_adds():
 async def test_voices_facets(client):
     html = (await client.get("/voices?gender=male")).text
     assert re.search(r'href="/voices\?gender=female"[^>]*>Female<i>[\d,]+</i>', html)            # gender tabs with counts
-    assert "Has a sample to play" in html and 'class="data voices-table"' in html
+    assert "Has a sample" in html and 'class="filters fbar"' in html and 'class="data voices-table"' in html
 
 
 def test_voice_facet_buckets():

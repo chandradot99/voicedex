@@ -69,7 +69,7 @@ voicedex/
                        replays git history of data/ (CI bakes data/.changes.json; local dev reads git).
                        /providers: sortable index (type filter; filtered views canonicalize to /providers); home shows
                        only the widely used ones (COMPARE_PROVIDERS). /models and /voices are "workbench" pages
-                       (.wrap-wide, up to 1600px): a filter rail with live counts per option (routes._filter_models /
+                       (.wrap-wide, up to 1600px): a filter bar above the results (templates/_filters.html: dropdowns with counts and in-panel search, toggle chips) with live counts per option (routes._filter_models /
                        _filter_voices with skip=…), repeatable ?capability= (AND), radios for type/status/gender, and a
                        compact-rows toggle (localStorage "density", applied in <head>). /models default order =
                        views.default_model_order (recommended → default → widely used providers); also ?sort=price|newest|name.

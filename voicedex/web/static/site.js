@@ -706,3 +706,26 @@ document.addEventListener("formdata", (e) => {
   sync();
   addEventListener("scroll", sync, { passive: true });
 })();
+
+// ── Filter bar dropdowns: one open at a time; close on outside click or Escape; focus the search box on open and
+// narrow the option list as you type. Picking an option submits the form (the change handler above).
+(() => {
+  const drops = $$(".fdrop");
+  if (!drops.length) return;
+  drops.forEach((d) => d.addEventListener("toggle", () => {
+    if (!d.open) return;
+    drops.forEach((o) => { if (o !== d) o.open = false; });
+    const q = $(".fpop-search", d);
+    if (q && matchMedia("(pointer: fine)").matches) q.focus();
+  }));
+  document.addEventListener("click", (e) => { drops.forEach((d) => { if (d.open && !d.contains(e.target)) d.open = false; }); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const d = drops.find((x) => x.open);
+    if (d) { d.open = false; $("summary", d).focus(); }
+  });
+  $$(".fpop-search").forEach((q) => q.addEventListener("input", () => {
+    const needle = q.value.trim().toLowerCase();
+    $$(".opt", q.closest(".fpop")).forEach((o) => { o.hidden = !!needle && !o.textContent.toLowerCase().includes(needle); });
+  }));
+})();

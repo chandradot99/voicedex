@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% import "_cells.html" as cells %}
 {% import "_icons.html" as icons %}
+{% import "_filters.html" as fl %}
 {% block title %}Compare speech models | {{ site_name }}{% endblock %}
 {% block content %}
 {% block page_head %}
@@ -10,61 +11,7 @@
 </section>
 {% endblock %}
 
-<section class="wrap{% if facets %} wrap-wide workbench{% endif %}">
-  {% block filters %}{% set fc = facets %}
-  <details class="filter-bar rail" open data-collapse-sm>
-    <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
-    <form class="filters facets" method="get" action="/models" aria-label="Filter models">
-      {% if f.type %}<input type="hidden" name="type" value="{{ f.type }}">{% endif %}
-      <label class="field rail-search">{{ icons.icon("search") }}<span class="visually-hidden">Search models</span>
-        <input type="search" name="q" value="{{ f.q }}" placeholder="Search models" autocomplete="off" spellcheck="false">
-      </label>
-      <fieldset class="facet quick"><legend class="visually-hidden">Show only</legend>
-        <label class="opt"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}><span>Realtime (WebSocket / WebRTC)</span><i>{{ fc.realtime }}</i></label>
-        <label class="opt"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}><span>Open weights</span><i>{{ fc.open }}</i></label>
-        {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
-      </fieldset>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("globe") }}<span>Language</span>{{ icons.icon("chevron") }}</summary>
-        <label class="field"><span class="visually-hidden">Language</span>
-          <select name="language" data-searchable>
-            <option value="">Any language</option>
-            {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ n }})</option>{% endif %}{% endfor %}
-          </select>
-        </label>
-      </details>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("building") }}<span>Provider</span>{{ icons.icon("chevron") }}</summary>
-        <label class="field"><span class="visually-hidden">Provider</span>
-          <select name="provider" data-searchable="provider">
-            <option value="">Any provider</option>
-            {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ n }})</option>{% endif %}{% endfor %}
-          </select>
-        </label>
-      </details>
-      <details class="facet-group" open>
-        <summary>{{ icons.icon("sparkle") }}<span>Features</span>{% if f.capability %}<b class="facet-n">{{ f.capability|length }}</b>{% endif %}{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Features (a model must have every ticked one)</legend>
-          {% set by_n = fc.capability|sort(attribute="1", reverse=True) %}{% set top = by_n[:8]|map(attribute="0")|list %}
-          {% for c, n in fc.capability if c in top or c in f.capability %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}" {% if c in f.capability %}checked{% endif %}><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% else %}<p class="facet-empty">None documented for these models</p>{% endfor %}
-          {% set rest = fc.capability|rejectattr("0", "in", top)|rejectattr("0", "in", f.capability)|list %}
-          {% if rest %}<details class="more-opts"><summary>Show all {{ fc.capability|length }}</summary>{% for c, n in rest %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}"><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% endfor %}</details>{% endif %}
-          <p class="facet-note">Models must have every ticked feature.</p>
-        </fieldset>
-      </details>
-      <details class="facet-group"{% if f.status %} open{% endif %}>
-        <summary>{{ icons.icon("status") }}<span>Status</span>{{ icons.icon("chevron") }}</summary>
-        <fieldset class="facet"><legend class="visually-hidden">Status</legend>
-          <label class="opt"><input type="radio" name="status" value="" {% if not f.status %}checked{% endif %}><span>Any</span><i>{{ fc.status_total }}</i></label>
-          <label class="opt"><input type="radio" name="status" value="ending" {% if f.status == "ending" %}checked{% endif %}><span>Shutting down</span><i>{{ fc.ending }}</i></label>
-          <label class="opt"><input type="radio" name="status" value="beta" {% if f.status == "beta" %}checked{% endif %}><span>Beta / preview</span><i>{{ fc.beta }}</i></label>
-        </fieldset>
-      </details>
-      {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
-      <button type="submit" class="btn-secondary" data-apply>Apply</button>
-    </form>
-  </details>
-  {% endblock %}
+<section class="wrap{% if facets %} wrap-wide bench{% endif %}">
 
   <div class="bench-main">
   {% if facets %}
@@ -73,6 +20,21 @@
     {% for t, label in TYPE_LABELS.items() %}<a href="/models?{{ qs(type=t) }}" {% if f.type == t %}aria-current="page"{% endif %}>{{ label }}<i>{{ facets.type[t] }}</i></a>{% endfor %}
   </nav>
   {% endif %}
+  {% block filters %}{% if facets %}{% set fo = filter_opts %}
+  <form class="filters fbar" method="get" action="/models" aria-label="Filter models">
+    {% if f.type %}<input type="hidden" name="type" value="{{ f.type }}">{% endif %}
+    {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
+    {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
+    {{ fl.search(f.q, "Search models") }}
+    {{ fl.dropdown("provider", "Provider", fo.provider, f.provider, search=True, any_label="Any provider") }}
+    {{ fl.dropdown("language", "Language", fo.language, f.language, search=True, any_label="Any language") }}
+    {{ fl.dropdown("capability", "Features", fo.capability, f.capability, kind="checkbox", note="Models must have every ticked feature.") }}
+    {{ fl.dropdown("status", "Status", fo.status, f.status, any_label="Any status") }}
+    {{ fl.toggle("mode", "realtime", "Realtime", f.mode == "realtime", facets.realtime) }}
+    {{ fl.toggle("weights", "open", "Open weights", f.weights == "open", facets.open) }}
+    <button type="submit" class="btn-secondary" data-apply>Apply</button>
+  </form>
+  {% endif %}{% endblock %}
   <div class="result-bar">
     {% set n_all = total_rows|default(rows|length) %}<p class="result-count" role="status">{{ "{:,}".format(n_all) }} match{{ 'es' if n_all != 1 }}{% if pages|default(1) > 1 %}, {{ first }}–{{ first + rows|length - 1 }} shown{% elif n_all > rows|length %}, cheapest {{ rows|length }} shown{% endif %}</p>
     {% if tokens %}

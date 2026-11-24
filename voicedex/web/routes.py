@@ -397,7 +397,16 @@ async def models_page(request: Request, catalog: Catalog = Depends(get_catalog))
         rows.sort(key=views.default_model_order)
     ctx = _models_context(catalog, rows, f, usage_raw=_q(request, "usage"))
     ctx["canonical_path"] = _models_canonical(catalog, f)
-    ctx["facets"] = _model_facets(all_rows, rows, f)
+    ctx["facets"] = fc = _model_facets(all_rows, rows, f)
+    lang_n = lambda code: fc["language"].get(code, fc["language"].get("*", 0))      # noqa: E731
+    ctx["filter_opts"] = {
+        "provider": [(s.id, s.name, fc["provider"][s.id]) for s in ctx["providers"]
+                     if fc["provider"][s.id] or s.id == f["provider"]],
+        "language": [(code, name, lang_n(code)) for code, name in ctx["languages"] if lang_n(code) or code == f["language"]],
+        "capability": sorted(((c, views.FEATURE_LABELS.get(c, c.replace("_", " ").capitalize()), n) for c, n in fc["capability"]),
+                             key=lambda o: -o[2]),
+        "status": [("ending", "Shutting down", fc["ending"]), ("beta", "Beta / preview", fc["beta"])],
+    }
     ctx["tokens"] = [t for t in ctx["tokens"] if t[0] != _TOKEN_LABEL["type"]]     # the type tabs show it
     # Paginate after the context is built: the spectrum and the compare keys describe every match, not one page.
     try:
@@ -582,6 +591,9 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     all_rows = views.active_voices(catalog)
     rows = _filter_voices(all_rows, f, catalog=catalog)
     without = lambda k: _filter_voices(all_rows, f, frozenset({k}), catalog)     # noqa: E731
+    voice_langs = sorted(((c, views.language_name(c)) for c in {views.base_language(lang) for r in all_rows
+                                                                 for lang in r.voice.languages if lang != "*"}),
+                         key=lambda x: x[1])
     fx = lambda r: views.voice_facets(catalog, r)                             # noqa: E731
     gender_base = without("gender")
     by_gender = Counter(r.voice.gender for r in gender_base)
@@ -615,12 +627,20 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
         "rows": rows[(page - 1) * VOICES_PER_PAGE: page * VOICES_PER_PAGE],
         "total": len(rows), "page": page, "pages": pages, "f": f,
         "ages": views.VOICE_AGES, "uses": list(views.VOICE_USES),
+        "filter_opts": {
+            "provider": [(p.id, p.name, facets["provider"][p.id]) for p in views.provider_summaries(catalog)
+                         if p.voices and (facets["provider"][p.id] or p.id == f["provider"])],
+            "language": [(c, n, facets["language"].get(c, facets["language"].get("*", 0))) for c, n in voice_langs
+                         if facets["language"].get(c, facets["language"].get("*", 0)) or c == f["language"]],
+            "use": [(u, u, facets["use"][u]) for u in views.VOICE_USES if facets["use"][u] or u == f["use"]],
+            "age": [(a, a, facets["age"][a]) for a in views.VOICE_AGES if facets["age"][a] or a == f["age"]],
+            "accent": [(a, a, n) for a, n in facets["accent"].most_common()] + (
+                [(f["accent"], f["accent"], 0)] if f["accent"] and not facets["accent"][f["accent"]] else []),
+        },
         "tokens": [t for t in _filter_tokens(f, catalog) if t[0] != _TOKEN_LABEL["gender"]],   # the tabs show it
         "facets": facets, "genders": VOICE_GENDERS, "sorts": VOICE_SORTS,
         "qs": lambda **changes: _qs({**f, "page": str(page) if page > 1 else ""}, **{k: (str(v) if v else v) for k, v in changes.items()}),
-        "languages": sorted(((c, views.language_name(c)) for c in {views.base_language(lang) for r in all_rows
-                                                                    for lang in r.voice.languages if lang != "*"}),
-                           key=lambda x: x[1]),
+        "languages": voice_langs,
         "providers": [s for s in views.provider_summaries(catalog) if s.voices],
         "n_live": sum(1 for pd in catalog.providers.values() if pd.provider.status == "active"),
         "names": {pid: pd.provider.name for pid, pd in catalog.providers.items()},
