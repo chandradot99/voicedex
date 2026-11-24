@@ -46,7 +46,6 @@
     {% if facets %}
     <div class="view-tools">
       <nav class="seg seg-sm" aria-label="Sort models">{% for key, label in MODEL_SORTS.items() %}<a href="/models?{{ qs(sort=key or None) }}" {% if f.sort == key %}aria-current="true"{% endif %}>{{ label }}</a>{% endfor %}</nav>
-      <button type="button" class="btn-secondary density-toggle hide-sm" aria-pressed="false" hidden>Compact rows</button>
     </div>
     {% endif %}
   </div>
@@ -66,27 +65,25 @@
           <th scope="col" class="hide-sm">Features</th>
           <th scope="col" class="num"><a href="/models?{{ qs(sort='price') }}" {% if f.sort == 'price' %}aria-current="true"{% endif %}>Price{% if f.sort == 'price' %} ↑{% endif %}</a></th>
           {% if usage_type %}<th scope="col" class="num month-col">Per month</th>{% endif %}
-          <th scope="col" class="hide-sm">Status</th>
         </tr>
       </thead>
       <tbody>
         {% for r in rows %}{% set m = r.model %}{% set k = model_key(r) %}
         {% if tiered and (loop.first or licence_tier(m) != licence_tier(rows[loop.index0 - 1].model)) %}
-        <tr class="group-row"><th scope="rowgroup" colspan="{{ 9 if usage_type else 8 }}">{{ licence_tier(m) }}</th></tr>
+        <tr class="group-row"><th scope="rowgroup" colspan="{{ 8 if usage_type else 7 }}">{{ licence_tier(m) }}</th></tr>
         {% endif %}
         {% if f.sort == "price" and not tiered %}{% set g = price_group(m) %}{% if g and (loop.first or g != price_group(rows[loop.index0 - 1].model)) %}
-        <tr class="group-row"><th scope="rowgroup" colspan="{{ 9 if usage_type else 8 }}">{{ PRICE_GROUP_LABELS[g] }}</th></tr>
+        <tr class="group-row"><th scope="rowgroup" colspan="{{ 8 if usage_type else 7 }}">{{ PRICE_GROUP_LABELS[g] }}</th></tr>
         {% endif %}{% endif %}
         <tr>
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
-          <th scope="row"><a href="{{ model_url(r) }}" title="{{ m.name }}"><code translate="no">{{ m.id }}</code></a>{% if m.open_weights %} <span class="tag" title="Open weights: {{ m.open_weights.license or 'licence not stated' }} ({{ licence_short(m) }})">open</span>{% endif %}{% if name_adds(m) %}<span class="sub model-name">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
+          <th scope="row"><a href="{{ model_url(r) }}" title="{{ m.name }}"><code translate="no">{{ m.id }}</code></a>{% if m.open_weights %} <span class="tag" title="Open weights: {{ m.open_weights.license or 'licence not stated' }} ({{ licence_short(m) }})">open</span>{% endif %}{{ cells.status_tags(m) }}{% if name_adds(m) %}<span class="sub model-name">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}</span></th>
           <td class="hide-sm provider-cell"><span class="with-logo">{{ cells.logo(r.provider_id, names[r.provider_id]) }}{{ names[r.provider_id] }}</span></td>
           <td class="mono hide-sm">{{ TYPE_SHORT[m.type] }}</td>
           <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
           {{ cells.feat_cell(m) }}
           {{ cells.price_cell(m, k, positions) }}
           {% if usage_type %}{% set mc = monthly_cost(m, usage) %}<td class="num mono month-cell"{% if mc is not none %} data-rate="{{ mc / usage / USAGE[usage_type].scale }}"{% endif %}>{{ money(mc) }}</td>{% endif %}
-          <td class="hide-sm">{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>

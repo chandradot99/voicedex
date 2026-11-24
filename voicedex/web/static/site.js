@@ -200,20 +200,6 @@ $$("form.filters [data-apply]").forEach((b) => {
   b.tabIndex = -1;
   b.setAttribute("aria-hidden", "true");
 });
-// ── Row density on the workbench tables: comfortable (default) or compact, remembered per browser. The saved
-// choice is applied in <head> before first paint (base.html), so rows never jump.
-$$(".density-toggle").forEach((b) => {
-  const root = document.documentElement;
-  const sync = () => b.setAttribute("aria-pressed", String(root.dataset.density === "compact"));
-  b.hidden = false;
-  sync();
-  b.addEventListener("click", () => {
-    const next = root.dataset.density === "compact" ? "" : "compact";
-    if (next) root.dataset.density = next; else delete root.dataset.density;
-    try { next ? localStorage.setItem("density", next) : localStorage.removeItem("density"); } catch (e) {}
-    sync();
-  });
-});
 // On phones the filter bar starts collapsed (active filters still show as removable tokens below it).
 if (matchMedia("(max-width: 760px)").matches) {
   $$("details[data-collapse-sm]").forEach((d) => { d.open = false; });

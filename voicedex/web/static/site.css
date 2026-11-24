@@ -975,16 +975,7 @@ input[type="radio"]:checked::after { content: ""; width: 7px; height: 7px; borde
 .result-bar .btn-link.clear-all { margin-left: 0; }
 .view-tools { margin-left: auto; display: flex; align-items: center; gap: 10px; }
 .seg-sm a { padding: 7px 10px; }
-.density-toggle[aria-pressed="true"] { border-color: var(--signal); color: var(--signal); }
 
-/* Compact rows: one line per model; the display name moves to the link's tooltip. Desktop only, since on
-   phones the second line carries the provider and type. */
-@media (min-width: 761px) {
-  :root[data-density="compact"] .models-table tbody td, :root[data-density="compact"] .models-table tbody th { padding-top: 5px; padding-bottom: 5px; }
-  :root[data-density="compact"] .models-table .sub { display: none; }
-  :root[data-density="compact"] .voice { min-height: 40px; padding: 3px 0; }
-  :root[data-density="compact"] .voice-desc, :root[data-density="compact"] .voice-sample-note { display: none; }
-}
 
 @media (max-width: 1000px) {
   .workbench { grid-template-columns: minmax(0, 1fr); }
@@ -1466,11 +1457,6 @@ h1.with-logo { display: flex; gap: 14px; }
   background: conic-gradient(var(--signal-fill) calc(var(--row-progress, 0) * 360deg), transparent 0);
   -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1.5px)); mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1.5px));
 }
-@media (min-width: 761px) {
-  :root[data-density="compact"] .voices-table tbody td, :root[data-density="compact"] .voices-table tbody th { padding-top: 5px; padding-bottom: 5px; }
-  :root[data-density="compact"] .voices-table .sub { display: none; }
-  :root[data-density="compact"] .voices-table .play { width: 28px; height: 28px; }
-}
 .voices-table .voice-error[hidden] { display: none; }
 .voices-table td:nth-last-child(-n+5):not(.lang-cell) { white-space: nowrap; }
 .voices-table .voice-main { max-width: 340px; }
@@ -1527,3 +1513,5 @@ h1.with-logo { display: flex; gap: 14px; }
   .fpop { position: fixed; left: 12px; right: 12px; top: auto; bottom: 12px; width: auto; max-height: 70vh; }
 }
 .fsearch { flex: 1 1 180px; min-width: 150px; max-width: 280px; }
+.fsearch { flex: 1 1 220px; max-width: none; }          /* the search box takes whatever width the filters leave */
+.tag-end { color: var(--end); border-color: color-mix(in srgb, var(--end) 45%, transparent); }

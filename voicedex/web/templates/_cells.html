@@ -18,3 +18,8 @@
 {% macro logo(pid, name, size="sm") -%}
 {% set src = provider_logo(pid) %}{% if src %}<img class="logo logo-{{ size }}" src="{{ src }}" alt="" width="64" height="64" loading="lazy" decoding="async">{% else %}<span class="logo logo-{{ size }} logo-letter" aria-hidden="true">{{ (name or pid)[:1]|upper }}</span>{% endif %}
 {%- endmacro %}
+
+{# Status as small tags after the model id (no mostly-empty Status column): beta/preview, a coral end date, alias. #}
+{% macro status_tags(m, alias=False) -%}
+{% if m.eol_date %} <span class="tag tag-end" title="Shuts down {{ m.eol_date.strftime('%-d %b %Y') }}">ends {{ m.eol_date.strftime('%-d %b %Y') }}</span>{% elif m.lifecycle in ("alpha", "beta") %} <span class="tag">{{ "preview" if m.lifecycle == "alpha" else "beta" }}</span>{% endif %}{% if alias and m.alias_of %} <span class="tag" title="Alias of {{ m.alias_of }}">alias</span>{% endif %}
+{%- endmacro %}

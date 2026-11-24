@@ -41,7 +41,6 @@
     {% endif %}
     <div class="view-tools">
       <nav class="seg seg-sm" aria-label="Sort voices">{% for key, label in sorts.items() %}<a href="/voices?{{ qs(sort=key or None, page=None) }}" {% if f.sort == key %}aria-current="true"{% endif %}>{{ label }}</a>{% endfor %}</nav>
-      <button type="button" class="btn-secondary density-toggle hide-sm" aria-pressed="false" hidden>Compact rows</button>
     </div>
   </div>
   {% if rows %}
