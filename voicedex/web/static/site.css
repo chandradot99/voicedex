@@ -1515,3 +1515,8 @@ h1.with-logo { display: flex; gap: 14px; }
 .fsearch { flex: 1 1 180px; min-width: 150px; max-width: 280px; }
 .fsearch { flex: 1 1 220px; max-width: none; }          /* the search box takes whatever width the filters leave */
 .tag-end { color: var(--end); border-color: color-mix(in srgb, var(--end) 45%, transparent); }
+/* Chart labels sit on a patch of the section's surface so the middle-half edge passes behind them */
+.costs .median span, .costs .iqr span { z-index: 2; padding: 1px 6px; border-radius: 4px; background: var(--well); }
+.costs .median span { left: 4px; }
+.costs .iqr span { left: 4px; }
+.costs .iqr span { background: none; padding: 1px 2px; }
