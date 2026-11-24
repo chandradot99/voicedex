@@ -16,14 +16,14 @@ ROOT = Path(__file__).resolve().parent.parent
 STATIC = ROOT / "voicedex/web/static"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-# The "V-meter": five level-meter bars whose tops trace a V, amber on a dark app-icon tile (matches the provider
-# logos it sits beside). SQUARE is the same mark full-bleed, for iOS, which rounds corners itself.
-_BARS = "".join(f'<rect x="{10 + k * 9.5}" y="{51 - h}" width="6" height="{h}" rx="3" fill="#f5a524"/>'
-                for k, h in enumerate((38, 27, 16, 27, 38)))
-SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#17140f"/>'
-       '<rect x=".5" y=".5" width="63" height="63" rx="14.5" fill="none" stroke="#fff" stroke-opacity=".09"/>'
+# The "V-meter": five level-meter bars whose tops trace a V, dark on an amber app-icon tile (matches the provider
+# logos it sits beside and stands out on both themes). SQUARE is the same mark full-bleed, for iOS, which rounds
+# corners itself.
+_BARS = "".join(f'<rect x="{10 + k * 9.5}" y="{51 - h}" width="6" height="{h}" rx="3" fill="#120c02"/>'
+                for k, h in enumerate((38, 26, 13, 26, 38)))
+SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#f5a524"/>'
        + _BARS + "</svg>\n")
-SQUARE = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#17140f"/>'
+SQUARE = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#f5a524"/>'
           + _BARS + "</svg>\n")
 
 PNGS = {"favicon-48.png": 48, "favicon-96.png": 96, "favicon-192.png": 192, "logo.png": 512}

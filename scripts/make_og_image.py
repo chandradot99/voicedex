@@ -61,7 +61,7 @@ h1{{margin-top:{int(H * .075)}px;font-weight:700;letter-spacing:-.04em;font-size
 .spec{{margin-top:auto}}
 .label{{font-size:15px;font-weight:500;color:#a19e99;margin-bottom:8px;display:flex;justify-content:space-between}}
 </style></head><body><div class="wrap">
-<div class="top"><div class="brand"><svg width="40" height="40" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#17140f"/><rect x=".5" y=".5" width="63" height="63" rx="14.5" fill="none" stroke="#fff" stroke-opacity=".09"/><rect x="10.0" y="13" width="6" height="38" rx="3" fill="#f5a524"/><rect x="19.5" y="24" width="6" height="27" rx="3" fill="#f5a524"/><rect x="29.0" y="35" width="6" height="16" rx="3" fill="#f5a524"/><rect x="38.5" y="24" width="6" height="27" rx="3" fill="#f5a524"/><rect x="48.0" y="13" width="6" height="38" rx="3" fill="#f5a524"/></svg>Voicedex</div><div class="url">voicedex.dev</div></div>
+<div class="top"><div class="brand"><svg width="40" height="40" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#f5a524"/><rect x="10.0" y="13" width="6" height="38" rx="3" fill="#120c02"/><rect x="19.5" y="25" width="6" height="26" rx="3" fill="#120c02"/><rect x="29.0" y="38" width="6" height="13" rx="3" fill="#120c02"/><rect x="38.5" y="25" width="6" height="26" rx="3" fill="#120c02"/><rect x="48.0" y="13" width="6" height="38" rx="3" fill="#120c02"/></svg>Voicedex</div><div class="url">voicedex.dev</div></div>
 <h1>Every speech model and voice,<br>compared.</h1>
 <p class="facts"><b>800+</b> models · <b>15,000+</b> voices · <b>120+</b> providers · STT · TTS · S2S</p>
 <div class="spec"><div class="label"><span>Text-to-speech prices</span><span>USD per 1M characters, log scale</span></div>{svg}</div>
