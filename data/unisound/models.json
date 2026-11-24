@@ -45,6 +45,9 @@
     "max_audio_seconds": 18000,
     "meta": {
       "dialects": "Chinese dialects across 7 major groups (Cantonese, Wu, Min, Hakka, Xiang, Jin, Hui, Southwestern Mandarin)",
+      "docs_sources": [
+        "https://maas.unisound.com/docs/api/overview"
+      ],
       "endpoints": {
         "async file": "https://maas-api.unisound.com/v1/audio/asr/tasks",
         "one-shot": "wss://maas-api.unisound.com/v2/ws/asr/oneshot?model=u2-asr",
@@ -78,11 +81,13 @@
         "https://maas.unisound.com/docs/price/overview"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Mandarin and Chinese dialect transcription",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -223,6 +228,9 @@
       "http"
     ],
     "meta": {
+      "docs_sources": [
+        "https://maas.unisound.com/docs/release"
+      ],
       "endpoint": "https://maas-api.unisound.com/v1/audio/voices/design",
       "model_id_note": "the design request body takes no model parameter; U2-TTS-Design is the catalog/pricing name"
     },
@@ -250,8 +258,9 @@
         "https://maas.unisound.com/docs/price/overview"
       ]
     },
+    "released_on": "2026-07-28",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

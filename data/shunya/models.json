@@ -74,6 +74,10 @@
       "sck"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+      ],
       "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
       "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
       "language_note": "Docs: '55 Indic + English code-switch combinations'.",
@@ -116,8 +120,10 @@
         "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
       ]
     },
+    "recommended": true,
+    "recommended_for": "code-mixed speech (Hinglish, Tanglish)",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -196,6 +202,10 @@
     ],
     "meta": {
       "default_note": "Docs: 'The default for Indian languages'; also the default `model` in the streaming init frame.",
+      "docs_sources": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+      ],
       "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
       "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
       "language_note": "55 Indian languages listed by name on the Supported languages page; codes mapped to ISO 639 here. Several are dialects/regional languages (e.g. Ahirani, Surgujia, Sadri).",
@@ -238,8 +248,10 @@
         "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Indian languages",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -262,6 +274,10 @@
       "en"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+      ],
       "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
       "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
       "legacy_ids_note": "The earlier zero-* model ids still work.",
@@ -303,8 +319,10 @@
         "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
       ]
     },
+    "recommended": true,
+    "recommended_for": "clinical and medical speech (English)",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -329,6 +347,10 @@
     "meta": {
       "benchmark_model": "pingala-v1-universal",
       "composite_wer_open_asr": 3.1,
+      "docs_sources": [
+        "https://www.shunyalabs.ai/docs/horizon/models-x9jt",
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+      ],
       "intelligence_addon_pricing": "Speech-intelligence features are billed per minute on top of the model rate (see pricing page).",
       "intelligence_flags": "enable_diarization, enable_speaker_identification, enable_emotion_diarization, enable_intent_detection, enable_sentiment_analysis, enable_summarization, enable_keyterm_normalization, enable_profanity_hashing, hash_keywords (regex keyword redaction); translation is a separate POST /v1/translate",
       "language_count": "204+",
@@ -377,8 +399,10 @@
         "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
       ]
     },
+    "recommended": true,
+    "recommended_for": "English and international languages",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -431,6 +455,9 @@
     "max_text_chars": 10000,
     "meta": {
       "default_note": "Radiance models table: 'The default.'",
+      "docs_sources": [
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+      ],
       "expression_styles": "11 styles (e.g. Happy, Sad, News, Narrative, Conversational, Enthusiastic) prepended as tags to the text.",
       "response_formats": [
         "pcm",
@@ -478,12 +505,14 @@
         "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Indic languages, voice agents and IVR",
     "sample_rates_hz": [
       8000,
       16000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Text-to-speech for 11 East and Southeast Asian languages, including Japanese, Korean and Chinese.",
@@ -507,6 +536,9 @@
       "my"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+      ],
       "language_source": "Language list from the Radiance Oriental product page (www.shunyalabs.ai/radiance/oriental-5jmj).",
       "pricing_note": "Not listed on the pricing page."
     },
@@ -526,8 +558,10 @@
         "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Japanese, Korean and other Asian languages",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Text-to-speech for 669 world languages beyond the Indic catalogue, voiced with a standard built-in speaker.",
@@ -541,6 +575,9 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+      ],
       "language_count": 669,
       "pricing_note": "Priced as 'Radiance' on the pricing page.",
       "voice_note": "Named voices apply to the Indic catalogue; world languages use a standard built-in speaker."
@@ -575,7 +612,9 @@
         "https://www.shunyalabs.ai/docs/radiance/audio-formats-r8rp"
       ]
     },
+    "recommended": true,
+    "recommended_for": "world languages beyond the Indic catalogue",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

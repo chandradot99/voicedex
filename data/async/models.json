@@ -40,6 +40,9 @@
     ],
     "meta": {
       "cold_start_note": "First streaming connection after idle may take 60-150s",
+      "docs_sources": [
+        "https://docs.async.com/models-2161359m0.md"
+      ],
       "endpoints": [
         "POST /speech_to_text/",
         "WSS /speech_to_text/stream"
@@ -64,8 +67,10 @@
         "https://docs.async.com/billing-pricing-2243956m0.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "transcription and live captioning",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -104,6 +109,9 @@
     ],
     "meta": {
       "break_tag": true,
+      "docs_sources": [
+        "https://docs.async.com/models-2161359m0.md"
+      ],
       "endpoints": [
         "POST /text_to_speech",
         "POST /text_to_speech/streaming",
@@ -151,8 +159,10 @@
         "https://docs.async.com/billing-pricing-2243956m0.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "languages Flash v1.5 lacks (Armenian, Russian, etc.)",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -182,6 +192,9 @@
     ],
     "meta": {
       "break_tag": true,
+      "docs_sources": [
+        "https://docs.async.com/models-2161359m0.md"
+      ],
       "endpoints": [
         "POST /text_to_speech",
         "POST /text_to_speech/streaming",
@@ -220,8 +233,10 @@
         "https://docs.async.com/billing-pricing-2243956m0.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time voice agents",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -245,6 +260,9 @@
     ],
     "meta": {
       "break_tag": true,
+      "docs_sources": [
+        "https://docs.async.com/models-2161359m0.md"
+      ],
       "endpoints": [
         "POST /text_to_speech",
         "POST /text_to_speech/streaming",
@@ -283,7 +301,9 @@
         "https://docs.async.com/billing-pricing-2243956m0.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "pre-rendered content, audiobooks (English)",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

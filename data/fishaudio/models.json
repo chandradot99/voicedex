@@ -23,6 +23,11 @@
     ],
     "meta": {
       "deprecation_notice": "transcribe-1 is deprecated and will be retired on December 31, 2026. After that date, the requests it serves are served by transcribe-1-pro.",
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "max_upload_mib": 50,
       "replacement": "transcribe-1-pro"
     },
@@ -45,9 +50,10 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "recommended": false,
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -76,6 +82,11 @@
     "max_audio_seconds": 3600,
     "meta": {
       "audio_event_tags": true,
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "endpoint": "POST /v1/asr (header model: transcribe-1-pro)",
       "input_formats_raw": [
         "wav",
@@ -110,9 +121,15 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "recommended": true,
+    "recommended_for": "recorded audio, short clips to long recordings",
+    "released_on": "2026-09-18",
+    "replaces": [
+      "transcribe-1"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -165,6 +182,10 @@
       "audio_encodings": [
         "pcm_s16le"
       ],
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "endpoint": "wss://api.fish.audio/v1/asr/realtime",
       "label": "Preview",
       "max_turn_seconds": 60,
@@ -189,6 +210,9 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "recommended": true,
+    "recommended_for": "live audio, voice agents",
+    "released_on": "2026-10-20",
     "sample_rates_hz": [
       8000,
       12000,
@@ -200,7 +224,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -223,6 +247,9 @@
       "http"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "language_tags_experimental": true,
       "pricing_raw": {
         "as_of": "2026-11-16",
@@ -259,6 +286,7 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "released_on": "2026-10-13",
     "sample_rates_hz": [
       8000,
       16000,
@@ -269,7 +297,7 @@
     ],
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -307,6 +335,11 @@
     ],
     "meta": {
       "deprecation_notice": "S1 is deprecated and will be retired on December 31, 2026. After that date, requests that specify s1 are served by s2.1-pro.",
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "pricing_raw": {
         "as_of": "2026-11-16",
         "price_usd_per_million_utf8_bytes": 15.0,
@@ -334,6 +367,8 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-06",
     "sample_rates_hz": [
       8000,
       16000,
@@ -343,7 +378,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -369,6 +404,10 @@
     ],
     "meta": {
       "declared_language_count": "80+",
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "open_source": true,
       "pricing_raw": {
         "as_of": "2026-11-16",
@@ -397,6 +436,8 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-03",
     "sample_rates_hz": [
       8000,
       16000,
@@ -406,7 +447,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -434,6 +475,11 @@
     ],
     "meta": {
       "declared_language_count": 83,
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/models-pricing/deprecations",
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "pricing_raw": {
         "as_of": "2026-11-16",
         "price_usd_per_million_utf8_bytes": 15.0,
@@ -461,6 +507,13 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "recommended": true,
+    "recommended_for": "production text-to-speech",
+    "released_on": "2026-06-23",
+    "replaces": [
+      "s2-pro",
+      "s1"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
@@ -470,7 +523,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -496,6 +549,10 @@
     ],
     "meta": {
       "declared_language_count": 83,
+      "docs_sources": [
+        "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+        "https://docs.fish.audio/developer-guide/getting-started/changelog"
+      ],
       "pricing_raw": {
         "as_of": "2026-11-16",
         "notes": "Free under fair-use limits",
@@ -525,6 +582,9 @@
         "https://docs.fish.audio/features/speech-to-text"
       ]
     },
+    "recommended": true,
+    "recommended_for": "development, testing and prototyping",
+    "released_on": "2026-06-23",
     "sample_rates_hz": [
       8000,
       16000,
@@ -534,6 +594,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

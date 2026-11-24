@@ -47,6 +47,10 @@
     ],
     "max_audio_seconds": 600,
     "meta": {
+      "docs_sources": [
+        "https://dev.meta.ai/docs/models",
+        "https://developer.meta.com/ai/models/muse-voice-transcribe/"
+      ],
       "features": [
         "code-switching",
         "turn-level timestamps",
@@ -92,11 +96,13 @@
         "https://dev.meta.ai/docs/pricing-rate-limits"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time transcription, voice agents",
     "sample_rates_hz": [
       16000,
       24000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

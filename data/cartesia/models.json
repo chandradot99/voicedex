@@ -24,6 +24,9 @@
       "es"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ],
       "input": {
         "encodings": [
           "pcm_s16le",
@@ -57,8 +60,11 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "streaming STT for production voice agents",
+    "released_on": "2026-10-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -85,6 +91,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+      ],
       "input": {
         "encodings": [
           "pcm_s16le",
@@ -110,8 +119,9 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "released_on": "2026-11-17",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -242,6 +252,11 @@
       "su",
       "yue"
     ],
+    "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/stt/older-models"
+      ]
+    },
     "name": "Ink Whisper",
     "pricing": {
       "as_of": "2026-11-16",
@@ -259,8 +274,10 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-06-04",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -392,6 +409,11 @@
       "su",
       "yue"
     ],
+    "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/stt/older-models"
+      ]
+    },
     "name": "Ink Whisper (2025-06-04)",
     "pricing": {
       "as_of": "2026-11-16",
@@ -409,9 +431,11 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-06-04",
     "snapshot_date": "2025-06-04",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -477,6 +501,9 @@
       "pa"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models"
+      ],
       "output": {
         "containers": [
           "wav",
@@ -521,6 +548,8 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-10-27",
     "sample_rates_hz": [
       8000,
       16000,
@@ -530,7 +559,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -597,6 +626,9 @@
       "pa"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models"
+      ],
       "output": {
         "containers": [
           "wav",
@@ -641,6 +673,8 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-01-12",
     "sample_rates_hz": [
       8000,
       16000,
@@ -651,7 +685,7 @@
     ],
     "snapshot_date": "2026-01-12",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -717,6 +751,10 @@
       "pa"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/sonic-3-to-sonic-3-5"
+      ],
       "output": {
         "containers": [
           "wav",
@@ -761,6 +799,11 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-05-04",
+    "replaces": [
+      "sonic-3"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
@@ -770,7 +813,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -837,6 +880,9 @@
       "pa"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models"
+      ],
       "output": {
         "containers": [
           "wav",
@@ -881,6 +927,8 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-05-04",
     "sample_rates_hz": [
       8000,
       16000,
@@ -891,7 +939,7 @@
     ],
     "snapshot_date": "2026-05-04",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -961,6 +1009,10 @@
       "ur"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models"
+      ],
       "output": {
         "containers": [
           "wav",
@@ -1005,6 +1057,12 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "text-to-speech, auto-updating stable alias",
+    "released_on": "2026-08-27",
+    "replaces": [
+      "sonic-3.5"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
@@ -1014,7 +1072,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1084,6 +1142,9 @@
       "ur"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest"
+      ],
       "output": {
         "containers": [
           "wav",
@@ -1128,6 +1189,7 @@
         "https://docs.cartesia.ai/build-with-cartesia/stt-models"
       ]
     },
+    "released_on": "2026-08-27",
     "sample_rates_hz": [
       8000,
       16000,
@@ -1138,7 +1200,7 @@
     ],
     "snapshot_date": "2026-08-27",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

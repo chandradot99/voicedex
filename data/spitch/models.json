@@ -29,6 +29,10 @@
     "meta": {
       "async": "?async=true returns a polling URL",
       "deprecated_model_values": "mansa_v1, legacy (the `model` parameter is deprecated; omit it)",
+      "docs_sources": [
+        "https://spitch.app/docs/features/transcription",
+        "https://spitch.app/docs/advanced/models"
+      ],
       "endpoint": "POST /v1/transcriptions",
       "languages_note": "Docs say many languages; en, yo, ha, ig, am are the ISO 639 codes named. Omitting language uses automatic language handling (response carries detected_language).",
       "max_file_size_mb": 25,
@@ -54,9 +58,11 @@
         "https://spitch.app/docs/concepts/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "African-language transcription",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -90,6 +96,9 @@
     "meta": {
       "bitrates": "32k-192k for compressed formats",
       "custom_voices": "POST /v1/voices from a reference recording + transcript + consent",
+      "docs_sources": [
+        "https://spitch.app/docs/features/speech"
+      ],
       "endpoint": "POST /v1/speech",
       "no_model_parameter": true,
       "provenance": "Signed provenance metadata embedded in wav, mp3, ogg_opus, webm_opus, flac",
@@ -118,10 +127,12 @@
         "https://spitch.app/docs/concepts/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "African-language speech synthesis",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

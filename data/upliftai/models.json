@@ -102,6 +102,9 @@
     ],
     "max_text_chars": 2500,
     "meta": {
+      "docs_sources": [
+        "https://docs.upliftai.org/orator.md"
+      ],
       "language_note": "Sindhi and Balochi come from the earlier-voices table; the current 82-voice catalog speaks Urdu.",
       "model_id_note": "No model parameter; requests select a voiceId. 'orator' is the product name.",
       "output_formats": [
@@ -132,11 +135,13 @@
         "https://docs.upliftai.org/voices.json"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Urdu and Pakistani languages",
     "sample_rates_hz": [
       8000,
       22050
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
