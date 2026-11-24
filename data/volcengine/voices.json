@@ -7452,6 +7452,109 @@
     ]
   },
   {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_cantonesefemalevoicedb_4_v3_uranus_bigtts",
+    "languages": [
+      "yue-HK"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "粤语（香港口音）",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "粤语小洁 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_347ddab5aa5101d95dffe14dfe6fb043.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "changsha",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_changshadialectfemalevoicedb_1_v3_uranus_bigtts",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "长沙话",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "长沙小湘 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_1a17b0dd71659fbb53c869f6b467ad6d.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_dacey_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "陪聊,外语音色,美式英语",
+      "tts_version": "3.0"
+    },
+    "name": "Dacey 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_c97050c55b0d411225eb466b5dacfee2.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_emosarah_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "陪聊",
+      "tts_version": "3.0"
+    },
+    "name": "Naomi 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_59324592638d0a304178f0fb86c2cd59.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "seed-tts-1.0"
@@ -7470,6 +7573,236 @@
     "updated_at": "2026-11-18"
   },
   {
+    "accent": "henan",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_henandialectfemalevoicedb_1_v3_uranus_bigtts",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "河南话",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "豫州小妮 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_b138168bb04b0ad36ae296eb006e1ad0.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_huoliyingxiao_nv_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "活力小满 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_fac4b75253fbdf4d078e897a630a9e21.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_jenny_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "Jenny 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_2d4a5e0fa77052381bb5aca6e3d0d173.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_jietingkefu_wanjun_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "客服婉君 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_83856546fe42ac22371a1e4b78abe2d9.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_kefunvsheng_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "暖阳女声 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_cc09ebca7afa026dc3b307f7561f63dc.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_lana_del_rey_parky_s_p1_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "Ivy 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_5e8acb408c1dda707dab340ec78cf47b.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_lisa_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "陪聊,外语音色,美式英语",
+      "tts_version": "3.0"
+    },
+    "name": "Lisa 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_1059a6649e671c939e0f0ddff6f9c38e.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_lisaamused_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "陪聊,外语音色,美式英语",
+      "tts_version": "3.0"
+    },
+    "name": "Grace 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_25340f84ae4dfbe89ad6455da55c02ad.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_liuchangnv_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "流畅女声 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_308b020a84a8394223cb405d8f16c0bc.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "seed-tts-1.0"
@@ -7486,6 +7819,289 @@
     },
     "name": "Diana",
     "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_mel_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Mel 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_c7ca69cf05600613d16a3edd04702b6f.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_mizai_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "黑猫侦探社咪仔 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_c24ef8a71861ba40dde4e5dab5fd0bc9.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_myra_cmb_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Sunny 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_7608f74673225ee7b9507783cae1d6c6.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_myra_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Myra 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_c9412869f09850dc5da5fc1e8fe42a1f.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_peiqi_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tags_raw": "抖音同款,豆包同款,剪映同款",
+      "tts_version": "3.0"
+    },
+    "name": "佩奇猪 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_be41d54411b9dfcee24757ecde663d41.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_qiaopinv_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "俏皮女声 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_44f04954fdbe35cd6a1bf2715d00fa23.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_rachel_p1_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "Rachel 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_41c3a28bb48bdb28d2d5ae7172c34600.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_sarah_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "Sarah 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_aca21fe274c60aab2352b57bd23b59e2.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_scarlet_p1_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "Scarlet 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_5c5ed3a5b9509254984e5e1008772449.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_shaoergushi_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "少儿故事 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_5414e25366990b1048bb81abd4af10bf.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_sharron_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "Sharron 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_fc5e44ea5d1535f3cc627fe7bd10440f.mp3",
+    "updated_at": "2026-11-24"
   },
   {
     "category": "premade",
@@ -7507,6 +8123,32 @@
     "updated_at": "2026-11-18"
   },
   {
+    "accent": "sichuan",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_sichuandialectfemalevoicedb_3_v3_uranus_bigtts",
+    "languages": [
+      "zh-CN"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "四川话",
+      "scenario": "陪聊,趣味口音,四川口音, 趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "安逸川妹 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_5bbe431eb8ba0d064087a9fd4280d5dc.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "seed-tts-1.0"
@@ -7525,6 +8167,385 @@
     "updated_at": "2026-11-18"
   },
   {
+    "accent": "british",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_stokie_v3_uranus_bigtts",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（英式口音）",
+      "scenario": "陪聊,外语音色,英式英语",
+      "tts_version": "3.0"
+    },
+    "name": "Stokie 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_dcaf69e39765b812985fc5293ff384bd.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_tuanzi_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tts_version": "3.0"
+    },
+    "name": "团子 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_4bedf8ea04e52978d56b00d358f397ca.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_tvbnv_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "TVB女声 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_7c040c352a50a65fe6032ebd9ed1fef8.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_vv_xi_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "陪聊",
+      "tts_version": "3.0"
+    },
+    "name": "Vivi 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_0784add227af842ad9c4f0f522342da3.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_wenroucuishou_lingling_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "外呼凌凌 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_d8a4c80b4af5b86ed696c8ea01c69bb1.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_wenroushunv_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tags_raw": "番茄小说同款,豆包同款,剪映同款",
+      "tts_version": "3.0"
+    },
+    "name": "温柔淑女 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_2cc58593ed9eaffcf7a44bd95bc344e5.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_wenrouxiaoya_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tts_version": "3.0"
+    },
+    "name": "温柔小雅 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_82c2782b2bf6b13700dac469f9c27e00.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_wenrouzhishijieshuonv_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "Megan 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_272c2094bedeac0d2ec771c219f86c6f.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_xiaohe_taiwan_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "陪聊",
+      "tts_version": "3.0"
+    },
+    "name": "小何 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_6092144ee11ad988d864d5bb4da0ba0a.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_xiaoxue_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "儿童绘本 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_543785cdd323900a3930b6f284685b7c.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_xinlingjitang_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tts_version": "3.0"
+    },
+    "name": "心灵鸡汤 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_0fe84b3ef7c4c67a9d768ded583257df.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_yingxiaokefu_xiaonan_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "客服场景",
+      "tts_version": "3.0"
+    },
+    "name": "营销小楠 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_21df81ad5eaa3d1029f4eeb4338967b0.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_yingyujiaoxue_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Tina老师 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_cb866e18319a23d839e70fafc39f7892.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_zendaya_p1_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Zendaya 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_7ce85a5b1a5df874c61ff5bbc40501a2.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "female",
+    "id": "multi_female_zhixingnv_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tts_version": "3.0"
+    },
+    "name": "知性女声 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_11dec51cfb1a88f6eb9188742d7f36c3.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "seed-tts-1.0"
@@ -7541,6 +8562,135 @@
     },
     "name": "Lucía",
     "updated_at": "2026-11-18"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_audiobooknick_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "Peter 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_02e8eabb0cf31639eb382a3caa5666d9.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "british",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_benukaudiobook_v3_uranus_bigtts",
+    "languages": [
+      "en-GB"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（英式口音）",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "Tobias 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_8d139c4217d637f61fd32627f16e52d6.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_cantonesemalevoicedb_3_v3_uranus_bigtts",
+    "languages": [
+      "yue-HK"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "粤语（香港口音）",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "粤语小滨 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_e38f383301bffd330ed06812c87ab53e.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_emompho_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "陪聊",
+      "tts_version": "3.0"
+    },
+    "name": "Mpho 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_176aca1fa6748ffcd818794fb96e24d3.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_jamie_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "通用场景, 教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Jamie 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_35c066d67b737bbf96e476798142f72c.wav",
+    "updated_at": "2026-11-24"
   },
   {
     "category": "premade",
@@ -7562,6 +8712,493 @@
     "updated_at": "2026-11-18"
   },
   {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_joker_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "Joker 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_e0062e52630ab48b37484a620b8daf4d.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_josh_coery_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Josiah 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_bb1371b05c5e47b664ad7c63396a4b70.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_kevin_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Kevin 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_e8911393a7375d50ab04a099e105e091.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_lanyinmianbao_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "懒音绵宝 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_ba145c25d700a0ba6cf8a64ab6532cf1.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_liangsangmengzai_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "亮嗓萌仔 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_a791d8ff3b92708361c6fcb907fd57df.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_m191_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tts_version": "3.0"
+    },
+    "name": "云舟 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_0f913f682e40df02f45e4a00d1a2d5cb.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_m208_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "Levi 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_4360efca59d39be6f7dec5bb75038cf4.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_marcus_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "Marcus 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_01dbe28f815a36c57e6bbe48fdaa174d.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_michael-mouse_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "Chip 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_068fe83b0898a8bb3a94604f6d4225ef.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_michael_kevin_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Michael_Kevin 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_79c1d3a020acf1c4180009477c3fc5f8.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_michael_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "教学场景",
+      "tts_version": "3.0"
+    },
+    "name": "Hank 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_9913131949cb1b9c79d8c1904860435c.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_motivational-coach_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "趣味口音",
+      "tts_version": "3.0"
+    },
+    "name": "Rory 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_0c01f50174289df86172326e0db0c46a.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_mpho_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "Owen 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_22545a2d1b0e8781d6b2a7e38b6c9dcc.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_qingcang_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "有声阅读",
+      "tags_raw": "番茄小说同款,豆包同款,抖音同款,剪映同款",
+      "tts_version": "3.0"
+    },
+    "name": "擎苍 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_fbd5817a9532ae4762ce99ec540f4551.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_ruyayichen_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "儒雅逸辰 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_b316a4beeb06943c618d7d5c8a6caf34.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_shenyeboke_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "有声阅读",
+      "tts_version": "3.0"
+    },
+    "name": "深夜播客 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_edf95a8990534a957eaf08d9c01eae1b.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_sunwukong_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "猴哥 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_d755a4d1a72c2e3d13be0597b1c88b54.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_taocheng_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tts_version": "3.0"
+    },
+    "name": "小天 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_4b5db3c199e94e5eaa70e32e882243ff.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "accent": "american",
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_tim_v3_uranus_bigtts",
+    "languages": [
+      "en-US"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "英语（美式口音）",
+      "scenario": "陪聊,外语音色,美式英语",
+      "tts_version": "3.0"
+    },
+    "name": "Tim 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_7daa5dfcecce8c4533d1dd51431f73a8.wav",
+    "updated_at": "2026-11-24"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "seed-tts-1.0"
@@ -7581,6 +9218,32 @@
     "updated_at": "2026-11-18"
   },
   {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_xuanyijieshuo_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "有声阅读",
+      "tags_raw": "抖音同款,豆包同款,剪映同款",
+      "tts_version": "3.0"
+    },
+    "name": "悬疑解说 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_451d50f750c70fb7b7901607340b7a7f.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
     "category": "premade",
     "compatible_models": [
       "seed-tts-1.0"
@@ -7597,6 +9260,82 @@
     },
     "name": "Daníel",
     "updated_at": "2026-11-18"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_yangguangqingnian_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tts_version": "3.0"
+    },
+    "name": "阳光青年 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_cdf55bd5cc6a40816bafd9f2983871e3.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_yizhipiannan_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "视频配音",
+      "tts_version": "3.0"
+    },
+    "name": "译制片男 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_e9686873da60cd89c4d508415c2309a1.mp3",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "capabilities": [
+      "emotion",
+      "multilingual_native"
+    ],
+    "category": "premade",
+    "compatible_models": [
+      "doubao-seed-tts-3.0"
+    ],
+    "first_seen": "2026-11-24",
+    "gender": "male",
+    "id": "multi_male_youyoujunzi_v3_uranus_bigtts",
+    "languages": [
+      "zh"
+    ],
+    "meta": {
+      "abilities_raw": "指令遵循、跨语种、情感标签",
+      "language_raw": "中文",
+      "scenario": "通用场景",
+      "tags_raw": "豆包同款",
+      "tts_version": "3.0"
+    },
+    "name": "悠悠君子 3.0",
+    "preview_url": "https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_2f5df3b5f1f2262dee2244d5553a4fa2.mp3",
+    "updated_at": "2026-11-24"
   },
   {
     "category": "premade",

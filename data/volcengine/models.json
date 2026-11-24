@@ -184,6 +184,74 @@
       "opus",
       "pcm"
     ],
+    "description": "Full-duplex realtime audio-video call model built on the Seeduplex realtime voice model, adding camera/screen frame and image input (≤2 FPS) and image search.",
+    "first_seen": "2026-11-24",
+    "id": "1.3.0.0",
+    "interfaces": [
+      "websocket"
+    ],
+    "meta": {
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/seedrealtime.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md"
+      ],
+      "endpoint": "wss://openspeech.bytedance.com/api/v3/realtime",
+      "function_calling": true,
+      "input": "pcm/speech_opus 16 kHz",
+      "model_param": "session.model = 1.3.0.0",
+      "output": "pcm (32-bit or s16le)/ogg_opus 24 kHz",
+      "video_input": "camera/screen frames ≤2 FPS"
+    },
+    "name": "Doubao-Seed-Realtime 1.0 (audio-video call)",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "currency": "CNY",
+      "notes": "Pay-as-you-go ¥0.2/min voice call, ¥0.4/min video call (includes voice). Prepaid packs ¥0.18–0.196/min. Default max 5 concurrency.",
+      "price": 0.2,
+      "source_url": "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions",
+      "unit": "minute",
+      "variants": [
+        {
+          "applies_to": "video call (frames/images sent)",
+          "price": 0.4,
+          "unit": "minute"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "released_on": "2026-11",
+    "sample_rates_hz": [
+      24000
+    ],
+    "type": "sts",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "opus",
+      "pcm"
+    ],
     "description": "End-to-end voice dialogue model for role-play and companionship, with character-manifest control and cloned voices.",
     "first_seen": "2026-11-18",
     "id": "2.2.0.0",
@@ -433,6 +501,7 @@
     ],
     "max_audio_seconds": 18000,
     "meta": {
+      "availability_note": "极速版和闲时版已从豆包语音控制台下线，存量用户可继续使用，新用户如需使用请联系技术支持 (removed from the console; existing users can keep using it; new users must contact support). Source: https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
       "docs_sources": [
         "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md"
       ],
@@ -454,7 +523,7 @@
       "unit": "hour"
     },
     "provenance": {
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-24",
       "method": "docs",
       "urls": [
         "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
@@ -499,6 +568,7 @@
     ],
     "max_audio_seconds": 7200,
     "meta": {
+      "availability_note": "极速版和闲时版已从豆包语音控制台下线，存量用户可继续使用，新用户如需使用请联系技术支持 (removed from the console; existing users can keep using it; new users must contact support). Source: https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
       "docs_sources": [
         "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md"
       ],
@@ -521,7 +591,7 @@
       "unit": "hour"
     },
     "provenance": {
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-24",
       "method": "docs",
       "urls": [
         "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
@@ -820,6 +890,220 @@
       16000
     ],
     "type": "stt",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "mp3",
+      "opus",
+      "pcm"
+    ],
+    "capabilities": [
+      "emotion",
+      "prosody_control",
+      "style_control",
+      "voice_cloning",
+      "voice_design"
+    ],
+    "description": "Expressive TTS for 100+ languages and Chinese dialects, with audio tags for emotion and paralinguistics, natural-language instructions and cross-lingual voice cloning.",
+    "family": "seed-tts",
+    "first_seen": "2026-11-24",
+    "id": "doubao-seed-tts-3.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "is_default": true,
+    "languages": [
+      "af",
+      "mn",
+      "am",
+      "mr",
+      "ar",
+      "ms",
+      "as",
+      "mt",
+      "ast",
+      "my",
+      "az",
+      "ne",
+      "be",
+      "nl",
+      "bg",
+      "no",
+      "bn",
+      "nso",
+      "bs",
+      "ny",
+      "ca",
+      "oc",
+      "ceb",
+      "or",
+      "ckb",
+      "pa",
+      "cs",
+      "pl",
+      "cy",
+      "ps",
+      "da",
+      "pt",
+      "de",
+      "pt-BR",
+      "el",
+      "ro",
+      "en",
+      "ru",
+      "en-GB",
+      "sd",
+      "es",
+      "sk",
+      "es-MX",
+      "sl",
+      "et",
+      "sn",
+      "fa",
+      "sq",
+      "fi",
+      "sr",
+      "fil",
+      "sv",
+      "fr",
+      "sw",
+      "fuv",
+      "ta",
+      "gl",
+      "te",
+      "gu",
+      "tg",
+      "ha",
+      "th",
+      "he",
+      "tr",
+      "hi",
+      "uk",
+      "hr",
+      "umb",
+      "hu",
+      "ur",
+      "hy",
+      "uz",
+      "id",
+      "vi",
+      "ig",
+      "wo",
+      "is",
+      "xh",
+      "it",
+      "yo",
+      "ja",
+      "yue",
+      "jv",
+      "zh",
+      "ka",
+      "kam",
+      "kea",
+      "kk",
+      "km",
+      "kn",
+      "ko",
+      "ky",
+      "lb",
+      "lg",
+      "ln",
+      "lo",
+      "lt",
+      "luo",
+      "lv",
+      "mi",
+      "mk",
+      "zu",
+      "ml"
+    ],
+    "max_text_chars": 10000,
+    "meta": {
+      "auth": "X-Api-Key",
+      "dialect_codes": [
+        "zh-CN-x-beijing",
+        "zh-CN-x-changsha",
+        "zh-CN-x-dongbei",
+        "zh-CN-x-henan",
+        "zh-CN-x-hubei",
+        "zh-CN-x-kejia",
+        "zh-CN-x-minnan",
+        "zh-CN-x-nanchang",
+        "zh-CN-x-nanjing",
+        "zh-CN-x-shaanxi",
+        "zh-CN-x-shandong",
+        "zh-CN-x-shanghai",
+        "zh-CN-x-sichuan",
+        "zh-CN-x-taiwan",
+        "zh-CN-x-tangshan",
+        "zh-CN-x-tianjin"
+      ],
+      "docs_sources": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/product-dynamics-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/seed-tts-3-0-intro.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/seed-tts-3-0-http-streaming.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/voice-list-3-0-1.md"
+      ],
+      "encodings": [
+        "mp3",
+        "pcm",
+        "ogg_opus"
+      ],
+      "endpoint_host": "voice.cn-beijing.volces.com",
+      "endpoints": [
+        "POST /api/v3/text-to-speech/{voice_id}/streaming",
+        "WSS /api/v3/text-to-speech/{voice_id}/streaming-input"
+      ],
+      "model_param": "model_id (default doubao-seed-tts-3.0)",
+      "pronunciation_dictionary": true,
+      "sample_rate_note": "ogg_opus fixed at 48000 Hz",
+      "ssml": "model-list says tags only (仅支持标签)",
+      "word_timestamps": "enable_subtitle (languages per language list)"
+    },
+    "name": "Doubao TTS 3.0",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "currency": "CNY",
+      "notes": "Pay-as-you-go ¥1.5 per 10K characters; one Chinese character (incl. Japanese kanji) counts as 2 characters. Prepaid packs ¥1.32–1.47 per 10K chars (1 year). 10 concurrency included, extra ¥100/concurrency/month.",
+      "price": 0.00015,
+      "source_url": "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions",
+      "unit": "character"
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/bidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-automatic-speech-recognition-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/task-submission-http-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/access-must-read-1-1.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-instructions.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/billing-overview.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/unidirectional-streaming-text-to-speech-websocket.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/websocket-unidirectional-streaming-v3.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/audio-generation-http.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-end-real-time-voice-full-duplex-version.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/end-to-endreal-time-speech-large-model-api-access-document.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/simultaneous-interpretation.md",
+        "https://docs.volcengine.com/docs/zh/doubao-voice/tone-list-3.md"
+      ]
+    },
+    "released_on": "2026-11",
+    "sample_rates_hz": [
+      8000,
+      16000,
+      22050,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "tts",
     "updated_at": "2026-11-24"
   },
   {
@@ -1156,7 +1440,6 @@
       "http",
       "websocket"
     ],
-    "is_default": true,
     "languages": [
       "zh-CN",
       "en",
@@ -1203,7 +1486,7 @@
       "unit": "character"
     },
     "provenance": {
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-24",
       "method": "docs",
       "urls": [
         "https://docs.volcengine.com/docs/zh/doubao-voice/model-list.md",
