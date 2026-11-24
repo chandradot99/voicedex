@@ -1431,3 +1431,14 @@ h1.with-logo { display: flex; gap: 14px; }
 .brand-mark { width: 28px; height: 28px; border-radius: 7px; }
 .page-hint { margin-top: 10px; font-size: 13px; color: var(--muted); }
 .page-hint kbd { font-size: 11px; }
+
+/* Voice rows: provider logo leads the name; the provider's name sits quietly at the start of the second line */
+.voice-name { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.voice-name > span { overflow-wrap: anywhere; }
+.voice-logo { display: inline-flex; flex: none; }
+.voice-logo .logo { width: 20px; height: 20px; }
+.voice-desc { padding-left: 29px; }
+.voice-desc .voice-provider { margin-left: 0; color: var(--ink-2); font-size: 13px; vertical-align: baseline; display: inline; }
+.voice-desc .voice-provider:hover { color: var(--ink); text-decoration: underline; }
+.voice-sample-note, .voice-error { padding-left: 29px; }
+.voice-list:not(:has(.voice-logo)) .voice-desc, .voice-list:not(:has(.voice-logo)) .voice-sample-note, .voice-list:not(:has(.voice-logo)) .voice-error { padding-left: 0; }

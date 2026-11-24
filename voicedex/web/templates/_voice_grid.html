@@ -18,8 +18,8 @@
       {% endif %}
     </div>
     <div class="voice-main">
-      <p class="voice-name">{{ v.name }}{% if names %}<a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ cells.logo(r.provider_id, pname, "xs") }}{{ pname }}</a>{% endif %}</p>
-      {% if v.description %}<p class="voice-desc" title="{{ v.description }}">{{ v.description|truncate(140) }}</p>{% endif %}
+      <p class="voice-name">{% if names %}<a class="voice-logo" href="/providers/{{ r.provider_id }}" title="{{ pname }}" aria-label="{{ pname }}">{{ cells.logo(r.provider_id, pname) }}</a>{% endif %}<span>{{ v.name }}</span></p>
+      {% if names or v.description %}<p class="voice-desc"{% if v.description %} title="{{ v.description }}"{% endif %}>{% if names %}<a class="voice-provider" href="/providers/{{ r.provider_id }}">{{ pname }}</a>{% if v.description %} · {% endif %}{% endif %}{{ v.description|truncate(140) if v.description else "" }}</p>{% endif %}
       {% if s and s.matched is false %}<p class="voice-sample-note">{% if s.language %}Sample in {{ language_name(s.language) }}{% else %}Sample language not stated{% endif %}</p>
       {% elif s and s.matched and v.languages and s.language.split('-')[0] != v.languages[0].split('-')[0] %}<p class="voice-sample-note">Sample in {{ language_name(s.language) }}</p>{% endif %}
       <p class="voice-error" role="status" hidden>Sample unavailable. The provider may have moved it.</p>
