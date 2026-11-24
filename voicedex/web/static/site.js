@@ -697,3 +697,12 @@ document.addEventListener("formdata", (e) => {
   });
   table.addEventListener("pointerleave", clear);
 })();
+
+// ── Header: solid once the page has scrolled (on home it starts transparent over the hero band).
+(() => {
+  const h = $(".site-header");
+  if (!h) return;
+  const sync = () => h.classList.toggle("is-scrolled", scrollY > 8);
+  sync();
+  addEventListener("scroll", sync, { passive: true });
+})();

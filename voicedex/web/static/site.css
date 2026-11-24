@@ -1393,3 +1393,38 @@ h1.with-logo { display: flex; gap: 14px; }
   .hero-band > .hero { flex: 1; align-content: center; width: 100%; }
 }
 @media (min-width: 1001px) and (min-height: 560px) { .hero-band > .hero-strip { width: 100%; } }
+
+/* ── Header: soft controls; on the home page it floats over the hero band and turns solid once you scroll ── */
+:root { --header-h: 64px; }
+.site-header { transition: background-color .25s var(--ease), border-color .25s var(--ease), backdrop-filter .25s; }
+.header-row { gap: 18px; }
+.brand { font-size: 17px; gap: 10px; margin-right: 6px; }
+.brand-mark { width: 22px; height: 22px; }
+.nav-links { gap: 2px; }
+.nav-links a { padding: 7px 11px; border-radius: 8px; color: var(--ink-2); font-weight: 500; transition: background-color .15s, color .15s; }
+.nav-links a:hover { background: rgb(255 250 240 / .05); color: var(--ink); }
+.nav-links a[aria-current="page"] { box-shadow: none; color: var(--ink); background: rgb(255 250 240 / .07); }
+:root[data-theme="light"] .nav-links a:hover { background: rgb(20 18 14 / .05); }
+:root[data-theme="light"] .nav-links a[aria-current="page"] { background: rgb(20 18 14 / .07); }
+.jump { width: 272px; height: 38px; border-radius: 10px; border-color: var(--rule-2); background: rgb(255 250 240 / .04); transition: border-color .15s, box-shadow .15s; }
+:root[data-theme="light"] .jump { background: #fff; }
+.jump:hover { border-color: var(--control); }
+.jump:focus-within { box-shadow: 0 0 0 3px rgb(245 165 36 / .16); }
+.jump input { font-size: 13.5px; }
+.gh-link, .theme-toggle { width: 38px; height: 38px; border-radius: 10px; border: 1px solid transparent; color: var(--ink-2); transition: background-color .15s, color .15s; }
+.gh-link:hover, .theme-toggle:hover { background: rgb(255 250 240 / .05); color: var(--ink); border-color: transparent; }
+:root[data-theme="light"] .gh-link:hover, :root[data-theme="light"] .theme-toggle:hover { background: rgb(20 18 14 / .05); }
+.nav-compare { height: 38px; padding: 0 14px; border: 1px solid var(--rule-2); border-radius: 10px; font-weight: 500; color: var(--ink); gap: 8px; transition: border-color .15s, background-color .15s; }
+.nav-compare .i-compare { display: block; }
+.nav-compare:hover, .nav-compare[aria-current="page"] { border-color: var(--control); background: rgb(255 250 240 / .04); }
+.nav-count:not(:empty) { border-radius: 999px; padding: 3px 7px; }
+@media (max-width: 760px) { .jump { width: 38px; } .nav-links a { padding: 6px 8px; } .nav-compare { padding: 0 10px; } }
+@media (max-width: 480px) { .nav-compare { border: 0; padding: 0; width: 34px; justify-content: center; } }
+
+/* Home: the header floats over the hero band (the glow runs to the top edge) and turns solid once scrolled */
+.home .site-header { position: fixed; top: 0; left: 0; right: 0; }
+.home .hero-band { padding-top: var(--header-h); }
+.home .site-header:not(.is-scrolled) { background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; border-bottom-color: transparent; }
+@media (min-width: 1001px) and (min-height: 560px) {
+  .home .hero-band { min-height: 100vh; min-height: 100svh; }
+}
