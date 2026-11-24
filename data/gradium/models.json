@@ -15,6 +15,9 @@
       "pt"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.gradium.ai/guides/release-notes/2026-08.md"
+      ],
       "inner_models": {
         "stt_model_name": "stt-translate",
         "tts_model_name": "default"
@@ -55,8 +58,10 @@
         "https://gradium.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "live speech-to-speech translation",
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -80,6 +85,9 @@
       "pt"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.gradium.ai/guides/release-notes/2026-11.md"
+      ],
       "language_any": "pass language='any' to auto-detect",
       "model_parameter": "model_name",
       "pricing_credits": {
@@ -111,8 +119,11 @@
         "https://gradium.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time transcription",
+    "released_on": "2026-11-03",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -132,6 +143,9 @@
       "pt"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.gradium.ai/guides/release-notes/2026-08.md"
+      ],
       "model_parameter": "model_name",
       "pricing_credits": {
         "as_of": "2026-11-16",
@@ -168,8 +182,10 @@
         "https://gradium.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "live translated transcription",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -197,6 +213,9 @@
         "gradium-tts-beta"
       ],
       "aliases_note": "'gradium-tts-beta' routes to this model until the next TTS beta ships",
+      "docs_sources": [
+        "https://docs.gradium.ai/guides/release-notes/2026-09.md"
+      ],
       "model_parameter": "model_name",
       "pricing_credits": {
         "as_of": "2026-11-16",
@@ -226,7 +245,10 @@
         "https://gradium.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "stable production TTS",
+    "released_on": "2026-09-30",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

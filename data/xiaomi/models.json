@@ -22,6 +22,10 @@
     "meta": {
       "api": "OpenAI-compatible chat completions with input_audio",
       "dialects": "Cantonese, Wu, Minnan, Sichuanese and other Chinese dialects",
+      "docs_sources": [
+        "https://mimo.mi.com/static/docs/updates/model.md",
+        "https://mimo.mi.com/static/docs/quick-start/summary/model.md"
+      ],
       "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
       "language_param": "asr_options.language: auto | zh | en",
       "max_input": "base64 audio <= 10 MB",
@@ -50,9 +54,12 @@
         "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Chinese, English and Chinese dialects",
+    "released_on": "2026-06-02",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -78,6 +85,10 @@
     "meta": {
       "api": "OpenAI-compatible chat completions: text in the assistant message, style instructions in the user message",
       "context_tokens": 8192,
+      "docs_sources": [
+        "https://mimo.mi.com/static/docs/updates/model.md",
+        "https://mimo.mi.com/static/docs/news/latest/v2.5-tts-release.md"
+      ],
       "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
       "max_output_tokens": 8192,
       "pricing_note": "Free for a limited time (pay-as-you-go pricing page, domestic and overseas)",
@@ -96,11 +107,14 @@
         "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "built-in premium voices with style control",
+    "released_on": "2026-04-23",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -122,6 +136,10 @@
     "meta": {
       "api": "OpenAI-compatible chat completions: text in the assistant message, style instructions in the user message",
       "context_tokens": 8192,
+      "docs_sources": [
+        "https://mimo.mi.com/static/docs/updates/model.md",
+        "https://mimo.mi.com/static/docs/news/latest/v2.5-tts-release.md"
+      ],
       "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
       "max_output_tokens": 8192,
       "pricing_note": "Free for a limited time (pay-as-you-go pricing page, domestic and overseas)",
@@ -140,9 +158,12 @@
         "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice cloning from short samples",
+    "released_on": "2026-04-23",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -163,6 +184,10 @@
     "meta": {
       "api": "OpenAI-compatible chat completions: text in the assistant message, style instructions in the user message",
       "context_tokens": 8192,
+      "docs_sources": [
+        "https://mimo.mi.com/static/docs/updates/model.md",
+        "https://mimo.mi.com/static/docs/news/latest/v2.5-tts-release.md"
+      ],
       "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
       "max_output_tokens": 8192,
       "pricing_note": "Free for a limited time (pay-as-you-go pricing page, domestic and overseas)",
@@ -180,8 +205,11 @@
         "https://mimo.mi.com/static/docs/api/audio/tts-post.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "designing a new voice from a description",
+    "released_on": "2026-04-23",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

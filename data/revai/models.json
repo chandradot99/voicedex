@@ -89,6 +89,10 @@
         "standard",
         "premium"
       ],
+      "docs_sources": [
+        "https://docs.rev.ai/api/asynchronous/transcribers.md",
+        "https://docs.rev.ai/api/asynchronous/changelog.md"
+      ],
       "english_only_options": "skip_punctuation, remove_disfluencies, filter_profanity, speaker_channels_count, custom_vocabulary_id not usable with non-English languages",
       "eu_endpoint": "https://ec1.api.rev.ai/speechtotext/v1/",
       "forced_alignment_languages": [
@@ -175,11 +179,13 @@
         "https://www.rev.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "default transcriber for new jobs",
     "regions": [
       "eu",
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

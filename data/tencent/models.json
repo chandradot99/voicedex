@@ -31,6 +31,9 @@
       "ar"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.tencent.com/document/product/1093/46797"
+      ],
       "engine_model_type": "16k_ar",
       "large_model": false,
       "raw_formats_realtime": [
@@ -70,11 +73,12 @@
         "https://www.tencentcloud.com/document/product/1154/47874"
       ]
     },
+    "released_on": "2023-07-18",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -190,6 +194,9 @@
     ],
     "meta": {
       "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "docs_sources": [
+        "https://cloud.tencent.com/document/product/1093/46797"
+      ],
       "engine_model_type": "16k_id",
       "large_model": false,
       "raw_formats_realtime": [
@@ -229,11 +236,12 @@
         "https://www.tencentcloud.com/document/product/1154/47874"
       ]
     },
+    "released_on": "2023-03-24",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -268,6 +276,9 @@
       "ja"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.tencent.com/document/product/1093/46797"
+      ],
       "engine_model_type": "16k_ja",
       "large_model": false,
       "raw_formats_realtime": [
@@ -307,11 +318,12 @@
         "https://www.tencentcloud.com/document/product/1154/47874"
       ]
     },
+    "released_on": "2020-08-04",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -424,6 +436,9 @@
     ],
     "meta": {
       "diarization_note": "Speaker diarization documented for recording-file recognition (CreateRecTask).",
+      "docs_sources": [
+        "https://cloud.tencent.com/document/product/1093/46797"
+      ],
       "engine_model_type": "16k_ms",
       "large_model": false,
       "raw_formats_realtime": [
@@ -463,11 +478,12 @@
         "https://www.tencentcloud.com/document/product/1154/47874"
       ]
     },
+    "released_on": "2023-03-24",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -828,6 +844,9 @@
       "yue"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.tencent.com/document/product/1093/46797"
+      ],
       "engine_model_type": "16k_zh-PY",
       "large_model": false,
       "note": "Listed for CreateRecTask only."
@@ -851,12 +870,13 @@
         "https://www.tencentcloud.com/document/product/1154/47874"
       ]
     },
+    "released_on": "2022-11-28",
     "sample_rates_hz": [
       16000
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1128,6 +1148,9 @@
       "en"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.tencent.com/document/product/1093/46797"
+      ],
       "engine_model_type": "8k_en",
       "large_model": false,
       "raw_formats_realtime": [
@@ -1167,11 +1190,12 @@
         "https://www.tencentcloud.com/document/product/1154/47874"
       ]
     },
+    "released_on": "2020-09-09",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

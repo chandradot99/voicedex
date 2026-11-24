@@ -150,6 +150,9 @@
     ],
     "meta": {
       "diarization_max_speakers": 8,
+      "docs_sources": [
+        "https://docs.reson8.dev/llms-full.txt"
+      ],
       "endpoints": [
         "prerecorded",
         "realtime",
@@ -216,12 +219,14 @@
         "https://www.reson8.dev/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "most use cases, all endpoints",
     "regions": [
       "eu"
     ],
     "released_on": "2026-11-10",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

@@ -1177,6 +1177,10 @@
     "max_text_chars": 3000,
     "meta": {
       "available_on_cloud_providers": true,
+      "docs_sources": [
+        "https://docs.camb.ai/choosing-a-model.md",
+        "https://www.camb.ai/news/camb-ai-unveils-mars8-the-first-family-of-tts-models"
+      ],
       "locale_count": 33,
       "output_encodings": [
         "wav",
@@ -1204,12 +1208,15 @@
         "https://docs.camb.ai/api-reference/websockets/listen"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time voice agents and call centers",
+    "released_on": "2026-01-20",
     "sample_rates_hz": [
       22050,
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1378,6 +1385,10 @@
         "zh-cn-shandong",
         "zh-cn-sichuan"
       ],
+      "docs_sources": [
+        "https://docs.camb.ai/choosing-a-model.md",
+        "https://www.camb.ai/news/camb-ai-unveils-mars8-the-first-family-of-tts-models"
+      ],
       "locale_count": 142,
       "output_encodings": [
         "wav",
@@ -1404,11 +1415,14 @@
         "https://docs.camb.ai/api-reference/websockets/listen"
       ]
     },
+    "recommended": true,
+    "recommended_for": "film and TV production with prosody control",
+    "released_on": "2026-01-20",
     "sample_rates_hz": [
       22050
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1464,6 +1478,10 @@
     "max_text_chars": 3000,
     "meta": {
       "available_on_cloud_providers": true,
+      "docs_sources": [
+        "https://docs.camb.ai/choosing-a-model.md",
+        "https://www.camb.ai/news/camb-ai-unveils-mars8-the-first-family-of-tts-models"
+      ],
       "locale_count": 33,
       "output_encodings": [
         "wav",
@@ -1491,10 +1509,13 @@
         "https://docs.camb.ai/api-reference/websockets/listen"
       ]
     },
+    "recommended": true,
+    "recommended_for": "expressive dubbing, audiobooks and media",
+    "released_on": "2026-01-20",
     "sample_rates_hz": [
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

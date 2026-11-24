@@ -254,6 +254,9 @@
       "apis": [
         "Short Sentence Recognition (POST /v1/{project_id}/asr/short-audio, audio ≤ 1 min)"
       ],
+      "docs_sources": [
+        "https://support.huaweicloud.com/intl/en-us/api-sis/sis_03_0094.html"
+      ],
       "huawei_regions": [
         "ap-southeast-3",
         "me-east-1"
@@ -281,6 +284,8 @@
         "https://support.huaweicloud.com/intl/en-us/productdesc-sis/sis_01_0051.html"
       ]
     },
+    "recommended": true,
+    "recommended_for": "English recognition, 8 or 16 kHz audio",
     "regions": [
       "asia"
     ],
@@ -290,7 +295,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

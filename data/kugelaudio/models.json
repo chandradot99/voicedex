@@ -28,6 +28,10 @@
       "audio": "PCM16 at 16 or 24 kHz, or G.711 (audio/pcmu, audio/pcma) at 8 kHz",
       "beta_recording": "calls recorded during the beta for debugging (not training), deleted after 90 days",
       "billing": "metered per second of session (silence included); delegated model tokens billed extra; no rate on kugelaudio.com/pricing as of 2026-11-18",
+      "docs_sources": [
+        "https://docs.kugelaudio.com/models.md",
+        "https://docs.kugelaudio.com/changelog.md"
+      ],
       "endpoint": "/v1/live/sessions",
       "max_session_seconds": 3600,
       "public_since": "2026-11-11"
@@ -46,13 +50,16 @@
         "https://docs.kugelaudio.com/speech-to-speech/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "live voice conversations",
+    "released_on": "2026-11-11",
     "sample_rates_hz": [
       8000,
       16000,
       24000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -89,6 +96,9 @@
     "meta": {
       "access_note": "Speech to text must be enabled for the organization (else 403).",
       "auto_language": "'auto'/omitted detects only German or English",
+      "docs_sources": [
+        "https://docs.kugelaudio.com/models.md"
+      ],
       "end_of_turn": "KugelTurn",
       "endpoints": {
         "batch": "POST /v1/audio/transcriptions",
@@ -117,8 +127,10 @@
         "https://docs.kugelaudio.com/speech-to-speech/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "recordings and live calls",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "alias_of": "kugel-3.5",
@@ -182,6 +194,9 @@
     ],
     "max_text_chars": 10000,
     "meta": {
+      "docs_sources": [
+        "https://docs.kugelaudio.com/models.md"
+      ],
       "legacy": true,
       "note": "Not returned by GET /v1/models; docs recommend kugel-3.5 or kugel-3 for new integrations."
     },
@@ -207,6 +222,7 @@
         "https://docs.kugelaudio.com/speech-to-speech/limits.md"
       ]
     },
+    "recommended": false,
     "regions": [
       "eu",
       "us"
@@ -219,7 +235,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -283,6 +299,9 @@
     "max_text_chars": 10000,
     "meta": {
       "break_tags": true,
+      "docs_sources": [
+        "https://docs.kugelaudio.com/models.md"
+      ],
       "native_sample_rate_hz": 24000,
       "text_normalization": true,
       "word_timestamps": true
@@ -309,6 +328,8 @@
         "https://docs.kugelaudio.com/speech-to-speech/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "narration, brand voices and multilingual TTS",
     "regions": [
       "eu",
       "us"
@@ -321,7 +342,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -387,6 +408,10 @@
     "meta": {
       "break_tags": true,
       "default_since": "2026-10-13",
+      "docs_sources": [
+        "https://docs.kugelaudio.com/models.md",
+        "https://docs.kugelaudio.com/changelog.md"
+      ],
       "legacy_aliases": [
         "kugel-2.5",
         "kugel-2-turbo",
@@ -413,10 +438,13 @@
         "https://docs.kugelaudio.com/speech-to-speech/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice agents and phone conversations",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-10-13",
     "sample_rates_hz": [
       8000,
       16000,
@@ -425,6 +453,6 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

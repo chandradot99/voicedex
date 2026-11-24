@@ -22,6 +22,9 @@
       "api_parameter": "acousticModelRealTime",
       "current_version": "Kappa-v7 (June 2025, 75M parameters)",
       "default_for": "real-time",
+      "docs_sources": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py"
+      ],
       "model_card": "https://github.com/voicegain/platform/blob/master/VG-Kappa-v7-ModelCard.md",
       "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
     },
@@ -42,8 +45,10 @@
         "https://www.voicegain.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time transcription, best accuracy",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -66,6 +71,9 @@
     "meta": {
       "api_parameter": "acousticModelNonRealTime",
       "default_for": "offline / semi-real-time",
+      "docs_sources": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py"
+      ],
       "language_count": 6,
       "language_note": "Voicegain says Omega supports 6 languages but does not enumerate them per model; platform languages listed: English, Spanish, German, Portuguese, Korean, Hindi.",
       "max_diarization_speakers": 12,
@@ -88,9 +96,11 @@
         "https://www.voicegain.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "general offline transcription",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -111,6 +121,9 @@
     ],
     "meta": {
       "api_parameter": "acousticModelNonRealTime",
+      "docs_sources": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py"
+      ],
       "max_diarization_speakers": 12,
       "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
     },
@@ -131,9 +144,11 @@
         "https://www.voicegain.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "call-center recordings",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

@@ -54,6 +54,9 @@
           1
         ]
       },
+      "docs_sources": [
+        "https://docs.bland.ai/api-v2/get/tts-models.md"
+      ],
       "encodings_raw": [
         "pcm_s16le",
         "mulaw"
@@ -91,6 +94,7 @@
         "https://docs.bland.ai/tts/voices.md"
       ]
     },
+    "recommended": false,
     "sample_rates_hz": [
       8000,
       16000,
@@ -99,7 +103,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -145,6 +149,10 @@
           1
         ]
       },
+      "docs_sources": [
+        "https://docs.bland.ai/api-v2/get/tts-models.md",
+        "https://docs.bland.ai/tts/welcome.md"
+      ],
       "encodings_raw": [
         "pcm_s16le",
         "mulaw"
@@ -183,6 +191,8 @@
         "https://docs.bland.ai/tts/voices.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "realtime conversational speech",
     "sample_rates_hz": [
       8000,
       16000,
@@ -191,6 +201,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

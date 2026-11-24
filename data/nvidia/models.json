@@ -8,6 +8,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://build.nvidia.com/nvidia/nemotron-voicechat"
+      ],
       "hosted_endpoint": "https://build.nvidia.com/nvidia/nemotron-voicechat",
       "input_audio": "16 kHz WAV",
       "lifecycle_note": "Model card: 'ready for early access evaluation purposes only'",
@@ -26,11 +29,12 @@
         "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
       ]
     },
+    "released_on": "2026-03-16",
     "sample_rates_hz": [
       22050
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -50,6 +54,9 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://build.nvidia.com/nvidia/canary-1b-asr"
+      ],
       "hosted_endpoint": "https://build.nvidia.com/nvidia/canary-1b-asr",
       "languages_note": "Languages not enumerated in the NIM support matrix",
       "model_license": "NVIDIA Community Model License",
@@ -67,9 +74,10 @@
         "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
       ]
     },
+    "released_on": "2025-10-15",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -128,6 +136,9 @@
     ],
     "meta": {
       "diarization": "Sortformer, up to eight speakers (NIM)",
+      "docs_sources": [
+        "https://build.nvidia.com/nvidia/nemotron-asr-streaming"
+      ],
       "hosted_endpoint": "https://build.nvidia.com/nvidia/nemotron-asr-streaming",
       "language_code_note": "The API uses the code ar-AR for Arabic; stored as bare 'ar'.",
       "language_detection": "language_code=auto",
@@ -153,8 +164,9 @@
         "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
       ]
     },
+    "released_on": "2026-03-12",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -220,6 +232,9 @@
     "meta": {
       "availability": "Self-hosted Speech NIM only; not listed as a build.nvidia.com endpoint",
       "context_tokens": 65536,
+      "docs_sources": [
+        "https://build.nvidia.com/nvidia/nemotron-transcribe"
+      ],
       "input_encodings": "WAV, FLAC, Ogg Opus",
       "multi_turn_mode": true,
       "nim_container": "nemotron-transcribe",
@@ -242,9 +257,10 @@
         "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
       ]
     },
+    "released_on": "2026-10-28",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -473,6 +489,9 @@
       "en"
     ],
     "meta": {
+      "docs_sources": [
+        "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-zh-tw"
+      ],
       "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-zh-tw",
       "model_license": "NVIDIA Community Model License",
       "model_version": "Parakeet-CTC-XL-0.6b_zh-TW_1.0",
@@ -490,8 +509,9 @@
         "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
       ]
     },
+    "released_on": "2025-10-09",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -575,6 +595,9 @@
       "uk"
     ],
     "meta": {
+      "docs_sources": [
+        "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b"
+      ],
       "hosted_endpoint": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b",
       "long_audio": "up to 24 min with full attention (A100 80GB), up to 3 h with local attention (model card)",
       "model_version": "parakeet-tdt-0.6b-v3",
@@ -596,12 +619,13 @@
         "https://docs.nvidia.com/nim/speech/latest/reference/support-matrix/tts.html"
       ]
     },
+    "released_on": "2025-08-14",
     "sample_rates_hz": [
       16000
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
