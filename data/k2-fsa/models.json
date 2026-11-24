@@ -1,5 +1,10 @@
 [
   {
+    "capabilities": [
+      "phoneme_input",
+      "voice_cloning",
+      "voice_design"
+    ],
     "first_seen": "2026-11-18",
     "id": "k2-fsa/OmniVoice",
     "languages": [
@@ -654,6 +659,13 @@
       "base_model": [
         "Qwen/Qwen3-0.6B"
       ],
+      "capability_notes": {
+        "phoneme_input": "pinyin or phoneme pronunciation correction",
+        "voice_design": "speaker attributes (gender, age, pitch, accent...)"
+      },
+      "docs_sources": [
+        "https://huggingface.co/k2-fsa/OmniVoice"
+      ],
       "huggingface_repo": "k2-fsa/OmniVoice"
     },
     "name": "OmniVoice",
@@ -672,6 +684,6 @@
     "released_on": "2026-03-30",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
