@@ -94,6 +94,9 @@
       "mp3",
       "wav"
     ],
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "Synchronous recognition of audio clips up to 60 seconds, with optional English pronunciation assessment.",
     "first_seen": "2026-11-18",
     "id": "clova-speech-short",
@@ -109,8 +112,12 @@
     "max_audio_seconds": 60,
     "meta": {
       "api": "POST https://clovaspeech-gw.ncloud.com/recog/v1/stt?lang=Kor|Eng|Jpn|Chn",
+      "capability_notes": {
+        "custom_vocabulary": "boostings parameter (added 2025-06-19)"
+      },
       "docs_sources": [
-        "https://guide.ncloud-docs.com/docs/en/clovaspeech-releasenote"
+        "https://guide.ncloud-docs.com/docs/en/clovaspeech-releasenote",
+        "https://api.ncloud-docs.com/docs/ai-clovaspeech-shortsentence-releasenote.md"
       ],
       "max_file_size": "10 MB",
       "pronunciation_assessment": "English only per API reference (pricing page says Korean and English)"
