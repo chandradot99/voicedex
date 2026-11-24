@@ -3,6 +3,11 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Lower-cost, high-performance end-to-end speech LLM for far-field devices.",
     "family": "audio-mini-realtime",
     "first_seen": "2026-11-18",
@@ -11,8 +16,12 @@
       "websocket"
     ],
     "meta": {
+      "capability_notes": {
+        "turn_detection": "server_vad"
+      },
       "docs_sources": [
-        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
       ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-mini-realtime-far",
       "name_zh": "端到端语音语言大模型（Lite）",
@@ -122,6 +131,11 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Lower-cost, high-performance end-to-end speech LLM for near-field microphones.",
     "family": "audio-mini-realtime",
     "first_seen": "2026-11-18",
@@ -130,8 +144,12 @@
       "websocket"
     ],
     "meta": {
+      "capability_notes": {
+        "turn_detection": "server_vad"
+      },
       "docs_sources": [
-        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
       ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-mini-realtime-near",
       "name_zh": "端到端语音语言大模型（Lite）",
@@ -241,6 +259,11 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "End-to-end cross-attention speech LLM, best-quality tier, tuned for far-field devices.",
     "family": "audio-realtime",
     "first_seen": "2026-11-18",
@@ -249,8 +272,12 @@
       "websocket"
     ],
     "meta": {
+      "capability_notes": {
+        "turn_detection": "server_vad"
+      },
       "docs_sources": [
-        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
       ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-realtime-far",
       "name_zh": "端到端语音语言大模型（Pro）",
@@ -360,6 +387,11 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "End-to-end cross-attention speech LLM, best-quality tier, tuned for near-field microphones.",
     "family": "audio-realtime",
     "first_seen": "2026-11-18",
@@ -369,8 +401,12 @@
     ],
     "is_default": true,
     "meta": {
+      "capability_notes": {
+        "turn_detection": "server_vad"
+      },
       "docs_sources": [
-        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh",
+        "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
       ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-realtime-near",
       "name_zh": "端到端语音语言大模型（Pro）",
@@ -480,6 +516,12 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Configurable realtime speech LLM with voice replacement, knowledge-base retrieval (RAG) and function calling for devices, assistants and industry apps.",
     "first_seen": "2026-11-18",
     "id": "qianfan-realtime-flex-v1",
@@ -488,6 +530,13 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "capability_notes": {
+        "barge_in": "interrupt_response",
+        "turn_detection": "server_vad"
+      },
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/Wmtlcgi7c"
+      ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=qianfan-realtime-flex-v1",
       "function_calling": true,
       "name_zh": "端到端语音语言大模型（Flex）",
@@ -512,7 +561,7 @@
       ]
     },
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -523,6 +572,9 @@
       "wav"
     ],
     "batch": true,
+    "capabilities": [
+      "word_timestamps"
+    ],
     "description": "Asynchronous transcription of 8 kHz Mandarin call recordings, mono or per-channel stereo.",
     "first_seen": "2026-11-18",
     "id": "call-center-file-8k",
@@ -533,6 +585,9 @@
       "zh-CN"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/ukarue6fg"
+      ],
       "endpoint": "https://aip.baidubce.com/rpc/2.0/aasr/v1/create",
       "name_zh": "呼叫中心语音-音频文件转写（8K）",
       "pid": 1134
@@ -589,7 +644,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1294,6 +1349,9 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Mandarin telephony synthesis with nine call-center voices, served through Baidu's downloadable MRCP server.",
     "first_seen": "2026-11-18",
     "id": "call-center-tts-8k",
@@ -1301,6 +1359,12 @@
       "zh-CN"
     ],
     "meta": {
+      "capability_notes": {
+        "prosody_control": "MRCP Prosody-rate / Prosody-pitch / Prosody-volume"
+      },
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/alwrjmagu"
+      ],
       "name_zh": "呼叫中心语音-在线合成",
       "protocol": "MRCP over SIP (self-hosted MRCP server, calls Baidu cloud)",
       "voices": 9
@@ -1366,7 +1430,7 @@
       8000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
