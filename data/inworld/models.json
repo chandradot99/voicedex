@@ -613,6 +613,10 @@
         "BALANCED",
         "CREATIVE"
       ],
+      "docs_sources": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://docs.inworld.ai/release-notes/tts.md"
+      ],
       "language_count_note": "200+ languages and locales (623 codes, tiered)",
       "professional_voice_cloning": "beta",
       "sample_rate_range_hz": [
@@ -667,8 +671,11 @@
         "https://docs.inworld.ai/stt/languages.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "production default, quality and steering",
+    "released_on": "2026-05-05",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -696,6 +703,10 @@
     "max_text_chars": 2000,
     "meta": {
       "async_max_text_chars": 100000,
+      "docs_sources": [
+        "https://docs.inworld.ai/tts/tts-models.md",
+        "https://docs.inworld.ai/release-notes/tts.md"
+      ],
       "language_count_note": "200+ languages and locales",
       "sample_rate_range_hz": [
         8000,
@@ -748,7 +759,10 @@
         "https://docs.inworld.ai/stt/languages.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "latency-critical, high-volume workloads",
+    "released_on": "2026-08-09",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

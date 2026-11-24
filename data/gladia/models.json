@@ -140,6 +140,10 @@
     "max_audio_seconds": 8100,
     "meta": {
       "code_switching": true,
+      "docs_sources": [
+        "https://docs.gladia.io/chapters/introduction/models.md",
+        "https://www.gladia.io/blog/introducing-solaria-the-first-truly-universal-speech-to-text-model"
+      ],
       "language_code_notes": "Gladia API uses 'jw' for Javanese (normalized here to 'jv') and 'haw' for Hawaiian. Wolof (wo) is not supported for auto-detection/code-switching.",
       "live_bit_depths_pcm": [
         8,
@@ -229,10 +233,13 @@
         "https://docs.gladia.io/api-reference/v2/pre-recorded/init.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice agents, live captions, broad language coverage",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2025-04",
     "sample_rates_hz": [
       8000,
       16000,
@@ -241,7 +248,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -284,6 +291,10 @@
     "max_audio_seconds": 8100,
     "meta": {
       "code_switching": false,
+      "docs_sources": [
+        "https://docs.gladia.io/chapters/introduction/models.md",
+        "https://www.gladia.io/blog/solaria-3-speech-to-text-model-for-european-languages"
+      ],
       "language_detection_notes": "Detects among EN/FR/DE/ES/IT; once detected, language sticks for the rest of the file.",
       "max_file_size_mb": 1000,
       "other_features": [
@@ -348,8 +359,11 @@
         "https://docs.gladia.io/api-reference/v2/pre-recorded/init.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "pre-recorded European business audio",
+    "released_on": "2026-06-10",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

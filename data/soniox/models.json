@@ -85,6 +85,9 @@
         "stt-async-v3",
         "stt-async-v4"
       ],
+      "docs_sources": [
+        "https://docs.soniox.com/stt/models"
+      ],
       "one_way_translation": "all_languages",
       "replacement": "stt-async-v6",
       "transcription_mode": "async",
@@ -124,9 +127,11 @@
         "https://api.soniox.com/v1/shared-voices"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-06-11",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -207,6 +212,9 @@
       "cy"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.soniox.com/stt/models"
+      ],
       "one_way_translation": "all_languages",
       "transcription_mode": "async",
       "two_way_translation": "all_languages"
@@ -245,9 +253,15 @@
         "https://api.soniox.com/v1/shared-voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "recorded audio, async",
+    "released_on": "2026-11-03",
+    "replaces": [
+      "stt-async-v5"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -335,6 +349,9 @@
         "stt-rt-v3-preview",
         "stt-rt-v4"
       ],
+      "docs_sources": [
+        "https://docs.soniox.com/stt/models"
+      ],
       "one_way_translation": "all_languages",
       "replacement": "stt-rt-v6",
       "transcription_mode": "real_time",
@@ -374,8 +391,10 @@
         "https://api.soniox.com/v1/shared-voices"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-06-16",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -457,6 +476,9 @@
     ],
     "meta": {
       "agent_text_input": true,
+      "docs_sources": [
+        "https://docs.soniox.com/stt/models"
+      ],
       "one_way_translation": "all_languages",
       "transcription_mode": "real_time",
       "two_way_translation": "all_languages"
@@ -495,8 +517,14 @@
         "https://api.soniox.com/v1/shared-voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time transcription",
+    "released_on": "2026-11-03",
+    "replaces": [
+      "stt-rt-v5"
+    ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -576,6 +604,9 @@
         "tts-rt-v1",
         "tts-rt-v1-preview"
       ],
+      "docs_sources": [
+        "https://docs.soniox.com/tts/models"
+      ],
       "silence_reduction": true,
       "speed_range": [
         0.7,
@@ -608,7 +639,10 @@
         "https://api.soniox.com/v1/shared-voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time text-to-speech",
+    "released_on": "2026-08-11",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -145,6 +145,9 @@
     "meta": {
       "api": "StartTranscriptionJob",
       "custom_language_model_languages": "en-AU, en-GB, en-US, de-DE, hi-IN, ja-JP, es-US (see supported-languages table)",
+      "docs_sources": [
+        "https://aws.amazon.com/blogs/aws/amazon-transcribe-now-generally-available/"
+      ],
       "features": [
         "alternative_transcriptions",
         "channel_identification",
@@ -229,9 +232,10 @@
       "eu",
       "us"
     ],
+    "released_on": "2018-04-04",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -252,6 +256,9 @@
     "max_audio_seconds": 14400,
     "meta": {
       "api": "StartMedicalTranscriptionJob / StartMedicalStreamTranscription(Websocket)",
+      "docs_sources": [
+        "https://aws.amazon.com/about-aws/whats-new/2019/12/aws-announces-amazon-transcribe-medical-medical-speech-recognition/"
+      ],
       "features": [
         "phi_identification",
         "alternative_transcriptions",
@@ -299,8 +306,9 @@
       "eu",
       "us"
     ],
+    "released_on": "2019-12-01",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -428,6 +436,9 @@
     ],
     "meta": {
       "api": "StartStreamTranscription / StartStreamTranscriptionWebSocket",
+      "docs_sources": [
+        "https://docs.aws.amazon.com/transcribe/latest/dg/doc-history.html"
+      ],
       "features": [
         "alternative_transcriptions",
         "channel_identification",
@@ -559,7 +570,8 @@
       "eu",
       "us"
     ],
+    "released_on": "2018-11-19",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

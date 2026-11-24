@@ -30,6 +30,9 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.modulate.ai/press-releases/modulate-launches-velma-transcribe-high-performance-transcription-for-real-world-conversations-at-90-lower-cost"
+      ],
       "endpoints": {
         "batch": "https://platform.modulate.ai/api/velma-2-stt-batch",
         "streaming": "wss://platform.modulate.ai/api/velma-2-stt-streaming"
@@ -74,8 +77,9 @@
         "https://www.modulate.ai/pricing"
       ]
     },
+    "released_on": "2026-03-18",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

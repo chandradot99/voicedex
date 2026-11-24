@@ -69,6 +69,9 @@
       "zh"
     ],
     "meta": {
+      "docs_sources": [
+        "https://developers.deepl.com/docs/resources/roadmap-and-release-notes"
+      ],
       "endpoint": "request-session REST call returns a WebSocket streaming URL (v3)",
       "external_partner_transcription": "For many source languages (e.g. ar, bg, bn, ca, da, el, he, hi, ...) transcription is provided by external service partners and cannot auto-detect the language; DeepL-native transcription for zh, cs, nl, en, fr, de, id, it, ja, ko, pl, pt, ro, ru, es, sv, tr, uk",
       "glossaries_max": 10,
@@ -174,6 +177,9 @@
         "https://www.deepl.com/en/pro?tab=api"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time speech transcription and translation",
+    "released_on": "2026-04-15",
     "sample_rates_hz": [
       8000,
       16000,
@@ -181,6 +187,6 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -18,6 +18,9 @@
       "audio_formats_note": "Accepted input formats for uploaded recordings.",
       "base_url": "https://gateway.respeecher.com",
       "calibration": "POST /api/calibration measures the speaker's mean pitch for better conversion; automatic calibration otherwise.",
+      "docs_sources": [
+        "https://space.respeecher.com/docs/choosing-an-api.md"
+      ],
       "export": "Projects or recordings exportable as .zip.",
       "kind": "voice conversion (audio in, converted audio out); not a conversational realtime model",
       "model_id_note": "No model parameter: POST /api/recordings then POST /api/v2/orders with voice_id (+ optional accent_id). 'marketplace-sts' is a catalog label.",
@@ -46,9 +49,11 @@
         "https://www.respeecher.com/marketplace/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "converting recorded speech to another voice",
     "streaming": false,
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

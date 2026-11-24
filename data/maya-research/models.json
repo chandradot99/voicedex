@@ -231,6 +231,9 @@
       "hi"
     ],
     "meta": {
+      "docs_sources": [
+        "https://huggingface.co/maya-research/Veena"
+      ],
       "huggingface_repo": "maya-research/Veena"
     },
     "name": "Veena",
@@ -247,15 +250,18 @@
         "https://huggingface.co/api/models?author=maya-research&pipeline_tag=text-to-speech"
       ]
     },
-    "released_on": "2025-06-24",
+    "released_on": "2025-06",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "first_seen": "2026-11-18",
     "id": "maya-research/maya1",
     "meta": {
+      "docs_sources": [
+        "https://huggingface.co/maya-research/maya1"
+      ],
       "huggingface_repo": "maya-research/maya1"
     },
     "name": "maya1",
@@ -272,9 +278,9 @@
         "https://huggingface.co/api/models?author=maya-research&pipeline_tag=text-to-speech"
       ]
     },
-    "released_on": "2025-10-18",
+    "released_on": "2025-10",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
