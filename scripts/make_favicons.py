@@ -16,19 +16,24 @@ ROOT = Path(__file__).resolve().parent.parent
 STATIC = ROOT / "voicedex/web/static"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">\
-<rect width="20" height="20" rx="3" fill="#0b0b0c"/>\
-<g fill="#f5a524"><rect x="3" y="8.5" width="2" height="3"/><rect x="6.7" y="6" width="2" height="8"/>\
-<rect x="10.4" y="3.5" width="2" height="13"/><rect x="14.1" y="7" width="2" height="6"/></g></svg>
-"""
+# The "V-meter": five level-meter bars whose tops trace a V, amber on a dark app-icon tile (matches the provider
+# logos it sits beside). SQUARE is the same mark full-bleed, for iOS, which rounds corners itself.
+_BARS = "".join(f'<rect x="{10 + k * 9.5}" y="{51 - h}" width="6" height="{h}" rx="3" fill="#f5a524"/>'
+                for k, h in enumerate((38, 27, 16, 27, 38)))
+SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#17140f"/>'
+       '<rect x=".5" y=".5" width="63" height="63" rx="14.5" fill="none" stroke="#fff" stroke-opacity=".09"/>'
+       + _BARS + "</svg>\n")
+SQUARE = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#17140f"/>'
+          + _BARS + "</svg>\n")
 
-PNGS = {"favicon-48.png": 48, "favicon-96.png": 96, "favicon-192.png": 192, "apple-touch-icon.png": 180}
+PNGS = {"favicon-48.png": 48, "favicon-96.png": 96, "favicon-192.png": 192, "logo.png": 512}
+SQUARE_PNGS = {"apple-touch-icon.png": 180}
 ICO_SIZES = (16, 32, 48)
 
 
-def render(size: int, out: Path) -> None:
+def render(size: int, out: Path, svg: str = SVG) -> None:
     html = (f"<html><body style='margin:0;background:transparent'>"
-            f"<img src='data:image/svg+xml;utf8,{SVG.strip().replace('#', '%23')}' width='{size}' height='{size}'"
+            f"<img src='data:image/svg+xml;utf8,{svg.strip().replace('#', '%23')}' width='{size}' height='{size}'"
             f" style='display:block'></body></html>")
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as f:
         f.write(html)
@@ -53,6 +58,8 @@ def main() -> None:
     (STATIC / "favicon.svg").write_text(SVG)
     for name, size in PNGS.items():
         render(size, STATIC / name)
+    for name, size in SQUARE_PNGS.items():
+        render(size, STATIC / name, SQUARE)
     with tempfile.TemporaryDirectory() as tmp:
         parts = []
         for size in ICO_SIZES:
@@ -60,7 +67,7 @@ def main() -> None:
             render(size, p)
             parts.append((size, p.read_bytes()))
     (STATIC / "favicon.ico").write_bytes(ico(parts))
-    print("wrote favicon.svg, favicon.ico,", ", ".join(PNGS))
+    print("wrote favicon.svg, favicon.ico,", ", ".join([*PNGS, *SQUARE_PNGS]))
 
 
 if __name__ == "__main__":

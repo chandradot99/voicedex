@@ -1428,3 +1428,4 @@ h1.with-logo { display: flex; gap: 14px; }
 @media (min-width: 1001px) and (min-height: 560px) {
   .home .hero-band { min-height: 100vh; min-height: 100svh; }
 }
+.brand-mark { width: 28px; height: 28px; border-radius: 7px; }
