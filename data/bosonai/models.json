@@ -5,6 +5,13 @@
       "opus",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection",
+      "voice_cloning"
+    ],
     "description": "Full-duplex realtime voice model over WebSocket with turn detection, barge-in, tool calling and an OpenAI Realtime-compatible event protocol.",
     "first_seen": "2026-11-18",
     "id": "higgs-realtime",
@@ -18,9 +25,15 @@
         "audio/pcmu (G.711 mu-law, 8 kHz)",
         "audio/opus (24 kHz)"
       ],
+      "capability_notes": {
+        "transcription": "input transcripts via higgs-stt-3.1 (billed separately)"
+      },
       "docs_sources": [
         "https://www.boson.ai/blog/higgs-realtime",
-        "https://docs.boson.ai/overview.md"
+        "https://docs.boson.ai/overview.md",
+        "https://docs.boson.ai/models/higgs-realtime/overview.md",
+        "https://docs.boson.ai/models/higgs-realtime/guides/connections-and-sessions.md",
+        "https://docs.boson.ai/models/higgs-realtime/guides/audio-and-voices.md"
       ],
       "input_transcription_model": "higgs-stt-3.1",
       "openai_realtime_compatible": true,
