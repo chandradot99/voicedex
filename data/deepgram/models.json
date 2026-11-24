@@ -44,7 +44,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2021/11/18"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -65,8 +66,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -134,8 +136,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -203,8 +206,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -251,7 +255,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2022/8/17"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -272,8 +277,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2022-08-17",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -342,7 +349,8 @@
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
         "https://developers.deepgram.com/docs/keywords",
-        "https://developers.deepgram.com/docs/language-detection"
+        "https://developers.deepgram.com/docs/language-detection",
+        "https://developers.deepgram.com/changelog/2022/5/26"
       ],
       "formatted_output": true,
       "multilingual": false,
@@ -363,8 +371,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2022-05-26",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -412,7 +422,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2022/7/19"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -433,8 +444,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2022-07-19",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -502,8 +515,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -571,8 +585,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -594,6 +609,11 @@
       "en"
     ],
     "meta": {
+      "docs_sources": [
+        "https://developers.deepgram.com/changelog/2025/10/2",
+        "https://deepgram.com/learn/introducing-flux-conversational-speech-recognition",
+        "https://developers.deepgram.com/docs/models-languages-overview"
+      ],
       "encodings": [
         "linear16",
         "linear32",
@@ -634,6 +654,9 @@
         "https://deepgram.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time voice agents, customer support bots, interactive turn-based experiences",
+    "released_on": "2025-10-02",
     "sample_rates_hz": [
       8000,
       16000,
@@ -642,7 +665,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -673,6 +696,11 @@
       "nl"
     ],
     "meta": {
+      "docs_sources": [
+        "https://deepgram.com/learn/introducing-flux-multilingual",
+        "https://deepgram.com/learn/deepgram-launches-flux-multilingual-press-release",
+        "https://developers.deepgram.com/docs/multilingual-voice-agent"
+      ],
       "encodings": [
         "linear16",
         "linear32",
@@ -714,6 +742,9 @@
         "https://deepgram.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "multilingual voice agents",
+    "released_on": "2026-04-29",
     "sample_rates_hz": [
       8000,
       16000,
@@ -722,7 +753,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -803,7 +834,8 @@
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
         "https://developers.deepgram.com/docs/keywords",
-        "https://developers.deepgram.com/docs/language-detection"
+        "https://developers.deepgram.com/docs/language-detection",
+        "https://developers.deepgram.com/changelog/2022/1/18"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -824,8 +856,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -956,8 +989,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -1008,7 +1042,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2024/8/19"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -1029,8 +1064,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2024-08-19",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -1296,7 +1332,9 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2023/9/19",
+        "https://deepgram.com/learn/nova-2-speech-to-text-api"
       ],
       "formatted_output": true,
       "multilingual": false,
@@ -1317,8 +1355,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2023-09-19",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -1510,7 +1549,8 @@
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
         "https://developers.deepgram.com/docs/keywords",
-        "https://developers.deepgram.com/docs/language-detection"
+        "https://developers.deepgram.com/docs/language-detection",
+        "https://developers.deepgram.com/changelog/2023/11/14"
       ],
       "formatted_output": true,
       "multilingual": true,
@@ -1531,8 +1571,14 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "languages not yet supported by Nova-3; filler word identification",
+    "released_on": "2023-11-14",
+    "replaces": [
+      "nova-general"
+    ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2137,7 +2183,9 @@
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
         "https://developers.deepgram.com/docs/keyterm",
-        "https://developers.deepgram.com/docs/language-detection"
+        "https://developers.deepgram.com/docs/language-detection",
+        "https://developers.deepgram.com/changelog/2025/2/12",
+        "https://deepgram.com/learn/introducing-nova-3-speech-to-text-api"
       ],
       "formatted_output": false,
       "multilingual": true,
@@ -2195,8 +2243,14 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "meetings, event captioning, multi-speaker, multilingual, noisy or far-field audio (batch or streaming)",
+    "released_on": "2025-02-12",
+    "replaces": [
+      "nova-2-general"
+    ],
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2260,7 +2314,9 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keyterm"
+        "https://developers.deepgram.com/docs/keyterm",
+        "https://developers.deepgram.com/changelog/2025/3/3",
+        "https://deepgram.com/learn/introducing-nova-3-medical-speech-to-text-api"
       ],
       "formatted_output": false,
       "multilingual": true,
@@ -2274,8 +2330,12 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2025-03-03",
+    "replaces": [
+      "nova-2-medical"
+    ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2328,7 +2388,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keyterm"
+        "https://developers.deepgram.com/docs/keyterm",
+        "https://developers.deepgram.com/changelog/2026/9/17"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -2342,8 +2403,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2026-09-17",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2404,8 +2466,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2463,7 +2526,8 @@
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
         "https://developers.deepgram.com/docs/keywords",
-        "https://developers.deepgram.com/docs/language-detection"
+        "https://developers.deepgram.com/docs/language-detection",
+        "https://developers.deepgram.com/changelog/2023/4/13"
       ],
       "formatted_output": true,
       "multilingual": false,
@@ -2477,8 +2541,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2023-04-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2539,8 +2605,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2591,7 +2658,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2023/4/13"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -2605,8 +2673,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2023-04-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2667,8 +2737,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2740,8 +2811,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2876,7 +2948,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2021/11/18"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -2897,8 +2970,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2021-11-18",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2945,7 +3020,8 @@
         "https://developers.deepgram.com/docs/smart-format",
         "https://developers.deepgram.com/docs/profanity-filter",
         "https://developers.deepgram.com/docs/sentiment-analysis",
-        "https://developers.deepgram.com/docs/keywords"
+        "https://developers.deepgram.com/docs/keywords",
+        "https://developers.deepgram.com/changelog/2021/11/18"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -2966,8 +3042,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2021-11-18",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -3115,7 +3193,8 @@
         "https://developers.deepgram.com/docs/summarization",
         "https://developers.deepgram.com/docs/topic-detection",
         "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
-        "https://developers.deepgram.com/docs/diarization"
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/changelog/2023/4/13"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -3129,8 +3208,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2023-04-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -3278,7 +3358,8 @@
         "https://developers.deepgram.com/docs/summarization",
         "https://developers.deepgram.com/docs/topic-detection",
         "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
-        "https://developers.deepgram.com/docs/diarization"
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/changelog/2023/4/13"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -3306,8 +3387,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2023-04-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -3455,7 +3537,8 @@
         "https://developers.deepgram.com/docs/summarization",
         "https://developers.deepgram.com/docs/topic-detection",
         "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
-        "https://developers.deepgram.com/docs/diarization"
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/changelog/2023/4/13"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -3469,8 +3552,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2023-04-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -3618,7 +3702,8 @@
         "https://developers.deepgram.com/docs/summarization",
         "https://developers.deepgram.com/docs/topic-detection",
         "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
-        "https://developers.deepgram.com/docs/diarization"
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/changelog/2023/4/13"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -3632,8 +3717,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2023-04-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -3781,7 +3867,8 @@
         "https://developers.deepgram.com/docs/summarization",
         "https://developers.deepgram.com/docs/topic-detection",
         "https://developers.deepgram.com/docs/deepgram-whisper-cloud",
-        "https://developers.deepgram.com/docs/diarization"
+        "https://developers.deepgram.com/docs/diarization",
+        "https://developers.deepgram.com/changelog/2023/4/13"
       ],
       "formatted_output": false,
       "multilingual": false,
@@ -3795,8 +3882,9 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "released_on": "2023-04-13",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "first_seen": "2026-11-16",
@@ -3807,6 +3895,12 @@
       "en-IE",
       "en-US"
     ],
+    "meta": {
+      "docs_sources": [
+        "https://deepgram.com/learn/aura-text-to-speech-tts-api-voice-ai-agents-launch",
+        "https://developers.deepgram.com/docs/tts-models-languages-overview"
+      ]
+    },
     "name": "Aura",
     "pricing": {
       "as_of": "2026-11-16",
@@ -3829,8 +3923,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2024-03-12",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -3872,7 +3968,9 @@
         "https://developers.deepgram.com/docs/tts-voice-controls",
         "https://developers.deepgram.com/docs/tts-expressivity",
         "https://developers.deepgram.com/docs/tts-models-languages-overview",
-        "https://developers.deepgram.com/docs/tts-feature-overview"
+        "https://developers.deepgram.com/docs/tts-feature-overview",
+        "https://deepgram.com/learn/introducing-aura-2-enterprise-text-to-speech",
+        "https://developers.deepgram.com/changelog/2025/5/14"
       ]
     },
     "name": "Aura 2",
@@ -3897,8 +3995,10 @@
         "https://api.deepgram.com/v1/models"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-04-15",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -3991,7 +4091,10 @@
         "https://developers.deepgram.com/docs/flux-tts/batch",
         "https://developers.deepgram.com/docs/flux-tts/quickstart",
         "https://developers.deepgram.com/docs/tts-voice-controls",
-        "https://developers.deepgram.com/docs/tts-expressivity"
+        "https://developers.deepgram.com/docs/tts-expressivity",
+        "https://deepgram.com/learn/introducing-flux-tts-conversation-native-text-to-speech-for-real-time-voice-agents",
+        "https://developers.deepgram.com/changelog/2026/8/19",
+        "https://developers.deepgram.com/docs/tts-models-languages-overview"
       ],
       "early_access_languages_note": "Early Access languages have no text normalization (numbers/dates read as written); normalization for en, de, nl, fr, hi, it, ja, pt, ru, es",
       "encodings": {
@@ -4069,6 +4172,12 @@
         "https://developers.deepgram.com/docs/tts-voice-controls"
       ]
     },
+    "recommended": true,
+    "recommended_for": "all new builds: voice agents, customer service, IVR, general-purpose synthesis",
+    "released_on": "2026-08-12",
+    "replaces": [
+      "aura-2"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
@@ -4079,6 +4188,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   }
 ]
