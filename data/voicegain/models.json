@@ -7,6 +7,9 @@
       "wav"
     ],
     "batch": false,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "Voicegain's default real-time model: best real-time accuracy, sub-100 ms end-of-utterance, for live voice agents and telephony.",
     "first_seen": "2026-11-18",
     "id": "VoiceGain-kappa",
@@ -20,6 +23,9 @@
     ],
     "meta": {
       "api_parameter": "acousticModelRealTime",
+      "capability_notes": {
+        "custom_vocabulary": "hints with weights, up to 50 per request"
+      },
       "current_version": "Kappa-v7 (June 2025, 75M parameters)",
       "default_for": "real-time",
       "docs_sources": [
@@ -158,6 +164,9 @@
       "wav"
     ],
     "batch": false,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "Real-time model with lower latency and somewhat lower accuracy than Kappa.",
     "first_seen": "2026-11-18",
     "id": "VoiceGain-rho",
@@ -167,6 +176,12 @@
     ],
     "meta": {
       "api_parameter": "acousticModelRealTime",
+      "capability_notes": {
+        "custom_vocabulary": "hints with weights, up to 50 per request"
+      },
+      "docs_sources": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py"
+      ],
       "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
     },
     "name": "Rho",
@@ -187,7 +202,7 @@
       ]
     },
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -197,6 +212,9 @@
       "wav"
     ],
     "batch": false,
+    "capabilities": [
+      "custom_vocabulary"
+    ],
     "description": "English (US) real-time model with the lowest latency and lower accuracy than Rho.",
     "first_seen": "2026-11-18",
     "id": "VoiceGain-rho-en-us",
@@ -209,6 +227,12 @@
     ],
     "meta": {
       "api_parameter": "acousticModelRealTime",
+      "capability_notes": {
+        "custom_vocabulary": "hints with weights, up to 50 per request"
+      },
+      "docs_sources": [
+        "https://github.com/voicegain/python-sdk/blob/master/voicegain_speech/models/asr_settings_transcription_async.py"
+      ],
       "platform_features": "PII redaction and custom vocabulary are listed for the STT API as a whole, not per model"
     },
     "name": "Rho (en-US)",
@@ -229,7 +253,7 @@
       ]
     },
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
