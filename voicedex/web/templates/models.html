@@ -9,63 +9,67 @@
 </section>
 {% endblock %}
 
-<section class="wrap">
-  {% block filters %}
-  <details class="filter-bar" open data-collapse-sm>
+<section class="wrap{% if facets %} wrap-wide workbench{% endif %}">
+  {% block filters %}{% set fc = facets %}
+  <details class="filter-bar rail" open data-collapse-sm>
     <summary>Filters{% if tokens %} ({{ tokens|length }}){% endif %}</summary>
-    <form class="filters" method="get" action="/models">
-      <label class="field grow">Search
+    <form class="filters facets" method="get" action="/models" aria-label="Filter models">
+      <label class="field">Search
         <input type="search" name="q" value="{{ f.q }}" placeholder="nova, sonic, flash…" autocomplete="off" spellcheck="false">
       </label>
-      <label class="field">Type
-        <select name="type">
-          <option value="">Any</option>
-          {% for k, label in TYPE_LABELS.items() %}<option value="{{ k }}" {% if f.type == k %}selected{% endif %}>{{ label }}</option>{% endfor %}
-        </select>
-      </label>
+      <fieldset class="facet">
+        <legend>Type</legend>
+        <label class="opt"><input type="radio" name="type" value="" {% if not f.type %}checked{% endif %}><span>Any</span><i>{{ fc.type_total }}</i></label>
+        {% for t, label in TYPE_LABELS.items() %}<label class="opt"><input type="radio" name="type" value="{{ t }}" {% if f.type == t %}checked{% endif %}><span>{{ label }}</span><i>{{ fc.type[t] }}</i></label>{% endfor %}
+      </fieldset>
       <label class="field">Language
         <select name="language" data-searchable>
           <option value="">Any</option>
-          {% for code, name in languages %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }}</option>{% endfor %}
+          {% for code, name in languages %}{% set n = fc.language.get(code, fc.language.get("*", 0)) %}{% if n or f.language == code %}<option value="{{ code }}" {% if f.language == code %}selected{% endif %}>{{ name }} ({{ n }})</option>{% endif %}{% endfor %}
         </select>
       </label>
       <label class="field">Provider
         <select name="provider" data-searchable="provider">
           <option value="">Any</option>
-          {% for s in providers %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }}</option>{% endfor %}
+          {% for s in providers %}{% set n = fc.provider[s.id] %}{% if n or f.provider == s.id %}<option value="{{ s.id }}" {% if f.provider == s.id %}selected{% endif %}>{{ s.name }} ({{ n }})</option>{% endif %}{% endfor %}
         </select>
       </label>
-      <label class="field">Feature
-        <select name="capability">
-          <option value="">Any</option>
-          {% for c in capabilities %}<option value="{{ c }}" {% if f.capability == c %}selected{% endif %}>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</option>{% endfor %}
-        </select>
-      </label>
-      <label class="field">Status
-        <select name="status">
-          <option value="">Any</option>
-          <option value="ending" {% if f.status == "ending" %}selected{% endif %}>Shutting down</option>
-          <option value="beta" {% if f.status == "beta" %}selected{% endif %}>Beta / preview</option>
-        </select>
-      </label>
-      <div class="filter-toggles">
-        <label class="field-check"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}> Realtime (WebSocket / WebRTC)</label>
-        <label class="field-check"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}> Open weights</label>
+      <fieldset class="facet">
+        <legend>Features <span>has all ticked</span></legend>
+        {% for c, n in fc.capability %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}" {% if c in f.capability %}checked{% endif %}><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% else %}<p class="facet-empty">None documented for these models</p>{% endfor %}
+      </fieldset>
+      <fieldset class="facet">
+        <legend>Connection and weights</legend>
+        <label class="opt"><input type="checkbox" name="mode" value="realtime" {% if f.mode == "realtime" %}checked{% endif %}><span>Realtime (WebSocket / WebRTC)</span><i>{{ fc.realtime }}</i></label>
+        <label class="opt"><input type="checkbox" name="weights" value="open" {% if f.weights == "open" %}checked{% endif %}><span>Open weights</span><i>{{ fc.open }}</i></label>
         {% if f.weights == "hosted" %}<input type="hidden" name="weights" value="hosted">{% endif %}
-      </div>
+      </fieldset>
+      <fieldset class="facet">
+        <legend>Status</legend>
+        <label class="opt"><input type="radio" name="status" value="" {% if not f.status %}checked{% endif %}><span>Any</span><i>{{ fc.status_total }}</i></label>
+        <label class="opt"><input type="radio" name="status" value="ending" {% if f.status == "ending" %}checked{% endif %}><span>Shutting down</span><i>{{ fc.ending }}</i></label>
+        <label class="opt"><input type="radio" name="status" value="beta" {% if f.status == "beta" %}checked{% endif %}><span>Beta / preview</span><i>{{ fc.beta }}</i></label>
+      </fieldset>
       {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
       <button type="submit" class="btn-secondary" data-apply>Apply</button>
     </form>
   </details>
   {% endblock %}
 
+  <div class="bench-main">
   <div class="result-bar">
     {% set n_all = total_rows|default(rows|length) %}<p class="result-count" role="status">{{ "{:,}".format(n_all) }} match{{ 'es' if n_all != 1 }}{% if pages|default(1) > 1 %}, {{ first }}–{{ first + rows|length - 1 }} shown{% elif n_all > rows|length %}, cheapest {{ rows|length }} shown{% endif %}</p>
     {% if tokens %}
     <div class="tokens">
-      {% for k, label, value in tokens %}<a class="token" href="/models?{{ qs(**{k: None}) }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}
+      {% for label, value, rest in tokens %}<a class="token" href="/models?{{ rest }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}
     </div>
-    <a class="btn-link" href="/models{% if f.sort %}?sort={{ f.sort }}{% endif %}">Clear all</a>
+    <a class="btn-link clear-all" href="/models{% if f.sort %}?sort={{ f.sort }}{% endif %}">Clear all</a>
+    {% endif %}
+    {% if facets %}
+    <div class="view-tools">
+      <nav class="seg seg-sm" aria-label="Sort models">{% for key, label in MODEL_SORTS.items() %}<a href="/models?{{ qs(sort=key or None) }}" {% if f.sort == key %}aria-current="true"{% endif %}>{{ label }}</a>{% endfor %}</nav>
+      <button type="button" class="btn-secondary density-toggle hide-sm" aria-pressed="false" hidden>Compact rows</button>
+    </div>
     {% endif %}
   </div>
 
@@ -80,7 +84,7 @@
       <thead>
         <tr>
           <th scope="col" class="pick"><span class="visually-hidden">Compare</span></th>
-          <th scope="col"><a href="/models?{{ qs(sort=None) }}" {% if not f.sort %}aria-current="true"{% endif %}>Model</a></th>
+          <th scope="col"><a href="/models?{{ qs(sort='name') }}" {% if f.sort == 'name' %}aria-current="true"{% endif %}>Model{% if f.sort == 'name' %} ↓{% endif %}</a></th>
           <th scope="col" class="hide-sm">Provider</th>
           <th scope="col" class="hide-sm">Type</th>
           <th scope="col" class="num hide-sm">Langs</th>
@@ -101,7 +105,7 @@
         {% endif %}{% endif %}
         <tr>
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
-          <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
+          <th scope="row"><a href="{{ model_url(r) }}" title="{{ m.name }}"><code translate="no">{{ m.id }}</code></a>{% if name_adds(m) %}<span class="sub model-name">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
           <td class="hide-sm provider-cell">{{ names[r.provider_id] }}</td>
           <td class="mono hide-sm">{{ TYPE_SHORT[m.type] }}</td>
           <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
@@ -124,11 +128,12 @@
   {% endif %}
   {% else %}
   <div class="empty">
-    <span class="mono">0 models{% for k, label, value in tokens %} {{ label }}:{{ value }}{% endfor %}</span>
+    <span class="mono">0 models{% for label, value, rest in tokens %} {{ label }}:{{ value }}{% endfor %}</span>
     <p>No model matches all of these filters. Remove one:</p>
-    <ul>{% for k, label, value in tokens %}<li><a href="/models?{{ qs(**{k: None}) }}">Drop {{ label }}: {{ value }}</a></li>{% endfor %}<li><a href="/models">Start over</a></li></ul>
+    <ul>{% for label, value, rest in tokens %}<li><a href="/models?{{ rest }}">Drop {{ label }}: {{ value }}</a></li>{% endfor %}<li><a href="/models">Start over</a></li></ul>
   </div>
   {% endif %}
+  </div>
 </section>
 {% block after_table %}{% endblock %}
 {% endblock %}

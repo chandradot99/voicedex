@@ -1748,3 +1748,55 @@ def _report_findings(rep: PricingReport) -> list[str]:
         out.append(f"Realtime speech-to-speech is mostly sold by the token: {sts.usd_other_unit['token']} of "
                    f"{sts.models} models, so only {len(sts.comparable)} can be compared per hour of audio.")
     return out
+
+
+# ── /models and /voices workbench: ordering, names, facet counts ─────────────
+
+MODEL_SORTS = {"": "Recommended", "price": "Price", "newest": "Newest", "name": "A–Z"}
+
+
+def default_model_order(row: ModelRow) -> tuple:
+    """What a builder should see first: models the vendor recommends, then defaults, from widely used providers;
+    shutting-down and preview models after. Ties break by provider and id, so the order is stable."""
+    m = row.model
+    popular = COMPARE_PROVIDERS.index(row.provider_id) if row.provider_id in COMPARE_PROVIDERS else len(COMPARE_PROVIDERS)
+    preview = str(getattr(m.lifecycle, "value", m.lifecycle)) in ("alpha", "beta")
+    return (m.eol_date is not None, m.recommended is not True, not m.is_default, preview, popular,
+            row.provider_id, m.type, m.id)
+
+
+def newest_model_order(row: ModelRow) -> tuple:
+    """Newest release first; models without a published release date fall back to when the catalog first saw them."""
+    m = row.model
+    when = str(m.released_on) if m.released_on else (m.first_seen.isoformat() if m.first_seen else "")
+    return (when == "", _desc(when), row.provider_id, m.id)
+
+
+def _desc(s: str) -> str:
+    return "".join(chr(0x10FFFF - ord(c)) for c in s)       # reverse a string's sort order inside an ascending key
+
+
+def _squash(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def name_adds(model: Model) -> bool:
+    """Show the display name under the id only when it says something the id doesn't ("16k_ar" → "Arabic"),
+    not when it's the id prettified ("eleven_v4" → "Eleven v4")."""
+    return _squash(model.name) != _squash(model.id)
+
+
+def language_counts(rows: list[ModelRow] | list[VoiceRow], attr: str = "model") -> Counter:
+    """Rows per base language code; rows listing "*" (many, unenumerated) count towards every language."""
+    counts: Counter = Counter()
+    wildcard = 0
+    for r in rows:
+        langs = getattr(r, attr).languages
+        if "*" in langs:
+            wildcard += 1
+        counts.update({base_language(lang) for lang in langs if lang != "*"})
+    if wildcard:
+        for code in list(counts):
+            counts[code] += wildcard
+        counts["*"] = wildcard
+    return counts

@@ -189,7 +189,7 @@ document.addEventListener("click", async (e) => {
 document.addEventListener("change", (e) => {
   const el = e.target;
   const form = el.closest("form.filters, form[data-autosubmit]");
-  if (form && (el.tagName === "SELECT" || el.type === "checkbox" || el.type === "search") && el.name
+  if (form && (el.tagName === "SELECT" || el.type === "checkbox" || el.type === "radio" || el.type === "search") && el.name
       && !el.classList.contains("compare-pick")) {
     form.querySelector('[name="page"]')?.remove();
     form.requestSubmit();
@@ -200,9 +200,25 @@ $$("form.filters [data-apply]").forEach((b) => {
   b.tabIndex = -1;
   b.setAttribute("aria-hidden", "true");
 });
+// ── Row density on the workbench tables: comfortable (default) or compact, remembered per browser. The saved
+// choice is applied in <head> before first paint (base.html), so rows never jump.
+$$(".density-toggle").forEach((b) => {
+  const root = document.documentElement;
+  const sync = () => b.setAttribute("aria-pressed", String(root.dataset.density === "compact"));
+  b.hidden = false;
+  sync();
+  b.addEventListener("click", () => {
+    const next = root.dataset.density === "compact" ? "" : "compact";
+    if (next) root.dataset.density = next; else delete root.dataset.density;
+    try { next ? localStorage.setItem("density", next) : localStorage.removeItem("density"); } catch (e) {}
+    sync();
+  });
+});
 // On phones the filter bar starts collapsed (active filters still show as removable tokens below it).
 if (matchMedia("(max-width: 760px)").matches) {
   $$("details[data-collapse-sm]").forEach((d) => { d.open = false; });
+} else if (matchMedia("(max-width: 1000px)").matches) {
+  $$("details.rail[data-collapse-sm]").forEach((d) => { d.open = false; });   // tablets: the rail stacks above
 }
 
 // ── Tooltips for spectrum squares and timeline dots ("provider|name|price|note").

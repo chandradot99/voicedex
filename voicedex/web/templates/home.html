@@ -88,35 +88,14 @@
 {% endif %}
 
 <section id="providers" class="wrap" aria-labelledby="providers-title">
-  <h2 id="providers-title" class="section-title">Providers</h2>
-  <div class="table-scroll">
-    <table class="data">
-      <thead>
-        <tr><th scope="col">Provider</th><th scope="col">Offers</th><th scope="col" class="num">Models</th><th scope="col" class="num hide-sm">Voices</th><th scope="col" class="num hide-sm">Languages</th><th scope="col" class="hide-sm">Based in</th></tr>
-      </thead>
-      <tbody>
-        {% for s in live %}
-        <tr>
-          <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
-          <td class="mono types">{% for t in s.types %}<span>{{ TYPE_SHORT[t] }}</span>{% endfor %}</td>
-          <td class="num mono">{{ s.models }}</td>
-          <td class="num mono hide-sm">{{ "{:,}".format(s.voices) if s.voices else "–" }}</td>
-          <td class="num mono hide-sm">{{ s.languages or "–" }}{% if s.multilingual %}<span class="plus" title="Some models support many unlisted languages">+</span>{% endif %}</td>
-          <td class="muted hide-sm">{{ country_name(s.headquarters) or "–" }}{% if s.access == "open_weights" %} <span class="sub">open weights</span>{% endif %}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-      <tbody class="retired">
-        <tr class="group-row"><th scope="rowgroup" colspan="6">No longer available</th></tr>
-        {% for s in retired %}
-        <tr>
-          <th scope="row"><a href="/providers/{{ s.id }}">{{ s.name }}</a></th>
-          <td colspan="5" class="muted">{{ 'Shut down ' ~ s.retired_on if s.retired_on else 'Shut down' }}{% if s.models %}; open weights still published ({{ s.models }}){% endif %}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <div class="section-row">
+    <h2 id="providers-title" class="section-title">Widely used providers</h2>
+    <a class="more-link" href="/providers">All {{ live|length }} providers{% if retired %}, and {{ retired|length }} that shut down{% endif %}</a>
   </div>
-  <p class="more-link"><a href="/providers">Sort and filter all providers</a></p>
+  <ul class="provider-grid">
+    {% for s in popular %}
+    <li><a href="/providers/{{ s.id }}">{{ s.name }}</a><span class="mono">{% for t in s.types %}{{ TYPE_SHORT[t] }}{% if not loop.last %} {% endif %}{% endfor %}</span><span class="mono muted">{{ s.models }} model{{ 's' if s.models != 1 }}</span></li>
+    {% endfor %}
+  </ul>
 </section>
 {% endblock %}
