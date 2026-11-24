@@ -599,6 +599,12 @@
       "wav",
       "webm"
     ],
+    "capabilities": [
+      "custom_vocabulary",
+      "pii_redaction",
+      "profanity_filter",
+      "word_timestamps"
+    ],
     "description": "Conversational streaming STT model with built-in end-of-turn detection, served on the /v2/listen WebSocket endpoint.",
     "first_seen": "2026-11-18",
     "id": "flux-general-en",
@@ -609,10 +615,14 @@
       "en"
     ],
     "meta": {
+      "capability_notes": {
+        "pii_redaction": "number redaction only"
+      },
       "docs_sources": [
         "https://developers.deepgram.com/changelog/2025/10/2",
         "https://deepgram.com/learn/introducing-flux-conversational-speech-recognition",
-        "https://developers.deepgram.com/docs/models-languages-overview"
+        "https://developers.deepgram.com/docs/models-languages-overview",
+        "https://developers.deepgram.com/docs/flux/feature-overview"
       ],
       "encodings": [
         "linear16",
@@ -677,6 +687,13 @@
       "wav",
       "webm"
     ],
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "pii_redaction",
+      "profanity_filter",
+      "word_timestamps"
+    ],
     "description": "Multilingual Flux conversational streaming STT model (10 languages) with end-of-turn detection and optional language_hint biasing, served on /v2/listen.",
     "first_seen": "2026-11-18",
     "id": "flux-general-multi",
@@ -696,10 +713,14 @@
       "nl"
     ],
     "meta": {
+      "capability_notes": {
+        "pii_redaction": "number redaction only"
+      },
       "docs_sources": [
         "https://deepgram.com/learn/introducing-flux-multilingual",
         "https://deepgram.com/learn/deepgram-launches-flux-multilingual-press-release",
-        "https://developers.deepgram.com/docs/multilingual-voice-agent"
+        "https://developers.deepgram.com/docs/multilingual-voice-agent",
+        "https://developers.deepgram.com/docs/flux/feature-overview"
       ],
       "encodings": [
         "linear16",
