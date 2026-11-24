@@ -5,13 +5,13 @@
 {% block title %}Compare speech models | {{ site_name }}{% endblock %}
 {% block content %}
 {% block page_head %}
-<section class="wrap page-head{% if facets %} wrap-wide{% endif %}">
+<section class="wrap page-head">
   {% set n_head = total_rows|default(rows|length) %}<h1>{{ "{:,}".format(n_head) }} model{{ 's' if n_head != 1 }}{% if not filtered %} across every provider{% endif %}</h1>
   <p class="lede">Filter by what you need, sort by price, and tick models to compare. Prices are normalized: text-to-speech per 1M characters, speech-to-text and realtime per hour of audio.</p>
 </section>
 {% endblock %}
 
-<section class="wrap{% if facets %} wrap-wide bench{% endif %}">
+<section class="wrap{% if facets %} bench{% endif %}">
 
   <div class="bench-main">
   {% if facets %}

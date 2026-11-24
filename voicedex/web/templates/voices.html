@@ -3,13 +3,13 @@
 {% import "_filters.html" as fl %}
 {% block title %}Browse text-to-speech voices | {{ site_name }}{% endblock %}
 {% block content %}
-<section class="wrap wrap-wide page-head">
+<section class="wrap page-head">
   <h1>{{ "{:,}".format(total) }} voice{{ 's' if total != 1 }}</h1>
   <p class="lede">Stock voices from {{ providers|length }} text-to-speech providers. Press play to hear a sample where the provider publishes one.</p>
   <p class="page-hint hide-sm"><kbd>J</kbd> <kbd>K</kbd> next and previous sample · <kbd>Space</kbd> pause · {{ n_live - providers|length }} other providers are speech-to-text only, open weights you run yourself, or keep voices behind an account</p>
 </section>
 
-<section class="wrap wrap-wide bench">{% set fc = facets %}
+<section class="wrap bench">{% set fc = facets %}
 
   <div class="bench-main">
   {% if f.model and f.provider %}<p class="filter-note">Voices that work with <code translate="no">{{ f.model }}</code>. <a href="/voices?provider={{ f.provider }}">Show all {{ f.provider }} voices</a></p>{% endif %}
@@ -30,7 +30,7 @@
     {{ fl.dropdown("accent", "Accent", fo.accent, f.accent, search=True, any_label="Any accent") }}
     {{ fl.toggle("preview", "1", "Has a sample", f.preview, fc.preview) }}
     {{ fl.toggle("emotion", "1", "Emotion control", f.emotion, fc.emotion) }}
-    {{ fl.toggle("multi", "1", "Several languages", f.multi, fc.multi) }}
+    {{ fl.toggle("multi", "1", "Multilingual", f.multi, fc.multi) }}
     <button type="submit" class="btn-secondary" data-apply>Apply</button>
   </form>
   <div class="result-bar">
