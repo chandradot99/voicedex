@@ -23,6 +23,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": false,
@@ -44,8 +47,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Bengali telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -70,6 +75,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": false,
@@ -91,8 +99,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "English telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -117,6 +127,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": true,
@@ -138,8 +151,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Gujarati telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -165,6 +180,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": true,
@@ -186,8 +204,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Hindi telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -262,6 +282,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": true,
@@ -283,8 +306,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Kannada telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -310,6 +335,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": true,
@@ -331,8 +359,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Malayalam telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -358,6 +388,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": true,
@@ -379,8 +412,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Marathi telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -405,6 +440,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "general",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": false,
@@ -426,8 +464,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Odia telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -453,6 +493,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": false,
@@ -474,8 +517,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Tamil telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -501,6 +546,9 @@
     ],
     "meta": {
       "aux_metadata": "aux=true returns per-segment timings, tokens and confidence",
+      "docs_sources": [
+        "https://docs.navana.ai/speech-to-text/models/index.md"
+      ],
       "domain": "banking",
       "endpoints": "POST https://stt.navana.ai/api/transcribe (file) and a WebSocket stream",
       "itn_beta": false,
@@ -522,8 +570,10 @@
         "https://docs.navana.ai/text-to-speech/voices/index.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Telugu telephony audio",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

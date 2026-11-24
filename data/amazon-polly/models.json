@@ -47,6 +47,9 @@
     "meta": {
       "aws_regions": "us-east-1, us-west-2, eu-central-1, eu-west-2, eu-central-2, ap-northeast-1, ap-northeast-2, ap-southeast-1, ap-southeast-2, ca-central-1, us-gov-west-1",
       "bidirectional_streaming": "StartSpeechSynthesisStream (selected regions)",
+      "docs_sources": [
+        "https://docs.aws.amazon.com/polly/latest/dg/doc-history.html"
+      ],
       "engine": "generative",
       "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
       "source_urls": [
@@ -90,6 +93,7 @@
       "eu",
       "us"
     ],
+    "released_on": "2024-03-28",
     "sample_rates_hz": [
       8000,
       16000,
@@ -97,7 +101,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -123,6 +127,9 @@
     "max_text_chars": 3000,
     "meta": {
       "aws_regions": "us-east-1 only",
+      "docs_sources": [
+        "https://docs.aws.amazon.com/polly/latest/dg/doc-history.html"
+      ],
       "engine": "long-form",
       "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
       "source_urls": [
@@ -164,6 +171,7 @@
     "regions": [
       "us"
     ],
+    "released_on": "2023-11-16",
     "sample_rates_hz": [
       8000,
       16000,
@@ -171,7 +179,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -231,6 +239,9 @@
     ],
     "max_text_chars": 3000,
     "meta": {
+      "docs_sources": [
+        "https://docs.aws.amazon.com/polly/latest/dg/doc-history.html"
+      ],
       "engine": "neural",
       "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
       "source_urls": [
@@ -275,6 +286,7 @@
       "eu",
       "us"
     ],
+    "released_on": "2019-07-30",
     "sample_rates_hz": [
       8000,
       16000,
@@ -282,7 +294,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -332,6 +344,9 @@
     ],
     "max_text_chars": 3000,
     "meta": {
+      "docs_sources": [
+        "https://docs.aws.amazon.com/polly/latest/dg/doc-history.html"
+      ],
       "engine": "standard",
       "limits": "SynthesizeSpeech: up to 3000 billed characters (6000 total) per request; StartSpeechSynthesisTask (async): up to 100,000 billed characters.",
       "source_urls": [
@@ -373,6 +388,7 @@
       "eu",
       "us"
     ],
+    "released_on": "2016-11-30",
     "sample_rates_hz": [
       8000,
       16000,
@@ -380,6 +396,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

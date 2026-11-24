@@ -144,6 +144,9 @@
     "max_text_chars": 299,
     "meta": {
       "auth": "appKey header (SK open API portal app key)",
+      "docs_sources": [
+        "https://ax-tts-skopenapi.readme.io/reference/tts-model-list-1"
+      ],
       "endpoints": {
         "tts": "POST https://apis.openapi.sk.com/axtts/tts",
         "tts_with_timestamp": "POST https://apis.openapi.sk.com/axtts/segmentation",
@@ -178,6 +181,8 @@
         "https://openapi.sk.com/products/calc?svcSeq=67"
       ]
     },
+    "recommended": true,
+    "recommended_for": "general Korean speech and voice chat",
     "sample_rates_hz": [
       8000,
       16000,
@@ -185,7 +190,7 @@
     ],
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

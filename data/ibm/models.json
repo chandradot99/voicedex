@@ -18,6 +18,9 @@
       "ar"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -49,11 +52,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-04-27",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -74,6 +78,9 @@
       "cs-CZ"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -105,11 +112,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-09-16",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -132,6 +140,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model"
     },
@@ -163,11 +174,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-11-19",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -188,6 +200,9 @@
       "de-DE"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -219,11 +234,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-03-17",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -303,6 +319,9 @@
       "beta_features": [
         "speaker_labels"
       ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
+      ],
       "generation": "large_speech_model",
       "low_latency": true
     },
@@ -334,11 +353,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-05-20",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -359,6 +379,9 @@
       "en-AU"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -390,11 +413,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-10-28",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -474,6 +498,9 @@
       "beta_features": [
         "speaker_labels"
       ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
+      ],
       "generation": "large_speech_model",
       "low_latency": true
     },
@@ -505,11 +532,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-05-20",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -530,6 +558,9 @@
       "en-GB"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -561,11 +592,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-10-28",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -645,6 +677,9 @@
       "beta_features": [
         "speaker_labels"
       ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
+      ],
       "generation": "large_speech_model",
       "low_latency": true
     },
@@ -676,11 +711,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-05-20",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -701,6 +737,9 @@
       "en-IN"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -732,11 +771,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-08-16",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -759,6 +799,10 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages",
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
       ],
       "generation": "large_speech_model",
       "low_latency": true
@@ -791,11 +835,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-03-07",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -930,6 +975,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -961,11 +1009,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-02-02",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -988,6 +1037,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model",
       "low_latency": true
@@ -1020,11 +1072,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-06-18",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1047,6 +1100,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model",
       "low_latency": true
@@ -1079,11 +1135,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-06-18",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1106,6 +1163,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model",
       "low_latency": true
@@ -1138,11 +1198,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-06-18",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1165,6 +1226,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model",
       "low_latency": true
@@ -1197,11 +1261,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-06-18",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1222,6 +1287,9 @@
       "es-ES"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -1253,11 +1321,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-02-28",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1334,6 +1403,9 @@
       "es-419"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -1365,11 +1437,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-12-03",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1392,6 +1465,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model",
       "low_latency": true
@@ -1424,11 +1500,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-06-18",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1451,6 +1528,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model",
       "low_latency": true
@@ -1483,11 +1563,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-06-18",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1510,6 +1591,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model"
     },
@@ -1541,11 +1625,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-05-20",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1566,6 +1651,9 @@
       "fr-CA"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -1597,11 +1685,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-08-15",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1681,6 +1770,9 @@
       "beta_features": [
         "speaker_labels"
       ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
+      ],
       "generation": "large_speech_model"
     },
     "name": "fr-FR Large Speech Model",
@@ -1711,11 +1803,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-05-20",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1736,6 +1829,9 @@
       "fr-FR"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -1767,11 +1863,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-07-16",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1848,6 +1945,9 @@
       "hi-IN"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -1879,11 +1979,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-08-16",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1906,6 +2007,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model"
     },
@@ -1937,11 +2041,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2026-05-15",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1962,6 +2067,9 @@
       "it-IT"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -1993,11 +2101,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-05-19",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2077,6 +2186,9 @@
       "beta_features": [
         "speaker_labels"
       ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
+      ],
       "generation": "large_speech_model",
       "low_latency": true
     },
@@ -2108,11 +2220,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-05-20",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2133,6 +2246,9 @@
       "ja-JP"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2164,11 +2280,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-08-16",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2189,6 +2306,9 @@
       "ja-JP"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2220,11 +2340,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2023-02-27",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2245,6 +2366,9 @@
       "ko-KR"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2276,11 +2400,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-08-16",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2301,6 +2426,9 @@
       "ko-KR"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2332,11 +2460,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-08-16",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2357,6 +2486,9 @@
       "nl-BE"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2388,11 +2520,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-06-15",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2415,6 +2548,9 @@
     "meta": {
       "beta_features": [
         "speaker_labels"
+      ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
       ],
       "generation": "large_speech_model"
     },
@@ -2446,11 +2582,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2026-04-10",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2471,6 +2608,9 @@
       "nl-NL"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2502,11 +2642,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-12-05",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2586,6 +2727,9 @@
       "beta_features": [
         "speaker_labels"
       ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
+      ],
       "generation": "large_speech_model",
       "low_latency": true
     },
@@ -2617,11 +2761,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-06-18",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2642,6 +2787,9 @@
       "pt-BR"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2673,11 +2821,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-04-11",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2757,6 +2906,9 @@
       "beta_features": [
         "speaker_labels"
       ],
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-large-speech-languages"
+      ],
       "generation": "large_speech_model",
       "low_latency": true
     },
@@ -2788,11 +2940,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2024-08-23",
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2813,6 +2966,9 @@
       "sv-SE"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2844,11 +3000,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-10-07",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2869,6 +3026,9 @@
       "zh-CN"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-release-notes"
+      ],
       "generation": "next_generation",
       "low_latency": true
     },
@@ -2900,11 +3060,12 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2021-10-28",
     "sample_rates_hz": [
       8000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2928,6 +3089,9 @@
     ],
     "meta": {
       "catalog_grouping": true,
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-release-notes"
+      ],
       "note": "IBM selects the engine by voice name; there is no model parameter."
     },
     "name": "IBM Expressive neural voices",
@@ -2939,8 +3103,9 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2022-09-23",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2964,6 +3129,9 @@
     ],
     "meta": {
       "catalog_grouping": true,
+      "docs_sources": [
+        "https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-release-notes"
+      ],
       "note": "IBM selects the engine by voice name; there is no model parameter."
     },
     "name": "IBM Natural voices",
@@ -2975,8 +3143,9 @@
         "https://api.<region>.speech-to-text.watson.cloud.ibm.com/instances/<id>/v1/models"
       ]
     },
+    "released_on": "2025-05-19",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [

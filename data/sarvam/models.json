@@ -58,6 +58,9 @@
       "auto_language_detect": true,
       "code_mixing": true,
       "diarization": "batch only",
+      "docs_sources": [
+        "https://docs.sarvam.ai/api/api-guides-tutorials/models/saaras.md"
+      ],
       "endpoints": [
         "POST /speech-to-text",
         "POST /speech-to-text/job/v1",
@@ -116,8 +119,9 @@
         "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
       ]
     },
+    "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -166,6 +170,10 @@
       "channels": "mono",
       "default_on_endpoint": true,
       "diarization": false,
+      "docs_sources": [
+        "https://docs.sarvam.ai/api/api-guides-tutorials/speech-to-text/realtime-streaming.md",
+        "https://docs.sarvam.ai/changelog/2026/8/18"
+      ],
       "endpoint": "GET /speech-to-text-realtime/ws",
       "input_encodings": [
         "linear16",
@@ -221,12 +229,14 @@
         "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-08-18",
     "sample_rates_hz": [
       8000,
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -289,6 +299,11 @@
       "auto_language_detect": true,
       "code_mixing": true,
       "diarization": "batch only",
+      "docs_sources": [
+        "https://docs.sarvam.ai/api/api-guides-tutorials/models/saaras.md",
+        "https://docs.sarvam.ai/api/api-guides-tutorials/speech-to-text/realtime-streaming.md",
+        "https://docs.sarvam.ai/changelog/2026/8/18"
+      ],
       "endpoints": [
         "POST /speech-to-text",
         "POST /speech-to-text/job/v1",
@@ -350,8 +365,15 @@
         "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Indian-language transcription and translation",
+    "released_on": "2026-08-18",
+    "replaces": [
+      "saaras:v3",
+      "saaras:v3-realtime"
+    ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -568,6 +590,10 @@
       "code_mixing": true,
       "default_sample_rate_hz": 22050,
       "default_speaker": "shubh_enhi_ads",
+      "docs_sources": [
+        "https://docs.sarvam.ai/api/api-guides-tutorials/models/bulbul.md",
+        "https://www.sarvam.ai/blogs/bulbul-v4-flash/"
+      ],
       "languages_note": "ml-IN and od-IN are accepted language_code values but no v4 Flash personas exist for them yet",
       "max_characters": 2500,
       "max_characters_http_stream": 3500,
@@ -619,6 +645,9 @@
         "https://docs.sarvam.ai/api-reference/text-to-speech/convert"
       ]
     },
+    "recommended": true,
+    "recommended_for": "new integrations, Indian languages",
+    "released_on": "2026-10-13",
     "sample_rates_hz": [
       8000,
       16000,
@@ -629,7 +658,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [

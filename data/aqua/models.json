@@ -31,6 +31,9 @@
     "meta": {
       "accepted_formats": "flac, mp3, mp4, mpeg, mpga, m4a, ogg, opus, wav, webm",
       "data_processing": "Aqua processes API requests in the United States",
+      "docs_sources": [
+        "https://aquavoice.com/llms.txt"
+      ],
       "endpoint": "POST https://api.aquavoice.com/v1/audio/transcriptions (OpenAI-compatible); async: /v1/audio/transcription-jobs",
       "languages_note": "50 languages; best quality in Dutch, English, French, German, Italian, Japanese, Korean, Mandarin, Portuguese, Russian, Spanish, Turkish, Ukrainian",
       "max_file_bytes": 268435456,
@@ -71,12 +74,14 @@
         "https://aquavoice.com/api"
       ]
     },
+    "recommended": true,
+    "recommended_for": "batch speech-to-text",
     "regions": [
       "us"
     ],
     "released_on": "2026-04",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

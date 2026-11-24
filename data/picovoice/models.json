@@ -25,6 +25,10 @@
     "meta": {
       "audio_input": "16-bit linear PCM, single channel",
       "deployment": "on_device",
+      "docs_sources": [
+        "https://github.com/Picovoice/cheetah#releases",
+        "https://picovoice.ai/docs/cheetah/"
+      ],
       "endpointing": true,
       "keyword_boosting": true,
       "licensing": "Licensed via Picovoice Console AccessKey (free trial / plan-based licence; usage limits per account, renewals through Picovoice sales). No per-unit price published.",
@@ -58,8 +62,11 @@
         "https://github.com/Picovoice/orca/tree/main/lib/common"
       ]
     },
+    "recommended": true,
+    "recommended_for": "on-device streaming transcription",
+    "released_on": "2022-01-25",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -84,6 +91,10 @@
     ],
     "meta": {
       "deployment": "on_device",
+      "docs_sources": [
+        "https://github.com/Picovoice/leopard#releases",
+        "https://picovoice.ai/docs/leopard/"
+      ],
       "keyword_boosting": true,
       "licensing": "Licensed via Picovoice Console AccessKey (free trial / plan-based licence; usage limits per account, renewals through Picovoice sales). No per-unit price published.",
       "more_languages": "available to Enterprise Plan customers",
@@ -115,9 +126,12 @@
         "https://github.com/Picovoice/orca/tree/main/lib/common"
       ]
     },
+    "recommended": true,
+    "recommended_for": "on-device transcription of recorded audio",
+    "released_on": "2022-01-10",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -144,6 +158,10 @@
     "meta": {
       "custom_pronunciation": "{word|pronunciation} with ARPAbet (English) or IPA subsets (other languages)",
       "deployment": "on_device",
+      "docs_sources": [
+        "https://github.com/Picovoice/orca#releases",
+        "https://picovoice.ai/docs/orca/"
+      ],
       "emotion_control": "custom models only (joy, anger, whispering, shouting) via Enterprise / Picovoice Consulting",
       "licensing": "Licensed via Picovoice Console AccessKey (free trial / plan-based licence; usage limits per account, renewals through Picovoice sales). No per-unit price published.",
       "output": "single-channel 16-bit PCM or WAV",
@@ -178,7 +196,10 @@
         "https://github.com/Picovoice/orca/tree/main/lib/common"
       ]
     },
+    "recommended": true,
+    "recommended_for": "on-device streaming text-to-speech",
+    "released_on": "2024-01-24",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

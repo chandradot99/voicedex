@@ -67,6 +67,10 @@
     "meta": {
       "code_switching": "native",
       "disfluencies_default": true,
+      "docs_sources": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/changelog"
+      ],
       "domains": [
         "medical-v1",
         "veterinary"
@@ -102,13 +106,15 @@
       ]
     },
     "recommended": true,
+    "recommended_for": "pre-recorded audio transcription",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-11-18",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -165,6 +171,10 @@
       "zu"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/changelog"
+      ],
       "keyterms_max_terms": 100,
       "prompt_max_chars": 400,
       "streaming_encodings": [
@@ -208,17 +218,18 @@
       ]
     },
     "recommended": true,
-    "recommended_for": "notetakers, captions, agent assist",
+    "recommended_for": "notetakers and ambient transcription",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-11-18",
     "replaces": [
       "universal-streaming-english",
       "universal-streaming-multilingual"
     ],
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -275,6 +286,10 @@
       "zu"
     ],
     "meta": {
+      "docs_sources": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/changelog"
+      ],
       "keyterms_max_terms": 100,
       "streaming_encodings": [
         "pcm_s16le",
@@ -322,11 +337,12 @@
       "eu",
       "us"
     ],
+    "released_on": "2026-11-18",
     "replaces": [
       "universal-3-6-pro"
     ],
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -594,6 +610,10 @@
     ],
     "meta": {
       "dictation_api": "Dictation API runs on Universal-3.6 Pro (no separate model id)",
+      "docs_sources": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/changelog"
+      ],
       "keyterms_max_terms": 100,
       "status": "previous generation, still fully supported",
       "streaming_default": true,
@@ -656,12 +676,14 @@
         "https://www.assemblyai.com/docs/tts/limits"
       ]
     },
+    "recommended": false,
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-09-29",
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -959,6 +981,10 @@
     "max_text_chars": 5000,
     "meta": {
       "cross_lingual_voices": "speaks every voice in all six languages (usually lower quality outside the voice's own language)",
+      "docs_sources": [
+        "https://www.assemblyai.com/docs/getting-started/models",
+        "https://www.assemblyai.com/changelog"
+      ],
       "encodings": [
         "pcm_s16le",
         "pcm_mulaw",
@@ -1006,10 +1032,13 @@
         "https://www.assemblyai.com/docs/tts/limits"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice agents",
     "regions": [
       "eu",
       "us"
     ],
+    "released_on": "2026-10-28",
     "sample_rates_hz": [
       8000,
       16000,
@@ -1019,6 +1048,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

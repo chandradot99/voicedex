@@ -42,6 +42,10 @@
     ],
     "meta": {
       "additional_languages_note": "also converses in languages beyond the listed 20 with varying accuracy",
+      "docs_sources": [
+        "https://docs.x.ai/developers/release-notes",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech"
+      ],
       "endpoint": "wss://api.x.ai/v1/realtime",
       "ephemeral_tokens": true,
       "exact_encodings": [
@@ -91,6 +95,9 @@
         "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time voice agents",
+    "released_on": "2026-10",
     "sample_rates_hz": [
       8000,
       16000,
@@ -101,7 +108,7 @@
       48000
     ],
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "alias_of": "grok-voice-3.0",
@@ -289,6 +296,10 @@
       "ar-SA"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.x.ai/developers/release-notes",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text"
+      ],
       "filler_words_toggle": true,
       "inverse_text_normalization": true,
       "itn_languages": [
@@ -352,6 +363,9 @@
         "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "batch and streaming transcription",
+    "released_on": "2026-09",
     "sample_rates_hz": [
       8000,
       16000,
@@ -361,7 +375,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -412,6 +426,9 @@
       "auto_language_detection": true,
       "character_timestamps": true,
       "default_voice": "eve",
+      "docs_sources": [
+        "https://docs.x.ai/developers/release-notes"
+      ],
       "ipa_pronunciation": true,
       "model_id_note": "POST /v1/tts and wss://api.x.ai/v1/tts take no model parameter; 'grok-tts' is the audio model name in docs.x.ai's embedded model metadata (version 1.0)",
       "mp3_bit_rates": [
@@ -455,6 +472,7 @@
         "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md"
       ]
     },
+    "released_on": "2026-03",
     "sample_rates_hz": [
       8000,
       16000,
@@ -464,6 +482,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

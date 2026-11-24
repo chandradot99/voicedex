@@ -28,6 +28,10 @@
       ],
       "api_default": false,
       "async_clips_endpoint": "/v1/tts/clips",
+      "docs_sources": [
+        "https://docs.wellsaidlabs.com/reference/model-selection-with-the-api",
+        "https://www.wellsaid.io/caruso"
+      ],
       "encodings": [
         "mp3",
         "wav",
@@ -50,6 +54,8 @@
         "https://docs.wellsaidlabs.com/reference/ttsstream.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "expressive control via AI Director (English)",
     "sample_rates_hz": [
       8000,
       16000,
@@ -60,7 +66,7 @@
       96000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

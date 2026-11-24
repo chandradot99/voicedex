@@ -93,6 +93,9 @@
       "billing": "Credits: 1 credit per character (excluding whitespace) under the standard model; per-second-of-speech billing by agreement. Credits ordered via account manager; no public price.",
       "bit_depth": 16,
       "custom_voices": "Custom brand voices built in studio (VoiceLab) as a service.",
+      "docs_sources": [
+        "https://www.readspeaker.com/products/speechcloud-api/"
+      ],
       "max_text_chars_note": "Default 5,000 characters excluding whitespace per request unless the order confirmation says otherwise.",
       "model_id_note": "No model parameter: requests select language + voice. 'speechcloud-api' is the product name (SCAPI).",
       "mp3_bitrates_kbps": [
@@ -121,12 +124,14 @@
         "https://www.readspeaker.com/sitemap-0.xml"
       ]
     },
+    "recommended": true,
+    "recommended_for": "text-to-speech in your own app or device",
     "sample_rates_hz": [
       8000,
       16000,
       22050
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

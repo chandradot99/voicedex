@@ -23,6 +23,9 @@
       "cross_region_inference": false,
       "default_concurrent_sessions": 20,
       "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-5-sonic.html",
+      "docs_sources": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-5-sonic.html"
+      ],
       "eol_no_sooner_than": "2027-10-05",
       "features": [
         "tool_use",
@@ -72,6 +75,8 @@
         "https://aws.amazon.com/bedrock/pricing/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "agentic real-time voice applications",
     "regions": [
       "asia",
       "eu",
@@ -79,7 +84,7 @@
     ],
     "released_on": "2026-10-05",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -113,6 +118,9 @@
       "context_window": 1000000,
       "cross_region_inference": true,
       "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html",
+      "docs_sources": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html"
+      ],
       "eol_no_sooner_than": "2026-12-02",
       "max_output_tokens": 64000,
       "model_eol_date": "N/A (not announced)"
@@ -160,6 +168,6 @@
     ],
     "released_on": "2025-12-02",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

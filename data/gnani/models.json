@@ -37,6 +37,9 @@
       "batch_max_audio_hours_per_file": 4,
       "default_note": "Docs: 'The default model is currently Prisma v2.5.' Used when `model` is omitted on REST and Realtime.",
       "diarization_note": "Speaker diarization is a Batch pipeline step (with_diarization), not available on REST or Realtime.",
+      "docs_sources": [
+        "https://docs.gnani.ai/api/STT/models/overview.md"
+      ],
       "itn_languages": [
         "hi-IN",
         "en-IN"
@@ -70,8 +73,10 @@
         "https://docs.gnani.ai/api/VC/vc-inference.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "monolingual audio in a known Indian language",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -112,6 +117,10 @@
       "batch_max_audio_hours_per_file": 4,
       "context_hints": "keyterms (up to 200), topic, previous_text, speaker_names",
       "diarization_note": "Speaker diarization is a Batch pipeline step (with_diarization), not available on REST or Realtime.",
+      "docs_sources": [
+        "https://docs.gnani.ai/api/STT/models/overview.md",
+        "https://docs.gnani.ai/api/introduction/changelog.md"
+      ],
       "not_supported": "word-level timestamps, translation, multi-channel audio on REST/Realtime",
       "opt_in_note": "Opt-in: send model=prisma-v3.0; requests without a model use Prisma v2.5.",
       "output_styles": [
@@ -144,9 +153,11 @@
         "https://docs.gnani.ai/api/VC/vc-inference.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "mixed-language speech, language detection",
     "released_on": "2026-10-22",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

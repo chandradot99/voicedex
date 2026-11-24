@@ -46,6 +46,9 @@
     ],
     "max_text_chars": 2000,
     "meta": {
+      "docs_sources": [
+        "https://typecast.ai/docs/changelog"
+      ],
       "emotion_presets": [
         "normal",
         "happy",
@@ -102,12 +105,13 @@
         "https://typecast.ai/pricing/api/"
       ]
     },
+    "released_on": "2025-07",
     "sample_rates_hz": [
       32000,
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -166,6 +170,9 @@
     ],
     "max_text_chars": 2000,
     "meta": {
+      "docs_sources": [
+        "https://typecast.ai/docs/changelog"
+      ],
       "emotion_presets": [
         "normal",
         "happy",
@@ -225,12 +232,13 @@
         "https://typecast.ai/pricing/api/"
       ]
     },
+    "released_on": "2026-01",
     "sample_rates_hz": [
       32000,
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -289,6 +297,11 @@
     ],
     "max_text_chars": 2000,
     "meta": {
+      "docs_sources": [
+        "https://typecast.ai/docs/changelog",
+        "https://typecast.ai/docs/llms.txt",
+        "https://typecast.ai/docs/api-reference/text-to-speech/text-to-speech"
+      ],
       "emotion_presets": [
         "normal",
         "happy",
@@ -349,12 +362,13 @@
       ]
     },
     "recommended": true,
+    "recommended_for": "general text-to-speech",
     "released_on": "2026-10-28",
     "sample_rates_hz": [
       32000,
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

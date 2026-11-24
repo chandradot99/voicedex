@@ -220,6 +220,10 @@
         "pcmu_wav",
         "opus"
       ],
+      "docs_sources": [
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://platform.minimax.io/docs/guides/models-intro"
+      ],
       "generation": "legacy",
       "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
     },
@@ -240,6 +244,8 @@
         "https://platform.minimax.io/docs/guides/pricing-paygo"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-04-02",
     "sample_rates_hz": [
       8000,
       16000,
@@ -249,7 +255,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -308,6 +314,10 @@
         "pcmu_wav",
         "opus"
       ],
+      "docs_sources": [
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://platform.minimax.io/docs/guides/models-intro"
+      ],
       "generation": "legacy",
       "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
     },
@@ -328,6 +338,8 @@
         "https://platform.minimax.io/docs/guides/pricing-paygo"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-04-02",
     "sample_rates_hz": [
       8000,
       16000,
@@ -337,7 +349,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -412,6 +424,10 @@
         "pcmu_wav",
         "opus"
       ],
+      "docs_sources": [
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://platform.minimax.io/docs/guides/models-intro"
+      ],
       "generation": "legacy",
       "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
     },
@@ -432,6 +448,8 @@
         "https://platform.minimax.io/docs/guides/pricing-paygo"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-10-29",
     "sample_rates_hz": [
       8000,
       16000,
@@ -441,7 +459,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -516,6 +534,10 @@
         "pcmu_wav",
         "opus"
       ],
+      "docs_sources": [
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://platform.minimax.io/docs/guides/models-intro"
+      ],
       "generation": "legacy",
       "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
     },
@@ -536,6 +558,8 @@
         "https://platform.minimax.io/docs/guides/pricing-paygo"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-10-29",
     "sample_rates_hz": [
       8000,
       16000,
@@ -545,7 +569,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -621,6 +645,10 @@
         "pcmu_wav",
         "opus"
       ],
+      "docs_sources": [
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://platform.minimax.io/docs/guides/models-intro"
+      ],
       "generation": "current",
       "interjection_tags": true,
       "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
@@ -642,6 +670,9 @@
         "https://platform.minimax.io/docs/guides/pricing-paygo"
       ]
     },
+    "recommended": true,
+    "recommended_for": "high-quality speech with sound tags",
+    "released_on": "2026-01-23",
     "sample_rates_hz": [
       8000,
       16000,
@@ -651,7 +682,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -726,6 +757,10 @@
         "pcmu_wav",
         "opus"
       ],
+      "docs_sources": [
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://platform.minimax.io/docs/guides/models-intro"
+      ],
       "generation": "current",
       "interjection_tags": true,
       "max_text_chars_note": "Docs: text must be fewer than 10,000 characters"
@@ -747,6 +782,9 @@
         "https://platform.minimax.io/docs/guides/pricing-paygo"
       ]
     },
+    "recommended": true,
+    "recommended_for": "speed-focused speech generation",
+    "released_on": "2026-01-23",
     "sample_rates_hz": [
       8000,
       16000,
@@ -756,6 +794,6 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

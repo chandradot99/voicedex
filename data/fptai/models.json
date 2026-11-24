@@ -67,6 +67,9 @@
     "max_text_chars": 5000,
     "meta": {
       "delivery": "Async: the response holds a link to the audio (ready in about 5 s to 2 min); optional callback_url header.",
+      "docs_sources": [
+        "https://docs.fpt.ai/docs/en/speech/api/text-to-speech/"
+      ],
       "endpoint": "POST https://api.fpt.ai/hmi/tts/v5",
       "free_tier": "100,000 characters per month (version 5 voices), low conversion speed, daily request limit, queued requests.",
       "min_text_chars": 3,
@@ -106,8 +109,10 @@
         "https://docs.fpt.ai/docs/en/speech/documentation/tts-pricing/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Vietnamese text-to-speech",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
