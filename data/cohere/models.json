@@ -7,6 +7,9 @@
       "wav"
     ],
     "batch": true,
+    "capabilities": [
+      "punctuation"
+    ],
     "description": "2B-parameter open-weights ASR model for 14 languages, released as an open source research release.",
     "first_seen": "2026-11-18",
     "id": "cohere-transcribe-03-2026",
@@ -31,7 +34,13 @@
       "ko"
     ],
     "meta": {
+      "capability_notes": {
+        "punctuation": "on by default; punctuation=False disables"
+      },
       "diarization": "not supported",
+      "docs_sources": [
+        "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026"
+      ],
       "endpoint": "POST https://api.cohere.com/v2/audio/transcriptions",
       "file_extensions": "flac, mp3, mpeg, mpga, ogg, wav",
       "language_param": "required, ISO-639-1; no automatic language detection",
@@ -58,7 +67,7 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
