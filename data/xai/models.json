@@ -7,8 +7,12 @@
       "pcm"
     ],
     "capabilities": [
+      "barge_in",
       "custom_vocabulary",
+      "function_calling",
       "language_detection",
+      "transcription",
+      "turn_detection",
       "voice_cloning"
     ],
     "description": "xAI's flagship realtime speech-to-speech voice-agent model over WebSocket, with server VAD turn-taking, tool use and automatic input language detection.",
@@ -42,9 +46,15 @@
     ],
     "meta": {
       "additional_languages_note": "also converses in languages beyond the listed 20 with varying accuracy",
+      "capability_notes": {
+        "custom_vocabulary": "keyterms bias input transcription (max 100)",
+        "transcription": "input transcripts when transcription model is set"
+      },
       "docs_sources": [
         "https://docs.x.ai/developers/release-notes",
-        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech"
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech",
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/voice.md"
       ],
       "endpoint": "wss://api.x.ai/v1/realtime",
       "ephemeral_tokens": true,
@@ -119,8 +129,12 @@
       "pcm"
     ],
     "capabilities": [
+      "barge_in",
       "custom_vocabulary",
+      "function_calling",
       "language_detection",
+      "transcription",
+      "turn_detection",
       "voice_cloning"
     ],
     "description": "Moving alias for the latest Grok realtime voice model; currently points to grok-voice-3.0.",
@@ -154,6 +168,14 @@
     ],
     "meta": {
       "additional_languages_note": "also converses in languages beyond the listed 20 with varying accuracy",
+      "capability_notes": {
+        "custom_vocabulary": "keyterms bias input transcription (max 100)",
+        "transcription": "input transcripts when transcription model is set"
+      },
+      "docs_sources": [
+        "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech.md",
+        "https://docs.x.ai/developers/model-capabilities/audio/voice.md"
+      ],
       "endpoint": "wss://api.x.ai/v1/realtime",
       "ephemeral_tokens": true,
       "exact_encodings": [
@@ -213,7 +235,7 @@
       48000
     ],
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
