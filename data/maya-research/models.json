@@ -48,6 +48,9 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "voice_cloning"
+    ],
     "description": "Default hosted streaming TTS model for 11 Indian languages including Indian English, region-local and pre-warmed.",
     "first_seen": "2026-11-18",
     "id": "Maya 2 Native",
@@ -70,6 +73,12 @@
       "en-IN"
     ],
     "meta": {
+      "capability_notes": {
+        "voice_cloning": "zero-shot cloning documented for the open-weights release"
+      },
+      "docs_sources": [
+        "https://huggingface.co/maya-research/maya2-native"
+      ],
       "encoding": "pcm_s16le",
       "serving": "India from Mumbai, elsewhere from the US",
       "voices": [
@@ -100,7 +109,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -256,6 +265,10 @@
     "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "emotion",
+      "voice_design"
+    ],
     "first_seen": "2026-11-18",
     "id": "maya-research/maya1",
     "meta": {
