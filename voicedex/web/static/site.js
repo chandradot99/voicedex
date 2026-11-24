@@ -573,6 +573,83 @@ document.addEventListener("formdata", (e) => {
     cap.meta.textContent = `${d.n} model${d.n === 1 ? "" : "s"} · ${d.types.join(" ")}`;
   };
 
+  // ── Logo field: muted provider logos floating across the hero band, clear of the copy and the ring. The one the
+  // sweep is naming lights up in colour, with a faint signal line to the ring's centre.
+  const band = fig.closest(".hero-band");
+  const fcv = band ? document.createElement("canvas") : null;
+  const fctx = fcv && fcv.getContext("2d");
+  let field = [], FW = 0, FH = 0, px = 0, py = 0;
+  const fieldImgs = {};
+  if (fcv) { fcv.className = "hero-field"; fcv.setAttribute("aria-hidden", "true"); band.prepend(fcv); }
+  const rand = (seed) => () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;     // stable layout
+  const muted = (im) => {                                      // greyscale, ink-tinted copy for the resting state
+    const c = document.createElement("canvas"); c.width = c.height = 64;
+    const x = c.getContext("2d"); x.drawImage(im, 0, 0, 64, 64);
+    try {
+      const d = x.getImageData(0, 0, 64, 64), p = d.data, light = document.documentElement.dataset.theme === "light";
+      for (let i = 0; i < p.length; i += 4) { const l = (0.3 * p[i] + 0.59 * p[i + 1] + 0.11 * p[i + 2]) / 255; const v = light ? 40 + l * 120 : 120 + l * 135; p[i] = v; p[i + 1] = v * 0.97; p[i + 2] = v * 0.93; }
+      x.putImageData(d, 0, 0);
+    } catch (e) { return im; }
+    return c;
+  };
+  const layoutField = () => {
+    if (!fcv) return;
+    const b = band.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1);
+    FW = b.width; FH = b.height;
+    fcv.width = FW * dpr; fcv.height = FH * dpr; fcv.style.width = FW + "px"; fcv.style.height = FH + "px";
+    fctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const copy = $(".hero-copy", band)?.getBoundingClientRect(), strip = $(".hero-strip", band)?.getBoundingClientRect(), ring = fig.getBoundingClientRect();
+    const rc = { x: ring.left - b.left + ring.width / 2, y: ring.top - b.top + ring.height / 2, r: ring.width * 0.5 };
+    const blocked = (x, y, s) => {
+      const pad = 18 + s / 2;
+      if (copy && x > copy.left - b.left - pad && x < copy.right - b.left + pad && y > copy.top - b.top - pad && y < copy.bottom - b.top + pad) return true;
+      if (strip && y > strip.top - b.top - pad) return true;
+      return Math.hypot(x - rc.x, y - rc.y) < rc.r + s;
+    };
+    const rnd = rand(9173), want = FW < 760 ? 14 : 40;
+    const order = data.map((d, i) => i).filter((i) => data[i].logo).sort((i, j) => (data[j].pop - data[i].pop) || (data[j].n - data[i].n));
+    field = [];
+    for (let tries = 0; field.length < Math.min(want, order.length) && tries < 4000; tries++) {
+      const s = 20 + rnd() * 16, x = 12 + rnd() * (FW - 24), y = 12 + rnd() * (FH - 24);
+      if (blocked(x, y, s) || field.some((f) => Math.hypot(f.x - x, f.y - y) < (f.s + s) * 1.25)) continue;
+      field.push({ i: order[field.length], x, y, s, ph: rnd() * 6.28, z: 0.4 + rnd() * 0.6 });
+    }
+    field.forEach((f) => {
+      const d = data[f.i];
+      if (fieldImgs[d.id]) return;
+      const im = new Image(); im.decoding = "async"; im.src = d.logo;
+      im.addEventListener("load", () => { fieldImgs[d.id] = { color: im, mute: muted(im) }; if (still || !running) draw(performance.now()); });
+    });
+  };
+  const drawField = (t, active) => {
+    if (!fctx || !FW) return;
+    fctx.clearRect(0, 0, FW, FH);
+    const ring = fig.getBoundingClientRect(), b = band.getBoundingClientRect();
+    const cx = ring.left - b.left + ring.width / 2, cy = ring.top - b.top + ring.height / 2;
+    for (const f of field) {
+      const im = fieldImgs[data[f.i].id];
+      if (!im) continue;
+      const on = f.i === active;
+      const dx = still ? 0 : Math.sin(t * 0.00031 + f.ph) * 5 - px * 14 * f.z;
+      const dy = still ? 0 : Math.cos(t * 0.00027 + f.ph) * 7 - py * 10 * f.z;
+      const x = f.x + dx, y = f.y + dy, s = on ? f.s * 1.25 : f.s;
+      if (on) {                                                // signal line to the ring's centre
+        const g = fctx.createLinearGradient(x, y, cx, cy);
+        g.addColorStop(0, colors.amber + "aa"); g.addColorStop(1, colors.amber + "00");
+        fctx.strokeStyle = g; fctx.lineWidth = 1; fctx.setLineDash([3, 5]);
+        fctx.beginPath(); fctx.moveTo(x, y); fctx.lineTo(cx, cy); fctx.stroke(); fctx.setLineDash([]);
+        fctx.shadowColor = colors.amber; fctx.shadowBlur = 18;
+      }
+      fctx.globalAlpha = on ? 1 : 0.11 * (0.55 + 0.45 * f.z);              // nearer logos a touch brighter
+      fctx.save(); fctx.beginPath(); fctx.roundRect(x - s / 2, y - s / 2, s, s, s * 0.24); fctx.clip();
+      fctx.drawImage(on ? im.color : im.mute, x - s / 2, y - s / 2, s, s); fctx.restore();
+      fctx.shadowBlur = 0; fctx.globalAlpha = 1;
+    }
+  };
+  if (band && !still) band.addEventListener("pointermove", (e) => {     // a little depth when the pointer moves
+    const b = band.getBoundingClientRect(); px = (e.clientX - b.left) / b.width - 0.5; py = (e.clientY - b.top) / b.height - 0.5;
+  });
+
   const draw = (t) => {
     if (!W) return;
     const { c, inner, outer, logoR, logo } = geom();
@@ -604,7 +681,9 @@ document.addEventListener("formdata", (e) => {
       }
     }
     ctx.globalAlpha = 1;
-    label(hover >= 0 ? hover : (still ? peak : lead));
+    const active = hover >= 0 ? hover : (still ? peak : lead);
+    label(active);
+    drawField(t, active);
   };
 
   const frame = (t) => {
@@ -628,8 +707,7 @@ document.addEventListener("formdata", (e) => {
   cv.addEventListener("pointerleave", () => { hover = -1; cv.style.cursor = ""; if (still || !running) draw(performance.now()); });
   cv.addEventListener("click", (e) => { const i = hit(e); if (i >= 0) location.href = "/providers/" + data[i].id; });
 
-  // The hero band's sound-wave rings radiate from the ring's centre wherever the layout puts it.
-  const band = fig.closest(".hero-band");
+  // The hero band's sound-wave rings radiate from the ring's centre wherever the layout puts it (band: above).
   const centre = () => {
     if (!band) return;
     const b = band.getBoundingClientRect(), r = fig.getBoundingClientRect();
@@ -637,8 +715,14 @@ document.addEventListener("formdata", (e) => {
     band.style.setProperty("--cy", (r.top - b.top + r.height / 2).toFixed(0) + "px");
   };
   readColors(); size(); centre(); draw(performance.now());
-  new ResizeObserver(() => { size(); centre(); draw(performance.now()); }).observe(fig);
-  document.addEventListener("themechange", () => { readColors(); draw(performance.now()); });
+  const later = window.requestIdleCallback || ((fn) => setTimeout(fn, 300));
+  later(() => { layoutField(); draw(performance.now()); });                 // logos load after first paint
+  new ResizeObserver(() => { size(); centre(); layoutField(); draw(performance.now()); }).observe(fig);
+  document.addEventListener("themechange", () => {
+    readColors();
+    Object.values(fieldImgs).forEach((v) => { v.mute = muted(v.color); });
+    draw(performance.now());
+  });
   document.addEventListener("visibilitychange", start);
   new IntersectionObserver(([en]) => { visible = en.isIntersecting; start(); }).observe(fig);
   Object.values(imgs).forEach((im) => im.addEventListener("load", () => { if (still) draw(performance.now()); }));
