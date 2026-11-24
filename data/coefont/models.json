@@ -25,6 +25,9 @@
       "api": "POST https://api.coefont.cloud/v2/text2speech",
       "api_version": "2.0.3",
       "auth": "HMAC-SHA256 signed access key",
+      "docs_sources": [
+        "https://docs.coefont.cloud/en/"
+      ],
       "language_note": "English CoeFonts read English; Chinese CoeFonts read Chinese only",
       "output_delivery": "302 redirect to audio file URL (expires in 7 days)",
       "params": "speed (0.1–10), pitch (±3000 cents), volume, kuten/toten pause lengths",
@@ -43,8 +46,10 @@
         "https://coefont.cloud/llms.txt"
       ]
     },
+    "recommended": true,
+    "recommended_for": "text-to-speech with CoeFont voices (API v2)",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

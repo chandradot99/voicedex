@@ -187,6 +187,11 @@
         "uk",
         "sa-east"
       ],
+      "docs_sources": [
+        "https://murf.ai/api/docs/changelog/2026/10/19.md",
+        "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
+        "https://murf.ai/api/docs/text-to-speech-models/gen-2.md"
+      ],
       "locale_codes_raw_note": "en-UK/en-SCOTT mapped to en-GB, ar-XA to ar, hi-LATN (Hinglish) to hi-Latn",
       "pronunciation_dictionary": true,
       "request_field": "model",
@@ -210,12 +215,15 @@
         "https://murf.ai/api/docs/text-to-speech-models/gen-2.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time voice agents, streaming",
     "regions": [
       "asia",
       "eu",
       "global",
       "us"
     ],
+    "released_on": "2026-10-19",
     "sample_rates_hz": [
       8000,
       16000,
@@ -224,6 +232,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

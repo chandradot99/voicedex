@@ -82,6 +82,9 @@
       ],
       "code_switching": true,
       "concurrency_standard_plan": "Streaming 100 concurrent; batch 25 RPM",
+      "docs_sources": [
+        "https://docs.smallest.ai/model-cards/compare"
+      ],
       "india_region_only_languages": [
         "ta",
         "te",
@@ -160,12 +163,14 @@
         "https://docs.smallest.ai/api-reference/deprecations/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "live or multilingual transcription",
     "regions": [
       "asia",
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -194,6 +199,10 @@
     ],
     "meta": {
       "concurrency_standard_plan": "100 concurrent",
+      "docs_sources": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/changelog/pulse-stt"
+      ],
       "emotion_detection": [
         "neutral",
         "happy",
@@ -225,8 +234,11 @@
         "https://docs.smallest.ai/api-reference/deprecations/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "English streaming with built-in turn detection",
+    "released_on": "2026-10-01",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -253,6 +265,9 @@
     ],
     "meta": {
       "concurrency_standard_plan": "25 RPM",
+      "docs_sources": [
+        "https://docs.smallest.ai/model-cards/compare"
+      ],
       "open_asr_avg_wer_pct": 5.42,
       "recommended_sample_rate_hz": 16000,
       "version": "v4.1"
@@ -273,9 +288,11 @@
         "https://docs.smallest.ai/api-reference/deprecations/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "recorded English audio, batch",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -321,6 +338,10 @@
     "meta": {
       "current_api_default": true,
       "deprecation_notice": "Retiring 2026-11-30 18:30 UTC: requests with model lightning_v3.1 (or no model) will be served by lightning_v3.1_pro; legacy /waves/v1/lightning-v3.1/ routes (incl. get_voices) retire and clones made on lightning-v3.1 stop working.",
+      "docs_sources": [
+        "https://docs.smallest.ai/model-cards/text-to-speech/lightning-v-3-1",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ],
       "language_auto_routing": true,
       "max_chunk_chars": 250,
       "native_sample_rate_hz": 44100,
@@ -375,6 +396,7 @@
         "https://docs.smallest.ai/api-reference/deprecations/models"
       ]
     },
+    "recommended": false,
     "regions": [
       "asia",
       "us"
@@ -386,7 +408,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -440,6 +462,11 @@
     "meta": {
       "becomes_api_default_on": "2026-11-30",
       "checkpoint_note": "On 2026-11-28 the lightning_v3.1_pro_10_26 checkpoint becomes stable lightning_v3.1_pro for en/es/hi; other languages unchanged.",
+      "docs_sources": [
+        "https://docs.smallest.ai/model-cards/compare",
+        "https://docs.smallest.ai/changelog/lightning-v-3-1/2026/5/15",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ],
       "language_auto_routing": true,
       "max_chunk_chars": 250,
       "native_sample_rate_hz": 44100,
@@ -473,9 +500,15 @@
         "https://docs.smallest.ai/api-reference/deprecations/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "premium voice quality, voice agents",
     "regions": [
       "asia",
       "us"
+    ],
+    "released_on": "2026-05-15",
+    "replaces": [
+      "lightning_v3.1"
     ],
     "sample_rates_hz": [
       8000,
@@ -484,7 +517,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -511,6 +544,10 @@
     "lifecycle": "beta",
     "meta": {
       "deprecation_notice": "Preview until 2026-11-28; the dated ID remains available until 2026-12-28 after promotion to stable lightning_v3.1_pro.",
+      "docs_sources": [
+        "https://docs.smallest.ai/changelog/lightning-v-3-1/2026/10/29",
+        "https://docs.smallest.ai/api-reference/deprecations/models"
+      ],
       "max_chunk_chars": 250,
       "replacement": "lightning_v3.1_pro",
       "transports": [
@@ -532,6 +569,7 @@
       "asia",
       "us"
     ],
+    "released_on": "2026-10-29",
     "sample_rates_hz": [
       8000,
       16000,
@@ -539,6 +577,6 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

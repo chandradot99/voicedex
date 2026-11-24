@@ -994,6 +994,9 @@
     "meta": {
       "category": "general",
       "custom_vocabulary": "word emphasis (no classes)",
+      "docs_sources": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md"
+      ],
       "engine_generation": "end-to-end",
       "parameter": "grammarFileNames",
       "sample_rate_support": "8k/16k"
@@ -1041,6 +1044,8 @@
         "https://acp.amivoice.com/amivoice_api/price/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Japanese recognition, new integrations and voice bots",
     "regions": [
       "asia"
     ],
@@ -1054,7 +1059,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1090,6 +1095,9 @@
     "meta": {
       "category": "multilingual",
       "custom_vocabulary": "word emphasis (no classes)",
+      "docs_sources": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md"
+      ],
       "engine_generation": "end-to-end",
       "parameter": "grammarFileNames",
       "sample_rate_support": "8k/16k"
@@ -1127,6 +1135,8 @@
         "https://acp.amivoice.com/amivoice_api/price/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "multilingual recognition, new integrations and voice bots",
     "regions": [
       "asia"
     ],
@@ -1140,7 +1150,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1174,6 +1184,9 @@
     "meta": {
       "category": "general",
       "custom_vocabulary": "word emphasis (no classes)",
+      "docs_sources": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md"
+      ],
       "engine_generation": "end-to-end",
       "parameter": "grammarFileNames",
       "sample_rate_support": "8k/16k"
@@ -1221,6 +1234,8 @@
         "https://acp.amivoice.com/amivoice_api/price/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Chinese recognition, new integrations and voice bots",
     "regions": [
       "asia"
     ],
@@ -1234,7 +1249,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1268,6 +1283,9 @@
     "meta": {
       "category": "general",
       "custom_vocabulary": "word emphasis (no classes)",
+      "docs_sources": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md"
+      ],
       "engine_generation": "end-to-end",
       "interim_results": "not available (WebSocket U events are empty)",
       "parameter": "grammarFileNames",
@@ -1317,6 +1335,8 @@
         "https://acp.amivoice.com/amivoice_api/price/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Japanese recognition where accuracy matters more than latency",
     "regions": [
       "asia"
     ],
@@ -1330,7 +1350,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1366,6 +1386,9 @@
     "meta": {
       "category": "multilingual",
       "custom_vocabulary": "word emphasis (no classes)",
+      "docs_sources": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md"
+      ],
       "engine_generation": "end-to-end",
       "interim_results": "not available (WebSocket U events are empty)",
       "parameter": "grammarFileNames",
@@ -1405,6 +1428,8 @@
         "https://acp.amivoice.com/amivoice_api/price/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "multilingual recognition where accuracy matters more than latency",
     "regions": [
       "asia"
     ],
@@ -1418,7 +1443,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1452,6 +1477,9 @@
     "meta": {
       "category": "general",
       "custom_vocabulary": "word emphasis (no classes)",
+      "docs_sources": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md"
+      ],
       "engine_generation": "end-to-end",
       "interim_results": "not available (WebSocket U events are empty)",
       "parameter": "grammarFileNames",
@@ -1501,6 +1529,8 @@
         "https://acp.amivoice.com/amivoice_api/price/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Chinese recognition where accuracy matters more than latency",
     "regions": [
       "asia"
     ],
@@ -1514,6 +1544,6 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -280,6 +280,9 @@
     "meta": {
       "accent_control": "accentControl blends a base locale with a target accent locale at a ratio",
       "controls": "tempo (0-2) or targetDuration, variance, temperature",
+      "docs_sources": [
+        "https://docs.deepdub.ai/sdk.md"
+      ],
       "emotion_tags": "inline [emotion] tags on the streaming-in WebSocket API, resolved against the emotion set configured for the model and base voice",
       "encodings": [
         "mp3",
@@ -313,6 +316,8 @@
         "https://docs.deepdub.ai/voice-presets.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "general text-to-speech (API default)",
     "regions": [
       "eu",
       "us"
@@ -328,6 +333,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -18,6 +18,10 @@
         "audio/pcmu (G.711 mu-law, 8 kHz)",
         "audio/opus (24 kHz)"
       ],
+      "docs_sources": [
+        "https://www.boson.ai/blog/higgs-realtime",
+        "https://docs.boson.ai/overview.md"
+      ],
       "input_transcription_model": "higgs-stt-3.1",
       "openai_realtime_compatible": true,
       "tool_calling": true,
@@ -77,6 +81,9 @@
         "https://docs.boson.ai/models/higgs-tts/voices.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice agents with interruptions and tool use",
+    "released_on": "2026-08-04",
     "sample_rates_hz": [
       8000,
       16000,
@@ -84,7 +91,7 @@
       48000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -213,6 +220,10 @@
     ],
     "max_text_chars": 5000,
     "meta": {
+      "docs_sources": [
+        "https://www.boson.ai/blog/higgs-tts-3",
+        "https://docs.boson.ai/overview.md"
+      ],
       "languages_note": "Docs list 102 languages by name (85 with WER/CER < 5, 17 between 5 and 10); codes taken from the Hugging Face model card (100 codes).",
       "max_text_chars_streaming": 50000,
       "open_weights_note": "Licence permits research/non-commercial use plus a creator-content grant with attribution; hosting/API/product use needs a separate commercial licence.",
@@ -249,10 +260,13 @@
         "https://docs.boson.ai/models/higgs-tts/voices.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "narration, voiceovers and speech playback",
+    "released_on": "2026-06-04",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

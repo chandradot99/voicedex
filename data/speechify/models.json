@@ -131,6 +131,10 @@
     ],
     "max_text_chars": 20000,
     "meta": {
+      "docs_sources": [
+        "https://speechify.ai/blog/simba-3-2-and-the-models-endpoint",
+        "https://docs.speechify.ai/build/changelog/2026/9/21"
+      ],
       "emotion_styles_applied": false,
       "english_voices_only": true,
       "max_chars_by_endpoint": {
@@ -194,6 +198,10 @@
         "https://speechify.ai/pricing"
       ]
     },
+    "released_on": "2026-07-08",
+    "replaces": [
+      "simba-english"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
@@ -203,7 +211,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -281,6 +289,11 @@
     "max_text_chars": 20000,
     "meta": {
       "api_default": false,
+      "docs_sources": [
+        "https://docs.speechify.ai/build/guides/concepts/models",
+        "https://docs.speechify.ai/build/changelog/2026/10/18",
+        "https://docs.speechify.ai/build/migrating-off-simba-1-6"
+      ],
       "emotion_styles_applied": false,
       "max_chars_by_endpoint": {
         "/v1/audio/speech": 2000,
@@ -345,6 +358,13 @@
         "https://speechify.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "multilingual streaming TTS (48 languages)",
+    "released_on": "2026-10-18",
+    "replaces": [
+      "simba-english",
+      "simba-multilingual"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
@@ -354,7 +374,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -377,6 +397,9 @@
     "lifecycle": "deprecated",
     "meta": {
       "deprecation_notice": "Simba 1.6 model retired from API version 2026-09-21 (400 model_retired); workspaces pinned earlier keep it until 2026-11-21, after which the id is served by current models.",
+      "docs_sources": [
+        "https://docs.speechify.ai/build/migrating-off-simba-1-6"
+      ],
       "fine_tuned_cloning": "contact sales",
       "generation": "Simba 1.6",
       "replacement": "simba-3.5 (or simba-3.2 for English only)",
@@ -392,8 +415,9 @@
         "https://speechify.ai/pricing"
       ]
     },
+    "recommended": false,
     "type": "tts",
-    "updated_at": "2026-11-22"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -471,6 +495,9 @@
         "vi-VN"
       ],
       "deprecation_notice": "Simba 1.6 model retired from API version 2026-09-21 (400 model_retired); workspaces pinned earlier keep it until 2026-11-21, after which the id is served by current models. Served and billed as simba-3.5 from 2026-11-21.",
+      "docs_sources": [
+        "https://docs.speechify.ai/build/migrating-off-simba-1-6"
+      ],
       "fine_tuned_cloning": "contact sales",
       "generation": "Simba 1.6",
       "replacement": "simba-3.5",
@@ -486,7 +513,8 @@
         "https://speechify.ai/pricing"
       ]
     },
+    "recommended": false,
     "type": "tts",
-    "updated_at": "2026-11-22"
+    "updated_at": "2026-11-24"
   }
 ]

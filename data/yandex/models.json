@@ -16,6 +16,9 @@
     "lifecycle": "alpha",
     "meta": {
       "context_tokens": 1048576,
+      "docs_sources": [
+        "https://aistudio.yandex.ru/docs/en/ai-studio/release-notes/"
+      ],
       "languages_note": "Realtime models are 'designed specifically for the Russian and Kazakh languages'",
       "model_uri": "gpt://<folder_ID>/speech-realtime-deepseek-v4-flash",
       "protocol": "OpenAI Realtime-compatible event API over WebSocket",
@@ -69,8 +72,9 @@
         "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
       ]
     },
+    "released_on": "2026-07-30",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -90,6 +94,9 @@
     "meta": {
       "branch": "latest",
       "context_tokens": 1048576,
+      "docs_sources": [
+        "https://aistudio.yandex.ru/docs/en/ai-studio/release-notes/"
+      ],
       "languages_note": "Realtime models are 'designed specifically for the Russian and Kazakh languages'",
       "max_output_tokens": 393216,
       "model_uri": "gpt://<folder_ID>/speech-realtime-max-tts-live/latest",
@@ -121,8 +128,9 @@
         "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
       ]
     },
+    "released_on": "2026-09-24",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -263,6 +271,9 @@
         "MP3"
       ],
       "auto_language": "language code 'auto' (API v3 only)",
+      "docs_sources": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/stt/models"
+      ],
       "limits": "streaming 5 min / 10 MB per session; synchronous 30 s / 1 MB; asynchronous 4 h / 1 GB"
     },
     "name": "SpeechKit general",
@@ -297,13 +308,15 @@
         "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "main supported recognition model",
     "sample_rates_hz": [
       8000,
       16000,
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -586,6 +599,9 @@
       "api_versions": [
         "v3"
       ],
+      "docs_sources": [
+        "https://aistudio.yandex.ru/docs/en/speechkit/release-notes-tts"
+      ],
       "limits": "API v3: 250 chars per UtteranceSynthesis request, 5,000 in streaming mode (no LiveTTS-specific limit published)",
       "unsupported": "speed, pitch_shift, duration, templates and MAX_PEAK normalization in API v3; no word_timings"
     },
@@ -614,8 +630,9 @@
         "https://aistudio.yandex.ru/docs/en/speechkit/tts/voices"
       ]
     },
+    "released_on": "2026-09-24",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

@@ -48,6 +48,10 @@
         "pcm_mulaw",
         "pcm_s16le"
       ],
+      "docs_sources": [
+        "https://unrealspeech.com/",
+        "https://docs.v8.unrealspeech.com/"
+      ],
       "endpoint_max_chars": {
         "/speech": 3000,
         "/stream": 1000,
@@ -107,10 +111,12 @@
         "https://unrealspeech.com/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "streaming and long-form text-to-speech (v8 API)",
     "sample_rates_hz": [
       22050
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

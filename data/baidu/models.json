@@ -11,6 +11,9 @@
       "websocket"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+      ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-mini-realtime-far",
       "name_zh": "端到端语音语言大模型（Lite）",
       "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
@@ -108,11 +111,12 @@
         "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
       ]
     },
+    "released_on": "2025-12-25",
     "sample_rates_hz": [
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -126,6 +130,9 @@
       "websocket"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+      ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-mini-realtime-near",
       "name_zh": "端到端语音语言大模型（Lite）",
       "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
@@ -223,11 +230,12 @@
         "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
       ]
     },
+    "released_on": "2025-12-25",
     "sample_rates_hz": [
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -241,6 +249,9 @@
       "websocket"
     ],
     "meta": {
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+      ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-realtime-far",
       "name_zh": "端到端语音语言大模型（Pro）",
       "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
@@ -338,11 +349,12 @@
         "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
       ]
     },
+    "released_on": "2025-12-25",
     "sample_rates_hz": [
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -357,6 +369,9 @@
     ],
     "is_default": true,
     "meta": {
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+      ],
       "endpoint": "wss://aip.baidubce.com/ws/2.0/speech/v1/realtime?model=audio-realtime-near",
       "name_zh": "端到端语音语言大模型（Pro）",
       "protocol": "OpenAI-Realtime-style events (session.update, input_audio_buffer.append, response.*)",
@@ -454,11 +469,12 @@
         "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
       ]
     },
+    "released_on": "2025-12-25",
     "sample_rates_hz": [
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -1929,6 +1945,9 @@
         "Hunanese",
         "Guizhou"
       ],
+      "docs_sources": [
+        "https://cloud.baidu.com/doc/SPEECH/s/cl9mh25sh"
+      ],
       "endpoints": {
         "create voice": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/voice/clone/create",
         "synthesis (http)": "https://aip.baidubce.com/rest/2.0/speech/publiccloudspeech/v1/voice/clone/tts",
@@ -2029,12 +2048,13 @@
         "https://cloud.baidu.com/doc/SPEECH/s/Tmq8y6vdh"
       ]
     },
+    "released_on": "2025-06-05",
     "sample_rates_hz": [
       8000,
       16000,
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

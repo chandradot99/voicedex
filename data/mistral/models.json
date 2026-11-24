@@ -35,6 +35,10 @@
         "voxtral-mini-latest"
       ],
       "deprecation_notice": "Deprecated 2026-10-31; retirement 2027-04-30. Replace with Voxtral Mini Transcribe 3.",
+      "docs_sources": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02.md"
+      ],
       "replacement": "voxtral-mini-transcribe-3-0"
     },
     "name": "Voxtral Mini Transcribe 2",
@@ -55,10 +59,11 @@
         "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
       ]
     },
+    "recommended": false,
     "released_on": "2026-02-04",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -136,6 +141,10 @@
         "voxtral-mini-transcribe-latest"
       ],
       "context_window_tokens": 65536,
+      "docs_sources": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0.md"
+      ],
       "status": "Public Preview",
       "streamed_text_response": true,
       "timestamps": "segment only (word timestamps return 400)"
@@ -158,10 +167,15 @@
         "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "lower-cost transcription and diarization",
     "released_on": "2026-10-20",
+    "replaces": [
+      "voxtral-mini-2602"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -194,6 +208,10 @@
         "voxtral-mini-realtime-latest"
       ],
       "deprecation_notice": "Deprecated 2026-10-31; retirement 2027-04-30. Replace with Voxtral Mini Transcribe Realtime 3.",
+      "docs_sources": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-26-02.md"
+      ],
       "encoding": "pcm_s16le",
       "parameters": "4B",
       "replacement": "voxtral-mini-transcribe-realtime-3-0"
@@ -220,9 +238,10 @@
         "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
       ]
     },
+    "recommended": false,
     "released_on": "2026-02-04",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -250,6 +269,10 @@
       ],
       "default_sample_rate_hz": 16000,
       "diarization_and_turn_detection_exclusive": true,
+      "docs_sources": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0.md"
+      ],
       "encoding": "pcm_s16le mono",
       "language_count": "45 languages and dialects",
       "speaker_references": "up to 8 clips, 3-15 s each",
@@ -275,9 +298,14 @@
         "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "realtime transcription for agents",
     "released_on": "2026-10-20",
+    "replaces": [
+      "voxtral-mini-transcribe-realtime-2602"
+    ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -360,6 +388,10 @@
         "function calling"
       ],
       "context_window_tokens": 65536,
+      "docs_sources": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0.md"
+      ],
       "replaces": "voxtral-small-2507",
       "status": "Public Preview",
       "timestamps": "segment only (word timestamps return 400)"
@@ -382,10 +414,12 @@
         "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "high-accuracy transcription and diarization",
     "released_on": "2026-10-20",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -418,6 +452,10 @@
         "voxtral-mini-tts-latest"
       ],
       "deprecation_notice": "Deprecated 2026-10-31; retirement 2027-04-30. Replace with Voxtral TTS 3.",
+      "docs_sources": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/models/voxtral-tts-26-03.md"
+      ],
       "parameters": "4B",
       "replacement": "voxtral-mini-tts-3-0",
       "ttfa_ms": 90
@@ -445,9 +483,10 @@
         "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
       ]
     },
+    "recommended": false,
     "released_on": "2026-03-23",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -521,6 +560,10 @@
       ],
       "contextual_tts": true,
       "dialects": "50+",
+      "docs_sources": [
+        "https://docs.mistral.ai/models.md",
+        "https://docs.mistral.ai/models/voxtral-mini-tts-3-0.md"
+      ],
       "emotion_tags": 34,
       "endpoints": {
         "offline": "/v1/audio/speech",
@@ -556,11 +599,16 @@
         "https://docs.mistral.ai/studio/audio/specs-and-limits/limits.md"
       ]
     },
+    "recommended": true,
+    "recommended_for": "text-to-speech with voice cloning",
     "released_on": "2026-10-20",
+    "replaces": [
+      "voxtral-mini-tts-2603"
+    ],
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]

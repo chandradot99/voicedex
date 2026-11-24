@@ -176,6 +176,9 @@
     ],
     "max_audio_seconds": 30,
     "meta": {
+      "docs_sources": [
+        "https://docs.bigmodel.cn/cn/update/new-releases"
+      ],
       "endpoints": [
         "https://api.z.ai/api/paas/v4/audio/transcriptions",
         "https://open.bigmodel.cn/api/paas/v4/audio/transcriptions"
@@ -208,9 +211,10 @@
         "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
       ]
     },
+    "released_on": "2025-12-10",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -230,6 +234,9 @@
     "is_default": true,
     "max_text_chars": 1024,
     "meta": {
+      "docs_sources": [
+        "https://docs.bigmodel.cn/cn/update/new-releases"
+      ],
       "platform": "bigmodel.cn",
       "speed_range": "0.5-2",
       "stream": "SSE chunks, pcm only when streaming",
@@ -267,10 +274,11 @@
         "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-4-voice"
       ]
     },
+    "released_on": "2025-12-11",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
