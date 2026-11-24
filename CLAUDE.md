@@ -38,10 +38,15 @@ voicedex/
     files.py         — deterministic read/write of data/<provider>/*.json
     merge.py         — SyncResult → records; merge rules; shrink guard; diff report
     store.py         — in-memory Catalog, stable UUIDv5 ids, language matching
-  web/               — server-rendered pages (Jinja + one site.css/site.js, no build). Design system "The Datasheet":
-                       dark, 1px rules, Geist + Geist Mono, one accent (amber #f5a524) for interaction/magnitude,
-                       coral only for shutdowns/errors; no pills, gradients or colour-coded types. Price spectrum
-                       (views.price_spectrum) is the signature visual. Asset URLs carry a content hash (?v=).
+  web/               — server-rendered pages (Jinja + one site.css/site.js, no build). Design system "The Datasheet"
+                       (tokens at the top of site.css): warm graphite dark (#16171a ground, warm greys), 1px rules.
+                       Type: Archivo (variable width; tables/rails/headings at --narrow 87.5%, body normal) + Geist
+                       Mono ONLY for things you copy (ids, code, keys); numbers use Archivo tabular figures (.mono =
+                       tabular-nums, not monospace). Scale 12/13/14/16/20/28/40px (--t-*), nothing below 12px.
+                       Labels sentence case, never tracked uppercase. Amber (#f5a524) means selected / "this one" /
+                       focus only, never link hover or nav; coral only for shutdowns/errors; no pills, gradients,
+                       colour-coded types or 01/02/03 numbering on non-sequences. Price spectrum (views.price_spectrum)
+                       is the signature visual. og.png comes from scripts/make_og_image.py. Asset URLs carry a content hash (?v=).
                        Dark is the default for everyone; light is opt-in via the header toggle (localStorage "theme").
                        SEO: filtered /models?… canonicalizes to /models, so indexable landing pages are generated from
                        data (views.landing_pages): /{speech-to-text|text-to-speech|speech-to-speech}[/<language>|/<feature>

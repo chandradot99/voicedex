@@ -19,13 +19,13 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site_name }} changes" href="/changes.xml">
   {% for ld in jsonld or [] %}<script type="application/ld+json">{{ ld|tojson }}</script>
   {% endfor %}
-  <meta name="theme-color" content="#111113">
+  <meta name="theme-color" content="#16171a">
   <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;if(localStorage.getItem("density")==="compact")document.documentElement.dataset.density="compact"}catch(e){}</script>
   <meta name="color-scheme" content="dark">
   {% include "_favicon.html" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/site.css?v={{ asset_v() }}">
   <script defer src="/static/site.js?v={{ asset_v() }}"></script>
 </head>
