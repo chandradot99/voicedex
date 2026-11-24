@@ -478,9 +478,9 @@ document.addEventListener("formdata", (e) => {
     // Phones fit fewer columns too (at least 8) instead of scrolling sideways; desktops fill the full width.
     const first = $("tbody th", table)?.getBoundingClientRect().width || 0;
     const total = $("td.map-total", table)?.getBoundingClientRect().width || 0;
-    const cell = 20;                                     // 18px cell + 2px spacing
+    const cell = 21;                                     // 18px cell + 3px spacing
     const cols = $$("thead th.map-lang", table).length;
-    const fitCols = Math.max(innerWidth <= 760 ? 8 : 12, Math.min(cols, Math.floor((wrap.clientWidth - first - total - 12) / cell)));
+    const fitCols = Math.max(innerWidth <= 760 ? 8 : 12, Math.min(cols, Math.floor((wrap.clientWidth - first - total - 40) / cell)));   // 40: room for the last angled label
     if (fitCols < cols) style.textContent = `.map tr > :nth-child(n+${fitCols + 2}):not(.map-total) { display: none; }`;
     const note = $("#coverage-cols");
     if (note) note.textContent = String(fitCols);
@@ -530,6 +530,7 @@ document.addEventListener("formdata", (e) => {
   const cap = { logo: $(".ring-logo", fig), name: $(".ring-name", fig), meta: $(".ring-meta", fig) };
   const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const N = data.length, step = (2 * Math.PI) / N, maxN = Math.max(...data.map((d) => d.n));
+  const peak = data.findIndex((d) => d.n === maxN);      // reduced motion: the ring rests on the largest catalog
   const share = (d) => 0.16 + 0.84 * (Math.log1p(d.n) / Math.log1p(maxN));
   const imgs = {};
   data.forEach((d) => { if (d.logo && d.pop) { const im = new Image(); im.src = d.logo; imgs[d.id] = im; } });
@@ -585,13 +586,14 @@ document.addEventListener("formdata", (e) => {
       const len = (outer - inner) * share(d) * (1 + wob);
       const da = (((sweep - a) % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);    // 0 at the sweep, grows behind it
       const glow = still ? 0 : Math.max(0, 1 - da / 1.1);
-      const hot = i === hover;
-      ctx.globalAlpha = hot ? 1 : 0.26 + 0.74 * glow * glow;
-      ctx.strokeStyle = hot || glow > 0.04 ? colors.amber : colors.ink;
-      if (!hot && glow <= 0.04) ctx.globalAlpha = 0.26;
+      const hot = i === hover || (still && hover < 0 && i === peak);
+      ctx.globalAlpha = hot ? 1 : 0.35 + 0.65 * glow * glow;           // amber is level: dim at rest, full in the sweep
+      ctx.strokeStyle = colors.amber;
       ctx.lineWidth = width;
+      ctx.shadowColor = colors.amber; ctx.shadowBlur = hot || glow > 0.55 ? 12 * Math.max(glow, hot ? 1 : 0) : 0;
       const cs = Math.cos(a), sn = Math.sin(a);
       ctx.beginPath(); ctx.moveTo(c + cs * inner, c + sn * inner); ctx.lineTo(c + cs * (inner + len), c + sn * (inner + len)); ctx.stroke();
+      ctx.shadowBlur = 0;
       if (d.pop && da < leadDa) { leadDa = da; lead = i; }
       const im = withLogo.has(i) && imgs[d.id];
       if (im && im.complete && im.naturalWidth) {
@@ -602,7 +604,7 @@ document.addEventListener("formdata", (e) => {
       }
     }
     ctx.globalAlpha = 1;
-    label(hover >= 0 ? hover : (still ? -1 : lead));
+    label(hover >= 0 ? hover : (still ? peak : lead));
   };
 
   const frame = (t) => {
@@ -666,4 +668,31 @@ document.addEventListener("formdata", (e) => {
     $$(".sq.is-rate", sec).forEach((q) => q.classList.remove("is-rate"));
     if (a) $$(`.sq[data-key="${CSS.escape(a.dataset.key)}"]`, sec).forEach((q) => q.classList.add("is-rate"));
   });
+})();
+
+// ── Price spectra rise once, when they first come into view. The squares are in the page from the start, so a
+// background tab, a screenshot or reduced motion always shows the full chart.
+(() => {
+  const els = $$(".spectrum.rise");
+  if (!els.length || !("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+    if (en.isIntersecting && !document.hidden) { en.target.classList.add("go"); io.unobserve(en.target); }
+  }), { threshold: 0.25 });
+  els.forEach((el) => io.observe(el));
+})();
+
+// ── Coverage map crosshair: hovering a cell lights its provider row and its language column.
+(() => {
+  const table = $("table.map");
+  if (!table) return;
+  const clear = () => $$(".x-row, .x-col", table).forEach((el) => el.classList.remove("x-row", "x-col"));
+  table.addEventListener("pointerover", (e) => {
+    const td = e.target.closest("td:not(.map-total)");
+    clear();
+    if (!td) return;
+    const tr = td.parentElement, col = td.cellIndex;
+    tr.classList.add("x-row");
+    $$("tr", table).forEach((row) => row.cells[col]?.classList.add("x-col"));
+  });
+  table.addEventListener("pointerleave", clear);
 })();

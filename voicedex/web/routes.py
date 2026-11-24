@@ -119,7 +119,7 @@ def _token_value(key: str, value: str, catalog: Catalog) -> str:
 
 # The home page shows a slice of the coverage map (the full one is ~9k elements, too heavy for phones);
 # /coverage has all of it.
-HOME_MAP_PROVIDERS, HOME_MAP_LANGUAGES = 24, 80   # site.js shows as many language columns as fit
+HOME_MAP_PROVIDERS, HOME_MAP_LANGUAGES = 16, 80   # site.js shows as many language columns as fit
 LANDING_ROWS = 100            # cheapest-first rows on a landing page; the rest via "see all"
 
 
@@ -176,26 +176,49 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
          and r.provider_id in live_ids),
         key=lambda r: r.model.eol_date,
     )
+    timeline = views.shutdown_timeline(upcoming_eol, today)
+    stacked = []                       # timeline dots: dots closer than 1.2% stack upward instead of overlapping
+    level_end: list[float] = []
+    for pos, r in (timeline.items if timeline else []):
+        lvl = next((i for i, end in enumerate(level_end) if pos - end >= 1.2), len(level_end))
+        if lvl < len(level_end):
+            level_end[lvl] = pos
+        else:
+            level_end.append(pos)
+        stacked.append((pos, r, min(lvl, 3)))
+    recent = recent[:8]
+    recent_days = []                   # recently changed, one group per day
+    for r in recent:
+        if not recent_days or recent_days[-1][0] != r.model.updated_at:
+            recent_days.append((r.model.updated_at, []))
+        recent_days[-1][1].append(r)
+    popular = sorted((s for s in live if s.id in views.COMPARE_PROVIDERS), key=lambda s: views.COMPARE_PROVIDERS.index(s.id))
+    popular += sorted((s for s in live if s.id not in views.COMPARE_PROVIDERS and s.models),     # fill the wall to 24
+                      key=lambda s: -s.models)[:max(0, 24 - len(popular))]
+    spectrum = views.price_spectrum(catalog)
+    rates = {b_id: views.popular_rates(catalog, types, limit=6) for b_id, types, *_ in views.SPECTRUM_BANDS}
+    for b in spectrum:                 # each rate's position on its band's log scale, for the micro-bars
+        for r in rates.get(b.id, []):
+            r["pos"] = max(2.0, min(100.0, (math.log10(r["value"]) - b.stats["lo"]) / ((b.stats["hi"] - b.stats["lo"]) or 1) * 100))
     return templates.TemplateResponse(request, "home.html", {
         "live": live,
         "retired": [s for s in summaries if s.status != "active"],
         "ring": [{"id": s.id, "name": s.name, "n": s.models, "types": [views.TYPE_SHORT[t] for t in s.types],
                   "logo": views.provider_logo(s.id), "pop": s.id in views.COMPARE_PROVIDERS}
                  for s in sorted(live, key=lambda s: s.name.lower()) if s.models],
-        "popular": sorted((s for s in live if s.id in views.COMPARE_PROVIDERS),
-                          key=lambda s: views.COMPARE_PROVIDERS.index(s.id)),
+        "popular": popular[:24],
         "coverage": views.coverage_map(catalog, n_languages=HOME_MAP_LANGUAGES, model_type=map_type,
                                        n_providers=HOME_MAP_PROVIDERS),
         "coverage_providers": len(views.coverage_map(catalog, n_languages=1, model_type=map_type).rows),
         "map_type": map_type,
         "n_models": len(views.active_models(catalog)),
         "n_voices": len(views.active_voices(catalog)),
-        "recent": recent,
+        "recent": recent, "recent_days": recent_days,
         "upcoming_eol": upcoming_eol,
-        "timeline": views.shutdown_timeline(upcoming_eol, today),
+        "timeline": timeline, "timeline_dots": stacked,
         "today": today,
-        "spectrum": views.price_spectrum(catalog),
-        "rates": {b_id: views.popular_rates(catalog, types, limit=6) for b_id, types, *_ in views.SPECTRUM_BANDS},
+        "spectrum": spectrum,
+        "rates": rates,
         "band_facts": {b_id: views.band_facts(catalog, types) for b_id, types, *_ in views.SPECTRUM_BANDS},
         "tasks": views.task_cards(catalog),
         "freshness": views.catalog_freshness(catalog, today),

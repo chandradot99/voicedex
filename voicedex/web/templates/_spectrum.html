@@ -14,7 +14,8 @@
     <div class="median" style="left: {{ st.x_median }}%" aria-hidden="true"><span>Median {{ money(st.median) }}</span></div>{% endif %}
     <div class="cols" style="--rows: {{ [b.tallest, cap]|min }}" aria-hidden="true">
       {% for col in b.columns %}
-      <div class="col{% if mark_capped and col|length > cap %} capped{% endif %}" style="--i: {{ loop.index0 }}"{% if mark_capped and col|length > cap %} title="{{ col|length }} models"{% endif %}>
+      {% set cx = loop.index0 / b.columns|length * 100 %}
+      <div class="col{% if mark_capped and col|length > cap %} capped{% endif %}{% if show_stats and b.stats and b.stats.x_p25 <= cx + 100 / b.columns|length and cx <= b.stats.x_p75 %} in-iqr{% endif %}" style="--i: {{ loop.index0 }}"{% if mark_capped and col|length > cap %} title="{{ col|length }} models"{% endif %}>
         {%- for it in col[:cap] -%}
         <a class="sq{% if it.ending %} ending{% endif %}{% if it.state %} {{ it.state }}{% endif %}" href="{{ it.url }}" data-key="{{ it.key }}" tabindex="-1" data-tip="{{ it.provider }}|{{ it.label }}|{{ it.price }}{% if it.ending %}|Shutdown scheduled{% endif %}"></a>
         {%- endfor -%}

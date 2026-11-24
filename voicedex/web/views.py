@@ -494,7 +494,7 @@ def price_spectrum(catalog: Catalog, highlight: set[str] | None = None, n_column
         p25, med, p75 = _quartiles(values)
         p5, p95 = _p5_p95(values)
         pos = lambda v: None if v is None else round((math.log10(v) - lo) / span * 100, 2)   # noqa: E731
-        stats = {"median": med, "p25": p25, "p75": p75, "p5": p5, "p95": p95,
+        stats = {"median": med, "p25": p25, "p75": p75, "p5": p5, "p95": p95, "lo": lo, "hi": hi,
                  "x_median": pos(med), "x_p25": pos(p25), "x_p75": pos(p75), "n": len(values)}
         bands.append(SpectrumBand(band_id, title, unit, columns, ticks, free, len(items) + len(free), unpriced,
                                   max(len(c) for c in columns), stats))

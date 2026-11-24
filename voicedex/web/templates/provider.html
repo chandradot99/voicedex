@@ -36,7 +36,7 @@
 {% if compare_with or has_alternatives %}
 <section class="wrap">
   {% if has_alternatives %}<p class="compare-with"><a href="/alternatives/{{ p.id }}"><b>{{ p.name }} alternatives</b>: who else offers {{ "this" if p.status != "active" else "the same" }}, by price and features</a></p>{% endif %}
-  {% if compare_with %}<p class="compare-with"><span class="ds-label">Compare {{ p.name }} with</span>{% for slug, n in compare_with %}<a href="/compare/{{ slug }}">{{ n }}</a>{% endfor %}</p>{% endif %}
+  {% if compare_with %}<p class="compare-with"><span class="ds-label">Compare {{ p.name }} with</span>{% for slug, n in compare_with[:6] %}<a href="/compare/{{ slug }}">{{ n }}</a>{% endfor %}{% if compare_with|length > 6 and has_alternatives %}<a class="compare-all" href="/alternatives/{{ p.id }}">All {{ compare_with|length }} comparisons and alternatives</a>{% endif %}</p>{% endif %}
 </section>
 {% endif %}
 

@@ -1,12 +1,12 @@
-{# Home "What speech costs": per band, the spectrum (with the middle half shaded and the median marked) beside a
-   summary: the typical list price and what each widely used provider's main model costs. Tabs switch bands
-   (site.js [data-costs]); without JS both bands show one after the other. #}
+{# Home "What speech costs". Per band: the median as a readout, the spectrum (middle half shaded, median marked),
+   fact tiles, and what each widely used provider's main model costs, with a bar on the chart's scale. Tabs switch
+   bands (site.js [data-costs]); without JS both bands show one after the other. #}
 {% import "_cells.html" as cells %}
 <section class="wrap costs" aria-labelledby="spectrum-title" data-costs>
   <div class="section-row">
     <div>
       <h2 id="spectrum-title" class="section-title">What speech costs</h2>
-      <p class="section-note">Every model with a published USD list price, on a log scale. Each square is one model; select one to open it.</p>
+      <p class="section-note">Every published USD list price, one square per model.</p>
     </div>
     <div class="seg costs-tabs" role="tablist" aria-label="Price band" hidden>
       {% for b in spectrum %}<button type="button" role="tab" id="costs-tab-{{ b.id }}" aria-controls="costs-{{ b.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ b.title }}</button>{% endfor %}
@@ -15,24 +15,23 @@
   {% for b in spectrum %}{% set st = b.stats %}
   <div class="costs-band" id="costs-{{ b.id }}" role="tabpanel" aria-labelledby="costs-tab-{{ b.id }}">
     <div class="costs-chart">
+      {% if st %}<div class="readout">
+        <p class="readout-big">{{ money(st.median) }}</p>
+        <p class="readout-text"><b>Median {{ b.title|lower }} price</b>, {{ b.unit }}, across {{ st.n }} priced models. Half cost between {{ money(st.p25) }} and {{ money(st.p75) }}{% if st.p5 %}; nine in ten between {{ money(st.p5) }} and {{ money(st.p95) }}{% endif %}.</p>
+      </div>{% endif %}
       {% with bands=[b], cap=14, animate=True, show_stats=True, mark_capped=True %}{% include "_spectrum.html" %}{% endwith %}
-      <p class="spectrum-legend"><span class="key"><i class="sq-key"></i> one model</span><span class="key"><i class="sq-key ending"></i> shutdown scheduled</span><span class="key"><i class="iqr-key"></i> middle half of prices</span><span class="key"><i class="cap-key"></i> column continues (hover for the count)</span></p>
+      <p class="spectrum-legend"><span class="key"><i class="sq-key"></i> one model</span><span class="key"><i class="sq-key ending"></i> shutdown scheduled</span><span class="key"><i class="iqr-key"></i> middle half of prices</span><span class="key"><i class="cap-key"></i> column continues (hover for the count)</span><span class="hide-sm">log scale; {{ b.unpriced }} models have no USD price</span></p>
       {% if band_facts[b.id] %}<dl class="costs-facts">{% for label, value, note in band_facts[b.id] %}<div><dt>{{ label }}</dt><dd>{{ value }}</dd><dd class="note">{{ note }}</dd></div>{% endfor %}</dl>{% endif %}
     </div>
-    <aside class="costs-side" aria-label="{{ b.title }} prices at a glance">
-      {% if st %}
-      <p class="costs-label">Typical list price</p>
-      <p class="costs-median">{{ money(st.median) }}<small>{{ b.unit }}</small></p>
-      <p class="costs-range">Half of the {{ st.n }} priced models cost between <b>{{ money(st.p25) }}</b> and <b>{{ money(st.p75) }}</b>{% if st.p5 %}; nine in ten between {{ money(st.p5) }} and {{ money(st.p95) }}{% endif %}.</p>
-      {% endif %}
-      {% if rates[b.id] %}
+    {% if rates[b.id] %}
+    <aside class="costs-side" aria-label="Main model of widely used providers, {{ b.title|lower }}">
       <p class="costs-label">Main model of widely used providers</p>
       <ul class="rate-list">
-        {% for r in rates[b.id] %}<li><a href="{{ model_url(r.row) }}" data-key="{{ r.key }}" title="{{ r.name }} {{ r.row.model.id }}: {{ r.amount[0] }} {{ b.unit }}"><span class="with-logo">{{ cells.logo(r.pid, r.name) }}<span class="rate-name">{{ r.name }}</span></span><span class="rate">{{ r.amount[0] }}</span></a></li>{% endfor %}
+        {% for r in rates[b.id] %}<li><a href="{{ model_url(r.row) }}" data-key="{{ r.key }}" title="{{ r.name }} {{ r.row.model.id }}: {{ r.amount[0] }} {{ b.unit }}"><span class="with-logo">{{ cells.logo(r.pid, r.name) }}<span class="rate-name">{{ r.name }}</span></span><span class="rate-bar" aria-hidden="true"><i style="width: {{ r.pos|round(1) }}%"></i></span><span class="rate">{{ r.amount[0] }}</span></a></li>{% endfor %}
       </ul>
-      {% endif %}
       <p class="costs-links"><a href="/models?sort=price{% if b.id == 'text' %}&type=tts{% endif %}">All {{ b.title|lower }} by price</a><a href="/reports/speech-ai-pricing">Pricing report</a></p>
     </aside>
+    {% endif %}
   </div>
   {% endfor %}
 </section>

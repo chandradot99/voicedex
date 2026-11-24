@@ -4,7 +4,7 @@
 {% block title %}Compare speech models | {{ site_name }}{% endblock %}
 {% block content %}
 {% block page_head %}
-<section class="wrap page-head">
+<section class="wrap page-head{% if facets %} wrap-wide{% endif %}">
   {% set n_head = total_rows|default(rows|length) %}<h1>{{ "{:,}".format(n_head) }} model{{ 's' if n_head != 1 }}{% if not filtered %} across every provider{% endif %}</h1>
   <p class="lede">Filter by what you need, sort by price, and tick models to compare. Prices are normalized: text-to-speech per 1M characters, speech-to-text and realtime per hour of audio.</p>
 </section>
@@ -40,7 +40,10 @@
       <details class="facet-group" open>
         <summary>{{ icons.icon("sparkle") }}<span>Features</span>{% if f.capability %}<b class="facet-n">{{ f.capability|length }}</b>{% endif %}{{ icons.icon("chevron") }}</summary>
         <fieldset class="facet"><legend class="visually-hidden">Features (a model must have every ticked one)</legend>
-          {% for c, n in fc.capability %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}" {% if c in f.capability %}checked{% endif %}><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% else %}<p class="facet-empty">None documented for these models</p>{% endfor %}
+          {% set by_n = fc.capability|sort(attribute="1", reverse=True) %}{% set top = by_n[:8]|map(attribute="0")|list %}
+          {% for c, n in fc.capability if c in top or c in f.capability %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}" {% if c in f.capability %}checked{% endif %}><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% else %}<p class="facet-empty">None documented for these models</p>{% endfor %}
+          {% set rest = fc.capability|rejectattr("0", "in", top)|rejectattr("0", "in", f.capability)|list %}
+          {% if rest %}<details class="more-opts"><summary>Show all {{ fc.capability|length }}</summary>{% for c, n in rest %}<label class="opt"><input type="checkbox" name="capability" value="{{ c }}"><span>{{ FEATURE_LABELS.get(c, c.replace('_', ' ')|capitalize) }}</span><i>{{ n }}</i></label>{% endfor %}</details>{% endif %}
           <p class="facet-note">Models must have every ticked feature.</p>
         </fieldset>
       </details>
@@ -105,7 +108,6 @@
           <th scope="col" class="hide-sm">Type</th>
           <th scope="col" class="num hide-sm">Langs</th>
           <th scope="col" class="hide-sm">Features</th>
-          <th scope="col" class="hide-sm">Weights</th>
           <th scope="col" class="num"><a href="/models?{{ qs(sort='price') }}" {% if f.sort == 'price' %}aria-current="true"{% endif %}>Price{% if f.sort == 'price' %} ↑{% endif %}</a></th>
           {% if usage_type %}<th scope="col" class="num month-col">Per month</th>{% endif %}
           <th scope="col" class="hide-sm">Status</th>
@@ -114,22 +116,21 @@
       <tbody>
         {% for r in rows %}{% set m = r.model %}{% set k = model_key(r) %}
         {% if tiered and (loop.first or licence_tier(m) != licence_tier(rows[loop.index0 - 1].model)) %}
-        <tr class="group-row"><th scope="rowgroup" colspan="{{ 10 if usage_type else 9 }}">{{ licence_tier(m) }}</th></tr>
+        <tr class="group-row"><th scope="rowgroup" colspan="{{ 9 if usage_type else 8 }}">{{ licence_tier(m) }}</th></tr>
         {% endif %}
         {% if f.sort == "price" and not tiered %}{% set g = price_group(m) %}{% if g and (loop.first or g != price_group(rows[loop.index0 - 1].model)) %}
-        <tr class="group-row"><th scope="rowgroup" colspan="{{ 10 if usage_type else 9 }}">{{ PRICE_GROUP_LABELS[g] }}</th></tr>
+        <tr class="group-row"><th scope="rowgroup" colspan="{{ 9 if usage_type else 8 }}">{{ PRICE_GROUP_LABELS[g] }}</th></tr>
         {% endif %}{% endif %}
         <tr>
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
-          <th scope="row"><a href="{{ model_url(r) }}" title="{{ m.name }}"><code translate="no">{{ m.id }}</code></a>{% if name_adds(m) %}<span class="sub model-name">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
+          <th scope="row"><a href="{{ model_url(r) }}" title="{{ m.name }}"><code translate="no">{{ m.id }}</code></a>{% if m.open_weights %} <span class="tag" title="Open weights: {{ m.open_weights.license or 'licence not stated' }} ({{ licence_short(m) }})">open</span>{% endif %}{% if name_adds(m) %}<span class="sub model-name">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
           <td class="hide-sm provider-cell"><span class="with-logo">{{ cells.logo(r.provider_id, names[r.provider_id]) }}{{ names[r.provider_id] }}</span></td>
           <td class="mono hide-sm">{{ TYPE_SHORT[m.type] }}</td>
           <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
           {{ cells.feat_cell(m) }}
-          <td class="hide-sm weights-cell">{% if m.open_weights %}<span title="{{ m.open_weights.license or 'Licence not stated' }}">Open</span><span class="sub">{{ licence_short(m) }}</span>{% else %}<span class="muted">–</span>{% endif %}</td>
           {{ cells.price_cell(m, k, positions) }}
           {% if usage_type %}{% set mc = monthly_cost(m, usage) %}<td class="num mono month-cell"{% if mc is not none %} data-rate="{{ mc / usage / USAGE[usage_type].scale }}"{% endif %}>{{ money(mc) }}</td>{% endif %}
-          <td class="hide-sm">{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}</td>
+          <td class="hide-sm">{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>

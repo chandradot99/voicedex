@@ -5,7 +5,7 @@
 <div class="hero-band">
 <section class="wrap hero" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <h1 id="hero-title">Every speech model,<br>priced and compared.</h1>
+    <h1 id="hero-title">Every speech model, priced and compared.</h1>
     <p class="lede">Speech-to-text, text-to-speech and realtime voice models from {{ live|length }} providers. Languages, features, prices and shutdown dates, read from each provider and kept in git.</p>
     <form class="hero-search" action="/search" role="search" data-palette-trigger>
       <label for="q" class="visually-hidden">Search providers, models, voices, languages and features</label>
@@ -13,13 +13,7 @@
       <input id="q" name="q" type="search" placeholder="Search a model, voice, language or feature" autocomplete="off" spellcheck="false">
       <kbd aria-hidden="true">⌘K</kbd>
     </form>
-    <p class="hero-links"><a href="/speech-to-text">Speech-to-text</a><a href="/text-to-speech">Text-to-speech</a><a href="/speech-to-speech">Realtime</a><a href="/voices?preview=1">Voices with samples</a></p>
-    <dl class="stats stats-inline">
-    <div><dt>Models</dt><dd data-count="{{ n_models }}">{{ "{:,}".format(n_models) }}</dd></div>
-    <div><dt>Voices</dt><dd data-count="{{ n_voices }}">{{ "{:,}".format(n_voices) }}</dd></div>
-    <div><dt>Providers</dt><dd data-count="{{ live|length }}">{{ live|length }}</dd></div>
-    <div><dt>Shutdowns ahead</dt><dd data-count="{{ upcoming_eol|length }}">{{ upcoming_eol|length }}</dd></div>
-  </dl>
+    <p class="hero-chips"><a href="/speech-to-text">Speech-to-text</a><a href="/text-to-speech">Text-to-speech</a><a href="/speech-to-speech">Realtime</a><a href="/voices?preview=1">Voices with samples</a></p>
   </div>
   {# Provider equaliser: one bar per provider (length = models listed), a level-meter wobble, and an amber sweep that
      names the widely used providers as it passes. Static under reduced motion; hover names a bar, click opens it. #}
@@ -28,81 +22,98 @@
     <figcaption class="ring-center" aria-hidden="true"><span class="ring-logo"></span><b class="ring-name">{{ ring|length }} providers</b><span class="ring-meta">one bar each, by models listed</span></figcaption>
     <script type="application/json" class="ring-data">{{ ring|tojson }}</script>
   </figure>
-  {% set f = freshness %}{% if f.last_sync %}
-  <p class="fact-line freshness">
-    <span>{% if f.providers_fresh == f.providers %}All {{ f.providers }} providers{% else %}{{ f.providers_fresh }} of {{ f.providers }} providers{% endif %} synced in the last 30 days</span>
-    <span>{{ f.prices_fresh }} of {{ f.priced }} prices checked in the last 30 days</span>
-    <span>Last sync {{ f.last_sync.strftime("%-d %b %Y") }}</span>
-    <a href="/changes">What changed</a>
-  </p>{% endif %}
 </section>
+<div class="wrap hero-strip">
+  <dl class="hero-stats">
+    <div><dt>Models</dt><dd data-count="{{ n_models }}">{{ "{:,}".format(n_models) }}</dd></div>
+    <div><dt>Voices</dt><dd data-count="{{ n_voices }}">{{ "{:,}".format(n_voices) }}</dd></div>
+    <div><dt>Providers</dt><dd data-count="{{ live|length }}">{{ live|length }}</dd></div>
+    <div><dt>Shutdowns ahead</dt><dd data-count="{{ upcoming_eol|length }}">{{ upcoming_eol|length }}</dd></div>
+  </dl>
+  {% set f = freshness %}{% if f.last_sync %}
+  <p class="freshness">{% if f.providers_fresh == f.providers %}All {{ f.providers }} providers{% else %}{{ f.providers_fresh }} of {{ f.providers }} providers{% endif %} synced in the last 30 days · {{ f.prices_fresh }} of {{ f.priced }} prices checked · last sync {{ f.last_sync.strftime("%-d %b %Y") }} · <a href="/changes">What changed</a></p>{% endif %}
+</div>
 </div>
 
-{% include "_costs.html" %}
+{# Sections sit in full-width "rooms" that alternate surface (well / open), so each one reads as its own space. #}
+<div class="room room-well">{% include "_costs.html" %}</div>
 
-{% include "_tasks.html" %}
+<div class="room">{% include "_tasks.html" %}</div>
 
+<div class="room room-well">{% with map_base="/", full_map=False %}{% include "_coverage.html" %}{% endwith %}</div>
 
-{% with map_base="/", full_map=False %}{% include "_coverage.html" %}{% endwith %}
-
-<section class="wrap" aria-labelledby="eol-title">
+<div class="room">
+<div class="wrap split">
+<section class="split-main" aria-labelledby="eol-title">
   <h2 id="eol-title" class="section-title">Scheduled shutdowns</h2>
-  {% if timeline %}
+  {% if timeline %}{% set next = upcoming_eol[0] %}{% set nd = (next.model.eol_date - today).days %}
   <p class="section-note">{{ upcoming_eol|length }} model{{ 's' if upcoming_eol|length != 1 }} you can still call today have a published end date.</p>
+  <a class="countdown" href="{{ model_url(next) }}">
+    <span class="cd-days">{{ nd }}<small> day{{ 's' if nd != 1 }}</small></span>
+    <span class="cd-what"><span class="cd-label">Next to shut down</span><b>{{ next.model.name }}</b><span class="with-logo">{{ cells.logo(next.provider_id, names[next.provider_id], "xs") }}{{ names[next.provider_id] }} · ends {{ next.model.eol_date.strftime('%-d %b %Y') }}</span></span>
+  </a>
   <div class="timeline" aria-hidden="true">
     <div class="tl-axis">
       <span class="tl-today">Today</span>
       {% for pos, label in timeline.months %}<span class="tl-month{% if pos < 7 %} near-start{% endif %}" style="left: {{ '%.2f'|format(pos) }}%">{{ label }}</span>{% endfor %}
     </div>
     <div class="tl-track">
-      {% for pos, r in timeline.items %}<a class="tl-dot" href="{{ model_url(r) }}" tabindex="-1" style="left: {{ '%.2f'|format(pos) }}%" data-tip="{{ names[r.provider_id] }}|{{ r.model.name }}|Ends {{ r.model.eol_date.strftime('%b %-d, %Y') }}"></a>{% endfor %}
+      {% for pos, r, lvl in timeline_dots %}<a class="tl-dot{% if (r.model.eol_date - today).days <= 30 %} soon{% endif %}" href="{{ model_url(r) }}" tabindex="-1" style="left: {{ '%.2f'|format(pos) }}%; --lvl: {{ lvl }}" data-tip="{{ names[r.provider_id] }}|{{ r.model.name }}|Ends {{ r.model.eol_date.strftime('%b %-d, %Y') }}"></a>{% endfor %}
     </div>
   </div>
   <table class="data eol-table">
-    <thead><tr><th scope="col">Ends</th><th scope="col">Model</th><th scope="col" class="hide-sm">Provider</th><th scope="col" class="hide-sm">Replacement</th><th scope="col" class="num">Days left</th></tr></thead>
+    <thead><tr><th scope="col">Model</th><th scope="col" class="hide-sm">Replacement</th><th scope="col" class="num">Days left</th></tr></thead>
     <tbody>
-      {% for r in upcoming_eol[:8] %}
+      {% for r in upcoming_eol[1:7] %}{% set d = (r.model.eol_date - today).days %}
       <tr>
-        <td class="mono nowrap">{{ r.model.eol_date.strftime('%Y-%m-%d') }}</td>
-        <th scope="row"><a href="{{ model_url(r) }}">{{ r.model.name }}</a><span class="sub show-sm">{{ names[r.provider_id] }}</span></th>
-        <td class="hide-sm">{{ names[r.provider_id] }}</td>
-        <td class="hide-sm mono muted">{{ r.model.meta.get('replacement') or "–" }}</td>
-        <td class="num mono{% if (r.model.eol_date - today).days <= 30 %} urgent{% endif %}">{{ (r.model.eol_date - today).days }}</td>
+        <th scope="row"><a href="{{ model_url(r) }}">{{ r.model.name }}</a><span class="sub with-logo">{{ cells.logo(r.provider_id, names[r.provider_id], "xs") }}{{ names[r.provider_id] }} · {{ r.model.eol_date.strftime('%-d %b %Y') }}</span></th>
+        <td class="hide-sm muted">{% if r.model.meta.get('replacement') %}<code>{{ r.model.meta.get('replacement') }}</code>{% else %}–{% endif %}</td>
+        <td class="num days-cell{% if d <= 30 %} urgent{% endif %}"><span class="days-bar" aria-hidden="true"><i style="width: {{ [100, (d / 365 * 100)|round]|min }}%"></i></span>{{ d }}</td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
-  {% if upcoming_eol|length > 8 %}<p class="more-link"><a href="/models?status=ending">All {{ upcoming_eol|length }} scheduled shutdowns</a></p>{% endif %}
+  {% if upcoming_eol|length > 7 %}<p class="more-link"><a href="/models?status=ending">All {{ upcoming_eol|length }} scheduled shutdowns</a></p>{% endif %}
   {% else %}<p class="section-note">No announced shutdowns.</p>{% endif %}
 </section>
 
-{% if recent %}
-<section class="wrap" aria-labelledby="recent-title">
+{% if recent_days %}
+<section class="split-side" aria-labelledby="recent-title">
   <h2 id="recent-title" class="section-title">Recently changed</h2>
   <p class="section-note">New and updated models from the latest syncs.</p>
+  {% for day, rows in recent_days %}
+  <h3 class="cl-day">{{ day.strftime('%-d %b %Y') }}</h3>
   <ul class="changelog">
-    {% for r in recent %}{% set added = r.model.first_seen == r.model.updated_at %}
+    {% for r in rows %}{% set added = r.model.first_seen == r.model.updated_at %}
     <li>
-      <span class="cl-sign {{ 'add' if added else 'upd' }}" aria-hidden="true">{{ '+' if added else '~' }}</span>
-      <span class="cl-date mono">{{ r.model.updated_at.strftime('%Y-%m-%d') }}</span>
+      <span class="cl-sign {{ 'add' if added else 'upd' }}" title="{{ 'Added' if added else 'Updated' }}">{{ '+' if added else '~' }}<span class="visually-hidden">{{ 'Added' if added else 'Updated' }}</span></span>
+      {{ cells.logo(r.provider_id, names[r.provider_id], "xs") }}
       <a href="{{ model_url(r) }}">{{ r.model.name }}</a>
-      <span class="muted">{{ names[r.provider_id] }}, {{ TYPE_LABELS[r.model.type]|lower }}, {{ 'added' if added else 'updated' }}</span>
+      <span class="muted">{{ names[r.provider_id] }} · {{ TYPE_SHORT[r.model.type] }}</span>
     </li>
     {% endfor %}
   </ul>
+  {% endfor %}
   <p class="more-link"><a href="/changes">All changes: prices, shutdowns, deprecations</a> · <a href="/changes.xml">Atom feed</a></p>
 </section>
 {% endif %}
+</div>
+</div>
 
+<div class="room room-well">
 <section id="providers" class="wrap" aria-labelledby="providers-title">
   <div class="section-row">
-    <h2 id="providers-title" class="section-title">Widely used providers</h2>
-    <a class="more-link" href="/providers">All {{ live|length }} providers{% if retired %}, and {{ retired|length }} that shut down{% endif %}</a>
+    <div>
+      <h2 id="providers-title" class="section-title">Providers</h2>
+      <p class="section-note">The widely used ones first, then the largest catalogs.</p>
+    </div>
+    <a class="btn-secondary" href="/providers">All {{ live|length }} providers{% if retired %}, and {{ retired|length }} that shut down{% endif %}</a>
   </div>
-  <ul class="provider-grid">
+  <ul class="logo-wall">
     {% for s in popular %}
-    <li><a class="with-logo" href="/providers/{{ s.id }}">{{ cells.logo(s.id, s.name) }}{{ s.name }}</a><span class="mono">{% for t in s.types %}{{ TYPE_SHORT[t] }}{% if not loop.last %} {% endif %}{% endfor %}</span><span class="mono muted">{{ s.models }} model{{ 's' if s.models != 1 }}</span></li>
+    <li><a href="/providers/{{ s.id }}">{{ cells.logo(s.id, s.name, "md") }}<b>{{ s.name }}</b><span>{% for t in s.types %}{{ TYPE_SHORT[t] }}{% if not loop.last %} · {% endif %}{% endfor %} · {{ s.models }} model{{ 's' if s.models != 1 }}</span></a></li>
     {% endfor %}
   </ul>
 </section>
+</div>
 {% endblock %}
