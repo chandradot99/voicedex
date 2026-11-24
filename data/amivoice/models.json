@@ -716,6 +716,107 @@
     "batch": true,
     "capabilities": [
       "custom_vocabulary",
+      "punctuation"
+    ],
+    "description": "Hybrid general-purpose Thai engine.",
+    "first_seen": "2026-11-24",
+    "id": "-a-general-th",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "th"
+    ],
+    "meta": {
+      "category": "general",
+      "docs_sources": [
+        "https://docs.amivoice.com/amivoice-api/changelog.md",
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ],
+      "engine_generation": "hybrid",
+      "parameter": "grammarFileNames",
+      "punctuation_note": "Automatic punctuation inserts a half-width space, not a punctuation mark",
+      "sample_rate_support": "8k/16k",
+      "use": "conversation",
+      "user_dictionary_note": "Readings in Thai script; not all Thai characters usable"
+    },
+    "name": "Thai – General",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "currency": "JPY",
+      "free_quota": {
+        "amount": 60.0,
+        "period": "month",
+        "unit": "minute"
+      },
+      "notes": "General category: ¥148.5/h (¥0.04125/s) via WebSocket or sync HTTP without log retention. Prices include consumption tax; billed per second of detected speech only (silence free); 60 free minutes per engine per month.",
+      "price": 148.5,
+      "source_url": "https://acp.amivoice.com/amivoice_api/price/",
+      "unit": "hour",
+      "variants": [
+        {
+          "applies_to": "WebSocket / sync HTTP, with log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, no log retention",
+          "price": 99.0,
+          "unit": "hour"
+        },
+        {
+          "applies_to": "async HTTP, with log retention",
+          "price": 79.2,
+          "unit": "hour"
+        }
+      ]
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://docs.amivoice.com/amivoice-api/manual/engines.md",
+        "https://docs.amivoice.com/amivoice-api/manual/supported-languages.md",
+        "https://docs.amivoice.com/amivoice-api/manual/audio-format.md",
+        "https://docs.amivoice.com/amivoice-api/manual/limitations.md",
+        "https://docs.amivoice.com/amivoice-api/manual/speaker-diarization.md",
+        "https://acp.amivoice.com/amivoice_api/price/"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "released_on": "2026-11-24",
+    "sample_rates_hz": [
+      8000,
+      11025,
+      16000,
+      22050,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mp3",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav",
+      "webm"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
       "punctuation",
       "speaker_diarization",
       "word_timestamps"
