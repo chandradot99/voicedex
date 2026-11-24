@@ -599,7 +599,7 @@ document.addEventListener("formdata", (e) => {
       const im = withLogo.has(i) && imgs[d.id];
       if (im && im.complete && im.naturalWidth) {
         ctx.globalAlpha = hot ? 1 : 0.55;
-        const r = inner + len + logo * 0.95;                                    // rides just past its own bar's tip
+        const r = inner + (outer - inner) * 1.1 + logo * 0.85;                  // a fixed orbit beyond the longest bar (wobble included)
         const x = c + cs * r - logo / 2, y = c + sn * r - logo / 2;
         ctx.save(); ctx.beginPath(); ctx.roundRect(x, y, logo, logo, logo * 0.22); ctx.clip(); ctx.drawImage(im, x, y, logo, logo); ctx.restore();
       }
@@ -612,7 +612,7 @@ document.addEventListener("formdata", (e) => {
   const frame = (t) => {
     running = false;
     const dt = Math.min(64, t - last); last = t;
-    sweep += dt * 0.00015;                          // about 40 s per lap: calm
+    sweep += dt * 0.00009;                          // about 70 s per lap, in step with the drifting rings
     draw(t);
     if (visible && !document.hidden) { running = true; requestAnimationFrame(frame); }
   };
