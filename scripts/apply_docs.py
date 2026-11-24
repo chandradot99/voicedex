@@ -35,7 +35,7 @@ sys.path.insert(0, str(ROOT))
 
 from voicedex.catalog.files import read_provider_dir, write_provider_dir  # noqa: E402
 from voicedex.catalog.merge import partial_date  # noqa: E402
-from voicedex.catalog.schema import MODEL_CAPABILITIES, TTS_CAPABILITIES, Pricing  # noqa: E402
+from voicedex.catalog.schema import CAPABILITIES_BY_TYPE, MODEL_CAPABILITIES, Pricing  # noqa: E402
 
 CACHE = ROOT / ".sync-cache"
 
@@ -67,7 +67,8 @@ def apply(provider_id: str, data_dir: Path, write: bool) -> int:
             model.pricing = Pricing.model_validate(row["pricing"])
         if row.get("capabilities"):
             bad = [c for c in row["capabilities"] if c not in MODEL_CAPABILITIES]
-            wrong = [c for c in row["capabilities"] if (c in TTS_CAPABILITIES) != (key[0] == "tts")]
+            wrong = [c for c in row["capabilities"] if c in MODEL_CAPABILITIES
+                     and c not in CAPABILITIES_BY_TYPE[key[0]]]
             if bad or wrong:
                 print(f"  ✗ {key[0]}:{key[1]}: unknown {bad} / wrong-modality {wrong} capabilities")
                 rc = 1

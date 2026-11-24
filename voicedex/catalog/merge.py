@@ -20,8 +20,8 @@ from typing import Any
 
 from voicedex.catalog.files import ProviderData
 from voicedex.catalog.schema import (
-    STT_CAPABILITIES,
-    TTS_CAPABILITIES,
+    CAPABILITIES_BY_TYPE,
+    MODEL_CAPABILITIES,
     Model,
     Provenance,
     Provider,
@@ -127,8 +127,8 @@ def model_from_sync(m: SyncModel, result: SyncResult, today: date) -> Model:
     # Drop terms that belong to the *other* modality (e.g. "emotion" on an STT model), which AI
     # extraction occasionally emits. Unknown terms are left in so schema validation rejects them.
     caps = list(m.capabilities or [])
-    wrong_modality = {"stt": TTS_CAPABILITIES - STT_CAPABILITIES, "tts": STT_CAPABILITIES - TTS_CAPABILITIES}
-    caps = [c for c in caps if c not in wrong_modality.get(m.type, frozenset())]
+    allowed = CAPABILITIES_BY_TYPE.get(str(getattr(m.type, "value", m.type)))
+    caps = [c for c in caps if allowed is None or c in allowed or c not in MODEL_CAPABILITIES]
 
     return Model(
         id=m.model_id,

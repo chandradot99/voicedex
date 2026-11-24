@@ -263,6 +263,8 @@ FEATURE_LABELS = {
     "emotion": "Emotion control", "voice_cloning": "Voice cloning", "voice_design": "Voice design",
     "ssml": "SSML", "phoneme_input": "Phoneme input", "prosody_control": "Speed / prosody control",
     "style_control": "Style control", "multi_speaker": "Multi-speaker",
+    "function_calling": "Function calling", "turn_detection": "Turn detection",
+    "barge_in": "Interruptions (barge-in)", "transcription": "Transcripts", "video_input": "Video input",
 }
 INTERFACE_LABELS = {"http": "HTTP", "websocket": "WebSocket", "grpc": "gRPC", "webrtc": "WebRTC"}
 
@@ -560,8 +562,8 @@ def price_positions(bands: list[SpectrumBand]) -> dict[str, float]:
 
 def feature_vocab(model_type: str) -> list[str]:
     """The controlled feature vocabulary that applies to a model type (for checklists and n/total counts)."""
-    from voicedex.catalog.schema import MODEL_CAPABILITIES, STT_CAPABILITIES, TTS_CAPABILITIES
-    vocab = {"stt": STT_CAPABILITIES, "tts": TTS_CAPABILITIES}.get(str(model_type), MODEL_CAPABILITIES)
+    from voicedex.catalog.schema import CAPABILITIES_BY_TYPE, MODEL_CAPABILITIES
+    vocab = CAPABILITIES_BY_TYPE.get(str(model_type), MODEL_CAPABILITIES)
     order = list(FEATURE_LABELS)
     return sorted(vocab, key=lambda c: order.index(c) if c in order else len(order))
 

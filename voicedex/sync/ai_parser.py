@@ -80,6 +80,10 @@ SyncModel schema (each item in the `models` array):
       STT: word_timestamps | speaker_diarization | punctuation | profanity_filter | custom_vocabulary |
            language_detection | translation | sentiment | pii_redaction | summarization | topic_detection
       TTS: emotion | voice_cloning | voice_design | ssml | phoneme_input | prosody_control | style_control | multi_speaker
+      STS (realtime speech-to-speech): function_calling (tool/function calls mid-conversation) | turn_detection
+           (server detects when the user has finished speaking) | barge_in (the user can interrupt a reply) |
+           transcription (returns text transcripts of the audio) | video_input (accepts camera/screen frames) |
+           translation | voice_cloning | emotion | style_control | custom_vocabulary | language_detection
       Include a flag only when the docs clearly state the model supports the feature. Skip unknown/custom features (put them in `meta` if needed).
   - regions (list[str] | omit)       — deployment regions. Canonical vocab ONLY: us | eu | asia | global.
       Use ["global"] if docs say the model is available worldwide / no regional restriction.

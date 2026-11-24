@@ -30,6 +30,10 @@ Optional — include only if stated:
 - `capabilities` — ONLY these terms, only if stated for that model:
   STT: word_timestamps, speaker_diarization, punctuation, profanity_filter, custom_vocabulary, language_detection, translation, sentiment, pii_redaction, summarization, topic_detection
   TTS: emotion, voice_cloning, voice_design, ssml, phoneme_input, prosody_control, style_control, multi_speaker
+  STS: function_calling (tool calls mid-conversation), turn_detection (server-side end-of-turn detection, VAD or
+  semantic), barge_in (user can interrupt the model while it speaks), transcription (text transcripts of input or
+  output audio), video_input (camera/screen frames), plus translation, voice_cloning, emotion, style_control,
+  custom_vocabulary, language_detection when stated for that model
   Anything else → `meta`.
 - `regions`: subset of us | eu | asia | global, only if docs state availability by region
 - `interfaces`: subset of http | websocket | grpc | webrtc

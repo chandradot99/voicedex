@@ -204,7 +204,8 @@ def search_models(
 
     language: BCP-47 code, e.g. "hi" or "en-GB". Only models that explicitly list it are returned, unless
     include_unlisted_languages=true also adds models that claim "many languages" without listing them. capability: one feature term, e.g. "speaker_diarization",
-    "voice_cloning", "word_timestamps", "ssml". streaming=true: models usable live (realtime transcription,
+    "voice_cloning", "word_timestamps", "ssml"; for realtime (sts) models "function_calling", "turn_detection",
+    "barge_in", "transcription", "video_input". streaming=true: models usable live (realtime transcription,
     low-latency TTS, voice agents); batch=true: models that accept files / pre-recorded jobs (batch=false excludes
     them; models whose batch support isn't documented are left out of either filter). max_price_usd: upper bound on the normalized price (TTS per 1M
     characters, STT/STS per hour); models without a comparable USD price are excluded when it is set.

@@ -114,6 +114,13 @@ def test_rejects_unknown_capability_and_drops_wrong_modality():
         _run(None, _result([_tts(1, capabilities=["telepathy"])]), D1)
     pd, _ = _run(None, _result([SyncModel("s", "S", "stt", capabilities=["emotion", "punctuation"])]), D1)
     assert pd.models[0].capabilities == ["punctuation"]
+    # realtime terms belong to speech-to-speech; shared terms (translation) survive there, TTS-only ones don't
+    pd, _ = _run(None, _result([SyncModel("t", "T", "tts", capabilities=["function_calling", "ssml"])]), D1)
+    assert pd.models[0].capabilities == ["ssml"]
+    res = _result([])
+    res.sts_models = [SyncModel("r", "R", "sts", capabilities=["barge_in", "function_calling", "ssml", "translation"])]
+    pd, _ = _run(None, res, D1)
+    assert pd.models[0].capabilities == ["barge_in", "function_calling", "translation"]
 
 
 def test_meta_family_hints_become_first_class_fields():

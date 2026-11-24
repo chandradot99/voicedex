@@ -49,6 +49,7 @@ class Report:
     pricing_stale: list[dict] = field(default_factory=list)  # {provider, models, oldest}
     discovery: dict = field(default_factory=dict)            # {last, due}
     dead_samples: dict = field(default_factory=dict)         # provider -> count (only with --samples)
+    no_features: list[dict] = field(default_factory=list)    # {provider, models, active}: models with no capabilities
     uncommitted_data: bool = False
 
 
@@ -76,20 +77,25 @@ def build(today: date, samples: bool) -> Report:
             if age > STALE_DAYS.get(source, STALE_DAYS["docs"]):
                 rep.stale.append({"provider": pid, "source": source, "last_synced": prov.last_synced.isoformat(),
                                   "age_days": age})
-        old_prices = []
+        old_prices, bare, active = [], 0, 0
         for m in pd.models:
             if m.deprecated_at is not None:
                 continue
+            active += 1
+            bare += not m.capabilities
             if m.eol_date and m.eol_date <= today:
                 rep.eol_passed.append({"provider": pid, "model": m.id, "eol_date": m.eol_date.isoformat()})
             elif m.eol_date and m.eol_date <= today + timedelta(days=EOL_SOON_DAYS):
                 rep.eol_soon.append({"provider": pid, "model": m.id, "eol_date": m.eol_date.isoformat()})
             if m.pricing and m.pricing.as_of and (today - m.pricing.as_of).days > PRICING_STALE_DAYS:
                 old_prices.append(m.pricing.as_of)
+        if bare:
+            rep.no_features.append({"provider": pid, "models": bare, "active": active})
         if old_prices:
             rep.pricing_stale.append({"provider": pid, "models": len(old_prices), "oldest": min(old_prices).isoformat()})
 
     rep.stale.sort(key=lambda r: -(r["age_days"] or 10**6))
+    rep.no_features.sort(key=lambda r: (-r["models"], r["provider"]))
     text = EXPANSION_DOC.read_text() if EXPANSION_DOC.exists() else ""
     marks = _DISCOVERY_MARK.findall(text)
     last = max(marks) if marks else None
@@ -137,6 +143,10 @@ def render(rep: Report) -> str:
     section("Active provider past its retired_on date", [f"- {r['provider']} ({r['retired_on']})" for r in rep.retired_due])
     section(f"Prices older than {PRICING_STALE_DAYS} days",
             [f"- {r['provider']}: {r['models']} model(s), oldest {r['oldest']}" for r in rep.pricing_stale])
+    bare = sum(r["models"] for r in rep.no_features)
+    section(f"Models with no features documented ({bare}; capability filters hide them — re-extract with a docs pass)",
+            [f"- {r['provider']}: {r['models']} of {r['active']}" for r in rep.no_features[:15]]
+            + ([f"- … {len(rep.no_features) - 15} more providers"] if len(rep.no_features) > 15 else []))
     d = rep.discovery
     section("New-provider discovery", [f"- last pass: {d['last'] or 'never recorded'}; "
                                        f"{'DUE' if d['due'] else 'not due'} (every {d['every_days']} days)"])
