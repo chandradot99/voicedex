@@ -35,5 +35,5 @@
     </div>
   </div>
   {% endfor %}
-  <p class="sh-foot mono">{% for t, n in start.rest.items() if n %}{{ n }} other {{ TYPE_SHORT[t] }} model{{ "s" if n != 1 }}{% if not loop.last %} · {% endif %}{% endfor %}{% if start.rest.values()|sum %} listed below{% endif %}</p>
+  <p class="sh-foot mono">{% for t, n in start.rest.items() if n %}{{ n }} other {{ TYPE_SHORT[t] }} model{{ "s" if n != 1 }}{% if start.more_recommended[t] %} ({{ start.more_recommended[t] }} also recommended){% endif %}{% if not loop.last %} · {% endif %}{% endfor %}{% if start.rest.values()|sum %} listed below{% endif %}</p>
 </section>

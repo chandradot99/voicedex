@@ -1276,6 +1276,7 @@ class Pick:
 class StartHere:
     groups: list[tuple[str, list[Pick]]]   # (model type, picks)
     rest: dict[str, int]                   # model type → other active models listed below
+    more_recommended: dict[str, int] = None  # model type → recommended models that didn't fit
 
     @property
     def has_newest(self) -> bool:
@@ -1372,11 +1373,12 @@ def _newest(rows: list[ModelRow]) -> list[ModelRow]:
 
 def start_here(catalog: Catalog, provider_id: str) -> StartHere | None:
     rows = active_models(catalog, provider_id)
-    groups, rest = [], {}
+    groups, rest, more = [], {}, {}
     for t in ("tts", "stt", "sts"):
         typed = [r for r in rows if r.model.type == t]
         recs = [r for r in typed if r.model.recommended is True and not r.model.eol_date]
         recs.sort(key=lambda r: (r.model.released_on or "", r.model.is_default), reverse=True)
+        n_recs = len(recs)
         recs = recs[:START_HERE_MAX]
         latest_rec = max((r.model.released_on or "" for r in recs), default="")
         newest = [r for r in _newest(typed) if r not in recs and r.model.released_on > latest_rec]
@@ -1397,7 +1399,8 @@ def start_here(catalog: Catalog, provider_id: str) -> StartHere | None:
             ))
         groups.append((t, picks))
         rest[t] = len(typed) - len(picks)
-    return StartHere(groups, rest) if groups else None
+        more[t] = n_recs - sum(not k.newest for k in picks)
+    return StartHere(groups, rest, more) if groups else None
 
 
 # ── Freshness (home page trust line) ─────────────────────────────────────────
