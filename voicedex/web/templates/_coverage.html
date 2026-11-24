@@ -1,9 +1,9 @@
 <section class="wrap{% if not full_map %} coverage-home{% endif %}" id="coverage" aria-labelledby="coverage-title">
-  <div class="section-row">
-    <div>
+  <div class="section-row{% if full_map %} map-tools{% endif %}">
+    {% if not full_map %}<div>
       <h2 id="coverage-title" class="section-title">Language coverage</h2>
-      <p class="section-note">{% if full_map %}Rows are providers, columns the <span id="coverage-cols">{{ coverage.languages|length }}</span> most-supported languages; brighter cells mean more models. Select a cell to list them.{% else %}Which providers cover which languages; brighter cells mean more models.{% endif %}</p>
-    </div>
+      <p class="section-note">Which providers cover which languages; brighter cells mean more models.</p>
+    </div>{% endif %}
     <nav class="seg" aria-label="Model type">
       {% for k, label in [("", "All"), ("stt", "STT"), ("tts", "TTS"), ("sts", "Realtime")] %}
       <a href="{{ map_base }}?map={{ k }}#coverage" {% if map_type == k %}aria-current="true"{% endif %}>{{ label }}</a>
