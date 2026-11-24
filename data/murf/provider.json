@@ -13,11 +13,15 @@
   "docs_urls": [
     "https://murf.ai/api/docs/llms.txt",
     "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
-    "https://murf.ai/api/docs/text-to-speech-models/gen-2.md"
+    "https://murf.ai/api/docs/text-to-speech-models/gen-2.md",
+    "https://murf.ai/api/docs/speech-to-text/overview.md",
+    "https://murf.ai/api/docs/speech-to-text/languages.md",
+    "https://murf.ai/api/docs/speech-to-text/audio-formats.md",
+    "https://murf.ai/api/docs/speech-to-text/file-transcription.md"
   ],
   "headquarters": "US",
   "id": "murf",
-  "last_synced": "2026-11-16",
+  "last_synced": "2026-11-24",
   "links": {
     "docs": "https://murf.ai/api/docs",
     "pricing": "https://murf.ai/api/pricing"
@@ -29,9 +33,9 @@
     "asia"
   ],
   "source": "mixed",
-  "type": "tts",
+  "type": "both",
   "voices_source": {
-    "as_of": "2026-11-16",
+    "as_of": "2026-11-24",
     "method": "api",
     "urls": [
       "https://api.murf.ai/v1/speech/voices"

@@ -3,6 +3,201 @@
     "audio_formats": [
       "alaw",
       "flac",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Streaming and file speech-to-text for English (US, UK, Australia) and six European languages, hosted in US East.",
+    "first_seen": "2026-11-24",
+    "id": "finch_global_1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-US",
+      "en-GB",
+      "en-AU",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "pt",
+      "nl"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "background_voice_cancellation": true,
+      "docs_sources": [
+        "https://murf.ai/api/docs/speech-to-text/overview.md",
+        "https://murf.ai/api/docs/speech-to-text/languages.md",
+        "https://murf.ai/api/docs/speech-to-text/audio-formats.md",
+        "https://murf.ai/api/docs/speech-to-text/file-transcription.md",
+        "https://murf.ai/api/docs/changelog/2026/11/23.md"
+      ],
+      "end_of_turn_detection": true,
+      "file_formats": [
+        "wav",
+        "flac",
+        "ogg"
+      ],
+      "host": "us-east.api.murf.ai",
+      "max_file_size": "1 GB",
+      "streaming_codecs": [
+        "pcm_s16le",
+        "mulaw",
+        "alaw",
+        "opus"
+      ]
+    },
+    "name": "Finch-Global",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "notes": "Billed per second; same rate for streaming and file transcription; enterprise custom pricing.",
+      "price_usd": 0.12,
+      "source_url": "https://murf.ai/api/docs/speech-to-text/overview.md",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://murf.ai/api/docs/llms.txt",
+        "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
+        "https://murf.ai/api/docs/text-to-speech-models/gen-2.md",
+        "https://murf.ai/api/docs/speech-to-text/overview.md",
+        "https://murf.ai/api/docs/speech-to-text/languages.md",
+        "https://murf.ai/api/docs/speech-to-text/audio-formats.md",
+        "https://murf.ai/api/docs/speech-to-text/file-transcription.md"
+      ]
+    },
+    "regions": [
+      "us"
+    ],
+    "released_on": "2026-11-02",
+    "sample_rates_hz": [
+      8000,
+      12000,
+      16000,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
+      "mulaw",
+      "ogg",
+      "opus",
+      "pcm",
+      "wav"
+    ],
+    "batch": true,
+    "capabilities": [
+      "custom_vocabulary",
+      "language_detection",
+      "word_timestamps"
+    ],
+    "description": "Streaming and file speech-to-text for English (India) and 11 Indian languages, hosted in India.",
+    "first_seen": "2026-11-24",
+    "id": "finch_indic_1.0",
+    "interfaces": [
+      "http",
+      "websocket"
+    ],
+    "languages": [
+      "en-IN",
+      "as",
+      "bn",
+      "gu",
+      "hi",
+      "kn",
+      "ml",
+      "mr",
+      "or",
+      "pa",
+      "ta",
+      "te"
+    ],
+    "max_audio_seconds": 3600,
+    "meta": {
+      "background_voice_cancellation": true,
+      "docs_sources": [
+        "https://murf.ai/api/docs/speech-to-text/overview.md",
+        "https://murf.ai/api/docs/speech-to-text/languages.md",
+        "https://murf.ai/api/docs/speech-to-text/audio-formats.md",
+        "https://murf.ai/api/docs/speech-to-text/file-transcription.md",
+        "https://murf.ai/api/docs/changelog/2026/11/23.md"
+      ],
+      "end_of_turn_detection": true,
+      "file_formats": [
+        "wav",
+        "flac",
+        "ogg"
+      ],
+      "host": "in.api.murf.ai",
+      "max_file_size": "1 GB",
+      "streaming_codecs": [
+        "pcm_s16le",
+        "mulaw",
+        "alaw",
+        "opus"
+      ]
+    },
+    "name": "Finch-Indic",
+    "pricing": {
+      "as_of": "2026-11-24",
+      "notes": "Billed per second; same rate for streaming and file transcription; enterprise custom pricing.",
+      "price_usd": 0.12,
+      "source_url": "https://murf.ai/api/docs/speech-to-text/overview.md",
+      "unit": "hour"
+    },
+    "provenance": {
+      "as_of": "2026-11-24",
+      "method": "docs",
+      "urls": [
+        "https://murf.ai/api/docs/llms.txt",
+        "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1.md",
+        "https://murf.ai/api/docs/text-to-speech-models/gen-2.md",
+        "https://murf.ai/api/docs/speech-to-text/overview.md",
+        "https://murf.ai/api/docs/speech-to-text/languages.md",
+        "https://murf.ai/api/docs/speech-to-text/audio-formats.md",
+        "https://murf.ai/api/docs/speech-to-text/file-transcription.md"
+      ]
+    },
+    "regions": [
+      "asia"
+    ],
+    "released_on": "2026-11-02",
+    "sample_rates_hz": [
+      8000,
+      12000,
+      16000,
+      24000,
+      32000,
+      44100,
+      48000
+    ],
+    "type": "stt",
+    "updated_at": "2026-11-24"
+  },
+  {
+    "audio_formats": [
+      "alaw",
+      "flac",
       "mp3",
       "mulaw",
       "ogg",

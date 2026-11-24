@@ -4,7 +4,7 @@ Murf AI sync script.
 Source: mixed
   - TTS voices: GET https://api.murf.ai/v1/speech/voices (API)
   - TTS models: AI-parsed from docs (no /models endpoint); languages derived from live voice API
-  - STT: not offered — stt_models=[]
+  - STT models (Finch): AI-parsed from the speech-to-text docs
 
 Voice API response fields:
   voiceId           → voice_id
@@ -37,6 +37,19 @@ _DOCS_URLS = [
     "https://murf.ai/api/docs/text-to-speech-models/gen-2.md",
 ]
 
+_STT_DOCS_URLS = [
+    "https://murf.ai/api/docs/speech-to-text/overview.md",
+    "https://murf.ai/api/docs/speech-to-text/languages.md",
+    "https://murf.ai/api/docs/speech-to-text/audio-formats.md",
+    "https://murf.ai/api/docs/speech-to-text/file-transcription.md",
+]
+
+_STT_GUIDANCE = (
+    "Return every speech-to-text model id the API accepts (the `model` parameter, exact strings). Languages per "
+    "model from the languages page; region from the model's host; streaming and file-transcription formats, "
+    "sample rates and limits from their pages. Per-hour pricing when published."
+)
+
 _MODEL_GUIDANCE = (
     "Return every TTS model id the API accepts (exact strings, case-sensitive). is_default=true for "
     "the model the docs recommend; note in meta which endpoints (streaming / non-streaming) accept "
@@ -59,7 +72,7 @@ class MurfAISyncer(ProviderSyncer):
     source = "mixed"
 
     async def sync(self) -> SyncResult:
-        voices_data, (tts_models, notes) = await asyncio.gather(
+        voices_data, (tts_models, notes), (stt_models, _) = await asyncio.gather(
             self._fetch_voices(),
             parse_models_from_docs(
                 seed_urls=_DOCS_URLS,
@@ -67,26 +80,32 @@ class MurfAISyncer(ProviderSyncer):
                 model_type="tts",
                 guidance=_MODEL_GUIDANCE,
             ),
+            parse_models_from_docs(
+                seed_urls=_STT_DOCS_URLS,
+                provider_id=self.provider_id,
+                model_type="stt",
+                guidance=_STT_GUIDANCE,
+            ),
         )
         tts_voices = self._parse_voices(voices_data)
         all_langs = {lang for v in tts_voices for lang in v.languages}
 
         from_cache = isinstance(notes, dict) and notes.get("source") == "cache"
         sync_notes = (
-            f"{len(tts_voices)} voices. {len(tts_models)} TTS models (cache). "
+            f"{len(tts_voices)} voices. {len(tts_models)} TTS, {len(stt_models)} STT models (cache). "
             f"{len(all_langs)} langs from API."
             if from_cache else
-            f"{len(tts_voices)} voices. {len(tts_models)} TTS models. "
+            f"{len(tts_voices)} voices. {len(tts_models)} TTS, {len(stt_models)} STT models. "
             f"{len(all_langs)} langs from API."
         )
 
         return SyncResult(
-            stt_models=[],
+            stt_models=stt_models,
             tts_models=tts_models,
             tts_voices=tts_voices,
             source=self.source,
             api_urls=[_VOICES_URL],
-            docs_urls=_DOCS_URLS,
+            docs_urls=_DOCS_URLS + _STT_DOCS_URLS,
             notes=sync_notes,
         )
 
