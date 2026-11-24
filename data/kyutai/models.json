@@ -1,5 +1,8 @@
 [
   {
+    "capabilities": [
+      "multi_speaker"
+    ],
     "first_seen": "2026-11-18",
     "id": "kyutai/tts-1.6b-en_fr",
     "languages": [
@@ -7,6 +10,12 @@
       "fr"
     ],
     "meta": {
+      "capability_notes": {
+        "multi_speaker": "dialogs; voices limited to pre-computed embeddings"
+      },
+      "docs_sources": [
+        "https://huggingface.co/kyutai/tts-1.6b-en_fr"
+      ],
       "huggingface_repo": "kyutai/tts-1.6b-en_fr"
     },
     "name": "tts-1.6b-en_fr",
@@ -26,6 +35,6 @@
     "released_on": "2025-06-30",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
