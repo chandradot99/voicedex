@@ -16,12 +16,15 @@
     "lifecycle": "beta",
     "meta": {
       "deprecation_notice": "Gemini API deprecations page: shutdown March 31, 2027 (earliest possible retirement date)",
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/deprecations"
+      ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
       "platforms": [
         "gemini_api"
       ],
-      "release_date_gemini_api": "2025-12-12",
       "replacement": "gemini-3.8-live"
     },
     "name": "Gemini 2.5 Flash Native Audio Preview (12-2025)",
@@ -68,9 +71,11 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-12-12",
     "snapshot_date": "2025-12-12",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -88,12 +93,17 @@
     "lifecycle": "beta",
     "meta": {
       "deprecation_notice": "Listed as legacy; no shutdown date announced",
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+        "https://aistudio.google.com/docs/models/gemini-3.1-flash-live-preview",
+        "https://aistudio.google.com/docs/deprecations"
+      ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
       "platforms": [
         "gemini_api"
       ],
-      "release_date_gemini_api": "2026-03-11",
       "replacement": "gemini-3.8-live"
     },
     "name": "Gemini 3.1 Flash Live Preview",
@@ -145,8 +155,10 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-03-26",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -163,12 +175,16 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
+        "https://aistudio.google.com/docs/models",
+        "https://aistudio.google.com/docs/deprecations"
+      ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
       "platforms": [
         "gemini_api"
       ],
-      "release_date_gemini_api": "June 2026",
       "task": "speech_translation"
     },
     "name": "Gemini 3.5 Live Translate Preview",
@@ -205,8 +221,9 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "released_on": "2026-06-09",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -223,6 +240,13 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/models",
+        "https://aistudio.google.com/docs/deprecations",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions"
+      ],
       "features": [
         "function_calling",
         "thinking",
@@ -239,8 +263,6 @@
         "gemini_api",
         "vertex_ai"
       ],
-      "release_date_gemini_api": "2026-09-15",
-      "release_date_vertex": "2026-09-24",
       "vertex_retirement": "September 25, 2027 or later"
     },
     "name": "Gemini 3.8 Live",
@@ -292,8 +314,16 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": true,
+    "recommended_for": "default low-latency voice agents / real-time dialogue",
+    "released_on": "2026-09-15",
+    "replaces": [
+      "gemini-3.1-flash-live-preview",
+      "gemini-2.5-flash-native-audio-preview-12-2025",
+      "gemini-live-2.5-flash-native-audio"
+    ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -310,12 +340,16 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/models",
+        "https://aistudio.google.com/docs/models/gemini-3.1-flash-live-preview"
+      ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "output_audio": "raw 16-bit PCM, 24 kHz, little-endian",
       "platforms": [
         "gemini_api"
-      ],
-      "release_date_gemini_api": "2026-09-15"
+      ]
     },
     "name": "Gemini 3.8 Live Extended Thinking",
     "pricing": {
@@ -366,8 +400,14 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": true,
+    "recommended_for": "live voice interactions needing higher background reasoning / multi-step planning",
+    "released_on": "2026-09-15",
+    "replaces": [
+      "gemini-3.1-flash-live-preview"
+    ],
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -386,6 +426,11 @@
     "meta": {
       "context_window": 128000,
       "deprecation_notice": "Vertex AI model versions: released 2025-12-12, retirement 2026-12-13",
+      "docs_sources": [
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "languages_note": "24 languages, 30 HD voices",
       "max_output_tokens": 64000,
@@ -416,8 +461,10 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-12-12",
     "type": "sts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -541,6 +588,9 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-speech-to-text-v2-api"
+      ],
       "features": [],
       "locations": [
         "asia-southeast1",
@@ -600,9 +650,10 @@
       "eu",
       "us"
     ],
+    "released_on": "2023-08",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -745,6 +796,11 @@
       "api_version": "v2",
       "denoiser": true,
       "diarization": "not supported",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-2",
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes"
+      ],
       "features": [
         "denoiser",
         "word_level_confidence"
@@ -828,7 +884,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -970,6 +1026,11 @@
       "custom_prompt": "Preview",
       "denoiser": true,
       "diarization": "BatchRecognize/Recognize only, 14 languages",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model",
+        "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3"
+      ],
       "endpointing_sensitivity": [
         "STANDARD",
         "SHORT",
@@ -1043,13 +1104,16 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "general multilingual transcription on Cloud STT V2",
     "regions": [
       "asia",
       "eu",
       "us"
     ],
+    "released_on": "2025-08-29",
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -1079,6 +1143,9 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes"
+      ],
       "features": [],
       "locations": [
         "asia-southeast1",
@@ -1139,9 +1206,10 @@
       "eu",
       "us"
     ],
+    "released_on": "2024-01-08",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1296,6 +1364,9 @@
       "zu-ZA"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/latest-models"
+      ],
       "features": [
         "spoken_emoji",
         "spoken_punctuation",
@@ -1349,11 +1420,12 @@
         "https://speech.googleapis.com/v2/projects/{project}/locations"
       ]
     },
+    "recommended": false,
     "regions": [
       "global"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1508,6 +1580,9 @@
       "zu-ZA"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/latest-models"
+      ],
       "features": [
         "spoken_emoji",
         "spoken_punctuation",
@@ -1561,11 +1636,12 @@
         "https://speech.googleapis.com/v2/projects/{project}/locations"
       ]
     },
+    "recommended": false,
     "regions": [
       "global"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -1962,6 +2038,12 @@
       "custom_vocabulary_max_terms": 1000,
       "custom_vocabulary_note": "incompatible with diarization and timestamps",
       "docs": "https://aistudio.google.com/docs/models/gemini-3.5-transcribe",
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+        "https://aistudio.google.com/docs/models/gemini-3.5-transcribe",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-transcribe"
+      ],
       "languages_note": "Page says it detects 85+ languages; table lists the codes recorded here.",
       "live_variant": "gemini-3.5-transcribe-live",
       "max_audio_note": "1 hour per request; 30 minutes with diarization or word timestamps"
@@ -2000,9 +2082,13 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "released_on": "2026-08-26",
+    "replaces": [
+      "chirp_3"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -2107,6 +2193,11 @@
     "meta": {
       "api": "Gemini Developer API (Live API)",
       "docs": "https://aistudio.google.com/docs/models/gemini-3.5-transcribe",
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+        "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      ],
       "input_audio": "raw 16-bit PCM, 16 kHz, little-endian",
       "session_limit_minutes": 10
     },
@@ -2144,11 +2235,15 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "released_on": "2026-08-26",
+    "replaces": [
+      "chirp_3"
+    ],
     "sample_rates_hz": [
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2166,7 +2261,10 @@
     "lifecycle": "beta",
     "meta": {
       "api": "Vertex AI Live API",
-      "docs": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
+      "docs": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api",
+      "docs_sources": [
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-transcribe"
+      ]
     },
     "name": "Gemini 3.5 Transcribe Live (Vertex AI preview)",
     "provenance": {
@@ -2188,8 +2286,9 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "released_on": "2026-08",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2321,6 +2420,9 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/latest-models"
+      ],
       "features": [
         "spoken_emoji",
         "spoken_punctuation",
@@ -2400,7 +2502,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2422,6 +2524,10 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes",
+        "https://docs.cloud.google.com/speech-to-text/docs/medical-models"
+      ],
       "features": [
         "word_level_confidence"
       ],
@@ -2465,9 +2571,10 @@
       "global",
       "us"
     ],
+    "released_on": "2021-11-08",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2489,6 +2596,10 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes",
+        "https://docs.cloud.google.com/speech-to-text/docs/medical-models"
+      ],
       "features": [
         "spoken_punctuation",
         "word_level_confidence"
@@ -2533,9 +2644,10 @@
       "global",
       "us"
     ],
+    "released_on": "2021-11-08",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -2562,6 +2674,9 @@
       "ru-RU"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes"
+      ],
       "features": [
         "spoken_emoji",
         "spoken_punctuation",
@@ -2619,7 +2734,7 @@
       "global"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2751,6 +2866,9 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/latest-models"
+      ],
       "features": [
         "spoken_emoji",
         "spoken_punctuation",
@@ -2829,7 +2947,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -2897,6 +3015,10 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes",
+        "https://docs.cloud.google.com/speech-to-text/docs/transcription-model"
+      ],
       "features": [
         "spoken_emoji",
         "spoken_punctuation",
@@ -2970,15 +3092,21 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "phone-call audio (8 kHz): customer service, teleconferencing, kiosks",
     "regions": [
       "asia",
       "eu",
       "global",
       "us"
     ],
+    "released_on": "2023-11-06",
+    "replaces": [
+      "phone_call"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -3046,6 +3174,9 @@
     "max_audio_seconds": 28800,
     "meta": {
       "api_version": "v2",
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes"
+      ],
       "features": [
         "spoken_emoji",
         "spoken_punctuation",
@@ -3121,9 +3252,13 @@
       "global",
       "us"
     ],
+    "released_on": "2023-11-06",
+    "replaces": [
+      "phone_call"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "first_seen": "2026-11-16",
@@ -3232,6 +3367,9 @@
       "zu-ZA"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/release-notes"
+      ],
       "features": [],
       "listed_in_docs": false,
       "locations": [
@@ -3251,7 +3389,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -3267,6 +3405,9 @@
       "en-US"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/speech-to-text/docs/latest-models"
+      ],
       "features": [
         "word_level_confidence"
       ],
@@ -3318,11 +3459,12 @@
         "https://speech.googleapis.com/v2/projects/{project}/locations"
       ]
     },
+    "recommended": false,
     "regions": [
       "global"
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Casual-style voices announced in preview.",
@@ -3333,6 +3475,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "notes": "Release notes (2024-02-26): 'Casual voices are now in preview.' No tier documentation or pricing entry."
     },
     "name": "Casual",
@@ -3351,9 +3496,10 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "released_on": "2024-02-26",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "HD voice tier formerly branded Journey voices.",
@@ -3372,6 +3518,9 @@
       "it-IT"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "formerly": "Journey",
       "notes": "Rebranded from Journey voices (2025-02-10). Current docs state streaming synthesis is only compatible with Chirp 3: HD voices. Pricing not listed on the pricing page.",
       "tier_class": "premium"
@@ -3392,9 +3541,10 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "released_on": "2023-12-29",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -3490,6 +3640,10 @@
           "PCM"
         ]
       },
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes",
+        "https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd"
+      ],
       "preview_languages": [
         "pa-IN",
         "yue-HK"
@@ -3543,14 +3697,17 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "realistic conversational/real-time voices on the Cloud TTS API",
     "regions": [
       "asia",
       "eu",
       "global",
       "us"
     ],
+    "released_on": "2025-04-02",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -3580,6 +3737,9 @@
       "vi-VN"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "regional_endpoints": [
         "global",
         "us-central1"
@@ -3618,9 +3778,10 @@
       "global",
       "us"
     ],
+    "released_on": "2022-06-27",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "News-reading voices listed as Premium voice type in the supported voices table.",
@@ -3633,6 +3794,9 @@
       "es-US"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "notes": "Listed in the supported-voices table and 2023 release notes; no tier-level documentation or pricing entry."
     },
     "name": "News",
@@ -3651,9 +3815,10 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "released_on": "2022-11-10",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Preview voice tier; supported only in multi-region endpoints.",
@@ -3669,6 +3834,9 @@
     ],
     "lifecycle": "beta",
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "notes": "Release notes (2025-04-16): polyglot voices feature only supported in multi-regions."
     },
     "name": "Polyglot",
@@ -3701,7 +3869,7 @@
     },
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -3772,6 +3940,9 @@
       "yue-HK"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "pricing_group": "legacy",
       "tier_class": "standard"
     },
@@ -3805,7 +3976,7 @@
     },
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -3824,6 +3995,9 @@
       "fr-FR"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "multispeaker": "Studio multispeaker (two-speaker dialogue) is Experimental; single-speaker Studio is GA",
       "ssml_support": "Supported except <mark>, <emphasis>, <prosody pitch>, <lang>",
       "tier_class": "premium"
@@ -3856,9 +4030,10 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "released_on": "2023-02-08",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -3916,6 +4091,9 @@
       "vi-VN"
     ],
     "meta": {
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes"
+      ],
       "pricing_group": "legacy",
       "tier_class": "premium"
     },
@@ -3949,7 +4127,7 @@
     },
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -4082,6 +4260,11 @@
           "PCM"
         ]
       },
+      "docs_sources": [
+        "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts",
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide"
+      ],
       "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
       "max_output_audio_seconds": 655,
       "preview_languages": [
@@ -4197,13 +4380,14 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "recommended": false,
     "regions": [
       "eu",
       "global",
       "us"
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -4336,6 +4520,12 @@
           "PCM"
         ]
       },
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/deprecations",
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide"
+      ],
       "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
       "max_output_audio_seconds": 655,
       "preview_languages": [
@@ -4455,13 +4645,15 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": false,
     "regions": [
       "eu",
       "global",
       "us"
     ],
+    "released_on": "2025-05-20",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -4594,6 +4786,12 @@
           "PCM"
         ]
       },
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/deprecations",
+        "https://docs.cloud.google.com/text-to-speech/docs/release-notes",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide"
+      ],
       "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
       "max_output_audio_seconds": 655,
       "preview_languages": [
@@ -4708,13 +4906,15 @@
         "https://cloud.google.com/speech-to-text/pricing"
       ]
     },
+    "recommended": false,
     "regions": [
       "eu",
       "global",
       "us"
     ],
+    "released_on": "2025-05-20",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -4760,7 +4960,13 @@
           "PCM"
         ]
       },
-      "deprecation_notice": "Deprecated February 26, 2026; shutdown December 18, 2026 per the Gemini API deprecations page (https://ai.google.dev/gemini-api/docs/deprecations). Google recommends gemini-3.8-flash-lite-tts as the replacement (migration guide: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide).",
+      "deprecation_notice": "Shutdown December 18, 2026 per the Gemini API deprecations page (https://ai.google.dev/gemini-api/docs/deprecations). Google recommends gemini-3.8-flash-lite-tts as the replacement (migration guide: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide).",
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/models",
+        "https://aistudio.google.com/docs/models/gemini-3.1-flash-tts-preview",
+        "https://aistudio.google.com/docs/deprecations"
+      ],
       "input_limits": "text and prompt fields each <= 4,000 bytes; combined <= 8,000 bytes",
       "max_output_audio_seconds": 655,
       "notes": "All voices for this model are in Preview. Docs model card does not link the language list.",
@@ -4814,11 +5020,13 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": false,
     "regions": [
       "global"
     ],
+    "released_on": "2026-04-15",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -4866,6 +5074,12 @@
         "priority"
       ],
       "default_output": "24 kHz mono 16-bit PCM (WAV for unary, raw L16 for streaming)",
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/models/gemini-3.8-flash-lite-tts",
+        "https://aistudio.google.com/docs/deprecations",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide"
+      ],
       "inline_vocal_tags": "angle brackets, e.g. <laugh>, <sigh>, <short pause>",
       "language_count": 101,
       "language_note": "Over 101 languages; docs list languages by name only.",
@@ -4948,19 +5162,27 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": true,
+    "recommended_for": "high-volume production TTS, real-time voice agents, read-aloud",
     "regions": [
       "eu",
       "global",
       "us"
     ],
     "released_on": "2026-09-22",
+    "replaces": [
+      "gemini-3.1-flash-tts-preview",
+      "gemini-2.5-flash-tts",
+      "gemini-2.5-pro-tts",
+      "gemini-2.5-flash-lite-preview-tts"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -5009,6 +5231,12 @@
         "priority"
       ],
       "default_output": "24 kHz mono 16-bit PCM (WAV for unary, raw L16 for streaming)",
+      "docs_sources": [
+        "https://aistudio.google.com/docs/changelog",
+        "https://aistudio.google.com/docs/models/gemini-3.8-flash-tts",
+        "https://aistudio.google.com/docs/deprecations",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/migration-guide"
+      ],
       "inline_vocal_tags": "angle brackets, e.g. <laugh>, <sigh>, <short pause>",
       "language_count": 130,
       "language_note": "Over 130 languages with automatic input-language detection; docs list languages by name only.",
@@ -5091,18 +5319,26 @@
         "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api"
       ]
     },
+    "recommended": true,
+    "recommended_for": "flagship creative TTS: voice fidelity, acting, multi-speaker, audiobooks/studio narration",
     "regions": [
       "eu",
       "global",
       "us"
     ],
     "released_on": "2026-09-22",
+    "replaces": [
+      "gemini-3.1-flash-tts-preview",
+      "gemini-2.5-flash-tts",
+      "gemini-2.5-pro-tts",
+      "gemini-2.5-flash-lite-preview-tts"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
