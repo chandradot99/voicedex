@@ -168,6 +168,9 @@
       "pcm",
       "wav"
     ],
+    "capabilities": [
+      "prosody_control"
+    ],
     "description": "Indic text-to-speech with 42 voices, each tuned to one preferred language among ten.",
     "first_seen": "2026-11-18",
     "id": "timbre-v2.5",
@@ -189,6 +192,9 @@
     ],
     "meta": {
       "also": "SSE streaming and WebSocket realtime endpoints",
+      "capability_notes": {
+        "prosody_control": "speed 0.85-1.15"
+      },
       "containers": [
         "wav",
         "raw",
@@ -196,6 +202,9 @@
         "ogg",
         "mulaw",
         "alaw"
+      ],
+      "docs_sources": [
+        "https://docs.gnani.ai/api/TTS/tts-inference.md"
       ],
       "hinglish_language_value": "hi-en",
       "pricing_note": "No published price; pricing via sales (gnani.ai pricing link leads to a demo booking).",
@@ -229,7 +238,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
