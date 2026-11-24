@@ -5,6 +5,12 @@
       "mulaw",
       "pcm"
     ],
+    "capabilities": [
+      "barge_in",
+      "function_calling",
+      "transcription",
+      "turn_detection"
+    ],
     "description": "Live voice-agent model over one WebSocket that hears callers, answers in a natural voice and can delegate to your backend; compatible with the OpenAI Python SDK.",
     "first_seen": "2026-11-18",
     "id": "fluid-1",
@@ -30,7 +36,11 @@
       "billing": "metered per second of session (silence included); delegated model tokens billed extra; no rate on kugelaudio.com/pricing as of 2026-11-18",
       "docs_sources": [
         "https://docs.kugelaudio.com/models.md",
-        "https://docs.kugelaudio.com/changelog.md"
+        "https://docs.kugelaudio.com/changelog.md",
+        "https://docs.kugelaudio.com/speech-to-speech/overview.md",
+        "https://docs.kugelaudio.com/speech-to-speech/api-reference.md",
+        "https://docs.kugelaudio.com/speech-to-speech/during-a-call.md",
+        "https://docs.kugelaudio.com/speech-to-speech/back-office.md"
       ],
       "endpoint": "/v1/live/sessions",
       "max_session_seconds": 3600,
