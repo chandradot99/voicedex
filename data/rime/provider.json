@@ -15,6 +15,33 @@
   ],
   "headquarters": "US",
   "id": "rime",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin + LiveKit Inference (TTS; Prism realtime too)",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/rime/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/rime"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.vapi.ai/providers/voice/rimeai"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://docs.rime.ai/api-reference",

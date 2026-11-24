@@ -25,7 +25,9 @@ NEW = date(2026, 11, 1)
 
 def build_fixture_catalog(root) -> None:
     write_provider_dir(root / TEST_PROVIDER, ProviderData(
-        Provider(id=TEST_PROVIDER, name="ZZ Test", type="both", last_synced=NEW),
+        Provider(id=TEST_PROVIDER, name="ZZ Test", type="both", last_synced=NEW,
+                 integrations=[{"framework": "pipecat", "types": ["stt"], "url": "https://docs.pipecat.example/zz",
+                                "as_of": NEW}]),
         models=[
             Model(id="stt-global", name="STT Global", type="stt", languages=["*"], is_default=True,
                   capabilities=["word_timestamps", "speaker_diarization"], regions=["global"], updated_at=OLD),

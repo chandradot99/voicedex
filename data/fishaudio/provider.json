@@ -13,6 +13,34 @@
   ],
   "headquarters": "US",
   "id": "fishaudio",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin + LiveKit Inference (TTS); STT plugin repo only",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/fishaudio/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/fish"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "retell",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.retellai.com/build/voice"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://docs.fish.audio/api-reference/introduction",

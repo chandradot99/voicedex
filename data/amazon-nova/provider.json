@@ -16,6 +16,25 @@
   ],
   "headquarters": "US",
   "id": "amazon-nova",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin (aws, Nova Sonic realtime)",
+      "types": [
+        "sts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/realtime/nova-sonic/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "sts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/s2s/aws"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithBidirectionalStream.html",

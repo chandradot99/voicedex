@@ -29,6 +29,12 @@
     {% for p in by_feature %}<li><a href="{{ p.url }}" {% if p.url == landing.url %}aria-current="page"{% endif %}>{{ "Open-source / open weights" if p.kind == "open" else p.label }}</a></li>{% endfor %}
   </ul>
   {% endif %}
+  {% if by_framework %}
+  <h2 class="section-title">{{ TYPE_LABELS[landing.type] }} by voice-agent framework</h2>
+  <ul class="landing-links">
+    {% for p in by_framework %}<li><a href="{{ p.url }}" {% if p.url == landing.url %}aria-current="page"{% endif %}>Works with {{ p.label }}</a></li>{% endfor %}
+  </ul>
+  {% endif %}
   {% if by_language %}
   <h2 class="section-title">{{ TYPE_LABELS[landing.type] }} by language</h2>
   <ul class="landing-links">

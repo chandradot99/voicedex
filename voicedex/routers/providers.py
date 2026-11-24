@@ -6,9 +6,11 @@ from voicedex.catalog.store import Catalog
 from voicedex.config import settings
 from voicedex.limiter import limiter
 from voicedex.routers._filters import (
+    FRAMEWORK_DESC,
     OPEN_WEIGHTS_DESC,
     UPDATED_SINCE_DESC,
     effective_include_deprecated,
+    filter_framework,
     filter_models,
     filter_voices,
     get_catalog,
@@ -44,6 +46,7 @@ async def list_providers(
     compliance: str | None = Query(None, description="Comma-separated: soc2, hipaa, gdpr, iso27001, pci_dss; providers must list ALL."),
     access: str | None = Query(None, description="self_serve, enterprise, regional, open_weights"),
     headquarters: str | None = Query(None, description="ISO 3166-1 alpha-2 country code, e.g. US, GB, IN"),
+    framework: str | None = Query(None, description="livekit, pipecat, vapi, retell: providers with a first-party integration in that framework's docs."),
     catalog: Catalog = Depends(get_catalog),
 ):
     """List voice providers."""
@@ -63,6 +66,8 @@ async def list_providers(
         if access and str(getattr(p.access, "value", p.access) or "").lower() != access.strip().lower():
             continue
         if headquarters and (p.headquarters or "").upper() != headquarters.strip().upper():
+            continue
+        if framework and framework.strip().lower() not in {i.framework for i in p.integrations}:
             continue
         out.append(_provider_out(catalog, pid))
     return sorted(out, key=lambda p: (p.display_name.lower(), p.provider_id))
@@ -95,6 +100,7 @@ async def list_models(
     shutting_down: bool | None = Query(None, description="true: only models with an announced shutdown date (eol_date)."),
     max_price_usd: float | None = Query(None, ge=0, description="Upper bound on the normalized USD price (TTS per 1M characters, STT/STS per hour). Excludes models without a comparable USD price."),
     sort: str | None = Query(None, description="name (default), price (cheapest normalized USD first), newest (latest release first)."),
+    framework: str | None = Query(None, description=FRAMEWORK_DESC),
     limit: int = Query(100, ge=1, le=500),
     offset: int = Query(0, ge=0),
     catalog: Catalog = Depends(get_catalog),
@@ -107,6 +113,7 @@ async def list_models(
         updated_since=updated_since, include_deprecated=include_deprecated, open_weights=open_weights,
         realtime=realtime, recommended=recommended, shutting_down=shutting_down, max_price_usd=max_price_usd,
     )
+    rows = filter_framework(rows, framework, catalog)
     rows = sort_models(rows, cross_provider=False, sort=sort)
     page = rows[offset:offset + limit]
     return PaginatedModels(total=len(rows), limit=limit, offset=offset,

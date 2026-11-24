@@ -21,6 +21,48 @@
   ],
   "headquarters": "US",
   "id": "azure",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin; MAI via microsoft-ai plugin; Voice Live/OpenAI realtime",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/stt/azure/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "notes": "S2S = Azure Voice Live",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/azure"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "notes": "STT: /providers/transcriber/azure; API also has 'microsoft' (MAI-Voice-2)",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.vapi.ai/providers/voice/azure"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "retell",
+      "types": [
+        "stt"
+      ],
+      "url": "https://docs.retellai.com/build/asr-providers"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-speech-to-text",

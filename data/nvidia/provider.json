@@ -9,6 +9,28 @@
   ],
   "headquarters": "US",
   "id": "nvidia",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin; sts = PersonaPlex (experimental, self-hosted)",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/stt/nvidia/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/nvidia"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://docs.api.nvidia.com/",

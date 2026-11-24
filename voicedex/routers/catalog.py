@@ -9,8 +9,10 @@ from voicedex.catalog.store import Catalog
 from voicedex.config import settings
 from voicedex.limiter import limiter
 from voicedex.routers._filters import (
+    FRAMEWORK_DESC,
     OPEN_WEIGHTS_DESC,
     UPDATED_SINCE_DESC,
+    filter_framework,
     filter_models,
     filter_voices,
     get_catalog,
@@ -41,6 +43,7 @@ async def list_all_models(
     shutting_down: bool | None = Query(None, description="true: only models with an announced shutdown date (eol_date)."),
     max_price_usd: float | None = Query(None, ge=0, description="Upper bound on the normalized USD price (TTS per 1M characters, STT/STS per hour). Excludes models without a comparable USD price."),
     sort: str | None = Query(None, description="name (default), price (cheapest normalized USD first), newest (latest release first)."),
+    framework: str | None = Query(None, description=FRAMEWORK_DESC),
     limit: int = Query(100, ge=1, le=500),
     offset: int = Query(0, ge=0),
     catalog: Catalog = Depends(get_catalog),
@@ -54,6 +57,7 @@ async def list_all_models(
         updated_since=updated_since, include_deprecated=include_deprecated, open_weights=open_weights,
         realtime=realtime, recommended=recommended, shutting_down=shutting_down, max_price_usd=max_price_usd,
     )
+    rows = filter_framework(rows, framework, catalog)
     rows = sort_models(rows, cross_provider=True, sort=sort)
     page = rows[offset:offset + limit]
     return PaginatedModels(total=len(rows), limit=limit, offset=offset,

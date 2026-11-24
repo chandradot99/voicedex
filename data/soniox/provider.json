@@ -22,6 +22,43 @@
   ],
   "headquarters": "US",
   "id": "soniox",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/stt/soniox/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/soniox"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "types": [
+        "stt"
+      ],
+      "url": "https://docs.vapi.ai/providers/transcriber/soniox"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "retell",
+      "types": [
+        "stt"
+      ],
+      "url": "https://docs.retellai.com/build/asr-providers"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://docs.soniox.com/api-reference",

@@ -11,6 +11,33 @@
   ],
   "headquarters": "GB",
   "id": "neuphonic",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/neuphonic/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/neuphonic"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.vapi.ai/providers/voice/neuphonic"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://api.neuphonic.com/docs",

@@ -7,6 +7,17 @@
   "description": "Open-source org of Alibaba's Tongyi speech team: SenseVoice and Fun-ASR recognition models and CosyVoice TTS. The hosted versions are sold through Alibaba Cloud Model Studio, listed separately.",
   "headquarters": "CN",
   "id": "funaudiollm",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "notes": "FunASR service, runs SenseVoice locally",
+      "types": [
+        "stt"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/funasr"
+    }
+  ],
   "last_synced": "2026-11-18",
   "name": "FunAudioLLM (Alibaba Tongyi)",
   "source": "api",

@@ -54,7 +54,7 @@ voicedex/
                        Dark is the default for everyone; light is opt-in via the header toggle (localStorage "theme").
                        SEO: filtered /models?… canonicalizes to /models, so indexable landing pages are generated from
                        data (views.landing_pages): /{speech-to-text|text-to-speech|speech-to-speech}[/<language>|/<feature>
-                       |/open-source (grouped by licence tier)|/realtime (WebSocket/WebRTC)], only when ≥ MIN_LANDING_MODELS match.
+                       |/open-source (grouped by licence tier)|/realtime (WebSocket/WebRTC)|/<framework>], only when ≥ MIN_LANDING_MODELS match.
                        views.TASKS = "start from what you're building" cards pointing at those pages (home + hubs).
                        Cost calculator (views.USAGE/monthly_cost, _usage.html, site.js [data-usage]/[data-rate]): "Per month"
                        column on single-type model tables + a block on model pages; server-rendered at a default usage
@@ -174,6 +174,14 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) �
   `headquarters` [ISO 3166-1 alpha-2], `regions`, `compliance` [soc2|hipaa|gdpr|iso27001|pci_dss], `links`) are
   hand-curated; sync never overwrites them. Research passes write `.sync-cache/<id>_editorial.json`, applied with
   `scripts/apply_editorial.py <id> --write`.
+- **integrations** (provider.json, editorial): voice-agent frameworks (`FRAMEWORKS`: livekit, pipecat, vapi,
+  retell) with a first-party integration, `{framework, types, url, as_of, notes}`, researched from the framework's
+  own docs only (official plugin/service pages or its official repo; never community plugins, generic
+  OpenAI-compatible adapters or a provider's own claim). One research file per framework is the complete list:
+  `scripts/apply_integrations.py <file> --write` adds, updates and removes. Provider-level per type, so a model
+  "works with X" when its provider's integration covers its type. Drives "Works with" on provider/model pages,
+  the /models filter, landing pages /<type>/<framework>, API `framework=` and MCP. Re-check every
+  `INTEGRATIONS_STALE_DAYS` (catalog_health.py).
 - **verified** (provider.json, editorial): `{on, by, scope, evidence}` set only when someone at the provider confirms
   the listing (`by` = a role, never a person's name). Pages show "Verified by X on date" and count records changed
   since. Not an endorsement: never affects sorting. Policy: `docs/verification.md`.
@@ -204,8 +212,8 @@ uvx ruff check .
 
 | Path | Notes |
 |---|---|
-| `GET /v1/providers`, `/v1/providers/{id}` | provider list/detail with model & voice counts; filters: type, compliance (ALL), access, headquarters |
-| `GET /v1/providers/{id}/models`, `/models/{model_id}` | filters: type, language, capabilities (ALL), lifecycle, region, realtime, open_weights, recommended, shutting_down, max_price_usd, search; sort=name\|price\|newest |
+| `GET /v1/providers`, `/v1/providers/{id}` | provider list/detail with model & voice counts and integrations; filters: type, compliance (ALL), access, headquarters, framework |
+| `GET /v1/providers/{id}/models`, `/models/{model_id}` | filters: type, language, capabilities (ALL), lifecycle, region, realtime, open_weights, recommended, shutting_down, max_price_usd, framework, search; sort=name\|price\|newest |
 | `GET /v1/providers/{id}/voices`, `/voices/{voice_id}` | filters: gender, category, language, model, accent, use_case, age, has_sample, multilingual, capabilities, search (use_case/age = views.voice_facets buckets) |
 | `GET /v1/models`, `/v1/voices` | same filters across providers, plus `provider` |
 | `GET /v1/catalog.json` | entire catalog incl. deprecated, one response |

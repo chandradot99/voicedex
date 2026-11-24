@@ -18,6 +18,25 @@
   ],
   "headquarters": "US",
   "id": "bland",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/bland/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/bland"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://docs.bland.ai/api-v2/post/tts",

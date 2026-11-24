@@ -11,6 +11,25 @@
   ],
   "headquarters": "NL",
   "id": "reson8",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin (repo only)",
+      "types": [
+        "stt"
+      ],
+      "url": "https://github.com/livekit/agents/tree/main/livekit-plugins/livekit-plugins-reson8"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "types": [
+        "stt"
+      ],
+      "url": "https://docs.vapi.ai/providers/transcriber/reson8"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://docs.reson8.dev/api/speech-to-text/prerecorded/",

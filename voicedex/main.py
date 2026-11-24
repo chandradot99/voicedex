@@ -58,6 +58,9 @@ curl "https://<host>/v1/models?type=tts&realtime=true&max_price_usd=20&sort=pric
 # Narration voices you can listen to first
 curl "https://<host>/v1/voices?use_case=Narration&has_sample=true"
 
+# Text-to-speech with a built-in Pipecat integration, cheapest first
+curl "https://<host>/v1/models?type=tts&framework=pipecat&sort=price"
+
 # Providers that list HIPAA and SOC 2
 curl "https://<host>/v1/providers?compliance=hipaa,soc2"
 

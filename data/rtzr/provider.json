@@ -10,6 +10,17 @@
   ],
   "headquarters": "KR",
   "id": "rtzr",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin (repo only)",
+      "types": [
+        "stt"
+      ],
+      "url": "https://github.com/livekit/agents/tree/main/livekit-plugins/livekit-plugins-rtzr"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://developers.rtzr.ai/docs/en/stt-file/",

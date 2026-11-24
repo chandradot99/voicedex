@@ -7,6 +7,25 @@
     "https://docs.async.com/billing-pricing-2243956m0.md"
   ],
   "id": "async",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/asyncai/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/tts/asyncai"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "docs": "https://docs.async.com",

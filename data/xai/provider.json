@@ -16,6 +16,40 @@
   ],
   "headquarters": "US",
   "id": "xai",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin + LiveKit Inference (docs name: SpaceXAI)",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/realtime/spacexai/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "notes": "S2S = Grok Voice Agent",
+      "types": [
+        "stt",
+        "tts",
+        "sts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/xai"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "notes": "STT: /providers/transcriber/xai",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.vapi.ai/providers/voice/xai"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://docs.x.ai/developers/api-reference",

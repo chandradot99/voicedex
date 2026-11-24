@@ -30,6 +30,7 @@
     {{ fl.dropdown("language", "Language", fo.language, f.language, search=True, any_label="Any language") }}
     {{ fl.dropdown("capability", "Features", fo.capability, f.capability, kind="checkbox", note="Models must have every ticked feature.") }}
     {{ fl.dropdown("status", "Status", fo.status, f.status, any_label="Any status") }}
+    {% if fo.framework %}{{ fl.dropdown("framework", "Works with", fo.framework, f.framework, any_label="Any framework", note="Providers with a built-in integration, per each framework's docs.") }}{% endif %}
     {{ fl.toggle("mode", "realtime", "Realtime", f.mode == "realtime", facets.realtime) }}
     {{ fl.toggle("weights", "open", "Open weights", f.weights == "open", facets.open) }}
     <button type="submit" class="btn-secondary" data-apply>Apply</button>

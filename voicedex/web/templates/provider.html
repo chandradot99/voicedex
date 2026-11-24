@@ -33,8 +33,10 @@
   </p>
 </section>
 
-{% if compare_with or has_alternatives %}
+{% set show_ww = p.integrations and p.status == "active" %}
+{% if compare_with or has_alternatives or show_ww %}
 <section class="wrap">
+  {% if show_ww %}<p class="compare-with works-with"><span class="ds-label">Works with</span>{% for i in p.integrations %}<a href="{{ i.url }}" rel="noopener" title="{{ FRAMEWORK_LABELS[i.framework] }}'s {{ p.name }} integration{% if i.notes %} ({{ i.notes }}){% endif %}, checked {{ i.as_of }}">{{ FRAMEWORK_LABELS[i.framework] }} <span class="muted">{% for t in i.types %}{{ TYPE_SHORT[t] }}{% if not loop.last %}, {% endif %}{% endfor %}</span></a>{% endfor %}</p>{% endif %}
   {% if has_alternatives %}<p class="compare-with"><a href="/alternatives/{{ p.id }}"><b>{{ p.name }} alternatives</b>: who else offers {{ "this" if p.status != "active" else "the same" }}, by price and features</a></p>{% endif %}
   {% if compare_with %}<p class="compare-with"><span class="ds-label">Compare {{ p.name }} with</span>{% for slug, n in compare_with[:6] %}<a href="/compare/{{ slug }}">{{ n }}</a>{% endfor %}{% if compare_with|length > 6 and has_alternatives %}<a class="compare-all" href="/alternatives/{{ p.id }}">All {{ compare_with|length }} comparisons and alternatives</a>{% endif %}</p>{% endif %}
 </section>

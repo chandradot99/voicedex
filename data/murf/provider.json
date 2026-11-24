@@ -21,6 +21,17 @@
   ],
   "headquarters": "US",
   "id": "murf",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/murf/"
+    }
+  ],
   "last_synced": "2026-11-24",
   "links": {
     "docs": "https://murf.ai/api/docs",

@@ -17,6 +17,27 @@
   ],
   "headquarters": "FR",
   "id": "mistral",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/stt/mistralai/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/mistral"
+    }
+  ],
   "last_synced": "2026-11-16",
   "links": {
     "api_reference": "https://docs.mistral.ai/api",

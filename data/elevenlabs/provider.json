@@ -20,6 +20,45 @@
   ],
   "headquarters": "US",
   "id": "elevenlabs",
+  "integrations": [
+    {
+      "as_of": "2026-11-24",
+      "framework": "livekit",
+      "notes": "plugin",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.livekit.io/agents/models/tts/elevenlabs/"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "pipecat",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.pipecat.ai/api-reference/server/services/stt/elevenlabs"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "vapi",
+      "notes": "STT: /providers/transcriber/elevenlabs",
+      "types": [
+        "stt",
+        "tts"
+      ],
+      "url": "https://docs.vapi.ai/providers/voice/elevenlabs"
+    },
+    {
+      "as_of": "2026-11-24",
+      "framework": "retell",
+      "types": [
+        "tts"
+      ],
+      "url": "https://docs.retellai.com/build/voice"
+    }
+  ],
   "last_synced": "2026-11-18",
   "links": {
     "api_reference": "https://elevenlabs.io/docs/api-reference",
