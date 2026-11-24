@@ -1,5 +1,10 @@
 [
   {
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "OpenMOSS-Team/MOSS-TTS",
     "languages": [
@@ -25,6 +30,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "phoneme_input": "Pinyin / IPA",
+        "prosody_control": "token-level duration / speaking-rate control"
+      },
+      "docs_sources": [
+        "https://huggingface.co/OpenMOSS-Team/MOSS-TTS"
+      ],
       "huggingface_repo": "OpenMOSS-Team/MOSS-TTS"
     },
     "name": "MOSS-TTS",
@@ -44,9 +56,14 @@
     "released_on": "2026-02-06",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "OpenMOSS-Team/MOSS-TTS-Local-Transformer",
     "languages": [
@@ -72,6 +89,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "phoneme_input": "Pinyin / IPA",
+        "prosody_control": "token-level duration / speaking-rate control"
+      },
+      "docs_sources": [
+        "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer"
+      ],
       "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer"
     },
     "name": "MOSS-TTS-Local-Transformer",
@@ -91,9 +115,14 @@
     "released_on": "2026-02-08",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
     "languages": [
@@ -130,6 +159,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "phoneme_input": "Pinyin / IPA",
+        "prosody_control": "token-level duration / speaking-rate control"
+      },
+      "docs_sources": [
+        "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5"
+      ],
       "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5"
     },
     "name": "MOSS-TTS-Local-Transformer-v1.5",
@@ -149,9 +185,12 @@
     "released_on": "2026-06-04",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "OpenMOSS-Team/MOSS-TTS-Nano-100M",
     "languages": [
@@ -177,6 +216,9 @@
       "zh"
     ],
     "meta": {
+      "docs_sources": [
+        "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M"
+      ],
       "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-Nano-100M"
     },
     "name": "MOSS-TTS-Nano-100M",
@@ -196,9 +238,14 @@
     "released_on": "2026-04-02",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control",
+      "voice_cloning"
+    ],
     "first_seen": "2026-11-18",
     "id": "OpenMOSS-Team/MOSS-TTS-v1.5",
     "languages": [
@@ -235,6 +282,13 @@
       "zh"
     ],
     "meta": {
+      "capability_notes": {
+        "phoneme_input": "Pinyin / IPA",
+        "prosody_control": "token-level duration / speaking-rate control"
+      },
+      "docs_sources": [
+        "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5"
+      ],
       "huggingface_repo": "OpenMOSS-Team/MOSS-TTS-v1.5"
     },
     "name": "MOSS-TTS-v1.5",
@@ -254,6 +308,6 @@
     "released_on": "2026-05-25",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
