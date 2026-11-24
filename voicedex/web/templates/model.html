@@ -46,7 +46,7 @@
 <div class="wrap sheet">
   <div class="sheet-main">
     <section class="ds" aria-labelledby="ds-price">
-      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-price"><span class="n">0{{ n.i }}</span> Price</h2>
+      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-price">Price</h2>
       {% if m.pricing %}{% set pr = m.pricing %}
       {% set pl = price_label(m) %}
       <p class="price-hero">{% if pl and ' per ' in pl %}{{ pl.split(' per ')[0] }}<small>per {{ pl.split(' per ', 1)[1] }}</small>{% else %}{{ pl }}{% endif %}</p>
@@ -76,7 +76,7 @@
     </section>
 
     <section class="ds" aria-labelledby="ds-lang">
-      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-lang"><span class="n">0{{ n.i }}</span> Languages
+      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-lang">Languages
         <span class="aside">{% if "*" in m.languages %}many{% elif lang_groups %}{{ lang_groups|length }}{% if m.languages|length > lang_groups|length %}, {{ m.languages|length }} with regional variants{% endif %}{% endif %}</span></h2>
       {% if "*" in m.languages %}
       <p>Many languages. {{ p.name }} doesn't list them individually.</p>
@@ -95,7 +95,7 @@
 
     <section class="ds" aria-labelledby="ds-feat">
       {% set vocab = feature_vocab(m.type) %}
-      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-feat"><span class="n">0{{ n.i }}</span> Features <span class="aside">{{ m.capabilities|length }} of {{ vocab|length }} listed</span></h2>
+      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-feat">Features <span class="aside">{{ m.capabilities|length }} of {{ vocab|length }} listed</span></h2>
       <ul class="checklist">
         {% for c in vocab %}{% set has = c in m.capabilities %}
         <li class="{{ 'yes' if has else 'no' }}">{% if has %}<a href="{{ feature_links.get(c) or '/models?type=' ~ m.type ~ '&capability=' ~ c }}">{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}</a>{% else %}{{ FEATURE_LABELS.get(c, c.replace('_', ' ')) }}<small>not listed</small>{% endif %}</li>
@@ -108,13 +108,13 @@
 
     {% if voice_count %}
     <section class="ds" aria-labelledby="ds-voices">
-      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-voices"><span class="n">0{{ n.i }}</span> Voices <span class="aside">{{ "{:,}".format(voice_count) }} compatible, <a href="/voices?provider={{ p.id }}&model={{ m.id|urlencode }}">browse all</a></span></h2>
+      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-voices">Voices <span class="aside">{{ "{:,}".format(voice_count) }} compatible, <a href="/voices?provider={{ p.id }}&model={{ m.id|urlencode }}">browse all</a></span></h2>
       {% with rows=voice_sample, names={} %}{% include "_voice_grid.html" %}{% endwith %}
     </section>
     {% endif %}
 
     <section class="ds" aria-labelledby="ds-call">
-      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-call"><span class="n">0{{ n.i }}</span> Get this record</h2>
+      {% set n.i = n.i + 1 %}<h2 class="ds-label" id="ds-call">Get this record</h2>
       {% set cmd = "curl " ~ site_url ~ api_path %}
       <div class="snippet"><pre><code>{{ cmd }}</code></pre>
         <button type="button" class="copy-btn" data-copy="{{ cmd }}" aria-label="Copy command">

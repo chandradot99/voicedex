@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>API reference | {{ site_name }}</title>
   <meta name="description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices: languages, features, prices and shutdown dates.">
-  <meta name="theme-color" content="#111113">
+  <meta name="theme-color" content="#16171a">
   <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
   <meta property="og:title" content="API reference | {{ site_name }}">
   <meta property="og:description" content="Free, read-only REST API for speech-to-text, text-to-speech and speech-to-speech models and voices.">
@@ -28,8 +28,8 @@
        rules keep our theme background from the first frame. Start fetching the spec right away, in
        parallel with the reference script. -->
   <style>
-    html, body { background: #111113 !important; color: #ededea; }
-    html[data-theme="light"], html[data-theme="light"] body { background: #f7f7f5 !important; color: #18181b; }
+    html, body { background: #16171a !important; color: #eceae4; }
+    html[data-theme="light"], html[data-theme="light"] body { background: #f7f6f3 !important; color: #18181b; }
   </style>
   <link rel="preload" href="/openapi.json" as="fetch" crossorigin="anonymous">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -291,7 +291,7 @@
       metaData: { title: "API reference | {{ site_name }}" },
       customCss: `
         .dark-mode, .light-mode, :root {
-          --scalar-font: "Geist", ui-sans-serif, system-ui, sans-serif;
+          --scalar-font: "Archivo", ui-sans-serif, system-ui, sans-serif;
           --scalar-font-code: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
           --scalar-background-1: var(--bg);
           --scalar-background-2: var(--panel);
