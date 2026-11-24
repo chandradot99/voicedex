@@ -97,6 +97,33 @@ def price_label(model: Model) -> str | None:
     return None
 
 
+def price_parts(model: Model) -> tuple[str, str] | None:
+    """price_label split for table cells: ("$80.00", "/1M chars"), so amounts right-align and units sit apart."""
+    label = price_label(model)
+    if label is None:
+        return None
+    if label == "Free":
+        return label, ""
+    amount, _, unit = label.partition(" per ")
+    return amount, f"/{unit}"
+
+
+def price_group(model: Model) -> int:
+    """Price-sorted tables: 0 = comparable (normalized USD), 1 = other currency or unit, 2 = no published price."""
+    if normalized_price(model) is not None:
+        return 0
+    return 1 if price_label(model) is not None else 2
+
+
+def price_sort_key(row) -> tuple:
+    """Comparable prices cheapest first, then other currencies/units, then unpriced (by provider within those)."""
+    group = price_group(row.model)
+    return (group, normalized_price(row.model)[0] if group == 0 else 0, row.provider_id, row.model.id)
+
+
+PRICE_GROUP_LABELS = {1: "Other currencies and units (not comparable, so not sorted)", 2: "No published price"}
+
+
 # ── Provider summaries ───────────────────────────────────────────────────────
 
 @dataclass
@@ -660,9 +687,9 @@ def find_landing(catalog: Catalog, mtype: str, kind: str = "hub", value: str = "
 
 
 def landing_rows(catalog: Catalog, page: Landing) -> list[ModelRow]:
-    """Cheapest first (USD-normalized), then unpriced; stable within ties."""
+    """Cheapest first (USD-normalized), then other currencies/units, then unpriced; stable within ties."""
     rows = [r for r in active_models(catalog) if page.matches(r)]
-    rows.sort(key=lambda r: ((normalized_price(r.model) or (math.inf,))[0], r.provider_id, r.model.id))
+    rows.sort(key=price_sort_key)
     if page.kind == "open":     # licence tier first: "can I ship this?" decides before price does
         rows.sort(key=lambda r: LICENCE_TIERS.index(licence_tier(r.model)))
     return rows

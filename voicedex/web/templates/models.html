@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% import "_cells.html" as cells %}
 {% block title %}Compare speech models | {{ site_name }}{% endblock %}
 {% block content %}
 {% block page_head %}
 <section class="wrap page-head">
-  <h1>{{ rows|length }} model{{ 's' if rows|length != 1 }}{% if not filtered %} across every provider{% endif %}</h1>
+  {% set n_head = total_rows|default(rows|length) %}<h1>{{ "{:,}".format(n_head) }} model{{ 's' if n_head != 1 }}{% if not filtered %} across every provider{% endif %}</h1>
   <p class="lede">Filter by what you need, sort by price, and tick models to compare. Prices are normalized: text-to-speech per 1M characters, speech-to-text and realtime per hour of audio.</p>
 </section>
 {% endblock %}
@@ -59,7 +60,7 @@
   {% endblock %}
 
   <div class="result-bar">
-    {% set n_all = total_rows|default(rows|length) %}<p class="result-count" role="status">{{ n_all }} match{{ 'es' if n_all != 1 }}{% if n_all > rows|length %}, cheapest {{ rows|length }} shown{% endif %}</p>
+    {% set n_all = total_rows|default(rows|length) %}<p class="result-count" role="status">{{ "{:,}".format(n_all) }} match{{ 'es' if n_all != 1 }}{% if pages|default(1) > 1 %}, {{ first }}–{{ first + rows|length - 1 }} shown{% elif n_all > rows|length %}, cheapest {{ rows|length }} shown{% endif %}</p>
     {% if tokens %}
     <div class="tokens">
       {% for k, label, value in tokens %}<a class="token" href="/models?{{ qs(**{k: None}) }}" aria-label="Remove filter {{ label }}: {{ value }}"><b>{{ label }}:</b>{{ value }}<span aria-hidden="true">×</span></a>{% endfor %}
@@ -95,15 +96,18 @@
         {% if tiered and (loop.first or licence_tier(m) != licence_tier(rows[loop.index0 - 1].model)) %}
         <tr class="group-row"><th scope="rowgroup" colspan="{{ 10 if usage_type else 9 }}">{{ licence_tier(m) }}</th></tr>
         {% endif %}
+        {% if f.sort == "price" and not tiered %}{% set g = price_group(m) %}{% if g and (loop.first or g != price_group(rows[loop.index0 - 1].model)) %}
+        <tr class="group-row"><th scope="rowgroup" colspan="{{ 10 if usage_type else 9 }}">{{ PRICE_GROUP_LABELS[g] }}</th></tr>
+        {% endif %}{% endif %}
         <tr>
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ names[r.provider_id] }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
           <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}{% if tiered and m.open_weights %}<span class="sub mono">{{ m.open_weights.license }}</span>{% endif %}<span class="sub show-sm">{{ names[r.provider_id] }}, {{ TYPE_SHORT[m.type] }}{% if m.open_weights and not tiered %}, open weights{% endif %}{% if m.eol_date %}, <span class="urgent">ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}, {{ m.lifecycle }}{% endif %}</span></th>
-          <td class="hide-sm">{{ names[r.provider_id] }}</td>
+          <td class="hide-sm provider-cell">{{ names[r.provider_id] }}</td>
           <td class="mono hide-sm">{{ TYPE_SHORT[m.type] }}</td>
           <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
-          <td class="mono feat-count hide-sm">{% set tot = feature_vocab(m.type)|length %}{{ m.capabilities|length }}/{{ tot }}<span class="bar" aria-hidden="true"><i style="width: {{ (100 * m.capabilities|length / tot)|round }}%"></i></span></td>
+          {{ cells.feat_cell(m) }}
           <td class="hide-sm weights-cell">{% if m.open_weights %}<span title="{{ m.open_weights.license or 'Licence not stated' }}">Open</span><span class="sub">{{ licence_short(m) }}</span>{% else %}<span class="muted">–</span>{% endif %}</td>
-          <td class="num price-cell"><span class="mono">{{ price_label(m) or "–" }}</span>{% if k in positions %}<span class="bar" aria-hidden="true"><i style="width: {{ positions[k]|round }}%"></i></span>{% elif price_label(m) %}<span class="bar" aria-hidden="true"></span>{% endif %}</td>
+          {{ cells.price_cell(m, k, positions) }}
           {% if usage_type %}{% set mc = monthly_cost(m, usage) %}<td class="num mono month-cell"{% if mc is not none %} data-rate="{{ mc / usage / USAGE[usage_type].scale }}"{% endif %}>{{ money(mc) }}</td>{% endif %}
           <td class="hide-sm">{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}</td>
         </tr>
@@ -111,6 +115,13 @@
       </tbody>
     </table>
   </div>
+  {% if pages|default(1) > 1 %}
+  <nav class="pager" aria-label="Pages">
+    {% if page > 1 %}<a href="/models?{{ qs(page=(page - 1) if page > 2 else None, usage=usage_raw) }}" rel="prev">Previous</a>{% endif %}
+    <span>Page {{ page }} of {{ pages }}</span>
+    {% if page < pages %}<a href="/models?{{ qs(page=page + 1, usage=usage_raw) }}" rel="next">Next</a>{% endif %}
+  </nav>
+  {% endif %}
   {% else %}
   <div class="empty">
     <span class="mono">0 models{% for k, label, value in tokens %} {{ label }}:{{ value }}{% endfor %}</span>

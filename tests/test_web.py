@@ -1,5 +1,7 @@
 """HTML catalog pages render from the in-memory catalog and respect filters."""
 
+import re
+
 from voicedex.catalog.schema import Model
 from voicedex.web.views import heat_level, language_name, normalized_price
 
@@ -273,3 +275,30 @@ async def test_models_weights_filter_and_marker(client):
     assert "stt-eu" in open_only and "stt-global" not in open_only and "tts-main" not in open_only
     hosted = (await client.get("/models?weights=hosted")).text
     assert "stt-eu" not in hosted and "stt-global" in hosted
+
+
+def test_price_parts_and_groups():
+    from voicedex.web.views import price_group, price_parts
+    usd = Model(id="u", name="u", type="tts", pricing={"unit": "character", "price_usd": 0.00003})
+    eur = Model(id="e", name="e", type="stt", pricing={"unit": "hour", "currency": "EUR", "price": 0.5})
+    none = Model(id="n", name="n", type="tts")
+    assert price_parts(usd) == ("$30.00", "/1M chars") and price_group(usd) == 0
+    assert price_parts(eur) == ("€0.5", "/hour") and price_group(eur) == 1
+    assert price_parts(none) is None and price_group(none) == 2
+
+
+async def test_models_paginates(client, monkeypatch):
+    from voicedex.web import routes
+    monkeypatch.setattr(routes, "MODELS_PER_PAGE", 1)                  # the fixture catalog is tiny
+    first = (await client.get("/models")).text
+    assert 'rel="next"' in first and "1–1 shown" in first
+    last = (await client.get("/models?page=999")).text                 # out of range clamps to the last page
+    assert 'rel="prev"' in last and 'rel="next"' not in last
+
+
+async def test_providers_index(client):
+    html = (await client.get("/providers")).text
+    assert "ZZ Test" in html and "No longer available" in html
+    only_sts = (await client.get("/providers?type=sts&sort=models")).text
+    assert re.search(r'rel="canonical" href="[^"]*/providers"', only_sts)     # filtered views canonicalize
+    assert "No longer available" not in only_sts                       # retired list only on the unfiltered view

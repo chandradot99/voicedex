@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% import "_cells.html" as cells %}
 {% block title %}{{ p.name }} models, voices and pricing | {{ site_name }}{% endblock %}
 {% block description %}{{ p.name }}: {{ summary.models }} speech models{% if summary.voices %} and {{ summary.voices }} voices{% endif %}, with languages, features and prices.{% endblock %}
 {% block content %}
 <section class="wrap page-head">
-  <p class="crumbs"><a href="/#providers">Providers</a></p>
+  <p class="crumbs"><a href="/providers">Providers</a></p>
   <h1>{{ p.name }}</h1>
   {% if p.status != "active" %}
   <p class="end-rule"><span class="mono">{{ p.retired_on.strftime('%Y-%m-%d') if p.retired_on else "Retired" }}</span>{% if models %}The hosted API is no longer available{% else %}No longer available{% endif %}{% if p.retired_on %} since {{ p.retired_on.strftime('%B %-d, %Y') }}{% endif %}.{% if models %} Its open weights are still published and listed below.{% endif %}</p>
@@ -58,8 +59,8 @@
           <td class="pick"><label class="pick-hit"><input type="checkbox" class="compare-pick" data-key="{{ k }}" data-label="{{ p.name }} {{ m.id }}"><span class="visually-hidden">Compare {{ m.id }}</span></label></td>
           <th scope="row"><a href="{{ model_url(r) }}"><code translate="no">{{ m.id }}</code></a>{% if m.name != m.id %}<span class="sub">{{ m.name }}</span>{% endif %}{% if m.eol_date %}<span class="sub show-sm urgent">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="sub show-sm">{{ m.lifecycle|capitalize }}</span>{% endif %}</th>
           <td class="num mono hide-sm">{% if "*" in m.languages %}Many{% else %}{{ lang_count(m) or "–" }}{% endif %}</td>
-          <td class="mono feat-count hide-sm">{% set tot = feature_vocab(m.type)|length %}{{ m.capabilities|length }}/{{ tot }}<span class="bar" aria-hidden="true"><i style="width: {{ (100 * m.capabilities|length / tot)|round }}%"></i></span></td>
-          <td class="num price-cell"><span class="mono">{{ price_label(m) or "–" }}</span>{% if k in positions %}<span class="bar" aria-hidden="true"><i style="width: {{ positions[k]|round }}%"></i></span>{% elif price_label(m) %}<span class="bar" aria-hidden="true"></span>{% endif %}</td>
+          {{ cells.feat_cell(m) }}
+          {{ cells.price_cell(m, k, positions) }}
           <td class="hide-sm">{% if m.eol_date %}<span class="badge badge-eol">Ends {{ m.eol_date.strftime('%Y-%m-%d') }}</span>{% elif m.lifecycle in ("alpha", "beta") %}<span class="badge badge-beta">{{ m.lifecycle|capitalize }}</span>{% elif m.is_default %}<span class="badge badge-quiet">Default</span>{% endif %}{% if m.alias_of %} <span class="badge badge-quiet">Alias</span>{% endif %}</td>
         </tr>
         {% endfor %}

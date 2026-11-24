@@ -72,7 +72,10 @@ a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--
 a:hover { color: var(--signal); text-decoration-color: currentColor; }
 :focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
 ::selection { background: rgb(var(--heat) / .35); color: var(--ink); }
-code, kbd, .mono { font-family: var(--mono); font-size: .92em; font-feature-settings: "zero" 0; }
+/* Mono runs a touch large next to Geist, so it's set slightly smaller, rounded to whole pixels (13px text → 12px
+   code) so the type scale stays on integer steps. Text already set in mono (e.g. the model title) isn't shrunk. */
+code, kbd, .mono { font-family: var(--mono); font-size: .92em; font-size: round(.92em, 1px); font-feature-settings: "zero" 0; }
+.model-title code { font-size: inherit; }
 code { color: inherit; }
 kbd {
   font: 500 11px/1 var(--mono); color: var(--ink-2); padding: 3px 5px;
@@ -301,6 +304,7 @@ button, input, select { font: inherit; color: inherit; }
 .data code { font-size: 13px; }
 .data .sub { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
 .data .weights-cell { white-space: nowrap; }
+.data .provider-cell { white-space: nowrap; }
 .data .group-row th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding-top: 24px; }
 .data tbody.retired a { color: var(--ink-2); }
 .types span + span { margin-left: 8px; }
@@ -316,7 +320,8 @@ input[type="checkbox"]:checked { background: var(--signal-fill); border-color: v
 input[type="checkbox"]:checked::after { opacity: 1; }
 input[type="checkbox"]:disabled { opacity: .35; cursor: not-allowed; }
 .price-cell { white-space: nowrap; }
-.price-cell .mono { display: inline-block; min-width: 9ch; text-align: right; }
+.price-cell .amt { display: inline-block; min-width: 9ch; text-align: right; }
+.price-cell .unit { display: inline-block; min-width: 9ch; margin-left: 4px; text-align: left; font-size: 12px; color: var(--muted); }
 .price-cell .bar { display: inline-block; width: 56px; height: 4px; background: var(--rule); vertical-align: middle; margin-left: 10px; border-radius: 1px; overflow: hidden; }
 .price-cell .bar i { display: block; height: 100%; background: var(--ink-2); }
 .feat-count { white-space: nowrap; }
@@ -915,7 +920,7 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .sh-summary { margin-top: 4px; color: var(--ink-2); font-size: 14px; line-height: 1.55; max-width: 72ch; }
 .sh-facts { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 24px; }
 .sh-facts dt { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-.sh-facts dd { margin-top: 4px; display: flex; flex-direction: column; gap: 2px; }
+.sh-facts dd { margin: 4px 0 0; display: flex; flex-direction: column; gap: 2px; }
 .sh-facts dd .mono { font-size: 14px; color: var(--ink); }
 .sh-rank { font-size: 12px; color: var(--ink-2); line-height: 1.45; }
 .sh-delta { margin-top: 12px; font-size: 13px; color: var(--ink-2); }

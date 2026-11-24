@@ -8,7 +8,7 @@
     <nav class="nav-links" aria-label="Main">
       <a href="/models" {% if path.startswith('/models') %}aria-current="page"{% endif %}>Models</a>
       <a href="/voices" {% if path.startswith('/voices') %}aria-current="page"{% endif %}>Voices</a>
-      <a href="/#providers" class="nav-providers" {% if path.startswith('/providers') %}aria-current="page"{% endif %}>Providers</a>
+      <a href="/providers" class="nav-providers" {% if path.startswith('/providers') %}aria-current="page"{% endif %}>Providers</a>
       <a href="/docs" {% if path.startswith('/docs') %}aria-current="page"{% endif %}>API</a>
     </nav>
     <form class="jump" action="/search" role="search" data-palette-trigger>
