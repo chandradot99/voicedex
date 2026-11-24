@@ -19,6 +19,11 @@
       "can_use_speaker_boost": true,
       "character_cost_multiplier": 1.0,
       "concurrency_group": "standard_eleven_english_sts_v2",
+      "docs_sources": [
+        "https://web.archive.org/web/20240723092359/https://elevenlabs.io/blog/speech-to-speech-release",
+        "https://elevenlabs.io/blog/speech-to-speech",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "max_characters_free_user": 5000,
       "mode": "voice_conversion",
       "serves_pro_voices": false
@@ -44,8 +49,10 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": false,
+    "released_on": "2023-11-22",
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -94,6 +101,10 @@
       "can_use_speaker_boost": true,
       "character_cost_multiplier": 1.0,
       "concurrency_group": "standard_eleven_multilingual_sts_v2",
+      "docs_sources": [
+        "https://web.archive.org/web/20241009222543/https://elevenlabs.io/blog/multilingual-speech-to-speech-release",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "max_characters_free_user": 10000,
       "mode": "voice_conversion",
       "serves_pro_voices": false
@@ -119,8 +130,14 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice changer (speech-to-speech conversion)",
+    "released_on": "2024-02-09",
+    "replaces": [
+      "eleven_english_sts_v2"
+    ],
     "type": "sts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Native speech-to-speech conversational model (speech recognition, turn-taking, reasoning and speech in one model), the higher-capability tier.",
@@ -135,7 +152,10 @@
     "meta": {
       "announced": "2026-10-19",
       "docs_sources": [
-        "https://elevenlabs.io/pricing/api"
+        "https://elevenlabs.io/pricing/api",
+        "https://elevenlabs.io/docs/changelog/2026/10/19",
+        "https://elevenlabs.io/docs/changelog/2026/11/2",
+        "https://elevenlabs.io/docs/overview/models"
       ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",
@@ -159,9 +179,11 @@
         "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
       ]
     },
-    "released_on": "2026-11-02",
+    "recommended": true,
+    "recommended_for": "voice agents with complex instructions / multi-step tool calls",
+    "released_on": "2026-10-19",
     "type": "sts",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Native speech-to-speech conversational model (speech recognition, turn-taking, reasoning and speech in one model), the lower-latency tier.",
@@ -176,7 +198,10 @@
     "meta": {
       "announced": "2026-10-19",
       "docs_sources": [
-        "https://elevenlabs.io/pricing/api"
+        "https://elevenlabs.io/pricing/api",
+        "https://elevenlabs.io/docs/changelog/2026/10/19",
+        "https://elevenlabs.io/docs/changelog/2026/11/2",
+        "https://elevenlabs.io/docs/overview/models"
       ],
       "endpoint": "wss://api.elevenlabs.io/v1/convai/realtime",
       "language_count": "90+",
@@ -200,9 +225,11 @@
         "https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility"
       ]
     },
-    "released_on": "2026-11-02",
+    "recommended": true,
+    "recommended_for": "fast, natural conversational voice agents (default Realtime model)",
+    "released_on": "2026-10-19",
     "type": "sts",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -242,7 +269,12 @@
     ],
     "max_audio_seconds": 54000,
     "meta": {
-      "audio_event_tagging": true
+      "audio_event_tagging": true,
+      "docs_sources": [
+        "https://elevenlabs.io/blog/introducing-scribe-v2",
+        "https://elevenlabs.io/docs/changelog/2026/1/12",
+        "https://elevenlabs.io/docs/overview/models"
+      ]
     },
     "name": "Scribe v2",
     "pricing": {
@@ -259,9 +291,11 @@
         "https://elevenlabs.io/docs/capabilities/speech-to-text"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-01-09",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -303,6 +337,10 @@
     "max_audio_seconds": 54000,
     "meta": {
       "audio_event_tagging": true,
+      "docs_sources": [
+        "https://elevenlabs.io/docs/changelog/2026/9/11",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "domain": "medical"
     },
     "name": "Scribe v2 Medical",
@@ -320,9 +358,12 @@
         "https://elevenlabs.io/docs/capabilities/speech-to-text"
       ]
     },
+    "recommended": true,
+    "recommended_for": "medical and clinical audio (batch)",
+    "released_on": "2026-09-11",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -345,6 +386,13 @@
     "languages": [
       "*"
     ],
+    "meta": {
+      "docs_sources": [
+        "https://elevenlabs.io/blog/introducing-scribe-v2-realtime",
+        "https://elevenlabs.io/docs/changelog/2025/11/12",
+        "https://elevenlabs.io/docs/overview/models"
+      ]
+    },
     "name": "Scribe v2 Realtime",
     "pricing": {
       "as_of": "2026-11-16",
@@ -360,6 +408,8 @@
         "https://elevenlabs.io/docs/capabilities/speech-to-text"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-11-11",
     "sample_rates_hz": [
       8000,
       16000,
@@ -369,7 +419,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -411,6 +461,11 @@
     "max_audio_seconds": 54000,
     "meta": {
       "audio_event_tagging": true,
+      "docs_sources": [
+        "https://elevenlabs.io/docs/changelog/2026/11/9",
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "max_file_size_gb": 5,
       "max_speakers": 32
     },
@@ -429,9 +484,15 @@
         "https://elevenlabs.io/docs/capabilities/speech-to-text"
       ]
     },
+    "recommended": true,
+    "recommended_for": "batch transcription of recorded audio",
+    "released_on": "2026-11-09",
+    "replaces": [
+      "scribe_v2"
+    ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -456,6 +517,11 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://elevenlabs.io/docs/changelog/2026/11/9",
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "input_encodings": [
         "pcm_8000",
         "pcm_16000",
@@ -481,6 +547,12 @@
         "https://elevenlabs.io/docs/capabilities/speech-to-text"
       ]
     },
+    "recommended": true,
+    "recommended_for": "real-time transcription / voice agents",
+    "released_on": "2026-11-09",
+    "replaces": [
+      "scribe_v2_realtime"
+    ],
     "sample_rates_hz": [
       8000,
       16000,
@@ -490,7 +562,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our ultra low latency model in english. Ideal for conversational use cases.",
@@ -509,6 +581,12 @@
       "can_use_speaker_boost": false,
       "character_cost_multiplier": 0.5,
       "concurrency_group": "turbo",
+      "docs_sources": [
+        "https://elevenlabs.io/blog/meet-flash",
+        "https://elevenlabs.io/docs/changelog/2024/12/19",
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "max_characters_free_user": 30000,
       "serves_pro_voices": false
     },
@@ -533,8 +611,14 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "low-latency English conversational agents (alternative to v4 Turbo)",
+    "released_on": "2024-12-18",
+    "replaces": [
+      "eleven_turbo_v2"
+    ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our ultra low latency model in 32 languages. Ideal for conversational use cases.",
@@ -584,6 +668,11 @@
       "can_use_speaker_boost": false,
       "character_cost_multiplier": 0.5,
       "concurrency_group": "turbo",
+      "docs_sources": [
+        "https://elevenlabs.io/blog/meet-flash",
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "max_characters_free_user": 40000,
       "serves_pro_voices": false
     },
@@ -608,8 +697,14 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "low-latency, low-cost multilingual agents / bulk TTS (alternative to v4 Turbo)",
+    "released_on": "2024-12-18",
+    "replaces": [
+      "eleven_turbo_v2_5"
+    ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "capabilities": [
@@ -659,6 +754,11 @@
       "can_use_speaker_boost": true,
       "character_cost_multiplier": 1.0,
       "concurrency_group": "standard",
+      "docs_sources": [
+        "https://elevenlabs.io/blog/elevenlabs-comes-out-of-beta-and-releases-eleven-multilingual-v2-a-foundational-ai-speech-model-for-nearly-30-languages",
+        "https://elevenlabs.io/docs/overview/models",
+        "https://elevenlabs.io/docs/changelog/2026/11/2"
+      ],
       "max_characters_free_user": 10000,
       "serves_pro_voices": false
     },
@@ -683,8 +783,9 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "released_on": "2023-08-22",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our English-only, low latency model. Best for developer use cases where speed matters and you only need English. Performance is on par with Turbo v2.5.",
@@ -703,6 +804,10 @@
       "can_use_speaker_boost": false,
       "character_cost_multiplier": 0.5,
       "concurrency_group": "turbo",
+      "docs_sources": [
+        "https://elevenlabs.io/blog/turbo-v2-is-here",
+        "https://elevenlabs.io/docs/overview/models"
+      ],
       "max_characters_free_user": 30000,
       "serves_pro_voices": false
     },
@@ -727,8 +832,10 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": false,
+    "released_on": "2023-11-09",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our high quality, low latency model in 32 languages. Best for developer use cases where speed matters and you need non-English languages.",
@@ -778,6 +885,10 @@
       "can_use_speaker_boost": false,
       "character_cost_multiplier": 0.5,
       "concurrency_group": "turbo",
+      "docs_sources": [
+        "https://elevenlabs.io/blog/introducing-turbo-v25",
+        "https://elevenlabs.io/docs/overview/models"
+      ],
       "max_characters_free_user": 40000,
       "serves_pro_voices": false
     },
@@ -802,8 +913,10 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": false,
+    "released_on": "2024-07-19",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our highly expressive model. Supports 70+ languages. Requires more prompt engineering than our previous models.",
@@ -895,6 +1008,12 @@
       "can_use_speaker_boost": false,
       "character_cost_multiplier": 1.0,
       "concurrency_group": "standard",
+      "docs_sources": [
+        "https://elevenlabs.io/docs/changelog/2025/8/20",
+        "https://elevenlabs.io/blog/eleven-v3",
+        "https://elevenlabs.io/docs/changelog/2026/2/2",
+        "https://elevenlabs.io/docs/overview/models"
+      ],
       "max_characters_free_user": 5000,
       "serves_pro_voices": false
     },
@@ -919,8 +1038,10 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": false,
+    "released_on": "2025-08-20",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our highly expressive model, optimized for natural dialogue in conversational agents. Supports 70+ languages. Requires more prompt engineering than our previous models.",
@@ -1012,6 +1133,11 @@
       "can_use_speaker_boost": true,
       "character_cost_multiplier": 0.5,
       "concurrency_group": "standard_eleven_v3",
+      "docs_sources": [
+        "https://elevenlabs.io/blog/introducing-expressive-mode",
+        "https://elevenlabs.io/docs/changelog/2026/2/9",
+        "https://elevenlabs.io/docs/overview/models"
+      ],
       "max_characters_free_user": 5000,
       "serves_pro_voices": false
     },
@@ -1036,8 +1162,10 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": false,
+    "released_on": "2026-02-10",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our fastest and most emotive model. Supports 90+ languages.",
@@ -1150,6 +1278,12 @@
       "can_use_speaker_boost": false,
       "character_cost_multiplier": 1.0,
       "concurrency_group": "standard_eleven_v4",
+      "docs_sources": [
+        "https://elevenlabs.io/docs/changelog/2026/9/28",
+        "https://elevenlabs.io/blog/eleven-v4",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/eleven-v4",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "max_characters_free_user": 10000,
       "serves_pro_voices": false
     },
@@ -1174,8 +1308,14 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "quality / content creation, audiobooks, long-form (Text to Dialogue API)",
+    "released_on": "2026-09-28",
+    "replaces": [
+      "eleven_v3"
+    ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "description": "Our fastest and most emotive model, optimized for low latency. Supports 90+ languages.",
@@ -1287,6 +1427,11 @@
       "can_use_speaker_boost": false,
       "character_cost_multiplier": 0.5,
       "concurrency_group": "standard_eleven_v4",
+      "docs_sources": [
+        "https://elevenlabs.io/docs/changelog/2026/9/28",
+        "https://elevenlabs.io/blog/eleven-v4",
+        "https://elevenlabs.io/docs/eleven-api/choosing-the-right-model"
+      ],
       "max_characters_free_user": 10000,
       "serves_pro_voices": false
     },
@@ -1311,7 +1456,10 @@
         "https://api.elevenlabs.io/v2/voices"
       ]
     },
+    "recommended": true,
+    "recommended_for": "low-latency / conversational agents (Text to Dialogue WebSocket)",
+    "released_on": "2026-09-28",
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   }
 ]
