@@ -15,7 +15,7 @@
   {% for b in spectrum %}{% set st = b.stats %}
   <div class="costs-band" id="costs-{{ b.id }}" role="tabpanel" aria-labelledby="costs-tab-{{ b.id }}">
     <div class="costs-chart">
-      {% if st %}<div class="readout">
+      {% if st and st.n >= MIN_GROUP %}<div class="readout">
         <p class="readout-big">{{ money(st.median) }}</p>
         <p class="readout-text"><b>Median {{ b.title|lower }} price</b>, {{ b.unit }}, across {{ st.n }} priced models. Half cost between {{ money(st.p25) }} and {{ money(st.p75) }}{% if st.p5 %}; nine in ten between {{ money(st.p5) }} and {{ money(st.p95) }}{% endif %}.</p>
       </div>{% endif %}
@@ -28,7 +28,7 @@
       <ul class="rate-list">
         {% for r in rates[b.id] %}<li><a href="{{ model_url(r.row) }}" data-key="{{ r.key }}" title="{{ r.name }} {{ r.row.model.id }}: {{ r.amount[0] }} {{ b.unit }}"><span class="with-logo">{{ cells.logo(r.pid, r.name) }}<span class="rate-name">{{ r.name }}</span></span><span class="rate-bar" aria-hidden="true"><i style="width: {{ r.pos|round(1) }}%"></i></span><span class="rate">{{ r.amount[0] }}</span></a></li>{% endfor %}
       </ul>
-      <p class="costs-links"><a href="/models?sort=price{% if b.id == 'text' %}&type=tts{% endif %}">All {{ b.title|lower }} by price</a><a href="/reports/speech-ai-pricing">Pricing report</a></p>
+      <p class="costs-links">{% if b.id == 'text' %}<a href="/models?type=tts&sort=price">All text-to-speech by price</a>{% else %}<a href="/models?type=stt&sort=price">All speech-to-text by price</a><a href="/models?type=sts&sort=price">Realtime by price</a>{% endif %}<a href="/reports/speech-ai-pricing">Pricing report</a></p>
     </aside>
     {% endif %}
     {% if band_facts[b.id] %}<dl class="costs-facts">{% for label, value, note in band_facts[b.id] %}<div><dt>{{ label }}</dt><dd>{{ value }}</dd><dd class="note">{{ note }}</dd></div>{% endfor %}</dl>{% endif %}

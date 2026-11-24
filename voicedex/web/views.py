@@ -1816,15 +1816,17 @@ _LOGOS: dict = {}
 
 
 def provider_logo(pid: str) -> str | None:
-    """URL of the provider's logo tile, or None (templates then draw a lettered tile). The directory listing is
-    re-read when it changes, so logos added while the dev server runs show up without a restart."""
+    """URL of the provider's logo tile with a content-hash ?v=, or None (templates then draw a lettered tile). The
+    directory is re-read when it changes, so logos added while the dev server runs show up without a restart."""
     try:
         stamp = _LOGO_DIR.stat().st_mtime_ns
     except FileNotFoundError:
         return None
-    if _LOGOS.get("stamp") != stamp:
+    if _LOGOS.get("stamp") != stamp:                 # re-read only when the directory changes
+        import hashlib
         _LOGOS.clear()
-        _LOGOS.update(stamp=stamp, files={p.stem: int(p.stat().st_mtime) for p in _LOGO_DIR.glob("*.png")})
+        _LOGOS.update(stamp=stamp, files={p.stem: hashlib.sha1(p.read_bytes()).hexdigest()[:10]
+                                          for p in _LOGO_DIR.glob("*.png")})
     v = _LOGOS["files"].get(pid)
     return f"/static/logos/{pid}.png?v={v}" if v is not None else None
 
@@ -1838,10 +1840,10 @@ def popular_rates(catalog: Catalog, types: tuple[str, ...], limit: int = 8) -> l
         pd = catalog.providers.get(pid)
         if not pd or pd.provider.status != "active":
             continue
-        rows = [r for r in active_models(catalog, pid) if r.model.type in types and normalized_price(r.model)
-                and normalized_price(r.model)[0] > 0 and not r.model.eol_date]     # paid rate, not a free tier
+        rows = [r for r in active_models(catalog, pid) if r.model.type in types and not r.model.eol_date]
         main = next((r for r in rows if r.model.recommended is True), None) or next((r for r in rows if r.model.is_default), None)
-        if not main:
+        price = normalized_price(main.model) if main else None
+        if not price or price[0] <= 0:          # the main model has no paid USD rate: skip, never substitute another
             continue
         out.append({"pid": pid, "name": pd.provider.name, "row": main, "key": model_key(main),
                     "value": normalized_price(main.model)[0], "amount": price_parts(main.model)})
@@ -1878,10 +1880,10 @@ def band_facts(catalog: Catalog, types: tuple[str, ...]) -> list[tuple[str, str,
 VOICE_AGES = ("Young", "Adult", "Middle-aged", "Older", "Teen", "Child")
 VOICE_USES = {        # bucket → keywords matched inside use_cases and use-case tags
     "Conversational": ("convers", "chat", "assistant", "agent"),
-    "Narration": ("narrat", "documentar", "explainer", "voiceover", "voice-over"),
+    "Narration": ("narrat", "documentar", "explainer", "voiceover", "voice over"),
     "Audiobooks & stories": ("audiobook", "story", "storytell", "book"),
     "Characters & gaming": ("character", "animation", "gaming", "game", "roleplay", "cartoon"),
-    "Customer service": ("customer", "support", "ivr", "call center", "call-center", "telephony"),
+    "Customer service": ("customer", "support", "ivr", "call center", "telephony"),
     "Ads & social": ("advert", "ads", "social", "marketing", "promo", "commercial"),
     "Education": ("educat", "learning", "training", "tutorial"),
     "Podcasts": ("podcast",),
@@ -1908,9 +1910,14 @@ def _age_bucket(age: str | None) -> str | None:
     return "Adult" if "adult" in a else None
 
 
+_USE_RES = {b: re.compile(r"\b(?:" + "|".join(re.escape(k) for k in keys) + ")") for b, keys in VOICE_USES.items()}
+
+
 def _uses(voice) -> frozenset:
-    raw = [u.lower() for u in voice.use_cases] + [t.lower()[9:] for t in voice.tags if t.lower().startswith("use-case:")]
-    return frozenset(b for b, keys in VOICE_USES.items() if any(k in u for u in raw for k in keys))
+    """Keywords match at the start of a word ("ads" in "ads & social", not in "reads"; "book" not in "facebook")."""
+    raw = [u.lower().replace("-", " ").replace("_", " ") for u in voice.use_cases]
+    raw += [t.lower()[9:].replace("-", " ") for t in voice.tags if t.lower().startswith("use-case:")]
+    return frozenset(b for b, rx in _USE_RES.items() if any(rx.search(u) for u in raw))
 
 
 def voice_facets(catalog: Catalog, row: VoiceRow) -> dict:

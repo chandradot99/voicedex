@@ -587,7 +587,7 @@ document.addEventListener("formdata", (e) => {
         ctx.globalAlpha = hot ? 1 : 0.55;
         const r = inner + (outer - inner) * 1.1 + logo * 0.85;                  // a fixed orbit beyond the longest bar (wobble included)
         const x = c + cs * r - logo / 2, y = c + sn * r - logo / 2;
-        ctx.save(); ctx.beginPath(); ctx.roundRect(x, y, logo, logo, logo * 0.22); ctx.clip(); ctx.drawImage(im, x, y, logo, logo); ctx.restore();
+        ctx.save(); ctx.beginPath(); (ctx.roundRect ? ctx.roundRect(x, y, logo, logo, logo * 0.22) : ctx.rect(x, y, logo, logo)); ctx.clip(); ctx.drawImage(im, x, y, logo, logo); ctx.restore();
       }
     }
     ctx.globalAlpha = 1;

@@ -2,7 +2,11 @@
 
 from __future__ import annotations
 
+import os
 from datetime import date
+
+# Tests run against production behaviour, whatever a developer's .env says (load_dotenv never overrides).
+os.environ["LOCAL_DEV"] = "false"
 
 import pytest
 from httpx import ASGITransport, AsyncClient

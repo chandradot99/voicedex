@@ -16,6 +16,9 @@ class Settings(BaseSettings):
     # Behind Cloudflare's proxy, the right-most X-Forwarded-For entry is a Cloudflare edge, not the
     # visitor. Set TRUST_CF_CONNECTING_IP=true only when all traffic comes through Cloudflare.
     trust_cf_connecting_ip: bool = False
+    # Local development only: pages are sent with Cache-Control: no-store so template/CSS edits show on every page
+    # at once. Never set in production (pages there are cached for 5 minutes by browsers and the CDN).
+    local_dev: bool = False
 
     # Provider API keys — used by sync scripts
     deepgram_api_key: str = ""

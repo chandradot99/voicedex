@@ -52,7 +52,7 @@ templates.env.globals.update(
     language_name=views.language_name,
     price_label=views.price_label, price_parts=views.price_parts, price_group=views.price_group,
     PRICE_GROUP_LABELS=views.PRICE_GROUP_LABELS, MODEL_SORTS=views.MODEL_SORTS, name_adds=views.name_adds,
-    provider_logo=views.provider_logo,
+    provider_logo=views.provider_logo, MIN_GROUP=views.MIN_GROUP,
     model_url=views.model_url,
     model_key=views.model_key,
     variant_label=views.variant_label,
@@ -544,18 +544,18 @@ def _breadcrumb_ld(crumbs: list[tuple[str, str]]) -> dict:
         for i, (name, path) in enumerate(crumbs, 1)]}
 
 
-def _filter_voices(rows: list, f: dict, skip: frozenset = frozenset(), catalog: Catalog | None = None) -> list:
+def _filter_voices(rows: list, f: dict, catalog: Catalog, skip: frozenset = frozenset()) -> list:
     on = lambda k: f.get(k) and k not in skip           # noqa: E731
-    fx = (lambda r: views.voice_facets(catalog, r)) if catalog is not None else None   # noqa: E731
-    if fx and on("age"):
+    fx = lambda r: views.voice_facets(catalog, r)        # noqa: E731
+    if on("age"):
         rows = [r for r in rows if fx(r)["age"] == f["age"]]
-    if fx and on("accent"):
+    if on("accent"):
         rows = [r for r in rows if fx(r)["accent"] == f["accent"]]
-    if fx and on("use"):
+    if on("use"):
         rows = [r for r in rows if f["use"] in fx(r)["uses"]]
-    if fx and on("emotion"):
+    if on("emotion"):
         rows = [r for r in rows if fx(r)["emotion"]]
-    if fx and on("multi"):
+    if on("multi"):
         rows = [r for r in rows if fx(r)["multilingual"]]
     if on("provider"):
         rows = [r for r in rows if r.provider_id == f["provider"]]
@@ -586,8 +586,8 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     if f["sort"] not in VOICE_SORTS:
         f["sort"] = ""
     all_rows = views.active_voices(catalog)
-    rows = _filter_voices(all_rows, f, catalog=catalog)
-    without = lambda k: _filter_voices(all_rows, f, frozenset({k}), catalog)     # noqa: E731
+    rows = _filter_voices(all_rows, f, catalog)
+    without = lambda k: _filter_voices(all_rows, f, catalog, frozenset({k}))     # noqa: E731
     voice_langs = sorted(((c, views.language_name(c)) for c in {views.base_language(lang) for r in all_rows
                                                                  for lang in r.voice.languages if lang != "*"}),
                          key=lambda x: x[1])
