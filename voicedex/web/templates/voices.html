@@ -37,6 +37,37 @@
       {% if f.gender %}<input type="hidden" name="gender" value="{{ f.gender }}">{% endif %}
       {% if f.sort %}<input type="hidden" name="sort" value="{{ f.sort }}">{% endif %}
       <details class="facet-group" open>
+        <summary>{{ icons.icon("sparkle") }}<span>Use case</span>{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Use case</legend>
+          <label class="opt"><input type="radio" name="use" value="" {% if not f.use %}checked{% endif %}><span>Any</span><i></i></label>
+          {% for u in uses %}{% set n = fc.use[u] %}{% if n or f.use == u %}<label class="opt"><input type="radio" name="use" value="{{ u }}" {% if f.use == u %}checked{% endif %}><span>{{ u }}</span><i>{{ "{:,}".format(n) }}</i></label>{% endif %}{% endfor %}
+        </fieldset>
+      </details>
+      <details class="facet-group"{% if f.age %} open{% endif %}>
+        <summary>{{ icons.icon("person") }}<span>Age</span>{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Age</legend>
+          <label class="opt"><input type="radio" name="age" value="" {% if not f.age %}checked{% endif %}><span>Any</span><i></i></label>
+          {% for a in ages %}{% set n = fc.age[a] %}{% if n or f.age == a %}<label class="opt"><input type="radio" name="age" value="{{ a }}" {% if f.age == a %}checked{% endif %}><span>{{ a }}</span><i>{{ "{:,}".format(n) }}</i></label>{% endif %}{% endfor %}
+        </fieldset>
+      </details>
+      <details class="facet-group"{% if f.accent %} open{% endif %}>
+        <summary>{{ icons.icon("wave") }}<span>Accent</span>{{ icons.icon("chevron") }}</summary>
+        <label class="field"><span class="visually-hidden">Accent</span>
+          <select name="accent" data-searchable="accent">
+            <option value="">Any accent</option>
+            {% for a, n in fc.accent.most_common() %}<option value="{{ a }}" {% if f.accent == a %}selected{% endif %}>{{ a }} ({{ "{:,}".format(n) }})</option>{% endfor %}
+            {% if f.accent and not fc.accent[f.accent] %}<option value="{{ f.accent }}" selected>{{ f.accent }} (0)</option>{% endif %}
+          </select>
+        </label>
+      </details>
+      <details class="facet-group"{% if f.emotion or f.multi %} open{% endif %}>
+        <summary>{{ icons.icon("bolt") }}<span>Features</span>{{ icons.icon("chevron") }}</summary>
+        <fieldset class="facet"><legend class="visually-hidden">Features</legend>
+          <label class="opt"><input type="checkbox" name="emotion" value="1" {% if f.emotion %}checked{% endif %}><span>Emotion control</span><i>{{ "{:,}".format(fc.emotion) }}</i></label>
+          <label class="opt"><input type="checkbox" name="multi" value="1" {% if f.multi %}checked{% endif %}><span>Speaks several languages</span><i>{{ "{:,}".format(fc.multi) }}</i></label>
+        </fieldset>
+      </details>
+      <details class="facet-group" open>
         <summary>{{ icons.icon("play") }}<span>Sample</span>{{ icons.icon("chevron") }}</summary>
         <fieldset class="facet"><legend class="visually-hidden">Sample</legend>
           <label class="opt"><input type="checkbox" name="preview" value="1" {% if f.preview %}checked{% endif %}><span>Has a sample to play</span><i>{{ "{:,}".format(fc.preview) }}</i></label>

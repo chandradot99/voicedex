@@ -332,3 +332,19 @@ async def test_voices_facets(client):
     html = (await client.get("/voices?gender=male")).text
     assert re.search(r'href="/voices\?gender=female"[^>]*>Female<i>[\d,]+</i>', html)            # gender tabs with counts
     assert "Has a sample to play" in html and 'class="data voices-table"' in html
+
+
+def test_voice_facet_buckets():
+    from voicedex.catalog.schema import Voice
+    from voicedex.web.views import _age_bucket, _uses
+    assert _age_bucket("middle_aged") == _age_bucket("Middle age") == "Middle-aged"
+    assert _age_bucket("young adult") == "Young" and _age_bucket("elder") == "Older" and _age_bucket(None) is None
+    v = Voice(id="v", name="v", use_cases=["Conversational"], tags=["use-case:audiobook-long-form", "calm"])
+    assert _uses(v) == {"Conversational", "Audiobooks & stories"}
+
+
+async def test_voice_extra_filters(client):
+    for q in ("use=Narration", "age=Young", "accent=British", "emotion=1", "multi=1", "use=Nope"):
+        assert (await client.get(f"/voices?{q}")).status_code == 200
+    html = (await client.get("/voices")).text
+    assert 'name="use"' in html and 'name="emotion"' in html

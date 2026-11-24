@@ -1870,3 +1870,60 @@ def band_facts(catalog: Catalog, types: tuple[str, ...]) -> list[tuple[str, str,
     out.append(("Providers with a USD price", f"{len({r.provider_id for r, _ in priced})}",
                 f"of {len({r.provider_id for r in rows})} offering these models"))
     return out
+
+
+# ── Voice facets: provider data is free text ("middle_aged", "Middle age"; "Conversational" vs "conversational";
+# use cases also arrive as "use-case:…" tags). These buckets make it filterable. Computed once per catalog. ──
+
+VOICE_AGES = ("Young", "Adult", "Middle-aged", "Older", "Teen", "Child")
+VOICE_USES = {        # bucket → keywords matched inside use_cases and use-case tags
+    "Conversational": ("convers", "chat", "assistant", "agent"),
+    "Narration": ("narrat", "documentar", "explainer", "voiceover", "voice-over"),
+    "Audiobooks & stories": ("audiobook", "story", "storytell", "book"),
+    "Characters & gaming": ("character", "animation", "gaming", "game", "roleplay", "cartoon"),
+    "Customer service": ("customer", "support", "ivr", "call center", "call-center", "telephony"),
+    "Ads & social": ("advert", "ads", "social", "marketing", "promo", "commercial"),
+    "Education": ("educat", "learning", "training", "tutorial"),
+    "Podcasts": ("podcast",),
+    "News": ("news", "broadcast"),
+    "Meditation": ("meditat", "asmr", "wellness", "sleep"),
+}
+_FACETS: dict = {}
+
+
+def _age_bucket(age: str | None) -> str | None:
+    a = (age or "").lower().replace("_", " ").replace("-", " ")
+    if not a:
+        return None
+    if "child" in a or "kid" in a:
+        return "Child"
+    if "teen" in a:
+        return "Teen"
+    if "middle" in a:
+        return "Middle-aged"
+    if any(w in a for w in ("old", "elder", "senior", "mature")):
+        return "Older"
+    if "young" in a:
+        return "Young"
+    return "Adult" if "adult" in a else None
+
+
+def _uses(voice) -> frozenset:
+    raw = [u.lower() for u in voice.use_cases] + [t.lower()[9:] for t in voice.tags if t.lower().startswith("use-case:")]
+    return frozenset(b for b, keys in VOICE_USES.items() if any(k in u for u in raw for k in keys))
+
+
+def voice_facets(catalog: Catalog, row: VoiceRow) -> dict:
+    """{age, accent, uses, emotion, multilingual} for one voice, from a per-catalog cache."""
+    cache = _FACETS.get(id(catalog))
+    if cache is None:
+        _FACETS.clear()
+        cache = _FACETS[id(catalog)] = {}
+    key = (row.provider_id, row.voice.id)
+    if key not in cache:
+        v = row.voice
+        accent = (v.accent or "").replace("_", " ").replace("-", " ").strip().title() or None
+        cache[key] = {"age": _age_bucket(v.age), "accent": accent, "uses": _uses(v),
+                      "emotion": "emotion" in v.capabilities,
+                      "multilingual": "*" in v.languages or len(v.languages) > 1 or "multilingual_native" in v.capabilities}
+    return cache[key]

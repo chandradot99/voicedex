@@ -92,7 +92,8 @@ def _qs(f: dict, **changes) -> str:
     return urlencode({k: v for k, v in merged.items() if v}, doseq=True)
 
 
-_TOKEN_LABEL = {"type": "type", "language": "language", "capability": "feature", "provider": "provider",
+_TOKEN_LABEL = {"age": "age", "accent": "accent", "use": "use case", "emotion": "feature", "multi": "feature",
+                "type": "type", "language": "language", "capability": "feature", "provider": "provider",
                 "status": "status", "mode": "mode", "weights": "weights", "q": "name", "gender": "gender", "preview": "sample", "model": "model"}
 
 
@@ -114,6 +115,10 @@ def _token_value(key: str, value: str, catalog: Catalog) -> str:
         return {"open": "open weights", "hosted": "hosted only"}.get(value, value)
     if key == "preview":
         return "has sample"
+    if key == "emotion":
+        return "emotion control"
+    if key == "multi":
+        return "several languages"
     return value
 
 
@@ -533,8 +538,19 @@ def _breadcrumb_ld(crumbs: list[tuple[str, str]]) -> dict:
         for i, (name, path) in enumerate(crumbs, 1)]}
 
 
-def _filter_voices(rows: list, f: dict, skip: frozenset = frozenset()) -> list:
+def _filter_voices(rows: list, f: dict, skip: frozenset = frozenset(), catalog: Catalog | None = None) -> list:
     on = lambda k: f.get(k) and k not in skip           # noqa: E731
+    fx = (lambda r: views.voice_facets(catalog, r)) if catalog is not None else None   # noqa: E731
+    if fx and on("age"):
+        rows = [r for r in rows if fx(r)["age"] == f["age"]]
+    if fx and on("accent"):
+        rows = [r for r in rows if fx(r)["accent"] == f["accent"]]
+    if fx and on("use"):
+        rows = [r for r in rows if f["use"] in fx(r)["uses"]]
+    if fx and on("emotion"):
+        rows = [r for r in rows if fx(r)["emotion"]]
+    if fx and on("multi"):
+        rows = [r for r in rows if fx(r)["multilingual"]]
     if on("provider"):
         rows = [r for r in rows if r.provider_id == f["provider"]]
     if f["provider"] and f["model"]:
@@ -559,12 +575,14 @@ VOICE_SORTS = {"": "Recommended", "name": "A–Z"}
 
 @router.get("/voices", response_class=HTMLResponse)
 async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog)):
-    f = {k: _q(request, k) for k in ("provider", "model", "language", "gender", "q", "preview", "sort")}
+    f = {k: _q(request, k) for k in ("provider", "model", "language", "gender", "q", "preview", "sort",
+                                     "age", "accent", "use", "emotion", "multi")}
     if f["sort"] not in VOICE_SORTS:
         f["sort"] = ""
     all_rows = views.active_voices(catalog)
-    rows = _filter_voices(all_rows, f)
-    without = lambda k: _filter_voices(all_rows, f, frozenset({k}))     # noqa: E731
+    rows = _filter_voices(all_rows, f, catalog=catalog)
+    without = lambda k: _filter_voices(all_rows, f, frozenset({k}), catalog)     # noqa: E731
+    fx = lambda r: views.voice_facets(catalog, r)                             # noqa: E731
     gender_base = without("gender")
     by_gender = Counter(r.voice.gender for r in gender_base)
     facets = {
@@ -572,6 +590,11 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
         "language": views.language_counts(without("language"), "voice"),
         "gender": by_gender, "gender_total": len(gender_base),
         "preview": sum(1 for r in without("preview") if r.voice.preview_url or r.voice.previews),
+        "age": Counter(fx(r)["age"] for r in without("age")),
+        "accent": Counter(fx(r)["accent"] for r in without("accent") if fx(r)["accent"]),
+        "use": Counter(u for r in without("use") for u in fx(r)["uses"]),
+        "emotion": sum(1 for r in without("emotion") if fx(r)["emotion"]),
+        "multi": sum(1 for r in without("multi") if fx(r)["multilingual"]),
     }
     def _sample_rank(r) -> int:   # stable sort: samples in the filtered language, other samples, none
         s = views.voice_sample(r.voice, f["language"])
@@ -591,6 +614,7 @@ async def voices_page(request: Request, catalog: Catalog = Depends(get_catalog))
     return templates.TemplateResponse(request, "voices.html", {
         "rows": rows[(page - 1) * VOICES_PER_PAGE: page * VOICES_PER_PAGE],
         "total": len(rows), "page": page, "pages": pages, "f": f,
+        "ages": views.VOICE_AGES, "uses": list(views.VOICE_USES),
         "tokens": [t for t in _filter_tokens(f, catalog) if t[0] != _TOKEN_LABEL["gender"]],   # the tabs show it
         "facets": facets, "genders": VOICE_GENDERS, "sorts": VOICE_SORTS,
         "qs": lambda **changes: _qs({**f, "page": str(page) if page > 1 else ""}, **{k: (str(v) if v else v) for k, v in changes.items()}),
