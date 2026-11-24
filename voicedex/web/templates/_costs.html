@@ -21,7 +21,6 @@
       </div>{% endif %}
       {% with bands=[b], cap=14, animate=True, show_stats=True, mark_capped=True %}{% include "_spectrum.html" %}{% endwith %}
       <p class="spectrum-legend"><span class="key"><i class="sq-key"></i> one model</span><span class="key"><i class="sq-key ending"></i> shutdown scheduled</span><span class="key"><i class="iqr-key"></i> middle half of prices</span><span class="key"><i class="cap-key"></i> column continues (hover for the count)</span><span class="hide-sm">log scale; {{ b.unpriced }} models have no USD price</span></p>
-      {% if band_facts[b.id] %}<dl class="costs-facts">{% for label, value, note in band_facts[b.id] %}<div><dt>{{ label }}</dt><dd>{{ value }}</dd><dd class="note">{{ note }}</dd></div>{% endfor %}</dl>{% endif %}
     </div>
     {% if rates[b.id] %}
     <aside class="costs-side" aria-label="Main model of widely used providers, {{ b.title|lower }}">
@@ -32,6 +31,7 @@
       <p class="costs-links"><a href="/models?sort=price{% if b.id == 'text' %}&type=tts{% endif %}">All {{ b.title|lower }} by price</a><a href="/reports/speech-ai-pricing">Pricing report</a></p>
     </aside>
     {% endif %}
+    {% if band_facts[b.id] %}<dl class="costs-facts">{% for label, value, note in band_facts[b.id] %}<div><dt>{{ label }}</dt><dd>{{ value }}</dd><dd class="note">{{ note }}</dd></div>{% endfor %}</dl>{% endif %}
   </div>
   {% endfor %}
 </section>

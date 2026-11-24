@@ -186,7 +186,7 @@ async def home(request: Request, catalog: Catalog = Depends(get_catalog)):
         else:
             level_end.append(pos)
         stacked.append((pos, r, min(lvl, 3)))
-    recent = recent[:8]
+    recent = recent[:10]
     recent_days = []                   # recently changed, one group per day
     for r in recent:
         if not recent_days or recent_days[-1][0] != r.model.updated_at:

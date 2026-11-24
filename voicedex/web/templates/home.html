@@ -61,19 +61,16 @@
       {% for pos, r, lvl in timeline_dots %}<a class="tl-dot{% if (r.model.eol_date - today).days <= 30 %} soon{% endif %}" href="{{ model_url(r) }}" tabindex="-1" style="left: {{ '%.2f'|format(pos) }}%; --lvl: {{ lvl }}" data-tip="{{ names[r.provider_id] }}|{{ r.model.name }}|Ends {{ r.model.eol_date.strftime('%b %-d, %Y') }}"></a>{% endfor %}
     </div>
   </div>
-  <table class="data eol-table">
-    <thead><tr><th scope="col">Model</th><th scope="col" class="hide-sm">Replacement</th><th scope="col" class="num">Days left</th></tr></thead>
-    <tbody>
-      {% for r in upcoming_eol[1:7] %}{% set d = (r.model.eol_date - today).days %}
-      <tr>
-        <th scope="row"><a href="{{ model_url(r) }}">{{ r.model.name }}</a><span class="sub with-logo">{{ cells.logo(r.provider_id, names[r.provider_id], "xs") }}{{ names[r.provider_id] }} · {{ r.model.eol_date.strftime('%-d %b %Y') }}</span></th>
-        <td class="hide-sm muted">{% if r.model.meta.get('replacement') %}<code>{{ r.model.meta.get('replacement') }}</code>{% else %}–{% endif %}</td>
-        <td class="num days-cell{% if d <= 30 %} urgent{% endif %}"><span class="days-bar" aria-hidden="true"><i style="width: {{ [100, (d / 365 * 100)|round]|min }}%"></i></span>{{ d }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-  {% if upcoming_eol|length > 7 %}<p class="more-link"><a href="/models?status=ending">All {{ upcoming_eol|length }} scheduled shutdowns</a></p>{% endif %}
+  <ul class="eol-list">
+    {% for r in upcoming_eol[1:6] %}{% set d = (r.model.eol_date - today).days %}{% set repl = r.model.meta.get('replacement') %}
+    <li>
+      <a class="eol-name" href="{{ model_url(r) }}">{{ r.model.name }}</a>
+      <span class="eol-meta with-logo">{{ cells.logo(r.provider_id, names[r.provider_id], "xs") }}{{ names[r.provider_id] }} · {{ r.model.eol_date.strftime('%-d %b %Y') }}{% if repl %}<span class="eol-repl"> → <code title="Replacement">{{ repl }}</code></span>{% endif %}</span>
+      <span class="eol-days{% if d <= 30 %} urgent{% endif %}"><span class="days-bar" aria-hidden="true"><i style="width: {{ [100, (d / 60 * 100)|round]|min }}%"></i></span>{{ d }}<small> days</small></span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% if upcoming_eol|length > 6 %}<p class="more-link"><a href="/models?status=ending">All {{ upcoming_eol|length }} scheduled shutdowns</a></p>{% endif %}
   {% else %}<p class="section-note">No announced shutdowns.</p>{% endif %}
 </section>
 

@@ -1342,3 +1342,22 @@ h1.with-logo { display: flex; gap: 14px; }
   .countdown { gap: 14px; padding: 14px 16px; } .cd-days { font-size: 44px; }
 }
 .map-tools { justify-content: flex-end; }
+
+/* Costs: chart column and provider card end together; facts run full width underneath */
+.costs-band { align-items: stretch; }
+.costs-side { display: flex; flex-direction: column; margin-top: 0; }
+.costs-side .rate-list { flex: 1; display: flex; flex-direction: column; justify-content: space-around; }
+.costs-facts { grid-column: 1 / -1; margin-top: 44px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 760px) { .costs-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; } }
+
+/* Shutdowns: compact two-line rows; days on a 60-day scale */
+.eol-list { list-style: none; margin: 26px 0 0; padding: 0; border-top: 1px solid var(--rule-2); }
+.eol-list li { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; column-gap: 20px; row-gap: 3px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.eol-name { grid-column: 1; font-weight: 500; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.eol-name:hover { text-decoration: underline; }
+.eol-meta { grid-column: 1; font-size: 13px; color: var(--muted); gap: 6px; min-width: 0; white-space: nowrap; overflow: hidden; }
+.eol-repl code { font-size: 12px; color: var(--ink-2); }
+.eol-days { grid-column: 2; grid-row: 1 / 3; align-self: center; display: inline-flex; align-items: center; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.eol-days small { font-size: 12px; font-weight: 400; color: var(--muted); margin-left: 3px; }
+.eol-days.urgent { color: var(--end); }
+.costs-band > .costs-side { align-self: stretch; }
