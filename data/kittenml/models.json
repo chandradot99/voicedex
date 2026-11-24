@@ -68,6 +68,9 @@
       ],
       "chinese_dialect_hints": true,
       "diarization_note": "turn-level only; not on WebRTC",
+      "docs_sources": [
+        "https://docs.kittenml.com/models"
+      ],
       "max_upload_bytes": 26214400,
       "realtime_encodings": [
         "pcm_s16le 16/24 kHz",
@@ -114,13 +117,15 @@
         "https://docs.kittenml.com/tts/generate-speech"
       ]
     },
+    "recommended": true,
+    "recommended_for": "upload and realtime transcription",
     "sample_rates_hz": [
       8000,
       16000,
       24000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "first_seen": "2026-11-18",
@@ -218,6 +223,9 @@
     "meta": {
       "alias_note": "Output can change between releases; no pinned snapshot id is published.",
       "default_voice": "eleanor_en",
+      "docs_sources": [
+        "https://docs.kittenml.com/models"
+      ],
       "emotion_tags_status": "experimental",
       "moving_alias": true,
       "parameters": "1.7B (ternary)",
@@ -260,11 +268,13 @@
         "https://docs.kittenml.com/tts/generate-speech"
       ]
     },
+    "recommended": true,
+    "recommended_for": "voice cloning, emotion tags, most voices and languages",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -286,6 +296,9 @@
     ],
     "max_text_chars": 40000,
     "meta": {
+      "docs_sources": [
+        "https://docs.kittenml.com/models"
+      ],
       "huggingface_alias": "KittenML/kitten-tts-2-mini",
       "language_count": 16,
       "parameters": "82M",
@@ -308,11 +321,13 @@
         "https://docs.kittenml.com/tts/generate-speech"
       ]
     },
+    "recommended": true,
+    "recommended_for": "small, fast model in many languages",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -334,6 +349,9 @@
     ],
     "max_text_chars": 40000,
     "meta": {
+      "docs_sources": [
+        "https://docs.kittenml.com/models"
+      ],
       "huggingface_alias": "KittenML/kitten-tts-2-nano",
       "language_count": 8,
       "parameters": "17M per language",
@@ -356,11 +374,13 @@
         "https://docs.kittenml.com/tts/generate-speech"
       ]
     },
+    "recommended": true,
+    "recommended_for": "smallest models, one language per request",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -382,6 +402,9 @@
     ],
     "max_text_chars": 40000,
     "meta": {
+      "docs_sources": [
+        "https://docs.kittenml.com/models"
+      ],
       "huggingface_alias": "KittenML/kitten-tts-2-pico",
       "language_count": 8,
       "parameters": "7M per language",
@@ -404,11 +427,13 @@
         "https://docs.kittenml.com/tts/generate-speech"
       ]
     },
+    "recommended": true,
+    "recommended_for": "smallest models, one language per request",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [
@@ -432,6 +457,9 @@
     "meta": {
       "api_default_when_model_omitted": true,
       "default_voice": "Bella",
+      "docs_sources": [
+        "https://docs.kittenml.com/models"
+      ],
       "free": "Docs: 'KittenTTS 0.8 Mini is free, but authentication is still required.'",
       "parameters": "80M",
       "retired_siblings": [
@@ -457,10 +485,12 @@
         "https://docs.kittenml.com/tts/generate-speech"
       ]
     },
+    "recommended": true,
+    "recommended_for": "same voices as the on-device KittenTTS SDKs",
     "sample_rates_hz": [
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

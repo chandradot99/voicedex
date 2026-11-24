@@ -198,6 +198,10 @@
     "max_audio_seconds": 7200,
     "meta": {
       "channel_separation": true,
+      "docs_sources": [
+        "https://developers.zoom.us/docs/ai-services/scribe/speech-configuration.md",
+        "https://developers.zoom.us/docs/ai-services/scribe.md"
+      ],
       "input_formats_note": "Fast/Batch: WAV, M4A, MP3, MP4, WebM (>= 8 kHz, 16 kHz+ recommended). Live: PCM16 16 kHz mono or bare Opus packets.",
       "limits": "Fast/Batch: 2 h per file, 300 MB via URL (2 MB as data URL in Fast). Live: 120-minute sessions.",
       "modes": [
@@ -241,8 +245,10 @@
         "https://www.zoom.com/en/products/ai-services/scribe-api/"
       ]
     },
+    "recommended": true,
+    "recommended_for": "higher-accuracy English transcription",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

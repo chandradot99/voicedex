@@ -7,6 +7,9 @@
       "ru"
     ],
     "meta": {
+      "docs_sources": [
+        "https://huggingface.co/t-tech/T-one"
+      ],
       "github": "https://github.com/voicekit-team/T-one",
       "huggingface_repo": "t-tech/T-one",
       "parameters": "71M",
@@ -28,8 +31,9 @@
         "https://developer.tbank.ru/voicekit/api/synthesis/ttstutorial"
       ]
     },
+    "released_on": "2025-07-18",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

@@ -11,6 +11,9 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://console.groq.com/docs/speech-to-text"
+      ],
       "hugging_face_id": "openai/whisper-large-v3",
       "model_card": "https://huggingface.co/openai/whisper-large-v3",
       "upstream": "OpenAI"
@@ -30,9 +33,11 @@
         "https://api.groq.com/openai/v1/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "error-sensitive multilingual transcription, translation",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "batch": true,
@@ -45,6 +50,9 @@
       "*"
     ],
     "meta": {
+      "docs_sources": [
+        "https://console.groq.com/docs/speech-to-text"
+      ],
       "hugging_face_id": "openai/whisper-large-v3-turbo",
       "upstream": "OpenAI"
     },
@@ -63,9 +71,11 @@
         "https://api.groq.com/openai/v1/models"
       ]
     },
+    "recommended": true,
+    "recommended_for": "lower-cost multilingual transcription",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-24"
   },
   {
     "first_seen": "2026-11-16",

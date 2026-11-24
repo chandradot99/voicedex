@@ -32,6 +32,9 @@
         "volume"
       ],
       "custom_models": "Style-Bert-VITS2 models converted with AIVM Generator can be uploaded and used via the API.",
+      "docs_sources": [
+        "https://aivis-project.com/cloud-api/"
+      ],
       "endpoint": "POST https://api.aivis-project.com/v1/tts/synthesize",
       "model_architecture": "Style-Bert-VITS2 (JP-Extra)",
       "model_selection": "The API has no engine/model-id parameter: requests pass `model_uuid` (an AivisHub AIVM voice model UUID, or an `ak_` access key for unlisted models) plus optional `speaker_uuid` and `style_id`/`style_name`.",
@@ -63,9 +66,12 @@
         "https://api.aivis-project.com/v1/docs"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Japanese text-to-speech",
     "regions": [
       "asia"
     ],
+    "released_on": "2025-07",
     "sample_rates_hz": [
       8000,
       11025,
@@ -77,6 +83,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]

@@ -109,6 +109,9 @@
     "max_audio_seconds": 60,
     "meta": {
       "api": "POST https://clovaspeech-gw.ncloud.com/recog/v1/stt?lang=Kor|Eng|Jpn|Chn",
+      "docs_sources": [
+        "https://guide.ncloud-docs.com/docs/en/clovaspeech-releasenote"
+      ],
       "max_file_size": "10 MB",
       "pronunciation_assessment": "English only per API reference (pricing page says Korean and English)"
     },
@@ -149,9 +152,10 @@
     "regions": [
       "asia"
     ],
+    "released_on": "2023-11-23",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   },
   {
     "audio_formats": [

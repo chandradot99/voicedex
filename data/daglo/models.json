@@ -57,6 +57,10 @@
     ],
     "max_audio_seconds": 14400,
     "meta": {
+      "docs_sources": [
+        "https://apis.daglo.ai/en/docs",
+        "https://developers.daglo.ai/guide/en/STT-Async.html"
+      ],
       "endpoints": {
         "async": "POST https://apis.daglo.ai/stt/v1/async/transcripts (<=4 h, <=2 GB)",
         "stream": "gRPC dagloapis.speech.v1.Speech/StreamingRecognize",
@@ -94,7 +98,9 @@
         "https://developers.daglo.ai/pricing"
       ]
     },
+    "recommended": true,
+    "recommended_for": "Korean and Korean-English speech recognition",
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
