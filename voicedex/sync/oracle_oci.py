@@ -10,7 +10,10 @@ from voicedex.sync.docs_only import DocsOnlySyncer
 class OracleOCISyncer(DocsOnlySyncer):
     provider_id = "oracle-oci"
     stt_docs = [
-        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/create-trans-job.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-live-transcribe.htm",
+        "https://docs.oracle.com/en-us/iaas/releasenotes/services/speech/",
         "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
     ]
     stt_guidance = (
@@ -19,7 +22,7 @@ class OracleOCISyncer(DocsOnlySyncer):
         "regions from the documented OCI regions mapped to us|eu|asia."
     )
     tts_docs = [
-        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech-overview.htm",
+        "https://docs.oracle.com/en-us/iaas/Content/speech/using/speech.htm",
         "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-tts.htm",
         "https://docs.oracle.com/en-us/iaas/Content/speech/using/using-realtime-tts-api.htm",
         "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/?currencyCode=USD",
