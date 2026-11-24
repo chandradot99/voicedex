@@ -579,6 +579,10 @@
     "audio_formats": [
       "pcm"
     ],
+    "capabilities": [
+      "phoneme_input",
+      "prosody_control"
+    ],
     "description": "Text-to-speech for ten Indian languages in which every voice id speaks every language, returned as raw PCM over REST or a streaming WebSocket.",
     "first_seen": "2026-11-18",
     "id": "bodhi-tts",
@@ -600,8 +604,15 @@
       "te"
     ],
     "meta": {
+      "capability_notes": {
+        "phoneme_input": "per-request g2p_overrides (word to tokens)",
+        "prosody_control": "speed 0.25-4.0"
+      },
       "concurrency": "5 concurrent requests per account by default",
       "default_output_format": "24000:float32",
+      "docs_sources": [
+        "https://docs.navana.ai/api-reference/synthesize/index.md"
+      ],
       "encodings": [
         "pcm16",
         "float32"
@@ -634,6 +645,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-24"
   }
 ]
