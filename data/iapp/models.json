@@ -207,6 +207,14 @@
     "languages": [
       "th"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "final text after speaker stops; 90% within 1 s",
+      "metric": "transcript_latency",
+      "ms": 660.0,
+      "qualifier": "median",
+      "source_url": "https://iapp.co.th/en/docs/speech/speech-to-text/realtime"
+    },
     "max_audio_seconds": 14400,
     "meta": {
       "docs": "https://iapp.co.th/en/docs/speech/speech-to-text/realtime",
@@ -246,7 +254,7 @@
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
