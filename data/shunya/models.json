@@ -452,6 +452,14 @@
       "te",
       "ur"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "streaming TTS, text in to first audio",
+      "metric": "time_to_first_audio",
+      "ms": 350.0,
+      "qualifier": "under",
+      "source_url": "https://www.shunyalabs.ai/docs/get-started/capability-matrix-z0f0"
+    },
     "max_text_chars": 10000,
     "meta": {
       "default_note": "Radiance models table: 'The default.'",
@@ -512,7 +520,7 @@
       16000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "description": "Text-to-speech for 11 East and Southeast Asian languages, including Japanese, Korean and Chinese.",
