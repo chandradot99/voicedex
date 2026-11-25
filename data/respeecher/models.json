@@ -78,6 +78,14 @@
     "languages": [
       "ar"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "voice streaming",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://respeecher.com/real-time-tts-api"
+    },
     "max_text_chars": 5000,
     "meta": {
       "api": "Space API (X-API-Key header)",
@@ -122,7 +130,7 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -140,6 +148,14 @@
     "languages": [
       "de"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "voice streaming",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://respeecher.com/real-time-tts-api"
+    },
     "max_text_chars": 5000,
     "meta": {
       "api": "Space API (X-API-Key header)",
@@ -184,7 +200,7 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -203,6 +219,14 @@
     "languages": [
       "en"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "voice streaming",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://respeecher.com/real-time-tts-api"
+    },
     "max_text_chars": 5000,
     "meta": {
       "api": "Space API (X-API-Key header)",
@@ -248,7 +272,7 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
@@ -316,6 +340,14 @@
     "languages": [
       "pt-BR"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "voice streaming",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://respeecher.com/real-time-tts-api"
+    },
     "max_text_chars": 5000,
     "meta": {
       "api": "Space API (X-API-Key header)",
@@ -360,7 +392,7 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -378,6 +410,14 @@
     "languages": [
       "sv"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "voice streaming",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://respeecher.com/real-time-tts-api"
+    },
     "max_text_chars": 5000,
     "meta": {
       "api": "Space API (X-API-Key header)",
@@ -422,7 +462,7 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -440,6 +480,14 @@
     "languages": [
       "uk"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "voice streaming",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://respeecher.com/real-time-tts-api"
+    },
     "max_text_chars": 5000,
     "meta": {
       "api": "Space API (X-API-Key header)",
@@ -485,6 +533,6 @@
       ]
     },
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   }
 ]
