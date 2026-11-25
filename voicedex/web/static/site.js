@@ -363,7 +363,7 @@ addEventListener("pageswap", (e) => {
   const path = new URL(url).pathname;
   if (!path.startsWith("/models/")) return;
   // The page title is the id: morph from the id under a table row's name, or from an id inside the link itself.
-  const idOf = (a) => a.querySelector("code") || a.closest("th")?.querySelector(".model-id code")
+  const idOf = (a) => a.querySelector("code") || (a.closest("th") || a.parentElement)?.querySelector(".model-id code")
     || (a.classList.contains("row-name") ? a : null);
   const link = $$(`a[href="${CSS.escape(path)}"]`).find((a) => idOf(a) && a.getBoundingClientRect().height);
   if (link) idOf(link).style.viewTransitionName = "model-title";
