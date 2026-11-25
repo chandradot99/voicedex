@@ -8,6 +8,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/simba-3-0"
+      }
+    ],
     "capabilities": [
       "prosody_control",
       "ssml",
@@ -29,6 +36,14 @@
       "it-IT",
       "pt-BR"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side first byte, US East, 15 Sep 2026",
+      "metric": "time_to_first_audio",
+      "ms": 161.0,
+      "qualifier": "median",
+      "source_url": "https://docs.speechify.ai/build/guides/text-to-speech/latency"
+    },
     "max_text_chars": 20000,
     "meta": {
       "api_default": true,
@@ -103,7 +118,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -113,6 +128,13 @@
       "ogg",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/simba-3-2"
+      }
     ],
     "capabilities": [
       "prosody_control",
@@ -129,6 +151,14 @@
     "languages": [
       "en"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side first byte, US East, 15 Sep 2026; p90 102 ms",
+      "metric": "time_to_first_audio",
+      "ms": 56.0,
+      "qualifier": "median",
+      "source_url": "https://docs.speechify.ai/build/guides/text-to-speech/latency"
+    },
     "max_text_chars": 20000,
     "meta": {
       "docs_sources": [
@@ -211,7 +241,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -221,6 +251,13 @@
       "ogg",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/simba-3-5"
+      }
     ],
     "capabilities": [
       "phoneme_input",
@@ -374,7 +411,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
