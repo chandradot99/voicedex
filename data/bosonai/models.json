@@ -19,6 +19,13 @@
       "websocket"
     ],
     "is_default": true,
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "speech-in to speech-out",
+      "metric": "voice_to_voice",
+      "ms": 700.0,
+      "source_url": "https://www.boson.ai/"
+    },
     "meta": {
       "audio_formats_raw": [
         "audio/pcm (PCM16 LE mono)",
@@ -104,7 +111,7 @@
       48000
     ],
     "type": "sts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
