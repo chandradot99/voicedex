@@ -67,6 +67,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/mimo-v2-5-tts"
+      }
+    ],
     "capabilities": [
       "emotion",
       "style_control"
@@ -114,7 +121,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
