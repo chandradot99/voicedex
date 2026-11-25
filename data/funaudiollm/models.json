@@ -1,5 +1,12 @@
 [
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary"
     ],
@@ -45,7 +52,7 @@
     "released_on": "2025-12-15",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
