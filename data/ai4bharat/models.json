@@ -1,5 +1,12 @@
 [
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard?tab=multilingual"
+      }
+    ],
     "first_seen": "2026-11-18",
     "id": "ai4bharat/indic-conformer-600m-multilingual",
     "meta": {
@@ -23,7 +30,7 @@
     "released_on": "2025-03-15",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
