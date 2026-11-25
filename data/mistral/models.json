@@ -1,6 +1,13 @@
 [
   {
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/mistral"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -63,10 +70,17 @@
     "released_on": "2026-02-04",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/mistral"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -175,11 +189,23 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
       "pcm"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/mistral"
+      }
     ],
     "description": "Voxtral 2 open-weight 4B realtime streaming transcription model in 13 languages.",
     "eol_date": "2027-04-30",
@@ -203,6 +229,14 @@
       "it",
       "nl"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "configurable delay, at its lowest setting",
+      "metric": "transcript_latency",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://mistral.ai/news/voxtral-transcribe-2"
+    },
     "meta": {
       "aliases": [
         "voxtral-mini-realtime-latest"
@@ -241,11 +275,18 @@
     "recommended": false,
     "released_on": "2026-02-04",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
       "pcm"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/mistral"
+      }
     ],
     "capabilities": [
       "custom_vocabulary",
@@ -305,10 +346,17 @@
       "voxtral-mini-transcribe-realtime-2602"
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/mistral"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -419,12 +467,19 @@
     "released_on": "2026-10-20",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
       "mp3",
       "pcm"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/voxtral-tts"
+      }
     ],
     "capabilities": [
       "voice_cloning"
@@ -486,7 +541,7 @@
     "recommended": false,
     "released_on": "2026-03-23",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -495,6 +550,13 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/voxtral-3-tts"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -609,6 +671,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]

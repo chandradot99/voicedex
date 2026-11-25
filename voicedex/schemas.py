@@ -87,6 +87,8 @@ class ModelOut(BaseModel):
     capabilities: list[str]
     regions: list[str]
     pricing: dict
+    latency: dict | None = None        # the vendor's published figure (never measured by Voicedex)
+    benchmarks: list[dict] = []        # independent public benchmarks that list this model
     open_weights: dict | None
     eol_date: date | None
     meta: dict
@@ -108,6 +110,8 @@ class ModelOut(BaseModel):
             max_text_chars=m.max_text_chars, max_audio_seconds=m.max_audio_seconds,
             capabilities=m.capabilities, regions=list(m.regions),
             pricing={k: v for k, v in (d["pricing"] or {}).items() if v not in (None, [])},
+            latency={k: v for k, v in d["latency"].items() if v is not None} if d["latency"] else None,
+            benchmarks=d["benchmarks"],
             open_weights=d["open_weights"], eol_date=m.eol_date, meta=m.meta,
             provenance=d["provenance"], first_seen=m.first_seen,
             deprecated_at=_dt(m.deprecated_at), updated_at=_dt(m.updated_at),

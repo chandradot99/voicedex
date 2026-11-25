@@ -30,6 +30,8 @@ download it as one JSON file.
 - **Compare models side by side** on languages, features, price, limits and audio formats
   ([compare](https://voicedex.dev/compare)), or two providers head to head
   ([Deepgram vs ElevenLabs](https://voicedex.dev/compare/deepgram-vs-elevenlabs)).
+- **See published latency and independent benchmarks**: each vendor's own latency figure, labelled as their
+  claim, and links to public leaderboards (Open ASR Leaderboard, Artificial Analysis, TTS Arena) that test it.
 - **See what works with your framework**: providers with a built-in LiveKit, Pipecat, Vapi or Retell
   integration, from each framework's own docs
   ([text-to-speech for Pipecat](https://voicedex.dev/text-to-speech/pipecat),

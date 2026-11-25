@@ -233,6 +233,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/drama3"
+      }
+    ],
     "capabilities": [
       "emotion",
       "multi_speaker",
@@ -297,7 +304,7 @@
     ],
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -305,6 +312,18 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/openaudio-s1"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -378,7 +397,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -386,6 +405,13 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/fish-audio-s2-pro"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -402,6 +428,12 @@
     "languages": [
       "*"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "metric": "time_to_first_audio",
+      "ms": 100.0,
+      "source_url": "https://docs.fish.audio/developer-guide/models-pricing/models-overview"
+    },
     "meta": {
       "declared_language_count": "80+",
       "docs_sources": [
@@ -447,7 +479,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -473,6 +505,13 @@
     "languages": [
       "*"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "standard API; ~70 ms at single request",
+      "metric": "time_to_first_audio",
+      "ms": 90.0,
+      "source_url": "https://fish.audio/blog/s2-1-pro-free-api/"
+    },
     "meta": {
       "declared_language_count": 83,
       "docs_sources": [
@@ -523,7 +562,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -547,6 +586,14 @@
     "languages": [
       "*"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "TTFB p50 at concurrency 1 on H200; best-effort, no guarantee",
+      "metric": "time_to_first_audio",
+      "ms": 73.0,
+      "qualifier": "median",
+      "source_url": "https://fish.audio/blog/tts-inference-optimization-s2-pro-free/"
+    },
     "meta": {
       "declared_language_count": 83,
       "docs_sources": [
@@ -594,6 +641,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]

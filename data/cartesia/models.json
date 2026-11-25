@@ -6,6 +6,13 @@
       "pcm"
     ],
     "batch": false,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/ink-2"
+      }
+    ],
     "capabilities": [
       "language_detection"
     ],
@@ -64,7 +71,7 @@
     "recommended_for": "streaming STT for production voice agents",
     "released_on": "2026-10-13",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -73,6 +80,13 @@
       "pcm"
     ],
     "batch": false,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/ink-preview"
+      }
+    ],
     "capabilities": [
       "language_detection"
     ],
@@ -121,7 +135,7 @@
     },
     "released_on": "2026-11-17",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -445,6 +459,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/sonic3"
+      }
+    ],
     "capabilities": [
       "emotion",
       "prosody_control"
@@ -500,6 +521,14 @@
       "mr",
       "pa"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "stated at Sonic 3 launch (snapshot 2025-10-27)",
+      "metric": "time_to_first_audio",
+      "ms": 190.0,
+      "qualifier": "median",
+      "source_url": "https://docs.cartesia.ai/changelog/2025"
+    },
     "meta": {
       "docs_sources": [
         "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models"
@@ -559,7 +588,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -695,6 +724,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/sonic-3-5"
+      }
+    ],
     "capabilities": [
       "emotion",
       "prosody_control"
@@ -750,6 +786,14 @@
       "mr",
       "pa"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "\"sub-90ms latency\"",
+      "metric": "time_to_first_audio",
+      "ms": 90.0,
+      "qualifier": "under",
+      "source_url": "https://docs.cartesia.ai/build-with-cartesia/tts-models/sonic-3-5"
+    },
     "meta": {
       "docs_sources": [
         "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
@@ -813,7 +857,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -879,6 +923,14 @@
       "mr",
       "pa"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "\"sub-90ms latency\"",
+      "metric": "time_to_first_audio",
+      "ms": 90.0,
+      "qualifier": "under",
+      "source_url": "https://docs.cartesia.ai/build-with-cartesia/tts-models/sonic-3-5"
+    },
     "meta": {
       "docs_sources": [
         "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models"
@@ -939,7 +991,7 @@
     ],
     "snapshot_date": "2026-05-04",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -948,6 +1000,13 @@
       "mulaw",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/sonic-3-6"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -1008,6 +1067,13 @@
       "or",
       "ur"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "first byte of audio (\"about 90ms\")",
+      "metric": "time_to_first_audio",
+      "ms": 90.0,
+      "source_url": "https://docs.cartesia.ai/get-started/overview"
+    },
     "meta": {
       "docs_sources": [
         "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
@@ -1072,7 +1138,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -1141,6 +1207,13 @@
       "or",
       "ur"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "first byte of audio (\"about 90ms\")",
+      "metric": "time_to_first_audio",
+      "ms": 90.0,
+      "source_url": "https://docs.cartesia.ai/get-started/overview"
+    },
     "meta": {
       "docs_sources": [
         "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest"
@@ -1200,7 +1273,7 @@
     ],
     "snapshot_date": "2026-08-27",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [

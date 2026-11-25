@@ -253,6 +253,13 @@
       "mulaw",
       "pcm"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/kugel-3"
+      }
+    ],
     "capabilities": [
       "phoneme_input",
       "prosody_control",
@@ -306,6 +313,14 @@
       "id",
       "ms"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "WebSocket; network round trip included, connection setup excluded",
+      "metric": "time_to_first_audio",
+      "ms": 91.0,
+      "qualifier": "median",
+      "source_url": "https://www.kugelaudio.com/"
+    },
     "max_text_chars": 10000,
     "meta": {
       "break_tags": true,
@@ -352,7 +367,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [

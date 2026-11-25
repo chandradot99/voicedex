@@ -179,6 +179,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/stepaudio"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary"
     ],
@@ -231,12 +238,19 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
       "ogg",
       "pcm"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/stepaudio"
+      }
     ],
     "capabilities": [
       "word_timestamps"
@@ -283,7 +297,7 @@
       ]
     },
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -294,6 +308,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/stepfun"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary"
     ],
@@ -347,7 +368,7 @@
     },
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -356,6 +377,13 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/step-audio-2.5-tts"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -419,7 +447,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -428,6 +456,13 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/stepaudio-3-tts"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -498,6 +533,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   }
 ]

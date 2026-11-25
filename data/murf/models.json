@@ -204,6 +204,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/murf-speech-gen-2"
+      }
+    ],
     "capabilities": [
       "phoneme_input",
       "prosody_control",
@@ -293,7 +300,7 @@
     ],
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -304,6 +311,13 @@
       "ogg",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/falcon-2.1"
+      }
     ],
     "capabilities": [
       "phoneme_input",
@@ -362,6 +376,13 @@
       "vi-VN",
       "zh-CN"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "first audio byte, streaming",
+      "metric": "time_to_first_audio",
+      "ms": 100.0,
+      "source_url": "https://murf.ai/api/docs/text-to-speech-models/falcon-2-1"
+    },
     "meta": {
       "accepted_aliases": [
         "falcon-2",
@@ -427,6 +448,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]

@@ -1,6 +1,18 @@
 [
   {
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard?tab=multilingual"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/soniox"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -131,7 +143,7 @@
     "released_on": "2026-06-11",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
@@ -264,6 +276,13 @@
     "updated_at": "2026-11-24"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/soniox-realtime"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -394,9 +413,16 @@
     "recommended": false,
     "released_on": "2026-06-16",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/soniox-realtime"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -474,6 +500,14 @@
       "vi",
       "cy"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "time to final segment after speech ends; P95 324 ms",
+      "metric": "transcript_latency",
+      "ms": 266.0,
+      "qualifier": "median",
+      "source_url": "https://soniox.com/benchmarks"
+    },
     "meta": {
       "agent_text_input": true,
       "docs_sources": [
@@ -524,9 +558,16 @@
       "stt-rt-v5"
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/soniox-tts-rt-v2"
+      }
+    ],
     "capabilities": [
       "prosody_control",
       "voice_cloning"
@@ -643,6 +684,6 @@
     "recommended_for": "real-time text-to-speech",
     "released_on": "2026-08-11",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]

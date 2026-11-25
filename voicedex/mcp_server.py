@@ -38,7 +38,9 @@ server = MCPServer(
         "STS = speech-to-speech/realtime) and voices. Prices are normalized: TTS in USD per 1M characters, STT and "
         "STS in USD per hour of audio; non-USD prices are shown as published and never converted. Languages are "
         "BCP-47 ('hi' matches 'hi-IN'); 'many' means the provider supports many languages without listing them. "
-        "A missing capability means 'not documented', not 'unsupported'. Cite the returned url so users can verify."
+        "A missing capability means 'not documented', not 'unsupported'. vendor_latency_claim is the vendor's own "
+        "published figure, not a measurement; vendors measure differently, so present it as their claim and never "
+        "rank models by it. Cite the returned url so users can verify."
     ),
 )
 
@@ -103,6 +105,10 @@ def _model_summary(cat: Catalog, r) -> dict[str, Any]:
         "languages": _lang_count(m),
         "capabilities": sorted(m.capabilities),
         "works_with": views.model_frameworks(cat, r),   # voice-agent frameworks with a first-party integration
+        # The vendor's own published latency (not measured by Voicedex; vendors measure differently, so don't rank)
+        "vendor_latency_claim": views.latency_label(m) or None,
+        "vendor_latency_source": m.latency.source_url if m.latency else None,
+        "benchmarks": [{"name": views.BENCHMARK_LABELS.get(b.name, b.name), "url": b.url} for b in m.benchmarks] or None,
         "streaming": _streams(m),
         "batch": m.batch,
         "open_weights": m.open_weights is not None,
@@ -359,7 +365,7 @@ def _compare_detail(cat: Catalog, r) -> dict[str, Any]:
     }
 
 
-_DIFF_FIELDS = ("price", "streaming", "batch", "languages", "regions", "interfaces", "max_text_chars",
+_DIFF_FIELDS = ("price", "vendor_latency_claim", "streaming", "batch", "languages", "regions", "interfaces", "max_text_chars",
                 "max_audio_seconds", "lifecycle", "eol_date", "open_weights")
 
 

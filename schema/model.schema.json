@@ -1,5 +1,37 @@
 {
   "$defs": {
+    "BenchmarkLink": {
+      "additionalProperties": false,
+      "properties": {
+        "as_of": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "As Of"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "url"
+      ],
+      "title": "BenchmarkLink",
+      "type": "object"
+    },
     "FreeQuota": {
       "additionalProperties": false,
       "properties": {
@@ -41,6 +73,62 @@
       ],
       "title": "Interface",
       "type": "string"
+    },
+    "LatencyClaim": {
+      "additionalProperties": false,
+      "description": "A latency figure from the vendor's own pages, shown as the vendor's claim.",
+      "properties": {
+        "as_of": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "As Of"
+        },
+        "conditions": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conditions"
+        },
+        "metric": {
+          "title": "Metric",
+          "type": "string"
+        },
+        "ms": {
+          "exclusiveMinimum": 0,
+          "title": "Ms",
+          "type": "number"
+        },
+        "qualifier": {
+          "default": "typical",
+          "title": "Qualifier",
+          "type": "string"
+        },
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ms",
+        "metric",
+        "source_url"
+      ],
+      "title": "LatencyClaim",
+      "type": "object"
     },
     "Lifecycle": {
       "enum": [
@@ -324,6 +412,13 @@
       "default": null,
       "title": "Batch"
     },
+    "benchmarks": {
+      "items": {
+        "$ref": "#/$defs/BenchmarkLink"
+      },
+      "title": "Benchmarks",
+      "type": "array"
+    },
     "capabilities": {
       "items": {
         "type": "string"
@@ -418,6 +513,17 @@
       },
       "title": "Languages",
       "type": "array"
+    },
+    "latency": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/LatencyClaim"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
     },
     "lifecycle": {
       "$ref": "#/$defs/Lifecycle",

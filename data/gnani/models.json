@@ -271,6 +271,14 @@
       "ta-IN",
       "te-IN"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "time to first byte",
+      "metric": "time_to_first_audio",
+      "ms": 150.0,
+      "qualifier": "under",
+      "source_url": "https://gnani.ai/resources/timbre-v3"
+    },
     "meta": {
       "also": "SSE streaming and WebSocket realtime endpoints",
       "audio_tags": "<laugh>, <sigh>, <whispers>, <pauses>, <excited> and others inline in text",
@@ -314,7 +322,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [

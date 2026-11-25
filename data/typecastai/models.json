@@ -118,6 +118,13 @@
       "mp3",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "emotion",
       "prosody_control",
@@ -238,7 +245,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [

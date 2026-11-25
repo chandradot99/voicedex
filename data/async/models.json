@@ -78,6 +78,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/asyncflow-v2"
+      }
+    ],
     "capabilities": [
       "phoneme_input",
       "prosody_control",
@@ -162,13 +169,20 @@
     "recommended": true,
     "recommended_for": "languages Flash v1.5 lacks (Armenian, Russian, etc.)",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
       "mp3",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/async-flash-v1-5"
+      }
     ],
     "capabilities": [
       "phoneme_input",
@@ -236,13 +250,20 @@
     "recommended": true,
     "recommended_for": "real-time voice agents",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
       "mp3",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/async-pro-v1-0"
+      }
     ],
     "capabilities": [
       "phoneme_input",
@@ -304,6 +325,6 @@
     "recommended": true,
     "recommended_for": "pre-rendered content, audiobooks (English)",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]

@@ -266,6 +266,23 @@ FEATURE_LABELS = {
     "function_calling": "Function calling", "turn_detection": "Turn detection",
     "barge_in": "Interruptions (barge-in)", "transcription": "Transcripts", "video_input": "Video input",
 }
+LATENCY_METRIC_LABELS = {"time_to_first_audio": "to first audio", "transcript_latency": "to transcript",
+                         "voice_to_voice": "voice to voice"}
+BENCHMARK_LABELS = {"open_asr_leaderboard": "Open ASR Leaderboard", "artificial_analysis": "Artificial Analysis",
+                    "tts_arena": "TTS Arena"}
+
+
+def latency_label(m: Model, with_metric: bool = True) -> str:
+    """The vendor's figure as they phrase it: "~75 ms to first audio", "under 300 ms voice to voice"."""
+    lat = m.latency
+    if not lat:
+        return ""
+    n = f"{lat.ms / 1000:g} s" if lat.ms >= 1000 else f"{lat.ms:g} ms"
+    text = {"typical": f"~{n}", "median": f"{n} median", "p90": f"{n} p90", "p95": f"{n} p95",
+            "as_low_as": f"as low as {n}", "under": f"under {n}"}.get(lat.qualifier, n)
+    return f"{text} {LATENCY_METRIC_LABELS.get(lat.metric, '')}".strip() if with_metric else text
+
+
 FRAMEWORK_LABELS = {"livekit": "LiveKit", "pipecat": "Pipecat", "vapi": "Vapi", "retell": "Retell AI"}
 INTERFACE_LABELS = {"http": "HTTP", "websocket": "WebSocket", "grpc": "gRPC", "webrtc": "WebRTC"}
 
@@ -334,6 +351,8 @@ def compare_table(rows: list[ModelRow], names: dict[str, str], check_language: s
             ["Yes" if c in m.capabilities else "–" for m in ms])
 
     add("Technical", "Streaming", ["Yes" if m.streaming else "No" for m in ms])
+    if any(m.latency for m in ms):     # vendors measure differently: shown side by side, never ranked
+        add("Technical", "Latency (vendor's claim)", [latency_label(m) or "–" for m in ms])
     add("Technical", "Batch / file", ["Yes" if m.batch else "–" if m.batch is None else "No" for m in ms])
     add("Technical", "Connect via", [_fmt_list([INTERFACE_LABELS.get(i, i) for i in m.interfaces]) for m in ms])
     add("Technical", "Sample rates", [_fmt_list([f"{r / 1000:g} kHz" for r in m.sample_rates_hz]) for m in ms])

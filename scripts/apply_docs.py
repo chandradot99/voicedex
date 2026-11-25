@@ -14,6 +14,9 @@ Reads .sync-cache/<provider>_docs.json (and the older <provider>_pricing.json):
       "recommended": true | false,                 # optional, vendor recommends it / calls it legacy
       "recommended_for": "real-time agents",       # optional, the use case it is recommended for
       "replaces": ["older-model-id"],              # optional, this provider's models it succeeds
+      "latency": {"ms": 75, "metric": "time_to_first_audio", "qualifier": "typical",
+                  "conditions": "...", "source_url": "..."},   # optional, vendor-published figure only
+      "benchmarks": [{"name": "open_asr_leaderboard", "url": "..."}],   # optional, replaces the list
       "source_urls": ["https://..."]}]             # optional → meta.docs_sources
 
 Changed models get updated_at = today. Unknown model ids are reported, never created.
@@ -35,7 +38,14 @@ sys.path.insert(0, str(ROOT))
 
 from voicedex.catalog.files import read_provider_dir, write_provider_dir  # noqa: E402
 from voicedex.catalog.merge import partial_date  # noqa: E402
-from voicedex.catalog.schema import CAPABILITIES_BY_TYPE, MODEL_CAPABILITIES, Pricing  # noqa: E402
+from voicedex.catalog.schema import (  # noqa: E402
+    CAPABILITIES_BY_TYPE,
+    LATENCY_METRIC_BY_TYPE,
+    MODEL_CAPABILITIES,
+    BenchmarkLink,
+    LatencyClaim,
+    Pricing,
+)
 
 CACHE = ROOT / ".sync-cache"
 
@@ -92,6 +102,19 @@ def apply(provider_id: str, data_dir: Path, write: bool) -> int:
                 rc = 1
                 continue
             model.replaces = list(row["replaces"])
+        if row.get("latency"):
+            lat = LatencyClaim.model_validate({**row["latency"], "as_of": row["latency"].get("as_of") or date.today()})
+            if lat.metric != LATENCY_METRIC_BY_TYPE[key[0]]:
+                print(f"  ✗ {key[0]}:{key[1]}: latency metric {lat.metric!r} doesn't fit {key[0]}")
+                rc = 1
+                continue
+            old = model.latency
+            same = old and old.model_dump(exclude={"as_of"}) == lat.model_dump(exclude={"as_of"})
+            model.latency = old if same else lat              # an unchanged claim keeps its date
+        if isinstance(row.get("benchmarks"), list):
+            old = {(b.name, b.url): b for b in model.benchmarks}
+            model.benchmarks = [old.get((b["name"], b["url"])) or BenchmarkLink.model_validate(
+                {**b, "as_of": b.get("as_of") or date.today()}) for b in row["benchmarks"]]
         if row.get("source_urls"):   # union: a lineage pass must not drop the pricing pass's sources
             old = model.meta.get("docs_sources") or []
             model.meta = {**model.meta, "docs_sources": old + [u for u in row["source_urls"] if u not in old]}

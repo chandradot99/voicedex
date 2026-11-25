@@ -21,6 +21,14 @@
       "en",
       "es"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "end-of-utterance",
+      "metric": "transcript_latency",
+      "ms": 100.0,
+      "qualifier": "under",
+      "source_url": "https://www.voicegain.ai/developers"
+    },
     "meta": {
       "api_parameter": "acousticModelRealTime",
       "capability_notes": {
@@ -54,7 +62,7 @@
     "recommended": true,
     "recommended_for": "real-time transcription, best accuracy",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [

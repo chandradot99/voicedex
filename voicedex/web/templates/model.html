@@ -132,6 +132,7 @@
     <dl class="spec">
       <div><dt>Type</dt><dd>{{ TYPE_LABELS[m.type] }}</dd></div>
       <div><dt>Streaming</dt><dd>{{ "Yes" if m.streaming else "No" }}</dd></div>
+      {% if m.latency %}<div><dt>Latency</dt><dd>{{ latency_label(m) }}<span class="sub">{{ p.name }}'s <a href="{{ m.latency.source_url }}" rel="noopener">published figure</a>{% if m.latency.conditions %}, {{ m.latency.conditions }}{% endif %}. Not measured by us.</span></dd></div>{% endif %}
       {% if m.batch is not none %}<div><dt>Batch / file</dt><dd>{{ "Yes" if m.batch else "No" }}</dd></div>{% endif %}
       {% if m.interfaces %}<div><dt>Connect via</dt><dd>{% for i in m.interfaces %}{{ INTERFACE_LABELS.get(i, i) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
       {% if m.sample_rates_hz %}<div><dt>Sample rates</dt><dd class="mono">{% for s in m.sample_rates_hz %}{{ "{:g}".format(s / 1000) }}{% if not loop.last %}, {% endif %}{% endfor %} kHz</dd></div>{% endif %}
@@ -146,6 +147,14 @@
       {% if m.meta.get('aliases') %}<div><dt>Also callable</dt><dd>{% for a in m.meta['aliases'] %}<code translate="no">{{ a }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>{% endif %}
       {% if m.first_seen %}<div><dt>Listed since</dt><dd class="mono">{{ m.first_seen.strftime('%Y-%m-%d') }}</dd></div>{% endif %}
     </dl>
+
+    {% if m.benchmarks %}
+    <div class="side-block">
+      <h3 class="ds-label">Independent benchmarks</h3>
+      <ul class="side-list">{% for b in m.benchmarks %}<li><a href="{{ b.url }}" rel="noopener">{{ BENCHMARK_LABELS.get(b.name, b.name) }}</a></li>{% endfor %}</ul>
+      <p class="side-note">Listed on these public leaderboards. See their pages for current scores and how they test.</p>
+    </div>
+    {% endif %}
 
     <div class="side-block">
       <h3 class="ds-label">Source</h3>

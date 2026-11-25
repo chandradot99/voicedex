@@ -15,6 +15,13 @@
     "interfaces": [
       "websocket"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "user wait time in conversation (\"about 1 second\")",
+      "metric": "voice_to_voice",
+      "ms": 1000.0,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
+    },
     "meta": {
       "capability_notes": {
         "turn_detection": "server_vad"
@@ -125,7 +132,7 @@
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -143,6 +150,13 @@
     "interfaces": [
       "websocket"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "user wait time in conversation (\"about 1 second\")",
+      "metric": "voice_to_voice",
+      "ms": 1000.0,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
+    },
     "meta": {
       "capability_notes": {
         "turn_detection": "server_vad"
@@ -253,7 +267,7 @@
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -271,6 +285,13 @@
     "interfaces": [
       "websocket"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "user wait time in conversation (\"about 1 second\")",
+      "metric": "voice_to_voice",
+      "ms": 1000.0,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
+    },
     "meta": {
       "capability_notes": {
         "turn_detection": "server_vad"
@@ -381,7 +402,7 @@
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -400,6 +421,13 @@
       "websocket"
     ],
     "is_default": true,
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "user wait time in conversation (\"about 1 second\")",
+      "metric": "voice_to_voice",
+      "ms": 1000.0,
+      "source_url": "https://cloud.baidu.com/doc/SPEECH/s/nmcytnwei"
+    },
     "meta": {
       "capability_notes": {
         "turn_detection": "server_vad"
@@ -510,7 +538,7 @@
       16000
     ],
     "type": "sts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [

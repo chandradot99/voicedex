@@ -36,6 +36,10 @@ Optional — include only if stated:
   custom_vocabulary, language_detection when stated for that model
   Anything else → `meta`.
 - `regions`: subset of us | eu | asia | global, only if docs state availability by region
+- `latency` (docs pass only): a millisecond figure the vendor publishes for that model —
+  `{"ms": n, "metric": "time_to_first_audio" (tts) | "transcript_latency" (stt) | "voice_to_voice" (sts),
+  "qualifier": "typical|median|p90|p95|as_low_as|under", "conditions": "what it includes", "source_url": url}`.
+  Never "low latency" without a number, never third-party measurements
 - `interfaces`: subset of http | websocket | grpc | webrtc
 - `pricing` (only explicit published numbers; non-USD-only providers: `"currency": "INR", "price": n` instead of `price_usd`, never converted): `{"unit": "character|minute|second|word|token|request|hour", "price_usd": n, "as_of": "<today>", "source_url": url, "notes": "plan/qualifiers"}`; differing tiers → `"variants": [{"applies_to": "...", "unit": "...", "price_usd": n}]`. `price_usd` is the price anyone can pay without a subscription commitment (pay-as-you-go / list rate) when one is published; a lower rate that requires buying a monthly or annual plan goes in `variants` with the plan named in `applies_to`, never in `price_usd` (it would show as the "cheapest" price everywhere). Promotions open to every customer are the current price: keep them in `price_usd` and say "promo" plus any end date in `notes`
 - `meta`: provider extras. Special keys promoted to fields: `parent_model_id` (family root), `snapshot_date`, `alias_of` (for moving aliases), `batch` (bool: usable via file/batch API).

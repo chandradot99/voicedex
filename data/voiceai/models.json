@@ -22,6 +22,14 @@
     "languages": [
       "en"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "first audio chunk, KV-cached reference, CPU",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://voice.ai/tts-lite"
+    },
     "meta": {
       "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
       "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
@@ -55,7 +63,7 @@
     ],
     "snapshot_date": "2026-04-15",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "alias_of": "voiceai-tts-lite-v1-2026-04-15",
@@ -81,6 +89,14 @@
     "languages": [
       "en"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "first audio chunk, KV-cached reference, CPU",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://voice.ai/tts-lite"
+    },
     "meta": {
       "audio_format_values": "mp3, wav, pcm (32 kHz); mp3_<rate>_<kbps>, opus_48000_<kbps>, pcm_<rate>, wav_<rate>, alaw_8000, ulaw_8000",
       "credit_pricing": "Credit plans only (no per-unit API rate on the pricing page): Free $0 (5k credits/mo, ~5 min TTS, 500 chars/conversion), Starter $5/mo (15k credits, ~15 min TTS, 5,000 chars/conversion), Launch $12/mo (200k credits, ~200 min TTS), Core $99/mo (1M credits, ~1,000 min TTS), Scale $330/mo (4M credits, ~4,000 min TTS), Business $880/mo (22M credits, ~22,000 min TTS), Enterprise custom.",
@@ -113,7 +129,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -250,6 +266,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "voice_cloning"
     ],
@@ -293,7 +316,7 @@
     ],
     "snapshot_date": "2026-02-10",
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "alias_of": "voiceai-tts-v1-2026-02-10",
@@ -304,6 +327,13 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
     ],
     "capabilities": [
       "voice_cloning"
@@ -348,6 +378,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   }
 ]

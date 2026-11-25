@@ -121,6 +121,14 @@
       "km",
       "tl"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "first packet, streaming, at low concurrency",
+      "metric": "time_to_first_audio",
+      "ms": 90.0,
+      "qualifier": "under",
+      "source_url": "https://maas.unisound.com/models/tts"
+    },
     "max_text_chars": 500,
     "meta": {
       "emotions": [
@@ -173,7 +181,7 @@
       32000
     ],
     "type": "tts",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [

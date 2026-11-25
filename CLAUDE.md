@@ -174,6 +174,12 @@ Google sync **fails loudly** (`GoogleAuthExpired`, with the re-login commands) â
   `headquarters` [ISO 3166-1 alpha-2], `regions`, `compliance` [soc2|hipaa|gdpr|iso27001|pci_dss], `links`) are
   hand-curated; sync never overwrites them. Research passes write `.sync-cache/<id>_editorial.json`, applied with
   `scripts/apply_editorial.py <id> --write`.
+- **latency** (models): the vendor's OWN published figure only, `{ms, metric, qualifier, conditions, source_url,
+  as_of}`; metric is fixed by type (tts time_to_first_audio, stt transcript_latency, sts voice_to_voice), qualifier
+  = how they phrase it (typical|median|p90|p95|as_low_as|under). Shown as "<name>'s published figure. Not measured
+  by us"; never a sort key, filter or "fastest" claim (vendors measure differently). **benchmarks** (models): links
+  to independent leaderboards that list that exact model (open_asr_leaderboard, artificial_analysis, tts_arena),
+  never their scores. Both come in through `.sync-cache/<id>_docs.json` + `scripts/apply_docs.py`.
 - **integrations** (provider.json, editorial): voice-agent frameworks (`FRAMEWORKS`: livekit, pipecat, vapi,
   retell) with a first-party integration, `{framework, types, url, as_of, notes}`, researched from the framework's
   own docs only (official plugin/service pages or its official repo; never community plugins, generic

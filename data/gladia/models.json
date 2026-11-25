@@ -16,6 +16,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/gladia"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -137,6 +144,14 @@
       "yi",
       "yo"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "partial transcripts",
+      "metric": "transcript_latency",
+      "ms": 103.0,
+      "qualifier": "under",
+      "source_url": "https://www.gladia.io/solaria"
+    },
     "max_audio_seconds": 8100,
     "meta": {
       "code_switching": true,
@@ -248,7 +263,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -264,6 +279,18 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/gladia-solaria"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -364,6 +391,6 @@
     "released_on": "2026-06-10",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]

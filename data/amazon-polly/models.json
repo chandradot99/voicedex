@@ -6,6 +6,13 @@
       "pcm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/polly-generative"
+      }
+    ],
     "capabilities": [
       "ssml"
     ],
@@ -101,7 +108,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -110,6 +117,13 @@
       "pcm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/polly-long-form"
+      }
+    ],
     "capabilities": [
       "phoneme_input",
       "ssml"
@@ -179,7 +193,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -188,6 +202,13 @@
       "pcm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/polly-neural"
+      }
+    ],
     "capabilities": [
       "phoneme_input",
       "ssml",
@@ -294,7 +315,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -303,6 +324,13 @@
       "pcm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/polly-standard"
+      }
+    ],
     "capabilities": [
       "ssml"
     ],
@@ -396,6 +424,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
