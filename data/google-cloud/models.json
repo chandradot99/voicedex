@@ -550,6 +550,13 @@
   },
   {
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/google"
+      }
+    ],
     "capabilities": [
       "language_detection",
       "punctuation",
@@ -735,7 +742,7 @@
     "released_on": "2023-08",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
@@ -970,6 +977,13 @@
   },
   {
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/google"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -1195,7 +1209,7 @@
     ],
     "released_on": "2025-08-29",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
@@ -2016,6 +2030,13 @@
     "updated_at": "2026-11-16"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/gemini"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -2170,11 +2191,18 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
       "pcm"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/gemini"
+      }
     ],
     "capabilities": [
       "custom_vocabulary",
@@ -2272,6 +2300,14 @@
       "it-IT",
       "vi-VN"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "\"sub-second latency\", real-time streaming via Live API",
+      "metric": "transcript_latency",
+      "ms": 1000.0,
+      "qualifier": "under",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/"
+    },
     "meta": {
       "api": "Gemini Developer API (Live API)",
       "docs": "https://aistudio.google.com/docs/models/gemini-3.5-transcribe",
@@ -2325,7 +2361,7 @@
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
@@ -3636,6 +3672,13 @@
       "opus",
       "pcm"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/chirp3-hd"
+      }
+    ],
     "capabilities": [
       "phoneme_input",
       "prosody_control",
@@ -3789,9 +3832,16 @@
     ],
     "released_on": "2025-04-02",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/neural2"
+      }
+    ],
     "capabilities": [
       "ssml"
     ],
@@ -3863,7 +3913,7 @@
     "released_on": "2022-06-27",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "description": "News-reading voices listed as Premium voice type in the supported voices table.",
@@ -3954,6 +4004,13 @@
     "updated_at": "2026-11-24"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/standard"
+      }
+    ],
     "capabilities": [
       "ssml"
     ],
@@ -4058,9 +4115,16 @@
     },
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/studio"
+      }
+    ],
     "capabilities": [
       "multi_speaker",
       "ssml"
@@ -4115,9 +4179,16 @@
     "released_on": "2023-02-08",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/wavenet"
+      }
+    ],
     "capabilities": [
       "ssml"
     ],
@@ -4209,7 +4280,7 @@
     },
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -4218,6 +4289,13 @@
       "mulaw",
       "opus",
       "pcm"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/gemini-2-5-flash-lite"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -4469,7 +4547,7 @@
       "us"
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -5006,6 +5084,13 @@
       "opus",
       "pcm"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/gemini-3-1-tts"
+      }
+    ],
     "capabilities": [
       "emotion",
       "multi_speaker",
@@ -5108,7 +5193,7 @@
     ],
     "released_on": "2026-04-15",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -5118,6 +5203,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/gemini-3-8-flash-lite-tts"
+      }
+    ],
     "capabilities": [
       "emotion",
       "multi_speaker",
@@ -5264,7 +5356,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -5274,6 +5366,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/gemini-3-8-flash-tts"
+      }
+    ],
     "capabilities": [
       "emotion",
       "multi_speaker",
@@ -5421,6 +5520,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
