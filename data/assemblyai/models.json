@@ -11,6 +11,13 @@
       "webm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/assemblyai"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -114,7 +121,7 @@
     "released_on": "2026-11-18",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -170,6 +177,14 @@
       "xh",
       "zu"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "time to complete turn (end of turn to final transcript); p90 1,509 ms",
+      "metric": "transcript_latency",
+      "ms": 632.0,
+      "qualifier": "median",
+      "source_url": "https://www.assemblyai.com/docs/streaming/benchmarks"
+    },
     "meta": {
       "docs_sources": [
         "https://www.assemblyai.com/docs/getting-started/models",
@@ -229,7 +244,7 @@
       "universal-streaming-multilingual"
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -238,6 +253,13 @@
       "ogg",
       "opus",
       "pcm"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/assemblyai"
+      }
     ],
     "capabilities": [
       "custom_vocabulary",
@@ -285,6 +307,14 @@
       "xh",
       "zu"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "time to complete turn (end of turn to final transcript); p90 1,522 ms",
+      "metric": "transcript_latency",
+      "ms": 436.0,
+      "qualifier": "median",
+      "source_url": "https://www.assemblyai.com/docs/streaming/benchmarks"
+    },
     "meta": {
       "docs_sources": [
         "https://www.assemblyai.com/docs/getting-started/models",
@@ -342,7 +372,7 @@
       "universal-3-6-pro"
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -356,6 +386,13 @@
       "webm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/assemblyai"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -414,7 +451,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-19"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -558,6 +595,13 @@
       "opus",
       "pcm"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/assemblyai"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -683,7 +727,7 @@
     ],
     "released_on": "2026-09-29",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -959,6 +1003,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/assemblyai-tts-1"
+      }
+    ],
     "capabilities": [
       "voice_cloning"
     ],
@@ -1048,6 +1099,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
