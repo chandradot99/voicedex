@@ -3793,6 +3793,13 @@
       "opus",
       "pcm"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/qwen3-asr"
+      }
+    ],
     "capabilities": [
       "language_detection"
     ],
@@ -3895,7 +3902,7 @@
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -4285,6 +4292,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/qwen-audio-3-0-tts-plus"
+      }
+    ],
     "capabilities": [
       "emotion",
       "prosody_control",
@@ -4407,7 +4421,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -4618,6 +4632,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/qwen-audio-3-1-tts-plus"
+      }
+    ],
     "capabilities": [
       "emotion",
       "prosody_control",
@@ -4747,9 +4768,16 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/qwen3-tts-flash"
+      }
+    ],
     "description": "Qwen3-TTS non-real-time HTTP speech synthesis with multilingual and Chinese dialect system voices.",
     "family": "qwen3-tts",
     "first_seen": "2026-11-16",
@@ -4831,7 +4859,7 @@
       "asia"
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
