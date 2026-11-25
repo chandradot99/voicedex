@@ -9,6 +9,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/breeze-tts-2"
+      }
+    ],
     "capabilities": [
       "emotion",
       "style_control",
@@ -26,6 +33,14 @@
       "en",
       "zh"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "time to first byte; client-side TTFA benchmark p50 127 ms (US)",
+      "metric": "time_to_first_audio",
+      "ms": 25.0,
+      "qualifier": "under",
+      "source_url": "https://breezeblue.ai"
+    },
     "max_text_chars": 1000,
     "meta": {
       "chinese_accents": 9,
@@ -70,7 +85,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
