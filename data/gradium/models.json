@@ -74,6 +74,13 @@
     "updated_at": "2026-11-24"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/gradium"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -133,7 +140,7 @@
     "recommended_for": "real-time transcription",
     "released_on": "2026-11-03",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
@@ -218,6 +225,13 @@
       "fr",
       "pt"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "time to first audio as measured on Coval",
+      "metric": "time_to_first_audio",
+      "ms": 53.0,
+      "source_url": "https://gradium.ai"
+    },
     "meta": {
       "aliases": [
         "gradium-tts-beta"
@@ -259,6 +273,6 @@
     "recommended_for": "stable production TTS",
     "released_on": "2026-09-30",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
