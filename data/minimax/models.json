@@ -172,6 +172,18 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/speech-02-hd"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "emotion",
       "phoneme_input"
@@ -255,7 +267,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -265,6 +277,18 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/speech-02-turbo"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -349,7 +373,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -359,6 +383,18 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/speech-2.6-hd"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -459,7 +495,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -469,6 +505,18 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/speech-2.6-turbo"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -523,6 +571,14 @@
       "ta",
       "af"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "end-to-end; Speech 2.6 launch post",
+      "metric": "time_to_first_audio",
+      "ms": 250.0,
+      "qualifier": "under",
+      "source_url": "https://www.minimax.io/news/minimax-speech-26"
+    },
     "max_text_chars": 9999,
     "meta": {
       "audio_encodings": [
@@ -569,7 +625,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -579,6 +635,18 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/speech-2-8-hd"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -682,7 +750,7 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -692,6 +760,18 @@
       "opus",
       "pcm",
       "wav"
+    ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/speech-2-8-turbo"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
     ],
     "capabilities": [
       "emotion",
@@ -794,6 +874,6 @@
       44100
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
