@@ -355,6 +355,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/azure"
+      }
+    ],
     "description": "Previous-generation Microsoft AI transcription model available through the Fast Transcription API's enhanced mode.",
     "first_seen": "2026-11-18",
     "id": "MAI-Transcribe-1.5",
@@ -429,7 +436,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -438,6 +445,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/azure"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -564,9 +578,16 @@
     "released_on": "2026-09",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/azure"
+      }
+    ],
     "capabilities": [
       "language_detection"
     ],
@@ -639,6 +660,13 @@
       "yue",
       "zh"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "first partial hypotheses \"a little over 100 ms\" after audio received",
+      "metric": "transcript_latency",
+      "ms": 100.0,
+      "source_url": "https://news.microsoft.com/source/latam/company-news-es/nuestro-primer-modelo-de-transcripcion-de-streaming-debuta-en-el-numero-1-en-analisis-artificial/"
+    },
     "lifecycle": "beta",
     "meta": {
       "azure_regions": [
@@ -676,7 +704,7 @@
       "us"
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
@@ -1334,6 +1362,13 @@
     "updated_at": "2026-11-24"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/azure-dragon-hd-omni"
+      }
+    ],
     "capabilities": [
       "ssml"
     ],
@@ -1473,7 +1508,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
@@ -1849,6 +1884,14 @@
       "vi-VN",
       "zh-CN"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "\"end-to-end latency of just 150 ms\" (vendor wording)",
+      "metric": "time_to_first_audio",
+      "ms": 150.0,
+      "qualifier": "as_low_as",
+      "source_url": "https://news.microsoft.com/source/latam/company-news-es/nuestro-primer-modelo-de-transcripcion-de-streaming-debuta-en-el-numero-1-en-analisis-artificial/"
+    },
     "lifecycle": "beta",
     "meta": {
       "docs_sources": [
@@ -1880,7 +1923,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
@@ -2056,6 +2099,13 @@
     "updated_at": "2026-11-16"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/azure-neural"
+      }
+    ],
     "capabilities": [
       "ssml",
       "style_control"
@@ -2293,7 +2343,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
