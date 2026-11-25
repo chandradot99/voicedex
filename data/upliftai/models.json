@@ -100,6 +100,14 @@
       "sd",
       "bal"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "vendor says ~150-200 ms to first audio chunk",
+      "metric": "time_to_first_audio",
+      "ms": 200.0,
+      "qualifier": "under",
+      "source_url": "https://docs.upliftai.org/websocket-tts"
+    },
     "max_text_chars": 2500,
     "meta": {
       "docs_sources": [
@@ -142,6 +150,6 @@
       22050
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
