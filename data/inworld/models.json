@@ -440,6 +440,13 @@
       "webm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/inworld"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -486,6 +493,14 @@
       "tr",
       "vi"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "final transcript, on Coval's public benchmark (66 ms 30-day avg)",
+      "metric": "transcript_latency",
+      "ms": 70.0,
+      "qualifier": "under",
+      "source_url": "https://inworld.ai/stt"
+    },
     "meta": {
       "async_max_upload_mb": 512,
       "recommended_sample_rate_hz": 16000,
@@ -535,7 +550,7 @@
       ]
     },
     "type": "stt",
-    "updated_at": "2026-11-16"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -638,6 +653,13 @@
       "pcm",
       "wav"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/realtime-tts-2"
+      }
+    ],
     "capabilities": [
       "emotion",
       "phoneme_input",
@@ -656,6 +678,14 @@
     "languages": [
       "*"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side, excludes network; at high concurrency",
+      "metric": "time_to_first_audio",
+      "ms": 100.0,
+      "qualifier": "p90",
+      "source_url": "https://docs.inworld.ai/tts/tts-models.md"
+    },
     "max_text_chars": 2000,
     "meta": {
       "async_max_text_chars": 100000,
@@ -726,7 +756,7 @@
     "recommended_for": "production default, quality and steering",
     "released_on": "2026-05-05",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -751,6 +781,14 @@
     "languages": [
       "*"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side, excludes network",
+      "metric": "time_to_first_audio",
+      "ms": 20.0,
+      "qualifier": "p90",
+      "source_url": "https://docs.inworld.ai/tts/tts-models.md"
+    },
     "max_text_chars": 2000,
     "meta": {
       "async_max_text_chars": 100000,
@@ -814,6 +852,6 @@
     "recommended_for": "latency-critical, high-volume workloads",
     "released_on": "2026-08-09",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
