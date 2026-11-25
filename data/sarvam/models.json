@@ -487,6 +487,14 @@
       "mai-IN",
       "doi-IN"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "median latency, streaming",
+      "metric": "transcript_latency",
+      "ms": 250.0,
+      "qualifier": "under",
+      "source_url": "https://www.sarvam.ai/speech-to-text"
+    },
     "max_audio_seconds": 30,
     "meta": {
       "auto_language_detect": true,
@@ -555,7 +563,7 @@
     },
     "recommended": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -599,6 +607,14 @@
       "mai-IN",
       "doi-IN"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "Fast mode, time to first token",
+      "metric": "transcript_latency",
+      "ms": 150.0,
+      "qualifier": "under",
+      "source_url": "https://sarvam.ai/blogs/asr"
+    },
     "meta": {
       "auto_language_detect": true,
       "channels": "mono",
@@ -670,7 +686,7 @@
       16000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -689,6 +705,13 @@
       "wma"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/saaras"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -807,7 +830,7 @@
       "saaras:v3-realtime"
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
@@ -1018,6 +1041,14 @@
       "ta-IN",
       "te-IN"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "in production",
+      "metric": "time_to_first_audio",
+      "ms": 250.0,
+      "qualifier": "under",
+      "source_url": "https://www.sarvam.ai/blogs/bulbul-v4-flash/"
+    },
     "max_text_chars": 2500,
     "meta": {
       "accepted_language_codes": [
@@ -1115,7 +1146,7 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
