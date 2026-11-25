@@ -923,9 +923,9 @@ body:has(.now-playing:not([hidden])) main, body:has(.tray:not([hidden])) main { 
 .sh-picks { display: grid; gap: 22px; }
 .sh-pick + .sh-pick { border-top: 1px dashed var(--rule); padding-top: 20px; }
 .sh-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
-.sh-head code { font-size: 16px; color: var(--ink); }
-.sh-head a:hover code { text-decoration: underline; }
-.sh-name { color: var(--ink-2); font-size: 14px; }
+.sh-title { font-size: 16px; color: var(--ink); text-decoration: none; }
+.sh-title:hover { text-decoration: underline; }
+.sh-head .model-id code { font-size: 13px; color: var(--muted); }
 .sh-meta { margin-left: auto; font-size: 12px; color: var(--muted); }
 .sh-use { margin-top: 6px; font-size: 14px; color: var(--ink); }
 .sh-use .mono { font: 500 var(--t-xs) var(--sans); color: var(--muted); margin-right: 6px; }
@@ -1521,3 +1521,7 @@ h1.with-logo { display: flex; gap: 14px; }
 .costs .median span { left: 4px; }
 .costs .iqr span { left: 4px; }
 .costs .iqr span { background: none; padding: 1px 2px; }
+
+/* Model tables: the display name leads; the id (what you send to the API) sits under it, small and copyable */
+.row-name { font-weight: 500; }
+.sub.model-id code { font-size: 12px; color: var(--muted); }

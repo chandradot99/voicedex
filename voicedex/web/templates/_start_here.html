@@ -8,8 +8,8 @@
       {% for k in picks %}{% set m = k.row.model %}
       <article class="sh-pick">
         <header class="sh-head">
-          <a href="{{ model_url(k.row) }}"><code translate="no">{{ m.id }}</code></a>
-          {% if m.name != m.id %}<span class="sh-name">{{ m.name }}</span>{% endif %}
+          <a class="row-name sh-title" href="{{ model_url(k.row) }}">{{ m.name }}</a>
+          {% if m.name != m.id %}<span class="model-id"><code translate="no">{{ m.id }}</code></span>{% endif %}
           <span class="sh-meta mono">{% if m.released_on %}released {{ m.released_on }}{% endif %}{% if m.lifecycle in ("alpha", "beta") %}{% if m.released_on %} · {% endif %}{{ m.lifecycle }}{% endif %}</span>
         </header>
         {% if k.newest %}<p class="sh-use"><span class="mono">Newest</span> Latest release. {{ p.name }}{{ "'" if p.name.endswith("s") else "'s" }} docs don't name it as a recommendation.</p>

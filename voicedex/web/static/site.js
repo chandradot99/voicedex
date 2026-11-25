@@ -362,8 +362,11 @@ addEventListener("pageswap", (e) => {
   if (!e.viewTransition || !url) return;
   const path = new URL(url).pathname;
   if (!path.startsWith("/models/")) return;
-  const link = $$(`a[href="${CSS.escape(path)}"]`).find((a) => a.querySelector("code") && a.getBoundingClientRect().height);
-  if (link) link.querySelector("code").style.viewTransitionName = "model-title";
+  // The page title is the id: morph from the id under a table row's name, or from an id inside the link itself.
+  const idOf = (a) => a.querySelector("code") || (a.closest("th") || a.parentElement)?.querySelector(".model-id code")
+    || (a.classList.contains("row-name") ? a : null);
+  const link = $$(`a[href="${CSS.escape(path)}"]`).find((a) => idOf(a) && a.getBoundingClientRect().height);
+  if (link) idOf(link).style.viewTransitionName = "model-title";
 });
 
 // ── Searchable picker: long <select data-searchable="noun"> (languages, providers) gets a type-to-filter combobox.
