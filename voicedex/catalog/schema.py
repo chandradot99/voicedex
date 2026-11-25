@@ -181,6 +181,50 @@ class Pricing(_Record):
         return v
 
 
+# Latency as the vendor publishes it (never measured by us). One metric per model type.
+LATENCY_METRIC_BY_TYPE = {"tts": "time_to_first_audio", "stt": "transcript_latency", "sts": "voice_to_voice"}
+LATENCY_QUALIFIERS = ("typical", "median", "p90", "p95", "as_low_as", "under")
+# Independent public benchmarks we link to (we never copy their scores).
+BENCHMARKS = ("open_asr_leaderboard", "artificial_analysis", "tts_arena")
+
+
+class LatencyClaim(_Record):
+    """A latency figure from the vendor's own pages, shown as the vendor's claim."""
+    ms: float = Field(gt=0)
+    metric: str                     # LATENCY_METRIC_BY_TYPE[model type]
+    qualifier: str = "typical"      # how the vendor phrases it: "~75 ms", "under 300 ms", "as low as 40 ms"
+    conditions: str | None = None   # what the figure includes/excludes, as the vendor says
+    source_url: str
+    as_of: date | None = None
+
+    @field_validator("metric")
+    @classmethod
+    def _metric(cls, v: str) -> str:
+        if v not in LATENCY_METRIC_BY_TYPE.values():
+            raise ValueError(f"unknown latency metric {v!r}")
+        return v
+
+    @field_validator("qualifier")
+    @classmethod
+    def _qualifier(cls, v: str) -> str:
+        if v not in LATENCY_QUALIFIERS:
+            raise ValueError(f"unknown latency qualifier {v!r}; allowed: {list(LATENCY_QUALIFIERS)}")
+        return v
+
+
+class BenchmarkLink(_Record):
+    name: str                       # BENCHMARKS
+    url: str
+    as_of: date | None = None
+
+    @field_validator("name")
+    @classmethod
+    def _name(cls, v: str) -> str:
+        if v not in BENCHMARKS:
+            raise ValueError(f"unknown benchmark {v!r}; allowed: {list(BENCHMARKS)}")
+        return v
+
+
 class ProviderVerification(_Record):
     """The provider itself reviewed its listing and confirmed it is accurate (editorial, hand-set).
 
@@ -313,6 +357,8 @@ class Model(_Record):
     capabilities: list[str] = Field(default_factory=list)
     regions: list[Region] = Field(default_factory=list)
     pricing: Pricing | None = None
+    latency: LatencyClaim | None = None                                 # vendor-published, see LatencyClaim
+    benchmarks: list[BenchmarkLink] = Field(default_factory=list)       # independent benchmarks listing it
     open_weights: OpenWeights | None = None
     eol_date: date | None = None
     meta: dict = Field(default_factory=dict)
@@ -351,6 +397,16 @@ class Model(_Record):
         if (self.lifecycle == Lifecycle.deprecated) != (self.deprecated_at is not None):
             raise ValueError(f"model {self.id}: lifecycle=deprecated and deprecated_at must be set together")
 
+
+    @model_validator(mode="after")
+    def _latency_metric(self) -> Model:
+        t = str(getattr(self.type, "value", self.type))
+        if self.latency and self.latency.metric != LATENCY_METRIC_BY_TYPE.get(t):
+            raise ValueError(f"latency metric {self.latency.metric!r} doesn't fit a {t} model "
+                             f"(expected {LATENCY_METRIC_BY_TYPE.get(t)!r})")
+        if len({b.name for b in self.benchmarks}) != len(self.benchmarks):
+            raise ValueError("one link per benchmark")
+        return self
 
 class VoicePreview(_Record):
     """A sample of the voice speaking one specific language."""

@@ -25,7 +25,11 @@ Known gaps and follow-ups, newest first. Move items to commits as they're done.
 - **Amazon Polly** — needs an AWS account + IAM user with `polly:DescribeVoices` (deferred 2026-11-16: AWS sign-up issues).
 - **Speechmatics TTS** (preview): 4 voices, no model id, $0.011/1k chars — add as tts once it has a stable model id.
 - **Rime STT and "Prism" STS** — syncer is TTS-only.
-- **ElevenLabs community voice library** (thousands of shared voices) — only premade voices today; consider a separate `community` category.
+- **Community voice libraries** (ElevenLabs shared voices, Fish Audio, …): decided 2026-11-25 **not** to list
+  individual community voices — user clones include impersonations of real people, the volume would swamp stock
+  voices, they churn, and they don't help compare providers (each works only on its own platform). If wanted,
+  record one provider-level fact instead ("community library: yes, ~N voices, url, as_of", only with a published
+  count).
 - **AssemblyAI** dashboard-only voice catalog ("thousands") — only the 34 documented starter voices.
 - **provider.json editorial fields** (website, description, regions, compliance, links) — empty for every provider; fill from a verified research pass.
 - **Provider expansion (researched 2026-11-18)** — full plan, inclusion policy and waves in `docs/design/provider-expansion.md`

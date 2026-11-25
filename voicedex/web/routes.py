@@ -54,6 +54,7 @@ templates.env.globals.update(
     price_label=views.price_label, price_parts=views.price_parts, price_group=views.price_group,
     PRICE_GROUP_LABELS=views.PRICE_GROUP_LABELS, MODEL_SORTS=views.MODEL_SORTS, name_adds=views.name_adds,
     provider_logo=views.provider_logo, MIN_GROUP=views.MIN_GROUP, FRAMEWORK_LABELS=views.FRAMEWORK_LABELS,
+    latency_label=views.latency_label, BENCHMARK_LABELS=views.BENCHMARK_LABELS,
     model_url=views.model_url,
     model_key=views.model_key,
     variant_label=views.variant_label,
