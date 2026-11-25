@@ -9,6 +9,13 @@
       "wav",
       "webm"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/rime-coda"
+      }
+    ],
     "capabilities": [
       "phoneme_input"
     ],
@@ -33,6 +40,14 @@
       "pt",
       "es"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "model latency on GPU engine (self-hosted); excludes network",
+      "metric": "time_to_first_audio",
+      "ms": 100.0,
+      "qualifier": "under",
+      "source_url": "https://docs.rime.ai/docs/models"
+    },
     "max_text_chars": 1000,
     "meta": {
       "audio_encodings": [
@@ -101,7 +116,7 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "description": "Legacy Mist v1 TTS model, superseded by Mist v3.",
@@ -134,6 +149,13 @@
     "updated_at": "2026-11-24"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/mist-v2"
+      }
+    ],
     "capabilities": [
       "prosody_control"
     ],
@@ -175,7 +197,7 @@
     },
     "recommended": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -204,6 +226,14 @@
       "fr",
       "de"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side, one request at a time; excludes network",
+      "metric": "time_to_first_audio",
+      "ms": 37.0,
+      "qualifier": "median",
+      "source_url": "https://docs.rime.ai/docs/models"
+    },
     "max_text_chars": 1000,
     "meta": {
       "audio_encodings": [
@@ -269,6 +299,6 @@
       24000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
