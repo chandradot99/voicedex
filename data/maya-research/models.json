@@ -233,6 +233,13 @@
     "updated_at": "2026-11-18"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "first_seen": "2026-11-18",
     "id": "maya-research/Veena",
     "languages": [
@@ -262,9 +269,21 @@
     "released_on": "2025-06",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/maya-1"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "emotion",
       "voice_design"
@@ -294,6 +313,6 @@
     "released_on": "2025-10",
     "streaming": false,
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
