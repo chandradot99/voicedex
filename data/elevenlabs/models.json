@@ -278,6 +278,18 @@
       "wmv"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/elevenlabs"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -321,7 +333,7 @@
     "released_on": "2026-01-09",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -397,6 +409,13 @@
       "pcm"
     ],
     "batch": false,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/elevenlabs-scribe-v2"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -412,6 +431,14 @@
     "languages": [
       "*"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "time to committed transcript, production metrics",
+      "metric": "transcript_latency",
+      "ms": 150.0,
+      "qualifier": "median",
+      "source_url": "https://elevenlabs.io/docs/eleven-api/concepts/latency-methodology"
+    },
     "meta": {
       "docs_sources": [
         "https://elevenlabs.io/blog/introducing-scribe-v2-realtime",
@@ -445,7 +472,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -468,6 +495,13 @@
       "wmv"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/elevenlabs"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -518,7 +552,7 @@
     ],
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -526,6 +560,13 @@
       "pcm"
     ],
     "batch": false,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/elevenlabs"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -588,7 +629,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
@@ -607,6 +648,14 @@
     "languages": [
       "en"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side, WebSocket, warm voice; excludes network",
+      "metric": "time_to_first_audio",
+      "ms": 135.0,
+      "qualifier": "median",
+      "source_url": "https://elevenlabs.io/docs/eleven-api/concepts/latency-methodology"
+    },
     "max_text_chars": 30000,
     "meta": {
       "can_be_finetuned": true,
@@ -658,9 +707,21 @@
       "eleven_turbo_v2"
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/flash-v2-5"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "prosody_control",
       "ssml",
@@ -707,6 +768,14 @@
       "no",
       "vi"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side, WebSocket, warm voice; excludes network",
+      "metric": "time_to_first_audio",
+      "ms": 100.0,
+      "qualifier": "median",
+      "source_url": "https://elevenlabs.io/docs/eleven-api/concepts/latency-methodology"
+    },
     "max_text_chars": 40000,
     "meta": {
       "can_be_finetuned": true,
@@ -757,9 +826,21 @@
       "eleven_turbo_v2_5"
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/multilingual-v2"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "prosody_control",
       "ssml",
@@ -851,7 +932,7 @@
     },
     "released_on": "2023-08-22",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "capabilities": [
@@ -916,6 +997,18 @@
     "updated_at": "2026-11-24"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/turbo-v2-5"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "prosody_control",
       "ssml",
@@ -1006,9 +1099,21 @@
     "recommended": false,
     "released_on": "2024-07-19",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/eleven-v3"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "tts_arena",
+        "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
+      }
+    ],
     "capabilities": [
       "emotion",
       "multi_speaker",
@@ -1144,9 +1249,16 @@
     "recommended": false,
     "released_on": "2025-08-20",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/mitty"
+      }
+    ],
     "capabilities": [
       "emotion"
     ],
@@ -1233,6 +1345,14 @@
       "vi",
       "cy"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side, WebSocket, warm voice; excludes network",
+      "metric": "time_to_first_audio",
+      "ms": 165.0,
+      "qualifier": "median",
+      "source_url": "https://elevenlabs.io/docs/eleven-api/concepts/latency-methodology"
+    },
     "max_text_chars": 5000,
     "meta": {
       "can_be_finetuned": false,
@@ -1275,9 +1395,16 @@
     "recommended": false,
     "released_on": "2026-02-10",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/eleven-v4"
+      }
+    ],
     "capabilities": [
       "emotion",
       "multi_speaker",
@@ -1442,9 +1569,16 @@
       "eleven_v3"
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/eleven-v4-turbo"
+      }
+    ],
     "capabilities": [
       "emotion",
       "voice_cloning"
@@ -1552,6 +1686,14 @@
       "yo",
       "zu"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "server-side, WebSocket, warm voice; excludes network",
+      "metric": "time_to_first_audio",
+      "ms": 100.0,
+      "qualifier": "median",
+      "source_url": "https://elevenlabs.io/docs/eleven-api/concepts/latency-methodology"
+    },
     "max_text_chars": 10000,
     "meta": {
       "can_be_finetuned": true,
@@ -1599,6 +1741,6 @@
     "recommended_for": "low-latency / conversational agents (Text to Dialogue WebSocket)",
     "released_on": "2026-09-28",
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
