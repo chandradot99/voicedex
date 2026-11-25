@@ -12,6 +12,18 @@
       "webm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard?tab=longform"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/reson8"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -61,7 +73,7 @@
       "eu"
     ],
     "type": "stt",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -76,6 +88,18 @@
       "webm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard"
+      },
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/reson8"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -226,7 +250,7 @@
     ],
     "released_on": "2026-11-10",
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -241,6 +265,13 @@
       "webm"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "open_asr_leaderboard",
+        "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard"
+      }
+    ],
     "capabilities": [
       "language_detection"
     ],
@@ -357,6 +388,6 @@
     "released_on": "2026-11-03",
     "streaming": false,
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
