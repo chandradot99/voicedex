@@ -599,6 +599,13 @@
       "wav",
       "webm"
     ],
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/deepgram-flux"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "pii_redaction",
@@ -614,6 +621,13 @@
     "languages": [
       "en"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "end-of-turn detection (speech end to EndOfTurn)",
+      "metric": "transcript_latency",
+      "ms": 260.0,
+      "source_url": "https://developers.deepgram.com/docs/flux/quickstart"
+    },
     "meta": {
       "capability_notes": {
         "pii_redaction": "number redaction only"
@@ -675,7 +689,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "audio_formats": [
@@ -712,6 +726,13 @@
       "it",
       "nl"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "end-of-turn detection (speech end to EndOfTurn)",
+      "metric": "transcript_latency",
+      "ms": 260.0,
+      "source_url": "https://developers.deepgram.com/docs/flux/quickstart"
+    },
     "meta": {
       "capability_notes": {
         "pii_redaction": "number redaction only"
@@ -774,7 +795,7 @@
       48000
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
@@ -1973,6 +1994,13 @@
   },
   {
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/speech-to-text/models/deepgram"
+      }
+    ],
     "capabilities": [
       "custom_vocabulary",
       "language_detection",
@@ -2271,7 +2299,7 @@
       "nova-2-general"
     ],
     "type": "stt",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   },
   {
     "batch": true,
@@ -4034,6 +4062,13 @@
       "wav"
     ],
     "batch": true,
+    "benchmarks": [
+      {
+        "as_of": "2026-11-25",
+        "name": "artificial_analysis",
+        "url": "https://artificialanalysis.ai/text-to-speech/models/flux-tts"
+      }
+    ],
     "capabilities": [
       "phoneme_input",
       "prosody_control"
@@ -4100,6 +4135,14 @@
       "zh",
       "zh-TW"
     ],
+    "latency": {
+      "as_of": "2026-11-25",
+      "conditions": "24 kHz output, under production load",
+      "metric": "time_to_first_audio",
+      "ms": 80.0,
+      "qualifier": "as_low_as",
+      "source_url": "https://deepgram.com/product/text-to-speech"
+    },
     "meta": {
       "capability_notes": {
         "phoneme_input": "Inline IPA pronunciation overrides; Early Access on Flux TTS; English only; cannot be combined with speed (other than 1.0) or pause",
@@ -4209,6 +4252,6 @@
       48000
     ],
     "type": "tts",
-    "updated_at": "2026-11-24"
+    "updated_at": "2026-11-25"
   }
 ]
